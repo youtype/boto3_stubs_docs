@@ -29,6 +29,7 @@ type annotations stubs module
   - [DeleteAliasRequestRequestTypeDef](#deletealiasrequestrequesttypedef)
   - [DeleteGroupRequestRequestTypeDef](#deletegrouprequestrequesttypedef)
   - [DeleteMailboxPermissionsRequestRequestTypeDef](#deletemailboxpermissionsrequestrequesttypedef)
+  - [DeleteMobileDeviceAccessOverrideRequestRequestTypeDef](#deletemobiledeviceaccessoverriderequestrequesttypedef)
   - [DeleteMobileDeviceAccessRuleRequestRequestTypeDef](#deletemobiledeviceaccessrulerequestrequesttypedef)
   - [DeleteOrganizationRequestRequestTypeDef](#deleteorganizationrequestrequesttypedef)
   - [DeleteOrganizationResponseTypeDef](#deleteorganizationresponsetypedef)
@@ -36,8 +37,11 @@ type annotations stubs module
   - [DeleteRetentionPolicyRequestRequestTypeDef](#deleteretentionpolicyrequestrequesttypedef)
   - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
   - [DeregisterFromWorkMailRequestRequestTypeDef](#deregisterfromworkmailrequestrequesttypedef)
+  - [DeregisterMailDomainRequestRequestTypeDef](#deregistermaildomainrequestrequesttypedef)
   - [DescribeGroupRequestRequestTypeDef](#describegrouprequestrequesttypedef)
   - [DescribeGroupResponseTypeDef](#describegroupresponsetypedef)
+  - [DescribeInboundDmarcSettingsRequestRequestTypeDef](#describeinbounddmarcsettingsrequestrequesttypedef)
+  - [DescribeInboundDmarcSettingsResponseTypeDef](#describeinbounddmarcsettingsresponsetypedef)
   - [DescribeMailboxExportJobRequestRequestTypeDef](#describemailboxexportjobrequestrequesttypedef)
   - [DescribeMailboxExportJobResponseTypeDef](#describemailboxexportjobresponsetypedef)
   - [DescribeOrganizationRequestRequestTypeDef](#describeorganizationrequestrequesttypedef)
@@ -48,16 +52,21 @@ type annotations stubs module
   - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
   - [DisassociateDelegateFromResourceRequestRequestTypeDef](#disassociatedelegatefromresourcerequestrequesttypedef)
   - [DisassociateMemberFromGroupRequestRequestTypeDef](#disassociatememberfromgrouprequestrequesttypedef)
+  - [DnsRecordTypeDef](#dnsrecordtypedef)
   - [DomainTypeDef](#domaintypedef)
   - [FolderConfigurationTypeDef](#folderconfigurationtypedef)
   - [GetAccessControlEffectRequestRequestTypeDef](#getaccesscontroleffectrequestrequesttypedef)
   - [GetAccessControlEffectResponseTypeDef](#getaccesscontroleffectresponsetypedef)
   - [GetDefaultRetentionPolicyRequestRequestTypeDef](#getdefaultretentionpolicyrequestrequesttypedef)
   - [GetDefaultRetentionPolicyResponseTypeDef](#getdefaultretentionpolicyresponsetypedef)
+  - [GetMailDomainRequestRequestTypeDef](#getmaildomainrequestrequesttypedef)
+  - [GetMailDomainResponseTypeDef](#getmaildomainresponsetypedef)
   - [GetMailboxDetailsRequestRequestTypeDef](#getmailboxdetailsrequestrequesttypedef)
   - [GetMailboxDetailsResponseTypeDef](#getmailboxdetailsresponsetypedef)
   - [GetMobileDeviceAccessEffectRequestRequestTypeDef](#getmobiledeviceaccesseffectrequestrequesttypedef)
   - [GetMobileDeviceAccessEffectResponseTypeDef](#getmobiledeviceaccesseffectresponsetypedef)
+  - [GetMobileDeviceAccessOverrideRequestRequestTypeDef](#getmobiledeviceaccessoverriderequestrequesttypedef)
+  - [GetMobileDeviceAccessOverrideResponseTypeDef](#getmobiledeviceaccessoverrideresponsetypedef)
   - [GroupTypeDef](#grouptypedef)
   - [ListAccessControlRulesRequestRequestTypeDef](#listaccesscontrolrulesrequestrequesttypedef)
   - [ListAccessControlRulesResponseTypeDef](#listaccesscontrolrulesresponsetypedef)
@@ -67,10 +76,14 @@ type annotations stubs module
   - [ListGroupMembersResponseTypeDef](#listgroupmembersresponsetypedef)
   - [ListGroupsRequestRequestTypeDef](#listgroupsrequestrequesttypedef)
   - [ListGroupsResponseTypeDef](#listgroupsresponsetypedef)
+  - [ListMailDomainsRequestRequestTypeDef](#listmaildomainsrequestrequesttypedef)
+  - [ListMailDomainsResponseTypeDef](#listmaildomainsresponsetypedef)
   - [ListMailboxExportJobsRequestRequestTypeDef](#listmailboxexportjobsrequestrequesttypedef)
   - [ListMailboxExportJobsResponseTypeDef](#listmailboxexportjobsresponsetypedef)
   - [ListMailboxPermissionsRequestRequestTypeDef](#listmailboxpermissionsrequestrequesttypedef)
   - [ListMailboxPermissionsResponseTypeDef](#listmailboxpermissionsresponsetypedef)
+  - [ListMobileDeviceAccessOverridesRequestRequestTypeDef](#listmobiledeviceaccessoverridesrequestrequesttypedef)
+  - [ListMobileDeviceAccessOverridesResponseTypeDef](#listmobiledeviceaccessoverridesresponsetypedef)
   - [ListMobileDeviceAccessRulesRequestRequestTypeDef](#listmobiledeviceaccessrulesrequestrequesttypedef)
   - [ListMobileDeviceAccessRulesResponseTypeDef](#listmobiledeviceaccessrulesresponsetypedef)
   - [ListOrganizationsRequestRequestTypeDef](#listorganizationsrequestrequesttypedef)
@@ -83,16 +96,21 @@ type annotations stubs module
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
   - [ListUsersResponseTypeDef](#listusersresponsetypedef)
+  - [MailDomainSummaryTypeDef](#maildomainsummarytypedef)
   - [MailboxExportJobTypeDef](#mailboxexportjobtypedef)
   - [MemberTypeDef](#membertypedef)
   - [MobileDeviceAccessMatchedRuleTypeDef](#mobiledeviceaccessmatchedruletypedef)
+  - [MobileDeviceAccessOverrideTypeDef](#mobiledeviceaccessoverridetypedef)
   - [MobileDeviceAccessRuleTypeDef](#mobiledeviceaccessruletypedef)
   - [OrganizationSummaryTypeDef](#organizationsummarytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PermissionTypeDef](#permissiontypedef)
   - [PutAccessControlRuleRequestRequestTypeDef](#putaccesscontrolrulerequestrequesttypedef)
+  - [PutInboundDmarcSettingsRequestRequestTypeDef](#putinbounddmarcsettingsrequestrequesttypedef)
   - [PutMailboxPermissionsRequestRequestTypeDef](#putmailboxpermissionsrequestrequesttypedef)
+  - [PutMobileDeviceAccessOverrideRequestRequestTypeDef](#putmobiledeviceaccessoverriderequestrequesttypedef)
   - [PutRetentionPolicyRequestRequestTypeDef](#putretentionpolicyrequestrequesttypedef)
+  - [RegisterMailDomainRequestRequestTypeDef](#registermaildomainrequestrequesttypedef)
   - [RegisterToWorkMailRequestRequestTypeDef](#registertoworkmailrequestrequesttypedef)
   - [ResetPasswordRequestRequestTypeDef](#resetpasswordrequestrequesttypedef)
   - [ResourceTypeDef](#resourcetypedef)
@@ -102,6 +120,7 @@ type annotations stubs module
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateDefaultMailDomainRequestRequestTypeDef](#updatedefaultmaildomainrequestrequesttypedef)
   - [UpdateMailboxQuotaRequestRequestTypeDef](#updatemailboxquotarequestrequesttypedef)
   - [UpdateMobileDeviceAccessRuleRequestRequestTypeDef](#updatemobiledeviceaccessrulerequestrequesttypedef)
   - [UpdatePrimaryEmailAddressRequestRequestTypeDef](#updateprimaryemailaddressrequestrequesttypedef)
@@ -229,14 +248,14 @@ Optional fields:
 
 - `ClientToken`: `str`
 - `Description`: `str`
-- `DeviceTypes`: `List`\[`str`\]
-- `NotDeviceTypes`: `List`\[`str`\]
-- `DeviceModels`: `List`\[`str`\]
-- `NotDeviceModels`: `List`\[`str`\]
-- `DeviceOperatingSystems`: `List`\[`str`\]
-- `NotDeviceOperatingSystems`: `List`\[`str`\]
-- `DeviceUserAgents`: `List`\[`str`\]
-- `NotDeviceUserAgents`: `List`\[`str`\]
+- `DeviceTypes`: `Sequence`\[`str`\]
+- `NotDeviceTypes`: `Sequence`\[`str`\]
+- `DeviceModels`: `Sequence`\[`str`\]
+- `NotDeviceModels`: `Sequence`\[`str`\]
+- `DeviceOperatingSystems`: `Sequence`\[`str`\]
+- `NotDeviceOperatingSystems`: `Sequence`\[`str`\]
+- `DeviceUserAgents`: `Sequence`\[`str`\]
+- `NotDeviceUserAgents`: `Sequence`\[`str`\]
 
 ## CreateMobileDeviceAccessRuleResponseTypeDef
 
@@ -264,7 +283,7 @@ Optional fields:
 
 - `DirectoryId`: `str`
 - `ClientToken`: `str`
-- `Domains`: `List`\[[DomainTypeDef](./type_defs.md#domaintypedef)\]
+- `Domains`: `Sequence`\[[DomainTypeDef](./type_defs.md#domaintypedef)\]
 - `KmsKeyArn`: `str`
 - `EnableInteroperability`: `bool`
 
@@ -386,6 +405,18 @@ Required fields:
 - `EntityId`: `str`
 - `GranteeId`: `str`
 
+## DeleteMobileDeviceAccessOverrideRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeleteMobileDeviceAccessOverrideRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `UserId`: `str`
+- `DeviceId`: `str`
+
 ## DeleteMobileDeviceAccessRuleRequestRequestTypeDef
 
 ```python
@@ -469,6 +500,17 @@ Required fields:
 - `OrganizationId`: `str`
 - `EntityId`: `str`
 
+## DeregisterMailDomainRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeregisterMailDomainRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `DomainName`: `str`
+
 ## DescribeGroupRequestRequestTypeDef
 
 ```python
@@ -494,6 +536,28 @@ Required fields:
 - `State`: [EntityStateType](./literals.md#entitystatetype)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeInboundDmarcSettingsRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DescribeInboundDmarcSettingsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+
+## DescribeInboundDmarcSettingsResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DescribeInboundDmarcSettingsResponseTypeDef
+```
+
+Required fields:
+
+- `Enforced`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -646,6 +710,18 @@ Required fields:
 - `GroupId`: `str`
 - `MemberId`: `str`
 
+## DnsRecordTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DnsRecordTypeDef
+```
+
+Optional fields:
+
+- `Type`: `str`
+- `Hostname`: `str`
+- `Value`: `str`
+
 ## DomainTypeDef
 
 ```python
@@ -725,6 +801,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetMailDomainRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import GetMailDomainRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `DomainName`: `str`
+
+## GetMailDomainResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import GetMailDomainResponseTypeDef
+```
+
+Required fields:
+
+- `Records`: `List`\[[DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef)\]
+- `IsTestDomain`: `bool`
+- `IsDefault`: `bool`
+- `OwnershipVerificationStatus`:
+  [DnsRecordVerificationStatusType](./literals.md#dnsrecordverificationstatustype)
+- `DkimVerificationStatus`:
+  [DnsRecordVerificationStatusType](./literals.md#dnsrecordverificationstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetMailboxDetailsRequestRequestTypeDef
 
 ```python
@@ -778,6 +883,36 @@ Required fields:
   [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
 - `MatchedRules`:
   `List`\[[MobileDeviceAccessMatchedRuleTypeDef](./type_defs.md#mobiledeviceaccessmatchedruletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetMobileDeviceAccessOverrideRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessOverrideRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `UserId`: `str`
+- `DeviceId`: `str`
+
+## GetMobileDeviceAccessOverrideResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessOverrideResponseTypeDef
+```
+
+Required fields:
+
+- `UserId`: `str`
+- `DeviceId`: `str`
+- `Effect`:
+  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
+- `Description`: `str`
+- `DateCreated`: `datetime`
+- `DateModified`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -905,6 +1040,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListMailDomainsRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListMailDomainsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListMailDomainsResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListMailDomainsResponseTypeDef
+```
+
+Required fields:
+
+- `MailDomains`:
+  `List`\[[MailDomainSummaryTypeDef](./type_defs.md#maildomainsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListMailboxExportJobsRequestRequestTypeDef
 
 ```python
@@ -960,6 +1124,37 @@ Required fields:
 
 - `Permissions`:
   `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListMobileDeviceAccessOverridesRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessOverridesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+
+Optional fields:
+
+- `UserId`: `str`
+- `DeviceId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListMobileDeviceAccessOverridesResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessOverridesResponseTypeDef
+```
+
+Required fields:
+
+- `Overrides`:
+  `List`\[[MobileDeviceAccessOverrideTypeDef](./type_defs.md#mobiledeviceaccessoverridetypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1119,6 +1314,17 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## MailDomainSummaryTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import MailDomainSummaryTypeDef
+```
+
+Optional fields:
+
+- `DomainName`: `str`
+- `DefaultDomain`: `bool`
+
 ## MailboxExportJobTypeDef
 
 ```python
@@ -1162,6 +1368,22 @@ Optional fields:
 
 - `MobileDeviceAccessRuleId`: `str`
 - `Name`: `str`
+
+## MobileDeviceAccessOverrideTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import MobileDeviceAccessOverrideTypeDef
+```
+
+Optional fields:
+
+- `UserId`: `str`
+- `DeviceId`: `str`
+- `Effect`:
+  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
+- `Description`: `str`
+- `DateCreated`: `datetime`
+- `DateModified`: `datetime`
 
 ## MobileDeviceAccessRuleTypeDef
 
@@ -1242,12 +1464,23 @@ Required fields:
 
 Optional fields:
 
-- `IpRanges`: `List`\[`str`\]
-- `NotIpRanges`: `List`\[`str`\]
-- `Actions`: `List`\[`str`\]
-- `NotActions`: `List`\[`str`\]
-- `UserIds`: `List`\[`str`\]
-- `NotUserIds`: `List`\[`str`\]
+- `IpRanges`: `Sequence`\[`str`\]
+- `NotIpRanges`: `Sequence`\[`str`\]
+- `Actions`: `Sequence`\[`str`\]
+- `NotActions`: `Sequence`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
+- `NotUserIds`: `Sequence`\[`str`\]
+
+## PutInboundDmarcSettingsRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import PutInboundDmarcSettingsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `Enforced`: `bool`
 
 ## PutMailboxPermissionsRequestRequestTypeDef
 
@@ -1261,7 +1494,25 @@ Required fields:
 - `EntityId`: `str`
 - `GranteeId`: `str`
 - `PermissionValues`:
-  `List`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+
+## PutMobileDeviceAccessOverrideRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import PutMobileDeviceAccessOverrideRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `UserId`: `str`
+- `DeviceId`: `str`
+- `Effect`:
+  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
+
+Optional fields:
+
+- `Description`: `str`
 
 ## PutRetentionPolicyRequestRequestTypeDef
 
@@ -1274,12 +1525,27 @@ Required fields:
 - `OrganizationId`: `str`
 - `Name`: `str`
 - `FolderConfigurations`:
-  `List`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
+  `Sequence`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
 
 Optional fields:
 
 - `Id`: `str`
 - `Description`: `str`
+
+## RegisterMailDomainRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import RegisterMailDomainRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `DomainName`: `str`
+
+Optional fields:
+
+- `ClientToken`: `str`
 
 ## RegisterToWorkMailRequestRequestTypeDef
 
@@ -1376,7 +1642,7 @@ from mypy_boto3_workmail.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1398,7 +1664,18 @@ from mypy_boto3_workmail.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+
+## UpdateDefaultMailDomainRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import UpdateDefaultMailDomainRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `DomainName`: `str`
 
 ## UpdateMailboxQuotaRequestRequestTypeDef
 
@@ -1429,14 +1706,14 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `DeviceTypes`: `List`\[`str`\]
-- `NotDeviceTypes`: `List`\[`str`\]
-- `DeviceModels`: `List`\[`str`\]
-- `NotDeviceModels`: `List`\[`str`\]
-- `DeviceOperatingSystems`: `List`\[`str`\]
-- `NotDeviceOperatingSystems`: `List`\[`str`\]
-- `DeviceUserAgents`: `List`\[`str`\]
-- `NotDeviceUserAgents`: `List`\[`str`\]
+- `DeviceTypes`: `Sequence`\[`str`\]
+- `NotDeviceTypes`: `Sequence`\[`str`\]
+- `DeviceModels`: `Sequence`\[`str`\]
+- `NotDeviceModels`: `Sequence`\[`str`\]
+- `DeviceOperatingSystems`: `Sequence`\[`str`\]
+- `NotDeviceOperatingSystems`: `Sequence`\[`str`\]
+- `DeviceUserAgents`: `Sequence`\[`str`\]
+- `NotDeviceUserAgents`: `Sequence`\[`str`\]
 
 ## UpdatePrimaryEmailAddressRequestRequestTypeDef
 

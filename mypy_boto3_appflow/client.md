@@ -103,7 +103,8 @@ Returns `bool`.
 
 ### create_connector_profile
 
-Creates a new connector profile associated with your AWS account.
+Creates a new connector profile associated with your Amazon Web Services
+account.
 
 Type annotations for `boto3.client("appflow").create_connector_profile` method.
 
@@ -149,12 +150,12 @@ Keyword-only arguments:
   [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
   *(required)*
 - `destinationFlowConfigList`:
-  `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
+  `Sequence`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
   *(required)*
-- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\] *(required)*
+- `tasks`: `Sequence`\[[TaskTypeDef](./type_defs.md#tasktypedef)\] *(required)*
 - `description`: `str`
 - `kmsArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
 
@@ -235,7 +236,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `connectorProfileNames`: `List`\[`str`\]
+- `connectorProfileNames`: `Sequence`\[`str`\]
 - `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -259,7 +260,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `connectorTypes`:
-  `List`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
+  `Sequence`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
 - `nextToken`: `str`
 
 Returns
@@ -318,7 +319,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -434,7 +435,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -453,7 +454,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -498,12 +499,13 @@ Keyword-only arguments:
 - `flowName`: `str` *(required)*
 - `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
   *(required)*
-- `destinationFlowConfigList`:
-  `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
-  *(required)*
-- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\] *(required)*
-- `description`: `str`
 - `sourceFlowConfig`:
   [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
+  *(required)*
+- `destinationFlowConfigList`:
+  `Sequence`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
+  *(required)*
+- `tasks`: `Sequence`\[[TaskTypeDef](./type_defs.md#tasktypedef)\] *(required)*
+- `description`: `str`
 
 Returns [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef).

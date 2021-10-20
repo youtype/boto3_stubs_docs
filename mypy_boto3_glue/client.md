@@ -17,6 +17,7 @@ type annotations stubs module
     - [batch_delete_partition](#batch_delete_partition)
     - [batch_delete_table](#batch_delete_table)
     - [batch_delete_table_version](#batch_delete_table_version)
+    - [batch_get_blueprints](#batch_get_blueprints)
     - [batch_get_crawlers](#batch_get_crawlers)
     - [batch_get_dev_endpoints](#batch_get_dev_endpoints)
     - [batch_get_jobs](#batch_get_jobs)
@@ -28,6 +29,7 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [cancel_ml_task_run](#cancel_ml_task_run)
     - [check_schema_version_validity](#check_schema_version_validity)
+    - [create_blueprint](#create_blueprint)
     - [create_classifier](#create_classifier)
     - [create_connection](#create_connection)
     - [create_crawler](#create_crawler)
@@ -45,6 +47,7 @@ type annotations stubs module
     - [create_trigger](#create_trigger)
     - [create_user_defined_function](#create_user_defined_function)
     - [create_workflow](#create_workflow)
+    - [delete_blueprint](#delete_blueprint)
     - [delete_classifier](#delete_classifier)
     - [delete_column_statistics_for_partition](#delete_column_statistics_for_partition)
     - [delete_column_statistics_for_table](#delete_column_statistics_for_table)
@@ -67,6 +70,9 @@ type annotations stubs module
     - [delete_user_defined_function](#delete_user_defined_function)
     - [delete_workflow](#delete_workflow)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_blueprint](#get_blueprint)
+    - [get_blueprint_run](#get_blueprint_run)
+    - [get_blueprint_runs](#get_blueprint_runs)
     - [get_catalog_import_status](#get_catalog_import_status)
     - [get_classifier](#get_classifier)
     - [get_classifiers](#get_classifiers)
@@ -120,6 +126,7 @@ type annotations stubs module
     - [get_workflow_run_properties](#get_workflow_run_properties)
     - [get_workflow_runs](#get_workflow_runs)
     - [import_catalog_to_glue](#import_catalog_to_glue)
+    - [list_blueprints](#list_blueprints)
     - [list_crawlers](#list_crawlers)
     - [list_dev_endpoints](#list_dev_endpoints)
     - [list_jobs](#list_jobs)
@@ -139,6 +146,7 @@ type annotations stubs module
     - [reset_job_bookmark](#reset_job_bookmark)
     - [resume_workflow_run](#resume_workflow_run)
     - [search_tables](#search_tables)
+    - [start_blueprint_run](#start_blueprint_run)
     - [start_crawler](#start_crawler)
     - [start_crawler_schedule](#start_crawler_schedule)
     - [start_export_labels_task_run](#start_export_labels_task_run)
@@ -154,6 +162,7 @@ type annotations stubs module
     - [stop_workflow_run](#stop_workflow_run)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_blueprint](#update_blueprint)
     - [update_classifier](#update_classifier)
     - [update_column_statistics_for_partition](#update_column_statistics_for_partition)
     - [update_column_statistics_for_table](#update_column_statistics_for_table)
@@ -216,6 +225,7 @@ Exceptions:
 - `Exceptions.EntityNotFoundException`
 - `Exceptions.GlueEncryptionException`
 - `Exceptions.IdempotentParameterMismatchException`
+- `Exceptions.IllegalBlueprintStateException`
 - `Exceptions.IllegalWorkflowStateException`
 - `Exceptions.InternalServiceException`
 - `Exceptions.InvalidInputException`
@@ -259,7 +269,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `PartitionInputList`:
-  `List`\[[PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)\]
+  `Sequence`\[[PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -280,7 +290,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConnectionNameList`: `List`\[`str`\] *(required)*
+- `ConnectionNameList`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns
@@ -303,7 +313,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `PartitionsToDelete`:
-  `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
+  `Sequence`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -325,7 +335,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
-- `TablesToDelete`: `List`\[`str`\] *(required)*
+- `TablesToDelete`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns
@@ -347,11 +357,32 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `VersionIds`: `List`\[`str`\] *(required)*
+- `VersionIds`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns
 [BatchDeleteTableVersionResponseTypeDef](./type_defs.md#batchdeletetableversionresponsetypedef).
+
+### batch_get_blueprints
+
+Retrieves information about a list of blueprints.
+
+Type annotations for `boto3.client("glue").batch_get_blueprints` method.
+
+Boto3 documentation:
+[Glue.Client.batch_get_blueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_blueprints)
+
+Arguments mapping described in
+[BatchGetBlueprintsRequestRequestTypeDef](./type_defs.md#batchgetblueprintsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Names`: `Sequence`\[`str`\] *(required)*
+- `IncludeBlueprint`: `bool`
+- `IncludeParameterSpec`: `bool`
+
+Returns
+[BatchGetBlueprintsResponseTypeDef](./type_defs.md#batchgetblueprintsresponsetypedef).
 
 ### batch_get_crawlers
 
@@ -367,7 +398,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CrawlerNames`: `List`\[`str`\] *(required)*
+- `CrawlerNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetCrawlersResponseTypeDef](./type_defs.md#batchgetcrawlersresponsetypedef).
@@ -387,7 +418,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DevEndpointNames`: `List`\[`str`\] *(required)*
+- `DevEndpointNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetDevEndpointsResponseTypeDef](./type_defs.md#batchgetdevendpointsresponsetypedef).
@@ -406,7 +437,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `JobNames`: `List`\[`str`\] *(required)*
+- `JobNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetJobsResponseTypeDef](./type_defs.md#batchgetjobsresponsetypedef).
@@ -428,7 +459,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `PartitionsToGet`:
-  `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
+  `Sequence`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -449,7 +480,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TriggerNames`: `List`\[`str`\] *(required)*
+- `TriggerNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetTriggersResponseTypeDef](./type_defs.md#batchgettriggersresponsetypedef).
@@ -468,7 +499,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\] *(required)*
+- `Names`: `Sequence`\[`str`\] *(required)*
 - `IncludeGraph`: `bool`
 
 Returns
@@ -489,7 +520,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `JobName`: `str` *(required)*
-- `JobRunIds`: `List`\[`str`\] *(required)*
+- `JobRunIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchStopJobRunResponseTypeDef](./type_defs.md#batchstopjobrunresponsetypedef).
@@ -511,7 +542,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `Entries`:
-  `List`\[[BatchUpdatePartitionRequestEntryTypeDef](./type_defs.md#batchupdatepartitionrequestentrytypedef)\]
+  `Sequence`\[[BatchUpdatePartitionRequestEntryTypeDef](./type_defs.md#batchupdatepartitionrequestentrytypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -574,6 +605,28 @@ Keyword-only arguments:
 Returns
 [CheckSchemaVersionValidityResponseTypeDef](./type_defs.md#checkschemaversionvalidityresponsetypedef).
 
+### create_blueprint
+
+Registers a blueprint with Glue.
+
+Type annotations for `boto3.client("glue").create_blueprint` method.
+
+Boto3 documentation:
+[Glue.Client.create_blueprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_blueprint)
+
+Arguments mapping described in
+[CreateBlueprintRequestRequestTypeDef](./type_defs.md#createblueprintrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `BlueprintLocation`: `str` *(required)*
+- `Description`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+Returns
+[CreateBlueprintResponseTypeDef](./type_defs.md#createblueprintresponsetypedef).
+
 ### create_classifier
 
 Creates a classifier in the user's account.
@@ -616,6 +669,7 @@ Keyword-only arguments:
 - `ConnectionInput`:
   [ConnectionInputTypeDef](./type_defs.md#connectioninputtypedef) *(required)*
 - `CatalogId`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -641,7 +695,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str`
 - `Description`: `str`
 - `Schedule`: `str`
-- `Classifiers`: `List`\[`str`\]
+- `Classifiers`: `Sequence`\[`str`\]
 - `TablePrefix`: `str`
 - `SchemaChangePolicy`:
   [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
@@ -650,7 +704,7 @@ Keyword-only arguments:
   [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -690,10 +744,10 @@ Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `SubnetId`: `str`
 - `PublicKey`: `str`
-- `PublicKeys`: `List`\[`str`\]
+- `PublicKeys`: `Sequence`\[`str`\]
 - `NumberOfNodes`: `int`
 - `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 - `GlueVersion`: `str`
@@ -701,8 +755,8 @@ Keyword-only arguments:
 - `ExtraPythonLibsS3Path`: `str`
 - `ExtraJarsS3Path`: `str`
 - `SecurityConfiguration`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `Arguments`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `Arguments`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDevEndpointResponseTypeDef](./type_defs.md#createdevendpointresponsetypedef).
@@ -728,8 +782,8 @@ Keyword-only arguments:
 - `LogUri`: `str`
 - `ExecutionProperty`:
   [ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef)
-- `DefaultArguments`: `Dict`\[`str`, `str`\]
-- `NonOverridableArguments`: `Dict`\[`str`, `str`\]
+- `DefaultArguments`: `Mapping`\[`str`, `str`\]
+- `NonOverridableArguments`: `Mapping`\[`str`, `str`\]
 - `Connections`:
   [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
 - `MaxRetries`: `int`
@@ -737,7 +791,7 @@ Keyword-only arguments:
 - `Timeout`: `int`
 - `MaxCapacity`: `float`
 - `SecurityConfiguration`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `NotificationProperty`:
   [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
 - `GlueVersion`: `str`
@@ -762,7 +816,8 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `InputRecordTables`:
-  `List`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\] *(required)*
+  `Sequence`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\]
+  *(required)*
 - `Parameters`:
   [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
   *(required)*
@@ -774,7 +829,7 @@ Keyword-only arguments:
 - `NumberOfWorkers`: `int`
 - `Timeout`: `int`
 - `MaxRetries`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `TransformEncryption`:
   [TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef)
 
@@ -841,7 +896,7 @@ Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
@@ -865,7 +920,7 @@ Keyword-only arguments:
 - `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
 - `Compatibility`: [CompatibilityType](./literals.md#compatibilitytype)
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `SchemaDefinition`: `str`
 
 Returns
@@ -885,8 +940,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DagNodes`: `List`\[[CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)\]
-- `DagEdges`: `List`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
+- `DagNodes`:
+  `Sequence`\[[CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)\]
+- `DagEdges`:
+  `Sequence`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
 - `Language`: [LanguageType](./literals.md#languagetype)
 
 Returns
@@ -934,7 +991,7 @@ Keyword-only arguments:
   *(required)*
 - `CatalogId`: `str`
 - `PartitionIndexes`:
-  `List`\[[PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)\]
+  `Sequence`\[[PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -954,14 +1011,16 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Type`: [TriggerTypeType](./literals.md#triggertypetype) *(required)*
-- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
   *(required)*
 - `WorkflowName`: `str`
 - `Schedule`: `str`
 - `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
 - `Description`: `str`
 - `StartOnCreation`: `bool`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `EventBatchingCondition`:
+  [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
 
 Returns
 [CreateTriggerResponseTypeDef](./type_defs.md#createtriggerresponsetypedef).
@@ -1005,12 +1064,31 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `DefaultRunProperties`: `Dict`\[`str`, `str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `DefaultRunProperties`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `MaxConcurrentRuns`: `int`
 
 Returns
 [CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef).
+
+### delete_blueprint
+
+Deletes an existing blueprint.
+
+Type annotations for `boto3.client("glue").delete_blueprint` method.
+
+Boto3 documentation:
+[Glue.Client.delete_blueprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_blueprint)
+
+Arguments mapping described in
+[DeleteBlueprintRequestRequestTypeDef](./type_defs.md#deleteblueprintrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[DeleteBlueprintResponseTypeDef](./type_defs.md#deleteblueprintresponsetypedef).
 
 ### delete_classifier
 
@@ -1047,7 +1125,7 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionValues`: `List`\[`str`\] *(required)*
+- `PartitionValues`: `Sequence`\[`str`\] *(required)*
 - `ColumnName`: `str` *(required)*
 - `CatalogId`: `str`
 
@@ -1203,7 +1281,7 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionValues`: `List`\[`str`\] *(required)*
+- `PartitionValues`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1439,11 +1517,73 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+### get_blueprint
+
+Retrieves the details of a blueprint.
+
+Type annotations for `boto3.client("glue").get_blueprint` method.
+
+Boto3 documentation:
+[Glue.Client.get_blueprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_blueprint)
+
+Arguments mapping described in
+[GetBlueprintRequestRequestTypeDef](./type_defs.md#getblueprintrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `IncludeBlueprint`: `bool`
+- `IncludeParameterSpec`: `bool`
+
+Returns
+[GetBlueprintResponseTypeDef](./type_defs.md#getblueprintresponsetypedef).
+
+### get_blueprint_run
+
+Retrieves the details of a blueprint run.
+
+Type annotations for `boto3.client("glue").get_blueprint_run` method.
+
+Boto3 documentation:
+[Glue.Client.get_blueprint_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_blueprint_run)
+
+Arguments mapping described in
+[GetBlueprintRunRequestRequestTypeDef](./type_defs.md#getblueprintrunrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `BlueprintName`: `str` *(required)*
+- `RunId`: `str` *(required)*
+
+Returns
+[GetBlueprintRunResponseTypeDef](./type_defs.md#getblueprintrunresponsetypedef).
+
+### get_blueprint_runs
+
+Retrieves the details of blueprint runs for a specified blueprint.
+
+Type annotations for `boto3.client("glue").get_blueprint_runs` method.
+
+Boto3 documentation:
+[Glue.Client.get_blueprint_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_blueprint_runs)
+
+Arguments mapping described in
+[GetBlueprintRunsRequestRequestTypeDef](./type_defs.md#getblueprintrunsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `BlueprintName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetBlueprintRunsResponseTypeDef](./type_defs.md#getblueprintrunsresponsetypedef).
 
 ### get_catalog_import_status
 
@@ -1520,8 +1660,8 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionValues`: `List`\[`str`\] *(required)*
-- `ColumnNames`: `List`\[`str`\] *(required)*
+- `PartitionValues`: `Sequence`\[`str`\] *(required)*
+- `ColumnNames`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns
@@ -1544,7 +1684,7 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `ColumnNames`: `List`\[`str`\] *(required)*
+- `ColumnNames`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns
@@ -1627,7 +1767,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CrawlerNameList`: `List`\[`str`\]
+- `CrawlerNameList`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1888,7 +2028,8 @@ Keyword-only arguments:
 
 - `Source`: [CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)
   *(required)*
-- `Sinks`: `List`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
+- `Sinks`:
+  `Sequence`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 
 Returns [GetMappingResponseTypeDef](./type_defs.md#getmappingresponsetypedef).
@@ -1998,7 +2139,7 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionValues`: `List`\[`str`\] *(required)*
+- `PartitionValues`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns
@@ -2067,14 +2208,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Mapping`:
-  `List`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
+  `Sequence`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
   *(required)*
 - `Source`: [CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)
   *(required)*
-- `Sinks`: `List`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
+- `Sinks`:
+  `Sequence`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `Language`: [LanguageType](./literals.md#languagetype)
-- `AdditionalPlanOptionsMap`: `Dict`\[`str`, `str`\]
+- `AdditionalPlanOptionsMap`: `Mapping`\[`str`, `str`\]
 
 Returns [GetPlanResponseTypeDef](./type_defs.md#getplanresponsetypedef).
 
@@ -2556,6 +2698,27 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### list_blueprints
+
+Lists all the blueprint names in an account.
+
+Type annotations for `boto3.client("glue").list_blueprints` method.
+
+Boto3 documentation:
+[Glue.Client.list_blueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_blueprints)
+
+Arguments mapping described in
+[ListBlueprintsRequestRequestTypeDef](./type_defs.md#listblueprintsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+Returns
+[ListBlueprintsResponseTypeDef](./type_defs.md#listblueprintsresponsetypedef).
+
 ### list_crawlers
 
 Retrieves the names of all crawler resources in this Amazon Web Services
@@ -2573,7 +2736,7 @@ Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ListCrawlersResponseTypeDef](./type_defs.md#listcrawlersresponsetypedef).
@@ -2595,7 +2758,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ListDevEndpointsResponseTypeDef](./type_defs.md#listdevendpointsresponsetypedef).
@@ -2617,7 +2780,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
@@ -2643,7 +2806,7 @@ Keyword-only arguments:
   [TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef)
 - `Sort`:
   [TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ListMLTransformsResponseTypeDef](./type_defs.md#listmltransformsresponsetypedef).
@@ -2730,7 +2893,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `DependentJobName`: `str`
 - `MaxResults`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ListTriggersResponseTypeDef](./type_defs.md#listtriggersresponsetypedef).
@@ -2843,7 +3006,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RunId`: `str` *(required)*
-- `RunProperties`: `Dict`\[`str`, `str`\] *(required)*
+- `RunProperties`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2867,7 +3030,7 @@ Keyword-only arguments:
   [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
 - `SchemaVersionId`: `str`
 - `MetadataList`:
-  `List`\[[MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)\]
+  `Sequence`\[[MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2958,7 +3121,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RunId`: `str` *(required)*
-- `NodeIds`: `List`\[`str`\] *(required)*
+- `NodeIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [ResumeWorkflowRunResponseTypeDef](./type_defs.md#resumeworkflowrunresponsetypedef).
@@ -2981,16 +3144,37 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[PropertyPredicateTypeDef](./type_defs.md#propertypredicatetypedef)\]
+  `Sequence`\[[PropertyPredicateTypeDef](./type_defs.md#propertypredicatetypedef)\]
 - `SearchText`: `str`
 - `SortCriteria`:
-  `List`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
+  `Sequence`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
 - `MaxResults`: `int`
 - `ResourceShareType`:
   [ResourceShareTypeType](./literals.md#resourcesharetypetype)
 
 Returns
 [SearchTablesResponseTypeDef](./type_defs.md#searchtablesresponsetypedef).
+
+### start_blueprint_run
+
+Starts a new run of the specified blueprint.
+
+Type annotations for `boto3.client("glue").start_blueprint_run` method.
+
+Boto3 documentation:
+[Glue.Client.start_blueprint_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_blueprint_run)
+
+Arguments mapping described in
+[StartBlueprintRunRequestRequestTypeDef](./type_defs.md#startblueprintrunrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `BlueprintName`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `Parameters`: `str`
+
+Returns
+[StartBlueprintRunResponseTypeDef](./type_defs.md#startblueprintrunresponsetypedef).
 
 ### start_crawler
 
@@ -3090,7 +3274,7 @@ Keyword-only arguments:
 
 - `JobName`: `str` *(required)*
 - `JobRunId`: `str`
-- `Arguments`: `Dict`\[`str`, `str`\]
+- `Arguments`: `Mapping`\[`str`, `str`\]
 - `AllocatedCapacity`: `int`
 - `Timeout`: `int`
 - `MaxCapacity`: `float`
@@ -3273,7 +3457,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagsToAdd`: `Dict`\[`str`, `str`\] *(required)*
+- `TagsToAdd`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -3292,9 +3476,30 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagsToRemove`: `List`\[`str`\] *(required)*
+- `TagsToRemove`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### update_blueprint
+
+Updates a registered blueprint.
+
+Type annotations for `boto3.client("glue").update_blueprint` method.
+
+Boto3 documentation:
+[Glue.Client.update_blueprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_blueprint)
+
+Arguments mapping described in
+[UpdateBlueprintRequestRequestTypeDef](./type_defs.md#updateblueprintrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `BlueprintLocation`: `str` *(required)*
+- `Description`: `str`
+
+Returns
+[UpdateBlueprintResponseTypeDef](./type_defs.md#updateblueprintresponsetypedef).
 
 ### update_classifier
 
@@ -3339,9 +3544,9 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionValues`: `List`\[`str`\] *(required)*
+- `PartitionValues`: `Sequence`\[`str`\] *(required)*
 - `ColumnStatisticsList`:
-  `List`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
+  `Sequence`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -3366,7 +3571,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `ColumnStatisticsList`:
-  `List`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
+  `Sequence`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -3414,7 +3619,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Targets`: [CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef)
 - `Schedule`: `str`
-- `Classifiers`: `List`\[`str`\]
+- `Classifiers`: `Sequence`\[`str`\]
 - `TablePrefix`: `str`
 - `SchemaChangePolicy`:
   [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
@@ -3482,13 +3687,13 @@ Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `PublicKey`: `str`
-- `AddPublicKeys`: `List`\[`str`\]
-- `DeletePublicKeys`: `List`\[`str`\]
+- `AddPublicKeys`: `Sequence`\[`str`\]
+- `DeletePublicKeys`: `Sequence`\[`str`\]
 - `CustomLibraries`:
   [DevEndpointCustomLibrariesTypeDef](./type_defs.md#devendpointcustomlibrariestypedef)
 - `UpdateEtlLibraries`: `bool`
-- `DeleteArguments`: `List`\[`str`\]
-- `AddArguments`: `Dict`\[`str`, `str`\]
+- `DeleteArguments`: `Sequence`\[`str`\]
+- `AddArguments`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -3557,7 +3762,7 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionValueList`: `List`\[`str`\] *(required)*
+- `PartitionValueList`: `Sequence`\[`str`\] *(required)*
 - `PartitionInput`:
   [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef) *(required)*
 - `CatalogId`: `str`
@@ -3692,7 +3897,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `DefaultRunProperties`: `Dict`\[`str`, `str`\]
+- `DefaultRunProperties`: `Mapping`\[`str`, `str`\]
 - `MaxConcurrentRuns`: `int`
 
 Returns

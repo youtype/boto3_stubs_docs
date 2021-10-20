@@ -31,13 +31,13 @@ Boto3 documentation:
 
 Arguments for `DescribeBackupsPaginator.paginate` method:
 
-- `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Filters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `SortAscending`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBackupsPaginator.paginate` returns
-`Iterator`\[[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef)\].
+`_PageIterator`\[[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef)\].
 
 ## DescribeClustersPaginator
 
@@ -58,12 +58,12 @@ Boto3 documentation:
 
 Arguments for `DescribeClustersPaginator.paginate` method:
 
-- `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Filters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClustersPaginator.paginate` returns
-`Iterator`\[[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef)\].
+`_PageIterator`\[[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef)\].
 
 ## ListTagsPaginator
 
@@ -88,4 +88,4 @@ Arguments for `ListTagsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsPaginator.paginate` returns
-`Iterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].
+`_PageIterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].

@@ -11,6 +11,7 @@ type annotations stubs module
   - [AggregationConfigTypeDef](#aggregationconfigtypedef)
   - [AmplitudeConnectorProfileCredentialsTypeDef](#amplitudeconnectorprofilecredentialstypedef)
   - [AmplitudeSourcePropertiesTypeDef](#amplitudesourcepropertiestypedef)
+  - [BasicAuthCredentialsTypeDef](#basicauthcredentialstypedef)
   - [ConnectorConfigurationTypeDef](#connectorconfigurationtypedef)
   - [ConnectorEntityFieldTypeDef](#connectorentityfieldtypedef)
   - [ConnectorEntityTypeDef](#connectorentitytypedef)
@@ -74,14 +75,21 @@ type annotations stubs module
   - [MarketoConnectorProfileCredentialsTypeDef](#marketoconnectorprofilecredentialstypedef)
   - [MarketoConnectorProfilePropertiesTypeDef](#marketoconnectorprofilepropertiestypedef)
   - [MarketoSourcePropertiesTypeDef](#marketosourcepropertiestypedef)
+  - [OAuthCredentialsTypeDef](#oauthcredentialstypedef)
+  - [OAuthPropertiesTypeDef](#oauthpropertiestypedef)
   - [PrefixConfigTypeDef](#prefixconfigtypedef)
+  - [PrivateConnectionProvisioningStateTypeDef](#privateconnectionprovisioningstatetypedef)
   - [RedshiftConnectorProfileCredentialsTypeDef](#redshiftconnectorprofilecredentialstypedef)
   - [RedshiftConnectorProfilePropertiesTypeDef](#redshiftconnectorprofilepropertiestypedef)
   - [RedshiftDestinationPropertiesTypeDef](#redshiftdestinationpropertiestypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3DestinationPropertiesTypeDef](#s3destinationpropertiestypedef)
+  - [S3InputFormatConfigTypeDef](#s3inputformatconfigtypedef)
   - [S3OutputFormatConfigTypeDef](#s3outputformatconfigtypedef)
   - [S3SourcePropertiesTypeDef](#s3sourcepropertiestypedef)
+  - [SAPODataConnectorProfileCredentialsTypeDef](#sapodataconnectorprofilecredentialstypedef)
+  - [SAPODataConnectorProfilePropertiesTypeDef](#sapodataconnectorprofilepropertiestypedef)
+  - [SAPODataSourcePropertiesTypeDef](#sapodatasourcepropertiestypedef)
   - [SalesforceConnectorProfileCredentialsTypeDef](#salesforceconnectorprofilecredentialstypedef)
   - [SalesforceConnectorProfilePropertiesTypeDef](#salesforceconnectorprofilepropertiestypedef)
   - [SalesforceDestinationPropertiesTypeDef](#salesforcedestinationpropertiestypedef)
@@ -161,6 +169,17 @@ from mypy_boto3_appflow.type_defs import AmplitudeSourcePropertiesTypeDef
 Required fields:
 
 - `object`: `str`
+
+## BasicAuthCredentialsTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import BasicAuthCredentialsTypeDef
+```
+
+Required fields:
+
+- `username`: `str`
+- `password`: `str`
 
 ## ConnectorConfigurationTypeDef
 
@@ -251,6 +270,7 @@ Optional fields:
 - `CustomerProfiles`: `Dict`\[`str`, `Any`\]
 - `Honeycode`:
   [HoneycodeMetadataTypeDef](./type_defs.md#honeycodemetadatatypedef)
+- `SAPOData`: `Dict`\[`str`, `Any`\]
 
 ## ConnectorOAuthRequestTypeDef
 
@@ -298,6 +318,8 @@ Optional fields:
   [VeevaConnectorOperatorType](./literals.md#veevaconnectoroperatortype)
 - `Zendesk`:
   [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
+- `SAPOData`:
+  [SAPODataConnectorOperatorType](./literals.md#sapodataconnectoroperatortype)
 
 ## ConnectorProfileConfigTypeDef
 
@@ -352,6 +374,8 @@ Optional fields:
   [VeevaConnectorProfileCredentialsTypeDef](./type_defs.md#veevaconnectorprofilecredentialstypedef)
 - `Zendesk`:
   [ZendeskConnectorProfileCredentialsTypeDef](./type_defs.md#zendeskconnectorprofilecredentialstypedef)
+- `SAPOData`:
+  [SAPODataConnectorProfileCredentialsTypeDef](./type_defs.md#sapodataconnectorprofilecredentialstypedef)
 
 ## ConnectorProfilePropertiesTypeDef
 
@@ -361,13 +385,13 @@ from mypy_boto3_appflow.type_defs import ConnectorProfilePropertiesTypeDef
 
 Optional fields:
 
-- `Amplitude`: `Dict`\[`str`, `Any`\]
+- `Amplitude`: `Mapping`\[`str`, `Any`\]
 - `Datadog`:
   [DatadogConnectorProfilePropertiesTypeDef](./type_defs.md#datadogconnectorprofilepropertiestypedef)
 - `Dynatrace`:
   [DynatraceConnectorProfilePropertiesTypeDef](./type_defs.md#dynatraceconnectorprofilepropertiestypedef)
-- `GoogleAnalytics`: `Dict`\[`str`, `Any`\]
-- `Honeycode`: `Dict`\[`str`, `Any`\]
+- `GoogleAnalytics`: `Mapping`\[`str`, `Any`\]
+- `Honeycode`: `Mapping`\[`str`, `Any`\]
 - `InforNexus`:
   [InforNexusConnectorProfilePropertiesTypeDef](./type_defs.md#infornexusconnectorprofilepropertiestypedef)
 - `Marketo`:
@@ -378,16 +402,18 @@ Optional fields:
   [SalesforceConnectorProfilePropertiesTypeDef](./type_defs.md#salesforceconnectorprofilepropertiestypedef)
 - `ServiceNow`:
   [ServiceNowConnectorProfilePropertiesTypeDef](./type_defs.md#servicenowconnectorprofilepropertiestypedef)
-- `Singular`: `Dict`\[`str`, `Any`\]
+- `Singular`: `Mapping`\[`str`, `Any`\]
 - `Slack`:
   [SlackConnectorProfilePropertiesTypeDef](./type_defs.md#slackconnectorprofilepropertiestypedef)
 - `Snowflake`:
   [SnowflakeConnectorProfilePropertiesTypeDef](./type_defs.md#snowflakeconnectorprofilepropertiestypedef)
-- `Trendmicro`: `Dict`\[`str`, `Any`\]
+- `Trendmicro`: `Mapping`\[`str`, `Any`\]
 - `Veeva`:
   [VeevaConnectorProfilePropertiesTypeDef](./type_defs.md#veevaconnectorprofilepropertiestypedef)
 - `Zendesk`:
   [ZendeskConnectorProfilePropertiesTypeDef](./type_defs.md#zendeskconnectorprofilepropertiestypedef)
+- `SAPOData`:
+  [SAPODataConnectorProfilePropertiesTypeDef](./type_defs.md#sapodataconnectorprofilepropertiestypedef)
 
 ## ConnectorProfileTypeDef
 
@@ -406,6 +432,8 @@ Optional fields:
   [ConnectorProfilePropertiesTypeDef](./type_defs.md#connectorprofilepropertiestypedef)
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
+- `privateConnectionProvisioningState`:
+  [PrivateConnectionProvisioningStateTypeDef](./type_defs.md#privateconnectionprovisioningstatetypedef)
 
 ## CreateConnectorProfileRequestRequestTypeDef
 
@@ -450,14 +478,14 @@ Required fields:
 - `sourceFlowConfig`:
   [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
 - `destinationFlowConfigList`:
-  `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
-- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
+  `Sequence`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
+- `tasks`: `Sequence`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
 
 Optional fields:
 
 - `description`: `str`
 - `kmsArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateFlowResponseTypeDef
 
@@ -581,7 +609,7 @@ from mypy_boto3_appflow.type_defs import DescribeConnectorProfilesRequestRequest
 
 Optional fields:
 
-- `connectorProfileNames`: `List`\[`str`\]
+- `connectorProfileNames`: `Sequence`\[`str`\]
 - `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -609,7 +637,7 @@ from mypy_boto3_appflow.type_defs import DescribeConnectorsRequestRequestTypeDef
 Optional fields:
 
 - `connectorTypes`:
-  `List`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
+  `Sequence`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
 - `nextToken`: `str`
 
 ## DescribeConnectorsResponseTypeDef
@@ -714,7 +742,7 @@ Optional fields:
   [SnowflakeDestinationPropertiesTypeDef](./type_defs.md#snowflakedestinationpropertiestypedef)
 - `EventBridge`:
   [EventBridgeDestinationPropertiesTypeDef](./type_defs.md#eventbridgedestinationpropertiestypedef)
-- `LookoutMetrics`: `Dict`\[`str`, `Any`\]
+- `LookoutMetrics`: `Mapping`\[`str`, `Any`\]
 - `Upsolver`:
   [UpsolverDestinationPropertiesTypeDef](./type_defs.md#upsolverdestinationpropertiestypedef)
 - `Honeycode`:
@@ -1133,6 +1161,36 @@ Required fields:
 
 - `object`: `str`
 
+## OAuthCredentialsTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import OAuthCredentialsTypeDef
+```
+
+Required fields:
+
+- `clientId`: `str`
+- `clientSecret`: `str`
+
+Optional fields:
+
+- `accessToken`: `str`
+- `refreshToken`: `str`
+- `oAuthRequest`:
+  [ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef)
+
+## OAuthPropertiesTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import OAuthPropertiesTypeDef
+```
+
+Required fields:
+
+- `tokenUrl`: `str`
+- `authCodeUrl`: `str`
+- `oAuthScopes`: `Sequence`\[`str`\]
+
 ## PrefixConfigTypeDef
 
 ```python
@@ -1143,6 +1201,20 @@ Optional fields:
 
 - `prefixType`: [PrefixTypeType](./literals.md#prefixtypetype)
 - `prefixFormat`: [PrefixFormatType](./literals.md#prefixformattype)
+
+## PrivateConnectionProvisioningStateTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import PrivateConnectionProvisioningStateTypeDef
+```
+
+Optional fields:
+
+- `status`:
+  [PrivateConnectionProvisioningStatusType](./literals.md#privateconnectionprovisioningstatustype)
+- `failureMessage`: `str`
+- `failureCause`:
+  [PrivateConnectionProvisioningFailureCauseType](./literals.md#privateconnectionprovisioningfailurecausetype)
 
 ## RedshiftConnectorProfileCredentialsTypeDef
 
@@ -1218,6 +1290,16 @@ Optional fields:
 - `s3OutputFormatConfig`:
   [S3OutputFormatConfigTypeDef](./type_defs.md#s3outputformatconfigtypedef)
 
+## S3InputFormatConfigTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import S3InputFormatConfigTypeDef
+```
+
+Optional fields:
+
+- `s3InputFileType`: [S3InputFileTypeType](./literals.md#s3inputfiletypetype)
+
 ## S3OutputFormatConfigTypeDef
 
 ```python
@@ -1244,6 +1326,51 @@ Required fields:
 Optional fields:
 
 - `bucketPrefix`: `str`
+- `s3InputFormatConfig`:
+  [S3InputFormatConfigTypeDef](./type_defs.md#s3inputformatconfigtypedef)
+
+## SAPODataConnectorProfileCredentialsTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import SAPODataConnectorProfileCredentialsTypeDef
+```
+
+Optional fields:
+
+- `basicAuthCredentials`:
+  [BasicAuthCredentialsTypeDef](./type_defs.md#basicauthcredentialstypedef)
+- `oAuthCredentials`:
+  [OAuthCredentialsTypeDef](./type_defs.md#oauthcredentialstypedef)
+
+## SAPODataConnectorProfilePropertiesTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import SAPODataConnectorProfilePropertiesTypeDef
+```
+
+Required fields:
+
+- `applicationHostUrl`: `str`
+- `applicationServicePath`: `str`
+- `portNumber`: `int`
+- `clientNumber`: `str`
+
+Optional fields:
+
+- `logonLanguage`: `str`
+- `privateLinkServiceName`: `str`
+- `oAuthProperties`:
+  [OAuthPropertiesTypeDef](./type_defs.md#oauthpropertiestypedef)
+
+## SAPODataSourcePropertiesTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import SAPODataSourcePropertiesTypeDef
+```
+
+Optional fields:
+
+- `objectPath`: `str`
 
 ## SalesforceConnectorProfileCredentialsTypeDef
 
@@ -1282,7 +1409,7 @@ Required fields:
 
 Optional fields:
 
-- `idFieldNames`: `List`\[`str`\]
+- `idFieldNames`: `Sequence`\[`str`\]
 - `errorHandlingConfig`:
   [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
 - `writeOperationType`:
@@ -1522,6 +1649,8 @@ Optional fields:
   [VeevaSourcePropertiesTypeDef](./type_defs.md#veevasourcepropertiestypedef)
 - `Zendesk`:
   [ZendeskSourcePropertiesTypeDef](./type_defs.md#zendesksourcepropertiestypedef)
+- `SAPOData`:
+  [SAPODataSourcePropertiesTypeDef](./type_defs.md#sapodatasourcepropertiestypedef)
 
 ## SourceFieldPropertiesTypeDef
 
@@ -1618,7 +1747,7 @@ from mypy_boto3_appflow.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TaskTypeDef
 
@@ -1628,7 +1757,7 @@ from mypy_boto3_appflow.type_defs import TaskTypeDef
 
 Required fields:
 
-- `sourceFields`: `List`\[`str`\]
+- `sourceFields`: `Sequence`\[`str`\]
 - `taskType`: [TaskTypeType](./literals.md#tasktypetype)
 
 Optional fields:
@@ -1637,7 +1766,7 @@ Optional fields:
   [ConnectorOperatorTypeDef](./type_defs.md#connectoroperatortypedef)
 - `destinationField`: `str`
 - `taskProperties`:
-  `Dict`\[[OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype),
+  `Mapping`\[[OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype),
   `str`\]
 
 ## TrendmicroConnectorProfileCredentialsTypeDef
@@ -1695,7 +1824,7 @@ from mypy_boto3_appflow.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateConnectorProfileRequestRequestTypeDef
 
@@ -1732,15 +1861,15 @@ Required fields:
 
 - `flowName`: `str`
 - `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
+- `sourceFlowConfig`:
+  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
 - `destinationFlowConfigList`:
-  `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
-- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
+  `Sequence`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
+- `tasks`: `Sequence`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
 
 Optional fields:
 
 - `description`: `str`
-- `sourceFlowConfig`:
-  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
 
 ## UpdateFlowResponseTypeDef
 
@@ -1817,6 +1946,13 @@ Required fields:
 
 - `object`: `str`
 
+Optional fields:
+
+- `documentType`: `str`
+- `includeSourceFiles`: `bool`
+- `includeRenditions`: `bool`
+- `includeAllVersions`: `bool`
+
 ## ZendeskConnectorProfileCredentialsTypeDef
 
 ```python
@@ -1856,7 +1992,7 @@ Required fields:
 
 Optional fields:
 
-- `idFieldNames`: `List`\[`str`\]
+- `idFieldNames`: `Sequence`\[`str`\]
 - `errorHandlingConfig`:
   [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
 - `writeOperationType`:

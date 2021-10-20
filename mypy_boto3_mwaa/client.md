@@ -131,7 +131,7 @@ Keyword-only arguments:
   [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
   *(required)*
 - `SourceBucketArn`: `str` *(required)*
-- `AirflowConfigurationOptions`: `Dict`\[`str`, `str`\]
+- `AirflowConfigurationOptions`: `Mapping`\[`str`, `str`\]
 - `AirflowVersion`: `str`
 - `EnvironmentClass`: `str`
 - `KmsKey`: `str`
@@ -144,7 +144,7 @@ Keyword-only arguments:
 - `RequirementsS3ObjectVersion`: `str`
 - `RequirementsS3Path`: `str`
 - `Schedulers`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `WebserverAccessMode`:
   [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
 - `WeeklyMaintenanceWindowStart`: `str`
@@ -202,7 +202,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -284,7 +284,7 @@ Keyword-only arguments:
 
 - `EnvironmentName`: `str` *(required)*
 - `MetricData`:
-  `List`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
+  `Sequence`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -305,7 +305,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -325,7 +325,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -344,7 +344,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
-- `AirflowConfigurationOptions`: `Dict`\[`str`, `str`\]
+- `AirflowConfigurationOptions`: `Mapping`\[`str`, `str`\]
 - `AirflowVersion`: `str`
 - `DagS3Path`: `str`
 - `EnvironmentClass`: `str`

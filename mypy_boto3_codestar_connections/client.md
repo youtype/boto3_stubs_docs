@@ -111,7 +111,7 @@ Keyword-only arguments:
 
 - `ConnectionName`: `str` *(required)*
 - `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `HostArn`: `str`
 
 Returns
@@ -138,7 +138,7 @@ Keyword-only arguments:
 - `ProviderEndpoint`: `str` *(required)*
 - `VpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateHostOutputTypeDef](./type_defs.md#createhostoutputtypedef).
 
@@ -192,7 +192,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -317,7 +317,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -337,7 +337,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

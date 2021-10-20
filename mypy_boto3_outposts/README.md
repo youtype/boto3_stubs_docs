@@ -15,6 +15,7 @@ pip install mypy-boto3-outposts
   - [OutpostsClient](#outpostsclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## OutpostsClient
@@ -31,6 +32,7 @@ from mypy_boto3_outposts.client import OutpostsClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [create_order](./client.md#create_order)
 - [create_outpost](./client.md#create_outpost)
 - [delete_outpost](./client.md#delete_outpost)
 - [delete_site](./client.md#delete_site)
@@ -56,6 +58,21 @@ OutpostsClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - ValidationException
 
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_outposts.literals import OrderStatusType, ...
+```
+
+- [OrderStatusType](./literals.md#orderstatustype)
+- [PaymentOptionType](./literals.md#paymentoptiontype)
+- [PaymentTermType](./literals.md#paymenttermtype)
+- [ServiceName](./literals.md#servicename)
+
 ## Typed dictionaries
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and
@@ -64,9 +81,11 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_outposts.type_defs import CreateOutpostInputRequestTypeDef, ...
+from mypy_boto3_outposts.type_defs import CreateOrderInputRequestTypeDef, ...
 ```
 
+- [CreateOrderInputRequestTypeDef](./type_defs.md#createorderinputrequesttypedef)
+- [CreateOrderOutputTypeDef](./type_defs.md#createorderoutputtypedef)
 - [CreateOutpostInputRequestTypeDef](./type_defs.md#createoutpostinputrequesttypedef)
 - [CreateOutpostOutputTypeDef](./type_defs.md#createoutpostoutputtypedef)
 - [DeleteOutpostInputRequestTypeDef](./type_defs.md#deleteoutpostinputrequesttypedef)
@@ -76,12 +95,15 @@ from mypy_boto3_outposts.type_defs import CreateOutpostInputRequestTypeDef, ...
 - [GetOutpostInstanceTypesOutputTypeDef](./type_defs.md#getoutpostinstancetypesoutputtypedef)
 - [GetOutpostOutputTypeDef](./type_defs.md#getoutpostoutputtypedef)
 - [InstanceTypeItemTypeDef](./type_defs.md#instancetypeitemtypedef)
+- [LineItemRequestTypeDef](./type_defs.md#lineitemrequesttypedef)
+- [LineItemTypeDef](./type_defs.md#lineitemtypedef)
 - [ListOutpostsInputRequestTypeDef](./type_defs.md#listoutpostsinputrequesttypedef)
 - [ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef)
 - [ListSitesInputRequestTypeDef](./type_defs.md#listsitesinputrequesttypedef)
 - [ListSitesOutputTypeDef](./type_defs.md#listsitesoutputtypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [OrderTypeDef](./type_defs.md#ordertypedef)
 - [OutpostTypeDef](./type_defs.md#outposttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SiteTypeDef](./type_defs.md#sitetypedef)

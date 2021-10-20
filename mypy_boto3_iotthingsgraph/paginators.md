@@ -43,7 +43,7 @@ Arguments for `GetFlowTemplateRevisionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetFlowTemplateRevisionsPaginator.paginate` returns
-`Iterator`\[[GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef)\].
+`_PageIterator`\[[GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef)\].
 
 ## GetSystemTemplateRevisionsPaginator
 
@@ -69,7 +69,7 @@ Arguments for `GetSystemTemplateRevisionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSystemTemplateRevisionsPaginator.paginate` returns
-`Iterator`\[[GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef)\].
+`_PageIterator`\[[GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef)\].
 
 ## ListFlowExecutionMessagesPaginator
 
@@ -95,7 +95,7 @@ Arguments for `ListFlowExecutionMessagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFlowExecutionMessagesPaginator.paginate` returns
-`Iterator`\[[ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef)\].
+`_PageIterator`\[[ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -121,7 +121,7 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
+`_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
 ## SearchEntitiesPaginator
 
@@ -142,16 +142,16 @@ Boto3 documentation:
 
 Arguments for `SearchEntitiesPaginator.paginate` method:
 
-- `entityTypes`: `List`\[[EntityTypeType](./literals.md#entitytypetype)\]
+- `entityTypes`: `Sequence`\[[EntityTypeType](./literals.md#entitytypetype)\]
   *(required)*
 - `filters`:
-  `List`\[[EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)\]
+  `Sequence`\[[EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)\]
 - `namespaceVersion`: `int`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchEntitiesPaginator.paginate` returns
-`Iterator`\[[SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef)\].
+`_PageIterator`\[[SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef)\].
 
 ## SearchFlowExecutionsPaginator
 
@@ -180,7 +180,7 @@ Arguments for `SearchFlowExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchFlowExecutionsPaginator.paginate` returns
-`Iterator`\[[SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef)\].
+`_PageIterator`\[[SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef)\].
 
 ## SearchFlowTemplatesPaginator
 
@@ -202,12 +202,12 @@ Boto3 documentation:
 Arguments for `SearchFlowTemplatesPaginator.paginate` method:
 
 - `filters`:
-  `List`\[[FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef)\]
+  `Sequence`\[[FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchFlowTemplatesPaginator.paginate` returns
-`Iterator`\[[SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef)\].
+`_PageIterator`\[[SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef)\].
 
 ## SearchSystemInstancesPaginator
 
@@ -229,12 +229,12 @@ Boto3 documentation:
 Arguments for `SearchSystemInstancesPaginator.paginate` method:
 
 - `filters`:
-  `List`\[[SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)\]
+  `Sequence`\[[SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchSystemInstancesPaginator.paginate` returns
-`Iterator`\[[SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef)\].
+`_PageIterator`\[[SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef)\].
 
 ## SearchSystemTemplatesPaginator
 
@@ -256,12 +256,12 @@ Boto3 documentation:
 Arguments for `SearchSystemTemplatesPaginator.paginate` method:
 
 - `filters`:
-  `List`\[[SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef)\]
+  `Sequence`\[[SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchSystemTemplatesPaginator.paginate` returns
-`Iterator`\[[SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef)\].
+`_PageIterator`\[[SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef)\].
 
 ## SearchThingsPaginator
 
@@ -288,4 +288,4 @@ Arguments for `SearchThingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchThingsPaginator.paginate` returns
-`Iterator`\[[SearchThingsResponseTypeDef](./type_defs.md#searchthingsresponsetypedef)\].
+`_PageIterator`\[[SearchThingsResponseTypeDef](./type_defs.md#searchthingsresponsetypedef)\].

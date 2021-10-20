@@ -18,6 +18,7 @@ type annotations stubs module
     - [create_email_template](#create_email_template)
     - [create_export_job](#create_export_job)
     - [create_import_job](#create_import_job)
+    - [create_in_app_template](#create_in_app_template)
     - [create_journey](#create_journey)
     - [create_push_template](#create_push_template)
     - [create_recommender_configuration](#create_recommender_configuration)
@@ -37,6 +38,7 @@ type annotations stubs module
     - [delete_endpoint](#delete_endpoint)
     - [delete_event_stream](#delete_event_stream)
     - [delete_gcm_channel](#delete_gcm_channel)
+    - [delete_in_app_template](#delete_in_app_template)
     - [delete_journey](#delete_journey)
     - [delete_push_template](#delete_push_template)
     - [delete_recommender_configuration](#delete_recommender_configuration)
@@ -73,6 +75,8 @@ type annotations stubs module
     - [get_gcm_channel](#get_gcm_channel)
     - [get_import_job](#get_import_job)
     - [get_import_jobs](#get_import_jobs)
+    - [get_in_app_messages](#get_in_app_messages)
+    - [get_in_app_template](#get_in_app_template)
     - [get_journey](#get_journey)
     - [get_journey_date_range_kpi](#get_journey_date_range_kpi)
     - [get_journey_execution_activity_metrics](#get_journey_execution_activity_metrics)
@@ -116,6 +120,7 @@ type annotations stubs module
     - [update_endpoint](#update_endpoint)
     - [update_endpoints_batch](#update_endpoints_batch)
     - [update_gcm_channel](#update_gcm_channel)
+    - [update_in_app_template](#update_in_app_template)
     - [update_journey](#update_journey)
     - [update_journey_state](#update_journey_state)
     - [update_push_template](#update_push_template)
@@ -304,6 +309,28 @@ Keyword-only arguments:
 
 Returns
 [CreateImportJobResponseTypeDef](./type_defs.md#createimportjobresponsetypedef).
+
+### create_in_app_template
+
+Creates a new message template for messages using the in-app message channel.
+
+Type annotations for `boto3.client("pinpoint").create_in_app_template` method.
+
+Boto3 documentation:
+[Pinpoint.Client.create_in_app_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_in_app_template)
+
+Arguments mapping described in
+[CreateInAppTemplateRequestRequestTypeDef](./type_defs.md#createinapptemplaterequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InAppTemplateRequest`:
+  [InAppTemplateRequestTypeDef](./type_defs.md#inapptemplaterequesttypedef)
+  *(required)*
+- `TemplateName`: `str` *(required)*
+
+Returns
+[CreateInAppTemplateResponseTypeDef](./type_defs.md#createinapptemplateresponsetypedef).
 
 ### create_journey
 
@@ -702,6 +729,26 @@ Keyword-only arguments:
 Returns
 [DeleteGcmChannelResponseTypeDef](./type_defs.md#deletegcmchannelresponsetypedef).
 
+### delete_in_app_template
+
+Deletes a message template for messages sent using the in-app message channel.
+
+Type annotations for `boto3.client("pinpoint").delete_in_app_template` method.
+
+Boto3 documentation:
+[Pinpoint.Client.delete_in_app_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_in_app_template)
+
+Arguments mapping described in
+[DeleteInAppTemplateRequestRequestTypeDef](./type_defs.md#deleteinapptemplaterequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `TemplateName`: `str` *(required)*
+- `Version`: `str`
+
+Returns
+[DeleteInAppTemplateResponseTypeDef](./type_defs.md#deleteinapptemplateresponsetypedef).
+
 ### delete_journey
 
 Deletes a journey from an application.
@@ -896,7 +943,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1451,6 +1498,47 @@ Keyword-only arguments:
 
 Returns
 [GetImportJobsResponseTypeDef](./type_defs.md#getimportjobsresponsetypedef).
+
+### get_in_app_messages
+
+Retrieves the in-app messages targeted for the provided endpoint ID.
+
+Type annotations for `boto3.client("pinpoint").get_in_app_messages` method.
+
+Boto3 documentation:
+[Pinpoint.Client.get_in_app_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_in_app_messages)
+
+Arguments mapping described in
+[GetInAppMessagesRequestRequestTypeDef](./type_defs.md#getinappmessagesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `EndpointId`: `str` *(required)*
+
+Returns
+[GetInAppMessagesResponseTypeDef](./type_defs.md#getinappmessagesresponsetypedef).
+
+### get_in_app_template
+
+Retrieves the content and settings of a message template for messages sent
+through the in-app channel.
+
+Type annotations for `boto3.client("pinpoint").get_in_app_template` method.
+
+Boto3 documentation:
+[Pinpoint.Client.get_in_app_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_in_app_template)
+
+Arguments mapping described in
+[GetInAppTemplateRequestRequestTypeDef](./type_defs.md#getinapptemplaterequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `TemplateName`: `str` *(required)*
+- `Version`: `str`
+
+Returns
+[GetInAppTemplateResponseTypeDef](./type_defs.md#getinapptemplateresponsetypedef).
 
 ### get_journey
 
@@ -2102,7 +2190,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_adm_channel
 
@@ -2407,6 +2495,31 @@ Keyword-only arguments:
 
 Returns
 [UpdateGcmChannelResponseTypeDef](./type_defs.md#updategcmchannelresponsetypedef).
+
+### update_in_app_template
+
+Updates an existing message template for messages sent through the in-app
+message channel.
+
+Type annotations for `boto3.client("pinpoint").update_in_app_template` method.
+
+Boto3 documentation:
+[Pinpoint.Client.update_in_app_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_in_app_template)
+
+Arguments mapping described in
+[UpdateInAppTemplateRequestRequestTypeDef](./type_defs.md#updateinapptemplaterequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InAppTemplateRequest`:
+  [InAppTemplateRequestTypeDef](./type_defs.md#inapptemplaterequesttypedef)
+  *(required)*
+- `TemplateName`: `str` *(required)*
+- `CreateNewVersion`: `bool`
+- `Version`: `str`
+
+Returns
+[UpdateInAppTemplateResponseTypeDef](./type_defs.md#updateinapptemplateresponsetypedef).
 
 ### update_journey
 

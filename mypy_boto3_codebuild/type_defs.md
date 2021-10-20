@@ -136,6 +136,8 @@ type annotations stubs module
   - [TestReportSummaryTypeDef](#testreportsummarytypedef)
   - [UpdateProjectInputRequestTypeDef](#updateprojectinputrequesttypedef)
   - [UpdateProjectOutputTypeDef](#updateprojectoutputtypedef)
+  - [UpdateProjectVisibilityInputRequestTypeDef](#updateprojectvisibilityinputrequesttypedef)
+  - [UpdateProjectVisibilityOutputTypeDef](#updateprojectvisibilityoutputtypedef)
   - [UpdateReportGroupInputRequestTypeDef](#updatereportgroupinputrequesttypedef)
   - [UpdateReportGroupOutputTypeDef](#updatereportgroupoutputtypedef)
   - [UpdateWebhookInputRequestTypeDef](#updatewebhookinputrequesttypedef)
@@ -152,7 +154,7 @@ from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsInputRequestTypeDef
 
 Required fields:
 
-- `ids`: `List`\[`str`\]
+- `ids`: `Sequence`\[`str`\]
 
 ## BatchDeleteBuildsOutputTypeDef
 
@@ -176,7 +178,7 @@ from mypy_boto3_codebuild.type_defs import BatchGetBuildBatchesInputRequestTypeD
 
 Required fields:
 
-- `ids`: `List`\[`str`\]
+- `ids`: `Sequence`\[`str`\]
 
 ## BatchGetBuildBatchesOutputTypeDef
 
@@ -200,7 +202,7 @@ from mypy_boto3_codebuild.type_defs import BatchGetBuildsInputRequestTypeDef
 
 Required fields:
 
-- `ids`: `List`\[`str`\]
+- `ids`: `Sequence`\[`str`\]
 
 ## BatchGetBuildsOutputTypeDef
 
@@ -223,7 +225,7 @@ from mypy_boto3_codebuild.type_defs import BatchGetProjectsInputRequestTypeDef
 
 Required fields:
 
-- `names`: `List`\[`str`\]
+- `names`: `Sequence`\[`str`\]
 
 ## BatchGetProjectsOutputTypeDef
 
@@ -246,7 +248,7 @@ from mypy_boto3_codebuild.type_defs import BatchGetReportGroupsInputRequestTypeD
 
 Required fields:
 
-- `reportGroupArns`: `List`\[`str`\]
+- `reportGroupArns`: `Sequence`\[`str`\]
 
 ## BatchGetReportGroupsOutputTypeDef
 
@@ -270,7 +272,7 @@ from mypy_boto3_codebuild.type_defs import BatchGetReportsInputRequestTypeDef
 
 Required fields:
 
-- `reportArns`: `List`\[`str`\]
+- `reportArns`: `Sequence`\[`str`\]
 
 ## BatchGetReportsOutputTypeDef
 
@@ -310,6 +312,8 @@ Optional fields:
 - `overrideArtifactName`: `bool`
 - `encryptionDisabled`: `bool`
 - `artifactIdentifier`: `str`
+- `bucketOwnerAccess`:
+  [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 
 ## BuildBatchFilterTypeDef
 
@@ -571,22 +575,22 @@ Optional fields:
 
 - `description`: `str`
 - `secondarySources`:
-  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
+  `Sequence`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `sourceVersion`: `str`
 - `secondarySourceVersions`:
-  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+  `Sequence`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
 - `secondaryArtifacts`:
-  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+  `Sequence`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
 - `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
 - `timeoutInMinutes`: `int`
 - `queuedTimeoutInMinutes`: `int`
 - `encryptionKey`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `badgeEnabled`: `bool`
 - `logsConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
 - `fileSystemLocations`:
-  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
+  `Sequence`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
 - `buildBatchConfig`:
   [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `concurrentBuildLimit`: `int`
@@ -618,7 +622,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateReportGroupOutputTypeDef
 
@@ -646,7 +650,7 @@ Optional fields:
 
 - `branchFilter`: `str`
 - `filterGroups`:
-  `List`\[`List`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
+  `Sequence`\[`Sequence`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
 - `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
 
 ## CreateWebhookOutputTypeDef
@@ -1378,6 +1382,8 @@ Optional fields:
 - `overrideArtifactName`: `bool`
 - `encryptionDisabled`: `bool`
 - `artifactIdentifier`: `str`
+- `bucketOwnerAccess`:
+  [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 
 ## ProjectBadgeTypeDef
 
@@ -1403,6 +1409,8 @@ Optional fields:
 - `restrictions`:
   [BatchRestrictionsTypeDef](./type_defs.md#batchrestrictionstypedef)
 - `timeoutInMins`: `int`
+- `batchReportMode`:
+  [BatchReportModeTypeType](./literals.md#batchreportmodetypetype)
 
 ## ProjectCacheTypeDef
 
@@ -1532,6 +1540,10 @@ Optional fields:
 - `buildBatchConfig`:
   [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `concurrentBuildLimit`: `int`
+- `projectVisibility`:
+  [ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype)
+- `publicProjectAlias`: `str`
+- `resourceAccessRole`: `str`
 
 ## PutResourcePolicyInputRequestTypeDef
 
@@ -1744,6 +1756,8 @@ Optional fields:
 
 - `location`: `str`
 - `encryptionDisabled`: `bool`
+- `bucketOwnerAccess`:
+  [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 
 ## S3ReportExportConfigTypeDef
 
@@ -1800,16 +1814,16 @@ Required fields:
 Optional fields:
 
 - `secondarySourcesOverride`:
-  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
+  `Sequence`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `secondarySourcesVersionOverride`:
-  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+  `Sequence`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
 - `sourceVersion`: `str`
 - `artifactsOverride`:
   [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
 - `secondaryArtifactsOverride`:
-  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+  `Sequence`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
 - `environmentVariablesOverride`:
-  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
+  `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 - `sourceTypeOverride`: [SourceTypeType](./literals.md#sourcetypetype)
 - `sourceLocationOverride`: `str`
 - `sourceAuthOverride`: [SourceAuthTypeDef](./type_defs.md#sourceauthtypedef)
@@ -1865,16 +1879,16 @@ Required fields:
 Optional fields:
 
 - `secondarySourcesOverride`:
-  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
+  `Sequence`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `secondarySourcesVersionOverride`:
-  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+  `Sequence`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
 - `sourceVersion`: `str`
 - `artifactsOverride`:
   [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
 - `secondaryArtifactsOverride`:
-  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+  `Sequence`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
 - `environmentVariablesOverride`:
-  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
+  `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 - `sourceTypeOverride`: [SourceTypeType](./literals.md#sourcetypetype)
 - `sourceLocationOverride`: `str`
 - `sourceAuthOverride`: [SourceAuthTypeDef](./type_defs.md#sourceauthtypedef)
@@ -2027,14 +2041,14 @@ Optional fields:
 - `description`: `str`
 - `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
 - `secondarySources`:
-  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
+  `Sequence`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `sourceVersion`: `str`
 - `secondarySourceVersions`:
-  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+  `Sequence`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
 - `artifacts`:
   [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
 - `secondaryArtifacts`:
-  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+  `Sequence`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
 - `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
 - `environment`:
   [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
@@ -2042,12 +2056,12 @@ Optional fields:
 - `timeoutInMinutes`: `int`
 - `queuedTimeoutInMinutes`: `int`
 - `encryptionKey`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `badgeEnabled`: `bool`
 - `logsConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
 - `fileSystemLocations`:
-  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
+  `Sequence`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
 - `buildBatchConfig`:
   [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `concurrentBuildLimit`: `int`
@@ -2061,6 +2075,37 @@ from mypy_boto3_codebuild.type_defs import UpdateProjectOutputTypeDef
 Required fields:
 
 - `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateProjectVisibilityInputRequestTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import UpdateProjectVisibilityInputRequestTypeDef
+```
+
+Required fields:
+
+- `projectArn`: `str`
+- `projectVisibility`:
+  [ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype)
+
+Optional fields:
+
+- `resourceAccessRole`: `str`
+
+## UpdateProjectVisibilityOutputTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import UpdateProjectVisibilityOutputTypeDef
+```
+
+Required fields:
+
+- `projectArn`: `str`
+- `publicProjectAlias`: `str`
+- `projectVisibility`:
+  [ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2078,7 +2123,7 @@ Optional fields:
 
 - `exportConfig`:
   [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UpdateReportGroupOutputTypeDef
 
@@ -2107,7 +2152,7 @@ Optional fields:
 - `branchFilter`: `str`
 - `rotateSecret`: `bool`
 - `filterGroups`:
-  `List`\[`List`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
+  `Sequence`\[`Sequence`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
 - `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
 
 ## UpdateWebhookOutputTypeDef

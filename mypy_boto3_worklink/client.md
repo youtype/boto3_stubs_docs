@@ -199,7 +199,7 @@ Keyword-only arguments:
 - `FleetName`: `str` *(required)*
 - `DisplayName`: `str`
 - `OptimizeForEndUserLocation`: `bool`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateFleetResponseTypeDef](./type_defs.md#createfleetresponsetypedef).
@@ -456,7 +456,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -661,7 +661,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -680,7 +680,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -721,8 +721,8 @@ Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `VpcId`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
-- `SecurityGroupIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
+- `SecurityGroupIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

@@ -138,7 +138,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `PosixUser`: [PosixUserTypeDef](./type_defs.md#posixusertypedef)
 - `RootDirectory`: [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
 
@@ -161,7 +161,7 @@ Optional fields:
 - `ProvisionedThroughputInMibps`: `float`
 - `AvailabilityZoneName`: `str`
 - `Backup`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateMountTargetRequestRequestTypeDef
 
@@ -177,7 +177,7 @@ Required fields:
 Optional fields:
 
 - `IpAddress`: `str`
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 
 ## CreateTagsRequestRequestTypeDef
 
@@ -188,7 +188,7 @@ from mypy_boto3_efs.type_defs import CreateTagsRequestRequestTypeDef
 Required fields:
 
 - `FileSystemId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreationInfoTypeDef
 
@@ -251,7 +251,7 @@ from mypy_boto3_efs.type_defs import DeleteTagsRequestRequestTypeDef
 Required fields:
 
 - `FileSystemId`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## DescribeAccessPointsRequestRequestTypeDef
 
@@ -552,6 +552,8 @@ Optional fields:
 
 - `TransitionToIA`:
   [TransitionToIARulesType](./literals.md#transitiontoiarulestype)
+- `TransitionToPrimaryStorageClass`: `Literal['AFTER_1_ACCESS']` (see
+  [TransitionToPrimaryStorageClassRulesType](./literals.md#transitiontoprimarystorageclassrulestype))
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -593,7 +595,7 @@ Required fields:
 
 Optional fields:
 
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 
 ## MountTargetDescriptionResponseMetadataTypeDef
 
@@ -663,7 +665,7 @@ Required fields:
 
 Optional fields:
 
-- `SecondaryGids`: `List`\[`int`\]
+- `SecondaryGids`: `Sequence`\[`int`\]
 
 ## PutAccountPreferencesRequestRequestTypeDef
 
@@ -724,7 +726,7 @@ Required fields:
 
 - `FileSystemId`: `str`
 - `LifecyclePolicies`:
-  `List`\[[LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)\]
+  `Sequence`\[[LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)\]
 
 ## ResourceIdPreferenceTypeDef
 
@@ -771,7 +773,7 @@ from mypy_boto3_efs.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -793,7 +795,7 @@ from mypy_boto3_efs.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateFileSystemRequestRequestTypeDef
 

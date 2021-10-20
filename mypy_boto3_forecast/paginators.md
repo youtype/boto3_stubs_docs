@@ -39,7 +39,7 @@ Arguments for `ListDatasetGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetGroupsPaginator.paginate` returns
-`Iterator`\[[ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef)\].
+`_PageIterator`\[[ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef)\].
 
 ## ListDatasetImportJobsPaginator
 
@@ -60,12 +60,12 @@ Boto3 documentation:
 
 Arguments for `ListDatasetImportJobsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetImportJobsPaginator.paginate` returns
-`Iterator`\[[ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef)\].
+`_PageIterator`\[[ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef)\].
 
 ## ListDatasetsPaginator
 
@@ -89,7 +89,7 @@ Arguments for `ListDatasetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetsPaginator.paginate` returns
-`Iterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
+`_PageIterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
 
 ## ListForecastExportJobsPaginator
 
@@ -110,12 +110,12 @@ Boto3 documentation:
 
 Arguments for `ListForecastExportJobsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListForecastExportJobsPaginator.paginate` returns
-`Iterator`\[[ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef)\].
+`_PageIterator`\[[ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef)\].
 
 ## ListForecastsPaginator
 
@@ -136,12 +136,12 @@ Boto3 documentation:
 
 Arguments for `ListForecastsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListForecastsPaginator.paginate` returns
-`Iterator`\[[ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef)\].
+`_PageIterator`\[[ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef)\].
 
 ## ListPredictorBacktestExportJobsPaginator
 
@@ -162,12 +162,12 @@ Boto3 documentation:
 
 Arguments for `ListPredictorBacktestExportJobsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPredictorBacktestExportJobsPaginator.paginate` returns
-`Iterator`\[[ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef)\].
+`_PageIterator`\[[ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef)\].
 
 ## ListPredictorsPaginator
 
@@ -188,9 +188,9 @@ Boto3 documentation:
 
 Arguments for `ListPredictorsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPredictorsPaginator.paginate` returns
-`Iterator`\[[ListPredictorsResponseTypeDef](./type_defs.md#listpredictorsresponsetypedef)\].
+`_PageIterator`\[[ListPredictorsResponseTypeDef](./type_defs.md#listpredictorsresponsetypedef)\].

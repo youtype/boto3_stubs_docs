@@ -249,7 +249,7 @@ from mypy_boto3_gamelift.type_defs import AcceptMatchInputRequestTypeDef
 Required fields:
 
 - `TicketId`: `str`
-- `PlayerIds`: `List`\[`str`\]
+- `PlayerIds`: `Sequence`\[`str`\]
 - `AcceptanceType`: [AcceptanceTypeType](./literals.md#acceptancetypetype)
 
 ## AliasTypeDef
@@ -363,7 +363,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAliasOutputTypeDef
 
@@ -389,7 +389,7 @@ Optional fields:
 - `Version`: `str`
 - `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateBuildOutputTypeDef
 
@@ -424,16 +424,16 @@ Optional fields:
 - `ScriptId`: `str`
 - `ServerLaunchPath`: `str`
 - `ServerLaunchParameters`: `str`
-- `LogPaths`: `List`\[`str`\]
+- `LogPaths`: `Sequence`\[`str`\]
 - `EC2InboundPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `NewGameSessionProtectionPolicy`:
   [ProtectionPolicyType](./literals.md#protectionpolicytype)
 - `RuntimeConfiguration`:
   [RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef)
 - `ResourceCreationLimitPolicy`:
   [ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef)
-- `MetricGroups`: `List`\[`str`\]
+- `MetricGroups`: `Sequence`\[`str`\]
 - `PeerVpcAwsAccountId`: `str`
 - `PeerVpcId`: `str`
 - `FleetType`: [FleetTypeType](./literals.md#fleettypetype)
@@ -441,8 +441,8 @@ Optional fields:
 - `CertificateConfiguration`:
   [CertificateConfigurationTypeDef](./type_defs.md#certificateconfigurationtypedef)
 - `Locations`:
-  `List`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateFleetLocationsInputRequestTypeDef
 
@@ -454,7 +454,7 @@ Required fields:
 
 - `FleetId`: `str`
 - `Locations`:
-  `List`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
+  `Sequence`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
 
 ## CreateFleetLocationsOutputTypeDef
 
@@ -501,7 +501,7 @@ Required fields:
 - `LaunchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `InstanceDefinitions`:
-  `List`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
+  `Sequence`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
 
 Optional fields:
 
@@ -511,8 +511,8 @@ Optional fields:
   [BalancingStrategyType](./literals.md#balancingstrategytype)
 - `GameServerProtectionPolicy`:
   [GameServerProtectionPolicyType](./literals.md#gameserverprotectionpolicytype)
-- `VpcSubnets`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VpcSubnets`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateGameServerGroupOutputTypeDef
 
@@ -543,7 +543,7 @@ Optional fields:
 - `AliasId`: `str`
 - `Name`: `str`
 - `GameProperties`:
-  `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
+  `Sequence`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `CreatorId`: `str`
 - `GameSessionId`: `str`
 - `IdempotencyToken`: `str`
@@ -576,16 +576,16 @@ Optional fields:
 
 - `TimeoutInSeconds`: `int`
 - `PlayerLatencyPolicies`:
-  `List`\[[PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef)\]
+  `Sequence`\[[PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef)\]
 - `Destinations`:
-  `List`\[[GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef)\]
+  `Sequence`\[[GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef)\]
 - `FilterConfiguration`:
   [FilterConfigurationTypeDef](./type_defs.md#filterconfigurationtypedef)
 - `PriorityConfiguration`:
   [PriorityConfigurationTypeDef](./type_defs.md#priorityconfigurationtypedef)
 - `CustomEventData`: `str`
 - `NotificationTarget`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateGameSessionQueueOutputTypeDef
 
@@ -616,17 +616,17 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `GameSessionQueueArns`: `List`\[`str`\]
+- `GameSessionQueueArns`: `Sequence`\[`str`\]
 - `AcceptanceTimeoutSeconds`: `int`
 - `NotificationTarget`: `str`
 - `AdditionalPlayerCount`: `int`
 - `CustomEventData`: `str`
 - `GameProperties`:
-  `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
+  `Sequence`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `GameSessionData`: `str`
 - `BackfillMode`: [BackfillModeType](./literals.md#backfillmodetype)
 - `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateMatchmakingConfigurationOutputTypeDef
 
@@ -654,7 +654,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateMatchmakingRuleSetOutputTypeDef
 
@@ -705,11 +705,11 @@ from mypy_boto3_gamelift.type_defs import CreatePlayerSessionsInputRequestTypeDe
 Required fields:
 
 - `GameSessionId`: `str`
-- `PlayerIds`: `List`\[`str`\]
+- `PlayerIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `PlayerDataMap`: `Dict`\[`str`, `str`\]
+- `PlayerDataMap`: `Mapping`\[`str`, `str`\]
 
 ## CreatePlayerSessionsOutputTypeDef
 
@@ -736,7 +736,7 @@ Optional fields:
 - `Version`: `str`
 - `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateScriptOutputTypeDef
 
@@ -825,7 +825,7 @@ from mypy_boto3_gamelift.type_defs import DeleteFleetLocationsInputRequestTypeDe
 Required fields:
 
 - `FleetId`: `str`
-- `Locations`: `List`\[`str`\]
+- `Locations`: `Sequence`\[`str`\]
 
 ## DeleteFleetLocationsOutputTypeDef
 
@@ -1030,7 +1030,7 @@ from mypy_boto3_gamelift.type_defs import DescribeFleetAttributesInputRequestTyp
 
 Optional fields:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1056,7 +1056,7 @@ from mypy_boto3_gamelift.type_defs import DescribeFleetCapacityInputRequestTypeD
 
 Optional fields:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1116,7 +1116,7 @@ Required fields:
 
 Optional fields:
 
-- `Locations`: `List`\[`str`\]
+- `Locations`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1223,7 +1223,7 @@ from mypy_boto3_gamelift.type_defs import DescribeFleetUtilizationInputRequestTy
 
 Optional fields:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1287,7 +1287,7 @@ Required fields:
 
 Optional fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1378,7 +1378,7 @@ from mypy_boto3_gamelift.type_defs import DescribeGameSessionQueuesInputRequestT
 
 Optional fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1464,7 +1464,7 @@ from mypy_boto3_gamelift.type_defs import DescribeMatchmakingConfigurationsInput
 
 Optional fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `RuleSetName`: `str`
 - `Limit`: `int`
 - `NextToken`: `str`
@@ -1491,7 +1491,7 @@ from mypy_boto3_gamelift.type_defs import DescribeMatchmakingInputRequestTypeDef
 
 Required fields:
 
-- `TicketIds`: `List`\[`str`\]
+- `TicketIds`: `Sequence`\[`str`\]
 
 ## DescribeMatchmakingOutputTypeDef
 
@@ -1514,7 +1514,7 @@ from mypy_boto3_gamelift.type_defs import DescribeMatchmakingRuleSetsInputReques
 
 Optional fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1736,7 +1736,7 @@ from mypy_boto3_gamelift.type_defs import FilterConfigurationTypeDef
 
 Optional fields:
 
-- `AllowedLocations`: `List`\[`str`\]
+- `AllowedLocations`: `Sequence`\[`str`\]
 
 ## FleetAttributesTypeDef
 
@@ -2524,8 +2524,9 @@ from mypy_boto3_gamelift.type_defs import PriorityConfigurationTypeDef
 
 Optional fields:
 
-- `PriorityOrder`: `List`\[[PriorityTypeType](./literals.md#prioritytypetype)\]
-- `LocationOrder`: `List`\[`str`\]
+- `PriorityOrder`:
+  `Sequence`\[[PriorityTypeType](./literals.md#prioritytypetype)\]
+- `LocationOrder`: `Sequence`\[`str`\]
 
 ## PutScalingPolicyInputRequestTypeDef
 
@@ -2674,7 +2675,7 @@ from mypy_boto3_gamelift.type_defs import ResumeGameServerGroupInputRequestTypeD
 Required fields:
 
 - `GameServerGroupName`: `str`
-- `ResumeActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
+- `ResumeActions`: `Sequence`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
   [GameServerGroupActionType](./literals.md#gameservergroupactiontype))\]
 
 ## ResumeGameServerGroupOutputTypeDef
@@ -2711,7 +2712,7 @@ from mypy_boto3_gamelift.type_defs import RuntimeConfigurationTypeDef
 Optional fields:
 
 - `ServerProcesses`:
-  `List`\[[ServerProcessTypeDef](./type_defs.md#serverprocesstypedef)\]
+  `Sequence`\[[ServerProcessTypeDef](./type_defs.md#serverprocesstypedef)\]
 - `MaxConcurrentGameSessionActivations`: `int`
 - `GameSessionActivationTimeoutSeconds`: `int`
 
@@ -2825,7 +2826,7 @@ from mypy_boto3_gamelift.type_defs import StartFleetActionsInputRequestTypeDef
 Required fields:
 
 - `FleetId`: `str`
-- `Actions`: `List`\[`Literal['AUTO_SCALING']` (see
+- `Actions`: `Sequence`\[`Literal['AUTO_SCALING']` (see
   [FleetActionType](./literals.md#fleetactiontype))\]
 
 Optional fields:
@@ -2860,12 +2861,12 @@ Required fields:
 Optional fields:
 
 - `GameProperties`:
-  `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
+  `Sequence`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `GameSessionName`: `str`
 - `PlayerLatencies`:
-  `List`\[[PlayerLatencyTypeDef](./type_defs.md#playerlatencytypedef)\]
+  `Sequence`\[[PlayerLatencyTypeDef](./type_defs.md#playerlatencytypedef)\]
 - `DesiredPlayerSessions`:
-  `List`\[[DesiredPlayerSessionTypeDef](./type_defs.md#desiredplayersessiontypedef)\]
+  `Sequence`\[[DesiredPlayerSessionTypeDef](./type_defs.md#desiredplayersessiontypedef)\]
 - `GameSessionData`: `str`
 
 ## StartGameSessionPlacementOutputTypeDef
@@ -2890,7 +2891,7 @@ from mypy_boto3_gamelift.type_defs import StartMatchBackfillInputRequestTypeDef
 Required fields:
 
 - `ConfigurationName`: `str`
-- `Players`: `List`\[[PlayerTypeDef](./type_defs.md#playertypedef)\]
+- `Players`: `Sequence`\[[PlayerTypeDef](./type_defs.md#playertypedef)\]
 
 Optional fields:
 
@@ -2919,7 +2920,7 @@ from mypy_boto3_gamelift.type_defs import StartMatchmakingInputRequestTypeDef
 Required fields:
 
 - `ConfigurationName`: `str`
-- `Players`: `List`\[[PlayerTypeDef](./type_defs.md#playertypedef)\]
+- `Players`: `Sequence`\[[PlayerTypeDef](./type_defs.md#playertypedef)\]
 
 Optional fields:
 
@@ -2947,7 +2948,7 @@ from mypy_boto3_gamelift.type_defs import StopFleetActionsInputRequestTypeDef
 Required fields:
 
 - `FleetId`: `str`
-- `Actions`: `List`\[`Literal['AUTO_SCALING']` (see
+- `Actions`: `Sequence`\[`Literal['AUTO_SCALING']` (see
   [FleetActionType](./literals.md#fleetactiontype))\]
 
 Optional fields:
@@ -3009,7 +3010,7 @@ from mypy_boto3_gamelift.type_defs import SuspendGameServerGroupInputRequestType
 Required fields:
 
 - `GameServerGroupName`: `str`
-- `SuspendActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
+- `SuspendActions`: `Sequence`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
   [GameServerGroupActionType](./literals.md#gameservergroupactiontype))\]
 
 ## SuspendGameServerGroupOutputTypeDef
@@ -3034,7 +3035,7 @@ from mypy_boto3_gamelift.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -3076,7 +3077,7 @@ from mypy_boto3_gamelift.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAliasInputRequestTypeDef
 
@@ -3152,7 +3153,7 @@ Optional fields:
   [ProtectionPolicyType](./literals.md#protectionpolicytype)
 - `ResourceCreationLimitPolicy`:
   [ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef)
-- `MetricGroups`: `List`\[`str`\]
+- `MetricGroups`: `Sequence`\[`str`\]
 
 ## UpdateFleetAttributesOutputTypeDef
 
@@ -3210,9 +3211,9 @@ Required fields:
 Optional fields:
 
 - `InboundPermissionAuthorizations`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `InboundPermissionRevocations`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 
 ## UpdateFleetPortSettingsOutputTypeDef
 
@@ -3240,7 +3241,7 @@ Optional fields:
 
 - `RoleArn`: `str`
 - `InstanceDefinitions`:
-  `List`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
+  `Sequence`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
 - `GameServerProtectionPolicy`:
   [GameServerProtectionPolicyType](./literals.md#gameserverprotectionpolicytype)
 - `BalancingStrategy`:
@@ -3335,9 +3336,9 @@ Optional fields:
 
 - `TimeoutInSeconds`: `int`
 - `PlayerLatencyPolicies`:
-  `List`\[[PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef)\]
+  `Sequence`\[[PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef)\]
 - `Destinations`:
-  `List`\[[GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef)\]
+  `Sequence`\[[GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef)\]
 - `FilterConfiguration`:
   [FilterConfigurationTypeDef](./type_defs.md#filterconfigurationtypedef)
 - `PriorityConfiguration`:
@@ -3371,7 +3372,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `GameSessionQueueArns`: `List`\[`str`\]
+- `GameSessionQueueArns`: `Sequence`\[`str`\]
 - `RequestTimeoutSeconds`: `int`
 - `AcceptanceTimeoutSeconds`: `int`
 - `AcceptanceRequired`: `bool`
@@ -3380,7 +3381,7 @@ Optional fields:
 - `AdditionalPlayerCount`: `int`
 - `CustomEventData`: `str`
 - `GameProperties`:
-  `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
+  `Sequence`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `GameSessionData`: `str`
 - `BackfillMode`: [BackfillModeType](./literals.md#backfillmodetype)
 - `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)

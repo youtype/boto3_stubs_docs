@@ -165,9 +165,9 @@ Optional fields:
 
 - `MergePolicy`: `str`
 - `CaptionSources`:
-  `List`\[[CaptionSourceTypeDef](./type_defs.md#captionsourcetypedef)\]
+  `Sequence`\[[CaptionSourceTypeDef](./type_defs.md#captionsourcetypedef)\]
 - `CaptionFormats`:
-  `List`\[[CaptionFormatTypeDef](./type_defs.md#captionformattypedef)\]
+  `Sequence`\[[CaptionFormatTypeDef](./type_defs.md#captionformattypedef)\]
 
 ## ClipTypeDef
 
@@ -194,9 +194,9 @@ Optional fields:
 - `PresetId`: `str`
 - `SegmentDuration`: `str`
 - `Watermarks`:
-  `List`\[[JobWatermarkTypeDef](./type_defs.md#jobwatermarktypedef)\]
+  `Sequence`\[[JobWatermarkTypeDef](./type_defs.md#jobwatermarktypedef)\]
 - `AlbumArt`: [JobAlbumArtTypeDef](./type_defs.md#jobalbumarttypedef)
-- `Composition`: `List`\[[ClipTypeDef](./type_defs.md#cliptypedef)\]
+- `Composition`: `Sequence`\[[ClipTypeDef](./type_defs.md#cliptypedef)\]
 - `Captions`: [CaptionsTypeDef](./type_defs.md#captionstypedef)
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 
@@ -210,7 +210,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Format`: `str`
-- `OutputKeys`: `List`\[`str`\]
+- `OutputKeys`: `Sequence`\[`str`\]
 - `HlsContentProtection`:
   [HlsContentProtectionTypeDef](./type_defs.md#hlscontentprotectiontypedef)
 - `PlayReadyDrm`: [PlayReadyDrmTypeDef](./type_defs.md#playreadydrmtypedef)
@@ -228,14 +228,14 @@ Required fields:
 Optional fields:
 
 - `Input`: [JobInputTypeDef](./type_defs.md#jobinputtypedef)
-- `Inputs`: `List`\[[JobInputTypeDef](./type_defs.md#jobinputtypedef)\]
+- `Inputs`: `Sequence`\[[JobInputTypeDef](./type_defs.md#jobinputtypedef)\]
 - `Output`: [CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)
 - `Outputs`:
-  `List`\[[CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)\]
+  `Sequence`\[[CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)\]
 - `OutputKeyPrefix`: `str`
 - `Playlists`:
-  `List`\[[CreateJobPlaylistTypeDef](./type_defs.md#createjobplaylisttypedef)\]
-- `UserMetadata`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[CreateJobPlaylistTypeDef](./type_defs.md#createjobplaylisttypedef)\]
+- `UserMetadata`: `Mapping`\[`str`, `str`\]
 
 ## CreateJobResponseTypeDef
 
@@ -387,7 +387,7 @@ Optional fields:
 
 - `MergePolicy`: `str`
 - `CaptionSources`:
-  `List`\[[CaptionSourceTypeDef](./type_defs.md#captionsourcetypedef)\]
+  `Sequence`\[[CaptionSourceTypeDef](./type_defs.md#captionsourcetypedef)\]
 
 ## JobAlbumArtTypeDef
 
@@ -398,7 +398,7 @@ from mypy_boto3_elastictranscoder.type_defs import JobAlbumArtTypeDef
 Optional fields:
 
 - `MergePolicy`: `str`
-- `Artwork`: `List`\[[ArtworkTypeDef](./type_defs.md#artworktypedef)\]
+- `Artwork`: `Sequence`\[[ArtworkTypeDef](./type_defs.md#artworktypedef)\]
 
 ## JobInputTypeDef
 
@@ -623,7 +623,7 @@ Optional fields:
 
 - `GranteeType`: `str`
 - `Grantee`: `str`
-- `Access`: `List`\[`str`\]
+- `Access`: `Sequence`\[`str`\]
 
 ## PipelineOutputConfigTypeDef
 
@@ -636,7 +636,7 @@ Optional fields:
 - `Bucket`: `str`
 - `StorageClass`: `str`
 - `Permissions`:
-  `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
+  `Sequence`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
 
 ## PipelineTypeDef
 
@@ -821,7 +821,7 @@ Required fields:
 - `Role`: `str`
 - `InputBucket`: `str`
 - `OutputBucket`: `str`
-- `Topics`: `List`\[`str`\]
+- `Topics`: `Sequence`\[`str`\]
 
 ## TestRoleResponseTypeDef
 
@@ -966,7 +966,7 @@ from mypy_boto3_elastictranscoder.type_defs import VideoParametersTypeDef
 Optional fields:
 
 - `Codec`: `str`
-- `CodecOptions`: `Dict`\[`str`, `str`\]
+- `CodecOptions`: `Mapping`\[`str`, `str`\]
 - `KeyframesMaxDist`: `str`
 - `FixedGOP`: `str`
 - `BitRate`: `str`
@@ -980,7 +980,7 @@ Optional fields:
 - `SizingPolicy`: `str`
 - `PaddingPolicy`: `str`
 - `Watermarks`:
-  `List`\[[PresetWatermarkTypeDef](./type_defs.md#presetwatermarktypedef)\]
+  `Sequence`\[[PresetWatermarkTypeDef](./type_defs.md#presetwatermarktypedef)\]
 
 ## WaiterConfigTypeDef
 

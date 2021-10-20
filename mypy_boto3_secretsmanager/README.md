@@ -104,6 +104,8 @@ from mypy_boto3_secretsmanager.literals import FilterNameStringTypeType, ...
 - [ListSecretsPaginatorName](./literals.md#listsecretspaginatorname)
 - [SortOrderTypeType](./literals.md#sortordertypetype)
 - [StatusTypeType](./literals.md#statustypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

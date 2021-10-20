@@ -180,6 +180,7 @@ from mypy_boto3_dms.literals import AuthMechanismValueType, ...
 
 - [AuthMechanismValueType](./literals.md#authmechanismvaluetype)
 - [AuthTypeValueType](./literals.md#authtypevaluetype)
+- [CannedAclForObjectsValueType](./literals.md#cannedaclforobjectsvaluetype)
 - [CharLengthSemanticsType](./literals.md#charlengthsemanticstype)
 - [CompressionTypeValueType](./literals.md#compressiontypevaluetype)
 - [DataFormatValueType](./literals.md#dataformatvaluetype)
@@ -208,6 +209,8 @@ from mypy_boto3_dms.literals import AuthMechanismValueType, ...
 - [MigrationTypeValueType](./literals.md#migrationtypevaluetype)
 - [NestingLevelValueType](./literals.md#nestinglevelvaluetype)
 - [ParquetVersionValueType](./literals.md#parquetversionvaluetype)
+- [PluginNameValueType](./literals.md#pluginnamevaluetype)
+- [RedisAuthTypeValueType](./literals.md#redisauthtypevaluetype)
 - [RefreshSchemasStatusTypeValueType](./literals.md#refreshschemasstatustypevaluetype)
 - [ReleaseStatusValuesType](./literals.md#releasestatusvaluestype)
 - [ReloadOptionValueType](./literals.md#reloadoptionvaluetype)
@@ -220,9 +223,13 @@ from mypy_boto3_dms.literals import AuthMechanismValueType, ...
 - [ReplicationTaskStoppedWaiterName](./literals.md#replicationtaskstoppedwaitername)
 - [SafeguardPolicyType](./literals.md#safeguardpolicytype)
 - [SourceTypeType](./literals.md#sourcetypetype)
+- [SslSecurityProtocolValueType](./literals.md#sslsecurityprotocolvaluetype)
 - [StartReplicationTaskTypeValueType](./literals.md#startreplicationtasktypevaluetype)
 - [TargetDbTypeType](./literals.md#targetdbtypetype)
 - [TestConnectionSucceedsWaiterName](./literals.md#testconnectionsucceedswaitername)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 
@@ -352,6 +359,7 @@ from mypy_boto3_dms.type_defs import AccountQuotaTypeDef, ...
 - [PostgreSQLSettingsTypeDef](./type_defs.md#postgresqlsettingstypedef)
 - [RebootReplicationInstanceMessageRequestTypeDef](./type_defs.md#rebootreplicationinstancemessagerequesttypedef)
 - [RebootReplicationInstanceResponseTypeDef](./type_defs.md#rebootreplicationinstanceresponsetypedef)
+- [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
 - [RedshiftSettingsTypeDef](./type_defs.md#redshiftsettingstypedef)
 - [RefreshSchemasMessageRequestTypeDef](./type_defs.md#refreshschemasmessagerequesttypedef)
 - [RefreshSchemasResponseTypeDef](./type_defs.md#refreshschemasresponsetypedef)

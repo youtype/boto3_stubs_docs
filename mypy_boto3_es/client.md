@@ -148,7 +148,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ARN`: `str` *(required)*
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### associate_package
 
@@ -234,8 +234,8 @@ Keyword-only arguments:
   [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
 - `NodeToNodeEncryptionOptions`:
   [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
-- `AdvancedOptions`: `Dict`\[`str`, `str`\]
-- `LogPublishingOptions`: `Dict`\[[LogTypeType](./literals.md#logtypetype),
+- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
+- `LogPublishingOptions`: `Mapping`\[[LogTypeType](./literals.md#logtypetype),
   [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
 - `DomainEndpointOptions`:
   [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
@@ -243,7 +243,7 @@ Keyword-only arguments:
   [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
 - `AutoTuneOptions`:
   [AutoTuneOptionsInputTypeDef](./type_defs.md#autotuneoptionsinputtypedef)
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateElasticsearchDomainResponseTypeDef](./type_defs.md#createelasticsearchdomainresponsetypedef).
@@ -470,7 +470,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DomainNames`: `List`\[`str`\] *(required)*
+- `DomainNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeElasticsearchDomainsResponseTypeDef](./type_defs.md#describeelasticsearchdomainsresponsetypedef).
@@ -516,7 +516,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -538,7 +538,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -560,7 +560,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)\]
+  `Sequence`\[[DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -643,7 +643,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -742,6 +742,13 @@ Type annotations for `boto3.client("es").list_domain_names` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domain_names)
+
+Arguments mapping described in
+[ListDomainNamesRequestRequestTypeDef](./type_defs.md#listdomainnamesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
 
 Returns
 [ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
@@ -913,7 +920,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### start_elasticsearch_service_software_update
 
@@ -960,9 +967,9 @@ Keyword-only arguments:
 - `VPCOptions`: [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
 - `CognitoOptions`:
   [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
-- `AdvancedOptions`: `Dict`\[`str`, `str`\]
+- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
 - `AccessPolicies`: `str`
-- `LogPublishingOptions`: `Dict`\[[LogTypeType](./literals.md#logtypetype),
+- `LogPublishingOptions`: `Mapping`\[[LogTypeType](./literals.md#logtypetype),
   [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
 - `DomainEndpointOptions`:
   [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)

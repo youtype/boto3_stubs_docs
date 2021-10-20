@@ -231,6 +231,9 @@ from mypy_boto3_ecs.literals import AgentUpdateStatusType, ...
 - [TasksStoppedWaiterName](./literals.md#tasksstoppedwaitername)
 - [TransportProtocolType](./literals.md#transportprotocoltype)
 - [UlimitNameType](./literals.md#ulimitnametype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

@@ -73,6 +73,7 @@ from mypy_boto3_meteringmarketplace.literals import UsageRecordResultStatusType,
 ```
 
 - [UsageRecordResultStatusType](./literals.md#usagerecordresultstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

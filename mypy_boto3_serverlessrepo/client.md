@@ -117,7 +117,7 @@ Keyword-only arguments:
 - `Description`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `HomePageUrl`: `str`
-- `Labels`: `List`\[`str`\]
+- `Labels`: `Sequence`\[`str`\]
 - `LicenseBody`: `str`
 - `LicenseUrl`: `str`
 - `ReadmeBody`: `str`
@@ -174,18 +174,18 @@ Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `StackName`: `str` *(required)*
-- `Capabilities`: `List`\[`str`\]
+- `Capabilities`: `Sequence`\[`str`\]
 - `ChangeSetName`: `str`
 - `ClientToken`: `str`
 - `Description`: `str`
-- `NotificationArns`: `List`\[`str`\]
+- `NotificationArns`: `Sequence`\[`str`\]
 - `ParameterOverrides`:
-  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
-- `ResourceTypes`: `List`\[`str`\]
+  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `SemanticVersion`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TemplateId`: `str`
 
 Returns
@@ -242,7 +242,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -391,7 +391,7 @@ Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `Statements`:
-  `List`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
+  `Sequence`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
   *(required)*
 
 Returns
@@ -434,7 +434,7 @@ Keyword-only arguments:
 - `Author`: `str`
 - `Description`: `str`
 - `HomePageUrl`: `str`
-- `Labels`: `List`\[`str`\]
+- `Labels`: `Sequence`\[`str`\]
 - `ReadmeBody`: `str`
 - `ReadmeUrl`: `str`
 

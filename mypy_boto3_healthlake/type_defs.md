@@ -23,15 +23,27 @@ type annotations stubs module
   - [ExportJobPropertiesTypeDef](#exportjobpropertiestypedef)
   - [ImportJobPropertiesTypeDef](#importjobpropertiestypedef)
   - [InputDataConfigTypeDef](#inputdataconfigtypedef)
+  - [KmsEncryptionConfigTypeDef](#kmsencryptionconfigtypedef)
   - [ListFHIRDatastoresRequestRequestTypeDef](#listfhirdatastoresrequestrequesttypedef)
   - [ListFHIRDatastoresResponseTypeDef](#listfhirdatastoresresponsetypedef)
+  - [ListFHIRExportJobsRequestRequestTypeDef](#listfhirexportjobsrequestrequesttypedef)
+  - [ListFHIRExportJobsResponseTypeDef](#listfhirexportjobsresponsetypedef)
+  - [ListFHIRImportJobsRequestRequestTypeDef](#listfhirimportjobsrequestrequesttypedef)
+  - [ListFHIRImportJobsResponseTypeDef](#listfhirimportjobsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [OutputDataConfigTypeDef](#outputdataconfigtypedef)
   - [PreloadDataConfigTypeDef](#preloaddataconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [S3ConfigurationTypeDef](#s3configurationtypedef)
+  - [SseConfigurationTypeDef](#sseconfigurationtypedef)
   - [StartFHIRExportJobRequestRequestTypeDef](#startfhirexportjobrequestrequesttypedef)
   - [StartFHIRExportJobResponseTypeDef](#startfhirexportjobresponsetypedef)
   - [StartFHIRImportJobRequestRequestTypeDef](#startfhirimportjobrequestrequesttypedef)
   - [StartFHIRImportJobResponseTypeDef](#startfhirimportjobresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [TagTypeDef](#tagtypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
 ## CreateFHIRDatastoreRequestRequestTypeDef
 
@@ -47,9 +59,12 @@ Required fields:
 Optional fields:
 
 - `DatastoreName`: `str`
+- `SseConfiguration`:
+  [SseConfigurationTypeDef](./type_defs.md#sseconfigurationtypedef)
 - `PreloadDataConfig`:
   [PreloadDataConfigTypeDef](./type_defs.md#preloaddataconfigtypedef)
 - `ClientToken`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateFHIRDatastoreResponseTypeDef
 
@@ -98,6 +113,8 @@ Optional fields:
 
 - `DatastoreName`: `str`
 - `CreatedAt`: `datetime`
+- `SseConfiguration`:
+  [SseConfigurationTypeDef](./type_defs.md#sseconfigurationtypedef)
 - `PreloadDataConfig`:
   [PreloadDataConfigTypeDef](./type_defs.md#preloaddataconfigtypedef)
 
@@ -238,6 +255,8 @@ Optional fields:
 
 - `JobName`: `str`
 - `EndTime`: `datetime`
+- `JobOutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
 - `DataAccessRoleArn`: `str`
 - `Message`: `str`
 
@@ -250,6 +269,20 @@ from mypy_boto3_healthlake.type_defs import InputDataConfigTypeDef
 Optional fields:
 
 - `S3Uri`: `str`
+
+## KmsEncryptionConfigTypeDef
+
+```python
+from mypy_boto3_healthlake.type_defs import KmsEncryptionConfigTypeDef
+```
+
+Required fields:
+
+- `CmkType`: [CmkTypeType](./literals.md#cmktypetype)
+
+Optional fields:
+
+- `KmsKeyId`: `str`
 
 ## ListFHIRDatastoresRequestRequestTypeDef
 
@@ -277,6 +310,94 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListFHIRExportJobsRequestRequestTypeDef
+
+```python
+from mypy_boto3_healthlake.type_defs import ListFHIRExportJobsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatastoreId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `JobName`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `SubmittedBefore`: `Union`\[`datetime`, `str`\]
+- `SubmittedAfter`: `Union`\[`datetime`, `str`\]
+
+## ListFHIRExportJobsResponseTypeDef
+
+```python
+from mypy_boto3_healthlake.type_defs import ListFHIRExportJobsResponseTypeDef
+```
+
+Required fields:
+
+- `ExportJobPropertiesList`:
+  `List`\[[ExportJobPropertiesTypeDef](./type_defs.md#exportjobpropertiestypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListFHIRImportJobsRequestRequestTypeDef
+
+```python
+from mypy_boto3_healthlake.type_defs import ListFHIRImportJobsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatastoreId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `JobName`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `SubmittedBefore`: `Union`\[`datetime`, `str`\]
+- `SubmittedAfter`: `Union`\[`datetime`, `str`\]
+
+## ListFHIRImportJobsResponseTypeDef
+
+```python
+from mypy_boto3_healthlake.type_defs import ListFHIRImportJobsResponseTypeDef
+```
+
+Required fields:
+
+- `ImportJobPropertiesList`:
+  `List`\[[ImportJobPropertiesTypeDef](./type_defs.md#importjobpropertiestypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_healthlake.type_defs import ListTagsForResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+
+## ListTagsForResourceResponseTypeDef
+
+```python
+from mypy_boto3_healthlake.type_defs import ListTagsForResourceResponseTypeDef
+```
+
+Required fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## OutputDataConfigTypeDef
 
 ```python
@@ -285,7 +406,8 @@ from mypy_boto3_healthlake.type_defs import OutputDataConfigTypeDef
 
 Optional fields:
 
-- `S3Uri`: `str`
+- `S3Configuration`:
+  [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
 
 ## PreloadDataConfigTypeDef
 
@@ -311,6 +433,28 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
+
+## S3ConfigurationTypeDef
+
+```python
+from mypy_boto3_healthlake.type_defs import S3ConfigurationTypeDef
+```
+
+Required fields:
+
+- `S3Uri`: `str`
+- `KmsKeyId`: `str`
+
+## SseConfigurationTypeDef
+
+```python
+from mypy_boto3_healthlake.type_defs import SseConfigurationTypeDef
+```
+
+Required fields:
+
+- `KmsEncryptionConfig`:
+  [KmsEncryptionConfigTypeDef](./type_defs.md#kmsencryptionconfigtypedef)
 
 ## StartFHIRExportJobRequestRequestTypeDef
 
@@ -354,6 +498,8 @@ Required fields:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `JobOutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
 - `DatastoreId`: `str`
 - `DataAccessRoleArn`: `str`
 - `ClientToken`: `str`
@@ -375,3 +521,36 @@ Required fields:
 - `DatastoreId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_healthlake.type_defs import TagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## TagTypeDef
+
+```python
+from mypy_boto3_healthlake.type_defs import TagTypeDef
+```
+
+Required fields:
+
+- `Key`: `str`
+- `Value`: `str`
+
+## UntagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_healthlake.type_defs import UntagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `Sequence`\[`str`\]

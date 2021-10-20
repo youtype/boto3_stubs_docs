@@ -102,9 +102,9 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SecretString`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AddReplicaRegions`:
-  `List`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
+  `Sequence`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
 - `ForceOverwriteReplicaSecret`: `bool`
 
 ## CreateSecretResponseTypeDef
@@ -224,7 +224,7 @@ from mypy_boto3_secretsmanager.type_defs import FilterTypeDef
 Optional fields:
 
 - `Key`: [FilterNameStringTypeType](./literals.md#filternamestringtypetype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## GetRandomPasswordRequestRequestTypeDef
 
@@ -354,7 +354,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 
 ## ListSecretsResponseTypeDef
@@ -426,7 +426,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SecretString`: `str`
-- `VersionStages`: `List`\[`str`\]
+- `VersionStages`: `Sequence`\[`str`\]
 
 ## PutSecretValueResponseTypeDef
 
@@ -452,7 +452,7 @@ from mypy_boto3_secretsmanager.type_defs import RemoveRegionsFromReplicationRequ
 Required fields:
 
 - `SecretId`: `str`
-- `RemoveReplicaRegions`: `List`\[`str`\]
+- `RemoveReplicaRegions`: `Sequence`\[`str`\]
 
 ## RemoveRegionsFromReplicationResponseTypeDef
 
@@ -489,7 +489,7 @@ Required fields:
 
 - `SecretId`: `str`
 - `AddReplicaRegions`:
-  `List`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
+  `Sequence`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
 
 Optional fields:
 
@@ -639,6 +639,7 @@ Optional fields:
 - `VersionStages`: `List`\[`str`\]
 - `LastAccessedDate`: `datetime`
 - `CreatedDate`: `datetime`
+- `KmsKeyIds`: `List`\[`str`\]
 
 ## StopReplicationToReplicaRequestRequestTypeDef
 
@@ -671,7 +672,7 @@ from mypy_boto3_secretsmanager.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `SecretId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -693,7 +694,7 @@ from mypy_boto3_secretsmanager.type_defs import UntagResourceRequestRequestTypeD
 Required fields:
 
 - `SecretId`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateSecretRequestRequestTypeDef
 

@@ -436,6 +436,9 @@ from mypy_boto3_rds.literals import ActivityStreamModeType, ...
 - [TargetStateType](./literals.md#targetstatetype)
 - [TargetTypeType](./literals.md#targettypetype)
 - [WriteForwardingStatusType](./literals.md#writeforwardingstatustype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

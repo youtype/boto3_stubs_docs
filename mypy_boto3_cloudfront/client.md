@@ -582,9 +582,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `EndPoints`: `List`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
+- `EndPoints`: `Sequence`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
   *(required)*
-- `Fields`: `List`\[`str`\] *(required)*
+- `Fields`: `Sequence`\[`str`\] *(required)*
 - `Name`: `str` *(required)*
 - `SamplingRate`: `int` *(required)*
 
@@ -882,7 +882,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -2042,8 +2042,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `EndPoints`: `List`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
-- `Fields`: `List`\[`str`\]
+- `EndPoints`: `Sequence`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
+- `Fields`: `Sequence`\[`str`\]
 - `Name`: `str`
 - `ARN`: `str`
 - `SamplingRate`: `int`

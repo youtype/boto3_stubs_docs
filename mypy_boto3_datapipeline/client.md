@@ -101,7 +101,7 @@ Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `parameterValues`:
-  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
+  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 - `startTimestamp`: `Union`\[`datetime`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
@@ -121,7 +121,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -157,7 +157,7 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `uniqueId`: `str` *(required)*
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef).
@@ -212,7 +212,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
-- `objectIds`: `List`\[`str`\] *(required)*
+- `objectIds`: `Sequence`\[`str`\] *(required)*
 - `evaluateExpressions`: `bool`
 - `marker`: `str`
 
@@ -233,7 +233,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `pipelineIds`: `List`\[`str`\] *(required)*
+- `pipelineIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribePipelinesOutputTypeDef](./type_defs.md#describepipelinesoutputtypedef).
@@ -273,7 +273,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -359,12 +359,12 @@ Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `pipelineObjects`:
-  `List`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
+  `Sequence`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
   *(required)*
 - `parameterObjects`:
-  `List`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
+  `Sequence`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
 - `parameterValues`:
-  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
+  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 
 Returns
 [PutPipelineDefinitionOutputTypeDef](./type_defs.md#putpipelinedefinitionoutputtypedef).
@@ -407,7 +407,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -428,7 +428,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `taskId`: `str` *(required)*
-- `fields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
+- `fields`: `Sequence`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 
 Returns
 [ReportTaskProgressOutputTypeDef](./type_defs.md#reporttaskprogressoutputtypedef).
@@ -472,7 +472,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
-- `objectIds`: `List`\[`str`\] *(required)*
+- `objectIds`: `Sequence`\[`str`\] *(required)*
 - `status`: `str` *(required)*
 
 ### set_task_status
@@ -516,12 +516,12 @@ Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `pipelineObjects`:
-  `List`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
+  `Sequence`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
   *(required)*
 - `parameterObjects`:
-  `List`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
+  `Sequence`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
 - `parameterValues`:
-  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
+  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 
 Returns
 [ValidatePipelineDefinitionOutputTypeDef](./type_defs.md#validatepipelinedefinitionoutputtypedef).

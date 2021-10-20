@@ -125,7 +125,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -198,10 +198,10 @@ Keyword-only arguments:
 - `botAlias`: `str` *(required)*
 - `userId`: `str` *(required)*
 - `inputText`: `str` *(required)*
-- `sessionAttributes`: `Dict`\[`str`, `str`\]
-- `requestAttributes`: `Dict`\[`str`, `str`\]
+- `sessionAttributes`: `Mapping`\[`str`, `str`\]
+- `requestAttributes`: `Mapping`\[`str`, `str`\]
 - `activeContexts`:
-  `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
+  `Sequence`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
 Returns [PostTextResponseTypeDef](./type_defs.md#posttextresponsetypedef).
 
@@ -222,12 +222,12 @@ Keyword-only arguments:
 - `botName`: `str` *(required)*
 - `botAlias`: `str` *(required)*
 - `userId`: `str` *(required)*
-- `sessionAttributes`: `Dict`\[`str`, `str`\]
+- `sessionAttributes`: `Mapping`\[`str`, `str`\]
 - `dialogAction`: [DialogActionTypeDef](./type_defs.md#dialogactiontypedef)
 - `recentIntentSummaryView`:
-  `List`\[[IntentSummaryTypeDef](./type_defs.md#intentsummarytypedef)\]
+  `Sequence`\[[IntentSummaryTypeDef](./type_defs.md#intentsummarytypedef)\]
 - `accept`: `str`
 - `activeContexts`:
-  `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
+  `Sequence`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
 Returns [PutSessionResponseTypeDef](./type_defs.md#putsessionresponsetypedef).

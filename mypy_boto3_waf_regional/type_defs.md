@@ -392,7 +392,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRateBasedRuleResponseTypeDef
 
@@ -470,7 +470,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRuleGroupResponseTypeDef
 
@@ -499,7 +499,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRuleResponseTypeDef
 
@@ -603,7 +603,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateWebACLResponseTypeDef
 
@@ -2363,7 +2363,7 @@ from mypy_boto3_waf_regional.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -2396,7 +2396,7 @@ from mypy_boto3_waf_regional.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateByteMatchSetRequestRequestTypeDef
 
@@ -2409,7 +2409,7 @@ Required fields:
 - `ByteMatchSetId`: `str`
 - `ChangeToken`: `str`
 - `Updates`:
-  `List`\[[ByteMatchSetUpdateTypeDef](./type_defs.md#bytematchsetupdatetypedef)\]
+  `Sequence`\[[ByteMatchSetUpdateTypeDef](./type_defs.md#bytematchsetupdatetypedef)\]
 
 ## UpdateByteMatchSetResponseTypeDef
 
@@ -2434,7 +2434,7 @@ Required fields:
 - `GeoMatchSetId`: `str`
 - `ChangeToken`: `str`
 - `Updates`:
-  `List`\[[GeoMatchSetUpdateTypeDef](./type_defs.md#geomatchsetupdatetypedef)\]
+  `Sequence`\[[GeoMatchSetUpdateTypeDef](./type_defs.md#geomatchsetupdatetypedef)\]
 
 ## UpdateGeoMatchSetResponseTypeDef
 
@@ -2458,7 +2458,8 @@ Required fields:
 
 - `IPSetId`: `str`
 - `ChangeToken`: `str`
-- `Updates`: `List`\[[IPSetUpdateTypeDef](./type_defs.md#ipsetupdatetypedef)\]
+- `Updates`:
+  `Sequence`\[[IPSetUpdateTypeDef](./type_defs.md#ipsetupdatetypedef)\]
 
 ## UpdateIPSetResponseTypeDef
 
@@ -2482,7 +2483,8 @@ Required fields:
 
 - `RuleId`: `str`
 - `ChangeToken`: `str`
-- `Updates`: `List`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
+- `Updates`:
+  `Sequence`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
 - `RateLimit`: `int`
 
 ## UpdateRateBasedRuleResponseTypeDef
@@ -2507,7 +2509,7 @@ Required fields:
 
 - `RegexMatchSetId`: `str`
 - `Updates`:
-  `List`\[[RegexMatchSetUpdateTypeDef](./type_defs.md#regexmatchsetupdatetypedef)\]
+  `Sequence`\[[RegexMatchSetUpdateTypeDef](./type_defs.md#regexmatchsetupdatetypedef)\]
 - `ChangeToken`: `str`
 
 ## UpdateRegexMatchSetResponseTypeDef
@@ -2532,7 +2534,7 @@ Required fields:
 
 - `RegexPatternSetId`: `str`
 - `Updates`:
-  `List`\[[RegexPatternSetUpdateTypeDef](./type_defs.md#regexpatternsetupdatetypedef)\]
+  `Sequence`\[[RegexPatternSetUpdateTypeDef](./type_defs.md#regexpatternsetupdatetypedef)\]
 - `ChangeToken`: `str`
 
 ## UpdateRegexPatternSetResponseTypeDef
@@ -2557,7 +2559,7 @@ Required fields:
 
 - `RuleGroupId`: `str`
 - `Updates`:
-  `List`\[[RuleGroupUpdateTypeDef](./type_defs.md#rulegroupupdatetypedef)\]
+  `Sequence`\[[RuleGroupUpdateTypeDef](./type_defs.md#rulegroupupdatetypedef)\]
 - `ChangeToken`: `str`
 
 ## UpdateRuleGroupResponseTypeDef
@@ -2582,7 +2584,8 @@ Required fields:
 
 - `RuleId`: `str`
 - `ChangeToken`: `str`
-- `Updates`: `List`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
+- `Updates`:
+  `Sequence`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
 
 ## UpdateRuleResponseTypeDef
 
@@ -2607,7 +2610,7 @@ Required fields:
 - `SizeConstraintSetId`: `str`
 - `ChangeToken`: `str`
 - `Updates`:
-  `List`\[[SizeConstraintSetUpdateTypeDef](./type_defs.md#sizeconstraintsetupdatetypedef)\]
+  `Sequence`\[[SizeConstraintSetUpdateTypeDef](./type_defs.md#sizeconstraintsetupdatetypedef)\]
 
 ## UpdateSizeConstraintSetResponseTypeDef
 
@@ -2632,7 +2635,7 @@ Required fields:
 - `SqlInjectionMatchSetId`: `str`
 - `ChangeToken`: `str`
 - `Updates`:
-  `List`\[[SqlInjectionMatchSetUpdateTypeDef](./type_defs.md#sqlinjectionmatchsetupdatetypedef)\]
+  `Sequence`\[[SqlInjectionMatchSetUpdateTypeDef](./type_defs.md#sqlinjectionmatchsetupdatetypedef)\]
 
 ## UpdateSqlInjectionMatchSetResponseTypeDef
 
@@ -2660,7 +2663,7 @@ Required fields:
 Optional fields:
 
 - `Updates`:
-  `List`\[[WebACLUpdateTypeDef](./type_defs.md#webaclupdatetypedef)\]
+  `Sequence`\[[WebACLUpdateTypeDef](./type_defs.md#webaclupdatetypedef)\]
 - `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
 
 ## UpdateWebACLResponseTypeDef
@@ -2686,7 +2689,7 @@ Required fields:
 - `XssMatchSetId`: `str`
 - `ChangeToken`: `str`
 - `Updates`:
-  `List`\[[XssMatchSetUpdateTypeDef](./type_defs.md#xssmatchsetupdatetypedef)\]
+  `Sequence`\[[XssMatchSetUpdateTypeDef](./type_defs.md#xssmatchsetupdatetypedef)\]
 
 ## UpdateXssMatchSetResponseTypeDef
 

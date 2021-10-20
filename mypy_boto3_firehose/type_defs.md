@@ -8,6 +8,11 @@ type annotations stubs module
 [mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 - [Typed dictionaries for boto3 Firehose module](#typed-dictionaries-for-boto3-firehose-module)
+  - [AmazonopensearchserviceBufferingHintsTypeDef](#amazonopensearchservicebufferinghintstypedef)
+  - [AmazonopensearchserviceDestinationConfigurationTypeDef](#amazonopensearchservicedestinationconfigurationtypedef)
+  - [AmazonopensearchserviceDestinationDescriptionTypeDef](#amazonopensearchservicedestinationdescriptiontypedef)
+  - [AmazonopensearchserviceDestinationUpdateTypeDef](#amazonopensearchservicedestinationupdatetypedef)
+  - [AmazonopensearchserviceRetryOptionsTypeDef](#amazonopensearchserviceretryoptionstypedef)
   - [BufferingHintsTypeDef](#bufferinghintstypedef)
   - [CloudWatchLoggingOptionsTypeDef](#cloudwatchloggingoptionstypedef)
   - [CopyCommandTypeDef](#copycommandtypedef)
@@ -22,6 +27,7 @@ type annotations stubs module
   - [DescribeDeliveryStreamOutputTypeDef](#describedeliverystreamoutputtypedef)
   - [DeserializerTypeDef](#deserializertypedef)
   - [DestinationDescriptionTypeDef](#destinationdescriptiontypedef)
+  - [DynamicPartitioningConfigurationTypeDef](#dynamicpartitioningconfigurationtypedef)
   - [ElasticsearchBufferingHintsTypeDef](#elasticsearchbufferinghintstypedef)
   - [ElasticsearchDestinationConfigurationTypeDef](#elasticsearchdestinationconfigurationtypedef)
   - [ElasticsearchDestinationDescriptionTypeDef](#elasticsearchdestinationdescriptiontypedef)
@@ -68,6 +74,7 @@ type annotations stubs module
   - [RedshiftDestinationUpdateTypeDef](#redshiftdestinationupdatetypedef)
   - [RedshiftRetryOptionsTypeDef](#redshiftretryoptionstypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RetryOptionsTypeDef](#retryoptionstypedef)
   - [S3DestinationConfigurationTypeDef](#s3destinationconfigurationtypedef)
   - [S3DestinationDescriptionTypeDef](#s3destinationdescriptiontypedef)
   - [S3DestinationUpdateTypeDef](#s3destinationupdatetypedef)
@@ -86,6 +93,116 @@ type annotations stubs module
   - [UpdateDestinationInputRequestTypeDef](#updatedestinationinputrequesttypedef)
   - [VpcConfigurationDescriptionTypeDef](#vpcconfigurationdescriptiontypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
+
+## AmazonopensearchserviceBufferingHintsTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceBufferingHintsTypeDef
+```
+
+Optional fields:
+
+- `IntervalInSeconds`: `int`
+- `SizeInMBs`: `int`
+
+## AmazonopensearchserviceDestinationConfigurationTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceDestinationConfigurationTypeDef
+```
+
+Required fields:
+
+- `RoleARN`: `str`
+- `IndexName`: `str`
+- `S3Configuration`:
+  [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
+
+Optional fields:
+
+- `DomainARN`: `str`
+- `ClusterEndpoint`: `str`
+- `TypeName`: `str`
+- `IndexRotationPeriod`:
+  [AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype)
+- `BufferingHints`:
+  [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
+- `RetryOptions`:
+  [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
+- `S3BackupMode`:
+  [AmazonopensearchserviceS3BackupModeType](./literals.md#amazonopensearchservices3backupmodetype)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
+
+## AmazonopensearchserviceDestinationDescriptionTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceDestinationDescriptionTypeDef
+```
+
+Optional fields:
+
+- `RoleARN`: `str`
+- `DomainARN`: `str`
+- `ClusterEndpoint`: `str`
+- `IndexName`: `str`
+- `TypeName`: `str`
+- `IndexRotationPeriod`:
+  [AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype)
+- `BufferingHints`:
+  [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
+- `RetryOptions`:
+  [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
+- `S3BackupMode`:
+  [AmazonopensearchserviceS3BackupModeType](./literals.md#amazonopensearchservices3backupmodetype)
+- `S3DestinationDescription`:
+  [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
+- `VpcConfigurationDescription`:
+  [VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef)
+
+## AmazonopensearchserviceDestinationUpdateTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceDestinationUpdateTypeDef
+```
+
+Optional fields:
+
+- `RoleARN`: `str`
+- `DomainARN`: `str`
+- `ClusterEndpoint`: `str`
+- `IndexName`: `str`
+- `TypeName`: `str`
+- `IndexRotationPeriod`:
+  [AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype)
+- `BufferingHints`:
+  [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
+- `RetryOptions`:
+  [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
+- `S3Update`:
+  [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
+
+## AmazonopensearchserviceRetryOptionsTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceRetryOptionsTypeDef
+```
+
+Optional fields:
+
+- `DurationInSeconds`: `int`
 
 ## BufferingHintsTypeDef
 
@@ -151,11 +268,13 @@ Optional fields:
   [RedshiftDestinationConfigurationTypeDef](./type_defs.md#redshiftdestinationconfigurationtypedef)
 - `ElasticsearchDestinationConfiguration`:
   [ElasticsearchDestinationConfigurationTypeDef](./type_defs.md#elasticsearchdestinationconfigurationtypedef)
+- `AmazonopensearchserviceDestinationConfiguration`:
+  [AmazonopensearchserviceDestinationConfigurationTypeDef](./type_defs.md#amazonopensearchservicedestinationconfigurationtypedef)
 - `SplunkDestinationConfiguration`:
   [SplunkDestinationConfigurationTypeDef](./type_defs.md#splunkdestinationconfigurationtypedef)
 - `HttpEndpointDestinationConfiguration`:
   [HttpEndpointDestinationConfigurationTypeDef](./type_defs.md#httpendpointdestinationconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDeliveryStreamOutputTypeDef
 
@@ -317,10 +436,23 @@ Optional fields:
   [RedshiftDestinationDescriptionTypeDef](./type_defs.md#redshiftdestinationdescriptiontypedef)
 - `ElasticsearchDestinationDescription`:
   [ElasticsearchDestinationDescriptionTypeDef](./type_defs.md#elasticsearchdestinationdescriptiontypedef)
+- `AmazonopensearchserviceDestinationDescription`:
+  [AmazonopensearchserviceDestinationDescriptionTypeDef](./type_defs.md#amazonopensearchservicedestinationdescriptiontypedef)
 - `SplunkDestinationDescription`:
   [SplunkDestinationDescriptionTypeDef](./type_defs.md#splunkdestinationdescriptiontypedef)
 - `HttpEndpointDestinationDescription`:
   [HttpEndpointDestinationDescriptionTypeDef](./type_defs.md#httpendpointdestinationdescriptiontypedef)
+
+## DynamicPartitioningConfigurationTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import DynamicPartitioningConfigurationTypeDef
+```
+
+Optional fields:
+
+- `RetryOptions`: [RetryOptionsTypeDef](./type_defs.md#retryoptionstypedef)
+- `Enabled`: `bool`
 
 ## ElasticsearchBufferingHintsTypeDef
 
@@ -475,6 +607,8 @@ Optional fields:
   [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
 - `DataFormatConversionConfiguration`:
   [DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef)
+- `DynamicPartitioningConfiguration`:
+  [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
 
 ## ExtendedS3DestinationDescriptionTypeDef
 
@@ -506,6 +640,8 @@ Optional fields:
   [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
 - `DataFormatConversionConfiguration`:
   [DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef)
+- `DynamicPartitioningConfiguration`:
+  [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
 
 ## ExtendedS3DestinationUpdateTypeDef
 
@@ -534,6 +670,8 @@ Optional fields:
   [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
 - `DataFormatConversionConfiguration`:
   [DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef)
+- `DynamicPartitioningConfiguration`:
+  [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
 
 ## FailureDescriptionTypeDef
 
@@ -555,7 +693,7 @@ from mypy_boto3_firehose.type_defs import HiveJsonSerDeTypeDef
 
 Optional fields:
 
-- `TimestampFormats`: `List`\[`str`\]
+- `TimestampFormats`: `Sequence`\[`str`\]
 
 ## HttpEndpointBufferingHintsTypeDef
 
@@ -696,7 +834,7 @@ Optional fields:
 
 - `ContentEncoding`: [ContentEncodingType](./literals.md#contentencodingtype)
 - `CommonAttributes`:
-  `List`\[[HttpEndpointCommonAttributeTypeDef](./type_defs.md#httpendpointcommonattributetypedef)\]
+  `Sequence`\[[HttpEndpointCommonAttributeTypeDef](./type_defs.md#httpendpointcommonattributetypedef)\]
 
 ## HttpEndpointRetryOptionsTypeDef
 
@@ -815,7 +953,7 @@ Optional fields:
 
 - `ConvertDotsInJsonKeysToUnderscores`: `bool`
 - `CaseInsensitive`: `bool`
-- `ColumnToJsonKeyMappings`: `Dict`\[`str`, `str`\]
+- `ColumnToJsonKeyMappings`: `Mapping`\[`str`, `str`\]
 
 ## OrcSerDeTypeDef
 
@@ -831,7 +969,7 @@ Optional fields:
 - `EnablePadding`: `bool`
 - `PaddingTolerance`: `float`
 - `Compression`: [OrcCompressionType](./literals.md#orccompressiontype)
-- `BloomFilterColumns`: `List`\[`str`\]
+- `BloomFilterColumns`: `Sequence`\[`str`\]
 - `BloomFilterFalsePositiveProbability`: `float`
 - `DictionaryKeyThreshold`: `float`
 - `FormatVersion`: [OrcFormatVersionType](./literals.md#orcformatversiontype)
@@ -871,7 +1009,8 @@ from mypy_boto3_firehose.type_defs import ProcessingConfigurationTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
-- `Processors`: `List`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
+- `Processors`:
+  `Sequence`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
 
 ## ProcessorParameterTypeDef
 
@@ -893,13 +1032,12 @@ from mypy_boto3_firehose.type_defs import ProcessorTypeDef
 
 Required fields:
 
-- `Type`: `Literal['Lambda']` (see
-  [ProcessorTypeType](./literals.md#processortypetype))
+- `Type`: [ProcessorTypeType](./literals.md#processortypetype)
 
 Optional fields:
 
 - `Parameters`:
-  `List`\[[ProcessorParameterTypeDef](./type_defs.md#processorparametertypedef)\]
+  `Sequence`\[[ProcessorParameterTypeDef](./type_defs.md#processorparametertypedef)\]
 
 ## PutRecordBatchInputRequestTypeDef
 
@@ -910,7 +1048,7 @@ from mypy_boto3_firehose.type_defs import PutRecordBatchInputRequestTypeDef
 Required fields:
 
 - `DeliveryStreamName`: `str`
-- `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
+- `Records`: `Sequence`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
 
 ## PutRecordBatchOutputTypeDef
 
@@ -1079,6 +1217,16 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
+
+## RetryOptionsTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import RetryOptionsTypeDef
+```
+
+Optional fields:
+
+- `DurationInSeconds`: `int`
 
 ## S3DestinationConfigurationTypeDef
 
@@ -1302,7 +1450,7 @@ from mypy_boto3_firehose.type_defs import TagDeliveryStreamInputRequestTypeDef
 Required fields:
 
 - `DeliveryStreamName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1327,7 +1475,7 @@ from mypy_boto3_firehose.type_defs import UntagDeliveryStreamInputRequestTypeDef
 Required fields:
 
 - `DeliveryStreamName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDestinationInputRequestTypeDef
 
@@ -1351,6 +1499,8 @@ Optional fields:
   [RedshiftDestinationUpdateTypeDef](./type_defs.md#redshiftdestinationupdatetypedef)
 - `ElasticsearchDestinationUpdate`:
   [ElasticsearchDestinationUpdateTypeDef](./type_defs.md#elasticsearchdestinationupdatetypedef)
+- `AmazonopensearchserviceDestinationUpdate`:
+  [AmazonopensearchserviceDestinationUpdateTypeDef](./type_defs.md#amazonopensearchservicedestinationupdatetypedef)
 - `SplunkDestinationUpdate`:
   [SplunkDestinationUpdateTypeDef](./type_defs.md#splunkdestinationupdatetypedef)
 - `HttpEndpointDestinationUpdate`:
@@ -1377,6 +1527,6 @@ from mypy_boto3_firehose.type_defs import VpcConfigurationTypeDef
 
 Required fields:
 
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]

@@ -109,8 +109,9 @@ Returns [Exceptions](#exceptions).
 
 ### associate_drt_log_bucket
 
-Authorizes the DDoS Response Team (DRT) to access the specified Amazon S3
-bucket containing your AWS WAF logs.
+Authorizes the Shield Response Team (SRT) to access the specified Amazon S3
+bucket containing log data such as Application Load Balancer access logs,
+CloudFront logs, or logs from third party sources.
 
 Type annotations for `boto3.client("shield").associate_drt_log_bucket` method.
 
@@ -128,9 +129,9 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### associate_drt_role
 
-Authorizes the DDoS Response Team (DRT), using the specified role, to access
-your AWS account to assist with DDoS attack mitigation during potential
-attacks.
+Authorizes the Shield Response Team (SRT) using the specified role, to access
+your Amazon Web Services account to assist with DDoS attack mitigation during
+potential attacks.
 
 Type annotations for `boto3.client("shield").associate_drt_role` method.
 
@@ -167,8 +168,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### associate_proactive_engagement_details
 
-Initializes proactive engagement and sets the list of contacts for the DDoS
-Response Team (DRT) to use.
+Initializes proactive engagement and sets the list of contacts for the Shield
+Response Team (SRT) to use.
 
 Type annotations for
 `boto3.client("shield").associate_proactive_engagement_details` method.
@@ -182,7 +183,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EmergencyContactList`:
-  `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
+  `Sequence`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -204,7 +205,7 @@ Returns `bool`.
 
 ### create_protection
 
-Enables AWS Shield Advanced for a specific AWS resource.
+Enables Shield Advanced for a specific Amazon Web Services resource.
 
 Type annotations for `boto3.client("shield").create_protection` method.
 
@@ -218,7 +219,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateProtectionResponseTypeDef](./type_defs.md#createprotectionresponsetypedef).
@@ -247,14 +248,14 @@ Keyword-only arguments:
   *(required)*
 - `ResourceType`:
   [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
-- `Members`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Members`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
 ### create_subscription
 
-Activates AWS Shield Advanced for an account.
+Activates Shield Advanced for an account.
 
 Type annotations for `boto3.client("shield").create_subscription` method.
 
@@ -265,7 +266,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_protection
 
-Deletes an AWS Shield Advanced Protection .
+Deletes an Shield Advanced Protection .
 
 Type annotations for `boto3.client("shield").delete_protection` method.
 
@@ -301,7 +302,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_subscription
 
-Removes AWS Shield Advanced from an account.
+Removes Shield Advanced from an account.
 
 Type annotations for `boto3.client("shield").delete_subscription` method.
 
@@ -331,9 +332,9 @@ Returns
 
 ### describe_attack_statistics
 
-Provides information about the number and type of attacks AWS Shield has
-detected in the last year for all resources that belong to your account,
-regardless of whether you've defined Shield protections for them.
+Provides information about the number and type of attacks Shield has detected
+in the last year for all resources that belong to your account, regardless of
+whether you've defined Shield protections for them.
 
 Type annotations for `boto3.client("shield").describe_attack_statistics`
 method.
@@ -346,9 +347,9 @@ Returns
 
 ### describe_drt_access
 
-Returns the current role and list of Amazon S3 log buckets used by the DDoS
-Response Team (DRT) to access your AWS account while assisting with attack
-mitigation.
+Returns the current role and list of Amazon S3 log buckets used by the Shield
+Response Team (SRT) to access your Amazon Web Services account while assisting
+with attack mitigation.
 
 Type annotations for `boto3.client("shield").describe_drt_access` method.
 
@@ -360,9 +361,9 @@ Returns
 
 ### describe_emergency_contact_settings
 
-A list of email addresses and phone numbers that the DDoS Response Team (DRT)
+A list of email addresses and phone numbers that the Shield Response Team (SRT)
 can use to contact you if you have proactive engagement enabled, for
-escalations to the DRT and to initiate proactive customer support.
+escalations to the SRT and to initiate proactive customer support.
 
 Type annotations for
 `boto3.client("shield").describe_emergency_contact_settings` method.
@@ -414,7 +415,7 @@ Returns
 
 ### describe_subscription
 
-Provides details about the AWS Shield Advanced subscription for an account.
+Provides details about the Shield Advanced subscription for an account.
 
 Type annotations for `boto3.client("shield").describe_subscription` method.
 
@@ -426,8 +427,8 @@ Returns
 
 ### disable_proactive_engagement
 
-Removes authorization from the DDoS Response Team (DRT) to notify contacts
-about escalations to the DRT and to initiate proactive customer support.
+Removes authorization from the Shield Response Team (SRT) to notify contacts
+about escalations to the SRT and to initiate proactive customer support.
 
 Type annotations for `boto3.client("shield").disable_proactive_engagement`
 method.
@@ -439,8 +440,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_drt_log_bucket
 
-Removes the DDoS Response Team's (DRT) access to the specified Amazon S3 bucket
-containing your AWS WAF logs.
+Removes the Shield Response Team's (SRT) access to the specified Amazon S3
+bucket containing the logs that you shared previously.
 
 Type annotations for `boto3.client("shield").disassociate_drt_log_bucket`
 method.
@@ -459,7 +460,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_drt_role
 
-Removes the DDoS Response Team's (DRT) access to your AWS account.
+Removes the Shield Response Team's (SRT) access to your Amazon Web Services
+account.
 
 Type annotations for `boto3.client("shield").disassociate_drt_role` method.
 
@@ -490,8 +492,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### enable_proactive_engagement
 
-Authorizes the DDoS Response Team (DRT) to use email and phone to notify
-contacts about escalations to the DRT and to initiate proactive customer
+Authorizes the Shield Response Team (SRT) to use email and phone to notify
+contacts about escalations to the SRT and to initiate proactive customer
 support.
 
 Type annotations for `boto3.client("shield").enable_proactive_engagement`
@@ -514,7 +516,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -547,7 +549,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceArns`: `List`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 - `StartTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `EndTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `NextToken`: `str`
@@ -620,8 +622,8 @@ Returns
 
 ### list_tags_for_resource
 
-Gets information about AWS tags for a specified Amazon Resource Name (ARN) in
-AWS Shield.
+Gets information about Amazon Web Services tags for a specified Amazon Resource
+Name (ARN) in Shield.
 
 Type annotations for `boto3.client("shield").list_tags_for_resource` method.
 
@@ -640,7 +642,7 @@ Returns
 
 ### tag_resource
 
-Adds or updates tags for a resource in AWS Shield.
+Adds or updates tags for a resource in Shield.
 
 Type annotations for `boto3.client("shield").tag_resource` method.
 
@@ -653,13 +655,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes tags from a resource in AWS Shield.
+Removes tags from a resource in Shield.
 
 Type annotations for `boto3.client("shield").untag_resource` method.
 
@@ -672,15 +674,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
 ### update_emergency_contact_settings
 
 Updates the details of the list of email addresses and phone numbers that the
-DDoS Response Team (DRT) can use to contact you if you have proactive
-engagement enabled, for escalations to the DRT and to initiate proactive
+Shield Response Team (SRT) can use to contact you if you have proactive
+engagement enabled, for escalations to the SRT and to initiate proactive
 customer support.
 
 Type annotations for `boto3.client("shield").update_emergency_contact_settings`
@@ -695,7 +697,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EmergencyContactList`:
-  `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
+  `Sequence`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -722,7 +724,7 @@ Keyword-only arguments:
   *(required)*
 - `ResourceType`:
   [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
-- `Members`: `List`\[`str`\]
+- `Members`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 

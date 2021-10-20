@@ -145,7 +145,7 @@ Keyword-only arguments:
 - `IdempotencyToken`: `str`
 - `KeyStorageSecurityStandard`:
   [KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCertificateAuthorityResponseTypeDef](./type_defs.md#createcertificateauthorityresponsetypedef).
@@ -191,7 +191,7 @@ Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Principal`: `str` *(required)*
-- `Actions`: `List`\[[ActionTypeType](./literals.md#actiontypetype)\]
+- `Actions`: `Sequence`\[[ActionTypeType](./literals.md#actiontypetype)\]
   *(required)*
 - `SourceAccount`: `str`
 
@@ -304,7 +304,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -576,7 +576,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_certificate_authority
 
@@ -594,7 +594,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### update_certificate_authority
 

@@ -121,10 +121,11 @@ Required fields:
 Optional fields:
 
 - `AgentName`: `str`
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 - `VpcEndpointId`: `str`
-- `SubnetArns`: `List`\[`str`\]
-- `SecurityGroupArns`: `List`\[`str`\]
+- `SubnetArns`: `Sequence`\[`str`\]
+- `SecurityGroupArns`: `Sequence`\[`str`\]
 
 ## CreateAgentResponseTypeDef
 
@@ -152,7 +153,8 @@ Required fields:
 Optional fields:
 
 - `Subdirectory`: `str`
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 ## CreateLocationEfsResponseTypeDef
 
@@ -175,14 +177,15 @@ from mypy_boto3_datasync.type_defs import CreateLocationFsxWindowsRequestRequest
 Required fields:
 
 - `FsxFilesystemArn`: `str`
-- `SecurityGroupArns`: `List`\[`str`\]
+- `SecurityGroupArns`: `Sequence`\[`str`\]
 - `User`: `str`
 - `Password`: `str`
 
 Optional fields:
 
 - `Subdirectory`: `str`
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 - `Domain`: `str`
 
 ## CreateLocationFsxWindowsResponseTypeDef
@@ -213,7 +216,8 @@ Optional fields:
 
 - `MountOptions`:
   [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 ## CreateLocationNfsResponseTypeDef
 
@@ -237,7 +241,7 @@ Required fields:
 
 - `ServerHostname`: `str`
 - `BucketName`: `str`
-- `AgentArns`: `List`\[`str`\]
+- `AgentArns`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -247,7 +251,8 @@ Optional fields:
 - `Subdirectory`: `str`
 - `AccessKey`: `str`
 - `SecretKey`: `str`
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 ## CreateLocationObjectStorageResponseTypeDef
 
@@ -276,8 +281,9 @@ Optional fields:
 
 - `Subdirectory`: `str`
 - `S3StorageClass`: [S3StorageClassType](./literals.md#s3storageclasstype)
-- `AgentArns`: `List`\[`str`\]
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `AgentArns`: `Sequence`\[`str`\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 ## CreateLocationS3ResponseTypeDef
 
@@ -303,14 +309,15 @@ Required fields:
 - `ServerHostname`: `str`
 - `User`: `str`
 - `Password`: `str`
-- `AgentArns`: `List`\[`str`\]
+- `AgentArns`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `Domain`: `str`
 - `MountOptions`:
   [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 ## CreateLocationSmbResponseTypeDef
 
@@ -340,9 +347,13 @@ Optional fields:
 - `CloudWatchLogGroupArn`: `str`
 - `Name`: `str`
 - `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
-- `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Excludes`:
+  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 - `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Includes`:
+  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 ## CreateTaskResponseTypeDef
 
@@ -646,6 +657,7 @@ Required fields:
 - `ErrorCode`: `str`
 - `ErrorDetail`: `str`
 - `CreationTime`: `datetime`
+- `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -658,7 +670,7 @@ from mypy_boto3_datasync.type_defs import Ec2ConfigTypeDef
 Required fields:
 
 - `SubnetArn`: `str`
-- `SecurityGroupArns`: `List`\[`str`\]
+- `SecurityGroupArns`: `Sequence`\[`str`\]
 
 ## FilterRuleTypeDef
 
@@ -708,7 +720,7 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
+  `Sequence`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
 
 ## ListLocationsResponseTypeDef
 
@@ -788,7 +800,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
+- `Filters`:
+  `Sequence`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
 
 ## ListTasksResponseTypeDef
 
@@ -813,7 +826,7 @@ from mypy_boto3_datasync.type_defs import LocationFilterTypeDef
 Required fields:
 
 - `Name`: [LocationFilterNameType](./literals.md#locationfilternametype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `Operator`: [OperatorType](./literals.md#operatortype)
 
 ## LocationListEntryTypeDef
@@ -845,7 +858,7 @@ from mypy_boto3_datasync.type_defs import OnPremConfigTypeDef
 
 Required fields:
 
-- `AgentArns`: `List`\[`str`\]
+- `AgentArns`: `Sequence`\[`str`\]
 
 ## OptionsTypeDef
 
@@ -945,7 +958,10 @@ Required fields:
 Optional fields:
 
 - `OverrideOptions`: [OptionsTypeDef](./type_defs.md#optionstypedef)
-- `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Includes`:
+  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Excludes`:
+  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 ## StartTaskExecutionResponseTypeDef
 
@@ -982,7 +998,8 @@ from mypy_boto3_datasync.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 ## TaskExecutionListEntryTypeDef
 
@@ -1022,7 +1039,7 @@ from mypy_boto3_datasync.type_defs import TaskFilterTypeDef
 Required fields:
 
 - `Name`: [TaskFilterNameType](./literals.md#taskfilternametype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `Operator`: [OperatorType](./literals.md#operatortype)
 
 ## TaskListEntryTypeDef
@@ -1056,7 +1073,7 @@ from mypy_boto3_datasync.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Keys`: `List`\[`str`\]
+- `Keys`: `Sequence`\[`str`\]
 
 ## UpdateAgentRequestRequestTypeDef
 
@@ -1107,7 +1124,7 @@ Optional fields:
 - `Subdirectory`: `str`
 - `AccessKey`: `str`
 - `SecretKey`: `str`
-- `AgentArns`: `List`\[`str`\]
+- `AgentArns`: `Sequence`\[`str`\]
 
 ## UpdateLocationSmbRequestRequestTypeDef
 
@@ -1125,7 +1142,7 @@ Optional fields:
 - `User`: `str`
 - `Domain`: `str`
 - `Password`: `str`
-- `AgentArns`: `List`\[`str`\]
+- `AgentArns`: `Sequence`\[`str`\]
 - `MountOptions`:
   [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
 
@@ -1153,7 +1170,10 @@ Required fields:
 Optional fields:
 
 - `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
-- `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Excludes`:
+  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 - `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
 - `Name`: `str`
 - `CloudWatchLogGroupArn`: `str`
+- `Includes`:
+  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]

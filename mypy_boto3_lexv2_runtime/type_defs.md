@@ -229,8 +229,8 @@ Required fields:
 
 Optional fields:
 
-- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
-- `requestAttributes`: `Dict`\[`str`, `str`\]
+- `messages`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
+- `requestAttributes`: `Mapping`\[`str`, `str`\]
 - `responseContentType`: `str`
 
 ## PutSessionResponseTypeDef
@@ -267,7 +267,7 @@ Required fields:
 Optional fields:
 
 - `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
-- `requestAttributes`: `Dict`\[`str`, `str`\]
+- `requestAttributes`: `Mapping`\[`str`, `str`\]
 
 ## RecognizeTextResponseTypeDef
 

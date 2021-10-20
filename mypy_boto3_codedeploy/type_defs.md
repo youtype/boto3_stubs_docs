@@ -155,8 +155,8 @@ from mypy_boto3_codedeploy.type_defs import AddTagsToOnPremisesInstancesInputReq
 
 Required fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `instanceNames`: `List`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `instanceNames`: `Sequence`\[`str`\]
 
 ## AlarmConfigurationTypeDef
 
@@ -239,7 +239,7 @@ Required fields:
 
 - `applicationName`: `str`
 - `revisions`:
-  `List`\[[RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)\]
+  `Sequence`\[[RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)\]
 
 ## BatchGetApplicationRevisionsOutputTypeDef
 
@@ -264,7 +264,7 @@ from mypy_boto3_codedeploy.type_defs import BatchGetApplicationsInputRequestType
 
 Required fields:
 
-- `applicationNames`: `List`\[`str`\]
+- `applicationNames`: `Sequence`\[`str`\]
 
 ## BatchGetApplicationsOutputTypeDef
 
@@ -288,7 +288,7 @@ from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentGroupsInputRequest
 Required fields:
 
 - `applicationName`: `str`
-- `deploymentGroupNames`: `List`\[`str`\]
+- `deploymentGroupNames`: `Sequence`\[`str`\]
 
 ## BatchGetDeploymentGroupsOutputTypeDef
 
@@ -313,7 +313,7 @@ from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentInstancesInputRequ
 Required fields:
 
 - `deploymentId`: `str`
-- `instanceIds`: `List`\[`str`\]
+- `instanceIds`: `Sequence`\[`str`\]
 
 ## BatchGetDeploymentInstancesOutputTypeDef
 
@@ -338,7 +338,7 @@ from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentTargetsInputReques
 Optional fields:
 
 - `deploymentId`: `str`
-- `targetIds`: `List`\[`str`\]
+- `targetIds`: `Sequence`\[`str`\]
 
 ## BatchGetDeploymentTargetsOutputTypeDef
 
@@ -361,7 +361,7 @@ from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentsInputRequestTypeD
 
 Required fields:
 
-- `deploymentIds`: `List`\[`str`\]
+- `deploymentIds`: `Sequence`\[`str`\]
 
 ## BatchGetDeploymentsOutputTypeDef
 
@@ -384,7 +384,7 @@ from mypy_boto3_codedeploy.type_defs import BatchGetOnPremisesInstancesInputRequ
 
 Required fields:
 
-- `instanceNames`: `List`\[`str`\]
+- `instanceNames`: `Sequence`\[`str`\]
 
 ## BatchGetOnPremisesInstancesOutputTypeDef
 
@@ -467,7 +467,7 @@ Required fields:
 Optional fields:
 
 - `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateApplicationOutputTypeDef
 
@@ -527,12 +527,12 @@ Optional fields:
 
 - `deploymentConfigName`: `str`
 - `ec2TagFilters`:
-  `List`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]
+  `Sequence`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]
 - `onPremisesInstanceTagFilters`:
-  `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `autoScalingGroups`: `List`\[`str`\]
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `autoScalingGroups`: `Sequence`\[`str`\]
 - `triggerConfigurations`:
-  `List`\[[TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)\]
+  `Sequence`\[[TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)\]
 - `alarmConfiguration`:
   [AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef)
 - `autoRollbackConfiguration`:
@@ -547,10 +547,10 @@ Optional fields:
   [LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef)
 - `ec2TagSet`: [EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef)
 - `ecsServices`:
-  `List`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
+  `Sequence`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
 - `onPremisesTagSet`:
   [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDeploymentGroupOutputTypeDef
 
@@ -1414,9 +1414,9 @@ Optional fields:
 
 - `nextToken`: `str`
 - `instanceStatusFilter`:
-  `List`\[[InstanceStatusType](./literals.md#instancestatustype)\]
+  `Sequence`\[[InstanceStatusType](./literals.md#instancestatustype)\]
 - `instanceTypeFilter`:
-  `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
+  `Sequence`\[[InstanceTypeType](./literals.md#instancetypetype)\]
 
 ## ListDeploymentInstancesOutputTypeDef
 
@@ -1442,8 +1442,8 @@ Optional fields:
 - `deploymentId`: `str`
 - `nextToken`: `str`
 - `targetFilters`:
-  `Dict`\[[TargetFilterNameType](./literals.md#targetfilternametype),
-  `List`\[`str`\]\]
+  `Mapping`\[[TargetFilterNameType](./literals.md#targetfilternametype),
+  `Sequence`\[`str`\]\]
 
 ## ListDeploymentTargetsOutputTypeDef
 
@@ -1470,7 +1470,7 @@ Optional fields:
 - `deploymentGroupName`: `str`
 - `externalId`: `str`
 - `includeOnlyStatuses`:
-  `List`\[[DeploymentStatusType](./literals.md#deploymentstatustype)\]
+  `Sequence`\[[DeploymentStatusType](./literals.md#deploymentstatustype)\]
 - `createTimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `nextToken`: `str`
 
@@ -1520,7 +1520,8 @@ Optional fields:
 
 - `registrationStatus`:
   [RegistrationStatusType](./literals.md#registrationstatustype)
-- `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `tagFilters`:
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `nextToken`: `str`
 
 ## ListOnPremisesInstancesOutputTypeDef
@@ -1696,8 +1697,8 @@ from mypy_boto3_codedeploy.type_defs import RemoveTagsFromOnPremisesInstancesInp
 
 Required fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `instanceNames`: `List`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `instanceNames`: `Sequence`\[`str`\]
 
 ## ResponseMetadataTypeDef
 
@@ -1827,7 +1828,7 @@ from mypy_boto3_codedeploy.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1955,7 +1956,7 @@ from mypy_boto3_codedeploy.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApplicationInputRequestTypeDef
 
@@ -1984,13 +1985,13 @@ Optional fields:
 - `newDeploymentGroupName`: `str`
 - `deploymentConfigName`: `str`
 - `ec2TagFilters`:
-  `List`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]
+  `Sequence`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]
 - `onPremisesInstanceTagFilters`:
-  `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `autoScalingGroups`: `List`\[`str`\]
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `autoScalingGroups`: `Sequence`\[`str`\]
 - `serviceRoleArn`: `str`
 - `triggerConfigurations`:
-  `List`\[[TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)\]
+  `Sequence`\[[TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)\]
 - `alarmConfiguration`:
   [AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef)
 - `autoRollbackConfiguration`:
@@ -2005,7 +2006,7 @@ Optional fields:
   [LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef)
 - `ec2TagSet`: [EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef)
 - `ecsServices`:
-  `List`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
+  `Sequence`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
 - `onPremisesTagSet`:
   [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
 

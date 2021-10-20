@@ -88,7 +88,7 @@ from mypy_boto3_ivs.type_defs import BatchGetChannelRequestRequestTypeDef
 
 Required fields:
 
-- `arns`: `List`\[`str`\]
+- `arns`: `Sequence`\[`str`\]
 
 ## BatchGetChannelResponseTypeDef
 
@@ -111,7 +111,7 @@ from mypy_boto3_ivs.type_defs import BatchGetStreamKeyRequestRequestTypeDef
 
 Required fields:
 
-- `arns`: `List`\[`str`\]
+- `arns`: `Sequence`\[`str`\]
 
 ## BatchGetStreamKeyResponseTypeDef
 
@@ -121,8 +121,8 @@ from mypy_boto3_ivs.type_defs import BatchGetStreamKeyResponseTypeDef
 
 Required fields:
 
-- `streamKeys`: `List`\[[StreamKeyTypeDef](./type_defs.md#streamkeytypedef)\]
 - `errors`: `List`\[[BatchErrorTypeDef](./type_defs.md#batcherrortypedef)\]
+- `streamKeys`: `List`\[[StreamKeyTypeDef](./type_defs.md#streamkeytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -135,9 +135,9 @@ from mypy_boto3_ivs.type_defs import ChannelSummaryTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `name`: `str`
-- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
 - `authorized`: `bool`
+- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
+- `name`: `str`
 - `recordingConfigurationArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
@@ -150,14 +150,14 @@ from mypy_boto3_ivs.type_defs import ChannelTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `name`: `str`
-- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
-- `type`: [ChannelTypeType](./literals.md#channeltypetype)
-- `recordingConfigurationArn`: `str`
-- `ingestEndpoint`: `str`
-- `playbackUrl`: `str`
 - `authorized`: `bool`
+- `ingestEndpoint`: `str`
+- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
+- `name`: `str`
+- `playbackUrl`: `str`
+- `recordingConfigurationArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `type`: [ChannelTypeType](./literals.md#channeltypetype)
 
 ## CreateChannelRequestRequestTypeDef
 
@@ -167,12 +167,12 @@ from mypy_boto3_ivs.type_defs import CreateChannelRequestRequestTypeDef
 
 Optional fields:
 
-- `name`: `str`
-- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
-- `type`: [ChannelTypeType](./literals.md#channeltypetype)
 - `authorized`: `bool`
+- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
+- `name`: `str`
 - `recordingConfigurationArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
+- `type`: [ChannelTypeType](./literals.md#channeltypetype)
 
 ## CreateChannelResponseTypeDef
 
@@ -201,7 +201,7 @@ Required fields:
 Optional fields:
 
 - `name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRecordingConfigurationResponseTypeDef
 
@@ -228,7 +228,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateStreamKeyResponseTypeDef
 
@@ -417,7 +417,7 @@ Required fields:
 Optional fields:
 
 - `name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## ImportPlaybackKeyPairResponseTypeDef
 
@@ -441,8 +441,8 @@ Optional fields:
 
 - `filterByName`: `str`
 - `filterByRecordingConfigurationArn`: `str`
-- `nextToken`: `str`
 - `maxResults`: `int`
+- `nextToken`: `str`
 
 ## ListChannelsResponseTypeDef
 
@@ -466,8 +466,8 @@ from mypy_boto3_ivs.type_defs import ListPlaybackKeyPairsRequestRequestTypeDef
 
 Optional fields:
 
-- `nextToken`: `str`
 - `maxResults`: `int`
+- `nextToken`: `str`
 
 ## ListPlaybackKeyPairsResponseTypeDef
 
@@ -491,8 +491,8 @@ from mypy_boto3_ivs.type_defs import ListRecordingConfigurationsRequestRequestTy
 
 Optional fields:
 
-- `nextToken`: `str`
 - `maxResults`: `int`
+- `nextToken`: `str`
 
 ## ListRecordingConfigurationsResponseTypeDef
 
@@ -502,9 +502,9 @@ from mypy_boto3_ivs.type_defs import ListRecordingConfigurationsResponseTypeDef
 
 Required fields:
 
+- `nextToken`: `str`
 - `recordingConfigurations`:
   `List`\[[RecordingConfigurationSummaryTypeDef](./type_defs.md#recordingconfigurationsummarytypedef)\]
-- `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -520,8 +520,8 @@ Required fields:
 
 Optional fields:
 
-- `nextToken`: `str`
 - `maxResults`: `int`
+- `nextToken`: `str`
 
 ## ListStreamKeysResponseTypeDef
 
@@ -531,9 +531,9 @@ from mypy_boto3_ivs.type_defs import ListStreamKeysResponseTypeDef
 
 Required fields:
 
+- `nextToken`: `str`
 - `streamKeys`:
   `List`\[[StreamKeySummaryTypeDef](./type_defs.md#streamkeysummarytypedef)\]
-- `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -545,8 +545,8 @@ from mypy_boto3_ivs.type_defs import ListStreamsRequestRequestTypeDef
 
 Optional fields:
 
-- `nextToken`: `str`
 - `maxResults`: `int`
+- `nextToken`: `str`
 
 ## ListStreamsResponseTypeDef
 
@@ -556,9 +556,9 @@ from mypy_boto3_ivs.type_defs import ListStreamsResponseTypeDef
 
 Required fields:
 
+- `nextToken`: `str`
 - `streams`:
   `List`\[[StreamSummaryTypeDef](./type_defs.md#streamsummarytypedef)\]
-- `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -572,11 +572,6 @@ Required fields:
 
 - `resourceArn`: `str`
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -586,7 +581,6 @@ from mypy_boto3_ivs.type_defs import ListTagsForResourceResponseTypeDef
 Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
-- `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -623,8 +617,8 @@ from mypy_boto3_ivs.type_defs import PlaybackKeyPairTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `name`: `str`
 - `fingerprint`: `str`
+- `name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## PutMetadataRequestRequestTypeDef
@@ -731,9 +725,9 @@ from mypy_boto3_ivs.type_defs import StreamKeyTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `value`: `str`
 - `channelArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `value`: `str`
 
 ## StreamSummaryTypeDef
 
@@ -744,10 +738,10 @@ from mypy_boto3_ivs.type_defs import StreamSummaryTypeDef
 Optional fields:
 
 - `channelArn`: `str`
-- `state`: [StreamStateType](./literals.md#streamstatetype)
 - `health`: [StreamHealthType](./literals.md#streamhealthtype)
-- `viewerCount`: `int`
 - `startTime`: `datetime`
+- `state`: [StreamStateType](./literals.md#streamstatetype)
+- `viewerCount`: `int`
 
 ## StreamTypeDef
 
@@ -758,10 +752,10 @@ from mypy_boto3_ivs.type_defs import StreamTypeDef
 Optional fields:
 
 - `channelArn`: `str`
+- `health`: [StreamHealthType](./literals.md#streamhealthtype)
 - `playbackUrl`: `str`
 - `startTime`: `datetime`
 - `state`: [StreamStateType](./literals.md#streamstatetype)
-- `health`: [StreamHealthType](./literals.md#streamhealthtype)
 - `viewerCount`: `int`
 
 ## TagResourceRequestRequestTypeDef
@@ -773,7 +767,7 @@ from mypy_boto3_ivs.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -784,7 +778,7 @@ from mypy_boto3_ivs.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateChannelRequestRequestTypeDef
 
@@ -798,11 +792,11 @@ Required fields:
 
 Optional fields:
 
-- `name`: `str`
-- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
-- `type`: [ChannelTypeType](./literals.md#channeltypetype)
 - `authorized`: `bool`
+- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
+- `name`: `str`
 - `recordingConfigurationArn`: `str`
+- `type`: [ChannelTypeType](./literals.md#channeltypetype)
 
 ## UpdateChannelResponseTypeDef
 

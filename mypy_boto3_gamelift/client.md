@@ -186,7 +186,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TicketId`: `str` *(required)*
-- `PlayerIds`: `List`\[`str`\] *(required)*
+- `PlayerIds`: `Sequence`\[`str`\] *(required)*
 - `AcceptanceType`: [AcceptanceTypeType](./literals.md#acceptancetypetype)
   *(required)*
 
@@ -248,7 +248,7 @@ Keyword-only arguments:
 - `RoutingStrategy`:
   [RoutingStrategyTypeDef](./type_defs.md#routingstrategytypedef) *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateAliasOutputTypeDef](./type_defs.md#createaliasoutputtypedef).
 
@@ -270,7 +270,7 @@ Keyword-only arguments:
 - `Version`: `str`
 - `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateBuildOutputTypeDef](./type_defs.md#createbuildoutputtypedef).
 
@@ -297,16 +297,16 @@ Keyword-only arguments:
 - `ScriptId`: `str`
 - `ServerLaunchPath`: `str`
 - `ServerLaunchParameters`: `str`
-- `LogPaths`: `List`\[`str`\]
+- `LogPaths`: `Sequence`\[`str`\]
 - `EC2InboundPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `NewGameSessionProtectionPolicy`:
   [ProtectionPolicyType](./literals.md#protectionpolicytype)
 - `RuntimeConfiguration`:
   [RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef)
 - `ResourceCreationLimitPolicy`:
   [ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef)
-- `MetricGroups`: `List`\[`str`\]
+- `MetricGroups`: `Sequence`\[`str`\]
 - `PeerVpcAwsAccountId`: `str`
 - `PeerVpcId`: `str`
 - `FleetType`: [FleetTypeType](./literals.md#fleettypetype)
@@ -314,8 +314,8 @@ Keyword-only arguments:
 - `CertificateConfiguration`:
   [CertificateConfigurationTypeDef](./type_defs.md#certificateconfigurationtypedef)
 - `Locations`:
-  `List`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateFleetOutputTypeDef](./type_defs.md#createfleetoutputtypedef).
 
@@ -336,7 +336,7 @@ Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `Locations`:
-  `List`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
+  `Sequence`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
   *(required)*
 
 Returns
@@ -367,7 +367,7 @@ Keyword-only arguments:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
   *(required)*
 - `InstanceDefinitions`:
-  `List`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
+  `Sequence`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
   *(required)*
 - `AutoScalingPolicy`:
   [GameServerGroupAutoScalingPolicyTypeDef](./type_defs.md#gameservergroupautoscalingpolicytypedef)
@@ -375,8 +375,8 @@ Keyword-only arguments:
   [BalancingStrategyType](./literals.md#balancingstrategytype)
 - `GameServerProtectionPolicy`:
   [GameServerProtectionPolicyType](./literals.md#gameserverprotectionpolicytype)
-- `VpcSubnets`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VpcSubnets`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateGameServerGroupOutputTypeDef](./type_defs.md#creategameservergroupoutputtypedef).
@@ -400,7 +400,7 @@ Keyword-only arguments:
 - `AliasId`: `str`
 - `Name`: `str`
 - `GameProperties`:
-  `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
+  `Sequence`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `CreatorId`: `str`
 - `GameSessionId`: `str`
 - `IdempotencyToken`: `str`
@@ -428,16 +428,16 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `TimeoutInSeconds`: `int`
 - `PlayerLatencyPolicies`:
-  `List`\[[PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef)\]
+  `Sequence`\[[PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef)\]
 - `Destinations`:
-  `List`\[[GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef)\]
+  `Sequence`\[[GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef)\]
 - `FilterConfiguration`:
   [FilterConfigurationTypeDef](./type_defs.md#filterconfigurationtypedef)
 - `PriorityConfiguration`:
   [PriorityConfigurationTypeDef](./type_defs.md#priorityconfigurationtypedef)
 - `CustomEventData`: `str`
 - `NotificationTarget`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateGameSessionQueueOutputTypeDef](./type_defs.md#creategamesessionqueueoutputtypedef).
@@ -462,17 +462,17 @@ Keyword-only arguments:
 - `AcceptanceRequired`: `bool` *(required)*
 - `RuleSetName`: `str` *(required)*
 - `Description`: `str`
-- `GameSessionQueueArns`: `List`\[`str`\]
+- `GameSessionQueueArns`: `Sequence`\[`str`\]
 - `AcceptanceTimeoutSeconds`: `int`
 - `NotificationTarget`: `str`
 - `AdditionalPlayerCount`: `int`
 - `CustomEventData`: `str`
 - `GameProperties`:
-  `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
+  `Sequence`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `GameSessionData`: `str`
 - `BackfillMode`: [BackfillModeType](./literals.md#backfillmodetype)
 - `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateMatchmakingConfigurationOutputTypeDef](./type_defs.md#creatematchmakingconfigurationoutputtypedef).
@@ -494,7 +494,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RuleSetBody`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateMatchmakingRuleSetOutputTypeDef](./type_defs.md#creatematchmakingrulesetoutputtypedef).
@@ -535,8 +535,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GameSessionId`: `str` *(required)*
-- `PlayerIds`: `List`\[`str`\] *(required)*
-- `PlayerDataMap`: `Dict`\[`str`, `str`\]
+- `PlayerIds`: `Sequence`\[`str`\] *(required)*
+- `PlayerDataMap`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreatePlayerSessionsOutputTypeDef](./type_defs.md#createplayersessionsoutputtypedef).
@@ -559,7 +559,7 @@ Keyword-only arguments:
 - `Version`: `str`
 - `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateScriptOutputTypeDef](./type_defs.md#createscriptoutputtypedef).
 
@@ -671,7 +671,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
-- `Locations`: `List`\[`str`\] *(required)*
+- `Locations`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteFleetLocationsOutputTypeDef](./type_defs.md#deletefleetlocationsoutputtypedef).
@@ -924,7 +924,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -945,7 +945,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -992,7 +992,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
-- `Locations`: `List`\[`str`\]
+- `Locations`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1077,7 +1077,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1144,7 +1144,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GameServerGroupName`: `str` *(required)*
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1215,7 +1215,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1285,7 +1285,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TicketIds`: `List`\[`str`\] *(required)*
+- `TicketIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeMatchmakingOutputTypeDef](./type_defs.md#describematchmakingoutputtypedef).
@@ -1305,7 +1305,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `RuleSetName`: `str`
 - `Limit`: `int`
 - `NextToken`: `str`
@@ -1328,7 +1328,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1469,7 +1469,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1778,7 +1778,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GameServerGroupName`: `str` *(required)*
-- `ResumeActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
+- `ResumeActions`: `Sequence`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
   [GameServerGroupActionType](./literals.md#gameservergroupactiontype))\]
   *(required)*
 
@@ -1827,7 +1827,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
-- `Actions`: `List`\[`Literal['AUTO_SCALING']` (see
+- `Actions`: `Sequence`\[`Literal['AUTO_SCALING']` (see
   [FleetActionType](./literals.md#fleetactiontype))\] *(required)*
 - `Location`: `str`
 
@@ -1854,12 +1854,12 @@ Keyword-only arguments:
 - `GameSessionQueueName`: `str` *(required)*
 - `MaximumPlayerSessionCount`: `int` *(required)*
 - `GameProperties`:
-  `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
+  `Sequence`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `GameSessionName`: `str`
 - `PlayerLatencies`:
-  `List`\[[PlayerLatencyTypeDef](./type_defs.md#playerlatencytypedef)\]
+  `Sequence`\[[PlayerLatencyTypeDef](./type_defs.md#playerlatencytypedef)\]
 - `DesiredPlayerSessions`:
-  `List`\[[DesiredPlayerSessionTypeDef](./type_defs.md#desiredplayersessiontypedef)\]
+  `Sequence`\[[DesiredPlayerSessionTypeDef](./type_defs.md#desiredplayersessiontypedef)\]
 - `GameSessionData`: `str`
 
 Returns
@@ -1880,7 +1880,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ConfigurationName`: `str` *(required)*
-- `Players`: `List`\[[PlayerTypeDef](./type_defs.md#playertypedef)\]
+- `Players`: `Sequence`\[[PlayerTypeDef](./type_defs.md#playertypedef)\]
   *(required)*
 - `TicketId`: `str`
 - `GameSessionArn`: `str`
@@ -1904,7 +1904,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ConfigurationName`: `str` *(required)*
-- `Players`: `List`\[[PlayerTypeDef](./type_defs.md#playertypedef)\]
+- `Players`: `Sequence`\[[PlayerTypeDef](./type_defs.md#playertypedef)\]
   *(required)*
 - `TicketId`: `str`
 
@@ -1926,7 +1926,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
-- `Actions`: `List`\[`Literal['AUTO_SCALING']` (see
+- `Actions`: `Sequence`\[`Literal['AUTO_SCALING']` (see
   [FleetActionType](./literals.md#fleetactiontype))\] *(required)*
 - `Location`: `str`
 
@@ -1990,7 +1990,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GameServerGroupName`: `str` *(required)*
-- `SuspendActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
+- `SuspendActions`: `Sequence`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
   [GameServerGroupActionType](./literals.md#gameservergroupactiontype))\]
   *(required)*
 
@@ -2012,7 +2012,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2031,7 +2031,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2099,7 +2099,7 @@ Keyword-only arguments:
   [ProtectionPolicyType](./literals.md#protectionpolicytype)
 - `ResourceCreationLimitPolicy`:
   [ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef)
-- `MetricGroups`: `List`\[`str`\]
+- `MetricGroups`: `Sequence`\[`str`\]
 
 Returns
 [UpdateFleetAttributesOutputTypeDef](./type_defs.md#updatefleetattributesoutputtypedef).
@@ -2145,9 +2145,9 @@ Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `InboundPermissionAuthorizations`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `InboundPermissionRevocations`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 
 Returns
 [UpdateFleetPortSettingsOutputTypeDef](./type_defs.md#updatefleetportsettingsoutputtypedef).
@@ -2198,7 +2198,7 @@ Keyword-only arguments:
 - `GameServerGroupName`: `str` *(required)*
 - `RoleArn`: `str`
 - `InstanceDefinitions`:
-  `List`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
+  `Sequence`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
 - `GameServerProtectionPolicy`:
   [GameServerProtectionPolicyType](./literals.md#gameserverprotectionpolicytype)
 - `BalancingStrategy`:
@@ -2251,9 +2251,9 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `TimeoutInSeconds`: `int`
 - `PlayerLatencyPolicies`:
-  `List`\[[PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef)\]
+  `Sequence`\[[PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef)\]
 - `Destinations`:
-  `List`\[[GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef)\]
+  `Sequence`\[[GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef)\]
 - `FilterConfiguration`:
   [FilterConfigurationTypeDef](./type_defs.md#filterconfigurationtypedef)
 - `PriorityConfiguration`:
@@ -2281,7 +2281,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `GameSessionQueueArns`: `List`\[`str`\]
+- `GameSessionQueueArns`: `Sequence`\[`str`\]
 - `RequestTimeoutSeconds`: `int`
 - `AcceptanceTimeoutSeconds`: `int`
 - `AcceptanceRequired`: `bool`
@@ -2290,7 +2290,7 @@ Keyword-only arguments:
 - `AdditionalPlayerCount`: `int`
 - `CustomEventData`: `str`
 - `GameProperties`:
-  `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
+  `Sequence`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `GameSessionData`: `str`
 - `BackfillMode`: [BackfillModeType](./literals.md#backfillmodetype)
 - `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)

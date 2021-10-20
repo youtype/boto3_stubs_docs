@@ -108,7 +108,7 @@ Keyword-only arguments:
   [ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)
   *(required)*
 - `ScalingInstructions`:
-  `List`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
+  `Sequence`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
   *(required)*
 
 Returns
@@ -172,10 +172,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ScalingPlanNames`: `List`\[`str`\]
+- `ScalingPlanNames`: `Sequence`\[`str`\]
 - `ScalingPlanVersion`: `int`
 - `ApplicationSources`:
-  `List`\[[ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)\]
+  `Sequence`\[[ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -195,7 +195,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -252,7 +252,7 @@ Keyword-only arguments:
 - `ApplicationSource`:
   [ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)
 - `ScalingInstructions`:
-  `List`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
+  `Sequence`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 

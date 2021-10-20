@@ -155,7 +155,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## ArchiveCreationOutputTypeDef
 
@@ -1103,7 +1103,7 @@ Required fields:
 
 Optional fields:
 
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ResponseMetadataTypeDef
 

@@ -248,7 +248,7 @@ from mypy_boto3_mgh.type_defs import ListApplicationStatesRequestRequestTypeDef
 
 Optional fields:
 
-- `ApplicationIds`: `List`\[`str`\]
+- `ApplicationIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -474,7 +474,7 @@ Required fields:
 - `ProgressUpdateStream`: `str`
 - `MigrationTaskName`: `str`
 - `ResourceAttributeList`:
-  `List`\[[ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef)\]
+  `Sequence`\[[ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef)\]
 
 Optional fields:
 

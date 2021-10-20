@@ -48,12 +48,12 @@ Boto3 documentation:
 
 Arguments for `DescribeFleetAttributesPaginator.paginate` method:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetAttributesPaginator.paginate` returns
-`Iterator`\[[DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef)\].
+`_PageIterator`\[[DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef)\].
 
 ## DescribeFleetCapacityPaginator
 
@@ -74,12 +74,12 @@ Boto3 documentation:
 
 Arguments for `DescribeFleetCapacityPaginator.paginate` method:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetCapacityPaginator.paginate` returns
-`Iterator`\[[DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef)\].
+`_PageIterator`\[[DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef)\].
 
 ## DescribeFleetEventsPaginator
 
@@ -107,7 +107,7 @@ Arguments for `DescribeFleetEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetEventsPaginator.paginate` returns
-`Iterator`\[[DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef)\].
+`_PageIterator`\[[DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef)\].
 
 ## DescribeFleetUtilizationPaginator
 
@@ -128,12 +128,12 @@ Boto3 documentation:
 
 Arguments for `DescribeFleetUtilizationPaginator.paginate` method:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetUtilizationPaginator.paginate` returns
-`Iterator`\[[DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef)\].
+`_PageIterator`\[[DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef)\].
 
 ## DescribeGameServerInstancesPaginator
 
@@ -155,12 +155,12 @@ Boto3 documentation:
 Arguments for `DescribeGameServerInstancesPaginator.paginate` method:
 
 - `GameServerGroupName`: `str` *(required)*
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGameServerInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef)\].
+`_PageIterator`\[[DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef)\].
 
 ## DescribeGameSessionDetailsPaginator
 
@@ -190,7 +190,7 @@ Arguments for `DescribeGameSessionDetailsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGameSessionDetailsPaginator.paginate` returns
-`Iterator`\[[DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef)\].
+`_PageIterator`\[[DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef)\].
 
 ## DescribeGameSessionQueuesPaginator
 
@@ -211,12 +211,12 @@ Boto3 documentation:
 
 Arguments for `DescribeGameSessionQueuesPaginator.paginate` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGameSessionQueuesPaginator.paginate` returns
-`Iterator`\[[DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef)\].
+`_PageIterator`\[[DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef)\].
 
 ## DescribeGameSessionsPaginator
 
@@ -246,7 +246,7 @@ Arguments for `DescribeGameSessionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGameSessionsPaginator.paginate` returns
-`Iterator`\[[DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef)\].
+`_PageIterator`\[[DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef)\].
 
 ## DescribeInstancesPaginator
 
@@ -274,7 +274,7 @@ Arguments for `DescribeInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef)\].
+`_PageIterator`\[[DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef)\].
 
 ## DescribeMatchmakingConfigurationsPaginator
 
@@ -295,13 +295,13 @@ Boto3 documentation:
 
 Arguments for `DescribeMatchmakingConfigurationsPaginator.paginate` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `RuleSetName`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMatchmakingConfigurationsPaginator.paginate` returns
-`Iterator`\[[DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef)\].
+`_PageIterator`\[[DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef)\].
 
 ## DescribeMatchmakingRuleSetsPaginator
 
@@ -322,12 +322,12 @@ Boto3 documentation:
 
 Arguments for `DescribeMatchmakingRuleSetsPaginator.paginate` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMatchmakingRuleSetsPaginator.paginate` returns
-`Iterator`\[[DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef)\].
+`_PageIterator`\[[DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef)\].
 
 ## DescribePlayerSessionsPaginator
 
@@ -356,7 +356,7 @@ Arguments for `DescribePlayerSessionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePlayerSessionsPaginator.paginate` returns
-`Iterator`\[[DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef)\].
+`_PageIterator`\[[DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef)\].
 
 ## DescribeScalingPoliciesPaginator
 
@@ -384,7 +384,7 @@ Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingPoliciesPaginator.paginate` returns
-`Iterator`\[[DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef)\].
+`_PageIterator`\[[DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef)\].
 
 ## ListAliasesPaginator
 
@@ -411,7 +411,7 @@ Arguments for `ListAliasesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAliasesPaginator.paginate` returns
-`Iterator`\[[ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef)\].
+`_PageIterator`\[[ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef)\].
 
 ## ListBuildsPaginator
 
@@ -436,7 +436,7 @@ Arguments for `ListBuildsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBuildsPaginator.paginate` returns
-`Iterator`\[[ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef)\].
+`_PageIterator`\[[ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef)\].
 
 ## ListFleetsPaginator
 
@@ -462,7 +462,7 @@ Arguments for `ListFleetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFleetsPaginator.paginate` returns
-`Iterator`\[[ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef)\].
+`_PageIterator`\[[ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef)\].
 
 ## ListGameServerGroupsPaginator
 
@@ -487,7 +487,7 @@ Arguments for `ListGameServerGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGameServerGroupsPaginator.paginate` returns
-`Iterator`\[[ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef)\].
+`_PageIterator`\[[ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef)\].
 
 ## ListGameServersPaginator
 
@@ -514,7 +514,7 @@ Arguments for `ListGameServersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGameServersPaginator.paginate` returns
-`Iterator`\[[ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef)\].
+`_PageIterator`\[[ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef)\].
 
 ## ListScriptsPaginator
 
@@ -538,7 +538,7 @@ Arguments for `ListScriptsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListScriptsPaginator.paginate` returns
-`Iterator`\[[ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef)\].
+`_PageIterator`\[[ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef)\].
 
 ## SearchGameSessionsPaginator
 
@@ -568,4 +568,4 @@ Arguments for `SearchGameSessionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchGameSessionsPaginator.paginate` returns
-`Iterator`\[[SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef)\].
+`_PageIterator`\[[SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef)\].

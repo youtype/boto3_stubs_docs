@@ -136,7 +136,7 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
-- `eulaIds`: `List`\[`str`\]
+- `eulaIds`: `Sequence`\[`str`\]
 
 ## AcceptEulasResponseTypeDef
 
@@ -171,7 +171,7 @@ from mypy_boto3_nimble.type_defs import ActiveDirectoryConfigurationTypeDef
 Optional fields:
 
 - `computerAttributes`:
-  `List`\[[ActiveDirectoryComputerAttributeTypeDef](./type_defs.md#activedirectorycomputerattributetypedef)\]
+  `Sequence`\[[ActiveDirectoryComputerAttributeTypeDef](./type_defs.md#activedirectorycomputerattributetypedef)\]
 - `directoryId`: `str`
 - `organizationalUnitDistinguishedName`: `str`
 
@@ -194,19 +194,19 @@ from mypy_boto3_nimble.type_defs import CreateLaunchProfileRequestRequestTypeDef
 
 Required fields:
 
-- `ec2SubnetIds`: `List`\[`str`\]
-- `launchProfileProtocolVersions`: `List`\[`str`\]
+- `ec2SubnetIds`: `Sequence`\[`str`\]
+- `launchProfileProtocolVersions`: `Sequence`\[`str`\]
 - `name`: `str`
 - `streamConfiguration`:
   [StreamConfigurationCreateTypeDef](./type_defs.md#streamconfigurationcreatetypedef)
-- `studioComponentIds`: `List`\[`str`\]
+- `studioComponentIds`: `Sequence`\[`str`\]
 - `studioId`: `str`
 
 Optional fields:
 
 - `clientToken`: `str`
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateLaunchProfileResponseTypeDef
 
@@ -236,7 +236,7 @@ Optional fields:
 
 - `clientToken`: `str`
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateStreamingImageResponseTypeDef
 
@@ -267,8 +267,9 @@ Optional fields:
 - `ec2InstanceType`:
   [StreamingInstanceTypeType](./literals.md#streaminginstancetypetype)
 - `launchProfileId`: `str`
+- `ownedBy`: `str`
 - `streamingImageId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateStreamingSessionResponseTypeDef
 
@@ -329,14 +330,14 @@ Optional fields:
 - `configuration`:
   [StudioComponentConfigurationTypeDef](./type_defs.md#studiocomponentconfigurationtypedef)
 - `description`: `str`
-- `ec2SecurityGroupIds`: `List`\[`str`\]
+- `ec2SecurityGroupIds`: `Sequence`\[`str`\]
 - `initializationScripts`:
-  `List`\[[StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef)\]
+  `Sequence`\[[StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef)\]
 - `scriptParameters`:
-  `List`\[[ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)\]
+  `Sequence`\[[ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)\]
 - `subtype`:
   [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateStudioComponentResponseTypeDef
 
@@ -369,7 +370,7 @@ Optional fields:
 - `clientToken`: `str`
 - `studioEncryptionConfiguration`:
   [StudioEncryptionConfigurationTypeDef](./type_defs.md#studioencryptionconfigurationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateStudioResponseTypeDef
 
@@ -636,7 +637,7 @@ from mypy_boto3_nimble.type_defs import GetLaunchProfileInitializationRequestReq
 Required fields:
 
 - `launchProfileId`: `str`
-- `launchProfileProtocolVersions`: `List`\[`str`\]
+- `launchProfileProtocolVersions`: `Sequence`\[`str`\]
 - `launchPurpose`: `str`
 - `platform`: `str`
 - `studioId`: `str`
@@ -956,7 +957,7 @@ Required fields:
 
 Optional fields:
 
-- `eulaIds`: `List`\[`str`\]
+- `eulaIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 
 ## ListEulaAcceptancesResponseTypeDef
@@ -981,7 +982,7 @@ from mypy_boto3_nimble.type_defs import ListEulasRequestRequestTypeDef
 
 Optional fields:
 
-- `eulaIds`: `List`\[`str`\]
+- `eulaIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 
 ## ListEulasResponseTypeDef
@@ -1042,7 +1043,7 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `principalId`: `str`
-- `states`: `List`\[`str`\]
+- `states`: `Sequence`\[`str`\]
 
 ## ListLaunchProfilesResponseTypeDef
 
@@ -1101,6 +1102,7 @@ Optional fields:
 
 - `createdBy`: `str`
 - `nextToken`: `str`
+- `ownedBy`: `str`
 - `sessionIds`: `str`
 
 ## ListStreamingSessionsResponseTypeDef
@@ -1131,8 +1133,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `states`: `List`\[`str`\]
-- `types`: `List`\[`str`\]
+- `states`: `Sequence`\[`str`\]
+- `types`: `Sequence`\[`str`\]
 
 ## ListStudioComponentsResponseTypeDef
 
@@ -1269,7 +1271,7 @@ Required fields:
 - `identityStoreId`: `str`
 - `launchProfileId`: `str`
 - `members`:
-  `List`\[[NewLaunchProfileMemberTypeDef](./type_defs.md#newlaunchprofilemembertypedef)\]
+  `Sequence`\[[NewLaunchProfileMemberTypeDef](./type_defs.md#newlaunchprofilemembertypedef)\]
 - `studioId`: `str`
 
 Optional fields:
@@ -1286,7 +1288,7 @@ Required fields:
 
 - `identityStoreId`: `str`
 - `members`:
-  `List`\[[NewStudioMemberTypeDef](./type_defs.md#newstudiomembertypedef)\]
+  `Sequence`\[[NewStudioMemberTypeDef](./type_defs.md#newstudiomembertypedef)\]
 - `studioId`: `str`
 
 Optional fields:
@@ -1369,8 +1371,8 @@ Required fields:
 - `clipboardMode`:
   [StreamingClipboardModeType](./literals.md#streamingclipboardmodetype)
 - `ec2InstanceTypes`:
-  `List`\[[StreamingInstanceTypeType](./literals.md#streaminginstancetypetype)\]
-- `streamingImageIds`: `List`\[`str`\]
+  `Sequence`\[[StreamingInstanceTypeType](./literals.md#streaminginstancetypetype)\]
+- `streamingImageIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1441,6 +1443,7 @@ Optional fields:
 - `createdAt`: `datetime`
 - `createdBy`: `str`
 - `expiresAt`: `datetime`
+- `ownedBy`: `str`
 - `state`:
   [StreamingSessionStreamStateType](./literals.md#streamingsessionstreamstatetype)
 - `statusCode`:
@@ -1461,6 +1464,7 @@ Optional fields:
 - `createdBy`: `str`
 - `ec2InstanceType`: `str`
 - `launchProfileId`: `str`
+- `ownedBy`: `str`
 - `sessionId`: `str`
 - `state`: [StreamingSessionStateType](./literals.md#streamingsessionstatetype)
 - `statusCode`:
@@ -1621,7 +1625,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1632,7 +1636,7 @@ from mypy_boto3_nimble.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateLaunchProfileMemberRequestRequestTypeDef
 
@@ -1680,11 +1684,11 @@ Optional fields:
 
 - `clientToken`: `str`
 - `description`: `str`
-- `launchProfileProtocolVersions`: `List`\[`str`\]
+- `launchProfileProtocolVersions`: `Sequence`\[`str`\]
 - `name`: `str`
 - `streamConfiguration`:
   [StreamConfigurationCreateTypeDef](./type_defs.md#streamconfigurationcreatetypedef)
-- `studioComponentIds`: `List`\[`str`\]
+- `studioComponentIds`: `Sequence`\[`str`\]
 
 ## UpdateLaunchProfileResponseTypeDef
 
@@ -1745,12 +1749,12 @@ Optional fields:
 - `configuration`:
   [StudioComponentConfigurationTypeDef](./type_defs.md#studiocomponentconfigurationtypedef)
 - `description`: `str`
-- `ec2SecurityGroupIds`: `List`\[`str`\]
+- `ec2SecurityGroupIds`: `Sequence`\[`str`\]
 - `initializationScripts`:
-  `List`\[[StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef)\]
+  `Sequence`\[[StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef)\]
 - `name`: `str`
 - `scriptParameters`:
-  `List`\[[ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)\]
+  `Sequence`\[[ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)\]
 - `subtype`:
   [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
 - `type`: [StudioComponentTypeType](./literals.md#studiocomponenttypetype)

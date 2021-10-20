@@ -43,7 +43,7 @@ Arguments for `AdminListGroupsForUserPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `AdminListGroupsForUserPaginator.paginate` returns
-`Iterator`\[[AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef)\].
+`_PageIterator`\[[AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef)\].
 
 ## AdminListUserAuthEventsPaginator
 
@@ -70,7 +70,7 @@ Arguments for `AdminListUserAuthEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `AdminListUserAuthEventsPaginator.paginate` returns
-`Iterator`\[[AdminListUserAuthEventsResponseTypeDef](./type_defs.md#adminlistuserautheventsresponsetypedef)\].
+`_PageIterator`\[[AdminListUserAuthEventsResponseTypeDef](./type_defs.md#adminlistuserautheventsresponsetypedef)\].
 
 ## ListGroupsPaginator
 
@@ -96,7 +96,7 @@ Arguments for `ListGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupsPaginator.paginate` returns
-`Iterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
+`_PageIterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
 
 ## ListIdentityProvidersPaginator
 
@@ -122,7 +122,7 @@ Arguments for `ListIdentityProvidersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIdentityProvidersPaginator.paginate` returns
-`Iterator`\[[ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef)\].
+`_PageIterator`\[[ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef)\].
 
 ## ListResourceServersPaginator
 
@@ -148,7 +148,7 @@ Arguments for `ListResourceServersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceServersPaginator.paginate` returns
-`Iterator`\[[ListResourceServersResponseTypeDef](./type_defs.md#listresourceserversresponsetypedef)\].
+`_PageIterator`\[[ListResourceServersResponseTypeDef](./type_defs.md#listresourceserversresponsetypedef)\].
 
 ## ListUserPoolClientsPaginator
 
@@ -174,7 +174,7 @@ Arguments for `ListUserPoolClientsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUserPoolClientsPaginator.paginate` returns
-`Iterator`\[[ListUserPoolClientsResponseTypeDef](./type_defs.md#listuserpoolclientsresponsetypedef)\].
+`_PageIterator`\[[ListUserPoolClientsResponseTypeDef](./type_defs.md#listuserpoolclientsresponsetypedef)\].
 
 ## ListUserPoolsPaginator
 
@@ -199,7 +199,7 @@ Arguments for `ListUserPoolsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUserPoolsPaginator.paginate` returns
-`Iterator`\[[ListUserPoolsResponseTypeDef](./type_defs.md#listuserpoolsresponsetypedef)\].
+`_PageIterator`\[[ListUserPoolsResponseTypeDef](./type_defs.md#listuserpoolsresponsetypedef)\].
 
 ## ListUsersPaginator
 
@@ -220,13 +220,13 @@ Boto3 documentation:
 Arguments for `ListUsersPaginator.paginate` method:
 
 - `UserPoolId`: `str` *(required)*
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `Filter`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUsersPaginator.paginate` returns
-`Iterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].
+`_PageIterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].
 
 ## ListUsersInGroupPaginator
 
@@ -253,4 +253,4 @@ Arguments for `ListUsersInGroupPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUsersInGroupPaginator.paginate` returns
-`Iterator`\[[ListUsersInGroupResponseTypeDef](./type_defs.md#listusersingroupresponsetypedef)\].
+`_PageIterator`\[[ListUsersInGroupResponseTypeDef](./type_defs.md#listusersingroupresponsetypedef)\].

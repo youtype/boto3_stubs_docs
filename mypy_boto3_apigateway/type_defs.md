@@ -322,7 +322,7 @@ Optional fields:
 
 - `apiId`: `str`
 - `stage`: `str`
-- `throttle`: `Dict`\[`str`,
+- `throttle`: `Mapping`\[`str`,
   [ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef)\]
 
 ## AuthorizerResponseMetadataTypeDef
@@ -428,7 +428,7 @@ Optional fields:
 
 - `percentTraffic`: `float`
 - `deploymentId`: `str`
-- `stageVariableOverrides`: `Dict`\[`str`, `str`\]
+- `stageVariableOverrides`: `Mapping`\[`str`, `str`\]
 - `useStageCache`: `bool`
 
 ## ClientCertificateResponseMetadataTypeDef
@@ -490,9 +490,9 @@ Optional fields:
 - `enabled`: `bool`
 - `generateDistinctId`: `bool`
 - `value`: `str`
-- `stageKeys`: `List`\[[StageKeyTypeDef](./type_defs.md#stagekeytypedef)\]
+- `stageKeys`: `Sequence`\[[StageKeyTypeDef](./type_defs.md#stagekeytypedef)\]
 - `customerId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAuthorizerRequestRequestTypeDef
 
@@ -508,7 +508,7 @@ Required fields:
 
 Optional fields:
 
-- `providerARNs`: `List`\[`str`\]
+- `providerARNs`: `Sequence`\[`str`\]
 - `authType`: `str`
 - `authorizerUri`: `str`
 - `authorizerCredentials`: `str`
@@ -550,7 +550,7 @@ Optional fields:
 - `cacheClusterEnabled`: `bool`
 - `cacheClusterSize`:
   [CacheClusterSizeType](./literals.md#cacheclustersizetype)
-- `variables`: `Dict`\[`str`, `str`\]
+- `variables`: `Mapping`\[`str`, `str`\]
 - `canarySettings`:
   [DeploymentCanarySettingsTypeDef](./type_defs.md#deploymentcanarysettingstypedef)
 - `tracingEnabled`: `bool`
@@ -605,10 +605,11 @@ Optional fields:
 - `regionalCertificateArn`: `str`
 - `endpointConfiguration`:
   [EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `securityPolicy`: [SecurityPolicyType](./literals.md#securitypolicytype)
 - `mutualTlsAuthentication`:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
+- `ownershipVerificationCertificateArn`: `str`
 
 ## CreateModelRequestRequestTypeDef
 
@@ -670,13 +671,13 @@ Optional fields:
 - `description`: `str`
 - `version`: `str`
 - `cloneFrom`: `str`
-- `binaryMediaTypes`: `List`\[`str`\]
+- `binaryMediaTypes`: `Sequence`\[`str`\]
 - `minimumCompressionSize`: `int`
 - `apiKeySource`: [ApiKeySourceTypeType](./literals.md#apikeysourcetypetype)
 - `endpointConfiguration`:
   [EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)
 - `policy`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `disableExecuteApiEndpoint`: `bool`
 
 ## CreateStageRequestRequestTypeDef
@@ -697,12 +698,12 @@ Optional fields:
 - `cacheClusterEnabled`: `bool`
 - `cacheClusterSize`:
   [CacheClusterSizeType](./literals.md#cacheclustersizetype)
-- `variables`: `Dict`\[`str`, `str`\]
+- `variables`: `Mapping`\[`str`, `str`\]
 - `documentationVersion`: `str`
 - `canarySettings`:
   [CanarySettingsTypeDef](./type_defs.md#canarysettingstypedef)
 - `tracingEnabled`: `bool`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateUsagePlanKeyRequestRequestTypeDef
 
@@ -729,10 +730,10 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `apiStages`: `List`\[[ApiStageTypeDef](./type_defs.md#apistagetypedef)\]
+- `apiStages`: `Sequence`\[[ApiStageTypeDef](./type_defs.md#apistagetypedef)\]
 - `throttle`: [ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef)
 - `quota`: [QuotaSettingsTypeDef](./type_defs.md#quotasettingstypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateVpcLinkRequestRequestTypeDef
 
@@ -743,12 +744,12 @@ from mypy_boto3_apigateway.type_defs import CreateVpcLinkRequestRequestTypeDef
 Required fields:
 
 - `name`: `str`
-- `targetArns`: `List`\[`str`\]
+- `targetArns`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## DeleteApiKeyRequestRequestTypeDef
 
@@ -991,7 +992,7 @@ from mypy_boto3_apigateway.type_defs import DeploymentCanarySettingsTypeDef
 Optional fields:
 
 - `percentTraffic`: `float`
-- `stageVariableOverrides`: `Dict`\[`str`, `str`\]
+- `stageVariableOverrides`: `Mapping`\[`str`, `str`\]
 - `useStageCache`: `bool`
 
 ## DeploymentResponseMetadataTypeDef
@@ -1176,6 +1177,7 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `mutualTlsAuthentication`:
   [MutualTlsAuthenticationTypeDef](./type_defs.md#mutualtlsauthenticationtypedef)
+- `ownershipVerificationCertificateArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1206,6 +1208,7 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `mutualTlsAuthentication`:
   [MutualTlsAuthenticationTypeDef](./type_defs.md#mutualtlsauthenticationtypedef)
+- `ownershipVerificationCertificateArn`: `str`
 
 ## DomainNamesTypeDef
 
@@ -1228,8 +1231,8 @@ from mypy_boto3_apigateway.type_defs import EndpointConfigurationTypeDef
 
 Optional fields:
 
-- `types`: `List`\[[EndpointTypeType](./literals.md#endpointtypetype)\]
-- `vpcEndpointIds`: `List`\[`str`\]
+- `types`: `Sequence`\[[EndpointTypeType](./literals.md#endpointtypetype)\]
+- `vpcEndpointIds`: `Sequence`\[`str`\]
 
 ## ExportResponseTypeDef
 
@@ -1322,7 +1325,7 @@ from mypy_boto3_apigateway.type_defs import GenerateClientCertificateRequestRequ
 Optional fields:
 
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## GetApiKeyRequestRequestTypeDef
 
@@ -1438,7 +1441,7 @@ Required fields:
 
 Optional fields:
 
-- `embed`: `List`\[`str`\]
+- `embed`: `Sequence`\[`str`\]
 
 ## GetDeploymentsRequestRequestTypeDef
 
@@ -1547,7 +1550,7 @@ Required fields:
 
 Optional fields:
 
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 - `accepts`: `str`
 
 ## GetGatewayResponseRequestRequestTypeDef
@@ -1707,7 +1710,7 @@ Required fields:
 
 Optional fields:
 
-- `embed`: `List`\[`str`\]
+- `embed`: `Sequence`\[`str`\]
 
 ## GetResourcesRequestRequestTypeDef
 
@@ -1723,7 +1726,7 @@ Optional fields:
 
 - `position`: `str`
 - `limit`: `int`
-- `embed`: `List`\[`str`\]
+- `embed`: `Sequence`\[`str`\]
 
 ## GetRestApiRequestRequestTypeDef
 
@@ -1760,7 +1763,7 @@ Required fields:
 
 Optional fields:
 
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 
 ## GetSdkTypeRequestRequestTypeDef
 
@@ -1956,7 +1959,7 @@ Required fields:
 Optional fields:
 
 - `failOnWarnings`: `bool`
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 
 ## IntegrationResponseMetadataTypeDef
 
@@ -2251,8 +2254,8 @@ Required fields:
 Optional fields:
 
 - `statusCode`: `str`
-- `responseParameters`: `Dict`\[`str`, `str`\]
-- `responseTemplates`: `Dict`\[`str`, `str`\]
+- `responseParameters`: `Mapping`\[`str`, `str`\]
+- `responseTemplates`: `Mapping`\[`str`, `str`\]
 
 ## PutIntegrationRequestRequestTypeDef
 
@@ -2274,11 +2277,11 @@ Optional fields:
 - `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `connectionId`: `str`
 - `credentials`: `str`
-- `requestParameters`: `Dict`\[`str`, `str`\]
-- `requestTemplates`: `Dict`\[`str`, `str`\]
+- `requestParameters`: `Mapping`\[`str`, `str`\]
+- `requestTemplates`: `Mapping`\[`str`, `str`\]
 - `passthroughBehavior`: `str`
 - `cacheNamespace`: `str`
-- `cacheKeyParameters`: `List`\[`str`\]
+- `cacheKeyParameters`: `Sequence`\[`str`\]
 - `contentHandling`:
   [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `timeoutInMillis`: `int`
@@ -2300,8 +2303,8 @@ Required fields:
 Optional fields:
 
 - `selectionPattern`: `str`
-- `responseParameters`: `Dict`\[`str`, `str`\]
-- `responseTemplates`: `Dict`\[`str`, `str`\]
+- `responseParameters`: `Mapping`\[`str`, `str`\]
+- `responseTemplates`: `Mapping`\[`str`, `str`\]
 - `contentHandling`:
   [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 
@@ -2323,10 +2326,10 @@ Optional fields:
 - `authorizerId`: `str`
 - `apiKeyRequired`: `bool`
 - `operationName`: `str`
-- `requestParameters`: `Dict`\[`str`, `bool`\]
-- `requestModels`: `Dict`\[`str`, `str`\]
+- `requestParameters`: `Mapping`\[`str`, `bool`\]
+- `requestModels`: `Mapping`\[`str`, `str`\]
 - `requestValidatorId`: `str`
-- `authorizationScopes`: `List`\[`str`\]
+- `authorizationScopes`: `Sequence`\[`str`\]
 
 ## PutMethodResponseRequestRequestTypeDef
 
@@ -2343,8 +2346,8 @@ Required fields:
 
 Optional fields:
 
-- `responseParameters`: `Dict`\[`str`, `bool`\]
-- `responseModels`: `Dict`\[`str`, `str`\]
+- `responseParameters`: `Mapping`\[`str`, `bool`\]
+- `responseModels`: `Mapping`\[`str`, `str`\]
 
 ## PutRestApiRequestRequestTypeDef
 
@@ -2361,7 +2364,7 @@ Optional fields:
 
 - `mode`: [PutModeType](./literals.md#putmodetype)
 - `failOnWarnings`: `bool`
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 
 ## QuotaSettingsTypeDef
 
@@ -2704,7 +2707,7 @@ from mypy_boto3_apigateway.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TagsTypeDef
 
@@ -2743,12 +2746,12 @@ Required fields:
 
 Optional fields:
 
-- `headers`: `Dict`\[`str`, `str`\]
-- `multiValueHeaders`: `Dict`\[`str`, `List`\[`str`\]\]
+- `headers`: `Mapping`\[`str`, `str`\]
+- `multiValueHeaders`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `pathWithQueryString`: `str`
 - `body`: `str`
-- `stageVariables`: `Dict`\[`str`, `str`\]
-- `additionalContext`: `Dict`\[`str`, `str`\]
+- `stageVariables`: `Mapping`\[`str`, `str`\]
+- `additionalContext`: `Mapping`\[`str`, `str`\]
 
 ## TestInvokeAuthorizerResponseTypeDef
 
@@ -2784,10 +2787,10 @@ Optional fields:
 
 - `pathWithQueryString`: `str`
 - `body`: `str`
-- `headers`: `Dict`\[`str`, `str`\]
-- `multiValueHeaders`: `Dict`\[`str`, `List`\[`str`\]\]
+- `headers`: `Mapping`\[`str`, `str`\]
+- `multiValueHeaders`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `clientCertificateId`: `str`
-- `stageVariables`: `Dict`\[`str`, `str`\]
+- `stageVariables`: `Mapping`\[`str`, `str`\]
 
 ## TestInvokeMethodResponseTypeDef
 
@@ -2836,7 +2839,7 @@ from mypy_boto3_apigateway.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAccountRequestRequestTypeDef
 
@@ -2847,7 +2850,7 @@ from mypy_boto3_apigateway.type_defs import UpdateAccountRequestRequestTypeDef
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateApiKeyRequestRequestTypeDef
 
@@ -2862,7 +2865,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateAuthorizerRequestRequestTypeDef
 
@@ -2878,7 +2881,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateBasePathMappingRequestRequestTypeDef
 
@@ -2894,7 +2897,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateClientCertificateRequestRequestTypeDef
 
@@ -2909,7 +2912,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateDeploymentRequestRequestTypeDef
 
@@ -2925,7 +2928,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateDocumentationPartRequestRequestTypeDef
 
@@ -2941,7 +2944,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateDocumentationVersionRequestRequestTypeDef
 
@@ -2957,7 +2960,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateDomainNameRequestRequestTypeDef
 
@@ -2972,7 +2975,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateGatewayResponseRequestRequestTypeDef
 
@@ -2989,7 +2992,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateIntegrationRequestRequestTypeDef
 
@@ -3006,7 +3009,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateIntegrationResponseRequestRequestTypeDef
 
@@ -3024,7 +3027,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateMethodRequestRequestTypeDef
 
@@ -3041,7 +3044,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateMethodResponseRequestRequestTypeDef
 
@@ -3059,7 +3062,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateModelRequestRequestTypeDef
 
@@ -3075,7 +3078,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateRequestValidatorRequestRequestTypeDef
 
@@ -3091,7 +3094,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateResourceRequestRequestTypeDef
 
@@ -3107,7 +3110,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateRestApiRequestRequestTypeDef
 
@@ -3122,7 +3125,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateStageRequestRequestTypeDef
 
@@ -3138,7 +3141,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateUsagePlanRequestRequestTypeDef
 
@@ -3153,7 +3156,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateUsageRequestRequestTypeDef
 
@@ -3169,7 +3172,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UpdateVpcLinkRequestRequestTypeDef
 
@@ -3184,7 +3187,7 @@ Required fields:
 Optional fields:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 ## UsagePlanKeyResponseMetadataTypeDef
 

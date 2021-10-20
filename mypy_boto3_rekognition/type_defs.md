@@ -12,6 +12,7 @@ type annotations stubs module
   - [AssetTypeDef](#assettypedef)
   - [AudioMetadataTypeDef](#audiometadatatypedef)
   - [BeardTypeDef](#beardtypedef)
+  - [BlackFrameTypeDef](#blackframetypedef)
   - [BoundingBoxTypeDef](#boundingboxtypedef)
   - [CelebrityDetailTypeDef](#celebritydetailtypedef)
   - [CelebrityRecognitionTypeDef](#celebrityrecognitiontypedef)
@@ -105,6 +106,7 @@ type annotations stubs module
   - [InstanceTypeDef](#instancetypedef)
   - [KinesisDataStreamTypeDef](#kinesisdatastreamtypedef)
   - [KinesisVideoStreamTypeDef](#kinesisvideostreamtypedef)
+  - [KnownGenderTypeDef](#knowngendertypedef)
   - [LabelDetectionTypeDef](#labeldetectiontypedef)
   - [LabelTypeDef](#labeltypedef)
   - [LandmarkTypeDef](#landmarktypedef)
@@ -240,6 +242,17 @@ Optional fields:
 - `Value`: `bool`
 - `Confidence`: `float`
 
+## BlackFrameTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import BlackFrameTypeDef
+```
+
+Optional fields:
+
+- `MaxPixelThreshold`: `float`
+- `MinCoveragePercentage`: `float`
+
 ## BoundingBoxTypeDef
 
 ```python
@@ -292,6 +305,7 @@ Optional fields:
 - `Id`: `str`
 - `Face`: [ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)
 - `MatchConfidence`: `float`
+- `KnownGender`: [KnownGenderTypeDef](./type_defs.md#knowngendertypedef)
 
 ## CompareFacesMatchTypeDef
 
@@ -354,6 +368,8 @@ Optional fields:
 - `Landmarks`: `List`\[[LandmarkTypeDef](./type_defs.md#landmarktypedef)\]
 - `Pose`: [PoseTypeDef](./type_defs.md#posetypedef)
 - `Quality`: [ImageQualityTypeDef](./type_defs.md#imagequalitytypedef)
+- `Emotions`: `List`\[[EmotionTypeDef](./type_defs.md#emotiontypedef)\]
+- `Smile`: [SmileTypeDef](./type_defs.md#smiletypedef)
 
 ## ComparedSourceImageFaceTypeDef
 
@@ -401,7 +417,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateCollectionResponseTypeDef
 
@@ -455,7 +471,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `KmsKeyId`: `str`
 
 ## CreateProjectVersionResponseTypeDef
@@ -489,7 +505,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateStreamProcessorResponseTypeDef
 
@@ -546,7 +562,7 @@ from mypy_boto3_rekognition.type_defs import DeleteFacesRequestRequestTypeDef
 Required fields:
 
 - `CollectionId`: `str`
-- `FaceIds`: `List`\[`str`\]
+- `FaceIds`: `Sequence`\[`str`\]
 
 ## DeleteFacesResponseTypeDef
 
@@ -651,7 +667,7 @@ Required fields:
 
 Optional fields:
 
-- `VersionNames`: `List`\[`str`\]
+- `VersionNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -770,7 +786,7 @@ Required fields:
 
 Optional fields:
 
-- `Attributes`: `List`\[[AttributeType](./literals.md#attributetype)\]
+- `Attributes`: `Sequence`\[[AttributeType](./literals.md#attributetype)\]
 
 ## DetectFacesResponseTypeDef
 
@@ -890,7 +906,7 @@ Optional fields:
 
 - `WordFilter`: [DetectionFilterTypeDef](./type_defs.md#detectionfiltertypedef)
 - `RegionsOfInterest`:
-  `List`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
+  `Sequence`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
 
 ## DetectTextRequestRequestTypeDef
 
@@ -1116,6 +1132,7 @@ Required fields:
 
 - `Urls`: `List`\[`str`\]
 - `Name`: `str`
+- `KnownGender`: [KnownGenderTypeDef](./type_defs.md#knowngendertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1436,7 +1453,7 @@ from mypy_boto3_rekognition.type_defs import HumanLoopDataAttributesTypeDef
 Optional fields:
 
 - `ContentClassifiers`:
-  `List`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
+  `Sequence`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
 
 ## ImageQualityTypeDef
 
@@ -1474,7 +1491,8 @@ Required fields:
 Optional fields:
 
 - `ExternalImageId`: `str`
-- `DetectionAttributes`: `List`\[[AttributeType](./literals.md#attributetype)\]
+- `DetectionAttributes`:
+  `Sequence`\[[AttributeType](./literals.md#attributetype)\]
 - `MaxFaces`: `int`
 - `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
 
@@ -1526,6 +1544,16 @@ from mypy_boto3_rekognition.type_defs import KinesisVideoStreamTypeDef
 Optional fields:
 
 - `Arn`: `str`
+
+## KnownGenderTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import KnownGenderTypeDef
+```
+
+Optional fields:
+
+- `Type`: [KnownGenderTypeType](./literals.md#knowngendertypetype)
 
 ## LabelDetectionTypeDef
 
@@ -1875,7 +1903,7 @@ Required fields:
 
 - `MinConfidence`: `float`
 - `RequiredEquipmentTypes`:
-  `List`\[[ProtectiveEquipmentTypeType](./literals.md#protectiveequipmenttypetype)\]
+  `Sequence`\[[ProtectiveEquipmentTypeType](./literals.md#protectiveequipmenttypetype)\]
 
 ## ProtectiveEquipmentSummaryTypeDef
 
@@ -2033,6 +2061,9 @@ Optional fields:
 - `TechnicalCueSegment`:
   [TechnicalCueSegmentTypeDef](./type_defs.md#technicalcuesegmenttypedef)
 - `ShotSegment`: [ShotSegmentTypeDef](./type_defs.md#shotsegmenttypedef)
+- `StartFrameNumber`: `int`
+- `EndFrameNumber`: `int`
+- `DurationFrames`: `int`
 
 ## SegmentTypeInfoTypeDef
 
@@ -2291,7 +2322,8 @@ from mypy_boto3_rekognition.type_defs import StartSegmentDetectionRequestRequest
 Required fields:
 
 - `Video`: [VideoTypeDef](./type_defs.md#videotypedef)
-- `SegmentTypes`: `List`\[[SegmentTypeType](./literals.md#segmenttypetype)\]
+- `SegmentTypes`:
+  `Sequence`\[[SegmentTypeType](./literals.md#segmenttypetype)\]
 
 Optional fields:
 
@@ -2343,6 +2375,7 @@ from mypy_boto3_rekognition.type_defs import StartTechnicalCueDetectionFilterTyp
 Optional fields:
 
 - `MinSegmentConfidence`: `float`
+- `BlackFrame`: [BlackFrameTypeDef](./type_defs.md#blackframetypedef)
 
 ## StartTextDetectionFiltersTypeDef
 
@@ -2354,7 +2387,7 @@ Optional fields:
 
 - `WordFilter`: [DetectionFilterTypeDef](./type_defs.md#detectionfiltertypedef)
 - `RegionsOfInterest`:
-  `List`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
+  `Sequence`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
 
 ## StartTextDetectionRequestRequestTypeDef
 
@@ -2494,7 +2527,7 @@ from mypy_boto3_rekognition.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TechnicalCueSegmentTypeDef
 
@@ -2527,7 +2560,7 @@ from mypy_boto3_rekognition.type_defs import TestingDataTypeDef
 
 Optional fields:
 
-- `Assets`: `List`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
+- `Assets`: `Sequence`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
 - `AutoCreate`: `bool`
 
 ## TextDetectionResultTypeDef
@@ -2576,7 +2609,7 @@ from mypy_boto3_rekognition.type_defs import TrainingDataTypeDef
 
 Optional fields:
 
-- `Assets`: `List`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
+- `Assets`: `Sequence`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
 
 ## UnindexedFaceTypeDef
 
@@ -2598,7 +2631,7 @@ from mypy_boto3_rekognition.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ValidationDataTypeDef
 
@@ -2624,6 +2657,7 @@ Optional fields:
 - `FrameRate`: `float`
 - `FrameHeight`: `int`
 - `FrameWidth`: `int`
+- `ColorRange`: [VideoColorRangeType](./literals.md#videocolorrangetype)
 
 ## VideoTypeDef
 

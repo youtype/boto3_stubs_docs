@@ -128,13 +128,13 @@ Keyword-only arguments:
 - `IdentityPoolName`: `str` *(required)*
 - `AllowUnauthenticatedIdentities`: `bool` *(required)*
 - `AllowClassicFlow`: `bool`
-- `SupportedLoginProviders`: `Dict`\[`str`, `str`\]
+- `SupportedLoginProviders`: `Mapping`\[`str`, `str`\]
 - `DeveloperProviderName`: `str`
-- `OpenIdConnectProviderARNs`: `List`\[`str`\]
+- `OpenIdConnectProviderARNs`: `Sequence`\[`str`\]
 - `CognitoIdentityProviders`:
-  `List`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
-- `SamlProviderARNs`: `List`\[`str`\]
-- `IdentityPoolTags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
+- `SamlProviderARNs`: `Sequence`\[`str`\]
+- `IdentityPoolTags`: `Mapping`\[`str`, `str`\]
 
 Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
 
@@ -153,7 +153,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `IdentityIdsToDelete`: `List`\[`str`\] *(required)*
+- `IdentityIdsToDelete`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteIdentitiesResponseTypeDef](./type_defs.md#deleteidentitiesresponsetypedef).
@@ -229,7 +229,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -251,7 +251,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IdentityId`: `str` *(required)*
-- `Logins`: `Dict`\[`str`, `str`\]
+- `Logins`: `Mapping`\[`str`, `str`\]
 - `CustomRoleArn`: `str`
 
 Returns
@@ -273,7 +273,7 @@ Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `AccountId`: `str`
-- `Logins`: `Dict`\[`str`, `str`\]
+- `Logins`: `Mapping`\[`str`, `str`\]
 
 Returns [GetIdResponseTypeDef](./type_defs.md#getidresponsetypedef).
 
@@ -313,7 +313,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IdentityId`: `str` *(required)*
-- `Logins`: `Dict`\[`str`, `str`\]
+- `Logins`: `Mapping`\[`str`, `str`\]
 
 Returns
 [GetOpenIdTokenResponseTypeDef](./type_defs.md#getopenidtokenresponsetypedef).
@@ -336,9 +336,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
-- `Logins`: `Dict`\[`str`, `str`\] *(required)*
+- `Logins`: `Mapping`\[`str`, `str`\] *(required)*
 - `IdentityId`: `str`
-- `PrincipalTags`: `Dict`\[`str`, `str`\]
+- `PrincipalTags`: `Mapping`\[`str`, `str`\]
 - `TokenDuration`: `int`
 
 Returns
@@ -495,8 +495,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
-- `Roles`: `Dict`\[`str`, `str`\] *(required)*
-- `RoleMappings`: `Dict`\[`str`,
+- `Roles`: `Mapping`\[`str`, `str`\] *(required)*
+- `RoleMappings`: `Mapping`\[`str`,
   [RoleMappingTypeDef](./type_defs.md#rolemappingtypedef)\]
 
 ### set_principal_tag_attribute_map
@@ -518,7 +518,7 @@ Keyword-only arguments:
 - `IdentityPoolId`: `str` *(required)*
 - `IdentityProviderName`: `str` *(required)*
 - `UseDefaults`: `bool`
-- `PrincipalTags`: `Dict`\[`str`, `str`\]
+- `PrincipalTags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [SetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#setprincipaltagattributemapresponsetypedef).
@@ -538,7 +538,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -577,8 +577,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IdentityId`: `str` *(required)*
-- `Logins`: `Dict`\[`str`, `str`\] *(required)*
-- `LoginsToRemove`: `List`\[`str`\] *(required)*
+- `Logins`: `Mapping`\[`str`, `str`\] *(required)*
+- `LoginsToRemove`: `Sequence`\[`str`\] *(required)*
 
 ### untag_resource
 
@@ -595,7 +595,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -618,13 +618,13 @@ Keyword-only arguments:
 - `IdentityPoolName`: `str` *(required)*
 - `AllowUnauthenticatedIdentities`: `bool` *(required)*
 - `AllowClassicFlow`: `bool`
-- `SupportedLoginProviders`: `Dict`\[`str`, `str`\]
+- `SupportedLoginProviders`: `Mapping`\[`str`, `str`\]
 - `DeveloperProviderName`: `str`
-- `OpenIdConnectProviderARNs`: `List`\[`str`\]
+- `OpenIdConnectProviderARNs`: `Sequence`\[`str`\]
 - `CognitoIdentityProviders`:
-  `List`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
-- `SamlProviderARNs`: `List`\[`str`\]
-- `IdentityPoolTags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
+- `SamlProviderARNs`: `Sequence`\[`str`\]
+- `IdentityPoolTags`: `Mapping`\[`str`, `str`\]
 
 Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
 

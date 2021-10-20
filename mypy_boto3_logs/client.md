@@ -116,8 +116,8 @@ Returns [Exceptions](#exceptions).
 
 ### associate_kms_key
 
-Associates the specified AWS Key Management Service (AWS KMS) customer master
-key (CMK) with the specified log group.
+Associates the specified Key Management Service customer master key (CMK) with
+the specified log group.
 
 Type annotations for `boto3.client("logs").associate_kms_key` method.
 
@@ -205,7 +205,7 @@ Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `kmsKeyId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ### create_log_stream
 
@@ -564,8 +564,8 @@ Returns
 
 ### disassociate_kms_key
 
-Disassociates the associated AWS Key Management Service (AWS KMS) customer
-master key (CMK) from the specified log group.
+Disassociates the associated Key Management Service customer master key (CMK)
+from the specified log group.
 
 Type annotations for `boto3.client("logs").disassociate_kms_key` method.
 
@@ -594,7 +594,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
-- `logStreamNames`: `List`\[`str`\]
+- `logStreamNames`: `Sequence`\[`str`\]
 - `logStreamNamePrefix`: `str`
 - `startTime`: `int`
 - `endTime`: `int`
@@ -618,7 +618,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -782,7 +782,7 @@ Keyword-only arguments:
 - `logGroupName`: `str` *(required)*
 - `logStreamName`: `str` *(required)*
 - `logEvents`:
-  `List`\[[InputLogEventTypeDef](./type_defs.md#inputlogeventtypedef)\]
+  `Sequence`\[[InputLogEventTypeDef](./type_defs.md#inputlogeventtypedef)\]
   *(required)*
 - `sequenceToken`: `str`
 
@@ -808,7 +808,7 @@ Keyword-only arguments:
 - `filterName`: `str` *(required)*
 - `filterPattern`: `str` *(required)*
 - `metricTransformations`:
-  `List`\[[MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef)\]
+  `Sequence`\[[MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef)\]
   *(required)*
 
 ### put_query_definition
@@ -828,15 +828,15 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `queryString`: `str` *(required)*
 - `queryDefinitionId`: `str`
-- `logGroupNames`: `List`\[`str`\]
+- `logGroupNames`: `Sequence`\[`str`\]
 
 Returns
 [PutQueryDefinitionResponseTypeDef](./type_defs.md#putquerydefinitionresponsetypedef).
 
 ### put_resource_policy
 
-Creates or updates a resource policy allowing other AWS services to put log
-events to this account, such as Amazon Route 53.
+Creates or updates a resource policy allowing other Amazon Web Services
+services to put log events to this account, such as Amazon Route 53.
 
 Type annotations for `boto3.client("logs").put_resource_policy` method.
 
@@ -911,7 +911,7 @@ Keyword-only arguments:
 - `endTime`: `int` *(required)*
 - `queryString`: `str` *(required)*
 - `logGroupName`: `str`
-- `logGroupNames`: `List`\[`str`\]
+- `logGroupNames`: `Sequence`\[`str`\]
 - `limit`: `int`
 
 Returns [StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef).
@@ -949,7 +949,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### test_metric_filter
 
@@ -967,7 +967,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `filterPattern`: `str` *(required)*
-- `logEventMessages`: `List`\[`str`\] *(required)*
+- `logEventMessages`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [TestMetricFilterResponseTypeDef](./type_defs.md#testmetricfilterresponsetypedef).
@@ -987,7 +987,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
-- `tags`: `List`\[`str`\] *(required)*
+- `tags`: `Sequence`\[`str`\] *(required)*
 
 ### get_paginator
 

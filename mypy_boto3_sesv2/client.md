@@ -191,7 +191,7 @@ Keyword-only arguments:
   [ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef)
 - `SendingOptions`:
   [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SuppressionOptions`:
   [SuppressionOptionsTypeDef](./type_defs.md#suppressionoptionstypedef)
 
@@ -238,7 +238,7 @@ Keyword-only arguments:
 - `ContactListName`: `str` *(required)*
 - `EmailAddress`: `str` *(required)*
 - `TopicPreferences`:
-  `List`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
+  `Sequence`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
 - `UnsubscribeAll`: `bool`
 - `AttributesData`: `str`
 
@@ -259,9 +259,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ContactListName`: `str` *(required)*
-- `Topics`: `List`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
+- `Topics`: `Sequence`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -304,7 +304,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PoolName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -327,7 +327,7 @@ Keyword-only arguments:
 - `Content`: [EmailContentTypeDef](./type_defs.md#emailcontenttypedef)
   *(required)*
 - `ReportName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDeliverabilityTestReportResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponsetypedef).
@@ -347,7 +347,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DkimSigningAttributes`:
   [DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef)
 - `ConfigurationSetName`: `str`
@@ -622,7 +622,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -631,7 +631,7 @@ Returns `str`.
 ### get_account
 
 Obtain information about the email-sending status and capabilities of your
-Amazon SES account in the current AWS Region.
+Amazon SES account in the current Amazon Web Services Region.
 
 Type annotations for `boto3.client("sesv2").get_account` method.
 
@@ -654,7 +654,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `BlacklistItemNames`: `List`\[`str`\] *(required)*
+- `BlacklistItemNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [GetBlacklistReportsResponseTypeDef](./type_defs.md#getblacklistreportsresponsetypedef).
@@ -783,7 +783,8 @@ Returns
 
 ### get_dedicated_ips
 
-List the dedicated IP addresses that are associated with your AWS account.
+List the dedicated IP addresses that are associated with your Amazon Web
+Services account.
 
 Type annotations for `boto3.client("sesv2").get_dedicated_ips` method.
 
@@ -1047,7 +1048,7 @@ Returns
 ### list_custom_verification_email_templates
 
 Lists the existing custom verification email templates for your account in the
-current AWS Region.
+current Amazon Web Services Region.
 
 Type annotations for
 `boto3.client("sesv2").list_custom_verification_email_templates` method.
@@ -1068,8 +1069,8 @@ Returns
 
 ### list_dedicated_ip_pools
 
-List all of the dedicated IP pools that exist in your AWS account in the
-current Region.
+List all of the dedicated IP pools that exist in your Amazon Web Services
+account in the current Region.
 
 Type annotations for `boto3.client("sesv2").list_dedicated_ip_pools` method.
 
@@ -1136,8 +1137,8 @@ Returns
 
 ### list_email_identities
 
-Returns a list of all of the email identities that are associated with your AWS
-account.
+Returns a list of all of the email identities that are associated with your
+Amazon Web Services account.
 
 Type annotations for `boto3.client("sesv2").list_email_identities` method.
 
@@ -1157,8 +1158,8 @@ Returns
 
 ### list_email_templates
 
-Lists the email templates present in your Amazon SES account in the current AWS
-Region.
+Lists the email templates present in your Amazon SES account in the current
+Amazon Web Services Region.
 
 Type annotations for `boto3.client("sesv2").list_email_templates` method.
 
@@ -1215,7 +1216,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Reasons`:
-  `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 - `StartDate`: `Union`\[`datetime`, `str`\]
 - `EndDate`: `Union`\[`datetime`, `str`\]
 - `NextToken`: `str`
@@ -1281,7 +1282,7 @@ Keyword-only arguments:
 - `WebsiteURL`: `str` *(required)*
 - `UseCaseDescription`: `str` *(required)*
 - `ContactLanguage`: [ContactLanguageType](./literals.md#contactlanguagetype)
-- `AdditionalContactEmailAddresses`: `List`\[`str`\]
+- `AdditionalContactEmailAddresses`: `Sequence`\[`str`\]
 - `ProductionAccessEnabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1321,7 +1322,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SuppressedReasons`:
-  `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1349,7 +1350,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### put_configuration_set_reputation_options
 
 Enable or disable collection of reputation metrics for emails that you send
-using a particular configuration set in a specific AWS Region.
+using a particular configuration set in a specific Amazon Web Services Region.
 
 Type annotations for
 `boto3.client("sesv2").put_configuration_set_reputation_options` method.
@@ -1370,7 +1371,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### put_configuration_set_sending_options
 
 Enable or disable email sending for messages that use a particular
-configuration set in a specific AWS Region.
+configuration set in a specific Amazon Web Services Region.
 
 Type annotations for
 `boto3.client("sesv2").put_configuration_set_sending_options` method.
@@ -1405,7 +1406,7 @@ Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `SuppressedReasons`:
-  `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1489,7 +1490,7 @@ Keyword-only arguments:
 
 - `DashboardEnabled`: `bool` *(required)*
 - `SubscribedDomains`:
-  `List`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
+  `Sequence`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1641,15 +1642,15 @@ Keyword-only arguments:
   [BulkEmailContentTypeDef](./type_defs.md#bulkemailcontenttypedef)
   *(required)*
 - `BulkEmailEntries`:
-  `List`\[[BulkEmailEntryTypeDef](./type_defs.md#bulkemailentrytypedef)\]
+  `Sequence`\[[BulkEmailEntryTypeDef](./type_defs.md#bulkemailentrytypedef)\]
   *(required)*
 - `FromEmailAddress`: `str`
 - `FromEmailAddressIdentityArn`: `str`
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `FeedbackForwardingEmailAddress`: `str`
 - `FeedbackForwardingEmailAddressIdentityArn`: `str`
 - `DefaultEmailTags`:
-  `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
 Returns
@@ -1658,7 +1659,7 @@ Returns
 ### send_custom_verification_email
 
 Adds an email address to the list of identities for your Amazon SES account in
-the current AWS Region and attempts to verify it.
+the current Amazon Web Services Region and attempts to verify it.
 
 Type annotations for `boto3.client("sesv2").send_custom_verification_email`
 method.
@@ -1697,10 +1698,11 @@ Keyword-only arguments:
 - `FromEmailAddress`: `str`
 - `FromEmailAddressIdentityArn`: `str`
 - `Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `FeedbackForwardingEmailAddress`: `str`
 - `FeedbackForwardingEmailAddressIdentityArn`: `str`
-- `EmailTags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+- `EmailTags`:
+  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 - `ListManagementOptions`:
   [ListManagementOptionsTypeDef](./type_defs.md#listmanagementoptionstypedef)
@@ -1722,7 +1724,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1762,7 +1764,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1806,7 +1808,7 @@ Keyword-only arguments:
 - `ContactListName`: `str` *(required)*
 - `EmailAddress`: `str` *(required)*
 - `TopicPreferences`:
-  `List`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
+  `Sequence`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
 - `UnsubscribeAll`: `bool`
 - `AttributesData`: `str`
 
@@ -1827,7 +1829,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ContactListName`: `str` *(required)*
-- `Topics`: `List`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
+- `Topics`: `Sequence`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
 - `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].

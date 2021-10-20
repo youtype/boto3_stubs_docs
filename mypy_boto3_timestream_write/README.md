@@ -79,6 +79,7 @@ from mypy_boto3_timestream_write.literals import DimensionValueTypeType, ...
 - [MeasureValueTypeType](./literals.md#measurevaluetypetype)
 - [TableStatusType](./literals.md#tablestatustype)
 - [TimeUnitType](./literals.md#timeunittype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

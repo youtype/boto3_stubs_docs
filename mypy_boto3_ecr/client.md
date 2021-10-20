@@ -22,6 +22,7 @@ type annotations stubs module
     - [delete_registry_policy](#delete_registry_policy)
     - [delete_repository](#delete_repository)
     - [delete_repository_policy](#delete_repository_policy)
+    - [describe_image_replication_status](#describe_image_replication_status)
     - [describe_image_scan_findings](#describe_image_scan_findings)
     - [describe_images](#describe_images)
     - [describe_registry](#describe_registry)
@@ -142,7 +143,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
-- `layerDigests`: `List`\[`str`\] *(required)*
+- `layerDigests`: `Sequence`\[`str`\] *(required)*
 - `registryId`: `str`
 
 Returns
@@ -164,7 +165,7 @@ Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
   *(required)*
 - `registryId`: `str`
 
@@ -187,10 +188,10 @@ Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
   *(required)*
 - `registryId`: `str`
-- `acceptedMediaTypes`: `List`\[`str`\]
+- `acceptedMediaTypes`: `Sequence`\[`str`\]
 
 Returns
 [BatchGetImageResponseTypeDef](./type_defs.md#batchgetimageresponsetypedef).
@@ -227,7 +228,7 @@ Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `uploadId`: `str` *(required)*
-- `layerDigests`: `List`\[`str`\] *(required)*
+- `layerDigests`: `Sequence`\[`str`\] *(required)*
 - `registryId`: `str`
 
 Returns
@@ -248,7 +249,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `registryId`: `str`
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `imageTagMutability`:
   [ImageTagMutabilityType](./literals.md#imagetagmutabilitytype)
 - `imageScanningConfiguration`:
@@ -332,6 +334,29 @@ Keyword-only arguments:
 Returns
 [DeleteRepositoryPolicyResponseTypeDef](./type_defs.md#deleterepositorypolicyresponsetypedef).
 
+### describe_image_replication_status
+
+Returns the replication status for a specified image.
+
+Type annotations for `boto3.client("ecr").describe_image_replication_status`
+method.
+
+Boto3 documentation:
+[ECR.Client.describe_image_replication_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_image_replication_status)
+
+Arguments mapping described in
+[DescribeImageReplicationStatusRequestRequestTypeDef](./type_defs.md#describeimagereplicationstatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `repositoryName`: `str` *(required)*
+- `imageId`: [ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)
+  *(required)*
+- `registryId`: `str`
+
+Returns
+[DescribeImageReplicationStatusResponseTypeDef](./type_defs.md#describeimagereplicationstatusresponsetypedef).
+
 ### describe_image_scan_findings
 
 Returns the scan findings for the specified image.
@@ -373,7 +398,7 @@ Keyword-only arguments:
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filter`:
@@ -409,7 +434,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `registryId`: `str`
-- `repositoryNames`: `List`\[`str`\]
+- `repositoryNames`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -428,7 +453,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -448,7 +473,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `registryIds`: `List`\[`str`\]
+- `registryIds`: `Sequence`\[`str`\]
 
 Returns
 [GetAuthorizationTokenResponseTypeDef](./type_defs.md#getauthorizationtokenresponsetypedef).
@@ -513,7 +538,7 @@ Keyword-only arguments:
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filter`:
@@ -828,7 +853,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -847,7 +872,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

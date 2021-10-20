@@ -203,7 +203,7 @@ Returns [Exceptions](#exceptions).
 ### batch_get_aggregate_resource_config
 
 Returns the current configuration items for resources that are present in your
-AWS Config aggregator.
+Config aggregator.
 
 Type annotations for
 `boto3.client("config").batch_get_aggregate_resource_config` method.
@@ -218,7 +218,7 @@ Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `ResourceIdentifiers`:
-  `List`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
+  `Sequence`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
   *(required)*
 
 Returns
@@ -226,7 +226,7 @@ Returns
 
 ### batch_get_resource_config
 
-Returns the current configuration for one or more requested resources.
+Returns the `BaseConfigurationItem` for one or more requested resources.
 
 Type annotations for `boto3.client("config").batch_get_resource_config` method.
 
@@ -239,7 +239,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
   *(required)*
 
 Returns
@@ -281,7 +281,7 @@ Keyword-only arguments:
 
 ### delete_config_rule
 
-Deletes the specified AWS Config rule and all of its evaluation results.
+Deletes the specified Config rule and all of its evaluation results.
 
 Type annotations for `boto3.client("config").delete_config_rule` method.
 
@@ -332,8 +332,8 @@ Keyword-only arguments:
 
 ### delete_conformance_pack
 
-Deletes the specified conformance pack and all the AWS Config rules,
-remediation actions, and all evaluation results within that conformance pack.
+Deletes the specified conformance pack and all the Config rules, remediation
+actions, and all evaluation results within that conformance pack.
 
 Type annotations for `boto3.client("config").delete_conformance_pack` method.
 
@@ -365,7 +365,7 @@ Keyword-only arguments:
 
 ### delete_evaluation_results
 
-Deletes the evaluation results for the specified AWS Config rule.
+Deletes the evaluation results for the specified Config rule.
 
 Type annotations for `boto3.client("config").delete_evaluation_results` method.
 
@@ -473,7 +473,7 @@ Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+  `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
   *(required)*
 
 Returns
@@ -515,7 +515,8 @@ Keyword-only arguments:
 
 ### delete_stored_query
 
-Deletes the stored query for a single AWS account and a single AWS Region.
+Deletes the stored query for a single Amazon Web Services account and a single
+Amazon Web Services Region.
 
 Type annotations for `boto3.client("config").delete_stored_query` method.
 
@@ -579,7 +580,7 @@ Returns
 ### describe_aggregate_compliance_by_conformance_packs
 
 Returns a list of the conformance packs and their associated compliance status
-with the count of compliant and noncompliant AWS Config rules within each
+with the count of compliant and noncompliant Config rules within each
 conformance pack.
 
 Type annotations for
@@ -627,7 +628,7 @@ Returns
 
 ### describe_compliance_by_config_rule
 
-Indicates whether the specified AWS Config rules are compliant.
+Indicates whether the specified Config rules are compliant.
 
 Type annotations for
 `boto3.client("config").describe_compliance_by_config_rule` method.
@@ -640,9 +641,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `NextToken`: `str`
 
 Returns
@@ -650,7 +651,7 @@ Returns
 
 ### describe_compliance_by_resource
 
-Indicates whether the specified AWS resources are compliant.
+Indicates whether the specified Amazon Web Services resources are compliant.
 
 Type annotations for `boto3.client("config").describe_compliance_by_resource`
 method.
@@ -666,7 +667,7 @@ Keyword-only arguments:
 - `ResourceType`: `str`
 - `ResourceId`: `str`
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -675,7 +676,7 @@ Returns
 
 ### describe_config_rule_evaluation_status
 
-Returns status information for each of your AWS managed Config rules.
+Returns status information for each of your Config managed rules.
 
 Type annotations for
 `boto3.client("config").describe_config_rule_evaluation_status` method.
@@ -688,7 +689,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -697,7 +698,7 @@ Returns
 
 ### describe_config_rules
 
-Returns details about your AWS Config rules.
+Returns details about your Config rules.
 
 Type annotations for `boto3.client("config").describe_config_rules` method.
 
@@ -709,7 +710,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 Returns
@@ -733,7 +734,7 @@ Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `UpdateStatus`:
-  `List`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
+  `Sequence`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -755,7 +756,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigurationAggregatorNames`: `List`\[`str`\]
+- `ConfigurationAggregatorNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -777,7 +778,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigurationRecorderNames`: `List`\[`str`\]
+- `ConfigurationRecorderNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeConfigurationRecorderStatusResponseTypeDef](./type_defs.md#describeconfigurationrecorderstatusresponsetypedef).
@@ -797,7 +798,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigurationRecorderNames`: `List`\[`str`\]
+- `ConfigurationRecorderNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeConfigurationRecordersResponseTypeDef](./type_defs.md#describeconfigurationrecordersresponsetypedef).
@@ -841,7 +842,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConformancePackNames`: `List`\[`str`\]
+- `ConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -863,7 +864,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConformancePackNames`: `List`\[`str`\]
+- `ConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -885,7 +886,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DeliveryChannelNames`: `List`\[`str`\]
+- `DeliveryChannelNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeDeliveryChannelStatusResponseTypeDef](./type_defs.md#describedeliverychannelstatusresponsetypedef).
@@ -905,7 +906,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DeliveryChannelNames`: `List`\[`str`\]
+- `DeliveryChannelNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeDeliveryChannelsResponseTypeDef](./type_defs.md#describedeliverychannelsresponsetypedef).
@@ -925,7 +926,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `OrganizationConfigRuleNames`: `List`\[`str`\]
+- `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -947,7 +948,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `OrganizationConfigRuleNames`: `List`\[`str`\]
+- `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -970,7 +971,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `OrganizationConformancePackNames`: `List`\[`str`\]
+- `OrganizationConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -992,7 +993,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `OrganizationConformancePackNames`: `List`\[`str`\]
+- `OrganizationConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1035,7 +1036,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigRuleNames`: `List`\[`str`\] *(required)*
+- `ConfigRuleNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeRemediationConfigurationsResponseTypeDef](./type_defs.md#describeremediationconfigurationsresponsetypedef).
@@ -1057,7 +1058,7 @@ Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+  `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1083,7 +1084,7 @@ Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1105,7 +1106,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `RetentionConfigurationNames`: `List`\[`str`\]
+- `RetentionConfigurationNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 Returns
@@ -1123,7 +1124,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1131,7 +1132,7 @@ Returns `str`.
 
 ### get_aggregate_compliance_details_by_config_rule
 
-Returns the evaluation results for the specified AWS Config rule for a specific
+Returns the evaluation results for the specified Config rule for a specific
 resource in a rule.
 
 Type annotations for
@@ -1187,7 +1188,7 @@ Returns
 ### get_aggregate_conformance_pack_compliance_summary
 
 Returns the count of compliant and noncompliant conformance packs across all
-AWS Accounts and AWS Regions in an aggregator.
+Amazon Web Services accounts and Amazon Web Services Regions in an aggregator.
 
 Type annotations for
 `boto3.client("config").get_aggregate_conformance_pack_compliance_summary`
@@ -1215,7 +1216,7 @@ Returns
 ### get_aggregate_discovered_resource_counts
 
 Returns the resource counts across accounts and regions that are present in
-your AWS Config aggregator.
+your Config aggregator.
 
 Type annotations for
 `boto3.client("config").get_aggregate_discovered_resource_counts` method.
@@ -1265,7 +1266,7 @@ Returns
 
 ### get_compliance_details_by_config_rule
 
-Returns the evaluation results for the specified AWS Config rule.
+Returns the evaluation results for the specified Config rule.
 
 Type annotations for
 `boto3.client("config").get_compliance_details_by_config_rule` method.
@@ -1280,7 +1281,7 @@ Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1289,7 +1290,7 @@ Returns
 
 ### get_compliance_details_by_resource
 
-Returns the evaluation results for the specified AWS resource.
+Returns the evaluation results for the specified Amazon Web Services resource.
 
 Type annotations for
 `boto3.client("config").get_compliance_details_by_resource` method.
@@ -1305,7 +1306,7 @@ Keyword-only arguments:
 - `ResourceType`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `NextToken`: `str`
 
 Returns
@@ -1313,8 +1314,8 @@ Returns
 
 ### get_compliance_summary_by_config_rule
 
-Returns the number of AWS Config rules that are compliant and noncompliant, up
-to a maximum of 25 for each.
+Returns the number of Config rules that are compliant and noncompliant, up to a
+maximum of 25 for each.
 
 Type annotations for
 `boto3.client("config").get_compliance_summary_by_config_rule` method.
@@ -1341,15 +1342,15 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceTypes`: `List`\[`str`\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 
 Returns
 [GetComplianceSummaryByResourceTypeResponseTypeDef](./type_defs.md#getcompliancesummarybyresourcetyperesponsetypedef).
 
 ### get_conformance_pack_compliance_details
 
-Returns compliance details of a conformance pack for all AWS resources that are
-monitered by conformance pack.
+Returns compliance details of a conformance pack for all Amazon Web Services
+resources that are monitered by conformance pack.
 
 Type annotations for
 `boto3.client("config").get_conformance_pack_compliance_details` method.
@@ -1387,7 +1388,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConformancePackNames`: `List`\[`str`\] *(required)*
+- `ConformancePackNames`: `Sequence`\[`str`\] *(required)*
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1397,8 +1398,8 @@ Returns
 ### get_discovered_resource_counts
 
 Returns the resource types, the number of each resource type, and the total
-number of resources that AWS Config is recording in this region for your AWS
-account.
+number of resources that Config is recording in this region for your Amazon Web
+Services account.
 
 Type annotations for `boto3.client("config").get_discovered_resource_counts`
 method.
@@ -1411,7 +1412,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `resourceTypes`: `List`\[`str`\]
+- `resourceTypes`: `Sequence`\[`str`\]
 - `limit`: `int`
 - `nextToken`: `str`
 
@@ -1471,7 +1472,7 @@ Returns
 
 ### get_resource_config_history
 
-Returns a list of configuration items for the specified resource.
+Returns a list of `ConfigurationItems` for the specified resource.
 
 Type annotations for `boto3.client("config").get_resource_config_history`
 method.
@@ -1559,7 +1560,7 @@ Keyword-only arguments:
 
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
   *(required)*
-- `resourceIds`: `List`\[`str`\]
+- `resourceIds`: `Sequence`\[`str`\]
 - `resourceName`: `str`
 - `limit`: `int`
 - `includeDeletedResources`: `bool`
@@ -1570,7 +1571,8 @@ Returns
 
 ### list_stored_queries
 
-Lists the stored queries for a single AWS account and a single AWS Region.
+Lists the stored queries for a single Amazon Web Services account and a single
+Amazon Web Services Region.
 
 Type annotations for `boto3.client("config").list_stored_queries` method.
 
@@ -1590,7 +1592,7 @@ Returns
 
 ### list_tags_for_resource
 
-List the tags for AWS Config resource.
+List the tags for Config resource.
 
 Type annotations for `boto3.client("config").list_tags_for_resource` method.
 
@@ -1627,15 +1629,15 @@ Keyword-only arguments:
 
 - `AuthorizedAccountId`: `str` *(required)*
 - `AuthorizedAwsRegion`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [PutAggregationAuthorizationResponseTypeDef](./type_defs.md#putaggregationauthorizationresponsetypedef).
 
 ### put_config_rule
 
-Adds or updates an AWS Config rule for evaluating whether your AWS resources
-comply with your desired configurations.
+Adds or updates an Config rule for evaluating whether your Amazon Web Services
+resources comply with your desired configurations.
 
 Type annotations for `boto3.client("config").put_config_rule` method.
 
@@ -1649,7 +1651,7 @@ Keyword-only arguments:
 
 - `ConfigRule`: [ConfigRuleTypeDef](./type_defs.md#configruletypedef)
   *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ### put_configuration_aggregator
 
@@ -1669,10 +1671,10 @@ Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `AccountAggregationSources`:
-  `List`\[[AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef)\]
+  `Sequence`\[[AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef)\]
 - `OrganizationAggregationSource`:
   [OrganizationAggregationSourceTypeDef](./type_defs.md#organizationaggregationsourcetypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [PutConfigurationAggregatorResponseTypeDef](./type_defs.md#putconfigurationaggregatorresponsetypedef).
@@ -1717,7 +1719,7 @@ Keyword-only arguments:
 - `DeliveryS3Bucket`: `str`
 - `DeliveryS3KeyPrefix`: `str`
 - `ConformancePackInputParameters`:
-  `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
+  `Sequence`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
 
 Returns
 [PutConformancePackResponseTypeDef](./type_defs.md#putconformancepackresponsetypedef).
@@ -1742,7 +1744,7 @@ Keyword-only arguments:
 
 ### put_evaluations
 
-Used by an AWS Lambda function to deliver evaluation results to AWS Config.
+Used by an Lambda function to deliver evaluation results to Config.
 
 Type annotations for `boto3.client("config").put_evaluations` method.
 
@@ -1756,7 +1758,7 @@ Keyword-only arguments:
 
 - `ResultToken`: `str` *(required)*
 - `Evaluations`:
-  `List`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
+  `Sequence`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
 - `TestMode`: `bool`
 
 Returns
@@ -1786,7 +1788,8 @@ Returns `Dict`\[`str`, `Any`\].
 ### put_organization_config_rule
 
 Adds or updates organization config rule for your entire organization
-evaluating whether your AWS resources comply with your desired configurations.
+evaluating whether your Amazon Web Services resources comply with your desired
+configurations.
 
 Type annotations for `boto3.client("config").put_organization_config_rule`
 method.
@@ -1804,14 +1807,15 @@ Keyword-only arguments:
   [OrganizationManagedRuleMetadataTypeDef](./type_defs.md#organizationmanagedrulemetadatatypedef)
 - `OrganizationCustomRuleMetadata`:
   [OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef)
-- `ExcludedAccounts`: `List`\[`str`\]
+- `ExcludedAccounts`: `Sequence`\[`str`\]
 
 Returns
 [PutOrganizationConfigRuleResponseTypeDef](./type_defs.md#putorganizationconfigruleresponsetypedef).
 
 ### put_organization_conformance_pack
 
-Deploys conformance packs across member accounts in an AWS Organization.
+Deploys conformance packs across member accounts in an Amazon Web Services
+Organization.
 
 Type annotations for `boto3.client("config").put_organization_conformance_pack`
 method.
@@ -1830,16 +1834,16 @@ Keyword-only arguments:
 - `DeliveryS3Bucket`: `str`
 - `DeliveryS3KeyPrefix`: `str`
 - `ConformancePackInputParameters`:
-  `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
-- `ExcludedAccounts`: `List`\[`str`\]
+  `Sequence`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
+- `ExcludedAccounts`: `Sequence`\[`str`\]
 
 Returns
 [PutOrganizationConformancePackResponseTypeDef](./type_defs.md#putorganizationconformancepackresponsetypedef).
 
 ### put_remediation_configurations
 
-Adds or updates the remediation configuration with a specific AWS Config rule
-with the selected target or action.
+Adds or updates the remediation configuration with a specific Config rule with
+the selected target or action.
 
 Type annotations for `boto3.client("config").put_remediation_configurations`
 method.
@@ -1853,7 +1857,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RemediationConfigurations`:
-  `List`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
+  `Sequence`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
   *(required)*
 
 Returns
@@ -1877,7 +1881,7 @@ Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+  `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
   *(required)*
 - `Message`: `str`
 - `ExpirationTime`: `Union`\[`datetime`, `str`\]
@@ -1904,12 +1908,12 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 - `Configuration`: `str` *(required)*
 - `ResourceName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ### put_retention_configuration
 
 Creates and updates the retention configuration with details about retention
-period (number of days) that AWS Config stores your historical information.
+period (number of days) that Config stores your historical information.
 
 Type annotations for `boto3.client("config").put_retention_configuration`
 method.
@@ -1943,7 +1947,7 @@ Keyword-only arguments:
 
 - `StoredQuery`: [StoredQueryTypeDef](./type_defs.md#storedquerytypedef)
   *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [PutStoredQueryResponseTypeDef](./type_defs.md#putstoredqueryresponsetypedef).
@@ -1995,8 +1999,8 @@ Returns
 
 ### start_config_rules_evaluation
 
-Runs an on-demand evaluation for the specified AWS Config rules against the
-last known configuration state of the resources.
+Runs an on-demand evaluation for the specified Config rules against the last
+known configuration state of the resources.
 
 Type annotations for `boto3.client("config").start_config_rules_evaluation`
 method.
@@ -2009,14 +2013,14 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
 ### start_configuration_recorder
 
-Starts recording configurations of the AWS resources you have selected to
-record in your AWS account.
+Starts recording configurations of the Amazon Web Services resources you have
+selected to record in your Amazon Web Services account.
 
 Type annotations for `boto3.client("config").start_configuration_recorder`
 method.
@@ -2033,8 +2037,8 @@ Keyword-only arguments:
 
 ### start_remediation_execution
 
-Runs an on-demand remediation for the specified AWS Config rules against the
-last known remediation configuration.
+Runs an on-demand remediation for the specified Config rules against the last
+known remediation configuration.
 
 Type annotations for `boto3.client("config").start_remediation_execution`
 method.
@@ -2049,7 +2053,7 @@ Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
   *(required)*
 
 Returns
@@ -2057,8 +2061,8 @@ Returns
 
 ### stop_configuration_recorder
 
-Stops recording configurations of the AWS resources you have selected to record
-in your AWS account.
+Stops recording configurations of the Amazon Web Services resources you have
+selected to record in your Amazon Web Services account.
 
 Type annotations for `boto3.client("config").stop_configuration_recorder`
 method.
@@ -2088,7 +2092,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_resource
 
@@ -2105,7 +2109,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### get_paginator
 

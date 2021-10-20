@@ -108,6 +108,8 @@ from mypy_boto3_kinesisvideo.literals import APINameType, ...
 - [ListStreamsPaginatorName](./literals.md#liststreamspaginatorname)
 - [StatusType](./literals.md#statustype)
 - [UpdateDataRetentionOperationType](./literals.md#updatedataretentionoperationtype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

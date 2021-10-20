@@ -123,7 +123,7 @@ Keyword-only arguments:
   *(required)*
 - `ClientToken`: `str` *(required)*
 - `ServerSideKmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
@@ -157,7 +157,7 @@ Keyword-only arguments:
 - `ClientToken`: `str` *(required)*
 - `DataDelayOffsetInMinutes`: `int`
 - `ServerSideKmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateInferenceSchedulerResponseTypeDef](./type_defs.md#createinferenceschedulerresponsetypedef).
@@ -190,7 +190,8 @@ Keyword-only arguments:
 - `DataPreProcessingConfiguration`:
   [DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef)
 - `ServerSideKmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OffCondition`: `str`
 
 Returns
 [CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
@@ -267,8 +268,8 @@ Returns
 
 ### describe_dataset
 
-Provides information on a specified dataset such as the schema location,
-status, and so on.
+Provides a JSON description of the data that is in each time series dataset,
+including names, column names, and data types.
 
 Type annotations for `boto3.client("lookoutequipment").describe_dataset`
 method.
@@ -311,8 +312,9 @@ Returns
 
 ### describe_model
 
-Provides overall information about a specific ML model, including model name
-and ARN, dataset, training and evaluation information, status, and so on.
+Provides a JSON containing the overall information about a specific ML model,
+including model name and ARN, dataset, training and evaluation information,
+status, and so on.
 
 Type annotations for `boto3.client("lookoutequipment").describe_model` method.
 
@@ -342,7 +344,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -568,7 +570,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -587,7 +589,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

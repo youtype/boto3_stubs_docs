@@ -265,7 +265,7 @@ Required fields:
 Optional fields:
 
 - `ReplacementTags`:
-  `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ReplacementEmailContent`:
   [ReplacementEmailContentTypeDef](./type_defs.md#replacementemailcontenttypedef)
 
@@ -278,7 +278,7 @@ from mypy_boto3_sesv2.type_defs import CloudWatchDestinationTypeDef
 Required fields:
 
 - `DimensionConfigurations`:
-  `List`\[[CloudWatchDimensionConfigurationTypeDef](./type_defs.md#cloudwatchdimensionconfigurationtypedef)\]
+  `Sequence`\[[CloudWatchDimensionConfigurationTypeDef](./type_defs.md#cloudwatchdimensionconfigurationtypedef)\]
 
 ## CloudWatchDimensionConfigurationTypeDef
 
@@ -379,7 +379,7 @@ Optional fields:
   [ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef)
 - `SendingOptions`:
   [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SuppressionOptions`:
   [SuppressionOptionsTypeDef](./type_defs.md#suppressionoptionstypedef)
 
@@ -395,9 +395,9 @@ Required fields:
 
 Optional fields:
 
-- `Topics`: `List`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
+- `Topics`: `Sequence`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateContactRequestRequestTypeDef
 
@@ -413,7 +413,7 @@ Required fields:
 Optional fields:
 
 - `TopicPreferences`:
-  `List`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
+  `Sequence`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
 - `UnsubscribeAll`: `bool`
 - `AttributesData`: `str`
 
@@ -444,7 +444,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDeliverabilityTestReportRequestRequestTypeDef
 
@@ -460,7 +460,7 @@ Required fields:
 Optional fields:
 
 - `ReportName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDeliverabilityTestReportResponseTypeDef
 
@@ -500,7 +500,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DkimSigningAttributes`:
   [DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef)
 - `ConfigurationSetName`: `str`
@@ -739,9 +739,9 @@ from mypy_boto3_sesv2.type_defs import DestinationTypeDef
 
 Optional fields:
 
-- `ToAddresses`: `List`\[`str`\]
-- `CcAddresses`: `List`\[`str`\]
-- `BccAddresses`: `List`\[`str`\]
+- `ToAddresses`: `Sequence`\[`str`\]
+- `CcAddresses`: `Sequence`\[`str`\]
+- `BccAddresses`: `Sequence`\[`str`\]
 
 ## DkimAttributesTypeDef
 
@@ -756,6 +756,11 @@ Optional fields:
 - `Tokens`: `List`\[`str`\]
 - `SigningAttributesOrigin`:
   [DkimSigningAttributesOriginType](./literals.md#dkimsigningattributesorigintype)
+- `NextSigningKeyLength`:
+  [DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype)
+- `CurrentSigningKeyLength`:
+  [DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype)
+- `LastKeyGenerationTimestamp`: `datetime`
 
 ## DkimSigningAttributesTypeDef
 
@@ -763,10 +768,12 @@ Optional fields:
 from mypy_boto3_sesv2.type_defs import DkimSigningAttributesTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `DomainSigningSelector`: `str`
 - `DomainSigningPrivateKey`: `str`
+- `NextSigningKeyLength`:
+  [DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype)
 
 ## DomainDeliverabilityCampaignTypeDef
 
@@ -862,7 +869,8 @@ from mypy_boto3_sesv2.type_defs import EventDestinationDefinitionTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
-- `MatchingEventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
+- `MatchingEventTypes`:
+  `Sequence`\[[EventTypeType](./literals.md#eventtypetype)\]
 - `KinesisFirehoseDestination`:
   [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
 - `CloudWatchDestination`:
@@ -933,7 +941,7 @@ from mypy_boto3_sesv2.type_defs import GetBlacklistReportsRequestRequestTypeDef
 
 Required fields:
 
-- `BlacklistItemNames`: `List`\[`str`\]
+- `BlacklistItemNames`: `Sequence`\[`str`\]
 
 ## GetBlacklistReportsResponseTypeDef
 
@@ -1747,7 +1755,7 @@ from mypy_boto3_sesv2.type_defs import ListSuppressedDestinationsRequestRequestT
 Optional fields:
 
 - `Reasons`:
-  `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 - `StartDate`: `Union`\[`datetime`, `str`\]
 - `EndDate`: `Union`\[`datetime`, `str`\]
 - `NextToken`: `str`
@@ -1888,7 +1896,7 @@ Required fields:
 Optional fields:
 
 - `ContactLanguage`: [ContactLanguageType](./literals.md#contactlanguagetype)
-- `AdditionalContactEmailAddresses`: `List`\[`str`\]
+- `AdditionalContactEmailAddresses`: `Sequence`\[`str`\]
 - `ProductionAccessEnabled`: `bool`
 
 ## PutAccountSendingAttributesRequestRequestTypeDef
@@ -1910,7 +1918,7 @@ from mypy_boto3_sesv2.type_defs import PutAccountSuppressionAttributesRequestReq
 Optional fields:
 
 - `SuppressedReasons`:
-  `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 
 ## PutConfigurationSetDeliveryOptionsRequestRequestTypeDef
 
@@ -1968,7 +1976,7 @@ Required fields:
 Optional fields:
 
 - `SuppressedReasons`:
-  `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 
 ## PutConfigurationSetTrackingOptionsRequestRequestTypeDef
 
@@ -2019,7 +2027,7 @@ Required fields:
 Optional fields:
 
 - `SubscribedDomains`:
-  `List`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
+  `Sequence`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
 
 ## PutEmailIdentityConfigurationSetAttributesRequestRequestTypeDef
 
@@ -2199,17 +2207,17 @@ Required fields:
 - `DefaultContent`:
   [BulkEmailContentTypeDef](./type_defs.md#bulkemailcontenttypedef)
 - `BulkEmailEntries`:
-  `List`\[[BulkEmailEntryTypeDef](./type_defs.md#bulkemailentrytypedef)\]
+  `Sequence`\[[BulkEmailEntryTypeDef](./type_defs.md#bulkemailentrytypedef)\]
 
 Optional fields:
 
 - `FromEmailAddress`: `str`
 - `FromEmailAddressIdentityArn`: `str`
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `FeedbackForwardingEmailAddress`: `str`
 - `FeedbackForwardingEmailAddressIdentityArn`: `str`
 - `DefaultEmailTags`:
-  `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
 ## SendBulkEmailResponseTypeDef
@@ -2267,10 +2275,11 @@ Optional fields:
 - `FromEmailAddress`: `str`
 - `FromEmailAddressIdentityArn`: `str`
 - `Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `FeedbackForwardingEmailAddress`: `str`
 - `FeedbackForwardingEmailAddressIdentityArn`: `str`
-- `EmailTags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+- `EmailTags`:
+  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 - `ListManagementOptions`:
   [ListManagementOptionsTypeDef](./type_defs.md#listmanagementoptionstypedef)
@@ -2392,7 +2401,7 @@ from mypy_boto3_sesv2.type_defs import SuppressionOptionsTypeDef
 Optional fields:
 
 - `SuppressedReasons`:
-  `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 
 ## TagResourceRequestRequestTypeDef
 
@@ -2403,7 +2412,7 @@ from mypy_boto3_sesv2.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -2510,7 +2519,7 @@ from mypy_boto3_sesv2.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateConfigurationSetEventDestinationRequestRequestTypeDef
 
@@ -2537,7 +2546,7 @@ Required fields:
 
 Optional fields:
 
-- `Topics`: `List`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
+- `Topics`: `Sequence`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
 - `Description`: `str`
 
 ## UpdateContactRequestRequestTypeDef
@@ -2554,7 +2563,7 @@ Required fields:
 Optional fields:
 
 - `TopicPreferences`:
-  `List`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
+  `Sequence`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
 - `UnsubscribeAll`: `bool`
 - `AttributesData`: `str`
 

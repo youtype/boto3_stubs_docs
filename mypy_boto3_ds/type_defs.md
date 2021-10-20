@@ -17,6 +17,7 @@ type annotations stubs module
   - [CancelSchemaExtensionRequestRequestTypeDef](#cancelschemaextensionrequestrequesttypedef)
   - [CertificateInfoTypeDef](#certificateinfotypedef)
   - [CertificateTypeDef](#certificatetypedef)
+  - [ClientAuthenticationSettingInfoTypeDef](#clientauthenticationsettinginfotypedef)
   - [ClientCertAuthSettingsTypeDef](#clientcertauthsettingstypedef)
   - [ComputerTypeDef](#computertypedef)
   - [ConditionalForwarderTypeDef](#conditionalforwardertypedef)
@@ -48,6 +49,8 @@ type annotations stubs module
   - [DeregisterEventTopicRequestRequestTypeDef](#deregistereventtopicrequestrequesttypedef)
   - [DescribeCertificateRequestRequestTypeDef](#describecertificaterequestrequesttypedef)
   - [DescribeCertificateResultTypeDef](#describecertificateresulttypedef)
+  - [DescribeClientAuthenticationSettingsRequestRequestTypeDef](#describeclientauthenticationsettingsrequestrequesttypedef)
+  - [DescribeClientAuthenticationSettingsResultTypeDef](#describeclientauthenticationsettingsresulttypedef)
   - [DescribeConditionalForwardersRequestRequestTypeDef](#describeconditionalforwardersrequestrequesttypedef)
   - [DescribeConditionalForwardersResultTypeDef](#describeconditionalforwardersresulttypedef)
   - [DescribeDirectoriesRequestRequestTypeDef](#describedirectoriesrequestrequesttypedef)
@@ -169,7 +172,7 @@ from mypy_boto3_ds.type_defs import AddIpRoutesRequestRequestTypeDef
 Required fields:
 
 - `DirectoryId`: `str`
-- `IpRoutes`: `List`\[[IpRouteTypeDef](./type_defs.md#iproutetypedef)\]
+- `IpRoutes`: `Sequence`\[[IpRouteTypeDef](./type_defs.md#iproutetypedef)\]
 
 Optional fields:
 
@@ -197,7 +200,7 @@ from mypy_boto3_ds.type_defs import AddTagsToResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AttributeTypeDef
 
@@ -253,6 +256,20 @@ Optional fields:
 - `ClientCertAuthSettings`:
   [ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef)
 
+## ClientAuthenticationSettingInfoTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import ClientAuthenticationSettingInfoTypeDef
+```
+
+Optional fields:
+
+- `Type`: `Literal['SmartCard']` (see
+  [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
+- `Status`:
+  [ClientAuthenticationStatusType](./literals.md#clientauthenticationstatustype)
+- `LastUpdatedDateTime`: `datetime`
+
 ## ClientCertAuthSettingsTypeDef
 
 ```python
@@ -307,7 +324,7 @@ Optional fields:
 
 - `ShortName`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ConnectDirectoryResultTypeDef
 
@@ -361,7 +378,7 @@ Optional fields:
 
 - `OrganizationalUnitDistinguishedName`: `str`
 - `ComputerAttributes`:
-  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 ## CreateComputerResultTypeDef
 
@@ -385,7 +402,7 @@ Required fields:
 
 - `DirectoryId`: `str`
 - `RemoteDomainName`: `str`
-- `DnsIpAddrs`: `List`\[`str`\]
+- `DnsIpAddrs`: `Sequence`\[`str`\]
 
 ## CreateDirectoryRequestRequestTypeDef
 
@@ -405,7 +422,7 @@ Optional fields:
 - `Description`: `str`
 - `VpcSettings`:
   [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDirectoryResultTypeDef
 
@@ -448,7 +465,7 @@ Optional fields:
 - `ShortName`: `str`
 - `Description`: `str`
 - `Edition`: [DirectoryEditionType](./literals.md#directoryeditiontype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateMicrosoftADResultTypeDef
 
@@ -504,7 +521,7 @@ Required fields:
 Optional fields:
 
 - `TrustType`: [TrustTypeType](./literals.md#trusttypetype)
-- `ConditionalForwarderIpAddrs`: `List`\[`str`\]
+- `ConditionalForwarderIpAddrs`: `Sequence`\[`str`\]
 - `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
 
 ## CreateTrustResultTypeDef
@@ -655,6 +672,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeClientAuthenticationSettingsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeClientAuthenticationSettingsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+
+Optional fields:
+
+- `Type`: `Literal['SmartCard']` (see
+  [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeClientAuthenticationSettingsResultTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeClientAuthenticationSettingsResultTypeDef
+```
+
+Required fields:
+
+- `ClientAuthenticationSettingsInfo`:
+  `List`\[[ClientAuthenticationSettingInfoTypeDef](./type_defs.md#clientauthenticationsettinginfotypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeConditionalForwardersRequestRequestTypeDef
 
 ```python
@@ -667,7 +715,7 @@ Required fields:
 
 Optional fields:
 
-- `RemoteDomainNames`: `List`\[`str`\]
+- `RemoteDomainNames`: `Sequence`\[`str`\]
 
 ## DescribeConditionalForwardersResultTypeDef
 
@@ -690,7 +738,7 @@ from mypy_boto3_ds.type_defs import DescribeDirectoriesRequestRequestTypeDef
 
 Optional fields:
 
-- `DirectoryIds`: `List`\[`str`\]
+- `DirectoryIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -720,7 +768,7 @@ Required fields:
 
 Optional fields:
 
-- `DomainControllerIds`: `List`\[`str`\]
+- `DomainControllerIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -747,7 +795,7 @@ from mypy_boto3_ds.type_defs import DescribeEventTopicsRequestRequestTypeDef
 Optional fields:
 
 - `DirectoryId`: `str`
-- `TopicNames`: `List`\[`str`\]
+- `TopicNames`: `Sequence`\[`str`\]
 
 ## DescribeEventTopicsResultTypeDef
 
@@ -834,7 +882,7 @@ Required fields:
 
 Optional fields:
 
-- `SharedDirectoryIds`: `List`\[`str`\]
+- `SharedDirectoryIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -861,7 +909,7 @@ from mypy_boto3_ds.type_defs import DescribeSnapshotsRequestRequestTypeDef
 Optional fields:
 
 - `DirectoryId`: `str`
-- `SnapshotIds`: `List`\[`str`\]
+- `SnapshotIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -887,7 +935,7 @@ from mypy_boto3_ds.type_defs import DescribeTrustsRequestRequestTypeDef
 Optional fields:
 
 - `DirectoryId`: `str`
-- `TrustIds`: `List`\[`str`\]
+- `TrustIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -928,8 +976,8 @@ from mypy_boto3_ds.type_defs import DirectoryConnectSettingsTypeDef
 Required fields:
 
 - `VpcId`: `str`
-- `SubnetIds`: `List`\[`str`\]
-- `CustomerDnsIps`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `CustomerDnsIps`: `Sequence`\[`str`\]
 - `CustomerUserName`: `str`
 
 ## DirectoryDescriptionTypeDef
@@ -1010,7 +1058,7 @@ from mypy_boto3_ds.type_defs import DirectoryVpcSettingsTypeDef
 Required fields:
 
 - `VpcId`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 ## DisableClientAuthenticationRequestRequestTypeDef
 
@@ -1522,7 +1570,7 @@ from mypy_boto3_ds.type_defs import RemoveIpRoutesRequestRequestTypeDef
 Required fields:
 
 - `DirectoryId`: `str`
-- `CidrIps`: `List`\[`str`\]
+- `CidrIps`: `Sequence`\[`str`\]
 
 ## RemoveRegionRequestRequestTypeDef
 
@@ -1543,7 +1591,7 @@ from mypy_boto3_ds.type_defs import RemoveTagsFromResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ResetUserPasswordRequestRequestTypeDef
 
@@ -1784,7 +1832,7 @@ Required fields:
 
 - `DirectoryId`: `str`
 - `RemoteDomainName`: `str`
-- `DnsIpAddrs`: `List`\[`str`\]
+- `DnsIpAddrs`: `Sequence`\[`str`\]
 
 ## UpdateNumberOfDomainControllersRequestRequestTypeDef
 

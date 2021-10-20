@@ -24,6 +24,7 @@ type annotations stubs module
     - [get_ec2_instance_recommendations](#get_ec2_instance_recommendations)
     - [get_ec2_recommendation_projected_metrics](#get_ec2_recommendation_projected_metrics)
     - [get_enrollment_status](#get_enrollment_status)
+    - [get_enrollment_statuses_for_organization](#get_enrollment_statuses_for_organization)
     - [get_lambda_function_recommendations](#get_lambda_function_recommendations)
     - [get_recommendation_summaries](#get_recommendation_summaries)
     - [update_enrollment_status](#update_enrollment_status)
@@ -112,8 +113,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `jobIds`: `List`\[`str`\]
-- `filters`: `List`\[[JobFilterTypeDef](./type_defs.md#jobfiltertypedef)\]
+- `jobIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[JobFilterTypeDef](./type_defs.md#jobfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -139,13 +140,15 @@ Keyword-only arguments:
 - `s3DestinationConfig`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
   *(required)*
-- `accountIds`: `List`\[`str`\]
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableAutoScalingGroupFieldType](./literals.md#exportableautoscalinggroupfieldtype)\]
+  `Sequence`\[[ExportableAutoScalingGroupFieldType](./literals.md#exportableautoscalinggroupfieldtype)\]
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 Returns
 [ExportAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsresponsetypedef).
@@ -168,10 +171,10 @@ Keyword-only arguments:
 - `s3DestinationConfig`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
   *(required)*
-- `accountIds`: `List`\[`str`\]
-- `filters`: `List`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableVolumeFieldType](./literals.md#exportablevolumefieldtype)\]
+  `Sequence`\[[ExportableVolumeFieldType](./literals.md#exportablevolumefieldtype)\]
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
@@ -197,20 +200,22 @@ Keyword-only arguments:
 - `s3DestinationConfig`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
   *(required)*
-- `accountIds`: `List`\[`str`\]
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableInstanceFieldType](./literals.md#exportableinstancefieldtype)\]
+  `Sequence`\[[ExportableInstanceFieldType](./literals.md#exportableinstancefieldtype)\]
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 Returns
 [ExportEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#exportec2instancerecommendationsresponsetypedef).
 
 ### export_lambda_function_recommendations
 
-Exports optimization recommendations for AWS Lambda functions.
+Exports optimization recommendations for Lambda functions.
 
 Type annotations for
 `boto3.client("compute-optimizer").export_lambda_function_recommendations`
@@ -227,11 +232,11 @@ Keyword-only arguments:
 - `s3DestinationConfig`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
   *(required)*
-- `accountIds`: `List`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
+  `Sequence`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableLambdaFunctionFieldType](./literals.md#exportablelambdafunctionfieldtype)\]
+  `Sequence`\[[ExportableLambdaFunctionFieldType](./literals.md#exportablelambdafunctionfieldtype)\]
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
@@ -252,7 +257,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -274,11 +279,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `accountIds`: `List`\[`str`\]
-- `autoScalingGroupArns`: `List`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
+- `autoScalingGroupArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 Returns
 [GetAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#getautoscalinggrouprecommendationsresponsetypedef).
@@ -298,11 +305,11 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `volumeArns`: `List`\[`str`\]
+- `volumeArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
-- `accountIds`: `List`\[`str`\]
+- `filters`: `Sequence`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
 
 Returns
 [GetEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#getebsvolumerecommendationsresponsetypedef).
@@ -322,11 +329,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `instanceArns`: `List`\[`str`\]
+- `instanceArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `accountIds`: `List`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 Returns
 [GetEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#getec2instancerecommendationsresponsetypedef).
@@ -353,14 +362,16 @@ Keyword-only arguments:
 - `period`: `int` *(required)*
 - `startTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 Returns
 [GetEC2RecommendationProjectedMetricsResponseTypeDef](./type_defs.md#getec2recommendationprojectedmetricsresponsetypedef).
 
 ### get_enrollment_status
 
-Returns the enrollment (opt in) status of an account to the AWS Compute
-Optimizer service.
+Returns the enrollment (opt in) status of an account to the Compute Optimizer
+service.
 
 Type annotations for `boto3.client("compute-optimizer").get_enrollment_status`
 method.
@@ -371,9 +382,34 @@ Boto3 documentation:
 Returns
 [GetEnrollmentStatusResponseTypeDef](./type_defs.md#getenrollmentstatusresponsetypedef).
 
+### get_enrollment_statuses_for_organization
+
+Returns the Compute Optimizer enrollment (opt-in) status of organization member
+accounts, if your account is an organization management account.
+
+Type annotations for
+`boto3.client("compute-optimizer").get_enrollment_statuses_for_organization`
+method.
+
+Boto3 documentation:
+[ComputeOptimizer.Client.get_enrollment_statuses_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_enrollment_statuses_for_organization)
+
+Arguments mapping described in
+[GetEnrollmentStatusesForOrganizationRequestRequestTypeDef](./type_defs.md#getenrollmentstatusesfororganizationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `filters`:
+  `Sequence`\[[EnrollmentFilterTypeDef](./type_defs.md#enrollmentfiltertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetEnrollmentStatusesForOrganizationResponseTypeDef](./type_defs.md#getenrollmentstatusesfororganizationresponsetypedef).
+
 ### get_lambda_function_recommendations
 
-Returns AWS Lambda function recommendations.
+Returns Lambda function recommendations.
 
 Type annotations for
 `boto3.client("compute-optimizer").get_lambda_function_recommendations` method.
@@ -386,10 +422,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `functionArns`: `List`\[`str`\]
-- `accountIds`: `List`\[`str`\]
+- `functionArns`: `Sequence`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
+  `Sequence`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -411,7 +447,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `accountIds`: `List`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -420,8 +456,8 @@ Returns
 
 ### update_enrollment_status
 
-Updates the enrollment (opt in and opt out) status of an account to the AWS
-Compute Optimizer service.
+Updates the enrollment (opt in and opt out) status of an account to the Compute
+Optimizer service.
 
 Type annotations for
 `boto3.client("compute-optimizer").update_enrollment_status` method.

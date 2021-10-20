@@ -131,6 +131,7 @@ from mypy_boto3_es.literals import AutoTuneDesiredStateType, ...
 - [DomainPackageStatusType](./literals.md#domainpackagestatustype)
 - [ESPartitionInstanceTypeType](./literals.md#espartitioninstancetypetype)
 - [ESWarmPartitionInstanceTypeType](./literals.md#eswarmpartitioninstancetypetype)
+- [EngineTypeType](./literals.md#enginetypetype)
 - [GetUpgradeHistoryPaginatorName](./literals.md#getupgradehistorypaginatorname)
 - [InboundCrossClusterSearchConnectionStatusCodeType](./literals.md#inboundcrossclustersearchconnectionstatuscodetype)
 - [ListElasticsearchInstanceTypesPaginatorName](./literals.md#listelasticsearchinstancetypespaginatorname)
@@ -149,6 +150,8 @@ from mypy_boto3_es.literals import AutoTuneDesiredStateType, ...
 - [UpgradeStatusType](./literals.md#upgradestatustype)
 - [UpgradeStepType](./literals.md#upgradesteptype)
 - [VolumeTypeType](./literals.md#volumetypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 
@@ -253,6 +256,7 @@ from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionReq
 - [InstanceCountLimitsTypeDef](./type_defs.md#instancecountlimitstypedef)
 - [InstanceLimitsTypeDef](./type_defs.md#instancelimitstypedef)
 - [LimitsTypeDef](./type_defs.md#limitstypedef)
+- [ListDomainNamesRequestRequestTypeDef](./type_defs.md#listdomainnamesrequestrequesttypedef)
 - [ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef)
 - [ListDomainsForPackageRequestRequestTypeDef](./type_defs.md#listdomainsforpackagerequestrequesttypedef)
 - [ListDomainsForPackageResponseTypeDef](./type_defs.md#listdomainsforpackageresponsetypedef)

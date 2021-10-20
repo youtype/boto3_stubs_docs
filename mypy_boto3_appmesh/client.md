@@ -145,7 +145,7 @@ Keyword-only arguments:
 - `virtualGatewayName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
 [CreateGatewayRouteOutputTypeDef](./type_defs.md#creategatewayrouteoutputtypedef).
@@ -167,7 +167,7 @@ Keyword-only arguments:
 - `meshName`: `str` *(required)*
 - `clientToken`: `str`
 - `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns [CreateMeshOutputTypeDef](./type_defs.md#createmeshoutputtypedef).
 
@@ -191,7 +191,7 @@ Keyword-only arguments:
 - `virtualRouterName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns [CreateRouteOutputTypeDef](./type_defs.md#createrouteoutputtypedef).
 
@@ -215,7 +215,7 @@ Keyword-only arguments:
 - `virtualGatewayName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
 [CreateVirtualGatewayOutputTypeDef](./type_defs.md#createvirtualgatewayoutputtypedef).
@@ -240,7 +240,7 @@ Keyword-only arguments:
 - `virtualNodeName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
 [CreateVirtualNodeOutputTypeDef](./type_defs.md#createvirtualnodeoutputtypedef).
@@ -265,7 +265,7 @@ Keyword-only arguments:
 - `virtualRouterName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
 [CreateVirtualRouterOutputTypeDef](./type_defs.md#createvirtualrouteroutputtypedef).
@@ -290,7 +290,7 @@ Keyword-only arguments:
 - `virtualServiceName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
 [CreateVirtualServiceOutputTypeDef](./type_defs.md#createvirtualserviceoutputtypedef).
@@ -599,7 +599,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -794,7 +794,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -813,7 +814,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

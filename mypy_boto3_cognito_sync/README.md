@@ -85,6 +85,7 @@ from mypy_boto3_cognito_sync.literals import BulkPublishStatusType, ...
 - [OperationType](./literals.md#operationtype)
 - [PlatformType](./literals.md#platformtype)
 - [StreamingStatusType](./literals.md#streamingstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -45,7 +45,7 @@ from mypy_boto3_forecastquery.type_defs import QueryForecastRequestRequestTypeDe
 Required fields:
 
 - `ForecastArn`: `str`
-- `Filters`: `Dict`\[`str`, `str`\]
+- `Filters`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 

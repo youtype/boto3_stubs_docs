@@ -81,6 +81,8 @@ from mypy_boto3_sagemaker_a2i_runtime.literals import ContentClassifierType, ...
 - [HumanLoopStatusType](./literals.md#humanloopstatustype)
 - [ListHumanLoopsPaginatorName](./literals.md#listhumanloopspaginatorname)
 - [SortOrderType](./literals.md#sortordertype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

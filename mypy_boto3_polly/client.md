@@ -108,7 +108,8 @@ Returns `bool`.
 
 ### delete_lexicon
 
-Deletes the specified pronunciation lexicon stored in an AWS Region.
+Deletes the specified pronunciation lexicon stored in an Amazon Web Services
+Region.
 
 Type annotations for `boto3.client("polly").delete_lexicon` method.
 
@@ -159,7 +160,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -167,8 +168,8 @@ Returns `str`.
 
 ### get_lexicon
 
-Returns the content of the specified pronunciation lexicon stored in an AWS
-Region.
+Returns the content of the specified pronunciation lexicon stored in an Amazon
+Web Services Region.
 
 Type annotations for `boto3.client("polly").get_lexicon` method.
 
@@ -205,7 +206,8 @@ Returns
 
 ### list_lexicons
 
-Returns a list of pronunciation lexicons stored in an AWS Region.
+Returns a list of pronunciation lexicons stored in an Amazon Web Services
+Region.
 
 Type annotations for `boto3.client("polly").list_lexicons` method.
 
@@ -245,7 +247,7 @@ Returns
 
 ### put_lexicon
 
-Stores a pronunciation lexicon in an AWS Region.
+Stores a pronunciation lexicon in an Amazon Web Services Region.
 
 Type annotations for `boto3.client("polly").put_lexicon` method.
 
@@ -285,12 +287,12 @@ Keyword-only arguments:
 - `VoiceId`: [VoiceIdType](./literals.md#voiceidtype) *(required)*
 - `Engine`: [EngineType](./literals.md#enginetype)
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LexiconNames`: `List`\[`str`\]
+- `LexiconNames`: `Sequence`\[`str`\]
 - `OutputS3KeyPrefix`: `str`
 - `SampleRate`: `str`
 - `SnsTopicArn`: `str`
 - `SpeechMarkTypes`:
-  `List`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
+  `Sequence`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
 - `TextType`: [TextTypeType](./literals.md#texttypetype)
 
 Returns
@@ -316,10 +318,10 @@ Keyword-only arguments:
 - `VoiceId`: [VoiceIdType](./literals.md#voiceidtype) *(required)*
 - `Engine`: [EngineType](./literals.md#enginetype)
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LexiconNames`: `List`\[`str`\]
+- `LexiconNames`: `Sequence`\[`str`\]
 - `SampleRate`: `str`
 - `SpeechMarkTypes`:
-  `List`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
+  `Sequence`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
 - `TextType`: [TextTypeType](./literals.md#texttypetype)
 
 Returns

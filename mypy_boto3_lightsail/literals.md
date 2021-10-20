@@ -9,11 +9,13 @@ type annotations stubs module
 
 - [Literals for boto3 Lightsail module](#literals-for-boto3-lightsail-module)
   - [AccessDirectionType](#accessdirectiontype)
+  - [AccessTypeType](#accesstypetype)
   - [AddOnTypeType](#addontypetype)
   - [AlarmStateType](#alarmstatetype)
   - [AutoSnapshotStatusType](#autosnapshotstatustype)
   - [BehaviorEnumType](#behaviorenumtype)
   - [BlueprintTypeType](#blueprinttypetype)
+  - [BucketMetricNameType](#bucketmetricnametype)
   - [CertificateStatusType](#certificatestatustype)
   - [CloudFormationStackRecordSourceTypeType](#cloudformationstackrecordsourcetypetype)
   - [ComparisonOperatorType](#comparisonoperatortype)
@@ -84,8 +86,12 @@ type annotations stubs module
   - [RelationalDatabaseMetricNameType](#relationaldatabasemetricnametype)
   - [RelationalDatabasePasswordVersionType](#relationaldatabasepasswordversiontype)
   - [RenewalStatusType](#renewalstatustype)
+  - [ResourceBucketAccessType](#resourcebucketaccesstype)
   - [ResourceTypeType](#resourcetypetype)
+  - [StatusTypeType](#statustypetype)
   - [TreatMissingDataType](#treatmissingdatatype)
+  - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AccessDirectionType
 
@@ -97,6 +103,17 @@ Values:
 
 - `inbound`
 - `outbound`
+
+## AccessTypeType
+
+```python
+from mypy_boto3_lightsail.literals import AccessTypeType
+```
+
+Values:
+
+- `private`
+- `public`
 
 ## AddOnTypeType
 
@@ -154,6 +171,17 @@ Values:
 
 - `app`
 - `os`
+
+## BucketMetricNameType
+
+```python
+from mypy_boto3_lightsail.literals import BucketMetricNameType
+```
+
+Values:
+
+- `BucketSizeBytes`
+- `NumberOfObjects`
 
 ## CertificateStatusType
 
@@ -958,6 +986,8 @@ Values:
 - `AttachLoadBalancerTlsCertificate`
 - `AttachStaticIp`
 - `CloseInstancePublicPorts`
+- `CreateBucket`
+- `CreateBucketAccessKey`
 - `CreateCertificate`
 - `CreateContactMethod`
 - `CreateContainerService`
@@ -977,6 +1007,8 @@ Values:
 - `CreateRelationalDatabaseFromSnapshot`
 - `CreateRelationalDatabaseSnapshot`
 - `DeleteAlarm`
+- `DeleteBucket`
+- `DeleteBucketAccessKey`
 - `DeleteCertificate`
 - `DeleteContactMethod`
 - `DeleteContainerImage`
@@ -1011,11 +1043,14 @@ Values:
 - `ResetDistributionCache`
 - `SendContactMethodVerification`
 - `SetIpAddressType`
+- `SetResourceAccessForBucket`
 - `StartInstance`
 - `StartRelationalDatabase`
 - `StopInstance`
 - `StopRelationalDatabase`
 - `TestAlarm`
+- `UpdateBucket`
+- `UpdateBucketBundle`
 - `UpdateContainerService`
 - `UpdateDistribution`
 - `UpdateDistributionBundle`
@@ -1097,6 +1132,7 @@ Values:
 - `ap-southeast-2`
 - `ca-central-1`
 - `eu-central-1`
+- `eu-north-1`
 - `eu-west-1`
 - `eu-west-2`
 - `eu-west-3`
@@ -1155,6 +1191,17 @@ Values:
 - `PendingValidation`
 - `Success`
 
+## ResourceBucketAccessType
+
+```python
+from mypy_boto3_lightsail.literals import ResourceBucketAccessType
+```
+
+Values:
+
+- `allow`
+- `deny`
+
 ## ResourceTypeType
 
 ```python
@@ -1164,6 +1211,7 @@ from mypy_boto3_lightsail.literals import ResourceTypeType
 Values:
 
 - `Alarm`
+- `Bucket`
 - `Certificate`
 - `CloudFormationStackRecord`
 - `ContactMethod`
@@ -1183,6 +1231,17 @@ Values:
 - `RelationalDatabaseSnapshot`
 - `StaticIp`
 
+## StatusTypeType
+
+```python
+from mypy_boto3_lightsail.literals import StatusTypeType
+```
+
+Values:
+
+- `Active`
+- `Inactive`
+
 ## TreatMissingDataType
 
 ```python
@@ -1195,3 +1254,326 @@ Values:
 - `ignore`
 - `missing`
 - `notBreaching`
+
+## ServiceName
+
+```python
+from mypy_boto3_lightsail.literals import ServiceName
+```
+
+Values:
+
+- `accessanalyzer`
+- `account`
+- `acm`
+- `acm-pca`
+- `alexaforbusiness`
+- `amp`
+- `amplify`
+- `amplifybackend`
+- `apigateway`
+- `apigatewaymanagementapi`
+- `apigatewayv2`
+- `appconfig`
+- `appflow`
+- `appintegrations`
+- `application-autoscaling`
+- `application-insights`
+- `applicationcostprofiler`
+- `appmesh`
+- `apprunner`
+- `appstream`
+- `appsync`
+- `athena`
+- `auditmanager`
+- `autoscaling`
+- `autoscaling-plans`
+- `backup`
+- `batch`
+- `braket`
+- `budgets`
+- `ce`
+- `chime`
+- `chime-sdk-identity`
+- `chime-sdk-messaging`
+- `cloud9`
+- `cloudcontrol`
+- `clouddirectory`
+- `cloudformation`
+- `cloudfront`
+- `cloudhsm`
+- `cloudhsmv2`
+- `cloudsearch`
+- `cloudsearchdomain`
+- `cloudtrail`
+- `cloudwatch`
+- `codeartifact`
+- `codebuild`
+- `codecommit`
+- `codedeploy`
+- `codeguru-reviewer`
+- `codeguruprofiler`
+- `codepipeline`
+- `codestar`
+- `codestar-connections`
+- `codestar-notifications`
+- `cognito-identity`
+- `cognito-idp`
+- `cognito-sync`
+- `comprehend`
+- `comprehendmedical`
+- `compute-optimizer`
+- `config`
+- `connect`
+- `connect-contact-lens`
+- `connectparticipant`
+- `cur`
+- `customer-profiles`
+- `databrew`
+- `dataexchange`
+- `datapipeline`
+- `datasync`
+- `dax`
+- `detective`
+- `devicefarm`
+- `devops-guru`
+- `directconnect`
+- `discovery`
+- `dlm`
+- `dms`
+- `docdb`
+- `ds`
+- `dynamodb`
+- `dynamodbstreams`
+- `ebs`
+- `ec2`
+- `ec2-instance-connect`
+- `ecr`
+- `ecr-public`
+- `ecs`
+- `efs`
+- `eks`
+- `elastic-inference`
+- `elasticache`
+- `elasticbeanstalk`
+- `elastictranscoder`
+- `elb`
+- `elbv2`
+- `emr`
+- `emr-containers`
+- `es`
+- `events`
+- `finspace`
+- `finspace-data`
+- `firehose`
+- `fis`
+- `fms`
+- `forecast`
+- `forecastquery`
+- `frauddetector`
+- `fsx`
+- `gamelift`
+- `glacier`
+- `globalaccelerator`
+- `glue`
+- `grafana`
+- `greengrass`
+- `greengrassv2`
+- `groundstation`
+- `guardduty`
+- `health`
+- `healthlake`
+- `honeycode`
+- `iam`
+- `identitystore`
+- `imagebuilder`
+- `importexport`
+- `inspector`
+- `iot`
+- `iot-data`
+- `iot-jobs-data`
+- `iot1click-devices`
+- `iot1click-projects`
+- `iotanalytics`
+- `iotdeviceadvisor`
+- `iotevents`
+- `iotevents-data`
+- `iotfleethub`
+- `iotsecuretunneling`
+- `iotsitewise`
+- `iotthingsgraph`
+- `iotwireless`
+- `ivs`
+- `kafka`
+- `kafkaconnect`
+- `kendra`
+- `kinesis`
+- `kinesis-video-archived-media`
+- `kinesis-video-media`
+- `kinesis-video-signaling`
+- `kinesisanalytics`
+- `kinesisanalyticsv2`
+- `kinesisvideo`
+- `kms`
+- `lakeformation`
+- `lambda`
+- `lex-models`
+- `lex-runtime`
+- `lexv2-models`
+- `lexv2-runtime`
+- `license-manager`
+- `lightsail`
+- `location`
+- `logs`
+- `lookoutequipment`
+- `lookoutmetrics`
+- `lookoutvision`
+- `machinelearning`
+- `macie`
+- `macie2`
+- `managedblockchain`
+- `marketplace-catalog`
+- `marketplace-entitlement`
+- `marketplacecommerceanalytics`
+- `mediaconnect`
+- `mediaconvert`
+- `medialive`
+- `mediapackage`
+- `mediapackage-vod`
+- `mediastore`
+- `mediastore-data`
+- `mediatailor`
+- `memorydb`
+- `meteringmarketplace`
+- `mgh`
+- `mgn`
+- `migrationhub-config`
+- `mobile`
+- `mq`
+- `mturk`
+- `mwaa`
+- `neptune`
+- `network-firewall`
+- `networkmanager`
+- `nimble`
+- `opensearch`
+- `opsworks`
+- `opsworkscm`
+- `organizations`
+- `outposts`
+- `panorama`
+- `personalize`
+- `personalize-events`
+- `personalize-runtime`
+- `pi`
+- `pinpoint`
+- `pinpoint-email`
+- `pinpoint-sms-voice`
+- `polly`
+- `pricing`
+- `proton`
+- `qldb`
+- `qldb-session`
+- `quicksight`
+- `ram`
+- `rds`
+- `rds-data`
+- `redshift`
+- `redshift-data`
+- `rekognition`
+- `resource-groups`
+- `resourcegroupstaggingapi`
+- `robomaker`
+- `route53`
+- `route53-recovery-cluster`
+- `route53-recovery-control-config`
+- `route53-recovery-readiness`
+- `route53domains`
+- `route53resolver`
+- `s3`
+- `s3control`
+- `s3outposts`
+- `sagemaker`
+- `sagemaker-a2i-runtime`
+- `sagemaker-edge`
+- `sagemaker-featurestore-runtime`
+- `sagemaker-runtime`
+- `savingsplans`
+- `schemas`
+- `sdb`
+- `secretsmanager`
+- `securityhub`
+- `serverlessrepo`
+- `service-quotas`
+- `servicecatalog`
+- `servicecatalog-appregistry`
+- `servicediscovery`
+- `ses`
+- `sesv2`
+- `shield`
+- `signer`
+- `sms`
+- `sms-voice`
+- `snow-device-management`
+- `snowball`
+- `sns`
+- `sqs`
+- `ssm`
+- `ssm-contacts`
+- `ssm-incidents`
+- `sso`
+- `sso-admin`
+- `sso-oidc`
+- `stepfunctions`
+- `storagegateway`
+- `sts`
+- `support`
+- `swf`
+- `synthetics`
+- `textract`
+- `timestream-query`
+- `timestream-write`
+- `transcribe`
+- `transfer`
+- `translate`
+- `voice-id`
+- `waf`
+- `waf-regional`
+- `wafv2`
+- `wellarchitected`
+- `wisdom`
+- `workdocs`
+- `worklink`
+- `workmail`
+- `workmailmessageflow`
+- `workspaces`
+- `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_lightsail.literals import PaginatorName
+```
+
+Values:
+
+- `get_active_names`
+- `get_blueprints`
+- `get_bundles`
+- `get_cloud_formation_stack_records`
+- `get_disk_snapshots`
+- `get_disks`
+- `get_domains`
+- `get_export_snapshot_records`
+- `get_instance_snapshots`
+- `get_instances`
+- `get_key_pairs`
+- `get_load_balancers`
+- `get_operations`
+- `get_relational_database_blueprints`
+- `get_relational_database_bundles`
+- `get_relational_database_events`
+- `get_relational_database_parameters`
+- `get_relational_database_snapshots`
+- `get_relational_databases`
+- `get_static_ips`

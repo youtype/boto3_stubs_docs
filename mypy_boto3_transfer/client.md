@@ -16,21 +16,28 @@ type annotations stubs module
     - [create_access](#create_access)
     - [create_server](#create_server)
     - [create_user](#create_user)
+    - [create_workflow](#create_workflow)
     - [delete_access](#delete_access)
     - [delete_server](#delete_server)
     - [delete_ssh_public_key](#delete_ssh_public_key)
     - [delete_user](#delete_user)
+    - [delete_workflow](#delete_workflow)
     - [describe_access](#describe_access)
+    - [describe_execution](#describe_execution)
     - [describe_security_policy](#describe_security_policy)
     - [describe_server](#describe_server)
     - [describe_user](#describe_user)
+    - [describe_workflow](#describe_workflow)
     - [generate_presigned_url](#generate_presigned_url)
     - [import_ssh_public_key](#import_ssh_public_key)
     - [list_accesses](#list_accesses)
+    - [list_executions](#list_executions)
     - [list_security_policies](#list_security_policies)
     - [list_servers](#list_servers)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_users](#list_users)
+    - [list_workflows](#list_workflows)
+    - [send_workflow_step_state](#send_workflow_step_state)
     - [start_server](#start_server)
     - [stop_server](#stop_server)
     - [tag_resource](#tag_resource)
@@ -133,7 +140,7 @@ Keyword-only arguments:
 - `HomeDirectoryType`:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 
@@ -166,9 +173,11 @@ Keyword-only arguments:
 - `IdentityProviderType`:
   [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `LoggingRole`: `str`
-- `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
+- `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `WorkflowDetails`:
+  [WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef)
 
 Returns
 [CreateServerResponseTypeDef](./type_defs.md#createserverresponsetypedef).
@@ -195,13 +204,39 @@ Keyword-only arguments:
 - `HomeDirectoryType`:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `SshPublicKeyBody`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+
+### create_workflow
+
+Allows you to create a workflow with specified steps and step details the
+workflow invokes after file transfer completes.
+
+Type annotations for `boto3.client("transfer").create_workflow` method.
+
+Boto3 documentation:
+[Transfer.Client.create_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_workflow)
+
+Arguments mapping described in
+[CreateWorkflowRequestRequestTypeDef](./type_defs.md#createworkflowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Steps`:
+  `Sequence`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
+  *(required)*
+- `Description`: `str`
+- `OnExceptionSteps`:
+  `Sequence`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef).
 
 ### delete_access
 
@@ -273,6 +308,22 @@ Keyword-only arguments:
 - `ServerId`: `str` *(required)*
 - `UserName`: `str` *(required)*
 
+### delete_workflow
+
+Deletes the specified workflow.
+
+Type annotations for `boto3.client("transfer").delete_workflow` method.
+
+Boto3 documentation:
+[Transfer.Client.delete_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_workflow)
+
+Arguments mapping described in
+[DeleteWorkflowRequestRequestTypeDef](./type_defs.md#deleteworkflowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `WorkflowId`: `str` *(required)*
+
 ### describe_access
 
 Describes the access that is assigned to the specific file transfer protocol-
@@ -293,6 +344,27 @@ Keyword-only arguments:
 
 Returns
 [DescribeAccessResponseTypeDef](./type_defs.md#describeaccessresponsetypedef).
+
+### describe_execution
+
+You can use `DescribeExecution` to check the details of the execution of the
+specified workflow.
+
+Type annotations for `boto3.client("transfer").describe_execution` method.
+
+Boto3 documentation:
+[Transfer.Client.describe_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_execution)
+
+Arguments mapping described in
+[DescribeExecutionRequestRequestTypeDef](./type_defs.md#describeexecutionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ExecutionId`: `str` *(required)*
+- `WorkflowId`: `str` *(required)*
+
+Returns
+[DescribeExecutionResponseTypeDef](./type_defs.md#describeexecutionresponsetypedef).
 
 ### describe_security_policy
 
@@ -356,6 +428,25 @@ Keyword-only arguments:
 Returns
 [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
+### describe_workflow
+
+Describes the specified workflow.
+
+Type annotations for `boto3.client("transfer").describe_workflow` method.
+
+Boto3 documentation:
+[Transfer.Client.describe_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_workflow)
+
+Arguments mapping described in
+[DescribeWorkflowRequestRequestTypeDef](./type_defs.md#describeworkflowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `WorkflowId`: `str` *(required)*
+
+Returns
+[DescribeWorkflowResponseTypeDef](./type_defs.md#describeworkflowresponsetypedef).
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -368,7 +459,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -417,6 +508,27 @@ Keyword-only arguments:
 
 Returns
 [ListAccessesResponseTypeDef](./type_defs.md#listaccessesresponsetypedef).
+
+### list_executions
+
+Lists all executions for the specified workflow.
+
+Type annotations for `boto3.client("transfer").list_executions` method.
+
+Boto3 documentation:
+[Transfer.Client.list_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_executions)
+
+Arguments mapping described in
+[ListExecutionsRequestRequestTypeDef](./type_defs.md#listexecutionsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `WorkflowId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListExecutionsResponseTypeDef](./type_defs.md#listexecutionsresponsetypedef).
 
 ### list_security_policies
 
@@ -503,6 +615,49 @@ Keyword-only arguments:
 
 Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
+### list_workflows
+
+Lists all of your workflows.
+
+Type annotations for `boto3.client("transfer").list_workflows` method.
+
+Boto3 documentation:
+[Transfer.Client.list_workflows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_workflows)
+
+Arguments mapping described in
+[ListWorkflowsRequestRequestTypeDef](./type_defs.md#listworkflowsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef).
+
+### send_workflow_step_state
+
+Sends a callback for asynchronous custom steps.
+
+Type annotations for `boto3.client("transfer").send_workflow_step_state`
+method.
+
+Boto3 documentation:
+[Transfer.Client.send_workflow_step_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.send_workflow_step_state)
+
+Arguments mapping described in
+[SendWorkflowStepStateRequestRequestTypeDef](./type_defs.md#sendworkflowstepstaterequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `WorkflowId`: `str` *(required)*
+- `ExecutionId`: `str` *(required)*
+- `Token`: `str` *(required)*
+- `Status`: [CustomStepStatusType](./literals.md#customstepstatustype)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### start_server
 
 Changes the state of a file transfer protocol-enabled server from `OFFLINE` to
@@ -553,7 +708,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### test_identity_provider
 
@@ -596,7 +751,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_access
 
@@ -619,7 +774,7 @@ Keyword-only arguments:
 - `HomeDirectoryType`:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`
@@ -653,8 +808,10 @@ Keyword-only arguments:
 - `IdentityProviderDetails`:
   [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
 - `LoggingRole`: `str`
-- `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
+- `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
+- `WorkflowDetails`:
+  [WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef)
 
 Returns
 [UpdateServerResponseTypeDef](./type_defs.md#updateserverresponsetypedef).
@@ -679,7 +836,7 @@ Keyword-only arguments:
 - `HomeDirectoryType`:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`

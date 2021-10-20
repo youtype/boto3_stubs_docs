@@ -20,10 +20,12 @@ type annotations stubs module
     - [batch_update_findings](#batch_update_findings)
     - [can_paginate](#can_paginate)
     - [create_action_target](#create_action_target)
+    - [create_finding_aggregator](#create_finding_aggregator)
     - [create_insight](#create_insight)
     - [create_members](#create_members)
     - [decline_invitations](#decline_invitations)
     - [delete_action_target](#delete_action_target)
+    - [delete_finding_aggregator](#delete_finding_aggregator)
     - [delete_insight](#delete_insight)
     - [delete_invitations](#delete_invitations)
     - [delete_members](#delete_members)
@@ -45,6 +47,7 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [get_administrator_account](#get_administrator_account)
     - [get_enabled_standards](#get_enabled_standards)
+    - [get_finding_aggregator](#get_finding_aggregator)
     - [get_findings](#get_findings)
     - [get_insight_results](#get_insight_results)
     - [get_insights](#get_insights)
@@ -53,6 +56,7 @@ type annotations stubs module
     - [get_members](#get_members)
     - [invite_members](#invite_members)
     - [list_enabled_products_for_import](#list_enabled_products_for_import)
+    - [list_finding_aggregators](#list_finding_aggregators)
     - [list_invitations](#list_invitations)
     - [list_members](#list_members)
     - [list_organization_admin_accounts](#list_organization_admin_accounts)
@@ -60,6 +64,7 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_action_target](#update_action_target)
+    - [update_finding_aggregator](#update_finding_aggregator)
     - [update_findings](#update_findings)
     - [update_insight](#update_insight)
     - [update_organization_configuration](#update_organization_configuration)
@@ -174,7 +179,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `StandardsSubscriptionArns`: `List`\[`str`\] *(required)*
+- `StandardsSubscriptionArns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDisableStandardsResponseTypeDef](./type_defs.md#batchdisablestandardsresponsetypedef).
@@ -195,7 +200,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StandardsSubscriptionRequests`:
-  `List`\[[StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef)\]
+  `Sequence`\[[StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef)\]
   *(required)*
 
 Returns
@@ -218,7 +223,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Findings`:
-  `List`\[[AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef)\]
+  `Sequence`\[[AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef)\]
   *(required)*
 
 Returns
@@ -241,7 +246,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FindingIdentifiers`:
-  `List`\[[AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef)\]
+  `Sequence`\[[AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef)\]
   *(required)*
 - `Note`: [NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef)
 - `Severity`: [SeverityUpdateTypeDef](./type_defs.md#severityupdatetypedef)
@@ -249,11 +254,11 @@ Keyword-only arguments:
   [VerificationStateType](./literals.md#verificationstatetype)
 - `Confidence`: `int`
 - `Criticality`: `int`
-- `Types`: `List`\[`str`\]
-- `UserDefinedFields`: `Dict`\[`str`, `str`\]
+- `Types`: `Sequence`\[`str`\]
+- `UserDefinedFields`: `Mapping`\[`str`, `str`\]
 - `Workflow`: [WorkflowUpdateTypeDef](./type_defs.md#workflowupdatetypedef)
 - `RelatedFindings`:
-  `List`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
+  `Sequence`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
 
 Returns
 [BatchUpdateFindingsResponseTypeDef](./type_defs.md#batchupdatefindingsresponsetypedef).
@@ -294,6 +299,27 @@ Keyword-only arguments:
 Returns
 [CreateActionTargetResponseTypeDef](./type_defs.md#createactiontargetresponsetypedef).
 
+### create_finding_aggregator
+
+Used to enable finding aggregation.
+
+Type annotations for `boto3.client("securityhub").create_finding_aggregator`
+method.
+
+Boto3 documentation:
+[SecurityHub.Client.create_finding_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_finding_aggregator)
+
+Arguments mapping described in
+[CreateFindingAggregatorRequestRequestTypeDef](./type_defs.md#createfindingaggregatorrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `RegionLinkingMode`: `str` *(required)*
+- `Regions`: `Sequence`\[`str`\]
+
+Returns
+[CreateFindingAggregatorResponseTypeDef](./type_defs.md#createfindingaggregatorresponsetypedef).
+
 ### create_insight
 
 Creates a custom insight in Security Hub.
@@ -333,7 +359,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AccountDetails`:
-  `List`\[[AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef)\]
+  `Sequence`\[[AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef)\]
   *(required)*
 
 Returns
@@ -353,7 +379,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
@@ -377,6 +403,25 @@ Keyword-only arguments:
 Returns
 [DeleteActionTargetResponseTypeDef](./type_defs.md#deleteactiontargetresponsetypedef).
 
+### delete_finding_aggregator
+
+Deletes a finding aggregator.
+
+Type annotations for `boto3.client("securityhub").delete_finding_aggregator`
+method.
+
+Boto3 documentation:
+[SecurityHub.Client.delete_finding_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_finding_aggregator)
+
+Arguments mapping described in
+[DeleteFindingAggregatorRequestRequestTypeDef](./type_defs.md#deletefindingaggregatorrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FindingAggregatorArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### delete_insight
 
 Deletes the insight specified by the `InsightArn` .
@@ -398,7 +443,8 @@ Returns
 
 ### delete_invitations
 
-Deletes invitations received by the AWS account to become a member account.
+Deletes invitations received by the Amazon Web Services account to become a
+member account.
 
 Type annotations for `boto3.client("securityhub").delete_invitations` method.
 
@@ -410,7 +456,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
@@ -429,7 +475,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
@@ -449,7 +495,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ActionTargetArns`: `List`\[`str`\]
+- `ActionTargetArns`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -641,7 +687,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -699,7 +745,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `EnableDefaultStandards`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -717,7 +763,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -752,12 +798,32 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `StandardsSubscriptionArns`: `List`\[`str`\]
+- `StandardsSubscriptionArns`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
 [GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef).
+
+### get_finding_aggregator
+
+Returns the current finding aggregation configuration.
+
+Type annotations for `boto3.client("securityhub").get_finding_aggregator`
+method.
+
+Boto3 documentation:
+[SecurityHub.Client.get_finding_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_finding_aggregator)
+
+Arguments mapping described in
+[GetFindingAggregatorRequestRequestTypeDef](./type_defs.md#getfindingaggregatorrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FindingAggregatorArn`: `str` *(required)*
+
+Returns
+[GetFindingAggregatorResponseTypeDef](./type_defs.md#getfindingaggregatorresponsetypedef).
 
 ### get_findings
 
@@ -776,7 +842,7 @@ Keyword-only arguments:
 - `Filters`:
   [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
 - `SortCriteria`:
-  `List`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
+  `Sequence`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -816,7 +882,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `InsightArns`: `List`\[`str`\]
+- `InsightArns`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -864,14 +930,14 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 
 ### invite_members
 
-Invites other AWS accounts to become member accounts for the Security Hub
-administrator account that the invitation is sent from.
+Invites other Amazon Web Services accounts to become member accounts for the
+Security Hub administrator account that the invitation is sent from.
 
 Type annotations for `boto3.client("securityhub").invite_members` method.
 
@@ -883,7 +949,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [InviteMembersResponseTypeDef](./type_defs.md#invitemembersresponsetypedef).
@@ -910,10 +976,32 @@ Keyword-only arguments:
 Returns
 [ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef).
 
+### list_finding_aggregators
+
+If finding aggregation is enabled, then `ListFindingAggregators` returns the
+ARN of the finding aggregator.
+
+Type annotations for `boto3.client("securityhub").list_finding_aggregators`
+method.
+
+Boto3 documentation:
+[SecurityHub.Client.list_finding_aggregators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_finding_aggregators)
+
+Arguments mapping described in
+[ListFindingAggregatorsRequestRequestTypeDef](./type_defs.md#listfindingaggregatorsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListFindingAggregatorsResponseTypeDef](./type_defs.md#listfindingaggregatorsresponsetypedef).
+
 ### list_invitations
 
-Lists all Security Hub membership invitations that were sent to the current AWS
-account.
+Lists all Security Hub membership invitations that were sent to the current
+Amazon Web Services account.
 
 Type annotations for `boto3.client("securityhub").list_invitations` method.
 
@@ -1009,7 +1097,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1028,7 +1116,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1051,6 +1139,28 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+### update_finding_aggregator
+
+Updates the finding aggregation configuration.
+
+Type annotations for `boto3.client("securityhub").update_finding_aggregator`
+method.
+
+Boto3 documentation:
+[SecurityHub.Client.update_finding_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_finding_aggregator)
+
+Arguments mapping described in
+[UpdateFindingAggregatorRequestRequestTypeDef](./type_defs.md#updatefindingaggregatorrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FindingAggregatorArn`: `str` *(required)*
+- `RegionLinkingMode`: `str` *(required)*
+- `Regions`: `Sequence`\[`str`\]
+
+Returns
+[UpdateFindingAggregatorResponseTypeDef](./type_defs.md#updatefindingaggregatorresponsetypedef).
 
 ### update_findings
 
@@ -1161,6 +1271,14 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("securityhub").get_paginator` method with
 overloads.
 
+- `client.get_paginator("describe_action_targets")` ->
+  [DescribeActionTargetsPaginator](./paginators.md#describeactiontargetspaginator)
+- `client.get_paginator("describe_products")` ->
+  [DescribeProductsPaginator](./paginators.md#describeproductspaginator)
+- `client.get_paginator("describe_standards")` ->
+  [DescribeStandardsPaginator](./paginators.md#describestandardspaginator)
+- `client.get_paginator("describe_standards_controls")` ->
+  [DescribeStandardsControlsPaginator](./paginators.md#describestandardscontrolspaginator)
 - `client.get_paginator("get_enabled_standards")` ->
   [GetEnabledStandardsPaginator](./paginators.md#getenabledstandardspaginator)
 - `client.get_paginator("get_findings")` ->
@@ -1169,7 +1287,11 @@ overloads.
   [GetInsightsPaginator](./paginators.md#getinsightspaginator)
 - `client.get_paginator("list_enabled_products_for_import")` ->
   [ListEnabledProductsForImportPaginator](./paginators.md#listenabledproductsforimportpaginator)
+- `client.get_paginator("list_finding_aggregators")` ->
+  [ListFindingAggregatorsPaginator](./paginators.md#listfindingaggregatorspaginator)
 - `client.get_paginator("list_invitations")` ->
   [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
 - `client.get_paginator("list_members")` ->
   [ListMembersPaginator](./paginators.md#listmemberspaginator)
+- `client.get_paginator("list_organization_admin_accounts")` ->
+  [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)

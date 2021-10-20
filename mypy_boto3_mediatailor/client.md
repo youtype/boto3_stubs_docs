@@ -13,13 +13,16 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
+    - [configure_logs_for_playback_configuration](#configure_logs_for_playback_configuration)
     - [create_channel](#create_channel)
+    - [create_prefetch_schedule](#create_prefetch_schedule)
     - [create_program](#create_program)
     - [create_source_location](#create_source_location)
     - [create_vod_source](#create_vod_source)
     - [delete_channel](#delete_channel)
     - [delete_channel_policy](#delete_channel_policy)
     - [delete_playback_configuration](#delete_playback_configuration)
+    - [delete_prefetch_schedule](#delete_prefetch_schedule)
     - [delete_program](#delete_program)
     - [delete_source_location](#delete_source_location)
     - [delete_vod_source](#delete_vod_source)
@@ -31,9 +34,11 @@ type annotations stubs module
     - [get_channel_policy](#get_channel_policy)
     - [get_channel_schedule](#get_channel_schedule)
     - [get_playback_configuration](#get_playback_configuration)
+    - [get_prefetch_schedule](#get_prefetch_schedule)
     - [list_alerts](#list_alerts)
     - [list_channels](#list_channels)
     - [list_playback_configurations](#list_playback_configurations)
+    - [list_prefetch_schedules](#list_prefetch_schedules)
     - [list_source_locations](#list_source_locations)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_vod_sources](#list_vod_sources)
@@ -109,6 +114,27 @@ Arguments:
 
 Returns `bool`.
 
+### configure_logs_for_playback_configuration
+
+Configures Amazon CloudWatch log settings for a playback configuration.
+
+Type annotations for
+`boto3.client("mediatailor").configure_logs_for_playback_configuration` method.
+
+Boto3 documentation:
+[MediaTailor.Client.configure_logs_for_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.configure_logs_for_playback_configuration)
+
+Arguments mapping described in
+[ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef](./type_defs.md#configurelogsforplaybackconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `PercentEnabled`: `int` *(required)*
+- `PlaybackConfigurationName`: `str` *(required)*
+
+Returns
+[ConfigureLogsForPlaybackConfigurationResponseTypeDef](./type_defs.md#configurelogsforplaybackconfigurationresponsetypedef).
+
 ### create_channel
 
 Creates a channel.
@@ -125,14 +151,43 @@ Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 - `Outputs`:
-  `List`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
+  `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
   *(required)*
-- `PlaybackMode`: `Literal['LOOP']` (see
-  [PlaybackModeType](./literals.md#playbackmodetype)) *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `PlaybackMode`: [PlaybackModeType](./literals.md#playbackmodetype)
+  *(required)*
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+
+### create_prefetch_schedule
+
+Creates a new prefetch schedule for the specified playback configuration.
+
+Type annotations for `boto3.client("mediatailor").create_prefetch_schedule`
+method.
+
+Boto3 documentation:
+[MediaTailor.Client.create_prefetch_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_prefetch_schedule)
+
+Arguments mapping described in
+[CreatePrefetchScheduleRequestRequestTypeDef](./type_defs.md#createprefetchschedulerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Consumption`:
+  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
+  *(required)*
+- `Name`: `str` *(required)*
+- `PlaybackConfigurationName`: `str` *(required)*
+- `Retrieval`:
+  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
+  *(required)*
+- `StreamId`: `str`
+
+Returns
+[CreatePrefetchScheduleResponseTypeDef](./type_defs.md#createprefetchscheduleresponsetypedef).
 
 ### create_program
 
@@ -155,7 +210,7 @@ Keyword-only arguments:
   *(required)*
 - `SourceLocationName`: `str` *(required)*
 - `VodSourceName`: `str` *(required)*
-- `AdBreaks`: `List`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
+- `AdBreaks`: `Sequence`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
 
 Returns
 [CreateProgramResponseTypeDef](./type_defs.md#createprogramresponsetypedef).
@@ -183,7 +238,7 @@ Keyword-only arguments:
   [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
 - `DefaultSegmentDeliveryConfiguration`:
   [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateSourceLocationResponseTypeDef](./type_defs.md#createsourcelocationresponsetypedef).
@@ -203,11 +258,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
+  `Sequence`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
   *(required)*
 - `SourceLocationName`: `str` *(required)*
 - `VodSourceName`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateVodSourceResponseTypeDef](./type_defs.md#createvodsourceresponsetypedef).
@@ -265,6 +320,26 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### delete_prefetch_schedule
+
+Deletes a prefetch schedule for a specific playback configuration.
+
+Type annotations for `boto3.client("mediatailor").delete_prefetch_schedule`
+method.
+
+Boto3 documentation:
+[MediaTailor.Client.delete_prefetch_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_prefetch_schedule)
+
+Arguments mapping described in
+[DeletePrefetchScheduleRequestRequestTypeDef](./type_defs.md#deleteprefetchschedulerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `PlaybackConfigurationName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -417,7 +492,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -484,6 +559,28 @@ Keyword-only arguments:
 Returns
 [GetPlaybackConfigurationResponseTypeDef](./type_defs.md#getplaybackconfigurationresponsetypedef).
 
+### get_prefetch_schedule
+
+Returns information about the prefetch schedule for a specific playback
+configuration.
+
+Type annotations for `boto3.client("mediatailor").get_prefetch_schedule`
+method.
+
+Boto3 documentation:
+[MediaTailor.Client.get_prefetch_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_prefetch_schedule)
+
+Arguments mapping described in
+[GetPrefetchScheduleRequestRequestTypeDef](./type_defs.md#getprefetchschedulerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `PlaybackConfigurationName`: `str` *(required)*
+
+Returns
+[GetPrefetchScheduleResponseTypeDef](./type_defs.md#getprefetchscheduleresponsetypedef).
+
 ### list_alerts
 
 Returns a list of alerts for the given resource.
@@ -545,6 +642,29 @@ Keyword-only arguments:
 
 Returns
 [ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef).
+
+### list_prefetch_schedules
+
+Creates a new prefetch schedule.
+
+Type annotations for `boto3.client("mediatailor").list_prefetch_schedules`
+method.
+
+Boto3 documentation:
+[MediaTailor.Client.list_prefetch_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_prefetch_schedules)
+
+Arguments mapping described in
+[ListPrefetchSchedulesRequestRequestTypeDef](./type_defs.md#listprefetchschedulesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `PlaybackConfigurationName`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `StreamId`: `str`
+
+Returns
+[ListPrefetchSchedulesResponseTypeDef](./type_defs.md#listprefetchschedulesresponsetypedef).
 
 ### list_source_locations
 
@@ -649,7 +769,7 @@ Keyword-only arguments:
 - `Bumper`: [BumperTypeDef](./type_defs.md#bumpertypedef)
 - `CdnConfiguration`:
   [CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef)
-- `ConfigurationAliases`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `ConfigurationAliases`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
 - `DashConfiguration`:
   [DashConfigurationForPutTypeDef](./type_defs.md#dashconfigurationforputtypedef)
 - `LivePreRollConfiguration`:
@@ -659,7 +779,7 @@ Keyword-only arguments:
 - `Name`: `str`
 - `PersonalizationThresholdSeconds`: `int`
 - `SlateAdUrl`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `TranscodeProfileName`: `str`
 - `VideoContentSourceUrl`: `str`
 
@@ -717,7 +837,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -734,7 +854,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_channel
 
@@ -752,7 +872,7 @@ Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 - `Outputs`:
-  `List`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
+  `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
   *(required)*
 
 Returns
@@ -800,7 +920,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
+  `Sequence`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
   *(required)*
 - `SourceLocationName`: `str` *(required)*
 - `VodSourceName`: `str` *(required)*
@@ -821,6 +941,8 @@ overloads.
   [ListChannelsPaginator](./paginators.md#listchannelspaginator)
 - `client.get_paginator("list_playback_configurations")` ->
   [ListPlaybackConfigurationsPaginator](./paginators.md#listplaybackconfigurationspaginator)
+- `client.get_paginator("list_prefetch_schedules")` ->
+  [ListPrefetchSchedulesPaginator](./paginators.md#listprefetchschedulespaginator)
 - `client.get_paginator("list_source_locations")` ->
   [ListSourceLocationsPaginator](./paginators.md#listsourcelocationspaginator)
 - `client.get_paginator("list_vod_sources")` ->

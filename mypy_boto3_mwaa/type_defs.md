@@ -81,7 +81,7 @@ Required fields:
 
 Optional fields:
 
-- `AirflowConfigurationOptions`: `Dict`\[`str`, `str`\]
+- `AirflowConfigurationOptions`: `Mapping`\[`str`, `str`\]
 - `AirflowVersion`: `str`
 - `EnvironmentClass`: `str`
 - `KmsKey`: `str`
@@ -94,7 +94,7 @@ Optional fields:
 - `RequirementsS3ObjectVersion`: `str`
 - `RequirementsS3Path`: `str`
 - `Schedulers`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `WebserverAccessMode`:
   [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
 - `WeeklyMaintenanceWindowStart`: `str`
@@ -324,7 +324,8 @@ Required fields:
 
 Optional fields:
 
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `StatisticValues`: [StatisticSetTypeDef](./type_defs.md#statisticsettypedef)
 - `Unit`: [UnitType](./literals.md#unittype)
 - `Value`: `float`
@@ -360,8 +361,8 @@ from mypy_boto3_mwaa.type_defs import NetworkConfigurationTypeDef
 
 Optional fields:
 
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SubnetIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 ## PaginatorConfigTypeDef
 
@@ -385,7 +386,7 @@ Required fields:
 
 - `EnvironmentName`: `str`
 - `MetricData`:
-  `List`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
+  `Sequence`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
 
 ## ResponseMetadataTypeDef
 
@@ -423,7 +424,7 @@ from mypy_boto3_mwaa.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceInputRequestTypeDef
 
@@ -434,7 +435,7 @@ from mypy_boto3_mwaa.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateEnvironmentInputRequestTypeDef
 
@@ -448,7 +449,7 @@ Required fields:
 
 Optional fields:
 
-- `AirflowConfigurationOptions`: `Dict`\[`str`, `str`\]
+- `AirflowConfigurationOptions`: `Mapping`\[`str`, `str`\]
 - `AirflowVersion`: `str`
 - `DagS3Path`: `str`
 - `EnvironmentClass`: `str`
@@ -500,4 +501,4 @@ from mypy_boto3_mwaa.type_defs import UpdateNetworkConfigurationInputTypeDef
 
 Required fields:
 
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]

@@ -70,7 +70,7 @@ Required fields:
 Optional fields:
 
 - `parameterValues`:
-  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
+  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 - `startTimestamp`: `Union`\[`datetime`, `str`\]
 
 ## AddTagsInputRequestTypeDef
@@ -82,7 +82,7 @@ from mypy_boto3_datapipeline.type_defs import AddTagsInputRequestTypeDef
 Required fields:
 
 - `pipelineId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePipelineInputRequestTypeDef
 
@@ -98,7 +98,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePipelineOutputTypeDef
 
@@ -145,7 +145,7 @@ from mypy_boto3_datapipeline.type_defs import DescribeObjectsInputRequestTypeDef
 Required fields:
 
 - `pipelineId`: `str`
-- `objectIds`: `List`\[`str`\]
+- `objectIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -175,7 +175,7 @@ from mypy_boto3_datapipeline.type_defs import DescribePipelinesInputRequestTypeD
 
 Required fields:
 
-- `pipelineIds`: `List`\[`str`\]
+- `pipelineIds`: `Sequence`\[`str`\]
 
 ## DescribePipelinesOutputTypeDef
 
@@ -305,7 +305,7 @@ from mypy_boto3_datapipeline.type_defs import OperatorTypeDef
 Optional fields:
 
 - `type`: [OperatorTypeType](./literals.md#operatortypetype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## PaginatorConfigTypeDef
 
@@ -431,14 +431,14 @@ Required fields:
 
 - `pipelineId`: `str`
 - `pipelineObjects`:
-  `List`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
+  `Sequence`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
 
 Optional fields:
 
 - `parameterObjects`:
-  `List`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
+  `Sequence`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
 - `parameterValues`:
-  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
+  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 
 ## PutPipelineDefinitionOutputTypeDef
 
@@ -495,7 +495,7 @@ from mypy_boto3_datapipeline.type_defs import QueryTypeDef
 
 Optional fields:
 
-- `selectors`: `List`\[[SelectorTypeDef](./type_defs.md#selectortypedef)\]
+- `selectors`: `Sequence`\[[SelectorTypeDef](./type_defs.md#selectortypedef)\]
 
 ## RemoveTagsInputRequestTypeDef
 
@@ -506,7 +506,7 @@ from mypy_boto3_datapipeline.type_defs import RemoveTagsInputRequestTypeDef
 Required fields:
 
 - `pipelineId`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## ReportTaskProgressInputRequestTypeDef
 
@@ -520,7 +520,7 @@ Required fields:
 
 Optional fields:
 
-- `fields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
+- `fields`: `Sequence`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 
 ## ReportTaskProgressOutputTypeDef
 
@@ -595,7 +595,7 @@ from mypy_boto3_datapipeline.type_defs import SetStatusInputRequestTypeDef
 Required fields:
 
 - `pipelineId`: `str`
-- `objectIds`: `List`\[`str`\]
+- `objectIds`: `Sequence`\[`str`\]
 - `status`: `str`
 
 ## SetTaskStatusInputRequestTypeDef
@@ -650,14 +650,14 @@ Required fields:
 
 - `pipelineId`: `str`
 - `pipelineObjects`:
-  `List`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
+  `Sequence`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
 
 Optional fields:
 
 - `parameterObjects`:
-  `List`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
+  `Sequence`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
 - `parameterValues`:
-  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
+  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 
 ## ValidatePipelineDefinitionOutputTypeDef
 

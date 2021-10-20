@@ -76,7 +76,9 @@ type annotations stubs module
   - [RuleVariablesTypeDef](#rulevariablestypedef)
   - [RulesSourceListTypeDef](#rulessourcelisttypedef)
   - [RulesSourceTypeDef](#rulessourcetypedef)
+  - [StatefulEngineOptionsTypeDef](#statefulengineoptionstypedef)
   - [StatefulRuleGroupReferenceTypeDef](#statefulrulegroupreferencetypedef)
+  - [StatefulRuleOptionsTypeDef](#statefulruleoptionstypedef)
   - [StatefulRuleTypeDef](#statefulruletypedef)
   - [StatelessRuleGroupReferenceTypeDef](#statelessrulegroupreferencetypedef)
   - [StatelessRuleTypeDef](#statelessruletypedef)
@@ -163,7 +165,7 @@ from mypy_boto3_network_firewall.type_defs import AssociateSubnetsRequestRequest
 Required fields:
 
 - `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
+  `Sequence`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
 
 Optional fields:
 
@@ -214,7 +216,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateFirewallPolicyResponseTypeDef
@@ -243,7 +245,7 @@ Required fields:
 - `FirewallPolicyArn`: `str`
 - `VpcId`: `str`
 - `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
+  `Sequence`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
 
 Optional fields:
 
@@ -251,7 +253,7 @@ Optional fields:
 - `SubnetChangeProtection`: `bool`
 - `FirewallPolicyChangeProtection`: `bool`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateFirewallResponseTypeDef
 
@@ -284,7 +286,7 @@ Optional fields:
 - `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
 - `Rules`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateRuleGroupResponseTypeDef
@@ -542,7 +544,7 @@ from mypy_boto3_network_firewall.type_defs import DisassociateSubnetsRequestRequ
 
 Required fields:
 
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -606,6 +608,9 @@ Optional fields:
 - `FirewallPolicyStatus`:
   [ResourceStatusType](./literals.md#resourcestatustype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ConsumedStatelessRuleCapacity`: `int`
+- `ConsumedStatefulRuleCapacity`: `int`
+- `NumberOfAssociations`: `int`
 
 ## FirewallPolicyTypeDef
 
@@ -615,17 +620,20 @@ from mypy_boto3_network_firewall.type_defs import FirewallPolicyTypeDef
 
 Required fields:
 
-- `StatelessDefaultActions`: `List`\[`str`\]
-- `StatelessFragmentDefaultActions`: `List`\[`str`\]
+- `StatelessDefaultActions`: `Sequence`\[`str`\]
+- `StatelessFragmentDefaultActions`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `StatelessRuleGroupReferences`:
-  `List`\[[StatelessRuleGroupReferenceTypeDef](./type_defs.md#statelessrulegroupreferencetypedef)\]
+  `Sequence`\[[StatelessRuleGroupReferenceTypeDef](./type_defs.md#statelessrulegroupreferencetypedef)\]
 - `StatelessCustomActions`:
-  `List`\[[CustomActionTypeDef](./type_defs.md#customactiontypedef)\]
+  `Sequence`\[[CustomActionTypeDef](./type_defs.md#customactiontypedef)\]
 - `StatefulRuleGroupReferences`:
-  `List`\[[StatefulRuleGroupReferenceTypeDef](./type_defs.md#statefulrulegroupreferencetypedef)\]
+  `Sequence`\[[StatefulRuleGroupReferenceTypeDef](./type_defs.md#statefulrulegroupreferencetypedef)\]
+- `StatefulDefaultActions`: `Sequence`\[`str`\]
+- `StatefulEngineOptions`:
+  [StatefulEngineOptionsTypeDef](./type_defs.md#statefulengineoptionstypedef)
 
 ## FirewallStatusTypeDef
 
@@ -693,7 +701,7 @@ from mypy_boto3_network_firewall.type_defs import IPSetTypeDef
 
 Required fields:
 
-- `Definition`: `List`\[`str`\]
+- `Definition`: `Sequence`\[`str`\]
 
 ## ListFirewallPoliciesRequestRequestTypeDef
 
@@ -729,7 +737,7 @@ from mypy_boto3_network_firewall.type_defs import ListFirewallsRequestRequestTyp
 Optional fields:
 
 - `NextToken`: `str`
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 
 ## ListFirewallsResponseTypeDef
@@ -831,14 +839,15 @@ from mypy_boto3_network_firewall.type_defs import MatchAttributesTypeDef
 
 Optional fields:
 
-- `Sources`: `List`\[[AddressTypeDef](./type_defs.md#addresstypedef)\]
-- `Destinations`: `List`\[[AddressTypeDef](./type_defs.md#addresstypedef)\]
-- `SourcePorts`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+- `Sources`: `Sequence`\[[AddressTypeDef](./type_defs.md#addresstypedef)\]
+- `Destinations`: `Sequence`\[[AddressTypeDef](./type_defs.md#addresstypedef)\]
+- `SourcePorts`:
+  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `DestinationPorts`:
-  `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-- `Protocols`: `List`\[`int`\]
+  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+- `Protocols`: `Sequence`\[`int`\]
 - `TCPFlags`:
-  `List`\[[TCPFlagFieldTypeDef](./type_defs.md#tcpflagfieldtypedef)\]
+  `Sequence`\[[TCPFlagFieldTypeDef](./type_defs.md#tcpflagfieldtypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -883,7 +892,7 @@ from mypy_boto3_network_firewall.type_defs import PortSetTypeDef
 
 Optional fields:
 
-- `Definition`: `List`\[`str`\]
+- `Definition`: `Sequence`\[`str`\]
 
 ## PublishMetricActionTypeDef
 
@@ -893,7 +902,8 @@ from mypy_boto3_network_firewall.type_defs import PublishMetricActionTypeDef
 
 Required fields:
 
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 
 ## PutResourcePolicyRequestRequestTypeDef
 
@@ -930,7 +940,7 @@ Required fields:
 
 - `MatchAttributes`:
   [MatchAttributesTypeDef](./type_defs.md#matchattributestypedef)
-- `Actions`: `List`\[`str`\]
+- `Actions`: `Sequence`\[`str`\]
 
 ## RuleGroupMetadataTypeDef
 
@@ -962,6 +972,8 @@ Optional fields:
 - `Capacity`: `int`
 - `RuleGroupStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ConsumedCapacity`: `int`
+- `NumberOfAssociations`: `int`
 
 ## RuleGroupTypeDef
 
@@ -976,6 +988,8 @@ Required fields:
 Optional fields:
 
 - `RuleVariables`: [RuleVariablesTypeDef](./type_defs.md#rulevariablestypedef)
+- `StatefulRuleOptions`:
+  [StatefulRuleOptionsTypeDef](./type_defs.md#statefulruleoptionstypedef)
 
 ## RuleOptionTypeDef
 
@@ -989,7 +1003,7 @@ Required fields:
 
 Optional fields:
 
-- `Settings`: `List`\[`str`\]
+- `Settings`: `Sequence`\[`str`\]
 
 ## RuleVariablesTypeDef
 
@@ -999,8 +1013,9 @@ from mypy_boto3_network_firewall.type_defs import RuleVariablesTypeDef
 
 Optional fields:
 
-- `IPSets`: `Dict`\[`str`, [IPSetTypeDef](./type_defs.md#ipsettypedef)\]
-- `PortSets`: `Dict`\[`str`, [PortSetTypeDef](./type_defs.md#portsettypedef)\]
+- `IPSets`: `Mapping`\[`str`, [IPSetTypeDef](./type_defs.md#ipsettypedef)\]
+- `PortSets`: `Mapping`\[`str`,
+  [PortSetTypeDef](./type_defs.md#portsettypedef)\]
 
 ## RulesSourceListTypeDef
 
@@ -1010,8 +1025,8 @@ from mypy_boto3_network_firewall.type_defs import RulesSourceListTypeDef
 
 Required fields:
 
-- `Targets`: `List`\[`str`\]
-- `TargetTypes`: `List`\[[TargetTypeType](./literals.md#targettypetype)\]
+- `Targets`: `Sequence`\[`str`\]
+- `TargetTypes`: `Sequence`\[[TargetTypeType](./literals.md#targettypetype)\]
 - `GeneratedRulesType`:
   [GeneratedRulesTypeType](./literals.md#generatedrulestypetype)
 
@@ -1027,9 +1042,19 @@ Optional fields:
 - `RulesSourceList`:
   [RulesSourceListTypeDef](./type_defs.md#rulessourcelisttypedef)
 - `StatefulRules`:
-  `List`\[[StatefulRuleTypeDef](./type_defs.md#statefulruletypedef)\]
+  `Sequence`\[[StatefulRuleTypeDef](./type_defs.md#statefulruletypedef)\]
 - `StatelessRulesAndCustomActions`:
   [StatelessRulesAndCustomActionsTypeDef](./type_defs.md#statelessrulesandcustomactionstypedef)
+
+## StatefulEngineOptionsTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import StatefulEngineOptionsTypeDef
+```
+
+Optional fields:
+
+- `RuleOrder`: [RuleOrderType](./literals.md#ruleordertype)
 
 ## StatefulRuleGroupReferenceTypeDef
 
@@ -1040,6 +1065,20 @@ from mypy_boto3_network_firewall.type_defs import StatefulRuleGroupReferenceType
 Required fields:
 
 - `ResourceArn`: `str`
+
+Optional fields:
+
+- `Priority`: `int`
+
+## StatefulRuleOptionsTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import StatefulRuleOptionsTypeDef
+```
+
+Optional fields:
+
+- `RuleOrder`: [RuleOrderType](./literals.md#ruleordertype)
 
 ## StatefulRuleTypeDef
 
@@ -1052,7 +1091,7 @@ Required fields:
 - `Action`: [StatefulActionType](./literals.md#statefulactiontype)
 - `Header`: [HeaderTypeDef](./type_defs.md#headertypedef)
 - `RuleOptions`:
-  `List`\[[RuleOptionTypeDef](./type_defs.md#ruleoptiontypedef)\]
+  `Sequence`\[[RuleOptionTypeDef](./type_defs.md#ruleoptiontypedef)\]
 
 ## StatelessRuleGroupReferenceTypeDef
 
@@ -1086,12 +1125,12 @@ from mypy_boto3_network_firewall.type_defs import StatelessRulesAndCustomActions
 Required fields:
 
 - `StatelessRules`:
-  `List`\[[StatelessRuleTypeDef](./type_defs.md#statelessruletypedef)\]
+  `Sequence`\[[StatelessRuleTypeDef](./type_defs.md#statelessruletypedef)\]
 
 Optional fields:
 
 - `CustomActions`:
-  `List`\[[CustomActionTypeDef](./type_defs.md#customactiontypedef)\]
+  `Sequence`\[[CustomActionTypeDef](./type_defs.md#customactiontypedef)\]
 
 ## SubnetMappingTypeDef
 
@@ -1123,11 +1162,11 @@ from mypy_boto3_network_firewall.type_defs import TCPFlagFieldTypeDef
 
 Required fields:
 
-- `Flags`: `List`\[[TCPFlagType](./literals.md#tcpflagtype)\]
+- `Flags`: `Sequence`\[[TCPFlagType](./literals.md#tcpflagtype)\]
 
 Optional fields:
 
-- `Masks`: `List`\[[TCPFlagType](./literals.md#tcpflagtype)\]
+- `Masks`: `Sequence`\[[TCPFlagType](./literals.md#tcpflagtype)\]
 
 ## TagResourceRequestRequestTypeDef
 
@@ -1138,7 +1177,7 @@ from mypy_boto3_network_firewall.type_defs import TagResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1160,7 +1199,7 @@ from mypy_boto3_network_firewall.type_defs import UntagResourceRequestRequestTyp
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateFirewallDeleteProtectionRequestRequestTypeDef
 

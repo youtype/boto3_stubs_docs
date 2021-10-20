@@ -144,7 +144,7 @@ Keyword-only arguments:
   [SidewalkAccountInfoTypeDef](./type_defs.md#sidewalkaccountinfotypedef)
   *(required)*
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [AssociateAwsAccountWithPartnerAccountResponseTypeDef](./type_defs.md#associateawsaccountwithpartneraccountresponsetypedef).
@@ -246,7 +246,7 @@ Keyword-only arguments:
 - `Expression`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
 Returns
@@ -270,7 +270,7 @@ Keyword-only arguments:
 - `Name`: `str`
 - `LoRaWAN`:
   [LoRaWANDeviceProfileTypeDef](./type_defs.md#lorawandeviceprofiletypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
 Returns
@@ -294,7 +294,7 @@ Keyword-only arguments:
 - `Name`: `str`
 - `LoRaWAN`:
   [LoRaWANServiceProfileTypeDef](./type_defs.md#lorawanserviceprofiletypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
 Returns
@@ -322,7 +322,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `ClientRequestToken`: `str`
 - `LoRaWAN`: [LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateWirelessDeviceResponseTypeDef](./type_defs.md#createwirelessdeviceresponsetypedef).
@@ -346,7 +346,7 @@ Keyword-only arguments:
   *(required)*
 - `Name`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
 Returns
@@ -393,7 +393,7 @@ Keyword-only arguments:
 - `Update`:
   [UpdateWirelessGatewayTaskCreateTypeDef](./type_defs.md#updatewirelessgatewaytaskcreatetypedef)
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateWirelessGatewayTaskDefinitionResponseTypeDef](./type_defs.md#createwirelessgatewaytaskdefinitionresponsetypedef).
@@ -623,7 +623,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -669,8 +669,7 @@ Returns
 
 ### get_log_levels_by_resource_types
 
-Returns current default log-levels, or log levels by resource types, could be
-for wireless device log options or wireless gateway log options.
+Returns current default log levels or log levels by resource types.
 
 Type annotations for
 `boto3.client("iotwireless").get_log_levels_by_resource_types` method.
@@ -704,8 +703,8 @@ Returns
 
 ### get_resource_log_level
 
-Fetches the log-level override if any for a given resource-ID and
-resource-type, coulde be a wireless device or a wireless gateway.
+Fetches the log-level override, if any, for a given resource-ID and resource-
+type.
 
 Type annotations for `boto3.client("iotwireless").get_resource_log_level`
 method.
@@ -1103,8 +1102,7 @@ Returns
 
 ### put_resource_log_level
 
-Sets the log-level override for a resource-ID and resource-type, could be a
-wireless gateway or a wireless device.
+Sets the log-level override for a resource-ID and resource-type.
 
 Type annotations for `boto3.client("iotwireless").put_resource_log_level`
 method.
@@ -1125,8 +1123,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### reset_all_resource_log_levels
 
-Remove log-level overrides if any for all resources (both wireless devices and
-wireless gateways).
+Removes the log-level overrides for all resources; both wireless devices and
+wireless gateways.
 
 Type annotations for
 `boto3.client("iotwireless").reset_all_resource_log_levels` method.
@@ -1138,8 +1136,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### reset_resource_log_level
 
-Remove log-level override if any for a specific resource-ID and resource-type,
-could be a wireless device or a wireless gateway.
+Removes the log-level override, if any, for a specific resource-ID and
+resource- type.
 
 Type annotations for `boto3.client("iotwireless").reset_resource_log_level`
 method.
@@ -1196,7 +1194,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1234,7 +1232,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1262,8 +1260,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_log_levels_by_resource_types
 
-Set default log level, or log levels by resource types, could be for wireless
-device log options or wireless gateways log options.
+Set default log level, or log levels by resource types.
 
 Type annotations for
 `boto3.client("iotwireless").update_log_levels_by_resource_types` method.
@@ -1278,9 +1275,9 @@ Keyword-only arguments:
 
 - `DefaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
 - `WirelessDeviceLogOptions`:
-  `List`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
+  `Sequence`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
 - `WirelessGatewayLogOptions`:
-  `List`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
+  `Sequence`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1350,7 +1347,7 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
-- `JoinEuiFilters`: `List`\[`List`\[`str`\]\]
-- `NetIdFilters`: `List`\[`str`\]
+- `JoinEuiFilters`: `Sequence`\[`Sequence`\[`str`\]\]
+- `NetIdFilters`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].

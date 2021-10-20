@@ -120,6 +120,9 @@ from mypy_boto3_signer.literals import CategoryType, ...
 - [SigningStatusType](./literals.md#signingstatustype)
 - [SuccessfulSigningJobWaiterName](./literals.md#successfulsigningjobwaitername)
 - [ValidityTypeType](./literals.md#validitytypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

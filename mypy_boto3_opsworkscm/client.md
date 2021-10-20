@@ -104,7 +104,7 @@ Keyword-only arguments:
 - `ServerName`: `str` *(required)*
 - `NodeName`: `str` *(required)*
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
   *(required)*
 
 Returns
@@ -141,7 +141,7 @@ Keyword-only arguments:
 
 - `ServerName`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateBackupResponseTypeDef](./type_defs.md#createbackupresponsetypedef).
@@ -173,14 +173,14 @@ Keyword-only arguments:
 - `EngineModel`: `str`
 - `EngineVersion`: `str`
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 - `BackupRetentionCount`: `int`
 - `KeyPair`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `PreferredBackupWindow`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SubnetIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `BackupId`: `str`
 
 Returns
@@ -341,7 +341,7 @@ Keyword-only arguments:
 - `ServerName`: `str` *(required)*
 - `NodeName`: `str` *(required)*
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 Returns
 [DisassociateNodeResponseTypeDef](./type_defs.md#disassociatenoderesponsetypedef).
@@ -364,7 +364,7 @@ Keyword-only arguments:
 - `ExportAttributeName`: `str` *(required)*
 - `ServerName`: `str` *(required)*
 - `InputAttributes`:
-  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 Returns
 [ExportServerEngineAttributeResponseTypeDef](./type_defs.md#exportserverengineattributeresponsetypedef).
@@ -382,7 +382,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -450,7 +450,7 @@ Keyword-only arguments:
 
 - `ServerName`: `str` *(required)*
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 Returns
 [StartMaintenanceResponseTypeDef](./type_defs.md#startmaintenanceresponsetypedef).
@@ -471,7 +471,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -490,7 +490,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

@@ -178,7 +178,7 @@ Keyword-only arguments:
 - `DisableExecuteApiEndpoint`: `bool`
 - `RouteKey`: `str`
 - `RouteSelectionExpression`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Target`: `str`
 - `Version`: `str`
 
@@ -223,7 +223,7 @@ Keyword-only arguments:
 - `ApiId`: `str` *(required)*
 - `AuthorizerType`: [AuthorizerTypeType](./literals.md#authorizertypetype)
   *(required)*
-- `IdentitySource`: `List`\[`str`\] *(required)*
+- `IdentitySource`: `Sequence`\[`str`\] *(required)*
 - `Name`: `str` *(required)*
 - `AuthorizerCredentialsArn`: `str`
 - `AuthorizerPayloadFormatVersion`: `str`
@@ -274,10 +274,10 @@ Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `DomainNameConfigurations`:
-  `List`\[[DomainNameConfigurationTypeDef](./type_defs.md#domainnameconfigurationtypedef)\]
+  `Sequence`\[[DomainNameConfigurationTypeDef](./type_defs.md#domainnameconfigurationtypedef)\]
 - `MutualTlsAuthentication`:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDomainNameResponseTypeDef](./type_defs.md#createdomainnameresponsetypedef).
@@ -311,9 +311,9 @@ Keyword-only arguments:
 - `PassthroughBehavior`:
   [PassthroughBehaviorType](./literals.md#passthroughbehaviortype)
 - `PayloadFormatVersion`: `str`
-- `RequestParameters`: `Dict`\[`str`, `str`\]
-- `RequestTemplates`: `Dict`\[`str`, `str`\]
-- `ResponseParameters`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `RequestParameters`: `Mapping`\[`str`, `str`\]
+- `RequestTemplates`: `Mapping`\[`str`, `str`\]
+- `ResponseParameters`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
 - `TemplateSelectionExpression`: `str`
 - `TimeoutInMillis`: `int`
 - `TlsConfig`: [TlsConfigInputTypeDef](./type_defs.md#tlsconfiginputtypedef)
@@ -341,8 +341,8 @@ Keyword-only arguments:
 - `IntegrationResponseKey`: `str` *(required)*
 - `ContentHandlingStrategy`:
   [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
-- `ResponseParameters`: `Dict`\[`str`, `str`\]
-- `ResponseTemplates`: `Dict`\[`str`, `str`\]
+- `ResponseParameters`: `Mapping`\[`str`, `str`\]
+- `ResponseTemplates`: `Mapping`\[`str`, `str`\]
 - `TemplateSelectionExpression`: `str`
 
 Returns
@@ -388,14 +388,14 @@ Keyword-only arguments:
 - `ApiId`: `str` *(required)*
 - `RouteKey`: `str` *(required)*
 - `ApiKeyRequired`: `bool`
-- `AuthorizationScopes`: `List`\[`str`\]
+- `AuthorizationScopes`: `Sequence`\[`str`\]
 - `AuthorizationType`:
   [AuthorizationTypeType](./literals.md#authorizationtypetype)
 - `AuthorizerId`: `str`
 - `ModelSelectionExpression`: `str`
 - `OperationName`: `str`
-- `RequestModels`: `Dict`\[`str`, `str`\]
-- `RequestParameters`: `Dict`\[`str`,
+- `RequestModels`: `Mapping`\[`str`, `str`\]
+- `RequestParameters`: `Mapping`\[`str`,
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)\]
 - `RouteResponseSelectionExpression`: `str`
 - `Target`: `str`
@@ -421,8 +421,8 @@ Keyword-only arguments:
 - `RouteId`: `str` *(required)*
 - `RouteResponseKey`: `str` *(required)*
 - `ModelSelectionExpression`: `str`
-- `ResponseModels`: `Dict`\[`str`, `str`\]
-- `ResponseParameters`: `Dict`\[`str`,
+- `ResponseModels`: `Mapping`\[`str`, `str`\]
+- `ResponseParameters`: `Mapping`\[`str`,
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)\]
 
 Returns
@@ -452,10 +452,10 @@ Keyword-only arguments:
   [RouteSettingsTypeDef](./type_defs.md#routesettingstypedef)
 - `DeploymentId`: `str`
 - `Description`: `str`
-- `RouteSettings`: `Dict`\[`str`,
+- `RouteSettings`: `Mapping`\[`str`,
   [RouteSettingsTypeDef](./type_defs.md#routesettingstypedef)\]
-- `StageVariables`: `Dict`\[`str`, `str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `StageVariables`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateStageResponseTypeDef](./type_defs.md#createstageresponsetypedef).
@@ -475,9 +475,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateVpcLinkResponseTypeDef](./type_defs.md#createvpclinkresponsetypedef).
@@ -803,7 +803,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1405,7 +1405,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1424,7 +1424,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_api
 
@@ -1500,7 +1500,7 @@ Keyword-only arguments:
 - `AuthorizerType`: [AuthorizerTypeType](./literals.md#authorizertypetype)
 - `AuthorizerUri`: `str`
 - `EnableSimpleResponses`: `bool`
-- `IdentitySource`: `List`\[`str`\]
+- `IdentitySource`: `Sequence`\[`str`\]
 - `IdentityValidationExpression`: `str`
 - `JwtConfiguration`:
   [JWTConfigurationTypeDef](./type_defs.md#jwtconfigurationtypedef)
@@ -1546,7 +1546,7 @@ Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `DomainNameConfigurations`:
-  `List`\[[DomainNameConfigurationTypeDef](./type_defs.md#domainnameconfigurationtypedef)\]
+  `Sequence`\[[DomainNameConfigurationTypeDef](./type_defs.md#domainnameconfigurationtypedef)\]
 - `MutualTlsAuthentication`:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
 
@@ -1582,9 +1582,9 @@ Keyword-only arguments:
 - `PassthroughBehavior`:
   [PassthroughBehaviorType](./literals.md#passthroughbehaviortype)
 - `PayloadFormatVersion`: `str`
-- `RequestParameters`: `Dict`\[`str`, `str`\]
-- `RequestTemplates`: `Dict`\[`str`, `str`\]
-- `ResponseParameters`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `RequestParameters`: `Mapping`\[`str`, `str`\]
+- `RequestTemplates`: `Mapping`\[`str`, `str`\]
+- `ResponseParameters`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
 - `TemplateSelectionExpression`: `str`
 - `TimeoutInMillis`: `int`
 - `TlsConfig`: [TlsConfigInputTypeDef](./type_defs.md#tlsconfiginputtypedef)
@@ -1613,8 +1613,8 @@ Keyword-only arguments:
 - `ContentHandlingStrategy`:
   [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `IntegrationResponseKey`: `str`
-- `ResponseParameters`: `Dict`\[`str`, `str`\]
-- `ResponseTemplates`: `Dict`\[`str`, `str`\]
+- `ResponseParameters`: `Mapping`\[`str`, `str`\]
+- `ResponseTemplates`: `Mapping`\[`str`, `str`\]
 - `TemplateSelectionExpression`: `str`
 
 Returns
@@ -1661,14 +1661,14 @@ Keyword-only arguments:
 - `ApiId`: `str` *(required)*
 - `RouteId`: `str` *(required)*
 - `ApiKeyRequired`: `bool`
-- `AuthorizationScopes`: `List`\[`str`\]
+- `AuthorizationScopes`: `Sequence`\[`str`\]
 - `AuthorizationType`:
   [AuthorizationTypeType](./literals.md#authorizationtypetype)
 - `AuthorizerId`: `str`
 - `ModelSelectionExpression`: `str`
 - `OperationName`: `str`
-- `RequestModels`: `Dict`\[`str`, `str`\]
-- `RequestParameters`: `Dict`\[`str`,
+- `RequestModels`: `Mapping`\[`str`, `str`\]
+- `RequestParameters`: `Mapping`\[`str`,
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)\]
 - `RouteKey`: `str`
 - `RouteResponseSelectionExpression`: `str`
@@ -1695,8 +1695,8 @@ Keyword-only arguments:
 - `RouteId`: `str` *(required)*
 - `RouteResponseId`: `str` *(required)*
 - `ModelSelectionExpression`: `str`
-- `ResponseModels`: `Dict`\[`str`, `str`\]
-- `ResponseParameters`: `Dict`\[`str`,
+- `ResponseModels`: `Mapping`\[`str`, `str`\]
+- `ResponseParameters`: `Mapping`\[`str`,
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)\]
 - `RouteResponseKey`: `str`
 
@@ -1727,9 +1727,9 @@ Keyword-only arguments:
   [RouteSettingsTypeDef](./type_defs.md#routesettingstypedef)
 - `DeploymentId`: `str`
 - `Description`: `str`
-- `RouteSettings`: `Dict`\[`str`,
+- `RouteSettings`: `Mapping`\[`str`,
   [RouteSettingsTypeDef](./type_defs.md#routesettingstypedef)\]
-- `StageVariables`: `Dict`\[`str`, `str`\]
+- `StageVariables`: `Mapping`\[`str`, `str`\]
 
 Returns
 [UpdateStageResponseTypeDef](./type_defs.md#updatestageresponsetypedef).

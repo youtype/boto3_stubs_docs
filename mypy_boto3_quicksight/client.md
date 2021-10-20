@@ -63,6 +63,7 @@ type annotations stubs module
     - [describe_group](#describe_group)
     - [describe_iam_policy_assignment](#describe_iam_policy_assignment)
     - [describe_ingestion](#describe_ingestion)
+    - [describe_ip_restriction](#describe_ip_restriction)
     - [describe_namespace](#describe_namespace)
     - [describe_template](#describe_template)
     - [describe_template_alias](#describe_template_alias)
@@ -71,6 +72,8 @@ type annotations stubs module
     - [describe_theme_alias](#describe_theme_alias)
     - [describe_theme_permissions](#describe_theme_permissions)
     - [describe_user](#describe_user)
+    - [generate_embed_url_for_anonymous_user](#generate_embed_url_for_anonymous_user)
+    - [generate_embed_url_for_registered_user](#generate_embed_url_for_registered_user)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_dashboard_embed_url](#get_dashboard_embed_url)
     - [get_session_embed_url](#get_session_embed_url)
@@ -118,6 +121,7 @@ type annotations stubs module
     - [update_folder_permissions](#update_folder_permissions)
     - [update_group](#update_group)
     - [update_iam_policy_assignment](#update_iam_policy_assignment)
+    - [update_ip_restriction](#update_ip_restriction)
     - [update_template](#update_template)
     - [update_template_alias](#update_template_alias)
     - [update_template_permissions](#update_template_permissions)
@@ -228,7 +232,8 @@ Returns
 
 ### create_account_customization
 
-Creates Amazon QuickSight customizations the current AWS Region.
+Creates Amazon QuickSight customizations the current Amazon Web Services
+Region.
 
 Type annotations for `boto3.client("quicksight").create_account_customization`
 method.
@@ -246,7 +251,7 @@ Keyword-only arguments:
   [AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef)
   *(required)*
 - `Namespace`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAccountCustomizationResponseTypeDef](./type_defs.md#createaccountcustomizationresponsetypedef).
@@ -273,9 +278,9 @@ Keyword-only arguments:
   *(required)*
 - `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `ThemeArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAnalysisResponseTypeDef](./type_defs.md#createanalysisresponsetypedef).
@@ -302,8 +307,8 @@ Keyword-only arguments:
   *(required)*
 - `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VersionDescription`: `str`
 - `DashboardPublishOptions`:
   [DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef)
@@ -329,23 +334,27 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `PhysicalTableMap`: `Dict`\[`str`,
+- `PhysicalTableMap`: `Mapping`\[`str`,
   [PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef)\] *(required)*
 - `ImportMode`: [DataSetImportModeType](./literals.md#datasetimportmodetype)
   *(required)*
-- `LogicalTableMap`: `Dict`\[`str`,
+- `LogicalTableMap`: `Mapping`\[`str`,
   [LogicalTableTypeDef](./type_defs.md#logicaltabletypedef)\]
 - `ColumnGroups`:
-  `List`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
-- `FieldFolders`: `Dict`\[`str`,
+  `Sequence`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
+- `FieldFolders`: `Mapping`\[`str`,
   [FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef)\]
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
+- `RowLevelPermissionTagConfiguration`:
+  [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
-  `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DataSetUsageConfiguration`:
+  [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
 
 Returns
 [CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
@@ -373,11 +382,11 @@ Keyword-only arguments:
 - `Credentials`:
   [DataSourceCredentialsTypeDef](./type_defs.md#datasourcecredentialstypedef)
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `VpcConnectionProperties`:
   [VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef)
 - `SslProperties`: [SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
@@ -403,8 +412,8 @@ Keyword-only arguments:
   [FolderTypeType](./literals.md#foldertypetype))
 - `ParentFolderArn`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef).
@@ -479,7 +488,7 @@ Returns
 
 ### create_iam_policy_assignment
 
-Creates an assignment with one specified IAM policy, identified by its Amazon
+Creates an assignment with one specified IAMpolicy, identified by its Amazon
 Resource Name (ARN).
 
 Type annotations for `boto3.client("quicksight").create_iam_policy_assignment`
@@ -499,7 +508,7 @@ Keyword-only arguments:
   [AssignmentStatusType](./literals.md#assignmentstatustype) *(required)*
 - `Namespace`: `str` *(required)*
 - `PolicyArn`: `str`
-- `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Identities`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 Returns
 [CreateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#createiampolicyassignmentresponsetypedef).
@@ -523,6 +532,7 @@ Keyword-only arguments:
 - `DataSetId`: `str` *(required)*
 - `IngestionId`: `str` *(required)*
 - `AwsAccountId`: `str` *(required)*
+- `IngestionType`: [IngestionTypeType](./literals.md#ingestiontypetype)
 
 Returns
 [CreateIngestionResponseTypeDef](./type_defs.md#createingestionresponsetypedef).
@@ -546,14 +556,14 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 - `IdentityStore`: `Literal['QUICKSIGHT']` (see
   [IdentityStoreType](./literals.md#identitystoretype)) *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateNamespaceResponseTypeDef](./type_defs.md#createnamespaceresponsetypedef).
 
 ### create_template
 
-Creates a template from an existing QuickSight analysis or template.
+Creates a template from an existing Amazon QuickSight analysis or template.
 
 Type annotations for `boto3.client("quicksight").create_template` method.
 
@@ -572,8 +582,8 @@ Keyword-only arguments:
   *(required)*
 - `Name`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VersionDescription`: `str`
 
 Returns
@@ -624,8 +634,8 @@ Keyword-only arguments:
   *(required)*
 - `VersionDescription`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateThemeResponseTypeDef](./type_defs.md#createthemeresponsetypedef).
@@ -654,8 +664,8 @@ Returns
 
 ### delete_account_customization
 
-Deletes all Amazon QuickSight customizations in this AWS Region for the
-specified AWS account and QuickSight namespace.
+Deletes all Amazon QuickSight customizations in this Amazon Web Services Region
+for the specified Amazon Web Services account and Amazon QuickSight namespace.
 
 Type annotations for `boto3.client("quicksight").delete_account_customization`
 method.
@@ -847,7 +857,7 @@ Returns
 
 ### delete_iam_policy_assignment
 
-Deletes an existing IAM policy assignment.
+Deletes an existing IAMpolicy assignment.
 
 Type annotations for `boto3.client("quicksight").delete_iam_policy_assignment`
 method.
@@ -975,7 +985,7 @@ Returns
 ### delete_user
 
 Deletes the Amazon QuickSight user that is associated with the identity of the
-AWS Identity and Access Management (IAM) user or role that's making the call.
+Identity and Access Management (IAM) user or role that's making the call.
 
 Type annotations for `boto3.client("quicksight").delete_user` method.
 
@@ -1017,8 +1027,9 @@ Returns
 
 ### describe_account_customization
 
-Describes the customizations associated with the provided AWS account and
-Amazon QuickSight namespace in an AWS Region.
+Describes the customizations associated with the provided Amazon Web Services
+account and Amazon Amazon QuickSight namespace in an Amazon Web Services
+Region.
 
 Type annotations for
 `boto3.client("quicksight").describe_account_customization` method.
@@ -1040,8 +1051,8 @@ Returns
 
 ### describe_account_settings
 
-Describes the settings that were used when your QuickSight subscription was
-first created in this AWS account.
+Describes the settings that were used when your Amazon QuickSight subscription
+was first created in this Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").describe_account_settings`
 method.
@@ -1311,7 +1322,7 @@ Returns
 
 ### describe_iam_policy_assignment
 
-Describes an existing IAM policy assignment, as specified by the assignment
+Describes an existing IAMpolicy assignment, as specified by the assignment
 name.
 
 Type annotations for
@@ -1352,6 +1363,26 @@ Keyword-only arguments:
 
 Returns
 [DescribeIngestionResponseTypeDef](./type_defs.md#describeingestionresponsetypedef).
+
+### describe_ip_restriction
+
+Provides a summary and status of IP Rules.
+
+Type annotations for `boto3.client("quicksight").describe_ip_restriction`
+method.
+
+Boto3 documentation:
+[QuickSight.Client.describe_ip_restriction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_ip_restriction)
+
+Arguments mapping described in
+[DescribeIpRestrictionRequestRequestTypeDef](./type_defs.md#describeiprestrictionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+
+Returns
+[DescribeIpRestrictionResponseTypeDef](./type_defs.md#describeiprestrictionresponsetypedef).
 
 ### describe_namespace
 
@@ -1523,6 +1554,61 @@ Keyword-only arguments:
 Returns
 [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
+### generate_embed_url_for_anonymous_user
+
+Generates an embed URL that you can use to embed an Amazon QuickSight dashboard
+in your website, without having to register any reader users.
+
+Type annotations for
+`boto3.client("quicksight").generate_embed_url_for_anonymous_user` method.
+
+Boto3 documentation:
+[QuickSight.Client.generate_embed_url_for_anonymous_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_embed_url_for_anonymous_user)
+
+Arguments mapping described in
+[GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef](./type_defs.md#generateembedurlforanonymoususerrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `Namespace`: `str` *(required)*
+- `AuthorizedResourceArns`: `Sequence`\[`str`\] *(required)*
+- `ExperienceConfiguration`:
+  [AnonymousUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#anonymoususerembeddingexperienceconfigurationtypedef)
+  *(required)*
+- `SessionLifetimeInMinutes`: `int`
+- `SessionTags`:
+  `Sequence`\[[SessionTagTypeDef](./type_defs.md#sessiontagtypedef)\]
+
+Returns
+[GenerateEmbedUrlForAnonymousUserResponseTypeDef](./type_defs.md#generateembedurlforanonymoususerresponsetypedef).
+
+### generate_embed_url_for_registered_user
+
+Generates an embed URL that you can use to embed an Amazon QuickSight
+experience in your website.
+
+Type annotations for
+`boto3.client("quicksight").generate_embed_url_for_registered_user` method.
+
+Boto3 documentation:
+[QuickSight.Client.generate_embed_url_for_registered_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_embed_url_for_registered_user)
+
+Arguments mapping described in
+[GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef](./type_defs.md#generateembedurlforregistereduserrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `UserArn`: `str` *(required)*
+- `ExperienceConfiguration`:
+  [RegisteredUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#registereduserembeddingexperienceconfigurationtypedef)
+  *(required)*
+- `SessionLifetimeInMinutes`: `int`
+
+Returns
+[GenerateEmbedUrlForRegisteredUserResponseTypeDef](./type_defs.md#generateembedurlforregistereduserresponsetypedef).
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1536,7 +1622,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1545,7 +1631,7 @@ Returns `str`.
 ### get_dashboard_embed_url
 
 Generates a session URL and authorization code that you can use to embed an
-Amazon QuickSight read-only dashboard in your web server code.
+Amazon Amazon QuickSight read-only dashboard in your web server code.
 
 Type annotations for `boto3.client("quicksight").get_dashboard_embed_url`
 method.
@@ -1569,7 +1655,7 @@ Keyword-only arguments:
 - `StatePersistenceEnabled`: `bool`
 - `UserArn`: `str`
 - `Namespace`: `str`
-- `AdditionalDashboardIds`: `List`\[`str`\]
+- `AdditionalDashboardIds`: `Sequence`\[`str`\]
 
 Returns
 [GetDashboardEmbedUrlResponseTypeDef](./type_defs.md#getdashboardembedurlresponsetypedef).
@@ -1577,7 +1663,7 @@ Returns
 ### get_session_embed_url
 
 Generates a session URL and authorization code that you can use to embed the
-Amazon QuickSight console in your web server code.
+Amazon Amazon QuickSight console in your web server code.
 
 Type annotations for `boto3.client("quicksight").get_session_embed_url` method.
 
@@ -1599,7 +1685,8 @@ Returns
 
 ### list_analyses
 
-Lists Amazon QuickSight analyses that exist in the specified AWS account.
+Lists Amazon QuickSight analyses that exist in the specified Amazon Web
+Services account.
 
 Type annotations for `boto3.client("quicksight").list_analyses` method.
 
@@ -1620,7 +1707,7 @@ Returns
 
 ### list_dashboard_versions
 
-Lists all the versions of the dashboards in the QuickSight subscription.
+Lists all the versions of the dashboards in the Amazon QuickSight subscription.
 
 Type annotations for `boto3.client("quicksight").list_dashboard_versions`
 method.
@@ -1643,7 +1730,7 @@ Returns
 
 ### list_dashboards
 
-Lists dashboards in an AWS account.
+Lists dashboards in an Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").list_dashboards` method.
 
@@ -1664,8 +1751,8 @@ Returns
 
 ### list_data_sets
 
-Lists all of the datasets belonging to the current AWS account in an AWS
-Region.
+Lists all of the datasets belonging to the current Amazon Web Services account
+in an Amazon Web Services Region.
 
 Type annotations for `boto3.client("quicksight").list_data_sets` method.
 
@@ -1686,7 +1773,8 @@ Returns
 
 ### list_data_sources
 
-Lists data sources in current AWS Region that belong to this AWS account.
+Lists data sources in current Amazon Web Services Region that belong to this
+Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").list_data_sources` method.
 
@@ -1795,7 +1883,7 @@ Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
 ### list_iam_policy_assignments
 
-Lists IAM policy assignments in the current Amazon QuickSight account.
+Lists IAMpolicy assignments in the current Amazon QuickSight account.
 
 Type annotations for `boto3.client("quicksight").list_iam_policy_assignments`
 method.
@@ -1820,9 +1908,9 @@ Returns
 
 ### list_iam_policy_assignments_for_user
 
-Lists all the IAM policy assignments, including the Amazon Resource Names
-(ARNs) for the IAM policies assigned to the specified user and group or groups
-that the user belongs to.
+Lists all the IAMpolicy assignments, including the Amazon Resource Names (ARNs)
+for the IAM policies assigned to the specified user and group or groups that
+the user belongs to.
 
 Type annotations for
 `boto3.client("quicksight").list_iam_policy_assignments_for_user` method.
@@ -1868,7 +1956,7 @@ Returns
 
 ### list_namespaces
 
-Lists the namespaces for the specified AWS account.
+Lists the namespaces for the specified Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").list_namespaces` method.
 
@@ -1998,7 +2086,8 @@ Returns
 
 ### list_theme_versions
 
-Lists all the versions of the themes in the current AWS account.
+Lists all the versions of the themes in the current Amazon Web Services
+account.
 
 Type annotations for `boto3.client("quicksight").list_theme_versions` method.
 
@@ -2020,7 +2109,7 @@ Returns
 
 ### list_themes
 
-Lists all the themes in the current AWS account.
+Lists all the themes in the current Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").list_themes` method.
 
@@ -2151,7 +2240,7 @@ Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `Filters`:
-  `List`\[[AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef)\]
+  `Sequence`\[[AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef)\]
   *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2175,7 +2264,7 @@ Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `Filters`:
-  `List`\[[DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef)\]
+  `Sequence`\[[DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef)\]
   *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2199,7 +2288,7 @@ Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `Filters`:
-  `List`\[[FolderSearchFilterTypeDef](./type_defs.md#foldersearchfiltertypedef)\]
+  `Sequence`\[[FolderSearchFilterTypeDef](./type_defs.md#foldersearchfiltertypedef)\]
   *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2209,7 +2298,7 @@ Returns
 
 ### tag_resource
 
-Assigns one or more tags (key-value pairs) to the specified QuickSight
+Assigns one or more tags (key-value pairs) to the specified Amazon QuickSight
 resource.
 
 Type annotations for `boto3.client("quicksight").tag_resource` method.
@@ -2223,7 +2312,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns
 [TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef).
@@ -2243,14 +2332,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef).
 
 ### update_account_customization
 
-Updates Amazon QuickSight customizations the current AWS Region.
+Updates Amazon QuickSight customizations the current Amazon Web Services
+Region.
 
 Type annotations for `boto3.client("quicksight").update_account_customization`
 method.
@@ -2274,7 +2364,7 @@ Returns
 
 ### update_account_settings
 
-Updates the Amazon QuickSight settings in your AWS account.
+Updates the Amazon QuickSight settings in your Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").update_account_settings`
 method.
@@ -2341,16 +2431,16 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `AnalysisId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateAnalysisPermissionsResponseTypeDef](./type_defs.md#updateanalysispermissionsresponsetypedef).
 
 ### update_dashboard
 
-Updates a dashboard in an AWS account.
+Updates a dashboard in an Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").update_dashboard` method.
 
@@ -2395,9 +2485,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `DashboardId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateDashboardPermissionsResponseTypeDef](./type_defs.md#updatedashboardpermissionsresponsetypedef).
@@ -2441,20 +2531,24 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `PhysicalTableMap`: `Dict`\[`str`,
+- `PhysicalTableMap`: `Mapping`\[`str`,
   [PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef)\] *(required)*
 - `ImportMode`: [DataSetImportModeType](./literals.md#datasetimportmodetype)
   *(required)*
-- `LogicalTableMap`: `Dict`\[`str`,
+- `LogicalTableMap`: `Mapping`\[`str`,
   [LogicalTableTypeDef](./type_defs.md#logicaltabletypedef)\]
 - `ColumnGroups`:
-  `List`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
-- `FieldFolders`: `Dict`\[`str`,
+  `Sequence`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
+- `FieldFolders`: `Mapping`\[`str`,
   [FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef)\]
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
+- `RowLevelPermissionTagConfiguration`:
+  [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
-  `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
+  `Sequence`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
+- `DataSetUsageConfiguration`:
+  [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
 
 Returns
 [UpdateDataSetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
@@ -2477,9 +2571,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateDataSetPermissionsResponseTypeDef](./type_defs.md#updatedatasetpermissionsresponsetypedef).
@@ -2530,9 +2624,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `DataSourceId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateDataSourcePermissionsResponseTypeDef](./type_defs.md#updatedatasourcepermissionsresponsetypedef).
@@ -2576,9 +2670,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `FolderId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateFolderPermissionsResponseTypeDef](./type_defs.md#updatefolderpermissionsresponsetypedef).
@@ -2607,7 +2701,7 @@ Returns
 
 ### update_iam_policy_assignment
 
-Updates an existing IAM policy assignment.
+Updates an existing IAMpolicy assignment.
 
 Type annotations for `boto3.client("quicksight").update_iam_policy_assignment`
 method.
@@ -2626,10 +2720,31 @@ Keyword-only arguments:
 - `AssignmentStatus`:
   [AssignmentStatusType](./literals.md#assignmentstatustype)
 - `PolicyArn`: `str`
-- `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Identities`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 Returns
 [UpdateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#updateiampolicyassignmentresponsetypedef).
+
+### update_ip_restriction
+
+Updates content and status of IP Rules.
+
+Type annotations for `boto3.client("quicksight").update_ip_restriction` method.
+
+Boto3 documentation:
+[QuickSight.Client.update_ip_restriction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_ip_restriction)
+
+Arguments mapping described in
+[UpdateIpRestrictionRequestRequestTypeDef](./type_defs.md#updateiprestrictionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `IpRestrictionRuleMap`: `Mapping`\[`str`, `str`\]
+- `Enabled`: `bool`
+
+Returns
+[UpdateIpRestrictionResponseTypeDef](./type_defs.md#updateiprestrictionresponsetypedef).
 
 ### update_template
 
@@ -2697,9 +2812,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `TemplateId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateTemplatePermissionsResponseTypeDef](./type_defs.md#updatetemplatepermissionsresponsetypedef).
@@ -2769,9 +2884,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `ThemeId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateThemePermissionsResponseTypeDef](./type_defs.md#updatethemepermissionsresponsetypedef).

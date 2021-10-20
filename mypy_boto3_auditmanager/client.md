@@ -117,7 +117,7 @@ Returns [Exceptions](#exceptions).
 
 ### associate_assessment_report_evidence_folder
 
-Associates an evidence folder to the specified assessment report in AWS Audit
+Associates an evidence folder to the specified assessment report in Audit
 Manager.
 
 Type annotations for
@@ -139,7 +139,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### batch_associate_assessment_report_evidence
 
-Associates a list of evidence to an assessment report in an AWS Audit Manager
+Associates a list of evidence to an assessment report in an Audit Manager
 assessment.
 
 Type annotations for
@@ -156,14 +156,14 @@ Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `evidenceFolderId`: `str` *(required)*
-- `evidenceIds`: `List`\[`str`\] *(required)*
+- `evidenceIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchAssociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchassociateassessmentreportevidenceresponsetypedef).
 
 ### batch_create_delegation_by_assessment
 
-Create a batch of delegations for a specified assessment in AWS Audit Manager.
+Create a batch of delegations for a specified assessment in Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").batch_create_delegation_by_assessment` method.
@@ -177,7 +177,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `createDelegationRequests`:
-  `List`\[[CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)\]
+  `Sequence`\[[CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)\]
   *(required)*
 - `assessmentId`: `str` *(required)*
 
@@ -186,7 +186,7 @@ Returns
 
 ### batch_delete_delegation_by_assessment
 
-Deletes the delegations in the specified AWS Audit Manager assessment.
+Deletes the delegations in the specified Audit Manager assessment.
 
 Type annotations for
 `boto3.client("auditmanager").batch_delete_delegation_by_assessment` method.
@@ -199,7 +199,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `delegationIds`: `List`\[`str`\] *(required)*
+- `delegationIds`: `Sequence`\[`str`\] *(required)*
 - `assessmentId`: `str` *(required)*
 
 Returns
@@ -207,8 +207,8 @@ Returns
 
 ### batch_disassociate_assessment_report_evidence
 
-Disassociates a list of evidence from the specified assessment report in AWS
-Audit Manager.
+Disassociates a list of evidence from the specified assessment report in Audit
+Manager.
 
 Type annotations for
 `boto3.client("auditmanager").batch_disassociate_assessment_report_evidence`
@@ -224,7 +224,7 @@ Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `evidenceFolderId`: `str` *(required)*
-- `evidenceIds`: `List`\[`str`\] *(required)*
+- `evidenceIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDisassociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchdisassociateassessmentreportevidenceresponsetypedef).
@@ -232,7 +232,7 @@ Returns
 ### batch_import_evidence_to_assessment_control
 
 Uploads one or more pieces of evidence to the specified control in the
-assessment in AWS Audit Manager.
+assessment in Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").batch_import_evidence_to_assessment_control`
@@ -250,7 +250,7 @@ Keyword-only arguments:
 - `controlSetId`: `str` *(required)*
 - `controlId`: `str` *(required)*
 - `manualEvidence`:
-  `List`\[[ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)\]
+  `Sequence`\[[ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)\]
   *(required)*
 
 Returns
@@ -273,7 +273,7 @@ Returns `bool`.
 
 ### create_assessment
 
-Creates an assessment in AWS Audit Manager.
+Creates an assessment in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").create_assessment` method.
 
@@ -290,17 +290,17 @@ Keyword-only arguments:
   [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
   *(required)*
 - `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef) *(required)*
-- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\] *(required)*
+- `roles`: `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\] *(required)*
 - `frameworkId`: `str` *(required)*
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAssessmentResponseTypeDef](./type_defs.md#createassessmentresponsetypedef).
 
 ### create_assessment_framework
 
-Creates a custom framework in AWS Audit Manager.
+Creates a custom framework in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").create_assessment_framework`
 method.
@@ -315,11 +315,11 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `controlSets`:
-  `List`\[[CreateAssessmentFrameworkControlSetTypeDef](./type_defs.md#createassessmentframeworkcontrolsettypedef)\]
+  `Sequence`\[[CreateAssessmentFrameworkControlSetTypeDef](./type_defs.md#createassessmentframeworkcontrolsettypedef)\]
   *(required)*
 - `description`: `str`
 - `complianceType`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAssessmentFrameworkResponseTypeDef](./type_defs.md#createassessmentframeworkresponsetypedef).
@@ -348,7 +348,7 @@ Returns
 
 ### create_control
 
-Creates a new custom control in AWS Audit Manager.
+Creates a new custom control in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").create_control` method.
 
@@ -362,20 +362,20 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `controlMappingSources`:
-  `List`\[[CreateControlMappingSourceTypeDef](./type_defs.md#createcontrolmappingsourcetypedef)\]
+  `Sequence`\[[CreateControlMappingSourceTypeDef](./type_defs.md#createcontrolmappingsourcetypedef)\]
   *(required)*
 - `description`: `str`
 - `testingInformation`: `str`
 - `actionPlanTitle`: `str`
 - `actionPlanInstructions`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateControlResponseTypeDef](./type_defs.md#createcontrolresponsetypedef).
 
 ### delete_assessment
 
-Deletes an assessment in AWS Audit Manager.
+Deletes an assessment in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").delete_assessment` method.
 
@@ -393,7 +393,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_assessment_framework
 
-Deletes a custom framework in AWS Audit Manager.
+Deletes a custom framework in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").delete_assessment_framework`
 method.
@@ -412,7 +412,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_assessment_report
 
-Deletes an assessment report from an assessment in AWS Audit Manager.
+Deletes an assessment report from an assessment in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").delete_assessment_report`
 method.
@@ -432,7 +432,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_control
 
-Deletes a custom control in AWS Audit Manager.
+Deletes a custom control in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").delete_control` method.
 
@@ -450,7 +450,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_account
 
-Deregisters an account in AWS Audit Manager.
+Deregisters an account in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").deregister_account` method.
 
@@ -462,7 +462,8 @@ Returns
 
 ### deregister_organization_admin_account
 
-Deregisters the delegated AWS administrator account from the AWS organization.
+Removes the specified member account as a delegated administrator for Audit
+Manager.
 
 Type annotations for
 `boto3.client("auditmanager").deregister_organization_admin_account` method.
@@ -481,8 +482,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_assessment_report_evidence_folder
 
-Disassociates an evidence folder from the specified assessment report in AWS
-Audit Manager.
+Disassociates an evidence folder from the specified assessment report in Audit
+Manager.
 
 Type annotations for
 `boto3.client("auditmanager").disassociate_assessment_report_evidence_folder`
@@ -514,7 +515,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -522,7 +523,7 @@ Returns `str`.
 
 ### get_account_status
 
-Returns the registration status of an account in AWS Audit Manager.
+Returns the registration status of an account in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_account_status` method.
 
@@ -534,7 +535,7 @@ Returns
 
 ### get_assessment
 
-Returns an assessment from AWS Audit Manager.
+Returns an assessment from Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_assessment` method.
 
@@ -553,7 +554,7 @@ Returns
 
 ### get_assessment_framework
 
-Returns a framework from AWS Audit Manager.
+Returns a framework from Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_assessment_framework`
 method.
@@ -573,7 +574,7 @@ Returns
 
 ### get_assessment_report_url
 
-Returns the URL of a specified assessment report in AWS Audit Manager.
+Returns the URL of a specified assessment report in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_assessment_report_url`
 method.
@@ -594,7 +595,7 @@ Returns
 
 ### get_change_logs
 
-Returns a list of changelogs from AWS Audit Manager.
+Returns a list of changelogs from Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_change_logs` method.
 
@@ -617,7 +618,7 @@ Returns
 
 ### get_control
 
-Returns a control from AWS Audit Manager.
+Returns a control from Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_control` method.
 
@@ -655,7 +656,7 @@ Returns
 
 ### get_evidence
 
-Returns evidence from AWS Audit Manager.
+Returns evidence from Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_evidence` method.
 
@@ -677,7 +678,7 @@ Returns
 
 ### get_evidence_by_evidence_folder
 
-Returns all evidence from a specified evidence folder in AWS Audit Manager.
+Returns all evidence from a specified evidence folder in Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").get_evidence_by_evidence_folder` method.
@@ -701,7 +702,7 @@ Returns
 
 ### get_evidence_folder
 
-Returns an evidence folder from the specified assessment in AWS Audit Manager.
+Returns an evidence folder from the specified assessment in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_evidence_folder` method.
 
@@ -722,7 +723,7 @@ Returns
 
 ### get_evidence_folders_by_assessment
 
-Returns the evidence folders from a specified assessment in AWS Audit Manager.
+Returns the evidence folders from a specified assessment in Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").get_evidence_folders_by_assessment` method.
@@ -745,7 +746,7 @@ Returns
 ### get_evidence_folders_by_assessment_control
 
 Returns a list of evidence folders associated with a specified control of an
-assessment in AWS Audit Manager.
+assessment in Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").get_evidence_folders_by_assessment_control`
@@ -770,8 +771,8 @@ Returns
 
 ### get_organization_admin_account
 
-Returns the name of the delegated AWS administrator account for the AWS
-organization.
+Returns the name of the delegated Amazon Web Services administrator account for
+the organization.
 
 Type annotations for
 `boto3.client("auditmanager").get_organization_admin_account` method.
@@ -784,7 +785,8 @@ Returns
 
 ### get_services_in_scope
 
-Returns a list of the in-scope AWS services for the specified assessment.
+Returns a list of the in-scope Amazon Web Services services for the specified
+assessment.
 
 Type annotations for `boto3.client("auditmanager").get_services_in_scope`
 method.
@@ -797,7 +799,7 @@ Returns
 
 ### get_settings
 
-Returns the settings for the specified AWS account.
+Returns the settings for the specified account.
 
 Type annotations for `boto3.client("auditmanager").get_settings` method.
 
@@ -817,7 +819,7 @@ Returns
 
 ### list_assessment_frameworks
 
-Returns a list of the frameworks available in the AWS Audit Manager framework
+Returns a list of the frameworks available in the Audit Manager framework
 library.
 
 Type annotations for `boto3.client("auditmanager").list_assessment_frameworks`
@@ -841,7 +843,7 @@ Returns
 
 ### list_assessment_reports
 
-Returns a list of assessment reports created in AWS Audit Manager.
+Returns a list of assessment reports created in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").list_assessment_reports`
 method.
@@ -862,7 +864,7 @@ Returns
 
 ### list_assessments
 
-Returns a list of current and past assessments from AWS Audit Manager.
+Returns a list of current and past assessments from Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").list_assessments` method.
 
@@ -882,7 +884,7 @@ Returns
 
 ### list_controls
 
-Returns a list of controls from AWS Audit Manager.
+Returns a list of controls from Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").list_controls` method.
 
@@ -926,7 +928,7 @@ Returns
 
 ### list_notifications
 
-Returns a list of all AWS Audit Manager notifications.
+Returns a list of all Audit Manager notifications.
 
 Type annotations for `boto3.client("auditmanager").list_notifications` method.
 
@@ -946,7 +948,7 @@ Returns
 
 ### list_tags_for_resource
 
-Returns a list of tags for the specified resource in AWS Audit Manager.
+Returns a list of tags for the specified resource in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").list_tags_for_resource`
 method.
@@ -966,7 +968,7 @@ Returns
 
 ### register_account
 
-Enables AWS Audit Manager for the specified AWS account.
+Enables Audit Manager for the specified account.
 
 Type annotations for `boto3.client("auditmanager").register_account` method.
 
@@ -986,8 +988,8 @@ Returns
 
 ### register_organization_admin_account
 
-Enables an AWS account within the organization as the delegated administrator
-for AWS Audit Manager.
+Enables an account within the organization as the delegated administrator for
+Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").register_organization_admin_account` method.
@@ -1007,7 +1009,7 @@ Returns
 
 ### tag_resource
 
-Tags the specified resource in AWS Audit Manager.
+Tags the specified resource in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").tag_resource` method.
 
@@ -1020,13 +1022,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes a tag from a resource in AWS Audit Manager.
+Removes a tag from a resource in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").untag_resource` method.
 
@@ -1039,13 +1041,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
 ### update_assessment
 
-Edits an AWS Audit Manager assessment.
+Edits an Audit Manager assessment.
 
 Type annotations for `boto3.client("auditmanager").update_assessment` method.
 
@@ -1063,14 +1065,14 @@ Keyword-only arguments:
 - `assessmentDescription`: `str`
 - `assessmentReportsDestination`:
   [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
+- `roles`: `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 
 Returns
 [UpdateAssessmentResponseTypeDef](./type_defs.md#updateassessmentresponsetypedef).
 
 ### update_assessment_control
 
-Updates a control within an assessment in AWS Audit Manager.
+Updates a control within an assessment in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").update_assessment_control`
 method.
@@ -1094,7 +1096,7 @@ Returns
 
 ### update_assessment_control_set_status
 
-Updates the status of a control set in an AWS Audit Manager assessment.
+Updates the status of a control set in an Audit Manager assessment.
 
 Type annotations for
 `boto3.client("auditmanager").update_assessment_control_set_status` method.
@@ -1118,7 +1120,7 @@ Returns
 
 ### update_assessment_framework
 
-Updates a custom framework in AWS Audit Manager.
+Updates a custom framework in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").update_assessment_framework`
 method.
@@ -1134,7 +1136,7 @@ Keyword-only arguments:
 - `frameworkId`: `str` *(required)*
 - `name`: `str` *(required)*
 - `controlSets`:
-  `List`\[[UpdateAssessmentFrameworkControlSetTypeDef](./type_defs.md#updateassessmentframeworkcontrolsettypedef)\]
+  `Sequence`\[[UpdateAssessmentFrameworkControlSetTypeDef](./type_defs.md#updateassessmentframeworkcontrolsettypedef)\]
   *(required)*
 - `description`: `str`
 - `complianceType`: `str`
@@ -1144,7 +1146,7 @@ Returns
 
 ### update_assessment_status
 
-Updates the status of an assessment in AWS Audit Manager.
+Updates the status of an assessment in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").update_assessment_status`
 method.
@@ -1166,7 +1168,7 @@ Returns
 
 ### update_control
 
-Updates a custom control in AWS Audit Manager.
+Updates a custom control in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").update_control` method.
 
@@ -1181,7 +1183,7 @@ Keyword-only arguments:
 - `controlId`: `str` *(required)*
 - `name`: `str` *(required)*
 - `controlMappingSources`:
-  `List`\[[ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef)\]
+  `Sequence`\[[ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef)\]
   *(required)*
 - `description`: `str`
 - `testingInformation`: `str`
@@ -1193,7 +1195,7 @@ Returns
 
 ### update_settings
 
-Updates AWS Audit Manager settings for the current user account.
+Updates Audit Manager settings for the current user account.
 
 Type annotations for `boto3.client("auditmanager").update_settings` method.
 
@@ -1208,7 +1210,8 @@ Keyword-only arguments:
 - `snsTopic`: `str`
 - `defaultAssessmentReportsDestination`:
   [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `defaultProcessOwners`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
+- `defaultProcessOwners`:
+  `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 - `kmsKey`: `str`
 
 Returns
@@ -1216,7 +1219,7 @@ Returns
 
 ### validate_assessment_report_integrity
 
-Validates the integrity of an assessment report in AWS Audit Manager.
+Validates the integrity of an assessment report in Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").validate_assessment_report_integrity` method.

@@ -301,7 +301,7 @@ Optional fields:
 - `description`: `str`
 - `environmentAccountConnectionId`: `str`
 - `protonServiceRoleArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `templateMinorVersion`: `str`
 
 ## CreateEnvironmentOutputTypeDef
@@ -333,7 +333,7 @@ Optional fields:
 - `encryptionKey`: `str`
 - `provisioning`: `Literal['CUSTOMER_MANAGED']` (see
   [ProvisioningType](./literals.md#provisioningtype))
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEnvironmentTemplateOutputTypeDef
 
@@ -365,7 +365,7 @@ Optional fields:
 - `clientToken`: `str`
 - `description`: `str`
 - `majorVersion`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEnvironmentTemplateVersionOutputTypeDef
 
@@ -399,7 +399,7 @@ Optional fields:
 - `description`: `str`
 - `repositoryConnectionArn`: `str`
 - `repositoryId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `templateMinorVersion`: `str`
 
 ## CreateServiceOutputTypeDef
@@ -431,7 +431,7 @@ Optional fields:
 - `encryptionKey`: `str`
 - `pipelineProvisioning`: `Literal['CUSTOMER_MANAGED']` (see
   [ProvisioningType](./literals.md#provisioningtype))
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateServiceTemplateOutputTypeDef
 
@@ -455,7 +455,7 @@ from mypy_boto3_proton.type_defs import CreateServiceTemplateVersionInputRequest
 Required fields:
 
 - `compatibleEnvironmentTemplates`:
-  `List`\[[CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)\]
+  `Sequence`\[[CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)\]
 - `source`:
   [TemplateVersionSourceInputTypeDef](./type_defs.md#templateversionsourceinputtypedef)
 - `templateName`: `str`
@@ -465,7 +465,7 @@ Optional fields:
 - `clientToken`: `str`
 - `description`: `str`
 - `majorVersion`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateServiceTemplateVersionOutputTypeDef
 
@@ -1058,7 +1058,7 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `statuses`:
-  `List`\[[EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)\]
+  `Sequence`\[[EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)\]
 
 ## ListEnvironmentAccountConnectionsOutputTypeDef
 
@@ -1138,7 +1138,7 @@ from mypy_boto3_proton.type_defs import ListEnvironmentsInputRequestTypeDef
 Optional fields:
 
 - `environmentTemplates`:
-  `List`\[[EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef)\]
+  `Sequence`\[[EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1570,7 +1570,7 @@ from mypy_boto3_proton.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1602,7 +1602,7 @@ from mypy_boto3_proton.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAccountSettingsInputRequestTypeDef
 
@@ -1875,7 +1875,7 @@ Required fields:
 Optional fields:
 
 - `compatibleEnvironmentTemplates`:
-  `List`\[[CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)\]
+  `Sequence`\[[CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)\]
 - `description`: `str`
 - `status`:
   [TemplateVersionStatusType](./literals.md#templateversionstatustype)

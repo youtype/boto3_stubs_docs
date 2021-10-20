@@ -100,6 +100,7 @@ type annotations stubs module
     - [update_nfs_file_share](#update_nfs_file_share)
     - [update_smb_file_share](#update_smb_file_share)
     - [update_smb_file_share_visibility](#update_smb_file_share_visibility)
+    - [update_smb_local_groups](#update_smb_local_groups)
     - [update_smb_security_strategy](#update_smb_security_strategy)
     - [update_snapshot_schedule](#update_snapshot_schedule)
     - [update_vtl_device_type](#update_vtl_device_type)
@@ -174,7 +175,7 @@ Keyword-only arguments:
 - `GatewayType`: `str`
 - `TapeDriveType`: `str`
 - `MediumChangerType`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [ActivateGatewayOutputTypeDef](./type_defs.md#activategatewayoutputtypedef).
@@ -194,7 +195,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
-- `DiskIds`: `List`\[`str`\] *(required)*
+- `DiskIds`: `Sequence`\[`str`\] *(required)*
 
 Returns [AddCacheOutputTypeDef](./type_defs.md#addcacheoutputtypedef).
 
@@ -214,7 +215,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns
 [AddTagsToResourceOutputTypeDef](./type_defs.md#addtagstoresourceoutputtypedef).
@@ -235,7 +236,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
-- `DiskIds`: `List`\[`str`\] *(required)*
+- `DiskIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [AddUploadBufferOutputTypeDef](./type_defs.md#adduploadbufferoutputtypedef).
@@ -256,7 +257,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
-- `DiskIds`: `List`\[`str`\] *(required)*
+- `DiskIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [AddWorkingStorageOutputTypeDef](./type_defs.md#addworkingstorageoutputtypedef).
@@ -302,7 +303,7 @@ Keyword-only arguments:
 - `ClientToken`: `str` *(required)*
 - `GatewayARN`: `str` *(required)*
 - `LocationARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AuditDestinationARN`: `str`
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
@@ -416,7 +417,7 @@ Keyword-only arguments:
 - `SourceVolumeARN`: `str`
 - `KMSEncrypted`: `bool`
 - `KMSKey`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCachediSCSIVolumeOutputTypeDef](./type_defs.md#createcachediscsivolumeoutputtypedef).
@@ -446,18 +447,19 @@ Keyword-only arguments:
 - `KMSKey`: `str`
 - `DefaultStorageClass`: `str`
 - `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ClientList`: `List`\[`str`\]
+- `ClientList`: `Sequence`\[`str`\]
 - `Squash`: `str`
 - `ReadOnly`: `bool`
 - `GuessMIMETypeEnabled`: `bool`
 - `RequesterPays`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `FileShareName`: `str`
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
 - `VPCEndpointDNSName`: `str`
 - `BucketRegion`: `str`
+- `AuditDestinationARN`: `str`
 
 Returns
 [CreateNFSFileShareOutputTypeDef](./type_defs.md#createnfsfileshareoutputtypedef).
@@ -490,13 +492,13 @@ Keyword-only arguments:
 - `RequesterPays`: `bool`
 - `SMBACLEnabled`: `bool`
 - `AccessBasedEnumeration`: `bool`
-- `AdminUserList`: `List`\[`str`\]
-- `ValidUserList`: `List`\[`str`\]
-- `InvalidUserList`: `List`\[`str`\]
+- `AdminUserList`: `Sequence`\[`str`\]
+- `ValidUserList`: `Sequence`\[`str`\]
+- `InvalidUserList`: `Sequence`\[`str`\]
 - `AuditDestinationARN`: `str`
 - `Authentication`: `str`
 - `CaseSensitivity`: [CaseSensitivityType](./literals.md#casesensitivitytype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `FileShareName`: `str`
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
@@ -524,7 +526,7 @@ Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
 - `SnapshotDescription`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSnapshotOutputTypeDef](./type_defs.md#createsnapshotoutputtypedef).
@@ -547,7 +549,7 @@ Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
 - `SnapshotDescription`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSnapshotFromVolumeRecoveryPointOutputTypeDef](./type_defs.md#createsnapshotfromvolumerecoverypointoutputtypedef).
@@ -575,7 +577,7 @@ Keyword-only arguments:
 - `SnapshotId`: `str`
 - `KMSEncrypted`: `bool`
 - `KMSKey`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateStorediSCSIVolumeOutputTypeDef](./type_defs.md#createstorediscsivolumeoutputtypedef).
@@ -600,7 +602,7 @@ Keyword-only arguments:
 - `RetentionLockType`:
   [RetentionLockTypeType](./literals.md#retentionlocktypetype)
 - `RetentionLockTimeInDays`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateTapePoolOutputTypeDef](./type_defs.md#createtapepooloutputtypedef).
@@ -627,7 +629,7 @@ Keyword-only arguments:
 - `KMSKey`: `str`
 - `PoolId`: `str`
 - `Worm`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateTapeWithBarcodeOutputTypeDef](./type_defs.md#createtapewithbarcodeoutputtypedef).
@@ -655,7 +657,7 @@ Keyword-only arguments:
 - `KMSKey`: `str`
 - `PoolId`: `str`
 - `Worm`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateTapesOutputTypeDef](./type_defs.md#createtapesoutputtypedef).
 
@@ -955,7 +957,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `VolumeARNs`: `List`\[`str`\] *(required)*
+- `VolumeARNs`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeCachediSCSIVolumesOutputTypeDef](./type_defs.md#describecachediscsivolumesoutputtypedef).
@@ -997,7 +999,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `FileSystemAssociationARNList`: `List`\[`str`\] *(required)*
+- `FileSystemAssociationARNList`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeFileSystemAssociationsOutputTypeDef](./type_defs.md#describefilesystemassociationsoutputtypedef).
@@ -1060,7 +1062,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `FileShareARNList`: `List`\[`str`\] *(required)*
+- `FileShareARNList`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeNFSFileSharesOutputTypeDef](./type_defs.md#describenfsfilesharesoutputtypedef).
@@ -1081,7 +1083,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `FileShareARNList`: `List`\[`str`\] *(required)*
+- `FileShareARNList`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeSMBFileSharesOutputTypeDef](./type_defs.md#describesmbfilesharesoutputtypedef).
@@ -1142,7 +1144,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `VolumeARNs`: `List`\[`str`\] *(required)*
+- `VolumeARNs`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeStorediSCSIVolumesOutputTypeDef](./type_defs.md#describestorediscsivolumesoutputtypedef).
@@ -1163,7 +1165,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TapeARNs`: `List`\[`str`\]
+- `TapeARNs`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `Limit`: `int`
 
@@ -1209,7 +1211,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
-- `TapeARNs`: `List`\[`str`\]
+- `TapeARNs`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `Limit`: `int`
 
@@ -1253,7 +1255,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
-- `VTLDeviceARNs`: `List`\[`str`\]
+- `VTLDeviceARNs`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `Limit`: `int`
 
@@ -1353,7 +1355,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1378,7 +1380,7 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `Password`: `str` *(required)*
 - `OrganizationalUnit`: `str`
-- `DomainControllers`: `List`\[`str`\]
+- `DomainControllers`: `Sequence`\[`str`\]
 - `TimeoutInSeconds`: `int`
 
 Returns [JoinDomainOutputTypeDef](./type_defs.md#joindomainoutputtypedef).
@@ -1449,7 +1451,8 @@ Returns
 
 ### list_gateways
 
-Lists gateways owned by an account in an Region specified in the request.
+Lists gateways owned by an Amazon Web Services account in an Amazon Web
+Services Region specified in the request.
 
 Type annotations for `boto3.client("storagegateway").list_gateways` method.
 
@@ -1521,7 +1524,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `PoolARNs`: `List`\[`str`\]
+- `PoolARNs`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `Limit`: `int`
 
@@ -1543,7 +1546,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TapeARNs`: `List`\[`str`\]
+- `TapeARNs`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `Limit`: `int`
 
@@ -1645,7 +1648,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FileShareARN`: `str` *(required)*
-- `FolderList`: `List`\[`str`\]
+- `FolderList`: `Sequence`\[`str`\]
 - `Recursive`: `bool`
 
 Returns [RefreshCacheOutputTypeDef](./type_defs.md#refreshcacheoutputtypedef).
@@ -1666,7 +1669,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [RemoveTagsFromResourceOutputTypeDef](./type_defs.md#removetagsfromresourceoutputtypedef).
@@ -1849,7 +1852,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutomaticTapeCreationRules`:
-  `List`\[[AutomaticTapeCreationRuleTypeDef](./type_defs.md#automatictapecreationruletypedef)\]
+  `Sequence`\[[AutomaticTapeCreationRuleTypeDef](./type_defs.md#automatictapecreationruletypedef)\]
   *(required)*
 - `GatewayARN`: `str` *(required)*
 
@@ -1895,7 +1898,7 @@ Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `BandwidthRateLimitIntervals`:
-  `List`\[[BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef)\]
+  `Sequence`\[[BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef)\]
   *(required)*
 
 Returns
@@ -2041,7 +2044,7 @@ Keyword-only arguments:
   [NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef)
 - `DefaultStorageClass`: `str`
 - `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ClientList`: `List`\[`str`\]
+- `ClientList`: `Sequence`\[`str`\]
 - `Squash`: `str`
 - `ReadOnly`: `bool`
 - `GuessMIMETypeEnabled`: `bool`
@@ -2050,6 +2053,7 @@ Keyword-only arguments:
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
+- `AuditDestinationARN`: `str`
 
 Returns
 [UpdateNFSFileShareOutputTypeDef](./type_defs.md#updatenfsfileshareoutputtypedef).
@@ -2079,9 +2083,9 @@ Keyword-only arguments:
 - `RequesterPays`: `bool`
 - `SMBACLEnabled`: `bool`
 - `AccessBasedEnumeration`: `bool`
-- `AdminUserList`: `List`\[`str`\]
-- `ValidUserList`: `List`\[`str`\]
-- `InvalidUserList`: `List`\[`str`\]
+- `AdminUserList`: `Sequence`\[`str`\]
+- `ValidUserList`: `Sequence`\[`str`\]
+- `InvalidUserList`: `Sequence`\[`str`\]
 - `AuditDestinationARN`: `str`
 - `CaseSensitivity`: [CaseSensitivityType](./literals.md#casesensitivitytype)
 - `FileShareName`: `str`
@@ -2114,6 +2118,29 @@ Keyword-only arguments:
 
 Returns
 [UpdateSMBFileShareVisibilityOutputTypeDef](./type_defs.md#updatesmbfilesharevisibilityoutputtypedef).
+
+### update_smb_local_groups
+
+Updates the list of Active Directory users and groups that have special
+permissions for SMB file shares on the gateway.
+
+Type annotations for `boto3.client("storagegateway").update_smb_local_groups`
+method.
+
+Boto3 documentation:
+[StorageGateway.Client.update_smb_local_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_local_groups)
+
+Arguments mapping described in
+[UpdateSMBLocalGroupsInputRequestTypeDef](./type_defs.md#updatesmblocalgroupsinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `GatewayARN`: `str` *(required)*
+- `SMBLocalGroups`:
+  [SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef) *(required)*
+
+Returns
+[UpdateSMBLocalGroupsOutputTypeDef](./type_defs.md#updatesmblocalgroupsoutputtypedef).
 
 ### update_smb_security_strategy
 
@@ -2156,7 +2183,7 @@ Keyword-only arguments:
 - `StartAt`: `int` *(required)*
 - `RecurrenceInHours`: `int` *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [UpdateSnapshotScheduleOutputTypeDef](./type_defs.md#updatesnapshotscheduleoutputtypedef).

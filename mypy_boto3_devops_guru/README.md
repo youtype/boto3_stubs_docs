@@ -127,6 +127,8 @@ from mypy_boto3_devops_guru.literals import AnomalySeverityType, ...
 - [SearchInsightsPaginatorName](./literals.md#searchinsightspaginatorname)
 - [ServiceNameType](./literals.md#servicenametype)
 - [UpdateResourceCollectionActionType](./literals.md#updateresourcecollectionactiontype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

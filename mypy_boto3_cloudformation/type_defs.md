@@ -83,6 +83,8 @@ type annotations stubs module
   - [GetTemplateOutputTypeDef](#gettemplateoutputtypedef)
   - [GetTemplateSummaryInputRequestTypeDef](#gettemplatesummaryinputrequesttypedef)
   - [GetTemplateSummaryOutputTypeDef](#gettemplatesummaryoutputtypedef)
+  - [ImportStacksToStackSetInputRequestTypeDef](#importstackstostacksetinputrequesttypedef)
+  - [ImportStacksToStackSetOutputTypeDef](#importstackstostacksetoutputtypedef)
   - [ListChangeSetsInputRequestTypeDef](#listchangesetsinputrequesttypedef)
   - [ListChangeSetsOutputTypeDef](#listchangesetsoutputtypedef)
   - [ListExportsInputRequestTypeDef](#listexportsinputrequesttypedef)
@@ -131,6 +133,8 @@ type annotations stubs module
   - [ResourceToImportTypeDef](#resourcetoimporttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RollbackConfigurationTypeDef](#rollbackconfigurationtypedef)
+  - [RollbackStackInputRequestTypeDef](#rollbackstackinputrequesttypedef)
+  - [RollbackStackOutputTypeDef](#rollbackstackoutputtypedef)
   - [RollbackTriggerTypeDef](#rollbacktriggertypedef)
   - [ServiceResourceEventRequestTypeDef](#serviceresourceeventrequesttypedef)
   - [ServiceResourceStackRequestTypeDef](#serviceresourcestackrequesttypedef)
@@ -273,7 +277,7 @@ from mypy_boto3_cloudformation.type_defs import BatchDescribeTypeConfigurationsI
 Required fields:
 
 - `TypeConfigurationIdentifiers`:
-  `List`\[[TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)\]
+  `Sequence`\[[TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)\]
 
 ## BatchDescribeTypeConfigurationsOutputTypeDef
 
@@ -363,7 +367,7 @@ Required fields:
 Optional fields:
 
 - `RoleARN`: `str`
-- `ResourcesToSkip`: `List`\[`str`\]
+- `ResourcesToSkip`: `Sequence`\[`str`\]
 - `ClientRequestToken`: `str`
 
 ## CreateChangeSetInputRequestTypeDef
@@ -382,19 +386,20 @@ Optional fields:
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
 - `UsePreviousTemplate`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `List`\[`str`\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `NotificationARNs`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `NotificationARNs`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 - `Description`: `str`
 - `ChangeSetType`: [ChangeSetTypeType](./literals.md#changesettypetype)
 - `ResourcesToImport`:
-  `List`\[[ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef)\]
+  `Sequence`\[[ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef)\]
 - `IncludeNestedStacks`: `bool`
 
 ## CreateChangeSetOutputTypeDef
@@ -424,19 +429,20 @@ Optional fields:
 
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `DisableRollback`: `bool`
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `TimeoutInMinutes`: `int`
-- `NotificationARNs`: `List`\[`str`\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `List`\[`str`\]
+- `NotificationARNs`: `Sequence`\[`str`\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `OnFailure`: [OnFailureType](./literals.md#onfailuretype)
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 - `EnableTerminationProtection`: `bool`
 
@@ -454,19 +460,20 @@ Optional fields:
 
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `DisableRollback`: `bool`
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `TimeoutInMinutes`: `int`
-- `NotificationARNs`: `List`\[`str`\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `List`\[`str`\]
+- `NotificationARNs`: `Sequence`\[`str`\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `OnFailure`: [OnFailureType](./literals.md#onfailuretype)
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 - `EnableTerminationProtection`: `bool`
 
@@ -479,15 +486,15 @@ from mypy_boto3_cloudformation.type_defs import CreateStackInstancesInputRequest
 Required fields:
 
 - `StackSetName`: `str`
-- `Regions`: `List`\[`str`\]
+- `Regions`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `Accounts`: `List`\[`str`\]
+- `Accounts`: `Sequence`\[`str`\]
 - `DeploymentTargets`:
   [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
 - `ParameterOverrides`:
-  `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `OperationPreferences`:
   [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `OperationId`: `str`
@@ -532,9 +539,11 @@ Optional fields:
 - `Description`: `str`
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StackId`: `str`
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AdministrationRoleARN`: `str`
 - `ExecutionRoleName`: `str`
 - `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
@@ -593,7 +602,7 @@ Required fields:
 
 Optional fields:
 
-- `RetainResources`: `List`\[`str`\]
+- `RetainResources`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `ClientRequestToken`: `str`
 
@@ -605,7 +614,7 @@ from mypy_boto3_cloudformation.type_defs import DeleteStackInputStackTypeDef
 
 Optional fields:
 
-- `RetainResources`: `List`\[`str`\]
+- `RetainResources`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `ClientRequestToken`: `str`
 
@@ -618,12 +627,12 @@ from mypy_boto3_cloudformation.type_defs import DeleteStackInstancesInputRequest
 Required fields:
 
 - `StackSetName`: `str`
-- `Regions`: `List`\[`str`\]
+- `Regions`: `Sequence`\[`str`\]
 - `RetainStacks`: `bool`
 
 Optional fields:
 
-- `Accounts`: `List`\[`str`\]
+- `Accounts`: `Sequence`\[`str`\]
 - `DeploymentTargets`:
   [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
 - `OperationPreferences`:
@@ -665,9 +674,9 @@ from mypy_boto3_cloudformation.type_defs import DeploymentTargetsTypeDef
 
 Optional fields:
 
-- `Accounts`: `List`\[`str`\]
+- `Accounts`: `Sequence`\[`str`\]
 - `AccountsUrl`: `str`
-- `OrganizationalUnitIds`: `List`\[`str`\]
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
 
 ## DeregisterTypeInputRequestTypeDef
 
@@ -874,7 +883,7 @@ Required fields:
 Optional fields:
 
 - `StackResourceDriftStatusFilters`:
-  `List`\[[StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)\]
+  `Sequence`\[[StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1113,7 +1122,7 @@ Required fields:
 
 Optional fields:
 
-- `LogicalResourceIds`: `List`\[`str`\]
+- `LogicalResourceIds`: `Sequence`\[`str`\]
 
 ## DetectStackDriftOutputTypeDef
 
@@ -1190,7 +1199,8 @@ Optional fields:
 
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## EstimateTemplateCostOutputTypeDef
 
@@ -1218,6 +1228,7 @@ Optional fields:
 
 - `StackName`: `str`
 - `ClientRequestToken`: `str`
+- `DisableRollback`: `bool`
 
 ## ExportTypeDef
 
@@ -1315,6 +1326,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ImportStacksToStackSetInputRequestTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ImportStacksToStackSetInputRequestTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+- `StackIds`: `Sequence`\[`str`\]
+
+Optional fields:
+
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
+- `OperationId`: `str`
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## ImportStacksToStackSetOutputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ImportStacksToStackSetOutputTypeDef
+```
+
+Required fields:
+
+- `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListChangeSetsInputRequestTypeDef
 
 ```python
@@ -1408,7 +1449,7 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef)\]
+  `Sequence`\[[StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef)\]
 - `StackInstanceAccount`: `str`
 - `StackInstanceRegion`: `str`
 - `CallAs`: [CallAsType](./literals.md#callastype)
@@ -1553,7 +1594,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `StackStatusFilter`:
-  `List`\[[StackStatusType](./literals.md#stackstatustype)\]
+  `Sequence`\[[StackStatusType](./literals.md#stackstatustype)\]
 
 ## ListStacksOutputTypeDef
 
@@ -1951,7 +1992,7 @@ Required fields:
 
 - `ResourceType`: `str`
 - `LogicalResourceId`: `str`
-- `ResourceIdentifier`: `Dict`\[`str`, `str`\]
+- `ResourceIdentifier`: `Mapping`\[`str`, `str`\]
 
 ## ResponseMetadataTypeDef
 
@@ -1976,8 +2017,35 @@ from mypy_boto3_cloudformation.type_defs import RollbackConfigurationTypeDef
 Optional fields:
 
 - `RollbackTriggers`:
-  `List`\[[RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)\]
+  `Sequence`\[[RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)\]
 - `MonitoringTimeInMinutes`: `int`
+
+## RollbackStackInputRequestTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import RollbackStackInputRequestTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `RoleARN`: `str`
+- `ClientRequestToken`: `str`
+
+## RollbackStackOutputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import RollbackStackOutputTypeDef
+```
+
+Required fields:
+
+- `StackId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RollbackTriggerTypeDef
 
@@ -2385,7 +2453,7 @@ Optional fields:
 
 - `RegionConcurrencyType`:
   [RegionConcurrencyTypeType](./literals.md#regionconcurrencytypetype)
-- `RegionOrder`: `List`\[`str`\]
+- `RegionOrder`: `Sequence`\[`str`\]
 - `FailureToleranceCount`: `int`
 - `FailureTolerancePercentage`: `int`
 - `MaxConcurrentCount`: `int`
@@ -2718,16 +2786,18 @@ Optional fields:
 - `UsePreviousTemplate`: `bool`
 - `StackPolicyDuringUpdateBody`: `str`
 - `StackPolicyDuringUpdateURL`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `List`\[`str`\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
-- `NotificationARNs`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `NotificationARNs`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DisableRollback`: `bool`
 - `ClientRequestToken`: `str`
 
 ## UpdateStackInputStackTypeDef
@@ -2743,16 +2813,18 @@ Optional fields:
 - `UsePreviousTemplate`: `bool`
 - `StackPolicyDuringUpdateBody`: `str`
 - `StackPolicyDuringUpdateURL`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `List`\[`str`\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
-- `NotificationARNs`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `NotificationARNs`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DisableRollback`: `bool`
 - `ClientRequestToken`: `str`
 
 ## UpdateStackInstancesInputRequestTypeDef
@@ -2764,15 +2836,15 @@ from mypy_boto3_cloudformation.type_defs import UpdateStackInstancesInputRequest
 Required fields:
 
 - `StackSetName`: `str`
-- `Regions`: `List`\[`str`\]
+- `Regions`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `Accounts`: `List`\[`str`\]
+- `Accounts`: `Sequence`\[`str`\]
 - `DeploymentTargets`:
   [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
 - `ParameterOverrides`:
-  `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `OperationPreferences`:
   [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `OperationId`: `str`
@@ -2818,9 +2890,10 @@ Optional fields:
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
 - `UsePreviousTemplate`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OperationPreferences`:
   [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `AdministrationRoleARN`: `str`
@@ -2831,8 +2904,8 @@ Optional fields:
 - `AutoDeployment`:
   [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
 - `OperationId`: `str`
-- `Accounts`: `List`\[`str`\]
-- `Regions`: `List`\[`str`\]
+- `Accounts`: `Sequence`\[`str`\]
+- `Regions`: `Sequence`\[`str`\]
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 ## UpdateStackSetOutputTypeDef

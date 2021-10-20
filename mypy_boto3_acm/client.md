@@ -108,7 +108,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### can_paginate
 
@@ -194,7 +194,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -202,7 +202,8 @@ Returns `str`.
 
 ### get_account_configuration
 
-Returns the account configuration options associated with an AWS account.
+Returns the account configuration options associated with an Amazon Web
+Services account.
 
 Type annotations for `boto3.client("acm").get_account_configuration` method.
 
@@ -233,8 +234,8 @@ Returns
 
 ### import_certificate
 
-Imports a certificate into AWS Certificate Manager (ACM) to use with services
-that are integrated with ACM.
+Imports a certificate into Amazon Web Services Certificate Manager (ACM) to use
+with services that are integrated with ACM.
 
 Type annotations for `boto3.client("acm").import_certificate` method.
 
@@ -252,7 +253,7 @@ Keyword-only arguments:
   *(required)*
 - `CertificateArn`: `str`
 - `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef).
@@ -272,7 +273,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CertificateStatuses`:
-  `List`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
+  `Sequence`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
 - `Includes`: [FiltersTypeDef](./type_defs.md#filterstypedef)
 - `NextToken`: `str`
 - `MaxItems`: `int`
@@ -332,7 +333,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### renew_certificate
 
@@ -352,7 +353,7 @@ Keyword-only arguments:
 
 ### request_certificate
 
-Requests an ACM certificate for use with other AWS services.
+Requests an ACM certificate for use with other Amazon Web Services services.
 
 Type annotations for `boto3.client("acm").request_certificate` method.
 
@@ -367,14 +368,14 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 - `ValidationMethod`:
   [ValidationMethodType](./literals.md#validationmethodtype)
-- `SubjectAlternativeNames`: `List`\[`str`\]
+- `SubjectAlternativeNames`: `Sequence`\[`str`\]
 - `IdempotencyToken`: `str`
 - `DomainValidationOptions`:
-  `List`\[[DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef)\]
+  `Sequence`\[[DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef)\]
 - `Options`:
   [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
 - `CertificateAuthorityArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [RequestCertificateResponseTypeDef](./type_defs.md#requestcertificateresponsetypedef).

@@ -98,6 +98,8 @@ from mypy_boto3_application_autoscaling.literals import AdjustmentTypeType, ...
 - [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - [ScalingActivityStatusCodeType](./literals.md#scalingactivitystatuscodetype)
 - [ServiceNamespaceType](./literals.md#servicenamespacetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

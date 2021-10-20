@@ -8,6 +8,8 @@ type annotations stubs module
 [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
 - [Literals for boto3 Connect module](#literals-for-boto3-connect-module)
+  - [AgentStatusStateType](#agentstatusstatetype)
+  - [AgentStatusTypeType](#agentstatustypetype)
   - [ChannelType](#channeltype)
   - [ComparisonType](#comparisontype)
   - [ContactFlowTypeType](#contactflowtypetype)
@@ -23,6 +25,7 @@ type annotations stubs module
   - [InstanceStorageResourceTypeType](#instancestorageresourcetypetype)
   - [IntegrationTypeType](#integrationtypetype)
   - [LexVersionType](#lexversiontype)
+  - [ListAgentStatusesPaginatorName](#listagentstatusespaginatorname)
   - [ListApprovedOriginsPaginatorName](#listapprovedoriginspaginatorname)
   - [ListBotsPaginatorName](#listbotspaginatorname)
   - [ListContactFlowsPaginatorName](#listcontactflowspaginatorname)
@@ -55,9 +58,35 @@ type annotations stubs module
   - [SourceTypeType](#sourcetypetype)
   - [StatisticType](#statistictype)
   - [StorageTypeType](#storagetypetype)
+  - [TrafficTypeType](#traffictypetype)
   - [UnitType](#unittype)
   - [UseCaseTypeType](#usecasetypetype)
   - [VoiceRecordingTrackType](#voicerecordingtracktype)
+  - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+
+## AgentStatusStateType
+
+```python
+from mypy_boto3_connect.literals import AgentStatusStateType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## AgentStatusTypeType
+
+```python
+from mypy_boto3_connect.literals import AgentStatusTypeType
+```
+
+Values:
+
+- `CUSTOM`
+- `OFFLINE`
+- `ROUTABLE`
 
 ## ChannelType
 
@@ -266,6 +295,10 @@ from mypy_boto3_connect.literals import IntegrationTypeType
 Values:
 
 - `EVENT`
+- `PINPOINT_APP`
+- `VOICE_ID`
+- `WISDOM_ASSISTANT`
+- `WISDOM_KNOWLEDGE_BASE`
 
 ## LexVersionType
 
@@ -277,6 +310,16 @@ Values:
 
 - `V1`
 - `V2`
+
+## ListAgentStatusesPaginatorName
+
+```python
+from mypy_boto3_connect.literals import ListAgentStatusesPaginatorName
+```
+
+Values:
+
+- `list_agent_statuses`
 
 ## ListApprovedOriginsPaginatorName
 
@@ -846,6 +889,17 @@ Values:
 - `KINESIS_VIDEO_STREAM`
 - `S3`
 
+## TrafficTypeType
+
+```python
+from mypy_boto3_connect.literals import TrafficTypeType
+```
+
+Values:
+
+- `CAMPAIGN`
+- `GENERAL`
+
 ## UnitType
 
 ```python
@@ -866,6 +920,7 @@ from mypy_boto3_connect.literals import UseCaseTypeType
 
 Values:
 
+- `CONNECT_CAMPAIGNS`
 - `RULES_EVALUATION`
 
 ## VoiceRecordingTrackType
@@ -879,3 +934,330 @@ Values:
 - `ALL`
 - `FROM_AGENT`
 - `TO_AGENT`
+
+## ServiceName
+
+```python
+from mypy_boto3_connect.literals import ServiceName
+```
+
+Values:
+
+- `accessanalyzer`
+- `account`
+- `acm`
+- `acm-pca`
+- `alexaforbusiness`
+- `amp`
+- `amplify`
+- `amplifybackend`
+- `apigateway`
+- `apigatewaymanagementapi`
+- `apigatewayv2`
+- `appconfig`
+- `appflow`
+- `appintegrations`
+- `application-autoscaling`
+- `application-insights`
+- `applicationcostprofiler`
+- `appmesh`
+- `apprunner`
+- `appstream`
+- `appsync`
+- `athena`
+- `auditmanager`
+- `autoscaling`
+- `autoscaling-plans`
+- `backup`
+- `batch`
+- `braket`
+- `budgets`
+- `ce`
+- `chime`
+- `chime-sdk-identity`
+- `chime-sdk-messaging`
+- `cloud9`
+- `cloudcontrol`
+- `clouddirectory`
+- `cloudformation`
+- `cloudfront`
+- `cloudhsm`
+- `cloudhsmv2`
+- `cloudsearch`
+- `cloudsearchdomain`
+- `cloudtrail`
+- `cloudwatch`
+- `codeartifact`
+- `codebuild`
+- `codecommit`
+- `codedeploy`
+- `codeguru-reviewer`
+- `codeguruprofiler`
+- `codepipeline`
+- `codestar`
+- `codestar-connections`
+- `codestar-notifications`
+- `cognito-identity`
+- `cognito-idp`
+- `cognito-sync`
+- `comprehend`
+- `comprehendmedical`
+- `compute-optimizer`
+- `config`
+- `connect`
+- `connect-contact-lens`
+- `connectparticipant`
+- `cur`
+- `customer-profiles`
+- `databrew`
+- `dataexchange`
+- `datapipeline`
+- `datasync`
+- `dax`
+- `detective`
+- `devicefarm`
+- `devops-guru`
+- `directconnect`
+- `discovery`
+- `dlm`
+- `dms`
+- `docdb`
+- `ds`
+- `dynamodb`
+- `dynamodbstreams`
+- `ebs`
+- `ec2`
+- `ec2-instance-connect`
+- `ecr`
+- `ecr-public`
+- `ecs`
+- `efs`
+- `eks`
+- `elastic-inference`
+- `elasticache`
+- `elasticbeanstalk`
+- `elastictranscoder`
+- `elb`
+- `elbv2`
+- `emr`
+- `emr-containers`
+- `es`
+- `events`
+- `finspace`
+- `finspace-data`
+- `firehose`
+- `fis`
+- `fms`
+- `forecast`
+- `forecastquery`
+- `frauddetector`
+- `fsx`
+- `gamelift`
+- `glacier`
+- `globalaccelerator`
+- `glue`
+- `grafana`
+- `greengrass`
+- `greengrassv2`
+- `groundstation`
+- `guardduty`
+- `health`
+- `healthlake`
+- `honeycode`
+- `iam`
+- `identitystore`
+- `imagebuilder`
+- `importexport`
+- `inspector`
+- `iot`
+- `iot-data`
+- `iot-jobs-data`
+- `iot1click-devices`
+- `iot1click-projects`
+- `iotanalytics`
+- `iotdeviceadvisor`
+- `iotevents`
+- `iotevents-data`
+- `iotfleethub`
+- `iotsecuretunneling`
+- `iotsitewise`
+- `iotthingsgraph`
+- `iotwireless`
+- `ivs`
+- `kafka`
+- `kafkaconnect`
+- `kendra`
+- `kinesis`
+- `kinesis-video-archived-media`
+- `kinesis-video-media`
+- `kinesis-video-signaling`
+- `kinesisanalytics`
+- `kinesisanalyticsv2`
+- `kinesisvideo`
+- `kms`
+- `lakeformation`
+- `lambda`
+- `lex-models`
+- `lex-runtime`
+- `lexv2-models`
+- `lexv2-runtime`
+- `license-manager`
+- `lightsail`
+- `location`
+- `logs`
+- `lookoutequipment`
+- `lookoutmetrics`
+- `lookoutvision`
+- `machinelearning`
+- `macie`
+- `macie2`
+- `managedblockchain`
+- `marketplace-catalog`
+- `marketplace-entitlement`
+- `marketplacecommerceanalytics`
+- `mediaconnect`
+- `mediaconvert`
+- `medialive`
+- `mediapackage`
+- `mediapackage-vod`
+- `mediastore`
+- `mediastore-data`
+- `mediatailor`
+- `memorydb`
+- `meteringmarketplace`
+- `mgh`
+- `mgn`
+- `migrationhub-config`
+- `mobile`
+- `mq`
+- `mturk`
+- `mwaa`
+- `neptune`
+- `network-firewall`
+- `networkmanager`
+- `nimble`
+- `opensearch`
+- `opsworks`
+- `opsworkscm`
+- `organizations`
+- `outposts`
+- `panorama`
+- `personalize`
+- `personalize-events`
+- `personalize-runtime`
+- `pi`
+- `pinpoint`
+- `pinpoint-email`
+- `pinpoint-sms-voice`
+- `polly`
+- `pricing`
+- `proton`
+- `qldb`
+- `qldb-session`
+- `quicksight`
+- `ram`
+- `rds`
+- `rds-data`
+- `redshift`
+- `redshift-data`
+- `rekognition`
+- `resource-groups`
+- `resourcegroupstaggingapi`
+- `robomaker`
+- `route53`
+- `route53-recovery-cluster`
+- `route53-recovery-control-config`
+- `route53-recovery-readiness`
+- `route53domains`
+- `route53resolver`
+- `s3`
+- `s3control`
+- `s3outposts`
+- `sagemaker`
+- `sagemaker-a2i-runtime`
+- `sagemaker-edge`
+- `sagemaker-featurestore-runtime`
+- `sagemaker-runtime`
+- `savingsplans`
+- `schemas`
+- `sdb`
+- `secretsmanager`
+- `securityhub`
+- `serverlessrepo`
+- `service-quotas`
+- `servicecatalog`
+- `servicecatalog-appregistry`
+- `servicediscovery`
+- `ses`
+- `sesv2`
+- `shield`
+- `signer`
+- `sms`
+- `sms-voice`
+- `snow-device-management`
+- `snowball`
+- `sns`
+- `sqs`
+- `ssm`
+- `ssm-contacts`
+- `ssm-incidents`
+- `sso`
+- `sso-admin`
+- `sso-oidc`
+- `stepfunctions`
+- `storagegateway`
+- `sts`
+- `support`
+- `swf`
+- `synthetics`
+- `textract`
+- `timestream-query`
+- `timestream-write`
+- `transcribe`
+- `transfer`
+- `translate`
+- `voice-id`
+- `waf`
+- `waf-regional`
+- `wafv2`
+- `wellarchitected`
+- `wisdom`
+- `workdocs`
+- `worklink`
+- `workmail`
+- `workmailmessageflow`
+- `workspaces`
+- `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_connect.literals import PaginatorName
+```
+
+Values:
+
+- `get_metric_data`
+- `list_agent_statuses`
+- `list_approved_origins`
+- `list_bots`
+- `list_contact_flows`
+- `list_hours_of_operations`
+- `list_instance_attributes`
+- `list_instance_storage_configs`
+- `list_instances`
+- `list_integration_associations`
+- `list_lambda_functions`
+- `list_lex_bots`
+- `list_phone_numbers`
+- `list_prompts`
+- `list_queue_quick_connects`
+- `list_queues`
+- `list_quick_connects`
+- `list_routing_profile_queues`
+- `list_routing_profiles`
+- `list_security_keys`
+- `list_security_profiles`
+- `list_use_cases`
+- `list_user_hierarchy_groups`
+- `list_users`

@@ -107,7 +107,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TraceIds`: `List`\[`str`\] *(required)*
+- `TraceIds`: `Sequence`\[`str`\] *(required)*
 - `NextToken`: `str`
 
 Returns
@@ -146,7 +146,7 @@ Keyword-only arguments:
 - `FilterExpression`: `str`
 - `InsightsConfiguration`:
   [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateGroupResultTypeDef](./type_defs.md#creategroupresulttypedef).
 
@@ -166,7 +166,7 @@ Keyword-only arguments:
 
 - `SamplingRule`: [SamplingRuleTypeDef](./type_defs.md#samplingruletypedef)
   *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSamplingRuleResultTypeDef](./type_defs.md#createsamplingruleresulttypedef).
@@ -222,7 +222,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -356,7 +356,7 @@ Keyword-only arguments:
 
 - `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `States`: `List`\[[InsightStateType](./literals.md#insightstatetype)\]
+- `States`: `Sequence`\[[InsightStateType](./literals.md#insightstatetype)\]
 - `GroupARN`: `str`
 - `GroupName`: `str`
 - `MaxResults`: `int`
@@ -420,7 +420,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SamplingStatisticsDocuments`:
-  `List`\[[SamplingStatisticsDocumentTypeDef](./type_defs.md#samplingstatisticsdocumenttypedef)\]
+  `Sequence`\[[SamplingStatisticsDocumentTypeDef](./type_defs.md#samplingstatisticsdocumenttypedef)\]
   *(required)*
 
 Returns
@@ -491,7 +491,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TraceIds`: `List`\[`str`\] *(required)*
+- `TraceIds`: `Sequence`\[`str`\] *(required)*
 - `NextToken`: `str`
 
 Returns
@@ -526,8 +526,8 @@ Returns
 
 ### list_tags_for_resource
 
-Returns a list of tags that are applied to the specified AWS X-Ray group or
-sampling rule.
+Returns a list of tags that are applied to the specified Amazon Web Services
+X-Ray group or sampling rule.
 
 Type annotations for `boto3.client("xray").list_tags_for_resource` method.
 
@@ -567,7 +567,7 @@ Returns
 
 ### put_telemetry_records
 
-Used by the AWS X-Ray daemon to upload telemetry.
+Used by the Amazon Web Services X-Ray daemon to upload telemetry.
 
 Type annotations for `boto3.client("xray").put_telemetry_records` method.
 
@@ -580,7 +580,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TelemetryRecords`:
-  `List`\[[TelemetryRecordTypeDef](./type_defs.md#telemetryrecordtypedef)\]
+  `Sequence`\[[TelemetryRecordTypeDef](./type_defs.md#telemetryrecordtypedef)\]
   *(required)*
 - `EC2InstanceId`: `str`
 - `Hostname`: `str`
@@ -590,7 +590,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_trace_segments
 
-Uploads segment documents to AWS X-Ray.
+Uploads segment documents to Amazon Web Services X-Ray.
 
 Type annotations for `boto3.client("xray").put_trace_segments` method.
 
@@ -602,14 +602,14 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TraceSegmentDocuments`: `List`\[`str`\] *(required)*
+- `TraceSegmentDocuments`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [PutTraceSegmentsResultTypeDef](./type_defs.md#puttracesegmentsresulttypedef).
 
 ### tag_resource
 
-Applies tags to an existing AWS X-Ray group or sampling rule.
+Applies tags to an existing Amazon Web Services X-Ray group or sampling rule.
 
 Type annotations for `boto3.client("xray").tag_resource` method.
 
@@ -622,13 +622,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes tags from an AWS X-Ray group or sampling rule.
+Removes tags from an Amazon Web Services X-Ray group or sampling rule.
 
 Type annotations for `boto3.client("xray").untag_resource` method.
 
@@ -641,7 +641,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

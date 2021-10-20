@@ -141,18 +141,18 @@ Keyword-only arguments:
 - `iamServiceRoleArn`: `str`
 - `oauthToken`: `str`
 - `accessToken`: `str`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `environmentVariables`: `Mapping`\[`str`, `str`\]
 - `enableBranchAutoBuild`: `bool`
 - `enableBranchAutoDeletion`: `bool`
 - `enableBasicAuth`: `bool`
 - `basicAuthCredentials`: `str`
 - `customRules`:
-  `List`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `buildSpec`: `str`
 - `customHeaders`: `str`
 - `enableAutoBranchCreation`: `bool`
-- `autoBranchCreationPatterns`: `List`\[`str`\]
+- `autoBranchCreationPatterns`: `Sequence`\[`str`\]
 - `autoBranchCreationConfig`:
   [AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef)
 
@@ -202,11 +202,11 @@ Keyword-only arguments:
 - `framework`: `str`
 - `enableNotification`: `bool`
 - `enableAutoBuild`: `bool`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `environmentVariables`: `Mapping`\[`str`, `str`\]
 - `basicAuthCredentials`: `str`
 - `enableBasicAuth`: `bool`
 - `enablePerformanceMode`: `bool`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `buildSpec`: `str`
 - `ttl`: `str`
 - `displayName`: `str`
@@ -232,7 +232,7 @@ Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
-- `fileMap`: `Dict`\[`str`, `str`\]
+- `fileMap`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDeploymentResultTypeDef](./type_defs.md#createdeploymentresulttypedef).
@@ -255,10 +255,10 @@ Keyword-only arguments:
 - `appId`: `str` *(required)*
 - `domainName`: `str` *(required)*
 - `subDomainSettings`:
-  `List`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
+  `Sequence`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
   *(required)*
 - `enableAutoSubDomain`: `bool`
-- `autoSubDomainCreationPatterns`: `List`\[`str`\]
+- `autoSubDomainCreationPatterns`: `Sequence`\[`str`\]
 - `autoSubDomainIAMRole`: `str`
 
 Returns
@@ -438,7 +438,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -826,7 +826,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -845,7 +845,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -868,17 +868,17 @@ Keyword-only arguments:
 - `description`: `str`
 - `platform`: `Literal['WEB']` (see [PlatformType](./literals.md#platformtype))
 - `iamServiceRoleArn`: `str`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `environmentVariables`: `Mapping`\[`str`, `str`\]
 - `enableBranchAutoBuild`: `bool`
 - `enableBranchAutoDeletion`: `bool`
 - `enableBasicAuth`: `bool`
 - `basicAuthCredentials`: `str`
 - `customRules`:
-  `List`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
+  `Sequence`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
 - `buildSpec`: `str`
 - `customHeaders`: `str`
 - `enableAutoBranchCreation`: `bool`
-- `autoBranchCreationPatterns`: `List`\[`str`\]
+- `autoBranchCreationPatterns`: `Sequence`\[`str`\]
 - `autoBranchCreationConfig`:
   [AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef)
 - `repository`: `str`
@@ -908,7 +908,7 @@ Keyword-only arguments:
 - `stage`: [StageType](./literals.md#stagetype)
 - `enableNotification`: `bool`
 - `enableAutoBuild`: `bool`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `environmentVariables`: `Mapping`\[`str`, `str`\]
 - `basicAuthCredentials`: `str`
 - `enableBasicAuth`: `bool`
 - `enablePerformanceMode`: `bool`
@@ -939,10 +939,10 @@ Keyword-only arguments:
 - `appId`: `str` *(required)*
 - `domainName`: `str` *(required)*
 - `subDomainSettings`:
-  `List`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
+  `Sequence`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
   *(required)*
 - `enableAutoSubDomain`: `bool`
-- `autoSubDomainCreationPatterns`: `List`\[`str`\]
+- `autoSubDomainCreationPatterns`: `Sequence`\[`str`\]
 - `autoSubDomainIAMRole`: `str`
 
 Returns

@@ -180,6 +180,9 @@ from mypy_boto3_elasticbeanstalk.literals import ActionHistoryStatusType, ...
 - [SourceRepositoryType](./literals.md#sourcerepositorytype)
 - [SourceTypeType](./literals.md#sourcetypetype)
 - [ValidationSeverityType](./literals.md#validationseveritytype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

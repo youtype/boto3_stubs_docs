@@ -444,7 +444,7 @@ from mypy_boto3_rds.type_defs import AddTagsToResourceMessageRequestTypeDef
 Required fields:
 
 - `ResourceName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ApplyPendingMaintenanceActionMessageRequestTypeDef
 
@@ -615,8 +615,8 @@ from mypy_boto3_rds.type_defs import CloudwatchLogsExportConfigurationTypeDef
 
 Optional fields:
 
-- `EnableLogTypes`: `List`\[`str`\]
-- `DisableLogTypes`: `List`\[`str`\]
+- `EnableLogTypes`: `Sequence`\[`str`\]
+- `DisableLogTypes`: `Sequence`\[`str`\]
 
 ## ClusterPendingModifiedValuesTypeDef
 
@@ -658,7 +658,7 @@ Optional fields:
 - `MaxConnectionsPercent`: `int`
 - `MaxIdleConnectionsPercent`: `int`
 - `ConnectionBorrowTimeout`: `int`
-- `SessionPinningFilters`: `List`\[`str`\]
+- `SessionPinningFilters`: `Sequence`\[`str`\]
 - `InitQuery`: `str`
 
 ## CopyDBClusterParameterGroupMessageRequestTypeDef
@@ -675,7 +675,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CopyDBClusterParameterGroupResultTypeDef
 
@@ -706,7 +706,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `PreSignedUrl`: `str`
 - `CopyTags`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SourceRegion`: `str`
 
 ## CopyDBClusterSnapshotResultTypeDef
@@ -736,7 +736,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CopyDBParameterGroupResultTypeDef
 
@@ -765,7 +765,7 @@ Required fields:
 Optional fields:
 
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CopyTags`: `bool`
 - `PreSignedUrl`: `str`
 - `OptionGroupName`: `str`
@@ -798,7 +798,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CopyOptionGroupResultTypeDef
 
@@ -855,9 +855,9 @@ Required fields:
 
 Optional fields:
 
-- `StaticMembers`: `List`\[`str`\]
-- `ExcludedMembers`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StaticMembers`: `Sequence`\[`str`\]
+- `ExcludedMembers`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBClusterMessageRequestTypeDef
 
@@ -872,12 +872,12 @@ Required fields:
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `BackupRetentionPeriod`: `int`
 - `CharacterSetName`: `str`
 - `DatabaseName`: `str`
 - `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `DBSubnetGroupName`: `str`
 - `EngineVersion`: `str`
 - `Port`: `int`
@@ -887,13 +887,13 @@ Optional fields:
 - `PreferredBackupWindow`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `ReplicationSourceIdentifier`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
 - `PreSignedUrl`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
 - `BacktrackWindow`: `int`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `EngineMode`: `str`
 - `ScalingConfiguration`:
   [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
@@ -920,7 +920,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBClusterParameterGroupResultTypeDef
 
@@ -960,7 +960,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBClusterSnapshotResultTypeDef
 
@@ -993,8 +993,8 @@ Optional fields:
 - `AllocatedStorage`: `int`
 - `MasterUsername`: `str`
 - `MasterUserPassword`: `str`
-- `DBSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `DBSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `AvailabilityZone`: `str`
 - `DBSubnetGroupName`: `str`
 - `PreferredMaintenanceWindow`: `str`
@@ -1011,7 +1011,7 @@ Optional fields:
 - `CharacterSetName`: `str`
 - `NcharCharacterSetName`: `str`
 - `PubliclyAccessible`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DBClusterIdentifier`: `str`
 - `StorageType`: `str`
 - `TdeCredentialArn`: `str`
@@ -1029,9 +1029,9 @@ Optional fields:
 - `EnablePerformanceInsights`: `bool`
 - `PerformanceInsightsKMSKeyId`: `str`
 - `PerformanceInsightsRetentionPeriod`: `int`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `ProcessorFeatures`:
-  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
+  `Sequence`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `DeletionProtection`: `bool`
 - `MaxAllocatedStorage`: `int`
 - `EnableCustomerOwnedIp`: `bool`
@@ -1058,9 +1058,9 @@ Optional fields:
 - `OptionGroupName`: `str`
 - `DBParameterGroupName`: `str`
 - `PubliclyAccessible`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DBSubnetGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `StorageType`: `str`
 - `CopyTagsToSnapshot`: `bool`
 - `MonitoringInterval`: `int`
@@ -1071,9 +1071,9 @@ Optional fields:
 - `EnablePerformanceInsights`: `bool`
 - `PerformanceInsightsKMSKeyId`: `str`
 - `PerformanceInsightsRetentionPeriod`: `int`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `ProcessorFeatures`:
-  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
+  `Sequence`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `UseDefaultProcessorFeatures`: `bool`
 - `DeletionProtection`: `bool`
 - `Domain`: `str`
@@ -1120,7 +1120,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBParameterGroupResultTypeDef
 
@@ -1145,14 +1145,14 @@ Required fields:
 
 - `DBProxyName`: `str`
 - `DBProxyEndpointName`: `str`
-- `VpcSubnetIds`: `List`\[`str`\]
+- `VpcSubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `TargetRole`:
   [DBProxyEndpointTargetRoleType](./literals.md#dbproxyendpointtargetroletype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBProxyEndpointResponseTypeDef
 
@@ -1178,17 +1178,17 @@ Required fields:
 - `DBProxyName`: `str`
 - `EngineFamily`: [EngineFamilyType](./literals.md#enginefamilytype)
 - `Auth`:
-  `List`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
+  `Sequence`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
 - `RoleArn`: `str`
-- `VpcSubnetIds`: `List`\[`str`\]
+- `VpcSubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `RequireTLS`: `bool`
 - `IdleClientTimeout`: `int`
 - `DebugLogging`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBProxyResponseTypeDef
 
@@ -1215,7 +1215,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBSecurityGroupResultTypeDef
 
@@ -1243,7 +1243,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBSnapshotResultTypeDef
 
@@ -1267,11 +1267,11 @@ Required fields:
 
 - `DBSubnetGroupName`: `str`
 - `DBSubnetGroupDescription`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBSubnetGroupResultTypeDef
 
@@ -1299,10 +1299,10 @@ Required fields:
 Optional fields:
 
 - `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
-- `SourceIds`: `List`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
+- `SourceIds`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEventSubscriptionResultTypeDef
 
@@ -1360,7 +1360,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateOptionGroupResultTypeDef
 
@@ -1703,6 +1703,7 @@ Optional fields:
 - `DBClusterParameterGroup`: `str`
 - `DBSubnetGroup`: `str`
 - `Status`: `str`
+- `AutomaticRestartTime`: `datetime`
 - `PercentProgress`: `str`
 - `EarliestRestorableTime`: `datetime`
 - `Endpoint`: `str`
@@ -1918,6 +1919,7 @@ Optional fields:
 - `DBInstanceClass`: `str`
 - `Engine`: `str`
 - `DBInstanceStatus`: `str`
+- `AutomaticRestartTime`: `datetime`
 - `MasterUsername`: `str`
 - `DBName`: `str`
 - `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
@@ -2258,6 +2260,7 @@ Optional fields:
   `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `DbiResourceId`: `str`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OriginalSnapshotCreateTime`: `datetime`
 
 ## DBSubnetGroupMessageTypeDef
 
@@ -2608,8 +2611,8 @@ Required fields:
 Optional fields:
 
 - `TargetGroupName`: `str`
-- `DBInstanceIdentifiers`: `List`\[`str`\]
-- `DBClusterIdentifiers`: `List`\[`str`\]
+- `DBInstanceIdentifiers`: `Sequence`\[`str`\]
+- `DBClusterIdentifiers`: `Sequence`\[`str`\]
 
 ## DescribeCertificatesMessageRequestTypeDef
 
@@ -2620,7 +2623,7 @@ from mypy_boto3_rds.type_defs import DescribeCertificatesMessageRequestTypeDef
 Optional fields:
 
 - `CertificateIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -2633,7 +2636,7 @@ from mypy_boto3_rds.type_defs import DescribeCustomAvailabilityZonesMessageReque
 Optional fields:
 
 - `CustomAvailabilityZoneId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -2650,7 +2653,7 @@ Required fields:
 Optional fields:
 
 - `BacktrackIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -2664,7 +2667,7 @@ Optional fields:
 
 - `DBClusterIdentifier`: `str`
 - `DBClusterEndpointIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -2677,7 +2680,7 @@ from mypy_boto3_rds.type_defs import DescribeDBClusterParameterGroupsMessageRequ
 Optional fields:
 
 - `DBClusterParameterGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -2694,7 +2697,7 @@ Required fields:
 Optional fields:
 
 - `Source`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -2732,7 +2735,7 @@ Optional fields:
 - `DBClusterIdentifier`: `str`
 - `DBClusterSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
@@ -2747,7 +2750,7 @@ from mypy_boto3_rds.type_defs import DescribeDBClustersMessageRequestTypeDef
 Optional fields:
 
 - `DBClusterIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
@@ -2763,7 +2766,7 @@ Optional fields:
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `DBParameterGroupFamily`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `DefaultOnly`: `bool`
@@ -2781,7 +2784,7 @@ Optional fields:
 
 - `DbiResourceId`: `str`
 - `DBInstanceIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `DBInstanceAutomatedBackupsArn`: `str`
@@ -2795,7 +2798,7 @@ from mypy_boto3_rds.type_defs import DescribeDBInstancesMessageRequestTypeDef
 Optional fields:
 
 - `DBInstanceIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -2826,7 +2829,7 @@ Optional fields:
 - `FilenameContains`: `str`
 - `FileLastWritten`: `int`
 - `FileSize`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -2853,7 +2856,7 @@ from mypy_boto3_rds.type_defs import DescribeDBParameterGroupsMessageRequestType
 Optional fields:
 
 - `DBParameterGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -2870,7 +2873,7 @@ Required fields:
 Optional fields:
 
 - `Source`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -2883,7 +2886,7 @@ from mypy_boto3_rds.type_defs import DescribeDBProxiesRequestRequestTypeDef
 Optional fields:
 
 - `DBProxyName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -2910,7 +2913,7 @@ Optional fields:
 
 - `DBProxyName`: `str`
 - `DBProxyEndpointName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -2941,7 +2944,7 @@ Required fields:
 Optional fields:
 
 - `TargetGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -2972,7 +2975,7 @@ Required fields:
 Optional fields:
 
 - `TargetGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -2999,7 +3002,7 @@ from mypy_boto3_rds.type_defs import DescribeDBSecurityGroupsMessageRequestTypeD
 Optional fields:
 
 - `DBSecurityGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -3037,7 +3040,7 @@ Optional fields:
 - `DBInstanceIdentifier`: `str`
 - `DBSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
@@ -3053,7 +3056,7 @@ from mypy_boto3_rds.type_defs import DescribeDBSubnetGroupsMessageRequestTypeDef
 Optional fields:
 
 - `DBSubnetGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -3069,7 +3072,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -3098,7 +3101,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -3124,7 +3127,7 @@ from mypy_boto3_rds.type_defs import DescribeEventCategoriesMessageRequestTypeDe
 Optional fields:
 
 - `SourceType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribeEventSubscriptionsMessageRequestTypeDef
 
@@ -3135,7 +3138,7 @@ from mypy_boto3_rds.type_defs import DescribeEventSubscriptionsMessageRequestTyp
 Optional fields:
 
 - `SubscriptionName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -3152,8 +3155,8 @@ Optional fields:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Duration`: `int`
-- `EventCategories`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `EventCategories`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -3167,7 +3170,7 @@ Optional fields:
 
 - `ExportTaskIdentifier`: `str`
 - `SourceArn`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -3180,7 +3183,7 @@ from mypy_boto3_rds.type_defs import DescribeGlobalClustersMessageRequestTypeDef
 Optional fields:
 
 - `GlobalClusterIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -3193,7 +3196,7 @@ from mypy_boto3_rds.type_defs import DescribeInstallationMediaMessageRequestType
 Optional fields:
 
 - `InstallationMediaId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -3210,7 +3213,7 @@ Required fields:
 Optional fields:
 
 - `MajorEngineVersion`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -3223,7 +3226,7 @@ from mypy_boto3_rds.type_defs import DescribeOptionGroupsMessageRequestTypeDef
 Optional fields:
 
 - `OptionGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 - `EngineName`: `str`
@@ -3246,7 +3249,7 @@ Optional fields:
 - `LicenseModel`: `str`
 - `AvailabilityZoneGroup`: `str`
 - `Vpc`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -3259,7 +3262,7 @@ from mypy_boto3_rds.type_defs import DescribePendingMaintenanceActionsMessageReq
 Optional fields:
 
 - `ResourceIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -3279,7 +3282,7 @@ Optional fields:
 - `OfferingType`: `str`
 - `MultiAZ`: `bool`
 - `LeaseId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -3297,7 +3300,7 @@ Optional fields:
 - `ProductDescription`: `str`
 - `OfferingType`: `str`
 - `MultiAZ`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -3312,7 +3315,7 @@ Optional fields:
 - `RegionName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribeValidDBInstanceModificationsMessageRequestTypeDef
 
@@ -3647,7 +3650,7 @@ from mypy_boto3_rds.type_defs import FilterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## GlobalClusterMemberTypeDef
 
@@ -3797,7 +3800,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## MinimumEngineVersionPerAllowedValueTypeDef
 
@@ -3862,8 +3865,8 @@ Required fields:
 Optional fields:
 
 - `EndpointType`: `str`
-- `StaticMembers`: `List`\[`str`\]
-- `ExcludedMembers`: `List`\[`str`\]
+- `StaticMembers`: `Sequence`\[`str`\]
+- `ExcludedMembers`: `Sequence`\[`str`\]
 
 ## ModifyDBClusterMessageRequestTypeDef
 
@@ -3881,7 +3884,7 @@ Optional fields:
 - `ApplyImmediately`: `bool`
 - `BackupRetentionPeriod`: `int`
 - `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `Port`: `int`
 - `MasterUserPassword`: `str`
 - `OptionGroupName`: `str`
@@ -3912,7 +3915,8 @@ from mypy_boto3_rds.type_defs import ModifyDBClusterParameterGroupMessageRequest
 Required fields:
 
 - `DBClusterParameterGroupName`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## ModifyDBClusterResultTypeDef
 
@@ -3939,8 +3943,8 @@ Required fields:
 
 Optional fields:
 
-- `ValuesToAdd`: `List`\[`str`\]
-- `ValuesToRemove`: `List`\[`str`\]
+- `ValuesToAdd`: `Sequence`\[`str`\]
+- `ValuesToRemove`: `Sequence`\[`str`\]
 
 ## ModifyDBClusterSnapshotAttributeResultTypeDef
 
@@ -3970,8 +3974,8 @@ Optional fields:
 - `AllocatedStorage`: `int`
 - `DBInstanceClass`: `str`
 - `DBSubnetGroupName`: `str`
-- `DBSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `DBSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `ApplyImmediately`: `bool`
 - `MasterUserPassword`: `str`
 - `DBParameterGroupName`: `str`
@@ -4005,7 +4009,7 @@ Optional fields:
 - `CloudwatchLogsExportConfiguration`:
   [CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef)
 - `ProcessorFeatures`:
-  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
+  `Sequence`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `UseDefaultProcessorFeatures`: `bool`
 - `DeletionProtection`: `bool`
 - `MaxAllocatedStorage`: `int`
@@ -4035,7 +4039,8 @@ from mypy_boto3_rds.type_defs import ModifyDBParameterGroupMessageRequestTypeDef
 Required fields:
 
 - `DBParameterGroupName`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## ModifyDBProxyEndpointRequestRequestTypeDef
 
@@ -4050,7 +4055,7 @@ Required fields:
 Optional fields:
 
 - `NewDBProxyEndpointName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 
 ## ModifyDBProxyEndpointResponseTypeDef
 
@@ -4079,12 +4084,12 @@ Optional fields:
 
 - `NewDBProxyName`: `str`
 - `Auth`:
-  `List`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
+  `Sequence`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
 - `RequireTLS`: `bool`
 - `IdleClientTimeout`: `int`
 - `DebugLogging`: `bool`
 - `RoleArn`: `str`
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 
 ## ModifyDBProxyResponseTypeDef
 
@@ -4141,8 +4146,8 @@ Required fields:
 
 Optional fields:
 
-- `ValuesToAdd`: `List`\[`str`\]
-- `ValuesToRemove`: `List`\[`str`\]
+- `ValuesToAdd`: `Sequence`\[`str`\]
+- `ValuesToRemove`: `Sequence`\[`str`\]
 
 ## ModifyDBSnapshotAttributeResultTypeDef
 
@@ -4193,7 +4198,7 @@ from mypy_boto3_rds.type_defs import ModifyDBSubnetGroupMessageRequestTypeDef
 Required fields:
 
 - `DBSubnetGroupName`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -4225,7 +4230,7 @@ Optional fields:
 
 - `SnsTopicArn`: `str`
 - `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
 
 ## ModifyEventSubscriptionResultTypeDef
@@ -4280,8 +4285,8 @@ Required fields:
 Optional fields:
 
 - `OptionsToInclude`:
-  `List`\[[OptionConfigurationTypeDef](./type_defs.md#optionconfigurationtypedef)\]
-- `OptionsToRemove`: `List`\[`str`\]
+  `Sequence`\[[OptionConfigurationTypeDef](./type_defs.md#optionconfigurationtypedef)\]
+- `OptionsToRemove`: `Sequence`\[`str`\]
 - `ApplyImmediately`: `bool`
 
 ## ModifyOptionGroupResultTypeDef
@@ -4310,10 +4315,10 @@ Optional fields:
 
 - `Port`: `int`
 - `OptionVersion`: `str`
-- `DBSecurityGroupMemberships`: `List`\[`str`\]
-- `VpcSecurityGroupMemberships`: `List`\[`str`\]
+- `DBSecurityGroupMemberships`: `Sequence`\[`str`\]
+- `VpcSecurityGroupMemberships`: `Sequence`\[`str`\]
 - `OptionSettings`:
-  `List`\[[OptionSettingTypeDef](./type_defs.md#optionsettingtypedef)\]
+  `Sequence`\[[OptionSettingTypeDef](./type_defs.md#optionsettingtypedef)\]
 
 ## OptionGroupMembershipTypeDef
 
@@ -4702,7 +4707,7 @@ Optional fields:
 
 - `ReservedDBInstanceId`: `str`
 - `DBInstanceCount`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PurchaseReservedDBInstancesOfferingResultTypeDef
 
@@ -4779,8 +4784,8 @@ Required fields:
 Optional fields:
 
 - `TargetGroupName`: `str`
-- `DBInstanceIdentifiers`: `List`\[`str`\]
-- `DBClusterIdentifiers`: `List`\[`str`\]
+- `DBInstanceIdentifiers`: `Sequence`\[`str`\]
+- `DBClusterIdentifiers`: `Sequence`\[`str`\]
 
 ## RegisterDBProxyTargetsResponseTypeDef
 
@@ -4878,7 +4883,7 @@ from mypy_boto3_rds.type_defs import RemoveTagsFromResourceMessageRequestTypeDef
 Required fields:
 
 - `ResourceName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ReservedDBInstanceMessageTypeDef
 
@@ -4967,7 +4972,8 @@ Required fields:
 Optional fields:
 
 - `ResetAllParameters`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## ResetDBParameterGroupMessageRequestTypeDef
 
@@ -4982,7 +4988,8 @@ Required fields:
 Optional fields:
 
 - `ResetAllParameters`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## ResourcePendingMaintenanceActionsTypeDef
 
@@ -5029,25 +5036,25 @@ Required fields:
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `BackupRetentionPeriod`: `int`
 - `CharacterSetName`: `str`
 - `DatabaseName`: `str`
 - `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `DBSubnetGroupName`: `str`
 - `EngineVersion`: `str`
 - `Port`: `int`
 - `OptionGroupName`: `str`
 - `PreferredBackupWindow`: `str`
 - `PreferredMaintenanceWindow`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
 - `S3Prefix`: `str`
 - `BacktrackWindow`: `int`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DeletionProtection`: `bool`
 - `CopyTagsToSnapshot`: `bool`
 - `Domain`: `str`
@@ -5079,18 +5086,18 @@ Required fields:
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `EngineVersion`: `str`
 - `Port`: `int`
 - `DBSubnetGroupName`: `str`
 - `DatabaseName`: `str`
 - `OptionGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
 - `BacktrackWindow`: `int`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `EngineMode`: `str`
 - `ScalingConfiguration`:
   [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
@@ -5131,12 +5138,12 @@ Optional fields:
 - `Port`: `int`
 - `DBSubnetGroupName`: `str`
 - `OptionGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
 - `BacktrackWindow`: `int`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DBClusterParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 - `CopyTagsToSnapshot`: `bool`
@@ -5183,18 +5190,18 @@ Optional fields:
 - `Engine`: `str`
 - `Iops`: `int`
 - `OptionGroupName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageType`: `str`
 - `TdeCredentialArn`: `str`
 - `TdeCredentialPassword`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `Domain`: `str`
 - `CopyTagsToSnapshot`: `bool`
 - `DomainIAMRoleName`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `ProcessorFeatures`:
-  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
+  `Sequence`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `UseDefaultProcessorFeatures`: `bool`
 - `DBParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
@@ -5234,8 +5241,8 @@ Optional fields:
 - `AllocatedStorage`: `int`
 - `MasterUsername`: `str`
 - `MasterUserPassword`: `str`
-- `DBSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `DBSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `AvailabilityZone`: `str`
 - `DBSubnetGroupName`: `str`
 - `PreferredMaintenanceWindow`: `str`
@@ -5250,7 +5257,7 @@ Optional fields:
 - `Iops`: `int`
 - `OptionGroupName`: `str`
 - `PubliclyAccessible`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageType`: `str`
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
@@ -5262,9 +5269,9 @@ Optional fields:
 - `EnablePerformanceInsights`: `bool`
 - `PerformanceInsightsKMSKeyId`: `str`
 - `PerformanceInsightsRetentionPeriod`: `int`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `ProcessorFeatures`:
-  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
+  `Sequence`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `UseDefaultProcessorFeatures`: `bool`
 - `DeletionProtection`: `bool`
 - `MaxAllocatedStorage`: `int`
@@ -5309,17 +5316,17 @@ Optional fields:
 - `Iops`: `int`
 - `OptionGroupName`: `str`
 - `CopyTagsToSnapshot`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageType`: `str`
 - `TdeCredentialArn`: `str`
 - `TdeCredentialPassword`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `Domain`: `str`
 - `DomainIAMRoleName`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `ProcessorFeatures`:
-  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
+  `Sequence`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `UseDefaultProcessorFeatures`: `bool`
 - `DBParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
@@ -5394,6 +5401,7 @@ Optional fields:
 - `AutoPause`: `bool`
 - `SecondsUntilAutoPause`: `int`
 - `TimeoutAction`: `str`
+- `SecondsBeforeTimeout`: `int`
 
 ## ScalingConfigurationTypeDef
 
@@ -5408,6 +5416,7 @@ Optional fields:
 - `AutoPause`: `bool`
 - `SecondsUntilAutoPause`: `int`
 - `TimeoutAction`: `str`
+- `SecondsBeforeTimeout`: `int`
 
 ## SourceRegionMessageTypeDef
 
@@ -5561,7 +5570,7 @@ Required fields:
 Optional fields:
 
 - `S3Prefix`: `str`
-- `ExportOnly`: `List`\[`str`\]
+- `ExportOnly`: `Sequence`\[`str`\]
 
 ## StopActivityStreamRequestRequestTypeDef
 

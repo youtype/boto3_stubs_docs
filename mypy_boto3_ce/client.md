@@ -177,9 +177,11 @@ Keyword-only arguments:
   [CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype))
   *(required)*
 - `Rules`:
-  `List`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
+  `Sequence`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
   *(required)*
 - `DefaultValue`: `str`
+- `SplitChargeRules`:
+  `Sequence`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
 
 Returns
 [CreateCostCategoryDefinitionResponseTypeDef](./type_defs.md#createcostcategorydefinitionresponsetypedef).
@@ -274,7 +276,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -282,8 +284,8 @@ Returns `str`.
 
 ### get_anomalies
 
-Retrieves all of the cost anomalies detected on your account, during the time
-period specified by the `DateInterval` object.
+Retrieves all of the cost anomalies detected on your account during the time
+period that's specified by the `DateInterval` object.
 
 Type annotations for `boto3.client("ce").get_anomalies` method.
 
@@ -322,7 +324,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `MonitorArnList`: `List`\[`str`\]
+- `MonitorArnList`: `Sequence`\[`str`\]
 - `NextPageToken`: `str`
 - `MaxResults`: `int`
 
@@ -343,7 +345,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `SubscriptionArnList`: `List`\[`str`\]
+- `SubscriptionArnList`: `Sequence`\[`str`\]
 - `MonitorArn`: `str`
 - `NextPageToken`: `str`
 - `MaxResults`: `int`
@@ -368,10 +370,10 @@ Keyword-only arguments:
 - `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
   *(required)*
 - `Granularity`: [GranularityType](./literals.md#granularitytype) *(required)*
-- `Metrics`: `List`\[`str`\] *(required)*
+- `Metrics`: `Sequence`\[`str`\] *(required)*
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `GroupBy`:
-  `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
+  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `NextPageToken`: `str`
 
 Returns
@@ -396,9 +398,9 @@ Keyword-only arguments:
   *(required)*
 - `Granularity`: [GranularityType](./literals.md#granularitytype) *(required)*
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef) *(required)*
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 - `GroupBy`:
-  `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
+  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `NextPageToken`: `str`
 
 Returns
@@ -424,7 +426,7 @@ Keyword-only arguments:
 - `CostCategoryName`: `str`
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `SortBy`:
-  `List`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
+  `Sequence`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
@@ -478,7 +480,7 @@ Keyword-only arguments:
 - `Context`: [ContextType](./literals.md#contexttype)
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `SortBy`:
-  `List`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
+  `Sequence`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
@@ -502,10 +504,10 @@ Keyword-only arguments:
 - `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
   *(required)*
 - `GroupBy`:
-  `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
+  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `Granularity`: [GranularityType](./literals.md#granularitytype)
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 - `NextPageToken`: `str`
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 - `MaxResults`: `int`
@@ -561,7 +563,7 @@ Keyword-only arguments:
 - `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
   *(required)*
 - `GroupBy`:
-  `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
+  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `Granularity`: [GranularityType](./literals.md#granularitytype)
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
@@ -614,10 +616,10 @@ Keyword-only arguments:
 - `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
   *(required)*
 - `GroupBy`:
-  `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
+  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `Granularity`: [GranularityType](./literals.md#granularitytype)
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
@@ -702,7 +704,7 @@ Keyword-only arguments:
   *(required)*
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `DataType`:
-  `List`\[[SavingsPlansDataTypeType](./literals.md#savingsplansdatatypetype)\]
+  `Sequence`\[[SavingsPlansDataTypeType](./literals.md#savingsplansdatatypetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
@@ -730,7 +732,7 @@ Keyword-only arguments:
 - `TagKey`: `str`
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `SortBy`:
-  `List`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
+  `Sequence`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
@@ -843,9 +845,9 @@ Keyword-only arguments:
 - `Threshold`: `float`
 - `Frequency`:
   [AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype)
-- `MonitorArnList`: `List`\[`str`\]
+- `MonitorArnList`: `Sequence`\[`str`\]
 - `Subscribers`:
-  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 - `SubscriptionName`: `str`
 
 Returns
@@ -871,9 +873,11 @@ Keyword-only arguments:
   [CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype))
   *(required)*
 - `Rules`:
-  `List`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
+  `Sequence`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
   *(required)*
 - `DefaultValue`: `str`
+- `SplitChargeRules`:
+  `Sequence`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
 
 Returns
 [UpdateCostCategoryDefinitionResponseTypeDef](./type_defs.md#updatecostcategorydefinitionresponsetypedef).

@@ -23,6 +23,7 @@ type annotations stubs module
     - [delete_cluster](#delete_cluster)
     - [delete_fargate_profile](#delete_fargate_profile)
     - [delete_nodegroup](#delete_nodegroup)
+    - [deregister_cluster](#deregister_cluster)
     - [describe_addon](#describe_addon)
     - [describe_addon_versions](#describe_addon_versions)
     - [describe_cluster](#describe_cluster)
@@ -39,6 +40,7 @@ type annotations stubs module
     - [list_nodegroups](#list_nodegroups)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_updates](#list_updates)
+    - [register_cluster](#register_cluster)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_addon](#update_addon)
@@ -121,7 +123,7 @@ Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `encryptionConfig`:
-  `List`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
+  `Sequence`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
   *(required)*
 - `clientRequestToken`: `str`
 
@@ -147,7 +149,7 @@ Keyword-only arguments:
 - `oidc`:
   [OidcIdentityProviderConfigRequestTypeDef](./type_defs.md#oidcidentityproviderconfigrequesttypedef)
   *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `clientRequestToken`: `str`
 
 Returns
@@ -189,7 +191,7 @@ Keyword-only arguments:
 - `resolveConflicts`:
   [ResolveConflictsType](./literals.md#resolveconflictstype)
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAddonResponseTypeDef](./type_defs.md#createaddonresponsetypedef).
@@ -218,9 +220,9 @@ Keyword-only arguments:
   [KubernetesNetworkConfigRequestTypeDef](./type_defs.md#kubernetesnetworkconfigrequesttypedef)
 - `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `encryptionConfig`:
-  `List`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
+  `Sequence`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
 
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
@@ -242,11 +244,11 @@ Keyword-only arguments:
 - `fargateProfileName`: `str` *(required)*
 - `clusterName`: `str` *(required)*
 - `podExecutionRoleArn`: `str` *(required)*
-- `subnets`: `List`\[`str`\]
+- `subnets`: `Sequence`\[`str`\]
 - `selectors`:
-  `List`\[[FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef)\]
+  `Sequence`\[[FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef)\]
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateFargateProfileResponseTypeDef](./type_defs.md#createfargateprofileresponsetypedef).
@@ -267,18 +269,18 @@ Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `nodegroupName`: `str` *(required)*
-- `subnets`: `List`\[`str`\] *(required)*
+- `subnets`: `Sequence`\[`str`\] *(required)*
 - `nodeRole`: `str` *(required)*
 - `scalingConfig`:
   [NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef)
 - `diskSize`: `int`
-- `instanceTypes`: `List`\[`str`\]
+- `instanceTypes`: `Sequence`\[`str`\]
 - `amiType`: [AMITypesType](./literals.md#amitypestype)
 - `remoteAccess`:
   [RemoteAccessConfigTypeDef](./type_defs.md#remoteaccessconfigtypedef)
-- `labels`: `Dict`\[`str`, `str`\]
-- `taints`: `List`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `labels`: `Mapping`\[`str`, `str`\]
+- `taints`: `Sequence`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `clientRequestToken`: `str`
 - `launchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
@@ -307,6 +309,7 @@ Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `addonName`: `str` *(required)*
+- `preserve`: `bool`
 
 Returns
 [DeleteAddonResponseTypeDef](./type_defs.md#deleteaddonresponsetypedef).
@@ -369,6 +372,25 @@ Keyword-only arguments:
 
 Returns
 [DeleteNodegroupResponseTypeDef](./type_defs.md#deletenodegroupresponsetypedef).
+
+### deregister_cluster
+
+Deregisters a connected cluster to remove it from the Amazon EKS control plane.
+
+Type annotations for `boto3.client("eks").deregister_cluster` method.
+
+Boto3 documentation:
+[EKS.Client.deregister_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.deregister_cluster)
+
+Arguments mapping described in
+[DeregisterClusterRequestRequestTypeDef](./type_defs.md#deregisterclusterrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `name`: `str` *(required)*
+
+Returns
+[DeregisterClusterResponseTypeDef](./type_defs.md#deregisterclusterresponsetypedef).
 
 ### describe_addon
 
@@ -552,7 +574,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -595,6 +617,7 @@ Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `include`: `Sequence`\[`str`\]
 
 Returns
 [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
@@ -708,6 +731,29 @@ Keyword-only arguments:
 Returns
 [ListUpdatesResponseTypeDef](./type_defs.md#listupdatesresponsetypedef).
 
+### register_cluster
+
+Connects a Kubernetes cluster to the Amazon EKS control plane.
+
+Type annotations for `boto3.client("eks").register_cluster` method.
+
+Boto3 documentation:
+[EKS.Client.register_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.register_cluster)
+
+Arguments mapping described in
+[RegisterClusterRequestRequestTypeDef](./type_defs.md#registerclusterrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `name`: `str` *(required)*
+- `connectorConfig`:
+  [ConnectorConfigRequestTypeDef](./type_defs.md#connectorconfigrequesttypedef)
+  *(required)*
+- `clientRequestToken`: `str`
+
+Returns
+[RegisterClusterResponseTypeDef](./type_defs.md#registerclusterresponsetypedef).
+
 ### tag_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
@@ -723,7 +769,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -742,7 +788,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

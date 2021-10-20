@@ -42,20 +42,21 @@ Boto3 documentation:
 Arguments for `GetAssetPropertyAggregatesPaginator.paginate` method:
 
 - `aggregateTypes`:
-  `List`\[[AggregateTypeType](./literals.md#aggregatetypetype)\] *(required)*
+  `Sequence`\[[AggregateTypeType](./literals.md#aggregatetypetype)\]
+  *(required)*
 - `resolution`: `str` *(required)*
 - `startDate`: `Union`\[`datetime`, `str`\] *(required)*
 - `endDate`: `Union`\[`datetime`, `str`\] *(required)*
 - `assetId`: `str`
 - `propertyId`: `str`
 - `propertyAlias`: `str`
-- `qualities`: `List`\[[QualityType](./literals.md#qualitytype)\]
+- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
 - `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAssetPropertyAggregatesPaginator.paginate` returns
-`Iterator`\[[GetAssetPropertyAggregatesResponseTypeDef](./type_defs.md#getassetpropertyaggregatesresponsetypedef)\].
+`_PageIterator`\[[GetAssetPropertyAggregatesResponseTypeDef](./type_defs.md#getassetpropertyaggregatesresponsetypedef)\].
 
 ## GetAssetPropertyValueHistoryPaginator
 
@@ -81,13 +82,13 @@ Arguments for `GetAssetPropertyValueHistoryPaginator.paginate` method:
 - `propertyAlias`: `str`
 - `startDate`: `Union`\[`datetime`, `str`\]
 - `endDate`: `Union`\[`datetime`, `str`\]
-- `qualities`: `List`\[[QualityType](./literals.md#qualitytype)\]
+- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
 - `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAssetPropertyValueHistoryPaginator.paginate` returns
-`Iterator`\[[GetAssetPropertyValueHistoryResponseTypeDef](./type_defs.md#getassetpropertyvaluehistoryresponsetypedef)\].
+`_PageIterator`\[[GetAssetPropertyValueHistoryResponseTypeDef](./type_defs.md#getassetpropertyvaluehistoryresponsetypedef)\].
 
 ## GetInterpolatedAssetPropertyValuesPaginator
 
@@ -118,11 +119,12 @@ Arguments for `GetInterpolatedAssetPropertyValuesPaginator.paginate` method:
 - `propertyAlias`: `str`
 - `startTimeOffsetInNanos`: `int`
 - `endTimeOffsetInNanos`: `int`
+- `intervalWindowInSeconds`: `int`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetInterpolatedAssetPropertyValuesPaginator.paginate` returns
-`Iterator`\[[GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef)\].
+`_PageIterator`\[[GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef)\].
 
 ## ListAccessPoliciesPaginator
 
@@ -152,7 +154,7 @@ Arguments for `ListAccessPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccessPoliciesPaginator.paginate` returns
-`Iterator`\[[ListAccessPoliciesResponseTypeDef](./type_defs.md#listaccesspoliciesresponsetypedef)\].
+`_PageIterator`\[[ListAccessPoliciesResponseTypeDef](./type_defs.md#listaccesspoliciesresponsetypedef)\].
 
 ## ListAssetModelsPaginator
 
@@ -177,7 +179,7 @@ Arguments for `ListAssetModelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssetModelsPaginator.paginate` returns
-`Iterator`\[[ListAssetModelsResponseTypeDef](./type_defs.md#listassetmodelsresponsetypedef)\].
+`_PageIterator`\[[ListAssetModelsResponseTypeDef](./type_defs.md#listassetmodelsresponsetypedef)\].
 
 ## ListAssetRelationshipsPaginator
 
@@ -205,7 +207,7 @@ Arguments for `ListAssetRelationshipsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssetRelationshipsPaginator.paginate` returns
-`Iterator`\[[ListAssetRelationshipsResponseTypeDef](./type_defs.md#listassetrelationshipsresponsetypedef)\].
+`_PageIterator`\[[ListAssetRelationshipsResponseTypeDef](./type_defs.md#listassetrelationshipsresponsetypedef)\].
 
 ## ListAssetsPaginator
 
@@ -232,7 +234,7 @@ Arguments for `ListAssetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssetsPaginator.paginate` returns
-`Iterator`\[[ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef)\].
+`_PageIterator`\[[ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef)\].
 
 ## ListAssociatedAssetsPaginator
 
@@ -261,7 +263,7 @@ Arguments for `ListAssociatedAssetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociatedAssetsPaginator.paginate` returns
-`Iterator`\[[ListAssociatedAssetsResponseTypeDef](./type_defs.md#listassociatedassetsresponsetypedef)\].
+`_PageIterator`\[[ListAssociatedAssetsResponseTypeDef](./type_defs.md#listassociatedassetsresponsetypedef)\].
 
 ## ListDashboardsPaginator
 
@@ -287,7 +289,7 @@ Arguments for `ListDashboardsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDashboardsPaginator.paginate` returns
-`Iterator`\[[ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef)\].
+`_PageIterator`\[[ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef)\].
 
 ## ListGatewaysPaginator
 
@@ -312,7 +314,7 @@ Arguments for `ListGatewaysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGatewaysPaginator.paginate` returns
-`Iterator`\[[ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef)\].
+`_PageIterator`\[[ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef)\].
 
 ## ListPortalsPaginator
 
@@ -337,7 +339,7 @@ Arguments for `ListPortalsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPortalsPaginator.paginate` returns
-`Iterator`\[[ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef)\].
+`_PageIterator`\[[ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef)\].
 
 ## ListProjectAssetsPaginator
 
@@ -363,7 +365,7 @@ Arguments for `ListProjectAssetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectAssetsPaginator.paginate` returns
-`Iterator`\[[ListProjectAssetsResponseTypeDef](./type_defs.md#listprojectassetsresponsetypedef)\].
+`_PageIterator`\[[ListProjectAssetsResponseTypeDef](./type_defs.md#listprojectassetsresponsetypedef)\].
 
 ## ListProjectsPaginator
 
@@ -389,4 +391,4 @@ Arguments for `ListProjectsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectsPaginator.paginate` returns
-`Iterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].
+`_PageIterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].

@@ -105,7 +105,7 @@ Keyword-only arguments:
   *(required)*
 - `PeriodInSeconds`: `int`
 - `PartitionBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
-- `Filter`: `Dict`\[`str`, `str`\]
+- `Filter`: `Mapping`\[`str`, `str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -124,7 +124,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -150,7 +150,7 @@ Keyword-only arguments:
 - `Identifier`: `str` *(required)*
 - `Group`: `str` *(required)*
 - `GroupIdentifier`: `str` *(required)*
-- `RequestedDimensions`: `List`\[`str`\]
+- `RequestedDimensions`: `Sequence`\[`str`\]
 
 Returns
 [GetDimensionKeyDetailsResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponsetypedef).
@@ -174,7 +174,7 @@ Keyword-only arguments:
   [ServiceTypeType](./literals.md#servicetypetype)) *(required)*
 - `Identifier`: `str` *(required)*
 - `MetricQueries`:
-  `List`\[[MetricQueryTypeDef](./type_defs.md#metricquerytypedef)\]
+  `Sequence`\[[MetricQueryTypeDef](./type_defs.md#metricquerytypedef)\]
   *(required)*
 - `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*

@@ -164,7 +164,7 @@ Keyword-only arguments:
 - `AnomalyDetectorArn`: `str` *(required)*
 - `Action`: [ActionTypeDef](./type_defs.md#actiontypedef) *(required)*
 - `AlertDescription`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAlertResponseTypeDef](./type_defs.md#createalertresponsetypedef).
@@ -190,7 +190,7 @@ Keyword-only arguments:
   *(required)*
 - `AnomalyDetectorDescription`: `str`
 - `KmsKeyArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAnomalyDetectorResponseTypeDef](./type_defs.md#createanomalydetectorresponsetypedef).
@@ -211,7 +211,7 @@ Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 - `MetricSetName`: `str` *(required)*
-- `MetricList`: `List`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
+- `MetricList`: `Sequence`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
   *(required)*
 - `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
   *(required)*
@@ -219,10 +219,10 @@ Keyword-only arguments:
 - `Offset`: `int`
 - `TimestampColumn`:
   [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
-- `DimensionList`: `List`\[`str`\]
+- `DimensionList`: `Sequence`\[`str`\]
 - `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
 - `Timezone`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateMetricSetResponseTypeDef](./type_defs.md#createmetricsetresponsetypedef).
@@ -359,7 +359,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -598,7 +598,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -619,7 +619,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -663,11 +663,11 @@ Keyword-only arguments:
 
 - `MetricSetArn`: `str` *(required)*
 - `MetricSetDescription`: `str`
-- `MetricList`: `List`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
+- `MetricList`: `Sequence`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
 - `Offset`: `int`
 - `TimestampColumn`:
   [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
-- `DimensionList`: `List`\[`str`\]
+- `DimensionList`: `Sequence`\[`str`\]
 - `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
 - `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
 

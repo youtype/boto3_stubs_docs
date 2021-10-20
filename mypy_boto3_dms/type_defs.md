@@ -125,6 +125,7 @@ type annotations stubs module
   - [PostgreSQLSettingsTypeDef](#postgresqlsettingstypedef)
   - [RebootReplicationInstanceMessageRequestTypeDef](#rebootreplicationinstancemessagerequesttypedef)
   - [RebootReplicationInstanceResponseTypeDef](#rebootreplicationinstanceresponsetypedef)
+  - [RedisSettingsTypeDef](#redissettingstypedef)
   - [RedshiftSettingsTypeDef](#redshiftsettingstypedef)
   - [RefreshSchemasMessageRequestTypeDef](#refreshschemasmessagerequesttypedef)
   - [RefreshSchemasResponseTypeDef](#refreshschemasresponsetypedef)
@@ -185,7 +186,7 @@ from mypy_boto3_dms.type_defs import AddTagsToResourceMessageRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ApplyPendingMaintenanceActionMessageRequestTypeDef
 
@@ -301,7 +302,7 @@ Optional fields:
 - `DatabaseName`: `str`
 - `ExtraConnectionAttributes`: `str`
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CertificateArn`: `str`
 - `SslMode`: [DmsSslModeValueType](./literals.md#dmssslmodevaluetype)
 - `ServiceAccessRoleArn`: `str`
@@ -335,6 +336,7 @@ Optional fields:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `ResourceIdentifier`: `str`
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+- `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
 
 ## CreateEndpointResponseTypeDef
 
@@ -362,10 +364,10 @@ Required fields:
 Optional fields:
 
 - `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
-- `SourceIds`: `List`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
+- `SourceIds`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEventSubscriptionResponseTypeDef
 
@@ -394,14 +396,14 @@ Required fields:
 Optional fields:
 
 - `AllocatedStorage`: `int`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `AvailabilityZone`: `str`
 - `ReplicationSubnetGroupIdentifier`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `MultiAZ`: `bool`
 - `EngineVersion`: `str`
 - `AutoMinorVersionUpgrade`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `PubliclyAccessible`: `bool`
 - `DnsNameServers`: `str`
@@ -430,11 +432,11 @@ Required fields:
 
 - `ReplicationSubnetGroupIdentifier`: `str`
 - `ReplicationSubnetGroupDescription`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateReplicationSubnetGroupResponseTypeDef
 
@@ -471,7 +473,7 @@ Optional fields:
 - `CdcStartTime`: `Union`\[`datetime`, `str`\]
 - `CdcStartPosition`: `str`
 - `CdcStopPosition`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TaskData`: `str`
 - `ResourceIdentifier`: `str`
 
@@ -709,7 +711,7 @@ from mypy_boto3_dms.type_defs import DescribeCertificatesMessageRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -735,7 +737,7 @@ from mypy_boto3_dms.type_defs import DescribeConnectionsMessageRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -790,7 +792,7 @@ from mypy_boto3_dms.type_defs import DescribeEndpointTypesMessageRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -816,7 +818,7 @@ from mypy_boto3_dms.type_defs import DescribeEndpointsMessageRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -842,7 +844,7 @@ from mypy_boto3_dms.type_defs import DescribeEventCategoriesMessageRequestTypeDe
 Optional fields:
 
 - `SourceType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribeEventCategoriesResponseTypeDef
 
@@ -866,7 +868,7 @@ from mypy_boto3_dms.type_defs import DescribeEventSubscriptionsMessageRequestTyp
 Optional fields:
 
 - `SubscriptionName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -898,8 +900,8 @@ Optional fields:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Duration`: `int`
-- `EventCategories`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `EventCategories`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -950,7 +952,7 @@ from mypy_boto3_dms.type_defs import DescribePendingMaintenanceActionsMessageReq
 Optional fields:
 
 - `ReplicationInstanceArn`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -1029,7 +1031,7 @@ from mypy_boto3_dms.type_defs import DescribeReplicationInstancesMessageRequestT
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1055,7 +1057,7 @@ from mypy_boto3_dms.type_defs import DescribeReplicationSubnetGroupsMessageReque
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1108,7 +1110,7 @@ from mypy_boto3_dms.type_defs import DescribeReplicationTaskAssessmentRunsMessag
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1134,7 +1136,7 @@ from mypy_boto3_dms.type_defs import DescribeReplicationTaskIndividualAssessment
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1160,7 +1162,7 @@ from mypy_boto3_dms.type_defs import DescribeReplicationTasksMessageRequestTypeD
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `WithoutSettings`: `bool`
@@ -1221,7 +1223,7 @@ Optional fields:
 
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribeTableStatisticsResponseTypeDef
 
@@ -1312,6 +1314,7 @@ Optional fields:
 - `Applicability`: `str`
 - `IntValueMin`: `int`
 - `IntValueMax`: `int`
+- `DefaultValue`: `str`
 
 ## EndpointTypeDef
 
@@ -1367,6 +1370,7 @@ Optional fields:
 - `IBMDb2Settings`:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+- `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
 
 ## EventCategoryGroupTypeDef
 
@@ -1421,7 +1425,7 @@ from mypy_boto3_dms.type_defs import FilterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## IBMDb2SettingsTypeDef
 
@@ -1456,7 +1460,7 @@ Optional fields:
 
 - `CertificatePem`: `str`
 - `CertificateWallet`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ImportCertificateResponseTypeDef
 
@@ -1497,6 +1501,7 @@ Optional fields:
 - `SslCaCertificateArn`: `str`
 - `SaslUsername`: `str`
 - `SaslPassword`: `str`
+- `NoHexPrefix`: `bool`
 
 ## KinesisSettingsTypeDef
 
@@ -1516,6 +1521,7 @@ Optional fields:
 - `IncludeTableAlterOperations`: `bool`
 - `IncludeControlDetails`: `bool`
 - `IncludeNullAndEmpty`: `bool`
+- `NoHexPrefix`: `bool`
 
 ## ListTagsForResourceMessageRequestTypeDef
 
@@ -1523,9 +1529,10 @@ Optional fields:
 from mypy_boto3_dms.type_defs import ListTagsForResourceMessageRequestTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `ResourceArn`: `str`
+- `ResourceArnList`: `Sequence`\[`str`\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1616,6 +1623,8 @@ Optional fields:
 - `IBMDb2Settings`:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+- `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
+- `ExactSettings`: `bool`
 
 ## ModifyEndpointResponseTypeDef
 
@@ -1643,7 +1652,7 @@ Optional fields:
 
 - `SnsTopicArn`: `str`
 - `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
 
 ## ModifyEventSubscriptionResponseTypeDef
@@ -1674,7 +1683,7 @@ Optional fields:
 - `AllocatedStorage`: `int`
 - `ApplyImmediately`: `bool`
 - `ReplicationInstanceClass`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `PreferredMaintenanceWindow`: `str`
 - `MultiAZ`: `bool`
 - `EngineVersion`: `str`
@@ -1704,7 +1713,7 @@ from mypy_boto3_dms.type_defs import ModifyReplicationSubnetGroupMessageRequestT
 Required fields:
 
 - `ReplicationSubnetGroupIdentifier`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1859,6 +1868,7 @@ Optional fields:
 - `AddSupplementalLogging`: `bool`
 - `ArchivedLogDestId`: `int`
 - `AdditionalArchivedLogDestId`: `int`
+- `ExtraArchivedLogDestIds`: `Sequence`\[`int`\]
 - `AllowSelectNestedTables`: `bool`
 - `ParallelAsmReadThreads`: `int`
 - `ReadAheadBlocks`: `int`
@@ -1887,7 +1897,11 @@ Optional fields:
 - `SecurityDbEncryptionName`: `str`
 - `ServerName`: `str`
 - `SpatialDataOptionToGeoJsonFunctionName`: `str`
+- `StandbyDelayTime`: `int`
 - `Username`: `str`
+- `UseBFile`: `bool`
+- `UseDirectPathFullLoad`: `bool`
+- `UseLogminerReader`: `bool`
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 - `SecretsManagerOracleAsmAccessRoleArn`: `str`
@@ -1954,11 +1968,15 @@ Optional fields:
 - `DdlArtifactsSchema`: `str`
 - `ExecuteTimeout`: `int`
 - `FailTasksOnLobTruncation`: `bool`
+- `HeartbeatEnable`: `bool`
+- `HeartbeatSchema`: `str`
+- `HeartbeatFrequency`: `int`
 - `Password`: `str`
 - `Port`: `int`
 - `ServerName`: `str`
 - `Username`: `str`
 - `SlotName`: `str`
+- `PluginName`: [PluginNameValueType](./literals.md#pluginnamevaluetype)
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
@@ -1975,6 +1993,7 @@ Required fields:
 Optional fields:
 
 - `ForceFailover`: `bool`
+- `ForcePlannedFailover`: `bool`
 
 ## RebootReplicationInstanceResponseTypeDef
 
@@ -1988,6 +2007,26 @@ Required fields:
   [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RedisSettingsTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import RedisSettingsTypeDef
+```
+
+Required fields:
+
+- `ServerName`: `str`
+- `Port`: `int`
+
+Optional fields:
+
+- `SslSecurityProtocol`:
+  [SslSecurityProtocolValueType](./literals.md#sslsecurityprotocolvaluetype)
+- `AuthType`: [RedisAuthTypeValueType](./literals.md#redisauthtypevaluetype)
+- `AuthUserName`: `str`
+- `AuthPassword`: `str`
+- `SslCaCertificateArn`: `str`
 
 ## RedshiftSettingsTypeDef
 
@@ -2078,7 +2117,7 @@ Required fields:
 
 - `ReplicationTaskArn`: `str`
 - `TablesToReload`:
-  `List`\[[TableToReloadTypeDef](./type_defs.md#tabletoreloadtypedef)\]
+  `Sequence`\[[TableToReloadTypeDef](./type_defs.md#tabletoreloadtypedef)\]
 
 Optional fields:
 
@@ -2105,7 +2144,7 @@ from mypy_boto3_dms.type_defs import RemoveTagsFromResourceMessageRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ReplicationInstanceTaskLogTypeDef
 
@@ -2361,6 +2400,15 @@ Optional fields:
 - `CsvNoSupValue`: `str`
 - `PreserveTransactions`: `bool`
 - `CdcPath`: `str`
+- `CannedAclForObjects`:
+  [CannedAclForObjectsValueType](./literals.md#cannedaclforobjectsvaluetype)
+- `AddColumnName`: `bool`
+- `CdcMaxBatchInterval`: `int`
+- `CdcMinFileSize`: `int`
+- `CsvNullValue`: `str`
+- `IgnoreHeaderRows`: `int`
+- `MaxFileSize`: `int`
+- `Rfc4180`: `bool`
 
 ## StartReplicationTaskAssessmentMessageRequestTypeDef
 
@@ -2403,8 +2451,8 @@ Optional fields:
 - `ResultLocationFolder`: `str`
 - `ResultEncryptionMode`: `str`
 - `ResultKmsKeyArn`: `str`
-- `IncludeOnly`: `List`\[`str`\]
-- `Exclude`: `List`\[`str`\]
+- `IncludeOnly`: `Sequence`\[`str`\]
+- `Exclude`: `Sequence`\[`str`\]
 
 ## StartReplicationTaskAssessmentRunResponseTypeDef
 
@@ -2566,6 +2614,7 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+- `ResourceArn`: `str`
 
 ## TestConnectionMessageRequestTypeDef
 

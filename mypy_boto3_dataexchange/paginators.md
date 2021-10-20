@@ -10,6 +10,7 @@ type annotations stubs module
 - [Paginators for boto3 DataExchange module](#paginators-for-boto3-dataexchange-module)
   - [ListDataSetRevisionsPaginator](#listdatasetrevisionspaginator)
   - [ListDataSetsPaginator](#listdatasetspaginator)
+  - [ListEventActionsPaginator](#listeventactionspaginator)
   - [ListJobsPaginator](#listjobspaginator)
   - [ListRevisionAssetsPaginator](#listrevisionassetspaginator)
 
@@ -37,7 +38,7 @@ Arguments for `ListDataSetRevisionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataSetRevisionsPaginator.paginate` returns
-`Iterator`\[[ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef)\].
+`_PageIterator`\[[ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef)\].
 
 ## ListDataSetsPaginator
 
@@ -63,7 +64,33 @@ Arguments for `ListDataSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataSetsPaginator.paginate` returns
-`Iterator`\[[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
+`_PageIterator`\[[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
+
+## ListEventActionsPaginator
+
+Type annotations for
+`boto3.client("dataexchange").get_paginator("list_event_actions")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_dataexchange.paginator import ListEventActionsPaginator
+
+def get_list_event_actions_paginator() -> ListEventActionsPaginator:
+    return boto3.client("dataexchange").get_paginator("list_event_actions")
+```
+
+Boto3 documentation:
+[DataExchange.Paginator.ListEventActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListEventActions)
+
+Arguments for `ListEventActionsPaginator.paginate` method:
+
+- `EventSourceId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListEventActionsPaginator.paginate` returns
+`_PageIterator`\[[ListEventActionsResponseTypeDef](./type_defs.md#listeventactionsresponsetypedef)\].
 
 ## ListJobsPaginator
 
@@ -89,7 +116,7 @@ Arguments for `ListJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
+`_PageIterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
 
 ## ListRevisionAssetsPaginator
 
@@ -116,4 +143,4 @@ Arguments for `ListRevisionAssetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRevisionAssetsPaginator.paginate` returns
-`Iterator`\[[ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef)\].
+`_PageIterator`\[[ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef)\].

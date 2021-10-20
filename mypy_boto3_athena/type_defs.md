@@ -102,7 +102,7 @@ from mypy_boto3_athena.type_defs import BatchGetNamedQueryInputRequestTypeDef
 
 Required fields:
 
-- `NamedQueryIds`: `List`\[`str`\]
+- `NamedQueryIds`: `Sequence`\[`str`\]
 
 ## BatchGetNamedQueryOutputTypeDef
 
@@ -127,7 +127,7 @@ from mypy_boto3_athena.type_defs import BatchGetQueryExecutionInputRequestTypeDe
 
 Required fields:
 
-- `QueryExecutionIds`: `List`\[`str`\]
+- `QueryExecutionIds`: `Sequence`\[`str`\]
 
 ## BatchGetQueryExecutionOutputTypeDef
 
@@ -195,8 +195,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateNamedQueryInputRequestTypeDef
 
@@ -259,7 +259,7 @@ Optional fields:
 - `Configuration`:
   [WorkGroupConfigurationTypeDef](./type_defs.md#workgroupconfigurationtypedef)
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DataCatalogSummaryTypeDef
 
@@ -1072,7 +1072,7 @@ from mypy_boto3_athena.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1118,7 +1118,7 @@ from mypy_boto3_athena.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDataCatalogInputRequestTypeDef
 
@@ -1134,7 +1134,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 
 ## UpdatePreparedStatementInputRequestTypeDef
 

@@ -28,5 +28,5 @@ Boto3 documentation:
 
 Arguments for `IdentityExistsWaiter.wait` method:
 
-- `Identities`: `List`\[`str`\] *(required)*
+- `Identities`: `Sequence`\[`str`\] *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

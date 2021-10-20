@@ -93,7 +93,7 @@ from mypy_boto3_machinelearning.type_defs import AddTagsInputRequestTypeDef
 
 Required fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResourceId`: `str`
 - `ResourceType`:
   [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
@@ -295,7 +295,7 @@ Required fields:
 Optional fields:
 
 - `MLModelName`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 - `Recipe`: `str`
 - `RecipeUri`: `str`
 
@@ -483,7 +483,7 @@ from mypy_boto3_machinelearning.type_defs import DeleteTagsInputRequestTypeDef
 
 Required fields:
 
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 - `ResourceId`: `str`
 - `ResourceType`:
   [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
@@ -919,7 +919,7 @@ from mypy_boto3_machinelearning.type_defs import PredictInputRequestTypeDef
 Required fields:
 
 - `MLModelId`: `str`
-- `Record`: `Dict`\[`str`, `str`\]
+- `Record`: `Mapping`\[`str`, `str`\]
 - `PredictEndpoint`: `str`
 
 ## PredictOutputTypeDef
@@ -965,7 +965,7 @@ Required fields:
 - `ResourceRole`: `str`
 - `ServiceRole`: `str`
 - `SubnetId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 Optional fields:
 

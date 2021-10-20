@@ -33,7 +33,7 @@ Optional fields:
 - `itemId`: `str`
 - `properties`: `str`
 - `recommendationId`: `str`
-- `impression`: `List`\[`str`\]
+- `impression`: `Sequence`\[`str`\]
 
 ## ItemTypeDef
 
@@ -59,7 +59,7 @@ Required fields:
 
 - `trackingId`: `str`
 - `sessionId`: `str`
-- `eventList`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
+- `eventList`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
 
 Optional fields:
 
@@ -74,7 +74,7 @@ from mypy_boto3_personalize_events.type_defs import PutItemsRequestRequestTypeDe
 Required fields:
 
 - `datasetArn`: `str`
-- `items`: `List`\[[ItemTypeDef](./type_defs.md#itemtypedef)\]
+- `items`: `Sequence`\[[ItemTypeDef](./type_defs.md#itemtypedef)\]
 
 ## PutUsersRequestRequestTypeDef
 
@@ -85,7 +85,7 @@ from mypy_boto3_personalize_events.type_defs import PutUsersRequestRequestTypeDe
 Required fields:
 
 - `datasetArn`: `str`
-- `users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
+- `users`: `Sequence`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 
 ## UserTypeDef
 

@@ -99,7 +99,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `attachments`:
-  `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\] *(required)*
+  `Sequence`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
+  *(required)*
 - `attachmentSetId`: `str`
 
 Returns
@@ -122,7 +123,7 @@ Keyword-only arguments:
 
 - `communicationBody`: `str` *(required)*
 - `caseId`: `str`
-- `ccEmailAddresses`: `List`\[`str`\]
+- `ccEmailAddresses`: `Sequence`\[`str`\]
 - `attachmentSetId`: `str`
 
 Returns
@@ -162,7 +163,7 @@ Keyword-only arguments:
 - `serviceCode`: `str`
 - `severityCode`: `str`
 - `categoryCode`: `str`
-- `ccEmailAddresses`: `List`\[`str`\]
+- `ccEmailAddresses`: `Sequence`\[`str`\]
 - `language`: `str`
 - `issueType`: `str`
 - `attachmentSetId`: `str`
@@ -202,7 +203,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `caseIdList`: `List`\[`str`\]
+- `caseIdList`: `Sequence`\[`str`\]
 - `displayId`: `str`
 - `afterTime`: `str`
 - `beforeTime`: `str`
@@ -253,7 +254,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `serviceCodeList`: `List`\[`str`\]
+- `serviceCodeList`: `Sequence`\[`str`\]
 - `language`: `str`
 
 Returns
@@ -295,7 +296,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `checkIds`: `List`\[`str`\] *(required)*
+- `checkIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef](./type_defs.md#describetrustedadvisorcheckrefreshstatusesresponsetypedef).
@@ -338,7 +339,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `checkIds`: `List`\[`str`\] *(required)*
+- `checkIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeTrustedAdvisorCheckSummariesResponseTypeDef](./type_defs.md#describetrustedadvisorchecksummariesresponsetypedef).
@@ -376,7 +377,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

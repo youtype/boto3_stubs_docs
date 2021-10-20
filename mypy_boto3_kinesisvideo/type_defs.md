@@ -94,7 +94,7 @@ Optional fields:
   [ChannelTypeType](./literals.md#channeltypetype))
 - `SingleMasterConfiguration`:
   [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSignalingChannelOutputTypeDef
 
@@ -124,7 +124,7 @@ Optional fields:
 - `MediaType`: `str`
 - `KmsKeyId`: `str`
 - `DataRetentionInHours`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateStreamOutputTypeDef
 
@@ -419,7 +419,7 @@ from mypy_boto3_kinesisvideo.type_defs import SingleMasterChannelEndpointConfigu
 Optional fields:
 
 - `Protocols`:
-  `List`\[[ChannelProtocolType](./literals.md#channelprotocoltype)\]
+  `Sequence`\[[ChannelProtocolType](./literals.md#channelprotocoltype)\]
 - `Role`: [ChannelRoleType](./literals.md#channelroletype)
 
 ## SingleMasterConfigurationTypeDef
@@ -471,7 +471,7 @@ from mypy_boto3_kinesisvideo.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagStreamInputRequestTypeDef
 
@@ -481,7 +481,7 @@ from mypy_boto3_kinesisvideo.type_defs import TagStreamInputRequestTypeDef
 
 Required fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
@@ -508,7 +508,7 @@ from mypy_boto3_kinesisvideo.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeyList`: `List`\[`str`\]
+- `TagKeyList`: `Sequence`\[`str`\]
 
 ## UntagStreamInputRequestTypeDef
 
@@ -518,7 +518,7 @@ from mypy_boto3_kinesisvideo.type_defs import UntagStreamInputRequestTypeDef
 
 Required fields:
 
-- `TagKeyList`: `List`\[`str`\]
+- `TagKeyList`: `Sequence`\[`str`\]
 
 Optional fields:
 

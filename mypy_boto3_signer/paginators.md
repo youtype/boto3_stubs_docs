@@ -42,7 +42,7 @@ Arguments for `ListSigningJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSigningJobsPaginator.paginate` returns
-`Iterator`\[[ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef)\].
+`_PageIterator`\[[ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef)\].
 
 ## ListSigningPlatformsPaginator
 
@@ -70,7 +70,7 @@ Arguments for `ListSigningPlatformsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSigningPlatformsPaginator.paginate` returns
-`Iterator`\[[ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef)\].
+`_PageIterator`\[[ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef)\].
 
 ## ListSigningProfilesPaginator
 
@@ -94,9 +94,9 @@ Arguments for `ListSigningProfilesPaginator.paginate` method:
 - `includeCanceled`: `bool`
 - `platformId`: `str`
 - `statuses`:
-  `List`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
+  `Sequence`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSigningProfilesPaginator.paginate` returns
-`Iterator`\[[ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef)\].
+`_PageIterator`\[[ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef)\].

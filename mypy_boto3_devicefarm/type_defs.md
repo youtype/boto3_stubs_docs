@@ -273,7 +273,7 @@ Required fields:
 
 - `projectArn`: `str`
 - `name`: `str`
-- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 
 Optional fields:
 
@@ -306,7 +306,7 @@ Optional fields:
 
 - `description`: `str`
 - `packageCleanup`: `bool`
-- `excludeAppPackagesFromCleanup`: `List`\[`str`\]
+- `excludeAppPackagesFromCleanup`: `Sequence`\[`str`\]
 - `rebootAfterUse`: `bool`
 
 ## CreateInstanceProfileResultTypeDef
@@ -394,7 +394,7 @@ from mypy_boto3_devicefarm.type_defs import CreateRemoteAccessSessionConfigurati
 Optional fields:
 
 - `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
-- `vpceConfigurationArns`: `List`\[`str`\]
+- `vpceConfigurationArns`: `Sequence`\[`str`\]
 
 ## CreateRemoteAccessSessionRequestRequestTypeDef
 
@@ -552,9 +552,9 @@ from mypy_boto3_devicefarm.type_defs import CustomerArtifactPathsTypeDef
 
 Optional fields:
 
-- `iosPaths`: `List`\[`str`\]
-- `androidPaths`: `List`\[`str`\]
-- `deviceHostPaths`: `List`\[`str`\]
+- `iosPaths`: `Sequence`\[`str`\]
+- `androidPaths`: `Sequence`\[`str`\]
+- `deviceHostPaths`: `Sequence`\[`str`\]
 
 ## DeleteDevicePoolRequestRequestTypeDef
 
@@ -724,7 +724,7 @@ from mypy_boto3_devicefarm.type_defs import DeviceSelectionConfigurationTypeDef
 Required fields:
 
 - `filters`:
-  `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
+  `Sequence`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 - `maxDevices`: `int`
 
 ## DeviceSelectionResultTypeDef
@@ -1363,7 +1363,7 @@ Optional fields:
 - `arn`: `str`
 - `nextToken`: `str`
 - `filters`:
-  `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
+  `Sequence`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 
 ## ListDevicesResultTypeDef
 
@@ -2278,11 +2278,11 @@ Optional fields:
 - `networkProfileArn`: `str`
 - `locale`: `str`
 - `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
-- `vpceConfigurationArns`: `List`\[`str`\]
+- `vpceConfigurationArns`: `Sequence`\[`str`\]
 - `customerArtifactPaths`:
   [CustomerArtifactPathsTypeDef](./type_defs.md#customerartifactpathstypedef)
 - `radios`: [RadiosTypeDef](./type_defs.md#radiostypedef)
-- `auxiliaryApps`: `List`\[`str`\]
+- `auxiliaryApps`: `Sequence`\[`str`\]
 - `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
 
 ## ScheduleRunRequestRequestTypeDef
@@ -2335,7 +2335,7 @@ Optional fields:
 - `testPackageArn`: `str`
 - `testSpecArn`: `str`
 - `filter`: `str`
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 
 ## StopJobRequestRequestTypeDef
 
@@ -2433,7 +2433,7 @@ from mypy_boto3_devicefarm.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -2512,8 +2512,8 @@ from mypy_boto3_devicefarm.type_defs import TestGridVpcConfigTypeDef
 
 Required fields:
 
-- `securityGroupIds`: `List`\[`str`\]
-- `subnetIds`: `List`\[`str`\]
+- `securityGroupIds`: `Sequence`\[`str`\]
+- `subnetIds`: `Sequence`\[`str`\]
 - `vpcId`: `str`
 
 ## TestTypeDef
@@ -2567,7 +2567,7 @@ from mypy_boto3_devicefarm.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDeviceInstanceRequestRequestTypeDef
 
@@ -2582,7 +2582,7 @@ Required fields:
 Optional fields:
 
 - `profileArn`: `str`
-- `labels`: `List`\[`str`\]
+- `labels`: `Sequence`\[`str`\]
 
 ## UpdateDeviceInstanceResultTypeDef
 
@@ -2611,7 +2611,7 @@ Optional fields:
 
 - `name`: `str`
 - `description`: `str`
-- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `maxDevices`: `int`
 - `clearMaxDevices`: `bool`
 
@@ -2642,7 +2642,7 @@ Optional fields:
 - `name`: `str`
 - `description`: `str`
 - `packageCleanup`: `bool`
-- `excludeAppPackagesFromCleanup`: `List`\[`str`\]
+- `excludeAppPackagesFromCleanup`: `Sequence`\[`str`\]
 - `rebootAfterUse`: `bool`
 
 ## UpdateInstanceProfileResultTypeDef

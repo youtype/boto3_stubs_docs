@@ -160,7 +160,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `MutationProtection`:
   [MutationProtectionStatusType](./literals.md#mutationprotectionstatustype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [AssociateFirewallRuleGroupResponseTypeDef](./type_defs.md#associatefirewallrulegroupresponsetypedef).
@@ -263,7 +263,7 @@ Keyword-only arguments:
 
 - `CreatorRequestId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateFirewallDomainListResponseTypeDef](./type_defs.md#createfirewalldomainlistresponsetypedef).
@@ -317,7 +317,7 @@ Keyword-only arguments:
 
 - `CreatorRequestId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateFirewallRuleGroupResponseTypeDef](./type_defs.md#createfirewallrulegroupresponsetypedef).
@@ -338,15 +338,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CreatorRequestId`: `str` *(required)*
-- `SecurityGroupIds`: `List`\[`str`\] *(required)*
+- `SecurityGroupIds`: `Sequence`\[`str`\] *(required)*
 - `Direction`:
   [ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype)
   *(required)*
 - `IpAddresses`:
-  `List`\[[IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef)\]
+  `Sequence`\[[IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef)\]
   *(required)*
 - `Name`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateResolverEndpointResponseTypeDef](./type_defs.md#createresolverendpointresponsetypedef).
@@ -370,7 +370,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `DestinationArn`: `str` *(required)*
 - `CreatorRequestId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateResolverQueryLogConfigResponseTypeDef](./type_defs.md#createresolverquerylogconfigresponsetypedef).
@@ -398,9 +398,9 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 - `Name`: `str`
 - `TargetIps`:
-  `List`\[[TargetAddressTypeDef](./type_defs.md#targetaddresstypedef)\]
+  `Sequence`\[[TargetAddressTypeDef](./type_defs.md#targetaddresstypedef)\]
 - `ResolverEndpointId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateResolverRuleResponseTypeDef](./type_defs.md#createresolverruleresponsetypedef).
@@ -626,7 +626,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -716,8 +716,8 @@ Returns
 
 ### get_firewall_rule_group_policy
 
-Returns the AWS Identity and Access Management (AWS IAM) policy for sharing the
-specified rule group.
+Returns the Identity and Access Management (Amazon Web Services IAM) policy for
+sharing the specified rule group.
 
 Type annotations for
 `boto3.client("route53resolver").get_firewall_rule_group_policy` method.
@@ -1070,7 +1070,7 @@ Returns
 ### list_resolver_dnssec_configs
 
 Lists the configurations for DNSSEC validation that are associated with the
-current AWS account.
+current Amazon Web Services account.
 
 Type annotations for
 `boto3.client("route53resolver").list_resolver_dnssec_configs` method.
@@ -1085,7 +1085,7 @@ Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef).
@@ -1114,8 +1114,8 @@ Returns
 
 ### list_resolver_endpoints
 
-Lists all the Resolver endpoints that were created using the current AWS
-account.
+Lists all the Resolver endpoints that were created using the current Amazon Web
+Services account.
 
 Type annotations for `boto3.client("route53resolver").list_resolver_endpoints`
 method.
@@ -1130,7 +1130,7 @@ Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef).
@@ -1154,7 +1154,7 @@ Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortBy`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
@@ -1178,7 +1178,7 @@ Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortBy`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
@@ -1188,7 +1188,7 @@ Returns
 ### list_resolver_rule_associations
 
 Lists the associations that were created between Resolver rules and VPCs using
-the current AWS account.
+the current Amazon Web Services account.
 
 Type annotations for
 `boto3.client("route53resolver").list_resolver_rule_associations` method.
@@ -1203,14 +1203,15 @@ Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef).
 
 ### list_resolver_rules
 
-Lists the Resolver rules that were created using the current AWS account.
+Lists the Resolver rules that were created using the current Amazon Web
+Services account.
 
 Type annotations for `boto3.client("route53resolver").list_resolver_rules`
 method.
@@ -1225,7 +1226,7 @@ Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef).
@@ -1254,8 +1255,8 @@ Returns
 
 ### put_firewall_rule_group_policy
 
-Attaches an AWS Identity and Access Management (AWS IAM) policy for sharing the
-rule group.
+Attaches an Identity and Access Management (Amazon Web Services IAM) policy for
+sharing the rule group.
 
 Type annotations for
 `boto3.client("route53resolver").put_firewall_rule_group_policy` method.
@@ -1276,9 +1277,9 @@ Returns
 
 ### put_resolver_query_log_config_policy
 
-Specifies an AWS account that you want to share a query logging configuration
-with, the query logging configuration that you want to share, and the
-operations that you want the account to be able to perform on the
+Specifies an Amazon Web Services account that you want to share a query logging
+configuration with, the query logging configuration that you want to share, and
+the operations that you want the account to be able to perform on the
 configuration.
 
 Type annotations for
@@ -1300,9 +1301,9 @@ Returns
 
 ### put_resolver_rule_policy
 
-Specifies an AWS rule that you want to share with another account, the account
-that you want to share the rule with, and the operations that you want the
-account to be able to perform on the rule.
+Specifies an Amazon Web Services rule that you want to share with another
+account, the account that you want to share the rule with, and the operations
+that you want the account to be able to perform on the rule.
 
 Type annotations for `boto3.client("route53resolver").put_resolver_rule_policy`
 method.
@@ -1336,7 +1337,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1355,7 +1356,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1402,7 +1403,7 @@ Keyword-only arguments:
 - `Operation`:
   [FirewallDomainUpdateOperationType](./literals.md#firewalldomainupdateoperationtype)
   *(required)*
-- `Domains`: `List`\[`str`\] *(required)*
+- `Domains`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [UpdateFirewallDomainsResponseTypeDef](./type_defs.md#updatefirewalldomainsresponsetypedef).

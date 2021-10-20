@@ -34,12 +34,12 @@ Boto3 documentation:
 Arguments for `DescribeApplicationVersionsPaginator.paginate` method:
 
 - `ApplicationName`: `str`
-- `VersionLabels`: `List`\[`str`\]
+- `VersionLabels`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeApplicationVersionsPaginator.paginate` returns
-`Iterator`\[[ApplicationVersionDescriptionsMessageTypeDef](./type_defs.md#applicationversiondescriptionsmessagetypedef)\].
+`_PageIterator`\[[ApplicationVersionDescriptionsMessageTypeDef](./type_defs.md#applicationversiondescriptionsmessagetypedef)\].
 
 ## DescribeEnvironmentManagedActionHistoryPaginator
 
@@ -67,7 +67,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEnvironmentManagedActionHistoryPaginator.paginate` returns
-`Iterator`\[[DescribeEnvironmentManagedActionHistoryResultTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresulttypedef)\].
+`_PageIterator`\[[DescribeEnvironmentManagedActionHistoryResultTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresulttypedef)\].
 
 ## DescribeEnvironmentsPaginator
 
@@ -90,15 +90,15 @@ Arguments for `DescribeEnvironmentsPaginator.paginate` method:
 
 - `ApplicationName`: `str`
 - `VersionLabel`: `str`
-- `EnvironmentIds`: `List`\[`str`\]
-- `EnvironmentNames`: `List`\[`str`\]
+- `EnvironmentIds`: `Sequence`\[`str`\]
+- `EnvironmentNames`: `Sequence`\[`str`\]
 - `IncludeDeleted`: `bool`
 - `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEnvironmentsPaginator.paginate` returns
-`Iterator`\[[EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef)\].
+`_PageIterator`\[[EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -133,7 +133,7 @@ Arguments for `DescribeEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[EventDescriptionsMessageTypeDef](./type_defs.md#eventdescriptionsmessagetypedef)\].
+`_PageIterator`\[[EventDescriptionsMessageTypeDef](./type_defs.md#eventdescriptionsmessagetypedef)\].
 
 ## ListPlatformVersionsPaginator
 
@@ -155,9 +155,9 @@ Boto3 documentation:
 Arguments for `ListPlatformVersionsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
+  `Sequence`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlatformVersionsPaginator.paginate` returns
-`Iterator`\[[ListPlatformVersionsResultTypeDef](./type_defs.md#listplatformversionsresulttypedef)\].
+`_PageIterator`\[[ListPlatformVersionsResultTypeDef](./type_defs.md#listplatformversionsresulttypedef)\].

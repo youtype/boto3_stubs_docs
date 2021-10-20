@@ -113,7 +113,7 @@ Keyword-only arguments:
 
 - `DestinationRegion`: `str` *(required)*
 - `BackupId`: `str` *(required)*
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CopyBackupToRegionResponseTypeDef](./type_defs.md#copybackuptoregionresponsetypedef).
@@ -133,11 +133,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `HsmType`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `BackupRetentionPolicy`:
   [BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef)
 - `SourceBackupId`: `str`
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
@@ -238,7 +238,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Filters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `SortAscending`: `bool`
 
 Returns
@@ -258,7 +258,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Filters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -278,7 +278,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -404,7 +404,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -423,7 +423,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagKeyList`: `List`\[`str`\] *(required)*
+- `TagKeyList`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

@@ -34,13 +34,13 @@ Boto3 documentation:
 
 Arguments for `GetResourcePoliciesPaginator.paginate` method:
 
-- `resourceArns`: `List`\[`str`\] *(required)*
+- `resourceArns`: `Sequence`\[`str`\] *(required)*
 - `principal`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourcePoliciesPaginator.paginate` returns
-`Iterator`\[[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef)\].
+`_PageIterator`\[[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef)\].
 
 ## GetResourceShareAssociationsPaginator
 
@@ -64,7 +64,7 @@ Arguments for `GetResourceShareAssociationsPaginator.paginate` method:
 - `associationType`:
   [ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype)
   *(required)*
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `resourceArn`: `str`
 - `principal`: `str`
 - `associationStatus`:
@@ -73,7 +73,7 @@ Arguments for `GetResourceShareAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourceShareAssociationsPaginator.paginate` returns
-`Iterator`\[[GetResourceShareAssociationsResponseTypeDef](./type_defs.md#getresourceshareassociationsresponsetypedef)\].
+`_PageIterator`\[[GetResourceShareAssociationsResponseTypeDef](./type_defs.md#getresourceshareassociationsresponsetypedef)\].
 
 ## GetResourceShareInvitationsPaginator
 
@@ -94,13 +94,13 @@ Boto3 documentation:
 
 Arguments for `GetResourceShareInvitationsPaginator.paginate` method:
 
-- `resourceShareInvitationArns`: `List`\[`str`\]
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareInvitationArns`: `Sequence`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourceShareInvitationsPaginator.paginate` returns
-`Iterator`\[[GetResourceShareInvitationsResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponsetypedef)\].
+`_PageIterator`\[[GetResourceShareInvitationsResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponsetypedef)\].
 
 ## GetResourceSharesPaginator
 
@@ -123,17 +123,18 @@ Arguments for `GetResourceSharesPaginator.paginate` method:
 
 - `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
   *(required)*
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `resourceShareStatus`:
   [ResourceShareStatusType](./literals.md#resourcesharestatustype)
 - `name`: `str`
-- `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `tagFilters`:
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `permissionArn`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourceSharesPaginator.paginate` returns
-`Iterator`\[[GetResourceSharesResponseTypeDef](./type_defs.md#getresourcesharesresponsetypedef)\].
+`_PageIterator`\[[GetResourceSharesResponseTypeDef](./type_defs.md#getresourcesharesresponsetypedef)\].
 
 ## ListPrincipalsPaginator
 
@@ -156,14 +157,14 @@ Arguments for `ListPrincipalsPaginator.paginate` method:
 - `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
   *(required)*
 - `resourceArn`: `str`
-- `principals`: `List`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
 - `resourceType`: `str`
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPrincipalsPaginator.paginate` returns
-`Iterator`\[[ListPrincipalsResponseTypeDef](./type_defs.md#listprincipalsresponsetypedef)\].
+`_PageIterator`\[[ListPrincipalsResponseTypeDef](./type_defs.md#listprincipalsresponsetypedef)\].
 
 ## ListResourcesPaginator
 
@@ -187,10 +188,10 @@ Arguments for `ListResourcesPaginator.paginate` method:
   *(required)*
 - `principal`: `str`
 - `resourceType`: `str`
-- `resourceArns`: `List`\[`str`\]
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourcesPaginator.paginate` returns
-`Iterator`\[[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef)\].
+`_PageIterator`\[[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef)\].

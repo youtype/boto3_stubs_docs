@@ -35,12 +35,12 @@ Arguments for `ListJobRunsPaginator.paginate` method:
 - `createdBefore`: `Union`\[`datetime`, `str`\]
 - `createdAfter`: `Union`\[`datetime`, `str`\]
 - `name`: `str`
-- `states`: `List`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
+- `states`: `Sequence`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobRunsPaginator.paginate` returns
-`Iterator`\[[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef)\].
+`_PageIterator`\[[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef)\].
 
 ## ListManagedEndpointsPaginator
 
@@ -64,13 +64,13 @@ Arguments for `ListManagedEndpointsPaginator.paginate` method:
 - `virtualClusterId`: `str` *(required)*
 - `createdBefore`: `Union`\[`datetime`, `str`\]
 - `createdAfter`: `Union`\[`datetime`, `str`\]
-- `types`: `List`\[`str`\]
-- `states`: `List`\[[EndpointStateType](./literals.md#endpointstatetype)\]
+- `types`: `Sequence`\[`str`\]
+- `states`: `Sequence`\[[EndpointStateType](./literals.md#endpointstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListManagedEndpointsPaginator.paginate` returns
-`Iterator`\[[ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef)\].
+`_PageIterator`\[[ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef)\].
 
 ## ListVirtualClustersPaginator
 
@@ -97,9 +97,9 @@ Arguments for `ListVirtualClustersPaginator.paginate` method:
 - `createdAfter`: `Union`\[`datetime`, `str`\]
 - `createdBefore`: `Union`\[`datetime`, `str`\]
 - `states`:
-  `List`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
+  `Sequence`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualClustersPaginator.paginate` returns
-`Iterator`\[[ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef)\].
+`_PageIterator`\[[ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef)\].

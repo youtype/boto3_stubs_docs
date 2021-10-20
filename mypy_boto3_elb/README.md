@@ -140,6 +140,9 @@ from mypy_boto3_elb.literals import AnyInstanceInServiceWaiterName, ...
 - [DescribeLoadBalancersPaginatorName](./literals.md#describeloadbalancerspaginatorname)
 - [InstanceDeregisteredWaiterName](./literals.md#instancederegisteredwaitername)
 - [InstanceInServiceWaiterName](./literals.md#instanceinservicewaitername)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

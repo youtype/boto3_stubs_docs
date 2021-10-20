@@ -92,7 +92,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `acknowledgeActionRequests`:
-  `List`\[[AcknowledgeAlarmActionRequestTypeDef](./type_defs.md#acknowledgealarmactionrequesttypedef)\]
+  `Sequence`\[[AcknowledgeAlarmActionRequestTypeDef](./type_defs.md#acknowledgealarmactionrequesttypedef)\]
   *(required)*
 
 Returns
@@ -114,7 +114,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `disableActionRequests`:
-  `List`\[[DisableAlarmActionRequestTypeDef](./type_defs.md#disablealarmactionrequesttypedef)\]
+  `Sequence`\[[DisableAlarmActionRequestTypeDef](./type_defs.md#disablealarmactionrequesttypedef)\]
   *(required)*
 
 Returns
@@ -136,7 +136,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `enableActionRequests`:
-  `List`\[[EnableAlarmActionRequestTypeDef](./type_defs.md#enablealarmactionrequesttypedef)\]
+  `Sequence`\[[EnableAlarmActionRequestTypeDef](./type_defs.md#enablealarmactionrequesttypedef)\]
   *(required)*
 
 Returns
@@ -156,7 +156,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
+- `messages`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
   *(required)*
 
 Returns
@@ -177,7 +177,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resetActionRequests`:
-  `List`\[[ResetAlarmActionRequestTypeDef](./type_defs.md#resetalarmactionrequesttypedef)\]
+  `Sequence`\[[ResetAlarmActionRequestTypeDef](./type_defs.md#resetalarmactionrequesttypedef)\]
   *(required)*
 
 Returns
@@ -199,7 +199,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `snoozeActionRequests`:
-  `List`\[[SnoozeAlarmActionRequestTypeDef](./type_defs.md#snoozealarmactionrequesttypedef)\]
+  `Sequence`\[[SnoozeAlarmActionRequestTypeDef](./type_defs.md#snoozealarmactionrequesttypedef)\]
   *(required)*
 
 Returns
@@ -222,7 +222,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `detectors`:
-  `List`\[[UpdateDetectorRequestTypeDef](./type_defs.md#updatedetectorrequesttypedef)\]
+  `Sequence`\[[UpdateDetectorRequestTypeDef](./type_defs.md#updatedetectorrequesttypedef)\]
   *(required)*
 
 Returns
@@ -296,7 +296,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

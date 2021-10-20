@@ -168,7 +168,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
-- `assetIds`: `List`\[`str`\] *(required)*
+- `assetIds`: `Sequence`\[`str`\] *(required)*
 - `clientToken`: `str`
 
 Returns
@@ -190,7 +190,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
-- `assetIds`: `List`\[`str`\] *(required)*
+- `assetIds`: `Sequence`\[`str`\] *(required)*
 - `clientToken`: `str`
 
 Returns
@@ -212,7 +212,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `entries`:
-  `List`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
+  `Sequence`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
   *(required)*
 
 Returns
@@ -256,7 +256,7 @@ Keyword-only arguments:
 - `accessPolicyPermission`: [PermissionType](./literals.md#permissiontype)
   *(required)*
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAccessPolicyResponseTypeDef](./type_defs.md#createaccesspolicyresponsetypedef).
@@ -278,7 +278,7 @@ Keyword-only arguments:
 - `assetName`: `str` *(required)*
 - `assetModelId`: `str` *(required)*
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAssetResponseTypeDef](./type_defs.md#createassetresponsetypedef).
@@ -300,13 +300,13 @@ Keyword-only arguments:
 - `assetModelName`: `str` *(required)*
 - `assetModelDescription`: `str`
 - `assetModelProperties`:
-  `List`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
+  `Sequence`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
 - `assetModelHierarchies`:
-  `List`\[[AssetModelHierarchyDefinitionTypeDef](./type_defs.md#assetmodelhierarchydefinitiontypedef)\]
+  `Sequence`\[[AssetModelHierarchyDefinitionTypeDef](./type_defs.md#assetmodelhierarchydefinitiontypedef)\]
 - `assetModelCompositeModels`:
-  `List`\[[AssetModelCompositeModelDefinitionTypeDef](./type_defs.md#assetmodelcompositemodeldefinitiontypedef)\]
+  `Sequence`\[[AssetModelCompositeModelDefinitionTypeDef](./type_defs.md#assetmodelcompositemodeldefinitiontypedef)\]
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAssetModelResponseTypeDef](./type_defs.md#createassetmodelresponsetypedef).
@@ -330,7 +330,7 @@ Keyword-only arguments:
 - `dashboardDefinition`: `str` *(required)*
 - `dashboardDescription`: `str`
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDashboardResponseTypeDef](./type_defs.md#createdashboardresponsetypedef).
@@ -353,7 +353,7 @@ Keyword-only arguments:
 - `gatewayName`: `str` *(required)*
 - `gatewayPlatform`:
   [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef) *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateGatewayResponseTypeDef](./type_defs.md#creategatewayresponsetypedef).
@@ -378,7 +378,7 @@ Keyword-only arguments:
 - `portalDescription`: `str`
 - `clientToken`: `str`
 - `portalLogoImageFile`: [ImageFileTypeDef](./type_defs.md#imagefiletypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `portalAuthMode`: [AuthModeType](./literals.md#authmodetype)
 - `notificationSenderEmail`: `str`
 - `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
@@ -404,7 +404,7 @@ Keyword-only arguments:
 - `projectName`: `str` *(required)*
 - `projectDescription`: `str`
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
@@ -793,7 +793,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -815,14 +815,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `aggregateTypes`:
-  `List`\[[AggregateTypeType](./literals.md#aggregatetypetype)\] *(required)*
+  `Sequence`\[[AggregateTypeType](./literals.md#aggregatetypetype)\]
+  *(required)*
 - `resolution`: `str` *(required)*
 - `startDate`: `Union`\[`datetime`, `str`\] *(required)*
 - `endDate`: `Union`\[`datetime`, `str`\] *(required)*
 - `assetId`: `str`
 - `propertyId`: `str`
 - `propertyAlias`: `str`
-- `qualities`: `List`\[[QualityType](./literals.md#qualitytype)\]
+- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
 - `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -872,7 +873,7 @@ Keyword-only arguments:
 - `propertyAlias`: `str`
 - `startDate`: `Union`\[`datetime`, `str`\]
 - `endDate`: `Union`\[`datetime`, `str`\]
-- `qualities`: `List`\[[QualityType](./literals.md#qualitytype)\]
+- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
 - `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -908,6 +909,7 @@ Keyword-only arguments:
 - `endTimeOffsetInNanos`: `int`
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `intervalWindowInSeconds`: `int`
 
 Returns
 [GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef).
@@ -1231,7 +1233,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1250,7 +1252,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1319,11 +1321,11 @@ Keyword-only arguments:
 - `assetModelName`: `str` *(required)*
 - `assetModelDescription`: `str`
 - `assetModelProperties`:
-  `List`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
+  `Sequence`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
 - `assetModelHierarchies`:
-  `List`\[[AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef)\]
+  `Sequence`\[[AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef)\]
 - `assetModelCompositeModels`:
-  `List`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
+  `Sequence`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
 - `clientToken`: `str`
 
 Returns

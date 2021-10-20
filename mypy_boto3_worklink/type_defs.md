@@ -150,7 +150,7 @@ Optional fields:
 
 - `DisplayName`: `str`
 - `OptimizeForEndUserLocation`: `bool`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateFleetResponseTypeDef
 
@@ -675,7 +675,7 @@ from mypy_boto3_worklink.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -686,7 +686,7 @@ from mypy_boto3_worklink.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAuditStreamConfigurationRequestRequestTypeDef
 
@@ -712,8 +712,8 @@ Required fields:
 
 - `FleetArn`: `str`
 - `VpcId`: `str`
-- `SubnetIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## UpdateDevicePolicyConfigurationRequestRequestTypeDef
 

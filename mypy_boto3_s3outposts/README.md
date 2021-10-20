@@ -71,11 +71,14 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_s3outposts.literals import EndpointStatusType, ...
+from mypy_boto3_s3outposts.literals import EndpointAccessTypeType, ...
 ```
 
+- [EndpointAccessTypeType](./literals.md#endpointaccesstypetype)
 - [EndpointStatusType](./literals.md#endpointstatustype)
 - [ListEndpointsPaginatorName](./literals.md#listendpointspaginatorname)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

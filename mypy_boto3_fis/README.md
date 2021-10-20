@@ -70,6 +70,7 @@ from mypy_boto3_fis.literals import ExperimentActionStatusType, ...
 
 - [ExperimentActionStatusType](./literals.md#experimentactionstatustype)
 - [ExperimentStatusType](./literals.md#experimentstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

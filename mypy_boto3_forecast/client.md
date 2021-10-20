@@ -138,7 +138,7 @@ Keyword-only arguments:
 - `DataFrequency`: `str`
 - `EncryptionConfig`:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
@@ -159,8 +159,8 @@ Keyword-only arguments:
 
 - `DatasetGroupName`: `str` *(required)*
 - `Domain`: [DomainType](./literals.md#domaintype) *(required)*
-- `DatasetArns`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DatasetArns`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef).
@@ -188,7 +188,7 @@ Keyword-only arguments:
 - `TimeZone`: `str`
 - `UseGeolocationForTimeZone`: `bool`
 - `GeolocationFormat`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef).
@@ -210,8 +210,8 @@ Keyword-only arguments:
 
 - `ForecastName`: `str` *(required)*
 - `PredictorArn`: `str` *(required)*
-- `ForecastTypes`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ForecastTypes`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateForecastResponseTypeDef](./type_defs.md#createforecastresponsetypedef).
@@ -236,7 +236,7 @@ Keyword-only arguments:
 - `ForecastArn`: `str` *(required)*
 - `Destination`:
   [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateForecastExportJobResponseTypeDef](./type_defs.md#createforecastexportjobresponsetypedef).
@@ -263,19 +263,21 @@ Keyword-only arguments:
   [FeaturizationConfigTypeDef](./type_defs.md#featurizationconfigtypedef)
   *(required)*
 - `AlgorithmArn`: `str`
-- `ForecastTypes`: `List`\[`str`\]
+- `ForecastTypes`: `Sequence`\[`str`\]
 - `PerformAutoML`: `bool`
 - `AutoMLOverrideStrategy`: `Literal['LatencyOptimized']` (see
   [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype))
 - `PerformHPO`: `bool`
-- `TrainingParameters`: `Dict`\[`str`, `str`\]
+- `TrainingParameters`: `Mapping`\[`str`, `str`\]
 - `EvaluationParameters`:
   [EvaluationParametersTypeDef](./type_defs.md#evaluationparameterstypedef)
 - `HPOConfig`:
   [HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef)
 - `EncryptionConfig`:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OptimizationMetric`:
+  [OptimizationMetricType](./literals.md#optimizationmetrictype)
 
 Returns
 [CreatePredictorResponseTypeDef](./type_defs.md#createpredictorresponsetypedef).
@@ -300,7 +302,7 @@ Keyword-only arguments:
 - `PredictorArn`: `str` *(required)*
 - `Destination`:
   [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreatePredictorBacktestExportJobResponseTypeDef](./type_defs.md#createpredictorbacktestexportjobresponsetypedef).
@@ -590,7 +592,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -655,7 +657,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef).
@@ -698,7 +700,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef).
@@ -719,7 +721,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef).
@@ -742,7 +744,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef).
@@ -763,7 +765,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListPredictorsResponseTypeDef](./type_defs.md#listpredictorsresponsetypedef).
@@ -818,7 +820,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -837,7 +839,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -856,7 +858,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DatasetGroupArn`: `str` *(required)*
-- `DatasetArns`: `List`\[`str`\] *(required)*
+- `DatasetArns`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

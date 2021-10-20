@@ -12,6 +12,7 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [exceptions](#exceptions)
+    - [batch_execute_statement](#batch_execute_statement)
     - [can_paginate](#can_paginate)
     - [cancel_statement](#cancel_statement)
     - [describe_statement](#describe_statement)
@@ -56,6 +57,7 @@ def handle_error(exc: Exceptions.ActiveStatementsExceededException) -> None:
 Exceptions:
 
 - `Exceptions.ActiveStatementsExceededException`
+- `Exceptions.BatchExecuteStatementException`
 - `Exceptions.ClientError`
 - `Exceptions.ExecuteStatementException`
 - `Exceptions.InternalServerException`
@@ -74,6 +76,33 @@ Boto3 documentation:
 [RedshiftDataAPIService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+### batch_execute_statement
+
+Runs one or more SQL statements, which can be data manipulation language (DML)
+or data definition language (DDL).
+
+Type annotations for `boto3.client("redshift-data").batch_execute_statement`
+method.
+
+Boto3 documentation:
+[RedshiftDataAPIService.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.batch_execute_statement)
+
+Arguments mapping described in
+[BatchExecuteStatementInputRequestTypeDef](./type_defs.md#batchexecutestatementinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `Database`: `str` *(required)*
+- `Sqls`: `Sequence`\[`str`\] *(required)*
+- `DbUser`: `str`
+- `SecretArn`: `str`
+- `StatementName`: `str`
+- `WithEvent`: `bool`
+
+Returns
+[BatchExecuteStatementOutputTypeDef](./type_defs.md#batchexecutestatementoutputtypedef).
 
 ### can_paginate
 
@@ -172,11 +201,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
+- `Database`: `str` *(required)*
 - `Sql`: `str` *(required)*
-- `Database`: `str`
 - `DbUser`: `str`
 - `Parameters`:
-  `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
+  `Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
 - `SecretArn`: `str`
 - `StatementName`: `str`
 - `WithEvent`: `bool`
@@ -197,7 +226,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -239,7 +268,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
-- `Database`: `str`
+- `Database`: `str` *(required)*
 - `DbUser`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`

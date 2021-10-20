@@ -15,6 +15,7 @@ pip install mypy-boto3-personalize-runtime
   - [PersonalizeRuntimeClient](#personalizeruntimeclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## PersonalizeRuntimeClient
@@ -43,6 +44,18 @@ PersonalizeRuntimeClient [exceptions](./client.md#exceptions)
 - ClientError
 - InvalidInputException
 - ResourceNotFoundException
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_personalize_runtime.literals import ServiceName, ...
+```
+
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

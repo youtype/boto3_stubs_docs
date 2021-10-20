@@ -222,7 +222,7 @@ Required fields:
 - `EngineVersion`: `str`
 - `HostInstanceType`: `str`
 - `PubliclyAccessible`: `bool`
-- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
+- `Users`: `Sequence`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 
 Optional fields:
 
@@ -238,10 +238,10 @@ Optional fields:
 - `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
 - `MaintenanceWindowStartTime`:
   [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `StorageType`: [BrokerStorageTypeType](./literals.md#brokerstoragetypetype)
-- `SubnetIds`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateBrokerResponseTypeDef
 
@@ -272,7 +272,7 @@ Optional fields:
 
 - `AuthenticationStrategy`:
   [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateConfigurationResponseTypeDef
 
@@ -305,7 +305,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateUserRequestRequestTypeDef
 
@@ -322,7 +322,7 @@ Required fields:
 Optional fields:
 
 - `ConsoleAccess`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 
 ## DeleteBrokerRequestRequestTypeDef
 
@@ -355,7 +355,7 @@ from mypy_boto3_mq.type_defs import DeleteTagsRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## DeleteUserRequestRequestTypeDef
 
@@ -600,7 +600,7 @@ from mypy_boto3_mq.type_defs import LdapServerMetadataInputTypeDef
 
 Required fields:
 
-- `Hosts`: `List`\[`str`\]
+- `Hosts`: `Sequence`\[`str`\]
 - `RoleBase`: `str`
 - `RoleSearchMatching`: `str`
 - `ServiceAccountPassword`: `str`
@@ -886,7 +886,7 @@ Optional fields:
 - `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
 - `MaintenanceWindowStartTime`:
   [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 
 ## UpdateBrokerResponseTypeDef
 
@@ -961,7 +961,7 @@ Required fields:
 Optional fields:
 
 - `ConsoleAccess`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `Password`: `str`
 
 ## UserPendingChangesTypeDef
@@ -1007,7 +1007,7 @@ Required fields:
 Optional fields:
 
 - `ConsoleAccess`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 
 ## WeeklyStartTimeTypeDef
 

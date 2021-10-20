@@ -11,7 +11,10 @@ type annotations stubs module
   - [AnswerSummaryTypeDef](#answersummarytypedef)
   - [AnswerTypeDef](#answertypedef)
   - [AssociateLensesInputRequestTypeDef](#associatelensesinputrequesttypedef)
+  - [ChoiceAnswerSummaryTypeDef](#choiceanswersummarytypedef)
+  - [ChoiceAnswerTypeDef](#choiceanswertypedef)
   - [ChoiceTypeDef](#choicetypedef)
+  - [ChoiceUpdateTypeDef](#choiceupdatetypedef)
   - [CreateMilestoneInputRequestTypeDef](#createmilestoneinputrequesttypedef)
   - [CreateMilestoneOutputTypeDef](#createmilestoneoutputtypedef)
   - [CreateWorkloadInputRequestTypeDef](#createworkloadinputrequesttypedef)
@@ -100,8 +103,11 @@ Optional fields:
 - `QuestionTitle`: `str`
 - `Choices`: `List`\[[ChoiceTypeDef](./type_defs.md#choicetypedef)\]
 - `SelectedChoices`: `List`\[`str`\]
+- `ChoiceAnswerSummaries`:
+  `List`\[[ChoiceAnswerSummaryTypeDef](./type_defs.md#choiceanswersummarytypedef)\]
 - `IsApplicable`: `bool`
 - `Risk`: [RiskType](./literals.md#risktype)
+- `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
 
 ## AnswerTypeDef
 
@@ -119,9 +125,12 @@ Optional fields:
 - `HelpfulResourceUrl`: `str`
 - `Choices`: `List`\[[ChoiceTypeDef](./type_defs.md#choicetypedef)\]
 - `SelectedChoices`: `List`\[`str`\]
+- `ChoiceAnswers`:
+  `List`\[[ChoiceAnswerTypeDef](./type_defs.md#choiceanswertypedef)\]
 - `IsApplicable`: `bool`
 - `Risk`: [RiskType](./literals.md#risktype)
 - `Notes`: `str`
+- `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
 
 ## AssociateLensesInputRequestTypeDef
 
@@ -132,7 +141,32 @@ from mypy_boto3_wellarchitected.type_defs import AssociateLensesInputRequestType
 Required fields:
 
 - `WorkloadId`: `str`
-- `LensAliases`: `List`\[`str`\]
+- `LensAliases`: `Sequence`\[`str`\]
+
+## ChoiceAnswerSummaryTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ChoiceAnswerSummaryTypeDef
+```
+
+Optional fields:
+
+- `ChoiceId`: `str`
+- `Status`: [ChoiceStatusType](./literals.md#choicestatustype)
+- `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
+
+## ChoiceAnswerTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ChoiceAnswerTypeDef
+```
+
+Optional fields:
+
+- `ChoiceId`: `str`
+- `Status`: [ChoiceStatusType](./literals.md#choicestatustype)
+- `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
+- `Notes`: `str`
 
 ## ChoiceTypeDef
 
@@ -145,6 +179,21 @@ Optional fields:
 - `ChoiceId`: `str`
 - `Title`: `str`
 - `Description`: `str`
+
+## ChoiceUpdateTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ChoiceUpdateTypeDef
+```
+
+Required fields:
+
+- `Status`: [ChoiceStatusType](./literals.md#choicestatustype)
+
+Optional fields:
+
+- `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
+- `Notes`: `str`
 
 ## CreateMilestoneInputRequestTypeDef
 
@@ -184,20 +233,20 @@ Required fields:
 - `Environment`:
   [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype)
 - `ReviewOwner`: `str`
-- `Lenses`: `List`\[`str`\]
+- `Lenses`: `Sequence`\[`str`\]
 - `ClientRequestToken`: `str`
 
 Optional fields:
 
-- `AccountIds`: `List`\[`str`\]
-- `AwsRegions`: `List`\[`str`\]
-- `NonAwsRegions`: `List`\[`str`\]
-- `PillarPriorities`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
+- `AwsRegions`: `Sequence`\[`str`\]
+- `NonAwsRegions`: `Sequence`\[`str`\]
+- `PillarPriorities`: `Sequence`\[`str`\]
 - `ArchitecturalDesign`: `str`
 - `IndustryType`: `str`
 - `Industry`: `str`
 - `Notes`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateWorkloadOutputTypeDef
 
@@ -270,7 +319,7 @@ from mypy_boto3_wellarchitected.type_defs import DisassociateLensesInputRequestT
 Required fields:
 
 - `WorkloadId`: `str`
-- `LensAliases`: `List`\[`str`\]
+- `LensAliases`: `Sequence`\[`str`\]
 
 ## GetAnswerInputRequestTypeDef
 
@@ -937,7 +986,7 @@ from mypy_boto3_wellarchitected.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `WorkloadArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceInputRequestTypeDef
 
@@ -948,7 +997,7 @@ from mypy_boto3_wellarchitected.type_defs import UntagResourceInputRequestTypeDe
 Required fields:
 
 - `WorkloadArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAnswerInputRequestTypeDef
 
@@ -964,9 +1013,12 @@ Required fields:
 
 Optional fields:
 
-- `SelectedChoices`: `List`\[`str`\]
+- `SelectedChoices`: `Sequence`\[`str`\]
+- `ChoiceUpdates`: `Mapping`\[`str`,
+  [ChoiceUpdateTypeDef](./type_defs.md#choiceupdatetypedef)\]
 - `Notes`: `str`
 - `IsApplicable`: `bool`
+- `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
 
 ## UpdateAnswerOutputTypeDef
 
@@ -996,7 +1048,7 @@ Required fields:
 Optional fields:
 
 - `LensNotes`: `str`
-- `PillarNotes`: `Dict`\[`str`, `str`\]
+- `PillarNotes`: `Mapping`\[`str`, `str`\]
 
 ## UpdateLensReviewOutputTypeDef
 
@@ -1052,10 +1104,10 @@ Optional fields:
 - `Description`: `str`
 - `Environment`:
   [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype)
-- `AccountIds`: `List`\[`str`\]
-- `AwsRegions`: `List`\[`str`\]
-- `NonAwsRegions`: `List`\[`str`\]
-- `PillarPriorities`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
+- `AwsRegions`: `Sequence`\[`str`\]
+- `NonAwsRegions`: `Sequence`\[`str`\]
+- `PillarPriorities`: `Sequence`\[`str`\]
 - `ArchitecturalDesign`: `str`
 - `ReviewOwner`: `str`
 - `IsReviewOwnerUpdateAcknowledged`: `bool`

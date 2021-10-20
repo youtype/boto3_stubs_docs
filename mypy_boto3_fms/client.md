@@ -206,7 +206,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -503,7 +503,7 @@ Keyword-only arguments:
 
 - `AppsList`: [AppsListDataTypeDef](./type_defs.md#appslistdatatypedef)
   *(required)*
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [PutAppsListResponseTypeDef](./type_defs.md#putappslistresponsetypedef).
@@ -541,7 +541,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef) *(required)*
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef).
 
@@ -562,7 +562,7 @@ Keyword-only arguments:
 - `ProtocolsList`:
   [ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef)
   *(required)*
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [PutProtocolsListResponseTypeDef](./type_defs.md#putprotocolslistresponsetypedef).
@@ -582,7 +582,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -601,7 +601,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

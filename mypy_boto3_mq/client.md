@@ -126,7 +126,7 @@ Keyword-only arguments:
 - `EngineVersion`: `str` *(required)*
 - `HostInstanceType`: `str` *(required)*
 - `PubliclyAccessible`: `bool` *(required)*
-- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\] *(required)*
+- `Users`: `Sequence`\[[UserTypeDef](./type_defs.md#usertypedef)\] *(required)*
 - `AuthenticationStrategy`:
   [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
 - `Configuration`:
@@ -139,10 +139,10 @@ Keyword-only arguments:
 - `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
 - `MaintenanceWindowStartTime`:
   [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `StorageType`: [BrokerStorageTypeType](./literals.md#brokerstoragetypetype)
-- `SubnetIds`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateBrokerResponseTypeDef](./type_defs.md#createbrokerresponsetypedef).
@@ -166,7 +166,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `AuthenticationStrategy`:
   [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateConfigurationResponseTypeDef](./type_defs.md#createconfigurationresponsetypedef).
@@ -186,7 +186,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ### create_user
 
@@ -206,7 +206,7 @@ Keyword-only arguments:
 - `Password`: `str` *(required)*
 - `Username`: `str` *(required)*
 - `ConsoleAccess`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -244,7 +244,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### delete_user
 
@@ -401,7 +401,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -551,7 +551,7 @@ Keyword-only arguments:
 - `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
 - `MaintenanceWindowStartTime`:
   [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 
 Returns
 [UpdateBrokerResponseTypeDef](./type_defs.md#updatebrokerresponsetypedef).
@@ -594,7 +594,7 @@ Keyword-only arguments:
 - `BrokerId`: `str` *(required)*
 - `Username`: `str` *(required)*
 - `ConsoleAccess`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `Password`: `str`
 
 Returns `Dict`\[`str`, `Any`\].

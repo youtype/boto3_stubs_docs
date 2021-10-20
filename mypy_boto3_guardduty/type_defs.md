@@ -270,7 +270,7 @@ from mypy_boto3_guardduty.type_defs import ArchiveFindingsRequestRequestTypeDef
 Required fields:
 
 - `DetectorId`: `str`
-- `FindingIds`: `List`\[`str`\]
+- `FindingIds`: `Sequence`\[`str`\]
 
 ## AwsApiCallActionTypeDef
 
@@ -354,14 +354,14 @@ from mypy_boto3_guardduty.type_defs import ConditionTypeDef
 
 Optional fields:
 
-- `Eq`: `List`\[`str`\]
-- `Neq`: `List`\[`str`\]
+- `Eq`: `Sequence`\[`str`\]
+- `Neq`: `Sequence`\[`str`\]
 - `Gt`: `int`
 - `Gte`: `int`
 - `Lt`: `int`
 - `Lte`: `int`
-- `Equals`: `List`\[`str`\]
-- `NotEquals`: `List`\[`str`\]
+- `Equals`: `Sequence`\[`str`\]
+- `NotEquals`: `Sequence`\[`str`\]
 - `GreaterThan`: `int`
 - `GreaterThanOrEqual`: `int`
 - `LessThan`: `int`
@@ -395,7 +395,7 @@ Optional fields:
   [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
 - `DataSources`:
   [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDetectorResponseTypeDef
 
@@ -428,7 +428,7 @@ Optional fields:
 - `Action`: [FilterActionType](./literals.md#filteractiontype)
 - `Rank`: `int`
 - `ClientToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateFilterResponseTypeDef
 
@@ -459,7 +459,7 @@ Required fields:
 Optional fields:
 
 - `ClientToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateIPSetResponseTypeDef
 
@@ -483,7 +483,7 @@ Required fields:
 
 - `DetectorId`: `str`
 - `AccountDetails`:
-  `List`\[[AccountDetailTypeDef](./type_defs.md#accountdetailtypedef)\]
+  `Sequence`\[[AccountDetailTypeDef](./type_defs.md#accountdetailtypedef)\]
 
 ## CreateMembersResponseTypeDef
 
@@ -540,7 +540,7 @@ Required fields:
 
 Optional fields:
 
-- `FindingTypes`: `List`\[`str`\]
+- `FindingTypes`: `Sequence`\[`str`\]
 
 ## CreateThreatIntelSetRequestRequestTypeDef
 
@@ -559,7 +559,7 @@ Required fields:
 Optional fields:
 
 - `ClientToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateThreatIntelSetResponseTypeDef
 
@@ -619,7 +619,7 @@ from mypy_boto3_guardduty.type_defs import DeclineInvitationsRequestRequestTypeD
 
 Required fields:
 
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## DeclineInvitationsResponseTypeDef
 
@@ -685,7 +685,7 @@ from mypy_boto3_guardduty.type_defs import DeleteInvitationsRequestRequestTypeDe
 
 Required fields:
 
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## DeleteInvitationsResponseTypeDef
 
@@ -709,7 +709,7 @@ from mypy_boto3_guardduty.type_defs import DeleteMembersRequestRequestTypeDef
 Required fields:
 
 - `DetectorId`: `str`
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## DeleteMembersResponseTypeDef
 
@@ -853,7 +853,7 @@ from mypy_boto3_guardduty.type_defs import DisassociateMembersRequestRequestType
 Required fields:
 
 - `DetectorId`: `str`
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## DisassociateMembersResponseTypeDef
 
@@ -917,7 +917,7 @@ from mypy_boto3_guardduty.type_defs import FindingCriteriaTypeDef
 
 Optional fields:
 
-- `Criterion`: `Dict`\[`str`,
+- `Criterion`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 
 ## FindingStatisticsTypeDef
@@ -1046,7 +1046,7 @@ from mypy_boto3_guardduty.type_defs import GetFindingsRequestRequestTypeDef
 Required fields:
 
 - `DetectorId`: `str`
-- `FindingIds`: `List`\[`str`\]
+- `FindingIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1073,7 +1073,7 @@ from mypy_boto3_guardduty.type_defs import GetFindingsStatisticsRequestRequestTy
 Required fields:
 
 - `DetectorId`: `str`
-- `FindingStatisticTypes`: `List`\[`Literal['COUNT_BY_SEVERITY']` (see
+- `FindingStatisticTypes`: `Sequence`\[`Literal['COUNT_BY_SEVERITY']` (see
   [FindingStatisticTypeType](./literals.md#findingstatistictypetype))\]
 
 Optional fields:
@@ -1164,7 +1164,7 @@ from mypy_boto3_guardduty.type_defs import GetMemberDetectorsRequestRequestTypeD
 Required fields:
 
 - `DetectorId`: `str`
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## GetMemberDetectorsResponseTypeDef
 
@@ -1190,7 +1190,7 @@ from mypy_boto3_guardduty.type_defs import GetMembersRequestRequestTypeDef
 Required fields:
 
 - `DetectorId`: `str`
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## GetMembersResponseTypeDef
 
@@ -1324,7 +1324,7 @@ from mypy_boto3_guardduty.type_defs import InviteMembersRequestRequestTypeDef
 Required fields:
 
 - `DetectorId`: `str`
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2013,7 +2013,7 @@ from mypy_boto3_guardduty.type_defs import StartMonitoringMembersRequestRequestT
 Required fields:
 
 - `DetectorId`: `str`
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## StartMonitoringMembersResponseTypeDef
 
@@ -2037,7 +2037,7 @@ from mypy_boto3_guardduty.type_defs import StopMonitoringMembersRequestRequestTy
 Required fields:
 
 - `DetectorId`: `str`
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## StopMonitoringMembersResponseTypeDef
 
@@ -2061,7 +2061,7 @@ from mypy_boto3_guardduty.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TagTypeDef
 
@@ -2105,7 +2105,7 @@ from mypy_boto3_guardduty.type_defs import UnarchiveFindingsRequestRequestTypeDe
 Required fields:
 
 - `DetectorId`: `str`
-- `FindingIds`: `List`\[`str`\]
+- `FindingIds`: `Sequence`\[`str`\]
 
 ## UnprocessedAccountTypeDef
 
@@ -2127,7 +2127,7 @@ from mypy_boto3_guardduty.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDetectorRequestRequestTypeDef
 
@@ -2187,7 +2187,7 @@ from mypy_boto3_guardduty.type_defs import UpdateFindingsFeedbackRequestRequestT
 Required fields:
 
 - `DetectorId`: `str`
-- `FindingIds`: `List`\[`str`\]
+- `FindingIds`: `Sequence`\[`str`\]
 - `Feedback`: [FeedbackType](./literals.md#feedbacktype)
 
 Optional fields:
@@ -2220,7 +2220,7 @@ from mypy_boto3_guardduty.type_defs import UpdateMemberDetectorsRequestRequestTy
 Required fields:
 
 - `DetectorId`: `str`
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2308,12 +2308,12 @@ from mypy_boto3_guardduty.type_defs import UsageCriteriaTypeDef
 
 Required fields:
 
-- `DataSources`: `List`\[[DataSourceType](./literals.md#datasourcetype)\]
+- `DataSources`: `Sequence`\[[DataSourceType](./literals.md#datasourcetype)\]
 
 Optional fields:
 
-- `AccountIds`: `List`\[`str`\]
-- `Resources`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
+- `Resources`: `Sequence`\[`str`\]
 
 ## UsageDataSourceResultTypeDef
 

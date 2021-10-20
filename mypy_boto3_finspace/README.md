@@ -69,6 +69,7 @@ from mypy_boto3_finspace.literals import EnvironmentStatusType, ...
 
 - [EnvironmentStatusType](./literals.md#environmentstatustype)
 - [FederationModeType](./literals.md#federationmodetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -61,6 +61,7 @@ from mypy_boto3_migrationhub_config.literals import TargetTypeType, ...
 ```
 
 - [TargetTypeType](./literals.md#targettypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

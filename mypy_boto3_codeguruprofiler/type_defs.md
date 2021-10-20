@@ -79,7 +79,7 @@ from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsRequest
 
 Required fields:
 
-- `channels`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
+- `channels`: `Sequence`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
 - `profilingGroupName`: `str`
 
 ## AddNotificationChannelsResponseTypeDef
@@ -176,7 +176,7 @@ Optional fields:
 
 - `endTime`: `Union`\[`datetime`, `str`\]
 - `frameMetrics`:
-  `List`\[[FrameMetricTypeDef](./type_defs.md#framemetrictypedef)\]
+  `Sequence`\[[FrameMetricTypeDef](./type_defs.md#framemetrictypedef)\]
 - `period`: `str`
 - `startTime`: `Union`\[`datetime`, `str`\]
 - `targetResolution`:
@@ -210,7 +210,7 @@ from mypy_boto3_codeguruprofiler.type_defs import ChannelTypeDef
 
 Required fields:
 
-- `eventPublishers`: `List`\[`Literal['AnomalyDetection']` (see
+- `eventPublishers`: `Sequence`\[`Literal['AnomalyDetection']` (see
   [EventPublisherType](./literals.md#eventpublishertype))\]
 - `uri`: `str`
 
@@ -231,7 +231,7 @@ Required fields:
 Optional fields:
 
 - `fleetInstanceId`: `str`
-- `metadata`: `Dict`\[[MetadataFieldType](./literals.md#metadatafieldtype),
+- `metadata`: `Mapping`\[[MetadataFieldType](./literals.md#metadatafieldtype),
   `str`\]
 
 ## ConfigureAgentResponseTypeDef
@@ -263,7 +263,7 @@ Optional fields:
 - `agentOrchestrationConfig`:
   [AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef)
 - `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateProfilingGroupResponseTypeDef
 
@@ -345,7 +345,7 @@ from mypy_boto3_codeguruprofiler.type_defs import FrameMetricTypeDef
 Required fields:
 
 - `frameName`: `str`
-- `threadStates`: `List`\[`str`\]
+- `threadStates`: `Sequence`\[`str`\]
 - `type`: `Literal['AggregatedRelativeTotalTime']` (see
   [MetricTypeType](./literals.md#metrictypetype))
 
@@ -731,7 +731,7 @@ Required fields:
 
 - `actionGroup`: `Literal['agentPermissions']` (see
   [ActionGroupType](./literals.md#actiongrouptype))
-- `principals`: `List`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
 - `profilingGroupName`: `str`
 
 Optional fields:
@@ -855,7 +855,7 @@ from mypy_boto3_codeguruprofiler.type_defs import TagResourceRequestRequestTypeD
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TimestampStructureTypeDef
 
@@ -876,7 +876,7 @@ from mypy_boto3_codeguruprofiler.type_defs import UntagResourceRequestRequestTyp
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateProfilingGroupRequestRequestTypeDef
 

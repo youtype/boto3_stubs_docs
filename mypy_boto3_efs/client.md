@@ -147,7 +147,7 @@ Keyword-only arguments:
 
 - `ClientToken`: `str` *(required)*
 - `FileSystemId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `PosixUser`: [PosixUserTypeDef](./type_defs.md#posixusertypedef)
 - `RootDirectory`: [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
 
@@ -176,7 +176,7 @@ Keyword-only arguments:
 - `ProvisionedThroughputInMibps`: `float`
 - `AvailabilityZoneName`: `str`
 - `Backup`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef).
@@ -198,7 +198,7 @@ Keyword-only arguments:
 - `FileSystemId`: `str` *(required)*
 - `SubnetId`: `str` *(required)*
 - `IpAddress`: `str`
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 
 Returns
 [MountTargetDescriptionResponseMetadataTypeDef](./type_defs.md#mounttargetdescriptionresponsemetadatatypedef).
@@ -218,7 +218,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### delete_access_point
 
@@ -299,7 +299,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### describe_access_points
 
@@ -326,10 +326,9 @@ Returns
 
 ### describe_account_preferences
 
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/elasti cfilesystem-2015-02-01/DescribeAccountPreferences>`\_
-**Request Syntax** response = client.describe_account_preferences(
-NextToken='string', MaxResults=123 ).
+Returns the account preferences settings for the Amazon Web Services account
+associated with the user making the request, in the current Amazon Web Services
+Region.
 
 Type annotations for `boto3.client("efs").describe_account_preferences` method.
 
@@ -506,7 +505,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -549,14 +548,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `MountTargetId`: `str` *(required)*
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 
 ### put_account_preferences
 
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/elasti cfilesystem-2015-02-01/PutAccountPreferences>`\_
-**Request Syntax** response = client.put_account_preferences(
-ResourceIdType='LONG_ID'|'SHORT_ID' ).
+Use this operation to set the account preference in the current Amazon Web
+Services Region to use long 17 character (63 bit) or short 8 character (32 bit)
+resource IDs for new EFS file system and mount target resources.
 
 Type annotations for `boto3.client("efs").put_account_preferences` method.
 
@@ -632,7 +630,7 @@ Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `LifecyclePolicies`:
-  `List`\[[LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)\]
+  `Sequence`\[[LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)\]
   *(required)*
 
 Returns
@@ -653,7 +651,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_resource
 
@@ -670,7 +668,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_file_system
 

@@ -32,13 +32,13 @@ Boto3 documentation:
 Arguments for `DescribeObjectsPaginator.paginate` method:
 
 - `pipelineId`: `str` *(required)*
-- `objectIds`: `List`\[`str`\] *(required)*
+- `objectIds`: `Sequence`\[`str`\] *(required)*
 - `evaluateExpressions`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeObjectsPaginator.paginate` returns
-`Iterator`\[[DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef)\].
+`_PageIterator`\[[DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef)\].
 
 ## ListPipelinesPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListPipelinesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelinesPaginator.paginate` returns
-`Iterator`\[[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef)\].
+`_PageIterator`\[[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef)\].
 
 ## QueryObjectsPaginator
 
@@ -91,4 +91,4 @@ Arguments for `QueryObjectsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `QueryObjectsPaginator.paginate` returns
-`Iterator`\[[QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef)\].
+`_PageIterator`\[[QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef)\].

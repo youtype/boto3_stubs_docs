@@ -86,6 +86,8 @@ from mypy_boto3_mwaa.literals import EnvironmentStatusType, ...
 - [UnitType](./literals.md#unittype)
 - [UpdateStatusType](./literals.md#updatestatustype)
 - [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

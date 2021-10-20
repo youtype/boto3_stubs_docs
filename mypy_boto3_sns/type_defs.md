@@ -106,8 +106,8 @@ Required fields:
 
 - `TopicArn`: `str`
 - `Label`: `str`
-- `AWSAccountId`: `List`\[`str`\]
-- `ActionName`: `List`\[`str`\]
+- `AWSAccountId`: `Sequence`\[`str`\]
+- `ActionName`: `Sequence`\[`str`\]
 
 ## AddPermissionInputTopicTypeDef
 
@@ -118,8 +118,8 @@ from mypy_boto3_sns.type_defs import AddPermissionInputTopicTypeDef
 Required fields:
 
 - `Label`: `str`
-- `AWSAccountId`: `List`\[`str`\]
-- `ActionName`: `List`\[`str`\]
+- `AWSAccountId`: `Sequence`\[`str`\]
+- `ActionName`: `Sequence`\[`str`\]
 
 ## CheckIfPhoneNumberIsOptedOutInputRequestTypeDef
 
@@ -206,7 +206,7 @@ Required fields:
 
 - `Name`: `str`
 - `Platform`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## CreatePlatformApplicationInputServiceResourceTypeDef
 
@@ -218,7 +218,7 @@ Required fields:
 
 - `Name`: `str`
 - `Platform`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## CreatePlatformApplicationResponseTypeDef
 
@@ -245,7 +245,7 @@ Required fields:
 Optional fields:
 
 - `CustomUserData`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## CreatePlatformEndpointInputRequestTypeDef
 
@@ -261,7 +261,7 @@ Required fields:
 Optional fields:
 
 - `CustomUserData`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## CreateSMSSandboxPhoneNumberInputRequestTypeDef
 
@@ -290,8 +290,8 @@ Required fields:
 
 Optional fields:
 
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateTopicInputServiceResourceTypeDef
 
@@ -305,8 +305,8 @@ Required fields:
 
 Optional fields:
 
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateTopicResponseTypeDef
 
@@ -423,7 +423,7 @@ from mypy_boto3_sns.type_defs import GetSMSAttributesInputRequestTypeDef
 
 Optional fields:
 
-- `attributes`: `List`\[`str`\]
+- `attributes`: `Sequence`\[`str`\]
 
 ## GetSMSAttributesResponseTypeDef
 
@@ -794,7 +794,7 @@ Optional fields:
 - `PhoneNumber`: `str`
 - `Subject`: `str`
 - `MessageStructure`: `str`
-- `MessageAttributes`: `Dict`\[`str`,
+- `MessageAttributes`: `Mapping`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
@@ -816,7 +816,7 @@ Optional fields:
 - `PhoneNumber`: `str`
 - `Subject`: `str`
 - `MessageStructure`: `str`
-- `MessageAttributes`: `Dict`\[`str`,
+- `MessageAttributes`: `Mapping`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
@@ -837,7 +837,7 @@ Optional fields:
 - `PhoneNumber`: `str`
 - `Subject`: `str`
 - `MessageStructure`: `str`
-- `MessageAttributes`: `Dict`\[`str`,
+- `MessageAttributes`: `Mapping`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
@@ -950,7 +950,7 @@ from mypy_boto3_sns.type_defs import SetEndpointAttributesInputPlatformEndpointT
 
 Required fields:
 
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## SetEndpointAttributesInputRequestTypeDef
 
@@ -961,7 +961,7 @@ from mypy_boto3_sns.type_defs import SetEndpointAttributesInputRequestTypeDef
 Required fields:
 
 - `EndpointArn`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## SetPlatformApplicationAttributesInputPlatformApplicationTypeDef
 
@@ -971,7 +971,7 @@ from mypy_boto3_sns.type_defs import SetPlatformApplicationAttributesInputPlatfo
 
 Required fields:
 
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## SetPlatformApplicationAttributesInputRequestTypeDef
 
@@ -982,7 +982,7 @@ from mypy_boto3_sns.type_defs import SetPlatformApplicationAttributesInputReques
 Required fields:
 
 - `PlatformApplicationArn`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## SetSMSAttributesInputRequestTypeDef
 
@@ -992,7 +992,7 @@ from mypy_boto3_sns.type_defs import SetSMSAttributesInputRequestTypeDef
 
 Required fields:
 
-- `attributes`: `Dict`\[`str`, `str`\]
+- `attributes`: `Mapping`\[`str`, `str`\]
 
 ## SetSubscriptionAttributesInputRequestTypeDef
 
@@ -1066,7 +1066,7 @@ Required fields:
 Optional fields:
 
 - `Endpoint`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 - `ReturnSubscriptionArn`: `bool`
 
 ## SubscribeInputTopicTypeDef
@@ -1082,7 +1082,7 @@ Required fields:
 Optional fields:
 
 - `Endpoint`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 - `ReturnSubscriptionArn`: `bool`
 
 ## SubscribeResponseTypeDef
@@ -1120,7 +1120,7 @@ from mypy_boto3_sns.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1162,7 +1162,7 @@ from mypy_boto3_sns.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## VerifySMSSandboxPhoneNumberInputRequestTypeDef
 

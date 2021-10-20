@@ -77,6 +77,7 @@ from mypy_boto3_savingsplans.literals import CurrencyCodeType, ...
 - [SavingsPlanStateType](./literals.md#savingsplanstatetype)
 - [SavingsPlanTypeType](./literals.md#savingsplantypetype)
 - [SavingsPlansFilterNameType](./literals.md#savingsplansfilternametype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

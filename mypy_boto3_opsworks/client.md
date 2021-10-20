@@ -153,7 +153,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
-- `LayerIds`: `List`\[`str`\] *(required)*
+- `LayerIds`: `Sequence`\[`str`\] *(required)*
 
 ### assign_volume
 
@@ -243,7 +243,7 @@ Keyword-only arguments:
 - `Name`: `str`
 - `Region`: `str`
 - `VpcId`: `str`
-- `Attributes`: `Dict`\[`Literal['Color']` (see
+- `Attributes`: `Mapping`\[`Literal['Color']` (see
   [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
 - `DefaultInstanceProfileArn`: `str`
 - `DefaultOs`: `str`
@@ -260,7 +260,7 @@ Keyword-only arguments:
 - `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
 - `DefaultSshKeyName`: `str`
 - `ClonePermissions`: `bool`
-- `CloneAppIds`: `List`\[`str`\]
+- `CloneAppIds`: `Sequence`\[`str`\]
 - `DefaultRootDeviceType`:
   [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `AgentVersion`: `str`
@@ -287,16 +287,17 @@ Keyword-only arguments:
 - `Shortname`: `str`
 - `Description`: `str`
 - `DataSources`:
-  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
+  `Sequence`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
 - `AppSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `Domains`: `List`\[`str`\]
+- `Domains`: `Sequence`\[`str`\]
 - `EnableSsl`: `bool`
 - `SslConfiguration`:
   [SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef)
 - `Attributes`:
-  `Dict`\[[AppAttributesKeysType](./literals.md#appattributeskeystype), `str`\]
+  `Mapping`\[[AppAttributesKeysType](./literals.md#appattributeskeystype),
+  `str`\]
 - `Environment`:
-  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
+  `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
 Returns [CreateAppResultTypeDef](./type_defs.md#createappresulttypedef).
 
@@ -319,8 +320,8 @@ Keyword-only arguments:
   [DeploymentCommandTypeDef](./type_defs.md#deploymentcommandtypedef)
   *(required)*
 - `AppId`: `str`
-- `InstanceIds`: `List`\[`str`\]
-- `LayerIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
+- `LayerIds`: `Sequence`\[`str`\]
 - `Comment`: `str`
 - `CustomJson`: `str`
 
@@ -342,7 +343,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
-- `LayerIds`: `List`\[`str`\] *(required)*
+- `LayerIds`: `Sequence`\[`str`\] *(required)*
 - `InstanceType`: `str` *(required)*
 - `AutoScalingType`: [AutoScalingTypeType](./literals.md#autoscalingtypetype)
 - `Hostname`: `str`
@@ -355,7 +356,7 @@ Keyword-only arguments:
 - `Architecture`: [ArchitectureType](./literals.md#architecturetype)
 - `RootDeviceType`: [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `InstallUpdatesOnBoot`: `bool`
 - `EbsOptimized`: `bool`
 - `AgentVersion`: `str`
@@ -383,16 +384,16 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Shortname`: `str` *(required)*
 - `Attributes`:
-  `Dict`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
+  `Mapping`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
   `str`\]
 - `CloudWatchLogsConfiguration`:
   [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
 - `CustomInstanceProfileArn`: `str`
 - `CustomJson`: `str`
-- `CustomSecurityGroupIds`: `List`\[`str`\]
-- `Packages`: `List`\[`str`\]
+- `CustomSecurityGroupIds`: `Sequence`\[`str`\]
+- `Packages`: `Sequence`\[`str`\]
 - `VolumeConfigurations`:
-  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
+  `Sequence`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
 - `EnableAutoHealing`: `bool`
 - `AutoAssignElasticIps`: `bool`
 - `AutoAssignPublicIps`: `bool`
@@ -423,7 +424,7 @@ Keyword-only arguments:
 - `ServiceRoleArn`: `str` *(required)*
 - `DefaultInstanceProfileArn`: `str` *(required)*
 - `VpcId`: `str`
-- `Attributes`: `Dict`\[`Literal['Color']` (see
+- `Attributes`: `Mapping`\[`Literal['Color']` (see
   [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
 - `DefaultOs`: `str`
 - `HostnameTheme`: `str`
@@ -666,7 +667,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackId`: `str`
-- `AppIds`: `List`\[`str`\]
+- `AppIds`: `Sequence`\[`str`\]
 
 Returns [DescribeAppsResultTypeDef](./type_defs.md#describeappsresulttypedef).
 
@@ -686,7 +687,7 @@ Keyword-only arguments:
 
 - `DeploymentId`: `str`
 - `InstanceId`: `str`
-- `CommandIds`: `List`\[`str`\]
+- `CommandIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeCommandsResultTypeDef](./type_defs.md#describecommandsresulttypedef).
@@ -707,7 +708,7 @@ Keyword-only arguments:
 
 - `StackId`: `str`
 - `AppId`: `str`
-- `DeploymentIds`: `List`\[`str`\]
+- `DeploymentIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeDeploymentsResultTypeDef](./type_defs.md#describedeploymentsresulttypedef).
@@ -726,7 +727,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `EcsClusterArns`: `List`\[`str`\]
+- `EcsClusterArns`: `Sequence`\[`str`\]
 - `StackId`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -752,7 +753,7 @@ Keyword-only arguments:
 
 - `InstanceId`: `str`
 - `StackId`: `str`
-- `Ips`: `List`\[`str`\]
+- `Ips`: `Sequence`\[`str`\]
 
 Returns
 [DescribeElasticIpsResultTypeDef](./type_defs.md#describeelasticipsresulttypedef).
@@ -773,7 +774,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackId`: `str`
-- `LayerIds`: `List`\[`str`\]
+- `LayerIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeElasticLoadBalancersResultTypeDef](./type_defs.md#describeelasticloadbalancersresulttypedef).
@@ -794,7 +795,7 @@ Keyword-only arguments:
 
 - `StackId`: `str`
 - `LayerId`: `str`
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef).
@@ -814,7 +815,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackId`: `str`
-- `LayerIds`: `List`\[`str`\]
+- `LayerIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeLayersResultTypeDef](./type_defs.md#describelayersresulttypedef).
@@ -834,7 +835,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LayerIds`: `List`\[`str`\] *(required)*
+- `LayerIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeLoadBasedAutoScalingResultTypeDef](./type_defs.md#describeloadbasedautoscalingresulttypedef).
@@ -901,7 +902,7 @@ Keyword-only arguments:
 
 - `InstanceId`: `str`
 - `StackId`: `str`
-- `RaidArrayIds`: `List`\[`str`\]
+- `RaidArrayIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeRaidArraysResultTypeDef](./type_defs.md#describeraidarraysresulttypedef).
@@ -922,7 +923,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
-- `RdsDbInstanceArns`: `List`\[`str`\]
+- `RdsDbInstanceArns`: `Sequence`\[`str`\]
 
 Returns
 [DescribeRdsDbInstancesResultTypeDef](./type_defs.md#describerdsdbinstancesresulttypedef).
@@ -943,7 +944,7 @@ Keyword-only arguments:
 
 - `StackId`: `str`
 - `InstanceId`: `str`
-- `ServiceErrorIds`: `List`\[`str`\]
+- `ServiceErrorIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeServiceErrorsResultTypeDef](./type_defs.md#describeserviceerrorsresulttypedef).
@@ -1002,7 +1003,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `StackIds`: `List`\[`str`\]
+- `StackIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef).
@@ -1022,7 +1023,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `InstanceIds`: `List`\[`str`\] *(required)*
+- `InstanceIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeTimeBasedAutoScalingResultTypeDef](./type_defs.md#describetimebasedautoscalingresulttypedef).
@@ -1041,7 +1042,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `IamUserArns`: `List`\[`str`\]
+- `IamUserArns`: `Sequence`\[`str`\]
 
 Returns
 [DescribeUserProfilesResultTypeDef](./type_defs.md#describeuserprofilesresulttypedef).
@@ -1063,7 +1064,7 @@ Keyword-only arguments:
 - `InstanceId`: `str`
 - `StackId`: `str`
 - `RaidArrayId`: `str`
-- `VolumeIds`: `List`\[`str`\]
+- `VolumeIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef).
@@ -1114,7 +1115,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1444,7 +1445,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### unassign_instance
 
@@ -1493,7 +1494,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_app
 
@@ -1513,17 +1514,18 @@ Keyword-only arguments:
 - `Name`: `str`
 - `Description`: `str`
 - `DataSources`:
-  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
+  `Sequence`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
 - `Type`: [AppTypeType](./literals.md#apptypetype)
 - `AppSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `Domains`: `List`\[`str`\]
+- `Domains`: `Sequence`\[`str`\]
 - `EnableSsl`: `bool`
 - `SslConfiguration`:
   [SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef)
 - `Attributes`:
-  `Dict`\[[AppAttributesKeysType](./literals.md#appattributeskeystype), `str`\]
+  `Mapping`\[[AppAttributesKeysType](./literals.md#appattributeskeystype),
+  `str`\]
 - `Environment`:
-  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
+  `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
 ### update_elastic_ip
 
@@ -1557,7 +1559,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
-- `LayerIds`: `List`\[`str`\]
+- `LayerIds`: `Sequence`\[`str`\]
 - `InstanceType`: `str`
 - `AutoScalingType`: [AutoScalingTypeType](./literals.md#autoscalingtypetype)
 - `Hostname`: `str`
@@ -1587,16 +1589,16 @@ Keyword-only arguments:
 - `Name`: `str`
 - `Shortname`: `str`
 - `Attributes`:
-  `Dict`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
+  `Mapping`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
   `str`\]
 - `CloudWatchLogsConfiguration`:
   [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
 - `CustomInstanceProfileArn`: `str`
 - `CustomJson`: `str`
-- `CustomSecurityGroupIds`: `List`\[`str`\]
-- `Packages`: `List`\[`str`\]
+- `CustomSecurityGroupIds`: `Sequence`\[`str`\]
+- `Packages`: `Sequence`\[`str`\]
 - `VolumeConfigurations`:
-  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
+  `Sequence`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
 - `EnableAutoHealing`: `bool`
 - `AutoAssignElasticIps`: `bool`
 - `AutoAssignPublicIps`: `bool`
@@ -1656,7 +1658,7 @@ Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
 - `Name`: `str`
-- `Attributes`: `Dict`\[`Literal['Color']` (see
+- `Attributes`: `Mapping`\[`Literal['Color']` (see
   [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
 - `ServiceRoleArn`: `str`
 - `DefaultInstanceProfileArn`: `str`

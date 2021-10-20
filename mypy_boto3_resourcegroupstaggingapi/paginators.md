@@ -32,17 +32,17 @@ Boto3 documentation:
 
 Arguments for `GetComplianceSummaryPaginator.paginate` method:
 
-- `TargetIdFilters`: `List`\[`str`\]
-- `RegionFilters`: `List`\[`str`\]
-- `ResourceTypeFilters`: `List`\[`str`\]
-- `TagKeyFilters`: `List`\[`str`\]
+- `TargetIdFilters`: `Sequence`\[`str`\]
+- `RegionFilters`: `Sequence`\[`str`\]
+- `ResourceTypeFilters`: `Sequence`\[`str`\]
+- `TagKeyFilters`: `Sequence`\[`str`\]
 - `GroupBy`:
-  `List`\[[GroupByAttributeType](./literals.md#groupbyattributetype)\]
+  `Sequence`\[[GroupByAttributeType](./literals.md#groupbyattributetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetComplianceSummaryPaginator.paginate` returns
-`Iterator`\[[GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef)\].
+`_PageIterator`\[[GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef)\].
 
 ## GetResourcesPaginator
 
@@ -63,17 +63,18 @@ Boto3 documentation:
 
 Arguments for `GetResourcesPaginator.paginate` method:
 
-- `TagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `TagFilters`:
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `TagsPerPage`: `int`
-- `ResourceTypeFilters`: `List`\[`str`\]
+- `ResourceTypeFilters`: `Sequence`\[`str`\]
 - `IncludeComplianceDetails`: `bool`
 - `ExcludeCompliantResources`: `bool`
-- `ResourceARNList`: `List`\[`str`\]
+- `ResourceARNList`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourcesPaginator.paginate` returns
-`Iterator`\[[GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef)\].
+`_PageIterator`\[[GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef)\].
 
 ## GetTagKeysPaginator
 
@@ -98,7 +99,7 @@ Arguments for `GetTagKeysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTagKeysPaginator.paginate` returns
-`Iterator`\[[GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef)\].
+`_PageIterator`\[[GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef)\].
 
 ## GetTagValuesPaginator
 
@@ -124,4 +125,4 @@ Arguments for `GetTagValuesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTagValuesPaginator.paginate` returns
-`Iterator`\[[GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef)\].
+`_PageIterator`\[[GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef)\].

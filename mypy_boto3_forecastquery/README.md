@@ -15,6 +15,7 @@ pip install mypy-boto3-forecastquery
   - [ForecastQueryServiceClient](#forecastqueryserviceclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## ForecastQueryServiceClient
@@ -45,6 +46,18 @@ ForecastQueryServiceClient [exceptions](./client.md#exceptions)
 - LimitExceededException
 - ResourceInUseException
 - ResourceNotFoundException
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_forecastquery.literals import ServiceName, ...
+```
+
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

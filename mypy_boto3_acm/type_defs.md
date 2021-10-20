@@ -55,7 +55,7 @@ from mypy_boto3_acm.type_defs import AddTagsToCertificateRequestRequestTypeDef
 Required fields:
 
 - `CertificateArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CertificateDetailTypeDef
 
@@ -239,9 +239,9 @@ from mypy_boto3_acm.type_defs import FiltersTypeDef
 Optional fields:
 
 - `extendedKeyUsage`:
-  `List`\[[ExtendedKeyUsageNameType](./literals.md#extendedkeyusagenametype)\]
-- `keyUsage`: `List`\[[KeyUsageNameType](./literals.md#keyusagenametype)\]
-- `keyTypes`: `List`\[[KeyAlgorithmType](./literals.md#keyalgorithmtype)\]
+  `Sequence`\[[ExtendedKeyUsageNameType](./literals.md#extendedkeyusagenametype)\]
+- `keyUsage`: `Sequence`\[[KeyUsageNameType](./literals.md#keyusagenametype)\]
+- `keyTypes`: `Sequence`\[[KeyAlgorithmType](./literals.md#keyalgorithmtype)\]
 
 ## GetAccountConfigurationResponseTypeDef
 
@@ -294,7 +294,7 @@ Optional fields:
 
 - `CertificateArn`: `str`
 - `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ImportCertificateResponseTypeDef
 
@@ -327,7 +327,7 @@ from mypy_boto3_acm.type_defs import ListCertificatesRequestRequestTypeDef
 Optional fields:
 
 - `CertificateStatuses`:
-  `List`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
+  `Sequence`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
 - `Includes`: [FiltersTypeDef](./type_defs.md#filterstypedef)
 - `NextToken`: `str`
 - `MaxItems`: `int`
@@ -404,7 +404,7 @@ from mypy_boto3_acm.type_defs import RemoveTagsFromCertificateRequestRequestType
 Required fields:
 
 - `CertificateArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## RenewCertificateRequestRequestTypeDef
 
@@ -447,14 +447,14 @@ Optional fields:
 
 - `ValidationMethod`:
   [ValidationMethodType](./literals.md#validationmethodtype)
-- `SubjectAlternativeNames`: `List`\[`str`\]
+- `SubjectAlternativeNames`: `Sequence`\[`str`\]
 - `IdempotencyToken`: `str`
 - `DomainValidationOptions`:
-  `List`\[[DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef)\]
+  `Sequence`\[[DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef)\]
 - `Options`:
   [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
 - `CertificateAuthorityArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## RequestCertificateResponseTypeDef
 

@@ -182,10 +182,14 @@ from mypy_boto3_elbv2.literals import ActionTypeEnumType, ...
 - [ProtocolEnumType](./literals.md#protocolenumtype)
 - [RedirectActionStatusCodeEnumType](./literals.md#redirectactionstatuscodeenumtype)
 - [TargetDeregisteredWaiterName](./literals.md#targetderegisteredwaitername)
+- [TargetGroupIpAddressTypeEnumType](./literals.md#targetgroupipaddresstypeenumtype)
 - [TargetHealthReasonEnumType](./literals.md#targethealthreasonenumtype)
 - [TargetHealthStateEnumType](./literals.md#targethealthstateenumtype)
 - [TargetInServiceWaiterName](./literals.md#targetinservicewaitername)
 - [TargetTypeEnumType](./literals.md#targettypeenumtype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

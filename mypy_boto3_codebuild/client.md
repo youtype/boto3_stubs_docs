@@ -56,6 +56,7 @@ type annotations stubs module
     - [stop_build](#stop_build)
     - [stop_build_batch](#stop_build_batch)
     - [update_project](#update_project)
+    - [update_project_visibility](#update_project_visibility)
     - [update_report_group](#update_report_group)
     - [update_webhook](#update_webhook)
     - [get_paginator](#get_paginator)
@@ -124,7 +125,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ids`: `List`\[`str`\] *(required)*
+- `ids`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDeleteBuildsOutputTypeDef](./type_defs.md#batchdeletebuildsoutputtypedef).
@@ -144,7 +145,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ids`: `List`\[`str`\] *(required)*
+- `ids`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetBuildBatchesOutputTypeDef](./type_defs.md#batchgetbuildbatchesoutputtypedef).
@@ -163,7 +164,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ids`: `List`\[`str`\] *(required)*
+- `ids`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetBuildsOutputTypeDef](./type_defs.md#batchgetbuildsoutputtypedef).
@@ -182,7 +183,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `names`: `List`\[`str`\] *(required)*
+- `names`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetProjectsOutputTypeDef](./type_defs.md#batchgetprojectsoutputtypedef).
@@ -202,7 +203,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `reportGroupArns`: `List`\[`str`\] *(required)*
+- `reportGroupArns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetReportGroupsOutputTypeDef](./type_defs.md#batchgetreportgroupsoutputtypedef).
@@ -221,7 +222,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `reportArns`: `List`\[`str`\] *(required)*
+- `reportArns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetReportsOutputTypeDef](./type_defs.md#batchgetreportsoutputtypedef).
@@ -267,22 +268,22 @@ Keyword-only arguments:
 - `serviceRole`: `str` *(required)*
 - `description`: `str`
 - `secondarySources`:
-  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
+  `Sequence`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `sourceVersion`: `str`
 - `secondarySourceVersions`:
-  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+  `Sequence`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
 - `secondaryArtifacts`:
-  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+  `Sequence`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
 - `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
 - `timeoutInMinutes`: `int`
 - `queuedTimeoutInMinutes`: `int`
 - `encryptionKey`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `badgeEnabled`: `bool`
 - `logsConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
 - `fileSystemLocations`:
-  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
+  `Sequence`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
 - `buildBatchConfig`:
   [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `concurrentBuildLimit`: `int`
@@ -309,7 +310,7 @@ Keyword-only arguments:
 - `exportConfig`:
   [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
   *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateReportGroupOutputTypeDef](./type_defs.md#createreportgroupoutputtypedef).
@@ -333,7 +334,7 @@ Keyword-only arguments:
 - `projectName`: `str` *(required)*
 - `branchFilter`: `str`
 - `filterGroups`:
-  `List`\[`List`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
+  `Sequence`\[`Sequence`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
 - `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
 
 Returns
@@ -532,7 +533,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -954,16 +955,16 @@ Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `secondarySourcesOverride`:
-  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
+  `Sequence`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `secondarySourcesVersionOverride`:
-  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+  `Sequence`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
 - `sourceVersion`: `str`
 - `artifactsOverride`:
   [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
 - `secondaryArtifactsOverride`:
-  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+  `Sequence`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
 - `environmentVariablesOverride`:
-  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
+  `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 - `sourceTypeOverride`: [SourceTypeType](./literals.md#sourcetypetype)
 - `sourceLocationOverride`: `str`
 - `sourceAuthOverride`: [SourceAuthTypeDef](./type_defs.md#sourceauthtypedef)
@@ -1012,16 +1013,16 @@ Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `secondarySourcesOverride`:
-  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
+  `Sequence`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `secondarySourcesVersionOverride`:
-  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+  `Sequence`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
 - `sourceVersion`: `str`
 - `artifactsOverride`:
   [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
 - `secondaryArtifactsOverride`:
-  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+  `Sequence`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
 - `environmentVariablesOverride`:
-  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
+  `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 - `sourceTypeOverride`: [SourceTypeType](./literals.md#sourcetypetype)
 - `sourceLocationOverride`: `str`
 - `sourceAuthOverride`: [SourceAuthTypeDef](./type_defs.md#sourceauthtypedef)
@@ -1110,14 +1111,14 @@ Keyword-only arguments:
 - `description`: `str`
 - `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
 - `secondarySources`:
-  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
+  `Sequence`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `sourceVersion`: `str`
 - `secondarySourceVersions`:
-  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+  `Sequence`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
 - `artifacts`:
   [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
 - `secondaryArtifacts`:
-  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+  `Sequence`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
 - `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
 - `environment`:
   [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
@@ -1125,18 +1126,42 @@ Keyword-only arguments:
 - `timeoutInMinutes`: `int`
 - `queuedTimeoutInMinutes`: `int`
 - `encryptionKey`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `badgeEnabled`: `bool`
 - `logsConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
 - `fileSystemLocations`:
-  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
+  `Sequence`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
 - `buildBatchConfig`:
   [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `concurrentBuildLimit`: `int`
 
 Returns
 [UpdateProjectOutputTypeDef](./type_defs.md#updateprojectoutputtypedef).
+
+### update_project_visibility
+
+Changes the public visibility for a project.
+
+Type annotations for `boto3.client("codebuild").update_project_visibility`
+method.
+
+Boto3 documentation:
+[CodeBuild.Client.update_project_visibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_project_visibility)
+
+Arguments mapping described in
+[UpdateProjectVisibilityInputRequestTypeDef](./type_defs.md#updateprojectvisibilityinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `projectArn`: `str` *(required)*
+- `projectVisibility`:
+  [ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype)
+  *(required)*
+- `resourceAccessRole`: `str`
+
+Returns
+[UpdateProjectVisibilityOutputTypeDef](./type_defs.md#updateprojectvisibilityoutputtypedef).
 
 ### update_report_group
 
@@ -1155,7 +1180,7 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 - `exportConfig`:
   [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [UpdateReportGroupOutputTypeDef](./type_defs.md#updatereportgroupoutputtypedef).
@@ -1178,7 +1203,7 @@ Keyword-only arguments:
 - `branchFilter`: `str`
 - `rotateSecret`: `bool`
 - `filterGroups`:
-  `List`\[`List`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
+  `Sequence`\[`Sequence`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
 - `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
 
 Returns

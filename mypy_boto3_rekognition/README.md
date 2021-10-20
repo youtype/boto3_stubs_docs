@@ -166,6 +166,7 @@ from mypy_boto3_rekognition.literals import AttributeType, ...
 - [FaceAttributesType](./literals.md#faceattributestype)
 - [FaceSearchSortByType](./literals.md#facesearchsortbytype)
 - [GenderTypeType](./literals.md#gendertypetype)
+- [KnownGenderTypeType](./literals.md#knowngendertypetype)
 - [LabelDetectionSortByType](./literals.md#labeldetectionsortbytype)
 - [LandmarkTypeType](./literals.md#landmarktypetype)
 - [ListCollectionsPaginatorName](./literals.md#listcollectionspaginatorname)
@@ -184,7 +185,11 @@ from mypy_boto3_rekognition.literals import AttributeType, ...
 - [StreamProcessorStatusType](./literals.md#streamprocessorstatustype)
 - [TechnicalCueTypeType](./literals.md#technicalcuetypetype)
 - [TextTypesType](./literals.md#texttypestype)
+- [VideoColorRangeType](./literals.md#videocolorrangetype)
 - [VideoJobStatusType](./literals.md#videojobstatustype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 
@@ -201,6 +206,7 @@ from mypy_boto3_rekognition.type_defs import AgeRangeTypeDef, ...
 - [AssetTypeDef](./type_defs.md#assettypedef)
 - [AudioMetadataTypeDef](./type_defs.md#audiometadatatypedef)
 - [BeardTypeDef](./type_defs.md#beardtypedef)
+- [BlackFrameTypeDef](./type_defs.md#blackframetypedef)
 - [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - [CelebrityDetailTypeDef](./type_defs.md#celebritydetailtypedef)
 - [CelebrityRecognitionTypeDef](./type_defs.md#celebrityrecognitiontypedef)
@@ -294,6 +300,7 @@ from mypy_boto3_rekognition.type_defs import AgeRangeTypeDef, ...
 - [InstanceTypeDef](./type_defs.md#instancetypedef)
 - [KinesisDataStreamTypeDef](./type_defs.md#kinesisdatastreamtypedef)
 - [KinesisVideoStreamTypeDef](./type_defs.md#kinesisvideostreamtypedef)
+- [KnownGenderTypeDef](./type_defs.md#knowngendertypedef)
 - [LabelDetectionTypeDef](./type_defs.md#labeldetectiontypedef)
 - [LabelTypeDef](./type_defs.md#labeltypedef)
 - [LandmarkTypeDef](./type_defs.md#landmarktypedef)

@@ -67,6 +67,7 @@ type annotations stubs module
   - [MatchingResponseTypeDef](#matchingresponsetypedef)
   - [MergeProfilesRequestRequestTypeDef](#mergeprofilesrequestrequesttypedef)
   - [MergeProfilesResponseTypeDef](#mergeprofilesresponsetypedef)
+  - [ObjectFilterTypeDef](#objectfiltertypedef)
   - [ObjectTypeFieldTypeDef](#objecttypefieldtypedef)
   - [ObjectTypeKeyTypeDef](#objecttypekeytypedef)
   - [ProfileTypeDef](#profiletypedef)
@@ -107,7 +108,7 @@ Required fields:
 
 - `ProfileId`: `str`
 - `KeyName`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `DomainName`: `str`
 
 ## AddProfileKeyResponseTypeDef
@@ -176,7 +177,7 @@ Optional fields:
 - `DefaultEncryptionKey`: `str`
 - `DeadLetterQueueUrl`: `str`
 - `Matching`: [MatchingRequestTypeDef](./type_defs.md#matchingrequesttypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDomainResponseTypeDef
 
@@ -229,7 +230,7 @@ Optional fields:
 - `ShippingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
 - `MailingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
 - `BillingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## CreateProfileResponseTypeDef
 
@@ -298,7 +299,7 @@ Required fields:
 
 - `ProfileId`: `str`
 - `KeyName`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `DomainName`: `str`
 
 ## DeleteProfileKeyResponseTypeDef
@@ -425,7 +426,7 @@ Optional fields:
 - `ShippingAddress`: `str`
 - `MailingAddress`: `str`
 - `BillingAddress`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## FlowDefinitionTypeDef
 
@@ -439,7 +440,7 @@ Required fields:
 - `KmsArn`: `str`
 - `SourceFlowConfig`:
   [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
-- `Tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
+- `Tasks`: `Sequence`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
 - `TriggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
 
 Optional fields:
@@ -836,6 +837,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `ObjectFilter`: [ObjectFilterTypeDef](./type_defs.md#objectfiltertypedef)
 
 ## ListProfileObjectsResponseTypeDef
 
@@ -924,7 +926,7 @@ Required fields:
 
 - `DomainName`: `str`
 - `MainProfileId`: `str`
-- `ProfileIdsToBeMerged`: `List`\[`str`\]
+- `ProfileIdsToBeMerged`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -942,6 +944,17 @@ Required fields:
 - `Message`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ObjectFilterTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import ObjectFilterTypeDef
+```
+
+Required fields:
+
+- `KeyName`: `str`
+- `Values`: `Sequence`\[`str`\]
 
 ## ObjectTypeFieldTypeDef
 
@@ -1012,7 +1025,7 @@ Required fields:
 Optional fields:
 
 - `Uri`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `FlowDefinition`:
   [FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)
 
@@ -1075,11 +1088,11 @@ Optional fields:
 - `ExpirationDays`: `int`
 - `EncryptionKey`: `str`
 - `AllowProfileCreation`: `bool`
-- `Fields`: `Dict`\[`str`,
+- `Fields`: `Mapping`\[`str`,
   [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)\]
-- `Keys`: `Dict`\[`str`,
-  `List`\[[ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef)\]\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Keys`: `Mapping`\[`str`,
+  `Sequence`\[[ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef)\]\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## PutProfileObjectTypeResponseTypeDef
 
@@ -1177,7 +1190,7 @@ Required fields:
 
 - `DomainName`: `str`
 - `KeyName`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1253,7 +1266,7 @@ from mypy_boto3_customer_profiles.type_defs import TagResourceRequestRequestType
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TaskTypeDef
 
@@ -1263,7 +1276,7 @@ from mypy_boto3_customer_profiles.type_defs import TaskTypeDef
 
 Required fields:
 
-- `SourceFields`: `List`\[`str`\]
+- `SourceFields`: `Sequence`\[`str`\]
 - `TaskType`: [TaskTypeType](./literals.md#tasktypetype)
 
 Optional fields:
@@ -1272,7 +1285,7 @@ Optional fields:
   [ConnectorOperatorTypeDef](./type_defs.md#connectoroperatortypedef)
 - `DestinationField`: `str`
 - `TaskProperties`:
-  `Dict`\[[OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype),
+  `Mapping`\[[OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype),
   `str`\]
 
 ## TriggerConfigTypeDef
@@ -1310,7 +1323,7 @@ from mypy_boto3_customer_profiles.type_defs import UntagResourceRequestRequestTy
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAddressTypeDef
 
@@ -1347,7 +1360,7 @@ Optional fields:
 - `DefaultEncryptionKey`: `str`
 - `DeadLetterQueueUrl`: `str`
 - `Matching`: [MatchingRequestTypeDef](./type_defs.md#matchingrequesttypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UpdateDomainResponseTypeDef
 
@@ -1402,7 +1415,7 @@ Optional fields:
   [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
 - `MailingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
 - `BillingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## UpdateProfileResponseTypeDef
 

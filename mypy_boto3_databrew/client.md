@@ -122,7 +122,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
-- `RecipeVersions`: `List`\[`str`\] *(required)*
+- `RecipeVersions`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDeleteRecipeVersionResponseTypeDef](./type_defs.md#batchdeleterecipeversionresponsetypedef).
@@ -161,7 +161,7 @@ Keyword-only arguments:
 - `Format`: [InputFormatType](./literals.md#inputformattype)
 - `FormatOptions`: [FormatOptionsTypeDef](./type_defs.md#formatoptionstypedef)
 - `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
@@ -190,7 +190,9 @@ Keyword-only arguments:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Configuration`:
+  [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Timeout`: `int`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 
@@ -216,7 +218,7 @@ Keyword-only arguments:
 - `RecipeName`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
 - `Sample`: [SampleTypeDef](./type_defs.md#sampletypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
@@ -236,10 +238,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
-- `Steps`: `List`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
+- `Steps`: `Sequence`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
   *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateRecipeResponseTypeDef](./type_defs.md#createreciperesponsetypedef).
@@ -269,13 +271,15 @@ Keyword-only arguments:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `DataCatalogOutputs`:
-  `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+  `Sequence`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+- `DatabaseOutputs`:
+  `Sequence`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `ProjectName`: `str`
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Timeout`: `int`
 
 Returns
@@ -297,8 +301,8 @@ Keyword-only arguments:
 
 - `CronExpression`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `JobNames`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `JobNames`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateScheduleResponseTypeDef](./type_defs.md#createscheduleresponsetypedef).
@@ -527,7 +531,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -819,7 +823,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -838,7 +842,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -883,6 +887,8 @@ Keyword-only arguments:
 - `OutputLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
+- `Configuration`:
+  [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
 - `EncryptionKeyArn`: `str`
 - `EncryptionMode`: [EncryptionModeType](./literals.md#encryptionmodetype)
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
@@ -931,7 +937,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `Steps`: `List`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
+- `Steps`: `Sequence`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
 
 Returns
 [UpdateRecipeResponseTypeDef](./type_defs.md#updatereciperesponsetypedef).
@@ -957,9 +963,11 @@ Keyword-only arguments:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `DataCatalogOutputs`:
-  `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+  `Sequence`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+- `DatabaseOutputs`:
+  `Sequence`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `Timeout`: `int`
 
 Returns
@@ -981,7 +989,7 @@ Keyword-only arguments:
 
 - `CronExpression`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `JobNames`: `List`\[`str`\]
+- `JobNames`: `Sequence`\[`str`\]
 
 Returns
 [UpdateScheduleResponseTypeDef](./type_defs.md#updatescheduleresponsetypedef).

@@ -136,7 +136,7 @@ from mypy_boto3_amplifybackend.type_defs import BackendAPIResourceConfigTypeDef
 Optional fields:
 
 - `AdditionalAuthTypes`:
-  `List`\[[BackendAPIAuthTypeTypeDef](./type_defs.md#backendapiauthtypetypedef)\]
+  `Sequence`\[[BackendAPIAuthTypeTypeDef](./type_defs.md#backendapiauthtypetypedef)\]
 - `ApiName`: `str`
 - `ConflictResolution`:
   [BackendAPIConflictResolutionTypeDef](./type_defs.md#backendapiconflictresolutiontypedef)
@@ -299,9 +299,9 @@ Required fields:
 
 - `OAuthGrantType`: [OAuthGrantTypeType](./literals.md#oauthgranttypetype)
 - `OAuthScopes`:
-  `List`\[[OAuthScopesElementType](./literals.md#oauthscopeselementtype)\]
-- `RedirectSignInURIs`: `List`\[`str`\]
-- `RedirectSignOutURIs`: `List`\[`str`\]
+  `Sequence`\[[OAuthScopesElementType](./literals.md#oauthscopeselementtype)\]
+- `RedirectSignInURIs`: `Sequence`\[`str`\]
+- `RedirectSignOutURIs`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -322,7 +322,7 @@ Required fields:
 Optional fields:
 
 - `AdditionalConstraints`:
-  `List`\[[AdditionalConstraintsElementType](./literals.md#additionalconstraintselementtype)\]
+  `Sequence`\[[AdditionalConstraintsElementType](./literals.md#additionalconstraintselementtype)\]
 
 ## CreateBackendAuthRequestRequestTypeDef
 
@@ -383,7 +383,7 @@ from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthUserPoolConfigT
 Required fields:
 
 - `RequiredSignUpAttributes`:
-  `List`\[[RequiredSignUpAttributesElementType](./literals.md#requiredsignupattributeselementtype)\]
+  `Sequence`\[[RequiredSignUpAttributesElementType](./literals.md#requiredsignupattributeselementtype)\]
 - `SignInMethod`: [SignInMethodType](./literals.md#signinmethodtype)
 - `UserPoolName`: `str`
 
@@ -441,7 +441,7 @@ Required fields:
 
 Optional fields:
 
-- `ResourceConfig`: `Dict`\[`str`, `Any`\]
+- `ResourceConfig`: `Mapping`\[`str`, `Any`\]
 - `ResourceName`: `str`
 
 ## CreateBackendResponseTypeDef
@@ -781,6 +781,7 @@ from mypy_boto3_amplifybackend.type_defs import GetBackendResponseTypeDef
 
 Required fields:
 
+- `AmplifyFeatureFlags`: `str`
 - `AmplifyMetaConfig`: `str`
 - `AppId`: `str`
 - `AppName`: `str`
@@ -984,7 +985,7 @@ from mypy_boto3_amplifybackend.type_defs import SettingsTypeDef
 Optional fields:
 
 - `MfaTypes`:
-  `List`\[[MfaTypesElementType](./literals.md#mfatypeselementtype)\]
+  `Sequence`\[[MfaTypesElementType](./literals.md#mfatypeselementtype)\]
 - `SmsMessage`: `str`
 
 ## SmsSettingsTypeDef
@@ -1092,9 +1093,9 @@ Optional fields:
 - `DomainPrefix`: `str`
 - `OAuthGrantType`: [OAuthGrantTypeType](./literals.md#oauthgranttypetype)
 - `OAuthScopes`:
-  `List`\[[OAuthScopesElementType](./literals.md#oauthscopeselementtype)\]
-- `RedirectSignInURIs`: `List`\[`str`\]
-- `RedirectSignOutURIs`: `List`\[`str`\]
+  `Sequence`\[[OAuthScopesElementType](./literals.md#oauthscopeselementtype)\]
+- `RedirectSignInURIs`: `Sequence`\[`str`\]
+- `RedirectSignOutURIs`: `Sequence`\[`str`\]
 - `SocialProviderSettings`:
   [SocialProviderSettingsTypeDef](./type_defs.md#socialprovidersettingstypedef)
 
@@ -1107,7 +1108,7 @@ from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthPasswordPolicyC
 Optional fields:
 
 - `AdditionalConstraints`:
-  `List`\[[AdditionalConstraintsElementType](./literals.md#additionalconstraintselementtype)\]
+  `Sequence`\[[AdditionalConstraintsElementType](./literals.md#additionalconstraintselementtype)\]
 - `MinimumLength`: `float`
 
 ## UpdateBackendAuthRequestRequestTypeDef

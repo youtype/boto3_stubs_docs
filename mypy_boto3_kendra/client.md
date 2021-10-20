@@ -128,7 +128,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
-- `DocumentIdList`: `List`\[`str`\] *(required)*
+- `DocumentIdList`: `Sequence`\[`str`\] *(required)*
 - `DataSourceSyncJobMetricTarget`:
   [DataSourceSyncJobMetricTargetTypeDef](./type_defs.md#datasourcesyncjobmetrictargettypedef)
 
@@ -153,7 +153,7 @@ Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
 - `DocumentInfoList`:
-  `List`\[[DocumentInfoTypeDef](./type_defs.md#documentinfotypedef)\]
+  `Sequence`\[[DocumentInfoTypeDef](./type_defs.md#documentinfotypedef)\]
   *(required)*
 
 Returns
@@ -174,7 +174,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
-- `Documents`: `List`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\]
+- `Documents`: `Sequence`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\]
   *(required)*
 - `RoleArn`: `str`
 
@@ -214,7 +214,7 @@ Keyword-only arguments:
 
 ### create_data_source
 
-Creates a data source that you use to with an Amazon Kendra index.
+Creates a data source that you want to use with an Amazon Kendra index.
 
 Type annotations for `boto3.client("kendra").create_data_source` method.
 
@@ -234,8 +234,9 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Schedule`: `str`
 - `RoleArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
+- `LanguageCode`: `str`
 
 Returns
 [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
@@ -259,9 +260,10 @@ Keyword-only arguments:
 - `S3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef) *(required)*
 - `RoleArn`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 - `ClientToken`: `str`
+- `LanguageCode`: `str`
 
 Returns [CreateFaqResponseTypeDef](./type_defs.md#createfaqresponsetypedef).
 
@@ -286,11 +288,13 @@ Keyword-only arguments:
   [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - `Description`: `str`
 - `ClientToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UserTokenConfigurations`:
-  `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
+  `Sequence`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
+- `UserGroupResolutionConfiguration`:
+  [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 
 Returns
 [CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
@@ -316,7 +320,7 @@ Keyword-only arguments:
 - `RoleArn`: `str` *(required)*
 - `Description`: `str`
 - `ClientToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#createquerysuggestionsblocklistresponsetypedef).
@@ -340,7 +344,7 @@ Keyword-only arguments:
 - `RoleArn`: `str` *(required)*
 - `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef) *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 
 Returns
@@ -608,7 +612,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -811,7 +815,8 @@ Returns
 
 ### put_principal_mapping
 
-Maps users to their groups.
+Maps users to their groups so that you only need to provide the user ID when
+you issue the query.
 
 Type annotations for `boto3.client("kendra").put_principal_mapping` method.
 
@@ -849,12 +854,12 @@ Keyword-only arguments:
 - `QueryText`: `str` *(required)*
 - `AttributeFilter`:
   [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
-- `Facets`: `List`\[[FacetTypeDef](./type_defs.md#facettypedef)\]
-- `RequestedDocumentAttributes`: `List`\[`str`\]
+- `Facets`: `Sequence`\[[FacetTypeDef](./type_defs.md#facettypedef)\]
+- `RequestedDocumentAttributes`: `Sequence`\[`str`\]
 - `QueryResultTypeFilter`:
   [QueryResultTypeType](./literals.md#queryresulttypetype)
 - `DocumentRelevanceOverrideConfigurations`:
-  `List`\[[DocumentRelevanceConfigurationTypeDef](./type_defs.md#documentrelevanceconfigurationtypedef)\]
+  `Sequence`\[[DocumentRelevanceConfigurationTypeDef](./type_defs.md#documentrelevanceconfigurationtypedef)\]
 - `PageNumber`: `int`
 - `PageSize`: `int`
 - `SortingConfiguration`:
@@ -905,7 +910,7 @@ Keyword-only arguments:
 ### submit_feedback
 
 Enables you to provide feedback to Amazon Kendra to improve the performance of
-the service.
+your index.
 
 Type annotations for `boto3.client("kendra").submit_feedback` method.
 
@@ -920,9 +925,9 @@ Keyword-only arguments:
 - `IndexId`: `str` *(required)*
 - `QueryId`: `str` *(required)*
 - `ClickFeedbackItems`:
-  `List`\[[ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef)\]
+  `Sequence`\[[ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef)\]
 - `RelevanceFeedbackItems`:
-  `List`\[[RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)\]
+  `Sequence`\[[RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)\]
 
 ### tag_resource
 
@@ -939,7 +944,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -958,7 +963,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -984,6 +989,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Schedule`: `str`
 - `RoleArn`: `str`
+- `LanguageCode`: `str`
 
 ### update_index
 
@@ -1004,13 +1010,15 @@ Keyword-only arguments:
 - `RoleArn`: `str`
 - `Description`: `str`
 - `DocumentMetadataConfigurationUpdates`:
-  `List`\[[DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef)\]
+  `Sequence`\[[DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef)\]
 - `CapacityUnits`:
   [CapacityUnitsConfigurationTypeDef](./type_defs.md#capacityunitsconfigurationtypedef)
 - `UserTokenConfigurations`:
-  `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
+  `Sequence`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
+- `UserGroupResolutionConfiguration`:
+  [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 
 ### update_query_suggestions_block_list
 

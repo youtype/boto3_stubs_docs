@@ -94,6 +94,7 @@ from mypy_boto3_mediapackage.literals import AdMarkersType, ...
 ```
 
 - [AdMarkersType](./literals.md#admarkerstype)
+- [AdTriggersElementType](./literals.md#adtriggerselementtype)
 - [AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype)
 - [EncryptionMethodType](./literals.md#encryptionmethodtype)
 - [ListChannelsPaginatorName](./literals.md#listchannelspaginatorname)
@@ -101,6 +102,7 @@ from mypy_boto3_mediapackage.literals import AdMarkersType, ...
 - [ListOriginEndpointsPaginatorName](./literals.md#listoriginendpointspaginatorname)
 - [ManifestLayoutType](./literals.md#manifestlayouttype)
 - [OriginationType](./literals.md#originationtype)
+- [PeriodTriggersElementType](./literals.md#periodtriggerselementtype)
 - [PlaylistTypeType](./literals.md#playlisttypetype)
 - [PresetSpeke20AudioType](./literals.md#presetspeke20audiotype)
 - [PresetSpeke20VideoType](./literals.md#presetspeke20videotype)
@@ -109,8 +111,8 @@ from mypy_boto3_mediapackage.literals import AdMarkersType, ...
 - [StatusType](./literals.md#statustype)
 - [StreamOrderType](./literals.md#streamordertype)
 - [UtcTimingType](./literals.md#utctimingtype)
-- [\_\_AdTriggersElementType](./literals.md#__adtriggerselementtype)
-- [\_\_PeriodTriggersElementType](./literals.md#__periodtriggerselementtype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

@@ -123,6 +123,7 @@ type annotations stubs module
   - [EndpointNetworkConfigurationTypeDef](#endpointnetworkconfigurationtypedef)
   - [FileShareInfoTypeDef](#fileshareinfotypedef)
   - [FileSystemAssociationInfoTypeDef](#filesystemassociationinfotypedef)
+  - [FileSystemAssociationStatusDetailTypeDef](#filesystemassociationstatusdetailtypedef)
   - [FileSystemAssociationSummaryTypeDef](#filesystemassociationsummarytypedef)
   - [GatewayInfoTypeDef](#gatewayinfotypedef)
   - [JoinDomainInputRequestTypeDef](#joindomaininputrequesttypedef)
@@ -168,6 +169,7 @@ type annotations stubs module
   - [RetrieveTapeRecoveryPointInputRequestTypeDef](#retrievetaperecoverypointinputrequesttypedef)
   - [RetrieveTapeRecoveryPointOutputTypeDef](#retrievetaperecoverypointoutputtypedef)
   - [SMBFileShareInfoTypeDef](#smbfileshareinfotypedef)
+  - [SMBLocalGroupsTypeDef](#smblocalgroupstypedef)
   - [SetLocalConsolePasswordInputRequestTypeDef](#setlocalconsolepasswordinputrequesttypedef)
   - [SetLocalConsolePasswordOutputTypeDef](#setlocalconsolepasswordoutputtypedef)
   - [SetSMBGuestPasswordInputRequestTypeDef](#setsmbguestpasswordinputrequesttypedef)
@@ -206,6 +208,8 @@ type annotations stubs module
   - [UpdateSMBFileShareOutputTypeDef](#updatesmbfileshareoutputtypedef)
   - [UpdateSMBFileShareVisibilityInputRequestTypeDef](#updatesmbfilesharevisibilityinputrequesttypedef)
   - [UpdateSMBFileShareVisibilityOutputTypeDef](#updatesmbfilesharevisibilityoutputtypedef)
+  - [UpdateSMBLocalGroupsInputRequestTypeDef](#updatesmblocalgroupsinputrequesttypedef)
+  - [UpdateSMBLocalGroupsOutputTypeDef](#updatesmblocalgroupsoutputtypedef)
   - [UpdateSMBSecurityStrategyInputRequestTypeDef](#updatesmbsecuritystrategyinputrequesttypedef)
   - [UpdateSMBSecurityStrategyOutputTypeDef](#updatesmbsecuritystrategyoutputtypedef)
   - [UpdateSnapshotScheduleInputRequestTypeDef](#updatesnapshotscheduleinputrequesttypedef)
@@ -235,7 +239,7 @@ Optional fields:
 - `GatewayType`: `str`
 - `TapeDriveType`: `str`
 - `MediumChangerType`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ActivateGatewayOutputTypeDef
 
@@ -258,7 +262,7 @@ from mypy_boto3_storagegateway.type_defs import AddCacheInputRequestTypeDef
 Required fields:
 
 - `GatewayARN`: `str`
-- `DiskIds`: `List`\[`str`\]
+- `DiskIds`: `Sequence`\[`str`\]
 
 ## AddCacheOutputTypeDef
 
@@ -281,7 +285,7 @@ from mypy_boto3_storagegateway.type_defs import AddTagsToResourceInputRequestTyp
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AddTagsToResourceOutputTypeDef
 
@@ -304,7 +308,7 @@ from mypy_boto3_storagegateway.type_defs import AddUploadBufferInputRequestTypeD
 Required fields:
 
 - `GatewayARN`: `str`
-- `DiskIds`: `List`\[`str`\]
+- `DiskIds`: `Sequence`\[`str`\]
 
 ## AddUploadBufferOutputTypeDef
 
@@ -327,7 +331,7 @@ from mypy_boto3_storagegateway.type_defs import AddWorkingStorageInputRequestTyp
 Required fields:
 
 - `GatewayARN`: `str`
-- `DiskIds`: `List`\[`str`\]
+- `DiskIds`: `Sequence`\[`str`\]
 
 ## AddWorkingStorageOutputTypeDef
 
@@ -384,7 +388,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AuditDestinationARN`: `str`
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
@@ -593,7 +597,7 @@ Optional fields:
 - `SourceVolumeARN`: `str`
 - `KMSEncrypted`: `bool`
 - `KMSKey`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateCachediSCSIVolumeOutputTypeDef
 
@@ -629,18 +633,19 @@ Optional fields:
 - `KMSKey`: `str`
 - `DefaultStorageClass`: `str`
 - `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ClientList`: `List`\[`str`\]
+- `ClientList`: `Sequence`\[`str`\]
 - `Squash`: `str`
 - `ReadOnly`: `bool`
 - `GuessMIMETypeEnabled`: `bool`
 - `RequesterPays`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `FileShareName`: `str`
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
 - `VPCEndpointDNSName`: `str`
 - `BucketRegion`: `str`
+- `AuditDestinationARN`: `str`
 
 ## CreateNFSFileShareOutputTypeDef
 
@@ -678,13 +683,13 @@ Optional fields:
 - `RequesterPays`: `bool`
 - `SMBACLEnabled`: `bool`
 - `AccessBasedEnumeration`: `bool`
-- `AdminUserList`: `List`\[`str`\]
-- `ValidUserList`: `List`\[`str`\]
-- `InvalidUserList`: `List`\[`str`\]
+- `AdminUserList`: `Sequence`\[`str`\]
+- `ValidUserList`: `Sequence`\[`str`\]
+- `InvalidUserList`: `Sequence`\[`str`\]
 - `AuditDestinationARN`: `str`
 - `Authentication`: `str`
 - `CaseSensitivity`: [CaseSensitivityType](./literals.md#casesensitivitytype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `FileShareName`: `str`
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
@@ -718,7 +723,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSnapshotFromVolumeRecoveryPointOutputTypeDef
 
@@ -747,7 +752,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSnapshotOutputTypeDef
 
@@ -781,7 +786,7 @@ Optional fields:
 - `SnapshotId`: `str`
 - `KMSEncrypted`: `bool`
 - `KMSKey`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateStorediSCSIVolumeOutputTypeDef
 
@@ -813,7 +818,7 @@ Optional fields:
 - `RetentionLockType`:
   [RetentionLockTypeType](./literals.md#retentionlocktypetype)
 - `RetentionLockTimeInDays`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateTapePoolOutputTypeDef
 
@@ -845,7 +850,7 @@ Optional fields:
 - `KMSKey`: `str`
 - `PoolId`: `str`
 - `Worm`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateTapeWithBarcodeOutputTypeDef
 
@@ -879,7 +884,7 @@ Optional fields:
 - `KMSKey`: `str`
 - `PoolId`: `str`
 - `Worm`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateTapesOutputTypeDef
 
@@ -1238,7 +1243,7 @@ from mypy_boto3_storagegateway.type_defs import DescribeCachediSCSIVolumesInputR
 
 Required fields:
 
-- `VolumeARNs`: `List`\[`str`\]
+- `VolumeARNs`: `Sequence`\[`str`\]
 
 ## DescribeCachediSCSIVolumesOutputTypeDef
 
@@ -1284,7 +1289,7 @@ from mypy_boto3_storagegateway.type_defs import DescribeFileSystemAssociationsIn
 
 Required fields:
 
-- `FileSystemAssociationARNList`: `List`\[`str`\]
+- `FileSystemAssociationARNList`: `Sequence`\[`str`\]
 
 ## DescribeFileSystemAssociationsOutputTypeDef
 
@@ -1377,7 +1382,7 @@ from mypy_boto3_storagegateway.type_defs import DescribeNFSFileSharesInputReques
 
 Required fields:
 
-- `FileShareARNList`: `List`\[`str`\]
+- `FileShareARNList`: `Sequence`\[`str`\]
 
 ## DescribeNFSFileSharesOutputTypeDef
 
@@ -1400,7 +1405,7 @@ from mypy_boto3_storagegateway.type_defs import DescribeSMBFileSharesInputReques
 
 Required fields:
 
-- `FileShareARNList`: `List`\[`str`\]
+- `FileShareARNList`: `Sequence`\[`str`\]
 
 ## DescribeSMBFileSharesOutputTypeDef
 
@@ -1441,6 +1446,8 @@ Required fields:
 - `SMBSecurityStrategy`:
   [SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype)
 - `FileSharesVisible`: `bool`
+- `SMBLocalGroups`:
+  [SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1479,7 +1486,7 @@ from mypy_boto3_storagegateway.type_defs import DescribeStorediSCSIVolumesInputR
 
 Required fields:
 
-- `VolumeARNs`: `List`\[`str`\]
+- `VolumeARNs`: `Sequence`\[`str`\]
 
 ## DescribeStorediSCSIVolumesOutputTypeDef
 
@@ -1502,7 +1509,7 @@ from mypy_boto3_storagegateway.type_defs import DescribeTapeArchivesInputRequest
 
 Optional fields:
 
-- `TapeARNs`: `List`\[`str`\]
+- `TapeARNs`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `Limit`: `int`
 
@@ -1562,7 +1569,7 @@ Required fields:
 
 Optional fields:
 
-- `TapeARNs`: `List`\[`str`\]
+- `TapeARNs`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `Limit`: `int`
 
@@ -1616,7 +1623,7 @@ Required fields:
 
 Optional fields:
 
-- `VTLDeviceARNs`: `List`\[`str`\]
+- `VTLDeviceARNs`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `Limit`: `int`
 
@@ -1771,7 +1778,7 @@ from mypy_boto3_storagegateway.type_defs import EndpointNetworkConfigurationType
 
 Optional fields:
 
-- `IpAddresses`: `List`\[`str`\]
+- `IpAddresses`: `Sequence`\[`str`\]
 
 ## FileShareInfoTypeDef
 
@@ -1805,6 +1812,18 @@ Optional fields:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `EndpointNetworkConfiguration`:
   [EndpointNetworkConfigurationTypeDef](./type_defs.md#endpointnetworkconfigurationtypedef)
+- `FileSystemAssociationStatusDetails`:
+  `List`\[[FileSystemAssociationStatusDetailTypeDef](./type_defs.md#filesystemassociationstatusdetailtypedef)\]
+
+## FileSystemAssociationStatusDetailTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import FileSystemAssociationStatusDetailTypeDef
+```
+
+Optional fields:
+
+- `ErrorCode`: `str`
 
 ## FileSystemAssociationSummaryTypeDef
 
@@ -1851,7 +1870,7 @@ Required fields:
 Optional fields:
 
 - `OrganizationalUnit`: `str`
-- `DomainControllers`: `List`\[`str`\]
+- `DomainControllers`: `Sequence`\[`str`\]
 - `TimeoutInSeconds`: `int`
 
 ## JoinDomainOutputTypeDef
@@ -2029,7 +2048,7 @@ from mypy_boto3_storagegateway.type_defs import ListTapePoolsInputRequestTypeDef
 
 Optional fields:
 
-- `PoolARNs`: `List`\[`str`\]
+- `PoolARNs`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `Limit`: `int`
 
@@ -2054,7 +2073,7 @@ from mypy_boto3_storagegateway.type_defs import ListTapesInputRequestTypeDef
 
 Optional fields:
 
-- `TapeARNs`: `List`\[`str`\]
+- `TapeARNs`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `Limit`: `int`
 
@@ -2190,6 +2209,7 @@ Optional fields:
 - `NotificationPolicy`: `str`
 - `VPCEndpointDNSName`: `str`
 - `BucketRegion`: `str`
+- `AuditDestinationARN`: `str`
 
 ## NetworkInterfaceTypeDef
 
@@ -2266,7 +2286,7 @@ Required fields:
 
 Optional fields:
 
-- `FolderList`: `List`\[`str`\]
+- `FolderList`: `Sequence`\[`str`\]
 - `Recursive`: `bool`
 
 ## RefreshCacheOutputTypeDef
@@ -2291,7 +2311,7 @@ from mypy_boto3_storagegateway.type_defs import RemoveTagsFromResourceInputReque
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## RemoveTagsFromResourceOutputTypeDef
 
@@ -2425,6 +2445,16 @@ Optional fields:
 - `VPCEndpointDNSName`: `str`
 - `BucketRegion`: `str`
 - `OplocksEnabled`: `bool`
+
+## SMBLocalGroupsTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import SMBLocalGroupsTypeDef
+```
+
+Optional fields:
+
+- `GatewayAdmins`: `List`\[`str`\]
 
 ## SetLocalConsolePasswordInputRequestTypeDef
 
@@ -2657,7 +2687,7 @@ from mypy_boto3_storagegateway.type_defs import UpdateAutomaticTapeCreationPolic
 Required fields:
 
 - `AutomaticTapeCreationRules`:
-  `List`\[[AutomaticTapeCreationRuleTypeDef](./type_defs.md#automatictapecreationruletypedef)\]
+  `Sequence`\[[AutomaticTapeCreationRuleTypeDef](./type_defs.md#automatictapecreationruletypedef)\]
 - `GatewayARN`: `str`
 
 ## UpdateAutomaticTapeCreationPolicyOutputTypeDef
@@ -2709,7 +2739,7 @@ Required fields:
 
 - `GatewayARN`: `str`
 - `BandwidthRateLimitIntervals`:
-  `List`\[[BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef)\]
+  `Sequence`\[[BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef)\]
 
 ## UpdateBandwidthRateLimitScheduleOutputTypeDef
 
@@ -2881,7 +2911,7 @@ Optional fields:
   [NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef)
 - `DefaultStorageClass`: `str`
 - `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ClientList`: `List`\[`str`\]
+- `ClientList`: `Sequence`\[`str`\]
 - `Squash`: `str`
 - `ReadOnly`: `bool`
 - `GuessMIMETypeEnabled`: `bool`
@@ -2890,6 +2920,7 @@ Optional fields:
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
+- `AuditDestinationARN`: `str`
 
 ## UpdateNFSFileShareOutputTypeDef
 
@@ -2924,9 +2955,9 @@ Optional fields:
 - `RequesterPays`: `bool`
 - `SMBACLEnabled`: `bool`
 - `AccessBasedEnumeration`: `bool`
-- `AdminUserList`: `List`\[`str`\]
-- `ValidUserList`: `List`\[`str`\]
-- `InvalidUserList`: `List`\[`str`\]
+- `AdminUserList`: `Sequence`\[`str`\]
+- `ValidUserList`: `Sequence`\[`str`\]
+- `InvalidUserList`: `Sequence`\[`str`\]
 - `AuditDestinationARN`: `str`
 - `CaseSensitivity`: [CaseSensitivityType](./literals.md#casesensitivitytype)
 - `FileShareName`: `str`
@@ -2962,6 +2993,30 @@ Required fields:
 
 ```python
 from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareVisibilityOutputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateSMBLocalGroupsInputRequestTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateSMBLocalGroupsInputRequestTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `SMBLocalGroups`:
+  [SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef)
+
+## UpdateSMBLocalGroupsOutputTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateSMBLocalGroupsOutputTypeDef
 ```
 
 Required fields:
@@ -3009,7 +3064,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UpdateSnapshotScheduleOutputTypeDef
 

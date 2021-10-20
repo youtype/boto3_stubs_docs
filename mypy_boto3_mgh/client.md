@@ -291,7 +291,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -332,7 +332,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ApplicationIds`: `List`\[`str`\]
+- `ApplicationIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -490,7 +490,7 @@ Keyword-only arguments:
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
 - `ResourceAttributeList`:
-  `List`\[[ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef)\]
+  `Sequence`\[[ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef)\]
   *(required)*
 - `DryRun`: `bool`
 

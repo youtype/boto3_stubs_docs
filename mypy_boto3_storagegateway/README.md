@@ -122,6 +122,7 @@ from mypy_boto3_storagegateway.client import StorageGatewayClient
 - [update_nfs_file_share](./client.md#update_nfs_file_share)
 - [update_smb_file_share](./client.md#update_smb_file_share)
 - [update_smb_file_share_visibility](./client.md#update_smb_file_share_visibility)
+- [update_smb_local_groups](./client.md#update_smb_local_groups)
 - [update_smb_security_strategy](./client.md#update_smb_security_strategy)
 - [update_snapshot_schedule](./client.md#update_snapshot_schedule)
 - [update_vtl_device_type](./client.md#update_vtl_device_type)
@@ -190,6 +191,8 @@ from mypy_boto3_storagegateway.literals import ActiveDirectoryStatusType, ...
 - [RetentionLockTypeType](./literals.md#retentionlocktypetype)
 - [SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype)
 - [TapeStorageClassType](./literals.md#tapestorageclasstype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 
@@ -317,6 +320,7 @@ from mypy_boto3_storagegateway.type_defs import ActivateGatewayInputRequestTypeD
 - [EndpointNetworkConfigurationTypeDef](./type_defs.md#endpointnetworkconfigurationtypedef)
 - [FileShareInfoTypeDef](./type_defs.md#fileshareinfotypedef)
 - [FileSystemAssociationInfoTypeDef](./type_defs.md#filesystemassociationinfotypedef)
+- [FileSystemAssociationStatusDetailTypeDef](./type_defs.md#filesystemassociationstatusdetailtypedef)
 - [FileSystemAssociationSummaryTypeDef](./type_defs.md#filesystemassociationsummarytypedef)
 - [GatewayInfoTypeDef](./type_defs.md#gatewayinfotypedef)
 - [JoinDomainInputRequestTypeDef](./type_defs.md#joindomaininputrequesttypedef)
@@ -362,6 +366,7 @@ from mypy_boto3_storagegateway.type_defs import ActivateGatewayInputRequestTypeD
 - [RetrieveTapeRecoveryPointInputRequestTypeDef](./type_defs.md#retrievetaperecoverypointinputrequesttypedef)
 - [RetrieveTapeRecoveryPointOutputTypeDef](./type_defs.md#retrievetaperecoverypointoutputtypedef)
 - [SMBFileShareInfoTypeDef](./type_defs.md#smbfileshareinfotypedef)
+- [SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef)
 - [SetLocalConsolePasswordInputRequestTypeDef](./type_defs.md#setlocalconsolepasswordinputrequesttypedef)
 - [SetLocalConsolePasswordOutputTypeDef](./type_defs.md#setlocalconsolepasswordoutputtypedef)
 - [SetSMBGuestPasswordInputRequestTypeDef](./type_defs.md#setsmbguestpasswordinputrequesttypedef)
@@ -400,6 +405,8 @@ from mypy_boto3_storagegateway.type_defs import ActivateGatewayInputRequestTypeD
 - [UpdateSMBFileShareOutputTypeDef](./type_defs.md#updatesmbfileshareoutputtypedef)
 - [UpdateSMBFileShareVisibilityInputRequestTypeDef](./type_defs.md#updatesmbfilesharevisibilityinputrequesttypedef)
 - [UpdateSMBFileShareVisibilityOutputTypeDef](./type_defs.md#updatesmbfilesharevisibilityoutputtypedef)
+- [UpdateSMBLocalGroupsInputRequestTypeDef](./type_defs.md#updatesmblocalgroupsinputrequesttypedef)
+- [UpdateSMBLocalGroupsOutputTypeDef](./type_defs.md#updatesmblocalgroupsoutputtypedef)
 - [UpdateSMBSecurityStrategyInputRequestTypeDef](./type_defs.md#updatesmbsecuritystrategyinputrequesttypedef)
 - [UpdateSMBSecurityStrategyOutputTypeDef](./type_defs.md#updatesmbsecuritystrategyoutputtypedef)
 - [UpdateSnapshotScheduleInputRequestTypeDef](./type_defs.md#updatesnapshotscheduleinputrequesttypedef)

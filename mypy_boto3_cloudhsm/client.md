@@ -99,7 +99,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns
 [AddTagsToResourceResponseTypeDef](./type_defs.md#addtagstoresourceresponsetypedef).
@@ -309,7 +309,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -332,7 +332,7 @@ Keyword-only arguments:
 - `ClientArn`: `str` *(required)*
 - `ClientVersion`: [ClientVersionType](./literals.md#clientversiontype)
   *(required)*
-- `HapgList`: `List`\[`str`\] *(required)*
+- `HapgList`: `Sequence`\[`str`\] *(required)*
 
 Returns [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef).
 
@@ -438,7 +438,7 @@ Keyword-only arguments:
 
 - `HapgArn`: `str` *(required)*
 - `Label`: `str`
-- `PartitionSerialList`: `List`\[`str`\]
+- `PartitionSerialList`: `Sequence`\[`str`\]
 
 Returns [ModifyHapgResponseTypeDef](./type_defs.md#modifyhapgresponsetypedef).
 
@@ -501,7 +501,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeyList`: `List`\[`str`\] *(required)*
+- `TagKeyList`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [RemoveTagsFromResourceResponseTypeDef](./type_defs.md#removetagsfromresourceresponsetypedef).

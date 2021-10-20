@@ -49,7 +49,7 @@ from mypy_boto3_macie.type_defs import AssociateS3ResourcesRequestRequestTypeDef
 Required fields:
 
 - `s3Resources`:
-  `List`\[[S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)\]
+  `Sequence`\[[S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)\]
 
 Optional fields:
 
@@ -113,7 +113,7 @@ from mypy_boto3_macie.type_defs import DisassociateS3ResourcesRequestRequestType
 Required fields:
 
 - `associatedS3Resources`:
-  `List`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\]
+  `Sequence`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\]
 
 Optional fields:
 
@@ -286,7 +286,7 @@ from mypy_boto3_macie.type_defs import UpdateS3ResourcesRequestRequestTypeDef
 Required fields:
 
 - `s3ResourcesUpdate`:
-  `List`\[[S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef)\]
+  `Sequence`\[[S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef)\]
 
 Optional fields:
 

@@ -247,6 +247,8 @@ from mypy_boto3_apigateway.literals import ApiKeySourceTypeType, ...
 - [SecurityPolicyType](./literals.md#securitypolicytype)
 - [UnauthorizedCacheControlHeaderStrategyType](./literals.md#unauthorizedcachecontrolheaderstrategytype)
 - [VpcLinkStatusType](./literals.md#vpclinkstatustype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

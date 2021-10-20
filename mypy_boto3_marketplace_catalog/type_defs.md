@@ -210,7 +210,7 @@ from mypy_boto3_marketplace_catalog.type_defs import FilterTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `ValueList`: `List`\[`str`\]
+- `ValueList`: `Sequence`\[`str`\]
 
 ## ListChangeSetsRequestRequestTypeDef
 
@@ -224,7 +224,7 @@ Required fields:
 
 Optional fields:
 
-- `FilterList`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FilterList`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Sort`: [SortTypeDef](./type_defs.md#sorttypedef)
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -256,7 +256,7 @@ Required fields:
 
 Optional fields:
 
-- `FilterList`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FilterList`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Sort`: [SortTypeDef](./type_defs.md#sorttypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -309,7 +309,7 @@ from mypy_boto3_marketplace_catalog.type_defs import StartChangeSetRequestReques
 Required fields:
 
 - `Catalog`: `str`
-- `ChangeSet`: `List`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
+- `ChangeSet`: `Sequence`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
 
 Optional fields:
 

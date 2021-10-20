@@ -94,7 +94,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -115,7 +115,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ForecastArn`: `str` *(required)*
-- `Filters`: `Dict`\[`str`, `str`\] *(required)*
+- `Filters`: `Mapping`\[`str`, `str`\] *(required)*
 - `StartDate`: `str`
 - `EndDate`: `str`
 - `NextToken`: `str`

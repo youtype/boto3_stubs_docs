@@ -34,7 +34,7 @@ Boto3 documentation:
 Arguments for `DescribeAlarmHistoryPaginator.paginate` method:
 
 - `AlarmName`: `str`
-- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
+- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `HistoryItemType`: [HistoryItemTypeType](./literals.md#historyitemtypetype)
 - `StartDate`: `Union`\[`datetime`, `str`\]
 - `EndDate`: `Union`\[`datetime`, `str`\]
@@ -43,7 +43,7 @@ Arguments for `DescribeAlarmHistoryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAlarmHistoryPaginator.paginate` returns
-`Iterator`\[[DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef)\].
+`_PageIterator`\[[DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef)\].
 
 ## DescribeAlarmsPaginator
 
@@ -64,9 +64,9 @@ Boto3 documentation:
 
 Arguments for `DescribeAlarmsPaginator.paginate` method:
 
-- `AlarmNames`: `List`\[`str`\]
+- `AlarmNames`: `Sequence`\[`str`\]
 - `AlarmNamePrefix`: `str`
-- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
+- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `ChildrenOfAlarmName`: `str`
 - `ParentsOfAlarmName`: `str`
 - `StateValue`: [StateValueType](./literals.md#statevaluetype)
@@ -75,7 +75,7 @@ Arguments for `DescribeAlarmsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAlarmsPaginator.paginate` returns
-`Iterator`\[[DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef)\].
+`_PageIterator`\[[DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef)\].
 
 ## GetMetricDataPaginator
 
@@ -97,7 +97,7 @@ Boto3 documentation:
 Arguments for `GetMetricDataPaginator.paginate` method:
 
 - `MetricDataQueries`:
-  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
   *(required)*
 - `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
@@ -107,7 +107,7 @@ Arguments for `GetMetricDataPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetMetricDataPaginator.paginate` returns
-`Iterator`\[[GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef)\].
+`_PageIterator`\[[GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef)\].
 
 ## ListDashboardsPaginator
 
@@ -133,7 +133,7 @@ Arguments for `ListDashboardsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDashboardsPaginator.paginate` returns
-`Iterator`\[[ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef)\].
+`_PageIterator`\[[ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef)\].
 
 ## ListMetricsPaginator
 
@@ -157,11 +157,11 @@ Arguments for `ListMetricsPaginator.paginate` method:
 - `Namespace`: `str`
 - `MetricName`: `str`
 - `Dimensions`:
-  `List`\[[DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef)\]
+  `Sequence`\[[DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef)\]
 - `RecentlyActive`: `Literal['PT3H']` (see
   [RecentlyActiveType](./literals.md#recentlyactivetype))
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMetricsPaginator.paginate` returns
-`Iterator`\[[ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef)\].
+`_PageIterator`\[[ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef)\].

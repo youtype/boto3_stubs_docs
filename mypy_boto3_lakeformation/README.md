@@ -89,6 +89,7 @@ from mypy_boto3_lakeformation.literals import ComparisonOperatorType, ...
 - [PermissionType](./literals.md#permissiontype)
 - [ResourceShareTypeType](./literals.md#resourcesharetypetype)
 - [ResourceTypeType](./literals.md#resourcetypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -43,7 +43,8 @@ from mypy_boto3_autoscaling_plans.type_defs import ApplicationSourceTypeDef
 Optional fields:
 
 - `CloudFormationStackARN`: `str`
-- `TagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `TagFilters`:
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 
 ## CreateScalingPlanRequestRequestTypeDef
 
@@ -57,7 +58,7 @@ Required fields:
 - `ApplicationSource`:
   [ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)
 - `ScalingInstructions`:
-  `List`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
+  `Sequence`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
 
 ## CreateScalingPlanResponseTypeDef
 
@@ -86,7 +87,7 @@ Required fields:
 Optional fields:
 
 - `Dimensions`:
-  `List`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
+  `Sequence`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 - `Unit`: `str`
 
 ## CustomizedScalingMetricSpecificationTypeDef
@@ -104,7 +105,7 @@ Required fields:
 Optional fields:
 
 - `Dimensions`:
-  `List`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
+  `Sequence`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 - `Unit`: `str`
 
 ## DatapointTypeDef
@@ -167,10 +168,10 @@ from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlansRequestRe
 
 Optional fields:
 
-- `ScalingPlanNames`: `List`\[`str`\]
+- `ScalingPlanNames`: `Sequence`\[`str`\]
 - `ScalingPlanVersion`: `int`
 - `ApplicationSources`:
-  `List`\[[ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)\]
+  `Sequence`\[[ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -303,7 +304,7 @@ Required fields:
 - `MinCapacity`: `int`
 - `MaxCapacity`: `int`
 - `TargetTrackingConfigurations`:
-  `List`\[[TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef)\]
+  `Sequence`\[[TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef)\]
 
 Optional fields:
 
@@ -394,7 +395,7 @@ from mypy_boto3_autoscaling_plans.type_defs import TagFilterTypeDef
 Optional fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## TargetTrackingConfigurationTypeDef
 
@@ -433,4 +434,4 @@ Optional fields:
 - `ApplicationSource`:
   [ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)
 - `ScalingInstructions`:
-  `List`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
+  `Sequence`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]

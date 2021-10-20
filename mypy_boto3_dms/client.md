@@ -155,7 +155,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -243,7 +243,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str`
 - `ExtraConnectionAttributes`: `str`
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CertificateArn`: `str`
 - `SslMode`: [DmsSslModeValueType](./literals.md#dmssslmodevaluetype)
 - `ServiceAccessRoleArn`: `str`
@@ -277,13 +277,14 @@ Keyword-only arguments:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `ResourceIdentifier`: `str`
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+- `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
 
 Returns
 [CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
 
 ### create_event_subscription
 
-Creates an AWS DMS event notification subscription.
+Creates an DMS event notification subscription.
 
 Type annotations for `boto3.client("dms").create_event_subscription` method.
 
@@ -298,10 +299,10 @@ Keyword-only arguments:
 - `SubscriptionName`: `str` *(required)*
 - `SnsTopicArn`: `str` *(required)*
 - `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
-- `SourceIds`: `List`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
+- `SourceIds`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateEventSubscriptionResponseTypeDef](./type_defs.md#createeventsubscriptionresponsetypedef).
@@ -323,14 +324,14 @@ Keyword-only arguments:
 - `ReplicationInstanceIdentifier`: `str` *(required)*
 - `ReplicationInstanceClass`: `str` *(required)*
 - `AllocatedStorage`: `int`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `AvailabilityZone`: `str`
 - `ReplicationSubnetGroupIdentifier`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `MultiAZ`: `bool`
 - `EngineVersion`: `str`
 - `AutoMinorVersionUpgrade`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `PubliclyAccessible`: `bool`
 - `DnsNameServers`: `str`
@@ -356,8 +357,8 @@ Keyword-only arguments:
 
 - `ReplicationSubnetGroupIdentifier`: `str` *(required)*
 - `ReplicationSubnetGroupDescription`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateReplicationSubnetGroupResponseTypeDef](./type_defs.md#createreplicationsubnetgroupresponsetypedef).
@@ -387,7 +388,7 @@ Keyword-only arguments:
 - `CdcStartTime`: `Union`\[`datetime`, `str`\]
 - `CdcStartPosition`: `str`
 - `CdcStopPosition`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TaskData`: `str`
 - `ResourceIdentifier`: `str`
 
@@ -454,7 +455,7 @@ Returns
 
 ### delete_event_subscription
 
-Deletes an AWS DMS event subscription.
+Deletes an DMS event subscription.
 
 Type annotations for `boto3.client("dms").delete_event_subscription` method.
 
@@ -550,7 +551,7 @@ Returns
 
 ### describe_account_attributes
 
-Lists all of the AWS DMS attributes for a customer account.
+Lists all of the DMS attributes for a customer account.
 
 Type annotations for `boto3.client("dms").describe_account_attributes` method.
 
@@ -602,7 +603,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -624,7 +625,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -667,7 +668,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -688,7 +689,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -710,7 +711,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SourceType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [DescribeEventCategoriesResponseTypeDef](./type_defs.md#describeeventcategoriesresponsetypedef).
@@ -730,7 +731,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SubscriptionName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -757,8 +758,8 @@ Keyword-only arguments:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Duration`: `int`
-- `EventCategories`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `EventCategories`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -806,7 +807,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ReplicationInstanceArn`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -871,7 +872,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -893,7 +894,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -902,7 +903,8 @@ Returns
 
 ### describe_replication_task_assessment_results
 
-Returns the task assessment results from Amazon S3.
+Returns the task assessment results from the Amazon S3 bucket that DMS creates
+in your Amazon Web Services account.
 
 Type annotations for
 `boto3.client("dms").describe_replication_task_assessment_results` method.
@@ -938,7 +940,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -960,7 +962,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -981,7 +983,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `WithoutSettings`: `bool`
@@ -1028,7 +1030,7 @@ Keyword-only arguments:
 - `ReplicationTaskArn`: `str` *(required)*
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [DescribeTableStatisticsResponseTypeDef](./type_defs.md#describetablestatisticsresponsetypedef).
@@ -1045,7 +1047,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1068,7 +1070,7 @@ Keyword-only arguments:
 - `CertificateIdentifier`: `str` *(required)*
 - `CertificatePem`: `str`
 - `CertificateWallet`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef).
@@ -1087,7 +1089,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+- `ResourceArn`: `str`
+- `ResourceArnList`: `Sequence`\[`str`\]
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
@@ -1149,13 +1152,15 @@ Keyword-only arguments:
 - `IBMDb2Settings`:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+- `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
+- `ExactSettings`: `bool`
 
 Returns
 [ModifyEndpointResponseTypeDef](./type_defs.md#modifyendpointresponsetypedef).
 
 ### modify_event_subscription
 
-Modifies an existing AWS DMS event notification subscription.
+Modifies an existing DMS event notification subscription.
 
 Type annotations for `boto3.client("dms").modify_event_subscription` method.
 
@@ -1170,7 +1175,7 @@ Keyword-only arguments:
 - `SubscriptionName`: `str` *(required)*
 - `SnsTopicArn`: `str`
 - `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
 
 Returns
@@ -1194,7 +1199,7 @@ Keyword-only arguments:
 - `AllocatedStorage`: `int`
 - `ApplyImmediately`: `bool`
 - `ReplicationInstanceClass`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `PreferredMaintenanceWindow`: `str`
 - `MultiAZ`: `bool`
 - `EngineVersion`: `str`
@@ -1221,7 +1226,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ReplicationSubnetGroupIdentifier`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `ReplicationSubnetGroupDescription`: `str`
 
 Returns
@@ -1291,6 +1296,7 @@ Keyword-only arguments:
 
 - `ReplicationInstanceArn`: `str` *(required)*
 - `ForceFailover`: `bool`
+- `ForcePlannedFailover`: `bool`
 
 Returns
 [RebootReplicationInstanceResponseTypeDef](./type_defs.md#rebootreplicationinstanceresponsetypedef).
@@ -1331,7 +1337,7 @@ Keyword-only arguments:
 
 - `ReplicationTaskArn`: `str` *(required)*
 - `TablesToReload`:
-  `List`\[[TableToReloadTypeDef](./type_defs.md#tabletoreloadtypedef)\]
+  `Sequence`\[[TableToReloadTypeDef](./type_defs.md#tabletoreloadtypedef)\]
   *(required)*
 - `ReloadOption`: [ReloadOptionValueType](./literals.md#reloadoptionvaluetype)
 
@@ -1353,7 +1359,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1425,8 +1431,8 @@ Keyword-only arguments:
 - `ResultLocationFolder`: `str`
 - `ResultEncryptionMode`: `str`
 - `ResultKmsKeyArn`: `str`
-- `IncludeOnly`: `List`\[`str`\]
-- `Exclude`: `List`\[`str`\]
+- `IncludeOnly`: `Sequence`\[`str`\]
+- `Exclude`: `Sequence`\[`str`\]
 
 Returns
 [StartReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#startreplicationtaskassessmentrunresponsetypedef).

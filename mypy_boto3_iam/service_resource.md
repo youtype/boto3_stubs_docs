@@ -142,6 +142,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [IAMResourceMeta](#iamresourcemeta)
+
 - `groups`: [ServiceResourceGroupsCollection](#serviceresourcegroupscollection)
 
 - `instance_profiles`:
@@ -696,7 +698,7 @@ Keyword-only arguments:
 
 ### IAMServiceResource.create_account_alias method
 
-Creates an alias for your account.
+Creates an alias for your Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_account_alias` method.
 
@@ -712,7 +714,7 @@ Keyword-only arguments:
 
 ### IAMServiceResource.create_account_password_policy method
 
-Updates the password policy settings for the account.
+Updates the password policy settings for the Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_account_password_policy`
 method.
@@ -772,13 +774,13 @@ Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `Path`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [InstanceProfile](#instanceprofile).
 
 ### IAMServiceResource.create_policy method
 
-Creates a new managed policy for your account.
+Creates a new managed policy for your Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_policy` method.
 
@@ -794,13 +796,13 @@ Keyword-only arguments:
 - `PolicyDocument`: `str` *(required)*
 - `Path`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [Policy](#policy).
 
 ### IAMServiceResource.create_role method
 
-Creates a new role for your account.
+Creates a new role for your Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_role` method.
 
@@ -818,7 +820,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `MaxSessionDuration`: `int`
 - `PermissionsBoundary`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [Role](#role).
 
@@ -839,13 +841,13 @@ Keyword-only arguments:
 
 - `SAMLMetadataDocument`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [SamlProvider](#samlprovider).
 
 ### IAMServiceResource.create_server_certificate method
 
-Uploads a server certificate entity for the account.
+Uploads a server certificate entity for the Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_server_certificate` method.
 
@@ -862,7 +864,7 @@ Keyword-only arguments:
 - `PrivateKey`: `str` *(required)*
 - `Path`: `str`
 - `CertificateChain`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [ServerCertificate](#servercertificate).
 
@@ -888,7 +890,7 @@ Returns [SigningCertificate](#signingcertificate).
 
 ### IAMServiceResource.create_user method
 
-Creates a new IAM user for your account.
+Creates a new IAM user for your Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_user` method.
 
@@ -903,13 +905,13 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `Path`: `str`
 - `PermissionsBoundary`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [User](#user).
 
 ### IAMServiceResource.create_virtual_mfa_device method
 
-Creates a new virtual MFA device for the account.
+Creates a new virtual MFA device for the Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_virtual_mfa_device` method.
 
@@ -923,7 +925,7 @@ Keyword-only arguments:
 
 - `VirtualMFADeviceName`: `str` *(required)*
 - `Path`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [VirtualMfaDevice](#virtualmfadevice).
 
@@ -936,7 +938,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## AccessKey
 
@@ -1027,7 +1029,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.AccessKey.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## AccessKeyPair
 
@@ -1109,7 +1111,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.AccessKeyPair.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## AccountPasswordPolicy
 
@@ -1144,7 +1146,7 @@ Boto3 documentation:
 
 #### AccountPasswordPolicy.delete method
 
-Deletes the password policy for the account.
+Deletes the password policy for the Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").delete` method.
 
@@ -1160,7 +1162,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.AccountPasswordPolicy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### AccountPasswordPolicy.load method
 
@@ -1184,7 +1186,7 @@ Boto3 documentation:
 
 #### AccountPasswordPolicy.update method
 
-Updates the password policy settings for the account.
+Updates the password policy settings for the Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").update` method.
 
@@ -1237,7 +1239,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.AccountSummary.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### AccountSummary.load method
 
@@ -1301,7 +1303,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.AssumeRolePolicy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### AssumeRolePolicy.update method
 
@@ -1426,7 +1428,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.CurrentUser.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### CurrentUser.load method
 
@@ -1661,7 +1663,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.Group.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Group.load method
 
@@ -1773,7 +1775,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.GroupPolicy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### GroupPolicy.load method
 
@@ -1876,7 +1878,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.InstanceProfile.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### InstanceProfile.load method
 
@@ -1971,7 +1973,8 @@ Returns [LoginProfile](#loginprofile).
 #### LoginProfile.delete method
 
 Deletes the password for the specified IAM user, which terminates the user's
-ability to access Amazon Web Services services through the Management Console.
+ability to access Amazon Web Services services through the Amazon Web Services
+Management Console.
 
 Type annotations for `boto3.resource("iam").delete` method.
 
@@ -1987,7 +1990,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.LoginProfile.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### LoginProfile.load method
 
@@ -2097,7 +2100,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.MfaDevice.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### MfaDevice.resync method
 
@@ -2372,7 +2375,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.Policy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Policy.load method
 
@@ -2438,7 +2441,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.PolicyVersion.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### PolicyVersion.load method
 
@@ -2648,7 +2651,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.Role.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Role.load method
 
@@ -2724,7 +2727,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.RolePolicy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### RolePolicy.load method
 
@@ -2807,7 +2810,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.SamlProvider.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### SamlProvider.load method
 
@@ -2892,7 +2895,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.ServerCertificate.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### ServerCertificate.load method
 
@@ -3024,7 +3027,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.SigningCertificate.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## User
 
@@ -3299,7 +3302,7 @@ Keyword-only arguments:
 
 #### User.create method
 
-Creates a new IAM user for your account.
+Creates a new IAM user for your Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create` method.
 
@@ -3313,7 +3316,7 @@ Keyword-only arguments:
 
 - `Path`: `str`
 - `PermissionsBoundary`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [User](#user).
 
@@ -3422,7 +3425,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.User.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### User.load method
 
@@ -3533,7 +3536,7 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.UserPolicy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### UserPolicy.load method
 
@@ -3618,4 +3621,4 @@ Type annotations for `boto3.resource("iam").get_available_subresources` method.
 Boto3 documentation:
 [IAM.VirtualMfaDevice.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.VirtualMfaDevice.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].

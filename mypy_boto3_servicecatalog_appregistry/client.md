@@ -23,6 +23,7 @@ type annotations stubs module
     - [disassociate_resource](#disassociate_resource)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_application](#get_application)
+    - [get_associated_resource](#get_associated_resource)
     - [get_attribute_group](#get_attribute_group)
     - [list_applications](#list_applications)
     - [list_associated_attribute_groups](#list_associated_attribute_groups)
@@ -167,7 +168,7 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
@@ -191,7 +192,7 @@ Keyword-only arguments:
 - `attributes`: `str` *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAttributeGroupResponseTypeDef](./type_defs.md#createattributegroupresponsetypedef).
@@ -295,7 +296,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -320,6 +321,29 @@ Keyword-only arguments:
 
 Returns
 [GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef).
+
+### get_associated_resource
+
+Gets the resource associated with the application.
+
+Type annotations for
+`boto3.client("servicecatalog-appregistry").get_associated_resource` method.
+
+Boto3 documentation:
+[AppRegistry.Client.get_associated_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.get_associated_resource)
+
+Arguments mapping described in
+[GetAssociatedResourceRequestRequestTypeDef](./type_defs.md#getassociatedresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `application`: `str` *(required)*
+- `resourceType`: `Literal['CFN_STACK']` (see
+  [ResourceTypeType](./literals.md#resourcetypetype)) *(required)*
+- `resource`: `str` *(required)*
+
+Returns
+[GetAssociatedResourceResponseTypeDef](./type_defs.md#getassociatedresourceresponsetypedef).
 
 ### get_attribute_group
 
@@ -450,7 +474,7 @@ Returns
 
 ### sync_resource
 
-Syncs the resource with what is currently recorded in App registry.
+Syncs the resource with current AppRegistry records.
 
 Type annotations for `boto3.client("servicecatalog-appregistry").sync_resource`
 method.
@@ -486,7 +510,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -506,7 +530,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

@@ -127,7 +127,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -243,7 +243,7 @@ Keyword-only arguments:
 
 - `VolumeSize`: `int` *(required)*
 - `ParentSnapshotId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Description`: `str`
 - `ClientToken`: `str`
 - `Encrypted`: `bool`

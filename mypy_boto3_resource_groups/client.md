@@ -116,9 +116,9 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Description`: `str`
 - `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Configuration`:
-  `List`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
+  `Sequence`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
 
 Returns [CreateGroupOutputTypeDef](./type_defs.md#creategroupoutputtypedef).
 
@@ -154,7 +154,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -253,7 +253,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Group`: `str` *(required)*
-- `ResourceArns`: `List`\[`str`\] *(required)*
+- `ResourceArns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [GroupResourcesOutputTypeDef](./type_defs.md#groupresourcesoutputtypedef).
@@ -277,7 +277,7 @@ Keyword-only arguments:
 - `GroupName`: `str`
 - `Group`: `str`
 - `Filters`:
-  `List`\[[ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef)\]
+  `Sequence`\[[ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -298,7 +298,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
+- `Filters`:
+  `Sequence`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -321,7 +322,7 @@ Keyword-only arguments:
 
 - `Group`: `str`
 - `Configuration`:
-  `List`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
+  `Sequence`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -362,7 +363,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns [TagOutputTypeDef](./type_defs.md#tagoutputtypedef).
 
@@ -382,7 +383,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Group`: `str` *(required)*
-- `ResourceArns`: `List`\[`str`\] *(required)*
+- `ResourceArns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [UngroupResourcesOutputTypeDef](./type_defs.md#ungroupresourcesoutputtypedef).
@@ -402,7 +403,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `Keys`: `List`\[`str`\] *(required)*
+- `Keys`: `Sequence`\[`str`\] *(required)*
 
 Returns [UntagOutputTypeDef](./type_defs.md#untagoutputtypedef).
 

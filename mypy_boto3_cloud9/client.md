@@ -121,8 +121,9 @@ Keyword-only arguments:
 - `imageId`: `str`
 - `automaticStopTimeMinutes`: `int`
 - `ownerArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
+- `dryRun`: `bool`
 
 Returns
 [CreateEnvironmentEC2ResultTypeDef](./type_defs.md#createenvironmentec2resulttypedef).
@@ -206,7 +207,7 @@ Keyword-only arguments:
 
 - `userArn`: `str`
 - `environmentId`: `str`
-- `permissions`: `List`\[[PermissionsType](./literals.md#permissionstype)\]
+- `permissions`: `Sequence`\[[PermissionsType](./literals.md#permissionstype)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -247,7 +248,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `environmentIds`: `List`\[`str`\] *(required)*
+- `environmentIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeEnvironmentsResultTypeDef](./type_defs.md#describeenvironmentsresulttypedef).
@@ -264,7 +265,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -324,7 +325,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -343,7 +344,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -364,6 +365,8 @@ Keyword-only arguments:
 - `environmentId`: `str` *(required)*
 - `name`: `str`
 - `description`: `str`
+- `managedCredentialsAction`:
+  [ManagedCredentialsActionType](./literals.md#managedcredentialsactiontype)
 
 Returns `Dict`\[`str`, `Any`\].
 

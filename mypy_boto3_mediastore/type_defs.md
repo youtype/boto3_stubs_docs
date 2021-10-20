@@ -89,7 +89,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateContainerOutputTypeDef
 
@@ -368,7 +368,7 @@ from mypy_boto3_mediastore.type_defs import PutCorsPolicyInputRequestTypeDef
 Required fields:
 
 - `ContainerName`: `str`
-- `CorsPolicy`: `List`\[[CorsRuleTypeDef](./type_defs.md#corsruletypedef)\]
+- `CorsPolicy`: `Sequence`\[[CorsRuleTypeDef](./type_defs.md#corsruletypedef)\]
 
 ## PutLifecyclePolicyInputRequestTypeDef
 
@@ -435,7 +435,7 @@ from mypy_boto3_mediastore.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `Resource`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -460,4 +460,4 @@ from mypy_boto3_mediastore.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `Resource`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]

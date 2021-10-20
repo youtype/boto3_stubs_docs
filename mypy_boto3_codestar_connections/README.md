@@ -70,6 +70,7 @@ from mypy_boto3_codestar_connections.literals import ConnectionStatusType, ...
 
 - [ConnectionStatusType](./literals.md#connectionstatustype)
 - [ProviderTypeType](./literals.md#providertypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

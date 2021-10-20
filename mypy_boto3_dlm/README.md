@@ -72,6 +72,7 @@ from mypy_boto3_dlm.literals import EventSourceValuesType, ...
 - [ResourceTypeValuesType](./literals.md#resourcetypevaluestype)
 - [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 - [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 
@@ -89,9 +90,11 @@ from mypy_boto3_dlm.type_defs import ActionTypeDef, ...
 - [CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef)
 - [CreateRuleTypeDef](./type_defs.md#createruletypedef)
 - [CrossRegionCopyActionTypeDef](./type_defs.md#crossregioncopyactiontypedef)
+- [CrossRegionCopyDeprecateRuleTypeDef](./type_defs.md#crossregioncopydeprecateruletypedef)
 - [CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef)
 - [CrossRegionCopyRuleTypeDef](./type_defs.md#crossregioncopyruletypedef)
 - [DeleteLifecyclePolicyRequestRequestTypeDef](./type_defs.md#deletelifecyclepolicyrequestrequesttypedef)
+- [DeprecateRuleTypeDef](./type_defs.md#deprecateruletypedef)
 - [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - [EventParametersTypeDef](./type_defs.md#eventparameterstypedef)
 - [EventSourceTypeDef](./type_defs.md#eventsourcetypedef)

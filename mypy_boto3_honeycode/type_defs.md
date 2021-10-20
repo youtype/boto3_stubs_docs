@@ -70,7 +70,7 @@ Required fields:
 - `workbookId`: `str`
 - `tableId`: `str`
 - `rowsToCreate`:
-  `List`\[[CreateRowDataTypeDef](./type_defs.md#createrowdatatypedef)\]
+  `Sequence`\[[CreateRowDataTypeDef](./type_defs.md#createrowdatatypedef)\]
 
 Optional fields:
 
@@ -101,7 +101,7 @@ Required fields:
 
 - `workbookId`: `str`
 - `tableId`: `str`
-- `rowIds`: `List`\[`str`\]
+- `rowIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -132,7 +132,7 @@ Required fields:
 - `workbookId`: `str`
 - `tableId`: `str`
 - `rowsToUpdate`:
-  `List`\[[UpdateRowDataTypeDef](./type_defs.md#updaterowdatatypedef)\]
+  `Sequence`\[[UpdateRowDataTypeDef](./type_defs.md#updaterowdatatypedef)\]
 
 Optional fields:
 
@@ -163,7 +163,7 @@ Required fields:
 - `workbookId`: `str`
 - `tableId`: `str`
 - `rowsToUpsert`:
-  `List`\[[UpsertRowDataTypeDef](./type_defs.md#upsertrowdatatypedef)\]
+  `Sequence`\[[UpsertRowDataTypeDef](./type_defs.md#upsertrowdatatypedef)\]
 
 Optional fields:
 
@@ -228,7 +228,7 @@ from mypy_boto3_honeycode.type_defs import CreateRowDataTypeDef
 Required fields:
 
 - `batchItemId`: `str`
-- `cellsToCreate`: `Dict`\[`str`,
+- `cellsToCreate`: `Mapping`\[`str`,
   [CellInputTypeDef](./type_defs.md#cellinputtypedef)\]
 
 ## DataItemTypeDef
@@ -338,7 +338,7 @@ Required fields:
 
 Optional fields:
 
-- `variables`: `Dict`\[`str`,
+- `variables`: `Mapping`\[`str`,
   [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -418,7 +418,7 @@ Required fields:
 
 Optional fields:
 
-- `variables`: `Dict`\[`str`,
+- `variables`: `Mapping`\[`str`,
   [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)\]
 - `rowId`: `str`
 - `clientRequestToken`: `str`
@@ -478,7 +478,7 @@ Required fields:
 
 Optional fields:
 
-- `rowIds`: `List`\[`str`\]
+- `rowIds`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -710,7 +710,7 @@ from mypy_boto3_honeycode.type_defs import UpdateRowDataTypeDef
 Required fields:
 
 - `rowId`: `str`
-- `cellsToUpdate`: `Dict`\[`str`,
+- `cellsToUpdate`: `Mapping`\[`str`,
   [CellInputTypeDef](./type_defs.md#cellinputtypedef)\]
 
 ## UpsertRowDataTypeDef
@@ -723,7 +723,7 @@ Required fields:
 
 - `batchItemId`: `str`
 - `filter`: [FilterTypeDef](./type_defs.md#filtertypedef)
-- `cellsToUpdate`: `Dict`\[`str`,
+- `cellsToUpdate`: `Mapping`\[`str`,
   [CellInputTypeDef](./type_defs.md#cellinputtypedef)\]
 
 ## UpsertRowsResultTypeDef

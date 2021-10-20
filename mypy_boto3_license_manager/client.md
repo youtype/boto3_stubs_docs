@@ -21,6 +21,7 @@ type annotations stubs module
     - [create_grant_version](#create_grant_version)
     - [create_license](#create_license)
     - [create_license_configuration](#create_license_configuration)
+    - [create_license_conversion_task_for_resource](#create_license_conversion_task_for_resource)
     - [create_license_manager_report_generator](#create_license_manager_report_generator)
     - [create_license_version](#create_license_version)
     - [create_token](#create_token)
@@ -35,6 +36,7 @@ type annotations stubs module
     - [get_grant](#get_grant)
     - [get_license](#get_license)
     - [get_license_configuration](#get_license_configuration)
+    - [get_license_conversion_task](#get_license_conversion_task)
     - [get_license_manager_report_generator](#get_license_manager_report_generator)
     - [get_license_usage](#get_license_usage)
     - [get_service_settings](#get_service_settings)
@@ -42,6 +44,7 @@ type annotations stubs module
     - [list_distributed_grants](#list_distributed_grants)
     - [list_failures_for_license_configuration_operations](#list_failures_for_license_configuration_operations)
     - [list_license_configurations](#list_license_configurations)
+    - [list_license_conversion_tasks](#list_license_conversion_tasks)
     - [list_license_manager_report_generators](#list_license_manager_report_generators)
     - [list_license_specifications_for_resource](#list_license_specifications_for_resource)
     - [list_license_versions](#list_license_versions)
@@ -193,7 +196,7 @@ Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 - `Entitlements`:
-  `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
+  `Sequence`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
   *(required)*
 - `DigitalSignatureMethod`: `Literal['JWT_PS384']` (see
   [DigitalSignatureMethodType](./literals.md#digitalsignaturemethodtype))
@@ -201,7 +204,7 @@ Keyword-only arguments:
 - `ClientToken`: `str` *(required)*
 - `NodeId`: `str`
 - `CheckoutMetadata`:
-  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+  `Sequence`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 
 Returns
 [CheckoutBorrowLicenseResponseTypeDef](./type_defs.md#checkoutborrowlicenseresponsetypedef).
@@ -221,11 +224,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ProductSKU`: `str` *(required)*
-- `CheckoutType`: `Literal['PROVISIONAL']` (see
-  [CheckoutTypeType](./literals.md#checkouttypetype)) *(required)*
+- `CheckoutType`: [CheckoutTypeType](./literals.md#checkouttypetype)
+  *(required)*
 - `KeyFingerprint`: `str` *(required)*
 - `Entitlements`:
-  `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
+  `Sequence`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
   *(required)*
 - `ClientToken`: `str` *(required)*
 - `Beneficiary`: `str`
@@ -251,10 +254,10 @@ Keyword-only arguments:
 - `ClientToken`: `str` *(required)*
 - `GrantName`: `str` *(required)*
 - `LicenseArn`: `str` *(required)*
-- `Principals`: `List`\[`str`\] *(required)*
+- `Principals`: `Sequence`\[`str`\] *(required)*
 - `HomeRegion`: `str` *(required)*
 - `AllowedOperations`:
-  `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
+  `Sequence`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
   *(required)*
 
 Returns
@@ -279,7 +282,7 @@ Keyword-only arguments:
 - `GrantArn`: `str` *(required)*
 - `GrantName`: `str`
 - `AllowedOperations`:
-  `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
+  `Sequence`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
 - `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `StatusReason`: `str`
 - `SourceVersion`: `str`
@@ -309,7 +312,7 @@ Keyword-only arguments:
 - `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
   *(required)*
 - `Entitlements`:
-  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
+  `Sequence`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
   *(required)*
 - `Beneficiary`: `str` *(required)*
 - `ConsumptionConfiguration`:
@@ -317,7 +320,7 @@ Keyword-only arguments:
   *(required)*
 - `ClientToken`: `str` *(required)*
 - `LicenseMetadata`:
-  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+  `Sequence`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 
 Returns
 [CreateLicenseResponseTypeDef](./type_defs.md#createlicenseresponsetypedef).
@@ -343,18 +346,45 @@ Keyword-only arguments:
 - `Description`: `str`
 - `LicenseCount`: `int`
 - `LicenseCountHardLimit`: `bool`
-- `LicenseRules`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `LicenseRules`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DisassociateWhenNotFound`: `bool`
 - `ProductInformationList`:
-  `List`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
+  `Sequence`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
 
 Returns
 [CreateLicenseConfigurationResponseTypeDef](./type_defs.md#createlicenseconfigurationresponsetypedef).
 
+### create_license_conversion_task_for_resource
+
+Creates a new license conversion task.
+
+Type annotations for
+`boto3.client("license-manager").create_license_conversion_task_for_resource`
+method.
+
+Boto3 documentation:
+[LicenseManager.Client.create_license_conversion_task_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_conversion_task_for_resource)
+
+Arguments mapping described in
+[CreateLicenseConversionTaskForResourceRequestRequestTypeDef](./type_defs.md#createlicenseconversiontaskforresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `SourceLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+  *(required)*
+- `DestinationLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+  *(required)*
+
+Returns
+[CreateLicenseConversionTaskForResourceResponseTypeDef](./type_defs.md#createlicenseconversiontaskforresourceresponsetypedef).
+
 ### create_license_manager_report_generator
 
-Creates a new report generator.
+Creates a report generator.
 
 Type annotations for
 `boto3.client("license-manager").create_license_manager_report_generator`
@@ -369,14 +399,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ReportGeneratorName`: `str` *(required)*
-- `Type`: `List`\[[ReportTypeType](./literals.md#reporttypetype)\] *(required)*
+- `Type`: `Sequence`\[[ReportTypeType](./literals.md#reporttypetype)\]
+  *(required)*
 - `ReportContext`: [ReportContextTypeDef](./type_defs.md#reportcontexttypedef)
   *(required)*
 - `ReportFrequency`:
   [ReportFrequencyTypeDef](./type_defs.md#reportfrequencytypedef) *(required)*
 - `ClientToken`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateLicenseManagerReportGeneratorResponseTypeDef](./type_defs.md#createlicensemanagerreportgeneratorresponsetypedef).
@@ -404,7 +435,7 @@ Keyword-only arguments:
 - `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
   *(required)*
 - `Entitlements`:
-  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
+  `Sequence`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
   *(required)*
 - `ConsumptionConfiguration`:
   [ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef)
@@ -412,7 +443,7 @@ Keyword-only arguments:
 - `Status`: [LicenseStatusType](./literals.md#licensestatustype) *(required)*
 - `ClientToken`: `str` *(required)*
 - `LicenseMetadata`:
-  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+  `Sequence`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 - `SourceVersion`: `str`
 
 Returns
@@ -434,9 +465,9 @@ Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 - `ClientToken`: `str` *(required)*
-- `RoleArns`: `List`\[`str`\]
+- `RoleArns`: `Sequence`\[`str`\]
 - `ExpirationInDays`: `int`
-- `TokenProperties`: `List`\[`str`\]
+- `TokenProperties`: `Sequence`\[`str`\]
 
 Returns
 [CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
@@ -503,7 +534,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_license_manager_report_generator
 
-Delete an existing report generator.
+Deletes the specified report generator.
 
 Type annotations for
 `boto3.client("license-manager").delete_license_manager_report_generator`
@@ -573,7 +604,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -594,7 +625,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Token`: `str` *(required)*
-- `TokenProperties`: `List`\[`str`\]
+- `TokenProperties`: `Sequence`\[`str`\]
 
 Returns
 [GetAccessTokenResponseTypeDef](./type_defs.md#getaccesstokenresponsetypedef).
@@ -657,9 +688,29 @@ Keyword-only arguments:
 Returns
 [GetLicenseConfigurationResponseTypeDef](./type_defs.md#getlicenseconfigurationresponsetypedef).
 
+### get_license_conversion_task
+
+Gets information about the specified license type conversion task.
+
+Type annotations for
+`boto3.client("license-manager").get_license_conversion_task` method.
+
+Boto3 documentation:
+[LicenseManager.Client.get_license_conversion_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_conversion_task)
+
+Arguments mapping described in
+[GetLicenseConversionTaskRequestRequestTypeDef](./type_defs.md#getlicenseconversiontaskrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `LicenseConversionTaskId`: `str` *(required)*
+
+Returns
+[GetLicenseConversionTaskResponseTypeDef](./type_defs.md#getlicenseconversiontaskresponsetypedef).
+
 ### get_license_manager_report_generator
 
-Gets information on the specified report generator.
+Gets information about the specified report generator.
 
 Type annotations for
 `boto3.client("license-manager").get_license_manager_report_generator` method.
@@ -748,8 +799,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `GrantArns`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `GrantArns`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -794,13 +845,35 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LicenseConfigurationArns`: `List`\[`str`\]
+- `LicenseConfigurationArns`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListLicenseConfigurationsResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponsetypedef).
+
+### list_license_conversion_tasks
+
+Lists the license type conversion tasks for your account.
+
+Type annotations for
+`boto3.client("license-manager").list_license_conversion_tasks` method.
+
+Boto3 documentation:
+[LicenseManager.Client.list_license_conversion_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_conversion_tasks)
+
+Arguments mapping described in
+[ListLicenseConversionTasksRequestRequestTypeDef](./type_defs.md#listlicenseconversiontasksrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+Returns
+[ListLicenseConversionTasksResponseTypeDef](./type_defs.md#listlicenseconversiontasksresponsetypedef).
 
 ### list_license_manager_report_generators
 
@@ -818,7 +891,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -884,8 +957,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LicenseArns`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LicenseArns`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -907,8 +980,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `GrantArns`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `GrantArns`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -930,8 +1003,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LicenseArns`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LicenseArns`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -956,7 +1029,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
 
 Returns
 [ListResourceInventoryResponseTypeDef](./type_defs.md#listresourceinventoryresponsetypedef).
@@ -995,8 +1068,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TokenIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TokenIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1021,7 +1094,7 @@ Keyword-only arguments:
 - `LicenseConfigurationArn`: `str` *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListUsageForLicenseConfigurationResponseTypeDef](./type_defs.md#listusageforlicenseconfigurationresponsetypedef).
@@ -1060,7 +1133,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1079,7 +1152,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1101,13 +1174,13 @@ Keyword-only arguments:
 - `LicenseConfigurationArn`: `str` *(required)*
 - `LicenseConfigurationStatus`:
   [LicenseConfigurationStatusType](./literals.md#licenseconfigurationstatustype)
-- `LicenseRules`: `List`\[`str`\]
+- `LicenseRules`: `Sequence`\[`str`\]
 - `LicenseCount`: `int`
 - `LicenseCountHardLimit`: `bool`
 - `Name`: `str`
 - `Description`: `str`
 - `ProductInformationList`:
-  `List`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
+  `Sequence`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
 - `DisassociateWhenNotFound`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1130,7 +1203,8 @@ Keyword-only arguments:
 
 - `LicenseManagerReportGeneratorArn`: `str` *(required)*
 - `ReportGeneratorName`: `str` *(required)*
-- `Type`: `List`\[[ReportTypeType](./literals.md#reporttypetype)\] *(required)*
+- `Type`: `Sequence`\[[ReportTypeType](./literals.md#reporttypetype)\]
+  *(required)*
 - `ReportContext`: [ReportContextTypeDef](./type_defs.md#reportcontexttypedef)
   *(required)*
 - `ReportFrequency`:
@@ -1142,8 +1216,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_license_specifications_for_resource
 
-Adds or removes the specified license configurations for the specified AWS
-resource.
+Adds or removes the specified license configurations for the specified Amazon
+Web Services resource.
 
 Type annotations for
 `boto3.client("license-manager").update_license_specifications_for_resource`
@@ -1159,9 +1233,9 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `AddLicenseSpecifications`:
-  `List`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
+  `Sequence`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
 - `RemoveLicenseSpecifications`:
-  `List`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
+  `Sequence`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 

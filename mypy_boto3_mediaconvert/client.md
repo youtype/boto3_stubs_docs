@@ -20,6 +20,7 @@ type annotations stubs module
     - [create_preset](#create_preset)
     - [create_queue](#create_queue)
     - [delete_job_template](#delete_job_template)
+    - [delete_policy](#delete_policy)
     - [delete_preset](#delete_preset)
     - [delete_queue](#delete_queue)
     - [describe_endpoints](#describe_endpoints)
@@ -27,6 +28,7 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [get_job](#get_job)
     - [get_job_template](#get_job_template)
+    - [get_policy](#get_policy)
     - [get_preset](#get_preset)
     - [get_queue](#get_queue)
     - [list_job_templates](#list_job_templates)
@@ -34,6 +36,7 @@ type annotations stubs module
     - [list_presets](#list_presets)
     - [list_queues](#list_queues)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [put_policy](#put_policy)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_job_template](#update_job_template)
@@ -168,7 +171,7 @@ Keyword-only arguments:
   [BillingTagsSourceType](./literals.md#billingtagssourcetype)
 - `ClientRequestToken`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
+  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `JobTemplate`: `str`
 - `Priority`: `int`
 - `Queue`: `str`
@@ -176,8 +179,8 @@ Keyword-only arguments:
   [SimulateReservedQueueType](./literals.md#simulatereservedqueuetype)
 - `StatusUpdateInterval`:
   [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `UserMetadata`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `UserMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
@@ -204,12 +207,12 @@ Keyword-only arguments:
 - `Category`: `str`
 - `Description`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
+  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `Priority`: `int`
 - `Queue`: `str`
 - `StatusUpdateInterval`:
   [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
@@ -233,7 +236,7 @@ Keyword-only arguments:
   *(required)*
 - `Category`: `str`
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreatePresetResponseTypeDef](./type_defs.md#createpresetresponsetypedef).
@@ -258,7 +261,7 @@ Keyword-only arguments:
 - `ReservationPlanSettings`:
   [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
 - `Status`: [QueueStatusType](./literals.md#queuestatustype)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef).
@@ -278,6 +281,17 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### delete_policy
+
+Permanently delete a policy that you created.
+
+Type annotations for `boto3.client("mediaconvert").delete_policy` method.
+
+Boto3 documentation:
+[MediaConvert.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_policy)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -373,7 +387,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -415,6 +429,17 @@ Keyword-only arguments:
 
 Returns
 [GetJobTemplateResponseTypeDef](./type_defs.md#getjobtemplateresponsetypedef).
+
+### get_policy
+
+Retrieve the JSON for your policy.
+
+Type annotations for `boto3.client("mediaconvert").get_policy` method.
+
+Boto3 documentation:
+[MediaConvert.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_policy)
+
+Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
 ### get_preset
 
@@ -561,6 +586,24 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+### put_policy
+
+Create or change your policy.
+
+Type annotations for `boto3.client("mediaconvert").put_policy` method.
+
+Boto3 documentation:
+[MediaConvert.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.put_policy)
+
+Arguments mapping described in
+[PutPolicyRequestRequestTypeDef](./type_defs.md#putpolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef) *(required)*
+
+Returns [PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef).
+
 ### tag_resource
 
 Add tags to a MediaConvert queue, preset, or job template.
@@ -576,7 +619,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -595,7 +638,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -619,7 +662,7 @@ Keyword-only arguments:
 - `Category`: `str`
 - `Description`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
+  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `Priority`: `int`
 - `Queue`: `str`
 - `Settings`:

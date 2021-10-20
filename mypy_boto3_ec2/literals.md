@@ -36,6 +36,7 @@ type annotations stubs module
   - [ByoipCidrStateType](#byoipcidrstatetype)
   - [CancelBatchErrorCodeType](#cancelbatcherrorcodetype)
   - [CancelSpotInstanceRequestStateType](#cancelspotinstancerequeststatetype)
+  - [CapacityReservationFleetStateType](#capacityreservationfleetstatetype)
   - [CapacityReservationInstancePlatformType](#capacityreservationinstanceplatformtype)
   - [CapacityReservationPreferenceType](#capacityreservationpreferencetype)
   - [CapacityReservationStateType](#capacityreservationstatetype)
@@ -67,6 +68,7 @@ type annotations stubs module
   - [DeleteQueuedReservedInstancesErrorCodeType](#deletequeuedreservedinstanceserrorcodetype)
   - [DescribeAddressesAttributePaginatorName](#describeaddressesattributepaginatorname)
   - [DescribeByoipCidrsPaginatorName](#describebyoipcidrspaginatorname)
+  - [DescribeCapacityReservationFleetsPaginatorName](#describecapacityreservationfleetspaginatorname)
   - [DescribeCapacityReservationsPaginatorName](#describecapacityreservationspaginatorname)
   - [DescribeCarrierGatewaysPaginatorName](#describecarriergatewayspaginatorname)
   - [DescribeClassicLinkInstancesPaginatorName](#describeclassiclinkinstancespaginatorname)
@@ -90,6 +92,7 @@ type annotations stubs module
   - [DescribeImportImageTasksPaginatorName](#describeimportimagetaskspaginatorname)
   - [DescribeImportSnapshotTasksPaginatorName](#describeimportsnapshottaskspaginatorname)
   - [DescribeInstanceCreditSpecificationsPaginatorName](#describeinstancecreditspecificationspaginatorname)
+  - [DescribeInstanceEventWindowsPaginatorName](#describeinstanceeventwindowspaginatorname)
   - [DescribeInstanceStatusPaginatorName](#describeinstancestatuspaginatorname)
   - [DescribeInstanceTypeOfferingsPaginatorName](#describeinstancetypeofferingspaginatorname)
   - [DescribeInstanceTypesPaginatorName](#describeinstancetypespaginatorname)
@@ -143,6 +146,7 @@ type annotations stubs module
   - [DescribeTransitGatewayRouteTablesPaginatorName](#describetransitgatewayroutetablespaginatorname)
   - [DescribeTransitGatewayVpcAttachmentsPaginatorName](#describetransitgatewayvpcattachmentspaginatorname)
   - [DescribeTransitGatewaysPaginatorName](#describetransitgatewayspaginatorname)
+  - [DescribeTrunkInterfaceAssociationsPaginatorName](#describetrunkinterfaceassociationspaginatorname)
   - [DescribeVolumeStatusPaginatorName](#describevolumestatuspaginatorname)
   - [DescribeVolumesModificationsPaginatorName](#describevolumesmodificationspaginatorname)
   - [DescribeVolumesPaginatorName](#describevolumespaginatorname)
@@ -155,6 +159,7 @@ type annotations stubs module
   - [DescribeVpcEndpointsPaginatorName](#describevpcendpointspaginatorname)
   - [DescribeVpcPeeringConnectionsPaginatorName](#describevpcpeeringconnectionspaginatorname)
   - [DescribeVpcsPaginatorName](#describevpcspaginatorname)
+  - [DestinationFileFormatType](#destinationfileformattype)
   - [DeviceTypeType](#devicetypetype)
   - [DiskImageFormatType](#diskimageformattype)
   - [DiskTypeType](#disktypetype)
@@ -178,9 +183,11 @@ type annotations stubs module
   - [ExportTaskStateType](#exporttaskstatetype)
   - [FastSnapshotRestoreStateCodeType](#fastsnapshotrestorestatecodetype)
   - [FleetActivityStatusType](#fleetactivitystatustype)
+  - [FleetCapacityReservationTenancyType](#fleetcapacityreservationtenancytype)
   - [FleetCapacityReservationUsageStrategyType](#fleetcapacityreservationusagestrategytype)
   - [FleetEventTypeType](#fleeteventtypetype)
   - [FleetExcessCapacityTerminationPolicyType](#fleetexcesscapacityterminationpolicytype)
+  - [FleetInstanceMatchCriteriaType](#fleetinstancematchcriteriatype)
   - [FleetOnDemandAllocationStrategyType](#fleetondemandallocationstrategytype)
   - [FleetReplacementStrategyType](#fleetreplacementstrategytype)
   - [FleetStateCodeType](#fleetstatecodetype)
@@ -198,6 +205,7 @@ type annotations stubs module
   - [GetTransitGatewayPrefixListReferencesPaginatorName](#gettransitgatewayprefixlistreferencespaginatorname)
   - [GetTransitGatewayRouteTableAssociationsPaginatorName](#gettransitgatewayroutetableassociationspaginatorname)
   - [GetTransitGatewayRouteTablePropagationsPaginatorName](#gettransitgatewayroutetablepropagationspaginatorname)
+  - [GetVpnConnectionDeviceTypesPaginatorName](#getvpnconnectiondevicetypespaginatorname)
   - [HostRecoveryType](#hostrecoverytype)
   - [HostTenancyType](#hosttenancytype)
   - [HttpTokensStateType](#httptokensstatetype)
@@ -210,6 +218,7 @@ type annotations stubs module
   - [ImageStateType](#imagestatetype)
   - [ImageTypeValuesType](#imagetypevaluestype)
   - [InstanceAttributeNameType](#instanceattributenametype)
+  - [InstanceEventWindowStateType](#instanceeventwindowstatetype)
   - [InstanceExistsWaiterName](#instanceexistswaitername)
   - [InstanceHealthStatusType](#instancehealthstatustype)
   - [InstanceInterruptionBehaviorType](#instanceinterruptionbehaviortype)
@@ -218,10 +227,12 @@ type annotations stubs module
   - [InstanceMatchCriteriaType](#instancematchcriteriatype)
   - [InstanceMetadataEndpointStateType](#instancemetadataendpointstatetype)
   - [InstanceMetadataOptionsStateType](#instancemetadataoptionsstatetype)
+  - [InstanceMetadataProtocolStateType](#instancemetadataprotocolstatetype)
   - [InstanceRunningWaiterName](#instancerunningwaitername)
   - [InstanceStateNameType](#instancestatenametype)
   - [InstanceStatusOkWaiterName](#instancestatusokwaitername)
   - [InstanceStoppedWaiterName](#instancestoppedwaitername)
+  - [InstanceStorageEncryptionSupportType](#instancestorageencryptionsupporttype)
   - [InstanceTerminatedWaiterName](#instanceterminatedwaitername)
   - [InstanceTypeHypervisorType](#instancetypehypervisortype)
   - [InstanceTypeType](#instancetypetype)
@@ -229,10 +240,12 @@ type annotations stubs module
   - [InterfaceProtocolTypeType](#interfaceprotocoltypetype)
   - [Ipv6SupportValueType](#ipv6supportvaluetype)
   - [KeyPairExistsWaiterName](#keypairexistswaitername)
+  - [KeyTypeType](#keytypetype)
   - [LaunchTemplateErrorCodeType](#launchtemplateerrorcodetype)
   - [LaunchTemplateHttpTokensStateType](#launchtemplatehttptokensstatetype)
   - [LaunchTemplateInstanceMetadataEndpointStateType](#launchtemplateinstancemetadataendpointstatetype)
   - [LaunchTemplateInstanceMetadataOptionsStateType](#launchtemplateinstancemetadataoptionsstatetype)
+  - [LaunchTemplateInstanceMetadataProtocolIpv6Type](#launchtemplateinstancemetadataprotocolipv6type)
   - [ListingStateType](#listingstatetype)
   - [ListingStatusType](#listingstatustype)
   - [LocalGatewayRouteStateType](#localgatewayroutestatetype)
@@ -308,6 +321,7 @@ type annotations stubs module
   - [StatusTypeType](#statustypetype)
   - [SubnetAvailableWaiterName](#subnetavailablewaitername)
   - [SubnetCidrBlockStateCodeType](#subnetcidrblockstatecodetype)
+  - [SubnetCidrReservationTypeType](#subnetcidrreservationtypetype)
   - [SubnetStateType](#subnetstatetype)
   - [SummaryStatusType](#summarystatustype)
   - [SystemStatusOkWaiterName](#systemstatusokwaitername)
@@ -364,7 +378,11 @@ type annotations stubs module
   - [VpnProtocolType](#vpnprotocoltype)
   - [VpnStateType](#vpnstatetype)
   - [VpnStaticRouteSourceType](#vpnstaticroutesourcetype)
+  - [WeekDayType](#weekdaytype)
   - [scopeType](#scopetype)
+  - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AccountAttributeNameType
 
@@ -484,6 +502,7 @@ Values:
 - `arm64`
 - `i386`
 - `x86_64`
+- `x86_64_mac`
 
 ## ArchitectureValuesType
 
@@ -496,6 +515,7 @@ Values:
 - `arm64`
 - `i386`
 - `x86_64`
+- `x86_64_mac`
 
 ## AssociatedNetworkTypeType
 
@@ -710,6 +730,24 @@ Values:
 - `closed`
 - `completed`
 - `open`
+
+## CapacityReservationFleetStateType
+
+```python
+from mypy_boto3_ec2.literals import CapacityReservationFleetStateType
+```
+
+Values:
+
+- `active`
+- `cancelled`
+- `cancelling`
+- `expired`
+- `expiring`
+- `failed`
+- `modifying`
+- `partially_fulfilled`
+- `submitted`
 
 ## CapacityReservationInstancePlatformType
 
@@ -1070,6 +1108,16 @@ Values:
 
 - `describe_byoip_cidrs`
 
+## DescribeCapacityReservationFleetsPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeCapacityReservationFleetsPaginatorName
+```
+
+Values:
+
+- `describe_capacity_reservation_fleets`
+
 ## DescribeCapacityReservationsPaginatorName
 
 ```python
@@ -1299,6 +1347,16 @@ from mypy_boto3_ec2.literals import DescribeInstanceCreditSpecificationsPaginato
 Values:
 
 - `describe_instance_credit_specifications`
+
+## DescribeInstanceEventWindowsPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeInstanceEventWindowsPaginatorName
+```
+
+Values:
+
+- `describe_instance_event_windows`
 
 ## DescribeInstanceStatusPaginatorName
 
@@ -1830,6 +1888,16 @@ Values:
 
 - `describe_transit_gateways`
 
+## DescribeTrunkInterfaceAssociationsPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeTrunkInterfaceAssociationsPaginatorName
+```
+
+Values:
+
+- `describe_trunk_interface_associations`
+
 ## DescribeVolumeStatusPaginatorName
 
 ```python
@@ -1949,6 +2017,17 @@ from mypy_boto3_ec2.literals import DescribeVpcsPaginatorName
 Values:
 
 - `describe_vpcs`
+
+## DestinationFileFormatType
+
+```python
+from mypy_boto3_ec2.literals import DestinationFileFormatType
+```
+
+Values:
+
+- `parquet`
+- `plain-text`
 
 ## DeviceTypeType
 
@@ -2219,6 +2298,16 @@ Values:
 - `pending_fulfillment`
 - `pending_termination`
 
+## FleetCapacityReservationTenancyType
+
+```python
+from mypy_boto3_ec2.literals import FleetCapacityReservationTenancyType
+```
+
+Values:
+
+- `default`
+
 ## FleetCapacityReservationUsageStrategyType
 
 ```python
@@ -2251,6 +2340,16 @@ Values:
 
 - `no-termination`
 - `termination`
+
+## FleetInstanceMatchCriteriaType
+
+```python
+from mypy_boto3_ec2.literals import FleetInstanceMatchCriteriaType
+```
+
+Values:
+
+- `open`
 
 ## FleetOnDemandAllocationStrategyType
 
@@ -2439,6 +2538,16 @@ Values:
 
 - `get_transit_gateway_route_table_propagations`
 
+## GetVpnConnectionDeviceTypesPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import GetVpnConnectionDeviceTypesPaginatorName
+```
+
+Values:
+
+- `get_vpn_connection_device_types`
+
 ## HostRecoveryType
 
 ```python
@@ -2596,6 +2705,19 @@ Values:
 - `sriovNetSupport`
 - `userData`
 
+## InstanceEventWindowStateType
+
+```python
+from mypy_boto3_ec2.literals import InstanceEventWindowStateType
+```
+
+Values:
+
+- `active`
+- `creating`
+- `deleted`
+- `deleting`
+
 ## InstanceExistsWaiterName
 
 ```python
@@ -2684,6 +2806,17 @@ Values:
 - `applied`
 - `pending`
 
+## InstanceMetadataProtocolStateType
+
+```python
+from mypy_boto3_ec2.literals import InstanceMetadataProtocolStateType
+```
+
+Values:
+
+- `disabled`
+- `enabled`
+
 ## InstanceRunningWaiterName
 
 ```python
@@ -2728,6 +2861,17 @@ from mypy_boto3_ec2.literals import InstanceStoppedWaiterName
 Values:
 
 - `instance_stopped`
+
+## InstanceStorageEncryptionSupportType
+
+```python
+from mypy_boto3_ec2.literals import InstanceStorageEncryptionSupportType
+```
+
+Values:
+
+- `required`
+- `unsupported`
 
 ## InstanceTerminatedWaiterName
 
@@ -2871,8 +3015,10 @@ Values:
 - `g3.8xlarge`
 - `g3s.xlarge`
 - `g4ad.16xlarge`
+- `g4ad.2xlarge`
 - `g4ad.4xlarge`
 - `g4ad.8xlarge`
+- `g4ad.xlarge`
 - `g4dn.12xlarge`
 - `g4dn.16xlarge`
 - `g4dn.2xlarge`
@@ -3003,6 +3149,15 @@ Values:
 - `m6gd.medium`
 - `m6gd.metal`
 - `m6gd.xlarge`
+- `m6i.12xlarge`
+- `m6i.16xlarge`
+- `m6i.24xlarge`
+- `m6i.2xlarge`
+- `m6i.32xlarge`
+- `m6i.4xlarge`
+- `m6i.8xlarge`
+- `m6i.large`
+- `m6i.xlarge`
 - `mac1.metal`
 - `p2.16xlarge`
 - `p2.8xlarge`
@@ -3140,6 +3295,9 @@ Values:
 - `u-6tb1.metal`
 - `u-9tb1.112xlarge`
 - `u-9tb1.metal`
+- `vt1.24xlarge`
+- `vt1.3xlarge`
+- `vt1.6xlarge`
 - `x1.16xlarge`
 - `x1.32xlarge`
 - `x1e.16xlarge`
@@ -3208,6 +3366,17 @@ Values:
 
 - `key_pair_exists`
 
+## KeyTypeType
+
+```python
+from mypy_boto3_ec2.literals import KeyTypeType
+```
+
+Values:
+
+- `ed25519`
+- `rsa`
+
 ## LaunchTemplateErrorCodeType
 
 ```python
@@ -3255,6 +3424,17 @@ Values:
 
 - `applied`
 - `pending`
+
+## LaunchTemplateInstanceMetadataProtocolIpv6Type
+
+```python
+from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataProtocolIpv6Type
+```
+
+Values:
+
+- `disabled`
+- `enabled`
 
 ## ListingStateType
 
@@ -3837,6 +4017,8 @@ from mypy_boto3_ec2.literals import ResourceTypeType
 
 Values:
 
+- `capacity-reservation`
+- `carrier-gateway`
 - `client-vpn-endpoint`
 - `customer-gateway`
 - `dedicated-host`
@@ -3853,16 +4035,26 @@ Values:
 - `import-image-task`
 - `import-snapshot-task`
 - `instance`
+- `instance-event-window`
 - `internet-gateway`
+- `ipv4pool-ec2`
+- `ipv6pool-ec2`
 - `key-pair`
 - `launch-template`
+- `local-gateway`
+- `local-gateway-route-table`
+- `local-gateway-route-table-virtual-interface-group-association`
 - `local-gateway-route-table-vpc-association`
+- `local-gateway-virtual-interface`
+- `local-gateway-virtual-interface-group`
 - `natgateway`
 - `network-acl`
 - `network-insights-analysis`
 - `network-insights-path`
 - `network-interface`
 - `placement-group`
+- `prefix-list`
+- `replace-root-volume-task`
 - `reserved-instances`
 - `route-table`
 - `security-group`
@@ -3881,6 +4073,8 @@ Values:
 - `transit-gateway-route-table`
 - `volume`
 - `vpc`
+- `vpc-endpoint`
+- `vpc-endpoint-service`
 - `vpc-flow-log`
 - `vpc-peering-connection`
 - `vpn-connection`
@@ -4203,6 +4397,17 @@ Values:
 - `disassociating`
 - `failed`
 - `failing`
+
+## SubnetCidrReservationTypeType
+
+```python
+from mypy_boto3_ec2.literals import SubnetCidrReservationTypeType
+```
+
+Values:
+
+- `explicit`
+- `prefix`
 
 ## SubnetStateType
 
@@ -4885,6 +5090,22 @@ Values:
 
 - `Static`
 
+## WeekDayType
+
+```python
+from mypy_boto3_ec2.literals import WeekDayType
+```
+
+Values:
+
+- `friday`
+- `monday`
+- `saturday`
+- `sunday`
+- `thursday`
+- `tuesday`
+- `wednesday`
+
 ## scopeType
 
 ```python
@@ -4895,3 +5116,452 @@ Values:
 
 - `Availability Zone`
 - `Region`
+
+## ServiceName
+
+```python
+from mypy_boto3_ec2.literals import ServiceName
+```
+
+Values:
+
+- `accessanalyzer`
+- `account`
+- `acm`
+- `acm-pca`
+- `alexaforbusiness`
+- `amp`
+- `amplify`
+- `amplifybackend`
+- `apigateway`
+- `apigatewaymanagementapi`
+- `apigatewayv2`
+- `appconfig`
+- `appflow`
+- `appintegrations`
+- `application-autoscaling`
+- `application-insights`
+- `applicationcostprofiler`
+- `appmesh`
+- `apprunner`
+- `appstream`
+- `appsync`
+- `athena`
+- `auditmanager`
+- `autoscaling`
+- `autoscaling-plans`
+- `backup`
+- `batch`
+- `braket`
+- `budgets`
+- `ce`
+- `chime`
+- `chime-sdk-identity`
+- `chime-sdk-messaging`
+- `cloud9`
+- `cloudcontrol`
+- `clouddirectory`
+- `cloudformation`
+- `cloudfront`
+- `cloudhsm`
+- `cloudhsmv2`
+- `cloudsearch`
+- `cloudsearchdomain`
+- `cloudtrail`
+- `cloudwatch`
+- `codeartifact`
+- `codebuild`
+- `codecommit`
+- `codedeploy`
+- `codeguru-reviewer`
+- `codeguruprofiler`
+- `codepipeline`
+- `codestar`
+- `codestar-connections`
+- `codestar-notifications`
+- `cognito-identity`
+- `cognito-idp`
+- `cognito-sync`
+- `comprehend`
+- `comprehendmedical`
+- `compute-optimizer`
+- `config`
+- `connect`
+- `connect-contact-lens`
+- `connectparticipant`
+- `cur`
+- `customer-profiles`
+- `databrew`
+- `dataexchange`
+- `datapipeline`
+- `datasync`
+- `dax`
+- `detective`
+- `devicefarm`
+- `devops-guru`
+- `directconnect`
+- `discovery`
+- `dlm`
+- `dms`
+- `docdb`
+- `ds`
+- `dynamodb`
+- `dynamodbstreams`
+- `ebs`
+- `ec2`
+- `ec2-instance-connect`
+- `ecr`
+- `ecr-public`
+- `ecs`
+- `efs`
+- `eks`
+- `elastic-inference`
+- `elasticache`
+- `elasticbeanstalk`
+- `elastictranscoder`
+- `elb`
+- `elbv2`
+- `emr`
+- `emr-containers`
+- `es`
+- `events`
+- `finspace`
+- `finspace-data`
+- `firehose`
+- `fis`
+- `fms`
+- `forecast`
+- `forecastquery`
+- `frauddetector`
+- `fsx`
+- `gamelift`
+- `glacier`
+- `globalaccelerator`
+- `glue`
+- `grafana`
+- `greengrass`
+- `greengrassv2`
+- `groundstation`
+- `guardduty`
+- `health`
+- `healthlake`
+- `honeycode`
+- `iam`
+- `identitystore`
+- `imagebuilder`
+- `importexport`
+- `inspector`
+- `iot`
+- `iot-data`
+- `iot-jobs-data`
+- `iot1click-devices`
+- `iot1click-projects`
+- `iotanalytics`
+- `iotdeviceadvisor`
+- `iotevents`
+- `iotevents-data`
+- `iotfleethub`
+- `iotsecuretunneling`
+- `iotsitewise`
+- `iotthingsgraph`
+- `iotwireless`
+- `ivs`
+- `kafka`
+- `kafkaconnect`
+- `kendra`
+- `kinesis`
+- `kinesis-video-archived-media`
+- `kinesis-video-media`
+- `kinesis-video-signaling`
+- `kinesisanalytics`
+- `kinesisanalyticsv2`
+- `kinesisvideo`
+- `kms`
+- `lakeformation`
+- `lambda`
+- `lex-models`
+- `lex-runtime`
+- `lexv2-models`
+- `lexv2-runtime`
+- `license-manager`
+- `lightsail`
+- `location`
+- `logs`
+- `lookoutequipment`
+- `lookoutmetrics`
+- `lookoutvision`
+- `machinelearning`
+- `macie`
+- `macie2`
+- `managedblockchain`
+- `marketplace-catalog`
+- `marketplace-entitlement`
+- `marketplacecommerceanalytics`
+- `mediaconnect`
+- `mediaconvert`
+- `medialive`
+- `mediapackage`
+- `mediapackage-vod`
+- `mediastore`
+- `mediastore-data`
+- `mediatailor`
+- `memorydb`
+- `meteringmarketplace`
+- `mgh`
+- `mgn`
+- `migrationhub-config`
+- `mobile`
+- `mq`
+- `mturk`
+- `mwaa`
+- `neptune`
+- `network-firewall`
+- `networkmanager`
+- `nimble`
+- `opensearch`
+- `opsworks`
+- `opsworkscm`
+- `organizations`
+- `outposts`
+- `panorama`
+- `personalize`
+- `personalize-events`
+- `personalize-runtime`
+- `pi`
+- `pinpoint`
+- `pinpoint-email`
+- `pinpoint-sms-voice`
+- `polly`
+- `pricing`
+- `proton`
+- `qldb`
+- `qldb-session`
+- `quicksight`
+- `ram`
+- `rds`
+- `rds-data`
+- `redshift`
+- `redshift-data`
+- `rekognition`
+- `resource-groups`
+- `resourcegroupstaggingapi`
+- `robomaker`
+- `route53`
+- `route53-recovery-cluster`
+- `route53-recovery-control-config`
+- `route53-recovery-readiness`
+- `route53domains`
+- `route53resolver`
+- `s3`
+- `s3control`
+- `s3outposts`
+- `sagemaker`
+- `sagemaker-a2i-runtime`
+- `sagemaker-edge`
+- `sagemaker-featurestore-runtime`
+- `sagemaker-runtime`
+- `savingsplans`
+- `schemas`
+- `sdb`
+- `secretsmanager`
+- `securityhub`
+- `serverlessrepo`
+- `service-quotas`
+- `servicecatalog`
+- `servicecatalog-appregistry`
+- `servicediscovery`
+- `ses`
+- `sesv2`
+- `shield`
+- `signer`
+- `sms`
+- `sms-voice`
+- `snow-device-management`
+- `snowball`
+- `sns`
+- `sqs`
+- `ssm`
+- `ssm-contacts`
+- `ssm-incidents`
+- `sso`
+- `sso-admin`
+- `sso-oidc`
+- `stepfunctions`
+- `storagegateway`
+- `sts`
+- `support`
+- `swf`
+- `synthetics`
+- `textract`
+- `timestream-query`
+- `timestream-write`
+- `transcribe`
+- `transfer`
+- `translate`
+- `voice-id`
+- `waf`
+- `waf-regional`
+- `wafv2`
+- `wellarchitected`
+- `wisdom`
+- `workdocs`
+- `worklink`
+- `workmail`
+- `workmailmessageflow`
+- `workspaces`
+- `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_ec2.literals import PaginatorName
+```
+
+Values:
+
+- `describe_addresses_attribute`
+- `describe_byoip_cidrs`
+- `describe_capacity_reservation_fleets`
+- `describe_capacity_reservations`
+- `describe_carrier_gateways`
+- `describe_classic_link_instances`
+- `describe_client_vpn_authorization_rules`
+- `describe_client_vpn_connections`
+- `describe_client_vpn_endpoints`
+- `describe_client_vpn_routes`
+- `describe_client_vpn_target_networks`
+- `describe_coip_pools`
+- `describe_dhcp_options`
+- `describe_egress_only_internet_gateways`
+- `describe_export_image_tasks`
+- `describe_fast_snapshot_restores`
+- `describe_fleets`
+- `describe_flow_logs`
+- `describe_fpga_images`
+- `describe_host_reservation_offerings`
+- `describe_host_reservations`
+- `describe_hosts`
+- `describe_iam_instance_profile_associations`
+- `describe_import_image_tasks`
+- `describe_import_snapshot_tasks`
+- `describe_instance_credit_specifications`
+- `describe_instance_event_windows`
+- `describe_instance_status`
+- `describe_instance_type_offerings`
+- `describe_instance_types`
+- `describe_instances`
+- `describe_internet_gateways`
+- `describe_ipv6_pools`
+- `describe_launch_template_versions`
+- `describe_launch_templates`
+- `describe_local_gateway_route_table_virtual_interface_group_associations`
+- `describe_local_gateway_route_table_vpc_associations`
+- `describe_local_gateway_route_tables`
+- `describe_local_gateway_virtual_interface_groups`
+- `describe_local_gateway_virtual_interfaces`
+- `describe_local_gateways`
+- `describe_managed_prefix_lists`
+- `describe_moving_addresses`
+- `describe_nat_gateways`
+- `describe_network_acls`
+- `describe_network_insights_analyses`
+- `describe_network_insights_paths`
+- `describe_network_interface_permissions`
+- `describe_network_interfaces`
+- `describe_prefix_lists`
+- `describe_principal_id_format`
+- `describe_public_ipv4_pools`
+- `describe_replace_root_volume_tasks`
+- `describe_reserved_instances_modifications`
+- `describe_reserved_instances_offerings`
+- `describe_route_tables`
+- `describe_scheduled_instance_availability`
+- `describe_scheduled_instances`
+- `describe_security_group_rules`
+- `describe_security_groups`
+- `describe_snapshots`
+- `describe_spot_fleet_instances`
+- `describe_spot_fleet_requests`
+- `describe_spot_instance_requests`
+- `describe_spot_price_history`
+- `describe_stale_security_groups`
+- `describe_store_image_tasks`
+- `describe_subnets`
+- `describe_tags`
+- `describe_traffic_mirror_filters`
+- `describe_traffic_mirror_sessions`
+- `describe_traffic_mirror_targets`
+- `describe_transit_gateway_attachments`
+- `describe_transit_gateway_connect_peers`
+- `describe_transit_gateway_connects`
+- `describe_transit_gateway_multicast_domains`
+- `describe_transit_gateway_peering_attachments`
+- `describe_transit_gateway_route_tables`
+- `describe_transit_gateway_vpc_attachments`
+- `describe_transit_gateways`
+- `describe_trunk_interface_associations`
+- `describe_volume_status`
+- `describe_volumes`
+- `describe_volumes_modifications`
+- `describe_vpc_classic_link_dns_support`
+- `describe_vpc_endpoint_connection_notifications`
+- `describe_vpc_endpoint_connections`
+- `describe_vpc_endpoint_service_configurations`
+- `describe_vpc_endpoint_service_permissions`
+- `describe_vpc_endpoint_services`
+- `describe_vpc_endpoints`
+- `describe_vpc_peering_connections`
+- `describe_vpcs`
+- `get_associated_ipv6_pool_cidrs`
+- `get_groups_for_capacity_reservation`
+- `get_managed_prefix_list_associations`
+- `get_managed_prefix_list_entries`
+- `get_transit_gateway_attachment_propagations`
+- `get_transit_gateway_multicast_domain_associations`
+- `get_transit_gateway_prefix_list_references`
+- `get_transit_gateway_route_table_associations`
+- `get_transit_gateway_route_table_propagations`
+- `get_vpn_connection_device_types`
+- `search_local_gateway_routes`
+- `search_transit_gateway_multicast_groups`
+
+## WaiterName
+
+```python
+from mypy_boto3_ec2.literals import WaiterName
+```
+
+Values:
+
+- `bundle_task_complete`
+- `conversion_task_cancelled`
+- `conversion_task_completed`
+- `conversion_task_deleted`
+- `customer_gateway_available`
+- `export_task_cancelled`
+- `export_task_completed`
+- `image_available`
+- `image_exists`
+- `instance_exists`
+- `instance_running`
+- `instance_status_ok`
+- `instance_stopped`
+- `instance_terminated`
+- `key_pair_exists`
+- `nat_gateway_available`
+- `network_interface_available`
+- `password_data_available`
+- `security_group_exists`
+- `snapshot_completed`
+- `spot_instance_request_fulfilled`
+- `subnet_available`
+- `system_status_ok`
+- `volume_available`
+- `volume_deleted`
+- `volume_in_use`
+- `vpc_available`
+- `vpc_exists`
+- `vpc_peering_connection_deleted`
+- `vpc_peering_connection_exists`
+- `vpn_connection_available`
+- `vpn_connection_deleted`

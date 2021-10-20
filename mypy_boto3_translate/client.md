@@ -198,7 +198,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -356,11 +356,11 @@ Keyword-only arguments:
   *(required)*
 - `DataAccessRoleArn`: `str` *(required)*
 - `SourceLanguageCode`: `str` *(required)*
-- `TargetLanguageCodes`: `List`\[`str`\] *(required)*
+- `TargetLanguageCodes`: `Sequence`\[`str`\] *(required)*
 - `ClientToken`: `str` *(required)*
 - `JobName`: `str`
-- `TerminologyNames`: `List`\[`str`\]
-- `ParallelDataNames`: `List`\[`str`\]
+- `TerminologyNames`: `Sequence`\[`str`\]
+- `ParallelDataNames`: `Sequence`\[`str`\]
 
 Returns
 [StartTextTranslationJobResponseTypeDef](./type_defs.md#starttexttranslationjobresponsetypedef).
@@ -402,7 +402,7 @@ Keyword-only arguments:
 - `Text`: `str` *(required)*
 - `SourceLanguageCode`: `str` *(required)*
 - `TargetLanguageCode`: `str` *(required)*
-- `TerminologyNames`: `List`\[`str`\]
+- `TerminologyNames`: `Sequence`\[`str`\]
 
 Returns
 [TranslateTextResponseTypeDef](./type_defs.md#translatetextresponsetypedef).

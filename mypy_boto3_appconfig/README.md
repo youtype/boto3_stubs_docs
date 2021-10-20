@@ -97,6 +97,7 @@ from mypy_boto3_appconfig.literals import DeploymentEventTypeType, ...
 - [ReplicateToType](./literals.md#replicatetotype)
 - [TriggeredByType](./literals.md#triggeredbytype)
 - [ValidatorTypeType](./literals.md#validatortypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

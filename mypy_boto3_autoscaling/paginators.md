@@ -38,12 +38,13 @@ Boto3 documentation:
 
 Arguments for `DescribeAutoScalingGroupsPaginator.paginate` method:
 
-- `AutoScalingGroupNames`: `List`\[`str`\]
+- `AutoScalingGroupNames`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAutoScalingGroupsPaginator.paginate` returns
-`Iterator`\[[AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef)\].
+`_PageIterator`\[[AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef)\].
 
 ## DescribeAutoScalingInstancesPaginator
 
@@ -64,12 +65,12 @@ Boto3 documentation:
 
 Arguments for `DescribeAutoScalingInstancesPaginator.paginate` method:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAutoScalingInstancesPaginator.paginate` returns
-`Iterator`\[[AutoScalingInstancesTypeTypeDef](./type_defs.md#autoscalinginstancestypetypedef)\].
+`_PageIterator`\[[AutoScalingInstancesTypeTypeDef](./type_defs.md#autoscalinginstancestypetypedef)\].
 
 ## DescribeLaunchConfigurationsPaginator
 
@@ -90,12 +91,12 @@ Boto3 documentation:
 
 Arguments for `DescribeLaunchConfigurationsPaginator.paginate` method:
 
-- `LaunchConfigurationNames`: `List`\[`str`\]
+- `LaunchConfigurationNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLaunchConfigurationsPaginator.paginate` returns
-`Iterator`\[[LaunchConfigurationsTypeTypeDef](./type_defs.md#launchconfigurationstypetypedef)\].
+`_PageIterator`\[[LaunchConfigurationsTypeTypeDef](./type_defs.md#launchconfigurationstypetypedef)\].
 
 ## DescribeLoadBalancerTargetGroupsPaginator
 
@@ -121,7 +122,7 @@ Arguments for `DescribeLoadBalancerTargetGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLoadBalancerTargetGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeLoadBalancerTargetGroupsResponseTypeDef](./type_defs.md#describeloadbalancertargetgroupsresponsetypedef)\].
+`_PageIterator`\[[DescribeLoadBalancerTargetGroupsResponseTypeDef](./type_defs.md#describeloadbalancertargetgroupsresponsetypedef)\].
 
 ## DescribeLoadBalancersPaginator
 
@@ -147,7 +148,7 @@ Arguments for `DescribeLoadBalancersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLoadBalancersPaginator.paginate` returns
-`Iterator`\[[DescribeLoadBalancersResponseTypeDef](./type_defs.md#describeloadbalancersresponsetypedef)\].
+`_PageIterator`\[[DescribeLoadBalancersResponseTypeDef](./type_defs.md#describeloadbalancersresponsetypedef)\].
 
 ## DescribeNotificationConfigurationsPaginator
 
@@ -168,12 +169,12 @@ Boto3 documentation:
 
 Arguments for `DescribeNotificationConfigurationsPaginator.paginate` method:
 
-- `AutoScalingGroupNames`: `List`\[`str`\]
+- `AutoScalingGroupNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNotificationConfigurationsPaginator.paginate` returns
-`Iterator`\[[DescribeNotificationConfigurationsAnswerTypeDef](./type_defs.md#describenotificationconfigurationsanswertypedef)\].
+`_PageIterator`\[[DescribeNotificationConfigurationsAnswerTypeDef](./type_defs.md#describenotificationconfigurationsanswertypedef)\].
 
 ## DescribePoliciesPaginator
 
@@ -195,13 +196,13 @@ Boto3 documentation:
 Arguments for `DescribePoliciesPaginator.paginate` method:
 
 - `AutoScalingGroupName`: `str`
-- `PolicyNames`: `List`\[`str`\]
-- `PolicyTypes`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
+- `PolicyTypes`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePoliciesPaginator.paginate` returns
-`Iterator`\[[PoliciesTypeTypeDef](./type_defs.md#policiestypetypedef)\].
+`_PageIterator`\[[PoliciesTypeTypeDef](./type_defs.md#policiestypetypedef)\].
 
 ## DescribeScalingActivitiesPaginator
 
@@ -222,14 +223,14 @@ Boto3 documentation:
 
 Arguments for `DescribeScalingActivitiesPaginator.paginate` method:
 
-- `ActivityIds`: `List`\[`str`\]
+- `ActivityIds`: `Sequence`\[`str`\]
 - `AutoScalingGroupName`: `str`
 - `IncludeDeletedGroups`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingActivitiesPaginator.paginate` returns
-`Iterator`\[[ActivitiesTypeTypeDef](./type_defs.md#activitiestypetypedef)\].
+`_PageIterator`\[[ActivitiesTypeTypeDef](./type_defs.md#activitiestypetypedef)\].
 
 ## DescribeScheduledActionsPaginator
 
@@ -251,14 +252,14 @@ Boto3 documentation:
 Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 
 - `AutoScalingGroupName`: `str`
-- `ScheduledActionNames`: `List`\[`str`\]
+- `ScheduledActionNames`: `Sequence`\[`str`\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledActionsPaginator.paginate` returns
-`Iterator`\[[ScheduledActionsTypeTypeDef](./type_defs.md#scheduledactionstypetypedef)\].
+`_PageIterator`\[[ScheduledActionsTypeTypeDef](./type_defs.md#scheduledactionstypetypedef)\].
 
 ## DescribeTagsPaginator
 
@@ -279,9 +280,9 @@ Boto3 documentation:
 
 Arguments for `DescribeTagsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTagsPaginator.paginate` returns
-`Iterator`\[[TagsTypeTypeDef](./type_defs.md#tagstypetypedef)\].
+`_PageIterator`\[[TagsTypeTypeDef](./type_defs.md#tagstypetypedef)\].

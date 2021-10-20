@@ -141,6 +141,8 @@ from mypy_boto3_logs.literals import DescribeDestinationsPaginatorName, ...
 - [OrderByType](./literals.md#orderbytype)
 - [QueryStatusType](./literals.md#querystatustype)
 - [StandardUnitType](./literals.md#standardunittype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

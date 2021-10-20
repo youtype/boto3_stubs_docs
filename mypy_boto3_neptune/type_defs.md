@@ -219,7 +219,7 @@ from mypy_boto3_neptune.type_defs import AddTagsToResourceMessageRequestTypeDef
 Required fields:
 
 - `ResourceName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ApplyPendingMaintenanceActionMessageRequestTypeDef
 
@@ -275,8 +275,8 @@ from mypy_boto3_neptune.type_defs import CloudwatchLogsExportConfigurationTypeDe
 
 Optional fields:
 
-- `EnableLogTypes`: `List`\[`str`\]
-- `DisableLogTypes`: `List`\[`str`\]
+- `EnableLogTypes`: `Sequence`\[`str`\]
+- `DisableLogTypes`: `Sequence`\[`str`\]
 
 ## CopyDBClusterParameterGroupMessageRequestTypeDef
 
@@ -292,7 +292,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CopyDBClusterParameterGroupResultTypeDef
 
@@ -323,7 +323,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `PreSignedUrl`: `str`
 - `CopyTags`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SourceRegion`: `str`
 
 ## CopyDBClusterSnapshotResultTypeDef
@@ -353,7 +353,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CopyDBParameterGroupResultTypeDef
 
@@ -382,9 +382,9 @@ Required fields:
 
 Optional fields:
 
-- `StaticMembers`: `List`\[`str`\]
-- `ExcludedMembers`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StaticMembers`: `Sequence`\[`str`\]
+- `ExcludedMembers`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBClusterEndpointOutputTypeDef
 
@@ -420,13 +420,13 @@ Required fields:
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `BackupRetentionPeriod`: `int`
 - `CharacterSetName`: `str`
 - `CopyTagsToSnapshot`: `bool`
 - `DatabaseName`: `str`
 - `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `DBSubnetGroupName`: `str`
 - `EngineVersion`: `str`
 - `Port`: `int`
@@ -436,12 +436,12 @@ Optional fields:
 - `PreferredBackupWindow`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `ReplicationSourceIdentifier`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
 - `PreSignedUrl`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DeletionProtection`: `bool`
 - `SourceRegion`: `str`
 
@@ -459,7 +459,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBClusterParameterGroupResultTypeDef
 
@@ -499,7 +499,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBClusterSnapshotResultTypeDef
 
@@ -532,8 +532,8 @@ Optional fields:
 - `AllocatedStorage`: `int`
 - `MasterUsername`: `str`
 - `MasterUserPassword`: `str`
-- `DBSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `DBSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `AvailabilityZone`: `str`
 - `DBSubnetGroupName`: `str`
 - `PreferredMaintenanceWindow`: `str`
@@ -549,7 +549,7 @@ Optional fields:
 - `OptionGroupName`: `str`
 - `CharacterSetName`: `str`
 - `PubliclyAccessible`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DBClusterIdentifier`: `str`
 - `StorageType`: `str`
 - `TdeCredentialArn`: `str`
@@ -566,7 +566,7 @@ Optional fields:
 - `EnableIAMDatabaseAuthentication`: `bool`
 - `EnablePerformanceInsights`: `bool`
 - `PerformanceInsightsKMSKeyId`: `str`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DeletionProtection`: `bool`
 
 ## CreateDBInstanceResultTypeDef
@@ -595,7 +595,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBParameterGroupResultTypeDef
 
@@ -620,11 +620,11 @@ Required fields:
 
 - `DBSubnetGroupName`: `str`
 - `DBSubnetGroupDescription`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBSubnetGroupResultTypeDef
 
@@ -652,10 +652,10 @@ Required fields:
 Optional fields:
 
 - `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
-- `SourceIds`: `List`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
+- `SourceIds`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEventSubscriptionResultTypeDef
 
@@ -1332,7 +1332,7 @@ Optional fields:
 
 - `DBClusterIdentifier`: `str`
 - `DBClusterEndpointIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1345,7 +1345,7 @@ from mypy_boto3_neptune.type_defs import DescribeDBClusterParameterGroupsMessage
 Optional fields:
 
 - `DBClusterParameterGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1362,7 +1362,7 @@ Required fields:
 Optional fields:
 
 - `Source`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1400,7 +1400,7 @@ Optional fields:
 - `DBClusterIdentifier`: `str`
 - `DBClusterSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
@@ -1415,7 +1415,7 @@ from mypy_boto3_neptune.type_defs import DescribeDBClustersMessageRequestTypeDef
 Optional fields:
 
 - `DBClusterIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1430,7 +1430,7 @@ Optional fields:
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `DBParameterGroupFamily`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `DefaultOnly`: `bool`
@@ -1446,7 +1446,7 @@ from mypy_boto3_neptune.type_defs import DescribeDBInstancesMessageRequestTypeDe
 Optional fields:
 
 - `DBInstanceIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1459,7 +1459,7 @@ from mypy_boto3_neptune.type_defs import DescribeDBParameterGroupsMessageRequest
 Optional fields:
 
 - `DBParameterGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1476,7 +1476,7 @@ Required fields:
 Optional fields:
 
 - `Source`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1489,7 +1489,7 @@ from mypy_boto3_neptune.type_defs import DescribeDBSubnetGroupsMessageRequestTyp
 Optional fields:
 
 - `DBSubnetGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1505,7 +1505,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1534,7 +1534,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1560,7 +1560,7 @@ from mypy_boto3_neptune.type_defs import DescribeEventCategoriesMessageRequestTy
 Optional fields:
 
 - `SourceType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribeEventSubscriptionsMessageRequestTypeDef
 
@@ -1571,7 +1571,7 @@ from mypy_boto3_neptune.type_defs import DescribeEventSubscriptionsMessageReques
 Optional fields:
 
 - `SubscriptionName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1588,8 +1588,8 @@ Optional fields:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Duration`: `int`
-- `EventCategories`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `EventCategories`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1609,7 +1609,7 @@ Optional fields:
 - `DBInstanceClass`: `str`
 - `LicenseModel`: `str`
 - `Vpc`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1622,7 +1622,7 @@ from mypy_boto3_neptune.type_defs import DescribePendingMaintenanceActionsMessag
 Optional fields:
 
 - `ResourceIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -1814,7 +1814,7 @@ from mypy_boto3_neptune.type_defs import FilterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## ListTagsForResourceMessageRequestTypeDef
 
@@ -1828,7 +1828,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ModifyDBClusterEndpointMessageRequestTypeDef
 
@@ -1843,8 +1843,8 @@ Required fields:
 Optional fields:
 
 - `EndpointType`: `str`
-- `StaticMembers`: `List`\[`str`\]
-- `ExcludedMembers`: `List`\[`str`\]
+- `StaticMembers`: `Sequence`\[`str`\]
+- `ExcludedMembers`: `Sequence`\[`str`\]
 
 ## ModifyDBClusterEndpointOutputTypeDef
 
@@ -1883,7 +1883,7 @@ Optional fields:
 - `ApplyImmediately`: `bool`
 - `BackupRetentionPeriod`: `int`
 - `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `Port`: `int`
 - `MasterUserPassword`: `str`
 - `OptionGroupName`: `str`
@@ -1905,7 +1905,8 @@ from mypy_boto3_neptune.type_defs import ModifyDBClusterParameterGroupMessageReq
 Required fields:
 
 - `DBClusterParameterGroupName`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## ModifyDBClusterResultTypeDef
 
@@ -1932,8 +1933,8 @@ Required fields:
 
 Optional fields:
 
-- `ValuesToAdd`: `List`\[`str`\]
-- `ValuesToRemove`: `List`\[`str`\]
+- `ValuesToAdd`: `Sequence`\[`str`\]
+- `ValuesToRemove`: `Sequence`\[`str`\]
 
 ## ModifyDBClusterSnapshotAttributeResultTypeDef
 
@@ -1963,8 +1964,8 @@ Optional fields:
 - `AllocatedStorage`: `int`
 - `DBInstanceClass`: `str`
 - `DBSubnetGroupName`: `str`
-- `DBSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `DBSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `ApplyImmediately`: `bool`
 - `MasterUserPassword`: `str`
 - `DBParameterGroupName`: `str`
@@ -2019,7 +2020,8 @@ from mypy_boto3_neptune.type_defs import ModifyDBParameterGroupMessageRequestTyp
 Required fields:
 
 - `DBParameterGroupName`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## ModifyDBSubnetGroupMessageRequestTypeDef
 
@@ -2030,7 +2032,7 @@ from mypy_boto3_neptune.type_defs import ModifyDBSubnetGroupMessageRequestTypeDe
 Required fields:
 
 - `DBSubnetGroupName`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2062,7 +2064,7 @@ Optional fields:
 
 - `SnsTopicArn`: `str`
 - `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
 
 ## ModifyEventSubscriptionResultTypeDef
@@ -2336,7 +2338,7 @@ from mypy_boto3_neptune.type_defs import RemoveTagsFromResourceMessageRequestTyp
 Required fields:
 
 - `ResourceName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ResetDBClusterParameterGroupMessageRequestTypeDef
 
@@ -2351,7 +2353,8 @@ Required fields:
 Optional fields:
 
 - `ResetAllParameters`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## ResetDBParameterGroupMessageRequestTypeDef
 
@@ -2366,7 +2369,8 @@ Required fields:
 Optional fields:
 
 - `ResetAllParameters`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## ResourcePendingMaintenanceActionsTypeDef
 
@@ -2408,17 +2412,17 @@ Required fields:
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `EngineVersion`: `str`
 - `Port`: `int`
 - `DBSubnetGroupName`: `str`
 - `DatabaseName`: `str`
 - `OptionGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DBClusterParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 - `CopyTagsToSnapshot`: `bool`
@@ -2454,11 +2458,11 @@ Optional fields:
 - `Port`: `int`
 - `DBSubnetGroupName`: `str`
 - `OptionGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DBClusterParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 

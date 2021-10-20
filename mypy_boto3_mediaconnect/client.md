@@ -118,7 +118,7 @@ Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `MediaStreams`:
-  `List`\[[AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef)\]
+  `Sequence`\[[AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef)\]
   *(required)*
 
 Returns
@@ -140,7 +140,7 @@ Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `Outputs`:
-  `List`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
+  `Sequence`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
   *(required)*
 
 Returns
@@ -165,7 +165,7 @@ Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `Sources`:
-  `List`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
+  `Sequence`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
   *(required)*
 
 Returns
@@ -191,7 +191,7 @@ Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `VpcInterfaces`:
-  `List`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
+  `Sequence`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
   *(required)*
 
 Returns
@@ -229,18 +229,18 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `AvailabilityZone`: `str`
 - `Entitlements`:
-  `List`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
+  `Sequence`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
 - `MediaStreams`:
-  `List`\[[AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef)\]
+  `Sequence`\[[AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef)\]
 - `Outputs`:
-  `List`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
+  `Sequence`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
 - `Source`: [SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)
 - `SourceFailoverConfig`:
   [FailoverConfigTypeDef](./type_defs.md#failoverconfigtypedef)
 - `Sources`:
-  `List`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
+  `Sequence`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
 - `VpcInterfaces`:
-  `List`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
+  `Sequence`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
 
 Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
 
@@ -333,7 +333,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -355,7 +355,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Entitlements`:
-  `List`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
+  `Sequence`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
   *(required)*
 - `FlowArn`: `str` *(required)*
 
@@ -641,7 +641,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -658,7 +658,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_flow
 
@@ -705,7 +705,7 @@ Keyword-only arguments:
   [UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef)
 - `EntitlementStatus`:
   [EntitlementStatusType](./literals.md#entitlementstatustype)
-- `Subscribers`: `List`\[`str`\]
+- `Subscribers`: `Sequence`\[`str`\]
 
 Returns
 [UpdateFlowEntitlementResponseTypeDef](./type_defs.md#updateflowentitlementresponsetypedef).
@@ -753,14 +753,14 @@ Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `OutputArn`: `str` *(required)*
-- `CidrAllowList`: `List`\[`str`\]
+- `CidrAllowList`: `Sequence`\[`str`\]
 - `Description`: `str`
 - `Destination`: `str`
 - `Encryption`:
   [UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef)
 - `MaxLatency`: `int`
 - `MediaStreamOutputConfigurations`:
-  `List`\[[MediaStreamOutputConfigurationRequestTypeDef](./type_defs.md#mediastreamoutputconfigurationrequesttypedef)\]
+  `Sequence`\[[MediaStreamOutputConfigurationRequestTypeDef](./type_defs.md#mediastreamoutputconfigurationrequesttypedef)\]
 - `MinLatency`: `int`
 - `Port`: `int`
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
@@ -798,7 +798,7 @@ Keyword-only arguments:
 - `MaxLatency`: `int`
 - `MaxSyncBuffer`: `int`
 - `MediaStreamSourceConfigurations`:
-  `List`\[[MediaStreamSourceConfigurationRequestTypeDef](./type_defs.md#mediastreamsourceconfigurationrequesttypedef)\]
+  `Sequence`\[[MediaStreamSourceConfigurationRequestTypeDef](./type_defs.md#mediastreamsourceconfigurationrequesttypedef)\]
 - `MinLatency`: `int`
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `StreamId`: `str`

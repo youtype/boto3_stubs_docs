@@ -8,6 +8,8 @@ type annotations stubs module
 [mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
 - [Typed dictionaries for boto3 RedshiftDataAPIService module](#typed-dictionaries-for-boto3-redshiftdataapiservice-module)
+  - [BatchExecuteStatementInputRequestTypeDef](#batchexecutestatementinputrequesttypedef)
+  - [BatchExecuteStatementOutputTypeDef](#batchexecutestatementoutputtypedef)
   - [CancelStatementRequestRequestTypeDef](#cancelstatementrequestrequesttypedef)
   - [CancelStatementResponseTypeDef](#cancelstatementresponsetypedef)
   - [ColumnMetadataTypeDef](#columnmetadatatypedef)
@@ -32,7 +34,44 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SqlParameterTypeDef](#sqlparametertypedef)
   - [StatementDataTypeDef](#statementdatatypedef)
+  - [SubStatementDataTypeDef](#substatementdatatypedef)
   - [TableMemberTypeDef](#tablemembertypedef)
+
+## BatchExecuteStatementInputRequestTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import BatchExecuteStatementInputRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterIdentifier`: `str`
+- `Database`: `str`
+- `Sqls`: `Sequence`\[`str`\]
+
+Optional fields:
+
+- `DbUser`: `str`
+- `SecretArn`: `str`
+- `StatementName`: `str`
+- `WithEvent`: `bool`
+
+## BatchExecuteStatementOutputTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import BatchExecuteStatementOutputTypeDef
+```
+
+Required fields:
+
+- `ClusterIdentifier`: `str`
+- `CreatedAt`: `datetime`
+- `Database`: `str`
+- `DbUser`: `str`
+- `Id`: `str`
+- `SecretArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CancelStatementRequestRequestTypeDef
 
@@ -113,6 +152,8 @@ Required fields:
 - `ResultSize`: `int`
 - `SecretArn`: `str`
 - `Status`: [StatusStringType](./literals.md#statusstringtype)
+- `SubStatements`:
+  `List`\[[SubStatementDataTypeDef](./type_defs.md#substatementdatatypedef)\]
 - `UpdatedAt`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -162,14 +203,14 @@ from mypy_boto3_redshift_data.type_defs import ExecuteStatementInputRequestTypeD
 Required fields:
 
 - `ClusterIdentifier`: `str`
+- `Database`: `str`
 - `Sql`: `str`
 
 Optional fields:
 
-- `Database`: `str`
 - `DbUser`: `str`
 - `Parameters`:
-  `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
+  `Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
 - `SecretArn`: `str`
 - `StatementName`: `str`
 - `WithEvent`: `bool`
@@ -245,10 +286,10 @@ from mypy_boto3_redshift_data.type_defs import ListDatabasesRequestRequestTypeDe
 Required fields:
 
 - `ClusterIdentifier`: `str`
+- `Database`: `str`
 
 Optional fields:
 
-- `Database`: `str`
 - `DbUser`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -412,12 +453,38 @@ Required fields:
 Optional fields:
 
 - `CreatedAt`: `datetime`
+- `IsBatchStatement`: `bool`
 - `QueryParameters`:
   `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
 - `QueryString`: `str`
+- `QueryStrings`: `List`\[`str`\]
 - `SecretArn`: `str`
 - `StatementName`: `str`
 - `Status`: [StatusStringType](./literals.md#statusstringtype)
+- `UpdatedAt`: `datetime`
+
+## SubStatementDataTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import SubStatementDataTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `CreatedAt`: `datetime`
+- `Duration`: `int`
+- `Error`: `str`
+- `HasResultSet`: `bool`
+- `QueryString`: `str`
+- `RedshiftQueryId`: `int`
+- `ResultRows`: `int`
+- `ResultSize`: `int`
+- `Status`:
+  [StatementStatusStringType](./literals.md#statementstatusstringtype)
 - `UpdatedAt`: `datetime`
 
 ## TableMemberTypeDef

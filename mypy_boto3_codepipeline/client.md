@@ -222,8 +222,8 @@ Keyword-only arguments:
 - `settings`:
   [ActionTypeSettingsTypeDef](./type_defs.md#actiontypesettingstypedef)
 - `configurationProperties`:
-  `List`\[[ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCustomActionTypeOutputTypeDef](./type_defs.md#createcustomactiontypeoutputtypedef).
@@ -245,7 +245,7 @@ Keyword-only arguments:
 - `pipeline`:
   [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)
   *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef).
@@ -379,7 +379,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -658,7 +658,7 @@ Keyword-only arguments:
 - `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
   *(required)*
 - `maxBatchSize`: `int`
-- `queryParam`: `Dict`\[`str`, `str`\]
+- `queryParam`: `Mapping`\[`str`, `str`\]
 
 Returns [PollForJobsOutputTypeDef](./type_defs.md#pollforjobsoutputtypedef).
 
@@ -771,7 +771,7 @@ Keyword-only arguments:
 - `continuationToken`: `str`
 - `executionDetails`:
   [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
-- `outputVariables`: `Dict`\[`str`, `str`\]
+- `outputVariables`: `Mapping`\[`str`, `str`\]
 
 ### put_third_party_job_failure_result
 
@@ -835,7 +835,7 @@ Keyword-only arguments:
 - `webhook`:
   [WebhookDefinitionTypeDef](./type_defs.md#webhookdefinitiontypedef)
   *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [PutWebhookOutputTypeDef](./type_defs.md#putwebhookoutputtypedef).
 
@@ -942,7 +942,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -961,7 +961,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

@@ -357,7 +357,7 @@ Optional fields:
 - `nextToken`: `str`
 - `platformId`: `str`
 - `statuses`:
-  `List`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
+  `Sequence`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
 
 ## ListSigningProfilesResponseTypeDef
 
@@ -439,8 +439,8 @@ Optional fields:
   [SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef)
 - `overrides`:
   [SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef)
-- `signingParameters`: `Dict`\[`str`, `str`\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `signingParameters`: `Mapping`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## PutSigningProfileResponseTypeDef
 
@@ -776,7 +776,7 @@ from mypy_boto3_signer.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -787,7 +787,7 @@ from mypy_boto3_signer.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## WaiterConfigTypeDef
 

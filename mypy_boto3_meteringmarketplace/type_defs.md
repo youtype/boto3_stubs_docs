@@ -31,7 +31,7 @@ from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageRequestReque
 Required fields:
 
 - `UsageRecords`:
-  `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
+  `Sequence`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
 - `ProductCode`: `str`
 
 ## BatchMeterUsageResultTypeDef
@@ -66,7 +66,7 @@ Optional fields:
 - `UsageQuantity`: `int`
 - `DryRun`: `bool`
 - `UsageAllocations`:
-  `List`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
+  `Sequence`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
 
 ## MeterUsageResultTypeDef
 
@@ -168,7 +168,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UsageRecordResultTypeDef
 
@@ -199,4 +199,4 @@ Optional fields:
 
 - `Quantity`: `int`
 - `UsageAllocations`:
-  `List`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
+  `Sequence`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]

@@ -12,12 +12,17 @@ type annotations stubs module
   - [AdBreakTypeDef](#adbreaktypedef)
   - [AdMarkerPassthroughTypeDef](#admarkerpassthroughtypedef)
   - [AlertTypeDef](#alerttypedef)
+  - [AvailMatchingCriteriaTypeDef](#availmatchingcriteriatypedef)
   - [AvailSuppressionTypeDef](#availsuppressiontypedef)
   - [BumperTypeDef](#bumpertypedef)
   - [CdnConfigurationTypeDef](#cdnconfigurationtypedef)
   - [ChannelTypeDef](#channeltypedef)
+  - [ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef](#configurelogsforplaybackconfigurationrequestrequesttypedef)
+  - [ConfigureLogsForPlaybackConfigurationResponseTypeDef](#configurelogsforplaybackconfigurationresponsetypedef)
   - [CreateChannelRequestRequestTypeDef](#createchannelrequestrequesttypedef)
   - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
+  - [CreatePrefetchScheduleRequestRequestTypeDef](#createprefetchschedulerequestrequesttypedef)
+  - [CreatePrefetchScheduleResponseTypeDef](#createprefetchscheduleresponsetypedef)
   - [CreateProgramRequestRequestTypeDef](#createprogramrequestrequesttypedef)
   - [CreateProgramResponseTypeDef](#createprogramresponsetypedef)
   - [CreateSourceLocationRequestRequestTypeDef](#createsourcelocationrequestrequesttypedef)
@@ -31,6 +36,7 @@ type annotations stubs module
   - [DeleteChannelPolicyRequestRequestTypeDef](#deletechannelpolicyrequestrequesttypedef)
   - [DeleteChannelRequestRequestTypeDef](#deletechannelrequestrequesttypedef)
   - [DeletePlaybackConfigurationRequestRequestTypeDef](#deleteplaybackconfigurationrequestrequesttypedef)
+  - [DeletePrefetchScheduleRequestRequestTypeDef](#deleteprefetchschedulerequestrequesttypedef)
   - [DeleteProgramRequestRequestTypeDef](#deleteprogramrequestrequesttypedef)
   - [DeleteSourceLocationRequestRequestTypeDef](#deletesourcelocationrequestrequesttypedef)
   - [DeleteVodSourceRequestRequestTypeDef](#deletevodsourcerequestrequesttypedef)
@@ -48,6 +54,8 @@ type annotations stubs module
   - [GetChannelScheduleResponseTypeDef](#getchannelscheduleresponsetypedef)
   - [GetPlaybackConfigurationRequestRequestTypeDef](#getplaybackconfigurationrequestrequesttypedef)
   - [GetPlaybackConfigurationResponseTypeDef](#getplaybackconfigurationresponsetypedef)
+  - [GetPrefetchScheduleRequestRequestTypeDef](#getprefetchschedulerequestrequesttypedef)
+  - [GetPrefetchScheduleResponseTypeDef](#getprefetchscheduleresponsetypedef)
   - [HlsConfigurationTypeDef](#hlsconfigurationtypedef)
   - [HlsPlaylistSettingsTypeDef](#hlsplaylistsettingstypedef)
   - [HttpConfigurationTypeDef](#httpconfigurationtypedef)
@@ -58,6 +66,8 @@ type annotations stubs module
   - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
   - [ListPlaybackConfigurationsRequestRequestTypeDef](#listplaybackconfigurationsrequestrequesttypedef)
   - [ListPlaybackConfigurationsResponseTypeDef](#listplaybackconfigurationsresponsetypedef)
+  - [ListPrefetchSchedulesRequestRequestTypeDef](#listprefetchschedulesrequestrequesttypedef)
+  - [ListPrefetchSchedulesResponseTypeDef](#listprefetchschedulesresponsetypedef)
   - [ListSourceLocationsRequestRequestTypeDef](#listsourcelocationsrequestrequesttypedef)
   - [ListSourceLocationsResponseTypeDef](#listsourcelocationsresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
@@ -65,9 +75,13 @@ type annotations stubs module
   - [ListVodSourcesRequestRequestTypeDef](#listvodsourcesrequestrequesttypedef)
   - [ListVodSourcesResponseTypeDef](#listvodsourcesresponsetypedef)
   - [LivePreRollConfigurationTypeDef](#liveprerollconfigurationtypedef)
+  - [LogConfigurationTypeDef](#logconfigurationtypedef)
   - [ManifestProcessingRulesTypeDef](#manifestprocessingrulestypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PlaybackConfigurationTypeDef](#playbackconfigurationtypedef)
+  - [PrefetchConsumptionTypeDef](#prefetchconsumptiontypedef)
+  - [PrefetchRetrievalTypeDef](#prefetchretrievaltypedef)
+  - [PrefetchScheduleTypeDef](#prefetchscheduletypedef)
   - [PutChannelPolicyRequestRequestTypeDef](#putchannelpolicyrequestrequesttypedef)
   - [PutPlaybackConfigurationRequestRequestTypeDef](#putplaybackconfigurationrequestrequesttypedef)
   - [PutPlaybackConfigurationResponseTypeDef](#putplaybackconfigurationresponsetypedef)
@@ -145,6 +159,18 @@ Required fields:
 - `RelatedResourceArns`: `List`\[`str`\]
 - `ResourceArn`: `str`
 
+## AvailMatchingCriteriaTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import AvailMatchingCriteriaTypeDef
+```
+
+Required fields:
+
+- `DynamicVariable`: `str`
+- `Operator`: `Literal['EQUALS']` (see
+  [OperatorType](./literals.md#operatortype))
+
 ## AvailSuppressionTypeDef
 
 ```python
@@ -196,8 +222,33 @@ Required fields:
 Optional fields:
 
 - `CreationTime`: `datetime`
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - `LastModifiedTime`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
+
+## ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `PercentEnabled`: `int`
+- `PlaybackConfigurationName`: `str`
+
+## ConfigureLogsForPlaybackConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import ConfigureLogsForPlaybackConfigurationResponseTypeDef
+```
+
+Required fields:
+
+- `PercentEnabled`: `int`
+- `PlaybackConfigurationName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateChannelRequestRequestTypeDef
 
@@ -209,13 +260,13 @@ Required fields:
 
 - `ChannelName`: `str`
 - `Outputs`:
-  `List`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
-- `PlaybackMode`: `Literal['LOOP']` (see
-  [PlaybackModeType](./literals.md#playbackmodetype))
+  `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
+- `PlaybackMode`: [PlaybackModeType](./literals.md#playbackmodetype)
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateChannelResponseTypeDef
 
@@ -229,11 +280,50 @@ Required fields:
 - `ChannelName`: `str`
 - `ChannelState`: [ChannelStateType](./literals.md#channelstatetype)
 - `CreationTime`: `datetime`
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - `LastModifiedTime`: `datetime`
 - `Outputs`:
   `List`\[[ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef)\]
 - `PlaybackMode`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreatePrefetchScheduleRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import CreatePrefetchScheduleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Consumption`:
+  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
+- `Name`: `str`
+- `PlaybackConfigurationName`: `str`
+- `Retrieval`:
+  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
+
+Optional fields:
+
+- `StreamId`: `str`
+
+## CreatePrefetchScheduleResponseTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import CreatePrefetchScheduleResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Consumption`:
+  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
+- `Name`: `str`
+- `PlaybackConfigurationName`: `str`
+- `Retrieval`:
+  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
+- `StreamId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -254,7 +344,7 @@ Required fields:
 
 Optional fields:
 
-- `AdBreaks`: `List`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
+- `AdBreaks`: `Sequence`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
 
 ## CreateProgramResponseTypeDef
 
@@ -269,6 +359,7 @@ Required fields:
 - `ChannelName`: `str`
 - `CreationTime`: `datetime`
 - `ProgramName`: `str`
+- `ScheduledStartTime`: `datetime`
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
 - `ResponseMetadata`:
@@ -292,7 +383,7 @@ Optional fields:
   [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
 - `DefaultSegmentDeliveryConfiguration`:
   [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateSourceLocationResponseTypeDef
 
@@ -325,13 +416,13 @@ from mypy_boto3_mediatailor.type_defs import CreateVodSourceRequestRequestTypeDe
 Required fields:
 
 - `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
+  `Sequence`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateVodSourceResponseTypeDef
 
@@ -430,6 +521,17 @@ Required fields:
 
 - `Name`: `str`
 
+## DeletePrefetchScheduleRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import DeletePrefetchScheduleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `PlaybackConfigurationName`: `str`
+
 ## DeleteProgramRequestRequestTypeDef
 
 ```python
@@ -484,6 +586,7 @@ Required fields:
 - `ChannelName`: `str`
 - `ChannelState`: [ChannelStateType](./literals.md#channelstatetype)
 - `CreationTime`: `datetime`
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - `LastModifiedTime`: `datetime`
 - `Outputs`:
   `List`\[[ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef)\]
@@ -516,6 +619,7 @@ Required fields:
 - `ChannelName`: `str`
 - `CreationTime`: `datetime`
 - `ProgramName`: `str`
+- `ScheduledStartTime`: `datetime`
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
 - `ResponseMetadata`:
@@ -666,6 +770,8 @@ Required fields:
   [HlsConfigurationTypeDef](./type_defs.md#hlsconfigurationtypedef)
 - `LivePreRollConfiguration`:
   [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
+- `LogConfiguration`:
+  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
 - `ManifestProcessingRules`:
   [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
 - `Name`: `str`
@@ -677,6 +783,36 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TranscodeProfileName`: `str`
 - `VideoContentSourceUrl`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetPrefetchScheduleRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import GetPrefetchScheduleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `PlaybackConfigurationName`: `str`
+
+## GetPrefetchScheduleResponseTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import GetPrefetchScheduleResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Consumption`:
+  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
+- `Name`: `str`
+- `PlaybackConfigurationName`: `str`
+- `Retrieval`:
+  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
+- `StreamId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -799,6 +935,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListPrefetchSchedulesRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import ListPrefetchSchedulesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `PlaybackConfigurationName`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `StreamId`: `str`
+
+## ListPrefetchSchedulesResponseTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import ListPrefetchSchedulesResponseTypeDef
+```
+
+Required fields:
+
+- `Items`:
+  `List`\[[PrefetchScheduleTypeDef](./type_defs.md#prefetchscheduletypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListSourceLocationsRequestRequestTypeDef
 
 ```python
@@ -885,6 +1051,16 @@ Optional fields:
 - `AdDecisionServerUrl`: `str`
 - `MaxDurationSeconds`: `int`
 
+## LogConfigurationTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import LogConfigurationTypeDef
+```
+
+Required fields:
+
+- `PercentEnabled`: `int`
+
 ## ManifestProcessingRulesTypeDef
 
 ```python
@@ -929,6 +1105,8 @@ Optional fields:
   [HlsConfigurationTypeDef](./type_defs.md#hlsconfigurationtypedef)
 - `LivePreRollConfiguration`:
   [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
+- `LogConfiguration`:
+  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
 - `ManifestProcessingRules`:
   [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
 - `Name`: `str`
@@ -940,6 +1118,57 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TranscodeProfileName`: `str`
 - `VideoContentSourceUrl`: `str`
+
+## PrefetchConsumptionTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import PrefetchConsumptionTypeDef
+```
+
+Required fields:
+
+- `EndTime`: `Union`\[`datetime`, `str`\]
+
+Optional fields:
+
+- `AvailMatchingCriteria`:
+  `Sequence`\[[AvailMatchingCriteriaTypeDef](./type_defs.md#availmatchingcriteriatypedef)\]
+- `StartTime`: `Union`\[`datetime`, `str`\]
+
+## PrefetchRetrievalTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import PrefetchRetrievalTypeDef
+```
+
+Required fields:
+
+- `EndTime`: `Union`\[`datetime`, `str`\]
+
+Optional fields:
+
+- `DynamicVariables`: `Mapping`\[`str`, `str`\]
+- `StartTime`: `Union`\[`datetime`, `str`\]
+
+## PrefetchScheduleTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import PrefetchScheduleTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Consumption`:
+  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
+- `Name`: `str`
+- `PlaybackConfigurationName`: `str`
+- `Retrieval`:
+  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
+
+Optional fields:
+
+- `StreamId`: `str`
 
 ## PutChannelPolicyRequestRequestTypeDef
 
@@ -966,7 +1195,7 @@ Optional fields:
 - `Bumper`: [BumperTypeDef](./type_defs.md#bumpertypedef)
 - `CdnConfiguration`:
   [CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef)
-- `ConfigurationAliases`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `ConfigurationAliases`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
 - `DashConfiguration`:
   [DashConfigurationForPutTypeDef](./type_defs.md#dashconfigurationforputtypedef)
 - `LivePreRollConfiguration`:
@@ -976,7 +1205,7 @@ Optional fields:
 - `Name`: `str`
 - `PersonalizationThresholdSeconds`: `int`
 - `SlateAdUrl`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `TranscodeProfileName`: `str`
 - `VideoContentSourceUrl`: `str`
 
@@ -1001,6 +1230,8 @@ Required fields:
   [HlsConfigurationTypeDef](./type_defs.md#hlsconfigurationtypedef)
 - `LivePreRollConfiguration`:
   [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
+- `LogConfiguration`:
+  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
 - `ManifestProcessingRules`:
   [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
 - `Name`: `str`
@@ -1109,6 +1340,8 @@ Optional fields:
 - `ApproximateStartTime`: `datetime`
 - `ScheduleAdBreaks`:
   `List`\[[ScheduleAdBreakTypeDef](./type_defs.md#scheduleadbreaktypedef)\]
+- `ScheduleEntryType`:
+  [ScheduleEntryTypeType](./literals.md#scheduleentrytypetype)
 
 ## SecretsManagerAccessTokenConfigurationTypeDef
 
@@ -1198,7 +1431,7 @@ from mypy_boto3_mediatailor.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TransitionTypeDef
 
@@ -1215,6 +1448,7 @@ Required fields:
 Optional fields:
 
 - `RelativeProgram`: `str`
+- `ScheduledStartTimeMillis`: `int`
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1225,7 +1459,7 @@ from mypy_boto3_mediatailor.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateChannelRequestRequestTypeDef
 
@@ -1237,7 +1471,7 @@ Required fields:
 
 - `ChannelName`: `str`
 - `Outputs`:
-  `List`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
+  `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
 
 ## UpdateChannelResponseTypeDef
 
@@ -1251,6 +1485,7 @@ Required fields:
 - `ChannelName`: `str`
 - `ChannelState`: [ChannelStateType](./literals.md#channelstatetype)
 - `CreationTime`: `datetime`
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - `LastModifiedTime`: `datetime`
 - `Outputs`:
   `List`\[[ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef)\]
@@ -1309,7 +1544,7 @@ from mypy_boto3_mediatailor.type_defs import UpdateVodSourceRequestRequestTypeDe
 Required fields:
 
 - `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
+  `Sequence`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
 

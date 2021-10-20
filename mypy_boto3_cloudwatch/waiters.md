@@ -29,9 +29,9 @@ Boto3 documentation:
 
 Arguments for `AlarmExistsWaiter.wait` method:
 
-- `AlarmNames`: `List`\[`str`\]
+- `AlarmNames`: `Sequence`\[`str`\]
 - `AlarmNamePrefix`: `str`
-- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
+- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `ChildrenOfAlarmName`: `str`
 - `ParentsOfAlarmName`: `str`
 - `StateValue`: [StateValueType](./literals.md#statevaluetype)
@@ -59,9 +59,9 @@ Boto3 documentation:
 
 Arguments for `CompositeAlarmExistsWaiter.wait` method:
 
-- `AlarmNames`: `List`\[`str`\]
+- `AlarmNames`: `Sequence`\[`str`\]
 - `AlarmNamePrefix`: `str`
-- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
+- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `ChildrenOfAlarmName`: `str`
 - `ParentsOfAlarmName`: `str`
 - `StateValue`: [StateValueType](./literals.md#statevaluetype)

@@ -25,6 +25,8 @@ type annotations stubs module
   - [BGPPeerTypeDef](#bgppeertypedef)
   - [ConfirmConnectionRequestRequestTypeDef](#confirmconnectionrequestrequesttypedef)
   - [ConfirmConnectionResponseTypeDef](#confirmconnectionresponsetypedef)
+  - [ConfirmCustomerAgreementRequestRequestTypeDef](#confirmcustomeragreementrequestrequesttypedef)
+  - [ConfirmCustomerAgreementResponseTypeDef](#confirmcustomeragreementresponsetypedef)
   - [ConfirmPrivateVirtualInterfaceRequestRequestTypeDef](#confirmprivatevirtualinterfacerequestrequesttypedef)
   - [ConfirmPrivateVirtualInterfaceResponseTypeDef](#confirmprivatevirtualinterfaceresponsetypedef)
   - [ConfirmPublicVirtualInterfaceRequestRequestTypeDef](#confirmpublicvirtualinterfacerequestrequesttypedef)
@@ -49,6 +51,7 @@ type annotations stubs module
   - [CreatePublicVirtualInterfaceRequestRequestTypeDef](#createpublicvirtualinterfacerequestrequesttypedef)
   - [CreateTransitVirtualInterfaceRequestRequestTypeDef](#createtransitvirtualinterfacerequestrequesttypedef)
   - [CreateTransitVirtualInterfaceResultTypeDef](#createtransitvirtualinterfaceresulttypedef)
+  - [CustomerAgreementTypeDef](#customeragreementtypedef)
   - [DeleteBGPPeerRequestRequestTypeDef](#deletebgppeerrequestrequesttypedef)
   - [DeleteBGPPeerResponseTypeDef](#deletebgppeerresponsetypedef)
   - [DeleteConnectionRequestRequestTypeDef](#deleteconnectionrequestrequesttypedef)
@@ -67,6 +70,7 @@ type annotations stubs module
   - [DescribeConnectionLoaResponseTypeDef](#describeconnectionloaresponsetypedef)
   - [DescribeConnectionsOnInterconnectRequestRequestTypeDef](#describeconnectionsoninterconnectrequestrequesttypedef)
   - [DescribeConnectionsRequestRequestTypeDef](#describeconnectionsrequestrequesttypedef)
+  - [DescribeCustomerMetadataResponseTypeDef](#describecustomermetadataresponsetypedef)
   - [DescribeDirectConnectGatewayAssociationProposalsRequestRequestTypeDef](#describedirectconnectgatewayassociationproposalsrequestrequesttypedef)
   - [DescribeDirectConnectGatewayAssociationProposalsResultTypeDef](#describedirectconnectgatewayassociationproposalsresulttypedef)
   - [DescribeDirectConnectGatewayAssociationsRequestRequestTypeDef](#describedirectconnectgatewayassociationsrequestrequesttypedef)
@@ -81,6 +85,8 @@ type annotations stubs module
   - [DescribeInterconnectsRequestRequestTypeDef](#describeinterconnectsrequestrequesttypedef)
   - [DescribeLagsRequestRequestTypeDef](#describelagsrequestrequesttypedef)
   - [DescribeLoaRequestRequestTypeDef](#describeloarequestrequesttypedef)
+  - [DescribeRouterConfigurationRequestRequestTypeDef](#describerouterconfigurationrequestrequesttypedef)
+  - [DescribeRouterConfigurationResponseTypeDef](#describerouterconfigurationresponsetypedef)
   - [DescribeTagsRequestRequestTypeDef](#describetagsrequestrequesttypedef)
   - [DescribeTagsResponseTypeDef](#describetagsresponsetypedef)
   - [DescribeVirtualInterfacesRequestRequestTypeDef](#describevirtualinterfacesrequestrequesttypedef)
@@ -115,6 +121,7 @@ type annotations stubs module
   - [ResourceTagTypeDef](#resourcetagtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RouteFilterPrefixTypeDef](#routefilterprefixtypedef)
+  - [RouterTypeTypeDef](#routertypetypedef)
   - [StartBgpFailoverTestRequestRequestTypeDef](#startbgpfailovertestrequestrequesttypedef)
   - [StartBgpFailoverTestResponseTypeDef](#startbgpfailovertestresponsetypedef)
   - [StopBgpFailoverTestRequestRequestTypeDef](#stopbgpfailovertestrequestrequesttypedef)
@@ -125,6 +132,8 @@ type annotations stubs module
   - [UpdateConnectionRequestRequestTypeDef](#updateconnectionrequestrequesttypedef)
   - [UpdateDirectConnectGatewayAssociationRequestRequestTypeDef](#updatedirectconnectgatewayassociationrequestrequesttypedef)
   - [UpdateDirectConnectGatewayAssociationResultTypeDef](#updatedirectconnectgatewayassociationresulttypedef)
+  - [UpdateDirectConnectGatewayRequestRequestTypeDef](#updatedirectconnectgatewayrequestrequesttypedef)
+  - [UpdateDirectConnectGatewayResponseTypeDef](#updatedirectconnectgatewayresponsetypedef)
   - [UpdateLagRequestRequestTypeDef](#updatelagrequestrequesttypedef)
   - [UpdateVirtualInterfaceAttributesRequestRequestTypeDef](#updatevirtualinterfaceattributesrequestrequesttypedef)
   - [VirtualGatewayTypeDef](#virtualgatewaytypedef)
@@ -149,7 +158,7 @@ Required fields:
 Optional fields:
 
 - `overrideAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 ## AcceptDirectConnectGatewayAssociationProposalResultTypeDef
 
@@ -194,7 +203,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AllocatePrivateVirtualInterfaceRequestRequestTypeDef
 
@@ -361,6 +370,28 @@ from mypy_boto3_directconnect.type_defs import ConfirmConnectionResponseTypeDef
 Required fields:
 
 - `connectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ConfirmCustomerAgreementRequestRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import ConfirmCustomerAgreementRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `agreementName`: `str`
+
+## ConfirmCustomerAgreementResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import ConfirmCustomerAgreementResponseTypeDef
+```
+
+Required fields:
+
+- `status`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -557,7 +588,7 @@ Required fields:
 Optional fields:
 
 - `lagId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 - `requestMACSec`: `bool`
 
@@ -576,9 +607,9 @@ Required fields:
 Optional fields:
 
 - `addAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `removeAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 ## CreateDirectConnectGatewayAssociationProposalResultTypeDef
 
@@ -607,7 +638,7 @@ Optional fields:
 
 - `gatewayId`: `str`
 - `addAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `virtualGatewayId`: `str`
 
 ## CreateDirectConnectGatewayAssociationResultTypeDef
@@ -665,7 +696,7 @@ Required fields:
 Optional fields:
 
 - `lagId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 
 ## CreateLagRequestRequestTypeDef
@@ -684,8 +715,8 @@ Required fields:
 Optional fields:
 
 - `connectionId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `childConnectionTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `childConnectionTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 - `requestMACSec`: `bool`
 
@@ -737,6 +768,17 @@ Required fields:
   [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CustomerAgreementTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import CustomerAgreementTypeDef
+```
+
+Optional fields:
+
+- `agreementName`: `str`
+- `status`: `str`
 
 ## DeleteBGPPeerRequestRequestTypeDef
 
@@ -949,6 +991,20 @@ Optional fields:
 
 - `connectionId`: `str`
 
+## DescribeCustomerMetadataResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeCustomerMetadataResponseTypeDef
+```
+
+Required fields:
+
+- `agreements`:
+  `List`\[[CustomerAgreementTypeDef](./type_defs.md#customeragreementtypedef)\]
+- `nniPartnerType`: [NniPartnerTypeType](./literals.md#nnipartnertypetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeDirectConnectGatewayAssociationProposalsRequestRequestTypeDef
 
 ```python
@@ -1133,6 +1189,35 @@ Optional fields:
 - `loaContentType`: `Literal['application/pdf']` (see
   [LoaContentTypeType](./literals.md#loacontenttypetype))
 
+## DescribeRouterConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeRouterConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `virtualInterfaceId`: `str`
+
+Optional fields:
+
+- `routerTypeIdentifier`: `str`
+
+## DescribeRouterConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeRouterConfigurationResponseTypeDef
+```
+
+Required fields:
+
+- `customerRouterConfig`: `str`
+- `router`: [RouterTypeTypeDef](./type_defs.md#routertypetypedef)
+- `virtualInterfaceId`: `str`
+- `virtualInterfaceName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeTagsRequestRequestTypeDef
 
 ```python
@@ -1141,7 +1226,7 @@ from mypy_boto3_directconnect.type_defs import DescribeTagsRequestRequestTypeDef
 
 Required fields:
 
-- `resourceArns`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
 
 ## DescribeTagsResponseTypeDef
 
@@ -1433,7 +1518,7 @@ Optional fields:
 
 - `testId`: `str`
 - `virtualInterfaceId`: `str`
-- `bgpPeers`: `List`\[`str`\]
+- `bgpPeers`: `Sequence`\[`str`\]
 - `status`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -1551,7 +1636,7 @@ Optional fields:
 - `amazonAddress`: `str`
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `customerAddress`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewPrivateVirtualInterfaceTypeDef
 
@@ -1574,7 +1659,7 @@ Optional fields:
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `virtualGatewayId`: `str`
 - `directConnectGatewayId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewPublicVirtualInterfaceAllocationTypeDef
 
@@ -1595,8 +1680,8 @@ Optional fields:
 - `customerAddress`: `str`
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `routeFilterPrefixes`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewPublicVirtualInterfaceTypeDef
 
@@ -1617,8 +1702,8 @@ Optional fields:
 - `customerAddress`: `str`
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `routeFilterPrefixes`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewTransitVirtualInterfaceAllocationTypeDef
 
@@ -1636,7 +1721,7 @@ Optional fields:
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewTransitVirtualInterfaceTypeDef
 
@@ -1655,7 +1740,7 @@ Optional fields:
 - `customerAddress`: `str`
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `directConnectGatewayId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -1704,6 +1789,21 @@ Optional fields:
 
 - `cidr`: `str`
 
+## RouterTypeTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import RouterTypeTypeDef
+```
+
+Optional fields:
+
+- `vendor`: `str`
+- `platform`: `str`
+- `software`: `str`
+- `xsltTemplateName`: `str`
+- `xsltTemplateNameForMacSec`: `str`
+- `routerTypeIdentifier`: `str`
+
 ## StartBgpFailoverTestRequestRequestTypeDef
 
 ```python
@@ -1716,7 +1816,7 @@ Required fields:
 
 Optional fields:
 
-- `bgpPeers`: `List`\[`str`\]
+- `bgpPeers`: `Sequence`\[`str`\]
 - `testDurationInMinutes`: `int`
 
 ## StartBgpFailoverTestResponseTypeDef
@@ -1764,7 +1864,7 @@ from mypy_boto3_directconnect.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1789,7 +1889,7 @@ from mypy_boto3_directconnect.type_defs import UntagResourceRequestRequestTypeDe
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateConnectionRequestRequestTypeDef
 
@@ -1816,9 +1916,9 @@ Optional fields:
 
 - `associationId`: `str`
 - `addAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `removeAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 ## UpdateDirectConnectGatewayAssociationResultTypeDef
 
@@ -1830,6 +1930,30 @@ Required fields:
 
 - `directConnectGatewayAssociation`:
   [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateDirectConnectGatewayRequestRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import UpdateDirectConnectGatewayRequestRequestTypeDef
+```
+
+Required fields:
+
+- `directConnectGatewayId`: `str`
+- `newDirectConnectGatewayName`: `str`
+
+## UpdateDirectConnectGatewayResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import UpdateDirectConnectGatewayResponseTypeDef
+```
+
+Required fields:
+
+- `directConnectGateway`:
+  [DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

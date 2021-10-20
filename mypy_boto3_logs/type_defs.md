@@ -163,7 +163,7 @@ Required fields:
 Optional fields:
 
 - `kmsKeyId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateLogStreamRequestRequestTypeDef
 
@@ -595,7 +595,7 @@ Required fields:
 
 Optional fields:
 
-- `logStreamNames`: `List`\[`str`\]
+- `logStreamNames`: `Sequence`\[`str`\]
 - `logStreamNamePrefix`: `str`
 - `startTime`: `int`
 - `endTime`: `int`
@@ -934,7 +934,7 @@ Required fields:
 - `logGroupName`: `str`
 - `logStreamName`: `str`
 - `logEvents`:
-  `List`\[[InputLogEventTypeDef](./type_defs.md#inputlogeventtypedef)\]
+  `Sequence`\[[InputLogEventTypeDef](./type_defs.md#inputlogeventtypedef)\]
 
 Optional fields:
 
@@ -966,7 +966,7 @@ Required fields:
 - `filterName`: `str`
 - `filterPattern`: `str`
 - `metricTransformations`:
-  `List`\[[MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef)\]
+  `Sequence`\[[MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef)\]
 
 ## PutQueryDefinitionRequestRequestTypeDef
 
@@ -982,7 +982,7 @@ Required fields:
 Optional fields:
 
 - `queryDefinitionId`: `str`
-- `logGroupNames`: `List`\[`str`\]
+- `logGroupNames`: `Sequence`\[`str`\]
 
 ## PutQueryDefinitionResponseTypeDef
 
@@ -1164,7 +1164,7 @@ Required fields:
 Optional fields:
 
 - `logGroupName`: `str`
-- `logGroupNames`: `List`\[`str`\]
+- `logGroupNames`: `Sequence`\[`str`\]
 - `limit`: `int`
 
 ## StartQueryResponseTypeDef
@@ -1226,7 +1226,7 @@ from mypy_boto3_logs.type_defs import TagLogGroupRequestRequestTypeDef
 Required fields:
 
 - `logGroupName`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TestMetricFilterRequestRequestTypeDef
 
@@ -1237,7 +1237,7 @@ from mypy_boto3_logs.type_defs import TestMetricFilterRequestRequestTypeDef
 Required fields:
 
 - `filterPattern`: `str`
-- `logEventMessages`: `List`\[`str`\]
+- `logEventMessages`: `Sequence`\[`str`\]
 
 ## TestMetricFilterResponseTypeDef
 
@@ -1261,4 +1261,4 @@ from mypy_boto3_logs.type_defs import UntagLogGroupRequestRequestTypeDef
 Required fields:
 
 - `logGroupName`: `str`
-- `tags`: `List`\[`str`\]
+- `tags`: `Sequence`\[`str`\]

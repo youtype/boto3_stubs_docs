@@ -45,7 +45,7 @@ Arguments for `GetDevicePositionHistoryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDevicePositionHistoryPaginator.paginate` returns
-`Iterator`\[[GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef)\].
+`_PageIterator`\[[GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef)\].
 
 ## ListDevicePositionsPaginator
 
@@ -71,7 +71,7 @@ Arguments for `ListDevicePositionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDevicePositionsPaginator.paginate` returns
-`Iterator`\[[ListDevicePositionsResponseTypeDef](./type_defs.md#listdevicepositionsresponsetypedef)\].
+`_PageIterator`\[[ListDevicePositionsResponseTypeDef](./type_defs.md#listdevicepositionsresponsetypedef)\].
 
 ## ListGeofenceCollectionsPaginator
 
@@ -96,7 +96,7 @@ Arguments for `ListGeofenceCollectionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGeofenceCollectionsPaginator.paginate` returns
-`Iterator`\[[ListGeofenceCollectionsResponseTypeDef](./type_defs.md#listgeofencecollectionsresponsetypedef)\].
+`_PageIterator`\[[ListGeofenceCollectionsResponseTypeDef](./type_defs.md#listgeofencecollectionsresponsetypedef)\].
 
 ## ListGeofencesPaginator
 
@@ -122,7 +122,7 @@ Arguments for `ListGeofencesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGeofencesPaginator.paginate` returns
-`Iterator`\[[ListGeofencesResponseTypeDef](./type_defs.md#listgeofencesresponsetypedef)\].
+`_PageIterator`\[[ListGeofencesResponseTypeDef](./type_defs.md#listgeofencesresponsetypedef)\].
 
 ## ListMapsPaginator
 
@@ -146,7 +146,7 @@ Arguments for `ListMapsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMapsPaginator.paginate` returns
-`Iterator`\[[ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef)\].
+`_PageIterator`\[[ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef)\].
 
 ## ListPlaceIndexesPaginator
 
@@ -171,7 +171,7 @@ Arguments for `ListPlaceIndexesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlaceIndexesPaginator.paginate` returns
-`Iterator`\[[ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef)\].
+`_PageIterator`\[[ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef)\].
 
 ## ListRouteCalculatorsPaginator
 
@@ -196,7 +196,7 @@ Arguments for `ListRouteCalculatorsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRouteCalculatorsPaginator.paginate` returns
-`Iterator`\[[ListRouteCalculatorsResponseTypeDef](./type_defs.md#listroutecalculatorsresponsetypedef)\].
+`_PageIterator`\[[ListRouteCalculatorsResponseTypeDef](./type_defs.md#listroutecalculatorsresponsetypedef)\].
 
 ## ListTrackerConsumersPaginator
 
@@ -222,7 +222,7 @@ Arguments for `ListTrackerConsumersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrackerConsumersPaginator.paginate` returns
-`Iterator`\[[ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef)\].
+`_PageIterator`\[[ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef)\].
 
 ## ListTrackersPaginator
 
@@ -246,4 +246,4 @@ Arguments for `ListTrackersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrackersPaginator.paginate` returns
-`Iterator`\[[ListTrackersResponseTypeDef](./type_defs.md#listtrackersresponsetypedef)\].
+`_PageIterator`\[[ListTrackersResponseTypeDef](./type_defs.md#listtrackersresponsetypedef)\].

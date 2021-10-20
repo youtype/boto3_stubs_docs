@@ -8,6 +8,8 @@ type annotations stubs module
 [mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
 - [Typed dictionaries for boto3 Outposts module](#typed-dictionaries-for-boto3-outposts-module)
+  - [CreateOrderInputRequestTypeDef](#createorderinputrequesttypedef)
+  - [CreateOrderOutputTypeDef](#createorderoutputtypedef)
   - [CreateOutpostInputRequestTypeDef](#createoutpostinputrequesttypedef)
   - [CreateOutpostOutputTypeDef](#createoutpostoutputtypedef)
   - [DeleteOutpostInputRequestTypeDef](#deleteoutpostinputrequesttypedef)
@@ -17,17 +19,50 @@ type annotations stubs module
   - [GetOutpostInstanceTypesOutputTypeDef](#getoutpostinstancetypesoutputtypedef)
   - [GetOutpostOutputTypeDef](#getoutpostoutputtypedef)
   - [InstanceTypeItemTypeDef](#instancetypeitemtypedef)
+  - [LineItemRequestTypeDef](#lineitemrequesttypedef)
+  - [LineItemTypeDef](#lineitemtypedef)
   - [ListOutpostsInputRequestTypeDef](#listoutpostsinputrequesttypedef)
   - [ListOutpostsOutputTypeDef](#listoutpostsoutputtypedef)
   - [ListSitesInputRequestTypeDef](#listsitesinputrequesttypedef)
   - [ListSitesOutputTypeDef](#listsitesoutputtypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [OrderTypeDef](#ordertypedef)
   - [OutpostTypeDef](#outposttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SiteTypeDef](#sitetypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+
+## CreateOrderInputRequestTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import CreateOrderInputRequestTypeDef
+```
+
+Required fields:
+
+- `OutpostIdentifier`: `str`
+- `LineItems`:
+  `Sequence`\[[LineItemRequestTypeDef](./type_defs.md#lineitemrequesttypedef)\]
+- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
+
+Optional fields:
+
+- `PaymentTerm`: `Literal['THREE_YEARS']` (see
+  [PaymentTermType](./literals.md#paymenttermtype))
+
+## CreateOrderOutputTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import CreateOrderOutputTypeDef
+```
+
+Required fields:
+
+- `Order`: [OrderTypeDef](./type_defs.md#ordertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateOutpostInputRequestTypeDef
 
@@ -45,7 +80,7 @@ Optional fields:
 - `Description`: `str`
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateOutpostOutputTypeDef
 
@@ -142,6 +177,30 @@ Optional fields:
 
 - `InstanceType`: `str`
 
+## LineItemRequestTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import LineItemRequestTypeDef
+```
+
+Optional fields:
+
+- `CatalogItemId`: `str`
+- `Quantity`: `int`
+
+## LineItemTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import LineItemTypeDef
+```
+
+Optional fields:
+
+- `CatalogItemId`: `str`
+- `LineItemId`: `str`
+- `Quantity`: `int`
+- `Status`: `str`
+
 ## ListOutpostsInputRequestTypeDef
 
 ```python
@@ -152,9 +211,9 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `LifeCycleStatusFilter`: `List`\[`str`\]
-- `AvailabilityZoneFilter`: `List`\[`str`\]
-- `AvailabilityZoneIdFilter`: `List`\[`str`\]
+- `LifeCycleStatusFilter`: `Sequence`\[`str`\]
+- `AvailabilityZoneFilter`: `Sequence`\[`str`\]
+- `AvailabilityZoneIdFilter`: `Sequence`\[`str`\]
 
 ## ListOutpostsOutputTypeDef
 
@@ -215,6 +274,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## OrderTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import OrderTypeDef
+```
+
+Optional fields:
+
+- `OutpostId`: `str`
+- `OrderId`: `str`
+- `Status`: [OrderStatusType](./literals.md#orderstatustype)
+- `LineItems`: `List`\[[LineItemTypeDef](./type_defs.md#lineitemtypedef)\]
+- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
+- `OrderSubmissionDate`: `datetime`
+- `OrderFulfilledDate`: `datetime`
+
 ## OutpostTypeDef
 
 ```python
@@ -273,7 +348,7 @@ from mypy_boto3_outposts.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -284,4 +359,4 @@ from mypy_boto3_outposts.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]

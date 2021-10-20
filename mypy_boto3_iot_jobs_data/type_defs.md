@@ -147,7 +147,7 @@ Required fields:
 
 Optional fields:
 
-- `statusDetails`: `Dict`\[`str`, `str`\]
+- `statusDetails`: `Mapping`\[`str`, `str`\]
 - `stepTimeoutInMinutes`: `int`
 
 ## StartNextPendingJobExecutionResponseTypeDef
@@ -176,7 +176,7 @@ Required fields:
 
 Optional fields:
 
-- `statusDetails`: `Dict`\[`str`, `str`\]
+- `statusDetails`: `Mapping`\[`str`, `str`\]
 - `stepTimeoutInMinutes`: `int`
 - `expectedVersion`: `int`
 - `includeJobExecutionState`: `bool`

@@ -44,11 +44,11 @@ Required fields:
 Optional fields:
 
 - `PolicyArns`:
-  `List`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
+  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `Policy`: `str`
 - `DurationSeconds`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TransitiveTagKeys`: `List`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TransitiveTagKeys`: `Sequence`\[`str`\]
 - `ExternalId`: `str`
 - `SerialNumber`: `str`
 - `TokenCode`: `str`
@@ -85,7 +85,7 @@ Required fields:
 Optional fields:
 
 - `PolicyArns`:
-  `List`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
+  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `Policy`: `str`
 - `DurationSeconds`: `int`
 
@@ -126,7 +126,7 @@ Optional fields:
 
 - `ProviderId`: `str`
 - `PolicyArns`:
-  `List`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
+  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `Policy`: `str`
 - `DurationSeconds`: `int`
 
@@ -256,9 +256,9 @@ Optional fields:
 
 - `Policy`: `str`
 - `PolicyArns`:
-  `List`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
+  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `DurationSeconds`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## GetFederationTokenResponseTypeDef
 

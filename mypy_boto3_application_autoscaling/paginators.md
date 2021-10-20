@@ -34,14 +34,14 @@ Arguments for `DescribeScalableTargetsPaginator.paginate` method:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ResourceIds`: `List`\[`str`\]
+- `ResourceIds`: `Sequence`\[`str`\]
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalableTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef)\].
+`_PageIterator`\[[DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef)\].
 
 ## DescribeScalingActivitiesPaginator
 
@@ -71,7 +71,7 @@ Arguments for `DescribeScalingActivitiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingActivitiesPaginator.paginate` returns
-`Iterator`\[[DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef)\].
+`_PageIterator`\[[DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef)\].
 
 ## DescribeScalingPoliciesPaginator
 
@@ -94,7 +94,7 @@ Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `PolicyNames`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
 - `ResourceId`: `str`
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
@@ -102,7 +102,7 @@ Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingPoliciesPaginator.paginate` returns
-`Iterator`\[[DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef)\].
+`_PageIterator`\[[DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef)\].
 
 ## DescribeScheduledActionsPaginator
 
@@ -125,7 +125,7 @@ Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ScheduledActionNames`: `List`\[`str`\]
+- `ScheduledActionNames`: `Sequence`\[`str`\]
 - `ResourceId`: `str`
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
@@ -133,4 +133,4 @@ Arguments for `DescribeScheduledActionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledActionsPaginator.paginate` returns
-`Iterator`\[[DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef)\].
+`_PageIterator`\[[DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef)\].

@@ -245,7 +245,7 @@ from mypy_boto3_cognito_idp.type_defs import AccountRecoverySettingTypeTypeDef
 Optional fields:
 
 - `RecoveryMechanisms`:
-  `List`\[[RecoveryOptionTypeTypeDef](./type_defs.md#recoveryoptiontypetypedef)\]
+  `Sequence`\[[RecoveryOptionTypeTypeDef](./type_defs.md#recoveryoptiontypetypedef)\]
 
 ## AccountTakeoverActionTypeTypeDef
 
@@ -300,7 +300,7 @@ Required fields:
 
 - `UserPoolId`: `str`
 - `CustomAttributes`:
-  `List`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
+  `Sequence`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
 
 ## AdminAddUserToGroupRequestRequestTypeDef
 
@@ -327,7 +327,7 @@ Required fields:
 
 Optional fields:
 
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## AdminCreateUserConfigTypeTypeDef
 
@@ -356,15 +356,15 @@ Required fields:
 Optional fields:
 
 - `UserAttributes`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
+  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 - `ValidationData`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
+  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 - `TemporaryPassword`: `str`
 - `ForceAliasCreation`: `bool`
 - `MessageAction`: [MessageActionTypeType](./literals.md#messageactiontypetype)
 - `DesiredDeliveryMediums`:
-  `List`\[[DeliveryMediumTypeType](./literals.md#deliverymediumtypetype)\]
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[DeliveryMediumTypeType](./literals.md#deliverymediumtypetype)\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## AdminCreateUserResponseTypeDef
 
@@ -388,7 +388,7 @@ Required fields:
 
 - `UserPoolId`: `str`
 - `Username`: `str`
-- `UserAttributeNames`: `List`\[`str`\]
+- `UserAttributeNames`: `Sequence`\[`str`\]
 
 ## AdminDeleteUserRequestRequestTypeDef
 
@@ -518,8 +518,8 @@ Required fields:
 
 Optional fields:
 
-- `AuthParameters`: `Dict`\[`str`, `str`\]
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `AuthParameters`: `Mapping`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `ContextData`:
@@ -668,7 +668,7 @@ Required fields:
 
 Optional fields:
 
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## AdminRespondToAuthChallengeRequestRequestTypeDef
 
@@ -684,13 +684,13 @@ Required fields:
 
 Optional fields:
 
-- `ChallengeResponses`: `Dict`\[`str`, `str`\]
+- `ChallengeResponses`: `Mapping`\[`str`, `str`\]
 - `Session`: `str`
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `ContextData`:
   [ContextDataTypeTypeDef](./type_defs.md#contextdatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## AdminRespondToAuthChallengeResponseTypeDef
 
@@ -753,7 +753,7 @@ Required fields:
 - `UserPoolId`: `str`
 - `Username`: `str`
 - `MFAOptions`:
-  `List`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
+  `Sequence`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
 
 ## AdminUpdateAuthEventFeedbackRequestRequestTypeDef
 
@@ -796,11 +796,11 @@ Required fields:
 - `UserPoolId`: `str`
 - `Username`: `str`
 - `UserAttributes`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
+  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 
 Optional fields:
 
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## AdminUserGlobalSignOutRequestRequestTypeDef
 
@@ -1024,7 +1024,7 @@ Optional fields:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `UserContextData`:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## ConfirmSignUpRequestRequestTypeDef
 
@@ -1046,7 +1046,7 @@ Optional fields:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `UserContextData`:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## ContextDataTypeTypeDef
 
@@ -1060,7 +1060,7 @@ Required fields:
 - `ServerName`: `str`
 - `ServerPath`: `str`
 - `HttpHeaders`:
-  `List`\[[HttpHeaderTypeDef](./type_defs.md#httpheadertypedef)\]
+  `Sequence`\[[HttpHeaderTypeDef](./type_defs.md#httpheadertypedef)\]
 
 Optional fields:
 
@@ -1107,12 +1107,12 @@ Required fields:
 - `ProviderName`: `str`
 - `ProviderType`:
   [IdentityProviderTypeTypeType](./literals.md#identityprovidertypetypetype)
-- `ProviderDetails`: `Dict`\[`str`, `str`\]
+- `ProviderDetails`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
-- `AttributeMapping`: `Dict`\[`str`, `str`\]
-- `IdpIdentifiers`: `List`\[`str`\]
+- `AttributeMapping`: `Mapping`\[`str`, `str`\]
+- `IdpIdentifiers`: `Sequence`\[`str`\]
 
 ## CreateIdentityProviderResponseTypeDef
 
@@ -1142,7 +1142,7 @@ Required fields:
 Optional fields:
 
 - `Scopes`:
-  `List`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
+  `Sequence`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
 
 ## CreateResourceServerResponseTypeDef
 
@@ -1201,17 +1201,17 @@ Optional fields:
 - `IdTokenValidity`: `int`
 - `TokenValidityUnits`:
   [TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef)
-- `ReadAttributes`: `List`\[`str`\]
-- `WriteAttributes`: `List`\[`str`\]
+- `ReadAttributes`: `Sequence`\[`str`\]
+- `WriteAttributes`: `Sequence`\[`str`\]
 - `ExplicitAuthFlows`:
-  `List`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
-- `SupportedIdentityProviders`: `List`\[`str`\]
-- `CallbackURLs`: `List`\[`str`\]
-- `LogoutURLs`: `List`\[`str`\]
+  `Sequence`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
+- `SupportedIdentityProviders`: `Sequence`\[`str`\]
+- `CallbackURLs`: `Sequence`\[`str`\]
+- `LogoutURLs`: `Sequence`\[`str`\]
 - `DefaultRedirectURI`: `str`
 - `AllowedOAuthFlows`:
-  `List`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
-- `AllowedOAuthScopes`: `List`\[`str`\]
+  `Sequence`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
+- `AllowedOAuthScopes`: `Sequence`\[`str`\]
 - `AllowedOAuthFlowsUserPoolClient`: `bool`
 - `AnalyticsConfiguration`:
   [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
@@ -1277,11 +1277,11 @@ Optional fields:
 - `LambdaConfig`:
   [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
 - `AutoVerifiedAttributes`:
-  `List`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
+  `Sequence`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
 - `AliasAttributes`:
-  `List`\[[AliasAttributeTypeType](./literals.md#aliasattributetypetype)\]
+  `Sequence`\[[AliasAttributeTypeType](./literals.md#aliasattributetypetype)\]
 - `UsernameAttributes`:
-  `List`\[[UsernameAttributeTypeType](./literals.md#usernameattributetypetype)\]
+  `Sequence`\[[UsernameAttributeTypeType](./literals.md#usernameattributetypetype)\]
 - `SmsVerificationMessage`: `str`
 - `EmailVerificationMessage`: `str`
 - `EmailVerificationSubject`: `str`
@@ -1295,11 +1295,11 @@ Optional fields:
   [EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef)
 - `SmsConfiguration`:
   [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
-- `UserPoolTags`: `Dict`\[`str`, `str`\]
+- `UserPoolTags`: `Mapping`\[`str`, `str`\]
 - `AdminCreateUserConfig`:
   [AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef)
 - `Schema`:
-  `List`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
+  `Sequence`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
 - `UserPoolAddOns`:
   [UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef)
 - `UsernameConfiguration`:
@@ -1394,7 +1394,7 @@ from mypy_boto3_cognito_idp.type_defs import DeleteUserAttributesRequestRequestT
 
 Required fields:
 
-- `UserAttributeNames`: `List`\[`str`\]
+- `UserAttributeNames`: `Sequence`\[`str`\]
 - `AccessToken`: `str`
 
 ## DeleteUserPoolClientRequestRequestTypeDef
@@ -1750,7 +1750,7 @@ Optional fields:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## ForgotPasswordResponseTypeDef
 
@@ -1923,7 +1923,7 @@ Required fields:
 
 Optional fields:
 
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## GetUserAttributeVerificationCodeResponseTypeDef
 
@@ -2060,8 +2060,8 @@ Required fields:
 
 Optional fields:
 
-- `AuthParameters`: `Dict`\[`str`, `str`\]
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `AuthParameters`: `Mapping`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `UserContextData`:
@@ -2370,7 +2370,7 @@ Required fields:
 
 Optional fields:
 
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `PaginationToken`: `str`
 - `Filter`: `str`
@@ -2551,7 +2551,7 @@ Optional fields:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## ResendConfirmationCodeResponseTypeDef
 
@@ -2605,12 +2605,12 @@ Required fields:
 Optional fields:
 
 - `Session`: `str`
-- `ChallengeResponses`: `Dict`\[`str`, `str`\]
+- `ChallengeResponses`: `Mapping`\[`str`, `str`\]
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `UserContextData`:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## RespondToAuthChallengeResponseTypeDef
 
@@ -2839,7 +2839,7 @@ Required fields:
 
 - `AccessToken`: `str`
 - `MFAOptions`:
-  `List`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
+  `Sequence`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
 
 ## SignUpRequestRequestTypeDef
 
@@ -2857,14 +2857,14 @@ Optional fields:
 
 - `SecretHash`: `str`
 - `UserAttributes`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
+  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 - `ValidationData`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
+  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `UserContextData`:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## SignUpResponseTypeDef
 
@@ -2996,7 +2996,7 @@ from mypy_boto3_cognito_idp.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TokenValidityUnitsTypeTypeDef
 
@@ -3035,7 +3035,7 @@ from mypy_boto3_cognito_idp.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAuthEventFeedbackRequestRequestTypeDef
 
@@ -3109,9 +3109,9 @@ Required fields:
 
 Optional fields:
 
-- `ProviderDetails`: `Dict`\[`str`, `str`\]
-- `AttributeMapping`: `Dict`\[`str`, `str`\]
-- `IdpIdentifiers`: `List`\[`str`\]
+- `ProviderDetails`: `Mapping`\[`str`, `str`\]
+- `AttributeMapping`: `Mapping`\[`str`, `str`\]
+- `IdpIdentifiers`: `Sequence`\[`str`\]
 
 ## UpdateIdentityProviderResponseTypeDef
 
@@ -3141,7 +3141,7 @@ Required fields:
 Optional fields:
 
 - `Scopes`:
-  `List`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
+  `Sequence`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
 
 ## UpdateResourceServerResponseTypeDef
 
@@ -3165,12 +3165,12 @@ from mypy_boto3_cognito_idp.type_defs import UpdateUserAttributesRequestRequestT
 Required fields:
 
 - `UserAttributes`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
+  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 - `AccessToken`: `str`
 
 Optional fields:
 
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 ## UpdateUserAttributesResponseTypeDef
 
@@ -3204,17 +3204,17 @@ Optional fields:
 - `IdTokenValidity`: `int`
 - `TokenValidityUnits`:
   [TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef)
-- `ReadAttributes`: `List`\[`str`\]
-- `WriteAttributes`: `List`\[`str`\]
+- `ReadAttributes`: `Sequence`\[`str`\]
+- `WriteAttributes`: `Sequence`\[`str`\]
 - `ExplicitAuthFlows`:
-  `List`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
-- `SupportedIdentityProviders`: `List`\[`str`\]
-- `CallbackURLs`: `List`\[`str`\]
-- `LogoutURLs`: `List`\[`str`\]
+  `Sequence`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
+- `SupportedIdentityProviders`: `Sequence`\[`str`\]
+- `CallbackURLs`: `Sequence`\[`str`\]
+- `LogoutURLs`: `Sequence`\[`str`\]
 - `DefaultRedirectURI`: `str`
 - `AllowedOAuthFlows`:
-  `List`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
-- `AllowedOAuthScopes`: `List`\[`str`\]
+  `Sequence`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
+- `AllowedOAuthScopes`: `Sequence`\[`str`\]
 - `AllowedOAuthFlowsUserPoolClient`: `bool`
 - `AnalyticsConfiguration`:
   [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
@@ -3277,7 +3277,7 @@ Optional fields:
 - `LambdaConfig`:
   [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
 - `AutoVerifiedAttributes`:
-  `List`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
+  `Sequence`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
 - `SmsVerificationMessage`: `str`
 - `EmailVerificationMessage`: `str`
 - `EmailVerificationSubject`: `str`
@@ -3291,7 +3291,7 @@ Optional fields:
   [EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef)
 - `SmsConfiguration`:
   [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
-- `UserPoolTags`: `Dict`\[`str`, `str`\]
+- `UserPoolTags`: `Mapping`\[`str`, `str`\]
 - `AdminCreateUserConfig`:
   [AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef)
 - `UserPoolAddOns`:

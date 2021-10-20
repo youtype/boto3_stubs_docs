@@ -108,7 +108,8 @@ Returns [Exceptions](#exceptions).
 
 ### accept_resource_share_invitation
 
-Accepts an invitation to a resource share from another AWS account.
+Accepts an invitation to a resource share from another Amazon Web Services
+account.
 
 Type annotations for `boto3.client("ram").accept_resource_share_invitation`
 method.
@@ -143,8 +144,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
-- `resourceArns`: `List`\[`str`\]
-- `principals`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
 - `clientToken`: `str`
 
 Returns
@@ -204,12 +205,12 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
-- `resourceArns`: `List`\[`str`\]
-- `principals`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `allowExternalPrincipals`: `bool`
 - `clientToken`: `str`
-- `permissionArns`: `List`\[`str`\]
+- `permissionArns`: `Sequence`\[`str`\]
 
 Returns
 [CreateResourceShareResponseTypeDef](./type_defs.md#createresourceshareresponsetypedef).
@@ -250,8 +251,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
-- `resourceArns`: `List`\[`str`\]
-- `principals`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
 - `clientToken`: `str`
 
 Returns
@@ -259,7 +260,7 @@ Returns
 
 ### disassociate_resource_share_permission
 
-Disassociates an AWS RAM permission from a resource share.
+Disassociates an RAM permission from a resource share.
 
 Type annotations for
 `boto3.client("ram").disassociate_resource_share_permission` method.
@@ -281,7 +282,7 @@ Returns
 
 ### enable_sharing_with_aws_organization
 
-Enables resource sharing within your AWS Organization.
+Enables resource sharing within your organization in Organizations.
 
 Type annotations for `boto3.client("ram").enable_sharing_with_aws_organization`
 method.
@@ -304,7 +305,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -312,7 +313,7 @@ Returns `str`.
 
 ### get_permission
 
-Gets the contents of an AWS RAM permission in JSON format.
+Gets the contents of an RAM permission in JSON format.
 
 Type annotations for `boto3.client("ram").get_permission` method.
 
@@ -344,7 +345,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `resourceArns`: `List`\[`str`\] *(required)*
+- `resourceArns`: `Sequence`\[`str`\] *(required)*
 - `principal`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -370,7 +371,7 @@ Keyword-only arguments:
 - `associationType`:
   [ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype)
   *(required)*
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `resourceArn`: `str`
 - `principal`: `str`
 - `associationStatus`:
@@ -396,8 +397,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `resourceShareInvitationArns`: `List`\[`str`\]
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareInvitationArns`: `Sequence`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -421,11 +422,12 @@ Keyword-only arguments:
 
 - `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
   *(required)*
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `resourceShareStatus`:
   [ResourceShareStatusType](./literals.md#resourcesharestatustype)
 - `name`: `str`
-- `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `tagFilters`:
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `permissionArn`: `str`
@@ -458,7 +460,7 @@ Returns
 
 ### list_permissions
 
-Lists the AWS RAM permissions.
+Lists the RAM permissions.
 
 Type annotations for `boto3.client("ram").list_permissions` method.
 
@@ -495,9 +497,9 @@ Keyword-only arguments:
 - `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
   *(required)*
 - `resourceArn`: `str`
-- `principals`: `List`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
 - `resourceType`: `str`
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -506,7 +508,7 @@ Returns
 
 ### list_resource_share_permissions
 
-Lists the AWS RAM permissions that are associated with a resource share.
+Lists the RAM permissions that are associated with a resource share.
 
 Type annotations for `boto3.client("ram").list_resource_share_permissions`
 method.
@@ -528,7 +530,7 @@ Returns
 
 ### list_resource_types
 
-Lists the shareable resource types supported by AWS RAM.
+Lists the shareable resource types supported by RAM.
 
 Type annotations for `boto3.client("ram").list_resource_types` method.
 
@@ -565,8 +567,8 @@ Keyword-only arguments:
   *(required)*
 - `principal`: `str`
 - `resourceType`: `str`
-- `resourceArns`: `List`\[`str`\]
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -577,7 +579,7 @@ Returns
 
 Resource shares that were created by attaching a policy to a resource are
 visible only to the resource share owner, and the resource share cannot be
-modified in AWS RAM.
+modified in RAM.
 
 Type annotations for
 `boto3.client("ram").promote_resource_share_created_from_policy` method.
@@ -597,7 +599,8 @@ Returns
 
 ### reject_resource_share_invitation
 
-Rejects an invitation to a resource share from another AWS account.
+Rejects an invitation to a resource share from another Amazon Web Services
+account.
 
 Type annotations for `boto3.client("ram").reject_resource_share_invitation`
 method.
@@ -631,7 +634,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -650,7 +653,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

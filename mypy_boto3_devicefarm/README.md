@@ -222,6 +222,8 @@ from mypy_boto3_devicefarm.literals import ArtifactCategoryType, ...
 - [UploadCategoryType](./literals.md#uploadcategorytype)
 - [UploadStatusType](./literals.md#uploadstatustype)
 - [UploadTypeType](./literals.md#uploadtypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

@@ -178,6 +178,8 @@ from mypy_boto3_apigatewayv2.literals import AuthorizationTypeType, ...
 - [SecurityPolicyType](./literals.md#securitypolicytype)
 - [VpcLinkStatusType](./literals.md#vpclinkstatustype)
 - [VpcLinkVersionType](./literals.md#vpclinkversiontype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

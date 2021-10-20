@@ -50,7 +50,7 @@ Optional fields:
 
 - `suiteDefinitionConfiguration`:
   [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateSuiteDefinitionResponseTypeDef
 
@@ -294,7 +294,7 @@ Optional fields:
 - `suiteDefinitionVersion`: `str`
 - `suiteRunConfiguration`:
   [SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## StartSuiteRunResponseTypeDef
 
@@ -331,7 +331,7 @@ Optional fields:
 
 - `suiteDefinitionName`: `str`
 - `devices`:
-  `List`\[[DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef)\]
+  `Sequence`\[[DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef)\]
 - `intendedForQualification`: `bool`
 - `rootGroup`: `str`
 - `devicePermissionRoleArn`: `str`
@@ -391,7 +391,7 @@ from mypy_boto3_iotdeviceadvisor.type_defs import TagResourceRequestRequestTypeD
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TestCaseRunTypeDef
 
@@ -430,7 +430,7 @@ from mypy_boto3_iotdeviceadvisor.type_defs import UntagResourceRequestRequestTyp
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateSuiteDefinitionRequestRequestTypeDef
 

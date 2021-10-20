@@ -16,6 +16,7 @@ type annotations stubs module
   - [ComponentConfigurationTypeDef](#componentconfigurationtypedef)
   - [ComponentParameterDetailTypeDef](#componentparameterdetailtypedef)
   - [ComponentParameterTypeDef](#componentparametertypedef)
+  - [ComponentStateTypeDef](#componentstatetypedef)
   - [ComponentSummaryTypeDef](#componentsummarytypedef)
   - [ComponentTypeDef](#componenttypedef)
   - [ComponentVersionTypeDef](#componentversiontypedef)
@@ -93,6 +94,7 @@ type annotations stubs module
   - [InfrastructureConfigurationTypeDef](#infrastructureconfigurationtypedef)
   - [InstanceBlockDeviceMappingTypeDef](#instanceblockdevicemappingtypedef)
   - [InstanceConfigurationTypeDef](#instanceconfigurationtypedef)
+  - [InstanceMetadataOptionsTypeDef](#instancemetadataoptionstypedef)
   - [LaunchPermissionConfigurationTypeDef](#launchpermissionconfigurationtypedef)
   - [LaunchTemplateConfigurationTypeDef](#launchtemplateconfigurationtypedef)
   - [ListComponentBuildVersionsRequestRequestTypeDef](#listcomponentbuildversionsrequestrequesttypedef)
@@ -167,8 +169,8 @@ Optional fields:
 
 - `name`: `str`
 - `description`: `str`
-- `targetAccountIds`: `List`\[`str`\]
-- `amiTags`: `Dict`\[`str`, `str`\]
+- `targetAccountIds`: `Sequence`\[`str`\]
+- `amiTags`: `Mapping`\[`str`, `str`\]
 - `kmsKeyId`: `str`
 - `launchPermission`:
   [LaunchPermissionConfigurationTypeDef](./type_defs.md#launchpermissionconfigurationtypedef)
@@ -226,7 +228,7 @@ Required fields:
 Optional fields:
 
 - `parameters`:
-  `List`\[[ComponentParameterTypeDef](./type_defs.md#componentparametertypedef)\]
+  `Sequence`\[[ComponentParameterTypeDef](./type_defs.md#componentparametertypedef)\]
 
 ## ComponentParameterDetailTypeDef
 
@@ -253,7 +255,19 @@ from mypy_boto3_imagebuilder.type_defs import ComponentParameterTypeDef
 Required fields:
 
 - `name`: `str`
-- `value`: `List`\[`str`\]
+- `value`: `Sequence`\[`str`\]
+
+## ComponentStateTypeDef
+
+```python
+from mypy_boto3_imagebuilder.type_defs import ComponentStateTypeDef
+```
+
+Optional fields:
+
+- `status`: `Literal['DEPRECATED']` (see
+  [ComponentStatusType](./literals.md#componentstatustype))
+- `reason`: `str`
 
 ## ComponentSummaryTypeDef
 
@@ -268,6 +282,7 @@ Optional fields:
 - `version`: `str`
 - `platform`: [PlatformType](./literals.md#platformtype)
 - `supportedOsVersions`: `List`\[`str`\]
+- `state`: [ComponentStateTypeDef](./type_defs.md#componentstatetypedef)
 - `type`: [ComponentTypeType](./literals.md#componenttypetype)
 - `owner`: `str`
 - `description`: `str`
@@ -291,6 +306,7 @@ Optional fields:
 - `type`: [ComponentTypeType](./literals.md#componenttypetype)
 - `platform`: [PlatformType](./literals.md#platformtype)
 - `supportedOsVersions`: `List`\[`str`\]
+- `state`: [ComponentStateTypeDef](./type_defs.md#componentstatetypedef)
 - `parameters`:
   `List`\[[ComponentParameterDetailTypeDef](./type_defs.md#componentparameterdetailtypedef)\]
 - `owner`: `str`
@@ -332,7 +348,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `containerTags`: `List`\[`str`\]
+- `containerTags`: `Sequence`\[`str`\]
 
 ## ContainerRecipeSummaryTypeDef
 
@@ -410,11 +426,11 @@ Optional fields:
 
 - `description`: `str`
 - `changeDescription`: `str`
-- `supportedOsVersions`: `List`\[`str`\]
+- `supportedOsVersions`: `Sequence`\[`str`\]
 - `data`: `str`
 - `uri`: `str`
 - `kmsKeyId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateComponentResponseTypeDef
 
@@ -443,7 +459,7 @@ Required fields:
 - `name`: `str`
 - `semanticVersion`: `str`
 - `components`:
-  `List`\[[ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)\]
+  `Sequence`\[[ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)\]
 - `parentImage`: `str`
 - `targetRepository`:
   [TargetContainerRepositoryTypeDef](./type_defs.md#targetcontainerrepositorytypedef)
@@ -458,7 +474,7 @@ Optional fields:
 - `dockerfileTemplateUri`: `str`
 - `platformOverride`: [PlatformType](./literals.md#platformtype)
 - `imageOsVersionOverride`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `workingDirectory`: `str`
 - `kmsKeyId`: `str`
 
@@ -486,13 +502,13 @@ Required fields:
 
 - `name`: `str`
 - `distributions`:
-  `List`\[[DistributionTypeDef](./type_defs.md#distributiontypedef)\]
+  `Sequence`\[[DistributionTypeDef](./type_defs.md#distributiontypedef)\]
 - `clientToken`: `str`
 
 Optional fields:
 
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDistributionConfigurationResponseTypeDef
 
@@ -531,7 +547,7 @@ Optional fields:
 - `enhancedImageMetadataEnabled`: `bool`
 - `schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
 - `status`: [PipelineStatusType](./literals.md#pipelinestatustype)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateImagePipelineResponseTypeDef
 
@@ -558,7 +574,7 @@ Required fields:
 - `name`: `str`
 - `semanticVersion`: `str`
 - `components`:
-  `List`\[[ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)\]
+  `Sequence`\[[ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)\]
 - `parentImage`: `str`
 - `clientToken`: `str`
 
@@ -566,8 +582,8 @@ Optional fields:
 
 - `description`: `str`
 - `blockDeviceMappings`:
-  `List`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `workingDirectory`: `str`
 - `additionalInstanceConfiguration`:
   [AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef)
@@ -605,7 +621,7 @@ Optional fields:
 - `imageTestsConfiguration`:
   [ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef)
 - `enhancedImageMetadataEnabled`: `bool`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateImageResponseTypeDef
 
@@ -636,15 +652,17 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `instanceTypes`: `List`\[`str`\]
-- `securityGroupIds`: `List`\[`str`\]
+- `instanceTypes`: `Sequence`\[`str`\]
+- `securityGroupIds`: `Sequence`\[`str`\]
 - `subnetId`: `str`
 - `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `keyPair`: `str`
 - `terminateInstanceOnFailure`: `bool`
 - `snsTopicArn`: `str`
-- `resourceTags`: `Dict`\[`str`, `str`\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `resourceTags`: `Mapping`\[`str`, `str`\]
+- `instanceMetadataOptions`:
+  [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateInfrastructureConfigurationResponseTypeDef
 
@@ -874,9 +892,9 @@ Optional fields:
   [AmiDistributionConfigurationTypeDef](./type_defs.md#amidistributionconfigurationtypedef)
 - `containerDistributionConfiguration`:
   [ContainerDistributionConfigurationTypeDef](./type_defs.md#containerdistributionconfigurationtypedef)
-- `licenseConfigurationArns`: `List`\[`str`\]
+- `licenseConfigurationArns`: `Sequence`\[`str`\]
 - `launchTemplateConfigurations`:
-  `List`\[[LaunchTemplateConfigurationTypeDef](./type_defs.md#launchtemplateconfigurationtypedef)\]
+  `Sequence`\[[LaunchTemplateConfigurationTypeDef](./type_defs.md#launchtemplateconfigurationtypedef)\]
 
 ## EbsInstanceBlockDeviceSpecificationTypeDef
 
@@ -893,6 +911,7 @@ Optional fields:
 - `snapshotId`: `str`
 - `volumeSize`: `int`
 - `volumeType`: [EbsVolumeTypeType](./literals.md#ebsvolumetypetype)
+- `throughput`: `int`
 
 ## FilterTypeDef
 
@@ -903,7 +922,7 @@ from mypy_boto3_imagebuilder.type_defs import FilterTypeDef
 Optional fields:
 
 - `name`: `str`
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## GetComponentPolicyRequestRequestTypeDef
 
@@ -1356,7 +1375,7 @@ Optional fields:
 - `data`: `str`
 - `uri`: `str`
 - `kmsKeyId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## ImportComponentResponseTypeDef
 
@@ -1412,6 +1431,8 @@ Optional fields:
 - `dateCreated`: `str`
 - `dateUpdated`: `str`
 - `resourceTags`: `Dict`\[`str`, `str`\]
+- `instanceMetadataOptions`:
+  [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## InstanceBlockDeviceMappingTypeDef
@@ -1438,7 +1459,18 @@ Optional fields:
 
 - `image`: `str`
 - `blockDeviceMappings`:
-  `List`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
+  `Sequence`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
+
+## InstanceMetadataOptionsTypeDef
+
+```python
+from mypy_boto3_imagebuilder.type_defs import InstanceMetadataOptionsTypeDef
+```
+
+Optional fields:
+
+- `httpTokens`: `str`
+- `httpPutResponseHopLimit`: `int`
 
 ## LaunchPermissionConfigurationTypeDef
 
@@ -1448,8 +1480,8 @@ from mypy_boto3_imagebuilder.type_defs import LaunchPermissionConfigurationTypeD
 
 Optional fields:
 
-- `userIds`: `List`\[`str`\]
-- `userGroups`: `List`\[`str`\]
+- `userIds`: `Sequence`\[`str`\]
+- `userGroups`: `Sequence`\[`str`\]
 
 ## LaunchTemplateConfigurationTypeDef
 
@@ -1505,7 +1537,7 @@ from mypy_boto3_imagebuilder.type_defs import ListComponentsRequestRequestTypeDe
 Optional fields:
 
 - `owner`: [OwnershipType](./literals.md#ownershiptype)
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `byName`: `bool`
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -1534,7 +1566,7 @@ from mypy_boto3_imagebuilder.type_defs import ListContainerRecipesRequestRequest
 Optional fields:
 
 - `owner`: [OwnershipType](./literals.md#ownershiptype)
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1561,7 +1593,7 @@ from mypy_boto3_imagebuilder.type_defs import ListDistributionConfigurationsRequ
 
 Optional fields:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1592,7 +1624,7 @@ Required fields:
 
 Optional fields:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1653,7 +1685,7 @@ Required fields:
 
 Optional fields:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1680,7 +1712,7 @@ from mypy_boto3_imagebuilder.type_defs import ListImagePipelinesRequestRequestTy
 
 Optional fields:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1708,7 +1740,7 @@ from mypy_boto3_imagebuilder.type_defs import ListImageRecipesRequestRequestType
 Optional fields:
 
 - `owner`: [OwnershipType](./literals.md#ownershiptype)
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1736,7 +1768,7 @@ from mypy_boto3_imagebuilder.type_defs import ListImagesRequestRequestTypeDef
 Optional fields:
 
 - `owner`: [OwnershipType](./literals.md#ownershiptype)
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `byName`: `bool`
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -1765,7 +1797,7 @@ from mypy_boto3_imagebuilder.type_defs import ListInfrastructureConfigurationsRe
 
 Optional fields:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -2005,7 +2037,7 @@ from mypy_boto3_imagebuilder.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TargetContainerRepositoryTypeDef
 
@@ -2028,7 +2060,7 @@ from mypy_boto3_imagebuilder.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDistributionConfigurationRequestRequestTypeDef
 
@@ -2040,7 +2072,7 @@ Required fields:
 
 - `distributionConfigurationArn`: `str`
 - `distributions`:
-  `List`\[[DistributionTypeDef](./type_defs.md#distributiontypedef)\]
+  `Sequence`\[[DistributionTypeDef](./type_defs.md#distributiontypedef)\]
 - `clientToken`: `str`
 
 Optional fields:
@@ -2114,14 +2146,16 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `instanceTypes`: `List`\[`str`\]
-- `securityGroupIds`: `List`\[`str`\]
+- `instanceTypes`: `Sequence`\[`str`\]
+- `securityGroupIds`: `Sequence`\[`str`\]
 - `subnetId`: `str`
 - `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `keyPair`: `str`
 - `terminateInstanceOnFailure`: `bool`
 - `snsTopicArn`: `str`
-- `resourceTags`: `Dict`\[`str`, `str`\]
+- `resourceTags`: `Mapping`\[`str`, `str`\]
+- `instanceMetadataOptions`:
+  [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 
 ## UpdateInfrastructureConfigurationResponseTypeDef
 

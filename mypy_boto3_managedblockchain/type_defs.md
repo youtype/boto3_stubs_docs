@@ -143,7 +143,7 @@ Optional fields:
 - `Description`: `str`
 - `FrameworkConfiguration`:
   [NetworkFrameworkConfigurationTypeDef](./type_defs.md#networkframeworkconfigurationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateNetworkOutputTypeDef
 
@@ -174,7 +174,7 @@ Required fields:
 Optional fields:
 
 - `MemberId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateNodeOutputTypeDef
 
@@ -204,7 +204,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateProposalOutputTypeDef
 
@@ -599,7 +599,7 @@ Optional fields:
 - `Description`: `str`
 - `LogPublishingConfiguration`:
   [MemberLogPublishingConfigurationTypeDef](./type_defs.md#memberlogpublishingconfigurationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `KmsKeyArn`: `str`
 
 ## MemberFabricAttributesTypeDef
@@ -923,9 +923,9 @@ from mypy_boto3_managedblockchain.type_defs import ProposalActionsTypeDef
 Optional fields:
 
 - `Invitations`:
-  `List`\[[InviteActionTypeDef](./type_defs.md#inviteactiontypedef)\]
+  `Sequence`\[[InviteActionTypeDef](./type_defs.md#inviteactiontypedef)\]
 - `Removals`:
-  `List`\[[RemoveActionTypeDef](./type_defs.md#removeactiontypedef)\]
+  `Sequence`\[[RemoveActionTypeDef](./type_defs.md#removeactiontypedef)\]
 
 ## ProposalSummaryTypeDef
 
@@ -1010,7 +1010,7 @@ from mypy_boto3_managedblockchain.type_defs import TagResourceRequestRequestType
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1021,7 +1021,7 @@ from mypy_boto3_managedblockchain.type_defs import UntagResourceRequestRequestTy
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateMemberInputRequestTypeDef
 

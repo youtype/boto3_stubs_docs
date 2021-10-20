@@ -141,7 +141,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
+  `Sequence`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
   *(required)*
 - `UpdateToken`: `str`
 - `FirewallArn`: `str`
@@ -184,13 +184,13 @@ Keyword-only arguments:
 - `FirewallPolicyArn`: `str` *(required)*
 - `VpcId`: `str` *(required)*
 - `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
+  `Sequence`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
   *(required)*
 - `DeleteProtection`: `bool`
 - `SubnetChangeProtection`: `bool`
 - `FirewallPolicyChangeProtection`: `bool`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateFirewallResponseTypeDef](./type_defs.md#createfirewallresponsetypedef).
@@ -214,7 +214,7 @@ Keyword-only arguments:
 - `FirewallPolicy`:
   [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef) *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -242,7 +242,7 @@ Keyword-only arguments:
 - `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
 - `Rules`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -450,7 +450,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `UpdateToken`: `str`
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
@@ -471,7 +471,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -513,7 +513,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `NextToken`: `str`
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 
 Returns
@@ -598,7 +598,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -617,7 +617,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

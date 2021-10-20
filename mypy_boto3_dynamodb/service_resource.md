@@ -41,6 +41,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [DynamoDBResourceMeta](#dynamodbresourcemeta)
+
 - `tables`: [ServiceResourceTablesCollection](#serviceresourcetablescollection)
 
 ## Collections
@@ -98,7 +100,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `RequestItems`: `Dict`\[`str`,
+- `RequestItems`: `Mapping`\[`str`,
   [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
   *(required)*
 - `ReturnConsumedCapacity`:
@@ -121,8 +123,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `RequestItems`: `Dict`\[`str`,
-  `List`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
+- `RequestItems`: `Mapping`\[`str`,
+  `Sequence`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
   *(required)*
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
@@ -147,16 +149,16 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AttributeDefinitions`:
-  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
+  `Sequence`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
   *(required)*
 - `TableName`: `str` *(required)*
 - `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
+  `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
   *(required)*
 - `LocalSecondaryIndexes`:
-  `List`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
+  `Sequence`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
 - `GlobalSecondaryIndexes`:
-  `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
+  `Sequence`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
 - `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
@@ -164,7 +166,7 @@ Keyword-only arguments:
   [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
 - `SSESpecification`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [Table](#table).
 
@@ -178,7 +180,7 @@ method.
 Boto3 documentation:
 [DynamoDB.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## Table
 
@@ -235,7 +237,7 @@ Boto3 documentation:
 Arguments mapping described in
 [TableBatchWriterRequestTypeDef](./type_defs.md#tablebatchwriterrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `overwrite_by_pkeys`: `List`\[`str`\]
 
@@ -266,11 +268,11 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
-  *(required)*
-- `Expected`: `Dict`\[`str`,
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\] *(required)*
+- `Expected`: `Mapping`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
@@ -280,11 +282,11 @@ Keyword-only arguments:
 - `ReturnItemCollectionMetrics`:
   [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 - `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Returns [DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef).
 
@@ -298,7 +300,7 @@ method.
 Boto3 documentation:
 [DynamoDB.Table.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Table.get_item method
 
@@ -315,16 +317,16 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
-  *(required)*
-- `AttributesToGet`: `List`\[`str`\]
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\] *(required)*
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `ConsistentRead`: `bool`
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ProjectionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
 
 Returns [GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef).
 
@@ -352,11 +354,11 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+- `Item`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\] *(required)*
-- `Expected`: `Dict`\[`str`,
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\] *(required)*
+- `Expected`: `Mapping`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
 - `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
 - `ReturnConsumedCapacity`:
@@ -366,11 +368,11 @@ Keyword-only arguments:
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Returns [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef).
 
@@ -390,30 +392,30 @@ Keyword-only arguments:
 
 - `IndexName`: `str`
 - `Select`: [SelectType](./literals.md#selecttype)
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `ConsistentRead`: `bool`
-- `KeyConditions`: `Dict`\[`str`,
+- `KeyConditions`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `QueryFilter`: `Dict`\[`str`,
+- `QueryFilter`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ScanIndexForward`: `bool`
-- `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+- `ExclusiveStartKey`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ProjectionExpression`: `str`
 - `FilterExpression`: `Union`\[`str`, `ConditionBase`\]
 - `KeyConditionExpression`: `Union`\[`str`, `ConditionBase`\]
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Returns [QueryOutputTypeDef](./type_defs.md#queryoutputtypedef).
 
@@ -443,28 +445,28 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IndexName`: `str`
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `Select`: [SelectType](./literals.md#selecttype)
-- `ScanFilter`: `Dict`\[`str`,
+- `ScanFilter`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+- `ExclusiveStartKey`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `TotalSegments`: `int`
 - `Segment`: `int`
 - `ProjectionExpression`: `str`
 - `FilterExpression`: `Union`\[`str`, `ConditionBase`\]
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 
 Returns [ScanOutputTypeDef](./type_defs.md#scanoutputtypedef).
@@ -485,18 +487,18 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AttributeDefinitions`:
-  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
+  `Sequence`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
 - `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `GlobalSecondaryIndexUpdates`:
-  `List`\[[GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef)\]
+  `Sequence`\[[GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef)\]
 - `StreamSpecification`:
   [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
 - `SSESpecification`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `ReplicaUpdates`:
-  `List`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
+  `Sequence`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
 
 Returns [Table](#table).
 
@@ -515,13 +517,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
-  *(required)*
-- `AttributeUpdates`: `Dict`\[`str`,
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\] *(required)*
+- `AttributeUpdates`: `Mapping`\[`str`,
   [AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef)\]
-- `Expected`: `Dict`\[`str`,
+- `Expected`: `Mapping`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
@@ -532,11 +534,11 @@ Keyword-only arguments:
   [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 - `UpdateExpression`: `str`
 - `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Returns [UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef).
 

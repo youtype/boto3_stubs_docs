@@ -124,7 +124,7 @@ Returns
 
 ### create_ledger
 
-Creates a new ledger in your AWS account in the current Region.
+Creates a new ledger in your account in the current Region.
 
 Type annotations for `boto3.client("qldb").create_ledger` method.
 
@@ -139,8 +139,9 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
   *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `DeletionProtection`: `bool`
+- `KmsKey`: `str`
 
 Returns
 [CreateLedgerResponseTypeDef](./type_defs.md#createledgerresponsetypedef).
@@ -206,8 +207,8 @@ Returns
 
 ### describe_ledger
 
-Returns information about a ledger, including its state and when it was
-created.
+Returns information about a ledger, including its state, permissions mode,
+encryption at rest settings, and when it was created.
 
 Type annotations for `boto3.client("qldb").describe_ledger` method.
 
@@ -262,7 +263,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -356,7 +357,7 @@ Returns
 ### list_journal_s3_exports
 
 Returns an array of journal export job descriptions for all ledgers that are
-associated with the current AWS account and Region.
+associated with the current account and Region.
 
 Type annotations for `boto3.client("qldb").list_journal_s3_exports` method.
 
@@ -398,7 +399,7 @@ Returns
 
 ### list_ledgers
 
-Returns an array of ledger summaries that are associated with the current AWS
+Returns an array of ledger summaries that are associated with the current
 account and Region.
 
 Type annotations for `boto3.client("qldb").list_ledgers` method.
@@ -457,7 +458,7 @@ Keyword-only arguments:
   [KinesisConfigurationTypeDef](./type_defs.md#kinesisconfigurationtypedef)
   *(required)*
 - `StreamName`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `ExclusiveEndTime`: `Union`\[`datetime`, `str`\]
 
 Returns
@@ -478,7 +479,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -497,7 +498,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -517,6 +518,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `DeletionProtection`: `bool`
+- `KmsKey`: `str`
 
 Returns
 [UpdateLedgerResponseTypeDef](./type_defs.md#updateledgerresponsetypedef).

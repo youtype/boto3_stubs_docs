@@ -160,6 +160,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [EC2ResourceMeta](#ec2resourcemeta)
+
 - `classic_addresses`:
   [ServiceResourceClassicAddressesCollection](#serviceresourceclassicaddressescollection)
 
@@ -917,10 +919,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DhcpConfigurations`:
-  `List`\[[NewDhcpConfigurationTypeDef](./type_defs.md#newdhcpconfigurationtypedef)\]
+  `Sequence`\[[NewDhcpConfigurationTypeDef](./type_defs.md#newdhcpconfigurationtypedef)\]
   *(required)*
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns [DhcpOptions](#dhcpoptions).
@@ -943,20 +945,20 @@ Keyword-only arguments:
 - `MaxCount`: `int` *(required)*
 - `MinCount`: `int` *(required)*
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `ImageId`: `str`
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+  `Sequence`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `Monitoring`:
   [RunInstancesMonitoringEnabledTypeDef](./type_defs.md#runinstancesmonitoringenabledtypedef)
 - `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
 - `RamdiskId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `SubnetId`: `str`
 - `UserData`: `str`
 - `AdditionalInfo`: `str`
@@ -969,14 +971,14 @@ Keyword-only arguments:
 - `InstanceInitiatedShutdownBehavior`:
   [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
 - `NetworkInterfaces`:
-  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+  `Sequence`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
 - `PrivateIpAddress`: `str`
 - `ElasticGpuSpecification`:
-  `List`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
+  `Sequence`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
 - `ElasticInferenceAccelerators`:
-  `List`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
+  `Sequence`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `LaunchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `InstanceMarketOptions`:
@@ -990,7 +992,7 @@ Keyword-only arguments:
 - `HibernationOptions`:
   [HibernationOptionsRequestTypeDef](./type_defs.md#hibernationoptionsrequesttypedef)
 - `LicenseSpecifications`:
-  `List`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
+  `Sequence`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
 - `MetadataOptions`:
   [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
@@ -1013,14 +1015,14 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns [InternetGateway](#internetgateway).
 
 ### EC2ServiceResource.create_key_pair method
 
-Creates a 2048-bit RSA key pair with the specified name.
+Creates an ED25519 or 2048-bit RSA key pair with the specified name.
 
 Type annotations for `boto3.resource("ec2").create_key_pair` method.
 
@@ -1034,8 +1036,9 @@ Keyword-only arguments:
 
 - `KeyName`: `str` *(required)*
 - `DryRun`: `bool`
+- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [KeyPair](#keypair).
 
@@ -1056,7 +1059,7 @@ Keyword-only arguments:
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [NetworkAcl](#networkacl).
 
@@ -1077,18 +1080,24 @@ Keyword-only arguments:
 - `SubnetId`: `str` *(required)*
 - `Description`: `str`
 - `DryRun`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+  `Sequence`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
+  `Sequence`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
+- `Ipv4Prefixes`:
+  `Sequence`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
+- `Ipv4PrefixCount`: `int`
+- `Ipv6Prefixes`:
+  `Sequence`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
+- `Ipv6PrefixCount`: `int`
 - `InterfaceType`:
   [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ClientToken`: `str`
 
 Returns [NetworkInterface](#networkinterface).
@@ -1112,7 +1121,7 @@ Keyword-only arguments:
 - `Strategy`: [PlacementStrategyType](./literals.md#placementstrategytype)
 - `PartitionCount`: `int`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [PlacementGroup](#placementgroup).
 
@@ -1133,7 +1142,7 @@ Keyword-only arguments:
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [RouteTable](#routetable).
 
@@ -1155,7 +1164,7 @@ Keyword-only arguments:
 - `GroupName`: `str` *(required)*
 - `VpcId`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns [SecurityGroup](#securitygroup).
@@ -1178,7 +1187,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `OutpostArn`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns [Snapshot](#snapshot).
@@ -1200,7 +1209,7 @@ Keyword-only arguments:
 - `CidrBlock`: `str` *(required)*
 - `VpcId`: `str` *(required)*
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
 - `Ipv6CidrBlock`: `str`
@@ -1221,8 +1230,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Resources`: `List`\[`str`\] *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Resources`: `Sequence`\[`str`\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 - `DryRun`: `bool`
 
 ### EC2ServiceResource.create_volume method
@@ -1250,9 +1259,10 @@ Keyword-only arguments:
 - `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MultiAttachEnabled`: `bool`
 - `Throughput`: `int`
+- `ClientToken`: `str`
 
 Returns [Volume](#volume).
 
@@ -1278,7 +1288,7 @@ Keyword-only arguments:
 - `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `Ipv6CidrBlockNetworkBorderGroup`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [Vpc](#vpc).
 
@@ -1304,7 +1314,7 @@ Keyword-only arguments:
 - `VpcId`: `str`
 - `PeerRegion`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [VpcPeeringConnection](#vpcpeeringconnection).
 
@@ -1334,12 +1344,12 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ### EC2ServiceResource.import_key_pair method
 
-Imports the public key from an RSA key pair that you created with a third-party
-tool.
+Imports the public key from an RSA or ED25519 key pair that you created with a
+third-party tool.
 
 Type annotations for `boto3.resource("ec2").import_key_pair` method.
 
@@ -1356,7 +1366,7 @@ Keyword-only arguments:
   *(required)*
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [KeyPairInfo](#keypairinfo).
 
@@ -1379,12 +1389,12 @@ Keyword-only arguments:
 - `Architecture`:
   [ArchitectureValuesType](./literals.md#architecturevaluestype)
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `Description`: `str`
 - `DryRun`: `bool`
 - `EnaSupport`: `bool`
 - `KernelId`: `str`
-- `BillingProducts`: `List`\[`str`\]
+- `BillingProducts`: `Sequence`\[`str`\]
 - `RamdiskId`: `str`
 - `RootDeviceName`: `str`
 - `SriovNetSupport`: `str`
@@ -1481,7 +1491,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.ClassicAddress.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### ClassicAddress.load method
 
@@ -1581,7 +1591,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -1612,7 +1622,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.DhcpOptions.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### DhcpOptions.load method
 
@@ -1699,7 +1709,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -1750,7 +1760,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.Image.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Image.load method
 
@@ -1781,9 +1791,9 @@ Keyword-only arguments:
 - `LaunchPermission`:
   [LaunchPermissionModificationsTypeDef](./type_defs.md#launchpermissionmodificationstypedef)
 - `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
-- `ProductCodes`: `List`\[`str`\]
-- `UserGroups`: `List`\[`str`\]
-- `UserIds`: `List`\[`str`\]
+- `ProductCodes`: `Sequence`\[`str`\]
+- `UserGroups`: `Sequence`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
 - `Value`: `str`
 - `DryRun`: `bool`
 
@@ -1892,6 +1902,9 @@ Boto3 documentation:
 - `metadata_options`: `Dict`\[`str`, `Any`\]
 - `enclave_options`: `Dict`\[`str`, `Any`\]
 - `boot_mode`: `str`
+- `platform_details`: `str`
+- `usage_operation`: `str`
+- `usage_operation_update_time`: `datetime`
 - `id`: `str`
 - `classic_address`: [ClassicAddress](#classicaddress)
 - `image`: [Image](#image)
@@ -1962,7 +1975,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Groups`: `List`\[`str`\] *(required)*
+- `Groups`: `Sequence`\[`str`\] *(required)*
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
 
@@ -2028,12 +2041,12 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `Description`: `str`
 - `DryRun`: `bool`
 - `NoReboot`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [Image](#image).
 
@@ -2052,7 +2065,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -2070,9 +2083,9 @@ Boto3 documentation:
 Arguments mapping described in
 [InstanceDeleteTagsRequestTypeDef](./type_defs.md#instancedeletetagsrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
 
 #### Instance.describe_attribute method
@@ -2147,7 +2160,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.Instance.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Instance.load method
 
@@ -2178,7 +2191,7 @@ Keyword-only arguments:
 - `Attribute`:
   [InstanceAttributeNameType](./literals.md#instanceattributenametype)
 - `BlockDeviceMappings`:
-  `List`\[[InstanceBlockDeviceMappingSpecificationTypeDef](./type_defs.md#instanceblockdevicemappingspecificationtypedef)\]
+  `Sequence`\[[InstanceBlockDeviceMappingSpecificationTypeDef](./type_defs.md#instanceblockdevicemappingspecificationtypedef)\]
 - `DisableApiTermination`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `DryRun`: `bool`
@@ -2186,7 +2199,7 @@ Keyword-only arguments:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `EnaSupport`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `InstanceInitiatedShutdownBehavior`:
   [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `InstanceType`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
@@ -2277,7 +2290,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ReasonCodes`:
-  `List`\[[ReportInstanceReasonCodesType](./literals.md#reportinstancereasoncodestype)\]
+  `Sequence`\[[ReportInstanceReasonCodesType](./literals.md#reportinstancereasoncodestype)\]
   *(required)*
 - `Status`: [ReportStatusTypeType](./literals.md#reportstatustypetype)
   *(required)*
@@ -2536,7 +2549,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -2585,7 +2598,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.InternetGateway.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### InternetGateway.load method
 
@@ -2660,7 +2673,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.KeyPair.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPair.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## KeyPairInfo
 
@@ -2683,6 +2696,7 @@ Boto3 documentation:
 - `key_pair_id`: `str`
 - `key_fingerprint`: `str`
 - `key_name`: `str`
+- `key_type`: `str`
 - `tags`: `List`\[`Any`\]
 - `name`: `str`
 
@@ -2714,7 +2728,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.KeyPairInfo.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### KeyPairInfo.load method
 
@@ -2805,7 +2819,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -2855,7 +2869,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.NetworkAcl.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### NetworkAcl.load method
 
@@ -2953,6 +2967,8 @@ Boto3 documentation:
 - `private_dns_name`: `str`
 - `private_ip_address`: `str`
 - `private_ip_addresses`: `List`\[`Any`\]
+- `ipv4_prefixes`: `List`\[`Any`\]
+- `ipv6_prefixes`: `List`\[`Any`\]
 - `requester_id`: `str`
 - `requester_managed`: `bool`
 - `source_dest_check`: `bool`
@@ -2984,8 +3000,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AllowReassignment`: `bool`
-- `PrivateIpAddresses`: `List`\[`str`\]
+- `PrivateIpAddresses`: `Sequence`\[`str`\]
 - `SecondaryPrivateIpAddressCount`: `int`
+- `Ipv4Prefixes`: `Sequence`\[`str`\]
+- `Ipv4PrefixCount`: `int`
 
 Returns
 [AssignPrivateIpAddressesResultTypeDef](./type_defs.md#assignprivateipaddressesresulttypedef).
@@ -3027,7 +3045,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -3097,7 +3115,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.NetworkInterface.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### NetworkInterface.load method
 
@@ -3127,7 +3145,7 @@ Keyword-only arguments:
   [NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef)
 - `Description`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `DryRun`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `SourceDestCheck`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
@@ -3160,7 +3178,8 @@ Keyword-only arguments:
 
 #### NetworkInterface.unassign_private_ip_addresses method
 
-Unassigns one or more secondary private IP addresses from a network interface.
+Unassigns one or more secondary private IP addresses, or IPv4 Prefix Delegation
+prefixes from a network interface.
 
 Type annotations for `boto3.resource("ec2").unassign_private_ip_addresses`
 method.
@@ -3173,7 +3192,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `PrivateIpAddresses`: `List`\[`str`\] *(required)*
+- `PrivateIpAddresses`: `Sequence`\[`str`\]
+- `Ipv4Prefixes`: `Sequence`\[`str`\]
 
 ## NetworkInterfaceAssociation
 
@@ -3229,7 +3249,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.NetworkInterfaceAssociation.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### NetworkInterfaceAssociation.load method
 
@@ -3328,7 +3348,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.PlacementGroup.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### PlacementGroup.load method
 
@@ -3425,7 +3445,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.Route.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Route.replace method
 
@@ -3555,7 +3575,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -3586,7 +3606,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.RouteTable.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### RouteTable.load method
 
@@ -3663,7 +3683,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.RouteTableAssociation.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### RouteTableAssociation.replace_subnet method
 
@@ -3729,9 +3749,9 @@ Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -3760,14 +3780,14 @@ Keyword-only arguments:
 - `FromPort`: `int`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `IpProtocol`: `str`
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [AuthorizeSecurityGroupIngressResultTypeDef](./type_defs.md#authorizesecuritygroupingressresulttypedef).
@@ -3787,7 +3807,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -3819,7 +3839,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.SecurityGroup.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### SecurityGroup.load method
 
@@ -3855,8 +3875,8 @@ Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-- `SecurityGroupRuleIds`: `List`\[`str`\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleIds`: `Sequence`\[`str`\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -3885,13 +3905,13 @@ Keyword-only arguments:
 - `FromPort`: `int`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `IpProtocol`: `str`
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
-- `SecurityGroupRuleIds`: `List`\[`str`\]
+- `SecurityGroupRuleIds`: `Sequence`\[`str`\]
 
 Returns
 [RevokeSecurityGroupIngressResultTypeDef](./type_defs.md#revokesecuritygroupingressresulttypedef).
@@ -3956,7 +3976,7 @@ Keyword-only arguments:
 - `KmsKeyId`: `str`
 - `PresignedUrl`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
@@ -3976,7 +3996,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -4029,7 +4049,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.Snapshot.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Snapshot.load method
 
@@ -4059,9 +4079,9 @@ Keyword-only arguments:
   [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
 - `CreateVolumePermission`:
   [CreateVolumePermissionModificationsTypeDef](./type_defs.md#createvolumepermissionmodificationstypedef)
-- `GroupNames`: `List`\[`str`\]
+- `GroupNames`: `Sequence`\[`str`\]
 - `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
-- `UserIds`: `List`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 #### Snapshot.reload method
@@ -4204,20 +4224,20 @@ Keyword-only arguments:
 - `MaxCount`: `int` *(required)*
 - `MinCount`: `int` *(required)*
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `ImageId`: `str`
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+  `Sequence`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `Monitoring`:
   [RunInstancesMonitoringEnabledTypeDef](./type_defs.md#runinstancesmonitoringenabledtypedef)
 - `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
 - `RamdiskId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `UserData`: `str`
 - `AdditionalInfo`: `str`
 - `ClientToken`: `str`
@@ -4229,14 +4249,14 @@ Keyword-only arguments:
 - `InstanceInitiatedShutdownBehavior`:
   [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
 - `NetworkInterfaces`:
-  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+  `Sequence`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
 - `PrivateIpAddress`: `str`
 - `ElasticGpuSpecification`:
-  `List`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
+  `Sequence`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
 - `ElasticInferenceAccelerators`:
-  `List`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
+  `Sequence`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `LaunchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `InstanceMarketOptions`:
@@ -4250,7 +4270,7 @@ Keyword-only arguments:
 - `HibernationOptions`:
   [HibernationOptionsRequestTypeDef](./type_defs.md#hibernationoptionsrequesttypedef)
 - `LicenseSpecifications`:
-  `List`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
+  `Sequence`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
 - `MetadataOptions`:
   [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
@@ -4274,18 +4294,24 @@ Keyword-only arguments:
 
 - `Description`: `str`
 - `DryRun`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+  `Sequence`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
+  `Sequence`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
+- `Ipv4Prefixes`:
+  `Sequence`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
+- `Ipv4PrefixCount`: `int`
+- `Ipv6Prefixes`:
+  `Sequence`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
+- `Ipv6PrefixCount`: `int`
 - `InterfaceType`:
   [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ClientToken`: `str`
 
 Returns [NetworkInterface](#networkinterface).
@@ -4305,7 +4331,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -4336,7 +4362,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.Subnet.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Subnet.load method
 
@@ -4408,7 +4434,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.Tag.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Tag.load method
 
@@ -4529,7 +4555,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `OutpostArn`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns [Snapshot](#snapshot).
@@ -4549,7 +4575,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -4606,7 +4632,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -4662,7 +4688,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.Volume.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Volume.load method
 
@@ -4961,7 +4987,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Groups`: `List`\[`str`\] *(required)*
+- `Groups`: `Sequence`\[`str`\] *(required)*
 - `InstanceId`: `str` *(required)*
 - `DryRun`: `bool`
 
@@ -5002,7 +5028,7 @@ Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [NetworkAcl](#networkacl).
 
@@ -5022,7 +5048,7 @@ Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [RouteTable](#routetable).
 
@@ -5043,7 +5069,7 @@ Keyword-only arguments:
 - `Description`: `str` *(required)*
 - `GroupName`: `str` *(required)*
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns [SecurityGroup](#securitygroup).
@@ -5064,7 +5090,7 @@ Keyword-only arguments:
 
 - `CidrBlock`: `str` *(required)*
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
 - `Ipv6CidrBlock`: `str`
@@ -5088,7 +5114,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -5217,7 +5243,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.Vpc.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Vpc.load method
 
@@ -5279,7 +5305,7 @@ Keyword-only arguments:
 - `PeerVpcId`: `str`
 - `PeerRegion`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [VpcPeeringConnection](#vpcpeeringconnection).
 
@@ -5378,7 +5404,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.VpcPeeringConnection.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### VpcPeeringConnection.load method
 
@@ -5498,7 +5524,7 @@ Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 Boto3 documentation:
 [EC2.VpcAddress.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### VpcAddress.load method
 

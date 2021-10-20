@@ -128,7 +128,7 @@ Keyword-only arguments:
   [ChannelTypeType](./literals.md#channeltypetype))
 - `SingleMasterConfiguration`:
   [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSignalingChannelOutputTypeDef](./type_defs.md#createsignalingchanneloutputtypedef).
@@ -152,7 +152,7 @@ Keyword-only arguments:
 - `MediaType`: `str`
 - `KmsKeyId`: `str`
 - `DataRetentionInHours`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateStreamOutputTypeDef](./type_defs.md#createstreamoutputtypedef).
 
@@ -249,7 +249,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -401,7 +401,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -419,7 +419,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 - `StreamARN`: `str`
 - `StreamName`: `str`
 
@@ -440,7 +440,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeyList`: `List`\[`str`\] *(required)*
+- `TagKeyList`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -458,7 +458,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TagKeyList`: `List`\[`str`\] *(required)*
+- `TagKeyList`: `Sequence`\[`str`\] *(required)*
 - `StreamARN`: `str`
 - `StreamName`: `str`
 

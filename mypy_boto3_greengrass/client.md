@@ -230,7 +230,7 @@ Keyword-only arguments:
 - `InitialVersion`:
   [ConnectorDefinitionVersionTypeDef](./type_defs.md#connectordefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateConnectorDefinitionResponseTypeDef](./type_defs.md#createconnectordefinitionresponsetypedef).
@@ -252,7 +252,8 @@ Keyword-only arguments:
 
 - `ConnectorDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
-- `Connectors`: `List`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
+- `Connectors`:
+  `Sequence`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
 
 Returns
 [CreateConnectorDefinitionVersionResponseTypeDef](./type_defs.md#createconnectordefinitionversionresponsetypedef).
@@ -276,7 +277,7 @@ Keyword-only arguments:
 - `InitialVersion`:
   [CoreDefinitionVersionTypeDef](./type_defs.md#coredefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateCoreDefinitionResponseTypeDef](./type_defs.md#createcoredefinitionresponsetypedef).
@@ -298,7 +299,7 @@ Keyword-only arguments:
 
 - `CoreDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
-- `Cores`: `List`\[[CoreTypeDef](./type_defs.md#coretypedef)\]
+- `Cores`: `Sequence`\[[CoreTypeDef](./type_defs.md#coretypedef)\]
 
 Returns
 [CreateCoreDefinitionVersionResponseTypeDef](./type_defs.md#createcoredefinitionversionresponsetypedef).
@@ -346,7 +347,7 @@ Keyword-only arguments:
 - `InitialVersion`:
   [DeviceDefinitionVersionTypeDef](./type_defs.md#devicedefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDeviceDefinitionResponseTypeDef](./type_defs.md#createdevicedefinitionresponsetypedef).
@@ -368,7 +369,7 @@ Keyword-only arguments:
 
 - `DeviceDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
-- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
+- `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
 
 Returns
 [CreateDeviceDefinitionVersionResponseTypeDef](./type_defs.md#createdevicedefinitionversionresponsetypedef).
@@ -393,7 +394,7 @@ Keyword-only arguments:
 - `InitialVersion`:
   [FunctionDefinitionVersionTypeDef](./type_defs.md#functiondefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateFunctionDefinitionResponseTypeDef](./type_defs.md#createfunctiondefinitionresponsetypedef).
@@ -418,7 +419,7 @@ Keyword-only arguments:
 - `AmznClientToken`: `str`
 - `DefaultConfig`:
   [FunctionDefaultConfigTypeDef](./type_defs.md#functiondefaultconfigtypedef)
-- `Functions`: `List`\[[FunctionTypeDef](./type_defs.md#functiontypedef)\]
+- `Functions`: `Sequence`\[[FunctionTypeDef](./type_defs.md#functiontypedef)\]
 
 Returns
 [CreateFunctionDefinitionVersionResponseTypeDef](./type_defs.md#createfunctiondefinitionversionresponsetypedef).
@@ -440,7 +441,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `AmznClientToken`: `str`
 - `InitialVersion`: [GroupVersionTypeDef](./type_defs.md#groupversiontypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
@@ -512,7 +513,7 @@ Keyword-only arguments:
 - `InitialVersion`:
   [LoggerDefinitionVersionTypeDef](./type_defs.md#loggerdefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateLoggerDefinitionResponseTypeDef](./type_defs.md#createloggerdefinitionresponsetypedef).
@@ -534,7 +535,7 @@ Keyword-only arguments:
 
 - `LoggerDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
-- `Loggers`: `List`\[[LoggerTypeDef](./type_defs.md#loggertypedef)\]
+- `Loggers`: `Sequence`\[[LoggerTypeDef](./type_defs.md#loggertypedef)\]
 
 Returns
 [CreateLoggerDefinitionVersionResponseTypeDef](./type_defs.md#createloggerdefinitionversionresponsetypedef).
@@ -559,7 +560,7 @@ Keyword-only arguments:
 - `InitialVersion`:
   [ResourceDefinitionVersionTypeDef](./type_defs.md#resourcedefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateResourceDefinitionResponseTypeDef](./type_defs.md#createresourcedefinitionresponsetypedef).
@@ -581,7 +582,7 @@ Keyword-only arguments:
 
 - `ResourceDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
-- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
 Returns
 [CreateResourceDefinitionVersionResponseTypeDef](./type_defs.md#createresourcedefinitionversionresponsetypedef).
@@ -606,7 +607,7 @@ Keyword-only arguments:
 - `S3UrlSignerRole`: `str` *(required)*
 - `SoftwareToUpdate`:
   [SoftwareToUpdateType](./literals.md#softwaretoupdatetype) *(required)*
-- `UpdateTargets`: `List`\[`str`\] *(required)*
+- `UpdateTargets`: `Sequence`\[`str`\] *(required)*
 - `UpdateTargetsArchitecture`:
   [UpdateTargetsArchitectureType](./literals.md#updatetargetsarchitecturetype)
   *(required)*
@@ -639,7 +640,7 @@ Keyword-only arguments:
 - `InitialVersion`:
   [SubscriptionDefinitionVersionTypeDef](./type_defs.md#subscriptiondefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateSubscriptionDefinitionResponseTypeDef](./type_defs.md#createsubscriptiondefinitionresponsetypedef).
@@ -662,7 +663,7 @@ Keyword-only arguments:
 - `SubscriptionDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
 - `Subscriptions`:
-  `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
+  `Sequence`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
 
 Returns
 [CreateSubscriptionDefinitionVersionResponseTypeDef](./type_defs.md#createsubscriptiondefinitionversionresponsetypedef).
@@ -864,7 +865,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1837,7 +1838,7 @@ Keyword-only arguments:
 - `ExecutionRoleArn`: `str` *(required)*
 - `InputFileUri`: `str` *(required)*
 - `AmznClientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [StartBulkDeploymentResponseTypeDef](./type_defs.md#startbulkdeploymentresponsetypedef).
@@ -1875,7 +1876,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ### untag_resource
 
@@ -1892,7 +1893,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_connectivity_info
 
@@ -1911,7 +1912,7 @@ Keyword-only arguments:
 
 - `ThingName`: `str` *(required)*
 - `ConnectivityInfo`:
-  `List`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
+  `Sequence`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
 
 Returns
 [UpdateConnectivityInfoResponseTypeDef](./type_defs.md#updateconnectivityinforesponsetypedef).

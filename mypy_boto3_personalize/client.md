@@ -177,7 +177,7 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `solutionVersionArn`: `str` *(required)*
-- `minProvisionedTPS`: `int` *(required)*
+- `minProvisionedTPS`: `int`
 - `campaignConfig`:
   [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 
@@ -791,7 +791,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

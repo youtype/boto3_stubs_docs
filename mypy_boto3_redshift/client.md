@@ -14,7 +14,9 @@ type annotations stubs module
     - [exceptions](#exceptions)
     - [accept_reserved_node_exchange](#accept_reserved_node_exchange)
     - [add_partner](#add_partner)
+    - [associate_data_share_consumer](#associate_data_share_consumer)
     - [authorize_cluster_security_group_ingress](#authorize_cluster_security_group_ingress)
+    - [authorize_data_share](#authorize_data_share)
     - [authorize_endpoint_access](#authorize_endpoint_access)
     - [authorize_snapshot_access](#authorize_snapshot_access)
     - [batch_delete_cluster_snapshots](#batch_delete_cluster_snapshots)
@@ -37,6 +39,7 @@ type annotations stubs module
     - [create_snapshot_schedule](#create_snapshot_schedule)
     - [create_tags](#create_tags)
     - [create_usage_limit](#create_usage_limit)
+    - [deauthorize_data_share](#deauthorize_data_share)
     - [delete_authentication_profile](#delete_authentication_profile)
     - [delete_cluster](#delete_cluster)
     - [delete_cluster_parameter_group](#delete_cluster_parameter_group)
@@ -64,6 +67,9 @@ type annotations stubs module
     - [describe_cluster_tracks](#describe_cluster_tracks)
     - [describe_cluster_versions](#describe_cluster_versions)
     - [describe_clusters](#describe_clusters)
+    - [describe_data_shares](#describe_data_shares)
+    - [describe_data_shares_for_consumer](#describe_data_shares_for_consumer)
+    - [describe_data_shares_for_producer](#describe_data_shares_for_producer)
     - [describe_default_cluster_parameters](#describe_default_cluster_parameters)
     - [describe_endpoint_access](#describe_endpoint_access)
     - [describe_endpoint_authorization](#describe_endpoint_authorization)
@@ -88,6 +94,7 @@ type annotations stubs module
     - [describe_usage_limits](#describe_usage_limits)
     - [disable_logging](#disable_logging)
     - [disable_snapshot_copy](#disable_snapshot_copy)
+    - [disassociate_data_share_consumer](#disassociate_data_share_consumer)
     - [enable_logging](#enable_logging)
     - [enable_snapshot_copy](#enable_snapshot_copy)
     - [generate_presigned_url](#generate_presigned_url)
@@ -112,6 +119,7 @@ type annotations stubs module
     - [pause_cluster](#pause_cluster)
     - [purchase_reserved_node_offering](#purchase_reserved_node_offering)
     - [reboot_cluster](#reboot_cluster)
+    - [reject_data_share](#reject_data_share)
     - [reset_cluster_parameter_group](#reset_cluster_parameter_group)
     - [resize_cluster](#resize_cluster)
     - [restore_from_cluster_snapshot](#restore_from_cluster_snapshot)
@@ -215,10 +223,12 @@ Exceptions:
 - `Exceptions.InvalidClusterSubnetGroupStateFault`
 - `Exceptions.InvalidClusterSubnetStateFault`
 - `Exceptions.InvalidClusterTrackFault`
+- `Exceptions.InvalidDataShareFault`
 - `Exceptions.InvalidElasticIpFault`
 - `Exceptions.InvalidEndpointStateFault`
 - `Exceptions.InvalidHsmClientCertificateStateFault`
 - `Exceptions.InvalidHsmConfigurationStateFault`
+- `Exceptions.InvalidNamespaceFault`
 - `Exceptions.InvalidReservedNodeStateFault`
 - `Exceptions.InvalidRestoreFault`
 - `Exceptions.InvalidRetentionPeriodFault`
@@ -337,6 +347,29 @@ Keyword-only arguments:
 Returns
 [PartnerIntegrationOutputMessageTypeDef](./type_defs.md#partnerintegrationoutputmessagetypedef).
 
+### associate_data_share_consumer
+
+From a datashare consumer account, associates a datashare with the account
+(AssociateEntireAccount) or the specified namespace (ConsumerArn).
+
+Type annotations for `boto3.client("redshift").associate_data_share_consumer`
+method.
+
+Boto3 documentation:
+[Redshift.Client.associate_data_share_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.associate_data_share_consumer)
+
+Arguments mapping described in
+[AssociateDataShareConsumerMessageRequestTypeDef](./type_defs.md#associatedatashareconsumermessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `DataShareArn`: `str` *(required)*
+- `AssociateEntireAccount`: `bool`
+- `ConsumerArn`: `str`
+
+Returns
+[DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef).
+
 ### authorize_cluster_security_group_ingress
 
 Adds an inbound (ingress) rule to an Amazon Redshift security group.
@@ -360,6 +393,27 @@ Keyword-only arguments:
 Returns
 [AuthorizeClusterSecurityGroupIngressResultTypeDef](./type_defs.md#authorizeclustersecuritygroupingressresulttypedef).
 
+### authorize_data_share
+
+From a data producer account, authorizes the sharing of a datashare with one or
+more consumer accounts.
+
+Type annotations for `boto3.client("redshift").authorize_data_share` method.
+
+Boto3 documentation:
+[Redshift.Client.authorize_data_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_data_share)
+
+Arguments mapping described in
+[AuthorizeDataShareMessageRequestTypeDef](./type_defs.md#authorizedatasharemessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `DataShareArn`: `str` *(required)*
+- `ConsumerIdentifier`: `str` *(required)*
+
+Returns
+[DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef).
+
 ### authorize_endpoint_access
 
 Grants access to a cluster.
@@ -377,14 +431,15 @@ Keyword-only arguments:
 
 - `Account`: `str` *(required)*
 - `ClusterIdentifier`: `str`
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 
 Returns
 [EndpointAuthorizationResponseMetadataTypeDef](./type_defs.md#endpointauthorizationresponsemetadatatypedef).
 
 ### authorize_snapshot_access
 
-Authorizes the specified account to restore the specified snapshot.
+Authorizes the specified Amazon Web Services account to restore the specified
+snapshot.
 
 Type annotations for `boto3.client("redshift").authorize_snapshot_access`
 method.
@@ -420,7 +475,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Identifiers`:
-  `List`\[[DeleteClusterSnapshotMessageTypeDef](./type_defs.md#deleteclustersnapshotmessagetypedef)\]
+  `Sequence`\[[DeleteClusterSnapshotMessageTypeDef](./type_defs.md#deleteclustersnapshotmessagetypedef)\]
   *(required)*
 
 Returns
@@ -441,7 +496,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `SnapshotIdentifierList`: `List`\[`str`\] *(required)*
+- `SnapshotIdentifierList`: `Sequence`\[`str`\] *(required)*
 - `ManualSnapshotRetentionPeriod`: `int`
 - `Force`: `bool`
 
@@ -546,8 +601,8 @@ Keyword-only arguments:
 - `MasterUserPassword`: `str` *(required)*
 - `DBName`: `str`
 - `ClusterType`: `str`
-- `ClusterSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `ClusterSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `ClusterSubnetGroupName`: `str`
 - `AvailabilityZone`: `str`
 - `PreferredMaintenanceWindow`: `str`
@@ -563,11 +618,11 @@ Keyword-only arguments:
 - `HsmClientCertificateIdentifier`: `str`
 - `HsmConfigurationIdentifier`: `str`
 - `ElasticIp`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `EnhancedVpcRouting`: `bool`
 - `AdditionalInfo`: `str`
-- `IamRoles`: `List`\[`str`\]
+- `IamRoles`: `Sequence`\[`str`\]
 - `MaintenanceTrackName`: `str`
 - `SnapshotScheduleIdentifier`: `str`
 - `AvailabilityZoneRelocation`: `bool`
@@ -595,7 +650,7 @@ Keyword-only arguments:
 - `ParameterGroupName`: `str` *(required)*
 - `ParameterGroupFamily`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateClusterParameterGroupResultTypeDef](./type_defs.md#createclusterparametergroupresulttypedef).
@@ -617,7 +672,7 @@ Keyword-only arguments:
 
 - `ClusterSecurityGroupName`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateClusterSecurityGroupResultTypeDef](./type_defs.md#createclustersecuritygroupresulttypedef).
@@ -639,7 +694,7 @@ Keyword-only arguments:
 - `SnapshotIdentifier`: `str` *(required)*
 - `ClusterIdentifier`: `str` *(required)*
 - `ManualSnapshotRetentionPeriod`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateClusterSnapshotResultTypeDef](./type_defs.md#createclustersnapshotresulttypedef).
@@ -661,8 +716,8 @@ Keyword-only arguments:
 
 - `ClusterSubnetGroupName`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateClusterSubnetGroupResultTypeDef](./type_defs.md#createclustersubnetgroupresulttypedef).
@@ -685,7 +740,7 @@ Keyword-only arguments:
 - `SubnetGroupName`: `str` *(required)*
 - `ClusterIdentifier`: `str`
 - `ResourceOwner`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 
 Returns
 [EndpointAccessResponseMetadataTypeDef](./type_defs.md#endpointaccessresponsemetadatatypedef).
@@ -708,11 +763,11 @@ Keyword-only arguments:
 - `SubscriptionName`: `str` *(required)*
 - `SnsTopicArn`: `str` *(required)*
 - `SourceType`: `str`
-- `SourceIds`: `List`\[`str`\]
-- `EventCategories`: `List`\[`str`\]
+- `SourceIds`: `Sequence`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
 - `Severity`: `str`
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
@@ -735,7 +790,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `HsmClientCertificateIdentifier`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateHsmClientCertificateResultTypeDef](./type_defs.md#createhsmclientcertificateresulttypedef).
@@ -763,7 +818,7 @@ Keyword-only arguments:
 - `HsmPartitionName`: `str` *(required)*
 - `HsmPartitionPassword`: `str` *(required)*
 - `HsmServerPublicCertificate`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateHsmConfigurationResultTypeDef](./type_defs.md#createhsmconfigurationresulttypedef).
@@ -815,7 +870,7 @@ Keyword-only arguments:
 
 - `SnapshotCopyGrantName`: `str` *(required)*
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSnapshotCopyGrantResultTypeDef](./type_defs.md#createsnapshotcopygrantresulttypedef).
@@ -836,10 +891,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ScheduleDefinitions`: `List`\[`str`\]
+- `ScheduleDefinitions`: `Sequence`\[`str`\]
 - `ScheduleIdentifier`: `str`
 - `ScheduleDescription`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
 - `NextInvocations`: `int`
 
@@ -861,7 +916,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### create_usage_limit
 
@@ -887,10 +942,30 @@ Keyword-only arguments:
 - `Period`: [UsageLimitPeriodType](./literals.md#usagelimitperiodtype)
 - `BreachAction`:
   [UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [UsageLimitResponseMetadataTypeDef](./type_defs.md#usagelimitresponsemetadatatypedef).
+
+### deauthorize_data_share
+
+From the producer account, removes authorization from the specified datashare.
+
+Type annotations for `boto3.client("redshift").deauthorize_data_share` method.
+
+Boto3 documentation:
+[Redshift.Client.deauthorize_data_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.deauthorize_data_share)
+
+Arguments mapping described in
+[DeauthorizeDataShareMessageRequestTypeDef](./type_defs.md#deauthorizedatasharemessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `DataShareArn`: `str` *(required)*
+- `ConsumerIdentifier`: `str` *(required)*
+
+Returns
+[DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef).
 
 ### delete_authentication_profile
 
@@ -1163,7 +1238,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### delete_usage_limit
 
@@ -1199,7 +1274,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AttributeNames`: `List`\[`str`\]
+- `AttributeNames`: `Sequence`\[`str`\]
 
 Returns
 [AccountAttributeListTypeDef](./type_defs.md#accountattributelisttypedef).
@@ -1265,8 +1340,8 @@ Keyword-only arguments:
 - `ParameterGroupName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [ClusterParameterGroupsMessageTypeDef](./type_defs.md#clusterparametergroupsmessagetypedef).
@@ -1313,8 +1388,8 @@ Keyword-only arguments:
 - `ClusterSecurityGroupName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [ClusterSecurityGroupMessageTypeDef](./type_defs.md#clustersecuritygroupmessagetypedef).
@@ -1343,11 +1418,11 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `OwnerAccount`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `ClusterExists`: `bool`
 - `SortingEntities`:
-  `List`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
+  `Sequence`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
 
 Returns [SnapshotMessageTypeDef](./type_defs.md#snapshotmessagetypedef).
 
@@ -1370,8 +1445,8 @@ Keyword-only arguments:
 - `ClusterSubnetGroupName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [ClusterSubnetGroupMessageTypeDef](./type_defs.md#clustersubnetgroupmessagetypedef).
@@ -1438,10 +1513,82 @@ Keyword-only arguments:
 - `ClusterIdentifier`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns [ClustersMessageTypeDef](./type_defs.md#clustersmessagetypedef).
+
+### describe_data_shares
+
+Shows the status of any inbound or outbound datashares available in the
+specified account.
+
+Type annotations for `boto3.client("redshift").describe_data_shares` method.
+
+Boto3 documentation:
+[Redshift.Client.describe_data_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_data_shares)
+
+Arguments mapping described in
+[DescribeDataSharesMessageRequestTypeDef](./type_defs.md#describedatasharesmessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `DataShareArn`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeDataSharesResultTypeDef](./type_defs.md#describedatasharesresulttypedef).
+
+### describe_data_shares_for_consumer
+
+Returns a list of datashares where the account identifier being called is a
+consumer account identifier.
+
+Type annotations for
+`boto3.client("redshift").describe_data_shares_for_consumer` method.
+
+Boto3 documentation:
+[Redshift.Client.describe_data_shares_for_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_data_shares_for_consumer)
+
+Arguments mapping described in
+[DescribeDataSharesForConsumerMessageRequestTypeDef](./type_defs.md#describedatasharesforconsumermessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `ConsumerArn`: `str`
+- `Status`:
+  [DataShareStatusForConsumerType](./literals.md#datasharestatusforconsumertype)
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeDataSharesForConsumerResultTypeDef](./type_defs.md#describedatasharesforconsumerresulttypedef).
+
+### describe_data_shares_for_producer
+
+Returns a list of datashares when the account identifier being called is a
+producer account identifier.
+
+Type annotations for
+`boto3.client("redshift").describe_data_shares_for_producer` method.
+
+Boto3 documentation:
+[Redshift.Client.describe_data_shares_for_producer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_data_shares_for_producer)
+
+Arguments mapping described in
+[DescribeDataSharesForProducerMessageRequestTypeDef](./type_defs.md#describedatasharesforproducermessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `ProducerArn`: `str`
+- `Status`:
+  [DataShareStatusForProducerType](./literals.md#datasharestatusforproducertype)
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeDataSharesForProducerResultTypeDef](./type_defs.md#describedatasharesforproducerresulttypedef).
 
 ### describe_default_cluster_parameters
 
@@ -1553,8 +1700,8 @@ Keyword-only arguments:
 - `SubscriptionName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef).
@@ -1602,8 +1749,8 @@ Keyword-only arguments:
 - `HsmClientCertificateIdentifier`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [HsmClientCertificateMessageTypeDef](./type_defs.md#hsmclientcertificatemessagetypedef).
@@ -1626,8 +1773,8 @@ Keyword-only arguments:
 - `HsmConfigurationIdentifier`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [HsmConfigurationMessageTypeDef](./type_defs.md#hsmconfigurationmessagetypedef).
@@ -1672,7 +1819,7 @@ Keyword-only arguments:
 - `SnapshotIdentifier`: `str`
 - `OwnerAccount`: `str`
 - `Filters`:
-  `List`\[[NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef)\]
+  `Sequence`\[[NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -1810,7 +1957,7 @@ Keyword-only arguments:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Active`: `bool`
 - `Filters`:
-  `List`\[[ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef)\]
+  `Sequence`\[[ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -1819,8 +1966,8 @@ Returns
 
 ### describe_snapshot_copy_grants
 
-Returns a list of snapshot copy grants owned by the account in the destination
-region.
+Returns a list of snapshot copy grants owned by the Amazon Web Services account
+in the destination region.
 
 Type annotations for `boto3.client("redshift").describe_snapshot_copy_grants`
 method.
@@ -1836,8 +1983,8 @@ Keyword-only arguments:
 - `SnapshotCopyGrantName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [SnapshotCopyGrantMessageTypeDef](./type_defs.md#snapshotcopygrantmessagetypedef).
@@ -1859,8 +2006,8 @@ Keyword-only arguments:
 
 - `ClusterIdentifier`: `str`
 - `ScheduleIdentifier`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -1921,8 +2068,8 @@ Keyword-only arguments:
 - `ResourceType`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [TaggedResourceListMessageTypeDef](./type_defs.md#taggedresourcelistmessagetypedef).
@@ -1947,8 +2094,8 @@ Keyword-only arguments:
   [UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype)
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns [UsageLimitListTypeDef](./type_defs.md#usagelimitlisttypedef).
 
@@ -1990,6 +2137,28 @@ Keyword-only arguments:
 
 Returns
 [DisableSnapshotCopyResultTypeDef](./type_defs.md#disablesnapshotcopyresulttypedef).
+
+### disassociate_data_share_consumer
+
+From a consumer account, remove association for the specified datashare.
+
+Type annotations for
+`boto3.client("redshift").disassociate_data_share_consumer` method.
+
+Boto3 documentation:
+[Redshift.Client.disassociate_data_share_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disassociate_data_share_consumer)
+
+Arguments mapping described in
+[DisassociateDataShareConsumerMessageRequestTypeDef](./type_defs.md#disassociatedatashareconsumermessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `DataShareArn`: `str` *(required)*
+- `DisassociateEntireAccount`: `bool`
+- `ConsumerArn`: `str`
+
+Returns
+[DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef).
 
 ### enable_logging
 
@@ -2048,7 +2217,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -2074,7 +2243,7 @@ Keyword-only arguments:
 - `DbName`: `str`
 - `DurationSeconds`: `int`
 - `AutoCreate`: `bool`
-- `DbGroups`: `List`\[`str`\]
+- `DbGroups`: `Sequence`\[`str`\]
 
 Returns [ClusterCredentialsTypeDef](./type_defs.md#clustercredentialstypedef).
 
@@ -2162,8 +2331,8 @@ Keyword-only arguments:
 - `ClusterType`: `str`
 - `NodeType`: `str`
 - `NumberOfNodes`: `int`
-- `ClusterSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `ClusterSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `MasterUserPassword`: `str`
 - `ClusterParameterGroupName`: `str`
 - `AutomatedSnapshotRetentionPeriod`: `int`
@@ -2225,8 +2394,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
-- `AddIamRoles`: `List`\[`str`\]
-- `RemoveIamRoles`: `List`\[`str`\]
+- `AddIamRoles`: `Sequence`\[`str`\]
+- `RemoveIamRoles`: `Sequence`\[`str`\]
 
 Returns
 [ModifyClusterIamRolesResultTypeDef](./type_defs.md#modifyclusteriamrolesresulttypedef).
@@ -2272,7 +2441,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
   *(required)*
 
 Returns
@@ -2334,7 +2504,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClusterSubnetGroupName`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `Description`: `str`
 
 Returns
@@ -2355,7 +2525,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 
 Returns
 [EndpointAccessResponseMetadataTypeDef](./type_defs.md#endpointaccessresponsemetadatatypedef).
@@ -2378,8 +2548,8 @@ Keyword-only arguments:
 - `SubscriptionName`: `str` *(required)*
 - `SnsTopicArn`: `str`
 - `SourceType`: `str`
-- `SourceIds`: `List`\[`str`\]
-- `EventCategories`: `List`\[`str`\]
+- `SourceIds`: `Sequence`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
 - `Severity`: `str`
 - `Enabled`: `bool`
 
@@ -2415,8 +2585,9 @@ Returns
 
 ### modify_snapshot_copy_retention_period
 
-Modifies the number of days to retain snapshots in the destination Region after
-they are copied from the source Region.
+Modifies the number of days to retain snapshots in the destination Amazon Web
+Services Region after they are copied from the source Amazon Web Services
+Region.
 
 Type annotations for
 `boto3.client("redshift").modify_snapshot_copy_retention_period` method.
@@ -2452,7 +2623,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ScheduleIdentifier`: `str` *(required)*
-- `ScheduleDefinitions`: `List`\[`str`\] *(required)*
+- `ScheduleDefinitions`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [SnapshotScheduleResponseMetadataTypeDef](./type_defs.md#snapshotscheduleresponsemetadatatypedef).
@@ -2537,6 +2708,25 @@ Keyword-only arguments:
 Returns
 [RebootClusterResultTypeDef](./type_defs.md#rebootclusterresulttypedef).
 
+### reject_data_share
+
+From the consumer account, rejects the specified datashare.
+
+Type annotations for `boto3.client("redshift").reject_data_share` method.
+
+Boto3 documentation:
+[Redshift.Client.reject_data_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reject_data_share)
+
+Arguments mapping described in
+[RejectDataShareMessageRequestTypeDef](./type_defs.md#rejectdatasharemessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `DataShareArn`: `str` *(required)*
+
+Returns
+[DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef).
+
 ### reset_cluster_parameter_group
 
 Sets one or more parameters of the specified parameter group to their default
@@ -2555,7 +2745,8 @@ Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 - `ResetAllParameters`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
 [ClusterParameterGroupNameMessageTypeDef](./type_defs.md#clusterparametergroupnamemessagetypedef).
@@ -2611,8 +2802,8 @@ Keyword-only arguments:
 - `HsmConfigurationIdentifier`: `str`
 - `ElasticIp`: `str`
 - `ClusterParameterGroupName`: `str`
-- `ClusterSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `ClusterSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `PreferredMaintenanceWindow`: `str`
 - `AutomatedSnapshotRetentionPeriod`: `int`
 - `ManualSnapshotRetentionPeriod`: `int`
@@ -2620,7 +2811,7 @@ Keyword-only arguments:
 - `NodeType`: `str`
 - `EnhancedVpcRouting`: `bool`
 - `AdditionalInfo`: `str`
-- `IamRoles`: `List`\[`str`\]
+- `IamRoles`: `Sequence`\[`str`\]
 - `MaintenanceTrackName`: `str`
 - `SnapshotScheduleIdentifier`: `str`
 - `NumberOfNodes`: `int`
@@ -2718,7 +2909,7 @@ Keyword-only arguments:
 
 - `ClusterIdentifier`: `str`
 - `Account`: `str`
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 - `Force`: `bool`
 
 Returns
@@ -2726,7 +2917,8 @@ Returns
 
 ### revoke_snapshot_access
 
-Removes the ability of the specified account to restore the specified snapshot.
+Removes the ability of the specified Amazon Web Services account to restore the
+specified snapshot.
 
 Type annotations for `boto3.client("redshift").revoke_snapshot_access` method.
 

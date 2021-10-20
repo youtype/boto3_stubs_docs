@@ -70,6 +70,7 @@ from mypy_boto3_iotdeviceadvisor.literals import StatusType, ...
 
 - [StatusType](./literals.md#statustype)
 - [SuiteRunStatusType](./literals.md#suiterunstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

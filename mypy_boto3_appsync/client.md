@@ -200,6 +200,8 @@ Keyword-only arguments:
   [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - `elasticsearchConfig`:
   [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
+- `openSearchServiceConfig`:
+  [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
 - `httpConfig`:
   [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
 - `relationalDatabaseConfig`:
@@ -256,10 +258,12 @@ Keyword-only arguments:
   [UserPoolConfigTypeDef](./type_defs.md#userpoolconfigtypedef)
 - `openIDConnectConfig`:
   [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `additionalAuthenticationProviders`:
-  `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
+  `Sequence`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
+- `lambdaAuthorizerConfig`:
+  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
 Returns
 [CreateGraphqlApiResponseTypeDef](./type_defs.md#creategraphqlapiresponsetypedef).
@@ -476,7 +480,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -848,7 +852,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -867,7 +871,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -941,6 +945,8 @@ Keyword-only arguments:
   [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - `elasticsearchConfig`:
   [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
+- `openSearchServiceConfig`:
+  [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
 - `httpConfig`:
   [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
 - `relationalDatabaseConfig`:
@@ -1000,8 +1006,10 @@ Keyword-only arguments:
 - `openIDConnectConfig`:
   [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
 - `additionalAuthenticationProviders`:
-  `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
+  `Sequence`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
+- `lambdaAuthorizerConfig`:
+  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
 Returns
 [UpdateGraphqlApiResponseTypeDef](./type_defs.md#updategraphqlapiresponsetypedef).

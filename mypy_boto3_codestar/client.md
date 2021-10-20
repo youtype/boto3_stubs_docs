@@ -148,9 +148,9 @@ Keyword-only arguments:
 - `id`: `str` *(required)*
 - `description`: `str`
 - `clientRequestToken`: `str`
-- `sourceCode`: `List`\[[CodeTypeDef](./type_defs.md#codetypedef)\]
+- `sourceCode`: `Sequence`\[[CodeTypeDef](./type_defs.md#codetypedef)\]
 - `toolchain`: [ToolchainTypeDef](./type_defs.md#toolchaintypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
@@ -289,7 +289,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -412,7 +412,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns [TagProjectResultTypeDef](./type_defs.md#tagprojectresulttypedef).
 
@@ -431,7 +431,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
-- `tags`: `List`\[`str`\] *(required)*
+- `tags`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

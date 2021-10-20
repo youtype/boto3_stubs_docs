@@ -136,8 +136,8 @@ Required fields:
 
 Optional fields:
 
-- `resourceArns`: `List`\[`str`\]
-- `principals`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
 - `clientToken`: `str`
 
 ## AssociateResourceShareResponseTypeDef
@@ -166,12 +166,12 @@ Required fields:
 
 Optional fields:
 
-- `resourceArns`: `List`\[`str`\]
-- `principals`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `allowExternalPrincipals`: `bool`
 - `clientToken`: `str`
-- `permissionArns`: `List`\[`str`\]
+- `permissionArns`: `Sequence`\[`str`\]
 
 ## CreateResourceShareResponseTypeDef
 
@@ -253,8 +253,8 @@ Required fields:
 
 Optional fields:
 
-- `resourceArns`: `List`\[`str`\]
-- `principals`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
 - `clientToken`: `str`
 
 ## DisassociateResourceShareResponseTypeDef
@@ -318,7 +318,7 @@ from mypy_boto3_ram.type_defs import GetResourcePoliciesRequestRequestTypeDef
 
 Required fields:
 
-- `resourceArns`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -352,7 +352,7 @@ Required fields:
 
 Optional fields:
 
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `resourceArn`: `str`
 - `principal`: `str`
 - `associationStatus`:
@@ -382,8 +382,8 @@ from mypy_boto3_ram.type_defs import GetResourceShareInvitationsRequestRequestTy
 
 Optional fields:
 
-- `resourceShareInvitationArns`: `List`\[`str`\]
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareInvitationArns`: `Sequence`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -413,11 +413,12 @@ Required fields:
 
 Optional fields:
 
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `resourceShareStatus`:
   [ResourceShareStatusType](./literals.md#resourcesharestatustype)
 - `name`: `str`
-- `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `tagFilters`:
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `permissionArn`: `str`
@@ -503,9 +504,9 @@ Required fields:
 Optional fields:
 
 - `resourceArn`: `str`
-- `principals`: `List`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
 - `resourceType`: `str`
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -590,8 +591,8 @@ Optional fields:
 
 - `principal`: `str`
 - `resourceType`: `str`
-- `resourceArns`: `List`\[`str`\]
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -831,7 +832,7 @@ from mypy_boto3_ram.type_defs import TagFilterTypeDef
 Optional fields:
 
 - `tagKey`: `str`
-- `tagValues`: `List`\[`str`\]
+- `tagValues`: `Sequence`\[`str`\]
 
 ## TagResourceRequestRequestTypeDef
 
@@ -842,7 +843,7 @@ from mypy_boto3_ram.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceShareArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -864,7 +865,7 @@ from mypy_boto3_ram.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceShareArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateResourceShareRequestRequestTypeDef
 

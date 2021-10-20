@@ -175,6 +175,8 @@ from mypy_boto3_workdocs.literals import ActivityTypeType, ...
 - [UserSortTypeType](./literals.md#usersorttypetype)
 - [UserStatusTypeType](./literals.md#userstatustypetype)
 - [UserTypeType](./literals.md#usertypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

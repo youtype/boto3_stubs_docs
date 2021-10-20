@@ -222,9 +222,9 @@ Keyword-only arguments:
 - `enabled`: `bool`
 - `generateDistinctId`: `bool`
 - `value`: `str`
-- `stageKeys`: `List`\[[StageKeyTypeDef](./type_defs.md#stagekeytypedef)\]
+- `stageKeys`: `Sequence`\[[StageKeyTypeDef](./type_defs.md#stagekeytypedef)\]
 - `customerId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ApiKeyResponseMetadataTypeDef](./type_defs.md#apikeyresponsemetadatatypedef).
@@ -246,7 +246,7 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `name`: `str` *(required)*
 - `type`: [AuthorizerTypeType](./literals.md#authorizertypetype) *(required)*
-- `providerARNs`: `List`\[`str`\]
+- `providerARNs`: `Sequence`\[`str`\]
 - `authType`: `str`
 - `authorizerUri`: `str`
 - `authorizerCredentials`: `str`
@@ -302,7 +302,7 @@ Keyword-only arguments:
 - `cacheClusterEnabled`: `bool`
 - `cacheClusterSize`:
   [CacheClusterSizeType](./literals.md#cacheclustersizetype)
-- `variables`: `Dict`\[`str`, `str`\]
+- `variables`: `Mapping`\[`str`, `str`\]
 - `canarySettings`:
   [DeploymentCanarySettingsTypeDef](./type_defs.md#deploymentcanarysettingstypedef)
 - `tracingEnabled`: `bool`
@@ -388,10 +388,11 @@ Keyword-only arguments:
 - `regionalCertificateArn`: `str`
 - `endpointConfiguration`:
   [EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `securityPolicy`: [SecurityPolicyType](./literals.md#securitypolicytype)
 - `mutualTlsAuthentication`:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
+- `ownershipVerificationCertificateArn`: `str`
 
 Returns
 [DomainNameResponseMetadataTypeDef](./type_defs.md#domainnameresponsemetadatatypedef).
@@ -481,13 +482,13 @@ Keyword-only arguments:
 - `description`: `str`
 - `version`: `str`
 - `cloneFrom`: `str`
-- `binaryMediaTypes`: `List`\[`str`\]
+- `binaryMediaTypes`: `Sequence`\[`str`\]
 - `minimumCompressionSize`: `int`
 - `apiKeySource`: [ApiKeySourceTypeType](./literals.md#apikeysourcetypetype)
 - `endpointConfiguration`:
   [EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)
 - `policy`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `disableExecuteApiEndpoint`: `bool`
 
 Returns
@@ -515,12 +516,12 @@ Keyword-only arguments:
 - `cacheClusterEnabled`: `bool`
 - `cacheClusterSize`:
   [CacheClusterSizeType](./literals.md#cacheclustersizetype)
-- `variables`: `Dict`\[`str`, `str`\]
+- `variables`: `Mapping`\[`str`, `str`\]
 - `documentationVersion`: `str`
 - `canarySettings`:
   [CanarySettingsTypeDef](./type_defs.md#canarysettingstypedef)
 - `tracingEnabled`: `bool`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [StageResponseMetadataTypeDef](./type_defs.md#stageresponsemetadatatypedef).
@@ -542,10 +543,10 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
-- `apiStages`: `List`\[[ApiStageTypeDef](./type_defs.md#apistagetypedef)\]
+- `apiStages`: `Sequence`\[[ApiStageTypeDef](./type_defs.md#apistagetypedef)\]
 - `throttle`: [ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef)
 - `quota`: [QuotaSettingsTypeDef](./type_defs.md#quotasettingstypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [UsagePlanResponseMetadataTypeDef](./type_defs.md#usageplanresponsemetadatatypedef).
@@ -588,9 +589,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
-- `targetArns`: `List`\[`str`\] *(required)*
+- `targetArns`: `Sequence`\[`str`\] *(required)*
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [VpcLinkResponseMetadataTypeDef](./type_defs.md#vpclinkresponsemetadatatypedef).
@@ -1020,7 +1021,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ClientCertificateResponseMetadataTypeDef](./type_defs.md#clientcertificateresponsemetadatatypedef).
@@ -1038,7 +1039,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1234,7 +1235,7 @@ Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `deploymentId`: `str` *(required)*
-- `embed`: `List`\[`str`\]
+- `embed`: `Sequence`\[`str`\]
 
 Returns
 [DeploymentResponseMetadataTypeDef](./type_defs.md#deploymentresponsemetadatatypedef).
@@ -1418,7 +1419,7 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `stageName`: `str` *(required)*
 - `exportType`: `str` *(required)*
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 - `accepts`: `str`
 
 Returns [ExportResponseTypeDef](./type_defs.md#exportresponsetypedef).
@@ -1669,7 +1670,7 @@ Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
-- `embed`: `List`\[`str`\]
+- `embed`: `Sequence`\[`str`\]
 
 Returns
 [ResourceResponseMetadataTypeDef](./type_defs.md#resourceresponsemetadatatypedef).
@@ -1691,7 +1692,7 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `position`: `str`
 - `limit`: `int`
-- `embed`: `List`\[`str`\]
+- `embed`: `Sequence`\[`str`\]
 
 Returns [ResourcesTypeDef](./type_defs.md#resourcestypedef).
 
@@ -1750,7 +1751,7 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `stageName`: `str` *(required)*
 - `sdkType`: `str` *(required)*
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 
 Returns [SdkResponseTypeDef](./type_defs.md#sdkresponsetypedef).
 
@@ -2062,7 +2063,7 @@ Keyword-only arguments:
 
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `failOnWarnings`: `bool`
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 
 Returns
 [RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
@@ -2086,8 +2087,8 @@ Keyword-only arguments:
 - `responseType`:
   [GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) *(required)*
 - `statusCode`: `str`
-- `responseParameters`: `Dict`\[`str`, `str`\]
-- `responseTemplates`: `Dict`\[`str`, `str`\]
+- `responseParameters`: `Mapping`\[`str`, `str`\]
+- `responseTemplates`: `Mapping`\[`str`, `str`\]
 
 Returns
 [GatewayResponseResponseMetadataTypeDef](./type_defs.md#gatewayresponseresponsemetadatatypedef).
@@ -2115,11 +2116,11 @@ Keyword-only arguments:
 - `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `connectionId`: `str`
 - `credentials`: `str`
-- `requestParameters`: `Dict`\[`str`, `str`\]
-- `requestTemplates`: `Dict`\[`str`, `str`\]
+- `requestParameters`: `Mapping`\[`str`, `str`\]
+- `requestTemplates`: `Mapping`\[`str`, `str`\]
 - `passthroughBehavior`: `str`
 - `cacheNamespace`: `str`
-- `cacheKeyParameters`: `List`\[`str`\]
+- `cacheKeyParameters`: `Sequence`\[`str`\]
 - `contentHandling`:
   [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `timeoutInMillis`: `int`
@@ -2148,8 +2149,8 @@ Keyword-only arguments:
 - `httpMethod`: `str` *(required)*
 - `statusCode`: `str` *(required)*
 - `selectionPattern`: `str`
-- `responseParameters`: `Dict`\[`str`, `str`\]
-- `responseTemplates`: `Dict`\[`str`, `str`\]
+- `responseParameters`: `Mapping`\[`str`, `str`\]
+- `responseTemplates`: `Mapping`\[`str`, `str`\]
 - `contentHandling`:
   [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 
@@ -2177,10 +2178,10 @@ Keyword-only arguments:
 - `authorizerId`: `str`
 - `apiKeyRequired`: `bool`
 - `operationName`: `str`
-- `requestParameters`: `Dict`\[`str`, `bool`\]
-- `requestModels`: `Dict`\[`str`, `str`\]
+- `requestParameters`: `Mapping`\[`str`, `bool`\]
+- `requestModels`: `Mapping`\[`str`, `str`\]
 - `requestValidatorId`: `str`
-- `authorizationScopes`: `List`\[`str`\]
+- `authorizationScopes`: `Sequence`\[`str`\]
 
 Returns
 [MethodResponseMetadataTypeDef](./type_defs.md#methodresponsemetadatatypedef).
@@ -2203,8 +2204,8 @@ Keyword-only arguments:
 - `resourceId`: `str` *(required)*
 - `httpMethod`: `str` *(required)*
 - `statusCode`: `str` *(required)*
-- `responseParameters`: `Dict`\[`str`, `bool`\]
-- `responseModels`: `Dict`\[`str`, `str`\]
+- `responseParameters`: `Mapping`\[`str`, `bool`\]
+- `responseModels`: `Mapping`\[`str`, `str`\]
 
 Returns
 [MethodResponseResponseMetadataTypeDef](./type_defs.md#methodresponseresponsemetadatatypedef).
@@ -2228,7 +2229,7 @@ Keyword-only arguments:
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `mode`: [PutModeType](./literals.md#putmodetype)
 - `failOnWarnings`: `bool`
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 
 Returns
 [RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
@@ -2248,7 +2249,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### test_invoke_authorizer
 
@@ -2268,12 +2269,12 @@ Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `authorizerId`: `str` *(required)*
-- `headers`: `Dict`\[`str`, `str`\]
-- `multiValueHeaders`: `Dict`\[`str`, `List`\[`str`\]\]
+- `headers`: `Mapping`\[`str`, `str`\]
+- `multiValueHeaders`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `pathWithQueryString`: `str`
 - `body`: `str`
-- `stageVariables`: `Dict`\[`str`, `str`\]
-- `additionalContext`: `Dict`\[`str`, `str`\]
+- `stageVariables`: `Mapping`\[`str`, `str`\]
+- `additionalContext`: `Mapping`\[`str`, `str`\]
 
 Returns
 [TestInvokeAuthorizerResponseTypeDef](./type_defs.md#testinvokeauthorizerresponsetypedef).
@@ -2298,10 +2299,10 @@ Keyword-only arguments:
 - `httpMethod`: `str` *(required)*
 - `pathWithQueryString`: `str`
 - `body`: `str`
-- `headers`: `Dict`\[`str`, `str`\]
-- `multiValueHeaders`: `Dict`\[`str`, `List`\[`str`\]\]
+- `headers`: `Mapping`\[`str`, `str`\]
+- `multiValueHeaders`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `clientCertificateId`: `str`
-- `stageVariables`: `Dict`\[`str`, `str`\]
+- `stageVariables`: `Mapping`\[`str`, `str`\]
 
 Returns
 [TestInvokeMethodResponseTypeDef](./type_defs.md#testinvokemethodresponsetypedef).
@@ -2321,7 +2322,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_account
 
@@ -2338,7 +2339,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns [AccountTypeDef](./type_defs.md#accounttypedef).
 
@@ -2358,7 +2359,7 @@ Keyword-only arguments:
 
 - `apiKey`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [ApiKeyResponseMetadataTypeDef](./type_defs.md#apikeyresponsemetadatatypedef).
@@ -2380,7 +2381,7 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `authorizerId`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [AuthorizerResponseMetadataTypeDef](./type_defs.md#authorizerresponsemetadatatypedef).
@@ -2403,7 +2404,7 @@ Keyword-only arguments:
 - `domainName`: `str` *(required)*
 - `basePath`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [BasePathMappingResponseMetadataTypeDef](./type_defs.md#basepathmappingresponsemetadatatypedef).
@@ -2425,7 +2426,7 @@ Keyword-only arguments:
 
 - `clientCertificateId`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [ClientCertificateResponseMetadataTypeDef](./type_defs.md#clientcertificateresponsemetadatatypedef).
@@ -2447,7 +2448,7 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `deploymentId`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [DeploymentResponseMetadataTypeDef](./type_defs.md#deploymentresponsemetadatatypedef).
@@ -2473,7 +2474,7 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `documentationPartId`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [DocumentationPartResponseMetadataTypeDef](./type_defs.md#documentationpartresponsemetadatatypedef).
@@ -2499,7 +2500,7 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `documentationVersion`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [DocumentationVersionResponseMetadataTypeDef](./type_defs.md#documentationversionresponsemetadatatypedef).
@@ -2520,7 +2521,7 @@ Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [DomainNameResponseMetadataTypeDef](./type_defs.md#domainnameresponsemetadatatypedef).
@@ -2544,7 +2545,7 @@ Keyword-only arguments:
 - `responseType`:
   [GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [GatewayResponseResponseMetadataTypeDef](./type_defs.md#gatewayresponseresponsemetadatatypedef).
@@ -2567,7 +2568,7 @@ Keyword-only arguments:
 - `resourceId`: `str` *(required)*
 - `httpMethod`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [IntegrationResponseMetadataTypeDef](./type_defs.md#integrationresponsemetadatatypedef).
@@ -2592,7 +2593,7 @@ Keyword-only arguments:
 - `httpMethod`: `str` *(required)*
 - `statusCode`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [IntegrationResponseResponseMetadataTypeDef](./type_defs.md#integrationresponseresponsemetadatatypedef).
@@ -2615,7 +2616,7 @@ Keyword-only arguments:
 - `resourceId`: `str` *(required)*
 - `httpMethod`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [MethodResponseMetadataTypeDef](./type_defs.md#methodresponsemetadatatypedef).
@@ -2640,7 +2641,7 @@ Keyword-only arguments:
 - `httpMethod`: `str` *(required)*
 - `statusCode`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [MethodResponseResponseMetadataTypeDef](./type_defs.md#methodresponseresponsemetadatatypedef).
@@ -2662,7 +2663,7 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `modelName`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [ModelResponseMetadataTypeDef](./type_defs.md#modelresponsemetadatatypedef).
@@ -2685,7 +2686,7 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `requestValidatorId`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [RequestValidatorResponseMetadataTypeDef](./type_defs.md#requestvalidatorresponsemetadatatypedef).
@@ -2707,7 +2708,7 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [ResourceResponseMetadataTypeDef](./type_defs.md#resourceresponsemetadatatypedef).
@@ -2728,7 +2729,7 @@ Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
@@ -2750,7 +2751,7 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `stageName`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [StageResponseMetadataTypeDef](./type_defs.md#stageresponsemetadatatypedef).
@@ -2773,7 +2774,7 @@ Keyword-only arguments:
 - `usagePlanId`: `str` *(required)*
 - `keyId`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns [UsageTypeDef](./type_defs.md#usagetypedef).
 
@@ -2793,7 +2794,7 @@ Keyword-only arguments:
 
 - `usagePlanId`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [UsagePlanResponseMetadataTypeDef](./type_defs.md#usageplanresponsemetadatatypedef).
@@ -2814,7 +2815,7 @@ Keyword-only arguments:
 
 - `vpcLinkId`: `str` *(required)*
 - `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
 [VpcLinkResponseMetadataTypeDef](./type_defs.md#vpclinkresponsemetadatatypedef).

@@ -59,8 +59,8 @@ Boto3 documentation:
 
 Arguments for `BundleTaskCompleteWaiter.wait` method:
 
-- `BundleIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `BundleIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -83,7 +83,7 @@ Boto3 documentation:
 
 Arguments for `ConversionTaskCancelledWaiter.wait` method:
 
-- `ConversionTaskIds`: `List`\[`str`\]
+- `ConversionTaskIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -106,7 +106,7 @@ Boto3 documentation:
 
 Arguments for `ConversionTaskCompletedWaiter.wait` method:
 
-- `ConversionTaskIds`: `List`\[`str`\]
+- `ConversionTaskIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -129,7 +129,7 @@ Boto3 documentation:
 
 Arguments for `ConversionTaskDeletedWaiter.wait` method:
 
-- `ConversionTaskIds`: `List`\[`str`\]
+- `ConversionTaskIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -152,8 +152,8 @@ Boto3 documentation:
 
 Arguments for `CustomerGatewayAvailableWaiter.wait` method:
 
-- `CustomerGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `CustomerGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -175,8 +175,8 @@ Boto3 documentation:
 
 Arguments for `ExportTaskCancelledWaiter.wait` method:
 
-- `ExportTaskIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ExportTaskIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ExportTaskCompletedWaiter
@@ -197,8 +197,8 @@ Boto3 documentation:
 
 Arguments for `ExportTaskCompletedWaiter.wait` method:
 
-- `ExportTaskIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ExportTaskIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ImageAvailableWaiter
@@ -219,10 +219,10 @@ Boto3 documentation:
 
 Arguments for `ImageAvailableWaiter.wait` method:
 
-- `ExecutableUsers`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImageIds`: `List`\[`str`\]
-- `Owners`: `List`\[`str`\]
+- `ExecutableUsers`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImageIds`: `Sequence`\[`str`\]
+- `Owners`: `Sequence`\[`str`\]
 - `IncludeDeprecated`: `bool`
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -245,10 +245,10 @@ Boto3 documentation:
 
 Arguments for `ImageExistsWaiter.wait` method:
 
-- `ExecutableUsers`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImageIds`: `List`\[`str`\]
-- `Owners`: `List`\[`str`\]
+- `ExecutableUsers`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImageIds`: `Sequence`\[`str`\]
+- `Owners`: `Sequence`\[`str`\]
 - `IncludeDeprecated`: `bool`
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -271,8 +271,8 @@ Boto3 documentation:
 
 Arguments for `InstanceExistsWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -296,8 +296,8 @@ Boto3 documentation:
 
 Arguments for `InstanceRunningWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -321,8 +321,8 @@ Boto3 documentation:
 
 Arguments for `InstanceStatusOkWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -347,8 +347,8 @@ Boto3 documentation:
 
 Arguments for `InstanceStoppedWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -372,8 +372,8 @@ Boto3 documentation:
 
 Arguments for `InstanceTerminatedWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -397,9 +397,9 @@ Boto3 documentation:
 
 Arguments for `KeyPairExistsWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `KeyNames`: `List`\[`str`\]
-- `KeyPairIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `KeyNames`: `Sequence`\[`str`\]
+- `KeyPairIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -422,9 +422,9 @@ Boto3 documentation:
 Arguments for `NatGatewayAvailableWaiter.wait` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
-- `NatGatewayIds`: `List`\[`str`\]
+- `NatGatewayIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -447,9 +447,9 @@ Boto3 documentation:
 
 Arguments for `NetworkInterfaceAvailableWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -495,9 +495,9 @@ Boto3 documentation:
 
 Arguments for `SecurityGroupExistsWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `GroupIds`: `List`\[`str`\]
-- `GroupNames`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `GroupIds`: `Sequence`\[`str`\]
+- `GroupNames`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -521,12 +521,12 @@ Boto3 documentation:
 
 Arguments for `SnapshotCompletedWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `OwnerIds`: `List`\[`str`\]
-- `RestorableByUserIds`: `List`\[`str`\]
-- `SnapshotIds`: `List`\[`str`\]
+- `OwnerIds`: `Sequence`\[`str`\]
+- `RestorableByUserIds`: `Sequence`\[`str`\]
+- `SnapshotIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -549,9 +549,9 @@ Boto3 documentation:
 
 Arguments for `SpotInstanceRequestFulfilledWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `SpotInstanceRequestIds`: `List`\[`str`\]
+- `SpotInstanceRequestIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -574,8 +574,8 @@ Boto3 documentation:
 
 Arguments for `SubnetAvailableWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SubnetIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -599,8 +599,8 @@ Boto3 documentation:
 
 Arguments for `SystemStatusOkWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -625,8 +625,8 @@ Boto3 documentation:
 
 Arguments for `VolumeAvailableWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VolumeIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VolumeIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -650,8 +650,8 @@ Boto3 documentation:
 
 Arguments for `VolumeDeletedWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VolumeIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VolumeIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -675,8 +675,8 @@ Boto3 documentation:
 
 Arguments for `VolumeInUseWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VolumeIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VolumeIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -700,8 +700,8 @@ Boto3 documentation:
 
 Arguments for `VpcAvailableWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpcIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpcIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -725,8 +725,8 @@ Boto3 documentation:
 
 Arguments for `VpcExistsWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpcIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpcIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -751,9 +751,9 @@ Boto3 documentation:
 
 Arguments for `VpcPeeringConnectionDeletedWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `VpcPeeringConnectionIds`: `List`\[`str`\]
+- `VpcPeeringConnectionIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -777,9 +777,9 @@ Boto3 documentation:
 
 Arguments for `VpcPeeringConnectionExistsWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `VpcPeeringConnectionIds`: `List`\[`str`\]
+- `VpcPeeringConnectionIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -803,8 +803,8 @@ Boto3 documentation:
 
 Arguments for `VpnConnectionAvailableWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpnConnectionIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpnConnectionIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -827,7 +827,7 @@ Boto3 documentation:
 
 Arguments for `VpnConnectionDeletedWaiter.wait` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpnConnectionIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpnConnectionIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

@@ -124,7 +124,7 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 - `Budget`: [BudgetTypeDef](./type_defs.md#budgettypedef) *(required)*
 - `NotificationsWithSubscribers`:
-  `List`\[[NotificationWithSubscribersTypeDef](./type_defs.md#notificationwithsubscriberstypedef)\]
+  `Sequence`\[[NotificationWithSubscribersTypeDef](./type_defs.md#notificationwithsubscriberstypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -155,7 +155,8 @@ Keyword-only arguments:
 - `ApprovalModel`: [ApprovalModelType](./literals.md#approvalmodeltype)
   *(required)*
 - `Subscribers`:
-  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\] *(required)*
+  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+  *(required)*
 
 Returns
 [CreateBudgetActionResponseTypeDef](./type_defs.md#createbudgetactionresponsetypedef).
@@ -179,7 +180,8 @@ Keyword-only arguments:
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
   *(required)*
 - `Subscribers`:
-  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\] *(required)*
+  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -529,7 +531,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -579,7 +581,7 @@ Keyword-only arguments:
 - `ExecutionRoleArn`: `str`
 - `ApprovalModel`: [ApprovalModelType](./literals.md#approvalmodeltype)
 - `Subscribers`:
-  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
 Returns
 [UpdateBudgetActionResponseTypeDef](./type_defs.md#updatebudgetactionresponsetypedef).

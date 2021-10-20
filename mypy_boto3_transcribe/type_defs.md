@@ -8,7 +8,15 @@ type annotations stubs module
 [mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
 - [Typed dictionaries for boto3 TranscribeService module](#typed-dictionaries-for-boto3-transcribeservice-module)
+  - [AbsoluteTimeRangeTypeDef](#absolutetimerangetypedef)
+  - [CallAnalyticsJobSettingsTypeDef](#callanalyticsjobsettingstypedef)
+  - [CallAnalyticsJobSummaryTypeDef](#callanalyticsjobsummarytypedef)
+  - [CallAnalyticsJobTypeDef](#callanalyticsjobtypedef)
+  - [CategoryPropertiesTypeDef](#categorypropertiestypedef)
+  - [ChannelDefinitionTypeDef](#channeldefinitiontypedef)
   - [ContentRedactionTypeDef](#contentredactiontypedef)
+  - [CreateCallAnalyticsCategoryRequestRequestTypeDef](#createcallanalyticscategoryrequestrequesttypedef)
+  - [CreateCallAnalyticsCategoryResponseTypeDef](#createcallanalyticscategoryresponsetypedef)
   - [CreateLanguageModelRequestRequestTypeDef](#createlanguagemodelrequestrequesttypedef)
   - [CreateLanguageModelResponseTypeDef](#createlanguagemodelresponsetypedef)
   - [CreateMedicalVocabularyRequestRequestTypeDef](#createmedicalvocabularyrequestrequesttypedef)
@@ -17,6 +25,8 @@ type annotations stubs module
   - [CreateVocabularyFilterResponseTypeDef](#createvocabularyfilterresponsetypedef)
   - [CreateVocabularyRequestRequestTypeDef](#createvocabularyrequestrequesttypedef)
   - [CreateVocabularyResponseTypeDef](#createvocabularyresponsetypedef)
+  - [DeleteCallAnalyticsCategoryRequestRequestTypeDef](#deletecallanalyticscategoryrequestrequesttypedef)
+  - [DeleteCallAnalyticsJobRequestRequestTypeDef](#deletecallanalyticsjobrequestrequesttypedef)
   - [DeleteLanguageModelRequestRequestTypeDef](#deletelanguagemodelrequestrequesttypedef)
   - [DeleteMedicalTranscriptionJobRequestRequestTypeDef](#deletemedicaltranscriptionjobrequestrequesttypedef)
   - [DeleteMedicalVocabularyRequestRequestTypeDef](#deletemedicalvocabularyrequestrequesttypedef)
@@ -25,6 +35,10 @@ type annotations stubs module
   - [DeleteVocabularyRequestRequestTypeDef](#deletevocabularyrequestrequesttypedef)
   - [DescribeLanguageModelRequestRequestTypeDef](#describelanguagemodelrequestrequesttypedef)
   - [DescribeLanguageModelResponseTypeDef](#describelanguagemodelresponsetypedef)
+  - [GetCallAnalyticsCategoryRequestRequestTypeDef](#getcallanalyticscategoryrequestrequesttypedef)
+  - [GetCallAnalyticsCategoryResponseTypeDef](#getcallanalyticscategoryresponsetypedef)
+  - [GetCallAnalyticsJobRequestRequestTypeDef](#getcallanalyticsjobrequestrequesttypedef)
+  - [GetCallAnalyticsJobResponseTypeDef](#getcallanalyticsjobresponsetypedef)
   - [GetMedicalTranscriptionJobRequestRequestTypeDef](#getmedicaltranscriptionjobrequestrequesttypedef)
   - [GetMedicalTranscriptionJobResponseTypeDef](#getmedicaltranscriptionjobresponsetypedef)
   - [GetMedicalVocabularyRequestRequestTypeDef](#getmedicalvocabularyrequestrequesttypedef)
@@ -36,14 +50,21 @@ type annotations stubs module
   - [GetVocabularyRequestRequestTypeDef](#getvocabularyrequestrequesttypedef)
   - [GetVocabularyResponseTypeDef](#getvocabularyresponsetypedef)
   - [InputDataConfigTypeDef](#inputdataconfigtypedef)
+  - [InterruptionFilterTypeDef](#interruptionfiltertypedef)
   - [JobExecutionSettingsTypeDef](#jobexecutionsettingstypedef)
   - [LanguageModelTypeDef](#languagemodeltypedef)
+  - [ListCallAnalyticsCategoriesRequestRequestTypeDef](#listcallanalyticscategoriesrequestrequesttypedef)
+  - [ListCallAnalyticsCategoriesResponseTypeDef](#listcallanalyticscategoriesresponsetypedef)
+  - [ListCallAnalyticsJobsRequestRequestTypeDef](#listcallanalyticsjobsrequestrequesttypedef)
+  - [ListCallAnalyticsJobsResponseTypeDef](#listcallanalyticsjobsresponsetypedef)
   - [ListLanguageModelsRequestRequestTypeDef](#listlanguagemodelsrequestrequesttypedef)
   - [ListLanguageModelsResponseTypeDef](#listlanguagemodelsresponsetypedef)
   - [ListMedicalTranscriptionJobsRequestRequestTypeDef](#listmedicaltranscriptionjobsrequestrequesttypedef)
   - [ListMedicalTranscriptionJobsResponseTypeDef](#listmedicaltranscriptionjobsresponsetypedef)
   - [ListMedicalVocabulariesRequestRequestTypeDef](#listmedicalvocabulariesrequestrequesttypedef)
   - [ListMedicalVocabulariesResponseTypeDef](#listmedicalvocabulariesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListTranscriptionJobsRequestRequestTypeDef](#listtranscriptionjobsrequestrequesttypedef)
   - [ListTranscriptionJobsResponseTypeDef](#listtranscriptionjobsresponsetypedef)
   - [ListVocabulariesRequestRequestTypeDef](#listvocabulariesrequestrequesttypedef)
@@ -56,15 +77,29 @@ type annotations stubs module
   - [MedicalTranscriptionJobTypeDef](#medicaltranscriptionjobtypedef)
   - [MedicalTranscriptionSettingTypeDef](#medicaltranscriptionsettingtypedef)
   - [ModelSettingsTypeDef](#modelsettingstypedef)
+  - [NonTalkTimeFilterTypeDef](#nontalktimefiltertypedef)
+  - [RelativeTimeRangeTypeDef](#relativetimerangetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RuleTypeDef](#ruletypedef)
+  - [SentimentFilterTypeDef](#sentimentfiltertypedef)
   - [SettingsTypeDef](#settingstypedef)
+  - [StartCallAnalyticsJobRequestRequestTypeDef](#startcallanalyticsjobrequestrequesttypedef)
+  - [StartCallAnalyticsJobResponseTypeDef](#startcallanalyticsjobresponsetypedef)
   - [StartMedicalTranscriptionJobRequestRequestTypeDef](#startmedicaltranscriptionjobrequestrequesttypedef)
   - [StartMedicalTranscriptionJobResponseTypeDef](#startmedicaltranscriptionjobresponsetypedef)
   - [StartTranscriptionJobRequestRequestTypeDef](#starttranscriptionjobrequestrequesttypedef)
   - [StartTranscriptionJobResponseTypeDef](#starttranscriptionjobresponsetypedef)
+  - [SubtitlesOutputTypeDef](#subtitlesoutputtypedef)
+  - [SubtitlesTypeDef](#subtitlestypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [TagTypeDef](#tagtypedef)
+  - [TranscriptFilterTypeDef](#transcriptfiltertypedef)
   - [TranscriptTypeDef](#transcripttypedef)
   - [TranscriptionJobSummaryTypeDef](#transcriptionjobsummarytypedef)
   - [TranscriptionJobTypeDef](#transcriptionjobtypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateCallAnalyticsCategoryRequestRequestTypeDef](#updatecallanalyticscategoryrequestrequesttypedef)
+  - [UpdateCallAnalyticsCategoryResponseTypeDef](#updatecallanalyticscategoryresponsetypedef)
   - [UpdateMedicalVocabularyRequestRequestTypeDef](#updatemedicalvocabularyrequestrequesttypedef)
   - [UpdateMedicalVocabularyResponseTypeDef](#updatemedicalvocabularyresponsetypedef)
   - [UpdateVocabularyFilterRequestRequestTypeDef](#updatevocabularyfilterrequestrequesttypedef)
@@ -73,6 +108,105 @@ type annotations stubs module
   - [UpdateVocabularyResponseTypeDef](#updatevocabularyresponsetypedef)
   - [VocabularyFilterInfoTypeDef](#vocabularyfilterinfotypedef)
   - [VocabularyInfoTypeDef](#vocabularyinfotypedef)
+
+## AbsoluteTimeRangeTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import AbsoluteTimeRangeTypeDef
+```
+
+Optional fields:
+
+- `StartTime`: `int`
+- `EndTime`: `int`
+- `First`: `int`
+- `Last`: `int`
+
+## CallAnalyticsJobSettingsTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import CallAnalyticsJobSettingsTypeDef
+```
+
+Optional fields:
+
+- `VocabularyName`: `str`
+- `VocabularyFilterName`: `str`
+- `VocabularyFilterMethod`:
+  [VocabularyFilterMethodType](./literals.md#vocabularyfiltermethodtype)
+- `LanguageModelName`: `str`
+- `ContentRedaction`:
+  [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
+- `LanguageOptions`:
+  `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
+
+## CallAnalyticsJobSummaryTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import CallAnalyticsJobSummaryTypeDef
+```
+
+Optional fields:
+
+- `CallAnalyticsJobName`: `str`
+- `CreationTime`: `datetime`
+- `StartTime`: `datetime`
+- `CompletionTime`: `datetime`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `CallAnalyticsJobStatus`:
+  [CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype)
+- `FailureReason`: `str`
+
+## CallAnalyticsJobTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import CallAnalyticsJobTypeDef
+```
+
+Optional fields:
+
+- `CallAnalyticsJobName`: `str`
+- `CallAnalyticsJobStatus`:
+  [CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `MediaSampleRateHertz`: `int`
+- `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
+- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef)
+- `Transcript`: [TranscriptTypeDef](./type_defs.md#transcripttypedef)
+- `StartTime`: `datetime`
+- `CreationTime`: `datetime`
+- `CompletionTime`: `datetime`
+- `FailureReason`: `str`
+- `DataAccessRoleArn`: `str`
+- `IdentifiedLanguageScore`: `float`
+- `Settings`:
+  [CallAnalyticsJobSettingsTypeDef](./type_defs.md#callanalyticsjobsettingstypedef)
+- `ChannelDefinitions`:
+  `List`\[[ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef)\]
+
+## CategoryPropertiesTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import CategoryPropertiesTypeDef
+```
+
+Optional fields:
+
+- `CategoryName`: `str`
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `CreateTime`: `datetime`
+- `LastUpdateTime`: `datetime`
+
+## ChannelDefinitionTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ChannelDefinitionTypeDef
+```
+
+Optional fields:
+
+- `ChannelId`: `int`
+- `ParticipantRole`: [ParticipantRoleType](./literals.md#participantroletype)
 
 ## ContentRedactionTypeDef
 
@@ -85,6 +219,30 @@ Required fields:
 - `RedactionType`: `Literal['PII']` (see
   [RedactionTypeType](./literals.md#redactiontypetype))
 - `RedactionOutput`: [RedactionOutputType](./literals.md#redactionoutputtype)
+
+## CreateCallAnalyticsCategoryRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import CreateCallAnalyticsCategoryRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CategoryName`: `str`
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+
+## CreateCallAnalyticsCategoryResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import CreateCallAnalyticsCategoryResponseTypeDef
+```
+
+Required fields:
+
+- `CategoryProperties`:
+  [CategoryPropertiesTypeDef](./type_defs.md#categorypropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateLanguageModelRequestRequestTypeDef
 
@@ -99,6 +257,10 @@ Required fields:
 - `ModelName`: `str`
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+
+Optional fields:
+
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateLanguageModelResponseTypeDef
 
@@ -129,6 +291,10 @@ Required fields:
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `VocabularyFileUri`: `str`
 
+Optional fields:
+
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## CreateMedicalVocabularyResponseTypeDef
 
 ```python
@@ -158,8 +324,9 @@ Required fields:
 
 Optional fields:
 
-- `Words`: `List`\[`str`\]
+- `Words`: `Sequence`\[`str`\]
 - `VocabularyFilterFileUri`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateVocabularyFilterResponseTypeDef
 
@@ -188,8 +355,9 @@ Required fields:
 
 Optional fields:
 
-- `Phrases`: `List`\[`str`\]
+- `Phrases`: `Sequence`\[`str`\]
 - `VocabularyFileUri`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateVocabularyResponseTypeDef
 
@@ -206,6 +374,26 @@ Required fields:
 - `FailureReason`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteCallAnalyticsCategoryRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import DeleteCallAnalyticsCategoryRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CategoryName`: `str`
+
+## DeleteCallAnalyticsJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import DeleteCallAnalyticsJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CallAnalyticsJobName`: `str`
 
 ## DeleteLanguageModelRequestRequestTypeDef
 
@@ -286,6 +474,52 @@ from mypy_boto3_transcribe.type_defs import DescribeLanguageModelResponseTypeDef
 Required fields:
 
 - `LanguageModel`: [LanguageModelTypeDef](./type_defs.md#languagemodeltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetCallAnalyticsCategoryRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import GetCallAnalyticsCategoryRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CategoryName`: `str`
+
+## GetCallAnalyticsCategoryResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import GetCallAnalyticsCategoryResponseTypeDef
+```
+
+Required fields:
+
+- `CategoryProperties`:
+  [CategoryPropertiesTypeDef](./type_defs.md#categorypropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetCallAnalyticsJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import GetCallAnalyticsJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CallAnalyticsJobName`: `str`
+
+## GetCallAnalyticsJobResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import GetCallAnalyticsJobResponseTypeDef
+```
+
+Required fields:
+
+- `CallAnalyticsJob`:
+  [CallAnalyticsJobTypeDef](./type_defs.md#callanalyticsjobtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -429,6 +663,22 @@ Optional fields:
 
 - `TuningDataS3Uri`: `str`
 
+## InterruptionFilterTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import InterruptionFilterTypeDef
+```
+
+Optional fields:
+
+- `Threshold`: `int`
+- `ParticipantRole`: [ParticipantRoleType](./literals.md#participantroletype)
+- `AbsoluteTimeRange`:
+  [AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef)
+- `RelativeTimeRange`:
+  [RelativeTimeRangeTypeDef](./type_defs.md#relativetimerangetypedef)
+- `Negate`: `bool`
+
 ## JobExecutionSettingsTypeDef
 
 ```python
@@ -458,6 +708,61 @@ Optional fields:
 - `FailureReason`: `str`
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+
+## ListCallAnalyticsCategoriesRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListCallAnalyticsCategoriesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListCallAnalyticsCategoriesResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListCallAnalyticsCategoriesResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `Categories`:
+  `List`\[[CategoryPropertiesTypeDef](./type_defs.md#categorypropertiestypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListCallAnalyticsJobsRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListCallAnalyticsJobsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `Status`:
+  [CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype)
+- `JobNameContains`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListCallAnalyticsJobsResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListCallAnalyticsJobsResponseTypeDef
+```
+
+Required fields:
+
+- `Status`:
+  [CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype)
+- `NextToken`: `str`
+- `CallAnalyticsJobSummaries`:
+  `List`\[[CallAnalyticsJobSummaryTypeDef](./type_defs.md#callanalyticsjobsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListLanguageModelsRequestRequestTypeDef
 
@@ -541,6 +846,29 @@ Required fields:
 - `NextToken`: `str`
 - `Vocabularies`:
   `List`\[[VocabularyInfoTypeDef](./type_defs.md#vocabularyinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListTagsForResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListTagsForResourceResponseTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -637,6 +965,7 @@ from mypy_boto3_transcribe.type_defs import MediaTypeDef
 Optional fields:
 
 - `MediaFileUri`: `str`
+- `RedactedMediaFileUri`: `str`
 
 ## MedicalTranscriptTypeDef
 
@@ -700,6 +1029,7 @@ Optional fields:
 - `Specialty`: `Literal['PRIMARYCARE']` (see
   [SpecialtyType](./literals.md#specialtytype))
 - `Type`: [TypeType](./literals.md#typetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## MedicalTranscriptionSettingTypeDef
 
@@ -726,6 +1056,34 @@ Optional fields:
 
 - `LanguageModelName`: `str`
 
+## NonTalkTimeFilterTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import NonTalkTimeFilterTypeDef
+```
+
+Optional fields:
+
+- `Threshold`: `int`
+- `AbsoluteTimeRange`:
+  [AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef)
+- `RelativeTimeRange`:
+  [RelativeTimeRangeTypeDef](./type_defs.md#relativetimerangetypedef)
+- `Negate`: `bool`
+
+## RelativeTimeRangeTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import RelativeTimeRangeTypeDef
+```
+
+Optional fields:
+
+- `StartPercentage`: `int`
+- `EndPercentage`: `int`
+- `First`: `int`
+- `Last`: `int`
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -739,6 +1097,43 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
+
+## RuleTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import RuleTypeDef
+```
+
+Optional fields:
+
+- `NonTalkTimeFilter`:
+  [NonTalkTimeFilterTypeDef](./type_defs.md#nontalktimefiltertypedef)
+- `InterruptionFilter`:
+  [InterruptionFilterTypeDef](./type_defs.md#interruptionfiltertypedef)
+- `TranscriptFilter`:
+  [TranscriptFilterTypeDef](./type_defs.md#transcriptfiltertypedef)
+- `SentimentFilter`:
+  [SentimentFilterTypeDef](./type_defs.md#sentimentfiltertypedef)
+
+## SentimentFilterTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import SentimentFilterTypeDef
+```
+
+Required fields:
+
+- `Sentiments`:
+  `Sequence`\[[SentimentValueType](./literals.md#sentimentvaluetype)\]
+
+Optional fields:
+
+- `AbsoluteTimeRange`:
+  [AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef)
+- `RelativeTimeRange`:
+  [RelativeTimeRangeTypeDef](./type_defs.md#relativetimerangetypedef)
+- `ParticipantRole`: [ParticipantRoleType](./literals.md#participantroletype)
+- `Negate`: `bool`
 
 ## SettingsTypeDef
 
@@ -757,6 +1152,40 @@ Optional fields:
 - `VocabularyFilterName`: `str`
 - `VocabularyFilterMethod`:
   [VocabularyFilterMethodType](./literals.md#vocabularyfiltermethodtype)
+
+## StartCallAnalyticsJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import StartCallAnalyticsJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CallAnalyticsJobName`: `str`
+- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef)
+- `DataAccessRoleArn`: `str`
+
+Optional fields:
+
+- `OutputLocation`: `str`
+- `OutputEncryptionKMSKeyId`: `str`
+- `Settings`:
+  [CallAnalyticsJobSettingsTypeDef](./type_defs.md#callanalyticsjobsettingstypedef)
+- `ChannelDefinitions`:
+  `Sequence`\[[ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef)\]
+
+## StartCallAnalyticsJobResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import StartCallAnalyticsJobResponseTypeDef
+```
+
+Required fields:
+
+- `CallAnalyticsJob`:
+  [CallAnalyticsJobTypeDef](./type_defs.md#callanalyticsjobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StartMedicalTranscriptionJobRequestRequestTypeDef
 
@@ -780,10 +1209,12 @@ Optional fields:
 - `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
 - `OutputKey`: `str`
 - `OutputEncryptionKMSKeyId`: `str`
+- `KMSEncryptionContext`: `Mapping`\[`str`, `str`\]
 - `Settings`:
   [MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef)
 - `ContentIdentificationType`: `Literal['PHI']` (see
   [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype))
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartMedicalTranscriptionJobResponseTypeDef
 
@@ -817,6 +1248,7 @@ Optional fields:
 - `OutputBucketName`: `str`
 - `OutputKey`: `str`
 - `OutputEncryptionKMSKeyId`: `str`
+- `KMSEncryptionContext`: `Mapping`\[`str`, `str`\]
 - `Settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
 - `ModelSettings`: [ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef)
 - `JobExecutionSettings`:
@@ -825,7 +1257,9 @@ Optional fields:
   [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
 - `IdentifyLanguage`: `bool`
 - `LanguageOptions`:
-  `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
+  `Sequence`\[[LanguageCodeType](./literals.md#languagecodetype)\]
+- `Subtitles`: [SubtitlesTypeDef](./type_defs.md#subtitlestypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartTranscriptionJobResponseTypeDef
 
@@ -839,6 +1273,71 @@ Required fields:
   [TranscriptionJobTypeDef](./type_defs.md#transcriptionjobtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## SubtitlesOutputTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import SubtitlesOutputTypeDef
+```
+
+Optional fields:
+
+- `Formats`: `List`\[[SubtitleFormatType](./literals.md#subtitleformattype)\]
+- `SubtitleFileUris`: `List`\[`str`\]
+
+## SubtitlesTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import SubtitlesTypeDef
+```
+
+Optional fields:
+
+- `Formats`:
+  `Sequence`\[[SubtitleFormatType](./literals.md#subtitleformattype)\]
+
+## TagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import TagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## TagTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import TagTypeDef
+```
+
+Required fields:
+
+- `Key`: `str`
+- `Value`: `str`
+
+## TranscriptFilterTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import TranscriptFilterTypeDef
+```
+
+Required fields:
+
+- `TranscriptFilterType`: `Literal['EXACT']` (see
+  [TranscriptFilterTypeType](./literals.md#transcriptfiltertypetype))
+- `Targets`: `Sequence`\[`str`\]
+
+Optional fields:
+
+- `AbsoluteTimeRange`:
+  [AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef)
+- `RelativeTimeRange`:
+  [RelativeTimeRangeTypeDef](./type_defs.md#relativetimerangetypedef)
+- `ParticipantRole`: [ParticipantRoleType](./literals.md#participantroletype)
+- `Negate`: `bool`
 
 ## TranscriptTypeDef
 
@@ -905,6 +1404,43 @@ Optional fields:
 - `LanguageOptions`:
   `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
 - `IdentifiedLanguageScore`: `float`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Subtitles`: [SubtitlesOutputTypeDef](./type_defs.md#subtitlesoutputtypedef)
+
+## UntagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import UntagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `Sequence`\[`str`\]
+
+## UpdateCallAnalyticsCategoryRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import UpdateCallAnalyticsCategoryRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CategoryName`: `str`
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+
+## UpdateCallAnalyticsCategoryResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import UpdateCallAnalyticsCategoryResponseTypeDef
+```
+
+Required fields:
+
+- `CategoryProperties`:
+  [CategoryPropertiesTypeDef](./type_defs.md#categorypropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateMedicalVocabularyRequestRequestTypeDef
 
@@ -948,7 +1484,7 @@ Required fields:
 
 Optional fields:
 
-- `Words`: `List`\[`str`\]
+- `Words`: `Sequence`\[`str`\]
 - `VocabularyFilterFileUri`: `str`
 
 ## UpdateVocabularyFilterResponseTypeDef
@@ -978,7 +1514,7 @@ Required fields:
 
 Optional fields:
 
-- `Phrases`: `List`\[`str`\]
+- `Phrases`: `Sequence`\[`str`\]
 - `VocabularyFileUri`: `str`
 
 ## UpdateVocabularyResponseTypeDef

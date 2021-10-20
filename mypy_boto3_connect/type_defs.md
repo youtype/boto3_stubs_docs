@@ -8,6 +8,9 @@ type annotations stubs module
 [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
 - [Typed dictionaries for boto3 Connect module](#typed-dictionaries-for-boto3-connect-module)
+  - [AgentStatusSummaryTypeDef](#agentstatussummarytypedef)
+  - [AgentStatusTypeDef](#agentstatustypedef)
+  - [AnswerMachineDetectionConfigTypeDef](#answermachinedetectionconfigtypedef)
   - [AssociateApprovedOriginRequestRequestTypeDef](#associateapprovedoriginrequestrequesttypedef)
   - [AssociateBotRequestRequestTypeDef](#associatebotrequestrequesttypedef)
   - [AssociateInstanceStorageConfigRequestRequestTypeDef](#associateinstancestorageconfigrequestrequesttypedef)
@@ -22,8 +25,12 @@ type annotations stubs module
   - [ChatMessageTypeDef](#chatmessagetypedef)
   - [ContactFlowSummaryTypeDef](#contactflowsummarytypedef)
   - [ContactFlowTypeDef](#contactflowtypedef)
+  - [CreateAgentStatusRequestRequestTypeDef](#createagentstatusrequestrequesttypedef)
+  - [CreateAgentStatusResponseTypeDef](#createagentstatusresponsetypedef)
   - [CreateContactFlowRequestRequestTypeDef](#createcontactflowrequestrequesttypedef)
   - [CreateContactFlowResponseTypeDef](#createcontactflowresponsetypedef)
+  - [CreateHoursOfOperationRequestRequestTypeDef](#createhoursofoperationrequestrequesttypedef)
+  - [CreateHoursOfOperationResponseTypeDef](#createhoursofoperationresponsetypedef)
   - [CreateInstanceRequestRequestTypeDef](#createinstancerequestrequesttypedef)
   - [CreateInstanceResponseTypeDef](#createinstanceresponsetypedef)
   - [CreateIntegrationAssociationRequestRequestTypeDef](#createintegrationassociationrequestrequesttypedef)
@@ -44,12 +51,15 @@ type annotations stubs module
   - [CurrentMetricDataTypeDef](#currentmetricdatatypedef)
   - [CurrentMetricResultTypeDef](#currentmetricresulttypedef)
   - [CurrentMetricTypeDef](#currentmetrictypedef)
+  - [DeleteHoursOfOperationRequestRequestTypeDef](#deletehoursofoperationrequestrequesttypedef)
   - [DeleteInstanceRequestRequestTypeDef](#deleteinstancerequestrequesttypedef)
   - [DeleteIntegrationAssociationRequestRequestTypeDef](#deleteintegrationassociationrequestrequesttypedef)
   - [DeleteQuickConnectRequestRequestTypeDef](#deletequickconnectrequestrequesttypedef)
   - [DeleteUseCaseRequestRequestTypeDef](#deleteusecaserequestrequesttypedef)
   - [DeleteUserHierarchyGroupRequestRequestTypeDef](#deleteuserhierarchygrouprequestrequesttypedef)
   - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
+  - [DescribeAgentStatusRequestRequestTypeDef](#describeagentstatusrequestrequesttypedef)
+  - [DescribeAgentStatusResponseTypeDef](#describeagentstatusresponsetypedef)
   - [DescribeContactFlowRequestRequestTypeDef](#describecontactflowrequestrequesttypedef)
   - [DescribeContactFlowResponseTypeDef](#describecontactflowresponsetypedef)
   - [DescribeHoursOfOperationRequestRequestTypeDef](#describehoursofoperationrequestrequesttypedef)
@@ -116,6 +126,8 @@ type annotations stubs module
   - [LexBotConfigTypeDef](#lexbotconfigtypedef)
   - [LexBotTypeDef](#lexbottypedef)
   - [LexV2BotTypeDef](#lexv2bottypedef)
+  - [ListAgentStatusRequestRequestTypeDef](#listagentstatusrequestrequesttypedef)
+  - [ListAgentStatusResponseTypeDef](#listagentstatusresponsetypedef)
   - [ListApprovedOriginsRequestRequestTypeDef](#listapprovedoriginsrequestrequesttypedef)
   - [ListApprovedOriginsResponseTypeDef](#listapprovedoriginsresponsetypedef)
   - [ListBotsRequestRequestTypeDef](#listbotsrequestrequesttypedef)
@@ -200,9 +212,11 @@ type annotations stubs module
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [ThresholdTypeDef](#thresholdtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAgentStatusRequestRequestTypeDef](#updateagentstatusrequestrequesttypedef)
   - [UpdateContactAttributesRequestRequestTypeDef](#updatecontactattributesrequestrequesttypedef)
   - [UpdateContactFlowContentRequestRequestTypeDef](#updatecontactflowcontentrequestrequesttypedef)
   - [UpdateContactFlowNameRequestRequestTypeDef](#updatecontactflownamerequestrequesttypedef)
+  - [UpdateHoursOfOperationRequestRequestTypeDef](#updatehoursofoperationrequestrequesttypedef)
   - [UpdateInstanceAttributeRequestRequestTypeDef](#updateinstanceattributerequestrequesttypedef)
   - [UpdateInstanceStorageConfigRequestRequestTypeDef](#updateinstancestorageconfigrequestrequesttypedef)
   - [UpdateQueueHoursOfOperationRequestRequestTypeDef](#updatequeuehoursofoperationrequestrequesttypedef)
@@ -230,6 +244,47 @@ type annotations stubs module
   - [UserSummaryTypeDef](#usersummarytypedef)
   - [UserTypeDef](#usertypedef)
   - [VoiceRecordingConfigurationTypeDef](#voicerecordingconfigurationtypedef)
+
+## AgentStatusSummaryTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import AgentStatusSummaryTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `Arn`: `str`
+- `Name`: `str`
+- `Type`: [AgentStatusTypeType](./literals.md#agentstatustypetype)
+
+## AgentStatusTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import AgentStatusTypeDef
+```
+
+Optional fields:
+
+- `AgentStatusARN`: `str`
+- `AgentStatusId`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `Type`: [AgentStatusTypeType](./literals.md#agentstatustypetype)
+- `DisplayOrder`: `int`
+- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## AnswerMachineDetectionConfigTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import AnswerMachineDetectionConfigTypeDef
+```
+
+Optional fields:
+
+- `EnableAnswerMachineDetection`: `bool`
+- `AwaitAnswerMachinePrompt`: `bool`
 
 ## AssociateApprovedOriginRequestRequestTypeDef
 
@@ -315,7 +370,7 @@ Required fields:
 
 - `InstanceId`: `str`
 - `QueueId`: `str`
-- `QuickConnectIds`: `List`\[`str`\]
+- `QuickConnectIds`: `Sequence`\[`str`\]
 
 ## AssociateRoutingProfileQueuesRequestRequestTypeDef
 
@@ -328,7 +383,7 @@ Required fields:
 - `InstanceId`: `str`
 - `RoutingProfileId`: `str`
 - `QueueConfigs`:
-  `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
 
 ## AssociateSecurityKeyRequestRequestTypeDef
 
@@ -405,6 +460,37 @@ Optional fields:
 - `Content`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
+## CreateAgentStatusRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateAgentStatusRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `Name`: `str`
+- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
+
+Optional fields:
+
+- `Description`: `str`
+- `DisplayOrder`: `int`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+## CreateAgentStatusResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateAgentStatusResponseTypeDef
+```
+
+Required fields:
+
+- `AgentStatusARN`: `str`
+- `AgentStatusId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateContactFlowRequestRequestTypeDef
 
 ```python
@@ -421,7 +507,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateContactFlowResponseTypeDef
 
@@ -433,6 +519,38 @@ Required fields:
 
 - `ContactFlowId`: `str`
 - `ContactFlowArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateHoursOfOperationRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateHoursOfOperationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `Name`: `str`
+- `TimeZone`: `str`
+- `Config`:
+  `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
+
+Optional fields:
+
+- `Description`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+## CreateHoursOfOperationResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateHoursOfOperationResponseTypeDef
+```
+
+Required fields:
+
+- `HoursOfOperationId`: `str`
+- `HoursOfOperationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -477,16 +595,15 @@ from mypy_boto3_connect.type_defs import CreateIntegrationAssociationRequestRequ
 Required fields:
 
 - `InstanceId`: `str`
-- `IntegrationType`: `Literal['EVENT']` (see
-  [IntegrationTypeType](./literals.md#integrationtypetype))
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `IntegrationArn`: `str`
-- `SourceApplicationUrl`: `str`
-- `SourceApplicationName`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `SourceApplicationUrl`: `str`
+- `SourceApplicationName`: `str`
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateIntegrationAssociationResponseTypeDef
 
@@ -519,8 +636,8 @@ Optional fields:
 - `OutboundCallerConfig`:
   [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
 - `MaxContacts`: `int`
-- `QuickConnectIds`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `QuickConnectIds`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateQueueResponseTypeDef
 
@@ -551,7 +668,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateQuickConnectResponseTypeDef
 
@@ -579,13 +696,13 @@ Required fields:
 - `Description`: `str`
 - `DefaultOutboundQueueId`: `str`
 - `MediaConcurrencies`:
-  `List`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
+  `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
 
 Optional fields:
 
 - `QueueConfigs`:
-  `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
-- `Tags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRoutingProfileResponseTypeDef
 
@@ -610,12 +727,11 @@ Required fields:
 
 - `InstanceId`: `str`
 - `IntegrationAssociationId`: `str`
-- `UseCaseType`: `Literal['RULES_EVALUATION']` (see
-  [UseCaseTypeType](./literals.md#usecasetypetype))
+- `UseCaseType`: [UseCaseTypeType](./literals.md#usecasetypetype)
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateUseCaseResponseTypeDef
 
@@ -669,7 +785,7 @@ Required fields:
 - `Username`: `str`
 - `PhoneConfig`:
   [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef)
-- `SecurityProfileIds`: `List`\[`str`\]
+- `SecurityProfileIds`: `Sequence`\[`str`\]
 - `RoutingProfileId`: `str`
 - `InstanceId`: `str`
 
@@ -680,7 +796,7 @@ Optional fields:
   [UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef)
 - `DirectoryUserId`: `str`
 - `HierarchyGroupId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateUserResponseTypeDef
 
@@ -741,6 +857,17 @@ Optional fields:
 
 - `Name`: [CurrentMetricNameType](./literals.md#currentmetricnametype)
 - `Unit`: [UnitType](./literals.md#unittype)
+
+## DeleteHoursOfOperationRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DeleteHoursOfOperationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `HoursOfOperationId`: `str`
 
 ## DeleteInstanceRequestRequestTypeDef
 
@@ -807,6 +934,29 @@ Required fields:
 
 - `InstanceId`: `str`
 - `UserId`: `str`
+
+## DescribeAgentStatusRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DescribeAgentStatusRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `AgentStatusId`: `str`
+
+## DescribeAgentStatusResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DescribeAgentStatusResponseTypeDef
+```
+
+Required fields:
+
+- `AgentStatus`: [AgentStatusTypeDef](./type_defs.md#agentstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeContactFlowRequestRequestTypeDef
 
@@ -1150,7 +1300,7 @@ Required fields:
 
 - `InstanceId`: `str`
 - `QueueId`: `str`
-- `QuickConnectIds`: `List`\[`str`\]
+- `QuickConnectIds`: `Sequence`\[`str`\]
 
 ## DisassociateRoutingProfileQueuesRequestRequestTypeDef
 
@@ -1163,7 +1313,7 @@ Required fields:
 - `InstanceId`: `str`
 - `RoutingProfileId`: `str`
 - `QueueReferences`:
-  `List`\[[RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)\]
+  `Sequence`\[[RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)\]
 
 ## DisassociateSecurityKeyRequestRequestTypeDef
 
@@ -1196,8 +1346,8 @@ from mypy_boto3_connect.type_defs import FiltersTypeDef
 
 Optional fields:
 
-- `Queues`: `List`\[`str`\]
-- `Channels`: `List`\[[ChannelType](./literals.md#channeltype)\]
+- `Queues`: `Sequence`\[`str`\]
+- `Channels`: `Sequence`\[[ChannelType](./literals.md#channeltype)\]
 
 ## GetContactAttributesRequestRequestTypeDef
 
@@ -1233,11 +1383,11 @@ Required fields:
 - `InstanceId`: `str`
 - `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef)
 - `CurrentMetrics`:
-  `List`\[[CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef)\]
+  `Sequence`\[[CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef)\]
 
 Optional fields:
 
-- `Groupings`: `List`\[[GroupingType](./literals.md#groupingtype)\]
+- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1291,11 +1441,11 @@ Required fields:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef)
 - `HistoricalMetrics`:
-  `List`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
+  `Sequence`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
 
 Optional fields:
 
-- `Groupings`: `List`\[[GroupingType](./literals.md#groupingtype)\]
+- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1455,7 +1605,7 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HoursOfOperationConfigTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Day`: [HoursOfOperationDaysType](./literals.md#hoursofoperationdaystype)
 - `StartTime`:
@@ -1481,7 +1631,7 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HoursOfOperationTimeSliceTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Hours`: `int`
 - `Minutes`: `int`
@@ -1585,8 +1735,7 @@ Optional fields:
 - `IntegrationAssociationId`: `str`
 - `IntegrationAssociationArn`: `str`
 - `InstanceId`: `str`
-- `IntegrationType`: `Literal['EVENT']` (see
-  [IntegrationTypeType](./literals.md#integrationtypetype))
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `IntegrationArn`: `str`
 - `SourceApplicationUrl`: `str`
 - `SourceApplicationName`: `str`
@@ -1656,6 +1805,37 @@ from mypy_boto3_connect.type_defs import LexV2BotTypeDef
 Optional fields:
 
 - `AliasArn`: `str`
+
+## ListAgentStatusRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListAgentStatusRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `AgentStatusTypes`:
+  `Sequence`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
+
+## ListAgentStatusResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListAgentStatusResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `AgentStatusSummaryList`:
+  `List`\[[AgentStatusSummaryTypeDef](./type_defs.md#agentstatussummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListApprovedOriginsRequestRequestTypeDef
 
@@ -1728,7 +1908,7 @@ Required fields:
 Optional fields:
 
 - `ContactFlowTypes`:
-  `List`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
+  `Sequence`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1871,6 +2051,7 @@ Required fields:
 
 Optional fields:
 
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1957,9 +2138,9 @@ Required fields:
 Optional fields:
 
 - `PhoneNumberTypes`:
-  `List`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
+  `Sequence`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
 - `PhoneNumberCountryCodes`:
-  `List`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
+  `Sequence`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2048,7 +2229,7 @@ Required fields:
 
 Optional fields:
 
-- `QueueTypes`: `List`\[[QueueTypeType](./literals.md#queuetypetype)\]
+- `QueueTypes`: `Sequence`\[[QueueTypeType](./literals.md#queuetypetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2081,7 +2262,7 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `QuickConnectTypes`:
-  `List`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
+  `Sequence`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
 
 ## ListQuickConnectsResponseTypeDef
 
@@ -2672,7 +2853,7 @@ Required fields:
 
 Optional fields:
 
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 - `InitialMessage`: [ChatMessageTypeDef](./type_defs.md#chatmessagetypedef)
 - `ClientToken`: `str`
 
@@ -2721,7 +2902,11 @@ Optional fields:
 - `ClientToken`: `str`
 - `SourcePhoneNumber`: `str`
 - `QueueId`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
+- `AnswerMachineDetectionConfig`:
+  [AnswerMachineDetectionConfigTypeDef](./type_defs.md#answermachinedetectionconfigtypedef)
+- `CampaignId`: `str`
+- `TrafficType`: [TrafficTypeType](./literals.md#traffictypetype)
 
 ## StartOutboundVoiceContactResponseTypeDef
 
@@ -2750,8 +2935,8 @@ Required fields:
 Optional fields:
 
 - `PreviousContactId`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `References`: `Dict`\[`str`,
+- `Attributes`: `Mapping`\[`str`, `str`\]
+- `References`: `Mapping`\[`str`,
   [ReferenceTypeDef](./type_defs.md#referencetypedef)\]
 - `Description`: `str`
 - `ClientToken`: `str`
@@ -2812,7 +2997,7 @@ from mypy_boto3_connect.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## ThresholdTypeDef
 
@@ -2835,7 +3020,26 @@ from mypy_boto3_connect.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
+
+## UpdateAgentStatusRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import UpdateAgentStatusRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `AgentStatusId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
+- `DisplayOrder`: `int`
+- `ResetOrderNumber`: `bool`
 
 ## UpdateContactAttributesRequestRequestTypeDef
 
@@ -2847,7 +3051,7 @@ Required fields:
 
 - `InitialContactId`: `str`
 - `InstanceId`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## UpdateContactFlowContentRequestRequestTypeDef
 
@@ -2876,6 +3080,25 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
+
+## UpdateHoursOfOperationRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import UpdateHoursOfOperationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `HoursOfOperationId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `TimeZone`: `str`
+- `Config`:
+  `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
 
 ## UpdateInstanceAttributeRequestRequestTypeDef
 
@@ -3013,7 +3236,7 @@ Required fields:
 - `InstanceId`: `str`
 - `RoutingProfileId`: `str`
 - `MediaConcurrencies`:
-  `List`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
+  `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
 
 ## UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef
 
@@ -3054,7 +3277,7 @@ Required fields:
 - `InstanceId`: `str`
 - `RoutingProfileId`: `str`
 - `QueueConfigs`:
-  `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
 
 ## UpdateUserHierarchyGroupNameRequestRequestTypeDef
 
@@ -3141,7 +3364,7 @@ from mypy_boto3_connect.type_defs import UpdateUserSecurityProfilesRequestReques
 
 Required fields:
 
-- `SecurityProfileIds`: `List`\[`str`\]
+- `SecurityProfileIds`: `Sequence`\[`str`\]
 - `UserId`: `str`
 - `InstanceId`: `str`
 
@@ -3155,8 +3378,7 @@ Optional fields:
 
 - `UseCaseId`: `str`
 - `UseCaseArn`: `str`
-- `UseCaseType`: `Literal['RULES_EVALUATION']` (see
-  [UseCaseTypeType](./literals.md#usecasetypetype))
+- `UseCaseType`: [UseCaseTypeType](./literals.md#usecasetypetype)
 
 ## UserIdentityInfoTypeDef
 

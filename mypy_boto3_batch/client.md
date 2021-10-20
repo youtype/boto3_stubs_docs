@@ -99,7 +99,7 @@ Returns `bool`.
 
 ### cancel_job
 
-Cancels a job in an AWS Batch job queue.
+Cancels a job in an Batch job queue.
 
 Type annotations for `boto3.client("batch").cancel_job` method.
 
@@ -118,7 +118,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_compute_environment
 
-Creates an AWS Batch compute environment.
+Creates an Batch compute environment.
 
 Type annotations for `boto3.client("batch").create_compute_environment` method.
 
@@ -136,14 +136,14 @@ Keyword-only arguments:
 - `computeResources`:
   [ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef)
 - `serviceRole`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateComputeEnvironmentResponseTypeDef](./type_defs.md#createcomputeenvironmentresponsetypedef).
 
 ### create_job_queue
 
-Creates an AWS Batch job queue.
+Creates an Batch job queue.
 
 Type annotations for `boto3.client("batch").create_job_queue` method.
 
@@ -158,17 +158,17 @@ Keyword-only arguments:
 - `jobQueueName`: `str` *(required)*
 - `priority`: `int` *(required)*
 - `computeEnvironmentOrder`:
-  `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
+  `Sequence`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
   *(required)*
 - `state`: [JQStateType](./literals.md#jqstatetype)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateJobQueueResponseTypeDef](./type_defs.md#createjobqueueresponsetypedef).
 
 ### delete_compute_environment
 
-Deletes an AWS Batch compute environment.
+Deletes an Batch compute environment.
 
 Type annotations for `boto3.client("batch").delete_compute_environment` method.
 
@@ -204,7 +204,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_job_definition
 
-Deregisters an AWS Batch job definition.
+Deregisters an Batch job definition.
 
 Type annotations for `boto3.client("batch").deregister_job_definition` method.
 
@@ -235,7 +235,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `computeEnvironments`: `List`\[`str`\]
+- `computeEnvironments`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -256,7 +256,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `jobDefinitions`: `List`\[`str`\]
+- `jobDefinitions`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `jobDefinitionName`: `str`
 - `status`: `str`
@@ -279,7 +279,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `jobQueues`: `List`\[`str`\]
+- `jobQueues`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -300,7 +300,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `jobs`: `List`\[`str`\] *(required)*
+- `jobs`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
@@ -317,7 +317,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -325,7 +325,7 @@ Returns `str`.
 
 ### list_jobs
 
-Returns a list of AWS Batch jobs.
+Returns a list of Batch jobs.
 
 Type annotations for `boto3.client("batch").list_jobs` method.
 
@@ -343,12 +343,14 @@ Keyword-only arguments:
 - `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `filters`:
+  `Sequence`\[[KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)\]
 
 Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
 ### list_tags_for_resource
 
-Lists the tags for an AWS Batch resource.
+Lists the tags for an Batch resource.
 
 Type annotations for `boto3.client("batch").list_tags_for_resource` method.
 
@@ -367,7 +369,7 @@ Returns
 
 ### register_job_definition
 
-Registers an AWS Batch job definition.
+Registers an Batch job definition.
 
 Type annotations for `boto3.client("batch").register_job_definition` method.
 
@@ -382,7 +384,7 @@ Keyword-only arguments:
 - `jobDefinitionName`: `str` *(required)*
 - `type`: [JobDefinitionTypeType](./literals.md#jobdefinitiontypetype)
   *(required)*
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 - `containerProperties`:
   [ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef)
 - `nodeProperties`:
@@ -390,16 +392,16 @@ Keyword-only arguments:
 - `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `propagateTags`: `bool`
 - `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `platformCapabilities`:
-  `List`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
+  `Sequence`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
 
 Returns
 [RegisterJobDefinitionResponseTypeDef](./type_defs.md#registerjobdefinitionresponsetypedef).
 
 ### submit_job
 
-Submits an AWS Batch job from a job definition.
+Submits an Batch job from a job definition.
 
 Type annotations for `boto3.client("batch").submit_job` method.
 
@@ -417,15 +419,15 @@ Keyword-only arguments:
 - `arrayProperties`:
   [ArrayPropertiesTypeDef](./type_defs.md#arraypropertiestypedef)
 - `dependsOn`:
-  `List`\[[JobDependencyTypeDef](./type_defs.md#jobdependencytypedef)\]
-- `parameters`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[JobDependencyTypeDef](./type_defs.md#jobdependencytypedef)\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 - `containerOverrides`:
   [ContainerOverridesTypeDef](./type_defs.md#containeroverridestypedef)
 - `nodeOverrides`: [NodeOverridesTypeDef](./type_defs.md#nodeoverridestypedef)
 - `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `propagateTags`: `bool`
 - `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns [SubmitJobResponseTypeDef](./type_defs.md#submitjobresponsetypedef).
 
@@ -444,7 +446,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -469,7 +471,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Deletes specified tags from an AWS Batch resource.
+Deletes specified tags from an Batch resource.
 
 Type annotations for `boto3.client("batch").untag_resource` method.
 
@@ -482,13 +484,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
 ### update_compute_environment
 
-Updates an AWS Batch compute environment.
+Updates an Batch compute environment.
 
 Type annotations for `boto3.client("batch").update_compute_environment` method.
 
@@ -527,7 +529,7 @@ Keyword-only arguments:
 - `state`: [JQStateType](./literals.md#jqstatetype)
 - `priority`: `int`
 - `computeEnvironmentOrder`:
-  `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
+  `Sequence`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
 
 Returns
 [UpdateJobQueueResponseTypeDef](./type_defs.md#updatejobqueueresponsetypedef).

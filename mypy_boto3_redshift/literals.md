@@ -15,6 +15,9 @@ type annotations stubs module
   - [ClusterAvailableWaiterName](#clusteravailablewaitername)
   - [ClusterDeletedWaiterName](#clusterdeletedwaitername)
   - [ClusterRestoredWaiterName](#clusterrestoredwaitername)
+  - [DataShareStatusForConsumerType](#datasharestatusforconsumertype)
+  - [DataShareStatusForProducerType](#datasharestatusforproducertype)
+  - [DataShareStatusType](#datasharestatustype)
   - [DescribeClusterDbRevisionsPaginatorName](#describeclusterdbrevisionspaginatorname)
   - [DescribeClusterParameterGroupsPaginatorName](#describeclusterparametergroupspaginatorname)
   - [DescribeClusterParametersPaginatorName](#describeclusterparameterspaginatorname)
@@ -61,6 +64,9 @@ type annotations stubs module
   - [UsageLimitFeatureTypeType](#usagelimitfeaturetypetype)
   - [UsageLimitLimitTypeType](#usagelimitlimittypetype)
   - [UsageLimitPeriodType](#usagelimitperiodtype)
+  - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## ActionTypeType
 
@@ -138,6 +144,46 @@ from mypy_boto3_redshift.literals import ClusterRestoredWaiterName
 Values:
 
 - `cluster_restored`
+
+## DataShareStatusForConsumerType
+
+```python
+from mypy_boto3_redshift.literals import DataShareStatusForConsumerType
+```
+
+Values:
+
+- `ACTIVE`
+- `AVAILABLE`
+
+## DataShareStatusForProducerType
+
+```python
+from mypy_boto3_redshift.literals import DataShareStatusForProducerType
+```
+
+Values:
+
+- `ACTIVE`
+- `AUTHORIZED`
+- `DEAUTHORIZED`
+- `PENDING_AUTHORIZATION`
+- `REJECTED`
+
+## DataShareStatusType
+
+```python
+from mypy_boto3_redshift.literals import DataShareStatusType
+```
+
+Values:
+
+- `ACTIVE`
+- `AUTHORIZED`
+- `AVAILABLE`
+- `DEAUTHORIZED`
+- `PENDING_AUTHORIZATION`
+- `REJECTED`
 
 ## DescribeClusterDbRevisionsPaginatorName
 
@@ -636,3 +682,346 @@ Values:
 - `daily`
 - `monthly`
 - `weekly`
+
+## ServiceName
+
+```python
+from mypy_boto3_redshift.literals import ServiceName
+```
+
+Values:
+
+- `accessanalyzer`
+- `account`
+- `acm`
+- `acm-pca`
+- `alexaforbusiness`
+- `amp`
+- `amplify`
+- `amplifybackend`
+- `apigateway`
+- `apigatewaymanagementapi`
+- `apigatewayv2`
+- `appconfig`
+- `appflow`
+- `appintegrations`
+- `application-autoscaling`
+- `application-insights`
+- `applicationcostprofiler`
+- `appmesh`
+- `apprunner`
+- `appstream`
+- `appsync`
+- `athena`
+- `auditmanager`
+- `autoscaling`
+- `autoscaling-plans`
+- `backup`
+- `batch`
+- `braket`
+- `budgets`
+- `ce`
+- `chime`
+- `chime-sdk-identity`
+- `chime-sdk-messaging`
+- `cloud9`
+- `cloudcontrol`
+- `clouddirectory`
+- `cloudformation`
+- `cloudfront`
+- `cloudhsm`
+- `cloudhsmv2`
+- `cloudsearch`
+- `cloudsearchdomain`
+- `cloudtrail`
+- `cloudwatch`
+- `codeartifact`
+- `codebuild`
+- `codecommit`
+- `codedeploy`
+- `codeguru-reviewer`
+- `codeguruprofiler`
+- `codepipeline`
+- `codestar`
+- `codestar-connections`
+- `codestar-notifications`
+- `cognito-identity`
+- `cognito-idp`
+- `cognito-sync`
+- `comprehend`
+- `comprehendmedical`
+- `compute-optimizer`
+- `config`
+- `connect`
+- `connect-contact-lens`
+- `connectparticipant`
+- `cur`
+- `customer-profiles`
+- `databrew`
+- `dataexchange`
+- `datapipeline`
+- `datasync`
+- `dax`
+- `detective`
+- `devicefarm`
+- `devops-guru`
+- `directconnect`
+- `discovery`
+- `dlm`
+- `dms`
+- `docdb`
+- `ds`
+- `dynamodb`
+- `dynamodbstreams`
+- `ebs`
+- `ec2`
+- `ec2-instance-connect`
+- `ecr`
+- `ecr-public`
+- `ecs`
+- `efs`
+- `eks`
+- `elastic-inference`
+- `elasticache`
+- `elasticbeanstalk`
+- `elastictranscoder`
+- `elb`
+- `elbv2`
+- `emr`
+- `emr-containers`
+- `es`
+- `events`
+- `finspace`
+- `finspace-data`
+- `firehose`
+- `fis`
+- `fms`
+- `forecast`
+- `forecastquery`
+- `frauddetector`
+- `fsx`
+- `gamelift`
+- `glacier`
+- `globalaccelerator`
+- `glue`
+- `grafana`
+- `greengrass`
+- `greengrassv2`
+- `groundstation`
+- `guardduty`
+- `health`
+- `healthlake`
+- `honeycode`
+- `iam`
+- `identitystore`
+- `imagebuilder`
+- `importexport`
+- `inspector`
+- `iot`
+- `iot-data`
+- `iot-jobs-data`
+- `iot1click-devices`
+- `iot1click-projects`
+- `iotanalytics`
+- `iotdeviceadvisor`
+- `iotevents`
+- `iotevents-data`
+- `iotfleethub`
+- `iotsecuretunneling`
+- `iotsitewise`
+- `iotthingsgraph`
+- `iotwireless`
+- `ivs`
+- `kafka`
+- `kafkaconnect`
+- `kendra`
+- `kinesis`
+- `kinesis-video-archived-media`
+- `kinesis-video-media`
+- `kinesis-video-signaling`
+- `kinesisanalytics`
+- `kinesisanalyticsv2`
+- `kinesisvideo`
+- `kms`
+- `lakeformation`
+- `lambda`
+- `lex-models`
+- `lex-runtime`
+- `lexv2-models`
+- `lexv2-runtime`
+- `license-manager`
+- `lightsail`
+- `location`
+- `logs`
+- `lookoutequipment`
+- `lookoutmetrics`
+- `lookoutvision`
+- `machinelearning`
+- `macie`
+- `macie2`
+- `managedblockchain`
+- `marketplace-catalog`
+- `marketplace-entitlement`
+- `marketplacecommerceanalytics`
+- `mediaconnect`
+- `mediaconvert`
+- `medialive`
+- `mediapackage`
+- `mediapackage-vod`
+- `mediastore`
+- `mediastore-data`
+- `mediatailor`
+- `memorydb`
+- `meteringmarketplace`
+- `mgh`
+- `mgn`
+- `migrationhub-config`
+- `mobile`
+- `mq`
+- `mturk`
+- `mwaa`
+- `neptune`
+- `network-firewall`
+- `networkmanager`
+- `nimble`
+- `opensearch`
+- `opsworks`
+- `opsworkscm`
+- `organizations`
+- `outposts`
+- `panorama`
+- `personalize`
+- `personalize-events`
+- `personalize-runtime`
+- `pi`
+- `pinpoint`
+- `pinpoint-email`
+- `pinpoint-sms-voice`
+- `polly`
+- `pricing`
+- `proton`
+- `qldb`
+- `qldb-session`
+- `quicksight`
+- `ram`
+- `rds`
+- `rds-data`
+- `redshift`
+- `redshift-data`
+- `rekognition`
+- `resource-groups`
+- `resourcegroupstaggingapi`
+- `robomaker`
+- `route53`
+- `route53-recovery-cluster`
+- `route53-recovery-control-config`
+- `route53-recovery-readiness`
+- `route53domains`
+- `route53resolver`
+- `s3`
+- `s3control`
+- `s3outposts`
+- `sagemaker`
+- `sagemaker-a2i-runtime`
+- `sagemaker-edge`
+- `sagemaker-featurestore-runtime`
+- `sagemaker-runtime`
+- `savingsplans`
+- `schemas`
+- `sdb`
+- `secretsmanager`
+- `securityhub`
+- `serverlessrepo`
+- `service-quotas`
+- `servicecatalog`
+- `servicecatalog-appregistry`
+- `servicediscovery`
+- `ses`
+- `sesv2`
+- `shield`
+- `signer`
+- `sms`
+- `sms-voice`
+- `snow-device-management`
+- `snowball`
+- `sns`
+- `sqs`
+- `ssm`
+- `ssm-contacts`
+- `ssm-incidents`
+- `sso`
+- `sso-admin`
+- `sso-oidc`
+- `stepfunctions`
+- `storagegateway`
+- `sts`
+- `support`
+- `swf`
+- `synthetics`
+- `textract`
+- `timestream-query`
+- `timestream-write`
+- `transcribe`
+- `transfer`
+- `translate`
+- `voice-id`
+- `waf`
+- `waf-regional`
+- `wafv2`
+- `wellarchitected`
+- `wisdom`
+- `workdocs`
+- `worklink`
+- `workmail`
+- `workmailmessageflow`
+- `workspaces`
+- `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_redshift.literals import PaginatorName
+```
+
+Values:
+
+- `describe_cluster_db_revisions`
+- `describe_cluster_parameter_groups`
+- `describe_cluster_parameters`
+- `describe_cluster_security_groups`
+- `describe_cluster_snapshots`
+- `describe_cluster_subnet_groups`
+- `describe_cluster_tracks`
+- `describe_cluster_versions`
+- `describe_clusters`
+- `describe_default_cluster_parameters`
+- `describe_endpoint_access`
+- `describe_endpoint_authorization`
+- `describe_event_subscriptions`
+- `describe_events`
+- `describe_hsm_client_certificates`
+- `describe_hsm_configurations`
+- `describe_node_configuration_options`
+- `describe_orderable_cluster_options`
+- `describe_reserved_node_offerings`
+- `describe_reserved_nodes`
+- `describe_scheduled_actions`
+- `describe_snapshot_copy_grants`
+- `describe_snapshot_schedules`
+- `describe_table_restore_status`
+- `describe_tags`
+- `describe_usage_limits`
+- `get_reserved_node_exchange_offerings`
+
+## WaiterName
+
+```python
+from mypy_boto3_redshift.literals import WaiterName
+```
+
+Values:
+
+- `cluster_available`
+- `cluster_deleted`
+- `cluster_restored`
+- `snapshot_available`

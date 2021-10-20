@@ -143,7 +143,7 @@ Required fields:
 
 - `ListenerArn`: `str`
 - `Certificates`:
-  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
+  `Sequence`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
 
 ## AddListenerCertificatesOutputTypeDef
 
@@ -166,8 +166,8 @@ from mypy_boto3_elbv2.type_defs import AddTagsInputRequestTypeDef
 
 Required fields:
 
-- `ResourceArns`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResourceArns`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AuthenticateCognitoActionConfigTypeDef
 
@@ -186,7 +186,7 @@ Optional fields:
 - `SessionCookieName`: `str`
 - `Scope`: `str`
 - `SessionTimeout`: `int`
-- `AuthenticationRequestExtraParams`: `Dict`\[`str`, `str`\]
+- `AuthenticationRequestExtraParams`: `Mapping`\[`str`, `str`\]
 - `OnUnauthenticatedRequest`:
   [AuthenticateCognitoActionConditionalBehaviorEnumType](./literals.md#authenticatecognitoactionconditionalbehaviorenumtype)
 
@@ -210,7 +210,7 @@ Optional fields:
 - `SessionCookieName`: `str`
 - `Scope`: `str`
 - `SessionTimeout`: `int`
-- `AuthenticationRequestExtraParams`: `Dict`\[`str`, `str`\]
+- `AuthenticationRequestExtraParams`: `Mapping`\[`str`, `str`\]
 - `OnUnauthenticatedRequest`:
   [AuthenticateOidcActionConditionalBehaviorEnumType](./literals.md#authenticateoidcactionconditionalbehaviorenumtype)
 - `UseExistingClientSecret`: `bool`
@@ -260,7 +260,7 @@ from mypy_boto3_elbv2.type_defs import CreateListenerInputRequestTypeDef
 Required fields:
 
 - `LoadBalancerArn`: `str`
-- `DefaultActions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `DefaultActions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 Optional fields:
 
@@ -268,9 +268,9 @@ Optional fields:
 - `Port`: `int`
 - `SslPolicy`: `str`
 - `Certificates`:
-  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
-- `AlpnPolicy`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
+- `AlpnPolicy`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateListenerOutputTypeDef
 
@@ -296,13 +296,13 @@ Required fields:
 
 Optional fields:
 
-- `Subnets`: `List`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
 - `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
-- `SecurityGroups`: `List`\[`str`\]
+  `Sequence`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `Scheme`:
   [LoadBalancerSchemeEnumType](./literals.md#loadbalancerschemeenumtype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Type`: [LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype)
 - `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `CustomerOwnedIpv4Pool`: `str`
@@ -330,13 +330,13 @@ Required fields:
 
 - `ListenerArn`: `str`
 - `Conditions`:
-  `List`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
+  `Sequence`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
 - `Priority`: `int`
-- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRuleOutputTypeDef
 
@@ -376,7 +376,9 @@ Optional fields:
 - `UnhealthyThresholdCount`: `int`
 - `Matcher`: [MatcherTypeDef](./type_defs.md#matchertypedef)
 - `TargetType`: [TargetTypeEnumType](./literals.md#targettypeenumtype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `IpAddressType`:
+  [TargetGroupIpAddressTypeEnumType](./literals.md#targetgroupipaddresstypeenumtype)
 
 ## CreateTargetGroupOutputTypeDef
 
@@ -441,7 +443,7 @@ Required fields:
 
 - `TargetGroupArn`: `str`
 - `Targets`:
-  `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
+  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
 
 ## DescribeAccountLimitsInputRequestTypeDef
 
@@ -505,7 +507,7 @@ from mypy_boto3_elbv2.type_defs import DescribeListenersInputRequestTypeDef
 Optional fields:
 
 - `LoadBalancerArn`: `str`
-- `ListenerArns`: `List`\[`str`\]
+- `ListenerArns`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 
@@ -553,8 +555,8 @@ from mypy_boto3_elbv2.type_defs import DescribeLoadBalancersInputRequestTypeDef
 
 Optional fields:
 
-- `LoadBalancerArns`: `List`\[`str`\]
-- `Names`: `List`\[`str`\]
+- `LoadBalancerArns`: `Sequence`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 
@@ -581,7 +583,7 @@ from mypy_boto3_elbv2.type_defs import DescribeRulesInputRequestTypeDef
 Optional fields:
 
 - `ListenerArn`: `str`
-- `RuleArns`: `List`\[`str`\]
+- `RuleArns`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 
@@ -606,9 +608,11 @@ from mypy_boto3_elbv2.type_defs import DescribeSSLPoliciesInputRequestTypeDef
 
 Optional fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
+- `LoadBalancerType`:
+  [LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype)
 
 ## DescribeSSLPoliciesOutputTypeDef
 
@@ -631,7 +635,7 @@ from mypy_boto3_elbv2.type_defs import DescribeTagsInputRequestTypeDef
 
 Required fields:
 
-- `ResourceArns`: `List`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 
 ## DescribeTagsOutputTypeDef
 
@@ -678,8 +682,8 @@ from mypy_boto3_elbv2.type_defs import DescribeTargetGroupsInputRequestTypeDef
 Optional fields:
 
 - `LoadBalancerArn`: `str`
-- `TargetGroupArns`: `List`\[`str`\]
-- `Names`: `List`\[`str`\]
+- `TargetGroupArns`: `Sequence`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 
@@ -710,7 +714,7 @@ Required fields:
 Optional fields:
 
 - `Targets`:
-  `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
+  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
 
 ## DescribeTargetHealthOutputTypeDef
 
@@ -749,7 +753,7 @@ from mypy_boto3_elbv2.type_defs import ForwardActionConfigTypeDef
 Optional fields:
 
 - `TargetGroups`:
-  `List`\[[TargetGroupTupleTypeDef](./type_defs.md#targetgrouptupletypedef)\]
+  `Sequence`\[[TargetGroupTupleTypeDef](./type_defs.md#targetgrouptupletypedef)\]
 - `TargetGroupStickinessConfig`:
   [TargetGroupStickinessConfigTypeDef](./type_defs.md#targetgroupstickinessconfigtypedef)
 
@@ -761,7 +765,7 @@ from mypy_boto3_elbv2.type_defs import HostHeaderConditionConfigTypeDef
 
 Optional fields:
 
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## HttpHeaderConditionConfigTypeDef
 
@@ -772,7 +776,7 @@ from mypy_boto3_elbv2.type_defs import HttpHeaderConditionConfigTypeDef
 Optional fields:
 
 - `HttpHeaderName`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## HttpRequestMethodConditionConfigTypeDef
 
@@ -782,7 +786,7 @@ from mypy_boto3_elbv2.type_defs import HttpRequestMethodConditionConfigTypeDef
 
 Optional fields:
 
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## LimitTypeDef
 
@@ -899,9 +903,9 @@ Optional fields:
 - `Protocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
 - `SslPolicy`: `str`
 - `Certificates`:
-  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
-- `DefaultActions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-- `AlpnPolicy`: `List`\[`str`\]
+  `Sequence`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
+- `DefaultActions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `AlpnPolicy`: `Sequence`\[`str`\]
 
 ## ModifyListenerOutputTypeDef
 
@@ -925,7 +929,7 @@ Required fields:
 
 - `LoadBalancerArn`: `str`
 - `Attributes`:
-  `List`\[[LoadBalancerAttributeTypeDef](./type_defs.md#loadbalancerattributetypedef)\]
+  `Sequence`\[[LoadBalancerAttributeTypeDef](./type_defs.md#loadbalancerattributetypedef)\]
 
 ## ModifyLoadBalancerAttributesOutputTypeDef
 
@@ -953,8 +957,8 @@ Required fields:
 Optional fields:
 
 - `Conditions`:
-  `List`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
-- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+  `Sequence`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
+- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 ## ModifyRuleOutputTypeDef
 
@@ -978,7 +982,7 @@ Required fields:
 
 - `TargetGroupArn`: `str`
 - `Attributes`:
-  `List`\[[TargetGroupAttributeTypeDef](./type_defs.md#targetgroupattributetypedef)\]
+  `Sequence`\[[TargetGroupAttributeTypeDef](./type_defs.md#targetgroupattributetypedef)\]
 
 ## ModifyTargetGroupAttributesOutputTypeDef
 
@@ -1048,7 +1052,7 @@ from mypy_boto3_elbv2.type_defs import PathPatternConditionConfigTypeDef
 
 Optional fields:
 
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## QueryStringConditionConfigTypeDef
 
@@ -1059,7 +1063,7 @@ from mypy_boto3_elbv2.type_defs import QueryStringConditionConfigTypeDef
 Optional fields:
 
 - `Values`:
-  `List`\[[QueryStringKeyValuePairTypeDef](./type_defs.md#querystringkeyvaluepairtypedef)\]
+  `Sequence`\[[QueryStringKeyValuePairTypeDef](./type_defs.md#querystringkeyvaluepairtypedef)\]
 
 ## QueryStringKeyValuePairTypeDef
 
@@ -1101,7 +1105,7 @@ Required fields:
 
 - `TargetGroupArn`: `str`
 - `Targets`:
-  `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
+  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
 
 ## RemoveListenerCertificatesInputRequestTypeDef
 
@@ -1113,7 +1117,7 @@ Required fields:
 
 - `ListenerArn`: `str`
 - `Certificates`:
-  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
+  `Sequence`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
 
 ## RemoveTagsInputRequestTypeDef
 
@@ -1123,8 +1127,8 @@ from mypy_boto3_elbv2.type_defs import RemoveTagsInputRequestTypeDef
 
 Required fields:
 
-- `ResourceArns`: `List`\[`str`\]
-- `TagKeys`: `List`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ResponseMetadataTypeDef
 
@@ -1149,7 +1153,7 @@ from mypy_boto3_elbv2.type_defs import RuleConditionTypeDef
 Optional fields:
 
 - `Field`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `HostHeaderConfig`:
   [HostHeaderConditionConfigTypeDef](./type_defs.md#hostheaderconditionconfigtypedef)
 - `PathPatternConfig`:
@@ -1221,7 +1225,7 @@ from mypy_boto3_elbv2.type_defs import SetRulePrioritiesInputRequestTypeDef
 Required fields:
 
 - `RulePriorities`:
-  `List`\[[RulePriorityPairTypeDef](./type_defs.md#ruleprioritypairtypedef)\]
+  `Sequence`\[[RulePriorityPairTypeDef](./type_defs.md#ruleprioritypairtypedef)\]
 
 ## SetRulePrioritiesOutputTypeDef
 
@@ -1244,7 +1248,7 @@ from mypy_boto3_elbv2.type_defs import SetSecurityGroupsInputRequestTypeDef
 Required fields:
 
 - `LoadBalancerArn`: `str`
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 
 ## SetSecurityGroupsOutputTypeDef
 
@@ -1270,9 +1274,9 @@ Required fields:
 
 Optional fields:
 
-- `Subnets`: `List`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
 - `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
+  `Sequence`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
 - `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 ## SetSubnetsOutputTypeDef
@@ -1297,7 +1301,7 @@ from mypy_boto3_elbv2.type_defs import SourceIpConditionConfigTypeDef
 
 Optional fields:
 
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## SslPolicyTypeDef
 
@@ -1310,6 +1314,7 @@ Optional fields:
 - `SslProtocols`: `List`\[`str`\]
 - `Ciphers`: `List`\[[CipherTypeDef](./type_defs.md#ciphertypedef)\]
 - `Name`: `str`
+- `SupportedLoadBalancerTypes`: `List`\[`str`\]
 
 ## SubnetMappingTypeDef
 
@@ -1422,6 +1427,8 @@ Optional fields:
 - `LoadBalancerArns`: `List`\[`str`\]
 - `TargetType`: [TargetTypeEnumType](./literals.md#targettypeenumtype)
 - `ProtocolVersion`: `str`
+- `IpAddressType`:
+  [TargetGroupIpAddressTypeEnumType](./literals.md#targetgroupipaddresstypeenumtype)
 
 ## TargetHealthDescriptionTypeDef
 

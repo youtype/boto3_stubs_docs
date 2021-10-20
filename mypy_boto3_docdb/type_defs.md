@@ -178,7 +178,7 @@ from mypy_boto3_docdb.type_defs import AddTagsToResourceMessageRequestTypeDef
 Required fields:
 
 - `ResourceName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ApplyPendingMaintenanceActionMessageRequestTypeDef
 
@@ -252,8 +252,8 @@ from mypy_boto3_docdb.type_defs import CloudwatchLogsExportConfigurationTypeDef
 
 Optional fields:
 
-- `EnableLogTypes`: `List`\[`str`\]
-- `DisableLogTypes`: `List`\[`str`\]
+- `EnableLogTypes`: `Sequence`\[`str`\]
+- `DisableLogTypes`: `Sequence`\[`str`\]
 
 ## CopyDBClusterParameterGroupMessageRequestTypeDef
 
@@ -269,7 +269,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CopyDBClusterParameterGroupResultTypeDef
 
@@ -300,7 +300,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `PreSignedUrl`: `str`
 - `CopyTags`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SourceRegion`: `str`
 
 ## CopyDBClusterSnapshotResultTypeDef
@@ -329,10 +329,10 @@ Required fields:
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `BackupRetentionPeriod`: `int`
 - `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `DBSubnetGroupName`: `str`
 - `EngineVersion`: `str`
 - `Port`: `int`
@@ -340,11 +340,11 @@ Optional fields:
 - `MasterUserPassword`: `str`
 - `PreferredBackupWindow`: `str`
 - `PreferredMaintenanceWindow`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
 - `PreSignedUrl`: `str`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DeletionProtection`: `bool`
 - `GlobalClusterIdentifier`: `str`
 - `SourceRegion`: `str`
@@ -363,7 +363,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBClusterParameterGroupResultTypeDef
 
@@ -403,7 +403,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBClusterSnapshotResultTypeDef
 
@@ -436,7 +436,7 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `AutoMinorVersionUpgrade`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `PromotionTier`: `int`
 
 ## CreateDBInstanceResultTypeDef
@@ -461,11 +461,11 @@ Required fields:
 
 - `DBSubnetGroupName`: `str`
 - `DBSubnetGroupDescription`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDBSubnetGroupResultTypeDef
 
@@ -493,10 +493,10 @@ Required fields:
 Optional fields:
 
 - `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
-- `SourceIds`: `List`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
+- `SourceIds`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEventSubscriptionResultTypeDef
 
@@ -1009,7 +1009,7 @@ from mypy_boto3_docdb.type_defs import DescribeCertificatesMessageRequestTypeDef
 Optional fields:
 
 - `CertificateIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1022,7 +1022,7 @@ from mypy_boto3_docdb.type_defs import DescribeDBClusterParameterGroupsMessageRe
 Optional fields:
 
 - `DBClusterParameterGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1039,7 +1039,7 @@ Required fields:
 Optional fields:
 
 - `Source`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1077,7 +1077,7 @@ Optional fields:
 - `DBClusterIdentifier`: `str`
 - `DBClusterSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
@@ -1092,7 +1092,7 @@ from mypy_boto3_docdb.type_defs import DescribeDBClustersMessageRequestTypeDef
 Optional fields:
 
 - `DBClusterIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1107,7 +1107,7 @@ Optional fields:
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `DBParameterGroupFamily`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `DefaultOnly`: `bool`
@@ -1123,7 +1123,7 @@ from mypy_boto3_docdb.type_defs import DescribeDBInstancesMessageRequestTypeDef
 Optional fields:
 
 - `DBInstanceIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1136,7 +1136,7 @@ from mypy_boto3_docdb.type_defs import DescribeDBSubnetGroupsMessageRequestTypeD
 Optional fields:
 
 - `DBSubnetGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1152,7 +1152,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1178,7 +1178,7 @@ from mypy_boto3_docdb.type_defs import DescribeEventCategoriesMessageRequestType
 Optional fields:
 
 - `SourceType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribeEventSubscriptionsMessageRequestTypeDef
 
@@ -1189,7 +1189,7 @@ from mypy_boto3_docdb.type_defs import DescribeEventSubscriptionsMessageRequestT
 Optional fields:
 
 - `SubscriptionName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1206,8 +1206,8 @@ Optional fields:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Duration`: `int`
-- `EventCategories`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `EventCategories`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1220,7 +1220,7 @@ from mypy_boto3_docdb.type_defs import DescribeGlobalClustersMessageRequestTypeD
 Optional fields:
 
 - `GlobalClusterIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1240,7 +1240,7 @@ Optional fields:
 - `DBInstanceClass`: `str`
 - `LicenseModel`: `str`
 - `Vpc`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1253,7 +1253,7 @@ from mypy_boto3_docdb.type_defs import DescribePendingMaintenanceActionsMessageR
 Optional fields:
 
 - `ResourceIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -1398,7 +1398,7 @@ from mypy_boto3_docdb.type_defs import FilterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## GlobalClusterMemberTypeDef
 
@@ -1458,7 +1458,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ModifyDBClusterMessageRequestTypeDef
 
@@ -1476,7 +1476,7 @@ Optional fields:
 - `ApplyImmediately`: `bool`
 - `BackupRetentionPeriod`: `int`
 - `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `Port`: `int`
 - `MasterUserPassword`: `str`
 - `PreferredBackupWindow`: `str`
@@ -1495,7 +1495,8 @@ from mypy_boto3_docdb.type_defs import ModifyDBClusterParameterGroupMessageReque
 Required fields:
 
 - `DBClusterParameterGroupName`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## ModifyDBClusterResultTypeDef
 
@@ -1522,8 +1523,8 @@ Required fields:
 
 Optional fields:
 
-- `ValuesToAdd`: `List`\[`str`\]
-- `ValuesToRemove`: `List`\[`str`\]
+- `ValuesToAdd`: `Sequence`\[`str`\]
+- `ValuesToRemove`: `Sequence`\[`str`\]
 
 ## ModifyDBClusterSnapshotAttributeResultTypeDef
 
@@ -1579,7 +1580,7 @@ from mypy_boto3_docdb.type_defs import ModifyDBSubnetGroupMessageRequestTypeDef
 Required fields:
 
 - `DBSubnetGroupName`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1611,7 +1612,7 @@ Optional fields:
 
 - `SnsTopicArn`: `str`
 - `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
 
 ## ModifyEventSubscriptionResultTypeDef
@@ -1861,7 +1862,7 @@ from mypy_boto3_docdb.type_defs import RemoveTagsFromResourceMessageRequestTypeD
 Required fields:
 
 - `ResourceName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ResetDBClusterParameterGroupMessageRequestTypeDef
 
@@ -1876,7 +1877,8 @@ Required fields:
 Optional fields:
 
 - `ResetAllParameters`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## ResourcePendingMaintenanceActionsTypeDef
 
@@ -1918,14 +1920,14 @@ Required fields:
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `EngineVersion`: `str`
 - `Port`: `int`
 - `DBSubnetGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DeletionProtection`: `bool`
 
 ## RestoreDBClusterFromSnapshotResultTypeDef
@@ -1957,10 +1959,10 @@ Optional fields:
 - `UseLatestRestorableTime`: `bool`
 - `Port`: `int`
 - `DBSubnetGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DeletionProtection`: `bool`
 
 ## RestoreDBClusterToPointInTimeResultTypeDef

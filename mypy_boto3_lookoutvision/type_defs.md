@@ -108,7 +108,7 @@ Optional fields:
 - `Description`: `str`
 - `ClientToken`: `str`
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateModelResponseTypeDef
 
@@ -729,7 +729,7 @@ from mypy_boto3_lookoutvision.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -751,7 +751,7 @@ from mypy_boto3_lookoutvision.type_defs import UntagResourceRequestRequestTypeDe
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDatasetEntriesRequestRequestTypeDef
 

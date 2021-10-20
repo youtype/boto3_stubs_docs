@@ -157,7 +157,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `UserStackAssociations`:
-  `List`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
+  `Sequence`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
   *(required)*
 
 Returns
@@ -179,7 +179,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `UserStackAssociations`:
-  `List`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
+  `Sequence`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
   *(required)*
 
 Returns
@@ -238,7 +238,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryName`: `str` *(required)*
-- `OrganizationalUnitDistinguishedNames`: `List`\[`str`\] *(required)*
+- `OrganizationalUnitDistinguishedNames`: `Sequence`\[`str`\] *(required)*
 - `ServiceAccountCredentials`:
   [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
 
@@ -274,7 +274,7 @@ Keyword-only arguments:
 - `EnableDefaultInternetAccess`: `bool`
 - `DomainJoinInfo`:
   [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `IdleDisconnectTimeoutInSeconds`: `int`
 - `IamRoleArn`: `str`
 - `StreamView`: [StreamViewType](./literals.md#streamviewtype)
@@ -307,9 +307,9 @@ Keyword-only arguments:
 - `DomainJoinInfo`:
   [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
 - `AppstreamAgentVersion`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `AccessEndpoints`:
-  `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
+  `Sequence`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 
 Returns
 [CreateImageBuilderResultTypeDef](./type_defs.md#createimagebuilderresulttypedef).
@@ -353,17 +353,17 @@ Keyword-only arguments:
 - `Description`: `str`
 - `DisplayName`: `str`
 - `StorageConnectors`:
-  `List`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
+  `Sequence`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
 - `RedirectURL`: `str`
 - `FeedbackURL`: `str`
 - `UserSettings`:
-  `List`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
+  `Sequence`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
 - `ApplicationSettings`:
   [ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `AccessEndpoints`:
-  `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
-- `EmbedHostDomains`: `List`\[`str`\]
+  `Sequence`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
+- `EmbedHostDomains`: `Sequence`\[`str`\]
 
 Returns [CreateStackResultTypeDef](./type_defs.md#createstackresulttypedef).
 
@@ -411,7 +411,7 @@ Keyword-only arguments:
 - `newImageName`: `str` *(required)*
 - `newImageDescription`: `str`
 - `newImageDisplayName`: `str`
-- `newImageTags`: `Dict`\[`str`, `str`\]
+- `newImageTags`: `Mapping`\[`str`, `str`\]
 - `dryRun`: `bool`
 
 Returns
@@ -613,7 +613,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DirectoryNames`: `List`\[`str`\]
+- `DirectoryNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -635,7 +635,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 Returns
@@ -657,7 +657,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -682,7 +682,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `MaxResults`: `int`
-- `SharedAwsAccountIds`: `List`\[`str`\]
+- `SharedAwsAccountIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 Returns
@@ -703,8 +703,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\]
-- `Arns`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
+- `Arns`: `Sequence`\[`str`\]
 - `Type`: [VisibilityTypeType](./literals.md#visibilitytypetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -753,7 +753,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 Returns
@@ -916,7 +916,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1071,7 +1071,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1091,7 +1091,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1111,7 +1111,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryName`: `str` *(required)*
-- `OrganizationalUnitDistinguishedNames`: `List`\[`str`\]
+- `OrganizationalUnitDistinguishedNames`: `Sequence`\[`str`\]
 - `ServiceAccountCredentials`:
   [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
 
@@ -1149,7 +1149,7 @@ Keyword-only arguments:
   [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
 - `IdleDisconnectTimeoutInSeconds`: `int`
 - `AttributesToDelete`:
-  `List`\[[FleetAttributeType](./literals.md#fleetattributetype)\]
+  `Sequence`\[[FleetAttributeType](./literals.md#fleetattributetype)\]
 - `IamRoleArn`: `str`
 - `StreamView`: [StreamViewType](./literals.md#streamviewtype)
 
@@ -1196,19 +1196,19 @@ Keyword-only arguments:
 - `DisplayName`: `str`
 - `Description`: `str`
 - `StorageConnectors`:
-  `List`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
+  `Sequence`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
 - `DeleteStorageConnectors`: `bool`
 - `RedirectURL`: `str`
 - `FeedbackURL`: `str`
 - `AttributesToDelete`:
-  `List`\[[StackAttributeType](./literals.md#stackattributetype)\]
+  `Sequence`\[[StackAttributeType](./literals.md#stackattributetype)\]
 - `UserSettings`:
-  `List`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
+  `Sequence`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
 - `ApplicationSettings`:
   [ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef)
 - `AccessEndpoints`:
-  `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
-- `EmbedHostDomains`: `List`\[`str`\]
+  `Sequence`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
+- `EmbedHostDomains`: `Sequence`\[`str`\]
 
 Returns [UpdateStackResultTypeDef](./type_defs.md#updatestackresulttypedef).
 

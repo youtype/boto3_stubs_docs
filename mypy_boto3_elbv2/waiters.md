@@ -33,8 +33,8 @@ Boto3 documentation:
 
 Arguments for `LoadBalancerAvailableWaiter.wait` method:
 
-- `LoadBalancerArns`: `List`\[`str`\]
-- `Names`: `List`\[`str`\]
+- `LoadBalancerArns`: `Sequence`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -58,8 +58,8 @@ Boto3 documentation:
 
 Arguments for `LoadBalancerExistsWaiter.wait` method:
 
-- `LoadBalancerArns`: `List`\[`str`\]
-- `Names`: `List`\[`str`\]
+- `LoadBalancerArns`: `Sequence`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -83,8 +83,8 @@ Boto3 documentation:
 
 Arguments for `LoadBalancersDeletedWaiter.wait` method:
 
-- `LoadBalancerArns`: `List`\[`str`\]
-- `Names`: `List`\[`str`\]
+- `LoadBalancerArns`: `Sequence`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -109,7 +109,7 @@ Arguments for `TargetDeregisteredWaiter.wait` method:
 
 - `TargetGroupArn`: `str` *(required)*
 - `Targets`:
-  `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
+  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## TargetInServiceWaiter
@@ -132,5 +132,5 @@ Arguments for `TargetInServiceWaiter.wait` method:
 
 - `TargetGroupArn`: `str` *(required)*
 - `Targets`:
-  `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
+  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

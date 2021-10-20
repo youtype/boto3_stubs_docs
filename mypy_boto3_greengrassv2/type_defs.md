@@ -87,6 +87,7 @@ type annotations stubs module
   - [ResolveComponentCandidatesResponseTypeDef](#resolvecomponentcandidatesresponsetypedef)
   - [ResolvedComponentVersionTypeDef](#resolvedcomponentversiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SystemResourceLimitsTypeDef](#systemresourcelimitstypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
@@ -136,7 +137,7 @@ Required fields:
 Optional fields:
 
 - `entries`:
-  `List`\[[AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)\]
+  `Sequence`\[[AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)\]
 
 ## BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef
 
@@ -164,7 +165,7 @@ Required fields:
 Optional fields:
 
 - `entries`:
-  `List`\[[DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef)\]
+  `Sequence`\[[DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef)\]
 
 ## BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef
 
@@ -224,7 +225,7 @@ Optional fields:
 
 - `componentName`: `str`
 - `componentVersion`: `str`
-- `versionRequirements`: `Dict`\[`str`, `str`\]
+- `versionRequirements`: `Mapping`\[`str`, `str`\]
 
 ## ComponentConfigurationUpdateTypeDef
 
@@ -235,7 +236,7 @@ from mypy_boto3_greengrassv2.type_defs import ComponentConfigurationUpdateTypeDe
 Optional fields:
 
 - `merge`: `str`
-- `reset`: `List`\[`str`\]
+- `reset`: `Sequence`\[`str`\]
 
 ## ComponentDependencyRequirementTypeDef
 
@@ -287,7 +288,7 @@ from mypy_boto3_greengrassv2.type_defs import ComponentPlatformTypeDef
 Optional fields:
 
 - `name`: `str`
-- `attributes`: `Dict`\[`str`, `str`\]
+- `attributes`: `Mapping`\[`str`, `str`\]
 
 ## ComponentRunWithTypeDef
 
@@ -298,6 +299,8 @@ from mypy_boto3_greengrassv2.type_defs import ComponentRunWithTypeDef
 Optional fields:
 
 - `posixUser`: `str`
+- `systemResourceLimits`:
+  [SystemResourceLimitsTypeDef](./type_defs.md#systemresourcelimitstypedef)
 
 ## ComponentTypeDef
 
@@ -347,7 +350,8 @@ Optional fields:
 - `inlineRecipe`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `lambdaFunction`:
   [LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
+- `clientToken`: `str`
 
 ## CreateComponentVersionResponseTypeDef
 
@@ -379,13 +383,14 @@ Required fields:
 Optional fields:
 
 - `deploymentName`: `str`
-- `components`: `Dict`\[`str`,
+- `components`: `Mapping`\[`str`,
   [ComponentDeploymentSpecificationTypeDef](./type_defs.md#componentdeploymentspecificationtypedef)\]
 - `iotJobConfiguration`:
   [DeploymentIoTJobConfigurationTypeDef](./type_defs.md#deploymentiotjobconfigurationtypedef)
 - `deploymentPolicies`:
   [DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
+- `clientToken`: `str`
 
 ## CreateDeploymentResponseTypeDef
 
@@ -710,7 +715,7 @@ from mypy_boto3_greengrassv2.type_defs import IoTJobAbortConfigTypeDef
 Required fields:
 
 - `criteriaList`:
-  `List`\[[IoTJobAbortCriteriaTypeDef](./type_defs.md#iotjobabortcriteriatypedef)\]
+  `Sequence`\[[IoTJobAbortCriteriaTypeDef](./type_defs.md#iotjobabortcriteriatypedef)\]
 
 ## IoTJobAbortCriteriaTypeDef
 
@@ -784,9 +789,9 @@ Optional fields:
 - `memorySizeInKB`: `int`
 - `mountROSysfs`: `bool`
 - `volumes`:
-  `List`\[[LambdaVolumeMountTypeDef](./type_defs.md#lambdavolumemounttypedef)\]
+  `Sequence`\[[LambdaVolumeMountTypeDef](./type_defs.md#lambdavolumemounttypedef)\]
 - `devices`:
-  `List`\[[LambdaDeviceMountTypeDef](./type_defs.md#lambdadevicemounttypedef)\]
+  `Sequence`\[[LambdaDeviceMountTypeDef](./type_defs.md#lambdadevicemounttypedef)\]
 
 ## LambdaDeviceMountTypeDef
 
@@ -824,7 +829,7 @@ from mypy_boto3_greengrassv2.type_defs import LambdaExecutionParametersTypeDef
 Optional fields:
 
 - `eventSources`:
-  `List`\[[LambdaEventSourceTypeDef](./type_defs.md#lambdaeventsourcetypedef)\]
+  `Sequence`\[[LambdaEventSourceTypeDef](./type_defs.md#lambdaeventsourcetypedef)\]
 - `maxQueueSize`: `int`
 - `maxInstancesCount`: `int`
 - `maxIdleTimeInSeconds`: `int`
@@ -833,8 +838,8 @@ Optional fields:
 - `pinned`: `bool`
 - `inputPayloadEncodingType`:
   [LambdaInputPayloadEncodingTypeType](./literals.md#lambdainputpayloadencodingtypetype)
-- `execArgs`: `List`\[`str`\]
-- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `execArgs`: `Sequence`\[`str`\]
+- `environmentVariables`: `Mapping`\[`str`, `str`\]
 - `linuxProcessParams`:
   [LambdaLinuxProcessParamsTypeDef](./type_defs.md#lambdalinuxprocessparamstypedef)
 
@@ -853,8 +858,8 @@ Optional fields:
 - `componentName`: `str`
 - `componentVersion`: `str`
 - `componentPlatforms`:
-  `List`\[[ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)\]
-- `componentDependencies`: `Dict`\[`str`,
+  `Sequence`\[[ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)\]
+- `componentDependencies`: `Mapping`\[`str`,
   [ComponentDependencyRequirementTypeDef](./type_defs.md#componentdependencyrequirementtypedef)\]
 - `componentLambdaParameters`:
   [LambdaExecutionParametersTypeDef](./type_defs.md#lambdaexecutionparameterstypedef)
@@ -1131,7 +1136,7 @@ Required fields:
 - `platform`:
   [ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)
 - `componentCandidates`:
-  `List`\[[ComponentCandidateTypeDef](./type_defs.md#componentcandidatetypedef)\]
+  `Sequence`\[[ComponentCandidateTypeDef](./type_defs.md#componentcandidatetypedef)\]
 
 ## ResolveComponentCandidatesResponseTypeDef
 
@@ -1173,6 +1178,17 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
+## SystemResourceLimitsTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import SystemResourceLimitsTypeDef
+```
+
+Optional fields:
+
+- `memory`: `int`
+- `cpus`: `float`
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1182,7 +1198,7 @@ from mypy_boto3_greengrassv2.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1193,4 +1209,4 @@ from mypy_boto3_greengrassv2.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]

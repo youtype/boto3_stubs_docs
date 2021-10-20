@@ -134,7 +134,8 @@ Keyword-only arguments:
 
 - `SourceArn`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `CrossAccount`: `bool`
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDiscovererResponseTypeDef](./type_defs.md#creatediscovererresponsetypedef).
@@ -155,7 +156,7 @@ Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
@@ -179,7 +180,7 @@ Keyword-only arguments:
 - `SchemaName`: `str` *(required)*
 - `Type`: [TypeType](./literals.md#typetype) *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
@@ -388,7 +389,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -430,7 +431,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Events`: `List`\[`str`\] *(required)*
+- `Events`: `Sequence`\[`str`\] *(required)*
 - `Type`: [TypeType](./literals.md#typetype) *(required)*
 
 Returns
@@ -690,7 +691,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -707,14 +708,14 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_discoverer
 
 Updates the discoverer See also:
 `AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/UpdateDiscoverer>`\_
 **Request Syntax** response = client.update_discoverer( Description='string',
-DiscovererId='string' ).
+DiscovererId='string', CrossAccount=True|False ).
 
 Type annotations for `boto3.client("schemas").update_discoverer` method.
 
@@ -728,6 +729,7 @@ Keyword-only arguments:
 
 - `DiscovererId`: `str` *(required)*
 - `Description`: `str`
+- `CrossAccount`: `bool`
 
 Returns
 [UpdateDiscovererResponseTypeDef](./type_defs.md#updatediscovererresponsetypedef).

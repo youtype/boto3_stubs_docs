@@ -236,8 +236,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
-- `instanceNames`: `List`\[`str`\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `instanceNames`: `Sequence`\[`str`\] *(required)*
 
 ### batch_get_application_revisions
 
@@ -256,7 +256,7 @@ Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `revisions`:
-  `List`\[[RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)\]
+  `Sequence`\[[RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)\]
   *(required)*
 
 Returns
@@ -277,7 +277,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `applicationNames`: `List`\[`str`\] *(required)*
+- `applicationNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetApplicationsOutputTypeDef](./type_defs.md#batchgetapplicationsoutputtypedef).
@@ -298,7 +298,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
-- `deploymentGroupNames`: `List`\[`str`\] *(required)*
+- `deploymentGroupNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetDeploymentGroupsOutputTypeDef](./type_defs.md#batchgetdeploymentgroupsoutputtypedef).
@@ -319,7 +319,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
-- `instanceIds`: `List`\[`str`\] *(required)*
+- `instanceIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetDeploymentInstancesOutputTypeDef](./type_defs.md#batchgetdeploymentinstancesoutputtypedef).
@@ -340,7 +340,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `deploymentId`: `str`
-- `targetIds`: `List`\[`str`\]
+- `targetIds`: `Sequence`\[`str`\]
 
 Returns
 [BatchGetDeploymentTargetsOutputTypeDef](./type_defs.md#batchgetdeploymenttargetsoutputtypedef).
@@ -359,7 +359,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `deploymentIds`: `List`\[`str`\] *(required)*
+- `deploymentIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetDeploymentsOutputTypeDef](./type_defs.md#batchgetdeploymentsoutputtypedef).
@@ -379,7 +379,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `instanceNames`: `List`\[`str`\] *(required)*
+- `instanceNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetOnPremisesInstancesOutputTypeDef](./type_defs.md#batchgetonpremisesinstancesoutputtypedef).
@@ -435,7 +435,7 @@ Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateApplicationOutputTypeDef](./type_defs.md#createapplicationoutputtypedef).
@@ -516,12 +516,12 @@ Keyword-only arguments:
 - `serviceRoleArn`: `str` *(required)*
 - `deploymentConfigName`: `str`
 - `ec2TagFilters`:
-  `List`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]
+  `Sequence`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]
 - `onPremisesInstanceTagFilters`:
-  `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `autoScalingGroups`: `List`\[`str`\]
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `autoScalingGroups`: `Sequence`\[`str`\]
 - `triggerConfigurations`:
-  `List`\[[TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)\]
+  `Sequence`\[[TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)\]
 - `alarmConfiguration`:
   [AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef)
 - `autoRollbackConfiguration`:
@@ -536,10 +536,10 @@ Keyword-only arguments:
   [LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef)
 - `ec2TagSet`: [EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef)
 - `ecsServices`:
-  `List`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
+  `Sequence`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
 - `onPremisesTagSet`:
   [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDeploymentGroupOutputTypeDef](./type_defs.md#createdeploymentgroupoutputtypedef).
@@ -667,7 +667,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -940,9 +940,9 @@ Keyword-only arguments:
 - `deploymentId`: `str` *(required)*
 - `nextToken`: `str`
 - `instanceStatusFilter`:
-  `List`\[[InstanceStatusType](./literals.md#instancestatustype)\]
+  `Sequence`\[[InstanceStatusType](./literals.md#instancestatustype)\]
 - `instanceTypeFilter`:
-  `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
+  `Sequence`\[[InstanceTypeType](./literals.md#instancetypetype)\]
 
 Returns
 [ListDeploymentInstancesOutputTypeDef](./type_defs.md#listdeploymentinstancesoutputtypedef).
@@ -965,8 +965,8 @@ Keyword-only arguments:
 - `deploymentId`: `str`
 - `nextToken`: `str`
 - `targetFilters`:
-  `Dict`\[[TargetFilterNameType](./literals.md#targetfilternametype),
-  `List`\[`str`\]\]
+  `Mapping`\[[TargetFilterNameType](./literals.md#targetfilternametype),
+  `Sequence`\[`str`\]\]
 
 Returns
 [ListDeploymentTargetsOutputTypeDef](./type_defs.md#listdeploymenttargetsoutputtypedef).
@@ -990,7 +990,7 @@ Keyword-only arguments:
 - `deploymentGroupName`: `str`
 - `externalId`: `str`
 - `includeOnlyStatuses`:
-  `List`\[[DeploymentStatusType](./literals.md#deploymentstatustype)\]
+  `Sequence`\[[DeploymentStatusType](./literals.md#deploymentstatustype)\]
 - `createTimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `nextToken`: `str`
 
@@ -1034,7 +1034,8 @@ Keyword-only arguments:
 
 - `registrationStatus`:
   [RegistrationStatusType](./literals.md#registrationstatustype)
-- `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `tagFilters`:
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `nextToken`: `str`
 
 Returns
@@ -1138,8 +1139,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
-- `instanceNames`: `List`\[`str`\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `instanceNames`: `Sequence`\[`str`\] *(required)*
 
 ### skip_wait_time_for_instance_termination
 
@@ -1195,7 +1196,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1214,7 +1215,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1255,13 +1256,13 @@ Keyword-only arguments:
 - `newDeploymentGroupName`: `str`
 - `deploymentConfigName`: `str`
 - `ec2TagFilters`:
-  `List`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]
+  `Sequence`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]
 - `onPremisesInstanceTagFilters`:
-  `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `autoScalingGroups`: `List`\[`str`\]
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `autoScalingGroups`: `Sequence`\[`str`\]
 - `serviceRoleArn`: `str`
 - `triggerConfigurations`:
-  `List`\[[TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)\]
+  `Sequence`\[[TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)\]
 - `alarmConfiguration`:
   [AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef)
 - `autoRollbackConfiguration`:
@@ -1276,7 +1277,7 @@ Keyword-only arguments:
   [LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef)
 - `ec2TagSet`: [EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef)
 - `ecsServices`:
-  `List`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
+  `Sequence`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
 - `onPremisesTagSet`:
   [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
 

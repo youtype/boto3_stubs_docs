@@ -220,7 +220,7 @@ from mypy_boto3_lex_models.type_defs import ConversationLogsRequestTypeDef
 Required fields:
 
 - `logSettings`:
-  `List`\[[LogSettingsRequestTypeDef](./type_defs.md#logsettingsrequesttypedef)\]
+  `Sequence`\[[LogSettingsRequestTypeDef](./type_defs.md#logsettingsrequesttypedef)\]
 - `iamRoleArn`: `str`
 
 ## ConversationLogsResponseTypeDef
@@ -1118,7 +1118,7 @@ from mypy_boto3_lex_models.type_defs import GetUtterancesViewRequestRequestTypeD
 Required fields:
 
 - `botName`: `str`
-- `botVersions`: `List`\[`str`\]
+- `botVersions`: `Sequence`\[`str`\]
 - `statusType`: [StatusTypeType](./literals.md#statustypetype)
 
 ## GetUtterancesViewResponseTypeDef
@@ -1341,7 +1341,7 @@ Optional fields:
 - `checksum`: `str`
 - `conversationLogs`:
   [ConversationLogsRequestTypeDef](./type_defs.md#conversationlogsrequesttypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutBotAliasResponseTypeDef
 
@@ -1379,7 +1379,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `intents`: `List`\[[IntentTypeDef](./type_defs.md#intenttypedef)\]
+- `intents`: `Sequence`\[[IntentTypeDef](./type_defs.md#intenttypedef)\]
 - `enableModelImprovements`: `bool`
 - `nluIntentConfidenceThreshold`: `float`
 - `clarificationPrompt`: [PromptTypeDef](./type_defs.md#prompttypedef)
@@ -1390,7 +1390,7 @@ Optional fields:
 - `processBehavior`: [ProcessBehaviorType](./literals.md#processbehaviortype)
 - `detectSentiment`: `bool`
 - `createVersion`: `bool`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutBotResponseTypeDef
 
@@ -1436,8 +1436,8 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `slots`: `List`\[[SlotTypeDef](./type_defs.md#slottypedef)\]
-- `sampleUtterances`: `List`\[`str`\]
+- `slots`: `Sequence`\[[SlotTypeDef](./type_defs.md#slottypedef)\]
+- `sampleUtterances`: `Sequence`\[`str`\]
 - `confirmationPrompt`: [PromptTypeDef](./type_defs.md#prompttypedef)
 - `rejectionStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
 - `followUpPrompt`:
@@ -1452,9 +1452,9 @@ Optional fields:
 - `kendraConfiguration`:
   [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 - `inputContexts`:
-  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
+  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
 - `outputContexts`:
-  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
+  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
 
 ## PutIntentResponseTypeDef
 
@@ -1505,14 +1505,14 @@ Optional fields:
 
 - `description`: `str`
 - `enumerationValues`:
-  `List`\[[EnumerationValueTypeDef](./type_defs.md#enumerationvaluetypedef)\]
+  `Sequence`\[[EnumerationValueTypeDef](./type_defs.md#enumerationvaluetypedef)\]
 - `checksum`: `str`
 - `valueSelectionStrategy`:
   [SlotValueSelectionStrategyType](./literals.md#slotvalueselectionstrategytype)
 - `createVersion`: `bool`
 - `parentSlotTypeSignature`: `str`
 - `slotTypeConfigurations`:
-  `List`\[[SlotTypeConfigurationTypeDef](./type_defs.md#slottypeconfigurationtypedef)\]
+  `Sequence`\[[SlotTypeConfigurationTypeDef](./type_defs.md#slottypeconfigurationtypedef)\]
 
 ## PutSlotTypeResponseTypeDef
 
@@ -1648,7 +1648,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartImportResponseTypeDef
 
@@ -1726,7 +1726,7 @@ from mypy_boto3_lex_models.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1748,7 +1748,7 @@ from mypy_boto3_lex_models.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UtteranceDataTypeDef
 

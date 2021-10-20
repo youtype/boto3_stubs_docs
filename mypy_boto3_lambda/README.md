@@ -180,9 +180,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.literals import CodeSigningPolicyType, ...
+from mypy_boto3_lambda.literals import ArchitectureType, ...
 ```
 
+- [ArchitectureType](./literals.md#architecturetype)
 - [CodeSigningPolicyType](./literals.md#codesigningpolicytype)
 - [EndPointTypeType](./literals.md#endpointtypetype)
 - [EventSourcePositionType](./literals.md#eventsourcepositiontype)
@@ -212,6 +213,9 @@ from mypy_boto3_lambda.literals import CodeSigningPolicyType, ...
 - [StateReasonCodeType](./literals.md#statereasoncodetype)
 - [StateType](./literals.md#statetype)
 - [TracingModeType](./literals.md#tracingmodetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

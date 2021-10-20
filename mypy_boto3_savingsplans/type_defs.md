@@ -53,7 +53,7 @@ Optional fields:
 - `upfrontPaymentAmount`: `str`
 - `purchaseTime`: `Union`\[`datetime`, `str`\]
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateSavingsPlanResponseTypeDef
 
@@ -90,7 +90,7 @@ Required fields:
 Optional fields:
 
 - `filters`:
-  `List`\[[SavingsPlanRateFilterTypeDef](./type_defs.md#savingsplanratefiltertypedef)\]
+  `Sequence`\[[SavingsPlanRateFilterTypeDef](./type_defs.md#savingsplanratefiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -117,19 +117,19 @@ from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingRatesR
 
 Optional fields:
 
-- `savingsPlanOfferingIds`: `List`\[`str`\]
+- `savingsPlanOfferingIds`: `Sequence`\[`str`\]
 - `savingsPlanPaymentOptions`:
-  `List`\[[SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)\]
+  `Sequence`\[[SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)\]
 - `savingsPlanTypes`:
-  `List`\[[SavingsPlanTypeType](./literals.md#savingsplantypetype)\]
+  `Sequence`\[[SavingsPlanTypeType](./literals.md#savingsplantypetype)\]
 - `products`:
-  `List`\[[SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)\]
+  `Sequence`\[[SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)\]
 - `serviceCodes`:
-  `List`\[[SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype)\]
-- `usageTypes`: `List`\[`str`\]
-- `operations`: `List`\[`str`\]
+  `Sequence`\[[SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype)\]
+- `usageTypes`: `Sequence`\[`str`\]
+- `operations`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[SavingsPlanOfferingRateFilterElementTypeDef](./type_defs.md#savingsplanofferingratefilterelementtypedef)\]
+  `Sequence`\[[SavingsPlanOfferingRateFilterElementTypeDef](./type_defs.md#savingsplanofferingratefilterelementtypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -155,21 +155,22 @@ from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingsReque
 
 Optional fields:
 
-- `offeringIds`: `List`\[`str`\]
+- `offeringIds`: `Sequence`\[`str`\]
 - `paymentOptions`:
-  `List`\[[SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)\]
+  `Sequence`\[[SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)\]
 - `productType`:
   [SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)
 - `planTypes`:
-  `List`\[[SavingsPlanTypeType](./literals.md#savingsplantypetype)\]
-- `durations`: `List`\[`int`\]
-- `currencies`: `List`\[[CurrencyCodeType](./literals.md#currencycodetype)\]
-- `descriptions`: `List`\[`str`\]
-- `serviceCodes`: `List`\[`str`\]
-- `usageTypes`: `List`\[`str`\]
-- `operations`: `List`\[`str`\]
+  `Sequence`\[[SavingsPlanTypeType](./literals.md#savingsplantypetype)\]
+- `durations`: `Sequence`\[`int`\]
+- `currencies`:
+  `Sequence`\[[CurrencyCodeType](./literals.md#currencycodetype)\]
+- `descriptions`: `Sequence`\[`str`\]
+- `serviceCodes`: `Sequence`\[`str`\]
+- `usageTypes`: `Sequence`\[`str`\]
+- `operations`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[SavingsPlanOfferingFilterElementTypeDef](./type_defs.md#savingsplanofferingfilterelementtypedef)\]
+  `Sequence`\[[SavingsPlanOfferingFilterElementTypeDef](./type_defs.md#savingsplanofferingfilterelementtypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -195,14 +196,14 @@ from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansRequestRequest
 
 Optional fields:
 
-- `savingsPlanArns`: `List`\[`str`\]
-- `savingsPlanIds`: `List`\[`str`\]
+- `savingsPlanArns`: `Sequence`\[`str`\]
+- `savingsPlanIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `states`:
-  `List`\[[SavingsPlanStateType](./literals.md#savingsplanstatetype)\]
+  `Sequence`\[[SavingsPlanStateType](./literals.md#savingsplanstatetype)\]
 - `filters`:
-  `List`\[[SavingsPlanFilterTypeDef](./type_defs.md#savingsplanfiltertypedef)\]
+  `Sequence`\[[SavingsPlanFilterTypeDef](./type_defs.md#savingsplanfiltertypedef)\]
 
 ## DescribeSavingsPlansResponseTypeDef
 
@@ -280,7 +281,7 @@ Optional fields:
 
 - `name`:
   [SavingsPlansFilterNameType](./literals.md#savingsplansfilternametype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## SavingsPlanOfferingFilterElementTypeDef
 
@@ -292,7 +293,7 @@ Optional fields:
 
 - `name`:
   [SavingsPlanOfferingFilterAttributeType](./literals.md#savingsplanofferingfilterattributetype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## SavingsPlanOfferingPropertyTypeDef
 
@@ -316,7 +317,7 @@ Optional fields:
 
 - `name`:
   [SavingsPlanRateFilterAttributeType](./literals.md#savingsplanratefilterattributetype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## SavingsPlanOfferingRatePropertyTypeDef
 
@@ -383,7 +384,7 @@ Optional fields:
 
 - `name`:
   [SavingsPlanRateFilterNameType](./literals.md#savingsplanratefilternametype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## SavingsPlanRatePropertyTypeDef
 
@@ -455,7 +456,7 @@ from mypy_boto3_savingsplans.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -466,4 +467,4 @@ from mypy_boto3_savingsplans.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]

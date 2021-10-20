@@ -151,9 +151,9 @@ Keyword-only arguments:
 - `KmsKeyId`: `str`
 - `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SecretString`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AddReplicaRegions`:
-  `List`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
+  `Sequence`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
 - `ForceOverwriteReplicaSecret`: `bool`
 
 Returns
@@ -232,7 +232,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -333,7 +333,8 @@ Returns
 
 ### list_secrets
 
-Lists all of the secrets that are stored by Secrets Manager in the AWS account.
+Lists all of the secrets that are stored by Secrets Manager in the Amazon Web
+Services account.
 
 Type annotations for `boto3.client("secretsmanager").list_secrets` method.
 
@@ -347,7 +348,7 @@ Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 
 Returns
@@ -394,7 +395,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SecretString`: `str`
-- `VersionStages`: `List`\[`str`\]
+- `VersionStages`: `Sequence`\[`str`\]
 
 Returns
 [PutSecretValueResponseTypeDef](./type_defs.md#putsecretvalueresponsetypedef).
@@ -415,7 +416,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
-- `RemoveReplicaRegions`: `List`\[`str`\] *(required)*
+- `RemoveReplicaRegions`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [RemoveRegionsFromReplicationResponseTypeDef](./type_defs.md#removeregionsfromreplicationresponsetypedef).
@@ -438,7 +439,7 @@ Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `AddReplicaRegions`:
-  `List`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
+  `Sequence`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
   *(required)*
 - `ForceOverwriteReplicaSecret`: `bool`
 
@@ -525,7 +526,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_resource
 
@@ -542,7 +543,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_secret
 

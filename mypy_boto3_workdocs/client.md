@@ -184,7 +184,7 @@ Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `Principals`:
-  `List`\[[SharePrincipalTypeDef](./type_defs.md#shareprincipaltypedef)\]
+  `Sequence`\[[SharePrincipalTypeDef](./type_defs.md#shareprincipaltypedef)\]
   *(required)*
 - `AuthenticationToken`: `str`
 - `NotificationOptions`:
@@ -251,7 +251,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `CustomMetadata`: `Dict`\[`str`, `str`\] *(required)*
+- `CustomMetadata`: `Mapping`\[`str`, `str`\] *(required)*
 - `AuthenticationToken`: `str`
 - `VersionId`: `str`
 
@@ -297,7 +297,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Labels`: `List`\[`str`\] *(required)*
+- `Labels`: `Sequence`\[`str`\] *(required)*
 - `AuthenticationToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -409,7 +409,7 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 - `VersionId`: `str`
-- `Keys`: `List`\[`str`\]
+- `Keys`: `Sequence`\[`str`\]
 - `DeleteAll`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -481,7 +481,7 @@ Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `AuthenticationToken`: `str`
-- `Labels`: `List`\[`str`\]
+- `Labels`: `Sequence`\[`str`\]
 - `DeleteAll`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -756,7 +756,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

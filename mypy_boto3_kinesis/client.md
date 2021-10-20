@@ -119,7 +119,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### can_paginate
 
@@ -300,7 +300,7 @@ Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `ShardLevelMetrics`:
-  `List`\[[MetricsNameType](./literals.md#metricsnametype)\] *(required)*
+  `Sequence`\[[MetricsNameType](./literals.md#metricsnametype)\] *(required)*
 
 Returns
 [EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef).
@@ -322,7 +322,7 @@ Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `ShardLevelMetrics`:
-  `List`\[[MetricsNameType](./literals.md#metricsnametype)\] *(required)*
+  `Sequence`\[[MetricsNameType](./literals.md#metricsnametype)\] *(required)*
 
 Returns
 [EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef).
@@ -339,7 +339,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -550,7 +550,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Records`:
-  `List`\[[PutRecordsRequestEntryTypeDef](./type_defs.md#putrecordsrequestentrytypedef)\]
+  `Sequence`\[[PutRecordsRequestEntryTypeDef](./type_defs.md#putrecordsrequestentrytypedef)\]
   *(required)*
 - `StreamName`: `str` *(required)*
 
@@ -591,7 +591,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### split_shard
 

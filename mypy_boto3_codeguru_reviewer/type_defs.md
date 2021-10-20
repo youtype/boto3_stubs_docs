@@ -53,6 +53,7 @@ type annotations stubs module
   - [RepositoryTypeDef](#repositorytypedef)
   - [RequestMetadataTypeDef](#requestmetadatatypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RuleMetadataTypeDef](#rulemetadatatypedef)
   - [S3BucketRepositoryTypeDef](#s3bucketrepositorytypedef)
   - [S3RepositoryDetailsTypeDef](#s3repositorydetailstypedef)
   - [S3RepositoryTypeDef](#s3repositorytypedef)
@@ -75,7 +76,7 @@ Required fields:
 Optional fields:
 
 - `ClientRequestToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `KMSKeyDetails`: [KMSKeyDetailsTypeDef](./type_defs.md#kmskeydetailstypedef)
 
 ## AssociateRepositoryResponseTypeDef
@@ -188,7 +189,8 @@ Required fields:
 
 Optional fields:
 
-- `AnalysisTypes`: `List`\[[AnalysisTypeType](./literals.md#analysistypetype)\]
+- `AnalysisTypes`:
+  `Sequence`\[[AnalysisTypeType](./literals.md#analysistypetype)\]
 
 ## CommitDiffSourceCodeTypeTypeDef
 
@@ -363,9 +365,10 @@ Required fields:
 
 Optional fields:
 
-- `ProviderTypes`: `List`\[[ProviderTypeType](./literals.md#providertypetype)\]
-- `States`: `List`\[[JobStateType](./literals.md#jobstatetype)\]
-- `RepositoryNames`: `List`\[`str`\]
+- `ProviderTypes`:
+  `Sequence`\[[ProviderTypeType](./literals.md#providertypetype)\]
+- `States`: `Sequence`\[[JobStateType](./literals.md#jobstatetype)\]
+- `RepositoryNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -397,8 +400,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `UserIds`: `List`\[`str`\]
-- `RecommendationIds`: `List`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
+- `RecommendationIds`: `Sequence`\[`str`\]
 
 ## ListRecommendationFeedbackResponseTypeDef
 
@@ -451,11 +454,12 @@ from mypy_boto3_codeguru_reviewer.type_defs import ListRepositoryAssociationsReq
 
 Optional fields:
 
-- `ProviderTypes`: `List`\[[ProviderTypeType](./literals.md#providertypetype)\]
+- `ProviderTypes`:
+  `Sequence`\[[ProviderTypeType](./literals.md#providertypetype)\]
 - `States`:
-  `List`\[[RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)\]
-- `Names`: `List`\[`str`\]
-- `Owners`: `List`\[`str`\]
+  `Sequence`\[[RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)\]
+- `Names`: `Sequence`\[`str`\]
+- `Owners`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -539,7 +543,7 @@ Required fields:
 
 - `CodeReviewArn`: `str`
 - `RecommendationId`: `str`
-- `Reactions`: `List`\[[ReactionType](./literals.md#reactiontype)\]
+- `Reactions`: `Sequence`\[[ReactionType](./literals.md#reactiontype)\]
 
 ## RecommendationFeedbackSummaryTypeDef
 
@@ -583,6 +587,8 @@ Optional fields:
 - `Description`: `str`
 - `RecommendationCategory`:
   [RecommendationCategoryType](./literals.md#recommendationcategorytype)
+- `RuleMetadata`: [RuleMetadataTypeDef](./type_defs.md#rulemetadatatypedef)
+- `Severity`: [SeverityType](./literals.md#severitytype)
 
 ## RepositoryAnalysisTypeDef
 
@@ -691,6 +697,20 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
+## RuleMetadataTypeDef
+
+```python
+from mypy_boto3_codeguru_reviewer.type_defs import RuleMetadataTypeDef
+```
+
+Optional fields:
+
+- `RuleId`: `str`
+- `RuleName`: `str`
+- `ShortDescription`: `str`
+- `LongDescription`: `str`
+- `RuleTags`: `List`\[`str`\]
+
 ## S3BucketRepositoryTypeDef
 
 ```python
@@ -756,7 +776,7 @@ from mypy_boto3_codeguru_reviewer.type_defs import TagResourceRequestRequestType
 Required fields:
 
 - `resourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## ThirdPartySourceRepositoryTypeDef
 
@@ -779,7 +799,7 @@ from mypy_boto3_codeguru_reviewer.type_defs import UntagResourceRequestRequestTy
 Required fields:
 
 - `resourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## WaiterConfigTypeDef
 

@@ -206,6 +206,8 @@ from mypy_boto3_waf.literals import ChangeActionType, ...
 - [WafActionTypeType](./literals.md#wafactiontypetype)
 - [WafOverrideActionTypeType](./literals.md#wafoverrideactiontypetype)
 - [WafRuleTypeType](./literals.md#wafruletypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

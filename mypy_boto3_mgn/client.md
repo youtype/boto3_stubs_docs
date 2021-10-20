@@ -160,12 +160,12 @@ Keyword-only arguments:
   [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
   *(required)*
 - `replicationServerInstanceType`: `str` *(required)*
-- `replicationServersSecurityGroupsIDs`: `List`\[`str`\] *(required)*
+- `replicationServersSecurityGroupsIDs`: `Sequence`\[`str`\] *(required)*
 - `stagingAreaSubnetId`: `str` *(required)*
-- `stagingAreaTags`: `Dict`\[`str`, `str`\] *(required)*
+- `stagingAreaTags`: `Mapping`\[`str`, `str`\] *(required)*
 - `useDedicatedReplicationServer`: `bool` *(required)*
 - `ebsEncryptionKeyArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef).
@@ -287,7 +287,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `replicationConfigurationTemplateIDs`: `List`\[`str`\] *(required)*
+- `replicationConfigurationTemplateIDs`: `Sequence`\[`str`\] *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -367,7 +367,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -497,8 +497,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `sourceServerIDs`: `List`\[`str`\] *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `sourceServerIDs`: `Sequence`\[`str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [StartCutoverResponseTypeDef](./type_defs.md#startcutoverresponsetypedef).
@@ -517,8 +517,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `sourceServerIDs`: `List`\[`str`\] *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `sourceServerIDs`: `Sequence`\[`str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns [StartTestResponseTypeDef](./type_defs.md#starttestresponsetypedef).
 
@@ -538,7 +538,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### terminate_target_instances
 
@@ -554,8 +554,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `sourceServerIDs`: `List`\[`str`\] *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `sourceServerIDs`: `Sequence`\[`str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [TerminateTargetInstancesResponseTypeDef](./type_defs.md#terminatetargetinstancesresponsetypedef).
@@ -576,7 +576,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_launch_configuration
 
@@ -633,11 +633,11 @@ Keyword-only arguments:
 - `ebsEncryptionKeyArn`: `str`
 - `name`: `str`
 - `replicatedDisks`:
-  `List`\[[ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef)\]
+  `Sequence`\[[ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef)\]
 - `replicationServerInstanceType`: `str`
-- `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
+- `replicationServersSecurityGroupsIDs`: `Sequence`\[`str`\]
 - `stagingAreaSubnetId`: `str`
-- `stagingAreaTags`: `Dict`\[`str`, `str`\]
+- `stagingAreaTags`: `Mapping`\[`str`, `str`\]
 - `useDedicatedReplicationServer`: `bool`
 
 Returns
@@ -671,9 +671,9 @@ Keyword-only arguments:
   [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
 - `ebsEncryptionKeyArn`: `str`
 - `replicationServerInstanceType`: `str`
-- `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
+- `replicationServersSecurityGroupsIDs`: `Sequence`\[`str`\]
 - `stagingAreaSubnetId`: `str`
-- `stagingAreaTags`: `Dict`\[`str`, `str`\]
+- `stagingAreaTags`: `Mapping`\[`str`, `str`\]
 - `useDedicatedReplicationServer`: `bool`
 
 Returns

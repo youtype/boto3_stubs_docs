@@ -64,7 +64,7 @@ Required fields:
 
 Optional fields:
 
-- `acceleratorTypes`: `List`\[`str`\]
+- `acceleratorTypes`: `Sequence`\[`str`\]
 
 ## DescribeAcceleratorOfferingsResponseTypeDef
 
@@ -100,8 +100,8 @@ from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorsRequestRe
 
 Optional fields:
 
-- `acceleratorIds`: `List`\[`str`\]
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `acceleratorIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -153,7 +153,7 @@ from mypy_boto3_elastic_inference.type_defs import FilterTypeDef
 Optional fields:
 
 - `name`: `str`
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## KeyValuePairTypeDef
 
@@ -233,7 +233,7 @@ from mypy_boto3_elastic_inference.type_defs import TagResourceRequestRequestType
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -244,4 +244,4 @@ from mypy_boto3_elastic_inference.type_defs import UntagResourceRequestRequestTy
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]

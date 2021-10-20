@@ -152,6 +152,7 @@ from mypy_boto3_sesv2.literals import BehaviorOnMxFailureType, ...
 - [DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype)
 - [DimensionValueSourceType](./literals.md#dimensionvaluesourcetype)
 - [DkimSigningAttributesOriginType](./literals.md#dkimsigningattributesorigintype)
+- [DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype)
 - [DkimStatusType](./literals.md#dkimstatustype)
 - [EventTypeType](./literals.md#eventtypetype)
 - [IdentityTypeType](./literals.md#identitytypetype)
@@ -165,6 +166,7 @@ from mypy_boto3_sesv2.literals import BehaviorOnMxFailureType, ...
 - [SuppressionListReasonType](./literals.md#suppressionlistreasontype)
 - [TlsPolicyType](./literals.md#tlspolicytype)
 - [WarmupStatusType](./literals.md#warmupstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

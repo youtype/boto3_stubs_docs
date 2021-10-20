@@ -192,6 +192,8 @@ from mypy_boto3_route53resolver.literals import ActionType, ...
 - [ShareStatusType](./literals.md#sharestatustype)
 - [SortOrderType](./literals.md#sortordertype)
 - [ValidationType](./literals.md#validationtype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

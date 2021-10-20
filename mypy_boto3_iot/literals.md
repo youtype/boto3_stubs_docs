@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 IoT module](#literals-for-boto3-iot-module)
   - [AbortActionType](#abortactiontype)
   - [ActionTypeType](#actiontypetype)
+  - [AggregationTypeNameType](#aggregationtypenametype)
   - [AlertTargetTypeType](#alerttargettypetype)
   - [AuditCheckRunStatusType](#auditcheckrunstatustype)
   - [AuditFindingSeverityType](#auditfindingseveritytype)
@@ -45,6 +46,7 @@ type annotations stubs module
   - [DynamoKeyTypeType](#dynamokeytypetype)
   - [EventTypeType](#eventtypetype)
   - [FieldTypeType](#fieldtypetype)
+  - [FleetMetricUnitType](#fleetmetricunittype)
   - [GetBehaviorModelTrainingSummariesPaginatorName](#getbehaviormodeltrainingsummariespaginatorname)
   - [IndexStatusType](#indexstatustype)
   - [JobExecutionFailureTypeType](#jobexecutionfailuretypetype)
@@ -67,9 +69,11 @@ type annotations stubs module
   - [ListDetectMitigationActionsTasksPaginatorName](#listdetectmitigationactionstaskspaginatorname)
   - [ListDimensionsPaginatorName](#listdimensionspaginatorname)
   - [ListDomainConfigurationsPaginatorName](#listdomainconfigurationspaginatorname)
+  - [ListFleetMetricsPaginatorName](#listfleetmetricspaginatorname)
   - [ListIndicesPaginatorName](#listindicespaginatorname)
   - [ListJobExecutionsForJobPaginatorName](#listjobexecutionsforjobpaginatorname)
   - [ListJobExecutionsForThingPaginatorName](#listjobexecutionsforthingpaginatorname)
+  - [ListJobTemplatesPaginatorName](#listjobtemplatespaginatorname)
   - [ListJobsPaginatorName](#listjobspaginatorname)
   - [ListMitigationActionsPaginatorName](#listmitigationactionspaginatorname)
   - [ListOTAUpdatesPaginatorName](#listotaupdatespaginatorname)
@@ -119,7 +123,10 @@ type annotations stubs module
   - [ThingGroupIndexingModeType](#thinggroupindexingmodetype)
   - [ThingIndexingModeType](#thingindexingmodetype)
   - [TopicRuleDestinationStatusType](#topicruledestinationstatustype)
+  - [VerificationStateType](#verificationstatetype)
   - [ViolationEventTypeType](#violationeventtypetype)
+  - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AbortActionType
 
@@ -143,6 +150,18 @@ Values:
 - `PUBLISH`
 - `RECEIVE`
 - `SUBSCRIBE`
+
+## AggregationTypeNameType
+
+```python
+from mypy_boto3_iot.literals import AggregationTypeNameType
+```
+
+Values:
+
+- `Cardinality`
+- `Percentiles`
+- `Statistics`
 
 ## AlertTargetTypeType
 
@@ -585,6 +604,42 @@ Values:
 - `Number`
 - `String`
 
+## FleetMetricUnitType
+
+```python
+from mypy_boto3_iot.literals import FleetMetricUnitType
+```
+
+Values:
+
+- `Bits`
+- `Bits/Second`
+- `Bytes`
+- `Bytes/Second`
+- `Count`
+- `Count/Second`
+- `Gigabits`
+- `Gigabits/Second`
+- `Gigabytes`
+- `Gigabytes/Second`
+- `Kilobits`
+- `Kilobits/Second`
+- `Kilobytes`
+- `Kilobytes/Second`
+- `Megabits`
+- `Megabits/Second`
+- `Megabytes`
+- `Megabytes/Second`
+- `Microseconds`
+- `Milliseconds`
+- `None`
+- `Percent`
+- `Seconds`
+- `Terabits`
+- `Terabits/Second`
+- `Terabytes`
+- `Terabytes/Second`
+
 ## GetBehaviorModelTrainingSummariesPaginatorName
 
 ```python
@@ -820,6 +875,16 @@ Values:
 
 - `list_domain_configurations`
 
+## ListFleetMetricsPaginatorName
+
+```python
+from mypy_boto3_iot.literals import ListFleetMetricsPaginatorName
+```
+
+Values:
+
+- `list_fleet_metrics`
+
 ## ListIndicesPaginatorName
 
 ```python
@@ -849,6 +914,16 @@ from mypy_boto3_iot.literals import ListJobExecutionsForThingPaginatorName
 Values:
 
 - `list_job_executions_for_thing`
+
+## ListJobTemplatesPaginatorName
+
+```python
+from mypy_boto3_iot.literals import ListJobTemplatesPaginatorName
+```
+
+Values:
+
+- `list_job_templates`
 
 ## ListJobsPaginatorName
 
@@ -1381,6 +1456,19 @@ Values:
 - `ERROR`
 - `IN_PROGRESS`
 
+## VerificationStateType
+
+```python
+from mypy_boto3_iot.literals import VerificationStateType
+```
+
+Values:
+
+- `BENIGN_POSITIVE`
+- `FALSE_POSITIVE`
+- `TRUE_POSITIVE`
+- `UNKNOWN`
+
 ## ViolationEventTypeType
 
 ```python
@@ -1392,3 +1480,360 @@ Values:
 - `alarm-cleared`
 - `alarm-invalidated`
 - `in-alarm`
+
+## ServiceName
+
+```python
+from mypy_boto3_iot.literals import ServiceName
+```
+
+Values:
+
+- `accessanalyzer`
+- `account`
+- `acm`
+- `acm-pca`
+- `alexaforbusiness`
+- `amp`
+- `amplify`
+- `amplifybackend`
+- `apigateway`
+- `apigatewaymanagementapi`
+- `apigatewayv2`
+- `appconfig`
+- `appflow`
+- `appintegrations`
+- `application-autoscaling`
+- `application-insights`
+- `applicationcostprofiler`
+- `appmesh`
+- `apprunner`
+- `appstream`
+- `appsync`
+- `athena`
+- `auditmanager`
+- `autoscaling`
+- `autoscaling-plans`
+- `backup`
+- `batch`
+- `braket`
+- `budgets`
+- `ce`
+- `chime`
+- `chime-sdk-identity`
+- `chime-sdk-messaging`
+- `cloud9`
+- `cloudcontrol`
+- `clouddirectory`
+- `cloudformation`
+- `cloudfront`
+- `cloudhsm`
+- `cloudhsmv2`
+- `cloudsearch`
+- `cloudsearchdomain`
+- `cloudtrail`
+- `cloudwatch`
+- `codeartifact`
+- `codebuild`
+- `codecommit`
+- `codedeploy`
+- `codeguru-reviewer`
+- `codeguruprofiler`
+- `codepipeline`
+- `codestar`
+- `codestar-connections`
+- `codestar-notifications`
+- `cognito-identity`
+- `cognito-idp`
+- `cognito-sync`
+- `comprehend`
+- `comprehendmedical`
+- `compute-optimizer`
+- `config`
+- `connect`
+- `connect-contact-lens`
+- `connectparticipant`
+- `cur`
+- `customer-profiles`
+- `databrew`
+- `dataexchange`
+- `datapipeline`
+- `datasync`
+- `dax`
+- `detective`
+- `devicefarm`
+- `devops-guru`
+- `directconnect`
+- `discovery`
+- `dlm`
+- `dms`
+- `docdb`
+- `ds`
+- `dynamodb`
+- `dynamodbstreams`
+- `ebs`
+- `ec2`
+- `ec2-instance-connect`
+- `ecr`
+- `ecr-public`
+- `ecs`
+- `efs`
+- `eks`
+- `elastic-inference`
+- `elasticache`
+- `elasticbeanstalk`
+- `elastictranscoder`
+- `elb`
+- `elbv2`
+- `emr`
+- `emr-containers`
+- `es`
+- `events`
+- `finspace`
+- `finspace-data`
+- `firehose`
+- `fis`
+- `fms`
+- `forecast`
+- `forecastquery`
+- `frauddetector`
+- `fsx`
+- `gamelift`
+- `glacier`
+- `globalaccelerator`
+- `glue`
+- `grafana`
+- `greengrass`
+- `greengrassv2`
+- `groundstation`
+- `guardduty`
+- `health`
+- `healthlake`
+- `honeycode`
+- `iam`
+- `identitystore`
+- `imagebuilder`
+- `importexport`
+- `inspector`
+- `iot`
+- `iot-data`
+- `iot-jobs-data`
+- `iot1click-devices`
+- `iot1click-projects`
+- `iotanalytics`
+- `iotdeviceadvisor`
+- `iotevents`
+- `iotevents-data`
+- `iotfleethub`
+- `iotsecuretunneling`
+- `iotsitewise`
+- `iotthingsgraph`
+- `iotwireless`
+- `ivs`
+- `kafka`
+- `kafkaconnect`
+- `kendra`
+- `kinesis`
+- `kinesis-video-archived-media`
+- `kinesis-video-media`
+- `kinesis-video-signaling`
+- `kinesisanalytics`
+- `kinesisanalyticsv2`
+- `kinesisvideo`
+- `kms`
+- `lakeformation`
+- `lambda`
+- `lex-models`
+- `lex-runtime`
+- `lexv2-models`
+- `lexv2-runtime`
+- `license-manager`
+- `lightsail`
+- `location`
+- `logs`
+- `lookoutequipment`
+- `lookoutmetrics`
+- `lookoutvision`
+- `machinelearning`
+- `macie`
+- `macie2`
+- `managedblockchain`
+- `marketplace-catalog`
+- `marketplace-entitlement`
+- `marketplacecommerceanalytics`
+- `mediaconnect`
+- `mediaconvert`
+- `medialive`
+- `mediapackage`
+- `mediapackage-vod`
+- `mediastore`
+- `mediastore-data`
+- `mediatailor`
+- `memorydb`
+- `meteringmarketplace`
+- `mgh`
+- `mgn`
+- `migrationhub-config`
+- `mobile`
+- `mq`
+- `mturk`
+- `mwaa`
+- `neptune`
+- `network-firewall`
+- `networkmanager`
+- `nimble`
+- `opensearch`
+- `opsworks`
+- `opsworkscm`
+- `organizations`
+- `outposts`
+- `panorama`
+- `personalize`
+- `personalize-events`
+- `personalize-runtime`
+- `pi`
+- `pinpoint`
+- `pinpoint-email`
+- `pinpoint-sms-voice`
+- `polly`
+- `pricing`
+- `proton`
+- `qldb`
+- `qldb-session`
+- `quicksight`
+- `ram`
+- `rds`
+- `rds-data`
+- `redshift`
+- `redshift-data`
+- `rekognition`
+- `resource-groups`
+- `resourcegroupstaggingapi`
+- `robomaker`
+- `route53`
+- `route53-recovery-cluster`
+- `route53-recovery-control-config`
+- `route53-recovery-readiness`
+- `route53domains`
+- `route53resolver`
+- `s3`
+- `s3control`
+- `s3outposts`
+- `sagemaker`
+- `sagemaker-a2i-runtime`
+- `sagemaker-edge`
+- `sagemaker-featurestore-runtime`
+- `sagemaker-runtime`
+- `savingsplans`
+- `schemas`
+- `sdb`
+- `secretsmanager`
+- `securityhub`
+- `serverlessrepo`
+- `service-quotas`
+- `servicecatalog`
+- `servicecatalog-appregistry`
+- `servicediscovery`
+- `ses`
+- `sesv2`
+- `shield`
+- `signer`
+- `sms`
+- `sms-voice`
+- `snow-device-management`
+- `snowball`
+- `sns`
+- `sqs`
+- `ssm`
+- `ssm-contacts`
+- `ssm-incidents`
+- `sso`
+- `sso-admin`
+- `sso-oidc`
+- `stepfunctions`
+- `storagegateway`
+- `sts`
+- `support`
+- `swf`
+- `synthetics`
+- `textract`
+- `timestream-query`
+- `timestream-write`
+- `transcribe`
+- `transfer`
+- `translate`
+- `voice-id`
+- `waf`
+- `waf-regional`
+- `wafv2`
+- `wellarchitected`
+- `wisdom`
+- `workdocs`
+- `worklink`
+- `workmail`
+- `workmailmessageflow`
+- `workspaces`
+- `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_iot.literals import PaginatorName
+```
+
+Values:
+
+- `get_behavior_model_training_summaries`
+- `list_active_violations`
+- `list_attached_policies`
+- `list_audit_findings`
+- `list_audit_mitigation_actions_executions`
+- `list_audit_mitigation_actions_tasks`
+- `list_audit_suppressions`
+- `list_audit_tasks`
+- `list_authorizers`
+- `list_billing_groups`
+- `list_ca_certificates`
+- `list_certificates`
+- `list_certificates_by_ca`
+- `list_custom_metrics`
+- `list_detect_mitigation_actions_executions`
+- `list_detect_mitigation_actions_tasks`
+- `list_dimensions`
+- `list_domain_configurations`
+- `list_fleet_metrics`
+- `list_indices`
+- `list_job_executions_for_job`
+- `list_job_executions_for_thing`
+- `list_job_templates`
+- `list_jobs`
+- `list_mitigation_actions`
+- `list_ota_updates`
+- `list_outgoing_certificates`
+- `list_policies`
+- `list_policy_principals`
+- `list_principal_policies`
+- `list_principal_things`
+- `list_provisioning_template_versions`
+- `list_provisioning_templates`
+- `list_role_aliases`
+- `list_scheduled_audits`
+- `list_security_profiles`
+- `list_security_profiles_for_target`
+- `list_streams`
+- `list_tags_for_resource`
+- `list_targets_for_policy`
+- `list_targets_for_security_profile`
+- `list_thing_groups`
+- `list_thing_groups_for_thing`
+- `list_thing_principals`
+- `list_thing_registration_task_reports`
+- `list_thing_registration_tasks`
+- `list_thing_types`
+- `list_things`
+- `list_things_in_billing_group`
+- `list_things_in_thing_group`
+- `list_topic_rule_destinations`
+- `list_topic_rules`
+- `list_v2_logging_levels`
+- `list_violation_events`

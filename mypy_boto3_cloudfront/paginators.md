@@ -36,7 +36,7 @@ Arguments for `ListCloudFrontOriginAccessIdentitiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCloudFrontOriginAccessIdentitiesPaginator.paginate` returns
-`Iterator`\[[ListCloudFrontOriginAccessIdentitiesResultTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresulttypedef)\].
+`_PageIterator`\[[ListCloudFrontOriginAccessIdentitiesResultTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresulttypedef)\].
 
 ## ListDistributionsPaginator
 
@@ -61,7 +61,7 @@ Arguments for `ListDistributionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDistributionsPaginator.paginate` returns
-`Iterator`\[[ListDistributionsResultTypeDef](./type_defs.md#listdistributionsresulttypedef)\].
+`_PageIterator`\[[ListDistributionsResultTypeDef](./type_defs.md#listdistributionsresulttypedef)\].
 
 ## ListInvalidationsPaginator
 
@@ -87,7 +87,7 @@ Arguments for `ListInvalidationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInvalidationsPaginator.paginate` returns
-`Iterator`\[[ListInvalidationsResultTypeDef](./type_defs.md#listinvalidationsresulttypedef)\].
+`_PageIterator`\[[ListInvalidationsResultTypeDef](./type_defs.md#listinvalidationsresulttypedef)\].
 
 ## ListStreamingDistributionsPaginator
 
@@ -112,4 +112,4 @@ Arguments for `ListStreamingDistributionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamingDistributionsPaginator.paginate` returns
-`Iterator`\[[ListStreamingDistributionsResultTypeDef](./type_defs.md#liststreamingdistributionsresulttypedef)\].
+`_PageIterator`\[[ListStreamingDistributionsResultTypeDef](./type_defs.md#liststreamingdistributionsresulttypedef)\].

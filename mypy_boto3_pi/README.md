@@ -58,6 +58,7 @@ from mypy_boto3_pi.literals import DetailStatusType, ...
 
 - [DetailStatusType](./literals.md#detailstatustype)
 - [ServiceTypeType](./literals.md#servicetypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

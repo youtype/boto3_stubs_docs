@@ -8,13 +8,18 @@ type annotations stubs module
 [mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 - [Typed dictionaries for boto3 DataExchange module](#typed-dictionaries-for-boto3-dataexchange-module)
+  - [ActionTypeDef](#actiontypedef)
   - [AssetDestinationEntryTypeDef](#assetdestinationentrytypedef)
   - [AssetDetailsTypeDef](#assetdetailstypedef)
   - [AssetEntryTypeDef](#assetentrytypedef)
   - [AssetSourceEntryTypeDef](#assetsourceentrytypedef)
+  - [AutoExportRevisionDestinationEntryTypeDef](#autoexportrevisiondestinationentrytypedef)
+  - [AutoExportRevisionToS3RequestDetailsTypeDef](#autoexportrevisiontos3requestdetailstypedef)
   - [CancelJobRequestRequestTypeDef](#canceljobrequestrequesttypedef)
   - [CreateDataSetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
   - [CreateDataSetResponseTypeDef](#createdatasetresponsetypedef)
+  - [CreateEventActionRequestRequestTypeDef](#createeventactionrequestrequesttypedef)
+  - [CreateEventActionResponseTypeDef](#createeventactionresponsetypedef)
   - [CreateJobRequestRequestTypeDef](#createjobrequestrequesttypedef)
   - [CreateJobResponseTypeDef](#createjobresponsetypedef)
   - [CreateRevisionRequestRequestTypeDef](#createrevisionrequestrequesttypedef)
@@ -22,8 +27,11 @@ type annotations stubs module
   - [DataSetEntryTypeDef](#datasetentrytypedef)
   - [DeleteAssetRequestRequestTypeDef](#deleteassetrequestrequesttypedef)
   - [DeleteDataSetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
+  - [DeleteEventActionRequestRequestTypeDef](#deleteeventactionrequestrequesttypedef)
   - [DeleteRevisionRequestRequestTypeDef](#deleterevisionrequestrequesttypedef)
   - [DetailsTypeDef](#detailstypedef)
+  - [EventActionEntryTypeDef](#eventactionentrytypedef)
+  - [EventTypeDef](#eventtypedef)
   - [ExportAssetToSignedUrlRequestDetailsTypeDef](#exportassettosignedurlrequestdetailstypedef)
   - [ExportAssetToSignedUrlResponseDetailsTypeDef](#exportassettosignedurlresponsedetailstypedef)
   - [ExportAssetsToS3RequestDetailsTypeDef](#exportassetstos3requestdetailstypedef)
@@ -35,6 +43,8 @@ type annotations stubs module
   - [GetAssetResponseTypeDef](#getassetresponsetypedef)
   - [GetDataSetRequestRequestTypeDef](#getdatasetrequestrequesttypedef)
   - [GetDataSetResponseTypeDef](#getdatasetresponsetypedef)
+  - [GetEventActionRequestRequestTypeDef](#geteventactionrequestrequesttypedef)
+  - [GetEventActionResponseTypeDef](#geteventactionresponsetypedef)
   - [GetJobRequestRequestTypeDef](#getjobrequestrequesttypedef)
   - [GetJobResponseTypeDef](#getjobresponsetypedef)
   - [GetRevisionRequestRequestTypeDef](#getrevisionrequestrequesttypedef)
@@ -42,6 +52,8 @@ type annotations stubs module
   - [ImportAssetFromSignedUrlJobErrorDetailsTypeDef](#importassetfromsignedurljoberrordetailstypedef)
   - [ImportAssetFromSignedUrlRequestDetailsTypeDef](#importassetfromsignedurlrequestdetailstypedef)
   - [ImportAssetFromSignedUrlResponseDetailsTypeDef](#importassetfromsignedurlresponsedetailstypedef)
+  - [ImportAssetsFromRedshiftDataSharesRequestDetailsTypeDef](#importassetsfromredshiftdatasharesrequestdetailstypedef)
+  - [ImportAssetsFromRedshiftDataSharesResponseDetailsTypeDef](#importassetsfromredshiftdatasharesresponsedetailstypedef)
   - [ImportAssetsFromS3RequestDetailsTypeDef](#importassetsfroms3requestdetailstypedef)
   - [ImportAssetsFromS3ResponseDetailsTypeDef](#importassetsfroms3responsedetailstypedef)
   - [JobEntryTypeDef](#jobentrytypedef)
@@ -50,6 +62,8 @@ type annotations stubs module
   - [ListDataSetRevisionsResponseTypeDef](#listdatasetrevisionsresponsetypedef)
   - [ListDataSetsRequestRequestTypeDef](#listdatasetsrequestrequesttypedef)
   - [ListDataSetsResponseTypeDef](#listdatasetsresponsetypedef)
+  - [ListEventActionsRequestRequestTypeDef](#listeventactionsrequestrequesttypedef)
+  - [ListEventActionsResponseTypeDef](#listeventactionsresponsetypedef)
   - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
   - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
   - [ListRevisionAssetsRequestRequestTypeDef](#listrevisionassetsrequestrequesttypedef)
@@ -58,11 +72,14 @@ type annotations stubs module
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [OriginDetailsTypeDef](#origindetailstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [RedshiftDataShareAssetSourceEntryTypeDef](#redshiftdatashareassetsourceentrytypedef)
+  - [RedshiftDataShareAssetTypeDef](#redshiftdatashareassettypedef)
   - [RequestDetailsTypeDef](#requestdetailstypedef)
   - [ResponseDetailsTypeDef](#responsedetailstypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RevisionDestinationEntryTypeDef](#revisiondestinationentrytypedef)
   - [RevisionEntryTypeDef](#revisionentrytypedef)
+  - [RevisionPublishedTypeDef](#revisionpublishedtypedef)
   - [S3SnapshotAssetTypeDef](#s3snapshotassettypedef)
   - [StartJobRequestRequestTypeDef](#startjobrequestrequesttypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
@@ -71,8 +88,21 @@ type annotations stubs module
   - [UpdateAssetResponseTypeDef](#updateassetresponsetypedef)
   - [UpdateDataSetRequestRequestTypeDef](#updatedatasetrequestrequesttypedef)
   - [UpdateDataSetResponseTypeDef](#updatedatasetresponsetypedef)
+  - [UpdateEventActionRequestRequestTypeDef](#updateeventactionrequestrequesttypedef)
+  - [UpdateEventActionResponseTypeDef](#updateeventactionresponsetypedef)
   - [UpdateRevisionRequestRequestTypeDef](#updaterevisionrequestrequesttypedef)
   - [UpdateRevisionResponseTypeDef](#updaterevisionresponsetypedef)
+
+## ActionTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import ActionTypeDef
+```
+
+Optional fields:
+
+- `ExportRevisionToS3`:
+  [AutoExportRevisionToS3RequestDetailsTypeDef](./type_defs.md#autoexportrevisiontos3requestdetailstypedef)
 
 ## AssetDestinationEntryTypeDef
 
@@ -99,6 +129,8 @@ Optional fields:
 
 - `S3SnapshotAsset`:
   [S3SnapshotAssetTypeDef](./type_defs.md#s3snapshotassettypedef)
+- `RedshiftDataShareAsset`:
+  [RedshiftDataShareAssetTypeDef](./type_defs.md#redshiftdatashareassettypedef)
 
 ## AssetEntryTypeDef
 
@@ -110,8 +142,7 @@ Required fields:
 
 - `Arn`: `str`
 - `AssetDetails`: [AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef)
-- `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetTypeType](./literals.md#assettypetype))
+- `AssetType`: [AssetTypeType](./literals.md#assettypetype)
 - `CreatedAt`: `datetime`
 - `DataSetId`: `str`
 - `Id`: `str`
@@ -134,6 +165,36 @@ Required fields:
 - `Bucket`: `str`
 - `Key`: `str`
 
+## AutoExportRevisionDestinationEntryTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import AutoExportRevisionDestinationEntryTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `KeyPattern`: `str`
+
+## AutoExportRevisionToS3RequestDetailsTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import AutoExportRevisionToS3RequestDetailsTypeDef
+```
+
+Required fields:
+
+- `RevisionDestination`:
+  [AutoExportRevisionDestinationEntryTypeDef](./type_defs.md#autoexportrevisiondestinationentrytypedef)
+
+Optional fields:
+
+- `Encryption`:
+  [ExportServerSideEncryptionTypeDef](./type_defs.md#exportserversideencryptiontypedef)
+
 ## CancelJobRequestRequestTypeDef
 
 ```python
@@ -152,14 +213,13 @@ from mypy_boto3_dataexchange.type_defs import CreateDataSetRequestRequestTypeDef
 
 Required fields:
 
-- `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetTypeType](./literals.md#assettypetype))
+- `AssetType`: [AssetTypeType](./literals.md#assettypetype)
 - `Description`: `str`
 - `Name`: `str`
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDataSetResponseTypeDef
 
@@ -170,8 +230,7 @@ from mypy_boto3_dataexchange.type_defs import CreateDataSetResponseTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetTypeType](./literals.md#assettypetype))
+- `AssetType`: [AssetTypeType](./literals.md#assettypetype)
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Id`: `str`
@@ -180,6 +239,34 @@ Required fields:
 - `OriginDetails`: [OriginDetailsTypeDef](./type_defs.md#origindetailstypedef)
 - `SourceId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `UpdatedAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateEventActionRequestRequestTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import CreateEventActionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+- `Event`: [EventTypeDef](./type_defs.md#eventtypedef)
+
+## CreateEventActionResponseTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import CreateEventActionResponseTypeDef
+```
+
+Required fields:
+
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+- `Arn`: `str`
+- `CreatedAt`: `datetime`
+- `Event`: [EventTypeDef](./type_defs.md#eventtypedef)
+- `Id`: `str`
 - `UpdatedAt`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -227,7 +314,7 @@ Required fields:
 Optional fields:
 
 - `Comment`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRevisionResponseTypeDef
 
@@ -258,8 +345,7 @@ from mypy_boto3_dataexchange.type_defs import DataSetEntryTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetTypeType](./literals.md#assettypetype))
+- `AssetType`: [AssetTypeType](./literals.md#assettypetype)
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Id`: `str`
@@ -294,6 +380,16 @@ Required fields:
 
 - `DataSetId`: `str`
 
+## DeleteEventActionRequestRequestTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import DeleteEventActionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `EventActionId`: `str`
+
 ## DeleteRevisionRequestRequestTypeDef
 
 ```python
@@ -317,6 +413,32 @@ Optional fields:
   [ImportAssetFromSignedUrlJobErrorDetailsTypeDef](./type_defs.md#importassetfromsignedurljoberrordetailstypedef)
 - `ImportAssetsFromS3JobErrorDetails`:
   `List`\[[AssetSourceEntryTypeDef](./type_defs.md#assetsourceentrytypedef)\]
+
+## EventActionEntryTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import EventActionEntryTypeDef
+```
+
+Required fields:
+
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+- `Arn`: `str`
+- `CreatedAt`: `datetime`
+- `Event`: [EventTypeDef](./type_defs.md#eventtypedef)
+- `Id`: `str`
+- `UpdatedAt`: `datetime`
+
+## EventTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import EventTypeDef
+```
+
+Optional fields:
+
+- `RevisionPublished`:
+  [RevisionPublishedTypeDef](./type_defs.md#revisionpublishedtypedef)
 
 ## ExportAssetToSignedUrlRequestDetailsTypeDef
 
@@ -356,7 +478,7 @@ from mypy_boto3_dataexchange.type_defs import ExportAssetsToS3RequestDetailsType
 Required fields:
 
 - `AssetDestinations`:
-  `List`\[[AssetDestinationEntryTypeDef](./type_defs.md#assetdestinationentrytypedef)\]
+  `Sequence`\[[AssetDestinationEntryTypeDef](./type_defs.md#assetdestinationentrytypedef)\]
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
@@ -393,7 +515,7 @@ Required fields:
 
 - `DataSetId`: `str`
 - `RevisionDestinations`:
-  `List`\[[RevisionDestinationEntryTypeDef](./type_defs.md#revisiondestinationentrytypedef)\]
+  `Sequence`\[[RevisionDestinationEntryTypeDef](./type_defs.md#revisiondestinationentrytypedef)\]
 
 Optional fields:
 
@@ -416,6 +538,7 @@ Optional fields:
 
 - `Encryption`:
   [ExportServerSideEncryptionTypeDef](./type_defs.md#exportserversideencryptiontypedef)
+- `EventActionArn`: `str`
 
 ## ExportServerSideEncryptionTypeDef
 
@@ -454,8 +577,7 @@ Required fields:
 
 - `Arn`: `str`
 - `AssetDetails`: [AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef)
-- `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetTypeType](./literals.md#assettypetype))
+- `AssetType`: [AssetTypeType](./literals.md#assettypetype)
 - `CreatedAt`: `datetime`
 - `DataSetId`: `str`
 - `Id`: `str`
@@ -485,8 +607,7 @@ from mypy_boto3_dataexchange.type_defs import GetDataSetResponseTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetTypeType](./literals.md#assettypetype))
+- `AssetType`: [AssetTypeType](./literals.md#assettypetype)
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Id`: `str`
@@ -495,6 +616,33 @@ Required fields:
 - `OriginDetails`: [OriginDetailsTypeDef](./type_defs.md#origindetailstypedef)
 - `SourceId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `UpdatedAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetEventActionRequestRequestTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import GetEventActionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `EventActionId`: `str`
+
+## GetEventActionResponseTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import GetEventActionResponseTypeDef
+```
+
+Required fields:
+
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+- `Arn`: `str`
+- `CreatedAt`: `datetime`
+- `Event`: [EventTypeDef](./type_defs.md#eventtypedef)
+- `Id`: `str`
 - `UpdatedAt`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -600,6 +748,32 @@ Optional fields:
 - `SignedUrl`: `str`
 - `SignedUrlExpiresAt`: `datetime`
 
+## ImportAssetsFromRedshiftDataSharesRequestDetailsTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import ImportAssetsFromRedshiftDataSharesRequestDetailsTypeDef
+```
+
+Required fields:
+
+- `AssetSources`:
+  `Sequence`\[[RedshiftDataShareAssetSourceEntryTypeDef](./type_defs.md#redshiftdatashareassetsourceentrytypedef)\]
+- `DataSetId`: `str`
+- `RevisionId`: `str`
+
+## ImportAssetsFromRedshiftDataSharesResponseDetailsTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import ImportAssetsFromRedshiftDataSharesResponseDetailsTypeDef
+```
+
+Required fields:
+
+- `AssetSources`:
+  `List`\[[RedshiftDataShareAssetSourceEntryTypeDef](./type_defs.md#redshiftdatashareassetsourceentrytypedef)\]
+- `DataSetId`: `str`
+- `RevisionId`: `str`
+
 ## ImportAssetsFromS3RequestDetailsTypeDef
 
 ```python
@@ -609,7 +783,7 @@ from mypy_boto3_dataexchange.type_defs import ImportAssetsFromS3RequestDetailsTy
 Required fields:
 
 - `AssetSources`:
-  `List`\[[AssetSourceEntryTypeDef](./type_defs.md#assetsourceentrytypedef)\]
+  `Sequence`\[[AssetSourceEntryTypeDef](./type_defs.md#assetsourceentrytypedef)\]
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
@@ -721,6 +895,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListEventActionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import ListEventActionsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `EventSourceId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListEventActionsResponseTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import ListEventActionsResponseTypeDef
+```
+
+Required fields:
+
+- `EventActions`:
+  `List`\[[EventActionEntryTypeDef](./type_defs.md#eventactionentrytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListJobsRequestRequestTypeDef
 
 ```python
@@ -820,6 +1020,26 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+## RedshiftDataShareAssetSourceEntryTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import RedshiftDataShareAssetSourceEntryTypeDef
+```
+
+Required fields:
+
+- `DataShareArn`: `str`
+
+## RedshiftDataShareAssetTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import RedshiftDataShareAssetTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+
 ## RequestDetailsTypeDef
 
 ```python
@@ -838,6 +1058,8 @@ Optional fields:
   [ImportAssetFromSignedUrlRequestDetailsTypeDef](./type_defs.md#importassetfromsignedurlrequestdetailstypedef)
 - `ImportAssetsFromS3`:
   [ImportAssetsFromS3RequestDetailsTypeDef](./type_defs.md#importassetsfroms3requestdetailstypedef)
+- `ImportAssetsFromRedshiftDataShares`:
+  [ImportAssetsFromRedshiftDataSharesRequestDetailsTypeDef](./type_defs.md#importassetsfromredshiftdatasharesrequestdetailstypedef)
 
 ## ResponseDetailsTypeDef
 
@@ -857,6 +1079,8 @@ Optional fields:
   [ImportAssetFromSignedUrlResponseDetailsTypeDef](./type_defs.md#importassetfromsignedurlresponsedetailstypedef)
 - `ImportAssetsFromS3`:
   [ImportAssetsFromS3ResponseDetailsTypeDef](./type_defs.md#importassetsfroms3responsedetailstypedef)
+- `ImportAssetsFromRedshiftDataShares`:
+  [ImportAssetsFromRedshiftDataSharesResponseDetailsTypeDef](./type_defs.md#importassetsfromredshiftdatasharesresponsedetailstypedef)
 
 ## ResponseMetadataTypeDef
 
@@ -907,6 +1131,16 @@ Optional fields:
 - `Finalized`: `bool`
 - `SourceId`: `str`
 
+## RevisionPublishedTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import RevisionPublishedTypeDef
+```
+
+Required fields:
+
+- `DataSetId`: `str`
+
 ## S3SnapshotAssetTypeDef
 
 ```python
@@ -936,7 +1170,7 @@ from mypy_boto3_dataexchange.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -947,7 +1181,7 @@ from mypy_boto3_dataexchange.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAssetRequestRequestTypeDef
 
@@ -972,8 +1206,7 @@ Required fields:
 
 - `Arn`: `str`
 - `AssetDetails`: [AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef)
-- `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetTypeType](./literals.md#assettypetype))
+- `AssetType`: [AssetTypeType](./literals.md#assettypetype)
 - `CreatedAt`: `datetime`
 - `DataSetId`: `str`
 - `Id`: `str`
@@ -1008,8 +1241,7 @@ from mypy_boto3_dataexchange.type_defs import UpdateDataSetResponseTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetTypeType](./literals.md#assettypetype))
+- `AssetType`: [AssetTypeType](./literals.md#assettypetype)
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Id`: `str`
@@ -1017,6 +1249,37 @@ Required fields:
 - `Origin`: [OriginType](./literals.md#origintype)
 - `OriginDetails`: [OriginDetailsTypeDef](./type_defs.md#origindetailstypedef)
 - `SourceId`: `str`
+- `UpdatedAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateEventActionRequestRequestTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import UpdateEventActionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `EventActionId`: `str`
+
+Optional fields:
+
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+
+## UpdateEventActionResponseTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import UpdateEventActionResponseTypeDef
+```
+
+Required fields:
+
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+- `Arn`: `str`
+- `CreatedAt`: `datetime`
+- `Event`: [EventTypeDef](./type_defs.md#eventtypedef)
+- `Id`: `str`
 - `UpdatedAt`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

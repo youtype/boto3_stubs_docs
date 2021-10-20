@@ -75,9 +75,14 @@ type annotations stubs module
   - [HyperParameterTuningJobStatusType](#hyperparametertuningjobstatustype)
   - [HyperParameterTuningJobStrategyTypeType](#hyperparametertuningjobstrategytypetype)
   - [HyperParameterTuningJobWarmStartTypeType](#hyperparametertuningjobwarmstarttypetype)
+  - [ImageCreatedWaiterName](#imagecreatedwaitername)
+  - [ImageDeletedWaiterName](#imagedeletedwaitername)
   - [ImageSortByType](#imagesortbytype)
   - [ImageSortOrderType](#imagesortordertype)
   - [ImageStatusType](#imagestatustype)
+  - [ImageUpdatedWaiterName](#imageupdatedwaitername)
+  - [ImageVersionCreatedWaiterName](#imageversioncreatedwaitername)
+  - [ImageVersionDeletedWaiterName](#imageversiondeletedwaitername)
   - [ImageVersionSortByType](#imageversionsortbytype)
   - [ImageVersionSortOrderType](#imageversionsortordertype)
   - [ImageVersionStatusType](#imageversionstatustype)
@@ -132,6 +137,7 @@ type annotations stubs module
   - [ListPipelineParametersForExecutionPaginatorName](#listpipelineparametersforexecutionpaginatorname)
   - [ListPipelinesPaginatorName](#listpipelinespaginatorname)
   - [ListProcessingJobsPaginatorName](#listprocessingjobspaginatorname)
+  - [ListStudioLifecycleConfigsPaginatorName](#liststudiolifecycleconfigspaginatorname)
   - [ListSubscribedWorkteamsPaginatorName](#listsubscribedworkteamspaginatorname)
   - [ListTagsPaginatorName](#listtagspaginatorname)
   - [ListTrainingJobsForHyperParameterTuningJobPaginatorName](#listtrainingjobsforhyperparametertuningjobpaginatorname)
@@ -144,6 +150,7 @@ type annotations stubs module
   - [ListWorkforcesSortByOptionsType](#listworkforcessortbyoptionstype)
   - [ListWorkteamsPaginatorName](#listworkteamspaginatorname)
   - [ListWorkteamsSortByOptionsType](#listworkteamssortbyoptionstype)
+  - [MetricSetSourceType](#metricsetsourcetype)
   - [ModelApprovalStatusType](#modelapprovalstatustype)
   - [ModelCacheSettingType](#modelcachesettingtype)
   - [ModelPackageGroupSortByType](#modelpackagegroupsortbytype)
@@ -217,6 +224,8 @@ type annotations stubs module
   - [SortTrialsByType](#sorttrialsbytype)
   - [SplitTypeType](#splittypetype)
   - [StepStatusType](#stepstatustype)
+  - [StudioLifecycleConfigAppTypeType](#studiolifecycleconfigapptypetype)
+  - [StudioLifecycleConfigSortKeyType](#studiolifecycleconfigsortkeytype)
   - [TargetDeviceType](#targetdevicetype)
   - [TargetPlatformAcceleratorType](#targetplatformacceleratortype)
   - [TargetPlatformArchType](#targetplatformarchtype)
@@ -235,6 +244,9 @@ type annotations stubs module
   - [UserProfileSortKeyType](#userprofilesortkeytype)
   - [UserProfileStatusType](#userprofilestatustype)
   - [VariantPropertyTypeType](#variantpropertytypetype)
+  - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## ActionStatusType
 
@@ -318,9 +330,26 @@ Values:
 - `ml.m5.8xlarge`
 - `ml.m5.large`
 - `ml.m5.xlarge`
+- `ml.m5d.12xlarge`
+- `ml.m5d.16xlarge`
+- `ml.m5d.24xlarge`
+- `ml.m5d.2xlarge`
+- `ml.m5d.4xlarge`
+- `ml.m5d.8xlarge`
+- `ml.m5d.large`
+- `ml.m5d.xlarge`
 - `ml.p3.16xlarge`
 - `ml.p3.2xlarge`
 - `ml.p3.8xlarge`
+- `ml.p3dn.24xlarge`
+- `ml.r5.12xlarge`
+- `ml.r5.16xlarge`
+- `ml.r5.24xlarge`
+- `ml.r5.2xlarge`
+- `ml.r5.4xlarge`
+- `ml.r5.8xlarge`
+- `ml.r5.large`
+- `ml.r5.xlarge`
 - `ml.t3.2xlarge`
 - `ml.t3.large`
 - `ml.t3.medium`
@@ -1095,6 +1124,26 @@ Values:
 - `IdenticalDataAndAlgorithm`
 - `TransferLearning`
 
+## ImageCreatedWaiterName
+
+```python
+from mypy_boto3_sagemaker.literals import ImageCreatedWaiterName
+```
+
+Values:
+
+- `image_created`
+
+## ImageDeletedWaiterName
+
+```python
+from mypy_boto3_sagemaker.literals import ImageDeletedWaiterName
+```
+
+Values:
+
+- `image_deleted`
+
 ## ImageSortByType
 
 ```python
@@ -1133,6 +1182,36 @@ Values:
 - `DELETING`
 - `UPDATE_FAILED`
 - `UPDATING`
+
+## ImageUpdatedWaiterName
+
+```python
+from mypy_boto3_sagemaker.literals import ImageUpdatedWaiterName
+```
+
+Values:
+
+- `image_updated`
+
+## ImageVersionCreatedWaiterName
+
+```python
+from mypy_boto3_sagemaker.literals import ImageVersionCreatedWaiterName
+```
+
+Values:
+
+- `image_version_created`
+
+## ImageVersionDeletedWaiterName
+
+```python
+from mypy_boto3_sagemaker.literals import ImageVersionDeletedWaiterName
+```
+
+Values:
+
+- `image_version_deleted`
 
 ## ImageVersionSortByType
 
@@ -1215,6 +1294,12 @@ Values:
 - `ml.c5d.4xlarge`
 - `ml.c5d.9xlarge`
 - `ml.c5d.xlarge`
+- `ml.g4dn.12xlarge`
+- `ml.g4dn.16xlarge`
+- `ml.g4dn.2xlarge`
+- `ml.g4dn.4xlarge`
+- `ml.g4dn.8xlarge`
+- `ml.g4dn.xlarge`
 - `ml.m4.10xlarge`
 - `ml.m4.16xlarge`
 - `ml.m4.2xlarge`
@@ -1225,12 +1310,29 @@ Values:
 - `ml.m5.2xlarge`
 - `ml.m5.4xlarge`
 - `ml.m5.xlarge`
+- `ml.m5d.12xlarge`
+- `ml.m5d.16xlarge`
+- `ml.m5d.24xlarge`
+- `ml.m5d.2xlarge`
+- `ml.m5d.4xlarge`
+- `ml.m5d.8xlarge`
+- `ml.m5d.large`
+- `ml.m5d.xlarge`
 - `ml.p2.16xlarge`
 - `ml.p2.8xlarge`
 - `ml.p2.xlarge`
 - `ml.p3.16xlarge`
 - `ml.p3.2xlarge`
 - `ml.p3.8xlarge`
+- `ml.p3dn.24xlarge`
+- `ml.r5.12xlarge`
+- `ml.r5.16xlarge`
+- `ml.r5.24xlarge`
+- `ml.r5.2xlarge`
+- `ml.r5.4xlarge`
+- `ml.r5.8xlarge`
+- `ml.r5.large`
+- `ml.r5.xlarge`
 - `ml.t2.2xlarge`
 - `ml.t2.large`
 - `ml.t2.medium`
@@ -1734,6 +1836,16 @@ Values:
 
 - `list_processing_jobs`
 
+## ListStudioLifecycleConfigsPaginatorName
+
+```python
+from mypy_boto3_sagemaker.literals import ListStudioLifecycleConfigsPaginatorName
+```
+
+Values:
+
+- `list_studio_lifecycle_configs`
+
 ## ListSubscribedWorkteamsPaginatorName
 
 ```python
@@ -1855,6 +1967,18 @@ Values:
 
 - `CreateDate`
 - `Name`
+
+## MetricSetSourceType
+
+```python
+from mypy_boto3_sagemaker.literals import MetricSetSourceType
+```
+
+Values:
+
+- `Test`
+- `Train`
+- `Validation`
 
 ## ModelApprovalStatusType
 
@@ -2569,6 +2693,7 @@ Values:
 - `ModelPackageGroup`
 - `Pipeline`
 - `PipelineExecution`
+- `Project`
 - `TrainingJob`
 
 ## RetentionTypeType
@@ -2853,6 +2978,29 @@ Values:
 - `Stopping`
 - `Succeeded`
 
+## StudioLifecycleConfigAppTypeType
+
+```python
+from mypy_boto3_sagemaker.literals import StudioLifecycleConfigAppTypeType
+```
+
+Values:
+
+- `JupyterServer`
+- `KernelGateway`
+
+## StudioLifecycleConfigSortKeyType
+
+```python
+from mypy_boto3_sagemaker.literals import StudioLifecycleConfigSortKeyType
+```
+
+Values:
+
+- `CreationTime`
+- `LastModifiedTime`
+- `Name`
+
 ## TargetDeviceType
 
 ```python
@@ -2866,6 +3014,7 @@ Values:
 - `amba_cv25`
 - `coreml`
 - `deeplens`
+- `imx8mplus`
 - `imx8qm`
 - `jacinto_tda4vm`
 - `jetson_nano`
@@ -2948,6 +3097,7 @@ from mypy_boto3_sagemaker.literals import TrainingInputModeType
 
 Values:
 
+- `FastFile`
 - `File`
 - `Pipe`
 
@@ -3164,3 +3314,382 @@ Values:
 - `DataCaptureConfig`
 - `DesiredInstanceCount`
 - `DesiredWeight`
+
+## ServiceName
+
+```python
+from mypy_boto3_sagemaker.literals import ServiceName
+```
+
+Values:
+
+- `accessanalyzer`
+- `account`
+- `acm`
+- `acm-pca`
+- `alexaforbusiness`
+- `amp`
+- `amplify`
+- `amplifybackend`
+- `apigateway`
+- `apigatewaymanagementapi`
+- `apigatewayv2`
+- `appconfig`
+- `appflow`
+- `appintegrations`
+- `application-autoscaling`
+- `application-insights`
+- `applicationcostprofiler`
+- `appmesh`
+- `apprunner`
+- `appstream`
+- `appsync`
+- `athena`
+- `auditmanager`
+- `autoscaling`
+- `autoscaling-plans`
+- `backup`
+- `batch`
+- `braket`
+- `budgets`
+- `ce`
+- `chime`
+- `chime-sdk-identity`
+- `chime-sdk-messaging`
+- `cloud9`
+- `cloudcontrol`
+- `clouddirectory`
+- `cloudformation`
+- `cloudfront`
+- `cloudhsm`
+- `cloudhsmv2`
+- `cloudsearch`
+- `cloudsearchdomain`
+- `cloudtrail`
+- `cloudwatch`
+- `codeartifact`
+- `codebuild`
+- `codecommit`
+- `codedeploy`
+- `codeguru-reviewer`
+- `codeguruprofiler`
+- `codepipeline`
+- `codestar`
+- `codestar-connections`
+- `codestar-notifications`
+- `cognito-identity`
+- `cognito-idp`
+- `cognito-sync`
+- `comprehend`
+- `comprehendmedical`
+- `compute-optimizer`
+- `config`
+- `connect`
+- `connect-contact-lens`
+- `connectparticipant`
+- `cur`
+- `customer-profiles`
+- `databrew`
+- `dataexchange`
+- `datapipeline`
+- `datasync`
+- `dax`
+- `detective`
+- `devicefarm`
+- `devops-guru`
+- `directconnect`
+- `discovery`
+- `dlm`
+- `dms`
+- `docdb`
+- `ds`
+- `dynamodb`
+- `dynamodbstreams`
+- `ebs`
+- `ec2`
+- `ec2-instance-connect`
+- `ecr`
+- `ecr-public`
+- `ecs`
+- `efs`
+- `eks`
+- `elastic-inference`
+- `elasticache`
+- `elasticbeanstalk`
+- `elastictranscoder`
+- `elb`
+- `elbv2`
+- `emr`
+- `emr-containers`
+- `es`
+- `events`
+- `finspace`
+- `finspace-data`
+- `firehose`
+- `fis`
+- `fms`
+- `forecast`
+- `forecastquery`
+- `frauddetector`
+- `fsx`
+- `gamelift`
+- `glacier`
+- `globalaccelerator`
+- `glue`
+- `grafana`
+- `greengrass`
+- `greengrassv2`
+- `groundstation`
+- `guardduty`
+- `health`
+- `healthlake`
+- `honeycode`
+- `iam`
+- `identitystore`
+- `imagebuilder`
+- `importexport`
+- `inspector`
+- `iot`
+- `iot-data`
+- `iot-jobs-data`
+- `iot1click-devices`
+- `iot1click-projects`
+- `iotanalytics`
+- `iotdeviceadvisor`
+- `iotevents`
+- `iotevents-data`
+- `iotfleethub`
+- `iotsecuretunneling`
+- `iotsitewise`
+- `iotthingsgraph`
+- `iotwireless`
+- `ivs`
+- `kafka`
+- `kafkaconnect`
+- `kendra`
+- `kinesis`
+- `kinesis-video-archived-media`
+- `kinesis-video-media`
+- `kinesis-video-signaling`
+- `kinesisanalytics`
+- `kinesisanalyticsv2`
+- `kinesisvideo`
+- `kms`
+- `lakeformation`
+- `lambda`
+- `lex-models`
+- `lex-runtime`
+- `lexv2-models`
+- `lexv2-runtime`
+- `license-manager`
+- `lightsail`
+- `location`
+- `logs`
+- `lookoutequipment`
+- `lookoutmetrics`
+- `lookoutvision`
+- `machinelearning`
+- `macie`
+- `macie2`
+- `managedblockchain`
+- `marketplace-catalog`
+- `marketplace-entitlement`
+- `marketplacecommerceanalytics`
+- `mediaconnect`
+- `mediaconvert`
+- `medialive`
+- `mediapackage`
+- `mediapackage-vod`
+- `mediastore`
+- `mediastore-data`
+- `mediatailor`
+- `memorydb`
+- `meteringmarketplace`
+- `mgh`
+- `mgn`
+- `migrationhub-config`
+- `mobile`
+- `mq`
+- `mturk`
+- `mwaa`
+- `neptune`
+- `network-firewall`
+- `networkmanager`
+- `nimble`
+- `opensearch`
+- `opsworks`
+- `opsworkscm`
+- `organizations`
+- `outposts`
+- `panorama`
+- `personalize`
+- `personalize-events`
+- `personalize-runtime`
+- `pi`
+- `pinpoint`
+- `pinpoint-email`
+- `pinpoint-sms-voice`
+- `polly`
+- `pricing`
+- `proton`
+- `qldb`
+- `qldb-session`
+- `quicksight`
+- `ram`
+- `rds`
+- `rds-data`
+- `redshift`
+- `redshift-data`
+- `rekognition`
+- `resource-groups`
+- `resourcegroupstaggingapi`
+- `robomaker`
+- `route53`
+- `route53-recovery-cluster`
+- `route53-recovery-control-config`
+- `route53-recovery-readiness`
+- `route53domains`
+- `route53resolver`
+- `s3`
+- `s3control`
+- `s3outposts`
+- `sagemaker`
+- `sagemaker-a2i-runtime`
+- `sagemaker-edge`
+- `sagemaker-featurestore-runtime`
+- `sagemaker-runtime`
+- `savingsplans`
+- `schemas`
+- `sdb`
+- `secretsmanager`
+- `securityhub`
+- `serverlessrepo`
+- `service-quotas`
+- `servicecatalog`
+- `servicecatalog-appregistry`
+- `servicediscovery`
+- `ses`
+- `sesv2`
+- `shield`
+- `signer`
+- `sms`
+- `sms-voice`
+- `snow-device-management`
+- `snowball`
+- `sns`
+- `sqs`
+- `ssm`
+- `ssm-contacts`
+- `ssm-incidents`
+- `sso`
+- `sso-admin`
+- `sso-oidc`
+- `stepfunctions`
+- `storagegateway`
+- `sts`
+- `support`
+- `swf`
+- `synthetics`
+- `textract`
+- `timestream-query`
+- `timestream-write`
+- `transcribe`
+- `transfer`
+- `translate`
+- `voice-id`
+- `waf`
+- `waf-regional`
+- `wafv2`
+- `wellarchitected`
+- `wisdom`
+- `workdocs`
+- `worklink`
+- `workmail`
+- `workmailmessageflow`
+- `workspaces`
+- `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_sagemaker.literals import PaginatorName
+```
+
+Values:
+
+- `list_actions`
+- `list_algorithms`
+- `list_app_image_configs`
+- `list_apps`
+- `list_artifacts`
+- `list_associations`
+- `list_auto_ml_jobs`
+- `list_candidates_for_auto_ml_job`
+- `list_code_repositories`
+- `list_compilation_jobs`
+- `list_contexts`
+- `list_data_quality_job_definitions`
+- `list_device_fleets`
+- `list_devices`
+- `list_domains`
+- `list_edge_packaging_jobs`
+- `list_endpoint_configs`
+- `list_endpoints`
+- `list_experiments`
+- `list_feature_groups`
+- `list_flow_definitions`
+- `list_human_task_uis`
+- `list_hyper_parameter_tuning_jobs`
+- `list_image_versions`
+- `list_images`
+- `list_labeling_jobs`
+- `list_labeling_jobs_for_workteam`
+- `list_model_bias_job_definitions`
+- `list_model_explainability_job_definitions`
+- `list_model_package_groups`
+- `list_model_packages`
+- `list_model_quality_job_definitions`
+- `list_models`
+- `list_monitoring_executions`
+- `list_monitoring_schedules`
+- `list_notebook_instance_lifecycle_configs`
+- `list_notebook_instances`
+- `list_pipeline_execution_steps`
+- `list_pipeline_executions`
+- `list_pipeline_parameters_for_execution`
+- `list_pipelines`
+- `list_processing_jobs`
+- `list_studio_lifecycle_configs`
+- `list_subscribed_workteams`
+- `list_tags`
+- `list_training_jobs`
+- `list_training_jobs_for_hyper_parameter_tuning_job`
+- `list_transform_jobs`
+- `list_trial_components`
+- `list_trials`
+- `list_user_profiles`
+- `list_workforces`
+- `list_workteams`
+- `search`
+
+## WaiterName
+
+```python
+from mypy_boto3_sagemaker.literals import WaiterName
+```
+
+Values:
+
+- `endpoint_deleted`
+- `endpoint_in_service`
+- `image_created`
+- `image_deleted`
+- `image_updated`
+- `image_version_created`
+- `image_version_deleted`
+- `notebook_instance_deleted`
+- `notebook_instance_in_service`
+- `notebook_instance_stopped`
+- `processing_job_completed_or_stopped`
+- `training_job_completed_or_stopped`
+- `transform_job_completed_or_stopped`

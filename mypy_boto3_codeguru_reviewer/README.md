@@ -113,8 +113,12 @@ from mypy_boto3_codeguru_reviewer.literals import AnalysisTypeType, ...
 - [RecommendationCategoryType](./literals.md#recommendationcategorytype)
 - [RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)
 - [RepositoryAssociationSucceededWaiterName](./literals.md#repositoryassociationsucceededwaitername)
+- [SeverityType](./literals.md#severitytype)
 - [TypeType](./literals.md#typetype)
 - [VendorNameType](./literals.md#vendornametype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 
@@ -172,6 +176,7 @@ from mypy_boto3_codeguru_reviewer.type_defs import AssociateRepositoryRequestReq
 - [RepositoryTypeDef](./type_defs.md#repositorytypedef)
 - [RequestMetadataTypeDef](./type_defs.md#requestmetadatatypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [RuleMetadataTypeDef](./type_defs.md#rulemetadatatypedef)
 - [S3BucketRepositoryTypeDef](./type_defs.md#s3bucketrepositorytypedef)
 - [S3RepositoryDetailsTypeDef](./type_defs.md#s3repositorydetailstypedef)
 - [S3RepositoryTypeDef](./type_defs.md#s3repositorytypedef)

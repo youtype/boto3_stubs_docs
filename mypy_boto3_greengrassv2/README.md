@@ -68,6 +68,7 @@ GreengrassV2Client [exceptions](./client.md#exceptions)
 - ClientError
 - ConflictException
 - InternalServerException
+- RequestAlreadyInProgressException
 - ResourceNotFoundException
 - ServiceQuotaExceededException
 - ThrottlingException
@@ -126,6 +127,8 @@ from mypy_boto3_greengrassv2.literals import CloudComponentStateType, ...
 - [ListEffectiveDeploymentsPaginatorName](./literals.md#listeffectivedeploymentspaginatorname)
 - [ListInstalledComponentsPaginatorName](./literals.md#listinstalledcomponentspaginatorname)
 - [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 
@@ -217,5 +220,6 @@ from mypy_boto3_greengrassv2.type_defs import AssociateClientDeviceWithCoreDevic
 - [ResolveComponentCandidatesResponseTypeDef](./type_defs.md#resolvecomponentcandidatesresponsetypedef)
 - [ResolvedComponentVersionTypeDef](./type_defs.md#resolvedcomponentversiontypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [SystemResourceLimitsTypeDef](./type_defs.md#systemresourcelimitstypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)

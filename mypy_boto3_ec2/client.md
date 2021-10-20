@@ -29,6 +29,7 @@ type annotations stubs module
     - [associate_dhcp_options](#associate_dhcp_options)
     - [associate_enclave_certificate_iam_role](#associate_enclave_certificate_iam_role)
     - [associate_iam_instance_profile](#associate_iam_instance_profile)
+    - [associate_instance_event_window](#associate_instance_event_window)
     - [associate_route_table](#associate_route_table)
     - [associate_subnet_cidr_block](#associate_subnet_cidr_block)
     - [associate_transit_gateway_multicast_domain](#associate_transit_gateway_multicast_domain)
@@ -47,6 +48,7 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [cancel_bundle_task](#cancel_bundle_task)
     - [cancel_capacity_reservation](#cancel_capacity_reservation)
+    - [cancel_capacity_reservation_fleets](#cancel_capacity_reservation_fleets)
     - [cancel_conversion_task](#cancel_conversion_task)
     - [cancel_export_task](#cancel_export_task)
     - [cancel_import_task](#cancel_import_task)
@@ -58,6 +60,7 @@ type annotations stubs module
     - [copy_image](#copy_image)
     - [copy_snapshot](#copy_snapshot)
     - [create_capacity_reservation](#create_capacity_reservation)
+    - [create_capacity_reservation_fleet](#create_capacity_reservation_fleet)
     - [create_carrier_gateway](#create_carrier_gateway)
     - [create_client_vpn_endpoint](#create_client_vpn_endpoint)
     - [create_client_vpn_route](#create_client_vpn_route)
@@ -70,6 +73,7 @@ type annotations stubs module
     - [create_flow_logs](#create_flow_logs)
     - [create_fpga_image](#create_fpga_image)
     - [create_image](#create_image)
+    - [create_instance_event_window](#create_instance_event_window)
     - [create_instance_export_task](#create_instance_export_task)
     - [create_internet_gateway](#create_internet_gateway)
     - [create_key_pair](#create_key_pair)
@@ -96,6 +100,7 @@ type annotations stubs module
     - [create_spot_datafeed_subscription](#create_spot_datafeed_subscription)
     - [create_store_image_task](#create_store_image_task)
     - [create_subnet](#create_subnet)
+    - [create_subnet_cidr_reservation](#create_subnet_cidr_reservation)
     - [create_tags](#create_tags)
     - [create_traffic_mirror_filter](#create_traffic_mirror_filter)
     - [create_traffic_mirror_filter_rule](#create_traffic_mirror_filter_rule)
@@ -128,6 +133,7 @@ type annotations stubs module
     - [delete_fleets](#delete_fleets)
     - [delete_flow_logs](#delete_flow_logs)
     - [delete_fpga_image](#delete_fpga_image)
+    - [delete_instance_event_window](#delete_instance_event_window)
     - [delete_internet_gateway](#delete_internet_gateway)
     - [delete_key_pair](#delete_key_pair)
     - [delete_launch_template](#delete_launch_template)
@@ -150,6 +156,7 @@ type annotations stubs module
     - [delete_snapshot](#delete_snapshot)
     - [delete_spot_datafeed_subscription](#delete_spot_datafeed_subscription)
     - [delete_subnet](#delete_subnet)
+    - [delete_subnet_cidr_reservation](#delete_subnet_cidr_reservation)
     - [delete_tags](#delete_tags)
     - [delete_traffic_mirror_filter](#delete_traffic_mirror_filter)
     - [delete_traffic_mirror_filter_rule](#delete_traffic_mirror_filter_rule)
@@ -185,6 +192,7 @@ type annotations stubs module
     - [describe_availability_zones](#describe_availability_zones)
     - [describe_bundle_tasks](#describe_bundle_tasks)
     - [describe_byoip_cidrs](#describe_byoip_cidrs)
+    - [describe_capacity_reservation_fleets](#describe_capacity_reservation_fleets)
     - [describe_capacity_reservations](#describe_capacity_reservations)
     - [describe_carrier_gateways](#describe_carrier_gateways)
     - [describe_classic_link_instances](#describe_classic_link_instances)
@@ -221,6 +229,7 @@ type annotations stubs module
     - [describe_instance_attribute](#describe_instance_attribute)
     - [describe_instance_credit_specifications](#describe_instance_credit_specifications)
     - [describe_instance_event_notification_attributes](#describe_instance_event_notification_attributes)
+    - [describe_instance_event_windows](#describe_instance_event_windows)
     - [describe_instance_status](#describe_instance_status)
     - [describe_instance_type_offerings](#describe_instance_type_offerings)
     - [describe_instance_types](#describe_instance_types)
@@ -319,6 +328,7 @@ type annotations stubs module
     - [disassociate_client_vpn_target_network](#disassociate_client_vpn_target_network)
     - [disassociate_enclave_certificate_iam_role](#disassociate_enclave_certificate_iam_role)
     - [disassociate_iam_instance_profile](#disassociate_iam_instance_profile)
+    - [disassociate_instance_event_window](#disassociate_instance_event_window)
     - [disassociate_route_table](#disassociate_route_table)
     - [disassociate_subnet_cidr_block](#disassociate_subnet_cidr_block)
     - [disassociate_transit_gateway_multicast_domain](#disassociate_transit_gateway_multicast_domain)
@@ -357,11 +367,14 @@ type annotations stubs module
     - [get_password_data](#get_password_data)
     - [get_reserved_instances_exchange_quote](#get_reserved_instances_exchange_quote)
     - [get_serial_console_access_status](#get_serial_console_access_status)
+    - [get_subnet_cidr_reservations](#get_subnet_cidr_reservations)
     - [get_transit_gateway_attachment_propagations](#get_transit_gateway_attachment_propagations)
     - [get_transit_gateway_multicast_domain_associations](#get_transit_gateway_multicast_domain_associations)
     - [get_transit_gateway_prefix_list_references](#get_transit_gateway_prefix_list_references)
     - [get_transit_gateway_route_table_associations](#get_transit_gateway_route_table_associations)
     - [get_transit_gateway_route_table_propagations](#get_transit_gateway_route_table_propagations)
+    - [get_vpn_connection_device_sample_configuration](#get_vpn_connection_device_sample_configuration)
+    - [get_vpn_connection_device_types](#get_vpn_connection_device_types)
     - [import_client_vpn_client_certificate_revocation_list](#import_client_vpn_client_certificate_revocation_list)
     - [import_image](#import_image)
     - [import_instance](#import_instance)
@@ -371,6 +384,7 @@ type annotations stubs module
     - [modify_address_attribute](#modify_address_attribute)
     - [modify_availability_zone_group](#modify_availability_zone_group)
     - [modify_capacity_reservation](#modify_capacity_reservation)
+    - [modify_capacity_reservation_fleet](#modify_capacity_reservation_fleet)
     - [modify_client_vpn_endpoint](#modify_client_vpn_endpoint)
     - [modify_default_credit_specification](#modify_default_credit_specification)
     - [modify_ebs_default_kms_key_id](#modify_ebs_default_kms_key_id)
@@ -384,6 +398,7 @@ type annotations stubs module
     - [modify_instance_capacity_reservation_attributes](#modify_instance_capacity_reservation_attributes)
     - [modify_instance_credit_specification](#modify_instance_credit_specification)
     - [modify_instance_event_start_time](#modify_instance_event_start_time)
+    - [modify_instance_event_window](#modify_instance_event_window)
     - [modify_instance_metadata_options](#modify_instance_metadata_options)
     - [modify_instance_placement](#modify_instance_placement)
     - [modify_launch_template](#modify_launch_template)
@@ -534,10 +549,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ReservedInstanceIds`: `List`\[`str`\] *(required)*
+- `ReservedInstanceIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 - `TargetConfigurations`:
-  `List`\[[TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef)\]
+  `Sequence`\[[TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef)\]
 
 Returns
 [AcceptReservedInstancesExchangeQuoteResultTypeDef](./type_defs.md#acceptreservedinstancesexchangequoteresulttypedef).
@@ -560,7 +575,7 @@ Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `TransitGatewayAttachmentId`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -625,7 +640,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
-- `VpcEndpointIds`: `List`\[`str`\] *(required)*
+- `VpcEndpointIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -675,7 +690,7 @@ Returns
 
 ### allocate_address
 
-Allocates an Elastic IP address to your account.
+Allocates an Elastic IP address to your Amazon Web Services account.
 
 Type annotations for `boto3.client("ec2").allocate_address` method.
 
@@ -694,7 +709,7 @@ Keyword-only arguments:
 - `CustomerOwnedIpv4Pool`: `str`
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [AllocateAddressResultTypeDef](./type_defs.md#allocateaddressresulttypedef).
@@ -720,7 +735,7 @@ Keyword-only arguments:
 - `InstanceType`: `str`
 - `InstanceFamily`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `HostRecovery`: [HostRecoveryType](./literals.md#hostrecoverytype)
 
 Returns
@@ -745,7 +760,7 @@ Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
-- `SecurityGroupIds`: `List`\[`str`\] *(required)*
+- `SecurityGroupIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -767,7 +782,9 @@ Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
 - `Ipv6AddressCount`: `int`
-- `Ipv6Addresses`: `List`\[`str`\]
+- `Ipv6Addresses`: `Sequence`\[`str`\]
+- `Ipv6PrefixCount`: `int`
+- `Ipv6Prefixes`: `Sequence`\[`str`\]
 
 Returns
 [AssignIpv6AddressesResultTypeDef](./type_defs.md#assignipv6addressesresulttypedef).
@@ -789,8 +806,10 @@ Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
 - `AllowReassignment`: `bool`
-- `PrivateIpAddresses`: `List`\[`str`\]
+- `PrivateIpAddresses`: `Sequence`\[`str`\]
 - `SecondaryPrivateIpAddressCount`: `int`
+- `Ipv4Prefixes`: `Sequence`\[`str`\]
+- `Ipv4PrefixCount`: `int`
 
 Returns
 [AssignPrivateIpAddressesResultTypeDef](./type_defs.md#assignprivateipaddressesresulttypedef).
@@ -909,6 +928,30 @@ Keyword-only arguments:
 Returns
 [AssociateIamInstanceProfileResultTypeDef](./type_defs.md#associateiaminstanceprofileresulttypedef).
 
+### associate_instance_event_window
+
+Associates one or more targets with an event window.
+
+Type annotations for `boto3.client("ec2").associate_instance_event_window`
+method.
+
+Boto3 documentation:
+[EC2.Client.associate_instance_event_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_instance_event_window)
+
+Arguments mapping described in
+[AssociateInstanceEventWindowRequestRequestTypeDef](./type_defs.md#associateinstanceeventwindowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceEventWindowId`: `str` *(required)*
+- `AssociationTarget`:
+  [InstanceEventWindowAssociationRequestTypeDef](./type_defs.md#instanceeventwindowassociationrequesttypedef)
+  *(required)*
+- `DryRun`: `bool`
+
+Returns
+[AssociateInstanceEventWindowResultTypeDef](./type_defs.md#associateinstanceeventwindowresulttypedef).
+
 ### associate_route_table
 
 Associates a subnet in your VPC or an internet gateway or virtual private
@@ -970,7 +1013,7 @@ Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `TransitGatewayAttachmentId`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -1001,7 +1044,7 @@ Returns
 
 ### associate_trunk_interface
 
-Associates a branch network interface with a trunk network interface.
+.
 
 Type annotations for `boto3.client("ec2").associate_trunk_interface` method.
 
@@ -1062,7 +1105,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Groups`: `List`\[`str`\] *(required)*
+- `Groups`: `Sequence`\[`str`\] *(required)*
 - `InstanceId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -1197,9 +1240,9 @@ Keyword-only arguments:
 - `GroupId`: `str` *(required)*
 - `DryRun`: `bool`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -1230,14 +1273,14 @@ Keyword-only arguments:
 - `GroupId`: `str`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `IpProtocol`: `str`
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [AuthorizeSecurityGroupIngressResultTypeDef](./type_defs.md#authorizesecuritygroupingressresulttypedef).
@@ -1318,6 +1361,27 @@ Keyword-only arguments:
 
 Returns
 [CancelCapacityReservationResultTypeDef](./type_defs.md#cancelcapacityreservationresulttypedef).
+
+### cancel_capacity_reservation_fleets
+
+Cancels one or more Capacity Reservation Fleets.
+
+Type annotations for `boto3.client("ec2").cancel_capacity_reservation_fleets`
+method.
+
+Boto3 documentation:
+[EC2.Client.cancel_capacity_reservation_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_capacity_reservation_fleets)
+
+Arguments mapping described in
+[CancelCapacityReservationFleetsRequestRequestTypeDef](./type_defs.md#cancelcapacityreservationfleetsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CapacityReservationFleetIds`: `Sequence`\[`str`\] *(required)*
+- `DryRun`: `bool`
+
+Returns
+[CancelCapacityReservationFleetsResultTypeDef](./type_defs.md#cancelcapacityreservationfleetsresulttypedef).
 
 ### cancel_conversion_task
 
@@ -1409,7 +1473,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `SpotFleetRequestIds`: `List`\[`str`\] *(required)*
+- `SpotFleetRequestIds`: `Sequence`\[`str`\] *(required)*
 - `TerminateInstances`: `bool` *(required)*
 - `DryRun`: `bool`
 
@@ -1431,7 +1495,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `SpotInstanceRequestIds`: `List`\[`str`\] *(required)*
+- `SpotInstanceRequestIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -1531,7 +1595,7 @@ Keyword-only arguments:
 - `KmsKeyId`: `str`
 - `PresignedUrl`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
@@ -1567,12 +1631,45 @@ Keyword-only arguments:
 - `InstanceMatchCriteria`:
   [InstanceMatchCriteriaType](./literals.md#instancematchcriteriatype)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `OutpostArn`: `str`
 
 Returns
 [CreateCapacityReservationResultTypeDef](./type_defs.md#createcapacityreservationresulttypedef).
+
+### create_capacity_reservation_fleet
+
+Creates a Capacity Reservation Fleet.
+
+Type annotations for `boto3.client("ec2").create_capacity_reservation_fleet`
+method.
+
+Boto3 documentation:
+[EC2.Client.create_capacity_reservation_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_capacity_reservation_fleet)
+
+Arguments mapping described in
+[CreateCapacityReservationFleetRequestRequestTypeDef](./type_defs.md#createcapacityreservationfleetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceTypeSpecifications`:
+  `Sequence`\[[ReservationFleetInstanceSpecificationTypeDef](./type_defs.md#reservationfleetinstancespecificationtypedef)\]
+  *(required)*
+- `TotalTargetCapacity`: `int` *(required)*
+- `AllocationStrategy`: `str`
+- `ClientToken`: `str`
+- `Tenancy`: `Literal['default']` (see
+  [FleetCapacityReservationTenancyType](./literals.md#fleetcapacityreservationtenancytype))
+- `EndDate`: `Union`\[`datetime`, `str`\]
+- `InstanceMatchCriteria`: `Literal['open']` (see
+  [FleetInstanceMatchCriteriaType](./literals.md#fleetinstancematchcriteriatype))
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+Returns
+[CreateCapacityReservationFleetResultTypeDef](./type_defs.md#createcapacityreservationfleetresulttypedef).
 
 ### create_carrier_gateway
 
@@ -1590,7 +1687,7 @@ Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `ClientToken`: `str`
 
@@ -1614,12 +1711,12 @@ Keyword-only arguments:
 - `ClientCidrBlock`: `str` *(required)*
 - `ServerCertificateArn`: `str` *(required)*
 - `AuthenticationOptions`:
-  `List`\[[ClientVpnAuthenticationRequestTypeDef](./type_defs.md#clientvpnauthenticationrequesttypedef)\]
+  `Sequence`\[[ClientVpnAuthenticationRequestTypeDef](./type_defs.md#clientvpnauthenticationrequesttypedef)\]
   *(required)*
 - `ConnectionLogOptions`:
   [ConnectionLogOptionsTypeDef](./type_defs.md#connectionlogoptionstypedef)
   *(required)*
-- `DnsServers`: `List`\[`str`\]
+- `DnsServers`: `Sequence`\[`str`\]
 - `TransportProtocol`:
   [TransportProtocolType](./literals.md#transportprotocoltype)
 - `VpnPort`: `int`
@@ -1628,8 +1725,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `ClientToken`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
-- `SecurityGroupIds`: `List`\[`str`\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `VpcId`: `str`
 - `SelfServicePortal`:
   [SelfServicePortalType](./literals.md#selfserviceportaltype)
@@ -1665,7 +1762,8 @@ Returns
 
 ### create_customer_gateway
 
-Provides information to AWS about your VPN customer gateway device.
+Provides information to Amazon Web Services about your VPN customer gateway
+device.
 
 Type annotations for `boto3.client("ec2").create_customer_gateway` method.
 
@@ -1683,7 +1781,7 @@ Keyword-only arguments:
 - `PublicIp`: `str`
 - `CertificateArn`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DeviceName`: `str`
 - `DryRun`: `bool`
 
@@ -1746,10 +1844,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DhcpConfigurations`:
-  `List`\[[NewDhcpConfigurationTypeDef](./type_defs.md#newdhcpconfigurationtypedef)\]
+  `Sequence`\[[NewDhcpConfigurationTypeDef](./type_defs.md#newdhcpconfigurationtypedef)\]
   *(required)*
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -1772,7 +1870,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [CreateEgressOnlyInternetGatewayResultTypeDef](./type_defs.md#createegressonlyinternetgatewayresulttypedef).
@@ -1792,7 +1890,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LaunchTemplateConfigs`:
-  `List`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
+  `Sequence`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
   *(required)*
 - `TargetCapacitySpecification`:
   [TargetCapacitySpecificationRequestTypeDef](./type_defs.md#targetcapacityspecificationrequesttypedef)
@@ -1811,7 +1909,7 @@ Keyword-only arguments:
 - `ValidUntil`: `Union`\[`datetime`, `str`\]
 - `ReplaceUnhealthyInstances`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `Context`: `str`
 
 Returns [CreateFleetResultTypeDef](./type_defs.md#createfleetresulttypedef).
@@ -1831,7 +1929,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceIds`: `List`\[`str`\] *(required)*
+- `ResourceIds`: `Sequence`\[`str`\] *(required)*
 - `ResourceType`:
   [FlowLogsResourceTypeType](./literals.md#flowlogsresourcetypetype)
   *(required)*
@@ -1845,8 +1943,10 @@ Keyword-only arguments:
 - `LogDestination`: `str`
 - `LogFormat`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MaxAggregationInterval`: `int`
+- `DestinationOptions`:
+  [DestinationOptionsRequestTypeDef](./type_defs.md#destinationoptionsrequesttypedef)
 
 Returns
 [CreateFlowLogsResultTypeDef](./type_defs.md#createflowlogsresulttypedef).
@@ -1874,7 +1974,7 @@ Keyword-only arguments:
 - `Name`: `str`
 - `ClientToken`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [CreateFpgaImageResultTypeDef](./type_defs.md#createfpgaimageresulttypedef).
@@ -1897,14 +1997,40 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `Description`: `str`
 - `DryRun`: `bool`
 - `NoReboot`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [CreateImageResultTypeDef](./type_defs.md#createimageresulttypedef).
+
+### create_instance_event_window
+
+Creates an event window in which scheduled events for the associated Amazon EC2
+instances can run.
+
+Type annotations for `boto3.client("ec2").create_instance_event_window` method.
+
+Boto3 documentation:
+[EC2.Client.create_instance_event_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_instance_event_window)
+
+Arguments mapping described in
+[CreateInstanceEventWindowRequestRequestTypeDef](./type_defs.md#createinstanceeventwindowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DryRun`: `bool`
+- `Name`: `str`
+- `TimeRanges`:
+  `Sequence`\[[InstanceEventWindowTimeRangeRequestTypeDef](./type_defs.md#instanceeventwindowtimerangerequesttypedef)\]
+- `CronExpression`: `str`
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+Returns
+[CreateInstanceEventWindowResultTypeDef](./type_defs.md#createinstanceeventwindowresulttypedef).
 
 ### create_instance_export_task
 
@@ -1928,7 +2054,7 @@ Keyword-only arguments:
   [ExportEnvironmentType](./literals.md#exportenvironmenttype) *(required)*
 - `Description`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [CreateInstanceExportTaskResultTypeDef](./type_defs.md#createinstanceexporttaskresulttypedef).
@@ -1948,7 +2074,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -1956,7 +2082,7 @@ Returns
 
 ### create_key_pair
 
-Creates a 2048-bit RSA key pair with the specified name.
+Creates an ED25519 or 2048-bit RSA key pair with the specified name.
 
 Type annotations for `boto3.client("ec2").create_key_pair` method.
 
@@ -1970,8 +2096,9 @@ Keyword-only arguments:
 
 - `KeyName`: `str` *(required)*
 - `DryRun`: `bool`
+- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [KeyPairTypeDef](./type_defs.md#keypairtypedef).
 
@@ -1997,7 +2124,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 - `VersionDescription`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [CreateLaunchTemplateResultTypeDef](./type_defs.md#createlaunchtemplateresulttypedef).
@@ -2070,7 +2197,7 @@ Keyword-only arguments:
 - `LocalGatewayRouteTableId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2095,9 +2222,9 @@ Keyword-only arguments:
 - `AddressFamily`: `str` *(required)*
 - `DryRun`: `bool`
 - `Entries`:
-  `List`\[[AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef)\]
+  `Sequence`\[[AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ClientToken`: `str`
 
 Returns
@@ -2122,7 +2249,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ConnectivityType`:
   [ConnectivityTypeType](./literals.md#connectivitytypetype)
 
@@ -2146,7 +2273,7 @@ Keyword-only arguments:
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [CreateNetworkAclResultTypeDef](./type_defs.md#createnetworkaclresulttypedef).
@@ -2198,7 +2325,7 @@ Keyword-only arguments:
 - `DestinationIp`: `str`
 - `DestinationPort`: `int`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2221,18 +2348,24 @@ Keyword-only arguments:
 - `SubnetId`: `str` *(required)*
 - `Description`: `str`
 - `DryRun`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+  `Sequence`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
+  `Sequence`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
+- `Ipv4Prefixes`:
+  `Sequence`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
+- `Ipv4PrefixCount`: `int`
+- `Ipv6Prefixes`:
+  `Sequence`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
+- `Ipv6PrefixCount`: `int`
 - `InterfaceType`:
   [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ClientToken`: `str`
 
 Returns
@@ -2284,7 +2417,7 @@ Keyword-only arguments:
 - `Strategy`: [PlacementStrategyType](./literals.md#placementstrategytype)
 - `PartitionCount`: `int`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [CreatePlacementGroupResultTypeDef](./type_defs.md#createplacementgroupresulttypedef).
@@ -2309,7 +2442,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [CreateReplaceRootVolumeTaskResultTypeDef](./type_defs.md#createreplacerootvolumetaskresulttypedef).
@@ -2333,7 +2466,7 @@ Keyword-only arguments:
 - `ClientToken`: `str` *(required)*
 - `InstanceCount`: `int` *(required)*
 - `PriceSchedules`:
-  `List`\[[PriceScheduleSpecificationTypeDef](./type_defs.md#priceschedulespecificationtypedef)\]
+  `Sequence`\[[PriceScheduleSpecificationTypeDef](./type_defs.md#priceschedulespecificationtypedef)\]
   *(required)*
 - `ReservedInstancesId`: `str` *(required)*
 
@@ -2342,9 +2475,9 @@ Returns
 
 ### create_restore_image_task
 
-Starts a task that restores an AMI from an S3 object that was previously
+Starts a task that restores an AMI from an Amazon S3 object that was previously
 created by using
-`CreateStoreImageTask <https://docs.aws.amazon.com/AWSEC2/latest/APIRef erence/API_CreateStoreImageTask.html>`\_\_
+`CreateStoreImageTask <https://docs.aws.amazon.com/AWSEC2/lates t/APIReference/API_CreateStoreImageTask.html>`\_\_
 .
 
 Type annotations for `boto3.client("ec2").create_restore_image_task` method.
@@ -2361,7 +2494,7 @@ Keyword-only arguments:
 - `ObjectKey`: `str` *(required)*
 - `Name`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2416,7 +2549,7 @@ Keyword-only arguments:
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [CreateRouteTableResultTypeDef](./type_defs.md#createroutetableresulttypedef).
@@ -2439,7 +2572,7 @@ Keyword-only arguments:
 - `GroupName`: `str` *(required)*
 - `VpcId`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2463,7 +2596,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `OutpostArn`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2490,7 +2623,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `OutpostArn`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `CopyTagsFromSource`: `Literal['volume']` (see
   [CopyTagsFromSourceType](./literals.md#copytagsfromsourcetype))
@@ -2523,7 +2656,7 @@ Returns
 
 ### create_store_image_task
 
-Stores an AMI as a single object in an S3 bucket.
+Stores an AMI as a single object in an Amazon S3 bucket.
 
 Type annotations for `boto3.client("ec2").create_store_image_task` method.
 
@@ -2538,7 +2671,7 @@ Keyword-only arguments:
 - `ImageId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
 - `S3ObjectTags`:
-  `List`\[[S3ObjectTagTypeDef](./type_defs.md#s3objecttagtypedef)\]
+  `Sequence`\[[S3ObjectTagTypeDef](./type_defs.md#s3objecttagtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2561,7 +2694,7 @@ Keyword-only arguments:
 - `CidrBlock`: `str` *(required)*
 - `VpcId`: `str` *(required)*
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
 - `Ipv6CidrBlock`: `str`
@@ -2569,6 +2702,34 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns [CreateSubnetResultTypeDef](./type_defs.md#createsubnetresulttypedef).
+
+### create_subnet_cidr_reservation
+
+Creates a subnet CIDR reservation.
+
+Type annotations for `boto3.client("ec2").create_subnet_cidr_reservation`
+method.
+
+Boto3 documentation:
+[EC2.Client.create_subnet_cidr_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_subnet_cidr_reservation)
+
+Arguments mapping described in
+[CreateSubnetCidrReservationRequestRequestTypeDef](./type_defs.md#createsubnetcidrreservationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SubnetId`: `str` *(required)*
+- `Cidr`: `str` *(required)*
+- `ReservationType`:
+  [SubnetCidrReservationTypeType](./literals.md#subnetcidrreservationtypetype)
+  *(required)*
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `Description`: `str`
+- `DryRun`: `bool`
+
+Returns
+[CreateSubnetCidrReservationResultTypeDef](./type_defs.md#createsubnetcidrreservationresulttypedef).
 
 ### create_tags
 
@@ -2585,8 +2746,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Resources`: `List`\[`Any`\] *(required)*
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Resources`: `Sequence`\[`Any`\] *(required)*
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -2606,7 +2767,7 @@ Keyword-only arguments:
 
 - `Description`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `ClientToken`: `str`
 
@@ -2672,7 +2833,7 @@ Keyword-only arguments:
 - `VirtualNetworkId`: `int`
 - `Description`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `ClientToken`: `str`
 
@@ -2697,7 +2858,7 @@ Keyword-only arguments:
 - `NetworkLoadBalancerArn`: `str`
 - `Description`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `ClientToken`: `str`
 
@@ -2722,7 +2883,7 @@ Keyword-only arguments:
 - `Options`:
   [TransitGatewayRequestOptionsTypeDef](./type_defs.md#transitgatewayrequestoptionstypedef)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2748,7 +2909,7 @@ Keyword-only arguments:
   [CreateTransitGatewayConnectRequestOptionsTypeDef](./type_defs.md#createtransitgatewayconnectrequestoptionstypedef)
   *(required)*
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2772,12 +2933,12 @@ Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
 - `PeerAddress`: `str` *(required)*
-- `InsideCidrBlocks`: `List`\[`str`\] *(required)*
+- `InsideCidrBlocks`: `Sequence`\[`str`\] *(required)*
 - `TransitGatewayAddress`: `str`
 - `BgpOptions`:
   [TransitGatewayConnectRequestBgpOptionsTypeDef](./type_defs.md#transitgatewayconnectrequestbgpoptionstypedef)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2802,7 +2963,7 @@ Keyword-only arguments:
 - `Options`:
   [CreateTransitGatewayMulticastDomainRequestOptionsTypeDef](./type_defs.md#createtransitgatewaymulticastdomainrequestoptionstypedef)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2829,7 +2990,7 @@ Keyword-only arguments:
 - `PeerAccountId`: `str` *(required)*
 - `PeerRegion`: `str` *(required)*
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2900,7 +3061,7 @@ Keyword-only arguments:
 
 - `TransitGatewayId`: `str` *(required)*
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2923,11 +3084,11 @@ Keyword-only arguments:
 
 - `TransitGatewayId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `Options`:
   [CreateTransitGatewayVpcAttachmentRequestOptionsTypeDef](./type_defs.md#createtransitgatewayvpcattachmentrequestoptionstypedef)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -2958,9 +3119,10 @@ Keyword-only arguments:
 - `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MultiAttachEnabled`: `bool`
 - `Throughput`: `int`
+- `ClientToken`: `str`
 
 Returns
 [VolumeResponseMetadataTypeDef](./type_defs.md#volumeresponsemetadatatypedef).
@@ -2987,7 +3149,7 @@ Keyword-only arguments:
 - `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `Ipv6CidrBlockNetworkBorderGroup`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [CreateVpcResultTypeDef](./type_defs.md#createvpcresulttypedef).
 
@@ -3010,13 +3172,13 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `VpcEndpointType`: [VpcEndpointTypeType](./literals.md#vpcendpointtypetype)
 - `PolicyDocument`: `str`
-- `RouteTableIds`: `List`\[`str`\]
-- `SubnetIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `RouteTableIds`: `Sequence`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `ClientToken`: `str`
 - `PrivateDnsEnabled`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [CreateVpcEndpointResultTypeDef](./type_defs.md#createvpcendpointresulttypedef).
@@ -3038,7 +3200,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ConnectionNotificationArn`: `str` *(required)*
-- `ConnectionEvents`: `List`\[`str`\] *(required)*
+- `ConnectionEvents`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 - `ServiceId`: `str`
 - `VpcEndpointId`: `str`
@@ -3049,8 +3211,8 @@ Returns
 
 ### create_vpc_endpoint_service_configuration
 
-Creates a VPC endpoint service configuration to which service consumers (AWS
-accounts, IAM users, and IAM roles) can connect.
+Creates a VPC endpoint service configuration to which service consumers (Amazon
+Web Services accounts, IAM users, and IAM roles) can connect.
 
 Type annotations for
 `boto3.client("ec2").create_vpc_endpoint_service_configuration` method.
@@ -3066,11 +3228,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `AcceptanceRequired`: `bool`
 - `PrivateDnsName`: `str`
-- `NetworkLoadBalancerArns`: `List`\[`str`\]
-- `GatewayLoadBalancerArns`: `List`\[`str`\]
+- `NetworkLoadBalancerArns`: `Sequence`\[`str`\]
+- `GatewayLoadBalancerArns`: `Sequence`\[`str`\]
 - `ClientToken`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [CreateVpcEndpointServiceConfigurationResultTypeDef](./type_defs.md#createvpcendpointserviceconfigurationresulttypedef).
@@ -3097,7 +3259,7 @@ Keyword-only arguments:
 - `VpcId`: `str`
 - `PeerRegion`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [CreateVpcPeeringConnectionResultTypeDef](./type_defs.md#createvpcpeeringconnectionresulttypedef).
@@ -3125,7 +3287,7 @@ Keyword-only arguments:
 - `Options`:
   [VpnConnectionOptionsSpecificationTypeDef](./type_defs.md#vpnconnectionoptionsspecificationtypedef)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [CreateVpnConnectionResultTypeDef](./type_defs.md#createvpnconnectionresulttypedef).
@@ -3166,7 +3328,7 @@ Keyword-only arguments:
   [GatewayTypeType](./literals.md#gatewaytypetype)) *(required)*
 - `AvailabilityZone`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AmazonSideAsn`: `int`
 - `DryRun`: `bool`
 
@@ -3304,7 +3466,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `FleetIds`: `List`\[`str`\] *(required)*
+- `FleetIds`: `Sequence`\[`str`\] *(required)*
 - `TerminateInstances`: `bool` *(required)*
 - `DryRun`: `bool`
 
@@ -3324,7 +3486,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `FlowLogIds`: `List`\[`str`\] *(required)*
+- `FlowLogIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -3349,6 +3511,27 @@ Keyword-only arguments:
 
 Returns
 [DeleteFpgaImageResultTypeDef](./type_defs.md#deletefpgaimageresulttypedef).
+
+### delete_instance_event_window
+
+Deletes the specified event window.
+
+Type annotations for `boto3.client("ec2").delete_instance_event_window` method.
+
+Boto3 documentation:
+[EC2.Client.delete_instance_event_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_instance_event_window)
+
+Arguments mapping described in
+[DeleteInstanceEventWindowRequestRequestTypeDef](./type_defs.md#deleteinstanceeventwindowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceEventWindowId`: `str` *(required)*
+- `DryRun`: `bool`
+- `ForceDelete`: `bool`
+
+Returns
+[DeleteInstanceEventWindowResultTypeDef](./type_defs.md#deleteinstanceeventwindowresulttypedef).
 
 ### delete_internet_gateway
 
@@ -3421,7 +3604,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Versions`: `List`\[`str`\] *(required)*
+- `Versions`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 - `LaunchTemplateId`: `str`
 - `LaunchTemplateName`: `str`
@@ -3660,7 +3843,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ReservedInstancesIds`: `List`\[`str`\] *(required)*
+- `ReservedInstancesIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -3772,6 +3955,27 @@ Keyword-only arguments:
 - `SubnetId`: `str` *(required)*
 - `DryRun`: `bool`
 
+### delete_subnet_cidr_reservation
+
+Deletes a subnet CIDR reservation.
+
+Type annotations for `boto3.client("ec2").delete_subnet_cidr_reservation`
+method.
+
+Boto3 documentation:
+[EC2.Client.delete_subnet_cidr_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_subnet_cidr_reservation)
+
+Arguments mapping described in
+[DeleteSubnetCidrReservationRequestRequestTypeDef](./type_defs.md#deletesubnetcidrreservationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SubnetCidrReservationId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DeleteSubnetCidrReservationResultTypeDef](./type_defs.md#deletesubnetcidrreservationresulttypedef).
+
 ### delete_tags
 
 Deletes the specified set of tags from the specified set of resources.
@@ -3786,9 +3990,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Resources`: `List`\[`Any`\] *(required)*
+- `Resources`: `Sequence`\[`Any`\] *(required)*
 - `DryRun`: `bool`
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 ### delete_traffic_mirror_filter
 
@@ -4111,7 +4315,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConnectionNotificationIds`: `List`\[`str`\] *(required)*
+- `ConnectionNotificationIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -4132,7 +4336,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ServiceIds`: `List`\[`str`\] *(required)*
+- `ServiceIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -4152,7 +4356,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `VpcEndpointIds`: `List`\[`str`\] *(required)*
+- `VpcEndpointIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -4272,7 +4476,7 @@ Keyword-only arguments:
 
 ### deregister_instance_event_notification_attributes
 
-Deregisters tag keys to prevent tags that have the specified tag keys from
+c Deregisters tag keys to prevent tags that have the specified tag keys from
 being included in scheduled event notifications for resources in the Region.
 
 Type annotations for
@@ -4312,7 +4516,7 @@ Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `GroupIpAddress`: `str`
-- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -4337,7 +4541,7 @@ Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `GroupIpAddress`: `str`
-- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -4358,7 +4562,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AttributeNames`:
-  `List`\[[AccountAttributeNameType](./literals.md#accountattributenametype)\]
+  `Sequence`\[[AccountAttributeNameType](./literals.md#accountattributenametype)\]
 - `DryRun`: `bool`
 
 Returns
@@ -4379,9 +4583,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PublicIps`: `List`\[`str`\]
-- `AllocationIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PublicIps`: `Sequence`\[`str`\]
+- `AllocationIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -4401,7 +4605,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AllocationIds`: `List`\[`str`\]
+- `AllocationIds`: `Sequence`\[`str`\]
 - `Attribute`: `Literal['domain-name']` (see
   [AddressAttributeNameType](./literals.md#addressattributenametype))
 - `NextToken`: `str`
@@ -4446,9 +4650,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ZoneNames`: `List`\[`str`\]
-- `ZoneIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ZoneNames`: `Sequence`\[`str`\]
+- `ZoneIds`: `Sequence`\[`str`\]
 - `AllAvailabilityZones`: `bool`
 - `DryRun`: `bool`
 
@@ -4469,8 +4673,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `BundleIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `BundleIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -4498,6 +4702,30 @@ Keyword-only arguments:
 Returns
 [DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef).
 
+### describe_capacity_reservation_fleets
+
+Describes one or more Capacity Reservation Fleets.
+
+Type annotations for `boto3.client("ec2").describe_capacity_reservation_fleets`
+method.
+
+Boto3 documentation:
+[EC2.Client.describe_capacity_reservation_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_capacity_reservation_fleets)
+
+Arguments mapping described in
+[DescribeCapacityReservationFleetsRequestRequestTypeDef](./type_defs.md#describecapacityreservationfleetsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CapacityReservationFleetIds`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+
+Returns
+[DescribeCapacityReservationFleetsResultTypeDef](./type_defs.md#describecapacityreservationfleetsresulttypedef).
+
 ### describe_capacity_reservations
 
 Describes one or more of your Capacity Reservations.
@@ -4513,10 +4741,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CapacityReservationIds`: `List`\[`str`\]
+- `CapacityReservationIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -4536,8 +4764,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CarrierGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `CarrierGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -4560,9 +4788,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -4587,7 +4815,7 @@ Keyword-only arguments:
 - `ClientVpnEndpointId`: `str` *(required)*
 - `DryRun`: `bool`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 
 Returns
@@ -4610,7 +4838,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `DryRun`: `bool`
@@ -4633,10 +4861,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ClientVpnEndpointIds`: `List`\[`str`\]
+- `ClientVpnEndpointIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -4657,7 +4885,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -4682,10 +4910,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
-- `AssociationIds`: `List`\[`str`\]
+- `AssociationIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -4706,8 +4934,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `PoolIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PoolIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -4729,7 +4957,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConversionTaskIds`: `List`\[`str`\]
+- `ConversionTaskIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -4749,8 +4977,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CustomerGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `CustomerGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -4770,8 +4998,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DhcpOptionsIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DhcpOptionsIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -4795,10 +5023,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `EgressOnlyInternetGatewayIds`: `List`\[`str`\]
+- `EgressOnlyInternetGatewayIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [DescribeEgressOnlyInternetGatewaysResultTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresulttypedef).
@@ -4817,9 +5045,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ElasticGpuIds`: `List`\[`str`\]
+- `ElasticGpuIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -4841,8 +5069,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ExportImageTaskIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ExportImageTaskIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -4864,8 +5092,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ExportTaskIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ExportTaskIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [DescribeExportTasksResultTypeDef](./type_defs.md#describeexporttasksresulttypedef).
@@ -4885,7 +5113,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -4935,7 +5163,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [DescribeFleetInstancesResultTypeDef](./type_defs.md#describefleetinstancesresulttypedef).
@@ -4957,8 +5185,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `FleetIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FleetIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef).
@@ -4978,8 +5206,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `FlowLogIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FlowLogIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -5025,9 +5253,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `FpgaImageIds`: `List`\[`str`\]
-- `Owners`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FpgaImageIds`: `Sequence`\[`str`\]
+- `Owners`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -5049,7 +5277,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxDuration`: `int`
 - `MaxResults`: `int`
 - `MinDuration`: `int`
@@ -5074,8 +5302,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `HostReservationIdSet`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `HostReservationIdSet`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -5096,8 +5324,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `HostIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `HostIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -5119,8 +5347,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AssociationIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `AssociationIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -5204,10 +5432,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ExecutableUsers`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImageIds`: `List`\[`str`\]
-- `Owners`: `List`\[`str`\]
+- `ExecutableUsers`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImageIds`: `Sequence`\[`str`\]
+- `Owners`: `Sequence`\[`str`\]
 - `IncludeDeprecated`: `bool`
 - `DryRun`: `bool`
 
@@ -5230,8 +5458,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImportTaskIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImportTaskIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -5254,8 +5482,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImportTaskIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImportTaskIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -5301,8 +5529,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -5330,6 +5558,30 @@ Keyword-only arguments:
 Returns
 [DescribeInstanceEventNotificationAttributesResultTypeDef](./type_defs.md#describeinstanceeventnotificationattributesresulttypedef).
 
+### describe_instance_event_windows
+
+Describes the specified event windows or all event windows.
+
+Type annotations for `boto3.client("ec2").describe_instance_event_windows`
+method.
+
+Boto3 documentation:
+[EC2.Client.describe_instance_event_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_event_windows)
+
+Arguments mapping described in
+[DescribeInstanceEventWindowsRequestRequestTypeDef](./type_defs.md#describeinstanceeventwindowsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DryRun`: `bool`
+- `InstanceEventWindowIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeInstanceEventWindowsResultTypeDef](./type_defs.md#describeinstanceeventwindowsresulttypedef).
+
 ### describe_instance_status
 
 Describes the status of the specified instances or all of your instances.
@@ -5344,8 +5596,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -5371,7 +5623,7 @@ Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `LocationType`: [LocationTypeType](./literals.md#locationtypetype)
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -5393,8 +5645,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `InstanceTypes`: `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceTypes`:
+  `Sequence`\[[InstanceTypeType](./literals.md#instancetypetype)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -5415,8 +5668,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -5438,9 +5691,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `InternetGatewayIds`: `List`\[`str`\]
+- `InternetGatewayIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -5461,11 +5714,11 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `PoolIds`: `List`\[`str`\]
+- `PoolIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [DescribeIpv6PoolsResultTypeDef](./type_defs.md#describeipv6poolsresulttypedef).
@@ -5484,9 +5737,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `KeyNames`: `List`\[`str`\]
-- `KeyPairIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `KeyNames`: `Sequence`\[`str`\]
+- `KeyPairIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -5510,12 +5763,12 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `LaunchTemplateId`: `str`
 - `LaunchTemplateName`: `str`
-- `Versions`: `List`\[`str`\]
+- `Versions`: `Sequence`\[`str`\]
 - `MinVersion`: `str`
 - `MaxVersion`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [DescribeLaunchTemplateVersionsResultTypeDef](./type_defs.md#describelaunchtemplateversionsresulttypedef).
@@ -5535,9 +5788,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `LaunchTemplateIds`: `List`\[`str`\]
-- `LaunchTemplateNames`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LaunchTemplateIds`: `Sequence`\[`str`\]
+- `LaunchTemplateNames`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -5561,8 +5814,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds`:
+  `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -5587,8 +5841,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LocalGatewayRouteTableVpcAssociationIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayRouteTableVpcAssociationIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -5611,8 +5865,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LocalGatewayRouteTableIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayRouteTableIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -5635,8 +5889,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LocalGatewayVirtualInterfaceGroupIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayVirtualInterfaceGroupIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -5659,8 +5913,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LocalGatewayVirtualInterfaceIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayVirtualInterfaceIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -5682,8 +5936,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LocalGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -5708,10 +5962,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `PrefixListIds`: `List`\[`str`\]
+- `PrefixListIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeManagedPrefixListsResultTypeDef](./type_defs.md#describemanagedprefixlistsresulttypedef).
@@ -5731,11 +5985,11 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `PublicIps`: `List`\[`str`\]
+- `PublicIps`: `Sequence`\[`str`\]
 
 Returns
 [DescribeMovingAddressesResultTypeDef](./type_defs.md#describemovingaddressesresulttypedef).
@@ -5755,9 +6009,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
-- `NatGatewayIds`: `List`\[`str`\]
+- `NatGatewayIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 Returns
@@ -5777,9 +6031,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `NetworkAclIds`: `List`\[`str`\]
+- `NetworkAclIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -5801,11 +6055,11 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `NetworkInsightsAnalysisIds`: `List`\[`str`\]
+- `NetworkInsightsAnalysisIds`: `Sequence`\[`str`\]
 - `NetworkInsightsPathId`: `str`
 - `AnalysisStartTime`: `Union`\[`datetime`, `str`\]
 - `AnalysisEndTime`: `Union`\[`datetime`, `str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `DryRun`: `bool`
 - `NextToken`: `str`
@@ -5828,8 +6082,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `NetworkInsightsPathIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NetworkInsightsPathIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `DryRun`: `bool`
 - `NextToken`: `str`
@@ -5875,8 +6129,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `NetworkInterfacePermissionIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NetworkInterfacePermissionIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -5897,9 +6151,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -5920,10 +6174,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `GroupNames`: `List`\[`str`\]
-- `GroupIds`: `List`\[`str`\]
+- `GroupNames`: `Sequence`\[`str`\]
+- `GroupIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribePlacementGroupsResultTypeDef](./type_defs.md#describeplacementgroupsresulttypedef).
@@ -5945,10 +6199,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `PrefixListIds`: `List`\[`str`\]
+- `PrefixListIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribePrefixListsResultTypeDef](./type_defs.md#describeprefixlistsresulttypedef).
@@ -5969,7 +6223,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `Resources`: `List`\[`str`\]
+- `Resources`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -5990,10 +6244,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `PoolIds`: `List`\[`str`\]
+- `PoolIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [DescribePublicIpv4PoolsResultTypeDef](./type_defs.md#describepublicipv4poolsresulttypedef).
@@ -6012,8 +6266,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `RegionNames`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `RegionNames`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `AllRegions`: `bool`
 
@@ -6035,8 +6289,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ReplaceRootVolumeTaskIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ReplaceRootVolumeTaskIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -6058,9 +6312,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `OfferingClass`: [OfferingClassTypeType](./literals.md#offeringclasstypetype)
-- `ReservedInstancesIds`: `List`\[`str`\]
+- `ReservedInstancesIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `OfferingType`:
   [OfferingTypeValuesType](./literals.md#offeringtypevaluestype)
@@ -6084,7 +6338,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ReservedInstancesId`: `str`
 - `ReservedInstancesListingId`: `str`
 
@@ -6106,8 +6360,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ReservedInstancesModificationIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ReservedInstancesModificationIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 Returns
@@ -6129,7 +6383,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AvailabilityZone`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `IncludeMarketplace`: `bool`
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `MaxDuration`: `int`
@@ -6138,7 +6392,7 @@ Keyword-only arguments:
 - `OfferingClass`: [OfferingClassTypeType](./literals.md#offeringclasstypetype)
 - `ProductDescription`:
   [RIProductDescriptionType](./literals.md#riproductdescriptiontype)
-- `ReservedInstancesOfferingIds`: `List`\[`str`\]
+- `ReservedInstancesOfferingIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `MaxResults`: `int`
@@ -6163,9 +6417,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `RouteTableIds`: `List`\[`str`\]
+- `RouteTableIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -6194,7 +6448,7 @@ Keyword-only arguments:
   [ScheduledInstanceRecurrenceRequestTypeDef](./type_defs.md#scheduledinstancerecurrencerequesttypedef)
   *(required)*
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `MaxSlotDurationInHours`: `int`
 - `MinSlotDurationInHours`: `int`
@@ -6218,10 +6472,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `ScheduledInstanceIds`: `List`\[`str`\]
+- `ScheduledInstanceIds`: `Sequence`\[`str`\]
 - `SlotStartTimeRange`:
   [SlotStartTimeRangeRequestTypeDef](./type_defs.md#slotstarttimerangerequesttypedef)
 
@@ -6241,7 +6495,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `GroupId`: `List`\[`str`\] *(required)*
+- `GroupId`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -6262,8 +6516,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SecurityGroupRuleIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SecurityGroupRuleIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -6285,9 +6539,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `GroupIds`: `List`\[`str`\]
-- `GroupNames`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `GroupIds`: `Sequence`\[`str`\]
+- `GroupNames`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -6333,12 +6587,12 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `OwnerIds`: `List`\[`str`\]
-- `RestorableByUserIds`: `List`\[`str`\]
-- `SnapshotIds`: `List`\[`str`\]
+- `OwnerIds`: `Sequence`\[`str`\]
+- `RestorableByUserIds`: `Sequence`\[`str`\]
+- `SnapshotIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -6430,7 +6684,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `SpotFleetRequestIds`: `List`\[`str`\]
+- `SpotFleetRequestIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeSpotFleetRequestsResponseTypeDef](./type_defs.md#describespotfleetrequestsresponsetypedef).
@@ -6450,9 +6704,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `SpotInstanceRequestIds`: `List`\[`str`\]
+- `SpotInstanceRequestIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -6473,14 +6727,15 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `AvailabilityZone`: `str`
 - `DryRun`: `bool`
 - `EndTime`: `Union`\[`datetime`, `str`\]
-- `InstanceTypes`: `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
+- `InstanceTypes`:
+  `Sequence`\[[InstanceTypeType](./literals.md#instancetypetype)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `ProductDescriptions`: `List`\[`str`\]
+- `ProductDescriptions`: `Sequence`\[`str`\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 
 Returns
@@ -6521,9 +6776,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ImageIds`: `List`\[`str`\]
+- `ImageIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -6544,8 +6799,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SubnetIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -6568,7 +6823,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -6589,9 +6844,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TrafficMirrorFilterIds`: `List`\[`str`\]
+- `TrafficMirrorFilterIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -6613,9 +6868,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TrafficMirrorSessionIds`: `List`\[`str`\]
+- `TrafficMirrorSessionIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -6637,9 +6892,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TrafficMirrorTargetIds`: `List`\[`str`\]
+- `TrafficMirrorTargetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -6661,8 +6916,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -6685,8 +6940,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TransitGatewayConnectPeerIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayConnectPeerIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -6709,8 +6964,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -6733,8 +6988,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TransitGatewayMulticastDomainIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayMulticastDomainIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -6757,8 +7012,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -6781,8 +7036,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TransitGatewayRouteTableIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayRouteTableIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -6805,8 +7060,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -6828,8 +7083,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TransitGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -6839,7 +7094,7 @@ Returns
 
 ### describe_trunk_interface_associations
 
-Describes one or more network interface trunk associations.
+.
 
 Type annotations for
 `boto3.client("ec2").describe_trunk_interface_associations` method.
@@ -6852,9 +7107,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AssociationIds`: `List`\[`str`\]
+- `AssociationIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -6897,10 +7152,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `VolumeIds`: `List`\[`str`\]
+- `VolumeIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -6920,8 +7175,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VolumeIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VolumeIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -6946,8 +7201,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `VolumeIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VolumeIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -6990,9 +7245,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeVpcClassicLinkResultTypeDef](./type_defs.md#describevpcclassiclinkresulttypedef).
@@ -7014,7 +7269,7 @@ Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 
 Returns
 [DescribeVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresulttypedef).
@@ -7037,7 +7292,7 @@ Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `ConnectionNotificationId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -7061,7 +7316,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -7085,8 +7340,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `ServiceIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ServiceIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -7111,7 +7366,7 @@ Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -7134,8 +7389,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `ServiceNames`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ServiceNames`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -7157,8 +7412,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DryRun`: `bool`
-- `VpcEndpointIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpcEndpointIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -7180,9 +7435,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `VpcPeeringConnectionIds`: `List`\[`str`\]
+- `VpcPeeringConnectionIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -7203,8 +7458,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpcIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpcIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -7225,8 +7480,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpnConnectionIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpnConnectionIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -7246,8 +7501,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpnGatewayIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpnGatewayIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -7388,8 +7643,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AvailabilityZones`: `List`\[`str`\] *(required)*
-- `SourceSnapshotIds`: `List`\[`str`\] *(required)*
+- `AvailabilityZones`: `Sequence`\[`str`\] *(required)*
+- `SourceSnapshotIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -7601,6 +7856,30 @@ Keyword-only arguments:
 Returns
 [DisassociateIamInstanceProfileResultTypeDef](./type_defs.md#disassociateiaminstanceprofileresulttypedef).
 
+### disassociate_instance_event_window
+
+Disassociates one or more targets from an event window.
+
+Type annotations for `boto3.client("ec2").disassociate_instance_event_window`
+method.
+
+Boto3 documentation:
+[EC2.Client.disassociate_instance_event_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_instance_event_window)
+
+Arguments mapping described in
+[DisassociateInstanceEventWindowRequestRequestTypeDef](./type_defs.md#disassociateinstanceeventwindowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceEventWindowId`: `str` *(required)*
+- `AssociationTarget`:
+  [InstanceEventWindowDisassociationRequestTypeDef](./type_defs.md#instanceeventwindowdisassociationrequesttypedef)
+  *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DisassociateInstanceEventWindowResultTypeDef](./type_defs.md#disassociateinstanceeventwindowresulttypedef).
+
 ### disassociate_route_table
 
 Disassociates a subnet or gateway from a route table.
@@ -7655,7 +7934,7 @@ Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `TransitGatewayAttachmentId`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -7685,8 +7964,7 @@ Returns
 
 ### disassociate_trunk_interface
 
-Removes an association between a branch network interface with a trunk network
-interface.
+.
 
 Type annotations for `boto3.client("ec2").disassociate_trunk_interface` method.
 
@@ -7760,8 +8038,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AvailabilityZones`: `List`\[`str`\] *(required)*
-- `SourceSnapshotIds`: `List`\[`str`\] *(required)*
+- `AvailabilityZones`: `Sequence`\[`str`\] *(required)*
+- `SourceSnapshotIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -7977,7 +8255,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `RoleName`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [ExportImageResultTypeDef](./type_defs.md#exportimageresulttypedef).
 
@@ -7999,7 +8277,7 @@ Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `S3Bucket`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 
 Returns
@@ -8017,7 +8295,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -8107,7 +8385,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PoolId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -8184,8 +8462,8 @@ Returns
 
 ### get_ebs_default_kms_key_id
 
-Describes the default customer master key (CMK) for EBS encryption by default
-for your account in this Region.
+Describes the default KMS key for EBS encryption by default for your account in
+this Region.
 
 Type annotations for `boto3.client("ec2").get_ebs_default_kms_key_id` method.
 
@@ -8288,7 +8566,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `HostIdSet`: `List`\[`str`\] *(required)*
+- `HostIdSet`: `Sequence`\[`str`\] *(required)*
 - `OfferingId`: `str` *(required)*
 
 Returns
@@ -8398,10 +8676,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ReservedInstanceIds`: `List`\[`str`\] *(required)*
+- `ReservedInstanceIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 - `TargetConfigurations`:
-  `List`\[[TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef)\]
+  `Sequence`\[[TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef)\]
 
 Returns
 [GetReservedInstancesExchangeQuoteResultTypeDef](./type_defs.md#getreservedinstancesexchangequoteresulttypedef).
@@ -8427,6 +8705,29 @@ Keyword-only arguments:
 Returns
 [GetSerialConsoleAccessStatusResultTypeDef](./type_defs.md#getserialconsoleaccessstatusresulttypedef).
 
+### get_subnet_cidr_reservations
+
+Gets information about the subnet CIDR reservations.
+
+Type annotations for `boto3.client("ec2").get_subnet_cidr_reservations` method.
+
+Boto3 documentation:
+[EC2.Client.get_subnet_cidr_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_subnet_cidr_reservations)
+
+Arguments mapping described in
+[GetSubnetCidrReservationsRequestRequestTypeDef](./type_defs.md#getsubnetcidrreservationsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SubnetId`: `str` *(required)*
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetSubnetCidrReservationsResultTypeDef](./type_defs.md#getsubnetcidrreservationsresulttypedef).
+
 ### get_transit_gateway_attachment_propagations
 
 Lists the route tables to which the specified resource attachment propagates
@@ -8444,7 +8745,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -8469,7 +8770,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -8494,7 +8795,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -8519,7 +8820,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -8544,13 +8845,61 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
 
 Returns
 [GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef).
+
+### get_vpn_connection_device_sample_configuration
+
+Download an Amazon Web Services-provided sample configuration file to be used
+with the customer gateway device specified for your Site-to-Site VPN
+connection.
+
+Type annotations for
+`boto3.client("ec2").get_vpn_connection_device_sample_configuration` method.
+
+Boto3 documentation:
+[EC2.Client.get_vpn_connection_device_sample_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_vpn_connection_device_sample_configuration)
+
+Arguments mapping described in
+[GetVpnConnectionDeviceSampleConfigurationRequestRequestTypeDef](./type_defs.md#getvpnconnectiondevicesampleconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `VpnConnectionId`: `str` *(required)*
+- `VpnConnectionDeviceTypeId`: `str` *(required)*
+- `InternetKeyExchangeVersion`: `str`
+- `DryRun`: `bool`
+
+Returns
+[GetVpnConnectionDeviceSampleConfigurationResultTypeDef](./type_defs.md#getvpnconnectiondevicesampleconfigurationresulttypedef).
+
+### get_vpn_connection_device_types
+
+Obtain a list of customer gateway devices for which sample configuration files
+can be provided.
+
+Type annotations for `boto3.client("ec2").get_vpn_connection_device_types`
+method.
+
+Boto3 documentation:
+[EC2.Client.get_vpn_connection_device_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_vpn_connection_device_types)
+
+Arguments mapping described in
+[GetVpnConnectionDeviceTypesRequestRequestTypeDef](./type_defs.md#getvpnconnectiondevicetypesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+Returns
+[GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef).
 
 ### import_client_vpn_client_certificate_revocation_list
 
@@ -8596,7 +8945,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 - `Description`: `str`
 - `DiskContainers`:
-  `List`\[[ImageDiskContainerTypeDef](./type_defs.md#imagediskcontainertypedef)\]
+  `Sequence`\[[ImageDiskContainerTypeDef](./type_defs.md#imagediskcontainertypedef)\]
 - `DryRun`: `bool`
 - `Encrypted`: `bool`
 - `Hypervisor`: `str`
@@ -8605,9 +8954,11 @@ Keyword-only arguments:
 - `Platform`: `str`
 - `RoleName`: `str`
 - `LicenseSpecifications`:
-  `List`\[[ImportImageLicenseConfigurationRequestTypeDef](./type_defs.md#importimagelicenseconfigurationrequesttypedef)\]
+  `Sequence`\[[ImportImageLicenseConfigurationRequestTypeDef](./type_defs.md#importimagelicenseconfigurationrequesttypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `UsageOperation`: `str`
+- `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
 
 Returns [ImportImageResultTypeDef](./type_defs.md#importimageresulttypedef).
 
@@ -8628,7 +8979,8 @@ Keyword-only arguments:
 - `Platform`: `Literal['Windows']` (see
   [PlatformValuesType](./literals.md#platformvaluestype)) *(required)*
 - `Description`: `str`
-- `DiskImages`: `List`\[[DiskImageTypeDef](./type_defs.md#diskimagetypedef)\]
+- `DiskImages`:
+  `Sequence`\[[DiskImageTypeDef](./type_defs.md#diskimagetypedef)\]
 - `DryRun`: `bool`
 - `LaunchSpecification`:
   [ImportInstanceLaunchSpecificationTypeDef](./type_defs.md#importinstancelaunchspecificationtypedef)
@@ -8638,8 +8990,8 @@ Returns
 
 ### import_key_pair
 
-Imports the public key from an RSA key pair that you created with a third-party
-tool.
+Imports the public key from an RSA or ED25519 key pair that you created with a
+third-party tool.
 
 Type annotations for `boto3.client("ec2").import_key_pair` method.
 
@@ -8656,7 +9008,7 @@ Keyword-only arguments:
   *(required)*
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [ImportKeyPairResultTypeDef](./type_defs.md#importkeypairresulttypedef).
@@ -8685,7 +9037,7 @@ Keyword-only arguments:
 - `KmsKeyId`: `str`
 - `RoleName`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [ImportSnapshotResultTypeDef](./type_defs.md#importsnapshotresulttypedef).
@@ -8785,6 +9137,30 @@ Keyword-only arguments:
 Returns
 [ModifyCapacityReservationResultTypeDef](./type_defs.md#modifycapacityreservationresulttypedef).
 
+### modify_capacity_reservation_fleet
+
+Modifies a Capacity Reservation Fleet.
+
+Type annotations for `boto3.client("ec2").modify_capacity_reservation_fleet`
+method.
+
+Boto3 documentation:
+[EC2.Client.modify_capacity_reservation_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_capacity_reservation_fleet)
+
+Arguments mapping described in
+[ModifyCapacityReservationFleetRequestRequestTypeDef](./type_defs.md#modifycapacityreservationfleetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CapacityReservationFleetId`: `str` *(required)*
+- `TotalTargetCapacity`: `int`
+- `EndDate`: `Union`\[`datetime`, `str`\]
+- `DryRun`: `bool`
+- `RemoveEndDate`: `bool`
+
+Returns
+[ModifyCapacityReservationFleetResultTypeDef](./type_defs.md#modifycapacityreservationfleetresulttypedef).
+
 ### modify_client_vpn_endpoint
 
 Modifies the specified Client VPN endpoint.
@@ -8809,7 +9185,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `SplitTunnel`: `bool`
 - `DryRun`: `bool`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `VpcId`: `str`
 - `SelfServicePortal`:
   [SelfServicePortalType](./literals.md#selfserviceportaltype)
@@ -8846,8 +9222,8 @@ Returns
 
 ### modify_ebs_default_kms_key_id
 
-Changes the default customer master key (CMK) for EBS encryption by default for
-your account in this Region.
+Changes the default KMS key for EBS encryption by default for your account in
+this Region.
 
 Type annotations for `boto3.client("ec2").modify_ebs_default_kms_key_id`
 method.
@@ -8885,7 +9261,7 @@ Keyword-only arguments:
 - `ExcessCapacityTerminationPolicy`:
   [FleetExcessCapacityTerminationPolicyType](./literals.md#fleetexcesscapacityterminationpolicytype)
 - `LaunchTemplateConfigs`:
-  `List`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
+  `Sequence`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
 - `TargetCapacitySpecification`:
   [TargetCapacitySpecificationRequestTypeDef](./type_defs.md#targetcapacityspecificationrequesttypedef)
 - `Context`: `str`
@@ -8911,9 +9287,9 @@ Keyword-only arguments:
 - `Attribute`:
   [FpgaImageAttributeNameType](./literals.md#fpgaimageattributenametype)
 - `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
-- `UserIds`: `List`\[`str`\]
-- `UserGroups`: `List`\[`str`\]
-- `ProductCodes`: `List`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
+- `UserGroups`: `Sequence`\[`str`\]
+- `ProductCodes`: `Sequence`\[`str`\]
 - `LoadPermission`:
   [LoadPermissionModificationsTypeDef](./type_defs.md#loadpermissionmodificationstypedef)
 - `Description`: `str`
@@ -8936,7 +9312,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `HostIds`: `List`\[`str`\] *(required)*
+- `HostIds`: `Sequence`\[`str`\] *(required)*
 - `AutoPlacement`: [AutoPlacementType](./literals.md#autoplacementtype)
 - `HostRecovery`: [HostRecoveryType](./literals.md#hostrecoverytype)
 - `InstanceType`: `str`
@@ -9001,9 +9377,9 @@ Keyword-only arguments:
 - `LaunchPermission`:
   [LaunchPermissionModificationsTypeDef](./type_defs.md#launchpermissionmodificationstypedef)
 - `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
-- `ProductCodes`: `List`\[`str`\]
-- `UserGroups`: `List`\[`str`\]
-- `UserIds`: `List`\[`str`\]
+- `ProductCodes`: `Sequence`\[`str`\]
+- `UserGroups`: `Sequence`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
 - `Value`: `str`
 - `DryRun`: `bool`
 
@@ -9027,7 +9403,7 @@ Keyword-only arguments:
 - `Attribute`:
   [InstanceAttributeNameType](./literals.md#instanceattributenametype)
 - `BlockDeviceMappings`:
-  `List`\[[InstanceBlockDeviceMappingSpecificationTypeDef](./type_defs.md#instanceblockdevicemappingspecificationtypedef)\]
+  `Sequence`\[[InstanceBlockDeviceMappingSpecificationTypeDef](./type_defs.md#instanceblockdevicemappingspecificationtypedef)\]
 - `DisableApiTermination`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `DryRun`: `bool`
@@ -9035,7 +9411,7 @@ Keyword-only arguments:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `EnaSupport`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `InstanceInitiatedShutdownBehavior`:
   [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `InstanceType`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
@@ -9088,7 +9464,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceCreditSpecifications`:
-  `List`\[[InstanceCreditSpecificationRequestTypeDef](./type_defs.md#instancecreditspecificationrequesttypedef)\]
+  `Sequence`\[[InstanceCreditSpecificationRequestTypeDef](./type_defs.md#instancecreditspecificationrequesttypedef)\]
   *(required)*
 - `DryRun`: `bool`
 - `ClientToken`: `str`
@@ -9119,6 +9495,30 @@ Keyword-only arguments:
 Returns
 [ModifyInstanceEventStartTimeResultTypeDef](./type_defs.md#modifyinstanceeventstarttimeresulttypedef).
 
+### modify_instance_event_window
+
+Modifies the specified event window.
+
+Type annotations for `boto3.client("ec2").modify_instance_event_window` method.
+
+Boto3 documentation:
+[EC2.Client.modify_instance_event_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_event_window)
+
+Arguments mapping described in
+[ModifyInstanceEventWindowRequestRequestTypeDef](./type_defs.md#modifyinstanceeventwindowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceEventWindowId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Name`: `str`
+- `TimeRanges`:
+  `Sequence`\[[InstanceEventWindowTimeRangeRequestTypeDef](./type_defs.md#instanceeventwindowtimerangerequesttypedef)\]
+- `CronExpression`: `str`
+
+Returns
+[ModifyInstanceEventWindowResultTypeDef](./type_defs.md#modifyinstanceeventwindowresulttypedef).
+
 ### modify_instance_metadata_options
 
 Modify the instance metadata parameters on a running or stopped instance.
@@ -9140,6 +9540,8 @@ Keyword-only arguments:
 - `HttpEndpoint`:
   [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 - `DryRun`: `bool`
+- `HttpProtocolIpv6`:
+  [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
 
 Returns
 [ModifyInstanceMetadataOptionsResultTypeDef](./type_defs.md#modifyinstancemetadataoptionsresulttypedef).
@@ -9211,9 +9613,10 @@ Keyword-only arguments:
 - `CurrentVersion`: `int`
 - `PrefixListName`: `str`
 - `AddEntries`:
-  `List`\[[AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef)\]
+  `Sequence`\[[AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef)\]
 - `RemoveEntries`:
-  `List`\[[RemovePrefixListEntryTypeDef](./type_defs.md#removeprefixlistentrytypedef)\]
+  `Sequence`\[[RemovePrefixListEntryTypeDef](./type_defs.md#removeprefixlistentrytypedef)\]
+- `MaxEntries`: `int`
 
 Returns
 [ModifyManagedPrefixListResultTypeDef](./type_defs.md#modifymanagedprefixlistresulttypedef).
@@ -9238,7 +9641,7 @@ Keyword-only arguments:
   [NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef)
 - `Description`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `DryRun`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `SourceDestCheck`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
@@ -9257,9 +9660,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ReservedInstancesIds`: `List`\[`str`\] *(required)*
+- `ReservedInstancesIds`: `Sequence`\[`str`\] *(required)*
 - `TargetConfigurations`:
-  `List`\[[ReservedInstancesConfigurationTypeDef](./type_defs.md#reservedinstancesconfigurationtypedef)\]
+  `Sequence`\[[ReservedInstancesConfigurationTypeDef](./type_defs.md#reservedinstancesconfigurationtypedef)\]
   *(required)*
 - `ClientToken`: `str`
 
@@ -9282,7 +9685,7 @@ Keyword-only arguments:
 
 - `GroupId`: `str` *(required)*
 - `SecurityGroupRules`:
-  `List`\[[SecurityGroupRuleUpdateTypeDef](./type_defs.md#securitygroupruleupdatetypedef)\]
+  `Sequence`\[[SecurityGroupRuleUpdateTypeDef](./type_defs.md#securitygroupruleupdatetypedef)\]
   *(required)*
 - `DryRun`: `bool`
 
@@ -9308,9 +9711,9 @@ Keyword-only arguments:
   [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
 - `CreateVolumePermission`:
   [CreateVolumePermissionModificationsTypeDef](./type_defs.md#createvolumepermissionmodificationstypedef)
-- `GroupNames`: `List`\[`str`\]
+- `GroupNames`: `Sequence`\[`str`\]
 - `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
-- `UserIds`: `List`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ### modify_spot_fleet_request
@@ -9331,7 +9734,7 @@ Keyword-only arguments:
 - `ExcessCapacityTerminationPolicy`:
   [ExcessCapacityTerminationPolicyType](./literals.md#excesscapacityterminationpolicytype)
 - `LaunchTemplateConfigs`:
-  `List`\[[LaunchTemplateConfigTypeDef](./type_defs.md#launchtemplateconfigtypedef)\]
+  `Sequence`\[[LaunchTemplateConfigTypeDef](./type_defs.md#launchtemplateconfigtypedef)\]
 - `TargetCapacity`: `int`
 - `OnDemandTargetCapacity`: `int`
 - `Context`: `str`
@@ -9378,9 +9781,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TrafficMirrorFilterId`: `str` *(required)*
-- `AddNetworkServices`: `List`\[`Literal['amazon-dns']` (see
+- `AddNetworkServices`: `Sequence`\[`Literal['amazon-dns']` (see
   [TrafficMirrorNetworkServiceType](./literals.md#trafficmirrornetworkservicetype))\]
-- `RemoveNetworkServices`: `List`\[`Literal['amazon-dns']` (see
+- `RemoveNetworkServices`: `Sequence`\[`Literal['amazon-dns']` (see
   [TrafficMirrorNetworkServiceType](./literals.md#trafficmirrornetworkservicetype))\]
 - `DryRun`: `bool`
 
@@ -9417,7 +9820,7 @@ Keyword-only arguments:
 - `SourceCidrBlock`: `str`
 - `Description`: `str`
 - `RemoveFields`:
-  `List`\[[TrafficMirrorFilterRuleFieldType](./literals.md#trafficmirrorfilterrulefieldtype)\]
+  `Sequence`\[[TrafficMirrorFilterRuleFieldType](./literals.md#trafficmirrorfilterrulefieldtype)\]
 - `DryRun`: `bool`
 
 Returns
@@ -9446,7 +9849,7 @@ Keyword-only arguments:
 - `VirtualNetworkId`: `int`
 - `Description`: `str`
 - `RemoveFields`:
-  `List`\[[TrafficMirrorSessionFieldType](./literals.md#trafficmirrorsessionfieldtype)\]
+  `Sequence`\[[TrafficMirrorSessionFieldType](./literals.md#trafficmirrorsessionfieldtype)\]
 - `DryRun`: `bool`
 
 Returns
@@ -9516,8 +9919,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
-- `AddSubnetIds`: `List`\[`str`\]
-- `RemoveSubnetIds`: `List`\[`str`\]
+- `AddSubnetIds`: `Sequence`\[`str`\]
+- `RemoveSubnetIds`: `Sequence`\[`str`\]
 - `Options`:
   [ModifyTransitGatewayVpcAttachmentRequestOptionsTypeDef](./type_defs.md#modifytransitgatewayvpcattachmentrequestoptionstypedef)
 - `DryRun`: `bool`
@@ -9607,12 +10010,12 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `ResetPolicy`: `bool`
 - `PolicyDocument`: `str`
-- `AddRouteTableIds`: `List`\[`str`\]
-- `RemoveRouteTableIds`: `List`\[`str`\]
-- `AddSubnetIds`: `List`\[`str`\]
-- `RemoveSubnetIds`: `List`\[`str`\]
-- `AddSecurityGroupIds`: `List`\[`str`\]
-- `RemoveSecurityGroupIds`: `List`\[`str`\]
+- `AddRouteTableIds`: `Sequence`\[`str`\]
+- `RemoveRouteTableIds`: `Sequence`\[`str`\]
+- `AddSubnetIds`: `Sequence`\[`str`\]
+- `RemoveSubnetIds`: `Sequence`\[`str`\]
+- `AddSecurityGroupIds`: `Sequence`\[`str`\]
+- `RemoveSecurityGroupIds`: `Sequence`\[`str`\]
 - `PrivateDnsEnabled`: `bool`
 
 Returns
@@ -9636,7 +10039,7 @@ Keyword-only arguments:
 - `ConnectionNotificationId`: `str` *(required)*
 - `DryRun`: `bool`
 - `ConnectionNotificationArn`: `str`
-- `ConnectionEvents`: `List`\[`str`\]
+- `ConnectionEvents`: `Sequence`\[`str`\]
 
 Returns
 [ModifyVpcEndpointConnectionNotificationResultTypeDef](./type_defs.md#modifyvpcendpointconnectionnotificationresulttypedef).
@@ -9661,10 +10064,10 @@ Keyword-only arguments:
 - `PrivateDnsName`: `str`
 - `RemovePrivateDnsName`: `bool`
 - `AcceptanceRequired`: `bool`
-- `AddNetworkLoadBalancerArns`: `List`\[`str`\]
-- `RemoveNetworkLoadBalancerArns`: `List`\[`str`\]
-- `AddGatewayLoadBalancerArns`: `List`\[`str`\]
-- `RemoveGatewayLoadBalancerArns`: `List`\[`str`\]
+- `AddNetworkLoadBalancerArns`: `Sequence`\[`str`\]
+- `RemoveNetworkLoadBalancerArns`: `Sequence`\[`str`\]
+- `AddGatewayLoadBalancerArns`: `Sequence`\[`str`\]
+- `RemoveGatewayLoadBalancerArns`: `Sequence`\[`str`\]
 
 Returns
 [ModifyVpcEndpointServiceConfigurationResultTypeDef](./type_defs.md#modifyvpcendpointserviceconfigurationresulttypedef).
@@ -9687,8 +10090,8 @@ Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `DryRun`: `bool`
-- `AddAllowedPrincipals`: `List`\[`str`\]
-- `RemoveAllowedPrincipals`: `List`\[`str`\]
+- `AddAllowedPrincipals`: `Sequence`\[`str`\]
+- `RemoveAllowedPrincipals`: `Sequence`\[`str`\]
 
 Returns
 [ModifyVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#modifyvpcendpointservicepermissionsresulttypedef).
@@ -9743,8 +10146,8 @@ Returns
 
 ### modify_vpn_connection
 
-Modifies the customer gateway or the target gateway of an AWS Site-to-Site VPN
-connection.
+Modifies the customer gateway or the target gateway of an Amazon Web Services
+Site-to-Site VPN connection.
 
 Type annotations for `boto3.client("ec2").modify_vpn_connection` method.
 
@@ -9814,7 +10217,8 @@ Returns
 
 ### modify_vpn_tunnel_options
 
-Modifies the options for a VPN tunnel in an AWS Site-to-Site VPN connection.
+Modifies the options for a VPN tunnel in an Amazon Web Services Site-to-Site
+VPN connection.
 
 Type annotations for `boto3.client("ec2").modify_vpn_tunnel_options` method.
 
@@ -9850,7 +10254,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `InstanceIds`: `List`\[`str`\] *(required)*
+- `InstanceIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -9900,7 +10304,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `DryRun`: `bool`
 - `PoolTagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MultiRegion`: `bool`
 
 Returns
@@ -9921,14 +10325,14 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `HostIdSet`: `List`\[`str`\] *(required)*
+- `HostIdSet`: `Sequence`\[`str`\] *(required)*
 - `OfferingId`: `str` *(required)*
 - `ClientToken`: `str`
 - `CurrencyCode`: `Literal['USD']` (see
   [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
 - `LimitPrice`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [PurchaseHostReservationResultTypeDef](./type_defs.md#purchasehostreservationresulttypedef).
@@ -9973,7 +10377,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PurchaseRequests`:
-  `List`\[[PurchaseRequestTypeDef](./type_defs.md#purchaserequesttypedef)\]
+  `Sequence`\[[PurchaseRequestTypeDef](./type_defs.md#purchaserequesttypedef)\]
   *(required)*
 - `ClientToken`: `str`
 - `DryRun`: `bool`
@@ -9995,7 +10399,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `InstanceIds`: `List`\[`str`\] *(required)*
+- `InstanceIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 ### register_image
@@ -10017,12 +10421,12 @@ Keyword-only arguments:
 - `Architecture`:
   [ArchitectureValuesType](./literals.md#architecturevaluestype)
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `Description`: `str`
 - `DryRun`: `bool`
 - `EnaSupport`: `bool`
 - `KernelId`: `str`
-- `BillingProducts`: `List`\[`str`\]
+- `BillingProducts`: `Sequence`\[`str`\]
 - `RamdiskId`: `str`
 - `RootDeviceName`: `str`
 - `SriovNetSupport`: `str`
@@ -10073,7 +10477,7 @@ Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `GroupIpAddress`: `str`
-- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -10097,7 +10501,7 @@ Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `GroupIpAddress`: `str`
-- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -10122,7 +10526,7 @@ Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `TransitGatewayAttachmentId`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 Returns
@@ -10187,7 +10591,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
-- `VpcEndpointIds`: `List`\[`str`\] *(required)*
+- `VpcEndpointIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -10247,7 +10651,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `HostIds`: `List`\[`str`\] *(required)*
+- `HostIds`: `Sequence`\[`str`\] *(required)*
 
 Returns [ReleaseHostsResultTypeDef](./type_defs.md#releasehostsresulttypedef).
 
@@ -10413,9 +10817,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Instances`: `List`\[`str`\] *(required)*
+- `Instances`: `Sequence`\[`str`\] *(required)*
 - `ReasonCodes`:
-  `List`\[[ReportInstanceReasonCodesType](./literals.md#reportinstancereasoncodestype)\]
+  `Sequence`\[[ReportInstanceReasonCodesType](./literals.md#reportinstancereasoncodestype)\]
   *(required)*
 - `Status`: [ReportStatusTypeType](./literals.md#reportstatustypetype)
   *(required)*
@@ -10473,7 +10877,7 @@ Keyword-only arguments:
 - `ValidFrom`: `Union`\[`datetime`, `str`\]
 - `ValidUntil`: `Union`\[`datetime`, `str`\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `InstanceInterruptionBehavior`:
   [InstanceInterruptionBehaviorType](./literals.md#instanceinterruptionbehaviortype)
 
@@ -10505,8 +10909,8 @@ Returns
 
 ### reset_ebs_default_kms_key_id
 
-Resets the default customer master key (CMK) for EBS encryption for your
-account in this Region to the AWS managed CMK for EBS.
+Resets the default KMS key for EBS encryption for your account in this Region
+to the Amazon Web Services managed KMS key for EBS.
 
 Type annotations for `boto3.client("ec2").reset_ebs_default_kms_key_id` method.
 
@@ -10708,8 +11112,8 @@ Keyword-only arguments:
 - `GroupId`: `str` *(required)*
 - `DryRun`: `bool`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-- `SecurityGroupRuleIds`: `List`\[`str`\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleIds`: `Sequence`\[`str`\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -10740,13 +11144,13 @@ Keyword-only arguments:
 - `GroupId`: `str`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `IpProtocol`: `str`
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
-- `SecurityGroupRuleIds`: `List`\[`str`\]
+- `SecurityGroupRuleIds`: `Sequence`\[`str`\]
 
 Returns
 [RevokeSecurityGroupIngressResultTypeDef](./type_defs.md#revokesecuritygroupingressresulttypedef).
@@ -10769,20 +11173,20 @@ Keyword-only arguments:
 - `MaxCount`: `int` *(required)*
 - `MinCount`: `int` *(required)*
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `ImageId`: `str`
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+  `Sequence`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `Monitoring`:
   [RunInstancesMonitoringEnabledTypeDef](./type_defs.md#runinstancesmonitoringenabledtypedef)
 - `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
 - `RamdiskId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `SubnetId`: `str`
 - `UserData`: `str`
 - `AdditionalInfo`: `str`
@@ -10795,14 +11199,14 @@ Keyword-only arguments:
 - `InstanceInitiatedShutdownBehavior`:
   [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
 - `NetworkInterfaces`:
-  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+  `Sequence`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
 - `PrivateIpAddress`: `str`
 - `ElasticGpuSpecification`:
-  `List`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
+  `Sequence`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
 - `ElasticInferenceAccelerators`:
-  `List`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
+  `Sequence`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `LaunchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `InstanceMarketOptions`:
@@ -10816,7 +11220,7 @@ Keyword-only arguments:
 - `HibernationOptions`:
   [HibernationOptionsRequestTypeDef](./type_defs.md#hibernationoptionsrequesttypedef)
 - `LicenseSpecifications`:
-  `List`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
+  `Sequence`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
 - `MetadataOptions`:
   [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
@@ -10865,8 +11269,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LocalGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-  *(required)*
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -10891,7 +11294,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -10915,7 +11318,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
   *(required)*
 - `MaxResults`: `int`
 - `DryRun`: `bool`
@@ -10956,7 +11359,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `InstanceIds`: `List`\[`str`\] *(required)*
+- `InstanceIds`: `Sequence`\[`str`\] *(required)*
 - `AdditionalInfo`: `str`
 - `DryRun`: `bool`
 
@@ -10980,10 +11383,10 @@ Keyword-only arguments:
 
 - `NetworkInsightsPathId`: `str` *(required)*
 - `ClientToken`: `str` *(required)*
-- `FilterInArns`: `List`\[`str`\]
+- `FilterInArns`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
 [StartNetworkInsightsAnalysisResultTypeDef](./type_defs.md#startnetworkinsightsanalysisresulttypedef).
@@ -11025,7 +11428,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `InstanceIds`: `List`\[`str`\] *(required)*
+- `InstanceIds`: `Sequence`\[`str`\] *(required)*
 - `Hibernate`: `bool`
 - `DryRun`: `bool`
 - `Force`: `bool`
@@ -11070,7 +11473,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `InstanceIds`: `List`\[`str`\] *(required)*
+- `InstanceIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -11078,7 +11481,8 @@ Returns
 
 ### unassign_ipv6_addresses
 
-Unassigns one or more IPv6 addresses from a network interface.
+Unassigns one or more IPv6 addresses IPv4 Prefix Delegation prefixes from a
+network interface.
 
 Type annotations for `boto3.client("ec2").unassign_ipv6_addresses` method.
 
@@ -11091,14 +11495,16 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
-- `Ipv6Addresses`: `List`\[`str`\] *(required)*
+- `Ipv6Addresses`: `Sequence`\[`str`\]
+- `Ipv6Prefixes`: `Sequence`\[`str`\]
 
 Returns
 [UnassignIpv6AddressesResultTypeDef](./type_defs.md#unassignipv6addressesresulttypedef).
 
 ### unassign_private_ip_addresses
 
-Unassigns one or more secondary private IP addresses from a network interface.
+Unassigns one or more secondary private IP addresses, or IPv4 Prefix Delegation
+prefixes from a network interface.
 
 Type annotations for `boto3.client("ec2").unassign_private_ip_addresses`
 method.
@@ -11112,7 +11518,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
-- `PrivateIpAddresses`: `List`\[`str`\] *(required)*
+- `PrivateIpAddresses`: `Sequence`\[`str`\]
+- `Ipv4Prefixes`: `Sequence`\[`str`\]
 
 ### unmonitor_instances
 
@@ -11128,7 +11535,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `InstanceIds`: `List`\[`str`\] *(required)*
+- `InstanceIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
@@ -11151,9 +11558,9 @@ Keyword-only arguments:
 - `GroupId`: `str`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `SecurityGroupRuleDescriptions`:
-  `List`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
+  `Sequence`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
 
 Returns
 [UpdateSecurityGroupRuleDescriptionsEgressResultTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsegressresulttypedef).
@@ -11177,9 +11584,9 @@ Keyword-only arguments:
 - `GroupId`: `str`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `SecurityGroupRuleDescriptions`:
-  `List`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
+  `Sequence`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
 
 Returns
 [UpdateSecurityGroupRuleDescriptionsIngressResultTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsingressresulttypedef).
@@ -11212,6 +11619,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [DescribeAddressesAttributePaginator](./paginators.md#describeaddressesattributepaginator)
 - `client.get_paginator("describe_byoip_cidrs")` ->
   [DescribeByoipCidrsPaginator](./paginators.md#describebyoipcidrspaginator)
+- `client.get_paginator("describe_capacity_reservation_fleets")` ->
+  [DescribeCapacityReservationFleetsPaginator](./paginators.md#describecapacityreservationfleetspaginator)
 - `client.get_paginator("describe_capacity_reservations")` ->
   [DescribeCapacityReservationsPaginator](./paginators.md#describecapacityreservationspaginator)
 - `client.get_paginator("describe_carrier_gateways")` ->
@@ -11258,6 +11667,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [DescribeImportSnapshotTasksPaginator](./paginators.md#describeimportsnapshottaskspaginator)
 - `client.get_paginator("describe_instance_credit_specifications")` ->
   [DescribeInstanceCreditSpecificationsPaginator](./paginators.md#describeinstancecreditspecificationspaginator)
+- `client.get_paginator("describe_instance_event_windows")` ->
+  [DescribeInstanceEventWindowsPaginator](./paginators.md#describeinstanceeventwindowspaginator)
 - `client.get_paginator("describe_instance_status")` ->
   [DescribeInstanceStatusPaginator](./paginators.md#describeinstancestatuspaginator)
 - `client.get_paginator("describe_instance_type_offerings")` ->
@@ -11366,6 +11777,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [DescribeTransitGatewayVpcAttachmentsPaginator](./paginators.md#describetransitgatewayvpcattachmentspaginator)
 - `client.get_paginator("describe_transit_gateways")` ->
   [DescribeTransitGatewaysPaginator](./paginators.md#describetransitgatewayspaginator)
+- `client.get_paginator("describe_trunk_interface_associations")` ->
+  [DescribeTrunkInterfaceAssociationsPaginator](./paginators.md#describetrunkinterfaceassociationspaginator)
 - `client.get_paginator("describe_volume_status")` ->
   [DescribeVolumeStatusPaginator](./paginators.md#describevolumestatuspaginator)
 - `client.get_paginator("describe_volumes")` ->
@@ -11409,6 +11822,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [GetTransitGatewayRouteTableAssociationsPaginator](./paginators.md#gettransitgatewayroutetableassociationspaginator)
 - `client.get_paginator("get_transit_gateway_route_table_propagations")` ->
   [GetTransitGatewayRouteTablePropagationsPaginator](./paginators.md#gettransitgatewayroutetablepropagationspaginator)
+- `client.get_paginator("get_vpn_connection_device_types")` ->
+  [GetVpnConnectionDeviceTypesPaginator](./paginators.md#getvpnconnectiondevicetypespaginator)
 - `client.get_paginator("search_local_gateway_routes")` ->
   [SearchLocalGatewayRoutesPaginator](./paginators.md#searchlocalgatewayroutespaginator)
 - `client.get_paginator("search_transit_gateway_multicast_groups")` ->

@@ -25,6 +25,8 @@ type annotations stubs module
   - [CreateGrantVersionResponseTypeDef](#creategrantversionresponsetypedef)
   - [CreateLicenseConfigurationRequestRequestTypeDef](#createlicenseconfigurationrequestrequesttypedef)
   - [CreateLicenseConfigurationResponseTypeDef](#createlicenseconfigurationresponsetypedef)
+  - [CreateLicenseConversionTaskForResourceRequestRequestTypeDef](#createlicenseconversiontaskforresourcerequestrequesttypedef)
+  - [CreateLicenseConversionTaskForResourceResponseTypeDef](#createlicenseconversiontaskforresourceresponsetypedef)
   - [CreateLicenseManagerReportGeneratorRequestRequestTypeDef](#createlicensemanagerreportgeneratorrequestrequesttypedef)
   - [CreateLicenseManagerReportGeneratorResponseTypeDef](#createlicensemanagerreportgeneratorresponsetypedef)
   - [CreateLicenseRequestRequestTypeDef](#createlicenserequestrequesttypedef)
@@ -53,6 +55,8 @@ type annotations stubs module
   - [GetGrantResponseTypeDef](#getgrantresponsetypedef)
   - [GetLicenseConfigurationRequestRequestTypeDef](#getlicenseconfigurationrequestrequesttypedef)
   - [GetLicenseConfigurationResponseTypeDef](#getlicenseconfigurationresponsetypedef)
+  - [GetLicenseConversionTaskRequestRequestTypeDef](#getlicenseconversiontaskrequestrequesttypedef)
+  - [GetLicenseConversionTaskResponseTypeDef](#getlicenseconversiontaskresponsetypedef)
   - [GetLicenseManagerReportGeneratorRequestRequestTypeDef](#getlicensemanagerreportgeneratorrequestrequesttypedef)
   - [GetLicenseManagerReportGeneratorResponseTypeDef](#getlicensemanagerreportgeneratorresponsetypedef)
   - [GetLicenseRequestRequestTypeDef](#getlicenserequestrequesttypedef)
@@ -68,6 +72,8 @@ type annotations stubs module
   - [LicenseConfigurationAssociationTypeDef](#licenseconfigurationassociationtypedef)
   - [LicenseConfigurationTypeDef](#licenseconfigurationtypedef)
   - [LicenseConfigurationUsageTypeDef](#licenseconfigurationusagetypedef)
+  - [LicenseConversionContextTypeDef](#licenseconversioncontexttypedef)
+  - [LicenseConversionTaskTypeDef](#licenseconversiontasktypedef)
   - [LicenseOperationFailureTypeDef](#licenseoperationfailuretypedef)
   - [LicenseSpecificationTypeDef](#licensespecificationtypedef)
   - [LicenseTypeDef](#licensetypedef)
@@ -80,6 +86,8 @@ type annotations stubs module
   - [ListFailuresForLicenseConfigurationOperationsResponseTypeDef](#listfailuresforlicenseconfigurationoperationsresponsetypedef)
   - [ListLicenseConfigurationsRequestRequestTypeDef](#listlicenseconfigurationsrequestrequesttypedef)
   - [ListLicenseConfigurationsResponseTypeDef](#listlicenseconfigurationsresponsetypedef)
+  - [ListLicenseConversionTasksRequestRequestTypeDef](#listlicenseconversiontasksrequestrequesttypedef)
+  - [ListLicenseConversionTasksResponseTypeDef](#listlicenseconversiontasksresponsetypedef)
   - [ListLicenseManagerReportGeneratorsRequestRequestTypeDef](#listlicensemanagerreportgeneratorsrequestrequesttypedef)
   - [ListLicenseManagerReportGeneratorsResponseTypeDef](#listlicensemanagerreportgeneratorsresponsetypedef)
   - [ListLicenseSpecificationsForResourceRequestRequestTypeDef](#listlicensespecificationsforresourcerequestrequesttypedef)
@@ -194,7 +202,7 @@ Required fields:
 
 - `LicenseArn`: `str`
 - `Entitlements`:
-  `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
+  `Sequence`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
 - `DigitalSignatureMethod`: `Literal['JWT_PS384']` (see
   [DigitalSignatureMethodType](./literals.md#digitalsignaturemethodtype))
 - `ClientToken`: `str`
@@ -203,7 +211,7 @@ Optional fields:
 
 - `NodeId`: `str`
 - `CheckoutMetadata`:
-  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+  `Sequence`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 
 ## CheckoutBorrowLicenseResponseTypeDef
 
@@ -235,11 +243,10 @@ from mypy_boto3_license_manager.type_defs import CheckoutLicenseRequestRequestTy
 Required fields:
 
 - `ProductSKU`: `str`
-- `CheckoutType`: `Literal['PROVISIONAL']` (see
-  [CheckoutTypeType](./literals.md#checkouttypetype))
+- `CheckoutType`: [CheckoutTypeType](./literals.md#checkouttypetype)
 - `KeyFingerprint`: `str`
 - `Entitlements`:
-  `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
+  `Sequence`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
 - `ClientToken`: `str`
 
 Optional fields:
@@ -255,8 +262,7 @@ from mypy_boto3_license_manager.type_defs import CheckoutLicenseResponseTypeDef
 
 Required fields:
 
-- `CheckoutType`: `Literal['PROVISIONAL']` (see
-  [CheckoutTypeType](./literals.md#checkouttypetype))
+- `CheckoutType`: [CheckoutTypeType](./literals.md#checkouttypetype)
 - `LicenseConsumptionToken`: `str`
 - `EntitlementsAllowed`:
   `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
@@ -264,6 +270,7 @@ Required fields:
 - `NodeId`: `str`
 - `IssuedAt`: `str`
 - `Expiration`: `str`
+- `LicenseArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -303,10 +310,10 @@ Required fields:
 - `ClientToken`: `str`
 - `GrantName`: `str`
 - `LicenseArn`: `str`
-- `Principals`: `List`\[`str`\]
+- `Principals`: `Sequence`\[`str`\]
 - `HomeRegion`: `str`
 - `AllowedOperations`:
-  `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
+  `Sequence`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
 
 ## CreateGrantResponseTypeDef
 
@@ -337,7 +344,7 @@ Optional fields:
 
 - `GrantName`: `str`
 - `AllowedOperations`:
-  `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
+  `Sequence`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
 - `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `StatusReason`: `str`
 - `SourceVersion`: `str`
@@ -373,11 +380,11 @@ Optional fields:
 - `Description`: `str`
 - `LicenseCount`: `int`
 - `LicenseCountHardLimit`: `bool`
-- `LicenseRules`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `LicenseRules`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DisassociateWhenNotFound`: `bool`
 - `ProductInformationList`:
-  `List`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
+  `Sequence`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
 
 ## CreateLicenseConfigurationResponseTypeDef
 
@@ -391,6 +398,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateLicenseConversionTaskForResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CreateLicenseConversionTaskForResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `SourceLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+- `DestinationLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+
+## CreateLicenseConversionTaskForResourceResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CreateLicenseConversionTaskForResourceResponseTypeDef
+```
+
+Required fields:
+
+- `LicenseConversionTaskId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateLicenseManagerReportGeneratorRequestRequestTypeDef
 
 ```python
@@ -400,7 +433,7 @@ from mypy_boto3_license_manager.type_defs import CreateLicenseManagerReportGener
 Required fields:
 
 - `ReportGeneratorName`: `str`
-- `Type`: `List`\[[ReportTypeType](./literals.md#reporttypetype)\]
+- `Type`: `Sequence`\[[ReportTypeType](./literals.md#reporttypetype)\]
 - `ReportContext`: [ReportContextTypeDef](./type_defs.md#reportcontexttypedef)
 - `ReportFrequency`:
   [ReportFrequencyTypeDef](./type_defs.md#reportfrequencytypedef)
@@ -409,7 +442,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateLicenseManagerReportGeneratorResponseTypeDef
 
@@ -438,7 +471,7 @@ Required fields:
 - `HomeRegion`: `str`
 - `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
 - `Entitlements`:
-  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
+  `Sequence`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
 - `Beneficiary`: `str`
 - `ConsumptionConfiguration`:
   [ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef)
@@ -447,7 +480,7 @@ Required fields:
 Optional fields:
 
 - `LicenseMetadata`:
-  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+  `Sequence`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 
 ## CreateLicenseResponseTypeDef
 
@@ -478,7 +511,7 @@ Required fields:
 - `HomeRegion`: `str`
 - `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
 - `Entitlements`:
-  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
+  `Sequence`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
 - `ConsumptionConfiguration`:
   [ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef)
 - `Status`: [LicenseStatusType](./literals.md#licensestatustype)
@@ -487,7 +520,7 @@ Required fields:
 Optional fields:
 
 - `LicenseMetadata`:
-  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+  `Sequence`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 - `SourceVersion`: `str`
 
 ## CreateLicenseVersionResponseTypeDef
@@ -517,9 +550,9 @@ Required fields:
 
 Optional fields:
 
-- `RoleArns`: `List`\[`str`\]
+- `RoleArns`: `Sequence`\[`str`\]
 - `ExpirationInDays`: `int`
-- `TokenProperties`: `List`\[`str`\]
+- `TokenProperties`: `Sequence`\[`str`\]
 
 ## CreateTokenResponseTypeDef
 
@@ -719,7 +752,7 @@ from mypy_boto3_license_manager.type_defs import FilterTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## GetAccessTokenRequestRequestTypeDef
 
@@ -733,7 +766,7 @@ Required fields:
 
 Optional fields:
 
-- `TokenProperties`: `List`\[`str`\]
+- `TokenProperties`: `Sequence`\[`str`\]
 
 ## GetAccessTokenResponseTypeDef
 
@@ -813,6 +846,39 @@ Required fields:
 - `AutomatedDiscoveryInformation`:
   [AutomatedDiscoveryInformationTypeDef](./type_defs.md#automateddiscoveryinformationtypedef)
 - `DisassociateWhenNotFound`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetLicenseConversionTaskRequestRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import GetLicenseConversionTaskRequestRequestTypeDef
+```
+
+Required fields:
+
+- `LicenseConversionTaskId`: `str`
+
+## GetLicenseConversionTaskResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import GetLicenseConversionTaskResponseTypeDef
+```
+
+Required fields:
+
+- `LicenseConversionTaskId`: `str`
+- `ResourceArn`: `str`
+- `SourceLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+- `DestinationLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+- `StatusMessage`: `str`
+- `Status`:
+  [LicenseConversionTaskStatusType](./literals.md#licenseconversiontaskstatustype)
+- `StartTime`: `datetime`
+- `LicenseConversionTime`: `datetime`
+- `EndTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1056,6 +1122,37 @@ Optional fields:
 - `AssociationTime`: `datetime`
 - `ConsumedLicenses`: `int`
 
+## LicenseConversionContextTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import LicenseConversionContextTypeDef
+```
+
+Optional fields:
+
+- `UsageOperation`: `str`
+
+## LicenseConversionTaskTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import LicenseConversionTaskTypeDef
+```
+
+Optional fields:
+
+- `LicenseConversionTaskId`: `str`
+- `ResourceArn`: `str`
+- `SourceLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+- `DestinationLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+- `Status`:
+  [LicenseConversionTaskStatusType](./literals.md#licenseconversiontaskstatustype)
+- `StatusMessage`: `str`
+- `StartTime`: `datetime`
+- `LicenseConversionTime`: `datetime`
+- `EndTime`: `datetime`
+
 ## LicenseOperationFailureTypeDef
 
 ```python
@@ -1161,8 +1258,8 @@ from mypy_boto3_license_manager.type_defs import ListDistributedGrantsRequestReq
 
 Optional fields:
 
-- `GrantArns`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `GrantArns`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1216,10 +1313,10 @@ from mypy_boto3_license_manager.type_defs import ListLicenseConfigurationsReques
 
 Optional fields:
 
-- `LicenseConfigurationArns`: `List`\[`str`\]
+- `LicenseConfigurationArns`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListLicenseConfigurationsResponseTypeDef
 
@@ -1235,6 +1332,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListLicenseConversionTasksRequestRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListLicenseConversionTasksRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListLicenseConversionTasksResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListLicenseConversionTasksResponseTypeDef
+```
+
+Required fields:
+
+- `LicenseConversionTasks`:
+  `List`\[[LicenseConversionTaskTypeDef](./type_defs.md#licenseconversiontasktypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListLicenseManagerReportGeneratorsRequestRequestTypeDef
 
 ```python
@@ -1243,7 +1366,7 @@ from mypy_boto3_license_manager.type_defs import ListLicenseManagerReportGenerat
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1326,8 +1449,8 @@ from mypy_boto3_license_manager.type_defs import ListLicensesRequestRequestTypeD
 
 Optional fields:
 
-- `LicenseArns`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LicenseArns`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1352,8 +1475,8 @@ from mypy_boto3_license_manager.type_defs import ListReceivedGrantsRequestReques
 
 Optional fields:
 
-- `GrantArns`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `GrantArns`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1378,8 +1501,8 @@ from mypy_boto3_license_manager.type_defs import ListReceivedLicensesRequestRequ
 
 Optional fields:
 
-- `LicenseArns`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LicenseArns`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1408,7 +1531,7 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
 
 ## ListResourceInventoryResponseTypeDef
 
@@ -1454,8 +1577,8 @@ from mypy_boto3_license_manager.type_defs import ListTokensRequestRequestTypeDef
 
 Optional fields:
 
-- `TokenIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TokenIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1486,7 +1609,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListUsageForLicenseConfigurationResponseTypeDef
 
@@ -1559,7 +1682,7 @@ Required fields:
 
 Optional fields:
 
-- `ProductInformationFilterValue`: `List`\[`str`\]
+- `ProductInformationFilterValue`: `Sequence`\[`str`\]
 
 ## ProductInformationTypeDef
 
@@ -1571,7 +1694,7 @@ Required fields:
 
 - `ResourceType`: `str`
 - `ProductInformationFilterList`:
-  `List`\[[ProductInformationFilterTypeDef](./type_defs.md#productinformationfiltertypedef)\]
+  `Sequence`\[[ProductInformationFilterTypeDef](./type_defs.md#productinformationfiltertypedef)\]
 
 ## ProvisionalConfigurationTypeDef
 
@@ -1628,7 +1751,7 @@ from mypy_boto3_license_manager.type_defs import ReportContextTypeDef
 
 Required fields:
 
-- `licenseConfigurationArns`: `List`\[`str`\]
+- `licenseConfigurationArns`: `Sequence`\[`str`\]
 
 ## ReportFrequencyTypeDef
 
@@ -1713,7 +1836,7 @@ from mypy_boto3_license_manager.type_defs import TagResourceRequestRequestTypeDe
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1751,7 +1874,7 @@ from mypy_boto3_license_manager.type_defs import UntagResourceRequestRequestType
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateLicenseConfigurationRequestRequestTypeDef
 
@@ -1767,13 +1890,13 @@ Optional fields:
 
 - `LicenseConfigurationStatus`:
   [LicenseConfigurationStatusType](./literals.md#licenseconfigurationstatustype)
-- `LicenseRules`: `List`\[`str`\]
+- `LicenseRules`: `Sequence`\[`str`\]
 - `LicenseCount`: `int`
 - `LicenseCountHardLimit`: `bool`
 - `Name`: `str`
 - `Description`: `str`
 - `ProductInformationList`:
-  `List`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
+  `Sequence`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
 - `DisassociateWhenNotFound`: `bool`
 
 ## UpdateLicenseManagerReportGeneratorRequestRequestTypeDef
@@ -1786,7 +1909,7 @@ Required fields:
 
 - `LicenseManagerReportGeneratorArn`: `str`
 - `ReportGeneratorName`: `str`
-- `Type`: `List`\[[ReportTypeType](./literals.md#reporttypetype)\]
+- `Type`: `Sequence`\[[ReportTypeType](./literals.md#reporttypetype)\]
 - `ReportContext`: [ReportContextTypeDef](./type_defs.md#reportcontexttypedef)
 - `ReportFrequency`:
   [ReportFrequencyTypeDef](./type_defs.md#reportfrequencytypedef)
@@ -1809,9 +1932,9 @@ Required fields:
 Optional fields:
 
 - `AddLicenseSpecifications`:
-  `List`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
+  `Sequence`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
 - `RemoveLicenseSpecifications`:
-  `List`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
+  `Sequence`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
 
 ## UpdateServiceSettingsRequestRequestTypeDef
 

@@ -146,6 +146,8 @@ from mypy_boto3_personalize.literals import IngestionModeType, ...
 - [ObjectiveSensitivityType](./literals.md#objectivesensitivitytype)
 - [RecipeProviderType](./literals.md#recipeprovidertype)
 - [TrainingModeType](./literals.md#trainingmodetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

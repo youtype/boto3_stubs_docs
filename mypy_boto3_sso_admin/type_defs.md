@@ -95,7 +95,7 @@ from mypy_boto3_sso_admin.type_defs import AccessControlAttributeValueTypeDef
 
 Required fields:
 
-- `Source`: `List`\[`str`\]
+- `Source`: `Sequence`\[`str`\]
 
 ## AccountAssignmentOperationStatusMetadataTypeDef
 
@@ -221,7 +221,7 @@ Optional fields:
 - `Description`: `str`
 - `SessionDuration`: `str`
 - `RelayState`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePermissionSetResponseTypeDef
 
@@ -461,7 +461,7 @@ from mypy_boto3_sso_admin.type_defs import InstanceAccessControlAttributeConfigu
 Required fields:
 
 - `AccessControlAttributes`:
-  `List`\[[AccessControlAttributeTypeDef](./type_defs.md#accesscontrolattributetypedef)\]
+  `Sequence`\[[AccessControlAttributeTypeDef](./type_defs.md#accesscontrolattributetypedef)\]
 
 ## InstanceMetadataTypeDef
 
@@ -901,7 +901,7 @@ Required fields:
 
 - `InstanceArn`: `str`
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -924,7 +924,7 @@ Required fields:
 
 - `InstanceArn`: `str`
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 

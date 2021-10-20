@@ -182,7 +182,7 @@ Keyword-only arguments:
   *(required)*
 - `target`: [DeploymentTargetType](./literals.md#deploymenttargettype)
   *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `greengrassGroupName`: `str`
 - `s3BucketName`: `str`
 - `metricsConfiguration`:
@@ -397,7 +397,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -417,7 +417,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ids`: `List`\[`str`\] *(required)*
+- `ids`: `Sequence`\[`str`\] *(required)*
 - `namespaceVersion`: `int`
 
 Returns
@@ -620,10 +620,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `entityTypes`: `List`\[[EntityTypeType](./literals.md#entitytypetype)\]
+- `entityTypes`: `Sequence`\[[EntityTypeType](./literals.md#entitytypetype)\]
   *(required)*
 - `filters`:
-  `List`\[[EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)\]
+  `Sequence`\[[EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `namespaceVersion`: `int`
@@ -672,7 +672,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `filters`:
-  `List`\[[FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef)\]
+  `Sequence`\[[FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -695,7 +695,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `filters`:
-  `List`\[[SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)\]
+  `Sequence`\[[SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -718,7 +718,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `filters`:
-  `List`\[[SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef)\]
+  `Sequence`\[[SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -762,7 +762,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -801,7 +801,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

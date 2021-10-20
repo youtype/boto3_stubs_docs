@@ -127,7 +127,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateGraphResponseTypeDef](./type_defs.md#creategraphresponsetypedef).
@@ -148,7 +148,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
-- `Accounts`: `List`\[[AccountTypeDef](./type_defs.md#accounttypedef)\]
+- `Accounts`: `Sequence`\[[AccountTypeDef](./type_defs.md#accounttypedef)\]
   *(required)*
 - `Message`: `str`
 - `DisableEmailNotification`: `bool`
@@ -188,7 +188,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
@@ -222,7 +222,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -244,7 +244,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 
@@ -379,7 +379,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -398,6 +398,6 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

@@ -65,7 +65,7 @@ Required fields:
 
 Optional fields:
 
-- `attributes`: `Dict`\[`str`, `str`\]
+- `attributes`: `Mapping`\[`str`, `str`\]
 
 ## CreateProjectRequestRequestTypeDef
 
@@ -82,7 +82,7 @@ Optional fields:
 - `description`: `str`
 - `placementTemplate`:
   [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## DeletePlacementRequestRequestTypeDef
 
@@ -161,7 +161,7 @@ from mypy_boto3_iot1click_projects.type_defs import DeviceTemplateTypeDef
 Optional fields:
 
 - `deviceType`: `str`
-- `callbackOverrides`: `Dict`\[`str`, `str`\]
+- `callbackOverrides`: `Mapping`\[`str`, `str`\]
 
 ## DisassociateDeviceFromPlacementRequestRequestTypeDef
 
@@ -321,8 +321,8 @@ from mypy_boto3_iot1click_projects.type_defs import PlacementTemplateTypeDef
 
 Optional fields:
 
-- `defaultAttributes`: `Dict`\[`str`, `str`\]
-- `deviceTemplates`: `Dict`\[`str`,
+- `defaultAttributes`: `Mapping`\[`str`, `str`\]
+- `deviceTemplates`: `Mapping`\[`str`,
   [DeviceTemplateTypeDef](./type_defs.md#devicetemplatetypedef)\]
 
 ## ProjectDescriptionTypeDef
@@ -385,7 +385,7 @@ from mypy_boto3_iot1click_projects.type_defs import TagResourceRequestRequestTyp
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -396,7 +396,7 @@ from mypy_boto3_iot1click_projects.type_defs import UntagResourceRequestRequestT
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdatePlacementRequestRequestTypeDef
 
@@ -411,7 +411,7 @@ Required fields:
 
 Optional fields:
 
-- `attributes`: `Dict`\[`str`, `str`\]
+- `attributes`: `Mapping`\[`str`, `str`\]
 
 ## UpdateProjectRequestRequestTypeDef
 

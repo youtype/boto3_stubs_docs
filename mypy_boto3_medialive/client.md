@@ -19,6 +19,7 @@ type annotations stubs module
     - [batch_update_schedule](#batch_update_schedule)
     - [can_paginate](#can_paginate)
     - [cancel_input_device_transfer](#cancel_input_device_transfer)
+    - [claim_device](#claim_device)
     - [create_channel](#create_channel)
     - [create_input](#create_input)
     - [create_input_security_group](#create_input_security_group)
@@ -160,10 +161,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ChannelIds`: `List`\[`str`\]
-- `InputIds`: `List`\[`str`\]
-- `InputSecurityGroupIds`: `List`\[`str`\]
-- `MultiplexIds`: `List`\[`str`\]
+- `ChannelIds`: `Sequence`\[`str`\]
+- `InputIds`: `Sequence`\[`str`\]
+- `InputSecurityGroupIds`: `Sequence`\[`str`\]
+- `MultiplexIds`: `Sequence`\[`str`\]
 
 Returns
 [BatchDeleteResponseTypeDef](./type_defs.md#batchdeleteresponsetypedef).
@@ -185,8 +186,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ChannelIds`: `List`\[`str`\]
-- `MultiplexIds`: `List`\[`str`\]
+- `ChannelIds`: `Sequence`\[`str`\]
+- `MultiplexIds`: `Sequence`\[`str`\]
 
 Returns [BatchStartResponseTypeDef](./type_defs.md#batchstartresponsetypedef).
 
@@ -207,8 +208,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ChannelIds`: `List`\[`str`\]
-- `MultiplexIds`: `List`\[`str`\]
+- `ChannelIds`: `Sequence`\[`str`\]
+- `MultiplexIds`: `Sequence`\[`str`\]
 
 Returns [BatchStopResponseTypeDef](./type_defs.md#batchstopresponsetypedef).
 
@@ -272,6 +273,25 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### claim_device
+
+Send a request to claim an AWS Elemental device that you have purchased from a
+third-party vendor.
+
+Type annotations for `boto3.client("medialive").claim_device` method.
+
+Boto3 documentation:
+[MediaLive.Client.claim_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.claim_device)
+
+Arguments mapping described in
+[ClaimDeviceRequestRequestTypeDef](./type_defs.md#claimdevicerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### create_channel
 
 Creates a new channel See also:
@@ -293,11 +313,11 @@ Keyword-only arguments:
   [CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef)
 - `ChannelClass`: [ChannelClassType](./literals.md#channelclasstype)
 - `Destinations`:
-  `List`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
+  `Sequence`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
 - `EncoderSettings`:
   [EncoderSettingsTypeDef](./type_defs.md#encodersettingstypedef)
 - `InputAttachments`:
-  `List`\[[InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef)\]
+  `Sequence`\[[InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef)\]
 - `InputSpecification`:
   [InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef)
 - `LogLevel`: [LogLevelType](./literals.md#logleveltype)
@@ -305,7 +325,7 @@ Keyword-only arguments:
 - `RequestId`: `str`
 - `Reserved`: `str`
 - `RoleArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Vpc`: [VpcOutputSettingsTypeDef](./type_defs.md#vpcoutputsettingstypedef)
 
 Returns
@@ -329,18 +349,18 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Destinations`:
-  `List`\[[InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef)\]
+  `Sequence`\[[InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef)\]
 - `InputDevices`:
-  `List`\[[InputDeviceSettingsTypeDef](./type_defs.md#inputdevicesettingstypedef)\]
-- `InputSecurityGroups`: `List`\[`str`\]
+  `Sequence`\[[InputDeviceSettingsTypeDef](./type_defs.md#inputdevicesettingstypedef)\]
+- `InputSecurityGroups`: `Sequence`\[`str`\]
 - `MediaConnectFlows`:
-  `List`\[[MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef)\]
+  `Sequence`\[[MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef)\]
 - `Name`: `str`
 - `RequestId`: `str`
 - `RoleArn`: `str`
 - `Sources`:
-  `List`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
-- `Tags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Type`: [InputTypeType](./literals.md#inputtypetype)
 - `Vpc`: [InputVpcRequestTypeDef](./type_defs.md#inputvpcrequesttypedef)
 
@@ -365,9 +385,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `WhitelistRules`:
-  `List`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
+  `Sequence`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
 
 Returns
 [CreateInputSecurityGroupResponseTypeDef](./type_defs.md#createinputsecuritygroupresponsetypedef).
@@ -386,13 +406,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AvailabilityZones`: `List`\[`str`\] *(required)*
+- `AvailabilityZones`: `Sequence`\[`str`\] *(required)*
 - `MultiplexSettings`:
   [MultiplexSettingsTypeDef](./type_defs.md#multiplexsettingstypedef)
   *(required)*
 - `Name`: `str` *(required)*
 - `RequestId`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateMultiplexResponseTypeDef](./type_defs.md#createmultiplexresponsetypedef).
@@ -441,7 +461,7 @@ Keyword-only arguments:
 
 - `InputId`: `str` *(required)*
 - `RequestId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreatePartnerInputResponseTypeDef](./type_defs.md#createpartnerinputresponsetypedef).
@@ -464,7 +484,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ### delete_channel
 
@@ -622,7 +642,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### describe_channel
 
@@ -847,7 +867,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1108,7 +1128,7 @@ Keyword-only arguments:
 - `Name`: `str`
 - `RequestId`: `str`
 - `Start`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef).
@@ -1251,11 +1271,11 @@ Keyword-only arguments:
 - `CdiInputSpecification`:
   [CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef)
 - `Destinations`:
-  `List`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
+  `Sequence`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
 - `EncoderSettings`:
   [EncoderSettingsTypeDef](./type_defs.md#encodersettingstypedef)
 - `InputAttachments`:
-  `List`\[[InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef)\]
+  `Sequence`\[[InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef)\]
 - `InputSpecification`:
   [InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef)
 - `LogLevel`: [LogLevelType](./literals.md#logleveltype)
@@ -1283,7 +1303,7 @@ Keyword-only arguments:
   *(required)*
 - `ChannelId`: `str` *(required)*
 - `Destinations`:
-  `List`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
+  `Sequence`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
 
 Returns
 [UpdateChannelClassResponseTypeDef](./type_defs.md#updatechannelclassresponsetypedef).
@@ -1304,16 +1324,16 @@ Keyword-only arguments:
 
 - `InputId`: `str` *(required)*
 - `Destinations`:
-  `List`\[[InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef)\]
+  `Sequence`\[[InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef)\]
 - `InputDevices`:
-  `List`\[[InputDeviceRequestTypeDef](./type_defs.md#inputdevicerequesttypedef)\]
-- `InputSecurityGroups`: `List`\[`str`\]
+  `Sequence`\[[InputDeviceRequestTypeDef](./type_defs.md#inputdevicerequesttypedef)\]
+- `InputSecurityGroups`: `Sequence`\[`str`\]
 - `MediaConnectFlows`:
-  `List`\[[MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef)\]
+  `Sequence`\[[MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef)\]
 - `Name`: `str`
 - `RoleArn`: `str`
 - `Sources`:
-  `List`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
+  `Sequence`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
 
 Returns
 [UpdateInputResponseTypeDef](./type_defs.md#updateinputresponsetypedef).
@@ -1358,9 +1378,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InputSecurityGroupId`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `WhitelistRules`:
-  `List`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
+  `Sequence`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
 
 Returns
 [UpdateInputSecurityGroupResponseTypeDef](./type_defs.md#updateinputsecuritygroupresponsetypedef).

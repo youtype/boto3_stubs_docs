@@ -15,6 +15,7 @@ pip install mypy-boto3-apigatewaymanagementapi
   - [ApiGatewayManagementApiClient](#apigatewaymanagementapiclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## ApiGatewayManagementApiClient
@@ -46,6 +47,18 @@ ApiGatewayManagementApiClient [exceptions](./client.md#exceptions)
 - GoneException
 - LimitExceededException
 - PayloadTooLargeException
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_apigatewaymanagementapi.literals import ServiceName, ...
+```
+
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -58,6 +58,7 @@ from mypy_boto3_connect_contact_lens.literals import SentimentValueType, ...
 ```
 
 - [SentimentValueType](./literals.md#sentimentvaluetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

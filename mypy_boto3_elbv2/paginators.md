@@ -39,7 +39,7 @@ Arguments for `DescribeAccountLimitsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAccountLimitsPaginator.paginate` returns
-`Iterator`\[[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)\].
+`_PageIterator`\[[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)\].
 
 ## DescribeListenerCertificatesPaginator
 
@@ -65,7 +65,7 @@ Arguments for `DescribeListenerCertificatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeListenerCertificatesPaginator.paginate` returns
-`Iterator`\[[DescribeListenerCertificatesOutputTypeDef](./type_defs.md#describelistenercertificatesoutputtypedef)\].
+`_PageIterator`\[[DescribeListenerCertificatesOutputTypeDef](./type_defs.md#describelistenercertificatesoutputtypedef)\].
 
 ## DescribeListenersPaginator
 
@@ -87,12 +87,12 @@ Boto3 documentation:
 Arguments for `DescribeListenersPaginator.paginate` method:
 
 - `LoadBalancerArn`: `str`
-- `ListenerArns`: `List`\[`str`\]
+- `ListenerArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeListenersPaginator.paginate` returns
-`Iterator`\[[DescribeListenersOutputTypeDef](./type_defs.md#describelistenersoutputtypedef)\].
+`_PageIterator`\[[DescribeListenersOutputTypeDef](./type_defs.md#describelistenersoutputtypedef)\].
 
 ## DescribeLoadBalancersPaginator
 
@@ -113,13 +113,13 @@ Boto3 documentation:
 
 Arguments for `DescribeLoadBalancersPaginator.paginate` method:
 
-- `LoadBalancerArns`: `List`\[`str`\]
-- `Names`: `List`\[`str`\]
+- `LoadBalancerArns`: `Sequence`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLoadBalancersPaginator.paginate` returns
-`Iterator`\[[DescribeLoadBalancersOutputTypeDef](./type_defs.md#describeloadbalancersoutputtypedef)\].
+`_PageIterator`\[[DescribeLoadBalancersOutputTypeDef](./type_defs.md#describeloadbalancersoutputtypedef)\].
 
 ## DescribeRulesPaginator
 
@@ -140,12 +140,12 @@ Boto3 documentation:
 Arguments for `DescribeRulesPaginator.paginate` method:
 
 - `ListenerArn`: `str`
-- `RuleArns`: `List`\[`str`\]
+- `RuleArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRulesPaginator.paginate` returns
-`Iterator`\[[DescribeRulesOutputTypeDef](./type_defs.md#describerulesoutputtypedef)\].
+`_PageIterator`\[[DescribeRulesOutputTypeDef](./type_defs.md#describerulesoutputtypedef)\].
 
 ## DescribeSSLPoliciesPaginator
 
@@ -166,12 +166,14 @@ Boto3 documentation:
 
 Arguments for `DescribeSSLPoliciesPaginator.paginate` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
+- `LoadBalancerType`:
+  [LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSSLPoliciesPaginator.paginate` returns
-`Iterator`\[[DescribeSSLPoliciesOutputTypeDef](./type_defs.md#describesslpoliciesoutputtypedef)\].
+`_PageIterator`\[[DescribeSSLPoliciesOutputTypeDef](./type_defs.md#describesslpoliciesoutputtypedef)\].
 
 ## DescribeTargetGroupsPaginator
 
@@ -193,10 +195,10 @@ Boto3 documentation:
 Arguments for `DescribeTargetGroupsPaginator.paginate` method:
 
 - `LoadBalancerArn`: `str`
-- `TargetGroupArns`: `List`\[`str`\]
-- `Names`: `List`\[`str`\]
+- `TargetGroupArns`: `Sequence`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTargetGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeTargetGroupsOutputTypeDef](./type_defs.md#describetargetgroupsoutputtypedef)\].
+`_PageIterator`\[[DescribeTargetGroupsOutputTypeDef](./type_defs.md#describetargetgroupsoutputtypedef)\].

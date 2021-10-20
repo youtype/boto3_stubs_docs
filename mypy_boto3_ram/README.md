@@ -128,6 +128,8 @@ from mypy_boto3_ram.literals import GetResourcePoliciesPaginatorName, ...
 - [ResourceShareInvitationStatusType](./literals.md#resourceshareinvitationstatustype)
 - [ResourceShareStatusType](./literals.md#resourcesharestatustype)
 - [ResourceStatusType](./literals.md#resourcestatustype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

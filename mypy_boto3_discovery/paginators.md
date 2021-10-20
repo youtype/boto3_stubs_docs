@@ -34,13 +34,13 @@ Boto3 documentation:
 
 Arguments for `DescribeAgentsPaginator.paginate` method:
 
-- `agentIds`: `List`\[`str`\]
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `agentIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAgentsPaginator.paginate` returns
-`Iterator`\[[DescribeAgentsResponseTypeDef](./type_defs.md#describeagentsresponsetypedef)\].
+`_PageIterator`\[[DescribeAgentsResponseTypeDef](./type_defs.md#describeagentsresponsetypedef)\].
 
 ## DescribeContinuousExportsPaginator
 
@@ -61,12 +61,12 @@ Boto3 documentation:
 
 Arguments for `DescribeContinuousExportsPaginator.paginate` method:
 
-- `exportIds`: `List`\[`str`\]
+- `exportIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeContinuousExportsPaginator.paginate` returns
-`Iterator`\[[DescribeContinuousExportsResponseTypeDef](./type_defs.md#describecontinuousexportsresponsetypedef)\].
+`_PageIterator`\[[DescribeContinuousExportsResponseTypeDef](./type_defs.md#describecontinuousexportsresponsetypedef)\].
 
 ## DescribeExportConfigurationsPaginator
 
@@ -87,12 +87,12 @@ Boto3 documentation:
 
 Arguments for `DescribeExportConfigurationsPaginator.paginate` method:
 
-- `exportIds`: `List`\[`str`\]
+- `exportIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeExportConfigurationsPaginator.paginate` returns
-`Iterator`\[[DescribeExportConfigurationsResponseTypeDef](./type_defs.md#describeexportconfigurationsresponsetypedef)\].
+`_PageIterator`\[[DescribeExportConfigurationsResponseTypeDef](./type_defs.md#describeexportconfigurationsresponsetypedef)\].
 
 ## DescribeExportTasksPaginator
 
@@ -113,14 +113,14 @@ Boto3 documentation:
 
 Arguments for `DescribeExportTasksPaginator.paginate` method:
 
-- `exportIds`: `List`\[`str`\]
+- `exportIds`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
+  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeExportTasksPaginator.paginate` returns
-`Iterator`\[[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef)\].
+`_PageIterator`\[[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef)\].
 
 ## DescribeTagsPaginator
 
@@ -141,12 +141,12 @@ Boto3 documentation:
 
 Arguments for `DescribeTagsPaginator.paginate` method:
 
-- `filters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `filters`: `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTagsPaginator.paginate` returns
-`Iterator`\[[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef)\].
+`_PageIterator`\[[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef)\].
 
 ## ListConfigurationsPaginator
 
@@ -170,11 +170,11 @@ Arguments for `ListConfigurationsPaginator.paginate` method:
 - `configurationType`:
   [ConfigurationItemTypeType](./literals.md#configurationitemtypetype)
   *(required)*
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `orderBy`:
-  `List`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
+  `Sequence`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef)\].
+`_PageIterator`\[[ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef)\].

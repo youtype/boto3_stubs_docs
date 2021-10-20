@@ -37,6 +37,7 @@ type annotations stubs module
     - [create_dimension](#create_dimension)
     - [create_domain_configuration](#create_domain_configuration)
     - [create_dynamic_thing_group](#create_dynamic_thing_group)
+    - [create_fleet_metric](#create_fleet_metric)
     - [create_job](#create_job)
     - [create_job_template](#create_job_template)
     - [create_keys_and_certificate](#create_keys_and_certificate)
@@ -66,6 +67,7 @@ type annotations stubs module
     - [delete_dimension](#delete_dimension)
     - [delete_domain_configuration](#delete_domain_configuration)
     - [delete_dynamic_thing_group](#delete_dynamic_thing_group)
+    - [delete_fleet_metric](#delete_fleet_metric)
     - [delete_job](#delete_job)
     - [delete_job_execution](#delete_job_execution)
     - [delete_job_template](#delete_job_template)
@@ -103,6 +105,7 @@ type annotations stubs module
     - [describe_domain_configuration](#describe_domain_configuration)
     - [describe_endpoint](#describe_endpoint)
     - [describe_event_configurations](#describe_event_configurations)
+    - [describe_fleet_metric](#describe_fleet_metric)
     - [describe_index](#describe_index)
     - [describe_job](#describe_job)
     - [describe_job_execution](#describe_job_execution)
@@ -126,6 +129,7 @@ type annotations stubs module
     - [enable_topic_rule](#enable_topic_rule)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_behavior_model_training_summaries](#get_behavior_model_training_summaries)
+    - [get_buckets_aggregation](#get_buckets_aggregation)
     - [get_cardinality](#get_cardinality)
     - [get_effective_policies](#get_effective_policies)
     - [get_indexing_configuration](#get_indexing_configuration)
@@ -157,6 +161,7 @@ type annotations stubs module
     - [list_detect_mitigation_actions_tasks](#list_detect_mitigation_actions_tasks)
     - [list_dimensions](#list_dimensions)
     - [list_domain_configurations](#list_domain_configurations)
+    - [list_fleet_metrics](#list_fleet_metrics)
     - [list_indices](#list_indices)
     - [list_job_executions_for_job](#list_job_executions_for_job)
     - [list_job_executions_for_thing](#list_job_executions_for_thing)
@@ -193,6 +198,7 @@ type annotations stubs module
     - [list_topic_rules](#list_topic_rules)
     - [list_v2_logging_levels](#list_v2_logging_levels)
     - [list_violation_events](#list_violation_events)
+    - [put_verification_state_on_violation](#put_verification_state_on_violation)
     - [register_ca_certificate](#register_ca_certificate)
     - [register_certificate](#register_certificate)
     - [register_certificate_without_ca](#register_certificate_without_ca)
@@ -228,6 +234,7 @@ type annotations stubs module
     - [update_domain_configuration](#update_domain_configuration)
     - [update_dynamic_thing_group](#update_dynamic_thing_group)
     - [update_event_configurations](#update_event_configurations)
+    - [update_fleet_metric](#update_fleet_metric)
     - [update_indexing_configuration](#update_indexing_configuration)
     - [update_job](#update_job)
     - [update_mitigation_action](#update_mitigation_action)
@@ -392,7 +399,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `targets`: `List`\[`str`\] *(required)*
+- `targets`: `Sequence`\[`str`\] *(required)*
 - `jobId`: `str` *(required)*
 - `comment`: `str`
 - `namespaceId`: `str`
@@ -402,7 +409,8 @@ Returns
 
 ### attach_policy
 
-Attaches a policy to the specified target.
+Attaches the specified policy to the specified principal (certificate or other
+credential).
 
 Type annotations for `boto3.client("iot").attach_policy` method.
 
@@ -600,7 +608,7 @@ Keyword-only arguments:
 - `thingName`: `str` *(required)*
 - `force`: `bool`
 - `expectedVersion`: `int`
-- `statusDetails`: `Dict`\[`str`, `str`\]
+- `statusDetails`: `Mapping`\[`str`, `str`\]
 
 ### clear_default_authorizer
 
@@ -674,9 +682,9 @@ Keyword-only arguments:
 - `authorizerName`: `str` *(required)*
 - `authorizerFunctionArn`: `str` *(required)*
 - `tokenKeyName`: `str`
-- `tokenSigningPublicKeys`: `Dict`\[`str`, `str`\]
+- `tokenSigningPublicKeys`: `Mapping`\[`str`, `str`\]
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `signingDisabled`: `bool`
 
 Returns
@@ -699,7 +707,7 @@ Keyword-only arguments:
 - `billingGroupName`: `str` *(required)*
 - `billingGroupProperties`:
   [BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateBillingGroupResponseTypeDef](./type_defs.md#createbillinggroupresponsetypedef).
@@ -744,7 +752,7 @@ Keyword-only arguments:
   *(required)*
 - `clientRequestToken`: `str` *(required)*
 - `displayName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCustomMetricResponseTypeDef](./type_defs.md#createcustommetricresponsetypedef).
@@ -752,7 +760,7 @@ Returns
 ### create_dimension
 
 Create a dimension that you can use to limit the scope of a metric used in a
-security profile for AWS IoT Device Defender.
+security profile for IoT Device Defender.
 
 Type annotations for `boto3.client("iot").create_dimension` method.
 
@@ -767,9 +775,9 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `type`: `Literal['TOPIC_FILTER']` (see
   [DimensionTypeType](./literals.md#dimensiontypetype)) *(required)*
-- `stringValues`: `List`\[`str`\] *(required)*
+- `stringValues`: `Sequence`\[`str`\] *(required)*
 - `clientRequestToken`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDimensionResponseTypeDef](./type_defs.md#createdimensionresponsetypedef).
@@ -790,12 +798,12 @@ Keyword-only arguments:
 
 - `domainConfigurationName`: `str` *(required)*
 - `domainName`: `str`
-- `serverCertificateArns`: `List`\[`str`\]
+- `serverCertificateArns`: `Sequence`\[`str`\]
 - `validationCertificateArn`: `str`
 - `authorizerConfig`:
   [AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef)
 - `serviceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDomainConfigurationResponseTypeDef](./type_defs.md#createdomainconfigurationresponsetypedef).
@@ -820,10 +828,39 @@ Keyword-only arguments:
   [ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef)
 - `indexName`: `str`
 - `queryVersion`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDynamicThingGroupResponseTypeDef](./type_defs.md#createdynamicthinggroupresponsetypedef).
+
+### create_fleet_metric
+
+Creates a fleet metric.
+
+Type annotations for `boto3.client("iot").create_fleet_metric` method.
+
+Boto3 documentation:
+[IoT.Client.create_fleet_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_fleet_metric)
+
+Arguments mapping described in
+[CreateFleetMetricRequestRequestTypeDef](./type_defs.md#createfleetmetricrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `metricName`: `str` *(required)*
+- `queryString`: `str` *(required)*
+- `aggregationType`:
+  [AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef) *(required)*
+- `period`: `int` *(required)*
+- `aggregationField`: `str` *(required)*
+- `description`: `str`
+- `queryVersion`: `str`
+- `indexName`: `str`
+- `unit`: [FleetMetricUnitType](./literals.md#fleetmetricunittype)
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateFleetMetricResponseTypeDef](./type_defs.md#createfleetmetricresponsetypedef).
 
 ### create_job
 
@@ -840,7 +877,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
-- `targets`: `List`\[`str`\] *(required)*
+- `targets`: `Sequence`\[`str`\] *(required)*
 - `documentSource`: `str`
 - `document`: `str`
 - `description`: `str`
@@ -851,7 +888,7 @@ Keyword-only arguments:
   [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
 - `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `namespaceId`: `str`
 - `jobTemplateArn`: `str`
 
@@ -882,7 +919,7 @@ Keyword-only arguments:
   [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
 - `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
@@ -927,14 +964,14 @@ Keyword-only arguments:
 - `actionParams`:
   [MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef)
   *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateMitigationActionResponseTypeDef](./type_defs.md#createmitigationactionresponsetypedef).
 
 ### create_ota_update
 
-Creates an AWS IoT OTAUpdate on a target group of things or groups.
+Creates an IoT OTA update on a target group of things or groups.
 
 Type annotations for `boto3.client("iot").create_ota_update` method.
 
@@ -947,13 +984,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `otaUpdateId`: `str` *(required)*
-- `targets`: `List`\[`str`\] *(required)*
+- `targets`: `Sequence`\[`str`\] *(required)*
 - `files`:
-  `List`\[[OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef)\]
+  `Sequence`\[[OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef)\]
   *(required)*
 - `roleArn`: `str` *(required)*
 - `description`: `str`
-- `protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
+- `protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `targetSelection`: [TargetSelectionType](./literals.md#targetselectiontype)
 - `awsJobExecutionsRolloutConfig`:
   [AwsJobExecutionsRolloutConfigTypeDef](./type_defs.md#awsjobexecutionsrolloutconfigtypedef)
@@ -963,15 +1000,15 @@ Keyword-only arguments:
   [AwsJobAbortConfigTypeDef](./type_defs.md#awsjobabortconfigtypedef)
 - `awsJobTimeoutConfig`:
   [AwsJobTimeoutConfigTypeDef](./type_defs.md#awsjobtimeoutconfigtypedef)
-- `additionalParameters`: `Dict`\[`str`, `str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `additionalParameters`: `Mapping`\[`str`, `str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateOTAUpdateResponseTypeDef](./type_defs.md#createotaupdateresponsetypedef).
 
 ### create_policy
 
-Creates an AWS IoT policy.
+Creates an IoT policy.
 
 Type annotations for `boto3.client("iot").create_policy` method.
 
@@ -985,14 +1022,14 @@ Keyword-only arguments:
 
 - `policyName`: `str` *(required)*
 - `policyDocument`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
 
 ### create_policy_version
 
-Creates a new version of the specified AWS IoT policy.
+Creates a new version of the specified IoT policy.
 
 Type annotations for `boto3.client("iot").create_policy_version` method.
 
@@ -1051,7 +1088,7 @@ Keyword-only arguments:
 - `enabled`: `bool`
 - `preProvisioningHook`:
   [ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateProvisioningTemplateResponseTypeDef](./type_defs.md#createprovisioningtemplateresponsetypedef).
@@ -1095,7 +1132,7 @@ Keyword-only arguments:
 - `roleAlias`: `str` *(required)*
 - `roleArn`: `str` *(required)*
 - `credentialDurationSeconds`: `int`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRoleAliasResponseTypeDef](./type_defs.md#createrolealiasresponsetypedef).
@@ -1116,11 +1153,11 @@ Keyword-only arguments:
 
 - `frequency`: [AuditFrequencyType](./literals.md#auditfrequencytype)
   *(required)*
-- `targetCheckNames`: `List`\[`str`\] *(required)*
+- `targetCheckNames`: `Sequence`\[`str`\] *(required)*
 - `scheduledAuditName`: `str` *(required)*
 - `dayOfMonth`: `str`
 - `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateScheduledAuditResponseTypeDef](./type_defs.md#createscheduledauditresponsetypedef).
@@ -1141,14 +1178,14 @@ Keyword-only arguments:
 
 - `securityProfileName`: `str` *(required)*
 - `securityProfileDescription`: `str`
-- `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
-- `alertTargets`: `Dict`\[`Literal['SNS']` (see
+- `behaviors`: `Sequence`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
+- `alertTargets`: `Mapping`\[`Literal['SNS']` (see
   [AlertTargetTypeType](./literals.md#alerttargettypetype)),
   [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
-- `additionalMetricsToRetain`: `List`\[`str`\]
+- `additionalMetricsToRetain`: `Sequence`\[`str`\]
 - `additionalMetricsToRetainV2`:
-  `List`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSecurityProfileResponseTypeDef](./type_defs.md#createsecurityprofileresponsetypedef).
@@ -1168,11 +1205,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `streamId`: `str` *(required)*
-- `files`: `List`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
+- `files`: `Sequence`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
   *(required)*
 - `roleArn`: `str` *(required)*
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateStreamResponseTypeDef](./type_defs.md#createstreamresponsetypedef).
@@ -1218,7 +1255,7 @@ Keyword-only arguments:
 - `parentGroupName`: `str`
 - `thingGroupProperties`:
   [ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateThingGroupResponseTypeDef](./type_defs.md#createthinggroupresponsetypedef).
@@ -1240,7 +1277,7 @@ Keyword-only arguments:
 - `thingTypeName`: `str` *(required)*
 - `thingTypeProperties`:
   [ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateThingTypeResponseTypeDef](./type_defs.md#createthingtyperesponsetypedef).
@@ -1401,7 +1438,7 @@ Keyword-only arguments:
 
 ### delete_custom_metric
 
-.
+Deletes a Device Defender detect custom metric.
 
 Type annotations for `boto3.client("iot").delete_custom_metric` method.
 
@@ -1419,7 +1456,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_dimension
 
-Removes the specified dimension from your AWS account.
+Removes the specified dimension from your Amazon Web Services accounts.
 
 Type annotations for `boto3.client("iot").delete_dimension` method.
 
@@ -1471,6 +1508,23 @@ Keyword-only arguments:
 - `expectedVersion`: `int`
 
 Returns `Dict`\[`str`, `Any`\].
+
+### delete_fleet_metric
+
+Deletes the specified fleet metric.
+
+Type annotations for `boto3.client("iot").delete_fleet_metric` method.
+
+Boto3 documentation:
+[IoT.Client.delete_fleet_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_fleet_metric)
+
+Arguments mapping described in
+[DeleteFleetMetricRequestRequestTypeDef](./type_defs.md#deletefleetmetricrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `metricName`: `str` *(required)*
+- `expectedVersion`: `int`
 
 ### delete_job
 
@@ -1528,7 +1582,7 @@ Keyword-only arguments:
 
 ### delete_mitigation_action
 
-Deletes a defined mitigation action from your AWS account.
+Deletes a defined mitigation action from your Amazon Web Services accounts.
 
 Type annotations for `boto3.client("iot").delete_mitigation_action` method.
 
@@ -1648,9 +1702,9 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_role_alias
 
-Deletes a role alias See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/iot-2015-05-28/DeleteRoleAlias>`\_
-**Request Syntax** response = client.delete_role_alias( roleAlias='string' ).
+Deletes a role alias Requires permission to access the
+`DeleteRoleAlias <https://docs.aws.amazon.com/service- authorization/latest/reference/list_awsiot.html#awsiot-actions-as- permissions>`\_\_
+action.
 
 Type annotations for `boto3.client("iot").delete_role_alias` method.
 
@@ -2072,7 +2126,8 @@ Returns
 
 ### describe_dimension
 
-Provides details about a dimension that is defined in your AWS account.
+Provides details about a dimension that is defined in your Amazon Web Services
+accounts.
 
 Type annotations for `boto3.client("iot").describe_dimension` method.
 
@@ -2111,7 +2166,8 @@ Returns
 
 ### describe_endpoint
 
-Returns a unique endpoint specific to the AWS account making the call.
+Returns a unique endpoint specific to the Amazon Web Services account making
+the call.
 
 Type annotations for `boto3.client("iot").describe_endpoint` method.
 
@@ -2140,6 +2196,25 @@ Boto3 documentation:
 
 Returns
 [DescribeEventConfigurationsResponseTypeDef](./type_defs.md#describeeventconfigurationsresponsetypedef).
+
+### describe_fleet_metric
+
+Gets information about the specified fleet metric.
+
+Type annotations for `boto3.client("iot").describe_fleet_metric` method.
+
+Boto3 documentation:
+[IoT.Client.describe_fleet_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_fleet_metric)
+
+Arguments mapping described in
+[DescribeFleetMetricRequestRequestTypeDef](./type_defs.md#describefleetmetricrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `metricName`: `str` *(required)*
+
+Returns
+[DescribeFleetMetricResponseTypeDef](./type_defs.md#describefleetmetricresponsetypedef).
 
 ### describe_index
 
@@ -2549,7 +2624,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -2577,6 +2652,31 @@ Keyword-only arguments:
 Returns
 [GetBehaviorModelTrainingSummariesResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponsetypedef).
 
+### get_buckets_aggregation
+
+Aggregates on indexed data with search queries pertaining to particular fields.
+
+Type annotations for `boto3.client("iot").get_buckets_aggregation` method.
+
+Boto3 documentation:
+[IoT.Client.get_buckets_aggregation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_buckets_aggregation)
+
+Arguments mapping described in
+[GetBucketsAggregationRequestRequestTypeDef](./type_defs.md#getbucketsaggregationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `queryString`: `str` *(required)*
+- `aggregationField`: `str` *(required)*
+- `bucketsAggregationType`:
+  [BucketsAggregationTypeTypeDef](./type_defs.md#bucketsaggregationtypetypedef)
+  *(required)*
+- `indexName`: `str`
+- `queryVersion`: `str`
+
+Returns
+[GetBucketsAggregationResponseTypeDef](./type_defs.md#getbucketsaggregationresponsetypedef).
+
 ### get_cardinality
 
 Returns the approximate count of unique values that match the query.
@@ -2602,7 +2702,7 @@ Returns
 ### get_effective_policies
 
 Gets a list of the policies that have an effect on the authorization behavior
-of the specified device when it connects to the AWS IoT device gateway.
+of the specified device when it connects to the IoT device gateway.
 
 Type annotations for `boto3.client("iot").get_effective_policies` method.
 
@@ -2701,7 +2801,7 @@ Keyword-only arguments:
 - `indexName`: `str`
 - `aggregationField`: `str`
 - `queryVersion`: `str`
-- `percents`: `List`\[`float`\]
+- `percents`: `Sequence`\[`float`\]
 
 Returns
 [GetPercentilesResponseTypeDef](./type_defs.md#getpercentilesresponsetypedef).
@@ -2747,7 +2847,7 @@ Returns
 
 ### get_registration_code
 
-Gets a registration code used to register a CA certificate with AWS IoT.
+Gets a registration code used to register a CA certificate with IoT.
 
 Type annotations for `boto3.client("iot").get_registration_code` method.
 
@@ -2849,6 +2949,8 @@ Keyword-only arguments:
 - `behaviorCriteriaType`:
   [BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype)
 - `listSuppressedAlerts`: `bool`
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -3051,7 +3153,7 @@ Returns
 
 ### list_ca_certificates
 
-Lists the CA certificates registered for your AWS account.
+Lists the CA certificates registered for your Amazon Web Services account.
 
 Type annotations for `boto3.client("iot").list_ca_certificates` method.
 
@@ -3072,7 +3174,7 @@ Returns
 
 ### list_certificates
 
-Lists the certificates registered in your AWS account.
+Lists the certificates registered in your Amazon Web Services account.
 
 Type annotations for `boto3.client("iot").list_certificates` method.
 
@@ -3185,7 +3287,8 @@ Returns
 
 ### list_dimensions
 
-List the set of dimensions that are defined for your AWS account.
+List the set of dimensions that are defined for your Amazon Web Services
+accounts.
 
 Type annotations for `boto3.client("iot").list_dimensions` method.
 
@@ -3223,6 +3326,26 @@ Keyword-only arguments:
 
 Returns
 [ListDomainConfigurationsResponseTypeDef](./type_defs.md#listdomainconfigurationsresponsetypedef).
+
+### list_fleet_metrics
+
+Lists all your fleet metrics.
+
+Type annotations for `boto3.client("iot").list_fleet_metrics` method.
+
+Boto3 documentation:
+[IoT.Client.list_fleet_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_fleet_metrics)
+
+Arguments mapping described in
+[ListFleetMetricsRequestRequestTypeDef](./type_defs.md#listfleetmetricsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListFleetMetricsResponseTypeDef](./type_defs.md#listfleetmetricsresponsetypedef).
 
 ### list_indices
 
@@ -3527,7 +3650,7 @@ Returns
 
 ### list_provisioning_templates
 
-Lists the fleet provisioning templates in your AWS account.
+Lists the fleet provisioning templates in your Amazon Web Services account.
 
 Type annotations for `boto3.client("iot").list_provisioning_templates` method.
 
@@ -3633,7 +3756,7 @@ Returns
 
 ### list_streams
 
-Lists all of the streams in your AWS account.
+Lists all of the streams in your Amazon Web Services account.
 
 Type annotations for `boto3.client("iot").list_streams` method.
 
@@ -3915,7 +4038,7 @@ Returns
 
 ### list_topic_rule_destinations
 
-Lists all the topic rule destinations in your AWS account.
+Lists all the topic rule destinations in your Amazon Web Services account.
 
 Type annotations for `boto3.client("iot").list_topic_rule_destinations` method.
 
@@ -3998,15 +4121,40 @@ Keyword-only arguments:
 - `behaviorCriteriaType`:
   [BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype)
 - `listSuppressedAlerts`: `bool`
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
 [ListViolationEventsResponseTypeDef](./type_defs.md#listviolationeventsresponsetypedef).
 
+### put_verification_state_on_violation
+
+Set a verification state and provide a description of that verification state
+on a violation (detect alarm).
+
+Type annotations for `boto3.client("iot").put_verification_state_on_violation`
+method.
+
+Boto3 documentation:
+[IoT.Client.put_verification_state_on_violation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.put_verification_state_on_violation)
+
+Arguments mapping described in
+[PutVerificationStateOnViolationRequestRequestTypeDef](./type_defs.md#putverificationstateonviolationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `violationId`: `str` *(required)*
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype) *(required)*
+- `verificationStateDescription`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### register_ca_certificate
 
-Registers a CA certificate with AWS IoT.
+Registers a CA certificate with IoT.
 
 Type annotations for `boto3.client("iot").register_ca_certificate` method.
 
@@ -4024,14 +4172,14 @@ Keyword-only arguments:
 - `allowAutoRegistration`: `bool`
 - `registrationConfig`:
   [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [RegisterCACertificateResponseTypeDef](./type_defs.md#registercacertificateresponsetypedef).
 
 ### register_certificate
 
-Registers a device certificate with AWS IoT.
+Registers a device certificate with IoT.
 
 Type annotations for `boto3.client("iot").register_certificate` method.
 
@@ -4087,7 +4235,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `templateBody`: `str` *(required)*
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 
 Returns
 [RegisterThingResponseTypeDef](./type_defs.md#registerthingresponsetypedef).
@@ -4304,7 +4452,8 @@ Keyword-only arguments:
 - `target`:
   [AuditMitigationActionsTaskTargetTypeDef](./type_defs.md#auditmitigationactionstasktargettypedef)
   *(required)*
-- `auditCheckToActionsMapping`: `Dict`\[`str`, `List`\[`str`\]\] *(required)*
+- `auditCheckToActionsMapping`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+  *(required)*
 - `clientRequestToken`: `str` *(required)*
 
 Returns
@@ -4329,7 +4478,7 @@ Keyword-only arguments:
 - `target`:
   [DetectMitigationActionsTaskTargetTypeDef](./type_defs.md#detectmitigationactionstasktargettypedef)
   *(required)*
-- `actions`: `List`\[`str`\] *(required)*
+- `actions`: `Sequence`\[`str`\] *(required)*
 - `clientRequestToken`: `str` *(required)*
 - `violationEventOccurrenceRange`:
   [ViolationEventOccurrenceRangeTypeDef](./type_defs.md#violationeventoccurrencerangetypedef)
@@ -4353,7 +4502,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `targetCheckNames`: `List`\[`str`\] *(required)*
+- `targetCheckNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [StartOnDemandAuditTaskResponseTypeDef](./type_defs.md#startondemandaudittaskresponsetypedef).
@@ -4414,13 +4563,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
 ### test_authorization
 
-Tests if a specified principal is authorized to perform an AWS IoT action on a
+Tests if a specified principal is authorized to perform an IoT action on a
 specified resource.
 
 Type annotations for `boto3.client("iot").test_authorization` method.
@@ -4433,13 +4582,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `authInfos`: `List`\[[AuthInfoTypeDef](./type_defs.md#authinfotypedef)\]
+- `authInfos`: `Sequence`\[[AuthInfoTypeDef](./type_defs.md#authinfotypedef)\]
   *(required)*
 - `principal`: `str`
 - `cognitoIdentityPoolId`: `str`
 - `clientId`: `str`
-- `policyNamesToAdd`: `List`\[`str`\]
-- `policyNamesToSkip`: `List`\[`str`\]
+- `policyNamesToAdd`: `Sequence`\[`str`\]
+- `policyNamesToSkip`: `Sequence`\[`str`\]
 
 Returns
 [TestAuthorizationResponseTypeDef](./type_defs.md#testauthorizationresponsetypedef).
@@ -4471,7 +4620,8 @@ Returns
 
 ### transfer_certificate
 
-Transfers the specified certificate to the specified AWS account.
+Transfers the specified certificate to the specified Amazon Web Services
+account.
 
 Type annotations for `boto3.client("iot").transfer_certificate` method.
 
@@ -4505,7 +4655,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -4525,10 +4675,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `roleArn`: `str`
-- `auditNotificationTargetConfigurations`: `Dict`\[`Literal['SNS']` (see
+- `auditNotificationTargetConfigurations`: `Mapping`\[`Literal['SNS']` (see
   [AuditNotificationTypeType](./literals.md#auditnotificationtypetype)),
   [AuditNotificationTargetTypeDef](./type_defs.md#auditnotificationtargettypedef)\]
-- `auditCheckConfigurations`: `Dict`\[`str`,
+- `auditCheckConfigurations`: `Mapping`\[`str`,
   [AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
@@ -4574,7 +4724,7 @@ Keyword-only arguments:
 - `authorizerName`: `str` *(required)*
 - `authorizerFunctionArn`: `str`
 - `tokenKeyName`: `str`
-- `tokenSigningPublicKeys`: `Dict`\[`str`, `str`\]
+- `tokenSigningPublicKeys`: `Mapping`\[`str`, `str`\]
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 
 Returns
@@ -4678,7 +4828,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
-- `stringValues`: `List`\[`str`\] *(required)*
+- `stringValues`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [UpdateDimensionResponseTypeDef](./type_defs.md#updatedimensionresponsetypedef).
@@ -4747,10 +4897,37 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `eventConfigurations`: `Dict`\[[EventTypeType](./literals.md#eventtypetype),
+- `eventConfigurations`:
+  `Mapping`\[[EventTypeType](./literals.md#eventtypetype),
   [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+### update_fleet_metric
+
+Updates the data for a fleet metric.
+
+Type annotations for `boto3.client("iot").update_fleet_metric` method.
+
+Boto3 documentation:
+[IoT.Client.update_fleet_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_fleet_metric)
+
+Arguments mapping described in
+[UpdateFleetMetricRequestRequestTypeDef](./type_defs.md#updatefleetmetricrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `metricName`: `str` *(required)*
+- `indexName`: `str` *(required)*
+- `queryString`: `str`
+- `aggregationType`:
+  [AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef)
+- `period`: `int`
+- `aggregationField`: `str`
+- `description`: `str`
+- `queryVersion`: `str`
+- `unit`: [FleetMetricUnitType](./literals.md#fleetmetricunittype)
+- `expectedVersion`: `int`
 
 ### update_indexing_configuration
 
@@ -4885,7 +5062,7 @@ Keyword-only arguments:
 - `frequency`: [AuditFrequencyType](./literals.md#auditfrequencytype)
 - `dayOfMonth`: `str`
 - `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
-- `targetCheckNames`: `List`\[`str`\]
+- `targetCheckNames`: `Sequence`\[`str`\]
 
 Returns
 [UpdateScheduledAuditResponseTypeDef](./type_defs.md#updatescheduledauditresponsetypedef).
@@ -4906,13 +5083,13 @@ Keyword-only arguments:
 
 - `securityProfileName`: `str` *(required)*
 - `securityProfileDescription`: `str`
-- `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
-- `alertTargets`: `Dict`\[`Literal['SNS']` (see
+- `behaviors`: `Sequence`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
+- `alertTargets`: `Mapping`\[`Literal['SNS']` (see
   [AlertTargetTypeType](./literals.md#alerttargettypetype)),
   [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
-- `additionalMetricsToRetain`: `List`\[`str`\]
+- `additionalMetricsToRetain`: `Sequence`\[`str`\]
 - `additionalMetricsToRetainV2`:
-  `List`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
+  `Sequence`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
 - `deleteBehaviors`: `bool`
 - `deleteAlertTargets`: `bool`
 - `deleteAdditionalMetricsToRetain`: `bool`
@@ -4937,7 +5114,7 @@ Keyword-only arguments:
 
 - `streamId`: `str` *(required)*
 - `description`: `str`
-- `files`: `List`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
+- `files`: `Sequence`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
 - `roleArn`: `str`
 
 Returns
@@ -5005,8 +5182,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `thingName`: `str`
-- `thingGroupsToAdd`: `List`\[`str`\]
-- `thingGroupsToRemove`: `List`\[`str`\]
+- `thingGroupsToAdd`: `Sequence`\[`str`\]
+- `thingGroupsToRemove`: `Sequence`\[`str`\]
 - `overrideDynamicGroups`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -5048,7 +5225,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
+- `behaviors`: `Sequence`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
   *(required)*
 
 Returns
@@ -5094,12 +5271,16 @@ Type annotations for `boto3.client("iot").get_paginator` method with overloads.
   [ListDimensionsPaginator](./paginators.md#listdimensionspaginator)
 - `client.get_paginator("list_domain_configurations")` ->
   [ListDomainConfigurationsPaginator](./paginators.md#listdomainconfigurationspaginator)
+- `client.get_paginator("list_fleet_metrics")` ->
+  [ListFleetMetricsPaginator](./paginators.md#listfleetmetricspaginator)
 - `client.get_paginator("list_indices")` ->
   [ListIndicesPaginator](./paginators.md#listindicespaginator)
 - `client.get_paginator("list_job_executions_for_job")` ->
   [ListJobExecutionsForJobPaginator](./paginators.md#listjobexecutionsforjobpaginator)
 - `client.get_paginator("list_job_executions_for_thing")` ->
   [ListJobExecutionsForThingPaginator](./paginators.md#listjobexecutionsforthingpaginator)
+- `client.get_paginator("list_job_templates")` ->
+  [ListJobTemplatesPaginator](./paginators.md#listjobtemplatespaginator)
 - `client.get_paginator("list_jobs")` ->
   [ListJobsPaginator](./paginators.md#listjobspaginator)
 - `client.get_paginator("list_mitigation_actions")` ->

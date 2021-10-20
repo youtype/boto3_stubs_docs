@@ -114,8 +114,8 @@ Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Label`: `str` *(required)*
-- `AWSAccountIds`: `List`\[`str`\] *(required)*
-- `Actions`: `List`\[`str`\] *(required)*
+- `AWSAccountIds`: `Sequence`\[`str`\] *(required)*
+- `Actions`: `Sequence`\[`str`\] *(required)*
 
 ### can_paginate
 
@@ -168,7 +168,7 @@ Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Entries`:
-  `List`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
+  `Sequence`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
   *(required)*
 
 Returns
@@ -190,9 +190,9 @@ Keyword-only arguments:
 
 - `QueueName`: `str` *(required)*
 - `Attributes`:
-  `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
+  `Mapping`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateQueueResultTypeDef](./type_defs.md#createqueueresulttypedef).
 
@@ -229,7 +229,7 @@ Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Entries`:
-  `List`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
+  `Sequence`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
   *(required)*
 
 Returns
@@ -264,7 +264,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -286,7 +286,7 @@ Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `AttributeNames`:
-  `List`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
+  `Sequence`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
 
 Returns
 [GetQueueAttributesResultTypeDef](./type_defs.md#getqueueattributesresulttypedef).
@@ -404,8 +404,8 @@ Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `AttributeNames`:
-  `List`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
-- `MessageAttributeNames`: `List`\[`str`\]
+  `Sequence`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
+- `MessageAttributeNames`: `Sequence`\[`str`\]
 - `MaxNumberOfMessages`: `int`
 - `VisibilityTimeout`: `int`
 - `WaitTimeSeconds`: `int`
@@ -449,9 +449,9 @@ Keyword-only arguments:
 - `QueueUrl`: `str` *(required)*
 - `MessageBody`: `str` *(required)*
 - `DelaySeconds`: `int`
-- `MessageAttributes`: `Dict`\[`str`,
+- `MessageAttributes`: `Mapping`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-- `MessageSystemAttributes`: `Dict`\[`Literal['AWSTraceHeader']` (see
+- `MessageSystemAttributes`: `Mapping`\[`Literal['AWSTraceHeader']` (see
   [MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype)),
   [MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
@@ -475,7 +475,7 @@ Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Entries`:
-  `List`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
+  `Sequence`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
   *(required)*
 
 Returns
@@ -497,7 +497,7 @@ Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Attributes`:
-  `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
+  `Mapping`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\] *(required)*
 
 ### tag_queue
@@ -515,7 +515,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_queue
 
@@ -532,7 +532,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### get_paginator
 

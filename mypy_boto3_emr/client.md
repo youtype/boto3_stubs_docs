@@ -27,10 +27,12 @@ type annotations stubs module
     - [describe_cluster](#describe_cluster)
     - [describe_job_flows](#describe_job_flows)
     - [describe_notebook_execution](#describe_notebook_execution)
+    - [describe_release_label](#describe_release_label)
     - [describe_security_configuration](#describe_security_configuration)
     - [describe_step](#describe_step)
     - [describe_studio](#describe_studio)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_auto_termination_policy](#get_auto_termination_policy)
     - [get_block_public_access_configuration](#get_block_public_access_configuration)
     - [get_managed_scaling_policy](#get_managed_scaling_policy)
     - [get_studio_session_mapping](#get_studio_session_mapping)
@@ -40,6 +42,7 @@ type annotations stubs module
     - [list_instance_groups](#list_instance_groups)
     - [list_instances](#list_instances)
     - [list_notebook_executions](#list_notebook_executions)
+    - [list_release_labels](#list_release_labels)
     - [list_security_configurations](#list_security_configurations)
     - [list_steps](#list_steps)
     - [list_studio_session_mappings](#list_studio_session_mappings)
@@ -48,9 +51,11 @@ type annotations stubs module
     - [modify_instance_fleet](#modify_instance_fleet)
     - [modify_instance_groups](#modify_instance_groups)
     - [put_auto_scaling_policy](#put_auto_scaling_policy)
+    - [put_auto_termination_policy](#put_auto_termination_policy)
     - [put_block_public_access_configuration](#put_block_public_access_configuration)
     - [put_managed_scaling_policy](#put_managed_scaling_policy)
     - [remove_auto_scaling_policy](#remove_auto_scaling_policy)
+    - [remove_auto_termination_policy](#remove_auto_termination_policy)
     - [remove_managed_scaling_policy](#remove_managed_scaling_policy)
     - [remove_tags](#remove_tags)
     - [run_job_flow](#run_job_flow)
@@ -149,7 +154,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceGroups`:
-  `List`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
+  `Sequence`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
   *(required)*
 - `JobFlowId`: `str` *(required)*
 
@@ -171,7 +176,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `JobFlowId`: `str` *(required)*
-- `Steps`: `List`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
+- `Steps`: `Sequence`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
   *(required)*
 
 Returns
@@ -179,7 +184,7 @@ Returns
 
 ### add_tags
 
-Adds tags to an Amazon EMR resource.
+Adds tags to an Amazon EMR resource, such as a cluster or an Amazon EMR Studio.
 
 Type annotations for `boto3.client("emr").add_tags` method.
 
@@ -192,7 +197,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -226,7 +231,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
-- `StepIds`: `List`\[`str`\] *(required)*
+- `StepIds`: `Sequence`\[`str`\] *(required)*
 - `StepCancellationOption`:
   [StepCancellationOptionType](./literals.md#stepcancellationoptiontype)
 
@@ -271,14 +276,16 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `AuthMode`: [AuthModeType](./literals.md#authmodetype) *(required)*
 - `VpcId`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `ServiceRole`: `str` *(required)*
-- `UserRole`: `str` *(required)*
 - `WorkspaceSecurityGroupId`: `str` *(required)*
 - `EngineSecurityGroupId`: `str` *(required)*
 - `DefaultS3Location`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `UserRole`: `str`
+- `IdpAuthUrl`: `str`
+- `IdpRelayStateParameterName`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateStudioOutputTypeDef](./type_defs.md#createstudiooutputtypedef).
 
@@ -397,9 +404,9 @@ Keyword-only arguments:
 
 - `CreatedAfter`: `Union`\[`datetime`, `str`\]
 - `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `JobFlowIds`: `List`\[`str`\]
+- `JobFlowIds`: `Sequence`\[`str`\]
 - `JobFlowStates`:
-  `List`\[[JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)\]
+  `Sequence`\[[JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)\]
 
 Returns
 [DescribeJobFlowsOutputTypeDef](./type_defs.md#describejobflowsoutputtypedef).
@@ -422,6 +429,29 @@ Keyword-only arguments:
 
 Returns
 [DescribeNotebookExecutionOutputTypeDef](./type_defs.md#describenotebookexecutionoutputtypedef).
+
+### describe_release_label
+
+Provides EMR release label details, such as releases available the region where
+the API request is run, and the available applications for a specific EMR
+release label.
+
+Type annotations for `boto3.client("emr").describe_release_label` method.
+
+Boto3 documentation:
+[EMR.Client.describe_release_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_release_label)
+
+Arguments mapping described in
+[DescribeReleaseLabelInputRequestTypeDef](./type_defs.md#describereleaselabelinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ReleaseLabel`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeReleaseLabelOutputTypeDef](./type_defs.md#describereleaselabeloutputtypedef).
 
 ### describe_security_configuration
 
@@ -495,16 +525,35 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
 Returns `str`.
 
+### get_auto_termination_policy
+
+Returns the auto-termination policy for an Amazon EMR cluster.
+
+Type annotations for `boto3.client("emr").get_auto_termination_policy` method.
+
+Boto3 documentation:
+[EMR.Client.get_auto_termination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_auto_termination_policy)
+
+Arguments mapping described in
+[GetAutoTerminationPolicyInputRequestTypeDef](./type_defs.md#getautoterminationpolicyinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClusterId`: `str` *(required)*
+
+Returns
+[GetAutoTerminationPolicyOutputTypeDef](./type_defs.md#getautoterminationpolicyoutputtypedef).
+
 ### get_block_public_access_configuration
 
-Returns the Amazon EMR block public access configuration for your AWS account
-in the current Region.
+Returns the Amazon EMR block public access configuration for your Amazon Web
+Services account in the current Region.
 
 Type annotations for
 `boto3.client("emr").get_block_public_access_configuration` method.
@@ -580,7 +629,8 @@ Returns
 
 ### list_clusters
 
-Provides the status of all clusters visible to this AWS account.
+Provides the status of all clusters visible to this Amazon Web Services
+account.
 
 Type annotations for `boto3.client("emr").list_clusters` method.
 
@@ -594,7 +644,8 @@ Keyword-only arguments:
 
 - `CreatedAfter`: `Union`\[`datetime`, `str`\]
 - `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ClusterStates`: `List`\[[ClusterStateType](./literals.md#clusterstatetype)\]
+- `ClusterStates`:
+  `Sequence`\[[ClusterStateType](./literals.md#clusterstatetype)\]
 - `Marker`: `str`
 
 Returns [ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef).
@@ -657,12 +708,12 @@ Keyword-only arguments:
 - `ClusterId`: `str` *(required)*
 - `InstanceGroupId`: `str`
 - `InstanceGroupTypes`:
-  `List`\[[InstanceGroupTypeType](./literals.md#instancegrouptypetype)\]
+  `Sequence`\[[InstanceGroupTypeType](./literals.md#instancegrouptypetype)\]
 - `InstanceFleetId`: `str`
 - `InstanceFleetType`:
   [InstanceFleetTypeType](./literals.md#instancefleettypetype)
 - `InstanceStates`:
-  `List`\[[InstanceStateType](./literals.md#instancestatetype)\]
+  `Sequence`\[[InstanceStateType](./literals.md#instancestatetype)\]
 - `Marker`: `str`
 
 Returns
@@ -692,6 +743,28 @@ Keyword-only arguments:
 Returns
 [ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef).
 
+### list_release_labels
+
+Retrieves release labels of EMR services in the region where the API is called.
+
+Type annotations for `boto3.client("emr").list_release_labels` method.
+
+Boto3 documentation:
+[EMR.Client.list_release_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_release_labels)
+
+Arguments mapping described in
+[ListReleaseLabelsInputRequestTypeDef](./type_defs.md#listreleaselabelsinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `Filters`:
+  [ReleaseLabelFilterTypeDef](./type_defs.md#releaselabelfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListReleaseLabelsOutputTypeDef](./type_defs.md#listreleaselabelsoutputtypedef).
+
 ### list_security_configurations
 
 Lists all the security configurations visible to this account, providing their
@@ -715,7 +788,7 @@ Returns
 ### list_steps
 
 Provides a list of steps for the cluster in reverse order unless you specify
-`stepIds` with the request of filter by `StepStates`.
+`stepIds` with the request or filter by `StepStates`.
 
 Type annotations for `boto3.client("emr").list_steps` method.
 
@@ -728,8 +801,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
-- `StepStates`: `List`\[[StepStateType](./literals.md#stepstatetype)\]
-- `StepIds`: `List`\[`str`\]
+- `StepStates`: `Sequence`\[[StepStateType](./literals.md#stepstatetype)\]
+- `StepIds`: `Sequence`\[`str`\]
 - `Marker`: `str`
 
 Returns [ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef).
@@ -758,7 +831,8 @@ Returns
 
 ### list_studios
 
-Returns a list of all Amazon EMR Studios associated with the AWS account.
+Returns a list of all Amazon EMR Studios associated with the Amazon Web
+Services account.
 
 Type annotations for `boto3.client("emr").list_studios` method.
 
@@ -833,7 +907,7 @@ Keyword-only arguments:
 
 - `ClusterId`: `str`
 - `InstanceGroups`:
-  `List`\[[InstanceGroupModifyConfigTypeDef](./type_defs.md#instancegroupmodifyconfigtypedef)\]
+  `Sequence`\[[InstanceGroupModifyConfigTypeDef](./type_defs.md#instancegroupmodifyconfigtypedef)\]
 
 ### put_auto_scaling_policy
 
@@ -859,10 +933,30 @@ Keyword-only arguments:
 Returns
 [PutAutoScalingPolicyOutputTypeDef](./type_defs.md#putautoscalingpolicyoutputtypedef).
 
+### put_auto_termination_policy
+
+Creates or updates an auto-termination policy for an Amazon EMR cluster.
+
+Type annotations for `boto3.client("emr").put_auto_termination_policy` method.
+
+Boto3 documentation:
+[EMR.Client.put_auto_termination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_termination_policy)
+
+Arguments mapping described in
+[PutAutoTerminationPolicyInputRequestTypeDef](./type_defs.md#putautoterminationpolicyinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClusterId`: `str` *(required)*
+- `AutoTerminationPolicy`:
+  [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### put_block_public_access_configuration
 
-Creates or updates an Amazon EMR block public access configuration for your AWS
-account in the current Region.
+Creates or updates an Amazon EMR block public access configuration for your
+Amazon Web Services account in the current Region.
 
 Type annotations for
 `boto3.client("emr").put_block_public_access_configuration` method.
@@ -922,6 +1016,25 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### remove_auto_termination_policy
+
+Removes an auto-termination policy from an Amazon EMR cluster.
+
+Type annotations for `boto3.client("emr").remove_auto_termination_policy`
+method.
+
+Boto3 documentation:
+[EMR.Client.remove_auto_termination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_termination_policy)
+
+Arguments mapping described in
+[RemoveAutoTerminationPolicyInputRequestTypeDef](./type_defs.md#removeautoterminationpolicyinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClusterId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### remove_managed_scaling_policy
 
 Removes a managed scaling policy from a specified EMR cluster.
@@ -943,7 +1056,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### remove_tags
 
-Removes tags from an Amazon EMR resource.
+Removes tags from an Amazon EMR resource, such as a cluster or Amazon EMR
+Studio.
 
 Type annotations for `boto3.client("emr").remove_tags` method.
 
@@ -956,7 +1070,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -983,20 +1097,20 @@ Keyword-only arguments:
 - `AdditionalInfo`: `str`
 - `AmiVersion`: `str`
 - `ReleaseLabel`: `str`
-- `Steps`: `List`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
+- `Steps`: `Sequence`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
 - `BootstrapActions`:
-  `List`\[[BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef)\]
-- `SupportedProducts`: `List`\[`str`\]
+  `Sequence`\[[BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef)\]
+- `SupportedProducts`: `Sequence`\[`str`\]
 - `NewSupportedProducts`:
-  `List`\[[SupportedProductConfigTypeDef](./type_defs.md#supportedproductconfigtypedef)\]
+  `Sequence`\[[SupportedProductConfigTypeDef](./type_defs.md#supportedproductconfigtypedef)\]
 - `Applications`:
-  `List`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
+  `Sequence`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
 - `Configurations`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `VisibleToAllUsers`: `bool`
 - `JobFlowRole`: `str`
 - `ServiceRole`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SecurityConfiguration`: `str`
 - `AutoScalingRole`: `str`
 - `ScaleDownBehavior`:
@@ -1011,7 +1125,9 @@ Keyword-only arguments:
 - `ManagedScalingPolicy`:
   [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
 - `PlacementGroupConfigs`:
-  `List`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
+  `Sequence`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
+- `AutoTerminationPolicy`:
+  [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
 
 Returns [RunJobFlowOutputTypeDef](./type_defs.md#runjobflowoutputtypedef).
 
@@ -1031,13 +1147,12 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `JobFlowIds`: `List`\[`str`\] *(required)*
+- `JobFlowIds`: `Sequence`\[`str`\] *(required)*
 - `TerminationProtected`: `bool` *(required)*
 
 ### set_visible_to_all_users
 
-Sets the Cluster$VisibleToAllUsers value, which determines whether the cluster
-is visible to all IAM users of the AWS account associated with the cluster.
+Sets the Cluster$VisibleToAllUsers value for an EMR cluster.
 
 Type annotations for `boto3.client("emr").set_visible_to_all_users` method.
 
@@ -1049,7 +1164,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `JobFlowIds`: `List`\[`str`\] *(required)*
+- `JobFlowIds`: `Sequence`\[`str`\] *(required)*
 - `VisibleToAllUsers`: `bool` *(required)*
 
 ### start_notebook_execution
@@ -1075,7 +1190,7 @@ Keyword-only arguments:
 - `NotebookExecutionName`: `str`
 - `NotebookParams`: `str`
 - `NotebookInstanceSecurityGroupId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartNotebookExecutionOutputTypeDef](./type_defs.md#startnotebookexecutionoutputtypedef).
@@ -1110,7 +1225,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `JobFlowIds`: `List`\[`str`\] *(required)*
+- `JobFlowIds`: `Sequence`\[`str`\] *(required)*
 
 ### update_studio
 
@@ -1130,7 +1245,7 @@ Keyword-only arguments:
 - `StudioId`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DefaultS3Location`: `str`
 
 ### update_studio_session_mapping

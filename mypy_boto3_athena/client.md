@@ -115,7 +115,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `NamedQueryIds`: `List`\[`str`\] *(required)*
+- `NamedQueryIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetNamedQueryOutputTypeDef](./type_defs.md#batchgetnamedqueryoutputtypedef).
@@ -135,7 +135,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `QueryExecutionIds`: `List`\[`str`\] *(required)*
+- `QueryExecutionIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetQueryExecutionOutputTypeDef](./type_defs.md#batchgetqueryexecutionoutputtypedef).
@@ -172,8 +172,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Type`: [DataCatalogTypeType](./literals.md#datacatalogtypetype) *(required)*
 - `Description`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -240,7 +240,7 @@ Keyword-only arguments:
 - `Configuration`:
   [WorkGroupConfigurationTypeDef](./type_defs.md#workgroupconfigurationtypedef)
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -332,7 +332,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -499,7 +499,7 @@ Returns [GetWorkGroupOutputTypeDef](./type_defs.md#getworkgroupoutputtypedef).
 
 ### list_data_catalogs
 
-Lists the data catalogs in the current AWS account.
+Lists the data catalogs in the current Amazon Web Services account.
 
 Type annotations for `boto3.client("athena").list_data_catalogs` method.
 
@@ -746,7 +746,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -765,7 +765,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -786,7 +786,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Type`: [DataCatalogTypeType](./literals.md#datacatalogtypetype) *(required)*
 - `Description`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 

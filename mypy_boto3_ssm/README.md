@@ -474,6 +474,7 @@ from mypy_boto3_ssm.literals import AssociationComplianceSeverityType, ...
 - [ListResourceDataSyncPaginatorName](./literals.md#listresourcedatasyncpaginatorname)
 - [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
 - [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
+- [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
 - [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
 - [NotificationEventType](./literals.md#notificationeventtype)
 - [NotificationTypeType](./literals.md#notificationtypetype)
@@ -511,6 +512,9 @@ from mypy_boto3_ssm.literals import AssociationComplianceSeverityType, ...
 - [SignalTypeType](./literals.md#signaltypetype)
 - [StepExecutionFilterKeyType](./literals.md#stepexecutionfilterkeytype)
 - [StopTypeType](./literals.md#stoptypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

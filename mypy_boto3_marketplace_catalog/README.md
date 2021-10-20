@@ -68,6 +68,7 @@ from mypy_boto3_marketplace_catalog.literals import ChangeStatusType, ...
 - [ChangeStatusType](./literals.md#changestatustype)
 - [FailureCodeType](./literals.md#failurecodetype)
 - [SortOrderType](./literals.md#sortordertype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

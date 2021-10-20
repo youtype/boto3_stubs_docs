@@ -77,6 +77,7 @@ from mypy_boto3_macie2.client import Macie2Client
 - [list_findings](./client.md#list_findings)
 - [list_findings_filters](./client.md#list_findings_filters)
 - [list_invitations](./client.md#list_invitations)
+- [list_managed_data_identifiers](./client.md#list_managed_data_identifiers)
 - [list_members](./client.md#list_members)
 - [list_organization_admin_accounts](./client.md#list_organization_admin_accounts)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
@@ -139,6 +140,7 @@ from mypy_boto3_macie2.literals import AdminStatusType, ...
 
 - [AdminStatusType](./literals.md#adminstatustype)
 - [AllowsUnencryptedObjectUploadsType](./literals.md#allowsunencryptedobjectuploadstype)
+- [BucketMetadataErrorCodeType](./literals.md#bucketmetadataerrorcodetype)
 - [CurrencyType](./literals.md#currencytype)
 - [DayOfWeekType](./literals.md#dayofweektype)
 - [DescribeBucketsPaginatorName](./literals.md#describebucketspaginatorname)
@@ -169,6 +171,7 @@ from mypy_boto3_macie2.literals import AdminStatusType, ...
 - [ListMembersPaginatorName](./literals.md#listmemberspaginatorname)
 - [ListOrganizationAdminAccountsPaginatorName](./literals.md#listorganizationadminaccountspaginatorname)
 - [MacieStatusType](./literals.md#maciestatustype)
+- [ManagedDataIdentifierSelectorType](./literals.md#manageddataidentifierselectortype)
 - [OrderByType](./literals.md#orderbytype)
 - [RelationshipStatusType](./literals.md#relationshipstatustype)
 - [ScopeFilterKeyType](./literals.md#scopefilterkeytype)
@@ -190,6 +193,8 @@ from mypy_boto3_macie2.literals import AdminStatusType, ...
 - [UsageStatisticsSortKeyType](./literals.md#usagestatisticssortkeytype)
 - [UsageTypeType](./literals.md#usagetypetype)
 - [UserIdentityTypeType](./literals.md#useridentitytypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 
@@ -324,12 +329,15 @@ from mypy_boto3_macie2.type_defs import AcceptInvitationRequestRequestTypeDef, .
 - [ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef)
 - [ListJobsFilterTermTypeDef](./type_defs.md#listjobsfiltertermtypedef)
 - [ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef)
+- [ListManagedDataIdentifiersRequestRequestTypeDef](./type_defs.md#listmanageddataidentifiersrequestrequesttypedef)
+- [ListManagedDataIdentifiersResponseTypeDef](./type_defs.md#listmanageddataidentifiersresponsetypedef)
 - [ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef)
 - [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)
 - [ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef)
 - [ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ManagedDataIdentifierSummaryTypeDef](./type_defs.md#manageddataidentifiersummarytypedef)
 - [MatchingBucketTypeDef](./type_defs.md#matchingbuckettypedef)
 - [MatchingResourceTypeDef](./type_defs.md#matchingresourcetypedef)
 - [MemberTypeDef](./type_defs.md#membertypedef)

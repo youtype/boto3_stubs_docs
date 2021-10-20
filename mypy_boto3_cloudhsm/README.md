@@ -98,6 +98,8 @@ from mypy_boto3_cloudhsm.literals import ClientVersionType, ...
 - [ListHsmsPaginatorName](./literals.md#listhsmspaginatorname)
 - [ListLunaClientsPaginatorName](./literals.md#listlunaclientspaginatorname)
 - [SubscriptionTypeType](./literals.md#subscriptiontypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

@@ -82,6 +82,8 @@ from mypy_boto3_iotfleethub.literals import ApplicationStateType, ...
 
 - [ApplicationStateType](./literals.md#applicationstatetype)
 - [ListApplicationsPaginatorName](./literals.md#listapplicationspaginatorname)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

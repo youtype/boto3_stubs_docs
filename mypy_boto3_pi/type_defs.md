@@ -55,7 +55,7 @@ Optional fields:
 
 - `PeriodInSeconds`: `int`
 - `PartitionBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
-- `Filter`: `Dict`\[`str`, `str`\]
+- `Filter`: `Mapping`\[`str`, `str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -89,7 +89,7 @@ Required fields:
 
 Optional fields:
 
-- `Dimensions`: `List`\[`str`\]
+- `Dimensions`: `Sequence`\[`str`\]
 - `Limit`: `int`
 
 ## DimensionKeyDescriptionTypeDef
@@ -132,7 +132,7 @@ Required fields:
 
 Optional fields:
 
-- `RequestedDimensions`: `List`\[`str`\]
+- `RequestedDimensions`: `Sequence`\[`str`\]
 
 ## GetDimensionKeyDetailsResponseTypeDef
 
@@ -159,7 +159,7 @@ Required fields:
   [ServiceTypeType](./literals.md#servicetypetype))
 - `Identifier`: `str`
 - `MetricQueries`:
-  `List`\[[MetricQueryTypeDef](./type_defs.md#metricquerytypedef)\]
+  `Sequence`\[[MetricQueryTypeDef](./type_defs.md#metricquerytypedef)\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 
@@ -211,7 +211,7 @@ Required fields:
 Optional fields:
 
 - `GroupBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
-- `Filter`: `Dict`\[`str`, `str`\]
+- `Filter`: `Mapping`\[`str`, `str`\]
 
 ## ResponseMetadataTypeDef
 

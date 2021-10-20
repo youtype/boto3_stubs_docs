@@ -57,7 +57,7 @@ Required fields:
 
 - `DomainName`: `str`
 - `Items`:
-  `List`\[[DeletableItemTypeDef](./type_defs.md#deletableitemtypedef)\]
+  `Sequence`\[[DeletableItemTypeDef](./type_defs.md#deletableitemtypedef)\]
 
 ## BatchPutAttributesRequestRequestTypeDef
 
@@ -69,7 +69,7 @@ Required fields:
 
 - `DomainName`: `str`
 - `Items`:
-  `List`\[[ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef)\]
+  `Sequence`\[[ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef)\]
 
 ## CreateDomainRequestRequestTypeDef
 
@@ -93,7 +93,8 @@ Required fields:
 
 Optional fields:
 
-- `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `Attributes`:
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 ## DeleteAttributesRequestRequestTypeDef
 
@@ -108,7 +109,8 @@ Required fields:
 
 Optional fields:
 
-- `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `Attributes`:
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
 
 ## DeleteDomainRequestRequestTypeDef
@@ -162,7 +164,7 @@ Required fields:
 
 Optional fields:
 
-- `AttributeNames`: `List`\[`str`\]
+- `AttributeNames`: `Sequence`\[`str`\]
 - `ConsistentRead`: `bool`
 
 ## GetAttributesResultTypeDef
@@ -239,7 +241,7 @@ Required fields:
 - `DomainName`: `str`
 - `ItemName`: `str`
 - `Attributes`:
-  `List`\[[ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef)\]
+  `Sequence`\[[ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef)\]
 
 Optional fields:
 
@@ -270,7 +272,7 @@ Required fields:
 
 - `Name`: `str`
 - `Attributes`:
-  `List`\[[ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef)\]
+  `Sequence`\[[ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef)\]
 
 ## ResponseMetadataTypeDef
 

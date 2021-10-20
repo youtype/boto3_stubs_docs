@@ -148,6 +148,9 @@ from mypy_boto3_acm_pca.literals import AccessMethodTypeType, ...
 - [S3ObjectAclType](./literals.md#s3objectacltype)
 - [SigningAlgorithmType](./literals.md#signingalgorithmtype)
 - [ValidityPeriodTypeType](./literals.md#validityperiodtypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 
@@ -202,6 +205,7 @@ from mypy_boto3_acm_pca.type_defs import ASN1SubjectTypeDef, ...
 - [ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef)
 - [ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef)
 - [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)
+- [OcspConfigurationTypeDef](./type_defs.md#ocspconfigurationtypedef)
 - [OtherNameTypeDef](./type_defs.md#othernametypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PermissionTypeDef](./type_defs.md#permissiontypedef)

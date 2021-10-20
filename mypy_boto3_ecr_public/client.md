@@ -124,7 +124,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
-- `layerDigests`: `List`\[`str`\] *(required)*
+- `layerDigests`: `Sequence`\[`str`\] *(required)*
 - `registryId`: `str`
 
 Returns
@@ -146,7 +146,7 @@ Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
   *(required)*
 - `registryId`: `str`
 
@@ -185,7 +185,7 @@ Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `uploadId`: `str` *(required)*
-- `layerDigests`: `List`\[`str`\] *(required)*
+- `layerDigests`: `Sequence`\[`str`\] *(required)*
 - `registryId`: `str`
 
 Returns
@@ -208,7 +208,7 @@ Keyword-only arguments:
 - `repositoryName`: `str` *(required)*
 - `catalogData`:
   [RepositoryCatalogDataInputTypeDef](./type_defs.md#repositorycatalogdatainputtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRepositoryResponseTypeDef](./type_defs.md#createrepositoryresponsetypedef).
@@ -294,7 +294,7 @@ Keyword-only arguments:
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -336,7 +336,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `registryId`: `str`
-- `repositoryNames`: `List`\[`str`\]
+- `repositoryNames`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -356,7 +356,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -574,7 +574,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -593,7 +593,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

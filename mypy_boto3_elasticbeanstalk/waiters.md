@@ -33,8 +33,8 @@ Arguments for `EnvironmentExistsWaiter.wait` method:
 
 - `ApplicationName`: `str`
 - `VersionLabel`: `str`
-- `EnvironmentIds`: `List`\[`str`\]
-- `EnvironmentNames`: `List`\[`str`\]
+- `EnvironmentIds`: `Sequence`\[`str`\]
+- `EnvironmentNames`: `Sequence`\[`str`\]
 - `IncludeDeleted`: `bool`
 - `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
 - `MaxRecords`: `int`
@@ -62,8 +62,8 @@ Arguments for `EnvironmentTerminatedWaiter.wait` method:
 
 - `ApplicationName`: `str`
 - `VersionLabel`: `str`
-- `EnvironmentIds`: `List`\[`str`\]
-- `EnvironmentNames`: `List`\[`str`\]
+- `EnvironmentIds`: `Sequence`\[`str`\]
+- `EnvironmentNames`: `Sequence`\[`str`\]
 - `IncludeDeleted`: `bool`
 - `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
 - `MaxRecords`: `int`
@@ -91,8 +91,8 @@ Arguments for `EnvironmentUpdatedWaiter.wait` method:
 
 - `ApplicationName`: `str`
 - `VersionLabel`: `str`
-- `EnvironmentIds`: `List`\[`str`\]
-- `EnvironmentNames`: `List`\[`str`\]
+- `EnvironmentIds`: `Sequence`\[`str`\]
+- `EnvironmentNames`: `Sequence`\[`str`\]
 - `IncludeDeleted`: `bool`
 - `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
 - `MaxRecords`: `int`

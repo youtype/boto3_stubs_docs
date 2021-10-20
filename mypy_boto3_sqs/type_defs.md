@@ -75,8 +75,8 @@ from mypy_boto3_sqs.type_defs import AddPermissionRequestQueueTypeDef
 Required fields:
 
 - `Label`: `str`
-- `AWSAccountIds`: `List`\[`str`\]
-- `Actions`: `List`\[`str`\]
+- `AWSAccountIds`: `Sequence`\[`str`\]
+- `Actions`: `Sequence`\[`str`\]
 
 ## AddPermissionRequestRequestTypeDef
 
@@ -88,8 +88,8 @@ Required fields:
 
 - `QueueUrl`: `str`
 - `Label`: `str`
-- `AWSAccountIds`: `List`\[`str`\]
-- `Actions`: `List`\[`str`\]
+- `AWSAccountIds`: `Sequence`\[`str`\]
+- `Actions`: `Sequence`\[`str`\]
 
 ## BatchResultErrorEntryTypeDef
 
@@ -131,7 +131,7 @@ from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchRequestQueueTyp
 Required fields:
 
 - `Entries`:
-  `List`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
+  `Sequence`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
 
 ## ChangeMessageVisibilityBatchRequestRequestTypeDef
 
@@ -143,7 +143,7 @@ Required fields:
 
 - `QueueUrl`: `str`
 - `Entries`:
-  `List`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
+  `Sequence`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
 
 ## ChangeMessageVisibilityBatchResultEntryTypeDef
 
@@ -205,9 +205,9 @@ Required fields:
 Optional fields:
 
 - `Attributes`:
-  `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
+  `Mapping`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateQueueRequestServiceResourceTypeDef
 
@@ -222,9 +222,9 @@ Required fields:
 Optional fields:
 
 - `Attributes`:
-  `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
+  `Mapping`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateQueueResultTypeDef
 
@@ -258,7 +258,7 @@ from mypy_boto3_sqs.type_defs import DeleteMessageBatchRequestQueueTypeDef
 Required fields:
 
 - `Entries`:
-  `List`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
+  `Sequence`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
 
 ## DeleteMessageBatchRequestRequestTypeDef
 
@@ -270,7 +270,7 @@ Required fields:
 
 - `QueueUrl`: `str`
 - `Entries`:
-  `List`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
+  `Sequence`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
 
 ## DeleteMessageBatchResultEntryTypeDef
 
@@ -331,7 +331,7 @@ Required fields:
 Optional fields:
 
 - `AttributeNames`:
-  `List`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
+  `Sequence`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
 
 ## GetQueueAttributesResultTypeDef
 
@@ -493,8 +493,8 @@ Optional fields:
 
 - `StringValue`: `str`
 - `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `StringListValues`: `List`\[`str`\]
-- `BinaryListValues`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\],
+- `StringListValues`: `Sequence`\[`str`\]
+- `BinaryListValues`: `Sequence`\[`Union`\[`bytes`, `IO`\[`bytes`\],
   `StreamingBody`\]\]
 
 ## MessageTypeDef
@@ -557,8 +557,8 @@ from mypy_boto3_sqs.type_defs import ReceiveMessageRequestQueueTypeDef
 Optional fields:
 
 - `AttributeNames`:
-  `List`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
-- `MessageAttributeNames`: `List`\[`str`\]
+  `Sequence`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
+- `MessageAttributeNames`: `Sequence`\[`str`\]
 - `MaxNumberOfMessages`: `int`
 - `VisibilityTimeout`: `int`
 - `WaitTimeSeconds`: `int`
@@ -577,8 +577,8 @@ Required fields:
 Optional fields:
 
 - `AttributeNames`:
-  `List`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
-- `MessageAttributeNames`: `List`\[`str`\]
+  `Sequence`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
+- `MessageAttributeNames`: `Sequence`\[`str`\]
 - `MaxNumberOfMessages`: `int`
 - `VisibilityTimeout`: `int`
 - `WaitTimeSeconds`: `int`
@@ -645,9 +645,9 @@ Required fields:
 Optional fields:
 
 - `DelaySeconds`: `int`
-- `MessageAttributes`: `Dict`\[`str`,
+- `MessageAttributes`: `Mapping`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-- `MessageSystemAttributes`: `Dict`\[`Literal['AWSTraceHeader']` (see
+- `MessageSystemAttributes`: `Mapping`\[`Literal['AWSTraceHeader']` (see
   [MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype)),
   [MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
@@ -662,7 +662,7 @@ from mypy_boto3_sqs.type_defs import SendMessageBatchRequestQueueTypeDef
 Required fields:
 
 - `Entries`:
-  `List`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
+  `Sequence`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
 
 ## SendMessageBatchRequestRequestTypeDef
 
@@ -674,7 +674,7 @@ Required fields:
 
 - `QueueUrl`: `str`
 - `Entries`:
-  `List`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
+  `Sequence`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
 
 ## SendMessageBatchResultEntryTypeDef
 
@@ -722,9 +722,9 @@ Required fields:
 Optional fields:
 
 - `DelaySeconds`: `int`
-- `MessageAttributes`: `Dict`\[`str`,
+- `MessageAttributes`: `Mapping`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-- `MessageSystemAttributes`: `Dict`\[`Literal['AWSTraceHeader']` (see
+- `MessageSystemAttributes`: `Mapping`\[`Literal['AWSTraceHeader']` (see
   [MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype)),
   [MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
@@ -744,9 +744,9 @@ Required fields:
 Optional fields:
 
 - `DelaySeconds`: `int`
-- `MessageAttributes`: `Dict`\[`str`,
+- `MessageAttributes`: `Mapping`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-- `MessageSystemAttributes`: `Dict`\[`Literal['AWSTraceHeader']` (see
+- `MessageSystemAttributes`: `Mapping`\[`Literal['AWSTraceHeader']` (see
   [MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype)),
   [MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
@@ -798,7 +798,7 @@ from mypy_boto3_sqs.type_defs import SetQueueAttributesRequestQueueTypeDef
 Required fields:
 
 - `Attributes`:
-  `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
+  `Mapping`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\]
 
 ## SetQueueAttributesRequestRequestTypeDef
@@ -811,7 +811,7 @@ Required fields:
 
 - `QueueUrl`: `str`
 - `Attributes`:
-  `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
+  `Mapping`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\]
 
 ## TagQueueRequestRequestTypeDef
@@ -823,7 +823,7 @@ from mypy_boto3_sqs.type_defs import TagQueueRequestRequestTypeDef
 Required fields:
 
 - `QueueUrl`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagQueueRequestRequestTypeDef
 
@@ -834,4 +834,4 @@ from mypy_boto3_sqs.type_defs import UntagQueueRequestRequestTypeDef
 Required fields:
 
 - `QueueUrl`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]

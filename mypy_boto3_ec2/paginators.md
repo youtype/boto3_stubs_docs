@@ -10,6 +10,7 @@ type annotations stubs module
 - [Paginators for boto3 EC2 module](#paginators-for-boto3-ec2-module)
   - [DescribeAddressesAttributePaginator](#describeaddressesattributepaginator)
   - [DescribeByoipCidrsPaginator](#describebyoipcidrspaginator)
+  - [DescribeCapacityReservationFleetsPaginator](#describecapacityreservationfleetspaginator)
   - [DescribeCapacityReservationsPaginator](#describecapacityreservationspaginator)
   - [DescribeCarrierGatewaysPaginator](#describecarriergatewayspaginator)
   - [DescribeClassicLinkInstancesPaginator](#describeclassiclinkinstancespaginator)
@@ -33,6 +34,7 @@ type annotations stubs module
   - [DescribeImportImageTasksPaginator](#describeimportimagetaskspaginator)
   - [DescribeImportSnapshotTasksPaginator](#describeimportsnapshottaskspaginator)
   - [DescribeInstanceCreditSpecificationsPaginator](#describeinstancecreditspecificationspaginator)
+  - [DescribeInstanceEventWindowsPaginator](#describeinstanceeventwindowspaginator)
   - [DescribeInstanceStatusPaginator](#describeinstancestatuspaginator)
   - [DescribeInstanceTypeOfferingsPaginator](#describeinstancetypeofferingspaginator)
   - [DescribeInstanceTypesPaginator](#describeinstancetypespaginator)
@@ -86,6 +88,7 @@ type annotations stubs module
   - [DescribeTransitGatewayRouteTablesPaginator](#describetransitgatewayroutetablespaginator)
   - [DescribeTransitGatewayVpcAttachmentsPaginator](#describetransitgatewayvpcattachmentspaginator)
   - [DescribeTransitGatewaysPaginator](#describetransitgatewayspaginator)
+  - [DescribeTrunkInterfaceAssociationsPaginator](#describetrunkinterfaceassociationspaginator)
   - [DescribeVolumeStatusPaginator](#describevolumestatuspaginator)
   - [DescribeVolumesPaginator](#describevolumespaginator)
   - [DescribeVolumesModificationsPaginator](#describevolumesmodificationspaginator)
@@ -107,6 +110,7 @@ type annotations stubs module
   - [GetTransitGatewayPrefixListReferencesPaginator](#gettransitgatewayprefixlistreferencespaginator)
   - [GetTransitGatewayRouteTableAssociationsPaginator](#gettransitgatewayroutetableassociationspaginator)
   - [GetTransitGatewayRouteTablePropagationsPaginator](#gettransitgatewayroutetablepropagationspaginator)
+  - [GetVpnConnectionDeviceTypesPaginator](#getvpnconnectiondevicetypespaginator)
   - [SearchLocalGatewayRoutesPaginator](#searchlocalgatewayroutespaginator)
   - [SearchTransitGatewayMulticastGroupsPaginator](#searchtransitgatewaymulticastgroupspaginator)
 
@@ -129,7 +133,7 @@ Boto3 documentation:
 
 Arguments for `DescribeAddressesAttributePaginator.paginate` method:
 
-- `AllocationIds`: `List`\[`str`\]
+- `AllocationIds`: `Sequence`\[`str`\]
 - `Attribute`: `Literal['domain-name']` (see
   [AddressAttributeNameType](./literals.md#addressattributenametype))
 - `DryRun`: `bool`
@@ -137,7 +141,7 @@ Arguments for `DescribeAddressesAttributePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAddressesAttributePaginator.paginate` returns
-`Iterator`\[[DescribeAddressesAttributeResultTypeDef](./type_defs.md#describeaddressesattributeresulttypedef)\].
+`_PageIterator`\[[DescribeAddressesAttributeResultTypeDef](./type_defs.md#describeaddressesattributeresulttypedef)\].
 
 ## DescribeByoipCidrsPaginator
 
@@ -163,7 +167,35 @@ Arguments for `DescribeByoipCidrsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeByoipCidrsPaginator.paginate` returns
-`Iterator`\[[DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef)\].
+`_PageIterator`\[[DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef)\].
+
+## DescribeCapacityReservationFleetsPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_capacity_reservation_fleets")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeCapacityReservationFleetsPaginator
+
+def get_describe_capacity_reservation_fleets_paginator() -> DescribeCapacityReservationFleetsPaginator:
+    return boto3.client("ec2").get_paginator("describe_capacity_reservation_fleets")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeCapacityReservationFleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCapacityReservationFleets)
+
+Arguments for `DescribeCapacityReservationFleetsPaginator.paginate` method:
+
+- `CapacityReservationFleetIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeCapacityReservationFleetsPaginator.paginate` returns
+`_PageIterator`\[[DescribeCapacityReservationFleetsResultTypeDef](./type_defs.md#describecapacityreservationfleetsresulttypedef)\].
 
 ## DescribeCapacityReservationsPaginator
 
@@ -184,14 +216,14 @@ Boto3 documentation:
 
 Arguments for `DescribeCapacityReservationsPaginator.paginate` method:
 
-- `CapacityReservationIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `CapacityReservationIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCapacityReservationsPaginator.paginate` returns
-`Iterator`\[[DescribeCapacityReservationsResultTypeDef](./type_defs.md#describecapacityreservationsresulttypedef)\].
+`_PageIterator`\[[DescribeCapacityReservationsResultTypeDef](./type_defs.md#describecapacityreservationsresulttypedef)\].
 
 ## DescribeCarrierGatewaysPaginator
 
@@ -212,14 +244,14 @@ Boto3 documentation:
 
 Arguments for `DescribeCarrierGatewaysPaginator.paginate` method:
 
-- `CarrierGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `CarrierGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCarrierGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeCarrierGatewaysResultTypeDef](./type_defs.md#describecarriergatewaysresulttypedef)\].
+`_PageIterator`\[[DescribeCarrierGatewaysResultTypeDef](./type_defs.md#describecarriergatewaysresulttypedef)\].
 
 ## DescribeClassicLinkInstancesPaginator
 
@@ -240,14 +272,14 @@ Boto3 documentation:
 
 Arguments for `DescribeClassicLinkInstancesPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClassicLinkInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeClassicLinkInstancesResultTypeDef](./type_defs.md#describeclassiclinkinstancesresulttypedef)\].
+`_PageIterator`\[[DescribeClassicLinkInstancesResultTypeDef](./type_defs.md#describeclassiclinkinstancesresulttypedef)\].
 
 ## DescribeClientVpnAuthorizationRulesPaginator
 
@@ -270,12 +302,12 @@ Arguments for `DescribeClientVpnAuthorizationRulesPaginator.paginate` method:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnAuthorizationRulesPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnAuthorizationRulesResultTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresulttypedef)\].
+`_PageIterator`\[[DescribeClientVpnAuthorizationRulesResultTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresulttypedef)\].
 
 ## DescribeClientVpnConnectionsPaginator
 
@@ -297,13 +329,13 @@ Boto3 documentation:
 Arguments for `DescribeClientVpnConnectionsPaginator.paginate` method:
 
 - `ClientVpnEndpointId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnConnectionsPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnConnectionsResultTypeDef](./type_defs.md#describeclientvpnconnectionsresulttypedef)\].
+`_PageIterator`\[[DescribeClientVpnConnectionsResultTypeDef](./type_defs.md#describeclientvpnconnectionsresulttypedef)\].
 
 ## DescribeClientVpnEndpointsPaginator
 
@@ -324,14 +356,14 @@ Boto3 documentation:
 
 Arguments for `DescribeClientVpnEndpointsPaginator.paginate` method:
 
-- `ClientVpnEndpointIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ClientVpnEndpointIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnEndpointsPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnEndpointsResultTypeDef](./type_defs.md#describeclientvpnendpointsresulttypedef)\].
+`_PageIterator`\[[DescribeClientVpnEndpointsResultTypeDef](./type_defs.md#describeclientvpnendpointsresulttypedef)\].
 
 ## DescribeClientVpnRoutesPaginator
 
@@ -353,13 +385,13 @@ Boto3 documentation:
 Arguments for `DescribeClientVpnRoutesPaginator.paginate` method:
 
 - `ClientVpnEndpointId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnRoutesPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnRoutesResultTypeDef](./type_defs.md#describeclientvpnroutesresulttypedef)\].
+`_PageIterator`\[[DescribeClientVpnRoutesResultTypeDef](./type_defs.md#describeclientvpnroutesresulttypedef)\].
 
 ## DescribeClientVpnTargetNetworksPaginator
 
@@ -381,14 +413,14 @@ Boto3 documentation:
 Arguments for `DescribeClientVpnTargetNetworksPaginator.paginate` method:
 
 - `ClientVpnEndpointId`: `str` *(required)*
-- `AssociationIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `AssociationIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnTargetNetworksPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnTargetNetworksResultTypeDef](./type_defs.md#describeclientvpntargetnetworksresulttypedef)\].
+`_PageIterator`\[[DescribeClientVpnTargetNetworksResultTypeDef](./type_defs.md#describeclientvpntargetnetworksresulttypedef)\].
 
 ## DescribeCoipPoolsPaginator
 
@@ -409,14 +441,14 @@ Boto3 documentation:
 
 Arguments for `DescribeCoipPoolsPaginator.paginate` method:
 
-- `PoolIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PoolIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCoipPoolsPaginator.paginate` returns
-`Iterator`\[[DescribeCoipPoolsResultTypeDef](./type_defs.md#describecoippoolsresulttypedef)\].
+`_PageIterator`\[[DescribeCoipPoolsResultTypeDef](./type_defs.md#describecoippoolsresulttypedef)\].
 
 ## DescribeDhcpOptionsPaginator
 
@@ -437,14 +469,14 @@ Boto3 documentation:
 
 Arguments for `DescribeDhcpOptionsPaginator.paginate` method:
 
-- `DhcpOptionsIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DhcpOptionsIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDhcpOptionsPaginator.paginate` returns
-`Iterator`\[[DescribeDhcpOptionsResultTypeDef](./type_defs.md#describedhcpoptionsresulttypedef)\].
+`_PageIterator`\[[DescribeDhcpOptionsResultTypeDef](./type_defs.md#describedhcpoptionsresulttypedef)\].
 
 ## DescribeEgressOnlyInternetGatewaysPaginator
 
@@ -466,13 +498,13 @@ Boto3 documentation:
 Arguments for `DescribeEgressOnlyInternetGatewaysPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `EgressOnlyInternetGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `EgressOnlyInternetGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEgressOnlyInternetGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeEgressOnlyInternetGatewaysResultTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresulttypedef)\].
+`_PageIterator`\[[DescribeEgressOnlyInternetGatewaysResultTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresulttypedef)\].
 
 ## DescribeExportImageTasksPaginator
 
@@ -494,13 +526,13 @@ Boto3 documentation:
 Arguments for `DescribeExportImageTasksPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ExportImageTaskIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ExportImageTaskIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeExportImageTasksPaginator.paginate` returns
-`Iterator`\[[DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef)\].
+`_PageIterator`\[[DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef)\].
 
 ## DescribeFastSnapshotRestoresPaginator
 
@@ -521,13 +553,13 @@ Boto3 documentation:
 
 Arguments for `DescribeFastSnapshotRestoresPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFastSnapshotRestoresPaginator.paginate` returns
-`Iterator`\[[DescribeFastSnapshotRestoresResultTypeDef](./type_defs.md#describefastsnapshotrestoresresulttypedef)\].
+`_PageIterator`\[[DescribeFastSnapshotRestoresResultTypeDef](./type_defs.md#describefastsnapshotrestoresresulttypedef)\].
 
 ## DescribeFleetsPaginator
 
@@ -548,13 +580,13 @@ Boto3 documentation:
 Arguments for `DescribeFleetsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `FleetIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FleetIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetsPaginator.paginate` returns
-`Iterator`\[[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)\].
+`_PageIterator`\[[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)\].
 
 ## DescribeFlowLogsPaginator
 
@@ -575,13 +607,13 @@ Boto3 documentation:
 Arguments for `DescribeFlowLogsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `FlowLogIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FlowLogIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFlowLogsPaginator.paginate` returns
-`Iterator`\[[DescribeFlowLogsResultTypeDef](./type_defs.md#describeflowlogsresulttypedef)\].
+`_PageIterator`\[[DescribeFlowLogsResultTypeDef](./type_defs.md#describeflowlogsresulttypedef)\].
 
 ## DescribeFpgaImagesPaginator
 
@@ -603,14 +635,14 @@ Boto3 documentation:
 Arguments for `DescribeFpgaImagesPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `FpgaImageIds`: `List`\[`str`\]
-- `Owners`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FpgaImageIds`: `Sequence`\[`str`\]
+- `Owners`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFpgaImagesPaginator.paginate` returns
-`Iterator`\[[DescribeFpgaImagesResultTypeDef](./type_defs.md#describefpgaimagesresulttypedef)\].
+`_PageIterator`\[[DescribeFpgaImagesResultTypeDef](./type_defs.md#describefpgaimagesresulttypedef)\].
 
 ## DescribeHostReservationOfferingsPaginator
 
@@ -631,7 +663,7 @@ Boto3 documentation:
 
 Arguments for `DescribeHostReservationOfferingsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxDuration`: `int`
 - `MinDuration`: `int`
 - `OfferingId`: `str`
@@ -639,7 +671,7 @@ Arguments for `DescribeHostReservationOfferingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHostReservationOfferingsPaginator.paginate` returns
-`Iterator`\[[DescribeHostReservationOfferingsResultTypeDef](./type_defs.md#describehostreservationofferingsresulttypedef)\].
+`_PageIterator`\[[DescribeHostReservationOfferingsResultTypeDef](./type_defs.md#describehostreservationofferingsresulttypedef)\].
 
 ## DescribeHostReservationsPaginator
 
@@ -660,13 +692,13 @@ Boto3 documentation:
 
 Arguments for `DescribeHostReservationsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `HostReservationIdSet`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `HostReservationIdSet`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHostReservationsPaginator.paginate` returns
-`Iterator`\[[DescribeHostReservationsResultTypeDef](./type_defs.md#describehostreservationsresulttypedef)\].
+`_PageIterator`\[[DescribeHostReservationsResultTypeDef](./type_defs.md#describehostreservationsresulttypedef)\].
 
 ## DescribeHostsPaginator
 
@@ -686,13 +718,13 @@ Boto3 documentation:
 
 Arguments for `DescribeHostsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `HostIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `HostIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHostsPaginator.paginate` returns
-`Iterator`\[[DescribeHostsResultTypeDef](./type_defs.md#describehostsresulttypedef)\].
+`_PageIterator`\[[DescribeHostsResultTypeDef](./type_defs.md#describehostsresulttypedef)\].
 
 ## DescribeIamInstanceProfileAssociationsPaginator
 
@@ -714,13 +746,13 @@ Boto3 documentation:
 Arguments for `DescribeIamInstanceProfileAssociationsPaginator.paginate`
 method:
 
-- `AssociationIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `AssociationIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeIamInstanceProfileAssociationsPaginator.paginate` returns
-`Iterator`\[[DescribeIamInstanceProfileAssociationsResultTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresulttypedef)\].
+`_PageIterator`\[[DescribeIamInstanceProfileAssociationsResultTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresulttypedef)\].
 
 ## DescribeImportImageTasksPaginator
 
@@ -742,13 +774,13 @@ Boto3 documentation:
 Arguments for `DescribeImportImageTasksPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImportTaskIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImportTaskIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImportImageTasksPaginator.paginate` returns
-`Iterator`\[[DescribeImportImageTasksResultTypeDef](./type_defs.md#describeimportimagetasksresulttypedef)\].
+`_PageIterator`\[[DescribeImportImageTasksResultTypeDef](./type_defs.md#describeimportimagetasksresulttypedef)\].
 
 ## DescribeImportSnapshotTasksPaginator
 
@@ -770,13 +802,13 @@ Boto3 documentation:
 Arguments for `DescribeImportSnapshotTasksPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImportTaskIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImportTaskIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImportSnapshotTasksPaginator.paginate` returns
-`Iterator`\[[DescribeImportSnapshotTasksResultTypeDef](./type_defs.md#describeimportsnapshottasksresulttypedef)\].
+`_PageIterator`\[[DescribeImportSnapshotTasksResultTypeDef](./type_defs.md#describeimportsnapshottasksresulttypedef)\].
 
 ## DescribeInstanceCreditSpecificationsPaginator
 
@@ -798,13 +830,41 @@ Boto3 documentation:
 Arguments for `DescribeInstanceCreditSpecificationsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceCreditSpecificationsPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceCreditSpecificationsResultTypeDef](./type_defs.md#describeinstancecreditspecificationsresulttypedef)\].
+`_PageIterator`\[[DescribeInstanceCreditSpecificationsResultTypeDef](./type_defs.md#describeinstancecreditspecificationsresulttypedef)\].
+
+## DescribeInstanceEventWindowsPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_instance_event_windows")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeInstanceEventWindowsPaginator
+
+def get_describe_instance_event_windows_paginator() -> DescribeInstanceEventWindowsPaginator:
+    return boto3.client("ec2").get_paginator("describe_instance_event_windows")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeInstanceEventWindows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceEventWindows)
+
+Arguments for `DescribeInstanceEventWindowsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `InstanceEventWindowIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeInstanceEventWindowsPaginator.paginate` returns
+`_PageIterator`\[[DescribeInstanceEventWindowsResultTypeDef](./type_defs.md#describeinstanceeventwindowsresulttypedef)\].
 
 ## DescribeInstanceStatusPaginator
 
@@ -825,15 +885,15 @@ Boto3 documentation:
 
 Arguments for `DescribeInstanceStatusPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `IncludeAllInstances`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceStatusPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceStatusResultTypeDef](./type_defs.md#describeinstancestatusresulttypedef)\].
+`_PageIterator`\[[DescribeInstanceStatusResultTypeDef](./type_defs.md#describeinstancestatusresulttypedef)\].
 
 ## DescribeInstanceTypeOfferingsPaginator
 
@@ -856,12 +916,12 @@ Arguments for `DescribeInstanceTypeOfferingsPaginator.paginate` method:
 
 - `DryRun`: `bool`
 - `LocationType`: [LocationTypeType](./literals.md#locationtypetype)
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceTypeOfferingsPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceTypeOfferingsResultTypeDef](./type_defs.md#describeinstancetypeofferingsresulttypedef)\].
+`_PageIterator`\[[DescribeInstanceTypeOfferingsResultTypeDef](./type_defs.md#describeinstancetypeofferingsresulttypedef)\].
 
 ## DescribeInstanceTypesPaginator
 
@@ -883,13 +943,14 @@ Boto3 documentation:
 Arguments for `DescribeInstanceTypesPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `InstanceTypes`: `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceTypes`:
+  `Sequence`\[[InstanceTypeType](./literals.md#instancetypetype)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceTypesPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceTypesResultTypeDef](./type_defs.md#describeinstancetypesresulttypedef)\].
+`_PageIterator`\[[DescribeInstanceTypesResultTypeDef](./type_defs.md#describeinstancetypesresulttypedef)\].
 
 ## DescribeInstancesPaginator
 
@@ -909,14 +970,14 @@ Boto3 documentation:
 
 Arguments for `DescribeInstancesPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef)\].
+`_PageIterator`\[[DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef)\].
 
 ## DescribeInternetGatewaysPaginator
 
@@ -937,14 +998,14 @@ Boto3 documentation:
 
 Arguments for `DescribeInternetGatewaysPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `InternetGatewayIds`: `List`\[`str`\]
+- `InternetGatewayIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInternetGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef)\].
+`_PageIterator`\[[DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef)\].
 
 ## DescribeIpv6PoolsPaginator
 
@@ -965,14 +1026,14 @@ Boto3 documentation:
 
 Arguments for `DescribeIpv6PoolsPaginator.paginate` method:
 
-- `PoolIds`: `List`\[`str`\]
+- `PoolIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeIpv6PoolsPaginator.paginate` returns
-`Iterator`\[[DescribeIpv6PoolsResultTypeDef](./type_defs.md#describeipv6poolsresulttypedef)\].
+`_PageIterator`\[[DescribeIpv6PoolsResultTypeDef](./type_defs.md#describeipv6poolsresulttypedef)\].
 
 ## DescribeLaunchTemplateVersionsPaginator
 
@@ -996,15 +1057,15 @@ Arguments for `DescribeLaunchTemplateVersionsPaginator.paginate` method:
 - `DryRun`: `bool`
 - `LaunchTemplateId`: `str`
 - `LaunchTemplateName`: `str`
-- `Versions`: `List`\[`str`\]
+- `Versions`: `Sequence`\[`str`\]
 - `MinVersion`: `str`
 - `MaxVersion`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLaunchTemplateVersionsPaginator.paginate` returns
-`Iterator`\[[DescribeLaunchTemplateVersionsResultTypeDef](./type_defs.md#describelaunchtemplateversionsresulttypedef)\].
+`_PageIterator`\[[DescribeLaunchTemplateVersionsResultTypeDef](./type_defs.md#describelaunchtemplateversionsresulttypedef)\].
 
 ## DescribeLaunchTemplatesPaginator
 
@@ -1026,14 +1087,14 @@ Boto3 documentation:
 Arguments for `DescribeLaunchTemplatesPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `LaunchTemplateIds`: `List`\[`str`\]
-- `LaunchTemplateNames`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LaunchTemplateIds`: `Sequence`\[`str`\]
+- `LaunchTemplateNames`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLaunchTemplatesPaginator.paginate` returns
-`Iterator`\[[DescribeLaunchTemplatesResultTypeDef](./type_defs.md#describelaunchtemplatesresulttypedef)\].
+`_PageIterator`\[[DescribeLaunchTemplatesResultTypeDef](./type_defs.md#describelaunchtemplatesresulttypedef)\].
 
 ## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator
 
@@ -1056,15 +1117,16 @@ Arguments for
 `DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator.paginate`
 method:
 
-- `LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds`:
+  `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator.paginate`
 returns
-`Iterator`\[[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef)\].
+`_PageIterator`\[[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef)\].
 
 ## DescribeLocalGatewayRouteTableVpcAssociationsPaginator
 
@@ -1086,14 +1148,14 @@ Boto3 documentation:
 Arguments for `DescribeLocalGatewayRouteTableVpcAssociationsPaginator.paginate`
 method:
 
-- `LocalGatewayRouteTableVpcAssociationIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayRouteTableVpcAssociationIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayRouteTableVpcAssociationsPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresulttypedef)\].
+`_PageIterator`\[[DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresulttypedef)\].
 
 ## DescribeLocalGatewayRouteTablesPaginator
 
@@ -1114,14 +1176,14 @@ Boto3 documentation:
 
 Arguments for `DescribeLocalGatewayRouteTablesPaginator.paginate` method:
 
-- `LocalGatewayRouteTableIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayRouteTableIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayRouteTablesPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewayRouteTablesResultTypeDef](./type_defs.md#describelocalgatewayroutetablesresulttypedef)\].
+`_PageIterator`\[[DescribeLocalGatewayRouteTablesResultTypeDef](./type_defs.md#describelocalgatewayroutetablesresulttypedef)\].
 
 ## DescribeLocalGatewayVirtualInterfaceGroupsPaginator
 
@@ -1143,14 +1205,14 @@ Boto3 documentation:
 Arguments for `DescribeLocalGatewayVirtualInterfaceGroupsPaginator.paginate`
 method:
 
-- `LocalGatewayVirtualInterfaceGroupIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayVirtualInterfaceGroupIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayVirtualInterfaceGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresulttypedef)\].
+`_PageIterator`\[[DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresulttypedef)\].
 
 ## DescribeLocalGatewayVirtualInterfacesPaginator
 
@@ -1171,14 +1233,14 @@ Boto3 documentation:
 
 Arguments for `DescribeLocalGatewayVirtualInterfacesPaginator.paginate` method:
 
-- `LocalGatewayVirtualInterfaceIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayVirtualInterfaceIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayVirtualInterfacesPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewayVirtualInterfacesResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresulttypedef)\].
+`_PageIterator`\[[DescribeLocalGatewayVirtualInterfacesResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresulttypedef)\].
 
 ## DescribeLocalGatewaysPaginator
 
@@ -1199,14 +1261,14 @@ Boto3 documentation:
 
 Arguments for `DescribeLocalGatewaysPaginator.paginate` method:
 
-- `LocalGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewaysResultTypeDef](./type_defs.md#describelocalgatewaysresulttypedef)\].
+`_PageIterator`\[[DescribeLocalGatewaysResultTypeDef](./type_defs.md#describelocalgatewaysresulttypedef)\].
 
 ## DescribeManagedPrefixListsPaginator
 
@@ -1228,13 +1290,13 @@ Boto3 documentation:
 Arguments for `DescribeManagedPrefixListsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PrefixListIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PrefixListIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeManagedPrefixListsPaginator.paginate` returns
-`Iterator`\[[DescribeManagedPrefixListsResultTypeDef](./type_defs.md#describemanagedprefixlistsresulttypedef)\].
+`_PageIterator`\[[DescribeManagedPrefixListsResultTypeDef](./type_defs.md#describemanagedprefixlistsresulttypedef)\].
 
 ## DescribeMovingAddressesPaginator
 
@@ -1255,14 +1317,14 @@ Boto3 documentation:
 
 Arguments for `DescribeMovingAddressesPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `PublicIps`: `List`\[`str`\]
+- `PublicIps`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMovingAddressesPaginator.paginate` returns
-`Iterator`\[[DescribeMovingAddressesResultTypeDef](./type_defs.md#describemovingaddressesresulttypedef)\].
+`_PageIterator`\[[DescribeMovingAddressesResultTypeDef](./type_defs.md#describemovingaddressesresulttypedef)\].
 
 ## DescribeNatGatewaysPaginator
 
@@ -1284,13 +1346,13 @@ Boto3 documentation:
 Arguments for `DescribeNatGatewaysPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `NatGatewayIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NatGatewayIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNatGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeNatGatewaysResultTypeDef](./type_defs.md#describenatgatewaysresulttypedef)\].
+`_PageIterator`\[[DescribeNatGatewaysResultTypeDef](./type_defs.md#describenatgatewaysresulttypedef)\].
 
 ## DescribeNetworkAclsPaginator
 
@@ -1311,14 +1373,14 @@ Boto3 documentation:
 
 Arguments for `DescribeNetworkAclsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `NetworkAclIds`: `List`\[`str`\]
+- `NetworkAclIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkAclsPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef)\].
+`_PageIterator`\[[DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef)\].
 
 ## DescribeNetworkInsightsAnalysesPaginator
 
@@ -1339,17 +1401,17 @@ Boto3 documentation:
 
 Arguments for `DescribeNetworkInsightsAnalysesPaginator.paginate` method:
 
-- `NetworkInsightsAnalysisIds`: `List`\[`str`\]
+- `NetworkInsightsAnalysisIds`: `Sequence`\[`str`\]
 - `NetworkInsightsPathId`: `str`
 - `AnalysisStartTime`: `Union`\[`datetime`, `str`\]
 - `AnalysisEndTime`: `Union`\[`datetime`, `str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkInsightsAnalysesPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkInsightsAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsanalysesresulttypedef)\].
+`_PageIterator`\[[DescribeNetworkInsightsAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsanalysesresulttypedef)\].
 
 ## DescribeNetworkInsightsPathsPaginator
 
@@ -1370,14 +1432,14 @@ Boto3 documentation:
 
 Arguments for `DescribeNetworkInsightsPathsPaginator.paginate` method:
 
-- `NetworkInsightsPathIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NetworkInsightsPathIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkInsightsPathsPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkInsightsPathsResultTypeDef](./type_defs.md#describenetworkinsightspathsresulttypedef)\].
+`_PageIterator`\[[DescribeNetworkInsightsPathsResultTypeDef](./type_defs.md#describenetworkinsightspathsresulttypedef)\].
 
 ## DescribeNetworkInterfacePermissionsPaginator
 
@@ -1398,13 +1460,13 @@ Boto3 documentation:
 
 Arguments for `DescribeNetworkInterfacePermissionsPaginator.paginate` method:
 
-- `NetworkInterfacePermissionIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NetworkInterfacePermissionIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkInterfacePermissionsPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkInterfacePermissionsResultTypeDef](./type_defs.md#describenetworkinterfacepermissionsresulttypedef)\].
+`_PageIterator`\[[DescribeNetworkInterfacePermissionsResultTypeDef](./type_defs.md#describenetworkinterfacepermissionsresulttypedef)\].
 
 ## DescribeNetworkInterfacesPaginator
 
@@ -1425,14 +1487,14 @@ Boto3 documentation:
 
 Arguments for `DescribeNetworkInterfacesPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkInterfacesPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkInterfacesResultTypeDef](./type_defs.md#describenetworkinterfacesresulttypedef)\].
+`_PageIterator`\[[DescribeNetworkInterfacesResultTypeDef](./type_defs.md#describenetworkinterfacesresulttypedef)\].
 
 ## DescribePrefixListsPaginator
 
@@ -1454,13 +1516,13 @@ Boto3 documentation:
 Arguments for `DescribePrefixListsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PrefixListIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PrefixListIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePrefixListsPaginator.paginate` returns
-`Iterator`\[[DescribePrefixListsResultTypeDef](./type_defs.md#describeprefixlistsresulttypedef)\].
+`_PageIterator`\[[DescribePrefixListsResultTypeDef](./type_defs.md#describeprefixlistsresulttypedef)\].
 
 ## DescribePrincipalIdFormatPaginator
 
@@ -1482,12 +1544,12 @@ Boto3 documentation:
 Arguments for `DescribePrincipalIdFormatPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Resources`: `List`\[`str`\]
+- `Resources`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePrincipalIdFormatPaginator.paginate` returns
-`Iterator`\[[DescribePrincipalIdFormatResultTypeDef](./type_defs.md#describeprincipalidformatresulttypedef)\].
+`_PageIterator`\[[DescribePrincipalIdFormatResultTypeDef](./type_defs.md#describeprincipalidformatresulttypedef)\].
 
 ## DescribePublicIpv4PoolsPaginator
 
@@ -1508,13 +1570,13 @@ Boto3 documentation:
 
 Arguments for `DescribePublicIpv4PoolsPaginator.paginate` method:
 
-- `PoolIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PoolIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePublicIpv4PoolsPaginator.paginate` returns
-`Iterator`\[[DescribePublicIpv4PoolsResultTypeDef](./type_defs.md#describepublicipv4poolsresulttypedef)\].
+`_PageIterator`\[[DescribePublicIpv4PoolsResultTypeDef](./type_defs.md#describepublicipv4poolsresulttypedef)\].
 
 ## DescribeReplaceRootVolumeTasksPaginator
 
@@ -1535,14 +1597,14 @@ Boto3 documentation:
 
 Arguments for `DescribeReplaceRootVolumeTasksPaginator.paginate` method:
 
-- `ReplaceRootVolumeTaskIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ReplaceRootVolumeTaskIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReplaceRootVolumeTasksPaginator.paginate` returns
-`Iterator`\[[DescribeReplaceRootVolumeTasksResultTypeDef](./type_defs.md#describereplacerootvolumetasksresulttypedef)\].
+`_PageIterator`\[[DescribeReplaceRootVolumeTasksResultTypeDef](./type_defs.md#describereplacerootvolumetasksresulttypedef)\].
 
 ## DescribeReservedInstancesModificationsPaginator
 
@@ -1564,13 +1626,13 @@ Boto3 documentation:
 Arguments for `DescribeReservedInstancesModificationsPaginator.paginate`
 method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ReservedInstancesModificationIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ReservedInstancesModificationIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedInstancesModificationsPaginator.paginate` returns
-`Iterator`\[[DescribeReservedInstancesModificationsResultTypeDef](./type_defs.md#describereservedinstancesmodificationsresulttypedef)\].
+`_PageIterator`\[[DescribeReservedInstancesModificationsResultTypeDef](./type_defs.md#describereservedinstancesmodificationsresulttypedef)\].
 
 ## DescribeReservedInstancesOfferingsPaginator
 
@@ -1592,7 +1654,7 @@ Boto3 documentation:
 Arguments for `DescribeReservedInstancesOfferingsPaginator.paginate` method:
 
 - `AvailabilityZone`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `IncludeMarketplace`: `bool`
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `MaxDuration`: `int`
@@ -1601,7 +1663,7 @@ Arguments for `DescribeReservedInstancesOfferingsPaginator.paginate` method:
 - `OfferingClass`: [OfferingClassTypeType](./literals.md#offeringclasstypetype)
 - `ProductDescription`:
   [RIProductDescriptionType](./literals.md#riproductdescriptiontype)
-- `ReservedInstancesOfferingIds`: `List`\[`str`\]
+- `ReservedInstancesOfferingIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `OfferingType`:
@@ -1610,7 +1672,7 @@ Arguments for `DescribeReservedInstancesOfferingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedInstancesOfferingsPaginator.paginate` returns
-`Iterator`\[[DescribeReservedInstancesOfferingsResultTypeDef](./type_defs.md#describereservedinstancesofferingsresulttypedef)\].
+`_PageIterator`\[[DescribeReservedInstancesOfferingsResultTypeDef](./type_defs.md#describereservedinstancesofferingsresulttypedef)\].
 
 ## DescribeRouteTablesPaginator
 
@@ -1631,14 +1693,14 @@ Boto3 documentation:
 
 Arguments for `DescribeRouteTablesPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `RouteTableIds`: `List`\[`str`\]
+- `RouteTableIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRouteTablesPaginator.paginate` returns
-`Iterator`\[[DescribeRouteTablesResultTypeDef](./type_defs.md#describeroutetablesresulttypedef)\].
+`_PageIterator`\[[DescribeRouteTablesResultTypeDef](./type_defs.md#describeroutetablesresulttypedef)\].
 
 ## DescribeScheduledInstanceAvailabilityPaginator
 
@@ -1666,14 +1728,14 @@ Arguments for `DescribeScheduledInstanceAvailabilityPaginator.paginate` method:
   [ScheduledInstanceRecurrenceRequestTypeDef](./type_defs.md#scheduledinstancerecurrencerequesttypedef)
   *(required)*
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxSlotDurationInHours`: `int`
 - `MinSlotDurationInHours`: `int`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledInstanceAvailabilityPaginator.paginate` returns
-`Iterator`\[[DescribeScheduledInstanceAvailabilityResultTypeDef](./type_defs.md#describescheduledinstanceavailabilityresulttypedef)\].
+`_PageIterator`\[[DescribeScheduledInstanceAvailabilityResultTypeDef](./type_defs.md#describescheduledinstanceavailabilityresulttypedef)\].
 
 ## DescribeScheduledInstancesPaginator
 
@@ -1695,15 +1757,15 @@ Boto3 documentation:
 Arguments for `DescribeScheduledInstancesPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ScheduledInstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ScheduledInstanceIds`: `Sequence`\[`str`\]
 - `SlotStartTimeRange`:
   [SlotStartTimeRangeRequestTypeDef](./type_defs.md#slotstarttimerangerequesttypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeScheduledInstancesResultTypeDef](./type_defs.md#describescheduledinstancesresulttypedef)\].
+`_PageIterator`\[[DescribeScheduledInstancesResultTypeDef](./type_defs.md#describescheduledinstancesresulttypedef)\].
 
 ## DescribeSecurityGroupRulesPaginator
 
@@ -1724,14 +1786,14 @@ Boto3 documentation:
 
 Arguments for `DescribeSecurityGroupRulesPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SecurityGroupRuleIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SecurityGroupRuleIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSecurityGroupRulesPaginator.paginate` returns
-`Iterator`\[[DescribeSecurityGroupRulesResultTypeDef](./type_defs.md#describesecuritygrouprulesresulttypedef)\].
+`_PageIterator`\[[DescribeSecurityGroupRulesResultTypeDef](./type_defs.md#describesecuritygrouprulesresulttypedef)\].
 
 ## DescribeSecurityGroupsPaginator
 
@@ -1752,15 +1814,15 @@ Boto3 documentation:
 
 Arguments for `DescribeSecurityGroupsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `GroupIds`: `List`\[`str`\]
-- `GroupNames`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `GroupIds`: `Sequence`\[`str`\]
+- `GroupNames`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeSecurityGroupsResultTypeDef](./type_defs.md#describesecuritygroupsresulttypedef)\].
+`_PageIterator`\[[DescribeSecurityGroupsResultTypeDef](./type_defs.md#describesecuritygroupsresulttypedef)\].
 
 ## DescribeSnapshotsPaginator
 
@@ -1780,16 +1842,16 @@ Boto3 documentation:
 
 Arguments for `DescribeSnapshotsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `OwnerIds`: `List`\[`str`\]
-- `RestorableByUserIds`: `List`\[`str`\]
-- `SnapshotIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `OwnerIds`: `Sequence`\[`str`\]
+- `RestorableByUserIds`: `Sequence`\[`str`\]
+- `SnapshotIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSnapshotsPaginator.paginate` returns
-`Iterator`\[[DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef)\].
+`_PageIterator`\[[DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef)\].
 
 ## DescribeSpotFleetInstancesPaginator
 
@@ -1816,7 +1878,7 @@ Arguments for `DescribeSpotFleetInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSpotFleetInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeSpotFleetInstancesResponseTypeDef](./type_defs.md#describespotfleetinstancesresponsetypedef)\].
+`_PageIterator`\[[DescribeSpotFleetInstancesResponseTypeDef](./type_defs.md#describespotfleetinstancesresponsetypedef)\].
 
 ## DescribeSpotFleetRequestsPaginator
 
@@ -1838,12 +1900,12 @@ Boto3 documentation:
 Arguments for `DescribeSpotFleetRequestsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `SpotFleetRequestIds`: `List`\[`str`\]
+- `SpotFleetRequestIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSpotFleetRequestsPaginator.paginate` returns
-`Iterator`\[[DescribeSpotFleetRequestsResponseTypeDef](./type_defs.md#describespotfleetrequestsresponsetypedef)\].
+`_PageIterator`\[[DescribeSpotFleetRequestsResponseTypeDef](./type_defs.md#describespotfleetrequestsresponsetypedef)\].
 
 ## DescribeSpotInstanceRequestsPaginator
 
@@ -1864,14 +1926,14 @@ Boto3 documentation:
 
 Arguments for `DescribeSpotInstanceRequestsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `SpotInstanceRequestIds`: `List`\[`str`\]
+- `SpotInstanceRequestIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSpotInstanceRequestsPaginator.paginate` returns
-`Iterator`\[[DescribeSpotInstanceRequestsResultTypeDef](./type_defs.md#describespotinstancerequestsresulttypedef)\].
+`_PageIterator`\[[DescribeSpotInstanceRequestsResultTypeDef](./type_defs.md#describespotinstancerequestsresulttypedef)\].
 
 ## DescribeSpotPriceHistoryPaginator
 
@@ -1892,18 +1954,19 @@ Boto3 documentation:
 
 Arguments for `DescribeSpotPriceHistoryPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `AvailabilityZone`: `str`
 - `DryRun`: `bool`
 - `EndTime`: `Union`\[`datetime`, `str`\]
-- `InstanceTypes`: `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
-- `ProductDescriptions`: `List`\[`str`\]
+- `InstanceTypes`:
+  `Sequence`\[[InstanceTypeType](./literals.md#instancetypetype)\]
+- `ProductDescriptions`: `Sequence`\[`str`\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSpotPriceHistoryPaginator.paginate` returns
-`Iterator`\[[DescribeSpotPriceHistoryResultTypeDef](./type_defs.md#describespotpricehistoryresulttypedef)\].
+`_PageIterator`\[[DescribeSpotPriceHistoryResultTypeDef](./type_defs.md#describespotpricehistoryresulttypedef)\].
 
 ## DescribeStaleSecurityGroupsPaginator
 
@@ -1930,7 +1993,7 @@ Arguments for `DescribeStaleSecurityGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStaleSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeStaleSecurityGroupsResultTypeDef](./type_defs.md#describestalesecuritygroupsresulttypedef)\].
+`_PageIterator`\[[DescribeStaleSecurityGroupsResultTypeDef](./type_defs.md#describestalesecuritygroupsresulttypedef)\].
 
 ## DescribeStoreImageTasksPaginator
 
@@ -1951,14 +2014,14 @@ Boto3 documentation:
 
 Arguments for `DescribeStoreImageTasksPaginator.paginate` method:
 
-- `ImageIds`: `List`\[`str`\]
+- `ImageIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStoreImageTasksPaginator.paginate` returns
-`Iterator`\[[DescribeStoreImageTasksResultTypeDef](./type_defs.md#describestoreimagetasksresulttypedef)\].
+`_PageIterator`\[[DescribeStoreImageTasksResultTypeDef](./type_defs.md#describestoreimagetasksresulttypedef)\].
 
 ## DescribeSubnetsPaginator
 
@@ -1978,14 +2041,14 @@ Boto3 documentation:
 
 Arguments for `DescribeSubnetsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SubnetIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSubnetsPaginator.paginate` returns
-`Iterator`\[[DescribeSubnetsResultTypeDef](./type_defs.md#describesubnetsresulttypedef)\].
+`_PageIterator`\[[DescribeSubnetsResultTypeDef](./type_defs.md#describesubnetsresulttypedef)\].
 
 ## DescribeTagsPaginator
 
@@ -2006,12 +2069,12 @@ Boto3 documentation:
 Arguments for `DescribeTagsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTagsPaginator.paginate` returns
-`Iterator`\[[DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef)\].
+`_PageIterator`\[[DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef)\].
 
 ## DescribeTrafficMirrorFiltersPaginator
 
@@ -2032,14 +2095,14 @@ Boto3 documentation:
 
 Arguments for `DescribeTrafficMirrorFiltersPaginator.paginate` method:
 
-- `TrafficMirrorFilterIds`: `List`\[`str`\]
+- `TrafficMirrorFilterIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTrafficMirrorFiltersPaginator.paginate` returns
-`Iterator`\[[DescribeTrafficMirrorFiltersResultTypeDef](./type_defs.md#describetrafficmirrorfiltersresulttypedef)\].
+`_PageIterator`\[[DescribeTrafficMirrorFiltersResultTypeDef](./type_defs.md#describetrafficmirrorfiltersresulttypedef)\].
 
 ## DescribeTrafficMirrorSessionsPaginator
 
@@ -2060,14 +2123,14 @@ Boto3 documentation:
 
 Arguments for `DescribeTrafficMirrorSessionsPaginator.paginate` method:
 
-- `TrafficMirrorSessionIds`: `List`\[`str`\]
+- `TrafficMirrorSessionIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTrafficMirrorSessionsPaginator.paginate` returns
-`Iterator`\[[DescribeTrafficMirrorSessionsResultTypeDef](./type_defs.md#describetrafficmirrorsessionsresulttypedef)\].
+`_PageIterator`\[[DescribeTrafficMirrorSessionsResultTypeDef](./type_defs.md#describetrafficmirrorsessionsresulttypedef)\].
 
 ## DescribeTrafficMirrorTargetsPaginator
 
@@ -2088,14 +2151,14 @@ Boto3 documentation:
 
 Arguments for `DescribeTrafficMirrorTargetsPaginator.paginate` method:
 
-- `TrafficMirrorTargetIds`: `List`\[`str`\]
+- `TrafficMirrorTargetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTrafficMirrorTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeTrafficMirrorTargetsResultTypeDef](./type_defs.md#describetrafficmirrortargetsresulttypedef)\].
+`_PageIterator`\[[DescribeTrafficMirrorTargetsResultTypeDef](./type_defs.md#describetrafficmirrortargetsresulttypedef)\].
 
 ## DescribeTransitGatewayAttachmentsPaginator
 
@@ -2116,14 +2179,14 @@ Boto3 documentation:
 
 Arguments for `DescribeTransitGatewayAttachmentsPaginator.paginate` method:
 
-- `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayAttachmentsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayattachmentsresulttypedef)\].
+`_PageIterator`\[[DescribeTransitGatewayAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayattachmentsresulttypedef)\].
 
 ## DescribeTransitGatewayConnectPeersPaginator
 
@@ -2144,14 +2207,14 @@ Boto3 documentation:
 
 Arguments for `DescribeTransitGatewayConnectPeersPaginator.paginate` method:
 
-- `TransitGatewayConnectPeerIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayConnectPeerIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayConnectPeersPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayConnectPeersResultTypeDef](./type_defs.md#describetransitgatewayconnectpeersresulttypedef)\].
+`_PageIterator`\[[DescribeTransitGatewayConnectPeersResultTypeDef](./type_defs.md#describetransitgatewayconnectpeersresulttypedef)\].
 
 ## DescribeTransitGatewayConnectsPaginator
 
@@ -2172,14 +2235,14 @@ Boto3 documentation:
 
 Arguments for `DescribeTransitGatewayConnectsPaginator.paginate` method:
 
-- `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayConnectsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayConnectsResultTypeDef](./type_defs.md#describetransitgatewayconnectsresulttypedef)\].
+`_PageIterator`\[[DescribeTransitGatewayConnectsResultTypeDef](./type_defs.md#describetransitgatewayconnectsresulttypedef)\].
 
 ## DescribeTransitGatewayMulticastDomainsPaginator
 
@@ -2201,14 +2264,14 @@ Boto3 documentation:
 Arguments for `DescribeTransitGatewayMulticastDomainsPaginator.paginate`
 method:
 
-- `TransitGatewayMulticastDomainIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayMulticastDomainIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayMulticastDomainsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayMulticastDomainsResultTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresulttypedef)\].
+`_PageIterator`\[[DescribeTransitGatewayMulticastDomainsResultTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresulttypedef)\].
 
 ## DescribeTransitGatewayPeeringAttachmentsPaginator
 
@@ -2230,14 +2293,14 @@ Boto3 documentation:
 Arguments for `DescribeTransitGatewayPeeringAttachmentsPaginator.paginate`
 method:
 
-- `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayPeeringAttachmentsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayPeeringAttachmentsResultTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresulttypedef)\].
+`_PageIterator`\[[DescribeTransitGatewayPeeringAttachmentsResultTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresulttypedef)\].
 
 ## DescribeTransitGatewayRouteTablesPaginator
 
@@ -2258,14 +2321,14 @@ Boto3 documentation:
 
 Arguments for `DescribeTransitGatewayRouteTablesPaginator.paginate` method:
 
-- `TransitGatewayRouteTableIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayRouteTableIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayRouteTablesPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayRouteTablesResultTypeDef](./type_defs.md#describetransitgatewayroutetablesresulttypedef)\].
+`_PageIterator`\[[DescribeTransitGatewayRouteTablesResultTypeDef](./type_defs.md#describetransitgatewayroutetablesresulttypedef)\].
 
 ## DescribeTransitGatewayVpcAttachmentsPaginator
 
@@ -2286,14 +2349,14 @@ Boto3 documentation:
 
 Arguments for `DescribeTransitGatewayVpcAttachmentsPaginator.paginate` method:
 
-- `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayVpcAttachmentsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayVpcAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresulttypedef)\].
+`_PageIterator`\[[DescribeTransitGatewayVpcAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresulttypedef)\].
 
 ## DescribeTransitGatewaysPaginator
 
@@ -2314,14 +2377,42 @@ Boto3 documentation:
 
 Arguments for `DescribeTransitGatewaysPaginator.paginate` method:
 
-- `TransitGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef)\].
+`_PageIterator`\[[DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef)\].
+
+## DescribeTrunkInterfaceAssociationsPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_trunk_interface_associations")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeTrunkInterfaceAssociationsPaginator
+
+def get_describe_trunk_interface_associations_paginator() -> DescribeTrunkInterfaceAssociationsPaginator:
+    return boto3.client("ec2").get_paginator("describe_trunk_interface_associations")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeTrunkInterfaceAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrunkInterfaceAssociations)
+
+Arguments for `DescribeTrunkInterfaceAssociationsPaginator.paginate` method:
+
+- `AssociationIds`: `Sequence`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeTrunkInterfaceAssociationsPaginator.paginate` returns
+`_PageIterator`\[[DescribeTrunkInterfaceAssociationsResultTypeDef](./type_defs.md#describetrunkinterfaceassociationsresulttypedef)\].
 
 ## DescribeVolumeStatusPaginator
 
@@ -2342,14 +2433,14 @@ Boto3 documentation:
 
 Arguments for `DescribeVolumeStatusPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VolumeIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VolumeIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVolumeStatusPaginator.paginate` returns
-`Iterator`\[[DescribeVolumeStatusResultTypeDef](./type_defs.md#describevolumestatusresulttypedef)\].
+`_PageIterator`\[[DescribeVolumeStatusResultTypeDef](./type_defs.md#describevolumestatusresulttypedef)\].
 
 ## DescribeVolumesPaginator
 
@@ -2369,14 +2460,14 @@ Boto3 documentation:
 
 Arguments for `DescribeVolumesPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VolumeIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VolumeIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVolumesPaginator.paginate` returns
-`Iterator`\[[DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef)\].
+`_PageIterator`\[[DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef)\].
 
 ## DescribeVolumesModificationsPaginator
 
@@ -2398,13 +2489,13 @@ Boto3 documentation:
 Arguments for `DescribeVolumesModificationsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `VolumeIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VolumeIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVolumesModificationsPaginator.paginate` returns
-`Iterator`\[[DescribeVolumesModificationsResultTypeDef](./type_defs.md#describevolumesmodificationsresulttypedef)\].
+`_PageIterator`\[[DescribeVolumesModificationsResultTypeDef](./type_defs.md#describevolumesmodificationsresulttypedef)\].
 
 ## DescribeVpcClassicLinkDnsSupportPaginator
 
@@ -2425,12 +2516,12 @@ Boto3 documentation:
 
 Arguments for `DescribeVpcClassicLinkDnsSupportPaginator.paginate` method:
 
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcClassicLinkDnsSupportPaginator.paginate` returns
-`Iterator`\[[DescribeVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresulttypedef)\].
+`_PageIterator`\[[DescribeVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresulttypedef)\].
 
 ## DescribeVpcEndpointConnectionNotificationsPaginator
 
@@ -2454,12 +2545,12 @@ method:
 
 - `DryRun`: `bool`
 - `ConnectionNotificationId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointConnectionNotificationsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresulttypedef)\].
+`_PageIterator`\[[DescribeVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresulttypedef)\].
 
 ## DescribeVpcEndpointConnectionsPaginator
 
@@ -2481,12 +2572,12 @@ Boto3 documentation:
 Arguments for `DescribeVpcEndpointConnectionsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointConnectionsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointConnectionsResultTypeDef](./type_defs.md#describevpcendpointconnectionsresulttypedef)\].
+`_PageIterator`\[[DescribeVpcEndpointConnectionsResultTypeDef](./type_defs.md#describevpcendpointconnectionsresulttypedef)\].
 
 ## DescribeVpcEndpointServiceConfigurationsPaginator
 
@@ -2509,13 +2600,13 @@ Arguments for `DescribeVpcEndpointServiceConfigurationsPaginator.paginate`
 method:
 
 - `DryRun`: `bool`
-- `ServiceIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ServiceIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointServiceConfigurationsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresulttypedef)\].
+`_PageIterator`\[[DescribeVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresulttypedef)\].
 
 ## DescribeVpcEndpointServicePermissionsPaginator
 
@@ -2538,12 +2629,12 @@ Arguments for `DescribeVpcEndpointServicePermissionsPaginator.paginate` method:
 
 - `ServiceId`: `str` *(required)*
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointServicePermissionsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#describevpcendpointservicepermissionsresulttypedef)\].
+`_PageIterator`\[[DescribeVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#describevpcendpointservicepermissionsresulttypedef)\].
 
 ## DescribeVpcEndpointServicesPaginator
 
@@ -2565,13 +2656,13 @@ Boto3 documentation:
 Arguments for `DescribeVpcEndpointServicesPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `ServiceNames`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ServiceNames`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointServicesPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointServicesResultTypeDef](./type_defs.md#describevpcendpointservicesresulttypedef)\].
+`_PageIterator`\[[DescribeVpcEndpointServicesResultTypeDef](./type_defs.md#describevpcendpointservicesresulttypedef)\].
 
 ## DescribeVpcEndpointsPaginator
 
@@ -2593,13 +2684,13 @@ Boto3 documentation:
 Arguments for `DescribeVpcEndpointsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `VpcEndpointIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpcEndpointIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointsResultTypeDef](./type_defs.md#describevpcendpointsresulttypedef)\].
+`_PageIterator`\[[DescribeVpcEndpointsResultTypeDef](./type_defs.md#describevpcendpointsresulttypedef)\].
 
 ## DescribeVpcPeeringConnectionsPaginator
 
@@ -2620,14 +2711,14 @@ Boto3 documentation:
 
 Arguments for `DescribeVpcPeeringConnectionsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `VpcPeeringConnectionIds`: `List`\[`str`\]
+- `VpcPeeringConnectionIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcPeeringConnectionsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcPeeringConnectionsResultTypeDef](./type_defs.md#describevpcpeeringconnectionsresulttypedef)\].
+`_PageIterator`\[[DescribeVpcPeeringConnectionsResultTypeDef](./type_defs.md#describevpcpeeringconnectionsresulttypedef)\].
 
 ## DescribeVpcsPaginator
 
@@ -2647,14 +2738,14 @@ Boto3 documentation:
 
 Arguments for `DescribeVpcsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpcIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpcIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcsResultTypeDef](./type_defs.md#describevpcsresulttypedef)\].
+`_PageIterator`\[[DescribeVpcsResultTypeDef](./type_defs.md#describevpcsresulttypedef)\].
 
 ## GetAssociatedIpv6PoolCidrsPaginator
 
@@ -2681,7 +2772,7 @@ Arguments for `GetAssociatedIpv6PoolCidrsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAssociatedIpv6PoolCidrsPaginator.paginate` returns
-`Iterator`\[[GetAssociatedIpv6PoolCidrsResultTypeDef](./type_defs.md#getassociatedipv6poolcidrsresulttypedef)\].
+`_PageIterator`\[[GetAssociatedIpv6PoolCidrsResultTypeDef](./type_defs.md#getassociatedipv6poolcidrsresulttypedef)\].
 
 ## GetGroupsForCapacityReservationPaginator
 
@@ -2708,7 +2799,7 @@ Arguments for `GetGroupsForCapacityReservationPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetGroupsForCapacityReservationPaginator.paginate` returns
-`Iterator`\[[GetGroupsForCapacityReservationResultTypeDef](./type_defs.md#getgroupsforcapacityreservationresulttypedef)\].
+`_PageIterator`\[[GetGroupsForCapacityReservationResultTypeDef](./type_defs.md#getgroupsforcapacityreservationresulttypedef)\].
 
 ## GetManagedPrefixListAssociationsPaginator
 
@@ -2735,7 +2826,7 @@ Arguments for `GetManagedPrefixListAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetManagedPrefixListAssociationsPaginator.paginate` returns
-`Iterator`\[[GetManagedPrefixListAssociationsResultTypeDef](./type_defs.md#getmanagedprefixlistassociationsresulttypedef)\].
+`_PageIterator`\[[GetManagedPrefixListAssociationsResultTypeDef](./type_defs.md#getmanagedprefixlistassociationsresulttypedef)\].
 
 ## GetManagedPrefixListEntriesPaginator
 
@@ -2763,7 +2854,7 @@ Arguments for `GetManagedPrefixListEntriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetManagedPrefixListEntriesPaginator.paginate` returns
-`Iterator`\[[GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef)\].
+`_PageIterator`\[[GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef)\].
 
 ## GetTransitGatewayAttachmentPropagationsPaginator
 
@@ -2786,13 +2877,13 @@ Arguments for `GetTransitGatewayAttachmentPropagationsPaginator.paginate`
 method:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayAttachmentPropagationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayAttachmentPropagationsResultTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresulttypedef)\].
+`_PageIterator`\[[GetTransitGatewayAttachmentPropagationsResultTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresulttypedef)\].
 
 ## GetTransitGatewayMulticastDomainAssociationsPaginator
 
@@ -2815,13 +2906,13 @@ Arguments for `GetTransitGatewayMulticastDomainAssociationsPaginator.paginate`
 method:
 
 - `TransitGatewayMulticastDomainId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayMulticastDomainAssociationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresulttypedef)\].
+`_PageIterator`\[[GetTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresulttypedef)\].
 
 ## GetTransitGatewayPrefixListReferencesPaginator
 
@@ -2843,13 +2934,13 @@ Boto3 documentation:
 Arguments for `GetTransitGatewayPrefixListReferencesPaginator.paginate` method:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayPrefixListReferencesPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayPrefixListReferencesResultTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresulttypedef)\].
+`_PageIterator`\[[GetTransitGatewayPrefixListReferencesResultTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresulttypedef)\].
 
 ## GetTransitGatewayRouteTableAssociationsPaginator
 
@@ -2872,13 +2963,13 @@ Arguments for `GetTransitGatewayRouteTableAssociationsPaginator.paginate`
 method:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayRouteTableAssociationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayRouteTableAssociationsResultTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresulttypedef)\].
+`_PageIterator`\[[GetTransitGatewayRouteTableAssociationsResultTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresulttypedef)\].
 
 ## GetTransitGatewayRouteTablePropagationsPaginator
 
@@ -2901,13 +2992,39 @@ Arguments for `GetTransitGatewayRouteTablePropagationsPaginator.paginate`
 method:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayRouteTablePropagationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef)\].
+`_PageIterator`\[[GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef)\].
+
+## GetVpnConnectionDeviceTypesPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("get_vpn_connection_device_types")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import GetVpnConnectionDeviceTypesPaginator
+
+def get_get_vpn_connection_device_types_paginator() -> GetVpnConnectionDeviceTypesPaginator:
+    return boto3.client("ec2").get_paginator("get_vpn_connection_device_types")
+```
+
+Boto3 documentation:
+[EC2.Paginator.GetVpnConnectionDeviceTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetVpnConnectionDeviceTypes)
+
+Arguments for `GetVpnConnectionDeviceTypesPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetVpnConnectionDeviceTypesPaginator.paginate` returns
+`_PageIterator`\[[GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef)\].
 
 ## SearchLocalGatewayRoutesPaginator
 
@@ -2929,14 +3046,13 @@ Boto3 documentation:
 Arguments for `SearchLocalGatewayRoutesPaginator.paginate` method:
 
 - `LocalGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-  *(required)*
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchLocalGatewayRoutesPaginator.paginate` returns
-`Iterator`\[[SearchLocalGatewayRoutesResultTypeDef](./type_defs.md#searchlocalgatewayroutesresulttypedef)\].
+`_PageIterator`\[[SearchLocalGatewayRoutesResultTypeDef](./type_defs.md#searchlocalgatewayroutesresulttypedef)\].
 
 ## SearchTransitGatewayMulticastGroupsPaginator
 
@@ -2958,10 +3074,10 @@ Boto3 documentation:
 Arguments for `SearchTransitGatewayMulticastGroupsPaginator.paginate` method:
 
 - `TransitGatewayMulticastDomainId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchTransitGatewayMulticastGroupsPaginator.paginate` returns
-`Iterator`\[[SearchTransitGatewayMulticastGroupsResultTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsresulttypedef)\].
+`_PageIterator`\[[SearchTransitGatewayMulticastGroupsResultTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsresulttypedef)\].

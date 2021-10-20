@@ -113,6 +113,8 @@ from mypy_boto3_route53domains.literals import ContactTypeType, ...
 - [ReachabilityStatusType](./literals.md#reachabilitystatustype)
 - [TransferableType](./literals.md#transferabletype)
 - [ViewBillingPaginatorName](./literals.md#viewbillingpaginatorname)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

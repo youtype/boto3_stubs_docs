@@ -405,7 +405,7 @@ Returns
 
 ### create_account_alias
 
-Creates an alias for your account.
+Creates an alias for your Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").create_account_alias` method.
 
@@ -455,7 +455,7 @@ Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `Path`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateInstanceProfileResponseTypeDef](./type_defs.md#createinstanceprofileresponsetypedef).
@@ -498,16 +498,16 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Url`: `str` *(required)*
-- `ThumbprintList`: `List`\[`str`\] *(required)*
-- `ClientIDList`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ThumbprintList`: `Sequence`\[`str`\] *(required)*
+- `ClientIDList`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateOpenIDConnectProviderResponseTypeDef](./type_defs.md#createopenidconnectproviderresponsetypedef).
 
 ### create_policy
 
-Creates a new managed policy for your account.
+Creates a new managed policy for your Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").create_policy` method.
 
@@ -523,7 +523,7 @@ Keyword-only arguments:
 - `PolicyDocument`: `str` *(required)*
 - `Path`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
@@ -551,7 +551,7 @@ Returns
 
 ### create_role
 
-Creates a new role for your account.
+Creates a new role for your Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").create_role` method.
 
@@ -569,7 +569,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `MaxSessionDuration`: `int`
 - `PermissionsBoundary`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateRoleResponseTypeDef](./type_defs.md#createroleresponsetypedef).
 
@@ -590,7 +590,7 @@ Keyword-only arguments:
 
 - `SAMLMetadataDocument`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSAMLProviderResponseTypeDef](./type_defs.md#createsamlproviderresponsetypedef).
@@ -640,7 +640,7 @@ Returns
 
 ### create_user
 
-Creates a new IAM user for your account.
+Creates a new IAM user for your Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").create_user` method.
 
@@ -655,13 +655,13 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `Path`: `str`
 - `PermissionsBoundary`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### create_virtual_mfa_device
 
-Creates a new virtual MFA device for the account.
+Creates a new virtual MFA device for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").create_virtual_mfa_device` method.
 
@@ -675,7 +675,7 @@ Keyword-only arguments:
 
 - `VirtualMFADeviceName`: `str` *(required)*
 - `Path`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateVirtualMFADeviceResponseTypeDef](./type_defs.md#createvirtualmfadeviceresponsetypedef).
@@ -717,7 +717,7 @@ Keyword-only arguments:
 
 ### delete_account_alias
 
-Deletes the specified account alias.
+Deletes the specified Amazon Web Services account alias.
 
 Type annotations for `boto3.client("iam").delete_account_alias` method.
 
@@ -733,7 +733,7 @@ Keyword-only arguments:
 
 ### delete_account_password_policy
 
-Deletes the password policy for the account.
+Deletes the password policy for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").delete_account_password_policy`
 method.
@@ -794,7 +794,8 @@ Keyword-only arguments:
 ### delete_login_profile
 
 Deletes the password for the specified IAM user, which terminates the user's
-ability to access Amazon Web Services services through the Management Console.
+ability to access Amazon Web Services services through the Amazon Web Services
+Management Console.
 
 Type annotations for `boto3.client("iam").delete_login_profile` method.
 
@@ -1150,7 +1151,7 @@ Keyword-only arguments:
 
 ### generate_credential_report
 
-Generates a credential report for the account.
+Generates a credential report for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").generate_credential_report` method.
 
@@ -1193,7 +1194,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1258,7 +1259,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filter`: `List`\[[EntityTypeType](./literals.md#entitytypetype)\]
+- `Filter`: `Sequence`\[[EntityTypeType](./literals.md#entitytypetype)\]
 - `MaxItems`: `int`
 - `Marker`: `str`
 
@@ -1267,7 +1268,7 @@ Returns
 
 ### get_account_password_policy
 
-Retrieves the password policy for the account.
+Retrieves the password policy for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").get_account_password_policy` method.
 
@@ -1305,7 +1306,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `PolicyInputList`: `List`\[`str`\] *(required)*
+- `PolicyInputList`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [GetContextKeysForPolicyResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponsetypedef).
@@ -1327,14 +1328,14 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PolicySourceArn`: `str` *(required)*
-- `PolicyInputList`: `List`\[`str`\]
+- `PolicyInputList`: `Sequence`\[`str`\]
 
 Returns
 [GetContextKeysForPolicyResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponsetypedef).
 
 ### get_credential_report
 
-Retrieves a credential report for the account.
+Retrieves a credential report for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").get_credential_report` method.
 
@@ -1742,8 +1743,8 @@ Returns
 
 ### list_account_aliases
 
-Lists the account alias associated with the account (Note: you can have only
-one).
+Lists the account alias associated with the Amazon Web Services account (Note:
+you can have only one).
 
 Type annotations for `boto3.client("iam").list_account_aliases` method.
 
@@ -2048,7 +2049,7 @@ Returns
 ### list_open_id_connect_providers
 
 Lists information about the IAM OpenID Connect (OIDC) provider resource objects
-defined in the account.
+defined in the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").list_open_id_connect_providers`
 method.
@@ -2061,9 +2062,9 @@ Returns
 
 ### list_policies
 
-Lists all the managed policies that are available in your account, including
-your own customer-defined managed policies and all Amazon Web Services managed
-policies.
+Lists all the managed policies that are available in your Amazon Web Services
+account, including your own customer-defined managed policies and all Amazon
+Web Services managed policies.
 
 Type annotations for `boto3.client("iam").list_policies` method.
 
@@ -2102,7 +2103,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `ServiceNamespaces`: `List`\[`str`\] *(required)*
+- `ServiceNamespaces`: `Sequence`\[`str`\] *(required)*
 - `Marker`: `str`
 
 Returns
@@ -2421,7 +2422,8 @@ Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
 ### list_virtual_mfa_devices
 
-Lists the virtual MFA devices defined in the account by assignment status.
+Lists the virtual MFA devices defined in the Amazon Web Services account by
+assignment status.
 
 Type annotations for `boto3.client("iam").list_virtual_mfa_devices` method.
 
@@ -2653,7 +2655,7 @@ Keyword-only arguments:
 ### set_security_token_service_preferences
 
 Sets the specified version of the global endpoint token as the token version
-used for the account.
+used for the Amazon Web Services account.
 
 Type annotations for
 `boto3.client("iam").set_security_token_service_preferences` method.
@@ -2686,15 +2688,15 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `PolicyInputList`: `List`\[`str`\] *(required)*
-- `ActionNames`: `List`\[`str`\] *(required)*
-- `PermissionsBoundaryPolicyInputList`: `List`\[`str`\]
-- `ResourceArns`: `List`\[`str`\]
+- `PolicyInputList`: `Sequence`\[`str`\] *(required)*
+- `ActionNames`: `Sequence`\[`str`\] *(required)*
+- `PermissionsBoundaryPolicyInputList`: `Sequence`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 - `ResourcePolicy`: `str`
 - `ResourceOwner`: `str`
 - `CallerArn`: `str`
 - `ContextEntries`:
-  `List`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
+  `Sequence`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
 - `ResourceHandlingOption`: `str`
 - `MaxItems`: `int`
 - `Marker`: `str`
@@ -2719,15 +2721,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PolicySourceArn`: `str` *(required)*
-- `ActionNames`: `List`\[`str`\] *(required)*
-- `PolicyInputList`: `List`\[`str`\]
-- `PermissionsBoundaryPolicyInputList`: `List`\[`str`\]
-- `ResourceArns`: `List`\[`str`\]
+- `ActionNames`: `Sequence`\[`str`\] *(required)*
+- `PolicyInputList`: `Sequence`\[`str`\]
+- `PermissionsBoundaryPolicyInputList`: `Sequence`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 - `ResourcePolicy`: `str`
 - `ResourceOwner`: `str`
 - `CallerArn`: `str`
 - `ContextEntries`:
-  `List`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
+  `Sequence`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
 - `ResourceHandlingOption`: `str`
 - `MaxItems`: `int`
 - `Marker`: `str`
@@ -2750,7 +2752,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_mfa_device
 
@@ -2768,7 +2770,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SerialNumber`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_open_id_connect_provider
 
@@ -2785,7 +2787,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_policy
 
@@ -2802,7 +2804,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_role
 
@@ -2819,7 +2821,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_saml_provider
 
@@ -2837,7 +2839,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SAMLProviderArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_server_certificate
 
@@ -2854,7 +2856,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_user
 
@@ -2871,7 +2873,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_instance_profile
 
@@ -2888,7 +2890,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### untag_mfa_device
 
@@ -2906,7 +2908,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SerialNumber`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### untag_open_id_connect_provider
 
@@ -2925,7 +2927,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### untag_policy
 
@@ -2942,7 +2944,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### untag_role
 
@@ -2959,7 +2961,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### untag_saml_provider
 
@@ -2977,7 +2979,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SAMLProviderArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### untag_server_certificate
 
@@ -2994,7 +2996,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### untag_user
 
@@ -3011,7 +3013,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_access_key
 
@@ -3034,7 +3036,7 @@ Keyword-only arguments:
 
 ### update_account_password_policy
 
-Updates the password policy settings for the account.
+Updates the password policy settings for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").update_account_password_policy`
 method.
@@ -3127,7 +3129,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
-- `ThumbprintList`: `List`\[`str`\] *(required)*
+- `ThumbprintList`: `Sequence`\[`str`\] *(required)*
 
 ### update_role
 
@@ -3284,7 +3286,7 @@ Keyword-only arguments:
 
 ### upload_server_certificate
 
-Uploads a server certificate entity for the account.
+Uploads a server certificate entity for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").upload_server_certificate` method.
 
@@ -3301,7 +3303,7 @@ Keyword-only arguments:
 - `PrivateKey`: `str` *(required)*
 - `Path`: `str`
 - `CertificateChain`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [UploadServerCertificateResponseTypeDef](./type_defs.md#uploadservercertificateresponsetypedef).

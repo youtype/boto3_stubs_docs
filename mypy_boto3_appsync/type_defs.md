@@ -60,6 +60,7 @@ type annotations stubs module
   - [GetTypeResponseTypeDef](#gettyperesponsetypedef)
   - [GraphqlApiTypeDef](#graphqlapitypedef)
   - [HttpDataSourceConfigTypeDef](#httpdatasourceconfigtypedef)
+  - [LambdaAuthorizerConfigTypeDef](#lambdaauthorizerconfigtypedef)
   - [LambdaConflictHandlerConfigTypeDef](#lambdaconflicthandlerconfigtypedef)
   - [LambdaDataSourceConfigTypeDef](#lambdadatasourceconfigtypedef)
   - [ListApiKeysRequestRequestTypeDef](#listapikeysrequestrequesttypedef)
@@ -80,6 +81,7 @@ type annotations stubs module
   - [ListTypesResponseTypeDef](#listtypesresponsetypedef)
   - [LogConfigTypeDef](#logconfigtypedef)
   - [OpenIDConnectConfigTypeDef](#openidconnectconfigtypedef)
+  - [OpenSearchServiceDataSourceConfigTypeDef](#opensearchservicedatasourceconfigtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PipelineConfigTypeDef](#pipelineconfigtypedef)
   - [RdsHttpEndpointConfigTypeDef](#rdshttpendpointconfigtypedef)
@@ -122,6 +124,8 @@ Optional fields:
   [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
 - `userPoolConfig`:
   [CognitoUserPoolConfigTypeDef](./type_defs.md#cognitouserpoolconfigtypedef)
+- `lambdaAuthorizerConfig`:
+  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
 ## ApiCacheTypeDef
 
@@ -187,7 +191,7 @@ from mypy_boto3_appsync.type_defs import CachingConfigTypeDef
 Optional fields:
 
 - `ttl`: `int`
-- `cachingKeys`: `List`\[`str`\]
+- `cachingKeys`: `Sequence`\[`str`\]
 
 ## CognitoUserPoolConfigTypeDef
 
@@ -284,6 +288,8 @@ Optional fields:
   [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - `elasticsearchConfig`:
   [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
+- `openSearchServiceConfig`:
+  [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
 - `httpConfig`:
   [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
 - `relationalDatabaseConfig`:
@@ -353,10 +359,12 @@ Optional fields:
   [UserPoolConfigTypeDef](./type_defs.md#userpoolconfigtypedef)
 - `openIDConnectConfig`:
   [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `additionalAuthenticationProviders`:
-  `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
+  `Sequence`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
+- `lambdaAuthorizerConfig`:
+  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
 ## CreateGraphqlApiResponseTypeDef
 
@@ -448,6 +456,8 @@ Optional fields:
   [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - `elasticsearchConfig`:
   [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
+- `openSearchServiceConfig`:
+  [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
 - `httpConfig`:
   [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
 - `relationalDatabaseConfig`:
@@ -811,6 +821,8 @@ Optional fields:
   `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
 - `wafWebAclArn`: `str`
+- `lambdaAuthorizerConfig`:
+  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
 ## HttpDataSourceConfigTypeDef
 
@@ -823,6 +835,21 @@ Optional fields:
 - `endpoint`: `str`
 - `authorizationConfig`:
   [AuthorizationConfigTypeDef](./type_defs.md#authorizationconfigtypedef)
+
+## LambdaAuthorizerConfigTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import LambdaAuthorizerConfigTypeDef
+```
+
+Required fields:
+
+- `authorizerUri`: `str`
+
+Optional fields:
+
+- `authorizerResultTtlInSeconds`: `int`
+- `identityValidationExpression`: `str`
 
 ## LambdaConflictHandlerConfigTypeDef
 
@@ -1095,6 +1122,17 @@ Optional fields:
 - `iatTTL`: `int`
 - `authTTL`: `int`
 
+## OpenSearchServiceDataSourceConfigTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import OpenSearchServiceDataSourceConfigTypeDef
+```
+
+Required fields:
+
+- `endpoint`: `str`
+- `awsRegion`: `str`
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1115,7 +1153,7 @@ from mypy_boto3_appsync.type_defs import PipelineConfigTypeDef
 
 Optional fields:
 
-- `functions`: `List`\[`str`\]
+- `functions`: `Sequence`\[`str`\]
 
 ## RdsHttpEndpointConfigTypeDef
 
@@ -1225,7 +1263,7 @@ from mypy_boto3_appsync.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TypeTypeDef
 
@@ -1250,7 +1288,7 @@ from mypy_boto3_appsync.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApiCacheRequestRequestTypeDef
 
@@ -1328,6 +1366,8 @@ Optional fields:
   [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - `elasticsearchConfig`:
   [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
+- `openSearchServiceConfig`:
+  [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
 - `httpConfig`:
   [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
 - `relationalDatabaseConfig`:
@@ -1400,8 +1440,10 @@ Optional fields:
 - `openIDConnectConfig`:
   [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
 - `additionalAuthenticationProviders`:
-  `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
+  `Sequence`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
+- `lambdaAuthorizerConfig`:
+  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
 ## UpdateGraphqlApiResponseTypeDef
 

@@ -10,6 +10,11 @@ type annotations stubs module
 - [Waiters for boto3 SageMaker module](#waiters-for-boto3-sagemaker-module)
   - [EndpointDeletedWaiter](#endpointdeletedwaiter)
   - [EndpointInServiceWaiter](#endpointinservicewaiter)
+  - [ImageCreatedWaiter](#imagecreatedwaiter)
+  - [ImageDeletedWaiter](#imagedeletedwaiter)
+  - [ImageUpdatedWaiter](#imageupdatedwaiter)
+  - [ImageVersionCreatedWaiter](#imageversioncreatedwaiter)
+  - [ImageVersionDeletedWaiter](#imageversiondeletedwaiter)
   - [NotebookInstanceDeletedWaiter](#notebookinstancedeletedwaiter)
   - [NotebookInstanceInServiceWaiter](#notebookinstanceinservicewaiter)
   - [NotebookInstanceStoppedWaiter](#notebookinstancestoppedwaiter)
@@ -59,6 +64,115 @@ Boto3 documentation:
 Arguments for `EndpointInServiceWaiter.wait` method:
 
 - `EndpointName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+
+## ImageCreatedWaiter
+
+Type annotations for `boto3.client("sagemaker").get_waiter("image_created")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sagemaker.waiter import ImageCreatedWaiter
+
+def get_image_created_waiter() -> ImageCreatedWaiter:
+    return boto3.client("sagemaker").get_waiter("image_created")
+```
+
+Boto3 documentation:
+[SageMaker.Waiter.image_created](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageCreated)
+
+Arguments for `ImageCreatedWaiter.wait` method:
+
+- `ImageName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+
+## ImageDeletedWaiter
+
+Type annotations for `boto3.client("sagemaker").get_waiter("image_deleted")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sagemaker.waiter import ImageDeletedWaiter
+
+def get_image_deleted_waiter() -> ImageDeletedWaiter:
+    return boto3.client("sagemaker").get_waiter("image_deleted")
+```
+
+Boto3 documentation:
+[SageMaker.Waiter.image_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageDeleted)
+
+Arguments for `ImageDeletedWaiter.wait` method:
+
+- `ImageName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+
+## ImageUpdatedWaiter
+
+Type annotations for `boto3.client("sagemaker").get_waiter("image_updated")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sagemaker.waiter import ImageUpdatedWaiter
+
+def get_image_updated_waiter() -> ImageUpdatedWaiter:
+    return boto3.client("sagemaker").get_waiter("image_updated")
+```
+
+Boto3 documentation:
+[SageMaker.Waiter.image_updated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageUpdated)
+
+Arguments for `ImageUpdatedWaiter.wait` method:
+
+- `ImageName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+
+## ImageVersionCreatedWaiter
+
+Type annotations for
+`boto3.client("sagemaker").get_waiter("image_version_created")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sagemaker.waiter import ImageVersionCreatedWaiter
+
+def get_image_version_created_waiter() -> ImageVersionCreatedWaiter:
+    return boto3.client("sagemaker").get_waiter("image_version_created")
+```
+
+Boto3 documentation:
+[SageMaker.Waiter.image_version_created](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageVersionCreated)
+
+Arguments for `ImageVersionCreatedWaiter.wait` method:
+
+- `ImageName`: `str` *(required)*
+- `Version`: `int`
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+
+## ImageVersionDeletedWaiter
+
+Type annotations for
+`boto3.client("sagemaker").get_waiter("image_version_deleted")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sagemaker.waiter import ImageVersionDeletedWaiter
+
+def get_image_version_deleted_waiter() -> ImageVersionDeletedWaiter:
+    return boto3.client("sagemaker").get_waiter("image_version_deleted")
+```
+
+Boto3 documentation:
+[SageMaker.Waiter.image_version_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageVersionDeleted)
+
+Arguments for `ImageVersionDeletedWaiter.wait` method:
+
+- `ImageName`: `str` *(required)*
+- `Version`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## NotebookInstanceDeletedWaiter

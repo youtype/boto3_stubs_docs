@@ -60,7 +60,7 @@ from mypy_boto3_cloudhsm.type_defs import AddTagsToResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AddTagsToResourceResponseTypeDef
 
@@ -332,7 +332,7 @@ Required fields:
 
 - `ClientArn`: `str`
 - `ClientVersion`: [ClientVersionType](./literals.md#clientversiontype)
-- `HapgList`: `List`\[`str`\]
+- `HapgList`: `Sequence`\[`str`\]
 
 ## GetConfigResponseTypeDef
 
@@ -464,7 +464,7 @@ Required fields:
 Optional fields:
 
 - `Label`: `str`
-- `PartitionSerialList`: `List`\[`str`\]
+- `PartitionSerialList`: `Sequence`\[`str`\]
 
 ## ModifyHapgResponseTypeDef
 
@@ -552,7 +552,7 @@ from mypy_boto3_cloudhsm.type_defs import RemoveTagsFromResourceRequestRequestTy
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeyList`: `List`\[`str`\]
+- `TagKeyList`: `Sequence`\[`str`\]
 
 ## RemoveTagsFromResourceResponseTypeDef
 

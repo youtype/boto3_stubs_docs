@@ -50,6 +50,7 @@ type annotations stubs module
     - [get_stack_policy](#get_stack_policy)
     - [get_template](#get_template)
     - [get_template_summary](#get_template_summary)
+    - [import_stacks_to_stack_set](#import_stacks_to_stack_set)
     - [list_change_sets](#list_change_sets)
     - [list_exports](#list_exports)
     - [list_imports](#list_imports)
@@ -66,6 +67,7 @@ type annotations stubs module
     - [record_handler_progress](#record_handler_progress)
     - [register_publisher](#register_publisher)
     - [register_type](#register_type)
+    - [rollback_stack](#rollback_stack)
     - [set_stack_policy](#set_stack_policy)
     - [set_type_configuration](#set_type_configuration)
     - [set_type_default_version](#set_type_default_version)
@@ -126,6 +128,7 @@ Exceptions:
 - `Exceptions.OperationNotFoundException`
 - `Exceptions.OperationStatusCheckFailedException`
 - `Exceptions.StackInstanceNotFoundException`
+- `Exceptions.StackNotFoundException`
 - `Exceptions.StackSetNotEmptyException`
 - `Exceptions.StackSetNotFoundException`
 - `Exceptions.StaleRequestException`
@@ -191,7 +194,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TypeConfigurationIdentifiers`:
-  `List`\[[TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)\]
+  `Sequence`\[[TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)\]
   *(required)*
 
 Returns
@@ -248,7 +251,7 @@ Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `RoleARN`: `str`
-- `ResourcesToSkip`: `List`\[`str`\]
+- `ResourcesToSkip`: `Sequence`\[`str`\]
 - `ClientRequestToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -272,19 +275,20 @@ Keyword-only arguments:
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
 - `UsePreviousTemplate`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `List`\[`str`\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `NotificationARNs`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `NotificationARNs`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 - `Description`: `str`
 - `ChangeSetType`: [ChangeSetTypeType](./literals.md#changesettypetype)
 - `ResourcesToImport`:
-  `List`\[[ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef)\]
+  `Sequence`\[[ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef)\]
 - `IncludeNestedStacks`: `bool`
 
 Returns
@@ -307,19 +311,20 @@ Keyword-only arguments:
 - `StackName`: `str` *(required)*
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `DisableRollback`: `bool`
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `TimeoutInMinutes`: `int`
-- `NotificationARNs`: `List`\[`str`\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `List`\[`str`\]
+- `NotificationARNs`: `Sequence`\[`str`\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `OnFailure`: [OnFailureType](./literals.md#onfailuretype)
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 - `EnableTerminationProtection`: `bool`
 
@@ -342,12 +347,12 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
-- `Regions`: `List`\[`str`\] *(required)*
-- `Accounts`: `List`\[`str`\]
+- `Regions`: `Sequence`\[`str`\] *(required)*
+- `Accounts`: `Sequence`\[`str`\]
 - `DeploymentTargets`:
   [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
 - `ParameterOverrides`:
-  `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `OperationPreferences`:
   [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `OperationId`: `str`
@@ -374,9 +379,11 @@ Keyword-only arguments:
 - `Description`: `str`
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StackId`: `str`
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AdministrationRoleARN`: `str`
 - `ExecutionRoleName`: `str`
 - `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
@@ -443,7 +450,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
-- `RetainResources`: `List`\[`str`\]
+- `RetainResources`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `ClientRequestToken`: `str`
 
@@ -463,9 +470,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
-- `Regions`: `List`\[`str`\] *(required)*
+- `Regions`: `Sequence`\[`str`\] *(required)*
 - `RetainStacks`: `bool` *(required)*
-- `Accounts`: `List`\[`str`\]
+- `Accounts`: `Sequence`\[`str`\]
 - `DeploymentTargets`:
   [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
 - `OperationPreferences`:
@@ -519,8 +526,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_account_limits
 
-Retrieves your account's AWS CloudFormation limits, such as the maximum number
-of stacks that you can create in your account.
+Retrieves your account's CloudFormation limits, such as the maximum number of
+stacks that you can create in your account.
 
 Type annotations for `boto3.client("cloudformation").describe_account_limits`
 method.
@@ -540,8 +547,8 @@ Returns
 
 ### describe_change_set
 
-Returns the inputs for the change set and a list of changes that AWS
-CloudFormation will make if you execute the change set.
+Returns the inputs for the change set and a list of changes that CloudFormation
+will make if you execute the change set.
 
 Type annotations for `boto3.client("cloudformation").describe_change_set`
 method.
@@ -625,8 +632,8 @@ Returns
 
 ### describe_stack_instance
 
-Returns the stack instance that's associated with the specified stack set, AWS
-account, and Region.
+Returns the stack instance that's associated with the specified stack set,
+Amazon Web Services account, and Region.
 
 Type annotations for `boto3.client("cloudformation").describe_stack_instance`
 method.
@@ -686,7 +693,7 @@ Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `StackResourceDriftStatusFilters`:
-  `List`\[[StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)\]
+  `Sequence`\[[StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -695,7 +702,8 @@ Returns
 
 ### describe_stack_resources
 
-Returns AWS resource descriptions for running and deleted stacks.
+Returns Amazon Web Services resource descriptions for running and deleted
+stacks.
 
 Type annotations for `boto3.client("cloudformation").describe_stack_resources`
 method.
@@ -841,7 +849,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
-- `LogicalResourceIds`: `List`\[`str`\]
+- `LogicalResourceIds`: `Sequence`\[`str`\]
 
 Returns
 [DetectStackDriftOutputTypeDef](./type_defs.md#detectstackdriftoutputtypedef).
@@ -910,7 +918,8 @@ Keyword-only arguments:
 
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
 [EstimateTemplateCostOutputTypeDef](./type_defs.md#estimatetemplatecostoutputtypedef).
@@ -934,6 +943,7 @@ Keyword-only arguments:
 - `ChangeSetName`: `str` *(required)*
 - `StackName`: `str`
 - `ClientRequestToken`: `str`
+- `DisableRollback`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -950,7 +960,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1018,6 +1028,31 @@ Keyword-only arguments:
 
 Returns
 [GetTemplateSummaryOutputTypeDef](./type_defs.md#gettemplatesummaryoutputtypedef).
+
+### import_stacks_to_stack_set
+
+Import existing stacks into a new stack sets.
+
+Type annotations for
+`boto3.client("cloudformation").import_stacks_to_stack_set` method.
+
+Boto3 documentation:
+[CloudFormation.Client.import_stacks_to_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.import_stacks_to_stack_set)
+
+Arguments mapping described in
+[ImportStacksToStackSetInputRequestTypeDef](./type_defs.md#importstackstostacksetinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `StackSetName`: `str` *(required)*
+- `StackIds`: `Sequence`\[`str`\] *(required)*
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
+- `OperationId`: `str`
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+Returns
+[ImportStacksToStackSetOutputTypeDef](./type_defs.md#importstackstostacksetoutputtypedef).
 
 ### list_change_sets
 
@@ -1096,7 +1131,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef)\]
+  `Sequence`\[[StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef)\]
 - `StackInstanceAccount`: `str`
 - `StackInstanceRegion`: `str`
 - `CallAs`: [CallAsType](./literals.md#callastype)
@@ -1211,7 +1246,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `StackStatusFilter`:
-  `List`\[[StackStatusType](./literals.md#stackstatustype)\]
+  `Sequence`\[[StackStatusType](./literals.md#stackstatustype)\]
 
 Returns [ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef).
 
@@ -1389,6 +1424,28 @@ Keyword-only arguments:
 
 Returns [RegisterTypeOutputTypeDef](./type_defs.md#registertypeoutputtypedef).
 
+### rollback_stack
+
+When specifying `RollbackStack` , you preserve the state of previously
+provisioned resources when an operation fails.
+
+Type annotations for `boto3.client("cloudformation").rollback_stack` method.
+
+Boto3 documentation:
+[CloudFormation.Client.rollback_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.rollback_stack)
+
+Arguments mapping described in
+[RollbackStackInputRequestTypeDef](./type_defs.md#rollbackstackinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `StackName`: `str` *(required)*
+- `RoleARN`: `str`
+- `ClientRequestToken`: `str`
+
+Returns
+[RollbackStackOutputTypeDef](./type_defs.md#rollbackstackoutputtypedef).
+
 ### set_stack_policy
 
 Sets a stack policy for a specified stack.
@@ -1539,16 +1596,18 @@ Keyword-only arguments:
 - `UsePreviousTemplate`: `bool`
 - `StackPolicyDuringUpdateBody`: `str`
 - `StackPolicyDuringUpdateURL`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `List`\[`str`\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
-- `NotificationARNs`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `NotificationARNs`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DisableRollback`: `bool`
 - `ClientRequestToken`: `str`
 
 Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).
@@ -1570,12 +1629,12 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
-- `Regions`: `List`\[`str`\] *(required)*
-- `Accounts`: `List`\[`str`\]
+- `Regions`: `Sequence`\[`str`\] *(required)*
+- `Accounts`: `Sequence`\[`str`\]
 - `DeploymentTargets`:
   [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
 - `ParameterOverrides`:
-  `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `OperationPreferences`:
   [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `OperationId`: `str`
@@ -1604,9 +1663,10 @@ Keyword-only arguments:
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
 - `UsePreviousTemplate`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OperationPreferences`:
   [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `AdministrationRoleARN`: `str`
@@ -1617,8 +1677,8 @@ Keyword-only arguments:
 - `AutoDeployment`:
   [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
 - `OperationId`: `str`
-- `Accounts`: `List`\[`str`\]
-- `Regions`: `List`\[`str`\]
+- `Accounts`: `Sequence`\[`str`\]
+- `Regions`: `Sequence`\[`str`\]
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns

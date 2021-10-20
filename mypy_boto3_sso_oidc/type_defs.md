@@ -33,7 +33,7 @@ Optional fields:
 
 - `code`: `str`
 - `refreshToken`: `str`
-- `scope`: `List`\[`str`\]
+- `scope`: `Sequence`\[`str`\]
 - `redirectUri`: `str`
 
 ## CreateTokenResponseTypeDef
@@ -65,7 +65,7 @@ Required fields:
 
 Optional fields:
 
-- `scopes`: `List`\[`str`\]
+- `scopes`: `Sequence`\[`str`\]
 
 ## RegisterClientResponseTypeDef
 

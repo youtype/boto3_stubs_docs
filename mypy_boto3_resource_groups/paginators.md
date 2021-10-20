@@ -34,12 +34,12 @@ Arguments for `ListGroupResourcesPaginator.paginate` method:
 - `GroupName`: `str`
 - `Group`: `str`
 - `Filters`:
-  `List`\[[ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef)\]
+  `Sequence`\[[ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupResourcesPaginator.paginate` returns
-`Iterator`\[[ListGroupResourcesOutputTypeDef](./type_defs.md#listgroupresourcesoutputtypedef)\].
+`_PageIterator`\[[ListGroupResourcesOutputTypeDef](./type_defs.md#listgroupresourcesoutputtypedef)\].
 
 ## ListGroupsPaginator
 
@@ -60,12 +60,13 @@ Boto3 documentation:
 
 Arguments for `ListGroupsPaginator.paginate` method:
 
-- `Filters`: `List`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
+- `Filters`:
+  `Sequence`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupsPaginator.paginate` returns
-`Iterator`\[[ListGroupsOutputTypeDef](./type_defs.md#listgroupsoutputtypedef)\].
+`_PageIterator`\[[ListGroupsOutputTypeDef](./type_defs.md#listgroupsoutputtypedef)\].
 
 ## SearchResourcesPaginator
 
@@ -92,4 +93,4 @@ Arguments for `SearchResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchResourcesPaginator.paginate` returns
-`Iterator`\[[SearchResourcesOutputTypeDef](./type_defs.md#searchresourcesoutputtypedef)\].
+`_PageIterator`\[[SearchResourcesOutputTypeDef](./type_defs.md#searchresourcesoutputtypedef)\].

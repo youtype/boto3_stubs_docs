@@ -27,6 +27,8 @@ type annotations stubs module
   - [DeleteRepositoryPolicyResponseTypeDef](#deleterepositorypolicyresponsetypedef)
   - [DeleteRepositoryRequestRequestTypeDef](#deleterepositoryrequestrequesttypedef)
   - [DeleteRepositoryResponseTypeDef](#deleterepositoryresponsetypedef)
+  - [DescribeImageReplicationStatusRequestRequestTypeDef](#describeimagereplicationstatusrequestrequesttypedef)
+  - [DescribeImageReplicationStatusResponseTypeDef](#describeimagereplicationstatusresponsetypedef)
   - [DescribeImageScanFindingsRequestRequestTypeDef](#describeimagescanfindingsrequestrequesttypedef)
   - [DescribeImageScanFindingsResponseTypeDef](#describeimagescanfindingsresponsetypedef)
   - [DescribeImagesFilterTypeDef](#describeimagesfiltertypedef)
@@ -50,6 +52,7 @@ type annotations stubs module
   - [ImageDetailTypeDef](#imagedetailtypedef)
   - [ImageFailureTypeDef](#imagefailuretypedef)
   - [ImageIdentifierTypeDef](#imageidentifiertypedef)
+  - [ImageReplicationStatusTypeDef](#imagereplicationstatustypedef)
   - [ImageScanFindingTypeDef](#imagescanfindingtypedef)
   - [ImageScanFindingsSummaryTypeDef](#imagescanfindingssummarytypedef)
   - [ImageScanFindingsTypeDef](#imagescanfindingstypedef)
@@ -85,6 +88,7 @@ type annotations stubs module
   - [ReplicationConfigurationTypeDef](#replicationconfigurationtypedef)
   - [ReplicationDestinationTypeDef](#replicationdestinationtypedef)
   - [ReplicationRuleTypeDef](#replicationruletypedef)
+  - [RepositoryFilterTypeDef](#repositoryfiltertypedef)
   - [RepositoryTypeDef](#repositorytypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SetRepositoryPolicyRequestRequestTypeDef](#setrepositorypolicyrequestrequesttypedef)
@@ -135,7 +139,7 @@ from mypy_boto3_ecr.type_defs import BatchCheckLayerAvailabilityRequestRequestTy
 Required fields:
 
 - `repositoryName`: `str`
-- `layerDigests`: `List`\[`str`\]
+- `layerDigests`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -165,7 +169,7 @@ Required fields:
 
 - `repositoryName`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 
 Optional fields:
 
@@ -196,12 +200,12 @@ Required fields:
 
 - `repositoryName`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 
 Optional fields:
 
 - `registryId`: `str`
-- `acceptedMediaTypes`: `List`\[`str`\]
+- `acceptedMediaTypes`: `Sequence`\[`str`\]
 
 ## BatchGetImageResponseTypeDef
 
@@ -227,7 +231,7 @@ Required fields:
 
 - `repositoryName`: `str`
 - `uploadId`: `str`
-- `layerDigests`: `List`\[`str`\]
+- `layerDigests`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -260,7 +264,8 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `registryId`: `str`
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `imageTagMutability`:
   [ImageTagMutabilityType](./literals.md#imagetagmutabilitytype)
 - `imageScanningConfiguration`:
@@ -377,6 +382,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeImageReplicationStatusRequestRequestTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import DescribeImageReplicationStatusRequestRequestTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `imageId`: [ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)
+
+Optional fields:
+
+- `registryId`: `str`
+
+## DescribeImageReplicationStatusResponseTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import DescribeImageReplicationStatusResponseTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `imageId`: [ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)
+- `replicationStatuses`:
+  `List`\[[ImageReplicationStatusTypeDef](./type_defs.md#imagereplicationstatustypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeImageScanFindingsRequestRequestTypeDef
 
 ```python
@@ -437,7 +472,7 @@ Optional fields:
 
 - `registryId`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filter`:
@@ -480,7 +515,7 @@ from mypy_boto3_ecr.type_defs import DescribeRepositoriesRequestRequestTypeDef
 Optional fields:
 
 - `registryId`: `str`
-- `repositoryNames`: `List`\[`str`\]
+- `repositoryNames`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -520,7 +555,7 @@ from mypy_boto3_ecr.type_defs import GetAuthorizationTokenRequestRequestTypeDef
 
 Optional fields:
 
-- `registryIds`: `List`\[`str`\]
+- `registryIds`: `Sequence`\[`str`\]
 
 ## GetAuthorizationTokenResponseTypeDef
 
@@ -577,7 +612,7 @@ Optional fields:
 
 - `registryId`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filter`:
@@ -717,6 +752,19 @@ Optional fields:
 
 - `imageDigest`: `str`
 - `imageTag`: `str`
+
+## ImageReplicationStatusTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import ImageReplicationStatusTypeDef
+```
+
+Optional fields:
+
+- `region`: `str`
+- `registryId`: `str`
+- `status`: [ReplicationStatusType](./literals.md#replicationstatustype)
+- `failureCode`: `str`
 
 ## ImageScanFindingTypeDef
 
@@ -1170,6 +1218,23 @@ Required fields:
 - `destinations`:
   `List`\[[ReplicationDestinationTypeDef](./type_defs.md#replicationdestinationtypedef)\]
 
+Optional fields:
+
+- `repositoryFilters`:
+  `List`\[[RepositoryFilterTypeDef](./type_defs.md#repositoryfiltertypedef)\]
+
+## RepositoryFilterTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import RepositoryFilterTypeDef
+```
+
+Required fields:
+
+- `filter`: `str`
+- `filterType`: `Literal['PREFIX_MATCH']` (see
+  [RepositoryFilterTypeType](./literals.md#repositoryfiltertypetype))
+
 ## RepositoryTypeDef
 
 ```python
@@ -1305,7 +1370,7 @@ from mypy_boto3_ecr.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1327,7 +1392,7 @@ from mypy_boto3_ecr.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UploadLayerPartRequestRequestTypeDef
 

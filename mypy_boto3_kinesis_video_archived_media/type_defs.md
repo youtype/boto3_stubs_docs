@@ -207,7 +207,7 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import GetMediaForFragmen
 
 Required fields:
 
-- `Fragments`: `List`\[`str`\]
+- `Fragments`: `Sequence`\[`str`\]
 
 Optional fields:
 

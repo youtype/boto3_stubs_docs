@@ -102,6 +102,8 @@ from mypy_boto3_mq.literals import AuthenticationStrategyType, ...
 - [EngineTypeType](./literals.md#enginetypetype)
 - [ListBrokersPaginatorName](./literals.md#listbrokerspaginatorname)
 - [SanitizationWarningReasonType](./literals.md#sanitizationwarningreasontype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

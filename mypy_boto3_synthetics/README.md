@@ -72,6 +72,8 @@ from mypy_boto3_synthetics.literals import CanaryRunStateReasonCodeType, ...
 - [CanaryRunStateType](./literals.md#canaryrunstatetype)
 - [CanaryStateReasonCodeType](./literals.md#canarystatereasoncodetype)
 - [CanaryStateType](./literals.md#canarystatetype)
+- [EncryptionModeType](./literals.md#encryptionmodetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 
@@ -81,9 +83,12 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_synthetics.type_defs import CanaryCodeInputTypeDef, ...
+from mypy_boto3_synthetics.type_defs import ArtifactConfigInputTypeDef, ...
 ```
 
+- [ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef)
+- [ArtifactConfigOutputTypeDef](./type_defs.md#artifactconfigoutputtypedef)
+- [BaseScreenshotTypeDef](./type_defs.md#basescreenshottypedef)
 - [CanaryCodeInputTypeDef](./type_defs.md#canarycodeinputtypedef)
 - [CanaryCodeOutputTypeDef](./type_defs.md#canarycodeoutputtypedef)
 - [CanaryLastRunTypeDef](./type_defs.md#canarylastruntypedef)
@@ -114,10 +119,13 @@ from mypy_boto3_synthetics.type_defs import CanaryCodeInputTypeDef, ...
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RuntimeVersionTypeDef](./type_defs.md#runtimeversiontypedef)
+- [S3EncryptionConfigTypeDef](./type_defs.md#s3encryptionconfigtypedef)
 - [StartCanaryRequestRequestTypeDef](./type_defs.md#startcanaryrequestrequesttypedef)
 - [StopCanaryRequestRequestTypeDef](./type_defs.md#stopcanaryrequestrequesttypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateCanaryRequestRequestTypeDef](./type_defs.md#updatecanaryrequestrequesttypedef)
+- [VisualReferenceInputTypeDef](./type_defs.md#visualreferenceinputtypedef)
+- [VisualReferenceOutputTypeDef](./type_defs.md#visualreferenceoutputtypedef)
 - [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
 - [VpcConfigOutputTypeDef](./type_defs.md#vpcconfigoutputtypedef)

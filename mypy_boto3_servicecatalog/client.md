@@ -303,7 +303,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServiceActionAssociations`:
-  `List`\[[ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef)\]
+  `Sequence`\[[ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef)\]
   *(required)*
 - `AcceptLanguage`: `str`
 
@@ -328,7 +328,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServiceActionAssociations`:
-  `List`\[[ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef)\]
+  `Sequence`\[[ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef)\]
   *(required)*
 - `AcceptLanguage`: `str`
 
@@ -370,10 +370,11 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 - `TargetProductId`: `str`
 - `TargetProductName`: `str`
-- `SourceProvisioningArtifactIdentifiers`: `List`\[`Dict`\[`Literal['Id']` (see
+- `SourceProvisioningArtifactIdentifiers`:
+  `Sequence`\[`Mapping`\[`Literal['Id']` (see
   [ProvisioningArtifactPropertyNameType](./literals.md#provisioningartifactpropertynametype)),
   `str`\]\]
-- `CopyOptions`: `List`\[`Literal['CopyTags']` (see
+- `CopyOptions`: `Sequence`\[`Literal['CopyTags']` (see
   [CopyOptionType](./literals.md#copyoptiontype))\]
 
 Returns [CopyProductOutputTypeDef](./type_defs.md#copyproductoutputtypedef).
@@ -422,7 +423,7 @@ Keyword-only arguments:
 - `IdempotencyToken`: `str` *(required)*
 - `AcceptLanguage`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreatePortfolioOutputTypeDef](./type_defs.md#createportfoliooutputtypedef).
@@ -479,7 +480,7 @@ Keyword-only arguments:
 - `SupportDescription`: `str`
 - `SupportEmail`: `str`
 - `SupportUrl`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateProductOutputTypeDef](./type_defs.md#createproductoutputtypedef).
@@ -508,11 +509,11 @@ Keyword-only arguments:
 - `ProvisioningArtifactId`: `str` *(required)*
 - `IdempotencyToken`: `str` *(required)*
 - `AcceptLanguage`: `str`
-- `NotificationArns`: `List`\[`str`\]
+- `NotificationArns`: `Sequence`\[`str`\]
 - `PathId`: `str`
 - `ProvisioningParameters`:
-  `List`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateProvisionedProductPlanOutputTypeDef](./type_defs.md#createprovisionedproductplanoutputtypedef).
@@ -563,7 +564,7 @@ Keyword-only arguments:
   [ServiceActionDefinitionTypeType](./literals.md#serviceactiondefinitiontypetype))
   *(required)*
 - `Definition`:
-  `Dict`\[[ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype),
+  `Mapping`\[[ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype),
   `str`\] *(required)*
 - `IdempotencyToken`: `str` *(required)*
 - `Description`: `str`
@@ -1287,7 +1288,7 @@ Keyword-only arguments:
 - `ServiceActionId`: `str` *(required)*
 - `ExecuteToken`: `str` *(required)*
 - `AcceptLanguage`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 Returns
 [ExecuteProvisionedProductServiceActionOutputTypeDef](./type_defs.md#executeprovisionedproductserviceactionoutputtypedef).
@@ -1305,7 +1306,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1344,7 +1345,7 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 - `ProvisionedProductId`: `str`
 - `ProvisionedProductName`: `str`
-- `OutputKeys`: `List`\[`str`\]
+- `OutputKeys`: `Sequence`\[`str`\]
 - `PageSize`: `int`
 - `PageToken`: `str`
 
@@ -1828,11 +1829,11 @@ Keyword-only arguments:
 - `PathId`: `str`
 - `PathName`: `str`
 - `ProvisioningParameters`:
-  `List`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
+  `Sequence`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
 - `ProvisioningPreferences`:
   [ProvisioningPreferencesTypeDef](./type_defs.md#provisioningpreferencestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NotificationArns`: `List`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `NotificationArns`: `Sequence`\[`str`\]
 
 Returns
 [ProvisionProductOutputTypeDef](./type_defs.md#provisionproductoutputtypedef).
@@ -1899,8 +1900,8 @@ Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `Filters`:
-  `Dict`\[[ProductViewFilterByType](./literals.md#productviewfilterbytype),
-  `List`\[`str`\]\]
+  `Mapping`\[[ProductViewFilterByType](./literals.md#productviewfilterbytype),
+  `Sequence`\[`str`\]\]
 - `PageSize`: `int`
 - `SortBy`: [ProductViewSortByType](./literals.md#productviewsortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
@@ -1928,8 +1929,8 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 - `PortfolioId`: `str`
 - `Filters`:
-  `Dict`\[[ProductViewFilterByType](./literals.md#productviewfilterbytype),
-  `List`\[`str`\]\]
+  `Mapping`\[[ProductViewFilterByType](./literals.md#productviewfilterbytype),
+  `Sequence`\[`str`\]\]
 - `SortBy`: [ProductViewSortByType](./literals.md#productviewsortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PageToken`: `str`
@@ -1959,9 +1960,9 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 - `AccessLevelFilter`:
   [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
-- `Filters`: `Dict`\[`Literal['SearchQuery']` (see
+- `Filters`: `Mapping`\[`Literal['SearchQuery']` (see
   [ProvisionedProductViewFilterByType](./literals.md#provisionedproductviewfilterbytype)),
-  `List`\[`str`\]\]
+  `Sequence`\[`str`\]\]
 - `SortBy`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PageSize`: `int`
@@ -2036,8 +2037,8 @@ Keyword-only arguments:
 - `DisplayName`: `str`
 - `Description`: `str`
 - `ProviderName`: `str`
-- `AddTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RemoveTags`: `List`\[`str`\]
+- `AddTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RemoveTags`: `Sequence`\[`str`\]
 
 Returns
 [UpdatePortfolioOutputTypeDef](./type_defs.md#updateportfoliooutputtypedef).
@@ -2090,8 +2091,8 @@ Keyword-only arguments:
 - `SupportDescription`: `str`
 - `SupportEmail`: `str`
 - `SupportUrl`: `str`
-- `AddTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RemoveTags`: `List`\[`str`\]
+- `AddTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RemoveTags`: `Sequence`\[`str`\]
 
 Returns
 [UpdateProductOutputTypeDef](./type_defs.md#updateproductoutputtypedef).
@@ -2122,10 +2123,10 @@ Keyword-only arguments:
 - `PathId`: `str`
 - `PathName`: `str`
 - `ProvisioningParameters`:
-  `List`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
+  `Sequence`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
 - `ProvisioningPreferences`:
   [UpdateProvisioningPreferencesTypeDef](./type_defs.md#updateprovisioningpreferencestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [UpdateProvisionedProductOutputTypeDef](./type_defs.md#updateprovisionedproductoutputtypedef).
@@ -2147,7 +2148,7 @@ Keyword-only arguments:
 
 - `ProvisionedProductId`: `str` *(required)*
 - `ProvisionedProductProperties`:
-  `Dict`\[[PropertyKeyType](./literals.md#propertykeytype), `str`\]
+  `Mapping`\[[PropertyKeyType](./literals.md#propertykeytype), `str`\]
   *(required)*
 - `IdempotencyToken`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -2201,7 +2202,7 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `Name`: `str`
 - `Definition`:
-  `Dict`\[[ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype),
+  `Mapping`\[[ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype),
   `str`\]
 - `Description`: `str`
 - `AcceptLanguage`: `str`

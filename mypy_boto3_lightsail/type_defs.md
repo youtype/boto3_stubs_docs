@@ -8,6 +8,9 @@ type annotations stubs module
 [mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
 - [Typed dictionaries for boto3 Lightsail module](#typed-dictionaries-for-boto3-lightsail-module)
+  - [AccessKeyLastUsedTypeDef](#accesskeylastusedtypedef)
+  - [AccessKeyTypeDef](#accesskeytypedef)
+  - [AccessRulesTypeDef](#accessrulestypedef)
   - [AddOnRequestTypeDef](#addonrequesttypedef)
   - [AddOnTypeDef](#addontypedef)
   - [AlarmTypeDef](#alarmtypedef)
@@ -28,6 +31,9 @@ type annotations stubs module
   - [AutoSnapshotDetailsTypeDef](#autosnapshotdetailstypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
   - [BlueprintTypeDef](#blueprinttypedef)
+  - [BucketBundleTypeDef](#bucketbundletypedef)
+  - [BucketStateTypeDef](#bucketstatetypedef)
+  - [BucketTypeDef](#buckettypedef)
   - [BundleTypeDef](#bundletypedef)
   - [CacheBehaviorPerPathTypeDef](#cachebehaviorperpathtypedef)
   - [CacheBehaviorTypeDef](#cachebehaviortypedef)
@@ -54,6 +60,10 @@ type annotations stubs module
   - [CookieObjectTypeDef](#cookieobjecttypedef)
   - [CopySnapshotRequestRequestTypeDef](#copysnapshotrequestrequesttypedef)
   - [CopySnapshotResultTypeDef](#copysnapshotresulttypedef)
+  - [CreateBucketAccessKeyRequestRequestTypeDef](#createbucketaccesskeyrequestrequesttypedef)
+  - [CreateBucketAccessKeyResultTypeDef](#createbucketaccesskeyresulttypedef)
+  - [CreateBucketRequestRequestTypeDef](#createbucketrequestrequesttypedef)
+  - [CreateBucketResultTypeDef](#createbucketresulttypedef)
   - [CreateCertificateRequestRequestTypeDef](#createcertificaterequestrequesttypedef)
   - [CreateCertificateResultTypeDef](#createcertificateresulttypedef)
   - [CreateCloudFormationStackRequestRequestTypeDef](#createcloudformationstackrequestrequesttypedef)
@@ -99,6 +109,10 @@ type annotations stubs module
   - [DeleteAlarmResultTypeDef](#deletealarmresulttypedef)
   - [DeleteAutoSnapshotRequestRequestTypeDef](#deleteautosnapshotrequestrequesttypedef)
   - [DeleteAutoSnapshotResultTypeDef](#deleteautosnapshotresulttypedef)
+  - [DeleteBucketAccessKeyRequestRequestTypeDef](#deletebucketaccesskeyrequestrequesttypedef)
+  - [DeleteBucketAccessKeyResultTypeDef](#deletebucketaccesskeyresulttypedef)
+  - [DeleteBucketRequestRequestTypeDef](#deletebucketrequestrequesttypedef)
+  - [DeleteBucketResultTypeDef](#deletebucketresulttypedef)
   - [DeleteCertificateRequestRequestTypeDef](#deletecertificaterequestrequesttypedef)
   - [DeleteCertificateResultTypeDef](#deletecertificateresulttypedef)
   - [DeleteContactMethodRequestRequestTypeDef](#deletecontactmethodrequestrequesttypedef)
@@ -167,6 +181,14 @@ type annotations stubs module
   - [GetAutoSnapshotsResultTypeDef](#getautosnapshotsresulttypedef)
   - [GetBlueprintsRequestRequestTypeDef](#getblueprintsrequestrequesttypedef)
   - [GetBlueprintsResultTypeDef](#getblueprintsresulttypedef)
+  - [GetBucketAccessKeysRequestRequestTypeDef](#getbucketaccesskeysrequestrequesttypedef)
+  - [GetBucketAccessKeysResultTypeDef](#getbucketaccesskeysresulttypedef)
+  - [GetBucketBundlesRequestRequestTypeDef](#getbucketbundlesrequestrequesttypedef)
+  - [GetBucketBundlesResultTypeDef](#getbucketbundlesresulttypedef)
+  - [GetBucketMetricDataRequestRequestTypeDef](#getbucketmetricdatarequestrequesttypedef)
+  - [GetBucketMetricDataResultTypeDef](#getbucketmetricdataresulttypedef)
+  - [GetBucketsRequestRequestTypeDef](#getbucketsrequestrequesttypedef)
+  - [GetBucketsResultTypeDef](#getbucketsresulttypedef)
   - [GetBundlesRequestRequestTypeDef](#getbundlesrequestrequesttypedef)
   - [GetBundlesResultTypeDef](#getbundlesresulttypedef)
   - [GetCertificatesRequestRequestTypeDef](#getcertificatesrequestrequesttypedef)
@@ -336,12 +358,15 @@ type annotations stubs module
   - [ResetDistributionCacheRequestRequestTypeDef](#resetdistributioncacherequestrequesttypedef)
   - [ResetDistributionCacheResultTypeDef](#resetdistributioncacheresulttypedef)
   - [ResourceLocationTypeDef](#resourcelocationtypedef)
+  - [ResourceReceivingAccessTypeDef](#resourcereceivingaccesstypedef)
   - [ResourceRecordTypeDef](#resourcerecordtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SendContactMethodVerificationRequestRequestTypeDef](#sendcontactmethodverificationrequestrequesttypedef)
   - [SendContactMethodVerificationResultTypeDef](#sendcontactmethodverificationresulttypedef)
   - [SetIpAddressTypeRequestRequestTypeDef](#setipaddresstyperequestrequesttypedef)
   - [SetIpAddressTypeResultTypeDef](#setipaddresstyperesulttypedef)
+  - [SetResourceAccessForBucketRequestRequestTypeDef](#setresourceaccessforbucketrequestrequesttypedef)
+  - [SetResourceAccessForBucketResultTypeDef](#setresourceaccessforbucketresulttypedef)
   - [StartInstanceRequestRequestTypeDef](#startinstancerequestrequesttypedef)
   - [StartInstanceResultTypeDef](#startinstanceresulttypedef)
   - [StartRelationalDatabaseRequestRequestTypeDef](#startrelationaldatabaserequestrequesttypedef)
@@ -359,6 +384,10 @@ type annotations stubs module
   - [UnpeerVpcResultTypeDef](#unpeervpcresulttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UntagResourceResultTypeDef](#untagresourceresulttypedef)
+  - [UpdateBucketBundleRequestRequestTypeDef](#updatebucketbundlerequestrequesttypedef)
+  - [UpdateBucketBundleResultTypeDef](#updatebucketbundleresulttypedef)
+  - [UpdateBucketRequestRequestTypeDef](#updatebucketrequestrequesttypedef)
+  - [UpdateBucketResultTypeDef](#updatebucketresulttypedef)
   - [UpdateContainerServiceRequestRequestTypeDef](#updatecontainerservicerequestrequesttypedef)
   - [UpdateContainerServiceResultTypeDef](#updatecontainerserviceresulttypedef)
   - [UpdateDistributionBundleRequestRequestTypeDef](#updatedistributionbundlerequestrequesttypedef)
@@ -373,6 +402,44 @@ type annotations stubs module
   - [UpdateRelationalDatabaseParametersResultTypeDef](#updaterelationaldatabaseparametersresulttypedef)
   - [UpdateRelationalDatabaseRequestRequestTypeDef](#updaterelationaldatabaserequestrequesttypedef)
   - [UpdateRelationalDatabaseResultTypeDef](#updaterelationaldatabaseresulttypedef)
+
+## AccessKeyLastUsedTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef
+```
+
+Optional fields:
+
+- `lastUsedDate`: `datetime`
+- `region`: `str`
+- `serviceName`: `str`
+
+## AccessKeyTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import AccessKeyTypeDef
+```
+
+Optional fields:
+
+- `accessKeyId`: `str`
+- `secretAccessKey`: `str`
+- `status`: [StatusTypeType](./literals.md#statustypetype)
+- `createdAt`: `datetime`
+- `lastUsed`:
+  [AccessKeyLastUsedTypeDef](./type_defs.md#accesskeylastusedtypedef)
+
+## AccessRulesTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import AccessRulesTypeDef
+```
+
+Optional fields:
+
+- `getObject`: [AccessTypeType](./literals.md#accesstypetype)
+- `allowPublicOverrides`: `bool`
 
 ## AddOnRequestTypeDef
 
@@ -515,7 +582,7 @@ from mypy_boto3_lightsail.type_defs import AttachInstancesToLoadBalancerRequestR
 Required fields:
 
 - `loadBalancerName`: `str`
-- `instanceNames`: `List`\[`str`\]
+- `instanceNames`: `Sequence`\[`str`\]
 
 ## AttachInstancesToLoadBalancerResultTypeDef
 
@@ -641,6 +708,57 @@ Optional fields:
 - `productUrl`: `str`
 - `licenseUrl`: `str`
 - `platform`: [InstancePlatformType](./literals.md#instanceplatformtype)
+
+## BucketBundleTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import BucketBundleTypeDef
+```
+
+Optional fields:
+
+- `bundleId`: `str`
+- `name`: `str`
+- `price`: `float`
+- `storagePerMonthInGb`: `int`
+- `transferPerMonthInGb`: `int`
+- `isActive`: `bool`
+
+## BucketStateTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import BucketStateTypeDef
+```
+
+Optional fields:
+
+- `code`: `str`
+- `message`: `str`
+
+## BucketTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import BucketTypeDef
+```
+
+Optional fields:
+
+- `resourceType`: `str`
+- `accessRules`: [AccessRulesTypeDef](./type_defs.md#accessrulestypedef)
+- `arn`: `str`
+- `bundleId`: `str`
+- `createdAt`: `datetime`
+- `url`: `str`
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `name`: `str`
+- `supportCode`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `objectVersioning`: `str`
+- `ableToUpdateBundle`: `bool`
+- `readonlyAccessAccounts`: `List`\[`str`\]
+- `resourcesReceivingAccess`:
+  `List`\[[ResourceReceivingAccessTypeDef](./type_defs.md#resourcereceivingaccesstypedef)\]
+- `state`: [BucketStateTypeDef](./type_defs.md#bucketstatetypedef)
 
 ## BundleTypeDef
 
@@ -841,7 +959,7 @@ from mypy_boto3_lightsail.type_defs import ContainerServiceDeploymentRequestType
 
 Optional fields:
 
-- `containers`: `Dict`\[`str`,
+- `containers`: `Mapping`\[`str`,
   [ContainerTypeDef](./type_defs.md#containertypedef)\]
 - `publicEndpoint`:
   [EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef)
@@ -995,9 +1113,9 @@ from mypy_boto3_lightsail.type_defs import ContainerTypeDef
 Optional fields:
 
 - `image`: `str`
-- `command`: `List`\[`str`\]
-- `environment`: `Dict`\[`str`, `str`\]
-- `ports`: `Dict`\[`str`,
+- `command`: `Sequence`\[`str`\]
+- `environment`: `Mapping`\[`str`, `str`\]
+- `ports`: `Mapping`\[`str`,
   [ContainerServiceProtocolType](./literals.md#containerserviceprotocoltype)\]
 
 ## CookieObjectTypeDef
@@ -1009,7 +1127,7 @@ from mypy_boto3_lightsail.type_defs import CookieObjectTypeDef
 Optional fields:
 
 - `option`: [ForwardValuesType](./literals.md#forwardvaluestype)
-- `cookiesAllowList`: `List`\[`str`\]
+- `cookiesAllowList`: `Sequence`\[`str`\]
 
 ## CopySnapshotRequestRequestTypeDef
 
@@ -1041,6 +1159,58 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateBucketAccessKeyRequestRequestTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import CreateBucketAccessKeyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `bucketName`: `str`
+
+## CreateBucketAccessKeyResultTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import CreateBucketAccessKeyResultTypeDef
+```
+
+Required fields:
+
+- `accessKey`: [AccessKeyTypeDef](./type_defs.md#accesskeytypedef)
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateBucketRequestRequestTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import CreateBucketRequestRequestTypeDef
+```
+
+Required fields:
+
+- `bucketName`: `str`
+- `bundleId`: `str`
+
+Optional fields:
+
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `enableObjectVersioning`: `bool`
+
+## CreateBucketResultTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import CreateBucketResultTypeDef
+```
+
+Required fields:
+
+- `bucket`: [BucketTypeDef](./type_defs.md#buckettypedef)
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateCertificateRequestRequestTypeDef
 
 ```python
@@ -1054,8 +1224,8 @@ Required fields:
 
 Optional fields:
 
-- `subjectAlternativeNames`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `subjectAlternativeNames`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateCertificateResultTypeDef
 
@@ -1080,7 +1250,7 @@ from mypy_boto3_lightsail.type_defs import CreateCloudFormationStackRequestReque
 Required fields:
 
 - `instances`:
-  `List`\[[InstanceEntryTypeDef](./type_defs.md#instanceentrytypedef)\]
+  `Sequence`\[[InstanceEntryTypeDef](./type_defs.md#instanceentrytypedef)\]
 
 ## CreateCloudFormationStackResultTypeDef
 
@@ -1129,7 +1299,7 @@ Required fields:
 
 Optional fields:
 
-- `containers`: `Dict`\[`str`,
+- `containers`: `Mapping`\[`str`,
   [ContainerTypeDef](./type_defs.md#containertypedef)\]
 - `publicEndpoint`:
   [EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef)
@@ -1175,8 +1345,8 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `publicDomainNames`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `deployment`:
   [ContainerServiceDeploymentRequestTypeDef](./type_defs.md#containerservicedeploymentrequesttypedef)
 
@@ -1208,8 +1378,9 @@ Required fields:
 Optional fields:
 
 - `diskSnapshotName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`:
+  `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 - `sourceDiskName`: `str`
 - `restoreDate`: `str`
 - `useLatestRestorableAutoSnapshot`: `bool`
@@ -1240,8 +1411,9 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`:
+  `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 
 ## CreateDiskResultTypeDef
 
@@ -1269,7 +1441,7 @@ Optional fields:
 
 - `diskName`: `str`
 - `instanceName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDiskSnapshotResultTypeDef
 
@@ -1302,9 +1474,9 @@ Optional fields:
 - `cacheBehaviorSettings`:
   [CacheSettingsTypeDef](./type_defs.md#cachesettingstypedef)
 - `cacheBehaviors`:
-  `List`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
+  `Sequence`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDistributionResultTypeDef
 
@@ -1355,7 +1527,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDomainResultTypeDef
 
@@ -1382,7 +1554,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateInstanceSnapshotResultTypeDef
 
@@ -1404,19 +1576,20 @@ from mypy_boto3_lightsail.type_defs import CreateInstancesFromSnapshotRequestReq
 
 Required fields:
 
-- `instanceNames`: `List`\[`str`\]
+- `instanceNames`: `Sequence`\[`str`\]
 - `availabilityZone`: `str`
 - `bundleId`: `str`
 
 Optional fields:
 
-- `attachedDiskMapping`: `Dict`\[`str`,
-  `List`\[[DiskMapTypeDef](./type_defs.md#diskmaptypedef)\]\]
+- `attachedDiskMapping`: `Mapping`\[`str`,
+  `Sequence`\[[DiskMapTypeDef](./type_defs.md#diskmaptypedef)\]\]
 - `instanceSnapshotName`: `str`
 - `userData`: `str`
 - `keyPairName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`:
+  `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `sourceInstanceName`: `str`
 - `restoreDate`: `str`
@@ -1442,7 +1615,7 @@ from mypy_boto3_lightsail.type_defs import CreateInstancesRequestRequestTypeDef
 
 Required fields:
 
-- `instanceNames`: `List`\[`str`\]
+- `instanceNames`: `Sequence`\[`str`\]
 - `availabilityZone`: `str`
 - `blueprintId`: `str`
 - `bundleId`: `str`
@@ -1452,8 +1625,9 @@ Optional fields:
 - `customImageName`: `str`
 - `userData`: `str`
 - `keyPairName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`:
+  `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 ## CreateInstancesResultTypeDef
@@ -1480,7 +1654,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateKeyPairResultTypeDef
 
@@ -1513,8 +1687,8 @@ Optional fields:
 - `healthCheckPath`: `str`
 - `certificateName`: `str`
 - `certificateDomainName`: `str`
-- `certificateAlternativeNames`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `certificateAlternativeNames`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 ## CreateLoadBalancerResultTypeDef
@@ -1543,8 +1717,8 @@ Required fields:
 
 Optional fields:
 
-- `certificateAlternativeNames`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `certificateAlternativeNames`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateLoadBalancerTlsCertificateResultTypeDef
 
@@ -1577,7 +1751,7 @@ Optional fields:
 - `sourceRelationalDatabaseName`: `str`
 - `restoreTime`: `Union`\[`datetime`, `str`\]
 - `useLatestRestorableTime`: `bool`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRelationalDatabaseFromSnapshotResultTypeDef
 
@@ -1612,7 +1786,7 @@ Optional fields:
 - `preferredBackupWindow`: `str`
 - `preferredMaintenanceWindow`: `str`
 - `publiclyAccessible`: `bool`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRelationalDatabaseResultTypeDef
 
@@ -1639,7 +1813,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRelationalDatabaseSnapshotResultTypeDef
 
@@ -1690,6 +1864,55 @@ Required fields:
 
 ```python
 from mypy_boto3_lightsail.type_defs import DeleteAutoSnapshotResultTypeDef
+```
+
+Required fields:
+
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteBucketAccessKeyRequestRequestTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import DeleteBucketAccessKeyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `bucketName`: `str`
+- `accessKeyId`: `str`
+
+## DeleteBucketAccessKeyResultTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import DeleteBucketAccessKeyResultTypeDef
+```
+
+Required fields:
+
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteBucketRequestRequestTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import DeleteBucketRequestRequestTypeDef
+```
+
+Required fields:
+
+- `bucketName`: `str`
+
+Optional fields:
+
+- `forceDelete`: `bool`
+
+## DeleteBucketResultTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import DeleteBucketResultTypeDef
 ```
 
 Required fields:
@@ -2132,7 +2355,7 @@ from mypy_boto3_lightsail.type_defs import DetachInstancesFromLoadBalancerReques
 Required fields:
 
 - `loadBalancerName`: `str`
-- `instanceNames`: `List`\[`str`\]
+- `instanceNames`: `Sequence`\[`str`\]
 
 ## DetachInstancesFromLoadBalancerResultTypeDef
 
@@ -2303,7 +2526,7 @@ Optional fields:
 - `target`: `str`
 - `isAlias`: `bool`
 - `type`: `str`
-- `options`: `Dict`\[`str`, `str`\]
+- `options`: `Mapping`\[`str`, `str`\]
 
 ## DomainTypeDef
 
@@ -2545,6 +2768,107 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetBucketAccessKeysRequestRequestTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import GetBucketAccessKeysRequestRequestTypeDef
+```
+
+Required fields:
+
+- `bucketName`: `str`
+
+## GetBucketAccessKeysResultTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import GetBucketAccessKeysResultTypeDef
+```
+
+Required fields:
+
+- `accessKeys`: `List`\[[AccessKeyTypeDef](./type_defs.md#accesskeytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetBucketBundlesRequestRequestTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import GetBucketBundlesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `includeInactive`: `bool`
+
+## GetBucketBundlesResultTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import GetBucketBundlesResultTypeDef
+```
+
+Required fields:
+
+- `bundles`:
+  `List`\[[BucketBundleTypeDef](./type_defs.md#bucketbundletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetBucketMetricDataRequestRequestTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import GetBucketMetricDataRequestRequestTypeDef
+```
+
+Required fields:
+
+- `bucketName`: `str`
+- `metricName`: [BucketMetricNameType](./literals.md#bucketmetricnametype)
+- `startTime`: `Union`\[`datetime`, `str`\]
+- `endTime`: `Union`\[`datetime`, `str`\]
+- `period`: `int`
+- `statistics`:
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+- `unit`: [MetricUnitType](./literals.md#metricunittype)
+
+## GetBucketMetricDataResultTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import GetBucketMetricDataResultTypeDef
+```
+
+Required fields:
+
+- `metricName`: [BucketMetricNameType](./literals.md#bucketmetricnametype)
+- `metricData`:
+  `List`\[[MetricDatapointTypeDef](./type_defs.md#metricdatapointtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetBucketsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import GetBucketsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `bucketName`: `str`
+- `pageToken`: `str`
+- `includeConnectedResources`: `bool`
+
+## GetBucketsResultTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import GetBucketsResultTypeDef
+```
+
+Required fields:
+
+- `buckets`: `List`\[[BucketTypeDef](./type_defs.md#buckettypedef)\]
+- `nextPageToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetBundlesRequestRequestTypeDef
 
 ```python
@@ -2578,7 +2902,7 @@ from mypy_boto3_lightsail.type_defs import GetCertificatesRequestRequestTypeDef
 Optional fields:
 
 - `certificateStatuses`:
-  `List`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
+  `Sequence`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
 - `includeCertificateDetails`: `bool`
 - `certificateName`: `str`
 
@@ -2628,7 +2952,7 @@ from mypy_boto3_lightsail.type_defs import GetContactMethodsRequestRequestTypeDe
 Optional fields:
 
 - `protocols`:
-  `List`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
+  `Sequence`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
 
 ## GetContactMethodsResultTypeDef
 
@@ -2748,7 +3072,7 @@ Required fields:
 - `endTime`: `Union`\[`datetime`, `str`\]
 - `period`: `int`
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
 
 ## GetContainerServiceMetricDataResultTypeDef
 
@@ -2931,7 +3255,7 @@ Required fields:
 - `period`: `int`
 - `unit`: [MetricUnitType](./literals.md#metricunittype)
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
 
 ## GetDistributionMetricDataResultTypeDef
 
@@ -3085,7 +3409,7 @@ Required fields:
 - `endTime`: `Union`\[`datetime`, `str`\]
 - `unit`: [MetricUnitType](./literals.md#metricunittype)
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
 
 ## GetInstanceMetricDataResultTypeDef
 
@@ -3299,7 +3623,7 @@ Required fields:
 - `endTime`: `Union`\[`datetime`, `str`\]
 - `unit`: [MetricUnitType](./literals.md#metricunittype)
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
 
 ## GetLoadBalancerMetricDataResultTypeDef
 
@@ -3657,7 +3981,7 @@ Required fields:
 - `endTime`: `Union`\[`datetime`, `str`\]
 - `unit`: [MetricUnitType](./literals.md#metricunittype)
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
 
 ## GetRelationalDatabaseMetricDataResultTypeDef
 
@@ -3850,7 +4174,8 @@ from mypy_boto3_lightsail.type_defs import HeaderObjectTypeDef
 Optional fields:
 
 - `option`: [ForwardValuesType](./literals.md#forwardvaluestype)
-- `headersAllowList`: `List`\[[HeaderEnumType](./literals.md#headerenumtype)\]
+- `headersAllowList`:
+  `Sequence`\[[HeaderEnumType](./literals.md#headerenumtype)\]
 
 ## HostKeyAttributesTypeDef
 
@@ -4455,9 +4780,9 @@ Optional fields:
 - `fromPort`: `int`
 - `toPort`: `int`
 - `protocol`: [NetworkProtocolType](./literals.md#networkprotocoltype)
-- `cidrs`: `List`\[`str`\]
-- `ipv6Cidrs`: `List`\[`str`\]
-- `cidrListAliases`: `List`\[`str`\]
+- `cidrs`: `Sequence`\[`str`\]
+- `ipv6Cidrs`: `Sequence`\[`str`\]
+- `cidrListAliases`: `Sequence`\[`str`\]
 
 ## PutAlarmRequestRequestTypeDef
 
@@ -4481,9 +4806,9 @@ Optional fields:
 - `treatMissingData`:
   [TreatMissingDataType](./literals.md#treatmissingdatatype)
 - `contactProtocols`:
-  `List`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
+  `Sequence`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
 - `notificationTriggers`:
-  `List`\[[AlarmStateType](./literals.md#alarmstatetype)\]
+  `Sequence`\[[AlarmStateType](./literals.md#alarmstatetype)\]
 - `notificationEnabled`: `bool`
 
 ## PutAlarmResultTypeDef
@@ -4506,7 +4831,7 @@ from mypy_boto3_lightsail.type_defs import PutInstancePublicPortsRequestRequestT
 
 Required fields:
 
-- `portInfos`: `List`\[[PortInfoTypeDef](./type_defs.md#portinfotypedef)\]
+- `portInfos`: `Sequence`\[[PortInfoTypeDef](./type_defs.md#portinfotypedef)\]
 - `instanceName`: `str`
 
 ## PutInstancePublicPortsResultTypeDef
@@ -4530,7 +4855,7 @@ from mypy_boto3_lightsail.type_defs import QueryStringObjectTypeDef
 Optional fields:
 
 - `option`: `bool`
-- `queryStringsAllowList`: `List`\[`str`\]
+- `queryStringsAllowList`: `Sequence`\[`str`\]
 
 ## RebootInstanceRequestRequestTypeDef
 
@@ -4839,6 +5164,17 @@ Optional fields:
 - `availabilityZone`: `str`
 - `regionName`: [RegionNameType](./literals.md#regionnametype)
 
+## ResourceReceivingAccessTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import ResourceReceivingAccessTypeDef
+```
+
+Optional fields:
+
+- `name`: `str`
+- `resourceType`: `str`
+
 ## ResourceRecordTypeDef
 
 ```python
@@ -4904,6 +5240,30 @@ Required fields:
 
 ```python
 from mypy_boto3_lightsail.type_defs import SetIpAddressTypeResultTypeDef
+```
+
+Required fields:
+
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## SetResourceAccessForBucketRequestRequestTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import SetResourceAccessForBucketRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceName`: `str`
+- `bucketName`: `str`
+- `access`: [ResourceBucketAccessType](./literals.md#resourcebucketaccesstype)
+
+## SetResourceAccessForBucketResultTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import SetResourceAccessForBucketResultTypeDef
 ```
 
 Required fields:
@@ -5035,7 +5395,7 @@ from mypy_boto3_lightsail.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
 
@@ -5108,7 +5468,7 @@ from mypy_boto3_lightsail.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceName`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -5122,6 +5482,58 @@ from mypy_boto3_lightsail.type_defs import UntagResourceResultTypeDef
 
 Required fields:
 
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateBucketBundleRequestRequestTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import UpdateBucketBundleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `bucketName`: `str`
+- `bundleId`: `str`
+
+## UpdateBucketBundleResultTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import UpdateBucketBundleResultTypeDef
+```
+
+Required fields:
+
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateBucketRequestRequestTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import UpdateBucketRequestRequestTypeDef
+```
+
+Required fields:
+
+- `bucketName`: `str`
+
+Optional fields:
+
+- `accessRules`: [AccessRulesTypeDef](./type_defs.md#accessrulestypedef)
+- `versioning`: `str`
+- `readonlyAccessAccounts`: `Sequence`\[`str`\]
+
+## UpdateBucketResultTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import UpdateBucketResultTypeDef
+```
+
+Required fields:
+
+- `bucket`: [BucketTypeDef](./type_defs.md#buckettypedef)
 - `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -5142,7 +5554,7 @@ Optional fields:
   [ContainerServicePowerNameType](./literals.md#containerservicepowernametype)
 - `scale`: `int`
 - `isDisabled`: `bool`
-- `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
+- `publicDomainNames`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 ## UpdateContainerServiceResultTypeDef
 
@@ -5198,7 +5610,7 @@ Optional fields:
 - `cacheBehaviorSettings`:
   [CacheSettingsTypeDef](./type_defs.md#cachesettingstypedef)
 - `cacheBehaviors`:
-  `List`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
+  `Sequence`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
 - `isEnabled`: `bool`
 
 ## UpdateDistributionResultTypeDef
@@ -5271,7 +5683,7 @@ Required fields:
 
 - `relationalDatabaseName`: `str`
 - `parameters`:
-  `List`\[[RelationalDatabaseParameterTypeDef](./type_defs.md#relationaldatabaseparametertypedef)\]
+  `Sequence`\[[RelationalDatabaseParameterTypeDef](./type_defs.md#relationaldatabaseparametertypedef)\]
 
 ## UpdateRelationalDatabaseParametersResultTypeDef
 

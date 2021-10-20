@@ -31,10 +31,10 @@ Arguments for `GetEntitlementsPaginator.paginate` method:
 
 - `ProductCode`: `str` *(required)*
 - `Filter`:
-  `Dict`\[[GetEntitlementFilterNameType](./literals.md#getentitlementfilternametype),
-  `List`\[`str`\]\]
+  `Mapping`\[[GetEntitlementFilterNameType](./literals.md#getentitlementfilternametype),
+  `Sequence`\[`str`\]\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetEntitlementsPaginator.paginate` returns
-`Iterator`\[[GetEntitlementsResultTypeDef](./type_defs.md#getentitlementsresulttypedef)\].
+`_PageIterator`\[[GetEntitlementsResultTypeDef](./type_defs.md#getentitlementsresulttypedef)\].

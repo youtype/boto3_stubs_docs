@@ -112,7 +112,7 @@ from mypy_boto3_shield.type_defs import AssociateProactiveEngagementDetailsReque
 Required fields:
 
 - `EmergencyContactList`:
-  `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
+  `Sequence`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
 
 ## AttackDetailTypeDef
 
@@ -244,8 +244,8 @@ Optional fields:
 
 - `ResourceType`:
   [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
-- `Members`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Members`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateProtectionRequestRequestTypeDef
 
@@ -260,7 +260,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateProtectionResponseTypeDef
 
@@ -482,7 +482,7 @@ from mypy_boto3_shield.type_defs import ListAttacksRequestRequestTypeDef
 
 Optional fields:
 
-- `ResourceArns`: `List`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 - `StartTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `EndTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `NextToken`: `str`
@@ -806,7 +806,7 @@ from mypy_boto3_shield.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -839,7 +839,7 @@ from mypy_boto3_shield.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateEmergencyContactSettingsRequestRequestTypeDef
 
@@ -850,7 +850,7 @@ from mypy_boto3_shield.type_defs import UpdateEmergencyContactSettingsRequestReq
 Optional fields:
 
 - `EmergencyContactList`:
-  `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
+  `Sequence`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
 
 ## UpdateProtectionGroupRequestRequestTypeDef
 
@@ -870,7 +870,7 @@ Optional fields:
 
 - `ResourceType`:
   [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
-- `Members`: `List`\[`str`\]
+- `Members`: `Sequence`\[`str`\]
 
 ## UpdateSubscriptionRequestRequestTypeDef
 

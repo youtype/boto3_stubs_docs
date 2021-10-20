@@ -62,6 +62,7 @@ from mypy_boto3_iotsecuretunneling.literals import ConnectionStatusType, ...
 
 - [ConnectionStatusType](./literals.md#connectionstatustype)
 - [TunnelStatusType](./literals.md#tunnelstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

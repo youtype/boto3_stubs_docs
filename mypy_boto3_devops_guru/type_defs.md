@@ -1166,8 +1166,9 @@ from mypy_boto3_devops_guru.type_defs import SearchInsightsFiltersTypeDef
 Optional fields:
 
 - `Severities`:
-  `List`\[[InsightSeverityType](./literals.md#insightseveritytype)\]
-- `Statuses`: `List`\[[InsightStatusType](./literals.md#insightstatustype)\]
+  `Sequence`\[[InsightSeverityType](./literals.md#insightseveritytype)\]
+- `Statuses`:
+  `Sequence`\[[InsightStatusType](./literals.md#insightstatustype)\]
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `ServiceCollection`:
@@ -1311,7 +1312,7 @@ from mypy_boto3_devops_guru.type_defs import UpdateCloudFormationCollectionFilte
 
 Optional fields:
 
-- `StackNames`: `List`\[`str`\]
+- `StackNames`: `Sequence`\[`str`\]
 
 ## UpdateResourceCollectionFilterTypeDef
 

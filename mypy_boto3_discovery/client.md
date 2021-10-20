@@ -113,7 +113,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `applicationConfigurationId`: `str` *(required)*
-- `configurationIds`: `List`\[`str`\] *(required)*
+- `configurationIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -132,7 +132,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `importTaskIds`: `List`\[`str`\] *(required)*
+- `importTaskIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDeleteImportDataResponseTypeDef](./type_defs.md#batchdeleteimportdataresponsetypedef).
@@ -186,8 +186,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `configurationIds`: `List`\[`str`\] *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `configurationIds`: `Sequence`\[`str`\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -205,7 +205,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `configurationIds`: `List`\[`str`\] *(required)*
+- `configurationIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -223,8 +223,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `configurationIds`: `List`\[`str`\] *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `configurationIds`: `Sequence`\[`str`\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -242,8 +242,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `agentIds`: `List`\[`str`\]
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `agentIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -265,7 +265,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `configurationIds`: `List`\[`str`\] *(required)*
+- `configurationIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeConfigurationsResponseTypeDef](./type_defs.md#describeconfigurationsresponsetypedef).
@@ -285,7 +285,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `exportIds`: `List`\[`str`\]
+- `exportIds`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -307,7 +307,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `exportIds`: `List`\[`str`\]
+- `exportIds`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -328,9 +328,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `exportIds`: `List`\[`str`\]
+- `exportIds`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
+  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -354,7 +354,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `filters`:
-  `List`\[[ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef)\]
+  `Sequence`\[[ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -376,7 +376,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `filters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `filters`: `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -400,7 +400,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `applicationConfigurationId`: `str` *(required)*
-- `configurationIds`: `List`\[`str`\] *(required)*
+- `configurationIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -428,7 +428,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -464,11 +464,11 @@ Keyword-only arguments:
 - `configurationType`:
   [ConfigurationItemTypeType](./literals.md#configurationitemtypetype)
   *(required)*
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `orderBy`:
-  `List`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
+  `Sequence`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
 
 Returns
 [ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
@@ -490,7 +490,7 @@ Keyword-only arguments:
 
 - `configurationId`: `str` *(required)*
 - `portInformationNeeded`: `bool`
-- `neighborConfigurationIds`: `List`\[`str`\]
+- `neighborConfigurationIds`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -525,7 +525,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `agentIds`: `List`\[`str`\] *(required)*
+- `agentIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [StartDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#startdatacollectionbyagentidsresponsetypedef).
@@ -545,9 +545,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `exportDataFormat`:
-  `List`\[[ExportDataFormatType](./literals.md#exportdataformattype)\]
+  `Sequence`\[[ExportDataFormatType](./literals.md#exportdataformattype)\]
 - `filters`:
-  `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
+  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `startTime`: `Union`\[`datetime`, `str`\]
 - `endTime`: `Union`\[`datetime`, `str`\]
 
@@ -612,7 +612,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `agentIds`: `List`\[`str`\] *(required)*
+- `agentIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [StopDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#stopdatacollectionbyagentidsresponsetypedef).

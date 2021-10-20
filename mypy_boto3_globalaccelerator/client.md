@@ -143,7 +143,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EndpointConfigurations`:
-  `List`\[[CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef)\]
+  `Sequence`\[[CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef)\]
   *(required)*
 - `EndpointGroupArn`: `str` *(required)*
 
@@ -189,8 +189,8 @@ Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 - `EndpointId`: `str` *(required)*
-- `DestinationAddresses`: `List`\[`str`\]
-- `DestinationPorts`: `List`\[`int`\]
+- `DestinationAddresses`: `Sequence`\[`str`\]
+- `DestinationPorts`: `Sequence`\[`int`\]
 - `AllowAllTrafficToEndpoint`: `bool`
 
 ### can_paginate
@@ -227,9 +227,9 @@ Keyword-only arguments:
 - `IdempotencyToken`: `str` *(required)*
 - `IpAddressType`: `Literal['IPV4']` (see
   [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `IpAddresses`: `List`\[`str`\]
+- `IpAddresses`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAcceleratorResponseTypeDef](./type_defs.md#createacceleratorresponsetypedef).
@@ -253,9 +253,9 @@ Keyword-only arguments:
 - `IdempotencyToken`: `str` *(required)*
 - `IpAddressType`: `Literal['IPV4']` (see
   [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `IpAddresses`: `List`\[`str`\]
+- `IpAddresses`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#createcustomroutingacceleratorresponsetypedef).
@@ -280,7 +280,7 @@ Keyword-only arguments:
 - `ListenerArn`: `str` *(required)*
 - `EndpointGroupRegion`: `str` *(required)*
 - `DestinationConfigurations`:
-  `List`\[[CustomRoutingDestinationConfigurationTypeDef](./type_defs.md#customroutingdestinationconfigurationtypedef)\]
+  `Sequence`\[[CustomRoutingDestinationConfigurationTypeDef](./type_defs.md#customroutingdestinationconfigurationtypedef)\]
   *(required)*
 - `IdempotencyToken`: `str` *(required)*
 
@@ -304,7 +304,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
-- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+- `PortRanges`:
+  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
   *(required)*
 - `IdempotencyToken`: `str` *(required)*
 
@@ -330,7 +331,7 @@ Keyword-only arguments:
 - `EndpointGroupRegion`: `str` *(required)*
 - `IdempotencyToken`: `str` *(required)*
 - `EndpointConfigurations`:
-  `List`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
+  `Sequence`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
 - `TrafficDialPercentage`: `float`
 - `HealthCheckPort`: `int`
 - `HealthCheckProtocol`:
@@ -339,7 +340,7 @@ Keyword-only arguments:
 - `HealthCheckIntervalSeconds`: `int`
 - `ThresholdCount`: `int`
 - `PortOverrides`:
-  `List`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
+  `Sequence`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
 Returns
 [CreateEndpointGroupResponseTypeDef](./type_defs.md#createendpointgroupresponsetypedef).
@@ -361,7 +362,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
-- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+- `PortRanges`:
+  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
   *(required)*
 - `Protocol`: [ProtocolType](./literals.md#protocoltype) *(required)*
 - `IdempotencyToken`: `str` *(required)*
@@ -491,8 +493,8 @@ Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 - `EndpointId`: `str` *(required)*
-- `DestinationAddresses`: `List`\[`str`\]
-- `DestinationPorts`: `List`\[`int`\]
+- `DestinationAddresses`: `Sequence`\[`str`\]
+- `DestinationPorts`: `Sequence`\[`int`\]
 - `DenyAllTrafficToEndpoint`: `bool`
 
 ### deprovision_byoip_cidr
@@ -692,7 +694,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -960,7 +962,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `EndpointIds`: `List`\[`str`\] *(required)*
+- `EndpointIds`: `Sequence`\[`str`\] *(required)*
 - `EndpointGroupArn`: `str` *(required)*
 
 ### tag_resource
@@ -978,7 +980,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -997,7 +999,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1112,7 +1114,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
-- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+- `PortRanges`:
+  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
   *(required)*
 
 Returns
@@ -1135,7 +1138,7 @@ Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 - `EndpointConfigurations`:
-  `List`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
+  `Sequence`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
 - `TrafficDialPercentage`: `float`
 - `HealthCheckPort`: `int`
 - `HealthCheckProtocol`:
@@ -1144,7 +1147,7 @@ Keyword-only arguments:
 - `HealthCheckIntervalSeconds`: `int`
 - `ThresholdCount`: `int`
 - `PortOverrides`:
-  `List`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
+  `Sequence`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
 Returns
 [UpdateEndpointGroupResponseTypeDef](./type_defs.md#updateendpointgroupresponsetypedef).
@@ -1165,7 +1168,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
-- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+- `PortRanges`:
+  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
 

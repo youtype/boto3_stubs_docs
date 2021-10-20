@@ -100,6 +100,7 @@ from mypy_boto3_customer_profiles.literals import DataPullModeType, ...
 - [TaskTypeType](./literals.md#tasktypetype)
 - [TriggerTypeType](./literals.md#triggertypetype)
 - [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 
@@ -171,6 +172,7 @@ from mypy_boto3_customer_profiles.type_defs import AddProfileKeyRequestRequestTy
 - [MatchingResponseTypeDef](./type_defs.md#matchingresponsetypedef)
 - [MergeProfilesRequestRequestTypeDef](./type_defs.md#mergeprofilesrequestrequesttypedef)
 - [MergeProfilesResponseTypeDef](./type_defs.md#mergeprofilesresponsetypedef)
+- [ObjectFilterTypeDef](./type_defs.md#objectfiltertypedef)
 - [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)
 - [ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef)
 - [ProfileTypeDef](./type_defs.md#profiletypedef)

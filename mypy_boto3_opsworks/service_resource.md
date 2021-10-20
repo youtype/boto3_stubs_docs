@@ -48,6 +48,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [OpsWorksResourceMeta](#opsworksresourcemeta)
+
 - `stacks`: [ServiceResourceStacksCollection](#serviceresourcestackscollection)
 
 ## Collections
@@ -145,7 +147,7 @@ Keyword-only arguments:
 - `ServiceRoleArn`: `str` *(required)*
 - `DefaultInstanceProfileArn`: `str` *(required)*
 - `VpcId`: `str`
-- `Attributes`: `Dict`\[`Literal['Color']` (see
+- `Attributes`: `Mapping`\[`Literal['Color']` (see
   [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
 - `DefaultOs`: `str`
 - `HostnameTheme`: `str`
@@ -176,7 +178,7 @@ method.
 Boto3 documentation:
 [OpsWorks.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## Layer
 
@@ -243,7 +245,7 @@ method.
 Boto3 documentation:
 [OpsWorks.Layer.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Layer.load method
 
@@ -360,16 +362,16 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Shortname`: `str` *(required)*
 - `Attributes`:
-  `Dict`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
+  `Mapping`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
   `str`\]
 - `CloudWatchLogsConfiguration`:
   [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
 - `CustomInstanceProfileArn`: `str`
 - `CustomJson`: `str`
-- `CustomSecurityGroupIds`: `List`\[`str`\]
-- `Packages`: `List`\[`str`\]
+- `CustomSecurityGroupIds`: `Sequence`\[`str`\]
+- `Packages`: `Sequence`\[`str`\]
 - `VolumeConfigurations`:
-  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
+  `Sequence`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
 - `EnableAutoHealing`: `bool`
 - `AutoAssignElasticIps`: `bool`
 - `AutoAssignPublicIps`: `bool`
@@ -400,7 +402,7 @@ method.
 Boto3 documentation:
 [OpsWorks.Stack.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Stack.load method
 
@@ -470,7 +472,7 @@ method.
 Boto3 documentation:
 [OpsWorks.StackSummary.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### StackSummary.load method
 

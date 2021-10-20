@@ -203,14 +203,14 @@ from mypy_boto3_kinesisanalytics.type_defs import ApplicationUpdateTypeDef
 Optional fields:
 
 - `InputUpdates`:
-  `List`\[[InputUpdateTypeDef](./type_defs.md#inputupdatetypedef)\]
+  `Sequence`\[[InputUpdateTypeDef](./type_defs.md#inputupdatetypedef)\]
 - `ApplicationCodeUpdate`: `str`
 - `OutputUpdates`:
-  `List`\[[OutputUpdateTypeDef](./type_defs.md#outputupdatetypedef)\]
+  `Sequence`\[[OutputUpdateTypeDef](./type_defs.md#outputupdatetypedef)\]
 - `ReferenceDataSourceUpdates`:
-  `List`\[[ReferenceDataSourceUpdateTypeDef](./type_defs.md#referencedatasourceupdatetypedef)\]
+  `Sequence`\[[ReferenceDataSourceUpdateTypeDef](./type_defs.md#referencedatasourceupdatetypedef)\]
 - `CloudWatchLoggingOptionUpdates`:
-  `List`\[[CloudWatchLoggingOptionUpdateTypeDef](./type_defs.md#cloudwatchloggingoptionupdatetypedef)\]
+  `Sequence`\[[CloudWatchLoggingOptionUpdateTypeDef](./type_defs.md#cloudwatchloggingoptionupdatetypedef)\]
 
 ## CSVMappingParametersTypeDef
 
@@ -277,12 +277,12 @@ Required fields:
 Optional fields:
 
 - `ApplicationDescription`: `str`
-- `Inputs`: `List`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `Inputs`: `Sequence`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
+- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `CloudWatchLoggingOptions`:
-  `List`\[[CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)\]
+  `Sequence`\[[CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)\]
 - `ApplicationCode`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateApplicationResponseTypeDef
 
@@ -555,7 +555,7 @@ Optional fields:
   [RecordFormatTypeDef](./type_defs.md#recordformattypedef)
 - `RecordEncodingUpdate`: `str`
 - `RecordColumnUpdates`:
-  `List`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
+  `Sequence`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
 
 ## InputStartingPositionConfigurationTypeDef
 
@@ -1064,7 +1064,7 @@ Required fields:
 
 - `RecordFormat`: [RecordFormatTypeDef](./type_defs.md#recordformattypedef)
 - `RecordColumns`:
-  `List`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
+  `Sequence`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
 
 Optional fields:
 
@@ -1080,7 +1080,7 @@ Required fields:
 
 - `ApplicationName`: `str`
 - `InputConfigurations`:
-  `List`\[[InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)\]
+  `Sequence`\[[InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)\]
 
 ## StopApplicationRequestRequestTypeDef
 
@@ -1101,7 +1101,7 @@ from mypy_boto3_kinesisanalytics.type_defs import TagResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1126,7 +1126,7 @@ from mypy_boto3_kinesisanalytics.type_defs import UntagResourceRequestRequestTyp
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApplicationRequestRequestTypeDef
 

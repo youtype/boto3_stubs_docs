@@ -158,7 +158,7 @@ from mypy_boto3_globalaccelerator.type_defs import AddCustomRoutingEndpointsRequ
 Required fields:
 
 - `EndpointConfigurations`:
-  `List`\[[CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef)\]
+  `Sequence`\[[CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef)\]
 - `EndpointGroupArn`: `str`
 
 ## AddCustomRoutingEndpointsResponseTypeDef
@@ -210,8 +210,8 @@ Required fields:
 
 Optional fields:
 
-- `DestinationAddresses`: `List`\[`str`\]
-- `DestinationPorts`: `List`\[`int`\]
+- `DestinationAddresses`: `Sequence`\[`str`\]
+- `DestinationPorts`: `Sequence`\[`int`\]
 - `AllowAllTrafficToEndpoint`: `bool`
 
 ## ByoipCidrEventTypeDef
@@ -264,9 +264,9 @@ Optional fields:
 
 - `IpAddressType`: `Literal['IPV4']` (see
   [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `IpAddresses`: `List`\[`str`\]
+- `IpAddresses`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAcceleratorResponseTypeDef
 
@@ -295,9 +295,9 @@ Optional fields:
 
 - `IpAddressType`: `Literal['IPV4']` (see
   [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `IpAddresses`: `List`\[`str`\]
+- `IpAddresses`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateCustomRoutingAcceleratorResponseTypeDef
 
@@ -323,7 +323,7 @@ Required fields:
 - `ListenerArn`: `str`
 - `EndpointGroupRegion`: `str`
 - `DestinationConfigurations`:
-  `List`\[[CustomRoutingDestinationConfigurationTypeDef](./type_defs.md#customroutingdestinationconfigurationtypedef)\]
+  `Sequence`\[[CustomRoutingDestinationConfigurationTypeDef](./type_defs.md#customroutingdestinationconfigurationtypedef)\]
 - `IdempotencyToken`: `str`
 
 ## CreateCustomRoutingEndpointGroupResponseTypeDef
@@ -348,7 +348,8 @@ from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingListenerRe
 Required fields:
 
 - `AcceleratorArn`: `str`
-- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+- `PortRanges`:
+  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `IdempotencyToken`: `str`
 
 ## CreateCustomRoutingListenerResponseTypeDef
@@ -379,7 +380,7 @@ Required fields:
 Optional fields:
 
 - `EndpointConfigurations`:
-  `List`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
+  `Sequence`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
 - `TrafficDialPercentage`: `float`
 - `HealthCheckPort`: `int`
 - `HealthCheckProtocol`:
@@ -388,7 +389,7 @@ Optional fields:
 - `HealthCheckIntervalSeconds`: `int`
 - `ThresholdCount`: `int`
 - `PortOverrides`:
-  `List`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
+  `Sequence`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
 ## CreateEndpointGroupResponseTypeDef
 
@@ -411,7 +412,8 @@ from mypy_boto3_globalaccelerator.type_defs import CreateListenerRequestRequestT
 Required fields:
 
 - `AcceleratorArn`: `str`
-- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+- `PortRanges`:
+  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `IdempotencyToken`: `str`
 
@@ -474,7 +476,7 @@ Required fields:
 - `FromPort`: `int`
 - `ToPort`: `int`
 - `Protocols`:
-  `List`\[[CustomRoutingProtocolType](./literals.md#customroutingprotocoltype)\]
+  `Sequence`\[[CustomRoutingProtocolType](./literals.md#customroutingprotocoltype)\]
 
 ## CustomRoutingDestinationDescriptionTypeDef
 
@@ -607,8 +609,8 @@ Required fields:
 
 Optional fields:
 
-- `DestinationAddresses`: `List`\[`str`\]
-- `DestinationPorts`: `List`\[`int`\]
+- `DestinationAddresses`: `Sequence`\[`str`\]
+- `DestinationPorts`: `Sequence`\[`int`\]
 - `DenyAllTrafficToEndpoint`: `bool`
 
 ## DeprovisionByoipCidrRequestRequestTypeDef
@@ -1262,7 +1264,7 @@ from mypy_boto3_globalaccelerator.type_defs import RemoveCustomRoutingEndpointsR
 
 Required fields:
 
-- `EndpointIds`: `List`\[`str`\]
+- `EndpointIds`: `Sequence`\[`str`\]
 - `EndpointGroupArn`: `str`
 
 ## ResponseMetadataTypeDef
@@ -1299,7 +1301,7 @@ from mypy_boto3_globalaccelerator.type_defs import TagResourceRequestRequestType
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1321,7 +1323,7 @@ from mypy_boto3_globalaccelerator.type_defs import UntagResourceRequestRequestTy
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAcceleratorAttributesRequestRequestTypeDef
 
@@ -1449,7 +1451,8 @@ from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingListenerRe
 Required fields:
 
 - `ListenerArn`: `str`
-- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+- `PortRanges`:
+  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 
 ## UpdateCustomRoutingListenerResponseTypeDef
 
@@ -1477,7 +1480,7 @@ Required fields:
 Optional fields:
 
 - `EndpointConfigurations`:
-  `List`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
+  `Sequence`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
 - `TrafficDialPercentage`: `float`
 - `HealthCheckPort`: `int`
 - `HealthCheckProtocol`:
@@ -1486,7 +1489,7 @@ Optional fields:
 - `HealthCheckIntervalSeconds`: `int`
 - `ThresholdCount`: `int`
 - `PortOverrides`:
-  `List`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
+  `Sequence`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
 ## UpdateEndpointGroupResponseTypeDef
 
@@ -1512,7 +1515,8 @@ Required fields:
 
 Optional fields:
 
-- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+- `PortRanges`:
+  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
 

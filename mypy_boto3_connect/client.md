@@ -21,7 +21,9 @@ type annotations stubs module
     - [associate_routing_profile_queues](#associate_routing_profile_queues)
     - [associate_security_key](#associate_security_key)
     - [can_paginate](#can_paginate)
+    - [create_agent_status](#create_agent_status)
     - [create_contact_flow](#create_contact_flow)
+    - [create_hours_of_operation](#create_hours_of_operation)
     - [create_instance](#create_instance)
     - [create_integration_association](#create_integration_association)
     - [create_queue](#create_queue)
@@ -30,12 +32,14 @@ type annotations stubs module
     - [create_use_case](#create_use_case)
     - [create_user](#create_user)
     - [create_user_hierarchy_group](#create_user_hierarchy_group)
+    - [delete_hours_of_operation](#delete_hours_of_operation)
     - [delete_instance](#delete_instance)
     - [delete_integration_association](#delete_integration_association)
     - [delete_quick_connect](#delete_quick_connect)
     - [delete_use_case](#delete_use_case)
     - [delete_user](#delete_user)
     - [delete_user_hierarchy_group](#delete_user_hierarchy_group)
+    - [describe_agent_status](#describe_agent_status)
     - [describe_contact_flow](#describe_contact_flow)
     - [describe_hours_of_operation](#describe_hours_of_operation)
     - [describe_instance](#describe_instance)
@@ -60,6 +64,7 @@ type annotations stubs module
     - [get_current_metric_data](#get_current_metric_data)
     - [get_federation_token](#get_federation_token)
     - [get_metric_data](#get_metric_data)
+    - [list_agent_statuses](#list_agent_statuses)
     - [list_approved_origins](#list_approved_origins)
     - [list_bots](#list_bots)
     - [list_contact_flows](#list_contact_flows)
@@ -93,9 +98,11 @@ type annotations stubs module
     - [suspend_contact_recording](#suspend_contact_recording)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_agent_status](#update_agent_status)
     - [update_contact_attributes](#update_contact_attributes)
     - [update_contact_flow_content](#update_contact_flow_content)
     - [update_contact_flow_name](#update_contact_flow_name)
+    - [update_hours_of_operation](#update_hours_of_operation)
     - [update_instance_attribute](#update_instance_attribute)
     - [update_instance_storage_config](#update_instance_storage_config)
     - [update_queue_hours_of_operation](#update_queue_hours_of_operation)
@@ -293,7 +300,7 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
-- `QuickConnectIds`: `List`\[`str`\] *(required)*
+- `QuickConnectIds`: `Sequence`\[`str`\] *(required)*
 
 ### associate_routing_profile_queues
 
@@ -313,7 +320,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
 - `QueueConfigs`:
-  `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
   *(required)*
 
 ### associate_security_key
@@ -351,6 +358,31 @@ Arguments:
 
 Returns `bool`.
 
+### create_agent_status
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").create_agent_status` method.
+
+Boto3 documentation:
+[Connect.Client.create_agent_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_agent_status)
+
+Arguments mapping described in
+[CreateAgentStatusRequestRequestTypeDef](./type_defs.md#createagentstatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
+  *(required)*
+- `Description`: `str`
+- `DisplayOrder`: `int`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+Returns
+[CreateAgentStatusResponseTypeDef](./type_defs.md#createagentstatusresponsetypedef).
+
 ### create_contact_flow
 
 Creates a contact flow for the specified Amazon Connect instance.
@@ -370,10 +402,37 @@ Keyword-only arguments:
 - `Type`: [ContactFlowTypeType](./literals.md#contactflowtypetype) *(required)*
 - `Content`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateContactFlowResponseTypeDef](./type_defs.md#createcontactflowresponsetypedef).
+
+### create_hours_of_operation
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").create_hours_of_operation`
+method.
+
+Boto3 documentation:
+[Connect.Client.create_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_hours_of_operation)
+
+Arguments mapping described in
+[CreateHoursOfOperationRequestRequestTypeDef](./type_defs.md#createhoursofoperationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `TimeZone`: `str` *(required)*
+- `Config`:
+  `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
+  *(required)*
+- `Description`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+Returns
+[CreateHoursOfOperationResponseTypeDef](./type_defs.md#createhoursofoperationresponsetypedef).
 
 ### create_instance
 
@@ -402,7 +461,7 @@ Returns
 
 ### create_integration_association
 
-Create an AppIntegration association with an Amazon Connect instance.
+Creates an AWS resource association with an Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").create_integration_association`
 method.
@@ -416,13 +475,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
-- `IntegrationType`: `Literal['EVENT']` (see
-  [IntegrationTypeType](./literals.md#integrationtypetype)) *(required)*
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
+  *(required)*
 - `IntegrationArn`: `str` *(required)*
-- `SourceApplicationUrl`: `str` *(required)*
-- `SourceApplicationName`: `str` *(required)*
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype) *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `SourceApplicationUrl`: `str`
+- `SourceApplicationName`: `str`
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateIntegrationAssociationResponseTypeDef](./type_defs.md#createintegrationassociationresponsetypedef).
@@ -448,8 +507,8 @@ Keyword-only arguments:
 - `OutboundCallerConfig`:
   [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
 - `MaxContacts`: `int`
-- `QuickConnectIds`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `QuickConnectIds`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef).
@@ -474,7 +533,7 @@ Keyword-only arguments:
   [QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef)
   *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateQuickConnectResponseTypeDef](./type_defs.md#createquickconnectresponsetypedef).
@@ -498,18 +557,18 @@ Keyword-only arguments:
 - `Description`: `str` *(required)*
 - `DefaultOutboundQueueId`: `str` *(required)*
 - `MediaConcurrencies`:
-  `List`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
+  `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
   *(required)*
 - `QueueConfigs`:
-  `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
-- `Tags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateRoutingProfileResponseTypeDef](./type_defs.md#createroutingprofileresponsetypedef).
 
 ### create_use_case
 
-Creates a use case for an AppIntegration association.
+Creates a use case for an integration association.
 
 Type annotations for `boto3.client("connect").create_use_case` method.
 
@@ -523,9 +582,8 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `IntegrationAssociationId`: `str` *(required)*
-- `UseCaseType`: `Literal['RULES_EVALUATION']` (see
-  [UseCaseTypeType](./literals.md#usecasetypetype)) *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `UseCaseType`: [UseCaseTypeType](./literals.md#usecasetypetype) *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateUseCaseResponseTypeDef](./type_defs.md#createusecaseresponsetypedef).
@@ -547,7 +605,7 @@ Keyword-only arguments:
 - `Username`: `str` *(required)*
 - `PhoneConfig`:
   [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef) *(required)*
-- `SecurityProfileIds`: `List`\[`str`\] *(required)*
+- `SecurityProfileIds`: `Sequence`\[`str`\] *(required)*
 - `RoutingProfileId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
 - `Password`: `str`
@@ -555,7 +613,7 @@ Keyword-only arguments:
   [UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef)
 - `DirectoryUserId`: `str`
 - `HierarchyGroupId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
@@ -581,6 +639,24 @@ Keyword-only arguments:
 Returns
 [CreateUserHierarchyGroupResponseTypeDef](./type_defs.md#createuserhierarchygroupresponsetypedef).
 
+### delete_hours_of_operation
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").delete_hours_of_operation`
+method.
+
+Boto3 documentation:
+[Connect.Client.delete_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_hours_of_operation)
+
+Arguments mapping described in
+[DeleteHoursOfOperationRequestRequestTypeDef](./type_defs.md#deletehoursofoperationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `HoursOfOperationId`: `str` *(required)*
+
 ### delete_instance
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -599,7 +675,7 @@ Keyword-only arguments:
 
 ### delete_integration_association
 
-Deletes an AppIntegration association from an Amazon Connect instance.
+Deletes an AWS resource association from an Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").delete_integration_association`
 method.
@@ -634,7 +710,7 @@ Keyword-only arguments:
 
 ### delete_use_case
 
-Deletes a use case from an AppIntegration association.
+Deletes a use case from an integration association.
 
 Type annotations for `boto3.client("connect").delete_use_case` method.
 
@@ -684,6 +760,26 @@ Keyword-only arguments:
 
 - `HierarchyGroupId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
+
+### describe_agent_status
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").describe_agent_status` method.
+
+Boto3 documentation:
+[Connect.Client.describe_agent_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_agent_status)
+
+Arguments mapping described in
+[DescribeAgentStatusRequestRequestTypeDef](./type_defs.md#describeagentstatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `AgentStatusId`: `str` *(required)*
+
+Returns
+[DescribeAgentStatusResponseTypeDef](./type_defs.md#describeagentstatusresponsetypedef).
 
 ### describe_contact_flow
 
@@ -1023,7 +1119,7 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
-- `QuickConnectIds`: `List`\[`str`\] *(required)*
+- `QuickConnectIds`: `Sequence`\[`str`\] *(required)*
 
 ### disassociate_routing_profile_queues
 
@@ -1043,7 +1139,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
 - `QueueReferences`:
-  `List`\[[RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)\]
+  `Sequence`\[[RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)\]
   *(required)*
 
 ### disassociate_security_key
@@ -1076,7 +1172,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1119,9 +1215,9 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef) *(required)*
 - `CurrentMetrics`:
-  `List`\[[CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef)\]
+  `Sequence`\[[CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef)\]
   *(required)*
-- `Groupings`: `List`\[[GroupingType](./literals.md#groupingtype)\]
+- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1166,14 +1262,37 @@ Keyword-only arguments:
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef) *(required)*
 - `HistoricalMetrics`:
-  `List`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
+  `Sequence`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
   *(required)*
-- `Groupings`: `List`\[[GroupingType](./literals.md#groupingtype)\]
+- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
 [GetMetricDataResponseTypeDef](./type_defs.md#getmetricdataresponsetypedef).
+
+### list_agent_statuses
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").list_agent_statuses` method.
+
+Boto3 documentation:
+[Connect.Client.list_agent_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_agent_statuses)
+
+Arguments mapping described in
+[ListAgentStatusRequestRequestTypeDef](./type_defs.md#listagentstatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `AgentStatusTypes`:
+  `Sequence`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
+
+Returns
+[ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef).
 
 ### list_approved_origins
 
@@ -1234,7 +1353,7 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactFlowTypes`:
-  `List`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
+  `Sequence`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1331,7 +1450,7 @@ Returns
 
 ### list_integration_associations
 
-Provides summary information about the AppIntegration associations for the
+Provides summary information about the AWS resource associations for the
 specified Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").list_integration_associations`
@@ -1346,6 +1465,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1411,9 +1531,9 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `PhoneNumberTypes`:
-  `List`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
+  `Sequence`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
 - `PhoneNumberCountryCodes`:
-  `List`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
+  `Sequence`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1481,7 +1601,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
-- `QueueTypes`: `List`\[[QueueTypeType](./literals.md#queuetypetype)\]
+- `QueueTypes`: `Sequence`\[[QueueTypeType](./literals.md#queuetypetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1506,7 +1626,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `QuickConnectTypes`:
-  `List`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
+  `Sequence`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
 
 Returns
 [ListQuickConnectsResponseTypeDef](./type_defs.md#listquickconnectsresponsetypedef).
@@ -1620,7 +1740,7 @@ Returns
 
 ### list_use_cases
 
-Lists the use cases.
+Lists the use cases for the integration association.
 
 Type annotations for `boto3.client("connect").list_use_cases` method.
 
@@ -1724,7 +1844,7 @@ Keyword-only arguments:
 - `ParticipantDetails`:
   [ParticipantDetailsTypeDef](./type_defs.md#participantdetailstypedef)
   *(required)*
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 - `InitialMessage`: [ChatMessageTypeDef](./type_defs.md#chatmessagetypedef)
 - `ClientToken`: `str`
 
@@ -1775,7 +1895,11 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 - `SourcePhoneNumber`: `str`
 - `QueueId`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
+- `AnswerMachineDetectionConfig`:
+  [AnswerMachineDetectionConfigTypeDef](./type_defs.md#answermachinedetectionconfigtypedef)
+- `CampaignId`: `str`
+- `TrafficType`: [TrafficTypeType](./literals.md#traffictypetype)
 
 Returns
 [StartOutboundVoiceContactResponseTypeDef](./type_defs.md#startoutboundvoicecontactresponsetypedef).
@@ -1798,8 +1922,8 @@ Keyword-only arguments:
 - `ContactFlowId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `PreviousContactId`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `References`: `Dict`\[`str`,
+- `Attributes`: `Mapping`\[`str`, `str`\]
+- `References`: `Mapping`\[`str`,
   [ReferenceTypeDef](./type_defs.md#referencetypedef)\]
 - `Description`: `str`
 - `ClientToken`: `str`
@@ -1882,7 +2006,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -1899,7 +2023,29 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
+
+### update_agent_status
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").update_agent_status` method.
+
+Boto3 documentation:
+[Connect.Client.update_agent_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_agent_status)
+
+Arguments mapping described in
+[UpdateAgentStatusRequestRequestTypeDef](./type_defs.md#updateagentstatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `AgentStatusId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
+- `DisplayOrder`: `int`
+- `ResetOrderNumber`: `bool`
 
 ### update_contact_attributes
 
@@ -1919,7 +2065,7 @@ Keyword-only arguments:
 
 - `InitialContactId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
-- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
+- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1960,6 +2106,29 @@ Keyword-only arguments:
 - `ContactFlowId`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
+
+### update_hours_of_operation
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").update_hours_of_operation`
+method.
+
+Boto3 documentation:
+[Connect.Client.update_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_hours_of_operation)
+
+Arguments mapping described in
+[UpdateHoursOfOperationRequestRequestTypeDef](./type_defs.md#updatehoursofoperationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `HoursOfOperationId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `TimeZone`: `str`
+- `Config`:
+  `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
 
 ### update_instance_attribute
 
@@ -2162,7 +2331,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
 - `MediaConcurrencies`:
-  `List`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
+  `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
   *(required)*
 
 ### update_routing_profile_default_outbound_queue
@@ -2222,7 +2391,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
 - `QueueConfigs`:
-  `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
   *(required)*
 
 ### update_user_hierarchy
@@ -2357,7 +2526,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `SecurityProfileIds`: `List`\[`str`\] *(required)*
+- `SecurityProfileIds`: `Sequence`\[`str`\] *(required)*
 - `UserId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
 
@@ -2368,6 +2537,8 @@ overloads.
 
 - `client.get_paginator("get_metric_data")` ->
   [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
+- `client.get_paginator("list_agent_statuses")` ->
+  [ListAgentStatusesPaginator](./paginators.md#listagentstatusespaginator)
 - `client.get_paginator("list_approved_origins")` ->
   [ListApprovedOriginsPaginator](./paginators.md#listapprovedoriginspaginator)
 - `client.get_paginator("list_bots")` ->

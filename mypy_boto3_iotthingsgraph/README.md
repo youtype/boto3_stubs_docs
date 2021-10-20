@@ -140,6 +140,8 @@ from mypy_boto3_iotthingsgraph.literals import DefinitionLanguageType, ...
 - [SystemInstanceFilterNameType](./literals.md#systeminstancefilternametype)
 - [SystemTemplateFilterNameType](./literals.md#systemtemplatefilternametype)
 - [UploadStatusType](./literals.md#uploadstatustype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

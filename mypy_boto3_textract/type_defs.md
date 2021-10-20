@@ -10,6 +10,8 @@ type annotations stubs module
 - [Typed dictionaries for boto3 Textract module](#typed-dictionaries-for-boto3-textract-module)
   - [AnalyzeDocumentRequestRequestTypeDef](#analyzedocumentrequestrequesttypedef)
   - [AnalyzeDocumentResponseTypeDef](#analyzedocumentresponsetypedef)
+  - [AnalyzeExpenseRequestRequestTypeDef](#analyzeexpenserequestrequesttypedef)
+  - [AnalyzeExpenseResponseTypeDef](#analyzeexpenseresponsetypedef)
   - [BlockTypeDef](#blocktypedef)
   - [BoundingBoxTypeDef](#boundingboxtypedef)
   - [DetectDocumentTextRequestRequestTypeDef](#detectdocumenttextrequestrequesttypedef)
@@ -17,6 +19,10 @@ type annotations stubs module
   - [DocumentLocationTypeDef](#documentlocationtypedef)
   - [DocumentMetadataTypeDef](#documentmetadatatypedef)
   - [DocumentTypeDef](#documenttypedef)
+  - [ExpenseDetectionTypeDef](#expensedetectiontypedef)
+  - [ExpenseDocumentTypeDef](#expensedocumenttypedef)
+  - [ExpenseFieldTypeDef](#expensefieldtypedef)
+  - [ExpenseTypeTypeDef](#expensetypetypedef)
   - [GeometryTypeDef](#geometrytypedef)
   - [GetDocumentAnalysisRequestRequestTypeDef](#getdocumentanalysisrequestrequesttypedef)
   - [GetDocumentAnalysisResponseTypeDef](#getdocumentanalysisresponsetypedef)
@@ -25,6 +31,8 @@ type annotations stubs module
   - [HumanLoopActivationOutputTypeDef](#humanloopactivationoutputtypedef)
   - [HumanLoopConfigTypeDef](#humanloopconfigtypedef)
   - [HumanLoopDataAttributesTypeDef](#humanloopdataattributestypedef)
+  - [LineItemFieldsTypeDef](#lineitemfieldstypedef)
+  - [LineItemGroupTypeDef](#lineitemgrouptypedef)
   - [NotificationChannelTypeDef](#notificationchanneltypedef)
   - [OutputConfigTypeDef](#outputconfigtypedef)
   - [PointTypeDef](#pointtypedef)
@@ -46,7 +54,8 @@ from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestRequestTypeDef
 Required fields:
 
 - `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef)
-- `FeatureTypes`: `List`\[[FeatureTypeType](./literals.md#featuretypetype)\]
+- `FeatureTypes`:
+  `Sequence`\[[FeatureTypeType](./literals.md#featuretypetype)\]
 
 Optional fields:
 
@@ -67,6 +76,31 @@ Required fields:
 - `HumanLoopActivationOutput`:
   [HumanLoopActivationOutputTypeDef](./type_defs.md#humanloopactivationoutputtypedef)
 - `AnalyzeDocumentModelVersion`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AnalyzeExpenseRequestRequestTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import AnalyzeExpenseRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef)
+
+## AnalyzeExpenseResponseTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import AnalyzeExpenseResponseTypeDef
+```
+
+Required fields:
+
+- `DocumentMetadata`:
+  [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
+- `ExpenseDocuments`:
+  `List`\[[ExpenseDocumentTypeDef](./type_defs.md#expensedocumenttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -162,6 +196,58 @@ Optional fields:
 
 - `Bytes`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
+
+## ExpenseDetectionTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import ExpenseDetectionTypeDef
+```
+
+Optional fields:
+
+- `Text`: `str`
+- `Geometry`: [GeometryTypeDef](./type_defs.md#geometrytypedef)
+- `Confidence`: `float`
+
+## ExpenseDocumentTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import ExpenseDocumentTypeDef
+```
+
+Optional fields:
+
+- `ExpenseIndex`: `int`
+- `SummaryFields`:
+  `List`\[[ExpenseFieldTypeDef](./type_defs.md#expensefieldtypedef)\]
+- `LineItemGroups`:
+  `List`\[[LineItemGroupTypeDef](./type_defs.md#lineitemgrouptypedef)\]
+
+## ExpenseFieldTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import ExpenseFieldTypeDef
+```
+
+Optional fields:
+
+- `Type`: [ExpenseTypeTypeDef](./type_defs.md#expensetypetypedef)
+- `LabelDetection`:
+  [ExpenseDetectionTypeDef](./type_defs.md#expensedetectiontypedef)
+- `ValueDetection`:
+  [ExpenseDetectionTypeDef](./type_defs.md#expensedetectiontypedef)
+- `PageNumber`: `int`
+
+## ExpenseTypeTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import ExpenseTypeTypeDef
+```
+
+Optional fields:
+
+- `Text`: `str`
+- `Confidence`: `float`
 
 ## GeometryTypeDef
 
@@ -279,7 +365,30 @@ from mypy_boto3_textract.type_defs import HumanLoopDataAttributesTypeDef
 Optional fields:
 
 - `ContentClassifiers`:
-  `List`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
+  `Sequence`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
+
+## LineItemFieldsTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import LineItemFieldsTypeDef
+```
+
+Optional fields:
+
+- `LineItemExpenseFields`:
+  `List`\[[ExpenseFieldTypeDef](./type_defs.md#expensefieldtypedef)\]
+
+## LineItemGroupTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import LineItemGroupTypeDef
+```
+
+Optional fields:
+
+- `LineItemGroupIndex`: `int`
+- `LineItems`:
+  `List`\[[LineItemFieldsTypeDef](./type_defs.md#lineitemfieldstypedef)\]
 
 ## NotificationChannelTypeDef
 
@@ -364,7 +473,8 @@ Required fields:
 
 - `DocumentLocation`:
   [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)
-- `FeatureTypes`: `List`\[[FeatureTypeType](./literals.md#featuretypetype)\]
+- `FeatureTypes`:
+  `Sequence`\[[FeatureTypeType](./literals.md#featuretypetype)\]
 
 Optional fields:
 

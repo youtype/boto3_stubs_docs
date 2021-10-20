@@ -31,9 +31,9 @@ Boto3 documentation:
 
 Arguments for `ServicesInactiveWaiter.wait` method:
 
-- `services`: `List`\[`str`\] *(required)*
+- `services`: `Sequence`\[`str`\] *(required)*
 - `cluster`: `str`
-- `include`: `List`\[`Literal['TAGS']` (see
+- `include`: `Sequence`\[`Literal['TAGS']` (see
   [ServiceFieldType](./literals.md#servicefieldtype))\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -55,9 +55,9 @@ Boto3 documentation:
 
 Arguments for `ServicesStableWaiter.wait` method:
 
-- `services`: `List`\[`str`\] *(required)*
+- `services`: `Sequence`\[`str`\] *(required)*
 - `cluster`: `str`
-- `include`: `List`\[`Literal['TAGS']` (see
+- `include`: `Sequence`\[`Literal['TAGS']` (see
   [ServiceFieldType](./literals.md#servicefieldtype))\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -79,9 +79,9 @@ Boto3 documentation:
 
 Arguments for `TasksRunningWaiter.wait` method:
 
-- `tasks`: `List`\[`str`\] *(required)*
+- `tasks`: `Sequence`\[`str`\] *(required)*
 - `cluster`: `str`
-- `include`: `List`\[`Literal['TAGS']` (see
+- `include`: `Sequence`\[`Literal['TAGS']` (see
   [TaskFieldType](./literals.md#taskfieldtype))\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -103,8 +103,8 @@ Boto3 documentation:
 
 Arguments for `TasksStoppedWaiter.wait` method:
 
-- `tasks`: `List`\[`str`\] *(required)*
+- `tasks`: `Sequence`\[`str`\] *(required)*
 - `cluster`: `str`
-- `include`: `List`\[`Literal['TAGS']` (see
+- `include`: `Sequence`\[`Literal['TAGS']` (see
   [TaskFieldType](./literals.md#taskfieldtype))\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

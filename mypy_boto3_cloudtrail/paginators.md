@@ -38,7 +38,7 @@ Arguments for `ListPublicKeysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPublicKeysPaginator.paginate` returns
-`Iterator`\[[ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef)\].
+`_PageIterator`\[[ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef)\].
 
 ## ListTagsPaginator
 
@@ -58,12 +58,12 @@ Boto3 documentation:
 
 Arguments for `ListTagsPaginator.paginate` method:
 
-- `ResourceIdList`: `List`\[`str`\] *(required)*
+- `ResourceIdList`: `Sequence`\[`str`\] *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsPaginator.paginate` returns
-`Iterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].
+`_PageIterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].
 
 ## ListTrailsPaginator
 
@@ -87,7 +87,7 @@ Arguments for `ListTrailsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrailsPaginator.paginate` returns
-`Iterator`\[[ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef)\].
+`_PageIterator`\[[ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef)\].
 
 ## LookupEventsPaginator
 
@@ -109,7 +109,7 @@ Boto3 documentation:
 Arguments for `LookupEventsPaginator.paginate` method:
 
 - `LookupAttributes`:
-  `List`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
+  `Sequence`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `EventCategory`: `Literal['insight']` (see
@@ -118,4 +118,4 @@ Arguments for `LookupEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `LookupEventsPaginator.paginate` returns
-`Iterator`\[[LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef)\].
+`_PageIterator`\[[LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef)\].

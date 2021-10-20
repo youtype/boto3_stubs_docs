@@ -93,6 +93,8 @@ from mypy_boto3_serverlessrepo.literals import CapabilityType, ...
 - [ListApplicationVersionsPaginatorName](./literals.md#listapplicationversionspaginatorname)
 - [ListApplicationsPaginatorName](./literals.md#listapplicationspaginatorname)
 - [StatusType](./literals.md#statustype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

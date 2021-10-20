@@ -40,8 +40,13 @@ from mypy_boto3_healthlake.client import HealthLakeClient
 - [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [list_fhir_datastores](./client.md#list_fhir_datastores)
+- [list_fhir_export_jobs](./client.md#list_fhir_export_jobs)
+- [list_fhir_import_jobs](./client.md#list_fhir_import_jobs)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [start_fhir_export_job](./client.md#start_fhir_export_job)
 - [start_fhir_import_job](./client.md#start_fhir_import_job)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
@@ -62,13 +67,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_healthlake.literals import DatastoreStatusType, ...
+from mypy_boto3_healthlake.literals import CmkTypeType, ...
 ```
 
+- [CmkTypeType](./literals.md#cmktypetype)
 - [DatastoreStatusType](./literals.md#datastorestatustype)
 - [FHIRVersionType](./literals.md#fhirversiontype)
 - [JobStatusType](./literals.md#jobstatustype)
 - [PreloadDataTypeType](./literals.md#preloaddatatypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 
@@ -96,12 +103,24 @@ from mypy_boto3_healthlake.type_defs import CreateFHIRDatastoreRequestRequestTyp
 - [ExportJobPropertiesTypeDef](./type_defs.md#exportjobpropertiestypedef)
 - [ImportJobPropertiesTypeDef](./type_defs.md#importjobpropertiestypedef)
 - [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- [KmsEncryptionConfigTypeDef](./type_defs.md#kmsencryptionconfigtypedef)
 - [ListFHIRDatastoresRequestRequestTypeDef](./type_defs.md#listfhirdatastoresrequestrequesttypedef)
 - [ListFHIRDatastoresResponseTypeDef](./type_defs.md#listfhirdatastoresresponsetypedef)
+- [ListFHIRExportJobsRequestRequestTypeDef](./type_defs.md#listfhirexportjobsrequestrequesttypedef)
+- [ListFHIRExportJobsResponseTypeDef](./type_defs.md#listfhirexportjobsresponsetypedef)
+- [ListFHIRImportJobsRequestRequestTypeDef](./type_defs.md#listfhirimportjobsrequestrequesttypedef)
+- [ListFHIRImportJobsResponseTypeDef](./type_defs.md#listfhirimportjobsresponsetypedef)
+- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
 - [PreloadDataConfigTypeDef](./type_defs.md#preloaddataconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
+- [SseConfigurationTypeDef](./type_defs.md#sseconfigurationtypedef)
 - [StartFHIRExportJobRequestRequestTypeDef](./type_defs.md#startfhirexportjobrequestrequesttypedef)
 - [StartFHIRExportJobResponseTypeDef](./type_defs.md#startfhirexportjobresponsetypedef)
 - [StartFHIRImportJobRequestRequestTypeDef](./type_defs.md#startfhirimportjobrequestrequesttypedef)
 - [StartFHIRImportJobResponseTypeDef](./type_defs.md#startfhirimportjobresponsetypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [TagTypeDef](./type_defs.md#tagtypedef)
+- [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)

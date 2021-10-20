@@ -554,7 +554,7 @@ Optional fields:
 - `taskPriority`: `str`
 - `taskStartToCloseTimeout`: `str`
 - `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
-- `tagList`: `List`\[`str`\]
+- `tagList`: `Sequence`\[`str`\]
 - `workflowTypeVersion`: `str`
 - `lambdaRole`: `str`
 
@@ -1448,7 +1448,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `tags`: `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+- `tags`: `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
 ## RegisterWorkflowTypeInputRequestTypeDef
 
@@ -1629,7 +1629,7 @@ Required fields:
 
 Optional fields:
 
-- `decisions`: `List`\[[DecisionTypeDef](./type_defs.md#decisiontypedef)\]
+- `decisions`: `Sequence`\[[DecisionTypeDef](./type_defs.md#decisiontypedef)\]
 - `executionContext`: `str`
 
 ## ResponseMetadataTypeDef
@@ -1816,7 +1816,7 @@ Optional fields:
 - `taskPriority`: `str`
 - `taskStartToCloseTimeout`: `str`
 - `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
-- `tagList`: `List`\[`str`\]
+- `tagList`: `Sequence`\[`str`\]
 - `lambdaRole`: `str`
 
 ## StartChildWorkflowExecutionFailedEventAttributesTypeDef
@@ -1920,7 +1920,7 @@ Optional fields:
 - `taskPriority`: `str`
 - `input`: `str`
 - `executionStartToCloseTimeout`: `str`
-- `tagList`: `List`\[`str`\]
+- `tagList`: `Sequence`\[`str`\]
 - `taskStartToCloseTimeout`: `str`
 - `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `lambdaRole`: `str`
@@ -1944,7 +1944,7 @@ from mypy_boto3_swf.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+- `tags`: `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
 ## TaskListTypeDef
 
@@ -2054,7 +2054,7 @@ from mypy_boto3_swf.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## WorkflowExecutionCancelRequestedEventAttributesTypeDef
 

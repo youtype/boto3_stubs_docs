@@ -30,6 +30,11 @@ Required fields:
 - `SubnetId`: `str`
 - `SecurityGroupId`: `str`
 
+Optional fields:
+
+- `AccessType`: [EndpointAccessTypeType](./literals.md#endpointaccesstypetype)
+- `CustomerOwnedIpv4Pool`: `str`
+
 ## CreateEndpointResultTypeDef
 
 ```python
@@ -68,6 +73,11 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `NetworkInterfaces`:
   `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
+- `VpcId`: `str`
+- `SubnetId`: `str`
+- `SecurityGroupId`: `str`
+- `AccessType`: [EndpointAccessTypeType](./literals.md#endpointaccesstypetype)
+- `CustomerOwnedIpv4Pool`: `str`
 
 ## ListEndpointsRequestRequestTypeDef
 

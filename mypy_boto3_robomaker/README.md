@@ -143,6 +143,8 @@ from mypy_boto3_robomaker.literals import ArchitectureType, ...
 ```
 
 - [ArchitectureType](./literals.md#architecturetype)
+- [ComputeTypeType](./literals.md#computetypetype)
+- [DataSourceTypeType](./literals.md#datasourcetypetype)
 - [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
 - [DeploymentStatusType](./literals.md#deploymentstatustype)
 - [ExitBehaviorType](./literals.md#exitbehaviortype)
@@ -173,6 +175,8 @@ from mypy_boto3_robomaker.literals import ArchitectureType, ...
 - [WorldExportJobStatusType](./literals.md#worldexportjobstatustype)
 - [WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype)
 - [WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 
@@ -254,6 +258,7 @@ from mypy_boto3_robomaker.type_defs import BatchDeleteWorldsRequestRequestTypeDe
 - [DescribeWorldResponseTypeDef](./type_defs.md#describeworldresponsetypedef)
 - [DescribeWorldTemplateRequestRequestTypeDef](./type_defs.md#describeworldtemplaterequestrequesttypedef)
 - [DescribeWorldTemplateResponseTypeDef](./type_defs.md#describeworldtemplateresponsetypedef)
+- [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - [FailedCreateSimulationJobRequestTypeDef](./type_defs.md#failedcreatesimulationjobrequesttypedef)
 - [FailureSummaryTypeDef](./type_defs.md#failuresummarytypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)

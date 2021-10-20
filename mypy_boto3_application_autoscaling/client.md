@@ -186,7 +186,7 @@ Keyword-only arguments:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ResourceIds`: `List`\[`str`\]
+- `ResourceIds`: `Sequence`\[`str`\]
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - `MaxResults`: `int`
@@ -240,7 +240,7 @@ Keyword-only arguments:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `PolicyNames`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
 - `ResourceId`: `str`
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
@@ -268,7 +268,7 @@ Keyword-only arguments:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ScheduledActionNames`: `List`\[`str`\]
+- `ScheduledActionNames`: `Sequence`\[`str`\]
 - `ResourceId`: `str`
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
@@ -291,7 +291,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

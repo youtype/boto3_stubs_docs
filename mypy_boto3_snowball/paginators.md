@@ -37,7 +37,7 @@ Arguments for `DescribeAddressesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAddressesPaginator.paginate` returns
-`Iterator`\[[DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef)\].
+`_PageIterator`\[[DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef)\].
 
 ## ListClusterJobsPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListClusterJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClusterJobsPaginator.paginate` returns
-`Iterator`\[[ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef)\].
+`_PageIterator`\[[ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef)\].
 
 ## ListClustersPaginator
 
@@ -87,7 +87,7 @@ Arguments for `ListClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClustersPaginator.paginate` returns
-`Iterator`\[[ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef)\].
+`_PageIterator`\[[ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef)\].
 
 ## ListCompatibleImagesPaginator
 
@@ -112,7 +112,7 @@ Arguments for `ListCompatibleImagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCompatibleImagesPaginator.paginate` returns
-`Iterator`\[[ListCompatibleImagesResultTypeDef](./type_defs.md#listcompatibleimagesresulttypedef)\].
+`_PageIterator`\[[ListCompatibleImagesResultTypeDef](./type_defs.md#listcompatibleimagesresulttypedef)\].
 
 ## ListJobsPaginator
 
@@ -136,4 +136,4 @@ Arguments for `ListJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)\].
+`_PageIterator`\[[ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)\].

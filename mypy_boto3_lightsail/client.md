@@ -21,6 +21,8 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [close_instance_public_ports](#close_instance_public_ports)
     - [copy_snapshot](#copy_snapshot)
+    - [create_bucket](#create_bucket)
+    - [create_bucket_access_key](#create_bucket_access_key)
     - [create_certificate](#create_certificate)
     - [create_cloud_formation_stack](#create_cloud_formation_stack)
     - [create_contact_method](#create_contact_method)
@@ -44,6 +46,8 @@ type annotations stubs module
     - [create_relational_database_snapshot](#create_relational_database_snapshot)
     - [delete_alarm](#delete_alarm)
     - [delete_auto_snapshot](#delete_auto_snapshot)
+    - [delete_bucket](#delete_bucket)
+    - [delete_bucket_access_key](#delete_bucket_access_key)
     - [delete_certificate](#delete_certificate)
     - [delete_contact_method](#delete_contact_method)
     - [delete_container_image](#delete_container_image)
@@ -74,6 +78,10 @@ type annotations stubs module
     - [get_alarms](#get_alarms)
     - [get_auto_snapshots](#get_auto_snapshots)
     - [get_blueprints](#get_blueprints)
+    - [get_bucket_access_keys](#get_bucket_access_keys)
+    - [get_bucket_bundles](#get_bucket_bundles)
+    - [get_bucket_metric_data](#get_bucket_metric_data)
+    - [get_buckets](#get_buckets)
     - [get_bundles](#get_bundles)
     - [get_certificates](#get_certificates)
     - [get_cloud_formation_stack_records](#get_cloud_formation_stack_records)
@@ -141,6 +149,7 @@ type annotations stubs module
     - [reset_distribution_cache](#reset_distribution_cache)
     - [send_contact_method_verification](#send_contact_method_verification)
     - [set_ip_address_type](#set_ip_address_type)
+    - [set_resource_access_for_bucket](#set_resource_access_for_bucket)
     - [start_instance](#start_instance)
     - [start_relational_database](#start_relational_database)
     - [stop_instance](#stop_instance)
@@ -149,6 +158,8 @@ type annotations stubs module
     - [test_alarm](#test_alarm)
     - [unpeer_vpc](#unpeer_vpc)
     - [untag_resource](#untag_resource)
+    - [update_bucket](#update_bucket)
+    - [update_bucket_bundle](#update_bucket_bundle)
     - [update_container_service](#update_container_service)
     - [update_distribution](#update_distribution)
     - [update_distribution_bundle](#update_distribution_bundle)
@@ -288,7 +299,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `loadBalancerName`: `str` *(required)*
-- `instanceNames`: `List`\[`str`\] *(required)*
+- `instanceNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [AttachInstancesToLoadBalancerResultTypeDef](./type_defs.md#attachinstancestoloadbalancerresulttypedef).
@@ -394,6 +405,47 @@ Keyword-only arguments:
 
 Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
 
+### create_bucket
+
+Creates an Amazon Lightsail bucket.
+
+Type annotations for `boto3.client("lightsail").create_bucket` method.
+
+Boto3 documentation:
+[Lightsail.Client.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_bucket)
+
+Arguments mapping described in
+[CreateBucketRequestRequestTypeDef](./type_defs.md#createbucketrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `bucketName`: `str` *(required)*
+- `bundleId`: `str` *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `enableObjectVersioning`: `bool`
+
+Returns [CreateBucketResultTypeDef](./type_defs.md#createbucketresulttypedef).
+
+### create_bucket_access_key
+
+Creates a new access key for the specified Amazon Lightsail bucket.
+
+Type annotations for `boto3.client("lightsail").create_bucket_access_key`
+method.
+
+Boto3 documentation:
+[Lightsail.Client.create_bucket_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_bucket_access_key)
+
+Arguments mapping described in
+[CreateBucketAccessKeyRequestRequestTypeDef](./type_defs.md#createbucketaccesskeyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `bucketName`: `str` *(required)*
+
+Returns
+[CreateBucketAccessKeyResultTypeDef](./type_defs.md#createbucketaccesskeyresulttypedef).
+
 ### create_certificate
 
 Creates an SSL/TLS certificate for an Amazon Lightsail content delivery network
@@ -411,8 +463,8 @@ Keyword-only arguments:
 
 - `certificateName`: `str` *(required)*
 - `domainName`: `str` *(required)*
-- `subjectAlternativeNames`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `subjectAlternativeNames`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCertificateResultTypeDef](./type_defs.md#createcertificateresulttypedef).
@@ -434,7 +486,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `instances`:
-  `List`\[[InstanceEntryTypeDef](./type_defs.md#instanceentrytypedef)\]
+  `Sequence`\[[InstanceEntryTypeDef](./type_defs.md#instanceentrytypedef)\]
   *(required)*
 
 Returns
@@ -481,8 +533,8 @@ Keyword-only arguments:
   [ContainerServicePowerNameType](./literals.md#containerservicepowernametype)
   *(required)*
 - `scale`: `int` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `publicDomainNames`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `deployment`:
   [ContainerServiceDeploymentRequestTypeDef](./type_defs.md#containerservicedeploymentrequesttypedef)
 
@@ -505,7 +557,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `serviceName`: `str` *(required)*
-- `containers`: `Dict`\[`str`,
+- `containers`: `Mapping`\[`str`,
   [ContainerTypeDef](./type_defs.md#containertypedef)\]
 - `publicEndpoint`:
   [EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef)
@@ -545,8 +597,9 @@ Keyword-only arguments:
 - `diskName`: `str` *(required)*
 - `availabilityZone`: `str` *(required)*
 - `sizeInGb`: `int` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`:
+  `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 
 Returns [CreateDiskResultTypeDef](./type_defs.md#creatediskresulttypedef).
 
@@ -569,8 +622,9 @@ Keyword-only arguments:
 - `availabilityZone`: `str` *(required)*
 - `sizeInGb`: `int` *(required)*
 - `diskSnapshotName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`:
+  `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 - `sourceDiskName`: `str`
 - `restoreDate`: `str`
 - `useLatestRestorableAutoSnapshot`: `bool`
@@ -595,7 +649,7 @@ Keyword-only arguments:
 - `diskSnapshotName`: `str` *(required)*
 - `diskName`: `str`
 - `instanceName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDiskSnapshotResultTypeDef](./type_defs.md#createdisksnapshotresulttypedef).
@@ -623,9 +677,9 @@ Keyword-only arguments:
 - `cacheBehaviorSettings`:
   [CacheSettingsTypeDef](./type_defs.md#cachesettingstypedef)
 - `cacheBehaviors`:
-  `List`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
+  `Sequence`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDistributionResultTypeDef](./type_defs.md#createdistributionresulttypedef).
@@ -645,7 +699,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef).
 
@@ -689,7 +743,7 @@ Keyword-only arguments:
 
 - `instanceSnapshotName`: `str` *(required)*
 - `instanceName`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateInstanceSnapshotResultTypeDef](./type_defs.md#createinstancesnapshotresulttypedef).
@@ -708,15 +762,16 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `instanceNames`: `List`\[`str`\] *(required)*
+- `instanceNames`: `Sequence`\[`str`\] *(required)*
 - `availabilityZone`: `str` *(required)*
 - `blueprintId`: `str` *(required)*
 - `bundleId`: `str` *(required)*
 - `customImageName`: `str`
 - `userData`: `str`
 - `keyPairName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`:
+  `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 Returns
@@ -738,16 +793,17 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `instanceNames`: `List`\[`str`\] *(required)*
+- `instanceNames`: `Sequence`\[`str`\] *(required)*
 - `availabilityZone`: `str` *(required)*
 - `bundleId`: `str` *(required)*
-- `attachedDiskMapping`: `Dict`\[`str`,
-  `List`\[[DiskMapTypeDef](./type_defs.md#diskmaptypedef)\]\]
+- `attachedDiskMapping`: `Mapping`\[`str`,
+  `Sequence`\[[DiskMapTypeDef](./type_defs.md#diskmaptypedef)\]\]
 - `instanceSnapshotName`: `str`
 - `userData`: `str`
 - `keyPairName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`:
+  `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `sourceInstanceName`: `str`
 - `restoreDate`: `str`
@@ -771,7 +827,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `keyPairName`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateKeyPairResultTypeDef](./type_defs.md#createkeypairresulttypedef).
@@ -795,8 +851,8 @@ Keyword-only arguments:
 - `healthCheckPath`: `str`
 - `certificateName`: `str`
 - `certificateDomainName`: `str`
-- `certificateAlternativeNames`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `certificateAlternativeNames`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 Returns
@@ -820,8 +876,8 @@ Keyword-only arguments:
 - `loadBalancerName`: `str` *(required)*
 - `certificateName`: `str` *(required)*
 - `certificateDomainName`: `str` *(required)*
-- `certificateAlternativeNames`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `certificateAlternativeNames`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateLoadBalancerTlsCertificateResultTypeDef](./type_defs.md#createloadbalancertlscertificateresulttypedef).
@@ -851,7 +907,7 @@ Keyword-only arguments:
 - `preferredBackupWindow`: `str`
 - `preferredMaintenanceWindow`: `str`
 - `publiclyAccessible`: `bool`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRelationalDatabaseResultTypeDef](./type_defs.md#createrelationaldatabaseresulttypedef).
@@ -879,7 +935,7 @@ Keyword-only arguments:
 - `sourceRelationalDatabaseName`: `str`
 - `restoreTime`: `Union`\[`datetime`, `str`\]
 - `useLatestRestorableTime`: `bool`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRelationalDatabaseFromSnapshotResultTypeDef](./type_defs.md#createrelationaldatabasefromsnapshotresulttypedef).
@@ -901,7 +957,7 @@ Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `relationalDatabaseSnapshotName`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRelationalDatabaseSnapshotResultTypeDef](./type_defs.md#createrelationaldatabasesnapshotresulttypedef).
@@ -943,6 +999,46 @@ Keyword-only arguments:
 
 Returns
 [DeleteAutoSnapshotResultTypeDef](./type_defs.md#deleteautosnapshotresulttypedef).
+
+### delete_bucket
+
+Deletes a Amazon Lightsail bucket.
+
+Type annotations for `boto3.client("lightsail").delete_bucket` method.
+
+Boto3 documentation:
+[Lightsail.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_bucket)
+
+Arguments mapping described in
+[DeleteBucketRequestRequestTypeDef](./type_defs.md#deletebucketrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `bucketName`: `str` *(required)*
+- `forceDelete`: `bool`
+
+Returns [DeleteBucketResultTypeDef](./type_defs.md#deletebucketresulttypedef).
+
+### delete_bucket_access_key
+
+Deletes an access key for the specified Amazon Lightsail bucket.
+
+Type annotations for `boto3.client("lightsail").delete_bucket_access_key`
+method.
+
+Boto3 documentation:
+[Lightsail.Client.delete_bucket_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_bucket_access_key)
+
+Arguments mapping described in
+[DeleteBucketAccessKeyRequestRequestTypeDef](./type_defs.md#deletebucketaccesskeyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `bucketName`: `str` *(required)*
+- `accessKeyId`: `str` *(required)*
+
+Returns
+[DeleteBucketAccessKeyResultTypeDef](./type_defs.md#deletebucketaccesskeyresulttypedef).
 
 ### delete_certificate
 
@@ -1336,7 +1432,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `loadBalancerName`: `str` *(required)*
-- `instanceNames`: `List`\[`str`\] *(required)*
+- `instanceNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DetachInstancesFromLoadBalancerResultTypeDef](./type_defs.md#detachinstancesfromloadbalancerresulttypedef).
@@ -1446,7 +1542,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1530,6 +1626,92 @@ Keyword-only arguments:
 Returns
 [GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef).
 
+### get_bucket_access_keys
+
+Returns the existing access key IDs for the specified Amazon Lightsail bucket.
+
+Type annotations for `boto3.client("lightsail").get_bucket_access_keys` method.
+
+Boto3 documentation:
+[Lightsail.Client.get_bucket_access_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_bucket_access_keys)
+
+Arguments mapping described in
+[GetBucketAccessKeysRequestRequestTypeDef](./type_defs.md#getbucketaccesskeysrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `bucketName`: `str` *(required)*
+
+Returns
+[GetBucketAccessKeysResultTypeDef](./type_defs.md#getbucketaccesskeysresulttypedef).
+
+### get_bucket_bundles
+
+Returns the bundles that you can apply to a Amazon Lightsail bucket.
+
+Type annotations for `boto3.client("lightsail").get_bucket_bundles` method.
+
+Boto3 documentation:
+[Lightsail.Client.get_bucket_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_bucket_bundles)
+
+Arguments mapping described in
+[GetBucketBundlesRequestRequestTypeDef](./type_defs.md#getbucketbundlesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `includeInactive`: `bool`
+
+Returns
+[GetBucketBundlesResultTypeDef](./type_defs.md#getbucketbundlesresulttypedef).
+
+### get_bucket_metric_data
+
+Returns the data points of a specific metric for an Amazon Lightsail bucket.
+
+Type annotations for `boto3.client("lightsail").get_bucket_metric_data` method.
+
+Boto3 documentation:
+[Lightsail.Client.get_bucket_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_bucket_metric_data)
+
+Arguments mapping described in
+[GetBucketMetricDataRequestRequestTypeDef](./type_defs.md#getbucketmetricdatarequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `bucketName`: `str` *(required)*
+- `metricName`: [BucketMetricNameType](./literals.md#bucketmetricnametype)
+  *(required)*
+- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `period`: `int` *(required)*
+- `statistics`:
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  *(required)*
+- `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
+
+Returns
+[GetBucketMetricDataResultTypeDef](./type_defs.md#getbucketmetricdataresulttypedef).
+
+### get_buckets
+
+Returns information about one or more Amazon Lightsail buckets.
+
+Type annotations for `boto3.client("lightsail").get_buckets` method.
+
+Boto3 documentation:
+[Lightsail.Client.get_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_buckets)
+
+Arguments mapping described in
+[GetBucketsRequestRequestTypeDef](./type_defs.md#getbucketsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `bucketName`: `str`
+- `pageToken`: `str`
+- `includeConnectedResources`: `bool`
+
+Returns [GetBucketsResultTypeDef](./type_defs.md#getbucketsresulttypedef).
+
 ### get_bundles
 
 Returns the list of bundles that are available for purchase.
@@ -1564,7 +1746,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `certificateStatuses`:
-  `List`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
+  `Sequence`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
 - `includeCertificateDetails`: `bool`
 - `certificateName`: `str`
 
@@ -1607,7 +1789,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `protocols`:
-  `List`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
+  `Sequence`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
 
 Returns
 [GetContactMethodsResultTypeDef](./type_defs.md#getcontactmethodsresulttypedef).
@@ -1717,7 +1899,7 @@ Keyword-only arguments:
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `period`: `int` *(required)*
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -1835,7 +2017,7 @@ Returns [GetDisksResultTypeDef](./type_defs.md#getdisksresulttypedef).
 
 ### get_distribution_bundles
 
-Returns the list bundles that can be applied to you Amazon Lightsail content
+Returns the bundles that can be applied to your Amazon Lightsail content
 delivery network (CDN) distributions.
 
 Type annotations for `boto3.client("lightsail").get_distribution_bundles`
@@ -1893,7 +2075,7 @@ Keyword-only arguments:
 - `period`: `int` *(required)*
 - `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -1958,8 +2140,8 @@ Returns [GetDomainsResultTypeDef](./type_defs.md#getdomainsresulttypedef).
 
 ### get_export_snapshot_records
 
-Returns the export snapshot record created as a result of the `export snapshot`
-operation.
+Returns all export snapshot records created as a result of the
+`export snapshot` operation.
 
 Type annotations for `boto3.client("lightsail").get_export_snapshot_records`
 method.
@@ -2043,7 +2225,7 @@ Keyword-only arguments:
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -2226,7 +2408,7 @@ Keyword-only arguments:
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -2526,7 +2708,7 @@ Keyword-only arguments:
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -2706,7 +2888,7 @@ Returns
 
 ### peer_vpc
 
-Tries to peer the Lightsail VPC with the user's default VPC.
+Peers the Lightsail VPC with the user's default VPC.
 
 Type annotations for `boto3.client("lightsail").peer_vpc` method.
 
@@ -2740,9 +2922,9 @@ Keyword-only arguments:
 - `treatMissingData`:
   [TreatMissingDataType](./literals.md#treatmissingdatatype)
 - `contactProtocols`:
-  `List`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
+  `Sequence`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
 - `notificationTriggers`:
-  `List`\[[AlarmStateType](./literals.md#alarmstatetype)\]
+  `Sequence`\[[AlarmStateType](./literals.md#alarmstatetype)\]
 - `notificationEnabled`: `bool`
 
 Returns [PutAlarmResultTypeDef](./type_defs.md#putalarmresulttypedef).
@@ -2764,7 +2946,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `portInfos`: `List`\[[PortInfoTypeDef](./type_defs.md#portinfotypedef)\]
+- `portInfos`: `Sequence`\[[PortInfoTypeDef](./type_defs.md#portinfotypedef)\]
   *(required)*
 - `instanceName`: `str` *(required)*
 
@@ -2918,6 +3100,30 @@ Keyword-only arguments:
 Returns
 [SetIpAddressTypeResultTypeDef](./type_defs.md#setipaddresstyperesulttypedef).
 
+### set_resource_access_for_bucket
+
+Sets the Amazon Lightsail resources that can access the specified Lightsail
+bucket.
+
+Type annotations for `boto3.client("lightsail").set_resource_access_for_bucket`
+method.
+
+Boto3 documentation:
+[Lightsail.Client.set_resource_access_for_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.set_resource_access_for_bucket)
+
+Arguments mapping described in
+[SetResourceAccessForBucketRequestRequestTypeDef](./type_defs.md#setresourceaccessforbucketrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `resourceName`: `str` *(required)*
+- `bucketName`: `str` *(required)*
+- `access`: [ResourceBucketAccessType](./literals.md#resourcebucketaccesstype)
+  *(required)*
+
+Returns
+[SetResourceAccessForBucketResultTypeDef](./type_defs.md#setresourceaccessforbucketresulttypedef).
+
 ### start_instance
 
 Starts a specific Amazon Lightsail instance from a stopped state.
@@ -3012,7 +3218,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceName`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 - `resourceArn`: `str`
 
 Returns [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef).
@@ -3038,7 +3244,7 @@ Returns [TestAlarmResultTypeDef](./type_defs.md#testalarmresulttypedef).
 
 ### unpeer_vpc
 
-Attempts to unpeer the Lightsail VPC from the user's default VPC.
+Unpeers the Lightsail VPC from the user's default VPC.
 
 Type annotations for `boto3.client("lightsail").unpeer_vpc` method.
 
@@ -3063,11 +3269,52 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceName`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 - `resourceArn`: `str`
 
 Returns
 [UntagResourceResultTypeDef](./type_defs.md#untagresourceresulttypedef).
+
+### update_bucket
+
+Updates an existing Amazon Lightsail bucket.
+
+Type annotations for `boto3.client("lightsail").update_bucket` method.
+
+Boto3 documentation:
+[Lightsail.Client.update_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_bucket)
+
+Arguments mapping described in
+[UpdateBucketRequestRequestTypeDef](./type_defs.md#updatebucketrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `bucketName`: `str` *(required)*
+- `accessRules`: [AccessRulesTypeDef](./type_defs.md#accessrulestypedef)
+- `versioning`: `str`
+- `readonlyAccessAccounts`: `Sequence`\[`str`\]
+
+Returns [UpdateBucketResultTypeDef](./type_defs.md#updatebucketresulttypedef).
+
+### update_bucket_bundle
+
+Updates the bundle, or storage plan, of an existing Amazon Lightsail bucket.
+
+Type annotations for `boto3.client("lightsail").update_bucket_bundle` method.
+
+Boto3 documentation:
+[Lightsail.Client.update_bucket_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_bucket_bundle)
+
+Arguments mapping described in
+[UpdateBucketBundleRequestRequestTypeDef](./type_defs.md#updatebucketbundlerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `bucketName`: `str` *(required)*
+- `bundleId`: `str` *(required)*
+
+Returns
+[UpdateBucketBundleResultTypeDef](./type_defs.md#updatebucketbundleresulttypedef).
 
 ### update_container_service
 
@@ -3090,7 +3337,7 @@ Keyword-only arguments:
   [ContainerServicePowerNameType](./literals.md#containerservicepowernametype)
 - `scale`: `int`
 - `isDisabled`: `bool`
-- `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
+- `publicDomainNames`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 Returns
 [UpdateContainerServiceResultTypeDef](./type_defs.md#updatecontainerserviceresulttypedef).
@@ -3117,7 +3364,7 @@ Keyword-only arguments:
 - `cacheBehaviorSettings`:
   [CacheSettingsTypeDef](./type_defs.md#cachesettingstypedef)
 - `cacheBehaviors`:
-  `List`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
+  `Sequence`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
 - `isEnabled`: `bool`
 
 Returns
@@ -3236,7 +3483,7 @@ Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `parameters`:
-  `List`\[[RelationalDatabaseParameterTypeDef](./type_defs.md#relationaldatabaseparametertypedef)\]
+  `Sequence`\[[RelationalDatabaseParameterTypeDef](./type_defs.md#relationaldatabaseparametertypedef)\]
   *(required)*
 
 Returns

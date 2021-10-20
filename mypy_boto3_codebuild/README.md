@@ -78,6 +78,7 @@ from mypy_boto3_codebuild.client import CodeBuildClient
 - [stop_build](./client.md#stop_build)
 - [stop_build_batch](./client.md#stop_build_batch)
 - [update_project](./client.md#update_project)
+- [update_project_visibility](./client.md#update_project_visibility)
 - [update_report_group](./client.md#update_report_group)
 - [update_webhook](./client.md#update_webhook)
 
@@ -130,6 +131,8 @@ from mypy_boto3_codebuild.literals import ArtifactNamespaceType, ...
 - [ArtifactPackagingType](./literals.md#artifactpackagingtype)
 - [ArtifactsTypeType](./literals.md#artifactstypetype)
 - [AuthTypeType](./literals.md#authtypetype)
+- [BatchReportModeTypeType](./literals.md#batchreportmodetypetype)
+- [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 - [BuildBatchPhaseTypeType](./literals.md#buildbatchphasetypetype)
 - [BuildPhaseTypeType](./literals.md#buildphasetypetype)
 - [CacheModeType](./literals.md#cachemodetype)
@@ -156,6 +159,7 @@ from mypy_boto3_codebuild.literals import ArtifactNamespaceType, ...
 - [LogsConfigStatusTypeType](./literals.md#logsconfigstatustypetype)
 - [PlatformTypeType](./literals.md#platformtypetype)
 - [ProjectSortByTypeType](./literals.md#projectsortbytypetype)
+- [ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype)
 - [ReportCodeCoverageSortByTypeType](./literals.md#reportcodecoveragesortbytypetype)
 - [ReportExportConfigTypeType](./literals.md#reportexportconfigtypetype)
 - [ReportGroupSortByTypeType](./literals.md#reportgroupsortbytypetype)
@@ -173,6 +177,8 @@ from mypy_boto3_codebuild.literals import ArtifactNamespaceType, ...
 - [StatusTypeType](./literals.md#statustypetype)
 - [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
 - [WebhookFilterTypeType](./literals.md#webhookfiltertypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 
@@ -313,6 +319,8 @@ from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsInputRequestTypeDef,
 - [TestReportSummaryTypeDef](./type_defs.md#testreportsummarytypedef)
 - [UpdateProjectInputRequestTypeDef](./type_defs.md#updateprojectinputrequesttypedef)
 - [UpdateProjectOutputTypeDef](./type_defs.md#updateprojectoutputtypedef)
+- [UpdateProjectVisibilityInputRequestTypeDef](./type_defs.md#updateprojectvisibilityinputrequesttypedef)
+- [UpdateProjectVisibilityOutputTypeDef](./type_defs.md#updateprojectvisibilityoutputtypedef)
 - [UpdateReportGroupInputRequestTypeDef](./type_defs.md#updatereportgroupinputrequesttypedef)
 - [UpdateReportGroupOutputTypeDef](./type_defs.md#updatereportgroupoutputtypedef)
 - [UpdateWebhookInputRequestTypeDef](./type_defs.md#updatewebhookinputrequesttypedef)

@@ -54,7 +54,7 @@ Required fields:
 Optional fields:
 
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDatabaseResponseTypeDef
 
@@ -83,7 +83,7 @@ Optional fields:
 
 - `RetentionProperties`:
   [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateTableResponseTypeDef
 
@@ -296,7 +296,8 @@ from mypy_boto3_timestream_write.type_defs import RecordTypeDef
 
 Optional fields:
 
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `MeasureName`: `str`
 - `MeasureValue`: `str`
 - `MeasureValueType`:
@@ -356,7 +357,7 @@ from mypy_boto3_timestream_write.type_defs import TagResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -378,7 +379,7 @@ from mypy_boto3_timestream_write.type_defs import UntagResourceRequestRequestTyp
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDatabaseRequestRequestTypeDef
 
@@ -438,7 +439,7 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
-- `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
+- `Records`: `Sequence`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
 
 Optional fields:
 

@@ -239,12 +239,12 @@ Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `ApplicationDescription`: `str`
-- `Inputs`: `List`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `Inputs`: `Sequence`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
+- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `CloudWatchLoggingOptions`:
-  `List`\[[CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)\]
+  `Sequence`\[[CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)\]
 - `ApplicationCode`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
@@ -416,7 +416,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -480,7 +480,7 @@ Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `InputConfigurations`:
-  `List`\[[InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)\]
+  `Sequence`\[[InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -519,7 +519,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -538,7 +538,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

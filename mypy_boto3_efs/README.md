@@ -132,6 +132,9 @@ from mypy_boto3_efs.literals import DescribeFileSystemsPaginatorName, ...
 - [StatusType](./literals.md#statustype)
 - [ThroughputModeType](./literals.md#throughputmodetype)
 - [TransitionToIARulesType](./literals.md#transitiontoiarulestype)
+- [TransitionToPrimaryStorageClassRulesType](./literals.md#transitiontoprimarystorageclassrulestype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

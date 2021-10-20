@@ -119,6 +119,9 @@ from mypy_boto3_opsworkscm.literals import BackupStatusType, ...
 - [NodeAssociatedWaiterName](./literals.md#nodeassociatedwaitername)
 - [NodeAssociationStatusType](./literals.md#nodeassociationstatustype)
 - [ServerStatusType](./literals.md#serverstatustype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

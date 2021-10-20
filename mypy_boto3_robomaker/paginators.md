@@ -39,12 +39,12 @@ Boto3 documentation:
 
 Arguments for `ListDeploymentJobsPaginator.paginate` method:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentJobsPaginator.paginate` returns
-`Iterator`\[[ListDeploymentJobsResponseTypeDef](./type_defs.md#listdeploymentjobsresponsetypedef)\].
+`_PageIterator`\[[ListDeploymentJobsResponseTypeDef](./type_defs.md#listdeploymentjobsresponsetypedef)\].
 
 ## ListFleetsPaginator
 
@@ -64,12 +64,12 @@ Boto3 documentation:
 
 Arguments for `ListFleetsPaginator.paginate` method:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFleetsPaginator.paginate` returns
-`Iterator`\[[ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef)\].
+`_PageIterator`\[[ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef)\].
 
 ## ListRobotApplicationsPaginator
 
@@ -91,12 +91,12 @@ Boto3 documentation:
 Arguments for `ListRobotApplicationsPaginator.paginate` method:
 
 - `versionQualifier`: `str`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRobotApplicationsPaginator.paginate` returns
-`Iterator`\[[ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef)\].
+`_PageIterator`\[[ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef)\].
 
 ## ListRobotsPaginator
 
@@ -116,12 +116,12 @@ Boto3 documentation:
 
 Arguments for `ListRobotsPaginator.paginate` method:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRobotsPaginator.paginate` returns
-`Iterator`\[[ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef)\].
+`_PageIterator`\[[ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef)\].
 
 ## ListSimulationApplicationsPaginator
 
@@ -143,12 +143,12 @@ Boto3 documentation:
 Arguments for `ListSimulationApplicationsPaginator.paginate` method:
 
 - `versionQualifier`: `str`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSimulationApplicationsPaginator.paginate` returns
-`Iterator`\[[ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef)\].
+`_PageIterator`\[[ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef)\].
 
 ## ListSimulationJobBatchesPaginator
 
@@ -169,12 +169,12 @@ Boto3 documentation:
 
 Arguments for `ListSimulationJobBatchesPaginator.paginate` method:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSimulationJobBatchesPaginator.paginate` returns
-`Iterator`\[[ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef)\].
+`_PageIterator`\[[ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef)\].
 
 ## ListSimulationJobsPaginator
 
@@ -195,12 +195,12 @@ Boto3 documentation:
 
 Arguments for `ListSimulationJobsPaginator.paginate` method:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSimulationJobsPaginator.paginate` returns
-`Iterator`\[[ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef)\].
+`_PageIterator`\[[ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef)\].
 
 ## ListWorldExportJobsPaginator
 
@@ -221,12 +221,12 @@ Boto3 documentation:
 
 Arguments for `ListWorldExportJobsPaginator.paginate` method:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorldExportJobsPaginator.paginate` returns
-`Iterator`\[[ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef)\].
+`_PageIterator`\[[ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef)\].
 
 ## ListWorldGenerationJobsPaginator
 
@@ -247,12 +247,12 @@ Boto3 documentation:
 
 Arguments for `ListWorldGenerationJobsPaginator.paginate` method:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorldGenerationJobsPaginator.paginate` returns
-`Iterator`\[[ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef)\].
+`_PageIterator`\[[ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef)\].
 
 ## ListWorldTemplatesPaginator
 
@@ -277,7 +277,7 @@ Arguments for `ListWorldTemplatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorldTemplatesPaginator.paginate` returns
-`Iterator`\[[ListWorldTemplatesResponseTypeDef](./type_defs.md#listworldtemplatesresponsetypedef)\].
+`_PageIterator`\[[ListWorldTemplatesResponseTypeDef](./type_defs.md#listworldtemplatesresponsetypedef)\].
 
 ## ListWorldsPaginator
 
@@ -297,9 +297,9 @@ Boto3 documentation:
 
 Arguments for `ListWorldsPaginator.paginate` method:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorldsPaginator.paginate` returns
-`Iterator`\[[ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef)\].
+`_PageIterator`\[[ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef)\].

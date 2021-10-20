@@ -110,15 +110,15 @@ Keyword-only arguments:
 - `clientToken`: `str` *(required)*
 - `description`: `str` *(required)*
 - `stopConditions`:
-  `List`\[[CreateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#createexperimenttemplatestopconditioninputtypedef)\]
+  `Sequence`\[[CreateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#createexperimenttemplatestopconditioninputtypedef)\]
   *(required)*
-- `actions`: `Dict`\[`str`,
+- `actions`: `Mapping`\[`str`,
   [CreateExperimentTemplateActionInputTypeDef](./type_defs.md#createexperimenttemplateactioninputtypedef)\]
   *(required)*
 - `roleArn`: `str` *(required)*
-- `targets`: `Dict`\[`str`,
+- `targets`: `Mapping`\[`str`,
   [CreateExperimentTemplateTargetInputTypeDef](./type_defs.md#createexperimenttemplatetargetinputtypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateExperimentTemplateResponseTypeDef](./type_defs.md#createexperimenttemplateresponsetypedef).
@@ -154,7 +154,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -311,7 +311,7 @@ Keyword-only arguments:
 
 - `clientToken`: `str` *(required)*
 - `experimentTemplateId`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [StartExperimentResponseTypeDef](./type_defs.md#startexperimentresponsetypedef).
@@ -350,7 +350,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -369,7 +369,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -390,10 +390,10 @@ Keyword-only arguments:
 - `id`: `str` *(required)*
 - `description`: `str`
 - `stopConditions`:
-  `List`\[[UpdateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#updateexperimenttemplatestopconditioninputtypedef)\]
-- `targets`: `Dict`\[`str`,
+  `Sequence`\[[UpdateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#updateexperimenttemplatestopconditioninputtypedef)\]
+- `targets`: `Mapping`\[`str`,
   [UpdateExperimentTemplateTargetInputTypeDef](./type_defs.md#updateexperimenttemplatetargetinputtypedef)\]
-- `actions`: `Dict`\[`str`,
+- `actions`: `Mapping`\[`str`,
   [UpdateExperimentTemplateActionInputItemTypeDef](./type_defs.md#updateexperimenttemplateactioninputitemtypedef)\]
 - `roleArn`: `str`
 

@@ -37,7 +37,7 @@ Arguments for `DescribeJobLogItemsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeJobLogItemsPaginator.paginate` returns
-`Iterator`\[[DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef)\].
+`_PageIterator`\[[DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef)\].
 
 ## DescribeJobsPaginator
 
@@ -64,7 +64,7 @@ Arguments for `DescribeJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeJobsPaginator.paginate` returns
-`Iterator`\[[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef)\].
+`_PageIterator`\[[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef)\].
 
 ## DescribeReplicationConfigurationTemplatesPaginator
 
@@ -86,12 +86,12 @@ Boto3 documentation:
 Arguments for `DescribeReplicationConfigurationTemplatesPaginator.paginate`
 method:
 
-- `replicationConfigurationTemplateIDs`: `List`\[`str`\] *(required)*
+- `replicationConfigurationTemplateIDs`: `Sequence`\[`str`\] *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReplicationConfigurationTemplatesPaginator.paginate` returns
-`Iterator`\[[DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef)\].
+`_PageIterator`\[[DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef)\].
 
 ## DescribeSourceServersPaginator
 
@@ -119,4 +119,4 @@ Arguments for `DescribeSourceServersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSourceServersPaginator.paginate` returns
-`Iterator`\[[DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef)\].
+`_PageIterator`\[[DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef)\].

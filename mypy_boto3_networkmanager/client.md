@@ -206,7 +206,7 @@ Keyword-only arguments:
 - `LinkId`: `str`
 - `ConnectedLinkId`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
@@ -234,7 +234,7 @@ Keyword-only arguments:
 - `SerialNumber`: `str`
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `SiteId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDeviceResponseTypeDef](./type_defs.md#createdeviceresponsetypedef).
@@ -255,7 +255,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateGlobalNetworkResponseTypeDef](./type_defs.md#createglobalnetworkresponsetypedef).
@@ -280,7 +280,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Type`: `str`
 - `Provider`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateLinkResponseTypeDef](./type_defs.md#createlinkresponsetypedef).
 
@@ -301,7 +301,7 @@ Keyword-only arguments:
 - `GlobalNetworkId`: `str` *(required)*
 - `Description`: `str`
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateSiteResponseTypeDef](./type_defs.md#createsiteresponsetypedef).
 
@@ -439,7 +439,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `GlobalNetworkIds`: `List`\[`str`\]
+- `GlobalNetworkIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -523,7 +523,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -544,7 +544,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `ConnectionIds`: `List`\[`str`\]
+- `ConnectionIds`: `Sequence`\[`str`\]
 - `DeviceId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -569,7 +569,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `CustomerGatewayArns`: `List`\[`str`\]
+- `CustomerGatewayArns`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -591,7 +591,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `DeviceIds`: `List`\[`str`\]
+- `DeviceIds`: `Sequence`\[`str`\]
 - `SiteId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -637,7 +637,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `LinkIds`: `List`\[`str`\]
+- `LinkIds`: `Sequence`\[`str`\]
 - `SiteId`: `str`
 - `Type`: `str`
 - `Provider`: `str`
@@ -661,7 +661,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `SiteIds`: `List`\[`str`\]
+- `SiteIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -685,7 +685,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `TransitGatewayConnectPeerArns`: `List`\[`str`\]
+- `TransitGatewayConnectPeerArns`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -709,7 +709,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `TransitGatewayArns`: `List`\[`str`\]
+- `TransitGatewayArns`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -772,7 +772,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -791,7 +791,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

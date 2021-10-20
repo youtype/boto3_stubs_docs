@@ -146,9 +146,9 @@ Optional fields:
 
 - `description`: `str`
 - `clientRequestToken`: `str`
-- `sourceCode`: `List`\[[CodeTypeDef](./type_defs.md#codetypedef)\]
+- `sourceCode`: `Sequence`\[[CodeTypeDef](./type_defs.md#codetypedef)\]
 - `toolchain`: [ToolchainTypeDef](./type_defs.md#toolchaintypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateProjectResultTypeDef
 
@@ -551,7 +551,7 @@ from mypy_boto3_codestar.type_defs import TagProjectRequestRequestTypeDef
 Required fields:
 
 - `id`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TagProjectResultTypeDef
 
@@ -603,7 +603,7 @@ Required fields:
 Optional fields:
 
 - `roleArn`: `str`
-- `stackParameters`: `Dict`\[`str`, `str`\]
+- `stackParameters`: `Mapping`\[`str`, `str`\]
 
 ## UntagProjectRequestRequestTypeDef
 
@@ -614,7 +614,7 @@ from mypy_boto3_codestar.type_defs import UntagProjectRequestRequestTypeDef
 Required fields:
 
 - `id`: `str`
-- `tags`: `List`\[`str`\]
+- `tags`: `Sequence`\[`str`\]
 
 ## UpdateProjectRequestRequestTypeDef
 

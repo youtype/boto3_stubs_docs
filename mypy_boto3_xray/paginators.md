@@ -35,12 +35,12 @@ Boto3 documentation:
 
 Arguments for `BatchGetTracesPaginator.paginate` method:
 
-- `TraceIds`: `List`\[`str`\] *(required)*
+- `TraceIds`: `Sequence`\[`str`\] *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `BatchGetTracesPaginator.paginate` returns
-`Iterator`\[[BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef)\].
+`_PageIterator`\[[BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef)\].
 
 ## GetGroupsPaginator
 
@@ -64,7 +64,7 @@ Arguments for `GetGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetGroupsPaginator.paginate` returns
-`Iterator`\[[GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef)\].
+`_PageIterator`\[[GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef)\].
 
 ## GetSamplingRulesPaginator
 
@@ -89,7 +89,7 @@ Arguments for `GetSamplingRulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSamplingRulesPaginator.paginate` returns
-`Iterator`\[[GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef)\].
+`_PageIterator`\[[GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef)\].
 
 ## GetSamplingStatisticSummariesPaginator
 
@@ -114,7 +114,7 @@ Arguments for `GetSamplingStatisticSummariesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSamplingStatisticSummariesPaginator.paginate` returns
-`Iterator`\[[GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef)\].
+`_PageIterator`\[[GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef)\].
 
 ## GetServiceGraphPaginator
 
@@ -142,7 +142,7 @@ Arguments for `GetServiceGraphPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetServiceGraphPaginator.paginate` returns
-`Iterator`\[[GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef)\].
+`_PageIterator`\[[GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef)\].
 
 ## GetTimeSeriesServiceStatisticsPaginator
 
@@ -174,7 +174,7 @@ Arguments for `GetTimeSeriesServiceStatisticsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTimeSeriesServiceStatisticsPaginator.paginate` returns
-`Iterator`\[[GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef)\].
+`_PageIterator`\[[GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef)\].
 
 ## GetTraceGraphPaginator
 
@@ -194,12 +194,12 @@ Boto3 documentation:
 
 Arguments for `GetTraceGraphPaginator.paginate` method:
 
-- `TraceIds`: `List`\[`str`\] *(required)*
+- `TraceIds`: `Sequence`\[`str`\] *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTraceGraphPaginator.paginate` returns
-`Iterator`\[[GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef)\].
+`_PageIterator`\[[GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef)\].
 
 ## GetTraceSummariesPaginator
 
@@ -231,4 +231,4 @@ Arguments for `GetTraceSummariesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTraceSummariesPaginator.paginate` returns
-`Iterator`\[[GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef)\].
+`_PageIterator`\[[GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef)\].

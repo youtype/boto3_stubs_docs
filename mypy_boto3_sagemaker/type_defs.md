@@ -32,6 +32,10 @@ type annotations stubs module
   - [AssociateTrialComponentRequestRequestTypeDef](#associatetrialcomponentrequestrequesttypedef)
   - [AssociateTrialComponentResponseTypeDef](#associatetrialcomponentresponsetypedef)
   - [AssociationSummaryTypeDef](#associationsummarytypedef)
+  - [AsyncInferenceClientConfigTypeDef](#asyncinferenceclientconfigtypedef)
+  - [AsyncInferenceConfigTypeDef](#asyncinferenceconfigtypedef)
+  - [AsyncInferenceNotificationConfigTypeDef](#asyncinferencenotificationconfigtypedef)
+  - [AsyncInferenceOutputConfigTypeDef](#asyncinferenceoutputconfigtypedef)
   - [AthenaDatasetDefinitionTypeDef](#athenadatasetdefinitiontypedef)
   - [AutoMLCandidateStepTypeDef](#automlcandidatesteptypedef)
   - [AutoMLCandidateTypeDef](#automlcandidatetypedef)
@@ -145,6 +149,8 @@ type annotations stubs module
   - [CreateProcessingJobResponseTypeDef](#createprocessingjobresponsetypedef)
   - [CreateProjectInputRequestTypeDef](#createprojectinputrequesttypedef)
   - [CreateProjectOutputTypeDef](#createprojectoutputtypedef)
+  - [CreateStudioLifecycleConfigRequestRequestTypeDef](#createstudiolifecycleconfigrequestrequesttypedef)
+  - [CreateStudioLifecycleConfigResponseTypeDef](#createstudiolifecycleconfigresponsetypedef)
   - [CreateTrainingJobRequestRequestTypeDef](#createtrainingjobrequestrequesttypedef)
   - [CreateTrainingJobResponseTypeDef](#createtrainingjobresponsetypedef)
   - [CreateTransformJobRequestRequestTypeDef](#createtransformjobrequestrequesttypedef)
@@ -209,6 +215,7 @@ type annotations stubs module
   - [DeletePipelineRequestRequestTypeDef](#deletepipelinerequestrequesttypedef)
   - [DeletePipelineResponseTypeDef](#deletepipelineresponsetypedef)
   - [DeleteProjectInputRequestTypeDef](#deleteprojectinputrequesttypedef)
+  - [DeleteStudioLifecycleConfigRequestRequestTypeDef](#deletestudiolifecycleconfigrequestrequesttypedef)
   - [DeleteTagsInputRequestTypeDef](#deletetagsinputrequesttypedef)
   - [DeleteTrialComponentRequestRequestTypeDef](#deletetrialcomponentrequestrequesttypedef)
   - [DeleteTrialComponentResponseTypeDef](#deletetrialcomponentresponsetypedef)
@@ -297,6 +304,8 @@ type annotations stubs module
   - [DescribeProcessingJobResponseTypeDef](#describeprocessingjobresponsetypedef)
   - [DescribeProjectInputRequestTypeDef](#describeprojectinputrequesttypedef)
   - [DescribeProjectOutputTypeDef](#describeprojectoutputtypedef)
+  - [DescribeStudioLifecycleConfigRequestRequestTypeDef](#describestudiolifecycleconfigrequestrequesttypedef)
+  - [DescribeStudioLifecycleConfigResponseTypeDef](#describestudiolifecycleconfigresponsetypedef)
   - [DescribeSubscribedWorkteamRequestRequestTypeDef](#describesubscribedworkteamrequestrequesttypedef)
   - [DescribeSubscribedWorkteamResponseTypeDef](#describesubscribedworkteamresponsetypedef)
   - [DescribeTrainingJobRequestRequestTypeDef](#describetrainingjobrequestrequesttypedef)
@@ -395,6 +404,7 @@ type annotations stubs module
   - [LabelingJobSnsDataSourceTypeDef](#labelingjobsnsdatasourcetypedef)
   - [LabelingJobStoppingConditionsTypeDef](#labelingjobstoppingconditionstypedef)
   - [LabelingJobSummaryTypeDef](#labelingjobsummarytypedef)
+  - [LambdaStepMetadataTypeDef](#lambdastepmetadatatypedef)
   - [ListActionsRequestRequestTypeDef](#listactionsrequestrequesttypedef)
   - [ListActionsResponseTypeDef](#listactionsresponsetypedef)
   - [ListAlgorithmsInputRequestTypeDef](#listalgorithmsinputrequesttypedef)
@@ -481,6 +491,8 @@ type annotations stubs module
   - [ListProcessingJobsResponseTypeDef](#listprocessingjobsresponsetypedef)
   - [ListProjectsInputRequestTypeDef](#listprojectsinputrequesttypedef)
   - [ListProjectsOutputTypeDef](#listprojectsoutputtypedef)
+  - [ListStudioLifecycleConfigsRequestRequestTypeDef](#liststudiolifecycleconfigsrequestrequesttypedef)
+  - [ListStudioLifecycleConfigsResponseTypeDef](#liststudiolifecycleconfigsresponsetypedef)
   - [ListSubscribedWorkteamsRequestRequestTypeDef](#listsubscribedworkteamsrequestrequesttypedef)
   - [ListSubscribedWorkteamsResponseTypeDef](#listsubscribedworkteamsresponsetypedef)
   - [ListTagsInputRequestTypeDef](#listtagsinputrequesttypedef)
@@ -504,6 +516,7 @@ type annotations stubs module
   - [MemberDefinitionTypeDef](#memberdefinitiontypedef)
   - [MetadataPropertiesTypeDef](#metadatapropertiestypedef)
   - [MetricDataTypeDef](#metricdatatypedef)
+  - [MetricDatumTypeDef](#metricdatumtypedef)
   - [MetricDefinitionTypeDef](#metricdefinitiontypedef)
   - [MetricsSourceTypeDef](#metricssourcetypedef)
   - [ModelArtifactsTypeDef](#modelartifactstypedef)
@@ -605,6 +618,7 @@ type annotations stubs module
   - [ProfilerRuleConfigurationTypeDef](#profilerruleconfigurationtypedef)
   - [ProfilerRuleEvaluationStatusTypeDef](#profilerruleevaluationstatustypedef)
   - [ProjectSummaryTypeDef](#projectsummarytypedef)
+  - [ProjectTypeDef](#projecttypedef)
   - [PropertyNameQueryTypeDef](#propertynamequerytypedef)
   - [PropertyNameSuggestionTypeDef](#propertynamesuggestiontypedef)
   - [ProvisioningParameterTypeDef](#provisioningparametertypedef)
@@ -625,6 +639,8 @@ type annotations stubs module
   - [ResourceSpecTypeDef](#resourcespectypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RetentionPolicyTypeDef](#retentionpolicytypedef)
+  - [RetryPipelineExecutionRequestRequestTypeDef](#retrypipelineexecutionrequestrequesttypedef)
+  - [RetryPipelineExecutionResponseTypeDef](#retrypipelineexecutionresponsetypedef)
   - [RetryStrategyTypeDef](#retrystrategytypedef)
   - [S3DataSourceTypeDef](#s3datasourcetypedef)
   - [S3StorageConfigTypeDef](#s3storageconfigtypedef)
@@ -662,6 +678,7 @@ type annotations stubs module
   - [StopTrainingJobRequestRequestTypeDef](#stoptrainingjobrequestrequesttypedef)
   - [StopTransformJobRequestRequestTypeDef](#stoptransformjobrequestrequesttypedef)
   - [StoppingConditionTypeDef](#stoppingconditiontypedef)
+  - [StudioLifecycleConfigDetailsTypeDef](#studiolifecycleconfigdetailstypedef)
   - [SubscribedWorkteamTypeDef](#subscribedworkteamtypedef)
   - [SuggestionQueryTypeDef](#suggestionquerytypedef)
   - [TagTypeDef](#tagtypedef)
@@ -824,7 +841,7 @@ from mypy_boto3_sagemaker.type_defs import AddTagsInputRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AddTagsOutputTypeDef
 
@@ -875,7 +892,7 @@ Optional fields:
 - `TrainingImage`: `str`
 - `AlgorithmName`: `str`
 - `MetricDefinitions`:
-  `List`\[[MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)\]
+  `Sequence`\[[MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)\]
 - `EnableSageMakerMetricsTimeSeries`: `bool`
 
 ## AlgorithmStatusDetailsTypeDef
@@ -951,7 +968,7 @@ Required fields:
 
 - `ValidationRole`: `str`
 - `ValidationProfiles`:
-  `List`\[[AlgorithmValidationProfileTypeDef](./type_defs.md#algorithmvalidationprofiletypedef)\]
+  `Sequence`\[[AlgorithmValidationProfileTypeDef](./type_defs.md#algorithmvalidationprofiletypedef)\]
 
 ## AnnotationConsolidationConfigTypeDef
 
@@ -1005,8 +1022,8 @@ Required fields:
 
 Optional fields:
 
-- `ContainerEntrypoint`: `List`\[`str`\]
-- `ContainerArguments`: `List`\[`str`\]
+- `ContainerEntrypoint`: `Sequence`\[`str`\]
+- `ContainerArguments`: `Sequence`\[`str`\]
 
 ## ArtifactSourceTypeDef
 
@@ -1021,7 +1038,7 @@ Required fields:
 Optional fields:
 
 - `SourceTypes`:
-  `List`\[[ArtifactSourceTypeTypeDef](./type_defs.md#artifactsourcetypetypedef)\]
+  `Sequence`\[[ArtifactSourceTypeTypeDef](./type_defs.md#artifactsourcetypetypedef)\]
 
 ## ArtifactSourceTypeTypeDef
 
@@ -1092,6 +1109,59 @@ Optional fields:
 - `DestinationName`: `str`
 - `CreationTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+
+## AsyncInferenceClientConfigTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import AsyncInferenceClientConfigTypeDef
+```
+
+Optional fields:
+
+- `MaxConcurrentInvocationsPerInstance`: `int`
+
+## AsyncInferenceConfigTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import AsyncInferenceConfigTypeDef
+```
+
+Required fields:
+
+- `OutputConfig`:
+  [AsyncInferenceOutputConfigTypeDef](./type_defs.md#asyncinferenceoutputconfigtypedef)
+
+Optional fields:
+
+- `ClientConfig`:
+  [AsyncInferenceClientConfigTypeDef](./type_defs.md#asyncinferenceclientconfigtypedef)
+
+## AsyncInferenceNotificationConfigTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import AsyncInferenceNotificationConfigTypeDef
+```
+
+Optional fields:
+
+- `SuccessTopic`: `str`
+- `ErrorTopic`: `str`
+
+## AsyncInferenceOutputConfigTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import AsyncInferenceOutputConfigTypeDef
+```
+
+Required fields:
+
+- `S3OutputPath`: `str`
+
+Optional fields:
+
+- `KmsKeyId`: `str`
+- `NotificationConfig`:
+  [AsyncInferenceNotificationConfigTypeDef](./type_defs.md#asyncinferencenotificationconfigtypedef)
 
 ## AthenaDatasetDefinitionTypeDef
 
@@ -1392,6 +1462,8 @@ Optional fields:
 
 - `CandidateArtifactLocations`:
   [CandidateArtifactLocationsTypeDef](./type_defs.md#candidateartifactlocationstypedef)
+- `CandidateMetrics`:
+  `List`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
 
 ## CapacitySizeTypeDef
 
@@ -1412,8 +1484,8 @@ from mypy_boto3_sagemaker.type_defs import CaptureContentTypeHeaderTypeDef
 
 Optional fields:
 
-- `CsvContentTypes`: `List`\[`str`\]
-- `JsonContentTypes`: `List`\[`str`\]
+- `CsvContentTypes`: `Sequence`\[`str`\]
+- `JsonContentTypes`: `Sequence`\[`str`\]
 
 ## CaptureOptionTypeDef
 
@@ -1433,7 +1505,7 @@ from mypy_boto3_sagemaker.type_defs import CategoricalParameterRangeSpecificatio
 
 Required fields:
 
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## CategoricalParameterRangeTypeDef
 
@@ -1444,7 +1516,7 @@ from mypy_boto3_sagemaker.type_defs import CategoricalParameterRangeTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## ChannelSpecificationTypeDef
 
@@ -1455,16 +1527,16 @@ from mypy_boto3_sagemaker.type_defs import ChannelSpecificationTypeDef
 Required fields:
 
 - `Name`: `str`
-- `SupportedContentTypes`: `List`\[`str`\]
+- `SupportedContentTypes`: `Sequence`\[`str`\]
 - `SupportedInputModes`:
-  `List`\[[TrainingInputModeType](./literals.md#traininginputmodetype)\]
+  `Sequence`\[[TrainingInputModeType](./literals.md#traininginputmodetype)\]
 
 Optional fields:
 
 - `Description`: `str`
 - `IsRequired`: `bool`
 - `SupportedCompressionTypes`:
-  `List`\[[CompressionTypeType](./literals.md#compressiontypetype)\]
+  `Sequence`\[[CompressionTypeType](./literals.md#compressiontypetype)\]
 
 ## ChannelTypeDef
 
@@ -1548,7 +1620,7 @@ from mypy_boto3_sagemaker.type_defs import CollectionConfigurationTypeDef
 Optional fields:
 
 - `CollectionName`: `str`
-- `CollectionParameters`: `Dict`\[`str`, `str`\]
+- `CollectionParameters`: `Mapping`\[`str`, `str`\]
 
 ## CompilationJobSummaryTypeDef
 
@@ -1600,7 +1672,7 @@ Optional fields:
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 - `Mode`: [ContainerModeType](./literals.md#containermodetype)
 - `ModelDataUrl`: `str`
-- `Environment`: `Dict`\[`str`, `str`\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 - `ModelPackageName`: `str`
 - `MultiModelConfig`:
   [MultiModelConfigTypeDef](./type_defs.md#multimodelconfigtypedef)
@@ -1679,10 +1751,10 @@ Optional fields:
 
 - `Description`: `str`
 - `Status`: [ActionStatusType](./literals.md#actionstatustype)
-- `Properties`: `Dict`\[`str`, `str`\]
+- `Properties`: `Mapping`\[`str`, `str`\]
 - `MetadataProperties`:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateActionResponseTypeDef
 
@@ -1716,7 +1788,7 @@ Optional fields:
 - `ValidationSpecification`:
   [AlgorithmValidationSpecificationTypeDef](./type_defs.md#algorithmvalidationspecificationtypedef)
 - `CertifyForMarketplace`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAlgorithmOutputTypeDef
 
@@ -1742,7 +1814,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KernelGatewayImageConfig`:
   [KernelGatewayImageConfigTypeDef](./type_defs.md#kernelgatewayimageconfigtypedef)
 
@@ -1773,7 +1845,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResourceSpec`: [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
 
 ## CreateAppResponseTypeDef
@@ -1802,10 +1874,10 @@ Required fields:
 Optional fields:
 
 - `ArtifactName`: `str`
-- `Properties`: `Dict`\[`str`, `str`\]
+- `Properties`: `Mapping`\[`str`, `str`\]
 - `MetadataProperties`:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateArtifactResponseTypeDef
 
@@ -1829,7 +1901,7 @@ Required fields:
 
 - `AutoMLJobName`: `str`
 - `InputDataConfig`:
-  `List`\[[AutoMLChannelTypeDef](./type_defs.md#automlchanneltypedef)\]
+  `Sequence`\[[AutoMLChannelTypeDef](./type_defs.md#automlchanneltypedef)\]
 - `OutputDataConfig`:
   [AutoMLOutputDataConfigTypeDef](./type_defs.md#automloutputdataconfigtypedef)
 - `RoleArn`: `str`
@@ -1842,7 +1914,7 @@ Optional fields:
 - `AutoMLJobConfig`:
   [AutoMLJobConfigTypeDef](./type_defs.md#automljobconfigtypedef)
 - `GenerateCandidateDefinitionsOnly`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ModelDeployConfig`:
   [ModelDeployConfigTypeDef](./type_defs.md#modeldeployconfigtypedef)
 
@@ -1871,7 +1943,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateCodeRepositoryOutputTypeDef
 
@@ -1903,7 +1975,7 @@ Required fields:
 Optional fields:
 
 - `VpcConfig`: [NeoVpcConfigTypeDef](./type_defs.md#neovpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateCompilationJobResponseTypeDef
 
@@ -1932,8 +2004,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Properties`: `Dict`\[`str`, `str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Properties`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateContextResponseTypeDef
 
@@ -1974,7 +2046,7 @@ Optional fields:
   [MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef)
 - `StoppingCondition`:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDataQualityJobDefinitionResponseTypeDef
 
@@ -2004,7 +2076,7 @@ Optional fields:
 
 - `RoleArn`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EnableIotRoleAlias`: `bool`
 
 ## CreateDomainRequestRequestTypeDef
@@ -2019,12 +2091,12 @@ Required fields:
 - `AuthMode`: [AuthModeType](./literals.md#authmodetype)
 - `DefaultUserSettings`:
   [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `VpcId`: `str`
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AppNetworkAccessType`:
   [AppNetworkAccessTypeType](./literals.md#appnetworkaccesstypetype)
 - `HomeEfsFileSystemKmsKeyId`: `str`
@@ -2062,7 +2134,7 @@ Required fields:
 Optional fields:
 
 - `ResourceKey`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEndpointConfigInputRequestTypeDef
 
@@ -2074,14 +2146,16 @@ Required fields:
 
 - `EndpointConfigName`: `str`
 - `ProductionVariants`:
-  `List`\[[ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef)\]
+  `Sequence`\[[ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef)\]
 
 Optional fields:
 
 - `DataCaptureConfig`:
   [DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
+- `AsyncInferenceConfig`:
+  [AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef)
 
 ## CreateEndpointConfigOutputTypeDef
 
@@ -2108,7 +2182,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEndpointOutputTypeDef
 
@@ -2136,7 +2210,7 @@ Optional fields:
 
 - `DisplayName`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateExperimentResponseTypeDef
 
@@ -2162,7 +2236,7 @@ Required fields:
 - `RecordIdentifierFeatureName`: `str`
 - `EventTimeFeatureName`: `str`
 - `FeatureDefinitions`:
-  `List`\[[FeatureDefinitionTypeDef](./type_defs.md#featuredefinitiontypedef)\]
+  `Sequence`\[[FeatureDefinitionTypeDef](./type_defs.md#featuredefinitiontypedef)\]
 
 Optional fields:
 
@@ -2172,7 +2246,7 @@ Optional fields:
   [OfflineStoreConfigTypeDef](./type_defs.md#offlinestoreconfigtypedef)
 - `RoleArn`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateFeatureGroupResponseTypeDef
 
@@ -2207,7 +2281,7 @@ Optional fields:
   [HumanLoopRequestSourceTypeDef](./type_defs.md#humanlooprequestsourcetypedef)
 - `HumanLoopActivationConfig`:
   [HumanLoopActivationConfigTypeDef](./type_defs.md#humanloopactivationconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateFlowDefinitionResponseTypeDef
 
@@ -2234,7 +2308,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateHumanTaskUiResponseTypeDef
 
@@ -2265,10 +2339,10 @@ Optional fields:
 - `TrainingJobDefinition`:
   [HyperParameterTrainingJobDefinitionTypeDef](./type_defs.md#hyperparametertrainingjobdefinitiontypedef)
 - `TrainingJobDefinitions`:
-  `List`\[[HyperParameterTrainingJobDefinitionTypeDef](./type_defs.md#hyperparametertrainingjobdefinitiontypedef)\]
+  `Sequence`\[[HyperParameterTrainingJobDefinitionTypeDef](./type_defs.md#hyperparametertrainingjobdefinitiontypedef)\]
 - `WarmStartConfig`:
   [HyperParameterTuningJobWarmStartConfigTypeDef](./type_defs.md#hyperparametertuningjobwarmstartconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateHyperParameterTuningJobResponseTypeDef
 
@@ -2297,7 +2371,7 @@ Optional fields:
 
 - `Description`: `str`
 - `DisplayName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateImageResponseTypeDef
 
@@ -2360,7 +2434,7 @@ Optional fields:
   [LabelingJobStoppingConditionsTypeDef](./type_defs.md#labelingjobstoppingconditionstypedef)
 - `LabelingJobAlgorithmsConfig`:
   [LabelingJobAlgorithmsConfigTypeDef](./type_defs.md#labelingjobalgorithmsconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateLabelingJobResponseTypeDef
 
@@ -2401,7 +2475,7 @@ Optional fields:
   [MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef)
 - `StoppingCondition`:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateModelBiasJobDefinitionResponseTypeDef
 
@@ -2442,7 +2516,7 @@ Optional fields:
   [MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef)
 - `StoppingCondition`:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateModelExplainabilityJobDefinitionResponseTypeDef
 
@@ -2472,10 +2546,10 @@ Optional fields:
 - `PrimaryContainer`:
   [ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)
 - `Containers`:
-  `List`\[[ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)\]
+  `Sequence`\[[ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)\]
 - `InferenceExecutionConfig`:
   [InferenceExecutionConfigTypeDef](./type_defs.md#inferenceexecutionconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `EnableNetworkIsolation`: `bool`
 
@@ -2504,7 +2578,7 @@ Required fields:
 Optional fields:
 
 - `ModelPackageGroupDescription`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateModelPackageGroupOutputTypeDef
 
@@ -2536,7 +2610,7 @@ Optional fields:
 - `SourceAlgorithmSpecification`:
   [SourceAlgorithmSpecificationTypeDef](./type_defs.md#sourcealgorithmspecificationtypedef)
 - `CertifyForMarketplace`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ModelApprovalStatus`:
   [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 - `MetadataProperties`:
@@ -2583,7 +2657,7 @@ Optional fields:
   [MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef)
 - `StoppingCondition`:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateModelQualityJobDefinitionResponseTypeDef
 
@@ -2611,7 +2685,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateMonitoringScheduleResponseTypeDef
 
@@ -2640,18 +2714,19 @@ Required fields:
 Optional fields:
 
 - `SubnetId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `LifecycleConfigName`: `str`
 - `DirectInternetAccess`:
   [DirectInternetAccessType](./literals.md#directinternetaccesstype)
 - `VolumeSizeInGB`: `int`
 - `AcceleratorTypes`:
-  `List`\[[NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype)\]
+  `Sequence`\[[NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype)\]
 - `DefaultCodeRepository`: `str`
-- `AdditionalCodeRepositories`: `List`\[`str`\]
+- `AdditionalCodeRepositories`: `Sequence`\[`str`\]
 - `RootAccess`: [RootAccessType](./literals.md#rootaccesstype)
+- `PlatformIdentifier`: `str`
 
 ## CreateNotebookInstanceLifecycleConfigInputRequestTypeDef
 
@@ -2666,9 +2741,9 @@ Required fields:
 Optional fields:
 
 - `OnCreate`:
-  `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
+  `Sequence`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 - `OnStart`:
-  `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
+  `Sequence`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 
 ## CreateNotebookInstanceLifecycleConfigOutputTypeDef
 
@@ -2711,7 +2786,7 @@ Optional fields:
 
 - `PipelineDisplayName`: `str`
 - `PipelineDescription`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePipelineResponseTypeDef
 
@@ -2797,14 +2872,14 @@ Required fields:
 Optional fields:
 
 - `ProcessingInputs`:
-  `List`\[[ProcessingInputTypeDef](./type_defs.md#processinginputtypedef)\]
+  `Sequence`\[[ProcessingInputTypeDef](./type_defs.md#processinginputtypedef)\]
 - `ProcessingOutputConfig`:
   [ProcessingOutputConfigTypeDef](./type_defs.md#processingoutputconfigtypedef)
 - `StoppingCondition`:
   [ProcessingStoppingConditionTypeDef](./type_defs.md#processingstoppingconditiontypedef)
-- `Environment`: `Dict`\[`str`, `str`\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 - `NetworkConfig`: [NetworkConfigTypeDef](./type_defs.md#networkconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ExperimentConfig`:
   [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 
@@ -2835,7 +2910,7 @@ Required fields:
 Optional fields:
 
 - `ProjectDescription`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateProjectOutputTypeDef
 
@@ -2847,6 +2922,35 @@ Required fields:
 
 - `ProjectArn`: `str`
 - `ProjectId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateStudioLifecycleConfigRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import CreateStudioLifecycleConfigRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StudioLifecycleConfigName`: `str`
+- `StudioLifecycleConfigContent`: `str`
+- `StudioLifecycleConfigAppType`:
+  [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
+
+Optional fields:
+
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateStudioLifecycleConfigResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import CreateStudioLifecycleConfigResponseTypeDef
+```
+
+Required fields:
+
+- `StudioLifecycleConfigArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2871,10 +2975,11 @@ Required fields:
 
 Optional fields:
 
-- `HyperParameters`: `Dict`\[`str`, `str`\]
-- `InputDataConfig`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
+- `HyperParameters`: `Mapping`\[`str`, `str`\]
+- `InputDataConfig`:
+  `Sequence`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EnableNetworkIsolation`: `bool`
 - `EnableInterContainerTrafficEncryption`: `bool`
 - `EnableManagedSpotTraining`: `bool`
@@ -2883,7 +2988,7 @@ Optional fields:
 - `DebugHookConfig`:
   [DebugHookConfigTypeDef](./type_defs.md#debughookconfigtypedef)
 - `DebugRuleConfigurations`:
-  `List`\[[DebugRuleConfigurationTypeDef](./type_defs.md#debugruleconfigurationtypedef)\]
+  `Sequence`\[[DebugRuleConfigurationTypeDef](./type_defs.md#debugruleconfigurationtypedef)\]
 - `TensorBoardOutputConfig`:
   [TensorBoardOutputConfigTypeDef](./type_defs.md#tensorboardoutputconfigtypedef)
 - `ExperimentConfig`:
@@ -2891,8 +2996,8 @@ Optional fields:
 - `ProfilerConfig`:
   [ProfilerConfigTypeDef](./type_defs.md#profilerconfigtypedef)
 - `ProfilerRuleConfigurations`:
-  `List`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
-- `Environment`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 - `RetryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 
 ## CreateTrainingJobResponseTypeDef
@@ -2931,10 +3036,10 @@ Optional fields:
   [ModelClientConfigTypeDef](./type_defs.md#modelclientconfigtypedef)
 - `MaxPayloadInMB`: `int`
 - `BatchStrategy`: [BatchStrategyType](./literals.md#batchstrategytype)
-- `Environment`: `Dict`\[`str`, `str`\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 - `DataProcessing`:
   [DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ExperimentConfig`:
   [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 
@@ -2967,15 +3072,15 @@ Optional fields:
   [TrialComponentStatusTypeDef](./type_defs.md#trialcomponentstatustypedef)
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
-- `Parameters`: `Dict`\[`str`,
+- `Parameters`: `Mapping`\[`str`,
   [TrialComponentParameterValueTypeDef](./type_defs.md#trialcomponentparametervaluetypedef)\]
-- `InputArtifacts`: `Dict`\[`str`,
+- `InputArtifacts`: `Mapping`\[`str`,
   [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
-- `OutputArtifacts`: `Dict`\[`str`,
+- `OutputArtifacts`: `Mapping`\[`str`,
   [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
 - `MetadataProperties`:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateTrialComponentResponseTypeDef
 
@@ -3005,7 +3110,7 @@ Optional fields:
 - `DisplayName`: `str`
 - `MetadataProperties`:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateTrialResponseTypeDef
 
@@ -3034,7 +3139,7 @@ Optional fields:
 
 - `SingleSignOnUserIdentifier`: `str`
 - `SingleSignOnUserValue`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UserSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 
 ## CreateUserProfileResponseTypeDef
@@ -3065,7 +3170,7 @@ Optional fields:
 - `OidcConfig`: [OidcConfigTypeDef](./type_defs.md#oidcconfigtypedef)
 - `SourceIpConfig`:
   [SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateWorkforceResponseTypeDef
 
@@ -3089,7 +3194,7 @@ Required fields:
 
 - `WorkteamName`: `str`
 - `MemberDefinitions`:
-  `List`\[[MemberDefinitionTypeDef](./type_defs.md#memberdefinitiontypedef)\]
+  `Sequence`\[[MemberDefinitionTypeDef](./type_defs.md#memberdefinitiontypedef)\]
 - `Description`: `str`
 
 Optional fields:
@@ -3097,7 +3202,7 @@ Optional fields:
 - `WorkforceName`: `str`
 - `NotificationConfiguration`:
   [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateWorkteamResponseTypeDef
 
@@ -3151,7 +3256,7 @@ Required fields:
 - `InitialSamplingPercentage`: `int`
 - `DestinationS3Uri`: `str`
 - `CaptureOptions`:
-  `List`\[[CaptureOptionTypeDef](./type_defs.md#captureoptiontypedef)\]
+  `Sequence`\[[CaptureOptionTypeDef](./type_defs.md#captureoptiontypedef)\]
 
 Optional fields:
 
@@ -3196,11 +3301,11 @@ Required fields:
 
 Optional fields:
 
-- `ContainerEntrypoint`: `List`\[`str`\]
-- `ContainerArguments`: `List`\[`str`\]
+- `ContainerEntrypoint`: `Sequence`\[`str`\]
+- `ContainerArguments`: `Sequence`\[`str`\]
 - `RecordPreprocessorSourceUri`: `str`
 - `PostAnalyticsProcessorSourceUri`: `str`
-- `Environment`: `Dict`\[`str`, `str`\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 
 ## DataQualityBaselineConfigTypeDef
 
@@ -3268,9 +3373,9 @@ Required fields:
 Optional fields:
 
 - `LocalPath`: `str`
-- `HookParameters`: `Dict`\[`str`, `str`\]
+- `HookParameters`: `Mapping`\[`str`, `str`\]
 - `CollectionConfigurations`:
-  `List`\[[CollectionConfigurationTypeDef](./type_defs.md#collectionconfigurationtypedef)\]
+  `Sequence`\[[CollectionConfigurationTypeDef](./type_defs.md#collectionconfigurationtypedef)\]
 
 ## DebugRuleConfigurationTypeDef
 
@@ -3290,7 +3395,7 @@ Optional fields:
 - `InstanceType`:
   [ProcessingInstanceTypeType](./literals.md#processinginstancetypetype)
 - `VolumeSizeInGB`: `int`
-- `RuleParameters`: `Dict`\[`str`, `str`\]
+- `RuleParameters`: `Mapping`\[`str`, `str`\]
 
 ## DebugRuleEvaluationStatusTypeDef
 
@@ -3702,6 +3807,16 @@ Required fields:
 
 - `ProjectName`: `str`
 
+## DeleteStudioLifecycleConfigRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DeleteStudioLifecycleConfigRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StudioLifecycleConfigName`: `str`
+
 ## DeleteTagsInputRequestTypeDef
 
 ```python
@@ -3711,7 +3826,7 @@ from mypy_boto3_sagemaker.type_defs import DeleteTagsInputRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## DeleteTrialComponentRequestRequestTypeDef
 
@@ -3837,7 +3952,7 @@ from mypy_boto3_sagemaker.type_defs import DeregisterDevicesRequestRequestTypeDe
 Required fields:
 
 - `DeviceFleetName`: `str`
-- `DeviceNames`: `List`\[`str`\]
+- `DeviceNames`: `Sequence`\[`str`\]
 
 ## DescribeActionRequestRequestTypeDef
 
@@ -4363,6 +4478,8 @@ Required fields:
   [DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef)
 - `KmsKeyId`: `str`
 - `CreationTime`: `datetime`
+- `AsyncInferenceConfig`:
+  [AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4397,6 +4514,8 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `LastDeploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
+- `AsyncInferenceConfig`:
+  [AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5022,6 +5141,7 @@ Required fields:
 - `DefaultCodeRepository`: `str`
 - `AdditionalCodeRepositories`: `List`\[`str`\]
 - `RootAccess`: [RootAccessType](./literals.md#rootaccesstype)
+- `PlatformIdentifier`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5194,6 +5314,34 @@ Required fields:
 - `ProjectStatus`: [ProjectStatusType](./literals.md#projectstatustype)
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `CreationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeStudioLifecycleConfigRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DescribeStudioLifecycleConfigRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StudioLifecycleConfigName`: `str`
+
+## DescribeStudioLifecycleConfigResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DescribeStudioLifecycleConfigResponseTypeDef
+```
+
+Required fields:
+
+- `StudioLifecycleConfigArn`: `str`
+- `StudioLifecycleConfigName`: `str`
+- `CreationTime`: `datetime`
+- `LastModifiedTime`: `datetime`
+- `StudioLifecycleConfigContent`: `str`
+- `StudioLifecycleConfigAppType`:
+  [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -6184,7 +6332,7 @@ Optional fields:
 
 - `TaskAvailabilityLifetimeInSeconds`: `int`
 - `TaskTimeLimitInSeconds`: `int`
-- `TaskKeywords`: `List`\[`str`\]
+- `TaskKeywords`: `Sequence`\[`str`\]
 - `PublicWorkforceTaskPrice`:
   [PublicWorkforceTaskPriceTypeDef](./type_defs.md#publicworkforcetaskpricetypedef)
 
@@ -6219,7 +6367,7 @@ Required fields:
 
 Optional fields:
 
-- `TaskKeywords`: `List`\[`str`\]
+- `TaskKeywords`: `Sequence`\[`str`\]
 - `TaskAvailabilityLifetimeInSeconds`: `int`
 - `MaxConcurrentTaskCount`: `int`
 - `PublicWorkforceTaskPrice`:
@@ -6253,7 +6401,7 @@ Optional fields:
 - `TrainingImage`: `str`
 - `AlgorithmName`: `str`
 - `MetricDefinitions`:
-  `List`\[[MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)\]
+  `Sequence`\[[MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)\]
 
 ## HyperParameterSpecificationTypeDef
 
@@ -6299,8 +6447,9 @@ Optional fields:
   [HyperParameterTuningJobObjectiveTypeDef](./type_defs.md#hyperparametertuningjobobjectivetypedef)
 - `HyperParameterRanges`:
   [ParameterRangesTypeDef](./type_defs.md#parameterrangestypedef)
-- `StaticHyperParameters`: `Dict`\[`str`, `str`\]
-- `InputDataConfig`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
+- `StaticHyperParameters`: `Mapping`\[`str`, `str`\]
+- `InputDataConfig`:
+  `Sequence`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `EnableNetworkIsolation`: `bool`
 - `EnableInterContainerTrafficEncryption`: `bool`
@@ -6407,7 +6556,7 @@ from mypy_boto3_sagemaker.type_defs import HyperParameterTuningJobWarmStartConfi
 Required fields:
 
 - `ParentHyperParameterTuningJobs`:
-  `List`\[[ParentHyperParameterTuningJobTypeDef](./type_defs.md#parenthyperparametertuningjobtypedef)\]
+  `Sequence`\[[ParentHyperParameterTuningJobTypeDef](./type_defs.md#parenthyperparametertuningjobtypedef)\]
 - `WarmStartType`:
   [HyperParameterTuningJobWarmStartTypeType](./literals.md#hyperparametertuningjobwarmstarttypetype)
 
@@ -6487,16 +6636,16 @@ from mypy_boto3_sagemaker.type_defs import InferenceSpecificationTypeDef
 Required fields:
 
 - `Containers`:
-  `List`\[[ModelPackageContainerDefinitionTypeDef](./type_defs.md#modelpackagecontainerdefinitiontypedef)\]
-- `SupportedContentTypes`: `List`\[`str`\]
-- `SupportedResponseMIMETypes`: `List`\[`str`\]
+  `Sequence`\[[ModelPackageContainerDefinitionTypeDef](./type_defs.md#modelpackagecontainerdefinitiontypedef)\]
+- `SupportedContentTypes`: `Sequence`\[`str`\]
+- `SupportedResponseMIMETypes`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `SupportedTransformInstanceTypes`:
-  `List`\[[TransformInstanceTypeType](./literals.md#transforminstancetypetype)\]
+  `Sequence`\[[TransformInstanceTypeType](./literals.md#transforminstancetypetype)\]
 - `SupportedRealtimeInferenceInstanceTypes`:
-  `List`\[[ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)\]
+  `Sequence`\[[ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)\]
 
 ## InputConfigTypeDef
 
@@ -6552,6 +6701,7 @@ Optional fields:
 
 - `DefaultResourceSpec`:
   [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
+- `LifecycleConfigArns`: `Sequence`\[`str`\]
 
 ## KernelGatewayAppSettingsTypeDef
 
@@ -6564,7 +6714,8 @@ Optional fields:
 - `DefaultResourceSpec`:
   [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
 - `CustomImages`:
-  `List`\[[CustomImageTypeDef](./type_defs.md#customimagetypedef)\]
+  `Sequence`\[[CustomImageTypeDef](./type_defs.md#customimagetypedef)\]
+- `LifecycleConfigArns`: `Sequence`\[`str`\]
 
 ## KernelGatewayImageConfigTypeDef
 
@@ -6575,7 +6726,7 @@ from mypy_boto3_sagemaker.type_defs import KernelGatewayImageConfigTypeDef
 Required fields:
 
 - `KernelSpecs`:
-  `List`\[[KernelSpecTypeDef](./type_defs.md#kernelspectypedef)\]
+  `Sequence`\[[KernelSpecTypeDef](./type_defs.md#kernelspectypedef)\]
 
 Optional fields:
 
@@ -6647,7 +6798,7 @@ from mypy_boto3_sagemaker.type_defs import LabelingJobDataAttributesTypeDef
 Optional fields:
 
 - `ContentClassifiers`:
-  `List`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
+  `Sequence`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
 
 ## LabelingJobDataSourceTypeDef
 
@@ -6793,6 +6944,18 @@ Optional fields:
   [LabelingJobOutputTypeDef](./type_defs.md#labelingjoboutputtypedef)
 - `InputConfig`:
   [LabelingJobInputConfigTypeDef](./type_defs.md#labelingjobinputconfigtypedef)
+
+## LambdaStepMetadataTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import LambdaStepMetadataTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `OutputParameters`:
+  `List`\[[OutputParameterTypeDef](./type_defs.md#outputparametertypedef)\]
 
 ## ListActionsRequestRequestTypeDef
 
@@ -8183,6 +8346,41 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListStudioLifecycleConfigsRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ListStudioLifecycleConfigsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `NameContains`: `str`
+- `AppTypeEquals`:
+  [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `ModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `ModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `SortBy`:
+  [StudioLifecycleConfigSortKeyType](./literals.md#studiolifecycleconfigsortkeytype)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+## ListStudioLifecycleConfigsResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ListStudioLifecycleConfigsResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `StudioLifecycleConfigs`:
+  `List`\[[StudioLifecycleConfigDetailsTypeDef](./type_defs.md#studiolifecycleconfigdetailstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListSubscribedWorkteamsRequestRequestTypeDef
 
 ```python
@@ -8524,6 +8722,18 @@ Optional fields:
 - `Value`: `float`
 - `Timestamp`: `datetime`
 
+## MetricDatumTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import MetricDatumTypeDef
+```
+
+Optional fields:
+
+- `MetricName`: [AutoMLMetricEnumType](./literals.md#automlmetricenumtype)
+- `Value`: `float`
+- `Set`: [MetricSetSourceType](./literals.md#metricsetsourcetype)
+
 ## MetricDefinitionTypeDef
 
 ```python
@@ -8573,7 +8783,7 @@ Required fields:
 
 Optional fields:
 
-- `Environment`: `Dict`\[`str`, `str`\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 
 ## ModelBiasBaselineConfigTypeDef
 
@@ -8665,7 +8875,7 @@ Required fields:
 
 Optional fields:
 
-- `Environment`: `Dict`\[`str`, `str`\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 
 ## ModelExplainabilityBaselineConfigTypeDef
 
@@ -8720,7 +8930,7 @@ Optional fields:
 - `ImageDigest`: `str`
 - `ModelDataUrl`: `str`
 - `ProductId`: `str`
-- `Environment`: `Dict`\[`str`, `str`\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 
 ## ModelPackageGroupSummaryTypeDef
 
@@ -8869,7 +9079,7 @@ Required fields:
 
 - `ValidationRole`: `str`
 - `ValidationProfiles`:
-  `List`\[[ModelPackageValidationProfileTypeDef](./type_defs.md#modelpackagevalidationprofiletypedef)\]
+  `Sequence`\[[ModelPackageValidationProfileTypeDef](./type_defs.md#modelpackagevalidationprofiletypedef)\]
 
 ## ModelQualityAppSpecificationTypeDef
 
@@ -8883,13 +9093,13 @@ Required fields:
 
 Optional fields:
 
-- `ContainerEntrypoint`: `List`\[`str`\]
-- `ContainerArguments`: `List`\[`str`\]
+- `ContainerEntrypoint`: `Sequence`\[`str`\]
+- `ContainerArguments`: `Sequence`\[`str`\]
 - `RecordPreprocessorSourceUri`: `str`
 - `PostAnalyticsProcessorSourceUri`: `str`
 - `ProblemType`:
   [MonitoringProblemTypeType](./literals.md#monitoringproblemtypetype)
-- `Environment`: `Dict`\[`str`, `str`\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 
 ## ModelQualityBaselineConfigTypeDef
 
@@ -8960,8 +9170,8 @@ Required fields:
 
 Optional fields:
 
-- `ContainerEntrypoint`: `List`\[`str`\]
-- `ContainerArguments`: `List`\[`str`\]
+- `ContainerEntrypoint`: `Sequence`\[`str`\]
+- `ContainerArguments`: `Sequence`\[`str`\]
 - `RecordPreprocessorSourceUri`: `str`
 - `PostAnalyticsProcessorSourceUri`: `str`
 
@@ -9071,7 +9281,7 @@ from mypy_boto3_sagemaker.type_defs import MonitoringJobDefinitionTypeDef
 Required fields:
 
 - `MonitoringInputs`:
-  `List`\[[MonitoringInputTypeDef](./type_defs.md#monitoringinputtypedef)\]
+  `Sequence`\[[MonitoringInputTypeDef](./type_defs.md#monitoringinputtypedef)\]
 - `MonitoringOutputConfig`:
   [MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef)
 - `MonitoringResources`:
@@ -9086,7 +9296,7 @@ Optional fields:
   [MonitoringBaselineConfigTypeDef](./type_defs.md#monitoringbaselineconfigtypedef)
 - `StoppingCondition`:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
-- `Environment`: `Dict`\[`str`, `str`\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 - `NetworkConfig`: [NetworkConfigTypeDef](./type_defs.md#networkconfigtypedef)
 
 ## MonitoringNetworkConfigTypeDef
@@ -9110,7 +9320,7 @@ from mypy_boto3_sagemaker.type_defs import MonitoringOutputConfigTypeDef
 Required fields:
 
 - `MonitoringOutputs`:
-  `List`\[[MonitoringOutputTypeDef](./type_defs.md#monitoringoutputtypedef)\]
+  `Sequence`\[[MonitoringOutputTypeDef](./type_defs.md#monitoringoutputtypedef)\]
 
 Optional fields:
 
@@ -9252,8 +9462,8 @@ from mypy_boto3_sagemaker.type_defs import NeoVpcConfigTypeDef
 
 Required fields:
 
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Subnets`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
 
 ## NestedFiltersTypeDef
 
@@ -9264,7 +9474,7 @@ from mypy_boto3_sagemaker.type_defs import NestedFiltersTypeDef
 Required fields:
 
 - `NestedPropertyName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## NetworkConfigTypeDef
 
@@ -9422,7 +9632,7 @@ from mypy_boto3_sagemaker.type_defs import OidcMemberDefinitionTypeDef
 
 Required fields:
 
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 
 ## OnlineStoreConfigTypeDef
 
@@ -9525,11 +9735,11 @@ from mypy_boto3_sagemaker.type_defs import ParameterRangesTypeDef
 Optional fields:
 
 - `IntegerParameterRanges`:
-  `List`\[[IntegerParameterRangeTypeDef](./type_defs.md#integerparameterrangetypedef)\]
+  `Sequence`\[[IntegerParameterRangeTypeDef](./type_defs.md#integerparameterrangetypedef)\]
 - `ContinuousParameterRanges`:
-  `List`\[[ContinuousParameterRangeTypeDef](./type_defs.md#continuousparameterrangetypedef)\]
+  `Sequence`\[[ContinuousParameterRangeTypeDef](./type_defs.md#continuousparameterrangetypedef)\]
 - `CategoricalParameterRanges`:
-  `List`\[[CategoricalParameterRangeTypeDef](./type_defs.md#categoricalparameterrangetypedef)\]
+  `Sequence`\[[CategoricalParameterRangeTypeDef](./type_defs.md#categoricalparameterrangetypedef)\]
 
 ## ParameterTypeDef
 
@@ -9586,6 +9796,8 @@ Optional fields:
   [ConditionStepMetadataTypeDef](./type_defs.md#conditionstepmetadatatypedef)
 - `Callback`:
   [CallbackStepMetadataTypeDef](./type_defs.md#callbackstepmetadatatypedef)
+- `Lambda`:
+  [LambdaStepMetadataTypeDef](./type_defs.md#lambdastepmetadatatypedef)
 
 ## PipelineExecutionStepTypeDef
 
@@ -9817,7 +10029,7 @@ from mypy_boto3_sagemaker.type_defs import ProcessingOutputConfigTypeDef
 Required fields:
 
 - `Outputs`:
-  `List`\[[ProcessingOutputTypeDef](./type_defs.md#processingoutputtypedef)\]
+  `Sequence`\[[ProcessingOutputTypeDef](./type_defs.md#processingoutputtypedef)\]
 
 Optional fields:
 
@@ -9962,7 +10174,7 @@ Optional fields:
 
 - `S3OutputPath`: `str`
 - `ProfilingIntervalInMilliseconds`: `int`
-- `ProfilingParameters`: `Dict`\[`str`, `str`\]
+- `ProfilingParameters`: `Mapping`\[`str`, `str`\]
 - `DisableProfiler`: `bool`
 
 ## ProfilerConfigTypeDef
@@ -9978,7 +10190,7 @@ Required fields:
 Optional fields:
 
 - `ProfilingIntervalInMilliseconds`: `int`
-- `ProfilingParameters`: `Dict`\[`str`, `str`\]
+- `ProfilingParameters`: `Mapping`\[`str`, `str`\]
 
 ## ProfilerRuleConfigurationTypeDef
 
@@ -9998,7 +10210,7 @@ Optional fields:
 - `InstanceType`:
   [ProcessingInstanceTypeType](./literals.md#processinginstancetypetype)
 - `VolumeSizeInGB`: `int`
-- `RuleParameters`: `Dict`\[`str`, `str`\]
+- `RuleParameters`: `Mapping`\[`str`, `str`\]
 
 ## ProfilerRuleEvaluationStatusTypeDef
 
@@ -10032,6 +10244,27 @@ Required fields:
 Optional fields:
 
 - `ProjectDescription`: `str`
+
+## ProjectTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ProjectTypeDef
+```
+
+Optional fields:
+
+- `ProjectArn`: `str`
+- `ProjectName`: `str`
+- `ProjectId`: `str`
+- `ProjectDescription`: `str`
+- `ServiceCatalogProvisioningDetails`:
+  [ServiceCatalogProvisioningDetailsTypeDef](./type_defs.md#servicecatalogprovisioningdetailstypedef)
+- `ServiceCatalogProvisionedProductDetails`:
+  [ServiceCatalogProvisionedProductDetailsTypeDef](./type_defs.md#servicecatalogprovisionedproductdetailstypedef)
+- `ProjectStatus`: [ProjectStatusType](./literals.md#projectstatustype)
+- `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+- `CreationTime`: `datetime`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PropertyNameQueryTypeDef
 
@@ -10129,11 +10362,11 @@ from mypy_boto3_sagemaker.type_defs import RegisterDevicesRequestRequestTypeDef
 Required fields:
 
 - `DeviceFleetName`: `str`
-- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
+- `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## RegisterModelStepMetadataTypeDef
 
@@ -10259,6 +10492,7 @@ Optional fields:
 - `SageMakerImageArn`: `str`
 - `SageMakerImageVersionArn`: `str`
 - `InstanceType`: [AppInstanceTypeType](./literals.md#appinstancetypetype)
+- `LifecycleConfigArn`: `str`
 
 ## ResponseMetadataTypeDef
 
@@ -10283,6 +10517,29 @@ from mypy_boto3_sagemaker.type_defs import RetentionPolicyTypeDef
 Optional fields:
 
 - `HomeEfsFileSystem`: [RetentionTypeType](./literals.md#retentiontypetype)
+
+## RetryPipelineExecutionRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RetryPipelineExecutionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `PipelineExecutionArn`: `str`
+- `ClientRequestToken`: `str`
+
+## RetryPipelineExecutionResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RetryPipelineExecutionResponseTypeDef
+```
+
+Required fields:
+
+- `PipelineExecutionArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RetryStrategyTypeDef
 
@@ -10309,7 +10566,7 @@ Optional fields:
 
 - `S3DataDistributionType`:
   [S3DataDistributionType](./literals.md#s3datadistributiontype)
-- `AttributeNames`: `List`\[`str`\]
+- `AttributeNames`: `Sequence`\[`str`\]
 
 ## S3StorageConfigTypeDef
 
@@ -10344,11 +10601,11 @@ from mypy_boto3_sagemaker.type_defs import SearchExpressionTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NestedFilters`:
-  `List`\[[NestedFiltersTypeDef](./type_defs.md#nestedfilterstypedef)\]
+  `Sequence`\[[NestedFiltersTypeDef](./type_defs.md#nestedfilterstypedef)\]
 - `SubExpressions`:
-  `List`\[[SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)\]
+  `Sequence`\[[SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)\]
 - `Operator`: [BooleanOperatorType](./literals.md#booleanoperatortype)
 
 ## SearchRecordTypeDef
@@ -10372,6 +10629,7 @@ Optional fields:
 - `PipelineExecution`:
   [PipelineExecutionTypeDef](./type_defs.md#pipelineexecutiontypedef)
 - `FeatureGroup`: [FeatureGroupTypeDef](./type_defs.md#featuregrouptypedef)
+- `Project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 
 ## SearchRequestRequestTypeDef
 
@@ -10462,7 +10720,7 @@ Required fields:
 Optional fields:
 
 - `OutputParameters`:
-  `List`\[[OutputParameterTypeDef](./type_defs.md#outputparametertypedef)\]
+  `Sequence`\[[OutputParameterTypeDef](./type_defs.md#outputparametertypedef)\]
 - `ClientRequestToken`: `str`
 
 ## SendPipelineExecutionStepSuccessResponseTypeDef
@@ -10497,13 +10755,13 @@ from mypy_boto3_sagemaker.type_defs import ServiceCatalogProvisioningDetailsType
 Required fields:
 
 - `ProductId`: `str`
-- `ProvisioningArtifactId`: `str`
 
 Optional fields:
 
+- `ProvisioningArtifactId`: `str`
 - `PathId`: `str`
 - `ProvisioningParameters`:
-  `List`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
+  `Sequence`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
 
 ## SharingSettingsTypeDef
 
@@ -10537,7 +10795,7 @@ from mypy_boto3_sagemaker.type_defs import SourceAlgorithmSpecificationTypeDef
 Required fields:
 
 - `SourceAlgorithms`:
-  `List`\[[SourceAlgorithmTypeDef](./type_defs.md#sourcealgorithmtypedef)\]
+  `Sequence`\[[SourceAlgorithmTypeDef](./type_defs.md#sourcealgorithmtypedef)\]
 
 ## SourceAlgorithmTypeDef
 
@@ -10561,7 +10819,7 @@ from mypy_boto3_sagemaker.type_defs import SourceIpConfigTypeDef
 
 Required fields:
 
-- `Cidrs`: `List`\[`str`\]
+- `Cidrs`: `Sequence`\[`str`\]
 
 ## StartMonitoringScheduleRequestRequestTypeDef
 
@@ -10598,7 +10856,7 @@ Optional fields:
 
 - `PipelineExecutionDisplayName`: `str`
 - `PipelineParameters`:
-  `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `PipelineExecutionDescription`: `str`
 
 ## StartPipelineExecutionResponseTypeDef
@@ -10747,6 +11005,21 @@ Optional fields:
 - `MaxRuntimeInSeconds`: `int`
 - `MaxWaitTimeInSeconds`: `int`
 
+## StudioLifecycleConfigDetailsTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import StudioLifecycleConfigDetailsTypeDef
+```
+
+Optional fields:
+
+- `StudioLifecycleConfigArn`: `str`
+- `StudioLifecycleConfigName`: `str`
+- `CreationTime`: `datetime`
+- `LastModifiedTime`: `datetime`
+- `StudioLifecycleConfigAppType`:
+  [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
+
 ## SubscribedWorkteamTypeDef
 
 ```python
@@ -10853,7 +11126,8 @@ Required fields:
 
 - `TrainingInputMode`:
   [TrainingInputModeType](./literals.md#traininginputmodetype)
-- `InputDataConfig`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
+- `InputDataConfig`:
+  `Sequence`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
 - `OutputDataConfig`:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
 - `ResourceConfig`:
@@ -10863,7 +11137,7 @@ Required fields:
 
 Optional fields:
 
-- `HyperParameters`: `Dict`\[`str`, `str`\]
+- `HyperParameters`: `Mapping`\[`str`, `str`\]
 
 ## TrainingJobStatusCountersTypeDef
 
@@ -10978,20 +11252,20 @@ Required fields:
 
 - `TrainingImage`: `str`
 - `SupportedTrainingInstanceTypes`:
-  `List`\[[TrainingInstanceTypeType](./literals.md#traininginstancetypetype)\]
+  `Sequence`\[[TrainingInstanceTypeType](./literals.md#traininginstancetypetype)\]
 - `TrainingChannels`:
-  `List`\[[ChannelSpecificationTypeDef](./type_defs.md#channelspecificationtypedef)\]
+  `Sequence`\[[ChannelSpecificationTypeDef](./type_defs.md#channelspecificationtypedef)\]
 
 Optional fields:
 
 - `TrainingImageDigest`: `str`
 - `SupportedHyperParameters`:
-  `List`\[[HyperParameterSpecificationTypeDef](./type_defs.md#hyperparameterspecificationtypedef)\]
+  `Sequence`\[[HyperParameterSpecificationTypeDef](./type_defs.md#hyperparameterspecificationtypedef)\]
 - `SupportsDistributedTraining`: `bool`
 - `MetricDefinitions`:
-  `List`\[[MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)\]
+  `Sequence`\[[MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)\]
 - `SupportedTuningJobObjectiveMetrics`:
-  `List`\[[HyperParameterTuningJobObjectiveTypeDef](./type_defs.md#hyperparametertuningjobobjectivetypedef)\]
+  `Sequence`\[[HyperParameterTuningJobObjectiveTypeDef](./type_defs.md#hyperparametertuningjobobjectivetypedef)\]
 
 ## TransformDataSourceTypeDef
 
@@ -11041,7 +11315,7 @@ Optional fields:
 - `MaxConcurrentTransforms`: `int`
 - `MaxPayloadInMB`: `int`
 - `BatchStrategy`: [BatchStrategyType](./literals.md#batchstrategytype)
-- `Environment`: `Dict`\[`str`, `str`\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 
 ## TransformJobStepMetadataTypeDef
 
@@ -11438,8 +11712,8 @@ Optional fields:
 
 - `Description`: `str`
 - `Status`: [ActionStatusType](./literals.md#actionstatustype)
-- `Properties`: `Dict`\[`str`, `str`\]
-- `PropertiesToRemove`: `List`\[`str`\]
+- `Properties`: `Mapping`\[`str`, `str`\]
+- `PropertiesToRemove`: `Sequence`\[`str`\]
 
 ## UpdateActionResponseTypeDef
 
@@ -11493,8 +11767,8 @@ Required fields:
 Optional fields:
 
 - `ArtifactName`: `str`
-- `Properties`: `Dict`\[`str`, `str`\]
-- `PropertiesToRemove`: `List`\[`str`\]
+- `Properties`: `Mapping`\[`str`, `str`\]
+- `PropertiesToRemove`: `Sequence`\[`str`\]
 
 ## UpdateArtifactResponseTypeDef
 
@@ -11548,8 +11822,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Properties`: `Dict`\[`str`, `str`\]
-- `PropertiesToRemove`: `List`\[`str`\]
+- `Properties`: `Mapping`\[`str`, `str`\]
+- `PropertiesToRemove`: `Sequence`\[`str`\]
 
 ## UpdateContextResponseTypeDef
 
@@ -11590,7 +11864,7 @@ from mypy_boto3_sagemaker.type_defs import UpdateDevicesRequestRequestTypeDef
 Required fields:
 
 - `DeviceFleetName`: `str`
-- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
+- `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
 
 ## UpdateDomainRequestRequestTypeDef
 
@@ -11634,7 +11908,7 @@ Optional fields:
 
 - `RetainAllVariantProperties`: `bool`
 - `ExcludeRetainedVariantProperties`:
-  `List`\[[VariantPropertyTypeDef](./type_defs.md#variantpropertytypedef)\]
+  `Sequence`\[[VariantPropertyTypeDef](./type_defs.md#variantpropertytypedef)\]
 - `DeploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 
@@ -11660,7 +11934,7 @@ Required fields:
 
 - `EndpointName`: `str`
 - `DesiredWeightsAndCapacities`:
-  `List`\[[DesiredWeightAndCapacityTypeDef](./type_defs.md#desiredweightandcapacitytypedef)\]
+  `Sequence`\[[DesiredWeightAndCapacityTypeDef](./type_defs.md#desiredweightandcapacitytypedef)\]
 
 ## UpdateEndpointWeightsAndCapacitiesOutputTypeDef
 
@@ -11713,7 +11987,7 @@ Required fields:
 
 Optional fields:
 
-- `DeleteProperties`: `List`\[`str`\]
+- `DeleteProperties`: `Sequence`\[`str`\]
 - `Description`: `str`
 - `DisplayName`: `str`
 - `RoleArn`: `str`
@@ -11800,9 +12074,9 @@ Optional fields:
 - `DisassociateLifecycleConfig`: `bool`
 - `VolumeSizeInGB`: `int`
 - `DefaultCodeRepository`: `str`
-- `AdditionalCodeRepositories`: `List`\[`str`\]
+- `AdditionalCodeRepositories`: `Sequence`\[`str`\]
 - `AcceleratorTypes`:
-  `List`\[[NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype)\]
+  `Sequence`\[[NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype)\]
 - `DisassociateAcceleratorTypes`: `bool`
 - `DisassociateDefaultCodeRepository`: `bool`
 - `DisassociateAdditionalCodeRepositories`: `bool`
@@ -11821,9 +12095,9 @@ Required fields:
 Optional fields:
 
 - `OnCreate`:
-  `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
+  `Sequence`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 - `OnStart`:
-  `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
+  `Sequence`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 
 ## UpdatePipelineExecutionRequestRequestTypeDef
 
@@ -11896,7 +12170,7 @@ Optional fields:
 - `ProfilerConfig`:
   [ProfilerConfigForUpdateTypeDef](./type_defs.md#profilerconfigforupdatetypedef)
 - `ProfilerRuleConfigurations`:
-  `List`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
+  `Sequence`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
 
 ## UpdateTrainingJobResponseTypeDef
 
@@ -11927,15 +12201,15 @@ Optional fields:
   [TrialComponentStatusTypeDef](./type_defs.md#trialcomponentstatustypedef)
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
-- `Parameters`: `Dict`\[`str`,
+- `Parameters`: `Mapping`\[`str`,
   [TrialComponentParameterValueTypeDef](./type_defs.md#trialcomponentparametervaluetypedef)\]
-- `ParametersToRemove`: `List`\[`str`\]
-- `InputArtifacts`: `Dict`\[`str`,
+- `ParametersToRemove`: `Sequence`\[`str`\]
+- `InputArtifacts`: `Mapping`\[`str`,
   [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
-- `InputArtifactsToRemove`: `List`\[`str`\]
-- `OutputArtifacts`: `Dict`\[`str`,
+- `InputArtifactsToRemove`: `Sequence`\[`str`\]
+- `OutputArtifacts`: `Mapping`\[`str`,
   [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
-- `OutputArtifactsToRemove`: `List`\[`str`\]
+- `OutputArtifactsToRemove`: `Sequence`\[`str`\]
 
 ## UpdateTrialComponentResponseTypeDef
 
@@ -12043,7 +12317,7 @@ Required fields:
 Optional fields:
 
 - `MemberDefinitions`:
-  `List`\[[MemberDefinitionTypeDef](./type_defs.md#memberdefinitiontypedef)\]
+  `Sequence`\[[MemberDefinitionTypeDef](./type_defs.md#memberdefinitiontypedef)\]
 - `Description`: `str`
 - `NotificationConfiguration`:
   [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
@@ -12095,7 +12369,7 @@ from mypy_boto3_sagemaker.type_defs import UserSettingsTypeDef
 Optional fields:
 
 - `ExecutionRole`: `str`
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `SharingSettings`:
   [SharingSettingsTypeDef](./type_defs.md#sharingsettingstypedef)
 - `JupyterServerAppSettings`:
@@ -12124,8 +12398,8 @@ from mypy_boto3_sagemaker.type_defs import VpcConfigTypeDef
 
 Required fields:
 
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Subnets`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
 
 ## WaiterConfigTypeDef
 

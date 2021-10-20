@@ -140,7 +140,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AlarmNames`: `List`\[`str`\] *(required)*
+- `AlarmNames`: `Sequence`\[`str`\] *(required)*
 
 ### delete_anomaly_detector
 
@@ -160,7 +160,8 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 - `MetricName`: `str` *(required)*
 - `Stat`: `str` *(required)*
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -178,7 +179,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DashboardNames`: `List`\[`str`\] *(required)*
+- `DashboardNames`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -196,7 +197,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `RuleNames`: `List`\[`str`\] *(required)*
+- `RuleNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteInsightRulesOutputTypeDef](./type_defs.md#deleteinsightrulesoutputtypedef).
@@ -235,7 +236,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AlarmName`: `str`
-- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
+- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `HistoryItemType`: [HistoryItemTypeType](./literals.md#historyitemtypetype)
 - `StartDate`: `Union`\[`datetime`, `str`\]
 - `EndDate`: `Union`\[`datetime`, `str`\]
@@ -260,9 +261,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AlarmNames`: `List`\[`str`\]
+- `AlarmNames`: `Sequence`\[`str`\]
 - `AlarmNamePrefix`: `str`
-- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
+- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `ChildrenOfAlarmName`: `str`
 - `ParentsOfAlarmName`: `str`
 - `StateValue`: [StateValueType](./literals.md#statevaluetype)
@@ -292,7 +293,8 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 - `Statistic`: [StatisticType](./literals.md#statistictype)
 - `ExtendedStatistic`: `str`
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `Period`: `int`
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 
@@ -318,7 +320,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `Namespace`: `str`
 - `MetricName`: `str`
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 
 Returns
 [DescribeAnomalyDetectorsOutputTypeDef](./type_defs.md#describeanomalydetectorsoutputtypedef).
@@ -358,7 +361,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AlarmNames`: `List`\[`str`\] *(required)*
+- `AlarmNames`: `Sequence`\[`str`\] *(required)*
 
 ### disable_insight_rules
 
@@ -374,7 +377,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `RuleNames`: `List`\[`str`\] *(required)*
+- `RuleNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DisableInsightRulesOutputTypeDef](./type_defs.md#disableinsightrulesoutputtypedef).
@@ -393,7 +396,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AlarmNames`: `List`\[`str`\] *(required)*
+- `AlarmNames`: `Sequence`\[`str`\] *(required)*
 
 ### enable_insight_rules
 
@@ -409,7 +412,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `RuleNames`: `List`\[`str`\] *(required)*
+- `RuleNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [EnableInsightRulesOutputTypeDef](./type_defs.md#enableinsightrulesoutputtypedef).
@@ -427,7 +430,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -472,7 +475,7 @@ Keyword-only arguments:
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `Period`: `int` *(required)*
 - `MaxContributorCount`: `int`
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 - `OrderBy`: `str`
 
 Returns
@@ -494,7 +497,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `MetricDataQueries`:
-  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
   *(required)*
 - `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
@@ -525,9 +528,10 @@ Keyword-only arguments:
 - `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `Period`: `int` *(required)*
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `Statistics`: `List`\[[StatisticType](./literals.md#statistictype)\]
-- `ExtendedStatistics`: `List`\[`str`\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Statistics`: `Sequence`\[[StatisticType](./literals.md#statistictype)\]
+- `ExtendedStatistics`: `Sequence`\[`str`\]
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 
 Returns
@@ -631,7 +635,7 @@ Keyword-only arguments:
 - `Namespace`: `str`
 - `MetricName`: `str`
 - `Dimensions`:
-  `List`\[[DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef)\]
+  `Sequence`\[[DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef)\]
 - `NextToken`: `str`
 - `RecentlyActive`: `Literal['PT3H']` (see
   [RecentlyActiveType](./literals.md#recentlyactivetype))
@@ -675,7 +679,8 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 - `MetricName`: `str` *(required)*
 - `Stat`: `str` *(required)*
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `Configuration`:
   [AnomalyDetectorConfigurationTypeDef](./type_defs.md#anomalydetectorconfigurationtypedef)
 
@@ -698,11 +703,11 @@ Keyword-only arguments:
 - `AlarmName`: `str` *(required)*
 - `AlarmRule`: `str` *(required)*
 - `ActionsEnabled`: `bool`
-- `AlarmActions`: `List`\[`str`\]
+- `AlarmActions`: `Sequence`\[`str`\]
 - `AlarmDescription`: `str`
-- `InsufficientDataActions`: `List`\[`str`\]
-- `OKActions`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `InsufficientDataActions`: `Sequence`\[`str`\]
+- `OKActions`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ### put_dashboard
 
@@ -741,7 +746,7 @@ Keyword-only arguments:
 - `RuleName`: `str` *(required)*
 - `RuleDefinition`: `str` *(required)*
 - `RuleState`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -766,14 +771,15 @@ Keyword-only arguments:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype) *(required)*
 - `AlarmDescription`: `str`
 - `ActionsEnabled`: `bool`
-- `OKActions`: `List`\[`str`\]
-- `AlarmActions`: `List`\[`str`\]
-- `InsufficientDataActions`: `List`\[`str`\]
+- `OKActions`: `Sequence`\[`str`\]
+- `AlarmActions`: `Sequence`\[`str`\]
+- `InsufficientDataActions`: `Sequence`\[`str`\]
 - `MetricName`: `str`
 - `Namespace`: `str`
 - `Statistic`: [StatisticType](./literals.md#statistictype)
 - `ExtendedStatistic`: `str`
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `Period`: `int`
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 - `DatapointsToAlarm`: `int`
@@ -781,8 +787,8 @@ Keyword-only arguments:
 - `TreatMissingData`: `str`
 - `EvaluateLowSampleCountPercentile`: `str`
 - `Metrics`:
-  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ThresholdMetricId`: `str`
 
 ### put_metric_data
@@ -801,7 +807,7 @@ Keyword-only arguments:
 
 - `Namespace`: `str` *(required)*
 - `MetricData`:
-  `List`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
+  `Sequence`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
   *(required)*
 
 ### put_metric_stream
@@ -825,10 +831,10 @@ Keyword-only arguments:
   [MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype)
   *(required)*
 - `IncludeFilters`:
-  `List`\[[MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef)\]
+  `Sequence`\[[MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef)\]
 - `ExcludeFilters`:
-  `List`\[[MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [PutMetricStreamOutputTypeDef](./type_defs.md#putmetricstreamoutputtypedef).
@@ -866,7 +872,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\] *(required)*
+- `Names`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -884,7 +890,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\] *(required)*
+- `Names`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -904,7 +910,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -923,7 +929,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

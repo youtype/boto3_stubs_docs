@@ -480,7 +480,7 @@ from mypy_boto3_cognito_sync.type_defs import SetCognitoEventsRequestRequestType
 Required fields:
 
 - `IdentityPoolId`: `str`
-- `Events`: `Dict`\[`str`, `str`\]
+- `Events`: `Mapping`\[`str`, `str`\]
 
 ## SetIdentityPoolConfigurationRequestRequestTypeDef
 
@@ -556,7 +556,7 @@ Optional fields:
 
 - `DeviceId`: `str`
 - `RecordPatches`:
-  `List`\[[RecordPatchTypeDef](./type_defs.md#recordpatchtypedef)\]
+  `Sequence`\[[RecordPatchTypeDef](./type_defs.md#recordpatchtypedef)\]
 - `ClientContext`: `str`
 
 ## UpdateRecordsResponseTypeDef

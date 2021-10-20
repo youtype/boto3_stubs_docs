@@ -30,6 +30,7 @@ type annotations stubs module
   - [JournalKinesisStreamDescriptionTypeDef](#journalkinesisstreamdescriptiontypedef)
   - [JournalS3ExportDescriptionTypeDef](#journals3exportdescriptiontypedef)
   - [KinesisConfigurationTypeDef](#kinesisconfigurationtypedef)
+  - [LedgerEncryptionDescriptionTypeDef](#ledgerencryptiondescriptiontypedef)
   - [LedgerSummaryTypeDef](#ledgersummarytypedef)
   - [ListJournalKinesisStreamsForLedgerRequestRequestTypeDef](#listjournalkinesisstreamsforledgerrequestrequesttypedef)
   - [ListJournalKinesisStreamsForLedgerResponseTypeDef](#listjournalkinesisstreamsforledgerresponsetypedef)
@@ -90,8 +91,9 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `DeletionProtection`: `bool`
+- `KmsKey`: `str`
 
 ## CreateLedgerResponseTypeDef
 
@@ -107,6 +109,7 @@ Required fields:
 - `CreationDateTime`: `datetime`
 - `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
 - `DeletionProtection`: `bool`
+- `KmsKeyArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -192,6 +195,8 @@ Required fields:
 - `CreationDateTime`: `datetime`
 - `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
 - `DeletionProtection`: `bool`
+- `EncryptionDescription`:
+  [LedgerEncryptionDescriptionTypeDef](./type_defs.md#ledgerencryptiondescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -357,6 +362,22 @@ Required fields:
 Optional fields:
 
 - `AggregationEnabled`: `bool`
+
+## LedgerEncryptionDescriptionTypeDef
+
+```python
+from mypy_boto3_qldb.type_defs import LedgerEncryptionDescriptionTypeDef
+```
+
+Required fields:
+
+- `KmsKeyArn`: `str`
+- `EncryptionStatus`:
+  [EncryptionStatusType](./literals.md#encryptionstatustype)
+
+Optional fields:
+
+- `InaccessibleKmsKeyDateTime`: `datetime`
 
 ## LedgerSummaryTypeDef
 
@@ -559,7 +580,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `ExclusiveEndTime`: `Union`\[`datetime`, `str`\]
 
 ## StreamJournalToKinesisResponseTypeDef
@@ -583,7 +604,7 @@ from mypy_boto3_qldb.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -594,7 +615,7 @@ from mypy_boto3_qldb.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateLedgerPermissionsModeRequestRequestTypeDef
 
@@ -634,6 +655,7 @@ Required fields:
 Optional fields:
 
 - `DeletionProtection`: `bool`
+- `KmsKey`: `str`
 
 ## UpdateLedgerResponseTypeDef
 
@@ -648,6 +670,8 @@ Required fields:
 - `State`: [LedgerStateType](./literals.md#ledgerstatetype)
 - `CreationDateTime`: `datetime`
 - `DeletionProtection`: `bool`
+- `EncryptionDescription`:
+  [LedgerEncryptionDescriptionTypeDef](./type_defs.md#ledgerencryptiondescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

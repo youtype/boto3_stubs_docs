@@ -24,14 +24,14 @@ from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingReque
 Required fields:
 
 - `campaignArn`: `str`
-- `inputList`: `List`\[`str`\]
+- `inputList`: `Sequence`\[`str`\]
 - `userId`: `str`
 
 Optional fields:
 
-- `context`: `Dict`\[`str`, `str`\]
+- `context`: `Mapping`\[`str`, `str`\]
 - `filterArn`: `str`
-- `filterValues`: `Dict`\[`str`, `str`\]
+- `filterValues`: `Mapping`\[`str`, `str`\]
 
 ## GetPersonalizedRankingResponseTypeDef
 
@@ -62,9 +62,9 @@ Optional fields:
 - `itemId`: `str`
 - `userId`: `str`
 - `numResults`: `int`
-- `context`: `Dict`\[`str`, `str`\]
+- `context`: `Mapping`\[`str`, `str`\]
 - `filterArn`: `str`
-- `filterValues`: `Dict`\[`str`, `str`\]
+- `filterValues`: `Mapping`\[`str`, `str`\]
 
 ## GetRecommendationsResponseTypeDef
 

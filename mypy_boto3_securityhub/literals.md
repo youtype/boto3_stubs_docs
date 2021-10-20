@@ -10,16 +10,23 @@ type annotations stubs module
 - [Literals for boto3 SecurityHub module](#literals-for-boto3-securityhub-module)
   - [AdminStatusType](#adminstatustype)
   - [AwsIamAccessKeyStatusType](#awsiamaccesskeystatustype)
+  - [AwsS3BucketNotificationConfigurationS3KeyFilterRuleNameType](#awss3bucketnotificationconfigurations3keyfilterrulenametype)
   - [ComplianceStatusType](#compliancestatustype)
   - [ControlStatusType](#controlstatustype)
   - [DateRangeUnitType](#daterangeunittype)
+  - [DescribeActionTargetsPaginatorName](#describeactiontargetspaginatorname)
+  - [DescribeProductsPaginatorName](#describeproductspaginatorname)
+  - [DescribeStandardsControlsPaginatorName](#describestandardscontrolspaginatorname)
+  - [DescribeStandardsPaginatorName](#describestandardspaginatorname)
   - [GetEnabledStandardsPaginatorName](#getenabledstandardspaginatorname)
   - [GetFindingsPaginatorName](#getfindingspaginatorname)
   - [GetInsightsPaginatorName](#getinsightspaginatorname)
   - [IntegrationTypeType](#integrationtypetype)
   - [ListEnabledProductsForImportPaginatorName](#listenabledproductsforimportpaginatorname)
+  - [ListFindingAggregatorsPaginatorName](#listfindingaggregatorspaginatorname)
   - [ListInvitationsPaginatorName](#listinvitationspaginatorname)
   - [ListMembersPaginatorName](#listmemberspaginatorname)
+  - [ListOrganizationAdminAccountsPaginatorName](#listorganizationadminaccountspaginatorname)
   - [MalwareStateType](#malwarestatetype)
   - [MalwareTypeType](#malwaretypetype)
   - [MapFilterComparisonType](#mapfiltercomparisontype)
@@ -36,6 +43,8 @@ type annotations stubs module
   - [VerificationStateType](#verificationstatetype)
   - [WorkflowStateType](#workflowstatetype)
   - [WorkflowStatusType](#workflowstatustype)
+  - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AdminStatusType
 
@@ -58,6 +67,17 @@ Values:
 
 - `Active`
 - `Inactive`
+
+## AwsS3BucketNotificationConfigurationS3KeyFilterRuleNameType
+
+```python
+from mypy_boto3_securityhub.literals import AwsS3BucketNotificationConfigurationS3KeyFilterRuleNameType
+```
+
+Values:
+
+- `Prefix`
+- `Suffix`
 
 ## ComplianceStatusType
 
@@ -92,6 +112,46 @@ from mypy_boto3_securityhub.literals import DateRangeUnitType
 Values:
 
 - `DAYS`
+
+## DescribeActionTargetsPaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import DescribeActionTargetsPaginatorName
+```
+
+Values:
+
+- `describe_action_targets`
+
+## DescribeProductsPaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import DescribeProductsPaginatorName
+```
+
+Values:
+
+- `describe_products`
+
+## DescribeStandardsControlsPaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import DescribeStandardsControlsPaginatorName
+```
+
+Values:
+
+- `describe_standards_controls`
+
+## DescribeStandardsPaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import DescribeStandardsPaginatorName
+```
+
+Values:
+
+- `describe_standards`
 
 ## GetEnabledStandardsPaginatorName
 
@@ -145,6 +205,16 @@ Values:
 
 - `list_enabled_products_for_import`
 
+## ListFindingAggregatorsPaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import ListFindingAggregatorsPaginatorName
+```
+
+Values:
+
+- `list_finding_aggregators`
+
 ## ListInvitationsPaginatorName
 
 ```python
@@ -164,6 +234,16 @@ from mypy_boto3_securityhub.literals import ListMembersPaginatorName
 Values:
 
 - `list_members`
+
+## ListOrganizationAdminAccountsPaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import ListOrganizationAdminAccountsPaginatorName
+```
+
+Values:
+
+- `list_organization_admin_accounts`
 
 ## MalwareStateType
 
@@ -385,3 +465,318 @@ Values:
 - `NOTIFIED`
 - `RESOLVED`
 - `SUPPRESSED`
+
+## ServiceName
+
+```python
+from mypy_boto3_securityhub.literals import ServiceName
+```
+
+Values:
+
+- `accessanalyzer`
+- `account`
+- `acm`
+- `acm-pca`
+- `alexaforbusiness`
+- `amp`
+- `amplify`
+- `amplifybackend`
+- `apigateway`
+- `apigatewaymanagementapi`
+- `apigatewayv2`
+- `appconfig`
+- `appflow`
+- `appintegrations`
+- `application-autoscaling`
+- `application-insights`
+- `applicationcostprofiler`
+- `appmesh`
+- `apprunner`
+- `appstream`
+- `appsync`
+- `athena`
+- `auditmanager`
+- `autoscaling`
+- `autoscaling-plans`
+- `backup`
+- `batch`
+- `braket`
+- `budgets`
+- `ce`
+- `chime`
+- `chime-sdk-identity`
+- `chime-sdk-messaging`
+- `cloud9`
+- `cloudcontrol`
+- `clouddirectory`
+- `cloudformation`
+- `cloudfront`
+- `cloudhsm`
+- `cloudhsmv2`
+- `cloudsearch`
+- `cloudsearchdomain`
+- `cloudtrail`
+- `cloudwatch`
+- `codeartifact`
+- `codebuild`
+- `codecommit`
+- `codedeploy`
+- `codeguru-reviewer`
+- `codeguruprofiler`
+- `codepipeline`
+- `codestar`
+- `codestar-connections`
+- `codestar-notifications`
+- `cognito-identity`
+- `cognito-idp`
+- `cognito-sync`
+- `comprehend`
+- `comprehendmedical`
+- `compute-optimizer`
+- `config`
+- `connect`
+- `connect-contact-lens`
+- `connectparticipant`
+- `cur`
+- `customer-profiles`
+- `databrew`
+- `dataexchange`
+- `datapipeline`
+- `datasync`
+- `dax`
+- `detective`
+- `devicefarm`
+- `devops-guru`
+- `directconnect`
+- `discovery`
+- `dlm`
+- `dms`
+- `docdb`
+- `ds`
+- `dynamodb`
+- `dynamodbstreams`
+- `ebs`
+- `ec2`
+- `ec2-instance-connect`
+- `ecr`
+- `ecr-public`
+- `ecs`
+- `efs`
+- `eks`
+- `elastic-inference`
+- `elasticache`
+- `elasticbeanstalk`
+- `elastictranscoder`
+- `elb`
+- `elbv2`
+- `emr`
+- `emr-containers`
+- `es`
+- `events`
+- `finspace`
+- `finspace-data`
+- `firehose`
+- `fis`
+- `fms`
+- `forecast`
+- `forecastquery`
+- `frauddetector`
+- `fsx`
+- `gamelift`
+- `glacier`
+- `globalaccelerator`
+- `glue`
+- `grafana`
+- `greengrass`
+- `greengrassv2`
+- `groundstation`
+- `guardduty`
+- `health`
+- `healthlake`
+- `honeycode`
+- `iam`
+- `identitystore`
+- `imagebuilder`
+- `importexport`
+- `inspector`
+- `iot`
+- `iot-data`
+- `iot-jobs-data`
+- `iot1click-devices`
+- `iot1click-projects`
+- `iotanalytics`
+- `iotdeviceadvisor`
+- `iotevents`
+- `iotevents-data`
+- `iotfleethub`
+- `iotsecuretunneling`
+- `iotsitewise`
+- `iotthingsgraph`
+- `iotwireless`
+- `ivs`
+- `kafka`
+- `kafkaconnect`
+- `kendra`
+- `kinesis`
+- `kinesis-video-archived-media`
+- `kinesis-video-media`
+- `kinesis-video-signaling`
+- `kinesisanalytics`
+- `kinesisanalyticsv2`
+- `kinesisvideo`
+- `kms`
+- `lakeformation`
+- `lambda`
+- `lex-models`
+- `lex-runtime`
+- `lexv2-models`
+- `lexv2-runtime`
+- `license-manager`
+- `lightsail`
+- `location`
+- `logs`
+- `lookoutequipment`
+- `lookoutmetrics`
+- `lookoutvision`
+- `machinelearning`
+- `macie`
+- `macie2`
+- `managedblockchain`
+- `marketplace-catalog`
+- `marketplace-entitlement`
+- `marketplacecommerceanalytics`
+- `mediaconnect`
+- `mediaconvert`
+- `medialive`
+- `mediapackage`
+- `mediapackage-vod`
+- `mediastore`
+- `mediastore-data`
+- `mediatailor`
+- `memorydb`
+- `meteringmarketplace`
+- `mgh`
+- `mgn`
+- `migrationhub-config`
+- `mobile`
+- `mq`
+- `mturk`
+- `mwaa`
+- `neptune`
+- `network-firewall`
+- `networkmanager`
+- `nimble`
+- `opensearch`
+- `opsworks`
+- `opsworkscm`
+- `organizations`
+- `outposts`
+- `panorama`
+- `personalize`
+- `personalize-events`
+- `personalize-runtime`
+- `pi`
+- `pinpoint`
+- `pinpoint-email`
+- `pinpoint-sms-voice`
+- `polly`
+- `pricing`
+- `proton`
+- `qldb`
+- `qldb-session`
+- `quicksight`
+- `ram`
+- `rds`
+- `rds-data`
+- `redshift`
+- `redshift-data`
+- `rekognition`
+- `resource-groups`
+- `resourcegroupstaggingapi`
+- `robomaker`
+- `route53`
+- `route53-recovery-cluster`
+- `route53-recovery-control-config`
+- `route53-recovery-readiness`
+- `route53domains`
+- `route53resolver`
+- `s3`
+- `s3control`
+- `s3outposts`
+- `sagemaker`
+- `sagemaker-a2i-runtime`
+- `sagemaker-edge`
+- `sagemaker-featurestore-runtime`
+- `sagemaker-runtime`
+- `savingsplans`
+- `schemas`
+- `sdb`
+- `secretsmanager`
+- `securityhub`
+- `serverlessrepo`
+- `service-quotas`
+- `servicecatalog`
+- `servicecatalog-appregistry`
+- `servicediscovery`
+- `ses`
+- `sesv2`
+- `shield`
+- `signer`
+- `sms`
+- `sms-voice`
+- `snow-device-management`
+- `snowball`
+- `sns`
+- `sqs`
+- `ssm`
+- `ssm-contacts`
+- `ssm-incidents`
+- `sso`
+- `sso-admin`
+- `sso-oidc`
+- `stepfunctions`
+- `storagegateway`
+- `sts`
+- `support`
+- `swf`
+- `synthetics`
+- `textract`
+- `timestream-query`
+- `timestream-write`
+- `transcribe`
+- `transfer`
+- `translate`
+- `voice-id`
+- `waf`
+- `waf-regional`
+- `wafv2`
+- `wellarchitected`
+- `wisdom`
+- `workdocs`
+- `worklink`
+- `workmail`
+- `workmailmessageflow`
+- `workspaces`
+- `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import PaginatorName
+```
+
+Values:
+
+- `describe_action_targets`
+- `describe_products`
+- `describe_standards`
+- `describe_standards_controls`
+- `get_enabled_standards`
+- `get_findings`
+- `get_insights`
+- `list_enabled_products_for_import`
+- `list_finding_aggregators`
+- `list_invitations`
+- `list_members`
+- `list_organization_admin_accounts`

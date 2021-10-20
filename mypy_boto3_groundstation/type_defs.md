@@ -260,7 +260,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDataflowEndpointGroupRequestRequestTypeDef
 
@@ -271,11 +271,11 @@ from mypy_boto3_groundstation.type_defs import CreateDataflowEndpointGroupReques
 Required fields:
 
 - `endpointDetails`:
-  `List`\[[EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)\]
+  `Sequence`\[[EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)\]
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateMissionProfileRequestRequestTypeDef
 
@@ -285,7 +285,7 @@ from mypy_boto3_groundstation.type_defs import CreateMissionProfileRequestReques
 
 Required fields:
 
-- `dataflowEdges`: `List`\[`List`\[`str`\]\]
+- `dataflowEdges`: `Sequence`\[`Sequence`\[`str`\]\]
 - `minimumViableContactDurationSeconds`: `int`
 - `name`: `str`
 - `trackingConfigArn`: `str`
@@ -294,7 +294,7 @@ Optional fields:
 
 - `contactPostPassDurationSeconds`: `int`
 - `contactPrePassDurationSeconds`: `int`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## DataflowDetailTypeDef
 
@@ -702,7 +702,8 @@ Required fields:
 
 - `endTime`: `Union`\[`datetime`, `str`\]
 - `startTime`: `Union`\[`datetime`, `str`\]
-- `statusList`: `List`\[[ContactStatusType](./literals.md#contactstatustype)\]
+- `statusList`:
+  `Sequence`\[[ContactStatusType](./literals.md#contactstatustype)\]
 
 Optional fields:
 
@@ -902,7 +903,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## ResponseMetadataTypeDef
 
@@ -966,8 +967,8 @@ from mypy_boto3_groundstation.type_defs import SecurityDetailsTypeDef
 Required fields:
 
 - `roleArn`: `str`
-- `securityGroupIds`: `List`\[`str`\]
-- `subnetIds`: `List`\[`str`\]
+- `securityGroupIds`: `Sequence`\[`str`\]
+- `subnetIds`: `Sequence`\[`str`\]
 
 ## SocketAddressTypeDef
 
@@ -1019,7 +1020,7 @@ from mypy_boto3_groundstation.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TrackingConfigTypeDef
 
@@ -1040,7 +1041,7 @@ from mypy_boto3_groundstation.type_defs import UntagResourceRequestRequestTypeDe
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateConfigRequestRequestTypeDef
 
@@ -1070,7 +1071,7 @@ Optional fields:
 
 - `contactPostPassDurationSeconds`: `int`
 - `contactPrePassDurationSeconds`: `int`
-- `dataflowEdges`: `List`\[`List`\[`str`\]\]
+- `dataflowEdges`: `Sequence`\[`Sequence`\[`str`\]\]
 - `minimumViableContactDurationSeconds`: `int`
 - `name`: `str`
 - `trackingConfigArn`: `str`

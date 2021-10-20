@@ -109,6 +109,8 @@ from mypy_boto3_amplifybackend.literals import AdditionalConstraintsElementType,
 - [ServiceType](./literals.md#servicetype)
 - [SignInMethodType](./literals.md#signinmethodtype)
 - [StatusType](./literals.md#statustype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

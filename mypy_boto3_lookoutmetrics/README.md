@@ -91,6 +91,7 @@ from mypy_boto3_lookoutmetrics.literals import AggregationFunctionType, ...
 - [CSVFileCompressionType](./literals.md#csvfilecompressiontype)
 - [FrequencyType](./literals.md#frequencytype)
 - [JsonFileCompressionType](./literals.md#jsonfilecompressiontype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

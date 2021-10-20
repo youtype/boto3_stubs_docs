@@ -113,7 +113,7 @@ from mypy_boto3_forecast.type_defs import CategoricalParameterRangeTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## ContinuousParameterRangeTypeDef
 
@@ -144,8 +144,8 @@ Required fields:
 
 Optional fields:
 
-- `DatasetArns`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DatasetArns`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDatasetGroupResponseTypeDef
 
@@ -177,7 +177,7 @@ Optional fields:
 - `TimeZone`: `str`
 - `UseGeolocationForTimeZone`: `bool`
 - `GeolocationFormat`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDatasetImportJobResponseTypeDef
 
@@ -209,7 +209,7 @@ Optional fields:
 - `DataFrequency`: `str`
 - `EncryptionConfig`:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDatasetResponseTypeDef
 
@@ -238,7 +238,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateForecastExportJobResponseTypeDef
 
@@ -265,8 +265,8 @@ Required fields:
 
 Optional fields:
 
-- `ForecastTypes`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ForecastTypes`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateForecastResponseTypeDef
 
@@ -295,7 +295,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePredictorBacktestExportJobResponseTypeDef
 
@@ -327,19 +327,21 @@ Required fields:
 Optional fields:
 
 - `AlgorithmArn`: `str`
-- `ForecastTypes`: `List`\[`str`\]
+- `ForecastTypes`: `Sequence`\[`str`\]
 - `PerformAutoML`: `bool`
 - `AutoMLOverrideStrategy`: `Literal['LatencyOptimized']` (see
   [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype))
 - `PerformHPO`: `bool`
-- `TrainingParameters`: `Dict`\[`str`, `str`\]
+- `TrainingParameters`: `Mapping`\[`str`, `str`\]
 - `EvaluationParameters`:
   [EvaluationParametersTypeDef](./type_defs.md#evaluationparameterstypedef)
 - `HPOConfig`:
   [HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef)
 - `EncryptionConfig`:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OptimizationMetric`:
+  [OptimizationMetricType](./literals.md#optimizationmetrictype)
 
 ## CreatePredictorResponseTypeDef
 
@@ -732,6 +734,8 @@ Required fields:
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
+- `OptimizationMetric`:
+  [OptimizationMetricType](./literals.md#optimizationmetrictype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -757,6 +761,8 @@ Optional fields:
 - `ForecastType`: `str`
 - `WAPE`: `float`
 - `RMSE`: `float`
+- `MASE`: `float`
+- `MAPE`: `float`
 
 ## EvaluationParametersTypeDef
 
@@ -793,9 +799,9 @@ Required fields:
 
 Optional fields:
 
-- `ForecastDimensions`: `List`\[`str`\]
+- `ForecastDimensions`: `Sequence`\[`str`\]
 - `Featurizations`:
-  `List`\[[FeaturizationTypeDef](./type_defs.md#featurizationtypedef)\]
+  `Sequence`\[[FeaturizationTypeDef](./type_defs.md#featurizationtypedef)\]
 
 ## FeaturizationMethodTypeDef
 
@@ -810,7 +816,7 @@ Required fields:
 
 Optional fields:
 
-- `FeaturizationMethodParameters`: `Dict`\[`str`, `str`\]
+- `FeaturizationMethodParameters`: `Mapping`\[`str`, `str`\]
 
 ## FeaturizationTypeDef
 
@@ -825,7 +831,7 @@ Required fields:
 Optional fields:
 
 - `FeaturizationPipeline`:
-  `List`\[[FeaturizationMethodTypeDef](./type_defs.md#featurizationmethodtypedef)\]
+  `Sequence`\[[FeaturizationMethodTypeDef](./type_defs.md#featurizationmethodtypedef)\]
 
 ## FilterTypeDef
 
@@ -896,6 +902,8 @@ Required fields:
   `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
 - `AutoMLOverrideStrategy`: `Literal['LatencyOptimized']` (see
   [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype))
+- `OptimizationMetric`:
+  [OptimizationMetricType](./literals.md#optimizationmetrictype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -923,7 +931,7 @@ Required fields:
 Optional fields:
 
 - `SupplementaryFeatures`:
-  `List`\[[SupplementaryFeatureTypeDef](./type_defs.md#supplementaryfeaturetypedef)\]
+  `Sequence`\[[SupplementaryFeatureTypeDef](./type_defs.md#supplementaryfeaturetypedef)\]
 
 ## IntegerParameterRangeTypeDef
 
@@ -976,7 +984,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListDatasetImportJobsResponseTypeDef
 
@@ -1027,7 +1035,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListForecastExportJobsResponseTypeDef
 
@@ -1053,7 +1061,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListForecastsResponseTypeDef
 
@@ -1079,7 +1087,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListPredictorBacktestExportJobsResponseTypeDef
 
@@ -1105,7 +1113,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListPredictorsResponseTypeDef
 
@@ -1156,6 +1164,7 @@ Optional fields:
   `List`\[[WeightedQuantileLossTypeDef](./type_defs.md#weightedquantilelosstypedef)\]
 - `ErrorMetrics`:
   `List`\[[ErrorMetricTypeDef](./type_defs.md#errormetrictypedef)\]
+- `AverageWeightedQuantileLoss`: `float`
 
 ## PaginatorConfigTypeDef
 
@@ -1178,11 +1187,11 @@ from mypy_boto3_forecast.type_defs import ParameterRangesTypeDef
 Optional fields:
 
 - `CategoricalParameterRanges`:
-  `List`\[[CategoricalParameterRangeTypeDef](./type_defs.md#categoricalparameterrangetypedef)\]
+  `Sequence`\[[CategoricalParameterRangeTypeDef](./type_defs.md#categoricalparameterrangetypedef)\]
 - `ContinuousParameterRanges`:
-  `List`\[[ContinuousParameterRangeTypeDef](./type_defs.md#continuousparameterrangetypedef)\]
+  `Sequence`\[[ContinuousParameterRangeTypeDef](./type_defs.md#continuousparameterrangetypedef)\]
 - `IntegerParameterRanges`:
-  `List`\[[IntegerParameterRangeTypeDef](./type_defs.md#integerparameterrangetypedef)\]
+  `Sequence`\[[IntegerParameterRangeTypeDef](./type_defs.md#integerparameterrangetypedef)\]
 
 ## PredictorBacktestExportJobSummaryTypeDef
 
@@ -1289,7 +1298,7 @@ from mypy_boto3_forecast.type_defs import SchemaTypeDef
 Optional fields:
 
 - `Attributes`:
-  `List`\[[SchemaAttributeTypeDef](./type_defs.md#schemaattributetypedef)\]
+  `Sequence`\[[SchemaAttributeTypeDef](./type_defs.md#schemaattributetypedef)\]
 
 ## StatisticsTypeDef
 
@@ -1342,7 +1351,7 @@ from mypy_boto3_forecast.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1377,7 +1386,7 @@ from mypy_boto3_forecast.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDatasetGroupRequestRequestTypeDef
 
@@ -1388,7 +1397,7 @@ from mypy_boto3_forecast.type_defs import UpdateDatasetGroupRequestRequestTypeDe
 Required fields:
 
 - `DatasetGroupArn`: `str`
-- `DatasetArns`: `List`\[`str`\]
+- `DatasetArns`: `Sequence`\[`str`\]
 
 ## WeightedQuantileLossTypeDef
 

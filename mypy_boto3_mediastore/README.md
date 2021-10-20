@@ -97,6 +97,8 @@ from mypy_boto3_mediastore.literals import ContainerLevelMetricsType, ...
 - [ContainerStatusType](./literals.md#containerstatustype)
 - [ListContainersPaginatorName](./literals.md#listcontainerspaginatorname)
 - [MethodNameType](./literals.md#methodnametype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

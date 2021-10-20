@@ -55,8 +55,8 @@ Required fields:
 Optional fields:
 
 - `Filter`:
-  `Dict`\[[GetEntitlementFilterNameType](./literals.md#getentitlementfilternametype),
-  `List`\[`str`\]\]
+  `Mapping`\[[GetEntitlementFilterNameType](./literals.md#getentitlementfilternametype),
+  `Sequence`\[`str`\]\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 

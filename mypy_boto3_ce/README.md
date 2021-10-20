@@ -97,6 +97,8 @@ from mypy_boto3_ce.literals import AccountScopeType, ...
 - [CostCategoryInheritedValueDimensionNameType](./literals.md#costcategoryinheritedvaluedimensionnametype)
 - [CostCategoryRuleTypeType](./literals.md#costcategoryruletypetype)
 - [CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype)
+- [CostCategorySplitChargeMethodType](./literals.md#costcategorysplitchargemethodtype)
+- [CostCategorySplitChargeRuleParameterTypeType](./literals.md#costcategorysplitchargeruleparametertypetype)
 - [CostCategoryStatusComponentType](./literals.md#costcategorystatuscomponenttype)
 - [CostCategoryStatusType](./literals.md#costcategorystatustype)
 - [DimensionType](./literals.md#dimensiontype)
@@ -120,6 +122,7 @@ from mypy_boto3_ce.literals import AccountScopeType, ...
 - [SubscriberTypeType](./literals.md#subscribertypetype)
 - [SupportedSavingsPlansTypeType](./literals.md#supportedsavingsplanstypetype)
 - [TermInYearsType](./literals.md#terminyearstype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 
@@ -141,6 +144,8 @@ from mypy_boto3_ce.type_defs import AnomalyDateIntervalTypeDef, ...
 - [CostCategoryProcessingStatusTypeDef](./type_defs.md#costcategoryprocessingstatustypedef)
 - [CostCategoryReferenceTypeDef](./type_defs.md#costcategoryreferencetypedef)
 - [CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)
+- [CostCategorySplitChargeRuleParameterTypeDef](./type_defs.md#costcategorysplitchargeruleparametertypedef)
+- [CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)
 - [CostCategoryTypeDef](./type_defs.md#costcategorytypedef)
 - [CostCategoryValuesTypeDef](./type_defs.md#costcategoryvaluestypedef)
 - [CoverageByTimeTypeDef](./type_defs.md#coveragebytimetypedef)

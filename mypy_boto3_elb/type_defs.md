@@ -109,7 +109,7 @@ from mypy_boto3_elb.type_defs import AddAvailabilityZonesInputRequestTypeDef
 Required fields:
 
 - `LoadBalancerName`: `str`
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 
 ## AddAvailabilityZonesOutputTypeDef
 
@@ -131,8 +131,8 @@ from mypy_boto3_elb.type_defs import AddTagsInputRequestTypeDef
 
 Required fields:
 
-- `LoadBalancerNames`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `LoadBalancerNames`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AdditionalAttributeTypeDef
 
@@ -165,7 +165,7 @@ from mypy_boto3_elb.type_defs import ApplySecurityGroupsToLoadBalancerInputReque
 Required fields:
 
 - `LoadBalancerName`: `str`
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 
 ## ApplySecurityGroupsToLoadBalancerOutputTypeDef
 
@@ -188,7 +188,7 @@ from mypy_boto3_elb.type_defs import AttachLoadBalancerToSubnetsInputRequestType
 Required fields:
 
 - `LoadBalancerName`: `str`
-- `Subnets`: `List`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
 
 ## AttachLoadBalancerToSubnetsOutputTypeDef
 
@@ -269,15 +269,15 @@ from mypy_boto3_elb.type_defs import CreateAccessPointInputRequestTypeDef
 Required fields:
 
 - `LoadBalancerName`: `str`
-- `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
+- `Listeners`: `Sequence`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
-- `Subnets`: `List`\[`str`\]
-- `SecurityGroups`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `Scheme`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAccessPointOutputTypeDef
 
@@ -327,7 +327,7 @@ from mypy_boto3_elb.type_defs import CreateLoadBalancerListenerInputRequestTypeD
 Required fields:
 
 - `LoadBalancerName`: `str`
-- `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
+- `Listeners`: `Sequence`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
 
 ## CreateLoadBalancerPolicyInputRequestTypeDef
 
@@ -344,7 +344,7 @@ Required fields:
 Optional fields:
 
 - `PolicyAttributes`:
-  `List`\[[PolicyAttributeTypeDef](./type_defs.md#policyattributetypedef)\]
+  `Sequence`\[[PolicyAttributeTypeDef](./type_defs.md#policyattributetypedef)\]
 
 ## CrossZoneLoadBalancingTypeDef
 
@@ -375,7 +375,7 @@ from mypy_boto3_elb.type_defs import DeleteLoadBalancerListenerInputRequestTypeD
 Required fields:
 
 - `LoadBalancerName`: `str`
-- `LoadBalancerPorts`: `List`\[`int`\]
+- `LoadBalancerPorts`: `Sequence`\[`int`\]
 
 ## DeleteLoadBalancerPolicyInputRequestTypeDef
 
@@ -397,7 +397,7 @@ from mypy_boto3_elb.type_defs import DeregisterEndPointsInputRequestTypeDef
 Required fields:
 
 - `LoadBalancerName`: `str`
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 
 ## DeregisterEndPointsOutputTypeDef
 
@@ -419,7 +419,7 @@ from mypy_boto3_elb.type_defs import DescribeAccessPointsInputRequestTypeDef
 
 Optional fields:
 
-- `LoadBalancerNames`: `List`\[`str`\]
+- `LoadBalancerNames`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 
@@ -473,7 +473,7 @@ Required fields:
 
 Optional fields:
 
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 
 ## DescribeEndPointStateOutputTypeDef
 
@@ -520,7 +520,7 @@ from mypy_boto3_elb.type_defs import DescribeLoadBalancerPoliciesInputRequestTyp
 Optional fields:
 
 - `LoadBalancerName`: `str`
-- `PolicyNames`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
 
 ## DescribeLoadBalancerPoliciesOutputTypeDef
 
@@ -543,7 +543,7 @@ from mypy_boto3_elb.type_defs import DescribeLoadBalancerPolicyTypesInputRequest
 
 Optional fields:
 
-- `PolicyTypeNames`: `List`\[`str`\]
+- `PolicyTypeNames`: `Sequence`\[`str`\]
 
 ## DescribeLoadBalancerPolicyTypesOutputTypeDef
 
@@ -566,7 +566,7 @@ from mypy_boto3_elb.type_defs import DescribeTagsInputRequestTypeDef
 
 Required fields:
 
-- `LoadBalancerNames`: `List`\[`str`\]
+- `LoadBalancerNames`: `Sequence`\[`str`\]
 
 ## DescribeTagsOutputTypeDef
 
@@ -590,7 +590,7 @@ from mypy_boto3_elb.type_defs import DetachLoadBalancerFromSubnetsInputRequestTy
 Required fields:
 
 - `LoadBalancerName`: `str`
-- `Subnets`: `List`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
 
 ## DetachLoadBalancerFromSubnetsOutputTypeDef
 
@@ -860,7 +860,7 @@ from mypy_boto3_elb.type_defs import RegisterEndPointsInputRequestTypeDef
 Required fields:
 
 - `LoadBalancerName`: `str`
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 
 ## RegisterEndPointsOutputTypeDef
 
@@ -883,7 +883,7 @@ from mypy_boto3_elb.type_defs import RemoveAvailabilityZonesInputRequestTypeDef
 Required fields:
 
 - `LoadBalancerName`: `str`
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 
 ## RemoveAvailabilityZonesOutputTypeDef
 
@@ -905,8 +905,8 @@ from mypy_boto3_elb.type_defs import RemoveTagsInputRequestTypeDef
 
 Required fields:
 
-- `LoadBalancerNames`: `List`\[`str`\]
-- `Tags`: `List`\[[TagKeyOnlyTypeDef](./type_defs.md#tagkeyonlytypedef)\]
+- `LoadBalancerNames`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagKeyOnlyTypeDef](./type_defs.md#tagkeyonlytypedef)\]
 
 ## ResponseMetadataTypeDef
 
@@ -944,7 +944,7 @@ Required fields:
 
 - `LoadBalancerName`: `str`
 - `InstancePort`: `int`
-- `PolicyNames`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
 
 ## SetLoadBalancerPoliciesOfListenerInputRequestTypeDef
 
@@ -956,7 +956,7 @@ Required fields:
 
 - `LoadBalancerName`: `str`
 - `LoadBalancerPort`: `int`
-- `PolicyNames`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
 
 ## SourceSecurityGroupTypeDef
 

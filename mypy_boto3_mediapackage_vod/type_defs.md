@@ -111,7 +111,7 @@ from mypy_boto3_mediapackage_vod.type_defs import CmafPackageTypeDef
 Required fields:
 
 - `HlsManifests`:
-  `List`\[[HlsManifestTypeDef](./type_defs.md#hlsmanifesttypedef)\]
+  `Sequence`\[[HlsManifestTypeDef](./type_defs.md#hlsmanifesttypedef)\]
 
 Optional fields:
 
@@ -168,7 +168,7 @@ Required fields:
 Optional fields:
 
 - `ResourceId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAssetResponseTypeDef
 
@@ -208,7 +208,7 @@ Optional fields:
 - `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
 - `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
 - `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreatePackagingConfigurationResponseTypeDef
 
@@ -244,7 +244,7 @@ Optional fields:
 - `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
 - `EgressAccessLogs`:
   [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreatePackagingGroupResponseTypeDef
 
@@ -299,14 +299,14 @@ from mypy_boto3_mediapackage_vod.type_defs import DashPackageTypeDef
 Required fields:
 
 - `DashManifests`:
-  `List`\[[DashManifestTypeDef](./type_defs.md#dashmanifesttypedef)\]
+  `Sequence`\[[DashManifestTypeDef](./type_defs.md#dashmanifesttypedef)\]
 
 Optional fields:
 
 - `Encryption`: [DashEncryptionTypeDef](./type_defs.md#dashencryptiontypedef)
 - `IncludeEncoderConfigurationInSegments`: `bool`
-- `PeriodTriggers`: `List`\[`Literal['ADS']` (see
-  [\_\_PeriodTriggersElementType](./literals.md#__periodtriggerselementtype))\]
+- `PeriodTriggers`: `Sequence`\[`Literal['ADS']` (see
+  [PeriodTriggersElementType](./literals.md#periodtriggerselementtype))\]
 - `SegmentDurationSeconds`: `int`
 - `SegmentTemplateFormat`:
   [SegmentTemplateFormatType](./literals.md#segmenttemplateformattype)
@@ -448,6 +448,7 @@ from mypy_boto3_mediapackage_vod.type_defs import EgressEndpointTypeDef
 Optional fields:
 
 - `PackagingConfigurationId`: `str`
+- `Status`: `str`
 - `Url`: `str`
 
 ## HlsEncryptionTypeDef
@@ -492,11 +493,12 @@ from mypy_boto3_mediapackage_vod.type_defs import HlsPackageTypeDef
 Required fields:
 
 - `HlsManifests`:
-  `List`\[[HlsManifestTypeDef](./type_defs.md#hlsmanifesttypedef)\]
+  `Sequence`\[[HlsManifestTypeDef](./type_defs.md#hlsmanifesttypedef)\]
 
 Optional fields:
 
 - `Encryption`: [HlsEncryptionTypeDef](./type_defs.md#hlsencryptiontypedef)
+- `IncludeDvbSubtitles`: `bool`
 - `SegmentDurationSeconds`: `int`
 - `UseAudioRenditionGroup`: `bool`
 
@@ -630,7 +632,7 @@ from mypy_boto3_mediapackage_vod.type_defs import MssPackageTypeDef
 Required fields:
 
 - `MssManifests`:
-  `List`\[[MssManifestTypeDef](./type_defs.md#mssmanifesttypedef)\]
+  `Sequence`\[[MssManifestTypeDef](./type_defs.md#mssmanifesttypedef)\]
 
 Optional fields:
 
@@ -705,7 +707,7 @@ from mypy_boto3_mediapackage_vod.type_defs import SpekeKeyProviderTypeDef
 Required fields:
 
 - `RoleArn`: `str`
-- `SystemIds`: `List`\[`str`\]
+- `SystemIds`: `Sequence`\[`str`\]
 - `Url`: `str`
 
 ## StreamSelectionTypeDef
@@ -729,7 +731,7 @@ from mypy_boto3_mediapackage_vod.type_defs import TagResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -740,7 +742,7 @@ from mypy_boto3_mediapackage_vod.type_defs import UntagResourceRequestRequestTyp
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdatePackagingGroupRequestRequestTypeDef
 

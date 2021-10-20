@@ -104,7 +104,7 @@ Keyword-only arguments:
 - `destinationS3BucketName`: `str` *(required)*
 - `snsTopicArn`: `str` *(required)*
 - `destinationS3Prefix`: `str`
-- `customerDefinedValues`: `Dict`\[`str`, `str`\]
+- `customerDefinedValues`: `Mapping`\[`str`, `str`\]
 
 Returns
 [GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef).
@@ -122,7 +122,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -153,7 +153,7 @@ Keyword-only arguments:
 - `destinationS3BucketName`: `str` *(required)*
 - `snsTopicArn`: `str` *(required)*
 - `destinationS3Prefix`: `str`
-- `customerDefinedValues`: `Dict`\[`str`, `str`\]
+- `customerDefinedValues`: `Mapping`\[`str`, `str`\]
 
 Returns
 [StartSupportDataExportResultTypeDef](./type_defs.md#startsupportdataexportresulttypedef).

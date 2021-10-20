@@ -178,7 +178,7 @@ Required fields:
 Optional fields:
 
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AssociateAwsAccountWithPartnerAccountResponseTypeDef
 
@@ -266,7 +266,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
 ## CreateDestinationResponseTypeDef
@@ -293,7 +293,7 @@ Optional fields:
 - `Name`: `str`
 - `LoRaWAN`:
   [LoRaWANDeviceProfileTypeDef](./type_defs.md#lorawandeviceprofiletypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
 ## CreateDeviceProfileResponseTypeDef
@@ -320,7 +320,7 @@ Optional fields:
 - `Name`: `str`
 - `LoRaWAN`:
   [LoRaWANServiceProfileTypeDef](./type_defs.md#lorawanserviceprofiletypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
 ## CreateServiceProfileResponseTypeDef
@@ -353,7 +353,7 @@ Optional fields:
 - `Description`: `str`
 - `ClientRequestToken`: `str`
 - `LoRaWAN`: [LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateWirelessDeviceResponseTypeDef
 
@@ -382,7 +382,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
 ## CreateWirelessGatewayResponseTypeDef
@@ -414,7 +414,7 @@ Optional fields:
 - `Update`:
   [UpdateWirelessGatewayTaskCreateTypeDef](./type_defs.md#updatewirelessgatewaytaskcreatetypedef)
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateWirelessGatewayTaskDefinitionResponseTypeDef
 
@@ -1218,7 +1218,7 @@ Optional fields:
 - `RxDrOffset1`: `int`
 - `RxDataRate2`: `int`
 - `RxFreq2`: `int`
-- `FactoryPresetFreqsList`: `List`\[`int`\]
+- `FactoryPresetFreqsList`: `Sequence`\[`int`\]
 - `MaxEirp`: `int`
 - `MaxDutyCycle`: `int`
 - `RfRegion`: `str`
@@ -1274,9 +1274,9 @@ Optional fields:
 
 - `GatewayEui`: `str`
 - `RfRegion`: `str`
-- `JoinEuiFilters`: `List`\[`List`\[`str`\]\]
-- `NetIdFilters`: `List`\[`str`\]
-- `SubBands`: `List`\[`int`\]
+- `JoinEuiFilters`: `Sequence`\[`Sequence`\[`str`\]\]
+- `NetIdFilters`: `Sequence`\[`str`\]
+- `SubBands`: `Sequence`\[`int`\]
 
 ## LoRaWANGatewayVersionTypeDef
 
@@ -1556,6 +1556,7 @@ from mypy_boto3_iotwireless.type_defs import SidewalkDeviceTypeDef
 
 Optional fields:
 
+- `AmazonId`: `str`
 - `SidewalkId`: `str`
 - `SidewalkManufacturingSn`: `str`
 - `DeviceCertificates`:
@@ -1605,7 +1606,7 @@ from mypy_boto3_iotwireless.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1649,7 +1650,7 @@ from mypy_boto3_iotwireless.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDestinationRequestRequestTypeDef
 
@@ -1678,9 +1679,9 @@ Optional fields:
 
 - `DefaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
 - `WirelessDeviceLogOptions`:
-  `List`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
+  `Sequence`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
 - `WirelessGatewayLogOptions`:
-  `List`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
+  `Sequence`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
 
 ## UpdatePartnerAccountRequestRequestTypeDef
 
@@ -1728,8 +1729,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
-- `JoinEuiFilters`: `List`\[`List`\[`str`\]\]
-- `NetIdFilters`: `List`\[`str`\]
+- `JoinEuiFilters`: `Sequence`\[`Sequence`\[`str`\]\]
+- `NetIdFilters`: `Sequence`\[`str`\]
 
 ## UpdateWirelessGatewayTaskCreateTypeDef
 

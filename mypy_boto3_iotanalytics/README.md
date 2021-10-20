@@ -125,6 +125,8 @@ from mypy_boto3_iotanalytics.literals import ChannelStatusType, ...
 - [ListPipelinesPaginatorName](./literals.md#listpipelinespaginatorname)
 - [LoggingLevelType](./literals.md#loggingleveltype)
 - [ReprocessingStatusType](./literals.md#reprocessingstatustype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 
@@ -177,6 +179,8 @@ from mypy_boto3_iotanalytics.type_defs import AddAttributesActivityTypeDef, ...
 - [DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef)
 - [DatasetTypeDef](./type_defs.md#datasettypedef)
 - [DatastoreActivityTypeDef](./type_defs.md#datastoreactivitytypedef)
+- [DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef](./type_defs.md#datastoreiotsitewisemultilayerstoragesummarytypedef)
+- [DatastoreIotSiteWiseMultiLayerStorageTypeDef](./type_defs.md#datastoreiotsitewisemultilayerstoragetypedef)
 - [DatastorePartitionTypeDef](./type_defs.md#datastorepartitiontypedef)
 - [DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef)
 - [DatastoreStatisticsTypeDef](./type_defs.md#datastorestatisticstypedef)
@@ -209,6 +213,8 @@ from mypy_boto3_iotanalytics.type_defs import AddAttributesActivityTypeDef, ...
 - [GetDatasetContentResponseTypeDef](./type_defs.md#getdatasetcontentresponsetypedef)
 - [GlueConfigurationTypeDef](./type_defs.md#glueconfigurationtypedef)
 - [IotEventsDestinationConfigurationTypeDef](./type_defs.md#ioteventsdestinationconfigurationtypedef)
+- [IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef](./type_defs.md#iotsitewisecustomermanageddatastores3storagesummarytypedef)
+- [IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef](./type_defs.md#iotsitewisecustomermanageddatastores3storagetypedef)
 - [LambdaActivityTypeDef](./type_defs.md#lambdaactivitytypedef)
 - [LateDataRuleConfigurationTypeDef](./type_defs.md#latedataruleconfigurationtypedef)
 - [LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)

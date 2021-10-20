@@ -13,6 +13,7 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
+    - [create_order](#create_order)
     - [create_outpost](#create_outpost)
     - [delete_outpost](#delete_outpost)
     - [delete_site](#delete_site)
@@ -91,6 +92,31 @@ Arguments:
 
 Returns `bool`.
 
+### create_order
+
+Creates an order for an Outpost.
+
+Type annotations for `boto3.client("outposts").create_order` method.
+
+Boto3 documentation:
+[Outposts.Client.create_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_order)
+
+Arguments mapping described in
+[CreateOrderInputRequestTypeDef](./type_defs.md#createorderinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `OutpostIdentifier`: `str` *(required)*
+- `LineItems`:
+  `Sequence`\[[LineItemRequestTypeDef](./type_defs.md#lineitemrequesttypedef)\]
+  *(required)*
+- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
+  *(required)*
+- `PaymentTerm`: `Literal['THREE_YEARS']` (see
+  [PaymentTermType](./literals.md#paymenttermtype))
+
+Returns [CreateOrderOutputTypeDef](./type_defs.md#createorderoutputtypedef).
+
 ### create_outpost
 
 Creates an Outpost.
@@ -110,7 +136,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateOutpostOutputTypeDef](./type_defs.md#createoutpostoutputtypedef).
@@ -163,7 +189,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -225,9 +251,9 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `LifeCycleStatusFilter`: `List`\[`str`\]
-- `AvailabilityZoneFilter`: `List`\[`str`\]
-- `AvailabilityZoneIdFilter`: `List`\[`str`\]
+- `LifeCycleStatusFilter`: `Sequence`\[`str`\]
+- `AvailabilityZoneFilter`: `Sequence`\[`str`\]
+- `AvailabilityZoneIdFilter`: `Sequence`\[`str`\]
 
 Returns [ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef).
 
@@ -284,7 +310,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -303,6 +329,6 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

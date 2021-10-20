@@ -125,6 +125,8 @@ from mypy_boto3_codeartifact.literals import DomainStatusType, ...
 - [PackageVersionErrorCodeType](./literals.md#packageversionerrorcodetype)
 - [PackageVersionSortTypeType](./literals.md#packageversionsorttypetype)
 - [PackageVersionStatusType](./literals.md#packageversionstatustype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

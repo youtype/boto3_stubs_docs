@@ -93,6 +93,8 @@ from mypy_boto3_autoscaling_plans.literals import DescribeScalingPlanResourcesPa
 - [ScalingPolicyUpdateBehaviorType](./literals.md#scalingpolicyupdatebehaviortype)
 - [ScalingStatusCodeType](./literals.md#scalingstatuscodetype)
 - [ServiceNamespaceType](./literals.md#servicenamespacetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

@@ -125,7 +125,7 @@ Required fields:
 
 Optional fields:
 
-- `ResourceIds`: `List`\[`str`\]
+- `ResourceIds`: `Sequence`\[`str`\]
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - `MaxResults`: `int`
@@ -191,7 +191,7 @@ Required fields:
 
 Optional fields:
 
-- `PolicyNames`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
 - `ResourceId`: `str`
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
@@ -225,7 +225,7 @@ Required fields:
 
 Optional fields:
 
-- `ScheduledActionNames`: `List`\[`str`\]
+- `ScheduledActionNames`: `Sequence`\[`str`\]
 - `ResourceId`: `str`
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)

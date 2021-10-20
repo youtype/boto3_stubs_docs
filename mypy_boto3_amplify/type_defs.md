@@ -157,7 +157,7 @@ Optional fields:
 - `stage`: [StageType](./literals.md#stagetype)
 - `framework`: `str`
 - `enableAutoBuild`: `bool`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `environmentVariables`: `Mapping`\[`str`, `str`\]
 - `basicAuthCredentials`: `str`
 - `enableBasicAuth`: `bool`
 - `enablePerformanceMode`: `bool`
@@ -240,18 +240,18 @@ Optional fields:
 - `iamServiceRoleArn`: `str`
 - `oauthToken`: `str`
 - `accessToken`: `str`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `environmentVariables`: `Mapping`\[`str`, `str`\]
 - `enableBranchAutoBuild`: `bool`
 - `enableBranchAutoDeletion`: `bool`
 - `enableBasicAuth`: `bool`
 - `basicAuthCredentials`: `str`
 - `customRules`:
-  `List`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `buildSpec`: `str`
 - `customHeaders`: `str`
 - `enableAutoBranchCreation`: `bool`
-- `autoBranchCreationPatterns`: `List`\[`str`\]
+- `autoBranchCreationPatterns`: `Sequence`\[`str`\]
 - `autoBranchCreationConfig`:
   [AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef)
 
@@ -314,11 +314,11 @@ Optional fields:
 - `framework`: `str`
 - `enableNotification`: `bool`
 - `enableAutoBuild`: `bool`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `environmentVariables`: `Mapping`\[`str`, `str`\]
 - `basicAuthCredentials`: `str`
 - `enableBasicAuth`: `bool`
 - `enablePerformanceMode`: `bool`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `buildSpec`: `str`
 - `ttl`: `str`
 - `displayName`: `str`
@@ -351,7 +351,7 @@ Required fields:
 
 Optional fields:
 
-- `fileMap`: `Dict`\[`str`, `str`\]
+- `fileMap`: `Mapping`\[`str`, `str`\]
 
 ## CreateDeploymentResultTypeDef
 
@@ -378,12 +378,12 @@ Required fields:
 - `appId`: `str`
 - `domainName`: `str`
 - `subDomainSettings`:
-  `List`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
+  `Sequence`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
 
 Optional fields:
 
 - `enableAutoSubDomain`: `bool`
-- `autoSubDomainCreationPatterns`: `List`\[`str`\]
+- `autoSubDomainCreationPatterns`: `Sequence`\[`str`\]
 - `autoSubDomainIAMRole`: `str`
 
 ## CreateDomainAssociationResultTypeDef
@@ -1224,7 +1224,7 @@ from mypy_boto3_amplify.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1235,7 +1235,7 @@ from mypy_boto3_amplify.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAppRequestRequestTypeDef
 
@@ -1253,17 +1253,17 @@ Optional fields:
 - `description`: `str`
 - `platform`: `Literal['WEB']` (see [PlatformType](./literals.md#platformtype))
 - `iamServiceRoleArn`: `str`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `environmentVariables`: `Mapping`\[`str`, `str`\]
 - `enableBranchAutoBuild`: `bool`
 - `enableBranchAutoDeletion`: `bool`
 - `enableBasicAuth`: `bool`
 - `basicAuthCredentials`: `str`
 - `customRules`:
-  `List`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
+  `Sequence`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
 - `buildSpec`: `str`
 - `customHeaders`: `str`
 - `enableAutoBranchCreation`: `bool`
-- `autoBranchCreationPatterns`: `List`\[`str`\]
+- `autoBranchCreationPatterns`: `Sequence`\[`str`\]
 - `autoBranchCreationConfig`:
   [AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef)
 - `repository`: `str`
@@ -1300,7 +1300,7 @@ Optional fields:
 - `stage`: [StageType](./literals.md#stagetype)
 - `enableNotification`: `bool`
 - `enableAutoBuild`: `bool`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `environmentVariables`: `Mapping`\[`str`, `str`\]
 - `basicAuthCredentials`: `str`
 - `enableBasicAuth`: `bool`
 - `enablePerformanceMode`: `bool`
@@ -1334,12 +1334,12 @@ Required fields:
 - `appId`: `str`
 - `domainName`: `str`
 - `subDomainSettings`:
-  `List`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
+  `Sequence`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
 
 Optional fields:
 
 - `enableAutoSubDomain`: `bool`
-- `autoSubDomainCreationPatterns`: `List`\[`str`\]
+- `autoSubDomainCreationPatterns`: `Sequence`\[`str`\]
 - `autoSubDomainIAMRole`: `str`
 
 ## UpdateDomainAssociationResultTypeDef

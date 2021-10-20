@@ -80,7 +80,7 @@ from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequest
 Required fields:
 
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
+- `LFTags`: `Sequence`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
 
 Optional fields:
 
@@ -107,7 +107,7 @@ from mypy_boto3_lakeformation.type_defs import BatchGrantPermissionsRequestReque
 Required fields:
 
 - `Entries`:
-  `List`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
+  `Sequence`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
 
 Optional fields:
 
@@ -153,9 +153,9 @@ Optional fields:
 - `Principal`:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
+- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
 - `PermissionsWithGrantOption`:
-  `List`\[[PermissionType](./literals.md#permissiontype)\]
+  `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
 
 ## BatchRevokePermissionsRequestRequestTypeDef
 
@@ -166,7 +166,7 @@ from mypy_boto3_lakeformation.type_defs import BatchRevokePermissionsRequestRequ
 Required fields:
 
 - `Entries`:
-  `List`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
+  `Sequence`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
 
 Optional fields:
 
@@ -204,7 +204,7 @@ from mypy_boto3_lakeformation.type_defs import ColumnWildcardTypeDef
 
 Optional fields:
 
-- `ExcludedColumnNames`: `List`\[`str`\]
+- `ExcludedColumnNames`: `Sequence`\[`str`\]
 
 ## CreateLFTagRequestRequestTypeDef
 
@@ -215,7 +215,7 @@ from mypy_boto3_lakeformation.type_defs import CreateLFTagRequestRequestTypeDef
 Required fields:
 
 - `TagKey`: `str`
-- `TagValues`: `List`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -353,7 +353,7 @@ Optional fields:
 - `Field`: [FieldNameStringType](./literals.md#fieldnamestringtype)
 - `ComparisonOperator`:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype)
-- `StringValueList`: `List`\[`str`\]
+- `StringValueList`: `Sequence`\[`str`\]
 
 ## GetDataLakeSettingsRequestRequestTypeDef
 
@@ -479,13 +479,13 @@ Required fields:
 - `Principal`:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
+- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
 
 Optional fields:
 
 - `CatalogId`: `str`
 - `PermissionsWithGrantOption`:
-  `List`\[[PermissionType](./literals.md#permissiontype)\]
+  `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
 
 ## LFTagErrorTypeDef
 
@@ -507,7 +507,7 @@ from mypy_boto3_lakeformation.type_defs import LFTagKeyResourceTypeDef
 Required fields:
 
 - `TagKey`: `str`
-- `TagValues`: `List`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -522,7 +522,7 @@ from mypy_boto3_lakeformation.type_defs import LFTagPairTypeDef
 Required fields:
 
 - `TagKey`: `str`
-- `TagValues`: `List`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -537,7 +537,7 @@ from mypy_boto3_lakeformation.type_defs import LFTagPolicyResourceTypeDef
 Required fields:
 
 - `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `Expression`: `List`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
+- `Expression`: `Sequence`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
 
 Optional fields:
 
@@ -552,7 +552,7 @@ from mypy_boto3_lakeformation.type_defs import LFTagTypeDef
 Required fields:
 
 - `TagKey`: `str`
-- `TagValues`: `List`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 ## ListLFTagsRequestRequestTypeDef
 
@@ -621,7 +621,7 @@ from mypy_boto3_lakeformation.type_defs import ListResourcesRequestRequestTypeDe
 Optional fields:
 
 - `FilterConditionList`:
-  `List`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
+  `Sequence`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -706,7 +706,7 @@ from mypy_boto3_lakeformation.type_defs import RemoveLFTagsFromResourceRequestRe
 Required fields:
 
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
+- `LFTags`: `Sequence`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
 
 Optional fields:
 
@@ -744,7 +744,7 @@ from mypy_boto3_lakeformation.type_defs import ResourceTypeDef
 
 Optional fields:
 
-- `Catalog`: `Dict`\[`str`, `Any`\]
+- `Catalog`: `Mapping`\[`str`, `Any`\]
 - `Database`: [DatabaseResourceTypeDef](./type_defs.md#databaseresourcetypedef)
 - `Table`: [TableResourceTypeDef](./type_defs.md#tableresourcetypedef)
 - `TableWithColumns`:
@@ -780,13 +780,13 @@ Required fields:
 - `Principal`:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
+- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
 
 Optional fields:
 
 - `CatalogId`: `str`
 - `PermissionsWithGrantOption`:
-  `List`\[[PermissionType](./literals.md#permissiontype)\]
+  `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
 
 ## SearchDatabasesByLFTagsRequestRequestTypeDef
 
@@ -796,7 +796,7 @@ from mypy_boto3_lakeformation.type_defs import SearchDatabasesByLFTagsRequestReq
 
 Required fields:
 
-- `Expression`: `List`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
+- `Expression`: `Sequence`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
 
 Optional fields:
 
@@ -826,7 +826,7 @@ from mypy_boto3_lakeformation.type_defs import SearchTablesByLFTagsRequestReques
 
 Required fields:
 
-- `Expression`: `List`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
+- `Expression`: `Sequence`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
 
 Optional fields:
 
@@ -862,7 +862,7 @@ Optional fields:
 
 - `CatalogId`: `str`
 - `Name`: `str`
-- `TableWildcard`: `Dict`\[`str`, `Any`\]
+- `TableWildcard`: `Mapping`\[`str`, `Any`\]
 
 ## TableWithColumnsResourceTypeDef
 
@@ -878,7 +878,7 @@ Required fields:
 Optional fields:
 
 - `CatalogId`: `str`
-- `ColumnNames`: `List`\[`str`\]
+- `ColumnNames`: `Sequence`\[`str`\]
 - `ColumnWildcard`:
   [ColumnWildcardTypeDef](./type_defs.md#columnwildcardtypedef)
 
@@ -922,8 +922,8 @@ Required fields:
 Optional fields:
 
 - `CatalogId`: `str`
-- `TagValuesToDelete`: `List`\[`str`\]
-- `TagValuesToAdd`: `List`\[`str`\]
+- `TagValuesToDelete`: `Sequence`\[`str`\]
+- `TagValuesToAdd`: `Sequence`\[`str`\]
 
 ## UpdateResourceRequestRequestTypeDef
 

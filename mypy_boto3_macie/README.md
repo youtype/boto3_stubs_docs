@@ -81,6 +81,8 @@ from mypy_boto3_macie.literals import ListMemberAccountsPaginatorName, ...
 - [ListS3ResourcesPaginatorName](./literals.md#lists3resourcespaginatorname)
 - [S3ContinuousClassificationTypeType](./literals.md#s3continuousclassificationtypetype)
 - [S3OneTimeClassificationTypeType](./literals.md#s3onetimeclassificationtypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

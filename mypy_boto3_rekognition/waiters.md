@@ -31,7 +31,7 @@ Boto3 documentation:
 Arguments for `ProjectVersionRunningWaiter.wait` method:
 
 - `ProjectArn`: `str` *(required)*
-- `VersionNames`: `List`\[`str`\]
+- `VersionNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -56,7 +56,7 @@ Boto3 documentation:
 Arguments for `ProjectVersionTrainingCompletedWaiter.wait` method:
 
 - `ProjectArn`: `str` *(required)*
-- `VersionNames`: `List`\[`str`\]
+- `VersionNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

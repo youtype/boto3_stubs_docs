@@ -20,8 +20,13 @@ type annotations stubs module
     - [describe_fhir_import_job](#describe_fhir_import_job)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_fhir_datastores](#list_fhir_datastores)
+    - [list_fhir_export_jobs](#list_fhir_export_jobs)
+    - [list_fhir_import_jobs](#list_fhir_import_jobs)
+    - [list_tags_for_resource](#list_tags_for_resource)
     - [start_fhir_export_job](#start_fhir_export_job)
     - [start_fhir_import_job](#start_fhir_import_job)
+    - [tag_resource](#tag_resource)
+    - [untag_resource](#untag_resource)
 
 ## HealthLakeClient
 
@@ -106,9 +111,12 @@ Keyword-only arguments:
 - `DatastoreTypeVersion`: `Literal['R4']` (see
   [FHIRVersionType](./literals.md#fhirversiontype)) *(required)*
 - `DatastoreName`: `str`
+- `SseConfiguration`:
+  [SseConfigurationTypeDef](./type_defs.md#sseconfigurationtypedef)
 - `PreloadDataConfig`:
   [PreloadDataConfigTypeDef](./type_defs.md#preloaddataconfigtypedef)
 - `ClientToken`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateFHIRDatastoreResponseTypeDef](./type_defs.md#createfhirdatastoreresponsetypedef).
@@ -211,7 +219,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -238,6 +246,76 @@ Keyword-only arguments:
 
 Returns
 [ListFHIRDatastoresResponseTypeDef](./type_defs.md#listfhirdatastoresresponsetypedef).
+
+### list_fhir_export_jobs
+
+Lists all FHIR export jobs associated with an account and their statuses.
+
+Type annotations for `boto3.client("healthlake").list_fhir_export_jobs` method.
+
+Boto3 documentation:
+[HealthLake.Client.list_fhir_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_export_jobs)
+
+Arguments mapping described in
+[ListFHIRExportJobsRequestRequestTypeDef](./type_defs.md#listfhirexportjobsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DatastoreId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `JobName`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `SubmittedBefore`: `Union`\[`datetime`, `str`\]
+- `SubmittedAfter`: `Union`\[`datetime`, `str`\]
+
+Returns
+[ListFHIRExportJobsResponseTypeDef](./type_defs.md#listfhirexportjobsresponsetypedef).
+
+### list_fhir_import_jobs
+
+Lists all FHIR import jobs associated with an account and their statuses.
+
+Type annotations for `boto3.client("healthlake").list_fhir_import_jobs` method.
+
+Boto3 documentation:
+[HealthLake.Client.list_fhir_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_import_jobs)
+
+Arguments mapping described in
+[ListFHIRImportJobsRequestRequestTypeDef](./type_defs.md#listfhirimportjobsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DatastoreId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `JobName`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `SubmittedBefore`: `Union`\[`datetime`, `str`\]
+- `SubmittedAfter`: `Union`\[`datetime`, `str`\]
+
+Returns
+[ListFHIRImportJobsResponseTypeDef](./type_defs.md#listfhirimportjobsresponsetypedef).
+
+### list_tags_for_resource
+
+Returns a list of all existing tags associated with a Data Store.
+
+Type annotations for `boto3.client("healthlake").list_tags_for_resource`
+method.
+
+Boto3 documentation:
+[HealthLake.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_fhir_export_job
 
@@ -280,6 +358,9 @@ Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
+- `JobOutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+  *(required)*
 - `DatastoreId`: `str` *(required)*
 - `DataAccessRoleArn`: `str` *(required)*
 - `ClientToken`: `str` *(required)*
@@ -287,3 +368,41 @@ Keyword-only arguments:
 
 Returns
 [StartFHIRImportJobResponseTypeDef](./type_defs.md#startfhirimportjobresponsetypedef).
+
+### tag_resource
+
+Adds a user specifed key and value tag to a Data Store.
+
+Type annotations for `boto3.client("healthlake").tag_resource` method.
+
+Boto3 documentation:
+[HealthLake.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### untag_resource
+
+Removes tags from a Data Store.
+
+Type annotations for `boto3.client("healthlake").untag_resource` method.
+
+Boto3 documentation:
+[HealthLake.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].

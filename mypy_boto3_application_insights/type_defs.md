@@ -128,7 +128,7 @@ Optional fields:
 - `OpsCenterEnabled`: `bool`
 - `CWEMonitorEnabled`: `bool`
 - `OpsItemSNSTopicArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateApplicationResponseTypeDef
 
@@ -153,7 +153,7 @@ Required fields:
 
 - `ResourceGroupName`: `str`
 - `ComponentName`: `str`
-- `ResourceList`: `List`\[`str`\]
+- `ResourceList`: `Sequence`\[`str`\]
 
 ## CreateLogPatternRequestRequestTypeDef
 
@@ -720,7 +720,7 @@ from mypy_boto3_application_insights.type_defs import TagResourceRequestRequestT
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -742,7 +742,7 @@ from mypy_boto3_application_insights.type_defs import UntagResourceRequestReques
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApplicationRequestRequestTypeDef
 
@@ -805,7 +805,7 @@ Required fields:
 Optional fields:
 
 - `NewComponentName`: `str`
-- `ResourceList`: `List`\[`str`\]
+- `ResourceList`: `Sequence`\[`str`\]
 
 ## UpdateLogPatternRequestRequestTypeDef
 

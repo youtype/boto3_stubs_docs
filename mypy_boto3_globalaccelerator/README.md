@@ -156,6 +156,8 @@ from mypy_boto3_globalaccelerator.literals import AcceleratorStatusType, ...
 - [ListEndpointGroupsPaginatorName](./literals.md#listendpointgroupspaginatorname)
 - [ListListenersPaginatorName](./literals.md#listlistenerspaginatorname)
 - [ProtocolType](./literals.md#protocoltype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

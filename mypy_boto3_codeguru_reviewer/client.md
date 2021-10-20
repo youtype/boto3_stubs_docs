@@ -101,7 +101,7 @@ Keyword-only arguments:
 - `Repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
   *(required)*
 - `ClientRequestToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `KMSKeyDetails`: [KMSKeyDetailsTypeDef](./type_defs.md#kmskeydetailstypedef)
 
 Returns
@@ -241,7 +241,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -263,9 +263,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Type`: [TypeType](./literals.md#typetype) *(required)*
-- `ProviderTypes`: `List`\[[ProviderTypeType](./literals.md#providertypetype)\]
-- `States`: `List`\[[JobStateType](./literals.md#jobstatetype)\]
-- `RepositoryNames`: `List`\[`str`\]
+- `ProviderTypes`:
+  `Sequence`\[[ProviderTypeType](./literals.md#providertypetype)\]
+- `States`: `Sequence`\[[JobStateType](./literals.md#jobstatetype)\]
+- `RepositoryNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -290,8 +291,8 @@ Keyword-only arguments:
 - `CodeReviewArn`: `str` *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `UserIds`: `List`\[`str`\]
-- `RecommendationIds`: `List`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
+- `RecommendationIds`: `Sequence`\[`str`\]
 
 Returns
 [ListRecommendationFeedbackResponseTypeDef](./type_defs.md#listrecommendationfeedbackresponsetypedef).
@@ -333,11 +334,12 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ProviderTypes`: `List`\[[ProviderTypeType](./literals.md#providertypetype)\]
+- `ProviderTypes`:
+  `Sequence`\[[ProviderTypeType](./literals.md#providertypetype)\]
 - `States`:
-  `List`\[[RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)\]
-- `Names`: `List`\[`str`\]
-- `Owners`: `List`\[`str`\]
+  `Sequence`\[[RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)\]
+- `Names`: `Sequence`\[`str`\]
+- `Owners`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -381,7 +383,7 @@ Keyword-only arguments:
 
 - `CodeReviewArn`: `str` *(required)*
 - `RecommendationId`: `str` *(required)*
-- `Reactions`: `List`\[[ReactionType](./literals.md#reactiontype)\]
+- `Reactions`: `Sequence`\[[ReactionType](./literals.md#reactiontype)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -401,7 +403,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -420,7 +422,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

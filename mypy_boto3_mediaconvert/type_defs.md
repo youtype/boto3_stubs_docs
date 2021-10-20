@@ -39,6 +39,7 @@ type annotations stubs module
   - [CmafAdditionalManifestTypeDef](#cmafadditionalmanifesttypedef)
   - [CmafEncryptionSettingsTypeDef](#cmafencryptionsettingstypedef)
   - [CmafGroupSettingsTypeDef](#cmafgroupsettingstypedef)
+  - [CmafImageBasedTrickPlaySettingsTypeDef](#cmafimagebasedtrickplaysettingstypedef)
   - [CmfcSettingsTypeDef](#cmfcsettingstypedef)
   - [ColorCorrectorTypeDef](#colorcorrectortypedef)
   - [ContainerSettingsTypeDef](#containersettingstypedef)
@@ -53,6 +54,7 @@ type annotations stubs module
   - [DashAdditionalManifestTypeDef](#dashadditionalmanifesttypedef)
   - [DashIsoEncryptionSettingsTypeDef](#dashisoencryptionsettingstypedef)
   - [DashIsoGroupSettingsTypeDef](#dashisogroupsettingstypedef)
+  - [DashIsoImageBasedTrickPlaySettingsTypeDef](#dashisoimagebasedtrickplaysettingstypedef)
   - [DeinterlacerTypeDef](#deinterlacertypedef)
   - [DeleteJobTemplateRequestRequestTypeDef](#deletejobtemplaterequestrequesttypedef)
   - [DeletePresetRequestRequestTypeDef](#deletepresetrequestrequesttypedef)
@@ -76,6 +78,7 @@ type annotations stubs module
   - [EsamManifestConfirmConditionNotificationTypeDef](#esammanifestconfirmconditionnotificationtypedef)
   - [EsamSettingsTypeDef](#esamsettingstypedef)
   - [EsamSignalProcessingNotificationTypeDef](#esamsignalprocessingnotificationtypedef)
+  - [ExtendedDataServicesTypeDef](#extendeddataservicestypedef)
   - [F4vSettingsTypeDef](#f4vsettingstypedef)
   - [FileGroupSettingsTypeDef](#filegroupsettingstypedef)
   - [FileSourceSettingsTypeDef](#filesourcesettingstypedef)
@@ -84,6 +87,7 @@ type annotations stubs module
   - [GetJobResponseTypeDef](#getjobresponsetypedef)
   - [GetJobTemplateRequestRequestTypeDef](#getjobtemplaterequestrequesttypedef)
   - [GetJobTemplateResponseTypeDef](#getjobtemplateresponsetypedef)
+  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
   - [GetPresetRequestRequestTypeDef](#getpresetrequestrequesttypedef)
   - [GetPresetResponseTypeDef](#getpresetresponsetypedef)
   - [GetQueueRequestRequestTypeDef](#getqueuerequestrequesttypedef)
@@ -98,6 +102,7 @@ type annotations stubs module
   - [HlsCaptionLanguageMappingTypeDef](#hlscaptionlanguagemappingtypedef)
   - [HlsEncryptionSettingsTypeDef](#hlsencryptionsettingstypedef)
   - [HlsGroupSettingsTypeDef](#hlsgroupsettingstypedef)
+  - [HlsImageBasedTrickPlaySettingsTypeDef](#hlsimagebasedtrickplaysettingstypedef)
   - [HlsRenditionGroupSettingsTypeDef](#hlsrenditiongroupsettingstypedef)
   - [HlsSettingsTypeDef](#hlssettingstypedef)
   - [HopDestinationTypeDef](#hopdestinationtypedef)
@@ -159,9 +164,12 @@ type annotations stubs module
   - [OutputTypeDef](#outputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PartnerWatermarkingTypeDef](#partnerwatermarkingtypedef)
+  - [PolicyTypeDef](#policytypedef)
   - [PresetSettingsTypeDef](#presetsettingstypedef)
   - [PresetTypeDef](#presettypedef)
   - [ProresSettingsTypeDef](#proressettingstypedef)
+  - [PutPolicyRequestRequestTypeDef](#putpolicyrequestrequesttypedef)
+  - [PutPolicyResponseTypeDef](#putpolicyresponsetypedef)
   - [QueueTransitionTypeDef](#queuetransitiontypedef)
   - [QueueTypeDef](#queuetypedef)
   - [RectangleTypeDef](#rectangletypedef)
@@ -386,7 +394,7 @@ from mypy_boto3_mediaconvert.type_defs import AudioSelectorGroupTypeDef
 
 Optional fields:
 
-- `AudioSelectorNames`: `List`\[`str`\]
+- `AudioSelectorNames`: `Sequence`\[`str`\]
 
 ## AudioSelectorTypeDef
 
@@ -404,11 +412,11 @@ Optional fields:
   [HlsRenditionGroupSettingsTypeDef](./type_defs.md#hlsrenditiongroupsettingstypedef)
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `Offset`: `int`
-- `Pids`: `List`\[`int`\]
+- `Pids`: `Sequence`\[`int`\]
 - `ProgramSelection`: `int`
 - `RemixSettings`: [RemixSettingsTypeDef](./type_defs.md#remixsettingstypedef)
 - `SelectorType`: [AudioSelectorTypeType](./literals.md#audioselectortypetype)
-- `Tracks`: `List`\[`int`\]
+- `Tracks`: `Sequence`\[`int`\]
 
 ## AutomatedAbrSettingsTypeDef
 
@@ -526,15 +534,20 @@ Optional fields:
 
 - `Alignment`:
   [BurninSubtitleAlignmentType](./literals.md#burninsubtitlealignmenttype)
+- `ApplyFontColor`:
+  [BurninSubtitleApplyFontColorType](./literals.md#burninsubtitleapplyfontcolortype)
 - `BackgroundColor`:
   [BurninSubtitleBackgroundColorType](./literals.md#burninsubtitlebackgroundcolortype)
 - `BackgroundOpacity`: `int`
+- `FallbackFont`:
+  [BurninSubtitleFallbackFontType](./literals.md#burninsubtitlefallbackfonttype)
 - `FontColor`:
   [BurninSubtitleFontColorType](./literals.md#burninsubtitlefontcolortype)
 - `FontOpacity`: `int`
 - `FontResolution`: `int`
 - `FontScript`: [FontScriptType](./literals.md#fontscripttype)
 - `FontSize`: `int`
+- `HexFontColor`: `str`
 - `OutlineColor`:
   [BurninSubtitleOutlineColorType](./literals.md#burninsubtitleoutlinecolortype)
 - `OutlineSize`: `int`
@@ -543,6 +556,8 @@ Optional fields:
 - `ShadowOpacity`: `int`
 - `ShadowXOffset`: `int`
 - `ShadowYOffset`: `int`
+- `StylePassthrough`:
+  [BurnInSubtitleStylePassthroughType](./literals.md#burninsubtitlestylepassthroughtype)
 - `TeletextSpacing`:
   [BurninSubtitleTeletextSpacingType](./literals.md#burninsubtitleteletextspacingtype)
 - `XPosition`: `int`
@@ -673,7 +688,7 @@ from mypy_boto3_mediaconvert.type_defs import ChannelMappingTypeDef
 Optional fields:
 
 - `OutputChannels`:
-  `List`\[[OutputChannelMappingTypeDef](./type_defs.md#outputchannelmappingtypedef)\]
+  `Sequence`\[[OutputChannelMappingTypeDef](./type_defs.md#outputchannelmappingtypedef)\]
 
 ## CmafAdditionalManifestTypeDef
 
@@ -684,7 +699,7 @@ from mypy_boto3_mediaconvert.type_defs import CmafAdditionalManifestTypeDef
 Optional fields:
 
 - `ManifestNameModifier`: `str`
-- `SelectedOutputs`: `List`\[`str`\]
+- `SelectedOutputs`: `Sequence`\[`str`\]
 
 ## CmafEncryptionSettingsTypeDef
 
@@ -714,7 +729,7 @@ from mypy_boto3_mediaconvert.type_defs import CmafGroupSettingsTypeDef
 Optional fields:
 
 - `AdditionalManifests`:
-  `List`\[[CmafAdditionalManifestTypeDef](./type_defs.md#cmafadditionalmanifesttypedef)\]
+  `Sequence`\[[CmafAdditionalManifestTypeDef](./type_defs.md#cmafadditionalmanifesttypedef)\]
 - `BaseUrl`: `str`
 - `ClientCache`: [CmafClientCacheType](./literals.md#cmafclientcachetype)
 - `CodecSpecification`:
@@ -727,6 +742,8 @@ Optional fields:
 - `FragmentLength`: `int`
 - `ImageBasedTrickPlay`:
   [CmafImageBasedTrickPlayType](./literals.md#cmafimagebasedtrickplaytype)
+- `ImageBasedTrickPlaySettings`:
+  [CmafImageBasedTrickPlaySettingsTypeDef](./type_defs.md#cmafimagebasedtrickplaysettingstypedef)
 - `ManifestCompression`:
   [CmafManifestCompressionType](./literals.md#cmafmanifestcompressiontype)
 - `ManifestDurationFormat`:
@@ -739,6 +756,8 @@ Optional fields:
 - `SegmentControl`:
   [CmafSegmentControlType](./literals.md#cmafsegmentcontroltype)
 - `SegmentLength`: `int`
+- `SegmentLengthControl`:
+  [CmafSegmentLengthControlType](./literals.md#cmafsegmentlengthcontroltype)
 - `StreamInfResolution`:
   [CmafStreamInfResolutionType](./literals.md#cmafstreaminfresolutiontype)
 - `TargetDurationCompatibilityMode`:
@@ -749,6 +768,22 @@ Optional fields:
   [CmafWriteHLSManifestType](./literals.md#cmafwritehlsmanifesttype)
 - `WriteSegmentTimelineInRepresentation`:
   [CmafWriteSegmentTimelineInRepresentationType](./literals.md#cmafwritesegmenttimelineinrepresentationtype)
+
+## CmafImageBasedTrickPlaySettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import CmafImageBasedTrickPlaySettingsTypeDef
+```
+
+Optional fields:
+
+- `IntervalCadence`:
+  [CmafIntervalCadenceType](./literals.md#cmafintervalcadencetype)
+- `ThumbnailHeight`: `int`
+- `ThumbnailInterval`: `float`
+- `ThumbnailWidth`: `int`
+- `TileHeight`: `int`
+- `TileWidth`: `int`
 
 ## CmfcSettingsTypeDef
 
@@ -825,7 +860,7 @@ Optional fields:
   [BillingTagsSourceType](./literals.md#billingtagssourcetype)
 - `ClientRequestToken`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
+  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `JobTemplate`: `str`
 - `Priority`: `int`
 - `Queue`: `str`
@@ -833,8 +868,8 @@ Optional fields:
   [SimulateReservedQueueType](./literals.md#simulatereservedqueuetype)
 - `StatusUpdateInterval`:
   [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `UserMetadata`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `UserMetadata`: `Mapping`\[`str`, `str`\]
 
 ## CreateJobResponseTypeDef
 
@@ -867,12 +902,12 @@ Optional fields:
 - `Category`: `str`
 - `Description`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
+  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `Priority`: `int`
 - `Queue`: `str`
 - `StatusUpdateInterval`:
   [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateJobTemplateResponseTypeDef
 
@@ -901,7 +936,7 @@ Optional fields:
 
 - `Category`: `str`
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreatePresetResponseTypeDef
 
@@ -932,7 +967,7 @@ Optional fields:
 - `ReservationPlanSettings`:
   [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
 - `Status`: [QueueStatusType](./literals.md#queuestatustype)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateQueueResponseTypeDef
 
@@ -955,7 +990,7 @@ from mypy_boto3_mediaconvert.type_defs import DashAdditionalManifestTypeDef
 Optional fields:
 
 - `ManifestNameModifier`: `str`
-- `SelectedOutputs`: `List`\[`str`\]
+- `SelectedOutputs`: `Sequence`\[`str`\]
 
 ## DashIsoEncryptionSettingsTypeDef
 
@@ -979,7 +1014,7 @@ from mypy_boto3_mediaconvert.type_defs import DashIsoGroupSettingsTypeDef
 Optional fields:
 
 - `AdditionalManifests`:
-  `List`\[[DashAdditionalManifestTypeDef](./type_defs.md#dashadditionalmanifesttypedef)\]
+  `Sequence`\[[DashAdditionalManifestTypeDef](./type_defs.md#dashadditionalmanifesttypedef)\]
 - `AudioChannelConfigSchemeIdUri`:
   [DashIsoGroupAudioChannelConfigSchemeIdUriType](./literals.md#dashisogroupaudiochannelconfigschemeiduritype)
 - `BaseUrl`: `str`
@@ -993,6 +1028,8 @@ Optional fields:
   [DashIsoHbbtvComplianceType](./literals.md#dashisohbbtvcompliancetype)
 - `ImageBasedTrickPlay`:
   [DashIsoImageBasedTrickPlayType](./literals.md#dashisoimagebasedtrickplaytype)
+- `ImageBasedTrickPlaySettings`:
+  [DashIsoImageBasedTrickPlaySettingsTypeDef](./type_defs.md#dashisoimagebasedtrickplaysettingstypedef)
 - `MinBufferTime`: `int`
 - `MinFinalSegmentLength`: `float`
 - `MpdProfile`: [DashIsoMpdProfileType](./literals.md#dashisompdprofiletype)
@@ -1001,8 +1038,26 @@ Optional fields:
 - `SegmentControl`:
   [DashIsoSegmentControlType](./literals.md#dashisosegmentcontroltype)
 - `SegmentLength`: `int`
+- `SegmentLengthControl`:
+  [DashIsoSegmentLengthControlType](./literals.md#dashisosegmentlengthcontroltype)
 - `WriteSegmentTimelineInRepresentation`:
   [DashIsoWriteSegmentTimelineInRepresentationType](./literals.md#dashisowritesegmenttimelineinrepresentationtype)
+
+## DashIsoImageBasedTrickPlaySettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import DashIsoImageBasedTrickPlaySettingsTypeDef
+```
+
+Optional fields:
+
+- `IntervalCadence`:
+  [DashIsoIntervalCadenceType](./literals.md#dashisointervalcadencetype)
+- `ThumbnailHeight`: `int`
+- `ThumbnailInterval`: `float`
+- `ThumbnailWidth`: `int`
+- `TileHeight`: `int`
+- `TileWidth`: `int`
 
 ## DeinterlacerTypeDef
 
@@ -1154,12 +1209,16 @@ Optional fields:
 
 - `Alignment`:
   [DvbSubtitleAlignmentType](./literals.md#dvbsubtitlealignmenttype)
+- `ApplyFontColor`:
+  [DvbSubtitleApplyFontColorType](./literals.md#dvbsubtitleapplyfontcolortype)
 - `BackgroundColor`:
   [DvbSubtitleBackgroundColorType](./literals.md#dvbsubtitlebackgroundcolortype)
 - `BackgroundOpacity`: `int`
 - `DdsHandling`: [DvbddsHandlingType](./literals.md#dvbddshandlingtype)
 - `DdsXCoordinate`: `int`
 - `DdsYCoordinate`: `int`
+- `FallbackFont`:
+  [DvbSubSubtitleFallbackFontType](./literals.md#dvbsubsubtitlefallbackfonttype)
 - `FontColor`:
   [DvbSubtitleFontColorType](./literals.md#dvbsubtitlefontcolortype)
 - `FontOpacity`: `int`
@@ -1167,6 +1226,7 @@ Optional fields:
 - `FontScript`: [FontScriptType](./literals.md#fontscripttype)
 - `FontSize`: `int`
 - `Height`: `int`
+- `HexFontColor`: `str`
 - `OutlineColor`:
   [DvbSubtitleOutlineColorType](./literals.md#dvbsubtitleoutlinecolortype)
 - `OutlineSize`: `int`
@@ -1175,6 +1235,8 @@ Optional fields:
 - `ShadowOpacity`: `int`
 - `ShadowXOffset`: `int`
 - `ShadowYOffset`: `int`
+- `StylePassthrough`:
+  [DvbSubtitleStylePassthroughType](./literals.md#dvbsubtitlestylepassthroughtype)
 - `SubtitlingType`:
   [DvbSubtitlingTypeType](./literals.md#dvbsubtitlingtypetype)
 - `TeletextSpacing`:
@@ -1345,6 +1407,18 @@ Optional fields:
 
 - `SccXml`: `str`
 
+## ExtendedDataServicesTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import ExtendedDataServicesTypeDef
+```
+
+Optional fields:
+
+- `CopyProtectionAction`:
+  [CopyProtectionActionType](./literals.md#copyprotectionactiontype)
+- `VchipAction`: [VchipActionType](./literals.md#vchipactiontype)
+
 ## F4vSettingsTypeDef
 
 ```python
@@ -1381,6 +1455,8 @@ Optional fields:
   [CaptionSourceFramerateTypeDef](./type_defs.md#captionsourceframeratetypedef)
 - `SourceFile`: `str`
 - `TimeDelta`: `int`
+- `TimeDeltaUnits`:
+  [FileSourceTimeDeltaUnitsType](./literals.md#filesourcetimedeltaunitstype)
 
 ## FrameCaptureSettingsTypeDef
 
@@ -1436,6 +1512,18 @@ from mypy_boto3_mediaconvert.type_defs import GetJobTemplateResponseTypeDef
 Required fields:
 
 - `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetPolicyResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import GetPolicyResponseTypeDef
+```
+
+Required fields:
+
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1674,7 +1762,7 @@ from mypy_boto3_mediaconvert.type_defs import HlsAdditionalManifestTypeDef
 Optional fields:
 
 - `ManifestNameModifier`: `str`
-- `SelectedOutputs`: `List`\[`str`\]
+- `SelectedOutputs`: `Sequence`\[`str`\]
 
 ## HlsCaptionLanguageMappingTypeDef
 
@@ -1718,14 +1806,14 @@ from mypy_boto3_mediaconvert.type_defs import HlsGroupSettingsTypeDef
 
 Optional fields:
 
-- `AdMarkers`: `List`\[[HlsAdMarkersType](./literals.md#hlsadmarkerstype)\]
+- `AdMarkers`: `Sequence`\[[HlsAdMarkersType](./literals.md#hlsadmarkerstype)\]
 - `AdditionalManifests`:
-  `List`\[[HlsAdditionalManifestTypeDef](./type_defs.md#hlsadditionalmanifesttypedef)\]
+  `Sequence`\[[HlsAdditionalManifestTypeDef](./type_defs.md#hlsadditionalmanifesttypedef)\]
 - `AudioOnlyHeader`:
   [HlsAudioOnlyHeaderType](./literals.md#hlsaudioonlyheadertype)
 - `BaseUrl`: `str`
 - `CaptionLanguageMappings`:
-  `List`\[[HlsCaptionLanguageMappingTypeDef](./type_defs.md#hlscaptionlanguagemappingtypedef)\]
+  `Sequence`\[[HlsCaptionLanguageMappingTypeDef](./type_defs.md#hlscaptionlanguagemappingtypedef)\]
 - `CaptionLanguageSetting`:
   [HlsCaptionLanguageSettingType](./literals.md#hlscaptionlanguagesettingtype)
 - `ClientCache`: [HlsClientCacheType](./literals.md#hlsclientcachetype)
@@ -1740,6 +1828,8 @@ Optional fields:
   [HlsEncryptionSettingsTypeDef](./type_defs.md#hlsencryptionsettingstypedef)
 - `ImageBasedTrickPlay`:
   [HlsImageBasedTrickPlayType](./literals.md#hlsimagebasedtrickplaytype)
+- `ImageBasedTrickPlaySettings`:
+  [HlsImageBasedTrickPlaySettingsTypeDef](./type_defs.md#hlsimagebasedtrickplaysettingstypedef)
 - `ManifestCompression`:
   [HlsManifestCompressionType](./literals.md#hlsmanifestcompressiontype)
 - `ManifestDurationFormat`:
@@ -1754,6 +1844,8 @@ Optional fields:
 - `SegmentControl`:
   [HlsSegmentControlType](./literals.md#hlssegmentcontroltype)
 - `SegmentLength`: `int`
+- `SegmentLengthControl`:
+  [HlsSegmentLengthControlType](./literals.md#hlssegmentlengthcontroltype)
 - `SegmentsPerSubdirectory`: `int`
 - `StreamInfResolution`:
   [HlsStreamInfResolutionType](./literals.md#hlsstreaminfresolutiontype)
@@ -1763,6 +1855,22 @@ Optional fields:
   [HlsTimedMetadataId3FrameType](./literals.md#hlstimedmetadataid3frametype)
 - `TimedMetadataId3Period`: `int`
 - `TimestampDeltaMilliseconds`: `int`
+
+## HlsImageBasedTrickPlaySettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import HlsImageBasedTrickPlaySettingsTypeDef
+```
+
+Optional fields:
+
+- `IntervalCadence`:
+  [HlsIntervalCadenceType](./literals.md#hlsintervalcadencetype)
+- `ThumbnailHeight`: `int`
+- `ThumbnailInterval`: `float`
+- `ThumbnailWidth`: `int`
+- `TileHeight`: `int`
+- `TileWidth`: `int`
 
 ## HlsRenditionGroupSettingsTypeDef
 
@@ -1828,7 +1936,7 @@ from mypy_boto3_mediaconvert.type_defs import ImageInserterTypeDef
 Optional fields:
 
 - `InsertableImages`:
-  `List`\[[InsertableImageTypeDef](./type_defs.md#insertableimagetypedef)\]
+  `Sequence`\[[InsertableImageTypeDef](./type_defs.md#insertableimagetypedef)\]
 
 ## ImscDestinationSettingsTypeDef
 
@@ -1873,11 +1981,11 @@ from mypy_boto3_mediaconvert.type_defs import InputTemplateTypeDef
 
 Optional fields:
 
-- `AudioSelectorGroups`: `Dict`\[`str`,
+- `AudioSelectorGroups`: `Mapping`\[`str`,
   [AudioSelectorGroupTypeDef](./type_defs.md#audioselectorgrouptypedef)\]
-- `AudioSelectors`: `Dict`\[`str`,
+- `AudioSelectors`: `Mapping`\[`str`,
   [AudioSelectorTypeDef](./type_defs.md#audioselectortypedef)\]
-- `CaptionSelectors`: `Dict`\[`str`,
+- `CaptionSelectors`: `Mapping`\[`str`,
   [CaptionSelectorTypeDef](./type_defs.md#captionselectortypedef)\]
 - `Crop`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
 - `DeblockFilter`:
@@ -1888,7 +1996,7 @@ Optional fields:
 - `FilterStrength`: `int`
 - `ImageInserter`: [ImageInserterTypeDef](./type_defs.md#imageinsertertypedef)
 - `InputClippings`:
-  `List`\[[InputClippingTypeDef](./type_defs.md#inputclippingtypedef)\]
+  `Sequence`\[[InputClippingTypeDef](./type_defs.md#inputclippingtypedef)\]
 - `InputScanType`: [InputScanTypeType](./literals.md#inputscantypetype)
 - `Position`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
 - `ProgramNumber`: `int`
@@ -1906,11 +2014,11 @@ from mypy_boto3_mediaconvert.type_defs import InputTypeDef
 
 Optional fields:
 
-- `AudioSelectorGroups`: `Dict`\[`str`,
+- `AudioSelectorGroups`: `Mapping`\[`str`,
   [AudioSelectorGroupTypeDef](./type_defs.md#audioselectorgrouptypedef)\]
-- `AudioSelectors`: `Dict`\[`str`,
+- `AudioSelectors`: `Mapping`\[`str`,
   [AudioSelectorTypeDef](./type_defs.md#audioselectortypedef)\]
-- `CaptionSelectors`: `Dict`\[`str`,
+- `CaptionSelectors`: `Mapping`\[`str`,
   [CaptionSelectorTypeDef](./type_defs.md#captionselectortypedef)\]
 - `Crop`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
 - `DeblockFilter`:
@@ -1924,12 +2032,12 @@ Optional fields:
 - `FilterStrength`: `int`
 - `ImageInserter`: [ImageInserterTypeDef](./type_defs.md#imageinsertertypedef)
 - `InputClippings`:
-  `List`\[[InputClippingTypeDef](./type_defs.md#inputclippingtypedef)\]
+  `Sequence`\[[InputClippingTypeDef](./type_defs.md#inputclippingtypedef)\]
 - `InputScanType`: [InputScanTypeType](./literals.md#inputscantypetype)
 - `Position`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
 - `ProgramNumber`: `int`
 - `PsiControl`: [InputPsiControlType](./literals.md#inputpsicontroltype)
-- `SupplementalImps`: `List`\[`str`\]
+- `SupplementalImps`: `Sequence`\[`str`\]
 - `TimecodeSource`:
   [InputTimecodeSourceType](./literals.md#inputtimecodesourcetype)
 - `TimecodeStart`: `str`
@@ -1977,7 +2085,9 @@ Optional fields:
 - `AdAvailOffset`: `int`
 - `AvailBlanking`: [AvailBlankingTypeDef](./type_defs.md#availblankingtypedef)
 - `Esam`: [EsamSettingsTypeDef](./type_defs.md#esamsettingstypedef)
-- `Inputs`: `List`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
+- `ExtendedDataServices`:
+  [ExtendedDataServicesTypeDef](./type_defs.md#extendeddataservicestypedef)
+- `Inputs`: `Sequence`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
 - `KantarWatermark`:
   [KantarWatermarkSettingsTypeDef](./type_defs.md#kantarwatermarksettingstypedef)
 - `MotionImageInserter`:
@@ -1987,7 +2097,7 @@ Optional fields:
 - `NielsenNonLinearWatermark`:
   [NielsenNonLinearWatermarkSettingsTypeDef](./type_defs.md#nielsennonlinearwatermarksettingstypedef)
 - `OutputGroups`:
-  `List`\[[OutputGroupTypeDef](./type_defs.md#outputgrouptypedef)\]
+  `Sequence`\[[OutputGroupTypeDef](./type_defs.md#outputgrouptypedef)\]
 - `TimecodeConfig`:
   [TimecodeConfigTypeDef](./type_defs.md#timecodeconfigtypedef)
 - `TimedMetadataInsertion`:
@@ -2004,8 +2114,10 @@ Optional fields:
 - `AdAvailOffset`: `int`
 - `AvailBlanking`: [AvailBlankingTypeDef](./type_defs.md#availblankingtypedef)
 - `Esam`: [EsamSettingsTypeDef](./type_defs.md#esamsettingstypedef)
+- `ExtendedDataServices`:
+  [ExtendedDataServicesTypeDef](./type_defs.md#extendeddataservicestypedef)
 - `Inputs`:
-  `List`\[[InputTemplateTypeDef](./type_defs.md#inputtemplatetypedef)\]
+  `Sequence`\[[InputTemplateTypeDef](./type_defs.md#inputtemplatetypedef)\]
 - `KantarWatermark`:
   [KantarWatermarkSettingsTypeDef](./type_defs.md#kantarwatermarksettingstypedef)
 - `MotionImageInserter`:
@@ -2015,7 +2127,7 @@ Optional fields:
 - `NielsenNonLinearWatermark`:
   [NielsenNonLinearWatermarkSettingsTypeDef](./type_defs.md#nielsennonlinearwatermarksettingstypedef)
 - `OutputGroups`:
-  `List`\[[OutputGroupTypeDef](./type_defs.md#outputgrouptypedef)\]
+  `Sequence`\[[OutputGroupTypeDef](./type_defs.md#outputgrouptypedef)\]
 - `TimecodeConfig`:
   [TimecodeConfigTypeDef](./type_defs.md#timecodeconfigtypedef)
 - `TimedMetadataInsertion`:
@@ -2269,14 +2381,16 @@ Optional fields:
   [M2tsAudioBufferModelType](./literals.md#m2tsaudiobuffermodeltype)
 - `AudioDuration`: [M2tsAudioDurationType](./literals.md#m2tsaudiodurationtype)
 - `AudioFramesPerPes`: `int`
-- `AudioPids`: `List`\[`int`\]
+- `AudioPids`: `Sequence`\[`int`\]
 - `Bitrate`: `int`
 - `BufferModel`: [M2tsBufferModelType](./literals.md#m2tsbuffermodeltype)
+- `DataPTSControl`:
+  [M2tsDataPtsControlType](./literals.md#m2tsdataptscontroltype)
 - `DvbNitSettings`:
   [DvbNitSettingsTypeDef](./type_defs.md#dvbnitsettingstypedef)
 - `DvbSdtSettings`:
   [DvbSdtSettingsTypeDef](./type_defs.md#dvbsdtsettingstypedef)
-- `DvbSubPids`: `List`\[`int`\]
+- `DvbSubPids`: `Sequence`\[`int`\]
 - `DvbTdtSettings`:
   [DvbTdtSettingsTypeDef](./type_defs.md#dvbtdtsettingstypedef)
 - `DvbTeletextPid`: `int`
@@ -2321,7 +2435,9 @@ Optional fields:
 
 - `AudioDuration`: [M3u8AudioDurationType](./literals.md#m3u8audiodurationtype)
 - `AudioFramesPerPes`: `int`
-- `AudioPids`: `List`\[`int`\]
+- `AudioPids`: `Sequence`\[`int`\]
+- `DataPTSControl`:
+  [M3u8DataPtsControlType](./literals.md#m3u8dataptscontroltype)
 - `MaxPcrInterval`: `int`
 - `NielsenId3`: [M3u8NielsenId3Type](./literals.md#m3u8nielsenid3type)
 - `PatInterval`: `int`
@@ -2514,7 +2630,7 @@ from mypy_boto3_mediaconvert.type_defs import MsSmoothAdditionalManifestTypeDef
 Optional fields:
 
 - `ManifestNameModifier`: `str`
-- `SelectedOutputs`: `List`\[`str`\]
+- `SelectedOutputs`: `Sequence`\[`str`\]
 
 ## MsSmoothEncryptionSettingsTypeDef
 
@@ -2536,7 +2652,7 @@ from mypy_boto3_mediaconvert.type_defs import MsSmoothGroupSettingsTypeDef
 Optional fields:
 
 - `AdditionalManifests`:
-  `List`\[[MsSmoothAdditionalManifestTypeDef](./type_defs.md#mssmoothadditionalmanifesttypedef)\]
+  `Sequence`\[[MsSmoothAdditionalManifestTypeDef](./type_defs.md#mssmoothadditionalmanifesttypedef)\]
 - `AudioDeduplication`:
   [MsSmoothAudioDeduplicationType](./literals.md#mssmoothaudiodeduplicationtype)
 - `Destination`: `str`
@@ -2545,6 +2661,8 @@ Optional fields:
 - `Encryption`:
   [MsSmoothEncryptionSettingsTypeDef](./type_defs.md#mssmoothencryptionsettingstypedef)
 - `FragmentLength`: `int`
+- `FragmentLengthControl`:
+  [MsSmoothFragmentLengthControlType](./literals.md#mssmoothfragmentlengthcontroltype)
 - `ManifestEncoding`:
   [MsSmoothManifestEncodingType](./literals.md#mssmoothmanifestencodingtype)
 
@@ -2693,8 +2811,8 @@ from mypy_boto3_mediaconvert.type_defs import OutputChannelMappingTypeDef
 
 Optional fields:
 
-- `InputChannels`: `List`\[`int`\]
-- `InputChannelsFineTune`: `List`\[`float`\]
+- `InputChannels`: `Sequence`\[`int`\]
+- `InputChannelsFineTune`: `Sequence`\[`float`\]
 
 ## OutputDetailTypeDef
 
@@ -2752,7 +2870,7 @@ Optional fields:
 - `Name`: `str`
 - `OutputGroupSettings`:
   [OutputGroupSettingsTypeDef](./type_defs.md#outputgroupsettingstypedef)
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 
 ## OutputSettingsTypeDef
 
@@ -2773,9 +2891,9 @@ from mypy_boto3_mediaconvert.type_defs import OutputTypeDef
 Optional fields:
 
 - `AudioDescriptions`:
-  `List`\[[AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef)\]
+  `Sequence`\[[AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef)\]
 - `CaptionDescriptions`:
-  `List`\[[CaptionDescriptionTypeDef](./type_defs.md#captiondescriptiontypedef)\]
+  `Sequence`\[[CaptionDescriptionTypeDef](./type_defs.md#captiondescriptiontypedef)\]
 - `ContainerSettings`:
   [ContainerSettingsTypeDef](./type_defs.md#containersettingstypedef)
 - `Extension`: `str`
@@ -2809,6 +2927,18 @@ Optional fields:
 - `NexguardFileMarkerSettings`:
   [NexGuardFileMarkerSettingsTypeDef](./type_defs.md#nexguardfilemarkersettingstypedef)
 
+## PolicyTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import PolicyTypeDef
+```
+
+Optional fields:
+
+- `HttpInputs`: [InputPolicyType](./literals.md#inputpolicytype)
+- `HttpsInputs`: [InputPolicyType](./literals.md#inputpolicytype)
+- `S3Inputs`: [InputPolicyType](./literals.md#inputpolicytype)
+
 ## PresetSettingsTypeDef
 
 ```python
@@ -2818,9 +2948,9 @@ from mypy_boto3_mediaconvert.type_defs import PresetSettingsTypeDef
 Optional fields:
 
 - `AudioDescriptions`:
-  `List`\[[AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef)\]
+  `Sequence`\[[AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef)\]
 - `CaptionDescriptions`:
-  `List`\[[CaptionDescriptionPresetTypeDef](./type_defs.md#captiondescriptionpresettypedef)\]
+  `Sequence`\[[CaptionDescriptionPresetTypeDef](./type_defs.md#captiondescriptionpresettypedef)\]
 - `ContainerSettings`:
   [ContainerSettingsTypeDef](./type_defs.md#containersettingstypedef)
 - `VideoDescription`:
@@ -2873,6 +3003,28 @@ Optional fields:
   [ProresScanTypeConversionModeType](./literals.md#proresscantypeconversionmodetype)
 - `SlowPal`: [ProresSlowPalType](./literals.md#proresslowpaltype)
 - `Telecine`: [ProresTelecineType](./literals.md#prorestelecinetype)
+
+## PutPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import PutPolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
+
+## PutPolicyResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import PutPolicyResponseTypeDef
+```
+
+Required fields:
+
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## QueueTransitionTypeDef
 
@@ -3024,6 +3176,7 @@ Optional fields:
 
 - `EncryptionType`:
   [S3ServerSideEncryptionTypeType](./literals.md#s3serversideencryptiontypetype)
+- `KmsEncryptionContext`: `str`
 - `KmsKeyArn`: `str`
 
 ## SccDestinationSettingsTypeDef
@@ -3046,8 +3199,8 @@ from mypy_boto3_mediaconvert.type_defs import SpekeKeyProviderCmafTypeDef
 Optional fields:
 
 - `CertificateArn`: `str`
-- `DashSignaledSystemIds`: `List`\[`str`\]
-- `HlsSignaledSystemIds`: `List`\[`str`\]
+- `DashSignaledSystemIds`: `Sequence`\[`str`\]
+- `HlsSignaledSystemIds`: `Sequence`\[`str`\]
 - `ResourceId`: `str`
 - `Url`: `str`
 
@@ -3061,7 +3214,7 @@ Optional fields:
 
 - `CertificateArn`: `str`
 - `ResourceId`: `str`
-- `SystemIds`: `List`\[`str`\]
+- `SystemIds`: `Sequence`\[`str`\]
 - `Url`: `str`
 
 ## SrtDestinationSettingsTypeDef
@@ -3097,7 +3250,7 @@ from mypy_boto3_mediaconvert.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TeletextDestinationSettingsTypeDef
 
@@ -3109,7 +3262,7 @@ Optional fields:
 
 - `PageNumber`: `str`
 - `PageTypes`:
-  `List`\[[TeletextPageTypeType](./literals.md#teletextpagetypetype)\]
+  `Sequence`\[[TeletextPageTypeType](./literals.md#teletextpagetypetype)\]
 
 ## TeletextSourceSettingsTypeDef
 
@@ -3156,7 +3309,7 @@ from mypy_boto3_mediaconvert.type_defs import TimedMetadataInsertionTypeDef
 Optional fields:
 
 - `Id3Insertions`:
-  `List`\[[Id3InsertionTypeDef](./type_defs.md#id3insertiontypedef)\]
+  `Sequence`\[[Id3InsertionTypeDef](./type_defs.md#id3insertiontypedef)\]
 
 ## TimingTypeDef
 
@@ -3203,7 +3356,7 @@ Required fields:
 
 Optional fields:
 
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateJobTemplateRequestRequestTypeDef
 
@@ -3222,7 +3375,7 @@ Optional fields:
 - `Category`: `str`
 - `Description`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
+  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `Priority`: `int`
 - `Queue`: `str`
 - `Settings`:

@@ -15,6 +15,7 @@ pip install mypy-boto3-sagemaker-featurestore-runtime
   - [SageMakerFeatureStoreRuntimeClient](#sagemakerfeaturestoreruntimeclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## SageMakerFeatureStoreRuntimeClient
@@ -48,6 +49,18 @@ SageMakerFeatureStoreRuntimeClient [exceptions](./client.md#exceptions)
 - ResourceNotFound
 - ServiceUnavailable
 - ValidationError
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sagemaker_featurestore_runtime.literals import ServiceName, ...
+```
+
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

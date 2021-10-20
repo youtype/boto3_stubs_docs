@@ -35,6 +35,7 @@ type annotations stubs module
     - [deregister_certificate](#deregister_certificate)
     - [deregister_event_topic](#deregister_event_topic)
     - [describe_certificate](#describe_certificate)
+    - [describe_client_authentication_settings](#describe_client_authentication_settings)
     - [describe_conditional_forwarders](#describe_conditional_forwarders)
     - [describe_directories](#describe_directories)
     - [describe_domain_controllers](#describe_domain_controllers)
@@ -179,7 +180,7 @@ Returns
 
 ### add_ip_routes
 
-If the DNS server for your on-premises domain uses a publicly addressable IP
+If the DNS server for your self-managed domain uses a publicly addressable IP
 address, you must add a CIDR address block to correctly route traffic to and
 from your Microsoft AD on Amazon Web Services.
 
@@ -194,7 +195,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `IpRoutes`: `List`\[[IpRouteTypeDef](./type_defs.md#iproutetypedef)\]
+- `IpRoutes`: `Sequence`\[[IpRouteTypeDef](./type_defs.md#iproutetypedef)\]
   *(required)*
 - `UpdateSecurityGroupForDirectoryControllers`: `bool`
 
@@ -238,7 +239,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -278,7 +279,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### connect_directory
 
-Creates an AD Connector to connect to an on-premises directory.
+Creates an AD Connector to connect to a self-managed directory.
 
 Type annotations for `boto3.client("ds").connect_directory` method.
 
@@ -298,7 +299,7 @@ Keyword-only arguments:
   *(required)*
 - `ShortName`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [ConnectDirectoryResultTypeDef](./type_defs.md#connectdirectoryresulttypedef).
@@ -341,14 +342,15 @@ Keyword-only arguments:
 - `Password`: `str` *(required)*
 - `OrganizationalUnitDistinguishedName`: `str`
 - `ComputerAttributes`:
-  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 Returns
 [CreateComputerResultTypeDef](./type_defs.md#createcomputerresulttypedef).
 
 ### create_conditional_forwarder
 
-Creates a conditional forwarder associated with your AWS directory.
+Creates a conditional forwarder associated with your Amazon Web Services
+directory.
 
 Type annotations for `boto3.client("ds").create_conditional_forwarder` method.
 
@@ -362,7 +364,7 @@ Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `RemoteDomainName`: `str` *(required)*
-- `DnsIpAddrs`: `List`\[`str`\] *(required)*
+- `DnsIpAddrs`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -387,7 +389,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `VpcSettings`:
   [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDirectoryResultTypeDef](./type_defs.md#createdirectoryresulttypedef).
@@ -395,7 +397,8 @@ Returns
 ### create_log_subscription
 
 Creates a subscription to forward real-time Directory Service domain controller
-security logs to the specified Amazon CloudWatch log group in your AWS account.
+security logs to the specified Amazon CloudWatch log group in your Amazon Web
+Services account.
 
 Type annotations for `boto3.client("ds").create_log_subscription` method.
 
@@ -414,7 +417,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_microsoft_ad
 
-Creates a Microsoft AD directory in the AWS Cloud.
+Creates a Microsoft AD directory in the Amazon Web Services Cloud.
 
 Type annotations for `boto3.client("ds").create_microsoft_ad` method.
 
@@ -434,14 +437,15 @@ Keyword-only arguments:
 - `ShortName`: `str`
 - `Description`: `str`
 - `Edition`: [DirectoryEditionType](./literals.md#directoryeditiontype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateMicrosoftADResultTypeDef](./type_defs.md#createmicrosoftadresulttypedef).
 
 ### create_snapshot
 
-Creates a snapshot of a Simple AD or Microsoft AD directory in the AWS cloud.
+Creates a snapshot of a Simple AD or Microsoft AD directory in the Amazon Web
+Services cloud.
 
 Type annotations for `boto3.client("ds").create_snapshot` method.
 
@@ -461,8 +465,8 @@ Returns
 
 ### create_trust
 
-AWS Directory Service for Microsoft Active Directory allows you to configure
-trust relationships.
+Directory Service for Microsoft Active Directory allows you to configure trust
+relationships.
 
 Type annotations for `boto3.client("ds").create_trust` method.
 
@@ -480,14 +484,15 @@ Keyword-only arguments:
 - `TrustDirection`: [TrustDirectionType](./literals.md#trustdirectiontype)
   *(required)*
 - `TrustType`: [TrustTypeType](./literals.md#trusttypetype)
-- `ConditionalForwarderIpAddrs`: `List`\[`str`\]
+- `ConditionalForwarderIpAddrs`: `Sequence`\[`str`\]
 - `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
 
 Returns [CreateTrustResultTypeDef](./type_defs.md#createtrustresulttypedef).
 
 ### delete_conditional_forwarder
 
-Deletes a conditional forwarder that has been set up for your AWS directory.
+Deletes a conditional forwarder that has been set up for your Amazon Web
+Services directory.
 
 Type annotations for `boto3.client("ds").delete_conditional_forwarder` method.
 
@@ -506,7 +511,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_directory
 
-Deletes an AWS Directory Service directory.
+Deletes an Directory Service directory.
 
 Type annotations for `boto3.client("ds").delete_directory` method.
 
@@ -562,7 +567,7 @@ Returns
 
 ### delete_trust
 
-Deletes an existing trust relationship between your AWS Managed Microsoft AD
+Deletes an existing trust relationship between your Managed Microsoft AD
 directory and an external domain.
 
 Type annotations for `boto3.client("ds").delete_trust` method.
@@ -602,7 +607,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_event_topic
 
-Removes the specified directory as a publisher to the specified SNS topic.
+Removes the specified directory as a publisher to the specified Amazon SNS
+topic.
 
 Type annotations for `boto3.client("ds").deregister_event_topic` method.
 
@@ -640,6 +646,31 @@ Keyword-only arguments:
 Returns
 [DescribeCertificateResultTypeDef](./type_defs.md#describecertificateresulttypedef).
 
+### describe_client_authentication_settings
+
+Retrieves information about the type of client authentication for the specified
+directory, if the type is specified.
+
+Type annotations for
+`boto3.client("ds").describe_client_authentication_settings` method.
+
+Boto3 documentation:
+[DirectoryService.Client.describe_client_authentication_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_client_authentication_settings)
+
+Arguments mapping described in
+[DescribeClientAuthenticationSettingsRequestRequestTypeDef](./type_defs.md#describeclientauthenticationsettingsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `Type`: `Literal['SmartCard']` (see
+  [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeClientAuthenticationSettingsResultTypeDef](./type_defs.md#describeclientauthenticationsettingsresulttypedef).
+
 ### describe_conditional_forwarders
 
 Obtains information about the conditional forwarders for this account.
@@ -656,7 +687,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `RemoteDomainNames`: `List`\[`str`\]
+- `RemoteDomainNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeConditionalForwardersResultTypeDef](./type_defs.md#describeconditionalforwardersresulttypedef).
@@ -675,7 +706,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DirectoryIds`: `List`\[`str`\]
+- `DirectoryIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -697,7 +728,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `DomainControllerIds`: `List`\[`str`\]
+- `DomainControllerIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -706,8 +737,8 @@ Returns
 
 ### describe_event_topics
 
-Obtains information about which SNS topics receive status messages from the
-specified directory.
+Obtains information about which Amazon SNS topics receive status messages from
+the specified directory.
 
 Type annotations for `boto3.client("ds").describe_event_topics` method.
 
@@ -720,7 +751,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str`
-- `TopicNames`: `List`\[`str`\]
+- `TopicNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeEventTopicsResultTypeDef](./type_defs.md#describeeventtopicsresulttypedef).
@@ -785,7 +816,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `OwnerDirectoryId`: `str` *(required)*
-- `SharedDirectoryIds`: `List`\[`str`\]
+- `SharedDirectoryIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -807,7 +838,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str`
-- `SnapshotIds`: `List`\[`str`\]
+- `SnapshotIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -829,7 +860,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str`
-- `TrustIds`: `List`\[`str`\]
+- `TrustIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -1011,7 +1042,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1092,7 +1123,7 @@ Returns [ListIpRoutesResultTypeDef](./type_defs.md#listiproutesresulttypedef).
 
 ### list_log_subscriptions
 
-Lists the active log subscriptions for the AWS account.
+Lists the active log subscriptions for the Amazon Web Services account.
 
 Type annotations for `boto3.client("ds").list_log_subscriptions` method.
 
@@ -1178,7 +1209,7 @@ Returns
 
 ### register_event_topic
 
-Associates a directory with an SNS topic.
+Associates a directory with an Amazon SNS topic.
 
 Type annotations for `boto3.client("ds").register_event_topic` method.
 
@@ -1230,7 +1261,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `CidrIps`: `List`\[`str`\] *(required)*
+- `CidrIps`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1268,13 +1299,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
 ### reset_user_password
 
-Resets the password for any user in your AWS Managed Microsoft AD or Simple AD
+Resets the password for any user in your Managed Microsoft AD or Simple AD
 directory.
 
 Type annotations for `boto3.client("ds").reset_user_password` method.
@@ -1313,8 +1344,9 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### share_directory
 
-Shares a specified directory (`DirectoryId` ) in your AWS account (directory
-owner) with another AWS account (directory consumer).
+Shares a specified directory (`DirectoryId` ) in your Amazon Web Services
+account (directory owner) with another Amazon Web Services account (directory
+consumer).
 
 Type annotations for `boto3.client("ds").share_directory` method.
 
@@ -1380,7 +1412,8 @@ Returns
 
 ### update_conditional_forwarder
 
-Updates a conditional forwarder that has been set up for your AWS directory.
+Updates a conditional forwarder that has been set up for your Amazon Web
+Services directory.
 
 Type annotations for `boto3.client("ds").update_conditional_forwarder` method.
 
@@ -1394,7 +1427,7 @@ Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `RemoteDomainName`: `str` *(required)*
-- `DnsIpAddrs`: `List`\[`str`\] *(required)*
+- `DnsIpAddrs`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1441,8 +1474,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_trust
 
-Updates the trust that has been set up between your AWS Managed Microsoft AD
-directory and an on-premises Active Directory.
+Updates the trust that has been set up between your Managed Microsoft AD
+directory and an self-managed Active Directory.
 
 Type annotations for `boto3.client("ds").update_trust` method.
 
@@ -1461,8 +1494,8 @@ Returns [UpdateTrustResultTypeDef](./type_defs.md#updatetrustresulttypedef).
 
 ### verify_trust
 
-AWS Directory Service for Microsoft Active Directory allows you to configure
-and verify trust relationships.
+Directory Service for Microsoft Active Directory allows you to configure and
+verify trust relationships.
 
 Type annotations for `boto3.client("ds").verify_trust` method.
 

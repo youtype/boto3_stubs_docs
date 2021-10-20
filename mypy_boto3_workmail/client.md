@@ -26,13 +26,16 @@ type annotations stubs module
     - [delete_alias](#delete_alias)
     - [delete_group](#delete_group)
     - [delete_mailbox_permissions](#delete_mailbox_permissions)
+    - [delete_mobile_device_access_override](#delete_mobile_device_access_override)
     - [delete_mobile_device_access_rule](#delete_mobile_device_access_rule)
     - [delete_organization](#delete_organization)
     - [delete_resource](#delete_resource)
     - [delete_retention_policy](#delete_retention_policy)
     - [delete_user](#delete_user)
     - [deregister_from_work_mail](#deregister_from_work_mail)
+    - [deregister_mail_domain](#deregister_mail_domain)
     - [describe_group](#describe_group)
+    - [describe_inbound_dmarc_settings](#describe_inbound_dmarc_settings)
     - [describe_mailbox_export_job](#describe_mailbox_export_job)
     - [describe_organization](#describe_organization)
     - [describe_resource](#describe_resource)
@@ -42,14 +45,18 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [get_access_control_effect](#get_access_control_effect)
     - [get_default_retention_policy](#get_default_retention_policy)
+    - [get_mail_domain](#get_mail_domain)
     - [get_mailbox_details](#get_mailbox_details)
     - [get_mobile_device_access_effect](#get_mobile_device_access_effect)
+    - [get_mobile_device_access_override](#get_mobile_device_access_override)
     - [list_access_control_rules](#list_access_control_rules)
     - [list_aliases](#list_aliases)
     - [list_group_members](#list_group_members)
     - [list_groups](#list_groups)
+    - [list_mail_domains](#list_mail_domains)
     - [list_mailbox_export_jobs](#list_mailbox_export_jobs)
     - [list_mailbox_permissions](#list_mailbox_permissions)
+    - [list_mobile_device_access_overrides](#list_mobile_device_access_overrides)
     - [list_mobile_device_access_rules](#list_mobile_device_access_rules)
     - [list_organizations](#list_organizations)
     - [list_resource_delegates](#list_resource_delegates)
@@ -57,13 +64,17 @@ type annotations stubs module
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_users](#list_users)
     - [put_access_control_rule](#put_access_control_rule)
+    - [put_inbound_dmarc_settings](#put_inbound_dmarc_settings)
     - [put_mailbox_permissions](#put_mailbox_permissions)
+    - [put_mobile_device_access_override](#put_mobile_device_access_override)
     - [put_retention_policy](#put_retention_policy)
+    - [register_mail_domain](#register_mail_domain)
     - [register_to_work_mail](#register_to_work_mail)
     - [reset_password](#reset_password)
     - [start_mailbox_export_job](#start_mailbox_export_job)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_default_mail_domain](#update_default_mail_domain)
     - [update_mailbox_quota](#update_mailbox_quota)
     - [update_mobile_device_access_rule](#update_mobile_device_access_rule)
     - [update_primary_email_address](#update_primary_email_address)
@@ -109,9 +120,11 @@ Exceptions:
 - `Exceptions.EntityNotFoundException`
 - `Exceptions.EntityStateException`
 - `Exceptions.InvalidConfigurationException`
+- `Exceptions.InvalidCustomSesConfigurationException`
 - `Exceptions.InvalidParameterException`
 - `Exceptions.InvalidPasswordException`
 - `Exceptions.LimitExceededException`
+- `Exceptions.MailDomainInUseException`
 - `Exceptions.MailDomainNotFoundException`
 - `Exceptions.MailDomainStateException`
 - `Exceptions.NameAvailabilityException`
@@ -277,14 +290,14 @@ Keyword-only arguments:
   *(required)*
 - `ClientToken`: `str`
 - `Description`: `str`
-- `DeviceTypes`: `List`\[`str`\]
-- `NotDeviceTypes`: `List`\[`str`\]
-- `DeviceModels`: `List`\[`str`\]
-- `NotDeviceModels`: `List`\[`str`\]
-- `DeviceOperatingSystems`: `List`\[`str`\]
-- `NotDeviceOperatingSystems`: `List`\[`str`\]
-- `DeviceUserAgents`: `List`\[`str`\]
-- `NotDeviceUserAgents`: `List`\[`str`\]
+- `DeviceTypes`: `Sequence`\[`str`\]
+- `NotDeviceTypes`: `Sequence`\[`str`\]
+- `DeviceModels`: `Sequence`\[`str`\]
+- `NotDeviceModels`: `Sequence`\[`str`\]
+- `DeviceOperatingSystems`: `Sequence`\[`str`\]
+- `NotDeviceOperatingSystems`: `Sequence`\[`str`\]
+- `DeviceUserAgents`: `Sequence`\[`str`\]
+- `NotDeviceUserAgents`: `Sequence`\[`str`\]
 
 Returns
 [CreateMobileDeviceAccessRuleResponseTypeDef](./type_defs.md#createmobiledeviceaccessruleresponsetypedef).
@@ -306,7 +319,7 @@ Keyword-only arguments:
 - `Alias`: `str` *(required)*
 - `DirectoryId`: `str`
 - `ClientToken`: `str`
-- `Domains`: `List`\[[DomainTypeDef](./type_defs.md#domaintypedef)\]
+- `Domains`: `Sequence`\[[DomainTypeDef](./type_defs.md#domaintypedef)\]
 - `KmsKeyArn`: `str`
 - `EnableInteroperability`: `bool`
 
@@ -436,6 +449,28 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### delete_mobile_device_access_override
+
+Deletes the mobile device access override for the given WorkMail organization,
+user, and device.
+
+Type annotations for
+`boto3.client("workmail").delete_mobile_device_access_override` method.
+
+Boto3 documentation:
+[WorkMail.Client.delete_mobile_device_access_override](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_override)
+
+Arguments mapping described in
+[DeleteMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#deletemobiledeviceaccessoverriderequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### delete_mobile_device_access_rule
 
 Deletes a mobile device access rule for the specified Amazon WorkMail
@@ -556,6 +591,26 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### deregister_mail_domain
+
+Removes a domain from Amazon WorkMail, stops email routing to WorkMail, and
+removes the authorization allowing WorkMail use.
+
+Type annotations for `boto3.client("workmail").deregister_mail_domain` method.
+
+Boto3 documentation:
+[WorkMail.Client.deregister_mail_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_mail_domain)
+
+Arguments mapping described in
+[DeregisterMailDomainRequestRequestTypeDef](./type_defs.md#deregistermaildomainrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `DomainName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### describe_group
 
 Returns the data available for the group.
@@ -575,6 +630,26 @@ Keyword-only arguments:
 
 Returns
 [DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
+
+### describe_inbound_dmarc_settings
+
+Lists the settings in a DMARC policy for a specified organization.
+
+Type annotations for `boto3.client("workmail").describe_inbound_dmarc_settings`
+method.
+
+Boto3 documentation:
+[WorkMail.Client.describe_inbound_dmarc_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_inbound_dmarc_settings)
+
+Arguments mapping described in
+[DescribeInboundDmarcSettingsRequestRequestTypeDef](./type_defs.md#describeinbounddmarcsettingsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+
+Returns
+[DescribeInboundDmarcSettingsResponseTypeDef](./type_defs.md#describeinbounddmarcsettingsresponsetypedef).
 
 ### describe_mailbox_export_job
 
@@ -711,7 +786,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -761,6 +836,27 @@ Keyword-only arguments:
 Returns
 [GetDefaultRetentionPolicyResponseTypeDef](./type_defs.md#getdefaultretentionpolicyresponsetypedef).
 
+### get_mail_domain
+
+Gets details for a mail domain, including domain records required to configure
+your domain with recommended security.
+
+Type annotations for `boto3.client("workmail").get_mail_domain` method.
+
+Boto3 documentation:
+[WorkMail.Client.get_mail_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mail_domain)
+
+Arguments mapping described in
+[GetMailDomainRequestRequestTypeDef](./type_defs.md#getmaildomainrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `DomainName`: `str` *(required)*
+
+Returns
+[GetMailDomainResponseTypeDef](./type_defs.md#getmaildomainresponsetypedef).
+
 ### get_mailbox_details
 
 Requests a user's mailbox details for a specified organization and user.
@@ -805,6 +901,29 @@ Keyword-only arguments:
 
 Returns
 [GetMobileDeviceAccessEffectResponseTypeDef](./type_defs.md#getmobiledeviceaccesseffectresponsetypedef).
+
+### get_mobile_device_access_override
+
+Gets the mobile device access override for the given WorkMail organization,
+user, and device.
+
+Type annotations for
+`boto3.client("workmail").get_mobile_device_access_override` method.
+
+Boto3 documentation:
+[WorkMail.Client.get_mobile_device_access_override](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_override)
+
+Arguments mapping described in
+[GetMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#getmobiledeviceaccessoverriderequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+
+Returns
+[GetMobileDeviceAccessOverrideResponseTypeDef](./type_defs.md#getmobiledeviceaccessoverrideresponsetypedef).
 
 ### list_access_control_rules
 
@@ -890,6 +1009,27 @@ Keyword-only arguments:
 
 Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
+### list_mail_domains
+
+Lists the mail domains in a given Amazon WorkMail organization.
+
+Type annotations for `boto3.client("workmail").list_mail_domains` method.
+
+Boto3 documentation:
+[WorkMail.Client.list_mail_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mail_domains)
+
+Arguments mapping described in
+[ListMailDomainsRequestRequestTypeDef](./type_defs.md#listmaildomainsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListMailDomainsResponseTypeDef](./type_defs.md#listmaildomainsresponsetypedef).
+
 ### list_mailbox_export_jobs
 
 Lists the mailbox export jobs started for the specified organization within the
@@ -936,6 +1076,31 @@ Keyword-only arguments:
 
 Returns
 [ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef).
+
+### list_mobile_device_access_overrides
+
+Lists all the mobile device access overrides for any given combination of
+WorkMail organization, user, or device.
+
+Type annotations for
+`boto3.client("workmail").list_mobile_device_access_overrides` method.
+
+Boto3 documentation:
+[WorkMail.Client.list_mobile_device_access_overrides](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_overrides)
+
+Arguments mapping described in
+[ListMobileDeviceAccessOverridesRequestRequestTypeDef](./type_defs.md#listmobiledeviceaccessoverridesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str`
+- `DeviceId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMobileDeviceAccessOverridesResponseTypeDef](./type_defs.md#listmobiledeviceaccessoverridesresponsetypedef).
 
 ### list_mobile_device_access_rules
 
@@ -1080,12 +1245,32 @@ Keyword-only arguments:
   *(required)*
 - `Description`: `str` *(required)*
 - `OrganizationId`: `str` *(required)*
-- `IpRanges`: `List`\[`str`\]
-- `NotIpRanges`: `List`\[`str`\]
-- `Actions`: `List`\[`str`\]
-- `NotActions`: `List`\[`str`\]
-- `UserIds`: `List`\[`str`\]
-- `NotUserIds`: `List`\[`str`\]
+- `IpRanges`: `Sequence`\[`str`\]
+- `NotIpRanges`: `Sequence`\[`str`\]
+- `Actions`: `Sequence`\[`str`\]
+- `NotActions`: `Sequence`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
+- `NotUserIds`: `Sequence`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
+
+### put_inbound_dmarc_settings
+
+Enables or disables a DMARC policy for a given organization.
+
+Type annotations for `boto3.client("workmail").put_inbound_dmarc_settings`
+method.
+
+Boto3 documentation:
+[WorkMail.Client.put_inbound_dmarc_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_inbound_dmarc_settings)
+
+Arguments mapping described in
+[PutInboundDmarcSettingsRequestRequestTypeDef](./type_defs.md#putinbounddmarcsettingsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `Enforced`: `bool` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1107,7 +1292,34 @@ Keyword-only arguments:
 - `EntityId`: `str` *(required)*
 - `GranteeId`: `str` *(required)*
 - `PermissionValues`:
-  `List`\[[PermissionTypeType](./literals.md#permissiontypetype)\] *(required)*
+  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### put_mobile_device_access_override
+
+Creates or updates a mobile device access override for the given WorkMail
+organization, user, and device.
+
+Type annotations for
+`boto3.client("workmail").put_mobile_device_access_override` method.
+
+Boto3 documentation:
+[WorkMail.Client.put_mobile_device_access_override](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_mobile_device_access_override)
+
+Arguments mapping described in
+[PutMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#putmobiledeviceaccessoverriderequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+- `Effect`:
+  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
+  *(required)*
+- `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1128,10 +1340,31 @@ Keyword-only arguments:
 - `OrganizationId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `FolderConfigurations`:
-  `List`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
+  `Sequence`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
   *(required)*
 - `Id`: `str`
 - `Description`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
+### register_mail_domain
+
+Registers a new domain in Amazon WorkMail and SES, and configures it for use by
+WorkMail.
+
+Type annotations for `boto3.client("workmail").register_mail_domain` method.
+
+Boto3 documentation:
+[WorkMail.Client.register_mail_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_mail_domain)
+
+Arguments mapping described in
+[RegisterMailDomainRequestRequestTypeDef](./type_defs.md#registermaildomainrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `DomainName`: `str` *(required)*
+- `ClientToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1221,7 +1454,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1241,7 +1474,27 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### update_default_mail_domain
+
+Updates the default mail domain for an organization.
+
+Type annotations for `boto3.client("workmail").update_default_mail_domain`
+method.
+
+Boto3 documentation:
+[WorkMail.Client.update_default_mail_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_default_mail_domain)
+
+Arguments mapping described in
+[UpdateDefaultMailDomainRequestRequestTypeDef](./type_defs.md#updatedefaultmaildomainrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `DomainName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1288,14 +1541,14 @@ Keyword-only arguments:
   [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
   *(required)*
 - `Description`: `str`
-- `DeviceTypes`: `List`\[`str`\]
-- `NotDeviceTypes`: `List`\[`str`\]
-- `DeviceModels`: `List`\[`str`\]
-- `NotDeviceModels`: `List`\[`str`\]
-- `DeviceOperatingSystems`: `List`\[`str`\]
-- `NotDeviceOperatingSystems`: `List`\[`str`\]
-- `DeviceUserAgents`: `List`\[`str`\]
-- `NotDeviceUserAgents`: `List`\[`str`\]
+- `DeviceTypes`: `Sequence`\[`str`\]
+- `NotDeviceTypes`: `Sequence`\[`str`\]
+- `DeviceModels`: `Sequence`\[`str`\]
+- `NotDeviceModels`: `Sequence`\[`str`\]
+- `DeviceOperatingSystems`: `Sequence`\[`str`\]
+- `NotDeviceOperatingSystems`: `Sequence`\[`str`\]
+- `DeviceUserAgents`: `Sequence`\[`str`\]
+- `NotDeviceUserAgents`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 

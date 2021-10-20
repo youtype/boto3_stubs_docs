@@ -110,7 +110,7 @@ Keyword-only arguments:
 - `deviceCode`: `str` *(required)*
 - `code`: `str`
 - `refreshToken`: `str`
-- `scope`: `List`\[`str`\]
+- `scope`: `Sequence`\[`str`\]
 - `redirectUri`: `str`
 
 Returns
@@ -128,7 +128,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -150,7 +150,7 @@ Keyword-only arguments:
 
 - `clientName`: `str` *(required)*
 - `clientType`: `str` *(required)*
-- `scopes`: `List`\[`str`\]
+- `scopes`: `Sequence`\[`str`\]
 
 Returns
 [RegisterClientResponseTypeDef](./type_defs.md#registerclientresponsetypedef).

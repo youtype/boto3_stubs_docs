@@ -21,6 +21,8 @@ type annotations stubs module
   - [CertificateTypeDef](#certificatetypedef)
   - [ClusterTypeDef](#clustertypedef)
   - [CompatibilityTypeDef](#compatibilitytypedef)
+  - [ConnectorConfigRequestTypeDef](#connectorconfigrequesttypedef)
+  - [ConnectorConfigResponseTypeDef](#connectorconfigresponsetypedef)
   - [CreateAddonRequestRequestTypeDef](#createaddonrequestrequesttypedef)
   - [CreateAddonResponseTypeDef](#createaddonresponsetypedef)
   - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
@@ -37,6 +39,8 @@ type annotations stubs module
   - [DeleteFargateProfileResponseTypeDef](#deletefargateprofileresponsetypedef)
   - [DeleteNodegroupRequestRequestTypeDef](#deletenodegrouprequestrequesttypedef)
   - [DeleteNodegroupResponseTypeDef](#deletenodegroupresponsetypedef)
+  - [DeregisterClusterRequestRequestTypeDef](#deregisterclusterrequestrequesttypedef)
+  - [DeregisterClusterResponseTypeDef](#deregisterclusterresponsetypedef)
   - [DescribeAddonRequestRequestTypeDef](#describeaddonrequestrequesttypedef)
   - [DescribeAddonResponseTypeDef](#describeaddonresponsetypedef)
   - [DescribeAddonVersionsRequestRequestTypeDef](#describeaddonversionsrequestrequesttypedef)
@@ -90,6 +94,8 @@ type annotations stubs module
   - [OidcIdentityProviderConfigTypeDef](#oidcidentityproviderconfigtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ProviderTypeDef](#providertypedef)
+  - [RegisterClusterRequestRequestTypeDef](#registerclusterrequestrequesttypedef)
+  - [RegisterClusterResponseTypeDef](#registerclusterresponsetypedef)
   - [RemoteAccessConfigTypeDef](#remoteaccessconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
@@ -190,7 +196,7 @@ Required fields:
 
 - `clusterName`: `str`
 - `encryptionConfig`:
-  `List`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
+  `Sequence`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
 
 Optional fields:
 
@@ -222,7 +228,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `clientRequestToken`: `str`
 
 ## AssociateIdentityProviderConfigResponseTypeDef
@@ -286,6 +292,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `encryptionConfig`:
   `List`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
+- `connectorConfig`:
+  [ConnectorConfigResponseTypeDef](./type_defs.md#connectorconfigresponsetypedef)
 
 ## CompatibilityTypeDef
 
@@ -298,6 +306,32 @@ Optional fields:
 - `clusterVersion`: `str`
 - `platformVersions`: `List`\[`str`\]
 - `defaultVersion`: `bool`
+
+## ConnectorConfigRequestTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import ConnectorConfigRequestTypeDef
+```
+
+Required fields:
+
+- `roleArn`: `str`
+- `provider`:
+  [ConnectorConfigProviderType](./literals.md#connectorconfigprovidertype)
+
+## ConnectorConfigResponseTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import ConnectorConfigResponseTypeDef
+```
+
+Optional fields:
+
+- `activationId`: `str`
+- `activationCode`: `str`
+- `activationExpiry`: `datetime`
+- `provider`: `str`
+- `roleArn`: `str`
 
 ## CreateAddonRequestRequestTypeDef
 
@@ -317,7 +351,7 @@ Optional fields:
 - `resolveConflicts`:
   [ResolveConflictsType](./literals.md#resolveconflictstype)
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAddonResponseTypeDef
 
@@ -351,9 +385,9 @@ Optional fields:
   [KubernetesNetworkConfigRequestTypeDef](./type_defs.md#kubernetesnetworkconfigrequesttypedef)
 - `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `encryptionConfig`:
-  `List`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
+  `Sequence`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
 
 ## CreateClusterResponseTypeDef
 
@@ -381,11 +415,11 @@ Required fields:
 
 Optional fields:
 
-- `subnets`: `List`\[`str`\]
+- `subnets`: `Sequence`\[`str`\]
 - `selectors`:
-  `List`\[[FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef)\]
+  `Sequence`\[[FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef)\]
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateFargateProfileResponseTypeDef
 
@@ -410,7 +444,7 @@ Required fields:
 
 - `clusterName`: `str`
 - `nodegroupName`: `str`
-- `subnets`: `List`\[`str`\]
+- `subnets`: `Sequence`\[`str`\]
 - `nodeRole`: `str`
 
 Optional fields:
@@ -418,13 +452,13 @@ Optional fields:
 - `scalingConfig`:
   [NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef)
 - `diskSize`: `int`
-- `instanceTypes`: `List`\[`str`\]
+- `instanceTypes`: `Sequence`\[`str`\]
 - `amiType`: [AMITypesType](./literals.md#amitypestype)
 - `remoteAccess`:
   [RemoteAccessConfigTypeDef](./type_defs.md#remoteaccessconfigtypedef)
-- `labels`: `Dict`\[`str`, `str`\]
-- `taints`: `List`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `labels`: `Mapping`\[`str`, `str`\]
+- `taints`: `Sequence`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `clientRequestToken`: `str`
 - `launchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
@@ -456,6 +490,10 @@ Required fields:
 
 - `clusterName`: `str`
 - `addonName`: `str`
+
+Optional fields:
+
+- `preserve`: `bool`
 
 ## DeleteAddonResponseTypeDef
 
@@ -535,6 +573,28 @@ from mypy_boto3_eks.type_defs import DeleteNodegroupResponseTypeDef
 Required fields:
 
 - `nodegroup`: [NodegroupTypeDef](./type_defs.md#nodegrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeregisterClusterRequestRequestTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import DeregisterClusterRequestRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+## DeregisterClusterResponseTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import DeregisterClusterResponseTypeDef
+```
+
+Required fields:
+
+- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -745,7 +805,7 @@ from mypy_boto3_eks.type_defs import EncryptionConfigTypeDef
 
 Optional fields:
 
-- `resources`: `List`\[`str`\]
+- `resources`: `Sequence`\[`str`\]
 - `provider`: [ProviderTypeDef](./type_defs.md#providertypedef)
 
 ## ErrorDetailTypeDef
@@ -769,7 +829,7 @@ from mypy_boto3_eks.type_defs import FargateProfileSelectorTypeDef
 Optional fields:
 
 - `namespace`: `str`
-- `labels`: `Dict`\[`str`, `str`\]
+- `labels`: `Mapping`\[`str`, `str`\]
 
 ## FargateProfileTypeDef
 
@@ -904,6 +964,7 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `include`: `Sequence`\[`str`\]
 
 ## ListClustersResponseTypeDef
 
@@ -1063,7 +1124,7 @@ from mypy_boto3_eks.type_defs import LogSetupTypeDef
 
 Optional fields:
 
-- `types`: `List`\[[LogTypeType](./literals.md#logtypetype)\]
+- `types`: `Sequence`\[[LogTypeType](./literals.md#logtypetype)\]
 - `enabled`: `bool`
 
 ## LoggingTypeDef
@@ -1074,7 +1135,8 @@ from mypy_boto3_eks.type_defs import LoggingTypeDef
 
 Optional fields:
 
-- `clusterLogging`: `List`\[[LogSetupTypeDef](./type_defs.md#logsetuptypedef)\]
+- `clusterLogging`:
+  `Sequence`\[[LogSetupTypeDef](./type_defs.md#logsetuptypedef)\]
 
 ## NodegroupHealthTypeDef
 
@@ -1186,7 +1248,7 @@ Optional fields:
 - `usernamePrefix`: `str`
 - `groupsClaim`: `str`
 - `groupsPrefix`: `str`
-- `requiredClaims`: `Dict`\[`str`, `str`\]
+- `requiredClaims`: `Mapping`\[`str`, `str`\]
 
 ## OidcIdentityProviderConfigTypeDef
 
@@ -1231,6 +1293,34 @@ Optional fields:
 
 - `keyArn`: `str`
 
+## RegisterClusterRequestRequestTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import RegisterClusterRequestRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `connectorConfig`:
+  [ConnectorConfigRequestTypeDef](./type_defs.md#connectorconfigrequesttypedef)
+
+Optional fields:
+
+- `clientRequestToken`: `str`
+
+## RegisterClusterResponseTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import RegisterClusterResponseTypeDef
+```
+
+Required fields:
+
+- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## RemoteAccessConfigTypeDef
 
 ```python
@@ -1240,7 +1330,7 @@ from mypy_boto3_eks.type_defs import RemoteAccessConfigTypeDef
 Optional fields:
 
 - `ec2SshKey`: `str`
-- `sourceSecurityGroups`: `List`\[`str`\]
+- `sourceSecurityGroups`: `Sequence`\[`str`\]
 
 ## ResponseMetadataTypeDef
 
@@ -1265,7 +1355,7 @@ from mypy_boto3_eks.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TaintTypeDef
 
@@ -1288,7 +1378,7 @@ from mypy_boto3_eks.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAddonRequestRequestTypeDef
 
@@ -1385,8 +1475,8 @@ from mypy_boto3_eks.type_defs import UpdateLabelsPayloadTypeDef
 
 Optional fields:
 
-- `addOrUpdateLabels`: `Dict`\[`str`, `str`\]
-- `removeLabels`: `List`\[`str`\]
+- `addOrUpdateLabels`: `Mapping`\[`str`, `str`\]
+- `removeLabels`: `Sequence`\[`str`\]
 
 ## UpdateNodegroupConfigRequestRequestTypeDef
 
@@ -1474,8 +1564,9 @@ from mypy_boto3_eks.type_defs import UpdateTaintsPayloadTypeDef
 
 Optional fields:
 
-- `addOrUpdateTaints`: `List`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
-- `removeTaints`: `List`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
+- `addOrUpdateTaints`:
+  `Sequence`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
+- `removeTaints`: `Sequence`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
 
 ## UpdateTypeDef
 
@@ -1500,11 +1591,11 @@ from mypy_boto3_eks.type_defs import VpcConfigRequestTypeDef
 
 Optional fields:
 
-- `subnetIds`: `List`\[`str`\]
-- `securityGroupIds`: `List`\[`str`\]
+- `subnetIds`: `Sequence`\[`str`\]
+- `securityGroupIds`: `Sequence`\[`str`\]
 - `endpointPublicAccess`: `bool`
 - `endpointPrivateAccess`: `bool`
-- `publicAccessCidrs`: `List`\[`str`\]
+- `publicAccessCidrs`: `Sequence`\[`str`\]
 
 ## VpcConfigResponseTypeDef
 

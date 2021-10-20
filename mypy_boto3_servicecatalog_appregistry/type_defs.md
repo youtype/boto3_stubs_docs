@@ -30,8 +30,11 @@ type annotations stubs module
   - [DisassociateResourceResponseTypeDef](#disassociateresourceresponsetypedef)
   - [GetApplicationRequestRequestTypeDef](#getapplicationrequestrequesttypedef)
   - [GetApplicationResponseTypeDef](#getapplicationresponsetypedef)
+  - [GetAssociatedResourceRequestRequestTypeDef](#getassociatedresourcerequestrequesttypedef)
+  - [GetAssociatedResourceResponseTypeDef](#getassociatedresourceresponsetypedef)
   - [GetAttributeGroupRequestRequestTypeDef](#getattributegrouprequestrequesttypedef)
   - [GetAttributeGroupResponseTypeDef](#getattributegroupresponsetypedef)
+  - [IntegrationsTypeDef](#integrationstypedef)
   - [ListApplicationsRequestRequestTypeDef](#listapplicationsrequestrequesttypedef)
   - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
   - [ListAssociatedAttributeGroupsRequestRequestTypeDef](#listassociatedattributegroupsrequestrequesttypedef)
@@ -43,7 +46,10 @@ type annotations stubs module
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ResourceGroupTypeDef](#resourcegrouptypedef)
   - [ResourceInfoTypeDef](#resourceinfotypedef)
+  - [ResourceIntegrationsTypeDef](#resourceintegrationstypedef)
+  - [ResourceTypeDef](#resourcetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SyncResourceRequestRequestTypeDef](#syncresourcerequestrequesttypedef)
   - [SyncResourceResponseTypeDef](#syncresourceresponsetypedef)
@@ -180,7 +186,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateApplicationResponseTypeDef
 
@@ -209,7 +215,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAttributeGroupResponseTypeDef
 
@@ -346,6 +352,32 @@ Required fields:
 - `lastUpdateTime`: `datetime`
 - `associatedResourceCount`: `int`
 - `tags`: `Dict`\[`str`, `str`\]
+- `integrations`: [IntegrationsTypeDef](./type_defs.md#integrationstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetAssociatedResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_servicecatalog_appregistry.type_defs import GetAssociatedResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `application`: `str`
+- `resourceType`: `Literal['CFN_STACK']` (see
+  [ResourceTypeType](./literals.md#resourcetypetype))
+- `resource`: `str`
+
+## GetAssociatedResourceResponseTypeDef
+
+```python
+from mypy_boto3_servicecatalog_appregistry.type_defs import GetAssociatedResourceResponseTypeDef
+```
+
+Required fields:
+
+- `resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -377,6 +409,16 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## IntegrationsTypeDef
+
+```python
+from mypy_boto3_servicecatalog_appregistry.type_defs import IntegrationsTypeDef
+```
+
+Optional fields:
+
+- `resourceGroup`: [ResourceGroupTypeDef](./type_defs.md#resourcegrouptypedef)
 
 ## ListApplicationsRequestRequestTypeDef
 
@@ -519,6 +561,18 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+## ResourceGroupTypeDef
+
+```python
+from mypy_boto3_servicecatalog_appregistry.type_defs import ResourceGroupTypeDef
+```
+
+Optional fields:
+
+- `state`: [ResourceGroupStateType](./literals.md#resourcegroupstatetype)
+- `arn`: `str`
+- `errorMessage`: `str`
+
 ## ResourceInfoTypeDef
 
 ```python
@@ -529,6 +583,30 @@ Optional fields:
 
 - `name`: `str`
 - `arn`: `str`
+
+## ResourceIntegrationsTypeDef
+
+```python
+from mypy_boto3_servicecatalog_appregistry.type_defs import ResourceIntegrationsTypeDef
+```
+
+Optional fields:
+
+- `resourceGroup`: [ResourceGroupTypeDef](./type_defs.md#resourcegrouptypedef)
+
+## ResourceTypeDef
+
+```python
+from mypy_boto3_servicecatalog_appregistry.type_defs import ResourceTypeDef
+```
+
+Optional fields:
+
+- `name`: `str`
+- `arn`: `str`
+- `associationTime`: `datetime`
+- `integrations`:
+  [ResourceIntegrationsTypeDef](./type_defs.md#resourceintegrationstypedef)
 
 ## ResponseMetadataTypeDef
 
@@ -579,7 +657,7 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import TagResourceRequestRe
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -590,7 +668,7 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import UntagResourceRequest
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApplicationRequestRequestTypeDef
 

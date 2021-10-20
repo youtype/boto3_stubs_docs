@@ -91,7 +91,7 @@ Keyword-only arguments:
 - `sql`: `str` *(required)*
 - `database`: `str`
 - `parameterSets`:
-  `List`\[`List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]\]
+  `Sequence`\[`Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]\]
 - `schema`: `str`
 - `transactionId`: `str`
 
@@ -200,7 +200,7 @@ Keyword-only arguments:
 - `database`: `str`
 - `includeResultMetadata`: `bool`
 - `parameters`:
-  `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
+  `Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
 - `resultSetOptions`:
   [ResultSetOptionsTypeDef](./type_defs.md#resultsetoptionstypedef)
 - `schema`: `str`
@@ -221,7 +221,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

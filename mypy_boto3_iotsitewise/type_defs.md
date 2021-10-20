@@ -90,9 +90,11 @@ type annotations stubs module
   - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
   - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
   - [DescribeStorageConfigurationResponseTypeDef](#describestorageconfigurationresponsetypedef)
+  - [DetailedErrorTypeDef](#detailederrortypedef)
   - [DisassociateAssetsRequestRequestTypeDef](#disassociateassetsrequestrequesttypedef)
   - [ErrorDetailsTypeDef](#errordetailstypedef)
   - [ExpressionVariableTypeDef](#expressionvariabletypedef)
+  - [ForwardingConfigTypeDef](#forwardingconfigtypedef)
   - [GatewayCapabilitySummaryTypeDef](#gatewaycapabilitysummarytypedef)
   - [GatewayPlatformTypeDef](#gatewayplatformtypedef)
   - [GatewaySummaryTypeDef](#gatewaysummarytypedef)
@@ -105,6 +107,7 @@ type annotations stubs module
   - [GetInterpolatedAssetPropertyValuesRequestRequestTypeDef](#getinterpolatedassetpropertyvaluesrequestrequesttypedef)
   - [GetInterpolatedAssetPropertyValuesResponseTypeDef](#getinterpolatedassetpropertyvaluesresponsetypedef)
   - [GreengrassTypeDef](#greengrasstypedef)
+  - [GreengrassV2TypeDef](#greengrassv2typedef)
   - [GroupIdentityTypeDef](#groupidentitytypedef)
   - [IAMRoleIdentityTypeDef](#iamroleidentitytypedef)
   - [IAMUserIdentityTypeDef](#iamuseridentitytypedef)
@@ -136,6 +139,9 @@ type annotations stubs module
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LoggingOptionsTypeDef](#loggingoptionstypedef)
+  - [MeasurementProcessingConfigTypeDef](#measurementprocessingconfigtypedef)
+  - [MeasurementTypeDef](#measurementtypedef)
+  - [MetricProcessingConfigTypeDef](#metricprocessingconfigtypedef)
   - [MetricTypeDef](#metrictypedef)
   - [MetricWindowTypeDef](#metricwindowtypedef)
   - [MonitorErrorDetailsTypeDef](#monitorerrordetailstypedef)
@@ -159,6 +165,7 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TimeInNanosTypeDef](#timeinnanostypedef)
+  - [TransformProcessingConfigTypeDef](#transformprocessingconfigtypedef)
   - [TransformTypeDef](#transformtypedef)
   - [TumblingWindowTypeDef](#tumblingwindowtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
@@ -312,7 +319,7 @@ Optional fields:
 
 - `description`: `str`
 - `properties`:
-  `List`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
+  `Sequence`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
 
 ## AssetModelCompositeModelTypeDef
 
@@ -558,7 +565,7 @@ from mypy_boto3_iotsitewise.type_defs import BatchAssociateProjectAssetsRequestR
 Required fields:
 
 - `projectId`: `str`
-- `assetIds`: `List`\[`str`\]
+- `assetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -586,7 +593,7 @@ from mypy_boto3_iotsitewise.type_defs import BatchDisassociateProjectAssetsReque
 Required fields:
 
 - `projectId`: `str`
-- `assetIds`: `List`\[`str`\]
+- `assetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -640,7 +647,7 @@ from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyValueRequestRe
 Required fields:
 
 - `entries`:
-  `List`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
+  `Sequence`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
 
 ## BatchPutAssetPropertyValueResponseTypeDef
 
@@ -708,7 +715,7 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAccessPolicyResponseTypeDef
 
@@ -737,13 +744,13 @@ Optional fields:
 
 - `assetModelDescription`: `str`
 - `assetModelProperties`:
-  `List`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
+  `Sequence`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
 - `assetModelHierarchies`:
-  `List`\[[AssetModelHierarchyDefinitionTypeDef](./type_defs.md#assetmodelhierarchydefinitiontypedef)\]
+  `Sequence`\[[AssetModelHierarchyDefinitionTypeDef](./type_defs.md#assetmodelhierarchydefinitiontypedef)\]
 - `assetModelCompositeModels`:
-  `List`\[[AssetModelCompositeModelDefinitionTypeDef](./type_defs.md#assetmodelcompositemodeldefinitiontypedef)\]
+  `Sequence`\[[AssetModelCompositeModelDefinitionTypeDef](./type_defs.md#assetmodelcompositemodeldefinitiontypedef)\]
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAssetModelResponseTypeDef
 
@@ -774,7 +781,7 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAssetResponseTypeDef
 
@@ -806,7 +813,7 @@ Optional fields:
 
 - `dashboardDescription`: `str`
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDashboardResponseTypeDef
 
@@ -835,7 +842,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateGatewayResponseTypeDef
 
@@ -867,7 +874,7 @@ Optional fields:
 - `portalDescription`: `str`
 - `clientToken`: `str`
 - `portalLogoImageFile`: [ImageFileTypeDef](./type_defs.md#imagefiletypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `portalAuthMode`: [AuthModeType](./literals.md#authmodetype)
 - `notificationSenderEmail`: `str`
 - `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
@@ -903,7 +910,7 @@ Optional fields:
 
 - `projectDescription`: `str`
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateProjectResponseTypeDef
 
@@ -1398,6 +1405,17 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DetailedErrorTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DetailedErrorTypeDef
+```
+
+Required fields:
+
+- `code`: [DetailedErrorCodeType](./literals.md#detailederrorcodetype)
+- `message`: `str`
+
 ## DisassociateAssetsRequestRequestTypeDef
 
 ```python
@@ -1425,6 +1443,11 @@ Required fields:
 - `code`: [ErrorCodeType](./literals.md#errorcodetype)
 - `message`: `str`
 
+Optional fields:
+
+- `details`:
+  `List`\[[DetailedErrorTypeDef](./type_defs.md#detailederrortypedef)\]
+
 ## ExpressionVariableTypeDef
 
 ```python
@@ -1435,6 +1458,16 @@ Required fields:
 
 - `name`: `str`
 - `value`: [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
+
+## ForwardingConfigTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ForwardingConfigTypeDef
+```
+
+Required fields:
+
+- `state`: [ForwardingConfigStateType](./literals.md#forwardingconfigstatetype)
 
 ## GatewayCapabilitySummaryTypeDef
 
@@ -1454,9 +1487,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import GatewayPlatformTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `greengrass`: [GreengrassTypeDef](./type_defs.md#greengrasstypedef)
+- `greengrassV2`: [GreengrassV2TypeDef](./type_defs.md#greengrassv2typedef)
 
 ## GatewaySummaryTypeDef
 
@@ -1473,6 +1507,8 @@ Required fields:
 
 Optional fields:
 
+- `gatewayPlatform`:
+  [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef)
 - `gatewayCapabilitySummaries`:
   `List`\[[GatewayCapabilitySummaryTypeDef](./type_defs.md#gatewaycapabilitysummarytypedef)\]
 
@@ -1485,7 +1521,7 @@ from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyAggregatesRequestRe
 Required fields:
 
 - `aggregateTypes`:
-  `List`\[[AggregateTypeType](./literals.md#aggregatetypetype)\]
+  `Sequence`\[[AggregateTypeType](./literals.md#aggregatetypetype)\]
 - `resolution`: `str`
 - `startDate`: `Union`\[`datetime`, `str`\]
 - `endDate`: `Union`\[`datetime`, `str`\]
@@ -1495,7 +1531,7 @@ Optional fields:
 - `assetId`: `str`
 - `propertyId`: `str`
 - `propertyAlias`: `str`
-- `qualities`: `List`\[[QualityType](./literals.md#qualitytype)\]
+- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
 - `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -1527,7 +1563,7 @@ Optional fields:
 - `propertyAlias`: `str`
 - `startDate`: `Union`\[`datetime`, `str`\]
 - `endDate`: `Union`\[`datetime`, `str`\]
-- `qualities`: `List`\[[QualityType](./literals.md#qualitytype)\]
+- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
 - `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -1594,6 +1630,7 @@ Optional fields:
 - `endTimeOffsetInNanos`: `int`
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `intervalWindowInSeconds`: `int`
 
 ## GetInterpolatedAssetPropertyValuesResponseTypeDef
 
@@ -1618,6 +1655,16 @@ from mypy_boto3_iotsitewise.type_defs import GreengrassTypeDef
 Required fields:
 
 - `groupArn`: `str`
+
+## GreengrassV2TypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import GreengrassV2TypeDef
+```
+
+Required fields:
+
+- `coreDeviceThingName`: `str`
 
 ## GroupIdentityTypeDef
 
@@ -2020,6 +2067,38 @@ Required fields:
 
 - `level`: [LoggingLevelType](./literals.md#loggingleveltype)
 
+## MeasurementProcessingConfigTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import MeasurementProcessingConfigTypeDef
+```
+
+Required fields:
+
+- `forwardingConfig`:
+  [ForwardingConfigTypeDef](./type_defs.md#forwardingconfigtypedef)
+
+## MeasurementTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import MeasurementTypeDef
+```
+
+Optional fields:
+
+- `processingConfig`:
+  [MeasurementProcessingConfigTypeDef](./type_defs.md#measurementprocessingconfigtypedef)
+
+## MetricProcessingConfigTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import MetricProcessingConfigTypeDef
+```
+
+Required fields:
+
+- `computeLocation`: [ComputeLocationType](./literals.md#computelocationtype)
+
 ## MetricTypeDef
 
 ```python
@@ -2030,8 +2109,13 @@ Required fields:
 
 - `expression`: `str`
 - `variables`:
-  `List`\[[ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef)\]
+  `Sequence`\[[ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef)\]
 - `window`: [MetricWindowTypeDef](./type_defs.md#metricwindowtypedef)
+
+Optional fields:
+
+- `processingConfig`:
+  [MetricProcessingConfigTypeDef](./type_defs.md#metricprocessingconfigtypedef)
 
 ## MetricWindowTypeDef
 
@@ -2190,7 +2274,7 @@ from mypy_boto3_iotsitewise.type_defs import PropertyTypeTypeDef
 Optional fields:
 
 - `attribute`: [AttributeTypeDef](./type_defs.md#attributetypedef)
-- `measurement`: `Dict`\[`str`, `Any`\]
+- `measurement`: [MeasurementTypeDef](./type_defs.md#measurementtypedef)
 - `transform`: [TransformTypeDef](./type_defs.md#transformtypedef)
 - `metric`: [MetricTypeDef](./type_defs.md#metrictypedef)
 
@@ -2204,7 +2288,7 @@ Required fields:
 
 - `entryId`: `str`
 - `propertyValues`:
-  `List`\[[AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)\]
+  `Sequence`\[[AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)\]
 
 Optional fields:
 
@@ -2317,7 +2401,7 @@ from mypy_boto3_iotsitewise.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TimeInNanosTypeDef
 
@@ -2333,6 +2417,21 @@ Optional fields:
 
 - `offsetInNanos`: `int`
 
+## TransformProcessingConfigTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import TransformProcessingConfigTypeDef
+```
+
+Required fields:
+
+- `computeLocation`: [ComputeLocationType](./literals.md#computelocationtype)
+
+Optional fields:
+
+- `forwardingConfig`:
+  [ForwardingConfigTypeDef](./type_defs.md#forwardingconfigtypedef)
+
 ## TransformTypeDef
 
 ```python
@@ -2343,7 +2442,12 @@ Required fields:
 
 - `expression`: `str`
 - `variables`:
-  `List`\[[ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef)\]
+  `Sequence`\[[ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef)\]
+
+Optional fields:
+
+- `processingConfig`:
+  [TransformProcessingConfigTypeDef](./type_defs.md#transformprocessingconfigtypedef)
 
 ## TumblingWindowTypeDef
 
@@ -2355,6 +2459,10 @@ Required fields:
 
 - `interval`: `str`
 
+Optional fields:
+
+- `offset`: `str`
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2364,7 +2472,7 @@ from mypy_boto3_iotsitewise.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAccessPolicyRequestRequestTypeDef
 
@@ -2398,11 +2506,11 @@ Optional fields:
 
 - `assetModelDescription`: `str`
 - `assetModelProperties`:
-  `List`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
+  `Sequence`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
 - `assetModelHierarchies`:
-  `List`\[[AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef)\]
+  `Sequence`\[[AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef)\]
 - `assetModelCompositeModels`:
-  `List`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
+  `Sequence`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
 - `clientToken`: `str`
 
 ## UpdateAssetModelResponseTypeDef

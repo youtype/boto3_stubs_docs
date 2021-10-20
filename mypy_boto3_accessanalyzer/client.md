@@ -152,8 +152,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_access_preview
 
-Creates an access preview that allows you to preview Access Analyzer findings
-for your resource before deploying resource permissions.
+Creates an access preview that allows you to preview IAM Access Analyzer
+findings for your resource before deploying resource permissions.
 
 Type annotations for `boto3.client("accessanalyzer").create_access_preview`
 method.
@@ -167,7 +167,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
-- `configurations`: `Dict`\[`str`,
+- `configurations`: `Mapping`\[`str`,
   [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\] *(required)*
 - `clientToken`: `str`
 
@@ -191,9 +191,9 @@ Keyword-only arguments:
 - `analyzerName`: `str` *(required)*
 - `type`: [TypeType](./literals.md#typetype) *(required)*
 - `archiveRules`:
-  `List`\[[InlineArchiveRuleTypeDef](./type_defs.md#inlinearchiveruletypedef)\]
+  `Sequence`\[[InlineArchiveRuleTypeDef](./type_defs.md#inlinearchiveruletypedef)\]
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAnalyzerResponseTypeDef](./type_defs.md#createanalyzerresponsetypedef).
@@ -214,7 +214,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `analyzerName`: `str` *(required)*
-- `filter`: `Dict`\[`str`,
+- `filter`: `Mapping`\[`str`,
   [CriterionTypeDef](./type_defs.md#criteriontypedef)\] *(required)*
 - `ruleName`: `str` *(required)*
 - `clientToken`: `str`
@@ -268,7 +268,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -414,7 +414,7 @@ Keyword-only arguments:
 
 - `accessPreviewId`: `str` *(required)*
 - `analyzerArn`: `str` *(required)*
-- `filter`: `Dict`\[`str`,
+- `filter`: `Mapping`\[`str`,
   [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -526,7 +526,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
-- `filter`: `Dict`\[`str`,
+- `filter`: `Mapping`\[`str`,
   [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -635,7 +635,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -654,7 +654,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -674,7 +674,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `analyzerName`: `str` *(required)*
-- `filter`: `Dict`\[`str`,
+- `filter`: `Mapping`\[`str`,
   [CriterionTypeDef](./type_defs.md#criteriontypedef)\] *(required)*
 - `ruleName`: `str` *(required)*
 - `clientToken`: `str`
@@ -697,7 +697,7 @@ Keyword-only arguments:
 - `status`: [FindingStatusUpdateType](./literals.md#findingstatusupdatetype)
   *(required)*
 - `clientToken`: `str`
-- `ids`: `List`\[`str`\]
+- `ids`: `Sequence`\[`str`\]
 - `resourceArn`: `str`
 
 ### validate_policy

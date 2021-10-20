@@ -32,12 +32,12 @@ Arguments for `DescribeEnvironmentMembershipsPaginator.paginate` method:
 
 - `userArn`: `str`
 - `environmentId`: `str`
-- `permissions`: `List`\[[PermissionsType](./literals.md#permissionstype)\]
+- `permissions`: `Sequence`\[[PermissionsType](./literals.md#permissionstype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEnvironmentMembershipsPaginator.paginate` returns
-`Iterator`\[[DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef)\].
+`_PageIterator`\[[DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef)\].
 
 ## ListEnvironmentsPaginator
 
@@ -62,4 +62,4 @@ Arguments for `ListEnvironmentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEnvironmentsPaginator.paginate` returns
-`Iterator`\[[ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef)\].
+`_PageIterator`\[[ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef)\].

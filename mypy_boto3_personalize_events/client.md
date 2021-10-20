@@ -94,7 +94,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -116,7 +116,7 @@ Keyword-only arguments:
 
 - `trackingId`: `str` *(required)*
 - `sessionId`: `str` *(required)*
-- `eventList`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
+- `eventList`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
   *(required)*
 - `userId`: `str`
 
@@ -135,7 +135,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `datasetArn`: `str` *(required)*
-- `items`: `List`\[[ItemTypeDef](./type_defs.md#itemtypedef)\] *(required)*
+- `items`: `Sequence`\[[ItemTypeDef](./type_defs.md#itemtypedef)\] *(required)*
 
 ### put_users
 
@@ -152,4 +152,4 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `datasetArn`: `str` *(required)*
-- `users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\] *(required)*
+- `users`: `Sequence`\[[UserTypeDef](./type_defs.md#usertypedef)\] *(required)*

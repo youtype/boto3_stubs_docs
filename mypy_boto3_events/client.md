@@ -265,7 +265,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `EventSourceName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateEventBusResponseTypeDef](./type_defs.md#createeventbusresponsetypedef).
@@ -636,7 +636,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -734,7 +734,7 @@ Returns
 ### list_event_sources
 
 You can use this to see all the partner event sources that have been shared
-with your AWS account.
+with your Amazon Web Services account.
 
 Type annotations for `boto3.client("events").list_event_sources` method.
 
@@ -755,8 +755,8 @@ Returns
 
 ### list_partner_event_source_accounts
 
-An SaaS partner can use this operation to display the AWS account ID that a
-particular partner event source name is associated with.
+An SaaS partner can use this operation to display the Amazon Web Services
+account ID that a particular partner event source name is associated with.
 
 Type annotations for
 `boto3.client("events").list_partner_event_source_accounts` method.
@@ -921,7 +921,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Entries`:
-  `List`\[[PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef)\]
+  `Sequence`\[[PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef)\]
   *(required)*
 
 Returns [PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef).
@@ -942,7 +942,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Entries`:
-  `List`\[[PutPartnerEventsRequestEntryTypeDef](./type_defs.md#putpartnereventsrequestentrytypedef)\]
+  `Sequence`\[[PutPartnerEventsRequestEntryTypeDef](./type_defs.md#putpartnereventsrequestentrytypedef)\]
   *(required)*
 
 Returns
@@ -950,8 +950,8 @@ Returns
 
 ### put_permission
 
-Running `PutPermission` permits the specified AWS account or AWS organization
-to put events to the specified *event bus*.
+Running `PutPermission` permits the specified Amazon Web Services account or
+Amazon Web Services organization to put events to the specified *event bus*.
 
 Type annotations for `boto3.client("events").put_permission` method.
 
@@ -990,7 +990,7 @@ Keyword-only arguments:
 - `State`: [RuleStateType](./literals.md#rulestatetype)
 - `Description`: `str`
 - `RoleArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EventBusName`: `str`
 
 Returns [PutRuleResponseTypeDef](./type_defs.md#putruleresponsetypedef).
@@ -1011,7 +1011,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Rule`: `str` *(required)*
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
   *(required)*
 - `EventBusName`: `str`
 
@@ -1019,8 +1019,8 @@ Returns [PutTargetsResponseTypeDef](./type_defs.md#puttargetsresponsetypedef).
 
 ### remove_permission
 
-Revokes the permission of another AWS account to be able to put events to the
-specified event bus.
+Revokes the permission of another Amazon Web Services account to be able to put
+events to the specified event bus.
 
 Type annotations for `boto3.client("events").remove_permission` method.
 
@@ -1051,7 +1051,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Rule`: `str` *(required)*
-- `Ids`: `List`\[`str`\] *(required)*
+- `Ids`: `Sequence`\[`str`\] *(required)*
 - `EventBusName`: `str`
 - `Force`: `bool`
 
@@ -1100,7 +1100,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1139,7 +1139,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

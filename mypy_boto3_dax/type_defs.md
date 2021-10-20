@@ -117,13 +117,13 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `SubnetGroupName`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `PreferredMaintenanceWindow`: `str`
 - `NotificationTopicArn`: `str`
 - `ParameterGroupName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SSESpecification`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `ClusterEndpointEncryptionType`:
@@ -177,7 +177,7 @@ from mypy_boto3_dax.type_defs import CreateSubnetGroupRequestRequestTypeDef
 Required fields:
 
 - `SubnetGroupName`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -208,8 +208,8 @@ Required fields:
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
-- `NodeIdsToRemove`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
+- `NodeIdsToRemove`: `Sequence`\[`str`\]
 
 ## DecreaseReplicationFactorResponseTypeDef
 
@@ -297,7 +297,7 @@ from mypy_boto3_dax.type_defs import DescribeClustersRequestRequestTypeDef
 
 Optional fields:
 
-- `ClusterNames`: `List`\[`str`\]
+- `ClusterNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -375,7 +375,7 @@ from mypy_boto3_dax.type_defs import DescribeParameterGroupsRequestRequestTypeDe
 
 Optional fields:
 
-- `ParameterGroupNames`: `List`\[`str`\]
+- `ParameterGroupNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -430,7 +430,7 @@ from mypy_boto3_dax.type_defs import DescribeSubnetGroupsRequestRequestTypeDef
 
 Optional fields:
 
-- `SubnetGroupNames`: `List`\[`str`\]
+- `SubnetGroupNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -486,7 +486,7 @@ Required fields:
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 
 ## IncreaseReplicationFactorResponseTypeDef
 
@@ -731,7 +731,7 @@ from mypy_boto3_dax.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagResourceResponseTypeDef
 
@@ -765,7 +765,7 @@ from mypy_boto3_dax.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagResourceResponseTypeDef
 
@@ -796,7 +796,7 @@ Optional fields:
 - `NotificationTopicArn`: `str`
 - `NotificationTopicStatus`: `str`
 - `ParameterGroupName`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## UpdateClusterResponseTypeDef
 
@@ -820,7 +820,7 @@ Required fields:
 
 - `ParameterGroupName`: `str`
 - `ParameterNameValues`:
-  `List`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
+  `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
 
 ## UpdateParameterGroupResponseTypeDef
 
@@ -848,7 +848,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 ## UpdateSubnetGroupResponseTypeDef
 

@@ -105,7 +105,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `channels`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
+- `channels`: `Sequence`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
   *(required)*
 - `profilingGroupName`: `str` *(required)*
 
@@ -131,7 +131,7 @@ Keyword-only arguments:
 - `profilingGroupName`: `str` *(required)*
 - `endTime`: `Union`\[`datetime`, `str`\]
 - `frameMetrics`:
-  `List`\[[FrameMetricTypeDef](./type_defs.md#framemetrictypedef)\]
+  `Sequence`\[[FrameMetricTypeDef](./type_defs.md#framemetrictypedef)\]
 - `period`: `str`
 - `startTime`: `Union`\[`datetime`, `str`\]
 - `targetResolution`:
@@ -171,7 +171,7 @@ Keyword-only arguments:
 
 - `profilingGroupName`: `str` *(required)*
 - `fleetInstanceId`: `str`
-- `metadata`: `Dict`\[[MetadataFieldType](./literals.md#metadatafieldtype),
+- `metadata`: `Mapping`\[[MetadataFieldType](./literals.md#metadatafieldtype),
   `str`\]
 
 Returns
@@ -197,7 +197,7 @@ Keyword-only arguments:
 - `agentOrchestrationConfig`:
   [AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef)
 - `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateProfilingGroupResponseTypeDef](./type_defs.md#createprofilinggroupresponsetypedef).
@@ -254,7 +254,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -501,7 +501,7 @@ Keyword-only arguments:
 
 - `actionGroup`: `Literal['agentPermissions']` (see
   [ActionGroupType](./literals.md#actiongrouptype)) *(required)*
-- `principals`: `List`\[`str`\] *(required)*
+- `principals`: `Sequence`\[`str`\] *(required)*
 - `profilingGroupName`: `str` *(required)*
 - `revisionId`: `str`
 
@@ -588,7 +588,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -607,7 +607,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

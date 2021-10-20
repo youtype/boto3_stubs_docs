@@ -145,6 +145,8 @@ from mypy_boto3_appsync.literals import ApiCacheStatusType, ...
 - [ResolverKindType](./literals.md#resolverkindtype)
 - [SchemaStatusType](./literals.md#schemastatustype)
 - [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 
@@ -209,6 +211,7 @@ from mypy_boto3_appsync.type_defs import AdditionalAuthenticationProviderTypeDef
 - [GetTypeResponseTypeDef](./type_defs.md#gettyperesponsetypedef)
 - [GraphqlApiTypeDef](./type_defs.md#graphqlapitypedef)
 - [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
+- [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 - [LambdaConflictHandlerConfigTypeDef](./type_defs.md#lambdaconflicthandlerconfigtypedef)
 - [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - [ListApiKeysRequestRequestTypeDef](./type_defs.md#listapikeysrequestrequesttypedef)
@@ -229,6 +232,7 @@ from mypy_boto3_appsync.type_defs import AdditionalAuthenticationProviderTypeDef
 - [ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef)
 - [LogConfigTypeDef](./type_defs.md#logconfigtypedef)
 - [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
+- [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
 - [RdsHttpEndpointConfigTypeDef](./type_defs.md#rdshttpendpointconfigtypedef)

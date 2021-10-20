@@ -291,6 +291,8 @@ from mypy_boto3_config.literals import AggregateConformancePackComplianceSummary
 - [ResourceValueTypeType](./literals.md#resourcevaluetypetype)
 - [SelectAggregateResourceConfigPaginatorName](./literals.md#selectaggregateresourceconfigpaginatorname)
 - [SelectResourceConfigPaginatorName](./literals.md#selectresourceconfigpaginatorname)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

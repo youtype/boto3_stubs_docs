@@ -38,7 +38,7 @@ Arguments for `DBClusterSnapshotAvailableWaiter.wait` method:
 - `DBClusterIdentifier`: `str`
 - `DBClusterSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
@@ -67,7 +67,7 @@ Arguments for `DBClusterSnapshotDeletedWaiter.wait` method:
 - `DBClusterIdentifier`: `str`
 - `DBClusterSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
@@ -93,7 +93,7 @@ Boto3 documentation:
 Arguments for `DBInstanceAvailableWaiter.wait` method:
 
 - `DBInstanceIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -117,7 +117,7 @@ Boto3 documentation:
 Arguments for `DBInstanceDeletedWaiter.wait` method:
 
 - `DBInstanceIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -143,7 +143,7 @@ Arguments for `DBSnapshotAvailableWaiter.wait` method:
 - `DBInstanceIdentifier`: `str`
 - `DBSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
@@ -172,7 +172,7 @@ Arguments for `DBSnapshotCompletedWaiter.wait` method:
 - `DBInstanceIdentifier`: `str`
 - `DBSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
@@ -201,7 +201,7 @@ Arguments for `DBSnapshotDeletedWaiter.wait` method:
 - `DBInstanceIdentifier`: `str`
 - `DBSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`

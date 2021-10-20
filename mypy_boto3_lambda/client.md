@@ -305,14 +305,14 @@ Keyword-only arguments:
 - `BisectBatchOnFunctionError`: `bool`
 - `MaximumRetryAttempts`: `int`
 - `TumblingWindowInSeconds`: `int`
-- `Topics`: `List`\[`str`\]
-- `Queues`: `List`\[`str`\]
+- `Topics`: `Sequence`\[`str`\]
+- `Queues`: `Sequence`\[`str`\]
 - `SourceAccessConfigurations`:
-  `List`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
+  `Sequence`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
 - `SelfManagedEventSource`:
   [SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef)
-- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
-  [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
+- `FunctionResponseTypes`: `Sequence`\[`Literal['ReportBatchItemFailures']`
+  (see [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
 Returns
 [EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
@@ -348,12 +348,14 @@ Keyword-only arguments:
 - `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `KMSKeyArn`: `str`
 - `TracingConfig`: [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `Layers`: `List`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `Layers`: `Sequence`\[`str`\]
 - `FileSystemConfigs`:
-  `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
+  `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 - `CodeSigningConfigArn`: `str`
+- `Architectures`:
+  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
 
 Returns
 [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
@@ -535,7 +537,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1024,6 +1026,7 @@ Keyword-only arguments:
 - `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
 - `Marker`: `str`
 - `MaxItems`: `int`
+- `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
 
 Returns
 [ListLayerVersionsResponseTypeDef](./type_defs.md#listlayerversionsresponsetypedef).
@@ -1031,7 +1034,7 @@ Returns
 ### list_layers
 
 Lists
-`Lambda layers <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+`Lambda layers <https://docs.aws.amazon.com/lambda/latest/dg/invocation- layers.html>`\_\_
 and shows information about the latest version of each.
 
 Type annotations for `boto3.client("lambda").list_layers` method.
@@ -1047,6 +1050,7 @@ Keyword-only arguments:
 - `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
 - `Marker`: `str`
 - `MaxItems`: `int`
+- `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
 
 Returns [ListLayersResponseTypeDef](./type_defs.md#listlayersresponsetypedef).
 
@@ -1135,8 +1139,10 @@ Keyword-only arguments:
   [LayerVersionContentInputTypeDef](./type_defs.md#layerversioncontentinputtypedef)
   *(required)*
 - `Description`: `str`
-- `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
+- `CompatibleRuntimes`: `Sequence`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
+- `CompatibleArchitectures`:
+  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
 
 Returns
 [PublishLayerVersionResponseTypeDef](./type_defs.md#publishlayerversionresponsetypedef).
@@ -1313,7 +1319,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -1331,7 +1337,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_alias
 
@@ -1412,10 +1418,10 @@ Keyword-only arguments:
 - `MaximumRetryAttempts`: `int`
 - `ParallelizationFactor`: `int`
 - `SourceAccessConfigurations`:
-  `List`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
+  `Sequence`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
 - `TumblingWindowInSeconds`: `int`
-- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
-  [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
+- `FunctionResponseTypes`: `Sequence`\[`Literal['ReportBatchItemFailures']`
+  (see [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
 Returns
 [EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
@@ -1443,6 +1449,8 @@ Keyword-only arguments:
 - `Publish`: `bool`
 - `DryRun`: `bool`
 - `RevisionId`: `str`
+- `Architectures`:
+  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
 
 Returns
 [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
@@ -1476,9 +1484,9 @@ Keyword-only arguments:
 - `KMSKeyArn`: `str`
 - `TracingConfig`: [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
 - `RevisionId`: `str`
-- `Layers`: `List`\[`str`\]
+- `Layers`: `Sequence`\[`str`\]
 - `FileSystemConfigs`:
-  `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
+  `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 
 Returns

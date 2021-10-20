@@ -248,7 +248,7 @@ Keyword-only arguments:
 - `RoleName`: `str`
 - `IamUserAccessToBilling`:
   [IAMUserAccessToBillingType](./literals.md#iamuseraccesstobillingtype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAccountResponseTypeDef](./type_defs.md#createaccountresponsetypedef).
@@ -274,7 +274,7 @@ Keyword-only arguments:
 - `RoleName`: `str`
 - `IamUserAccessToBilling`:
   [IAMUserAccessToBillingType](./literals.md#iamuseraccesstobillingtype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateGovCloudAccountResponseTypeDef](./type_defs.md#creategovcloudaccountresponsetypedef).
@@ -317,7 +317,7 @@ Keyword-only arguments:
 
 - `ParentId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateOrganizationalUnitResponseTypeDef](./type_defs.md#createorganizationalunitresponsetypedef).
@@ -341,7 +341,7 @@ Keyword-only arguments:
 - `Description`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Type`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
@@ -681,7 +681,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -706,7 +706,7 @@ Keyword-only arguments:
 - `Target`: [HandshakePartyTypeDef](./type_defs.md#handshakepartytypedef)
   *(required)*
 - `Notes`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [InviteAccountToOrganizationResponseTypeDef](./type_defs.md#inviteaccounttoorganizationresponsetypedef).
@@ -826,7 +826,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `States`:
-  `List`\[[CreateAccountStateType](./literals.md#createaccountstatetype)\]
+  `Sequence`\[[CreateAccountStateType](./literals.md#createaccountstatetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1147,7 +1147,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_resource
 
@@ -1164,7 +1164,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_organizational_unit
 

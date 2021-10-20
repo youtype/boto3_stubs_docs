@@ -101,10 +101,10 @@ Keyword-only arguments:
 - `changeType`: [ChangeTypeType](./literals.md#changetypetype) *(required)*
 - `sourceType`: `Literal['S3']` (see
   [SourceTypeType](./literals.md#sourcetypetype)) *(required)*
-- `sourceParams`: `Dict`\[`str`, `str`\] *(required)*
+- `sourceParams`: `Mapping`\[`str`, `str`\] *(required)*
 - `formatType`: [FormatTypeType](./literals.md#formattypetype)
-- `formatParams`: `Dict`\[`str`, `str`\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `formatParams`: `Mapping`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef).
@@ -122,7 +122,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

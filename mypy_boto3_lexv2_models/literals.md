@@ -8,15 +8,26 @@ type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 - [Literals for boto3 LexModelsV2 module](#literals-for-boto3-lexmodelsv2-module)
+  - [AggregatedUtterancesFilterNameType](#aggregatedutterancesfilternametype)
+  - [AggregatedUtterancesFilterOperatorType](#aggregatedutterancesfilteroperatortype)
+  - [AggregatedUtterancesSortAttributeType](#aggregatedutterancessortattributetype)
+  - [BotAliasAvailableWaiterName](#botaliasavailablewaitername)
   - [BotAliasStatusType](#botaliasstatustype)
+  - [BotAvailableWaiterName](#botavailablewaitername)
+  - [BotExportCompletedWaiterName](#botexportcompletedwaitername)
   - [BotFilterNameType](#botfilternametype)
   - [BotFilterOperatorType](#botfilteroperatortype)
+  - [BotImportCompletedWaiterName](#botimportcompletedwaitername)
+  - [BotLocaleBuiltWaiterName](#botlocalebuiltwaitername)
+  - [BotLocaleCreatedWaiterName](#botlocalecreatedwaitername)
+  - [BotLocaleExpressTestingAvailableWaiterName](#botlocaleexpresstestingavailablewaitername)
   - [BotLocaleFilterNameType](#botlocalefilternametype)
   - [BotLocaleFilterOperatorType](#botlocalefilteroperatortype)
   - [BotLocaleSortAttributeType](#botlocalesortattributetype)
   - [BotLocaleStatusType](#botlocalestatustype)
   - [BotSortAttributeType](#botsortattributetype)
   - [BotStatusType](#botstatustype)
+  - [BotVersionAvailableWaiterName](#botversionavailablewaitername)
   - [BotVersionSortAttributeType](#botversionsortattributetype)
   - [BuiltInIntentSortAttributeType](#builtinintentsortattributetype)
   - [BuiltInSlotTypeSortAttributeType](#builtinslottypesortattributetype)
@@ -44,6 +55,51 @@ type annotations stubs module
   - [SlotTypeSortAttributeType](#slottypesortattributetype)
   - [SlotValueResolutionStrategyType](#slotvalueresolutionstrategytype)
   - [SortOrderType](#sortordertype)
+  - [TimeDimensionType](#timedimensiontype)
+  - [ServiceName](#servicename)
+  - [WaiterName](#waitername)
+
+## AggregatedUtterancesFilterNameType
+
+```python
+from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType
+```
+
+Values:
+
+- `Utterance`
+
+## AggregatedUtterancesFilterOperatorType
+
+```python
+from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterOperatorType
+```
+
+Values:
+
+- `CO`
+- `EQ`
+
+## AggregatedUtterancesSortAttributeType
+
+```python
+from mypy_boto3_lexv2_models.literals import AggregatedUtterancesSortAttributeType
+```
+
+Values:
+
+- `HitCount`
+- `MissedCount`
+
+## BotAliasAvailableWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotAliasAvailableWaiterName
+```
+
+Values:
+
+- `bot_alias_available`
 
 ## BotAliasStatusType
 
@@ -57,6 +113,26 @@ Values:
 - `Creating`
 - `Deleting`
 - `Failed`
+
+## BotAvailableWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotAvailableWaiterName
+```
+
+Values:
+
+- `bot_available`
+
+## BotExportCompletedWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotExportCompletedWaiterName
+```
+
+Values:
+
+- `bot_export_completed`
 
 ## BotFilterNameType
 
@@ -78,6 +154,46 @@ Values:
 
 - `CO`
 - `EQ`
+
+## BotImportCompletedWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotImportCompletedWaiterName
+```
+
+Values:
+
+- `bot_import_completed`
+
+## BotLocaleBuiltWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotLocaleBuiltWaiterName
+```
+
+Values:
+
+- `bot_locale_built`
+
+## BotLocaleCreatedWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotLocaleCreatedWaiterName
+```
+
+Values:
+
+- `bot_locale_created`
+
+## BotLocaleExpressTestingAvailableWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotLocaleExpressTestingAvailableWaiterName
+```
+
+Values:
+
+- `bot_locale_express_testing_available`
 
 ## BotLocaleFilterNameType
 
@@ -152,6 +268,16 @@ Values:
 - `Importing`
 - `Inactive`
 - `Versioning`
+
+## BotVersionAvailableWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotVersionAvailableWaiterName
+```
+
+Values:
+
+- `bot_version_available`
 
 ## BotVersionSortAttributeType
 
@@ -442,3 +568,326 @@ Values:
 
 - `Ascending`
 - `Descending`
+
+## TimeDimensionType
+
+```python
+from mypy_boto3_lexv2_models.literals import TimeDimensionType
+```
+
+Values:
+
+- `Days`
+- `Hours`
+- `Weeks`
+
+## ServiceName
+
+```python
+from mypy_boto3_lexv2_models.literals import ServiceName
+```
+
+Values:
+
+- `accessanalyzer`
+- `account`
+- `acm`
+- `acm-pca`
+- `alexaforbusiness`
+- `amp`
+- `amplify`
+- `amplifybackend`
+- `apigateway`
+- `apigatewaymanagementapi`
+- `apigatewayv2`
+- `appconfig`
+- `appflow`
+- `appintegrations`
+- `application-autoscaling`
+- `application-insights`
+- `applicationcostprofiler`
+- `appmesh`
+- `apprunner`
+- `appstream`
+- `appsync`
+- `athena`
+- `auditmanager`
+- `autoscaling`
+- `autoscaling-plans`
+- `backup`
+- `batch`
+- `braket`
+- `budgets`
+- `ce`
+- `chime`
+- `chime-sdk-identity`
+- `chime-sdk-messaging`
+- `cloud9`
+- `cloudcontrol`
+- `clouddirectory`
+- `cloudformation`
+- `cloudfront`
+- `cloudhsm`
+- `cloudhsmv2`
+- `cloudsearch`
+- `cloudsearchdomain`
+- `cloudtrail`
+- `cloudwatch`
+- `codeartifact`
+- `codebuild`
+- `codecommit`
+- `codedeploy`
+- `codeguru-reviewer`
+- `codeguruprofiler`
+- `codepipeline`
+- `codestar`
+- `codestar-connections`
+- `codestar-notifications`
+- `cognito-identity`
+- `cognito-idp`
+- `cognito-sync`
+- `comprehend`
+- `comprehendmedical`
+- `compute-optimizer`
+- `config`
+- `connect`
+- `connect-contact-lens`
+- `connectparticipant`
+- `cur`
+- `customer-profiles`
+- `databrew`
+- `dataexchange`
+- `datapipeline`
+- `datasync`
+- `dax`
+- `detective`
+- `devicefarm`
+- `devops-guru`
+- `directconnect`
+- `discovery`
+- `dlm`
+- `dms`
+- `docdb`
+- `ds`
+- `dynamodb`
+- `dynamodbstreams`
+- `ebs`
+- `ec2`
+- `ec2-instance-connect`
+- `ecr`
+- `ecr-public`
+- `ecs`
+- `efs`
+- `eks`
+- `elastic-inference`
+- `elasticache`
+- `elasticbeanstalk`
+- `elastictranscoder`
+- `elb`
+- `elbv2`
+- `emr`
+- `emr-containers`
+- `es`
+- `events`
+- `finspace`
+- `finspace-data`
+- `firehose`
+- `fis`
+- `fms`
+- `forecast`
+- `forecastquery`
+- `frauddetector`
+- `fsx`
+- `gamelift`
+- `glacier`
+- `globalaccelerator`
+- `glue`
+- `grafana`
+- `greengrass`
+- `greengrassv2`
+- `groundstation`
+- `guardduty`
+- `health`
+- `healthlake`
+- `honeycode`
+- `iam`
+- `identitystore`
+- `imagebuilder`
+- `importexport`
+- `inspector`
+- `iot`
+- `iot-data`
+- `iot-jobs-data`
+- `iot1click-devices`
+- `iot1click-projects`
+- `iotanalytics`
+- `iotdeviceadvisor`
+- `iotevents`
+- `iotevents-data`
+- `iotfleethub`
+- `iotsecuretunneling`
+- `iotsitewise`
+- `iotthingsgraph`
+- `iotwireless`
+- `ivs`
+- `kafka`
+- `kafkaconnect`
+- `kendra`
+- `kinesis`
+- `kinesis-video-archived-media`
+- `kinesis-video-media`
+- `kinesis-video-signaling`
+- `kinesisanalytics`
+- `kinesisanalyticsv2`
+- `kinesisvideo`
+- `kms`
+- `lakeformation`
+- `lambda`
+- `lex-models`
+- `lex-runtime`
+- `lexv2-models`
+- `lexv2-runtime`
+- `license-manager`
+- `lightsail`
+- `location`
+- `logs`
+- `lookoutequipment`
+- `lookoutmetrics`
+- `lookoutvision`
+- `machinelearning`
+- `macie`
+- `macie2`
+- `managedblockchain`
+- `marketplace-catalog`
+- `marketplace-entitlement`
+- `marketplacecommerceanalytics`
+- `mediaconnect`
+- `mediaconvert`
+- `medialive`
+- `mediapackage`
+- `mediapackage-vod`
+- `mediastore`
+- `mediastore-data`
+- `mediatailor`
+- `memorydb`
+- `meteringmarketplace`
+- `mgh`
+- `mgn`
+- `migrationhub-config`
+- `mobile`
+- `mq`
+- `mturk`
+- `mwaa`
+- `neptune`
+- `network-firewall`
+- `networkmanager`
+- `nimble`
+- `opensearch`
+- `opsworks`
+- `opsworkscm`
+- `organizations`
+- `outposts`
+- `panorama`
+- `personalize`
+- `personalize-events`
+- `personalize-runtime`
+- `pi`
+- `pinpoint`
+- `pinpoint-email`
+- `pinpoint-sms-voice`
+- `polly`
+- `pricing`
+- `proton`
+- `qldb`
+- `qldb-session`
+- `quicksight`
+- `ram`
+- `rds`
+- `rds-data`
+- `redshift`
+- `redshift-data`
+- `rekognition`
+- `resource-groups`
+- `resourcegroupstaggingapi`
+- `robomaker`
+- `route53`
+- `route53-recovery-cluster`
+- `route53-recovery-control-config`
+- `route53-recovery-readiness`
+- `route53domains`
+- `route53resolver`
+- `s3`
+- `s3control`
+- `s3outposts`
+- `sagemaker`
+- `sagemaker-a2i-runtime`
+- `sagemaker-edge`
+- `sagemaker-featurestore-runtime`
+- `sagemaker-runtime`
+- `savingsplans`
+- `schemas`
+- `sdb`
+- `secretsmanager`
+- `securityhub`
+- `serverlessrepo`
+- `service-quotas`
+- `servicecatalog`
+- `servicecatalog-appregistry`
+- `servicediscovery`
+- `ses`
+- `sesv2`
+- `shield`
+- `signer`
+- `sms`
+- `sms-voice`
+- `snow-device-management`
+- `snowball`
+- `sns`
+- `sqs`
+- `ssm`
+- `ssm-contacts`
+- `ssm-incidents`
+- `sso`
+- `sso-admin`
+- `sso-oidc`
+- `stepfunctions`
+- `storagegateway`
+- `sts`
+- `support`
+- `swf`
+- `synthetics`
+- `textract`
+- `timestream-query`
+- `timestream-write`
+- `transcribe`
+- `transfer`
+- `translate`
+- `voice-id`
+- `waf`
+- `waf-regional`
+- `wafv2`
+- `wellarchitected`
+- `wisdom`
+- `workdocs`
+- `worklink`
+- `workmail`
+- `workmailmessageflow`
+- `workspaces`
+- `xray`
+
+## WaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import WaiterName
+```
+
+Values:
+
+- `bot_alias_available`
+- `bot_available`
+- `bot_export_completed`
+- `bot_import_completed`
+- `bot_locale_built`
+- `bot_locale_created`
+- `bot_locale_express_testing_available`
+- `bot_version_available`

@@ -67,10 +67,12 @@ from mypy_boto3_comprehend.client import ComprehendClient
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 - [list_document_classification_jobs](./client.md#list_document_classification_jobs)
+- [list_document_classifier_summaries](./client.md#list_document_classifier_summaries)
 - [list_document_classifiers](./client.md#list_document_classifiers)
 - [list_dominant_language_detection_jobs](./client.md#list_dominant_language_detection_jobs)
 - [list_endpoints](./client.md#list_endpoints)
 - [list_entities_detection_jobs](./client.md#list_entities_detection_jobs)
+- [list_entity_recognizer_summaries](./client.md#list_entity_recognizer_summaries)
 - [list_entity_recognizers](./client.md#list_entity_recognizers)
 - [list_events_detection_jobs](./client.md#list_events_detection_jobs)
 - [list_key_phrases_detection_jobs](./client.md#list_key_phrases_detection_jobs)
@@ -147,11 +149,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_comprehend.literals import DocumentClassifierDataFormatType, ...
+from mypy_boto3_comprehend.literals import AugmentedManifestsDocumentTypeFormatType, ...
 ```
 
+- [AugmentedManifestsDocumentTypeFormatType](./literals.md#augmentedmanifestsdocumenttypeformattype)
 - [DocumentClassifierDataFormatType](./literals.md#documentclassifierdataformattype)
 - [DocumentClassifierModeType](./literals.md#documentclassifiermodetype)
+- [DocumentReadActionType](./literals.md#documentreadactiontype)
+- [DocumentReadFeatureTypesType](./literals.md#documentreadfeaturetypestype)
+- [DocumentReadModeType](./literals.md#documentreadmodetype)
 - [EndpointStatusType](./literals.md#endpointstatustype)
 - [EntityRecognizerDataFormatType](./literals.md#entityrecognizerdataformattype)
 - [EntityTypeType](./literals.md#entitytypetype)
@@ -172,7 +178,10 @@ from mypy_boto3_comprehend.literals import DocumentClassifierDataFormatType, ...
 - [PiiEntitiesDetectionModeType](./literals.md#piientitiesdetectionmodetype)
 - [PiiEntityTypeType](./literals.md#piientitytypetype)
 - [SentimentTypeType](./literals.md#sentimenttypetype)
+- [SplitType](./literals.md#splittype)
 - [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 
@@ -258,7 +267,9 @@ from mypy_boto3_comprehend.type_defs import AugmentedManifestsListItemTypeDef, .
 - [DocumentClassifierInputDataConfigTypeDef](./type_defs.md#documentclassifierinputdataconfigtypedef)
 - [DocumentClassifierOutputDataConfigTypeDef](./type_defs.md#documentclassifieroutputdataconfigtypedef)
 - [DocumentClassifierPropertiesTypeDef](./type_defs.md#documentclassifierpropertiestypedef)
+- [DocumentClassifierSummaryTypeDef](./type_defs.md#documentclassifiersummarytypedef)
 - [DocumentLabelTypeDef](./type_defs.md#documentlabeltypedef)
+- [DocumentReaderConfigTypeDef](./type_defs.md#documentreaderconfigtypedef)
 - [DominantLanguageDetectionJobFilterTypeDef](./type_defs.md#dominantlanguagedetectionjobfiltertypedef)
 - [DominantLanguageDetectionJobPropertiesTypeDef](./type_defs.md#dominantlanguagedetectionjobpropertiestypedef)
 - [DominantLanguageTypeDef](./type_defs.md#dominantlanguagetypedef)
@@ -276,6 +287,7 @@ from mypy_boto3_comprehend.type_defs import AugmentedManifestsListItemTypeDef, .
 - [EntityRecognizerMetadataEntityTypesListItemTypeDef](./type_defs.md#entityrecognizermetadataentitytypeslistitemtypedef)
 - [EntityRecognizerMetadataTypeDef](./type_defs.md#entityrecognizermetadatatypedef)
 - [EntityRecognizerPropertiesTypeDef](./type_defs.md#entityrecognizerpropertiestypedef)
+- [EntityRecognizerSummaryTypeDef](./type_defs.md#entityrecognizersummarytypedef)
 - [EntityTypeDef](./type_defs.md#entitytypedef)
 - [EntityTypesEvaluationMetricsTypeDef](./type_defs.md#entitytypesevaluationmetricstypedef)
 - [EntityTypesListItemTypeDef](./type_defs.md#entitytypeslistitemtypedef)
@@ -287,6 +299,8 @@ from mypy_boto3_comprehend.type_defs import AugmentedManifestsListItemTypeDef, .
 - [KeyPhrasesDetectionJobPropertiesTypeDef](./type_defs.md#keyphrasesdetectionjobpropertiestypedef)
 - [ListDocumentClassificationJobsRequestRequestTypeDef](./type_defs.md#listdocumentclassificationjobsrequestrequesttypedef)
 - [ListDocumentClassificationJobsResponseTypeDef](./type_defs.md#listdocumentclassificationjobsresponsetypedef)
+- [ListDocumentClassifierSummariesRequestRequestTypeDef](./type_defs.md#listdocumentclassifiersummariesrequestrequesttypedef)
+- [ListDocumentClassifierSummariesResponseTypeDef](./type_defs.md#listdocumentclassifiersummariesresponsetypedef)
 - [ListDocumentClassifiersRequestRequestTypeDef](./type_defs.md#listdocumentclassifiersrequestrequesttypedef)
 - [ListDocumentClassifiersResponseTypeDef](./type_defs.md#listdocumentclassifiersresponsetypedef)
 - [ListDominantLanguageDetectionJobsRequestRequestTypeDef](./type_defs.md#listdominantlanguagedetectionjobsrequestrequesttypedef)
@@ -295,6 +309,8 @@ from mypy_boto3_comprehend.type_defs import AugmentedManifestsListItemTypeDef, .
 - [ListEndpointsResponseTypeDef](./type_defs.md#listendpointsresponsetypedef)
 - [ListEntitiesDetectionJobsRequestRequestTypeDef](./type_defs.md#listentitiesdetectionjobsrequestrequesttypedef)
 - [ListEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listentitiesdetectionjobsresponsetypedef)
+- [ListEntityRecognizerSummariesRequestRequestTypeDef](./type_defs.md#listentityrecognizersummariesrequestrequesttypedef)
+- [ListEntityRecognizerSummariesResponseTypeDef](./type_defs.md#listentityrecognizersummariesresponsetypedef)
 - [ListEntityRecognizersRequestRequestTypeDef](./type_defs.md#listentityrecognizersrequestrequesttypedef)
 - [ListEntityRecognizersResponseTypeDef](./type_defs.md#listentityrecognizersresponsetypedef)
 - [ListEventsDetectionJobsRequestRequestTypeDef](./type_defs.md#listeventsdetectionjobsrequestrequesttypedef)

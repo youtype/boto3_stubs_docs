@@ -15,6 +15,7 @@ pip install mypy-boto3-workmailmessageflow
   - [WorkMailMessageFlowClient](#workmailmessageflowclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## WorkMailMessageFlowClient
@@ -45,6 +46,18 @@ WorkMailMessageFlowClient [exceptions](./client.md#exceptions)
 - MessageFrozen
 - MessageRejected
 - ResourceNotFoundException
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_workmailmessageflow.literals import ServiceName, ...
+```
+
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

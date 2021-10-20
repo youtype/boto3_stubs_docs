@@ -115,6 +115,8 @@ from mypy_boto3_ivs.literals import ChannelLatencyModeType, ...
 - [RecordingConfigurationStateType](./literals.md#recordingconfigurationstatetype)
 - [StreamHealthType](./literals.md#streamhealthtype)
 - [StreamStateType](./literals.md#streamstatetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

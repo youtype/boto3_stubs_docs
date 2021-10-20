@@ -90,6 +90,8 @@ from mypy_boto3_resourcegroupstaggingapi.literals import ErrorCodeType, ...
 - [GetTagValuesPaginatorName](./literals.md#gettagvaluespaginatorname)
 - [GroupByAttributeType](./literals.md#groupbyattributetype)
 - [TargetIdTypeType](./literals.md#targetidtypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

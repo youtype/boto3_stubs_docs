@@ -77,6 +77,8 @@ from mypy_boto3_elastic_inference.literals import DescribeAcceleratorsPaginatorN
 
 - [DescribeAcceleratorsPaginatorName](./literals.md#describeacceleratorspaginatorname)
 - [LocationTypeType](./literals.md#locationtypetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

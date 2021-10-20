@@ -9,17 +9,21 @@ type annotations stubs module
 
 - [Literals for boto3 Pinpoint module](#literals-for-boto3-pinpoint-module)
   - [ActionType](#actiontype)
+  - [AlignmentType](#alignmenttype)
   - [AttributeTypeType](#attributetypetype)
+  - [ButtonActionType](#buttonactiontype)
   - [CampaignStatusType](#campaignstatustype)
   - [ChannelTypeType](#channeltypetype)
   - [DeliveryStatusType](#deliverystatustype)
   - [DimensionTypeType](#dimensiontypetype)
   - [DurationType](#durationtype)
+  - [EndpointTypesElementType](#endpointtypeselementtype)
   - [FilterTypeType](#filtertypetype)
   - [FormatType](#formattype)
   - [FrequencyType](#frequencytype)
   - [IncludeType](#includetype)
   - [JobStatusType](#jobstatustype)
+  - [LayoutType](#layouttype)
   - [MessageTypeType](#messagetypetype)
   - [ModeType](#modetype)
   - [OperatorType](#operatortype)
@@ -29,7 +33,7 @@ type annotations stubs module
   - [StateType](#statetype)
   - [TemplateTypeType](#templatetypetype)
   - [TypeType](#typetype)
-  - [\_\_EndpointTypesElementType](#__endpointtypeselementtype)
+  - [ServiceName](#servicename)
 
 ## ActionType
 
@@ -42,6 +46,18 @@ Values:
 - `DEEP_LINK`
 - `OPEN_APP`
 - `URL`
+
+## AlignmentType
+
+```python
+from mypy_boto3_pinpoint.literals import AlignmentType
+```
+
+Values:
+
+- `CENTER`
+- `LEFT`
+- `RIGHT`
 
 ## AttributeTypeType
 
@@ -58,6 +74,18 @@ Values:
 - `EXCLUSIVE`
 - `INCLUSIVE`
 - `ON`
+
+## ButtonActionType
+
+```python
+from mypy_boto3_pinpoint.literals import ButtonActionType
+```
+
+Values:
+
+- `CLOSE`
+- `DEEP_LINK`
+- `LINK`
 
 ## CampaignStatusType
 
@@ -92,6 +120,7 @@ Values:
 - `CUSTOM`
 - `EMAIL`
 - `GCM`
+- `IN_APP`
 - `PUSH`
 - `SMS`
 - `VOICE`
@@ -136,6 +165,28 @@ Values:
 - `DAY_7`
 - `HR_24`
 
+## EndpointTypesElementType
+
+```python
+from mypy_boto3_pinpoint.literals import EndpointTypesElementType
+```
+
+Values:
+
+- `ADM`
+- `APNS`
+- `APNS_SANDBOX`
+- `APNS_VOIP`
+- `APNS_VOIP_SANDBOX`
+- `BAIDU`
+- `CUSTOM`
+- `EMAIL`
+- `GCM`
+- `IN_APP`
+- `PUSH`
+- `SMS`
+- `VOICE`
+
 ## FilterTypeType
 
 ```python
@@ -169,6 +220,7 @@ Values:
 - `DAILY`
 - `EVENT`
 - `HOURLY`
+- `IN_APP_EVENT`
 - `MONTHLY`
 - `ONCE`
 - `WEEKLY`
@@ -202,6 +254,21 @@ Values:
 - `PENDING_JOB`
 - `PREPARING_FOR_INITIALIZATION`
 - `PROCESSING`
+
+## LayoutType
+
+```python
+from mypy_boto3_pinpoint.literals import LayoutType
+```
+
+Values:
+
+- `BOTTOM_BANNER`
+- `CAROUSEL`
+- `MIDDLE_BANNER`
+- `MOBILE_FEED`
+- `OVERLAYS`
+- `TOP_BANNER`
 
 ## MessageTypeType
 
@@ -294,6 +361,7 @@ from mypy_boto3_pinpoint.literals import TemplateTypeType
 Values:
 
 - `EMAIL`
+- `INAPP`
 - `PUSH`
 - `SMS`
 - `VOICE`
@@ -310,23 +378,296 @@ Values:
 - `ANY`
 - `NONE`
 
-## \_\_EndpointTypesElementType
+## ServiceName
 
 ```python
-from mypy_boto3_pinpoint.literals import __EndpointTypesElementType
+from mypy_boto3_pinpoint.literals import ServiceName
 ```
 
 Values:
 
-- `ADM`
-- `APNS`
-- `APNS_SANDBOX`
-- `APNS_VOIP`
-- `APNS_VOIP_SANDBOX`
-- `BAIDU`
-- `CUSTOM`
-- `EMAIL`
-- `GCM`
-- `PUSH`
-- `SMS`
-- `VOICE`
+- `accessanalyzer`
+- `account`
+- `acm`
+- `acm-pca`
+- `alexaforbusiness`
+- `amp`
+- `amplify`
+- `amplifybackend`
+- `apigateway`
+- `apigatewaymanagementapi`
+- `apigatewayv2`
+- `appconfig`
+- `appflow`
+- `appintegrations`
+- `application-autoscaling`
+- `application-insights`
+- `applicationcostprofiler`
+- `appmesh`
+- `apprunner`
+- `appstream`
+- `appsync`
+- `athena`
+- `auditmanager`
+- `autoscaling`
+- `autoscaling-plans`
+- `backup`
+- `batch`
+- `braket`
+- `budgets`
+- `ce`
+- `chime`
+- `chime-sdk-identity`
+- `chime-sdk-messaging`
+- `cloud9`
+- `cloudcontrol`
+- `clouddirectory`
+- `cloudformation`
+- `cloudfront`
+- `cloudhsm`
+- `cloudhsmv2`
+- `cloudsearch`
+- `cloudsearchdomain`
+- `cloudtrail`
+- `cloudwatch`
+- `codeartifact`
+- `codebuild`
+- `codecommit`
+- `codedeploy`
+- `codeguru-reviewer`
+- `codeguruprofiler`
+- `codepipeline`
+- `codestar`
+- `codestar-connections`
+- `codestar-notifications`
+- `cognito-identity`
+- `cognito-idp`
+- `cognito-sync`
+- `comprehend`
+- `comprehendmedical`
+- `compute-optimizer`
+- `config`
+- `connect`
+- `connect-contact-lens`
+- `connectparticipant`
+- `cur`
+- `customer-profiles`
+- `databrew`
+- `dataexchange`
+- `datapipeline`
+- `datasync`
+- `dax`
+- `detective`
+- `devicefarm`
+- `devops-guru`
+- `directconnect`
+- `discovery`
+- `dlm`
+- `dms`
+- `docdb`
+- `ds`
+- `dynamodb`
+- `dynamodbstreams`
+- `ebs`
+- `ec2`
+- `ec2-instance-connect`
+- `ecr`
+- `ecr-public`
+- `ecs`
+- `efs`
+- `eks`
+- `elastic-inference`
+- `elasticache`
+- `elasticbeanstalk`
+- `elastictranscoder`
+- `elb`
+- `elbv2`
+- `emr`
+- `emr-containers`
+- `es`
+- `events`
+- `finspace`
+- `finspace-data`
+- `firehose`
+- `fis`
+- `fms`
+- `forecast`
+- `forecastquery`
+- `frauddetector`
+- `fsx`
+- `gamelift`
+- `glacier`
+- `globalaccelerator`
+- `glue`
+- `grafana`
+- `greengrass`
+- `greengrassv2`
+- `groundstation`
+- `guardduty`
+- `health`
+- `healthlake`
+- `honeycode`
+- `iam`
+- `identitystore`
+- `imagebuilder`
+- `importexport`
+- `inspector`
+- `iot`
+- `iot-data`
+- `iot-jobs-data`
+- `iot1click-devices`
+- `iot1click-projects`
+- `iotanalytics`
+- `iotdeviceadvisor`
+- `iotevents`
+- `iotevents-data`
+- `iotfleethub`
+- `iotsecuretunneling`
+- `iotsitewise`
+- `iotthingsgraph`
+- `iotwireless`
+- `ivs`
+- `kafka`
+- `kafkaconnect`
+- `kendra`
+- `kinesis`
+- `kinesis-video-archived-media`
+- `kinesis-video-media`
+- `kinesis-video-signaling`
+- `kinesisanalytics`
+- `kinesisanalyticsv2`
+- `kinesisvideo`
+- `kms`
+- `lakeformation`
+- `lambda`
+- `lex-models`
+- `lex-runtime`
+- `lexv2-models`
+- `lexv2-runtime`
+- `license-manager`
+- `lightsail`
+- `location`
+- `logs`
+- `lookoutequipment`
+- `lookoutmetrics`
+- `lookoutvision`
+- `machinelearning`
+- `macie`
+- `macie2`
+- `managedblockchain`
+- `marketplace-catalog`
+- `marketplace-entitlement`
+- `marketplacecommerceanalytics`
+- `mediaconnect`
+- `mediaconvert`
+- `medialive`
+- `mediapackage`
+- `mediapackage-vod`
+- `mediastore`
+- `mediastore-data`
+- `mediatailor`
+- `memorydb`
+- `meteringmarketplace`
+- `mgh`
+- `mgn`
+- `migrationhub-config`
+- `mobile`
+- `mq`
+- `mturk`
+- `mwaa`
+- `neptune`
+- `network-firewall`
+- `networkmanager`
+- `nimble`
+- `opensearch`
+- `opsworks`
+- `opsworkscm`
+- `organizations`
+- `outposts`
+- `panorama`
+- `personalize`
+- `personalize-events`
+- `personalize-runtime`
+- `pi`
+- `pinpoint`
+- `pinpoint-email`
+- `pinpoint-sms-voice`
+- `polly`
+- `pricing`
+- `proton`
+- `qldb`
+- `qldb-session`
+- `quicksight`
+- `ram`
+- `rds`
+- `rds-data`
+- `redshift`
+- `redshift-data`
+- `rekognition`
+- `resource-groups`
+- `resourcegroupstaggingapi`
+- `robomaker`
+- `route53`
+- `route53-recovery-cluster`
+- `route53-recovery-control-config`
+- `route53-recovery-readiness`
+- `route53domains`
+- `route53resolver`
+- `s3`
+- `s3control`
+- `s3outposts`
+- `sagemaker`
+- `sagemaker-a2i-runtime`
+- `sagemaker-edge`
+- `sagemaker-featurestore-runtime`
+- `sagemaker-runtime`
+- `savingsplans`
+- `schemas`
+- `sdb`
+- `secretsmanager`
+- `securityhub`
+- `serverlessrepo`
+- `service-quotas`
+- `servicecatalog`
+- `servicecatalog-appregistry`
+- `servicediscovery`
+- `ses`
+- `sesv2`
+- `shield`
+- `signer`
+- `sms`
+- `sms-voice`
+- `snow-device-management`
+- `snowball`
+- `sns`
+- `sqs`
+- `ssm`
+- `ssm-contacts`
+- `ssm-incidents`
+- `sso`
+- `sso-admin`
+- `sso-oidc`
+- `stepfunctions`
+- `storagegateway`
+- `sts`
+- `support`
+- `swf`
+- `synthetics`
+- `textract`
+- `timestream-query`
+- `timestream-write`
+- `transcribe`
+- `transfer`
+- `translate`
+- `voice-id`
+- `waf`
+- `waf-regional`
+- `wafv2`
+- `wellarchitected`
+- `wisdom`
+- `workdocs`
+- `worklink`
+- `workmail`
+- `workmailmessageflow`
+- `workspaces`
+- `xray`

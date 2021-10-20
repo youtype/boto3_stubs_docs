@@ -121,7 +121,7 @@ from mypy_boto3_discovery.type_defs import AssociateConfigurationItemsToApplicat
 Required fields:
 
 - `applicationConfigurationId`: `str`
-- `configurationIds`: `List`\[`str`\]
+- `configurationIds`: `Sequence`\[`str`\]
 
 ## BatchDeleteImportDataErrorTypeDef
 
@@ -144,7 +144,7 @@ from mypy_boto3_discovery.type_defs import BatchDeleteImportDataRequestRequestTy
 
 Required fields:
 
-- `importTaskIds`: `List`\[`str`\]
+- `importTaskIds`: `Sequence`\[`str`\]
 
 ## BatchDeleteImportDataResponseTypeDef
 
@@ -227,8 +227,8 @@ from mypy_boto3_discovery.type_defs import CreateTagsRequestRequestTypeDef
 
 Required fields:
 
-- `configurationIds`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `configurationIds`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CustomerAgentInfoTypeDef
 
@@ -270,7 +270,7 @@ from mypy_boto3_discovery.type_defs import DeleteApplicationsRequestRequestTypeD
 
 Required fields:
 
-- `configurationIds`: `List`\[`str`\]
+- `configurationIds`: `Sequence`\[`str`\]
 
 ## DeleteTagsRequestRequestTypeDef
 
@@ -280,11 +280,11 @@ from mypy_boto3_discovery.type_defs import DeleteTagsRequestRequestTypeDef
 
 Required fields:
 
-- `configurationIds`: `List`\[`str`\]
+- `configurationIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DescribeAgentsRequestRequestTypeDef
 
@@ -294,8 +294,8 @@ from mypy_boto3_discovery.type_defs import DescribeAgentsRequestRequestTypeDef
 
 Optional fields:
 
-- `agentIds`: `List`\[`str`\]
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `agentIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -320,7 +320,7 @@ from mypy_boto3_discovery.type_defs import DescribeConfigurationsRequestRequestT
 
 Required fields:
 
-- `configurationIds`: `List`\[`str`\]
+- `configurationIds`: `Sequence`\[`str`\]
 
 ## DescribeConfigurationsResponseTypeDef
 
@@ -342,7 +342,7 @@ from mypy_boto3_discovery.type_defs import DescribeContinuousExportsRequestReque
 
 Optional fields:
 
-- `exportIds`: `List`\[`str`\]
+- `exportIds`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -368,7 +368,7 @@ from mypy_boto3_discovery.type_defs import DescribeExportConfigurationsRequestRe
 
 Optional fields:
 
-- `exportIds`: `List`\[`str`\]
+- `exportIds`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -394,9 +394,9 @@ from mypy_boto3_discovery.type_defs import DescribeExportTasksRequestRequestType
 
 Optional fields:
 
-- `exportIds`: `List`\[`str`\]
+- `exportIds`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
+  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -423,7 +423,7 @@ from mypy_boto3_discovery.type_defs import DescribeImportTasksRequestRequestType
 Optional fields:
 
 - `filters`:
-  `List`\[[ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef)\]
+  `Sequence`\[[ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -448,7 +448,7 @@ from mypy_boto3_discovery.type_defs import DescribeTagsRequestRequestTypeDef
 
 Optional fields:
 
-- `filters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `filters`: `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -475,7 +475,7 @@ from mypy_boto3_discovery.type_defs import DisassociateConfigurationItemsFromApp
 Required fields:
 
 - `applicationConfigurationId`: `str`
-- `configurationIds`: `List`\[`str`\]
+- `configurationIds`: `Sequence`\[`str`\]
 
 ## ExportConfigurationsResponseTypeDef
 
@@ -498,7 +498,7 @@ from mypy_boto3_discovery.type_defs import ExportFilterTypeDef
 Required fields:
 
 - `name`: `str`
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 - `condition`: `str`
 
 ## ExportInfoTypeDef
@@ -530,7 +530,7 @@ from mypy_boto3_discovery.type_defs import FilterTypeDef
 Required fields:
 
 - `name`: `str`
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 - `condition`: `str`
 
 ## GetDiscoverySummaryResponseTypeDef
@@ -561,7 +561,7 @@ from mypy_boto3_discovery.type_defs import ImportTaskFilterTypeDef
 Optional fields:
 
 - `name`: [ImportTaskFilterNameType](./literals.md#importtaskfilternametype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## ImportTaskTypeDef
 
@@ -598,11 +598,11 @@ Required fields:
 
 Optional fields:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `orderBy`:
-  `List`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
+  `Sequence`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
 
 ## ListConfigurationsResponseTypeDef
 
@@ -630,7 +630,7 @@ Required fields:
 Optional fields:
 
 - `portInformationNeeded`: `bool`
-- `neighborConfigurationIds`: `List`\[`str`\]
+- `neighborConfigurationIds`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -731,7 +731,7 @@ from mypy_boto3_discovery.type_defs import StartDataCollectionByAgentIdsRequestR
 
 Required fields:
 
-- `agentIds`: `List`\[`str`\]
+- `agentIds`: `Sequence`\[`str`\]
 
 ## StartDataCollectionByAgentIdsResponseTypeDef
 
@@ -755,9 +755,9 @@ from mypy_boto3_discovery.type_defs import StartExportTaskRequestRequestTypeDef
 Optional fields:
 
 - `exportDataFormat`:
-  `List`\[[ExportDataFormatType](./literals.md#exportdataformattype)\]
+  `Sequence`\[[ExportDataFormatType](./literals.md#exportdataformattype)\]
 - `filters`:
-  `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
+  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `startTime`: `Union`\[`datetime`, `str`\]
 - `endTime`: `Union`\[`datetime`, `str`\]
 
@@ -831,7 +831,7 @@ from mypy_boto3_discovery.type_defs import StopDataCollectionByAgentIdsRequestRe
 
 Required fields:
 
-- `agentIds`: `List`\[`str`\]
+- `agentIds`: `Sequence`\[`str`\]
 
 ## StopDataCollectionByAgentIdsResponseTypeDef
 
@@ -855,7 +855,7 @@ from mypy_boto3_discovery.type_defs import TagFilterTypeDef
 Required fields:
 
 - `name`: `str`
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## TagTypeDef
 

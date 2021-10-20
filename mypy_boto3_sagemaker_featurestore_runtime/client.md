@@ -87,7 +87,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Identifiers`:
-  `List`\[[BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef)\]
+  `Sequence`\[[BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef)\]
   *(required)*
 
 Returns
@@ -141,7 +141,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -164,7 +164,7 @@ Keyword-only arguments:
 
 - `FeatureGroupName`: `str` *(required)*
 - `RecordIdentifierValueAsString`: `str` *(required)*
-- `FeatureNames`: `List`\[`str`\]
+- `FeatureNames`: `Sequence`\[`str`\]
 
 Returns [GetRecordResponseTypeDef](./type_defs.md#getrecordresponsetypedef).
 
@@ -184,5 +184,6 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FeatureGroupName`: `str` *(required)*
-- `Record`: `List`\[[FeatureValueTypeDef](./type_defs.md#featurevaluetypedef)\]
+- `Record`:
+  `Sequence`\[[FeatureValueTypeDef](./type_defs.md#featurevaluetypedef)\]
   *(required)*

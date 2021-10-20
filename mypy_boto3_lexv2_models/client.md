@@ -36,6 +36,7 @@ type annotations stubs module
     - [delete_resource_policy_statement](#delete_resource_policy_statement)
     - [delete_slot](#delete_slot)
     - [delete_slot_type](#delete_slot_type)
+    - [delete_utterances](#delete_utterances)
     - [describe_bot](#describe_bot)
     - [describe_bot_alias](#describe_bot_alias)
     - [describe_bot_locale](#describe_bot_locale)
@@ -47,6 +48,7 @@ type annotations stubs module
     - [describe_slot](#describe_slot)
     - [describe_slot_type](#describe_slot_type)
     - [generate_presigned_url](#generate_presigned_url)
+    - [list_aggregated_utterances](#list_aggregated_utterances)
     - [list_bot_aliases](#list_bot_aliases)
     - [list_bot_locales](#list_bot_locales)
     - [list_bot_versions](#list_bot_versions)
@@ -70,6 +72,7 @@ type annotations stubs module
     - [update_resource_policy](#update_resource_policy)
     - [update_slot](#update_slot)
     - [update_slot_type](#update_slot_type)
+    - [get_waiter](#get_waiter)
 
 ## LexModelsV2Client
 
@@ -179,8 +182,8 @@ Keyword-only arguments:
   *(required)*
 - `idleSessionTTLInSeconds`: `int` *(required)*
 - `description`: `str`
-- `botTags`: `Dict`\[`str`, `str`\]
-- `testBotAliasTags`: `Dict`\[`str`, `str`\]
+- `botTags`: `Mapping`\[`str`, `str`\]
+- `testBotAliasTags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
 
@@ -202,13 +205,13 @@ Keyword-only arguments:
 - `botId`: `str` *(required)*
 - `description`: `str`
 - `botVersion`: `str`
-- `botAliasLocaleSettings`: `Dict`\[`str`,
+- `botAliasLocaleSettings`: `Mapping`\[`str`,
   [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
 - `conversationLogSettings`:
   [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
 - `sentimentAnalysisSettings`:
   [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateBotAliasResponseTypeDef](./type_defs.md#createbotaliasresponsetypedef).
@@ -252,7 +255,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `botId`: `str` *(required)*
-- `botVersionLocaleSpecification`: `Dict`\[`str`,
+- `botVersionLocaleSpecification`: `Mapping`\[`str`,
   [BotVersionLocaleDetailsTypeDef](./type_defs.md#botversionlocaledetailstypedef)\]
   *(required)*
 - `description`: `str`
@@ -306,7 +309,7 @@ Keyword-only arguments:
 - `description`: `str`
 - `parentIntentSignature`: `str`
 - `sampleUtterances`:
-  `List`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
+  `Sequence`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
 - `dialogCodeHook`:
   [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
 - `fulfillmentCodeHook`:
@@ -316,9 +319,9 @@ Keyword-only arguments:
 - `intentClosingSetting`:
   [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
 - `inputContexts`:
-  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
+  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
 - `outputContexts`:
-  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
+  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
 - `kendraConfiguration`:
   [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 
@@ -364,10 +367,11 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 - `statementId`: `str` *(required)*
 - `effect`: [EffectType](./literals.md#effecttype) *(required)*
-- `principal`: `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
+- `principal`:
+  `Sequence`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
   *(required)*
-- `action`: `List`\[`str`\] *(required)*
-- `condition`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `action`: `Sequence`\[`str`\] *(required)*
+- `condition`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
 - `expectedRevisionId`: `str`
 
 Returns
@@ -429,7 +433,7 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `description`: `str`
 - `slotTypeValues`:
-  `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
+  `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
 - `parentSlotTypeSignature`: `str`
 
 Returns
@@ -670,6 +674,26 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `skipResourceInUseCheck`: `bool`
 
+### delete_utterances
+
+Deletes stored utterances.
+
+Type annotations for `boto3.client("lexv2-models").delete_utterances` method.
+
+Boto3 documentation:
+[LexModelsV2.Client.delete_utterances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_utterances)
+
+Arguments mapping described in
+[DeleteUtterancesRequestRequestTypeDef](./type_defs.md#deleteutterancesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `botId`: `str` *(required)*
+- `localeId`: `str`
+- `sessionId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### describe_bot
 
 Provides metadata information about a bot.
@@ -889,11 +913,43 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+### list_aggregated_utterances
+
+Provides a list of utterances that users have sent to the bot.
+
+Type annotations for `boto3.client("lexv2-models").list_aggregated_utterances`
+method.
+
+Boto3 documentation:
+[LexModelsV2.Client.list_aggregated_utterances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_aggregated_utterances)
+
+Arguments mapping described in
+[ListAggregatedUtterancesRequestRequestTypeDef](./type_defs.md#listaggregatedutterancesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `botId`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `aggregationDuration`:
+  [UtteranceAggregationDurationTypeDef](./type_defs.md#utteranceaggregationdurationtypedef)
+  *(required)*
+- `botAliasId`: `str`
+- `botVersion`: `str`
+- `sortBy`:
+  [AggregatedUtterancesSortByTypeDef](./type_defs.md#aggregatedutterancessortbytypedef)
+- `filters`:
+  `Sequence`\[[AggregatedUtterancesFilterTypeDef](./type_defs.md#aggregatedutterancesfiltertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListAggregatedUtterancesResponseTypeDef](./type_defs.md#listaggregatedutterancesresponsetypedef).
 
 ### list_bot_aliases
 
@@ -934,7 +990,7 @@ Keyword-only arguments:
 - `botVersion`: `str` *(required)*
 - `sortBy`: [BotLocaleSortByTypeDef](./type_defs.md#botlocalesortbytypedef)
 - `filters`:
-  `List`\[[BotLocaleFilterTypeDef](./type_defs.md#botlocalefiltertypedef)\]
+  `Sequence`\[[BotLocaleFilterTypeDef](./type_defs.md#botlocalefiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -978,7 +1034,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `sortBy`: [BotSortByTypeDef](./type_defs.md#botsortbytypedef)
-- `filters`: `List`\[[BotFilterTypeDef](./type_defs.md#botfiltertypedef)\]
+- `filters`: `Sequence`\[[BotFilterTypeDef](./type_defs.md#botfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1051,7 +1107,7 @@ Keyword-only arguments:
 - `botVersion`: `str`
 - `sortBy`: [ExportSortByTypeDef](./type_defs.md#exportsortbytypedef)
 - `filters`:
-  `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
+  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1076,7 +1132,7 @@ Keyword-only arguments:
 - `botVersion`: `str`
 - `sortBy`: [ImportSortByTypeDef](./type_defs.md#importsortbytypedef)
 - `filters`:
-  `List`\[[ImportFilterTypeDef](./type_defs.md#importfiltertypedef)\]
+  `Sequence`\[[ImportFilterTypeDef](./type_defs.md#importfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1102,7 +1158,7 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `sortBy`: [IntentSortByTypeDef](./type_defs.md#intentsortbytypedef)
 - `filters`:
-  `List`\[[IntentFilterTypeDef](./type_defs.md#intentfiltertypedef)\]
+  `Sequence`\[[IntentFilterTypeDef](./type_defs.md#intentfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1128,7 +1184,7 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `sortBy`: [SlotTypeSortByTypeDef](./type_defs.md#slottypesortbytypedef)
 - `filters`:
-  `List`\[[SlotTypeFilterTypeDef](./type_defs.md#slottypefiltertypedef)\]
+  `Sequence`\[[SlotTypeFilterTypeDef](./type_defs.md#slottypefiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1154,7 +1210,8 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `intentId`: `str` *(required)*
 - `sortBy`: [SlotSortByTypeDef](./type_defs.md#slotsortbytypedef)
-- `filters`: `List`\[[SlotFilterTypeDef](./type_defs.md#slotfiltertypedef)\]
+- `filters`:
+  `Sequence`\[[SlotFilterTypeDef](./type_defs.md#slotfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1221,7 +1278,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1240,7 +1297,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1287,7 +1344,7 @@ Keyword-only arguments:
 - `botId`: `str` *(required)*
 - `description`: `str`
 - `botVersion`: `str`
-- `botAliasLocaleSettings`: `Dict`\[`str`,
+- `botAliasLocaleSettings`: `Mapping`\[`str`,
   [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
 - `conversationLogSettings`:
   [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
@@ -1363,21 +1420,21 @@ Keyword-only arguments:
 - `description`: `str`
 - `parentIntentSignature`: `str`
 - `sampleUtterances`:
-  `List`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
+  `Sequence`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
 - `dialogCodeHook`:
   [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
 - `fulfillmentCodeHook`:
   [FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef)
 - `slotPriorities`:
-  `List`\[[SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef)\]
+  `Sequence`\[[SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef)\]
 - `intentConfirmationSetting`:
   [IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef)
 - `intentClosingSetting`:
   [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
 - `inputContexts`:
-  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
+  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
 - `outputContexts`:
-  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
+  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
 - `kendraConfiguration`:
   [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 
@@ -1462,8 +1519,30 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `description`: `str`
 - `slotTypeValues`:
-  `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
+  `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
 - `parentSlotTypeSignature`: `str`
 
 Returns
 [UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef).
+
+### get_waiter
+
+Type annotations for `boto3.client("lexv2-models").get_waiter` method with
+overloads.
+
+- `client.get_waiter("bot_alias_available")` ->
+  [BotAliasAvailableWaiter](./waiters.md#botaliasavailablewaiter)
+- `client.get_waiter("bot_available")` ->
+  [BotAvailableWaiter](./waiters.md#botavailablewaiter)
+- `client.get_waiter("bot_export_completed")` ->
+  [BotExportCompletedWaiter](./waiters.md#botexportcompletedwaiter)
+- `client.get_waiter("bot_import_completed")` ->
+  [BotImportCompletedWaiter](./waiters.md#botimportcompletedwaiter)
+- `client.get_waiter("bot_locale_built")` ->
+  [BotLocaleBuiltWaiter](./waiters.md#botlocalebuiltwaiter)
+- `client.get_waiter("bot_locale_created")` ->
+  [BotLocaleCreatedWaiter](./waiters.md#botlocalecreatedwaiter)
+- `client.get_waiter("bot_locale_express_testing_available")` ->
+  [BotLocaleExpressTestingAvailableWaiter](./waiters.md#botlocaleexpresstestingavailablewaiter)
+- `client.get_waiter("bot_version_available")` ->
+  [BotVersionAvailableWaiter](./waiters.md#botversionavailablewaiter)

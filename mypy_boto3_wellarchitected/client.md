@@ -113,7 +113,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
-- `LensAliases`: `List`\[`str`\] *(required)*
+- `LensAliases`: `Sequence`\[`str`\] *(required)*
 
 ### can_paginate
 
@@ -170,17 +170,17 @@ Keyword-only arguments:
 - `Environment`:
   [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype) *(required)*
 - `ReviewOwner`: `str` *(required)*
-- `Lenses`: `List`\[`str`\] *(required)*
+- `Lenses`: `Sequence`\[`str`\] *(required)*
 - `ClientRequestToken`: `str` *(required)*
-- `AccountIds`: `List`\[`str`\]
-- `AwsRegions`: `List`\[`str`\]
-- `NonAwsRegions`: `List`\[`str`\]
-- `PillarPriorities`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
+- `AwsRegions`: `Sequence`\[`str`\]
+- `NonAwsRegions`: `Sequence`\[`str`\]
+- `PillarPriorities`: `Sequence`\[`str`\]
 - `ArchitecturalDesign`: `str`
 - `IndustryType`: `str`
 - `Industry`: `str`
 - `Notes`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateWorkloadOutputTypeDef](./type_defs.md#createworkloadoutputtypedef).
@@ -261,7 +261,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
-- `LensAliases`: `List`\[`str`\] *(required)*
+- `LensAliases`: `Sequence`\[`str`\] *(required)*
 
 ### generate_presigned_url
 
@@ -276,7 +276,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -284,7 +284,7 @@ Returns `str`.
 
 ### get_answer
 
-Get lens review.
+Get the answer to a specific question in a workload review.
 
 Type annotations for `boto3.client("wellarchitected").get_answer` method.
 
@@ -638,7 +638,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `WorkloadArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -657,7 +657,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `WorkloadArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -678,9 +678,12 @@ Keyword-only arguments:
 - `WorkloadId`: `str` *(required)*
 - `LensAlias`: `str` *(required)*
 - `QuestionId`: `str` *(required)*
-- `SelectedChoices`: `List`\[`str`\]
+- `SelectedChoices`: `Sequence`\[`str`\]
+- `ChoiceUpdates`: `Mapping`\[`str`,
+  [ChoiceUpdateTypeDef](./type_defs.md#choiceupdatetypedef)\]
 - `Notes`: `str`
 - `IsApplicable`: `bool`
+- `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
 
 Returns [UpdateAnswerOutputTypeDef](./type_defs.md#updateansweroutputtypedef).
 
@@ -702,7 +705,7 @@ Keyword-only arguments:
 - `WorkloadId`: `str` *(required)*
 - `LensAlias`: `str` *(required)*
 - `LensNotes`: `str`
-- `PillarNotes`: `Dict`\[`str`, `str`\]
+- `PillarNotes`: `Mapping`\[`str`, `str`\]
 
 Returns
 [UpdateLensReviewOutputTypeDef](./type_defs.md#updatelensreviewoutputtypedef).
@@ -749,10 +752,10 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Environment`:
   [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype)
-- `AccountIds`: `List`\[`str`\]
-- `AwsRegions`: `List`\[`str`\]
-- `NonAwsRegions`: `List`\[`str`\]
-- `PillarPriorities`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
+- `AwsRegions`: `Sequence`\[`str`\]
+- `NonAwsRegions`: `Sequence`\[`str`\]
+- `PillarPriorities`: `Sequence`\[`str`\]
 - `ArchitecturalDesign`: `str`
 - `ReviewOwner`: `str`
 - `IsReviewOwnerUpdateAcknowledged`: `bool`

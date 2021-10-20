@@ -87,6 +87,8 @@ from mypy_boto3_mobile.literals import ListBundlesPaginatorName, ...
 - [ListProjectsPaginatorName](./literals.md#listprojectspaginatorname)
 - [PlatformType](./literals.md#platformtype)
 - [ProjectStateType](./literals.md#projectstatetype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

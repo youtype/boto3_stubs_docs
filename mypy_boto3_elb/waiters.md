@@ -32,7 +32,7 @@ Boto3 documentation:
 Arguments for `AnyInstanceInServiceWaiter.wait` method:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceDeregisteredWaiter
@@ -54,7 +54,7 @@ Boto3 documentation:
 Arguments for `InstanceDeregisteredWaiter.wait` method:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceInServiceWaiter
@@ -76,5 +76,5 @@ Boto3 documentation:
 Arguments for `InstanceInServiceWaiter.wait` method:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

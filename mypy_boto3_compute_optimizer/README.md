@@ -44,6 +44,7 @@ from mypy_boto3_compute_optimizer.client import ComputeOptimizerClient
 - [get_ec2_instance_recommendations](./client.md#get_ec2_instance_recommendations)
 - [get_ec2_recommendation_projected_metrics](./client.md#get_ec2_recommendation_projected_metrics)
 - [get_enrollment_status](./client.md#get_enrollment_status)
+- [get_enrollment_statuses_for_organization](./client.md#get_enrollment_statuses_for_organization)
 - [get_lambda_function_recommendations](./client.md#get_lambda_function_recommendations)
 - [get_recommendation_summaries](./client.md#get_recommendation_summaries)
 - [update_enrollment_status](./client.md#update_enrollment_status)
@@ -70,12 +71,14 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_compute_optimizer.literals import EBSFilterNameType, ...
+from mypy_boto3_compute_optimizer.literals import CpuVendorArchitectureType, ...
 ```
 
+- [CpuVendorArchitectureType](./literals.md#cpuvendorarchitecturetype)
 - [EBSFilterNameType](./literals.md#ebsfilternametype)
 - [EBSFindingType](./literals.md#ebsfindingtype)
 - [EBSMetricNameType](./literals.md#ebsmetricnametype)
+- [EnrollmentFilterNameType](./literals.md#enrollmentfilternametype)
 - [ExportableAutoScalingGroupFieldType](./literals.md#exportableautoscalinggroupfieldtype)
 - [ExportableInstanceFieldType](./literals.md#exportableinstancefieldtype)
 - [ExportableLambdaFunctionFieldType](./literals.md#exportablelambdafunctionfieldtype)
@@ -100,6 +103,7 @@ from mypy_boto3_compute_optimizer.literals import EBSFilterNameType, ...
 - [RecommendationSourceTypeType](./literals.md#recommendationsourcetypetype)
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [StatusType](./literals.md#statustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 
@@ -109,9 +113,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_compute_optimizer.type_defs import AutoScalingGroupConfigurationTypeDef, ...
+from mypy_boto3_compute_optimizer.type_defs import AccountEnrollmentStatusTypeDef, ...
 ```
 
+- [AccountEnrollmentStatusTypeDef](./type_defs.md#accountenrollmentstatustypedef)
 - [AutoScalingGroupConfigurationTypeDef](./type_defs.md#autoscalinggroupconfigurationtypedef)
 - [AutoScalingGroupRecommendationOptionTypeDef](./type_defs.md#autoscalinggrouprecommendationoptiontypedef)
 - [AutoScalingGroupRecommendationTypeDef](./type_defs.md#autoscalinggrouprecommendationtypedef)
@@ -119,6 +124,7 @@ from mypy_boto3_compute_optimizer.type_defs import AutoScalingGroupConfiguration
 - [DescribeRecommendationExportJobsResponseTypeDef](./type_defs.md#describerecommendationexportjobsresponsetypedef)
 - [EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)
 - [EBSUtilizationMetricTypeDef](./type_defs.md#ebsutilizationmetrictypedef)
+- [EnrollmentFilterTypeDef](./type_defs.md#enrollmentfiltertypedef)
 - [ExportAutoScalingGroupRecommendationsRequestRequestTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsrequestrequesttypedef)
 - [ExportAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsresponsetypedef)
 - [ExportDestinationTypeDef](./type_defs.md#exportdestinationtypedef)
@@ -138,6 +144,8 @@ from mypy_boto3_compute_optimizer.type_defs import AutoScalingGroupConfiguration
 - [GetEC2RecommendationProjectedMetricsRequestRequestTypeDef](./type_defs.md#getec2recommendationprojectedmetricsrequestrequesttypedef)
 - [GetEC2RecommendationProjectedMetricsResponseTypeDef](./type_defs.md#getec2recommendationprojectedmetricsresponsetypedef)
 - [GetEnrollmentStatusResponseTypeDef](./type_defs.md#getenrollmentstatusresponsetypedef)
+- [GetEnrollmentStatusesForOrganizationRequestRequestTypeDef](./type_defs.md#getenrollmentstatusesfororganizationrequestrequesttypedef)
+- [GetEnrollmentStatusesForOrganizationResponseTypeDef](./type_defs.md#getenrollmentstatusesfororganizationresponsetypedef)
 - [GetLambdaFunctionRecommendationsRequestRequestTypeDef](./type_defs.md#getlambdafunctionrecommendationsrequestrequesttypedef)
 - [GetLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#getlambdafunctionrecommendationsresponsetypedef)
 - [GetRecommendationErrorTypeDef](./type_defs.md#getrecommendationerrortypedef)
@@ -154,6 +162,7 @@ from mypy_boto3_compute_optimizer.type_defs import AutoScalingGroupConfiguration
 - [ProjectedMetricTypeDef](./type_defs.md#projectedmetrictypedef)
 - [ReasonCodeSummaryTypeDef](./type_defs.md#reasoncodesummarytypedef)
 - [RecommendationExportJobTypeDef](./type_defs.md#recommendationexportjobtypedef)
+- [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 - [RecommendationSourceTypeDef](./type_defs.md#recommendationsourcetypedef)
 - [RecommendationSummaryTypeDef](./type_defs.md#recommendationsummarytypedef)
 - [RecommendedOptionProjectedMetricTypeDef](./type_defs.md#recommendedoptionprojectedmetrictypedef)

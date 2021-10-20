@@ -67,9 +67,11 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_firehose.literals import CompressionFormatType, ...
+from mypy_boto3_firehose.literals import AmazonopensearchserviceIndexRotationPeriodType, ...
 ```
 
+- [AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype)
+- [AmazonopensearchserviceS3BackupModeType](./literals.md#amazonopensearchservices3backupmodetype)
 - [CompressionFormatType](./literals.md#compressionformattype)
 - [ContentEncodingType](./literals.md#contentencodingtype)
 - [DeliveryStreamEncryptionStatusType](./literals.md#deliverystreamencryptionstatustype)
@@ -91,6 +93,7 @@ from mypy_boto3_firehose.literals import CompressionFormatType, ...
 - [RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype)
 - [S3BackupModeType](./literals.md#s3backupmodetype)
 - [SplunkS3BackupModeType](./literals.md#splunks3backupmodetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 
@@ -100,9 +103,14 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_firehose.type_defs import BufferingHintsTypeDef, ...
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceBufferingHintsTypeDef, ...
 ```
 
+- [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
+- [AmazonopensearchserviceDestinationConfigurationTypeDef](./type_defs.md#amazonopensearchservicedestinationconfigurationtypedef)
+- [AmazonopensearchserviceDestinationDescriptionTypeDef](./type_defs.md#amazonopensearchservicedestinationdescriptiontypedef)
+- [AmazonopensearchserviceDestinationUpdateTypeDef](./type_defs.md#amazonopensearchservicedestinationupdatetypedef)
+- [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
 - [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
 - [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 - [CopyCommandTypeDef](./type_defs.md#copycommandtypedef)
@@ -117,6 +125,7 @@ from mypy_boto3_firehose.type_defs import BufferingHintsTypeDef, ...
 - [DescribeDeliveryStreamOutputTypeDef](./type_defs.md#describedeliverystreamoutputtypedef)
 - [DeserializerTypeDef](./type_defs.md#deserializertypedef)
 - [DestinationDescriptionTypeDef](./type_defs.md#destinationdescriptiontypedef)
+- [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
 - [ElasticsearchBufferingHintsTypeDef](./type_defs.md#elasticsearchbufferinghintstypedef)
 - [ElasticsearchDestinationConfigurationTypeDef](./type_defs.md#elasticsearchdestinationconfigurationtypedef)
 - [ElasticsearchDestinationDescriptionTypeDef](./type_defs.md#elasticsearchdestinationdescriptiontypedef)
@@ -163,6 +172,7 @@ from mypy_boto3_firehose.type_defs import BufferingHintsTypeDef, ...
 - [RedshiftDestinationUpdateTypeDef](./type_defs.md#redshiftdestinationupdatetypedef)
 - [RedshiftRetryOptionsTypeDef](./type_defs.md#redshiftretryoptionstypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [RetryOptionsTypeDef](./type_defs.md#retryoptionstypedef)
 - [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
 - [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
 - [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)

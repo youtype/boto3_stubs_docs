@@ -20,18 +20,27 @@ type annotations stubs module
     - [create_data_repository_task](#create_data_repository_task)
     - [create_file_system](#create_file_system)
     - [create_file_system_from_backup](#create_file_system_from_backup)
+    - [create_storage_virtual_machine](#create_storage_virtual_machine)
+    - [create_volume](#create_volume)
+    - [create_volume_from_backup](#create_volume_from_backup)
     - [delete_backup](#delete_backup)
     - [delete_file_system](#delete_file_system)
+    - [delete_storage_virtual_machine](#delete_storage_virtual_machine)
+    - [delete_volume](#delete_volume)
     - [describe_backups](#describe_backups)
     - [describe_data_repository_tasks](#describe_data_repository_tasks)
     - [describe_file_system_aliases](#describe_file_system_aliases)
     - [describe_file_systems](#describe_file_systems)
+    - [describe_storage_virtual_machines](#describe_storage_virtual_machines)
+    - [describe_volumes](#describe_volumes)
     - [disassociate_file_system_aliases](#disassociate_file_system_aliases)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_file_system](#update_file_system)
+    - [update_storage_virtual_machine](#update_storage_virtual_machine)
+    - [update_volume](#update_volume)
     - [get_paginator](#get_paginator)
 
 ## FSxClient
@@ -86,12 +95,15 @@ Exceptions:
 - `Exceptions.InvalidRegion`
 - `Exceptions.InvalidSourceKmsKey`
 - `Exceptions.MissingFileSystemConfiguration`
+- `Exceptions.MissingVolumeConfiguration`
 - `Exceptions.NotServiceResourceError`
 - `Exceptions.ResourceDoesNotSupportTagging`
 - `Exceptions.ResourceNotFound`
 - `Exceptions.ServiceLimitExceeded`
 - `Exceptions.SourceBackupUnavailable`
+- `Exceptions.StorageVirtualMachineNotFound`
 - `Exceptions.UnsupportedOperation`
+- `Exceptions.VolumeNotFound`
 
 ## Methods
 
@@ -123,7 +135,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
-- `Aliases`: `List`\[`str`\] *(required)*
+- `Aliases`: `Sequence`\[`str`\] *(required)*
 - `ClientRequestToken`: `str`
 
 Returns
@@ -166,8 +178,9 @@ Returns
 
 ### copy_backup
 
-Copies an existing backup within the same AWS account to another Region (cross-
-Region copy) or within the same Region (in-Region copy).
+Copies an existing backup within the same Amazon Web Services account to
+another Amazon Web Services Region (cross-Region copy) or within the same
+Amazon Web Services Region (in-Region copy).
 
 Type annotations for `boto3.client("fsx").copy_backup` method.
 
@@ -184,13 +197,14 @@ Keyword-only arguments:
 - `SourceRegion`: `str`
 - `KmsKeyId`: `str`
 - `CopyTags`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CopyBackupResponseTypeDef](./type_defs.md#copybackupresponsetypedef).
 
 ### create_backup
 
-Creates a backup of an existing Amazon FSx file system.
+Creates a backup of an existing Amazon FSx for Windows File Server or Amazon
+FSx for Lustre file system, or of an Amazon FSx for NetApp ONTAP volume.
 
 Type annotations for `boto3.client("fsx").create_backup` method.
 
@@ -202,9 +216,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
+- `FileSystemId`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VolumeId`: `str`
 
 Returns
 [CreateBackupResponseTypeDef](./type_defs.md#createbackupresponsetypedef).
@@ -229,9 +244,9 @@ Keyword-only arguments:
 - `FileSystemId`: `str` *(required)*
 - `Report`: [CompletionReportTypeDef](./type_defs.md#completionreporttypedef)
   *(required)*
-- `Paths`: `List`\[`str`\]
+- `Paths`: `Sequence`\[`str`\]
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDataRepositoryTaskResponseTypeDef](./type_defs.md#createdatarepositorytaskresponsetypedef).
@@ -253,23 +268,27 @@ Keyword-only arguments:
 - `FileSystemType`: [FileSystemTypeType](./literals.md#filesystemtypetype)
   *(required)*
 - `StorageCapacity`: `int` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `ClientRequestToken`: `str`
 - `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `WindowsConfiguration`:
   [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
   [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
+- `OntapConfiguration`:
+  [CreateFileSystemOntapConfigurationTypeDef](./type_defs.md#createfilesystemontapconfigurationtypedef)
+- `FileSystemTypeVersion`: `str`
 
 Returns
 [CreateFileSystemResponseTypeDef](./type_defs.md#createfilesystemresponsetypedef).
 
 ### create_file_system_from_backup
 
-Creates a new Amazon FSx file system from an existing Amazon FSx backup.
+Creates a new Amazon FSx for Lustre or Amazon FSx for Windows File Server file
+system from an existing Amazon FSx backup.
 
 Type annotations for `boto3.client("fsx").create_file_system_from_backup`
 method.
@@ -283,19 +302,99 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `ClientRequestToken`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `WindowsConfiguration`:
   [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
   [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
 - `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
 - `KmsKeyId`: `str`
+- `FileSystemTypeVersion`: `str`
 
 Returns
 [CreateFileSystemFromBackupResponseTypeDef](./type_defs.md#createfilesystemfrombackupresponsetypedef).
+
+### create_storage_virtual_machine
+
+Creates a storage virtual machine (SVM) for an Amazon FSx for ONTAP file
+system.
+
+Type annotations for `boto3.client("fsx").create_storage_virtual_machine`
+method.
+
+Boto3 documentation:
+[FSx.Client.create_storage_virtual_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_storage_virtual_machine)
+
+Arguments mapping described in
+[CreateStorageVirtualMachineRequestRequestTypeDef](./type_defs.md#createstoragevirtualmachinerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `ActiveDirectoryConfiguration`:
+  [CreateSvmActiveDirectoryConfigurationTypeDef](./type_defs.md#createsvmactivedirectoryconfigurationtypedef)
+- `ClientRequestToken`: `str`
+- `SvmAdminPassword`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RootVolumeSecurityStyle`:
+  [StorageVirtualMachineRootVolumeSecurityStyleType](./literals.md#storagevirtualmachinerootvolumesecuritystyletype)
+
+Returns
+[CreateStorageVirtualMachineResponseTypeDef](./type_defs.md#createstoragevirtualmachineresponsetypedef).
+
+### create_volume
+
+Creates an Amazon FSx for NetApp ONTAP storage volume.
+
+Type annotations for `boto3.client("fsx").create_volume` method.
+
+Boto3 documentation:
+[FSx.Client.create_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_volume)
+
+Arguments mapping described in
+[CreateVolumeRequestRequestTypeDef](./type_defs.md#createvolumerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `VolumeType`: `Literal['ONTAP']` (see
+  [VolumeTypeType](./literals.md#volumetypetype)) *(required)*
+- `Name`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `OntapConfiguration`:
+  [CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateVolumeResponseTypeDef](./type_defs.md#createvolumeresponsetypedef).
+
+### create_volume_from_backup
+
+Creates a new Amazon FSx for NetApp ONTAP volume from an existing Amazon FSx
+volume backup.
+
+Type annotations for `boto3.client("fsx").create_volume_from_backup` method.
+
+Boto3 documentation:
+[FSx.Client.create_volume_from_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_volume_from_backup)
+
+Arguments mapping described in
+[CreateVolumeFromBackupRequestRequestTypeDef](./type_defs.md#createvolumefrombackuprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `BackupId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `OntapConfiguration`:
+  [CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateVolumeFromBackupResponseTypeDef](./type_defs.md#createvolumefrombackupresponsetypedef).
 
 ### delete_backup
 
@@ -341,6 +440,49 @@ Keyword-only arguments:
 Returns
 [DeleteFileSystemResponseTypeDef](./type_defs.md#deletefilesystemresponsetypedef).
 
+### delete_storage_virtual_machine
+
+Deletes an existing Amazon FSx for ONTAP storage virtual machine (SVM).
+
+Type annotations for `boto3.client("fsx").delete_storage_virtual_machine`
+method.
+
+Boto3 documentation:
+[FSx.Client.delete_storage_virtual_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_storage_virtual_machine)
+
+Arguments mapping described in
+[DeleteStorageVirtualMachineRequestRequestTypeDef](./type_defs.md#deletestoragevirtualmachinerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `StorageVirtualMachineId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+
+Returns
+[DeleteStorageVirtualMachineResponseTypeDef](./type_defs.md#deletestoragevirtualmachineresponsetypedef).
+
+### delete_volume
+
+Deletes an Amazon FSx for NetApp ONTAP volume.
+
+Type annotations for `boto3.client("fsx").delete_volume` method.
+
+Boto3 documentation:
+[FSx.Client.delete_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_volume)
+
+Arguments mapping described in
+[DeleteVolumeRequestRequestTypeDef](./type_defs.md#deletevolumerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `VolumeId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `OntapConfiguration`:
+  [DeleteVolumeOntapConfigurationTypeDef](./type_defs.md#deletevolumeontapconfigurationtypedef)
+
+Returns
+[DeleteVolumeResponseTypeDef](./type_defs.md#deletevolumeresponsetypedef).
+
 ### describe_backups
 
 Returns the description of specific Amazon FSx backups, if a `BackupIds` value
@@ -356,8 +498,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `BackupIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `BackupIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -381,9 +523,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TaskIds`: `List`\[`str`\]
+- `TaskIds`: `Sequence`\[`str`\]
 - `Filters`:
-  `List`\[[DataRepositoryTaskFilterTypeDef](./type_defs.md#datarepositorytaskfiltertypedef)\]
+  `Sequence`\[[DataRepositoryTaskFilterTypeDef](./type_defs.md#datarepositorytaskfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -428,12 +570,60 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `FileSystemIds`: `List`\[`str`\]
+- `FileSystemIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
 [DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef).
+
+### describe_storage_virtual_machines
+
+Describes one or more Amazon FSx for NetApp ONTAP storage virtual machines
+(SVMs).
+
+Type annotations for `boto3.client("fsx").describe_storage_virtual_machines`
+method.
+
+Boto3 documentation:
+[FSx.Client.describe_storage_virtual_machines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_storage_virtual_machines)
+
+Arguments mapping described in
+[DescribeStorageVirtualMachinesRequestRequestTypeDef](./type_defs.md#describestoragevirtualmachinesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `StorageVirtualMachineIds`: `Sequence`\[`str`\]
+- `Filters`:
+  `Sequence`\[[StorageVirtualMachineFilterTypeDef](./type_defs.md#storagevirtualmachinefiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeStorageVirtualMachinesResponseTypeDef](./type_defs.md#describestoragevirtualmachinesresponsetypedef).
+
+### describe_volumes
+
+Describes one or more Amazon FSx for NetApp ONTAP volumes.
+
+Type annotations for `boto3.client("fsx").describe_volumes` method.
+
+Boto3 documentation:
+[FSx.Client.describe_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_volumes)
+
+Arguments mapping described in
+[DescribeVolumesRequestRequestTypeDef](./type_defs.md#describevolumesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `VolumeIds`: `Sequence`\[`str`\]
+- `Filters`:
+  `Sequence`\[[VolumeFilterTypeDef](./type_defs.md#volumefiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeVolumesResponseTypeDef](./type_defs.md#describevolumesresponsetypedef).
 
 ### disassociate_file_system_aliases
 
@@ -452,7 +642,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
-- `Aliases`: `List`\[`str`\] *(required)*
+- `Aliases`: `Sequence`\[`str`\] *(required)*
 - `ClientRequestToken`: `str`
 
 Returns
@@ -470,7 +660,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -513,7 +703,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -532,7 +722,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -558,9 +748,57 @@ Keyword-only arguments:
   [UpdateFileSystemWindowsConfigurationTypeDef](./type_defs.md#updatefilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
   [UpdateFileSystemLustreConfigurationTypeDef](./type_defs.md#updatefilesystemlustreconfigurationtypedef)
+- `OntapConfiguration`:
+  [UpdateFileSystemOntapConfigurationTypeDef](./type_defs.md#updatefilesystemontapconfigurationtypedef)
 
 Returns
 [UpdateFileSystemResponseTypeDef](./type_defs.md#updatefilesystemresponsetypedef).
+
+### update_storage_virtual_machine
+
+Updates an Amazon FSx for ONTAP storage virtual machine (SVM).
+
+Type annotations for `boto3.client("fsx").update_storage_virtual_machine`
+method.
+
+Boto3 documentation:
+[FSx.Client.update_storage_virtual_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_storage_virtual_machine)
+
+Arguments mapping described in
+[UpdateStorageVirtualMachineRequestRequestTypeDef](./type_defs.md#updatestoragevirtualmachinerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `StorageVirtualMachineId`: `str` *(required)*
+- `ActiveDirectoryConfiguration`:
+  [UpdateSvmActiveDirectoryConfigurationTypeDef](./type_defs.md#updatesvmactivedirectoryconfigurationtypedef)
+- `ClientRequestToken`: `str`
+- `SvmAdminPassword`: `str`
+
+Returns
+[UpdateStorageVirtualMachineResponseTypeDef](./type_defs.md#updatestoragevirtualmachineresponsetypedef).
+
+### update_volume
+
+Updates an Amazon FSx for NetApp ONTAP volume's configuration.
+
+Type annotations for `boto3.client("fsx").update_volume` method.
+
+Boto3 documentation:
+[FSx.Client.update_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_volume)
+
+Arguments mapping described in
+[UpdateVolumeRequestRequestTypeDef](./type_defs.md#updatevolumerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `VolumeId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `OntapConfiguration`:
+  [UpdateOntapVolumeConfigurationTypeDef](./type_defs.md#updateontapvolumeconfigurationtypedef)
+
+Returns
+[UpdateVolumeResponseTypeDef](./type_defs.md#updatevolumeresponsetypedef).
 
 ### get_paginator
 

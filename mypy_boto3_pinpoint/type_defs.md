@@ -41,6 +41,7 @@ type annotations stubs module
   - [CampaignEmailMessageTypeDef](#campaignemailmessagetypedef)
   - [CampaignEventFilterTypeDef](#campaigneventfiltertypedef)
   - [CampaignHookTypeDef](#campaignhooktypedef)
+  - [CampaignInAppMessageTypeDef](#campaigninappmessagetypedef)
   - [CampaignLimitsTypeDef](#campaignlimitstypedef)
   - [CampaignResponseTypeDef](#campaignresponsetypedef)
   - [CampaignSmsMessageTypeDef](#campaignsmsmessagetypedef)
@@ -50,6 +51,7 @@ type annotations stubs module
   - [ChannelsResponseTypeDef](#channelsresponsetypedef)
   - [ConditionTypeDef](#conditiontypedef)
   - [ConditionalSplitActivityTypeDef](#conditionalsplitactivitytypedef)
+  - [ContactCenterActivityTypeDef](#contactcenteractivitytypedef)
   - [CreateAppRequestRequestTypeDef](#createapprequestrequesttypedef)
   - [CreateAppResponseTypeDef](#createappresponsetypedef)
   - [CreateApplicationRequestTypeDef](#createapplicationrequesttypedef)
@@ -61,6 +63,8 @@ type annotations stubs module
   - [CreateExportJobResponseTypeDef](#createexportjobresponsetypedef)
   - [CreateImportJobRequestRequestTypeDef](#createimportjobrequestrequesttypedef)
   - [CreateImportJobResponseTypeDef](#createimportjobresponsetypedef)
+  - [CreateInAppTemplateRequestRequestTypeDef](#createinapptemplaterequestrequesttypedef)
+  - [CreateInAppTemplateResponseTypeDef](#createinapptemplateresponsetypedef)
   - [CreateJourneyRequestRequestTypeDef](#createjourneyrequestrequesttypedef)
   - [CreateJourneyResponseTypeDef](#createjourneyresponsetypedef)
   - [CreatePushTemplateRequestRequestTypeDef](#createpushtemplaterequestrequesttypedef)
@@ -77,6 +81,7 @@ type annotations stubs module
   - [CreateVoiceTemplateResponseTypeDef](#createvoicetemplateresponsetypedef)
   - [CustomDeliveryConfigurationTypeDef](#customdeliveryconfigurationtypedef)
   - [CustomMessageActivityTypeDef](#custommessageactivitytypedef)
+  - [DefaultButtonConfigurationTypeDef](#defaultbuttonconfigurationtypedef)
   - [DefaultMessageTypeDef](#defaultmessagetypedef)
   - [DefaultPushNotificationMessageTypeDef](#defaultpushnotificationmessagetypedef)
   - [DefaultPushNotificationTemplateTypeDef](#defaultpushnotificationtemplatetypedef)
@@ -106,6 +111,8 @@ type annotations stubs module
   - [DeleteEventStreamResponseTypeDef](#deleteeventstreamresponsetypedef)
   - [DeleteGcmChannelRequestRequestTypeDef](#deletegcmchannelrequestrequesttypedef)
   - [DeleteGcmChannelResponseTypeDef](#deletegcmchannelresponsetypedef)
+  - [DeleteInAppTemplateRequestRequestTypeDef](#deleteinapptemplaterequestrequesttypedef)
+  - [DeleteInAppTemplateResponseTypeDef](#deleteinapptemplateresponsetypedef)
   - [DeleteJourneyRequestRequestTypeDef](#deletejourneyrequestrequesttypedef)
   - [DeleteJourneyResponseTypeDef](#deletejourneyresponsetypedef)
   - [DeletePushTemplateRequestRequestTypeDef](#deletepushtemplaterequestrequesttypedef)
@@ -213,6 +220,10 @@ type annotations stubs module
   - [GetImportJobResponseTypeDef](#getimportjobresponsetypedef)
   - [GetImportJobsRequestRequestTypeDef](#getimportjobsrequestrequesttypedef)
   - [GetImportJobsResponseTypeDef](#getimportjobsresponsetypedef)
+  - [GetInAppMessagesRequestRequestTypeDef](#getinappmessagesrequestrequesttypedef)
+  - [GetInAppMessagesResponseTypeDef](#getinappmessagesresponsetypedef)
+  - [GetInAppTemplateRequestRequestTypeDef](#getinapptemplaterequestrequesttypedef)
+  - [GetInAppTemplateResponseTypeDef](#getinapptemplateresponsetypedef)
   - [GetJourneyDateRangeKpiRequestRequestTypeDef](#getjourneydaterangekpirequestrequesttypedef)
   - [GetJourneyDateRangeKpiResponseTypeDef](#getjourneydaterangekpiresponsetypedef)
   - [GetJourneyExecutionActivityMetricsRequestRequestTypeDef](#getjourneyexecutionactivitymetricsrequestrequesttypedef)
@@ -254,7 +265,18 @@ type annotations stubs module
   - [ImportJobResourceTypeDef](#importjobresourcetypedef)
   - [ImportJobResponseTypeDef](#importjobresponsetypedef)
   - [ImportJobsResponseTypeDef](#importjobsresponsetypedef)
+  - [InAppCampaignScheduleTypeDef](#inappcampaignscheduletypedef)
+  - [InAppMessageBodyConfigTypeDef](#inappmessagebodyconfigtypedef)
+  - [InAppMessageButtonTypeDef](#inappmessagebuttontypedef)
+  - [InAppMessageCampaignTypeDef](#inappmessagecampaigntypedef)
+  - [InAppMessageContentTypeDef](#inappmessagecontenttypedef)
+  - [InAppMessageHeaderConfigTypeDef](#inappmessageheaderconfigtypedef)
+  - [InAppMessageTypeDef](#inappmessagetypedef)
+  - [InAppMessagesResponseTypeDef](#inappmessagesresponsetypedef)
+  - [InAppTemplateRequestTypeDef](#inapptemplaterequesttypedef)
+  - [InAppTemplateResponseTypeDef](#inapptemplateresponsetypedef)
   - [ItemResponseTypeDef](#itemresponsetypedef)
+  - [JourneyChannelSettingsTypeDef](#journeychannelsettingstypedef)
   - [JourneyCustomMessageTypeDef](#journeycustommessagetypedef)
   - [JourneyDateRangeKpiResponseTypeDef](#journeydaterangekpiresponsetypedef)
   - [JourneyEmailMessageTypeDef](#journeyemailmessagetypedef)
@@ -287,6 +309,7 @@ type annotations stubs module
   - [MultiConditionalSplitActivityTypeDef](#multiconditionalsplitactivitytypedef)
   - [NumberValidateRequestTypeDef](#numbervalidaterequesttypedef)
   - [NumberValidateResponseTypeDef](#numbervalidateresponsetypedef)
+  - [OverrideButtonConfigurationTypeDef](#overridebuttonconfigurationtypedef)
   - [PhoneNumberValidateRequestRequestTypeDef](#phonenumbervalidaterequestrequesttypedef)
   - [PhoneNumberValidateResponseTypeDef](#phonenumbervalidateresponsetypedef)
   - [PublicEndpointTypeDef](#publicendpointtypedef)
@@ -342,6 +365,7 @@ type annotations stubs module
   - [TagsModelTypeDef](#tagsmodeltypedef)
   - [TemplateActiveVersionRequestTypeDef](#templateactiveversionrequesttypedef)
   - [TemplateConfigurationTypeDef](#templateconfigurationtypedef)
+  - [TemplateCreateMessageBodyTypeDef](#templatecreatemessagebodytypedef)
   - [TemplateResponseTypeDef](#templateresponsetypedef)
   - [TemplateTypeDef](#templatetypedef)
   - [TemplateVersionResponseTypeDef](#templateversionresponsetypedef)
@@ -376,6 +400,8 @@ type annotations stubs module
   - [UpdateEndpointsBatchResponseTypeDef](#updateendpointsbatchresponsetypedef)
   - [UpdateGcmChannelRequestRequestTypeDef](#updategcmchannelrequestrequesttypedef)
   - [UpdateGcmChannelResponseTypeDef](#updategcmchannelresponsetypedef)
+  - [UpdateInAppTemplateRequestRequestTypeDef](#updateinapptemplaterequestrequesttypedef)
+  - [UpdateInAppTemplateResponseTypeDef](#updateinapptemplateresponsetypedef)
   - [UpdateJourneyRequestRequestTypeDef](#updatejourneyrequestrequesttypedef)
   - [UpdateJourneyResponseTypeDef](#updatejourneyresponsetypedef)
   - [UpdateJourneyStateRequestRequestTypeDef](#updatejourneystaterequestrequesttypedef)
@@ -459,7 +485,7 @@ Optional fields:
 - `Action`: [ActionType](./literals.md#actiontype)
 - `Body`: `str`
 - `ConsolidationKey`: `str`
-- `Data`: `Dict`\[`str`, `str`\]
+- `Data`: `Mapping`\[`str`, `str`\]
 - `ExpiresAfter`: `str`
 - `IconReference`: `str`
 - `ImageIconUrl`: `str`
@@ -469,7 +495,7 @@ Optional fields:
 - `SilentPush`: `bool`
 - `SmallImageIconUrl`: `str`
 - `Sound`: `str`
-- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `Title`: `str`
 - `Url`: `str`
 
@@ -528,14 +554,14 @@ Optional fields:
 - `Body`: `str`
 - `Category`: `str`
 - `CollapseId`: `str`
-- `Data`: `Dict`\[`str`, `str`\]
+- `Data`: `Mapping`\[`str`, `str`\]
 - `MediaUrl`: `str`
 - `PreferredAuthenticationMethod`: `str`
 - `Priority`: `str`
 - `RawContent`: `str`
 - `SilentPush`: `bool`
 - `Sound`: `str`
-- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `ThreadId`: `str`
 - `TimeToLive`: `int`
 - `Title`: `str`
@@ -744,6 +770,8 @@ Optional fields:
   [RandomSplitActivityTypeDef](./type_defs.md#randomsplitactivitytypedef)
 - `SMS`: [SMSMessageActivityTypeDef](./type_defs.md#smsmessageactivitytypedef)
 - `Wait`: [WaitActivityTypeDef](./type_defs.md#waitactivitytypedef)
+- `ContactCenter`:
+  [ContactCenterActivityTypeDef](./type_defs.md#contactcenteractivitytypedef)
 
 ## AddressConfigurationTypeDef
 
@@ -755,9 +783,9 @@ Optional fields:
 
 - `BodyOverride`: `str`
 - `ChannelType`: [ChannelTypeType](./literals.md#channeltypetype)
-- `Context`: `Dict`\[`str`, `str`\]
+- `Context`: `Mapping`\[`str`, `str`\]
 - `RawContent`: `str`
-- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `TitleOverride`: `str`
 
 ## AndroidPushNotificationTemplateTypeDef
@@ -849,7 +877,7 @@ from mypy_boto3_pinpoint.type_defs import AttributeDimensionTypeDef
 
 Required fields:
 
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -918,7 +946,7 @@ Optional fields:
 
 - `Action`: [ActionType](./literals.md#actiontype)
 - `Body`: `str`
-- `Data`: `Dict`\[`str`, `str`\]
+- `Data`: `Mapping`\[`str`, `str`\]
 - `IconReference`: `str`
 - `ImageIconUrl`: `str`
 - `ImageUrl`: `str`
@@ -926,7 +954,7 @@ Optional fields:
 - `SilentPush`: `bool`
 - `SmallImageIconUrl`: `str`
 - `Sound`: `str`
-- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `TimeToLive`: `int`
 - `Title`: `str`
 - `Url`: `str`
@@ -1006,6 +1034,20 @@ Optional fields:
 - `Mode`: [ModeType](./literals.md#modetype)
 - `WebUrl`: `str`
 
+## CampaignInAppMessageTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import CampaignInAppMessageTypeDef
+```
+
+Optional fields:
+
+- `Body`: `str`
+- `Content`:
+  `Sequence`\[[InAppMessageContentTypeDef](./type_defs.md#inappmessagecontenttypedef)\]
+- `CustomConfig`: `Mapping`\[`str`, `str`\]
+- `Layout`: [LayoutType](./literals.md#layouttype)
+
 ## CampaignLimitsTypeDef
 
 ```python
@@ -1018,6 +1060,7 @@ Optional fields:
 - `MaximumDuration`: `int`
 - `MessagesPerSecond`: `int`
 - `Total`: `int`
+- `Session`: `int`
 
 ## CampaignResponseTypeDef
 
@@ -1058,6 +1101,7 @@ Optional fields:
 - `TreatmentDescription`: `str`
 - `TreatmentName`: `str`
 - `Version`: `int`
+- `Priority`: `int`
 
 ## CampaignSmsMessageTypeDef
 
@@ -1137,7 +1181,7 @@ from mypy_boto3_pinpoint.type_defs import ConditionTypeDef
 Optional fields:
 
 - `Conditions`:
-  `List`\[[SimpleConditionTypeDef](./type_defs.md#simpleconditiontypedef)\]
+  `Sequence`\[[SimpleConditionTypeDef](./type_defs.md#simpleconditiontypedef)\]
 - `Operator`: [OperatorType](./literals.md#operatortype)
 
 ## ConditionalSplitActivityTypeDef
@@ -1152,6 +1196,16 @@ Optional fields:
 - `EvaluationWaitTime`: [WaitTimeTypeDef](./type_defs.md#waittimetypedef)
 - `FalseActivity`: `str`
 - `TrueActivity`: `str`
+
+## ContactCenterActivityTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import ContactCenterActivityTypeDef
+```
+
+Optional fields:
+
+- `NextActivity`: `str`
 
 ## CreateAppRequestRequestTypeDef
 
@@ -1189,7 +1243,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateCampaignRequestRequestTypeDef
 
@@ -1291,6 +1345,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateInAppTemplateRequestRequestTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import CreateInAppTemplateRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InAppTemplateRequest`:
+  [InAppTemplateRequestTypeDef](./type_defs.md#inapptemplaterequesttypedef)
+- `TemplateName`: `str`
+
+## CreateInAppTemplateResponseTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import CreateInAppTemplateResponseTypeDef
+```
+
+Required fields:
+
+- `TemplateCreateMessageBody`:
+  [TemplateCreateMessageBodyTypeDef](./type_defs.md#templatecreatemessagebodytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateJourneyRequestRequestTypeDef
 
 ```python
@@ -1378,7 +1457,7 @@ Required fields:
 
 Optional fields:
 
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 - `Description`: `str`
 - `Name`: `str`
 - `RecommendationProviderIdType`: `str`
@@ -1486,7 +1565,7 @@ Required fields:
 Optional fields:
 
 - `EndpointTypes`:
-  `List`\[[\_\_EndpointTypesElementType](./literals.md#__endpointtypeselementtype)\]
+  `Sequence`\[[EndpointTypesElementType](./literals.md#endpointtypeselementtype)\]
 
 ## CustomMessageActivityTypeDef
 
@@ -1498,12 +1577,30 @@ Optional fields:
 
 - `DeliveryUri`: `str`
 - `EndpointTypes`:
-  `List`\[[\_\_EndpointTypesElementType](./literals.md#__endpointtypeselementtype)\]
+  `Sequence`\[[EndpointTypesElementType](./literals.md#endpointtypeselementtype)\]
 - `MessageConfig`:
   [JourneyCustomMessageTypeDef](./type_defs.md#journeycustommessagetypedef)
 - `NextActivity`: `str`
 - `TemplateName`: `str`
 - `TemplateVersion`: `str`
+
+## DefaultButtonConfigurationTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import DefaultButtonConfigurationTypeDef
+```
+
+Required fields:
+
+- `ButtonAction`: [ButtonActionType](./literals.md#buttonactiontype)
+- `Text`: `str`
+
+Optional fields:
+
+- `BackgroundColor`: `str`
+- `BorderRadius`: `int`
+- `Link`: `str`
+- `TextColor`: `str`
 
 ## DefaultMessageTypeDef
 
@@ -1514,7 +1611,7 @@ from mypy_boto3_pinpoint.type_defs import DefaultMessageTypeDef
 Optional fields:
 
 - `Body`: `str`
-- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 ## DefaultPushNotificationMessageTypeDef
 
@@ -1526,9 +1623,9 @@ Optional fields:
 
 - `Action`: [ActionType](./literals.md#actiontype)
 - `Body`: `str`
-- `Data`: `Dict`\[`str`, `str`\]
+- `Data`: `Mapping`\[`str`, `str`\]
 - `SilentPush`: `bool`
-- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `Title`: `str`
 - `Url`: `str`
 
@@ -1849,6 +1946,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DeleteInAppTemplateRequestRequestTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import DeleteInAppTemplateRequestRequestTypeDef
+```
+
+Required fields:
+
+- `TemplateName`: `str`
+
+Optional fields:
+
+- `Version`: `str`
+
+## DeleteInAppTemplateResponseTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import DeleteInAppTemplateResponseTypeDef
+```
+
+Required fields:
+
+- `MessageBody`: [MessageBodyTypeDef](./type_defs.md#messagebodytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DeleteJourneyRequestRequestTypeDef
 
 ```python
@@ -2158,9 +2281,9 @@ Optional fields:
 - `FeedbackForwardingAddress`: `str`
 - `FromAddress`: `str`
 - `RawEmail`: [RawEmailTypeDef](./type_defs.md#rawemailtypedef)
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `SimpleEmail`: [SimpleEmailTypeDef](./type_defs.md#simpleemailtypedef)
-- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 ## EmailTemplateRequestTypeDef
 
@@ -2174,7 +2297,7 @@ Optional fields:
 - `HtmlPart`: `str`
 - `RecommenderId`: `str`
 - `Subject`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 - `TextPart`: `str`
 
@@ -2212,7 +2335,7 @@ from mypy_boto3_pinpoint.type_defs import EndpointBatchItemTypeDef
 Optional fields:
 
 - `Address`: `str`
-- `Attributes`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Attributes`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `ChannelType`: [ChannelTypeType](./literals.md#channeltypetype)
 - `Demographic`:
   [EndpointDemographicTypeDef](./type_defs.md#endpointdemographictypedef)
@@ -2220,7 +2343,7 @@ Optional fields:
 - `EndpointStatus`: `str`
 - `Id`: `str`
 - `Location`: [EndpointLocationTypeDef](./type_defs.md#endpointlocationtypedef)
-- `Metrics`: `Dict`\[`str`, `float`\]
+- `Metrics`: `Mapping`\[`str`, `float`\]
 - `OptOut`: `str`
 - `RequestId`: `str`
 - `User`: [EndpointUserTypeDef](./type_defs.md#endpointusertypedef)
@@ -2234,7 +2357,7 @@ from mypy_boto3_pinpoint.type_defs import EndpointBatchRequestTypeDef
 Required fields:
 
 - `Item`:
-  `List`\[[EndpointBatchItemTypeDef](./type_defs.md#endpointbatchitemtypedef)\]
+  `Sequence`\[[EndpointBatchItemTypeDef](./type_defs.md#endpointbatchitemtypedef)\]
 
 ## EndpointDemographicTypeDef
 
@@ -2306,14 +2429,14 @@ from mypy_boto3_pinpoint.type_defs import EndpointRequestTypeDef
 Optional fields:
 
 - `Address`: `str`
-- `Attributes`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Attributes`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `ChannelType`: [ChannelTypeType](./literals.md#channeltypetype)
 - `Demographic`:
   [EndpointDemographicTypeDef](./type_defs.md#endpointdemographictypedef)
 - `EffectiveDate`: `str`
 - `EndpointStatus`: `str`
 - `Location`: [EndpointLocationTypeDef](./type_defs.md#endpointlocationtypedef)
-- `Metrics`: `Dict`\[`str`, `float`\]
+- `Metrics`: `Mapping`\[`str`, `float`\]
 - `OptOut`: `str`
 - `RequestId`: `str`
 - `User`: [EndpointUserTypeDef](./type_defs.md#endpointusertypedef)
@@ -2352,9 +2475,9 @@ from mypy_boto3_pinpoint.type_defs import EndpointSendConfigurationTypeDef
 Optional fields:
 
 - `BodyOverride`: `str`
-- `Context`: `Dict`\[`str`, `str`\]
+- `Context`: `Mapping`\[`str`, `str`\]
 - `RawContent`: `str`
-- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `TitleOverride`: `str`
 
 ## EndpointUserTypeDef
@@ -2398,10 +2521,10 @@ from mypy_boto3_pinpoint.type_defs import EventDimensionsTypeDef
 
 Optional fields:
 
-- `Attributes`: `Dict`\[`str`,
+- `Attributes`: `Mapping`\[`str`,
   [AttributeDimensionTypeDef](./type_defs.md#attributedimensiontypedef)\]
 - `EventType`: [SetDimensionTypeDef](./type_defs.md#setdimensiontypedef)
-- `Metrics`: `Dict`\[`str`,
+- `Metrics`: `Mapping`\[`str`,
   [MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 
 ## EventFilterTypeDef
@@ -2471,9 +2594,9 @@ Optional fields:
 - `AppPackageName`: `str`
 - `AppTitle`: `str`
 - `AppVersionCode`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 - `ClientSdkVersion`: `str`
-- `Metrics`: `Dict`\[`str`, `float`\]
+- `Metrics`: `Mapping`\[`str`, `float`\]
 - `SdkName`: `str`
 - `Session`: [SessionTypeDef](./type_defs.md#sessiontypedef)
 
@@ -2486,7 +2609,7 @@ from mypy_boto3_pinpoint.type_defs import EventsBatchTypeDef
 Required fields:
 
 - `Endpoint`: [PublicEndpointTypeDef](./type_defs.md#publicendpointtypedef)
-- `Events`: `Dict`\[`str`, [EventTypeDef](./type_defs.md#eventtypedef)\]
+- `Events`: `Mapping`\[`str`, [EventTypeDef](./type_defs.md#eventtypedef)\]
 
 ## EventsRequestTypeDef
 
@@ -2496,7 +2619,7 @@ from mypy_boto3_pinpoint.type_defs import EventsRequestTypeDef
 
 Required fields:
 
-- `BatchItem`: `Dict`\[`str`,
+- `BatchItem`: `Mapping`\[`str`,
   [EventsBatchTypeDef](./type_defs.md#eventsbatchtypedef)\]
 
 ## EventsResponseTypeDef
@@ -2631,7 +2754,7 @@ Optional fields:
 - `Action`: [ActionType](./literals.md#actiontype)
 - `Body`: `str`
 - `CollapseKey`: `str`
-- `Data`: `Dict`\[`str`, `str`\]
+- `Data`: `Mapping`\[`str`, `str`\]
 - `IconReference`: `str`
 - `ImageIconUrl`: `str`
 - `ImageUrl`: `str`
@@ -2641,7 +2764,7 @@ Optional fields:
 - `SilentPush`: `bool`
 - `SmallImageIconUrl`: `str`
 - `Sound`: `str`
-- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `TimeToLive`: `int`
 - `Title`: `str`
 - `Url`: `str`
@@ -3323,6 +3446,57 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetInAppMessagesRequestRequestTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import GetInAppMessagesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `EndpointId`: `str`
+
+## GetInAppMessagesResponseTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import GetInAppMessagesResponseTypeDef
+```
+
+Required fields:
+
+- `InAppMessagesResponse`:
+  [InAppMessagesResponseTypeDef](./type_defs.md#inappmessagesresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetInAppTemplateRequestRequestTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import GetInAppTemplateRequestRequestTypeDef
+```
+
+Required fields:
+
+- `TemplateName`: `str`
+
+Optional fields:
+
+- `Version`: `str`
+
+## GetInAppTemplateResponseTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import GetInAppTemplateResponseTypeDef
+```
+
+Required fields:
+
+- `InAppTemplateResponse`:
+  [InAppTemplateResponseTypeDef](./type_defs.md#inapptemplateresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetJourneyDateRangeKpiRequestRequestTypeDef
 
 ```python
@@ -3895,6 +4069,160 @@ Optional fields:
 
 - `NextToken`: `str`
 
+## InAppCampaignScheduleTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import InAppCampaignScheduleTypeDef
+```
+
+Optional fields:
+
+- `EndDate`: `str`
+- `EventFilter`:
+  [CampaignEventFilterTypeDef](./type_defs.md#campaigneventfiltertypedef)
+- `QuietTime`: [QuietTimeTypeDef](./type_defs.md#quiettimetypedef)
+
+## InAppMessageBodyConfigTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import InAppMessageBodyConfigTypeDef
+```
+
+Required fields:
+
+- `Alignment`: [AlignmentType](./literals.md#alignmenttype)
+- `Body`: `str`
+- `TextColor`: `str`
+
+## InAppMessageButtonTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import InAppMessageButtonTypeDef
+```
+
+Optional fields:
+
+- `Android`:
+  [OverrideButtonConfigurationTypeDef](./type_defs.md#overridebuttonconfigurationtypedef)
+- `DefaultConfig`:
+  [DefaultButtonConfigurationTypeDef](./type_defs.md#defaultbuttonconfigurationtypedef)
+- `IOS`:
+  [OverrideButtonConfigurationTypeDef](./type_defs.md#overridebuttonconfigurationtypedef)
+- `Web`:
+  [OverrideButtonConfigurationTypeDef](./type_defs.md#overridebuttonconfigurationtypedef)
+
+## InAppMessageCampaignTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import InAppMessageCampaignTypeDef
+```
+
+Optional fields:
+
+- `CampaignId`: `str`
+- `DailyCap`: `int`
+- `InAppMessage`: [InAppMessageTypeDef](./type_defs.md#inappmessagetypedef)
+- `Priority`: `int`
+- `Schedule`:
+  [InAppCampaignScheduleTypeDef](./type_defs.md#inappcampaignscheduletypedef)
+- `SessionCap`: `int`
+- `TotalCap`: `int`
+- `TreatmentId`: `str`
+
+## InAppMessageContentTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import InAppMessageContentTypeDef
+```
+
+Optional fields:
+
+- `BackgroundColor`: `str`
+- `BodyConfig`:
+  [InAppMessageBodyConfigTypeDef](./type_defs.md#inappmessagebodyconfigtypedef)
+- `HeaderConfig`:
+  [InAppMessageHeaderConfigTypeDef](./type_defs.md#inappmessageheaderconfigtypedef)
+- `ImageUrl`: `str`
+- `PrimaryBtn`:
+  [InAppMessageButtonTypeDef](./type_defs.md#inappmessagebuttontypedef)
+- `SecondaryBtn`:
+  [InAppMessageButtonTypeDef](./type_defs.md#inappmessagebuttontypedef)
+
+## InAppMessageHeaderConfigTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import InAppMessageHeaderConfigTypeDef
+```
+
+Required fields:
+
+- `Alignment`: [AlignmentType](./literals.md#alignmenttype)
+- `Header`: `str`
+- `TextColor`: `str`
+
+## InAppMessageTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import InAppMessageTypeDef
+```
+
+Optional fields:
+
+- `Content`:
+  `List`\[[InAppMessageContentTypeDef](./type_defs.md#inappmessagecontenttypedef)\]
+- `CustomConfig`: `Dict`\[`str`, `str`\]
+- `Layout`: [LayoutType](./literals.md#layouttype)
+
+## InAppMessagesResponseTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import InAppMessagesResponseTypeDef
+```
+
+Optional fields:
+
+- `InAppMessageCampaigns`:
+  `List`\[[InAppMessageCampaignTypeDef](./type_defs.md#inappmessagecampaigntypedef)\]
+
+## InAppTemplateRequestTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import InAppTemplateRequestTypeDef
+```
+
+Optional fields:
+
+- `Content`:
+  `Sequence`\[[InAppMessageContentTypeDef](./type_defs.md#inappmessagecontenttypedef)\]
+- `CustomConfig`: `Mapping`\[`str`, `str`\]
+- `Layout`: [LayoutType](./literals.md#layouttype)
+- `tags`: `Mapping`\[`str`, `str`\]
+- `TemplateDescription`: `str`
+
+## InAppTemplateResponseTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import InAppTemplateResponseTypeDef
+```
+
+Required fields:
+
+- `CreationDate`: `str`
+- `LastModifiedDate`: `str`
+- `TemplateName`: `str`
+- `TemplateType`: [TemplateTypeType](./literals.md#templatetypetype)
+
+Optional fields:
+
+- `Arn`: `str`
+- `Content`:
+  `List`\[[InAppMessageContentTypeDef](./type_defs.md#inappmessagecontenttypedef)\]
+- `CustomConfig`: `Dict`\[`str`, `str`\]
+- `Layout`: [LayoutType](./literals.md#layouttype)
+- `tags`: `Dict`\[`str`, `str`\]
+- `TemplateDescription`: `str`
+- `Version`: `str`
+
 ## ItemResponseTypeDef
 
 ```python
@@ -3907,6 +4235,17 @@ Optional fields:
   [EndpointItemResponseTypeDef](./type_defs.md#endpointitemresponsetypedef)
 - `EventsItemResponse`: `Dict`\[`str`,
   [EventItemResponseTypeDef](./type_defs.md#eventitemresponsetypedef)\]
+
+## JourneyChannelSettingsTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import JourneyChannelSettingsTypeDef
+```
+
+Optional fields:
+
+- `ConnectCampaignArn`: `str`
+- `ConnectCampaignExecutionRoleArn`: `str`
 
 ## JourneyCustomMessageTypeDef
 
@@ -4028,6 +4367,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `WaitForQuietTime`: `bool`
 - `RefreshOnSegmentUpdate`: `bool`
+- `JourneyChannelSettings`:
+  [JourneyChannelSettingsTypeDef](./type_defs.md#journeychannelsettingstypedef)
 
 ## JourneySMSMessageTypeDef
 
@@ -4230,6 +4571,8 @@ Optional fields:
 - `GCMMessage`: [MessageTypeDef](./type_defs.md#messagetypedef)
 - `SMSMessage`:
   [CampaignSmsMessageTypeDef](./type_defs.md#campaignsmsmessagetypedef)
+- `InAppMessage`:
+  [CampaignInAppMessageTypeDef](./type_defs.md#campaigninappmessagetypedef)
 
 ## MessageRequestTypeDef
 
@@ -4244,10 +4587,10 @@ Required fields:
 
 Optional fields:
 
-- `Addresses`: `Dict`\[`str`,
+- `Addresses`: `Mapping`\[`str`,
   [AddressConfigurationTypeDef](./type_defs.md#addressconfigurationtypedef)\]
-- `Context`: `Dict`\[`str`, `str`\]
-- `Endpoints`: `Dict`\[`str`,
+- `Context`: `Mapping`\[`str`, `str`\]
+- `Endpoints`: `Mapping`\[`str`,
   [EndpointSendConfigurationTypeDef](./type_defs.md#endpointsendconfigurationtypedef)\]
 - `TemplateConfiguration`:
   [TemplateConfigurationTypeDef](./type_defs.md#templateconfigurationtypedef)
@@ -4340,7 +4683,7 @@ from mypy_boto3_pinpoint.type_defs import MultiConditionalSplitActivityTypeDef
 Optional fields:
 
 - `Branches`:
-  `List`\[[MultiConditionalBranchTypeDef](./type_defs.md#multiconditionalbranchtypedef)\]
+  `Sequence`\[[MultiConditionalBranchTypeDef](./type_defs.md#multiconditionalbranchtypedef)\]
 - `DefaultActivity`: `str`
 - `EvaluationWaitTime`: [WaitTimeTypeDef](./type_defs.md#waittimetypedef)
 
@@ -4378,6 +4721,20 @@ Optional fields:
 - `Timezone`: `str`
 - `ZipCode`: `str`
 
+## OverrideButtonConfigurationTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import OverrideButtonConfigurationTypeDef
+```
+
+Required fields:
+
+- `ButtonAction`: [ButtonActionType](./literals.md#buttonactiontype)
+
+Optional fields:
+
+- `Link`: `str`
+
 ## PhoneNumberValidateRequestRequestTypeDef
 
 ```python
@@ -4411,14 +4768,14 @@ from mypy_boto3_pinpoint.type_defs import PublicEndpointTypeDef
 Optional fields:
 
 - `Address`: `str`
-- `Attributes`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Attributes`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `ChannelType`: [ChannelTypeType](./literals.md#channeltypetype)
 - `Demographic`:
   [EndpointDemographicTypeDef](./type_defs.md#endpointdemographictypedef)
 - `EffectiveDate`: `str`
 - `EndpointStatus`: `str`
 - `Location`: [EndpointLocationTypeDef](./type_defs.md#endpointlocationtypedef)
-- `Metrics`: `Dict`\[`str`, `float`\]
+- `Metrics`: `Mapping`\[`str`, `float`\]
 - `OptOut`: `str`
 - `RequestId`: `str`
 - `User`: [EndpointUserTypeDef](./type_defs.md#endpointusertypedef)
@@ -4457,7 +4814,7 @@ Optional fields:
 - `GCM`:
   [AndroidPushNotificationTemplateTypeDef](./type_defs.md#androidpushnotificationtemplatetypedef)
 - `RecommenderId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 
 ## PushNotificationTemplateResponseTypeDef
@@ -4560,7 +4917,7 @@ from mypy_boto3_pinpoint.type_defs import RandomSplitActivityTypeDef
 Optional fields:
 
 - `Branches`:
-  `List`\[[RandomSplitEntryTypeDef](./type_defs.md#randomsplitentrytypedef)\]
+  `Sequence`\[[RandomSplitEntryTypeDef](./type_defs.md#randomsplitentrytypedef)\]
 
 ## RandomSplitEntryTypeDef
 
@@ -4749,7 +5106,7 @@ Optional fields:
 - `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 - `OriginationNumber`: `str`
 - `SenderId`: `str`
-- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `EntityId`: `str`
 - `TemplateId`: `str`
 
@@ -4764,7 +5121,7 @@ Optional fields:
 - `Body`: `str`
 - `DefaultSubstitutions`: `str`
 - `RecommenderId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 
 ## SMSTemplateResponseTypeDef
@@ -4853,15 +5210,15 @@ from mypy_boto3_pinpoint.type_defs import SegmentDimensionsTypeDef
 
 Optional fields:
 
-- `Attributes`: `Dict`\[`str`,
+- `Attributes`: `Mapping`\[`str`,
   [AttributeDimensionTypeDef](./type_defs.md#attributedimensiontypedef)\]
 - `Behavior`: [SegmentBehaviorsTypeDef](./type_defs.md#segmentbehaviorstypedef)
 - `Demographic`:
   [SegmentDemographicsTypeDef](./type_defs.md#segmentdemographicstypedef)
 - `Location`: [SegmentLocationTypeDef](./type_defs.md#segmentlocationtypedef)
-- `Metrics`: `Dict`\[`str`,
+- `Metrics`: `Mapping`\[`str`,
   [MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
-- `UserAttributes`: `Dict`\[`str`,
+- `UserAttributes`: `Mapping`\[`str`,
   [AttributeDimensionTypeDef](./type_defs.md#attributedimensiontypedef)\]
 
 ## SegmentGroupListTypeDef
@@ -4872,7 +5229,8 @@ from mypy_boto3_pinpoint.type_defs import SegmentGroupListTypeDef
 
 Optional fields:
 
-- `Groups`: `List`\[[SegmentGroupTypeDef](./type_defs.md#segmentgrouptypedef)\]
+- `Groups`:
+  `Sequence`\[[SegmentGroupTypeDef](./type_defs.md#segmentgrouptypedef)\]
 - `Include`: [IncludeType](./literals.md#includetype)
 
 ## SegmentGroupTypeDef
@@ -4884,9 +5242,9 @@ from mypy_boto3_pinpoint.type_defs import SegmentGroupTypeDef
 Optional fields:
 
 - `Dimensions`:
-  `List`\[[SegmentDimensionsTypeDef](./type_defs.md#segmentdimensionstypedef)\]
+  `Sequence`\[[SegmentDimensionsTypeDef](./type_defs.md#segmentdimensionstypedef)\]
 - `SourceSegments`:
-  `List`\[[SegmentReferenceTypeDef](./type_defs.md#segmentreferencetypedef)\]
+  `Sequence`\[[SegmentReferenceTypeDef](./type_defs.md#segmentreferencetypedef)\]
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Type`: [TypeType](./literals.md#typetype)
 
@@ -5011,12 +5369,12 @@ Required fields:
 
 - `MessageConfiguration`:
   [DirectMessageConfigurationTypeDef](./type_defs.md#directmessageconfigurationtypedef)
-- `Users`: `Dict`\[`str`,
+- `Users`: `Mapping`\[`str`,
   [EndpointSendConfigurationTypeDef](./type_defs.md#endpointsendconfigurationtypedef)\]
 
 Optional fields:
 
-- `Context`: `Dict`\[`str`, `str`\]
+- `Context`: `Mapping`\[`str`, `str`\]
 - `TemplateConfiguration`:
   [TemplateConfigurationTypeDef](./type_defs.md#templateconfigurationtypedef)
 - `TraceId`: `str`
@@ -5086,7 +5444,7 @@ from mypy_boto3_pinpoint.type_defs import SetDimensionTypeDef
 
 Required fields:
 
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -5187,6 +5545,18 @@ Optional fields:
 - `PushTemplate`: [TemplateTypeDef](./type_defs.md#templatetypedef)
 - `SMSTemplate`: [TemplateTypeDef](./type_defs.md#templatetypedef)
 - `VoiceTemplate`: [TemplateTypeDef](./type_defs.md#templatetypedef)
+
+## TemplateCreateMessageBodyTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import TemplateCreateMessageBodyTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `Message`: `str`
+- `RequestID`: `str`
 
 ## TemplateResponseTypeDef
 
@@ -5304,7 +5674,7 @@ from mypy_boto3_pinpoint.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAdmChannelRequestRequestTypeDef
 
@@ -5464,7 +5834,7 @@ from mypy_boto3_pinpoint.type_defs import UpdateAttributesRequestTypeDef
 
 Optional fields:
 
-- `Blacklist`: `List`\[`str`\]
+- `Blacklist`: `Sequence`\[`str`\]
 
 ## UpdateBaiduChannelRequestRequestTypeDef
 
@@ -5645,6 +6015,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## UpdateInAppTemplateRequestRequestTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import UpdateInAppTemplateRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InAppTemplateRequest`:
+  [InAppTemplateRequestTypeDef](./type_defs.md#inapptemplaterequesttypedef)
+- `TemplateName`: `str`
+
+Optional fields:
+
+- `CreateNewVersion`: `bool`
+- `Version`: `str`
+
+## UpdateInAppTemplateResponseTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import UpdateInAppTemplateResponseTypeDef
+```
+
+Required fields:
+
+- `MessageBody`: [MessageBodyTypeDef](./type_defs.md#messagebodytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## UpdateJourneyRequestRequestTypeDef
 
 ```python
@@ -5764,7 +6163,7 @@ Required fields:
 
 Optional fields:
 
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 - `Description`: `str`
 - `Name`: `str`
 - `RecommendationProviderIdType`: `str`
@@ -5974,7 +6373,7 @@ Optional fields:
 - `Body`: `str`
 - `LanguageCode`: `str`
 - `OriginationNumber`: `str`
-- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `VoiceId`: `str`
 
 ## VoiceTemplateRequestTypeDef
@@ -5988,7 +6387,7 @@ Optional fields:
 - `Body`: `str`
 - `DefaultSubstitutions`: `str`
 - `LanguageCode`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 - `VoiceId`: `str`
 
@@ -6061,7 +6460,7 @@ from mypy_boto3_pinpoint.type_defs import WriteCampaignRequestTypeDef
 Optional fields:
 
 - `AdditionalTreatments`:
-  `List`\[[WriteTreatmentResourceTypeDef](./type_defs.md#writetreatmentresourcetypedef)\]
+  `Sequence`\[[WriteTreatmentResourceTypeDef](./type_defs.md#writetreatmentresourcetypedef)\]
 - `CustomDeliveryConfiguration`:
   [CustomDeliveryConfigurationTypeDef](./type_defs.md#customdeliveryconfigurationtypedef)
 - `Description`: `str`
@@ -6075,11 +6474,12 @@ Optional fields:
 - `Schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
 - `SegmentId`: `str`
 - `SegmentVersion`: `int`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `TemplateConfiguration`:
   [TemplateConfigurationTypeDef](./type_defs.md#templateconfigurationtypedef)
 - `TreatmentDescription`: `str`
 - `TreatmentName`: `str`
+- `Priority`: `int`
 
 ## WriteEventStreamTypeDef
 
@@ -6104,7 +6504,7 @@ Required fields:
 
 Optional fields:
 
-- `Activities`: `Dict`\[`str`,
+- `Activities`: `Mapping`\[`str`,
   [ActivityTypeDef](./type_defs.md#activitytypedef)\]
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
@@ -6133,7 +6533,7 @@ Optional fields:
 - `Name`: `str`
 - `SegmentGroups`:
   [SegmentGroupListTypeDef](./type_defs.md#segmentgrouplisttypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## WriteTreatmentResourceTypeDef
 

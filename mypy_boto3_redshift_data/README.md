@@ -32,6 +32,7 @@ from mypy_boto3_redshift_data.client import RedshiftDataAPIServiceClient
 
 ### Methods
 
+- [batch_execute_statement](./client.md#batch_execute_statement)
 - [can_paginate](./client.md#can_paginate)
 - [cancel_statement](./client.md#cancel_statement)
 - [describe_statement](./client.md#describe_statement)
@@ -51,6 +52,7 @@ from mypy_boto3_redshift_data.client import RedshiftDataAPIServiceClient
 RedshiftDataAPIServiceClient [exceptions](./client.md#exceptions)
 
 - ActiveStatementsExceededException
+- BatchExecuteStatementException
 - ClientError
 - ExecuteStatementException
 - InternalServerException
@@ -91,7 +93,10 @@ from mypy_boto3_redshift_data.literals import DescribeTablePaginatorName, ...
 - [ListSchemasPaginatorName](./literals.md#listschemaspaginatorname)
 - [ListStatementsPaginatorName](./literals.md#liststatementspaginatorname)
 - [ListTablesPaginatorName](./literals.md#listtablespaginatorname)
+- [StatementStatusStringType](./literals.md#statementstatusstringtype)
 - [StatusStringType](./literals.md#statusstringtype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 
@@ -101,9 +106,11 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift_data.type_defs import CancelStatementRequestRequestTypeDef, ...
+from mypy_boto3_redshift_data.type_defs import BatchExecuteStatementInputRequestTypeDef, ...
 ```
 
+- [BatchExecuteStatementInputRequestTypeDef](./type_defs.md#batchexecutestatementinputrequesttypedef)
+- [BatchExecuteStatementOutputTypeDef](./type_defs.md#batchexecutestatementoutputtypedef)
 - [CancelStatementRequestRequestTypeDef](./type_defs.md#cancelstatementrequestrequesttypedef)
 - [CancelStatementResponseTypeDef](./type_defs.md#cancelstatementresponsetypedef)
 - [ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef)
@@ -128,4 +135,5 @@ from mypy_boto3_redshift_data.type_defs import CancelStatementRequestRequestType
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)
 - [StatementDataTypeDef](./type_defs.md#statementdatatypedef)
+- [SubStatementDataTypeDef](./type_defs.md#substatementdatatypedef)
 - [TableMemberTypeDef](./type_defs.md#tablemembertypedef)

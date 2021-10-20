@@ -170,6 +170,8 @@ from mypy_boto3_autoscaling.literals import DescribeAutoScalingGroupsPaginatorNa
 - [ScalingActivityStatusCodeType](./literals.md#scalingactivitystatuscodetype)
 - [WarmPoolStateType](./literals.md#warmpoolstatetype)
 - [WarmPoolStatusType](./literals.md#warmpoolstatustype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 
@@ -238,6 +240,7 @@ from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef, ...
 - [DescribeTerminationPolicyTypesAnswerTypeDef](./type_defs.md#describeterminationpolicytypesanswertypedef)
 - [DescribeWarmPoolAnswerTypeDef](./type_defs.md#describewarmpoolanswertypedef)
 - [DescribeWarmPoolTypeRequestTypeDef](./type_defs.md#describewarmpooltyperequesttypedef)
+- [DesiredConfigurationTypeDef](./type_defs.md#desiredconfigurationtypedef)
 - [DetachInstancesAnswerTypeDef](./type_defs.md#detachinstancesanswertypedef)
 - [DetachInstancesQueryRequestTypeDef](./type_defs.md#detachinstancesqueryrequesttypedef)
 - [DetachLoadBalancerTargetGroupsTypeRequestTypeDef](./type_defs.md#detachloadbalancertargetgroupstyperequesttypedef)

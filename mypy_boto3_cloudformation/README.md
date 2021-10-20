@@ -77,6 +77,7 @@ from mypy_boto3_cloudformation.client import CloudFormationClient
 - [get_template](./client.md#get_template)
 - [get_template_summary](./client.md#get_template_summary)
 - [get_waiter](./client.md#get_waiter)
+- [import_stacks_to_stack_set](./client.md#import_stacks_to_stack_set)
 - [list_change_sets](./client.md#list_change_sets)
 - [list_exports](./client.md#list_exports)
 - [list_imports](./client.md#list_imports)
@@ -93,6 +94,7 @@ from mypy_boto3_cloudformation.client import CloudFormationClient
 - [record_handler_progress](./client.md#record_handler_progress)
 - [register_publisher](./client.md#register_publisher)
 - [register_type](./client.md#register_type)
+- [rollback_stack](./client.md#rollback_stack)
 - [set_stack_policy](./client.md#set_stack_policy)
 - [set_type_configuration](./client.md#set_type_configuration)
 - [set_type_default_version](./client.md#set_type_default_version)
@@ -125,6 +127,7 @@ CloudFormationClient [exceptions](./client.md#exceptions)
 - OperationNotFoundException
 - OperationStatusCheckFailedException
 - StackInstanceNotFoundException
+- StackNotFoundException
 - StackSetNotEmptyException
 - StackSetNotFoundException
 - StaleRequestException
@@ -295,6 +298,9 @@ from mypy_boto3_cloudformation.literals import AccountGateStatusType, ...
 - [TypeTestsStatusType](./literals.md#typetestsstatustype)
 - [VersionBumpType](./literals.md#versionbumptype)
 - [VisibilityType](./literals.md#visibilitytype)
+- [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 
@@ -382,6 +388,8 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [GetTemplateOutputTypeDef](./type_defs.md#gettemplateoutputtypedef)
 - [GetTemplateSummaryInputRequestTypeDef](./type_defs.md#gettemplatesummaryinputrequesttypedef)
 - [GetTemplateSummaryOutputTypeDef](./type_defs.md#gettemplatesummaryoutputtypedef)
+- [ImportStacksToStackSetInputRequestTypeDef](./type_defs.md#importstackstostacksetinputrequesttypedef)
+- [ImportStacksToStackSetOutputTypeDef](./type_defs.md#importstackstostacksetoutputtypedef)
 - [ListChangeSetsInputRequestTypeDef](./type_defs.md#listchangesetsinputrequesttypedef)
 - [ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef)
 - [ListExportsInputRequestTypeDef](./type_defs.md#listexportsinputrequesttypedef)
@@ -430,6 +438,8 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
+- [RollbackStackInputRequestTypeDef](./type_defs.md#rollbackstackinputrequesttypedef)
+- [RollbackStackOutputTypeDef](./type_defs.md#rollbackstackoutputtypedef)
 - [RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)
 - [ServiceResourceEventRequestTypeDef](./type_defs.md#serviceresourceeventrequesttypedef)
 - [ServiceResourceStackRequestTypeDef](./type_defs.md#serviceresourcestackrequesttypedef)

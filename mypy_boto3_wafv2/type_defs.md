@@ -53,6 +53,8 @@ type annotations stubs module
   - [GetIPSetResponseTypeDef](#getipsetresponsetypedef)
   - [GetLoggingConfigurationRequestRequestTypeDef](#getloggingconfigurationrequestrequesttypedef)
   - [GetLoggingConfigurationResponseTypeDef](#getloggingconfigurationresponsetypedef)
+  - [GetManagedRuleSetRequestRequestTypeDef](#getmanagedrulesetrequestrequesttypedef)
+  - [GetManagedRuleSetResponseTypeDef](#getmanagedrulesetresponsetypedef)
   - [GetPermissionPolicyRequestRequestTypeDef](#getpermissionpolicyrequestrequesttypedef)
   - [GetPermissionPolicyResponseTypeDef](#getpermissionpolicyresponsetypedef)
   - [GetRateBasedStatementManagedKeysRequestRequestTypeDef](#getratebasedstatementmanagedkeysrequestrequesttypedef)
@@ -79,12 +81,16 @@ type annotations stubs module
   - [LabelNameConditionTypeDef](#labelnameconditiontypedef)
   - [LabelSummaryTypeDef](#labelsummarytypedef)
   - [LabelTypeDef](#labeltypedef)
+  - [ListAvailableManagedRuleGroupVersionsRequestRequestTypeDef](#listavailablemanagedrulegroupversionsrequestrequesttypedef)
+  - [ListAvailableManagedRuleGroupVersionsResponseTypeDef](#listavailablemanagedrulegroupversionsresponsetypedef)
   - [ListAvailableManagedRuleGroupsRequestRequestTypeDef](#listavailablemanagedrulegroupsrequestrequesttypedef)
   - [ListAvailableManagedRuleGroupsResponseTypeDef](#listavailablemanagedrulegroupsresponsetypedef)
   - [ListIPSetsRequestRequestTypeDef](#listipsetsrequestrequesttypedef)
   - [ListIPSetsResponseTypeDef](#listipsetsresponsetypedef)
   - [ListLoggingConfigurationsRequestRequestTypeDef](#listloggingconfigurationsrequestrequesttypedef)
   - [ListLoggingConfigurationsResponseTypeDef](#listloggingconfigurationsresponsetypedef)
+  - [ListManagedRuleSetsRequestRequestTypeDef](#listmanagedrulesetsrequestrequesttypedef)
+  - [ListManagedRuleSetsResponseTypeDef](#listmanagedrulesetsresponsetypedef)
   - [ListRegexPatternSetsRequestRequestTypeDef](#listregexpatternsetsrequestrequesttypedef)
   - [ListRegexPatternSetsResponseTypeDef](#listregexpatternsetsresponsetypedef)
   - [ListResourcesForWebACLRequestRequestTypeDef](#listresourcesforwebaclrequestrequesttypedef)
@@ -99,14 +105,21 @@ type annotations stubs module
   - [LoggingFilterTypeDef](#loggingfiltertypedef)
   - [ManagedRuleGroupStatementTypeDef](#managedrulegroupstatementtypedef)
   - [ManagedRuleGroupSummaryTypeDef](#managedrulegroupsummarytypedef)
+  - [ManagedRuleGroupVersionTypeDef](#managedrulegroupversiontypedef)
+  - [ManagedRuleSetSummaryTypeDef](#managedrulesetsummarytypedef)
+  - [ManagedRuleSetTypeDef](#managedrulesettypedef)
+  - [ManagedRuleSetVersionTypeDef](#managedrulesetversiontypedef)
   - [NotStatementTypeDef](#notstatementtypedef)
   - [OrStatementTypeDef](#orstatementtypedef)
   - [OverrideActionTypeDef](#overrideactiontypedef)
   - [PutLoggingConfigurationRequestRequestTypeDef](#putloggingconfigurationrequestrequesttypedef)
   - [PutLoggingConfigurationResponseTypeDef](#putloggingconfigurationresponsetypedef)
+  - [PutManagedRuleSetVersionsRequestRequestTypeDef](#putmanagedrulesetversionsrequestrequesttypedef)
+  - [PutManagedRuleSetVersionsResponseTypeDef](#putmanagedrulesetversionsresponsetypedef)
   - [PutPermissionPolicyRequestRequestTypeDef](#putpermissionpolicyrequestrequesttypedef)
   - [RateBasedStatementManagedKeysIPSetTypeDef](#ratebasedstatementmanagedkeysipsettypedef)
   - [RateBasedStatementTypeDef](#ratebasedstatementtypedef)
+  - [RegexMatchStatementTypeDef](#regexmatchstatementtypedef)
   - [RegexPatternSetReferenceStatementTypeDef](#regexpatternsetreferencestatementtypedef)
   - [RegexPatternSetSummaryTypeDef](#regexpatternsetsummarytypedef)
   - [RegexPatternSetTypeDef](#regexpatternsettypedef)
@@ -132,12 +145,15 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateIPSetRequestRequestTypeDef](#updateipsetrequestrequesttypedef)
   - [UpdateIPSetResponseTypeDef](#updateipsetresponsetypedef)
+  - [UpdateManagedRuleSetVersionExpiryDateRequestRequestTypeDef](#updatemanagedrulesetversionexpirydaterequestrequesttypedef)
+  - [UpdateManagedRuleSetVersionExpiryDateResponseTypeDef](#updatemanagedrulesetversionexpirydateresponsetypedef)
   - [UpdateRegexPatternSetRequestRequestTypeDef](#updateregexpatternsetrequestrequesttypedef)
   - [UpdateRegexPatternSetResponseTypeDef](#updateregexpatternsetresponsetypedef)
   - [UpdateRuleGroupRequestRequestTypeDef](#updaterulegrouprequestrequesttypedef)
   - [UpdateRuleGroupResponseTypeDef](#updaterulegroupresponsetypedef)
   - [UpdateWebACLRequestRequestTypeDef](#updatewebaclrequestrequesttypedef)
   - [UpdateWebACLResponseTypeDef](#updatewebaclresponsetypedef)
+  - [VersionToPublishTypeDef](#versiontopublishtypedef)
   - [VisibilityConfigTypeDef](#visibilityconfigtypedef)
   - [WebACLSummaryTypeDef](#webaclsummarytypedef)
   - [WebACLTypeDef](#webacltypedef)
@@ -172,7 +188,8 @@ from mypy_boto3_wafv2.type_defs import AndStatementTypeDef
 
 Required fields:
 
-- `Statements`: `List`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
+- `Statements`:
+  `Sequence`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
 
 ## AssociateWebACLRequestRequestTypeDef
 
@@ -207,7 +224,7 @@ Required fields:
 - `SearchString`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
 - `TextTransformations`:
-  `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+  `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
 - `PositionalConstraint`:
   [PositionalConstraintType](./literals.md#positionalconstrainttype)
 
@@ -220,7 +237,7 @@ from mypy_boto3_wafv2.type_defs import CheckCapacityRequestRequestTypeDef
 Required fields:
 
 - `Scope`: [ScopeType](./literals.md#scopetype)
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 
 ## CheckCapacityResponseTypeDef
 
@@ -270,12 +287,12 @@ Required fields:
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `IPAddressVersion`:
   [IPAddressVersionType](./literals.md#ipaddressversiontype)
-- `Addresses`: `List`\[`str`\]
+- `Addresses`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateIPSetResponseTypeDef
 
@@ -300,12 +317,12 @@ Required fields:
 - `Name`: `str`
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `RegularExpressionList`:
-  `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
+  `Sequence`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
 
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRegexPatternSetResponseTypeDef
 
@@ -337,9 +354,9 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CustomResponseBodies`: `Dict`\[`str`,
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 ## CreateRuleGroupResponseTypeDef
@@ -371,9 +388,9 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CustomResponseBodies`: `Dict`\[`str`,
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 ## CreateWebACLResponseTypeDef
@@ -408,7 +425,7 @@ from mypy_boto3_wafv2.type_defs import CustomRequestHandlingTypeDef
 Required fields:
 
 - `InsertHeaders`:
-  `List`\[[CustomHTTPHeaderTypeDef](./type_defs.md#customhttpheadertypedef)\]
+  `Sequence`\[[CustomHTTPHeaderTypeDef](./type_defs.md#customhttpheadertypedef)\]
 
 ## CustomResponseBodyTypeDef
 
@@ -436,7 +453,7 @@ Optional fields:
 
 - `CustomResponseBodyKey`: `str`
 - `ResponseHeaders`:
-  `List`\[[CustomHTTPHeaderTypeDef](./type_defs.md#customhttpheadertypedef)\]
+  `Sequence`\[[CustomHTTPHeaderTypeDef](./type_defs.md#customhttpheadertypedef)\]
 
 ## DefaultActionTypeDef
 
@@ -556,6 +573,10 @@ Required fields:
 - `Name`: `str`
 - `Scope`: [ScopeType](./literals.md#scopetype)
 
+Optional fields:
+
+- `VersionName`: `str`
+
 ## DescribeManagedRuleGroupResponseTypeDef
 
 ```python
@@ -564,6 +585,8 @@ from mypy_boto3_wafv2.type_defs import DescribeManagedRuleGroupResponseTypeDef
 
 Required fields:
 
+- `VersionName`: `str`
+- `SnsTopicArn`: `str`
 - `Capacity`: `int`
 - `Rules`: `List`\[[RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef)\]
 - `LabelNamespace`: `str`
@@ -605,11 +628,11 @@ Optional fields:
 - `SingleHeader`: [SingleHeaderTypeDef](./type_defs.md#singleheadertypedef)
 - `SingleQueryArgument`:
   [SingleQueryArgumentTypeDef](./type_defs.md#singlequeryargumenttypedef)
-- `AllQueryArguments`: `Dict`\[`str`, `Any`\]
-- `UriPath`: `Dict`\[`str`, `Any`\]
-- `QueryString`: `Dict`\[`str`, `Any`\]
-- `Body`: `Dict`\[`str`, `Any`\]
-- `Method`: `Dict`\[`str`, `Any`\]
+- `AllQueryArguments`: `Mapping`\[`str`, `Any`\]
+- `UriPath`: `Mapping`\[`str`, `Any`\]
+- `QueryString`: `Mapping`\[`str`, `Any`\]
+- `Body`: `Mapping`\[`str`, `Any`\]
+- `Method`: `Mapping`\[`str`, `Any`\]
 - `JsonBody`: [JsonBodyTypeDef](./type_defs.md#jsonbodytypedef)
 
 ## FilterTypeDef
@@ -674,7 +697,8 @@ from mypy_boto3_wafv2.type_defs import GeoMatchStatementTypeDef
 
 Optional fields:
 
-- `CountryCodes`: `List`\[[CountryCodeType](./literals.md#countrycodetype)\]
+- `CountryCodes`:
+  `Sequence`\[[CountryCodeType](./literals.md#countrycodetype)\]
 - `ForwardedIPConfig`:
   [ForwardedIPConfigTypeDef](./type_defs.md#forwardedipconfigtypedef)
 
@@ -726,6 +750,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetManagedRuleSetRequestRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetManagedRuleSetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+
+## GetManagedRuleSetResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetManagedRuleSetResponseTypeDef
+```
+
+Required fields:
+
+- `ManagedRuleSet`:
+  [ManagedRuleSetTypeDef](./type_defs.md#managedrulesettypedef)
+- `LockToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetPermissionPolicyRequestRequestTypeDef
 
 ```python
@@ -760,6 +810,10 @@ Required fields:
 - `WebACLName`: `str`
 - `WebACLId`: `str`
 - `RuleName`: `str`
+
+Optional fields:
+
+- `RuleGroupRuleName`: `str`
 
 ## GetRateBasedStatementManagedKeysResponseTypeDef
 
@@ -1016,8 +1070,8 @@ from mypy_boto3_wafv2.type_defs import JsonMatchPatternTypeDef
 
 Optional fields:
 
-- `All`: `Dict`\[`str`, `Any`\]
-- `IncludedPaths`: `List`\[`str`\]
+- `All`: `Mapping`\[`str`, `Any`\]
+- `IncludedPaths`: `Sequence`\[`str`\]
 
 ## LabelMatchStatementTypeDef
 
@@ -1059,6 +1113,37 @@ from mypy_boto3_wafv2.type_defs import LabelTypeDef
 Required fields:
 
 - `Name`: `str`
+
+## ListAvailableManagedRuleGroupVersionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListAvailableManagedRuleGroupVersionsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `VendorName`: `str`
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+
+Optional fields:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+## ListAvailableManagedRuleGroupVersionsResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListAvailableManagedRuleGroupVersionsResponseTypeDef
+```
+
+Required fields:
+
+- `NextMarker`: `str`
+- `Versions`:
+  `List`\[[ManagedRuleGroupVersionTypeDef](./type_defs.md#managedrulegroupversiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListAvailableManagedRuleGroupsRequestRequestTypeDef
 
@@ -1140,6 +1225,35 @@ Required fields:
 - `LoggingConfigurations`:
   `List`\[[LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)\]
 - `NextMarker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListManagedRuleSetsRequestRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListManagedRuleSetsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Scope`: [ScopeType](./literals.md#scopetype)
+
+Optional fields:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+## ListManagedRuleSetsResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListManagedRuleSetsResponseTypeDef
+```
+
+Required fields:
+
+- `NextMarker`: `str`
+- `ManagedRuleSets`:
+  `List`\[[ManagedRuleSetSummaryTypeDef](./type_defs.md#managedrulesetsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1327,8 +1441,9 @@ Required fields:
 
 Optional fields:
 
+- `Version`: `str`
 - `ExcludedRules`:
-  `List`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
+  `Sequence`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
 - `ScopeDownStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
 
 ## ManagedRuleGroupSummaryTypeDef
@@ -1342,6 +1457,67 @@ Optional fields:
 - `VendorName`: `str`
 - `Name`: `str`
 - `Description`: `str`
+
+## ManagedRuleGroupVersionTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ManagedRuleGroupVersionTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `LastUpdateTimestamp`: `datetime`
+
+## ManagedRuleSetSummaryTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ManagedRuleSetSummaryTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Id`: `str`
+- `Description`: `str`
+- `LockToken`: `str`
+- `ARN`: `str`
+- `LabelNamespace`: `str`
+
+## ManagedRuleSetTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ManagedRuleSetTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Id`: `str`
+- `ARN`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `PublishedVersions`: `Dict`\[`str`,
+  [ManagedRuleSetVersionTypeDef](./type_defs.md#managedrulesetversiontypedef)\]
+- `RecommendedVersion`: `str`
+- `LabelNamespace`: `str`
+
+## ManagedRuleSetVersionTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ManagedRuleSetVersionTypeDef
+```
+
+Optional fields:
+
+- `AssociatedRuleGroupArn`: `str`
+- `Capacity`: `int`
+- `ForecastedLifetime`: `int`
+- `PublishTimestamp`: `datetime`
+- `LastUpdateTimestamp`: `datetime`
+- `ExpiryTimestamp`: `datetime`
 
 ## NotStatementTypeDef
 
@@ -1361,7 +1537,8 @@ from mypy_boto3_wafv2.type_defs import OrStatementTypeDef
 
 Required fields:
 
-- `Statements`: `List`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
+- `Statements`:
+  `Sequence`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
 
 ## OverrideActionTypeDef
 
@@ -1372,7 +1549,7 @@ from mypy_boto3_wafv2.type_defs import OverrideActionTypeDef
 Optional fields:
 
 - `Count`: [CountActionTypeDef](./type_defs.md#countactiontypedef)
-- `None`: `Dict`\[`str`, `Any`\]
+- `None`: `Mapping`\[`str`, `Any`\]
 
 ## PutLoggingConfigurationRequestRequestTypeDef
 
@@ -1395,6 +1572,37 @@ Required fields:
 
 - `LoggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PutManagedRuleSetVersionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import PutManagedRuleSetVersionsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+- `LockToken`: `str`
+
+Optional fields:
+
+- `RecommendedVersion`: `str`
+- `VersionsToPublish`: `Mapping`\[`str`,
+  [VersionToPublishTypeDef](./type_defs.md#versiontopublishtypedef)\]
+
+## PutManagedRuleSetVersionsResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import PutManagedRuleSetVersionsResponseTypeDef
+```
+
+Required fields:
+
+- `NextLockToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1439,6 +1647,19 @@ Optional fields:
 - `ForwardedIPConfig`:
   [ForwardedIPConfigTypeDef](./type_defs.md#forwardedipconfigtypedef)
 
+## RegexMatchStatementTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import RegexMatchStatementTypeDef
+```
+
+Required fields:
+
+- `RegexString`: `str`
+- `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
+- `TextTransformations`:
+  `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+
 ## RegexPatternSetReferenceStatementTypeDef
 
 ```python
@@ -1450,7 +1671,7 @@ Required fields:
 - `ARN`: `str`
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
 - `TextTransformations`:
-  `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+  `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
 
 ## RegexPatternSetSummaryTypeDef
 
@@ -1530,7 +1751,7 @@ Required fields:
 Optional fields:
 
 - `ExcludedRules`:
-  `List`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
+  `Sequence`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
 
 ## RuleGroupSummaryTypeDef
 
@@ -1603,7 +1824,7 @@ Optional fields:
 - `Action`: [RuleActionTypeDef](./type_defs.md#ruleactiontypedef)
 - `OverrideAction`:
   [OverrideActionTypeDef](./type_defs.md#overrideactiontypedef)
-- `RuleLabels`: `List`\[[LabelTypeDef](./type_defs.md#labeltypedef)\]
+- `RuleLabels`: `Sequence`\[[LabelTypeDef](./type_defs.md#labeltypedef)\]
 
 ## SampledHTTPRequestTypeDef
 
@@ -1659,7 +1880,7 @@ Required fields:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `Size`: `int`
 - `TextTransformations`:
-  `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+  `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
 
 ## SqliMatchStatementTypeDef
 
@@ -1671,7 +1892,7 @@ Required fields:
 
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
 - `TextTransformations`:
-  `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+  `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
 
 ## StatementTypeDef
 
@@ -1706,6 +1927,8 @@ Optional fields:
   [ManagedRuleGroupStatementTypeDef](./type_defs.md#managedrulegroupstatementtypedef)
 - `LabelMatchStatement`:
   [LabelMatchStatementTypeDef](./type_defs.md#labelmatchstatementtypedef)
+- `RegexMatchStatement`:
+  [RegexMatchStatementTypeDef](./type_defs.md#regexmatchstatementtypedef)
 
 ## TagInfoForResourceTypeDef
 
@@ -1727,7 +1950,7 @@ from mypy_boto3_wafv2.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1772,7 +1995,7 @@ from mypy_boto3_wafv2.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateIPSetRequestRequestTypeDef
 
@@ -1785,7 +2008,7 @@ Required fields:
 - `Name`: `str`
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `Id`: `str`
-- `Addresses`: `List`\[`str`\]
+- `Addresses`: `Sequence`\[`str`\]
 - `LockToken`: `str`
 
 Optional fields:
@@ -1804,6 +2027,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## UpdateManagedRuleSetVersionExpiryDateRequestRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import UpdateManagedRuleSetVersionExpiryDateRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+- `LockToken`: `str`
+- `VersionToExpire`: `str`
+- `ExpiryTimestamp`: `Union`\[`datetime`, `str`\]
+
+## UpdateManagedRuleSetVersionExpiryDateResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import UpdateManagedRuleSetVersionExpiryDateResponseTypeDef
+```
+
+Required fields:
+
+- `ExpiringVersion`: `str`
+- `ExpiryTimestamp`: `datetime`
+- `NextLockToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## UpdateRegexPatternSetRequestRequestTypeDef
 
 ```python
@@ -1816,7 +2068,7 @@ Required fields:
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `Id`: `str`
 - `RegularExpressionList`:
-  `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
+  `Sequence`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
 - `LockToken`: `str`
 
 Optional fields:
@@ -1853,8 +2105,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `CustomResponseBodies`: `Dict`\[`str`,
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 ## UpdateRuleGroupResponseTypeDef
@@ -1888,8 +2140,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `CustomResponseBodies`: `Dict`\[`str`,
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 ## UpdateWebACLResponseTypeDef
@@ -1903,6 +2155,17 @@ Required fields:
 - `NextLockToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## VersionToPublishTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import VersionToPublishTypeDef
+```
+
+Optional fields:
+
+- `AssociatedRuleGroupArn`: `str`
+- `ForecastedLifetime`: `int`
 
 ## VisibilityConfigTypeDef
 
@@ -1969,4 +2232,4 @@ Required fields:
 
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
 - `TextTransformations`:
-  `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+  `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]

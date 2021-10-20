@@ -143,7 +143,9 @@ from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType, .
 - [SortOrderType](./literals.md#sortordertype)
 - [ThesaurusStatusType](./literals.md#thesaurusstatustype)
 - [UserContextPolicyType](./literals.md#usercontextpolicytype)
+- [UserGroupResolutionModeType](./literals.md#usergroupresolutionmodetype)
 - [WebCrawlerModeType](./literals.md#webcrawlermodetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 
@@ -322,5 +324,7 @@ from mypy_boto3_kendra.type_defs import AccessControlListConfigurationTypeDef, .
 - [UpdateThesaurusRequestRequestTypeDef](./type_defs.md#updatethesaurusrequestrequesttypedef)
 - [UrlsTypeDef](./type_defs.md#urlstypedef)
 - [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+- [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 - [UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)
 - [WebCrawlerConfigurationTypeDef](./type_defs.md#webcrawlerconfigurationtypedef)
+- [WorkDocsConfigurationTypeDef](./type_defs.md#workdocsconfigurationtypedef)

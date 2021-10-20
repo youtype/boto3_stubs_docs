@@ -117,7 +117,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `channelName`: `str` *(required)*
-- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
+- `messages`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
   *(required)*
 
 Returns
@@ -160,7 +160,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_channel
 
-Creates a channel.
+Used to create a channel.
 
 Type annotations for `boto3.client("iotanalytics").create_channel` method.
 
@@ -177,14 +177,14 @@ Keyword-only arguments:
   [ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef)
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_dataset
 
-Creates a dataset.
+Used to create a dataset.
 
 Type annotations for `boto3.client("iotanalytics").create_dataset` method.
 
@@ -198,27 +198,27 @@ Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
 - `actions`:
-  `List`\[[DatasetActionTypeDef](./type_defs.md#datasetactiontypedef)\]
+  `Sequence`\[[DatasetActionTypeDef](./type_defs.md#datasetactiontypedef)\]
   *(required)*
 - `triggers`:
-  `List`\[[DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef)\]
+  `Sequence`\[[DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef)\]
 - `contentDeliveryRules`:
-  `List`\[[DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef)\]
+  `Sequence`\[[DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef)\]
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `versioningConfiguration`:
   [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `lateDataRules`:
-  `List`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
+  `Sequence`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_dataset_content
 
-Creates the content of a data set by applying a `queryAction` (a SQL query) or
-a `containerAction` (executing a containerized application).
+Creates the content of a dataset by applying a `queryAction` (a SQL query) or a
+`containerAction` (executing a containerized application).
 
 Type annotations for `boto3.client("iotanalytics").create_dataset_content`
 method.
@@ -256,7 +256,7 @@ Keyword-only arguments:
   [DatastoreStorageTypeDef](./type_defs.md#datastorestoragetypedef)
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `fileFormatConfiguration`:
   [FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef)
 - `datastorePartitions`:
@@ -281,9 +281,9 @@ Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `pipelineActivities`:
-  `List`\[[PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)\]
+  `Sequence`\[[PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)\]
   *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
@@ -431,7 +431,7 @@ Returns
 
 ### describe_logging_options
 
-Retrieves the current settings of the AWS IoT Analytics logging options.
+Retrieves the current settings of the IoT Analytics logging options.
 
 Type annotations for `boto3.client("iotanalytics").describe_logging_options`
 method.
@@ -474,7 +474,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -482,7 +482,7 @@ Returns `str`.
 
 ### get_dataset_content
 
-Retrieves the contents of a data set as presigned URIs.
+Retrieves the contents of a dataset as presigned URIs.
 
 Type annotations for `boto3.client("iotanalytics").get_dataset_content` method.
 
@@ -522,7 +522,7 @@ Returns
 
 ### list_dataset_contents
 
-Lists information about data set contents that have been created.
+Lists information about dataset contents that have been created.
 
 Type annotations for `boto3.client("iotanalytics").list_dataset_contents`
 method.
@@ -546,7 +546,7 @@ Returns
 
 ### list_datasets
 
-Retrieves information about data sets.
+Retrieves information about datasets.
 
 Type annotations for `boto3.client("iotanalytics").list_datasets` method.
 
@@ -626,7 +626,7 @@ Returns
 
 ### put_logging_options
 
-Sets or updates the AWS IoT Analytics logging options.
+Sets or updates the IoT Analytics logging options.
 
 Type annotations for `boto3.client("iotanalytics").put_logging_options` method.
 
@@ -659,8 +659,8 @@ Keyword-only arguments:
 - `pipelineActivity`:
   [PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)
   *(required)*
-- `payloads`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]\]
-  *(required)*
+- `payloads`: `Sequence`\[`Union`\[`bytes`, `IO`\[`bytes`\],
+  `StreamingBody`\]\] *(required)*
 
 Returns
 [RunPipelineActivityResponseTypeDef](./type_defs.md#runpipelineactivityresponsetypedef).
@@ -727,7 +727,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -746,13 +746,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
 ### update_channel
 
-Updates the settings of a channel.
+Used to update the settings of a channel.
 
 Type annotations for `boto3.client("iotanalytics").update_channel` method.
 
@@ -772,7 +772,7 @@ Keyword-only arguments:
 
 ### update_dataset
 
-Updates the settings of a data set.
+Updates the settings of a dataset.
 
 Type annotations for `boto3.client("iotanalytics").update_dataset` method.
 
@@ -786,22 +786,22 @@ Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
 - `actions`:
-  `List`\[[DatasetActionTypeDef](./type_defs.md#datasetactiontypedef)\]
+  `Sequence`\[[DatasetActionTypeDef](./type_defs.md#datasetactiontypedef)\]
   *(required)*
 - `triggers`:
-  `List`\[[DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef)\]
+  `Sequence`\[[DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef)\]
 - `contentDeliveryRules`:
-  `List`\[[DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef)\]
+  `Sequence`\[[DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef)\]
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `versioningConfiguration`:
   [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
 - `lateDataRules`:
-  `List`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
+  `Sequence`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
 ### update_datastore
 
-Updates the settings of a data store.
+Used to update the settings of a data store.
 
 Type annotations for `boto3.client("iotanalytics").update_datastore` method.
 
@@ -837,7 +837,7 @@ Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `pipelineActivities`:
-  `List`\[[PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)\]
+  `Sequence`\[[PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)\]
   *(required)*
 
 ### get_paginator

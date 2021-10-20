@@ -340,7 +340,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Description`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAddressBookResponseTypeDef](./type_defs.md#createaddressbookresponsetypedef).
@@ -372,7 +372,7 @@ Keyword-only arguments:
 - `Recurrence`:
   [BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef)
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateBusinessReportScheduleResponseTypeDef](./type_defs.md#createbusinessreportscheduleresponsetypedef).
@@ -401,7 +401,7 @@ Keyword-only arguments:
 - `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
 - `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateConferenceProviderResponseTypeDef](./type_defs.md#createconferenceproviderresponsetypedef).
@@ -425,11 +425,11 @@ Keyword-only arguments:
 - `LastName`: `str`
 - `PhoneNumber`: `str`
 - `PhoneNumbers`:
-  `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
+  `Sequence`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
 - `SipAddresses`:
-  `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
+  `Sequence`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateContactResponseTypeDef](./type_defs.md#createcontactresponsetypedef).
@@ -452,7 +452,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateGatewayGroupResponseTypeDef](./type_defs.md#creategatewaygroupresponsetypedef).
@@ -483,8 +483,8 @@ Keyword-only arguments:
 - `CurrentPassword`: `str`
 - `NextPassword`: `str`
 - `CertificateAuthorityArn`: `str`
-- `TrustAnchors`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TrustAnchors`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateNetworkProfileResponseTypeDef](./type_defs.md#createnetworkprofileresponsetypedef).
@@ -519,7 +519,7 @@ Keyword-only arguments:
 - `DataRetentionOptIn`: `bool`
 - `MeetingRoomConfiguration`:
   [CreateMeetingRoomConfigurationTypeDef](./type_defs.md#createmeetingroomconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateProfileResponseTypeDef](./type_defs.md#createprofileresponsetypedef).
@@ -543,7 +543,7 @@ Keyword-only arguments:
 - `ProfileArn`: `str`
 - `ProviderCalendarId`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef).
 
@@ -565,7 +565,7 @@ Keyword-only arguments:
 - `SkillGroupName`: `str` *(required)*
 - `Description`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSkillGroupResponseTypeDef](./type_defs.md#createskillgroupresponsetypedef).
@@ -589,7 +589,7 @@ Keyword-only arguments:
 - `LastName`: `str`
 - `Email`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
@@ -994,7 +994,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1494,7 +1494,7 @@ Keyword-only arguments:
 
 - `OrganizationName`: `str` *(required)*
 - `ContactEmail`: `str`
-- `PrivateSkillIds`: `List`\[`str`\]
+- `PrivateSkillIds`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1536,7 +1536,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AuthorizationResult`: `Dict`\[`str`, `str`\] *(required)*
+- `AuthorizationResult`: `Mapping`\[`str`, `str`\] *(required)*
 - `SkillId`: `str` *(required)*
 - `RoomArn`: `str`
 
@@ -1564,7 +1564,7 @@ Keyword-only arguments:
 - `AmazonId`: `str` *(required)*
 - `DeviceSerialNumber`: `str`
 - `RoomArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [RegisterAVSDeviceResponseTypeDef](./type_defs.md#registeravsdeviceresponsetypedef).
@@ -1643,8 +1643,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1666,8 +1666,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1690,8 +1690,8 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
 [SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef).
@@ -1714,8 +1714,8 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
 [SearchNetworkProfilesResponseTypeDef](./type_defs.md#searchnetworkprofilesresponsetypedef).
@@ -1736,8 +1736,8 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
 [SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef).
@@ -1758,8 +1758,8 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
 [SearchRoomsResponseTypeDef](./type_defs.md#searchroomsresponsetypedef).
@@ -1782,8 +1782,8 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
 [SearchSkillGroupsResponseTypeDef](./type_defs.md#searchskillgroupsresponsetypedef).
@@ -1804,8 +1804,8 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
 [SearchUsersResponseTypeDef](./type_defs.md#searchusersresponsetypedef).
@@ -1826,7 +1826,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `RoomFilters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `RoomFilters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
   *(required)*
 - `Content`: [ContentTypeDef](./type_defs.md#contenttypedef) *(required)*
 - `ClientRequestToken`: `str` *(required)*
@@ -1868,7 +1868,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Features`: `List`\[[FeatureType](./literals.md#featuretype)\] *(required)*
+- `Features`: `Sequence`\[[FeatureType](./literals.md#featuretype)\]
+  *(required)*
 - `RoomArn`: `str`
 - `DeviceArn`: `str`
 
@@ -1908,7 +1909,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1927,7 +1928,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2024,9 +2025,9 @@ Keyword-only arguments:
 - `LastName`: `str`
 - `PhoneNumber`: `str`
 - `PhoneNumbers`:
-  `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
+  `Sequence`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
 - `SipAddresses`:
-  `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
+  `Sequence`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2112,7 +2113,7 @@ Keyword-only arguments:
 - `CurrentPassword`: `str`
 - `NextPassword`: `str`
 - `CertificateAuthorityArn`: `str`
-- `TrustAnchors`: `List`\[`str`\]
+- `TrustAnchors`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 

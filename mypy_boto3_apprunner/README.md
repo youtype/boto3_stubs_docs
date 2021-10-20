@@ -91,6 +91,7 @@ from mypy_boto3_apprunner.literals import AutoScalingConfigurationStatusType, ..
 - [RuntimeType](./literals.md#runtimetype)
 - [ServiceStatusType](./literals.md#servicestatustype)
 - [SourceCodeVersionTypeType](./literals.md#sourcecodeversiontypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 
