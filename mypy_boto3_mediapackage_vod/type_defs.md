@@ -498,6 +498,7 @@ Required fields:
 Optional fields:
 
 - `Encryption`: [HlsEncryptionTypeDef](./type_defs.md#hlsencryptiontypedef)
+- `IncludeDvbSubtitles`: `bool`
 - `SegmentDurationSeconds`: `int`
 - `UseAudioRenditionGroup`: `bool`
 

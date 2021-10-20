@@ -16,6 +16,7 @@ type annotations stubs module
   - [GetFindingsPaginator](#getfindingspaginator)
   - [GetInsightsPaginator](#getinsightspaginator)
   - [ListEnabledProductsForImportPaginator](#listenabledproductsforimportpaginator)
+  - [ListFindingAggregatorsPaginator](#listfindingaggregatorspaginator)
   - [ListInvitationsPaginator](#listinvitationspaginator)
   - [ListMembersPaginator](#listmemberspaginator)
   - [ListOrganizationAdminAccountsPaginator](#listorganizationadminaccountspaginator)
@@ -228,6 +229,31 @@ Arguments for `ListEnabledProductsForImportPaginator.paginate` method:
 
 `ListEnabledProductsForImportPaginator.paginate` returns
 `_PageIterator`\[[ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef)\].
+
+## ListFindingAggregatorsPaginator
+
+Type annotations for
+`boto3.client("securityhub").get_paginator("list_finding_aggregators")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_securityhub.paginator import ListFindingAggregatorsPaginator
+
+def get_list_finding_aggregators_paginator() -> ListFindingAggregatorsPaginator:
+    return boto3.client("securityhub").get_paginator("list_finding_aggregators")
+```
+
+Boto3 documentation:
+[SecurityHub.Paginator.ListFindingAggregators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListFindingAggregators)
+
+Arguments for `ListFindingAggregatorsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListFindingAggregatorsPaginator.paginate` returns
+`_PageIterator`\[[ListFindingAggregatorsResponseTypeDef](./type_defs.md#listfindingaggregatorsresponsetypedef)\].
 
 ## ListInvitationsPaginator
 

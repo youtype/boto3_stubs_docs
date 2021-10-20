@@ -23,6 +23,7 @@ type annotations stubs module
   - [GetInsightsPaginatorName](#getinsightspaginatorname)
   - [IntegrationTypeType](#integrationtypetype)
   - [ListEnabledProductsForImportPaginatorName](#listenabledproductsforimportpaginatorname)
+  - [ListFindingAggregatorsPaginatorName](#listfindingaggregatorspaginatorname)
   - [ListInvitationsPaginatorName](#listinvitationspaginatorname)
   - [ListMembersPaginatorName](#listmemberspaginatorname)
   - [ListOrganizationAdminAccountsPaginatorName](#listorganizationadminaccountspaginatorname)
@@ -203,6 +204,16 @@ from mypy_boto3_securityhub.literals import ListEnabledProductsForImportPaginato
 Values:
 
 - `list_enabled_products_for_import`
+
+## ListFindingAggregatorsPaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import ListFindingAggregatorsPaginatorName
+```
+
+Values:
+
+- `list_finding_aggregators`
 
 ## ListInvitationsPaginatorName
 
@@ -661,6 +672,7 @@ Values:
 - `opsworkscm`
 - `organizations`
 - `outposts`
+- `panorama`
 - `personalize`
 - `personalize-events`
 - `personalize-runtime`
@@ -764,6 +776,7 @@ Values:
 - `get_findings`
 - `get_insights`
 - `list_enabled_products_for_import`
+- `list_finding_aggregators`
 - `list_invitations`
 - `list_members`
 - `list_organization_admin_accounts`

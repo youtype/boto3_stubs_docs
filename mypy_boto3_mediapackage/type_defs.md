@@ -594,6 +594,7 @@ Optional fields:
 - `AdsOnDeliveryRestrictions`:
   [AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype)
 - `Encryption`: [HlsEncryptionTypeDef](./type_defs.md#hlsencryptiontypedef)
+- `IncludeDvbSubtitles`: `bool`
 - `IncludeIframeOnlyStream`: `bool`
 - `PlaylistType`: [PlaylistTypeType](./literals.md#playlisttypetype)
 - `PlaylistWindowSeconds`: `int`

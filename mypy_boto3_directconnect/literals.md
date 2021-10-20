@@ -25,6 +25,7 @@ type annotations stubs module
   - [InterconnectStateType](#interconnectstatetype)
   - [LagStateType](#lagstatetype)
   - [LoaContentTypeType](#loacontenttypetype)
+  - [NniPartnerTypeType](#nnipartnertypetype)
   - [VirtualInterfaceStateType](#virtualinterfacestatetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
@@ -241,6 +242,18 @@ from mypy_boto3_directconnect.literals import LoaContentTypeType
 Values:
 
 - `application/pdf`
+
+## NniPartnerTypeType
+
+```python
+from mypy_boto3_directconnect.literals import NniPartnerTypeType
+```
+
+Values:
+
+- `nonPartner`
+- `v1`
+- `v2`
 
 ## VirtualInterfaceStateType
 
@@ -466,6 +479,7 @@ Values:
 - `opsworkscm`
 - `organizations`
 - `outposts`
+- `panorama`
 - `personalize`
 - `personalize-events`
 - `personalize-runtime`

@@ -819,6 +819,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
   service
 
+- [mypy-boto3-panorama](./mypy_boto3_panorama) for
+  [Panorama](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama)
+  service
+
 - [mypy-boto3-personalize](./mypy_boto3_personalize) for
   [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
   service

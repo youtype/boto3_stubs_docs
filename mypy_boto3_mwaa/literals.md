@@ -323,6 +323,7 @@ Values:
 - `opsworkscm`
 - `organizations`
 - `outposts`
+- `panorama`
 - `personalize`
 - `personalize-events`
 - `personalize-runtime`

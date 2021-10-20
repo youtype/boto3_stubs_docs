@@ -24,6 +24,7 @@ type annotations stubs module
     - [associate_virtual_interface](#associate_virtual_interface)
     - [can_paginate](#can_paginate)
     - [confirm_connection](#confirm_connection)
+    - [confirm_customer_agreement](#confirm_customer_agreement)
     - [confirm_private_virtual_interface](#confirm_private_virtual_interface)
     - [confirm_public_virtual_interface](#confirm_public_virtual_interface)
     - [confirm_transit_virtual_interface](#confirm_transit_virtual_interface)
@@ -48,6 +49,7 @@ type annotations stubs module
     - [describe_connection_loa](#describe_connection_loa)
     - [describe_connections](#describe_connections)
     - [describe_connections_on_interconnect](#describe_connections_on_interconnect)
+    - [describe_customer_metadata](#describe_customer_metadata)
     - [describe_direct_connect_gateway_association_proposals](#describe_direct_connect_gateway_association_proposals)
     - [describe_direct_connect_gateway_associations](#describe_direct_connect_gateway_associations)
     - [describe_direct_connect_gateway_attachments](#describe_direct_connect_gateway_attachments)
@@ -58,6 +60,7 @@ type annotations stubs module
     - [describe_lags](#describe_lags)
     - [describe_loa](#describe_loa)
     - [describe_locations](#describe_locations)
+    - [describe_router_configuration](#describe_router_configuration)
     - [describe_tags](#describe_tags)
     - [describe_virtual_gateways](#describe_virtual_gateways)
     - [describe_virtual_interfaces](#describe_virtual_interfaces)
@@ -70,6 +73,7 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_connection](#update_connection)
+    - [update_direct_connect_gateway](#update_direct_connect_gateway)
     - [update_direct_connect_gateway_association](#update_direct_connect_gateway_association)
     - [update_lag](#update_lag)
     - [update_virtual_interface_attributes](#update_virtual_interface_attributes)
@@ -202,7 +206,8 @@ Returns
 
 ### allocate_private_virtual_interface
 
-Provisions a private virtual interface to be owned by the specified account.
+Provisions a private virtual interface to be owned by the specified Amazon Web
+Services account.
 
 Type annotations for
 `boto3.client("directconnect").allocate_private_virtual_interface` method.
@@ -226,7 +231,8 @@ Returns
 
 ### allocate_public_virtual_interface
 
-Provisions a public virtual interface to be owned by the specified account.
+Provisions a public virtual interface to be owned by the specified Amazon Web
+Services account.
 
 Type annotations for
 `boto3.client("directconnect").allocate_public_virtual_interface` method.
@@ -250,7 +256,8 @@ Returns
 
 ### allocate_transit_virtual_interface
 
-Provisions a transit virtual interface to be owned by the specified account.
+Provisions a transit virtual interface to be owned by the specified Amazon Web
+Services account.
 
 Type annotations for
 `boto3.client("directconnect").allocate_transit_virtual_interface` method.
@@ -395,9 +402,31 @@ Keyword-only arguments:
 Returns
 [ConfirmConnectionResponseTypeDef](./type_defs.md#confirmconnectionresponsetypedef).
 
+### confirm_customer_agreement
+
+The confirmation of the terms of agreement when creating the connection/link
+aggregation group (LAG).
+
+Type annotations for `boto3.client("directconnect").confirm_customer_agreement`
+method.
+
+Boto3 documentation:
+[DirectConnect.Client.confirm_customer_agreement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_customer_agreement)
+
+Arguments mapping described in
+[ConfirmCustomerAgreementRequestRequestTypeDef](./type_defs.md#confirmcustomeragreementrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `agreementName`: `str`
+
+Returns
+[ConfirmCustomerAgreementResponseTypeDef](./type_defs.md#confirmcustomeragreementresponsetypedef).
+
 ### confirm_private_virtual_interface
 
-Accepts ownership of a private virtual interface created by another account.
+Accepts ownership of a private virtual interface created by another Amazon Web
+Services account.
 
 Type annotations for
 `boto3.client("directconnect").confirm_private_virtual_interface` method.
@@ -419,7 +448,8 @@ Returns
 
 ### confirm_public_virtual_interface
 
-Accepts ownership of a public virtual interface created by another account.
+Accepts ownership of a public virtual interface created by another Amazon Web
+Services account.
 
 Type annotations for
 `boto3.client("directconnect").confirm_public_virtual_interface` method.
@@ -439,7 +469,8 @@ Returns
 
 ### confirm_transit_virtual_interface
 
-Accepts ownership of a transit virtual interface created by another account.
+Accepts ownership of a transit virtual interface created by another Amazon Web
+Services account.
 
 Type annotations for
 `boto3.client("directconnect").confirm_transit_virtual_interface` method.
@@ -932,6 +963,20 @@ Keyword-only arguments:
 
 Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
 
+### describe_customer_metadata
+
+Get and view a list of customer agreements, along with their signed status and
+whether the customer is an NNIPartner, NNIPartnerV2, or a nonPartner.
+
+Type annotations for `boto3.client("directconnect").describe_customer_metadata`
+method.
+
+Boto3 documentation:
+[DirectConnect.Client.describe_customer_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_customer_metadata)
+
+Returns
+[DescribeCustomerMetadataResponseTypeDef](./type_defs.md#describecustomermetadataresponsetypedef).
+
 ### describe_direct_connect_gateway_association_proposals
 
 Describes one or more association proposals for connection between a virtual
@@ -1078,8 +1123,8 @@ Returns
 
 ### describe_interconnects
 
-Lists the interconnects owned by the account or only the specified
-interconnect.
+Lists the interconnects owned by the Amazon Web Services account or only the
+specified interconnect.
 
 Type annotations for `boto3.client("directconnect").describe_interconnects`
 method.
@@ -1139,7 +1184,7 @@ Returns
 
 ### describe_locations
 
-Lists the Direct Connect locations in the current Region.
+Lists the Direct Connect locations in the current Amazon Web Services Region.
 
 Type annotations for `boto3.client("directconnect").describe_locations` method.
 
@@ -1147,6 +1192,27 @@ Boto3 documentation:
 [DirectConnect.Client.describe_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_locations)
 
 Returns [LocationsTypeDef](./type_defs.md#locationstypedef).
+
+### describe_router_configuration
+
+Details about the router.
+
+Type annotations for
+`boto3.client("directconnect").describe_router_configuration` method.
+
+Boto3 documentation:
+[DirectConnect.Client.describe_router_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_router_configuration)
+
+Arguments mapping described in
+[DescribeRouterConfigurationRequestRequestTypeDef](./type_defs.md#describerouterconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `virtualInterfaceId`: `str` *(required)*
+- `routerTypeIdentifier`: `str`
+
+Returns
+[DescribeRouterConfigurationResponseTypeDef](./type_defs.md#describerouterconfigurationresponsetypedef).
 
 ### describe_tags
 
@@ -1169,7 +1235,7 @@ Returns
 
 ### describe_virtual_gateways
 
-Lists the virtual private gateways owned by the account.
+Lists the virtual private gateways owned by the Amazon Web Services account.
 
 Type annotations for `boto3.client("directconnect").describe_virtual_gateways`
 method.
@@ -1181,7 +1247,7 @@ Returns [VirtualGatewaysTypeDef](./type_defs.md#virtualgatewaystypedef).
 
 ### describe_virtual_interfaces
 
-Displays all virtual interfaces for an account.
+Displays all virtual interfaces for an Amazon Web Services account.
 
 Type annotations for
 `boto3.client("directconnect").describe_virtual_interfaces` method.
@@ -1388,6 +1454,27 @@ Keyword-only arguments:
 
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
+
+### update_direct_connect_gateway
+
+Updates the name of a current Direct Connect gateway.
+
+Type annotations for
+`boto3.client("directconnect").update_direct_connect_gateway` method.
+
+Boto3 documentation:
+[DirectConnect.Client.update_direct_connect_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_direct_connect_gateway)
+
+Arguments mapping described in
+[UpdateDirectConnectGatewayRequestRequestTypeDef](./type_defs.md#updatedirectconnectgatewayrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `directConnectGatewayId`: `str` *(required)*
+- `newDirectConnectGatewayName`: `str` *(required)*
+
+Returns
+[UpdateDirectConnectGatewayResponseTypeDef](./type_defs.md#updatedirectconnectgatewayresponsetypedef).
 
 ### update_direct_connect_gateway_association
 

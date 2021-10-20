@@ -1455,6 +1455,8 @@ Optional fields:
   [CaptionSourceFramerateTypeDef](./type_defs.md#captionsourceframeratetypedef)
 - `SourceFile`: `str`
 - `TimeDelta`: `int`
+- `TimeDeltaUnits`:
+  [FileSourceTimeDeltaUnitsType](./literals.md#filesourcetimedeltaunitstype)
 
 ## FrameCaptureSettingsTypeDef
 

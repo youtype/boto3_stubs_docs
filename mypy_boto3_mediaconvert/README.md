@@ -249,6 +249,7 @@ from mypy_boto3_mediaconvert.literals import AacAudioDescriptionBroadcasterMixTy
 - [EmbeddedTerminateCaptionsType](./literals.md#embeddedterminatecaptionstype)
 - [F4vMoovPlacementType](./literals.md#f4vmoovplacementtype)
 - [FileSourceConvert608To708Type](./literals.md#filesourceconvert608to708type)
+- [FileSourceTimeDeltaUnitsType](./literals.md#filesourcetimedeltaunitstype)
 - [FontScriptType](./literals.md#fontscripttype)
 - [H264AdaptiveQuantizationType](./literals.md#h264adaptivequantizationtype)
 - [H264CodecLevelType](./literals.md#h264codecleveltype)

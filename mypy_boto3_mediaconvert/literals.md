@@ -153,6 +153,7 @@ type annotations stubs module
   - [EmbeddedTerminateCaptionsType](#embeddedterminatecaptionstype)
   - [F4vMoovPlacementType](#f4vmoovplacementtype)
   - [FileSourceConvert608To708Type](#filesourceconvert608to708type)
+  - [FileSourceTimeDeltaUnitsType](#filesourcetimedeltaunitstype)
   - [FontScriptType](#fontscripttype)
   - [H264AdaptiveQuantizationType](#h264adaptivequantizationtype)
   - [H264CodecLevelType](#h264codecleveltype)
@@ -2164,6 +2165,17 @@ Values:
 
 - `DISABLED`
 - `UPCONVERT`
+
+## FileSourceTimeDeltaUnitsType
+
+```python
+from mypy_boto3_mediaconvert.literals import FileSourceTimeDeltaUnitsType
+```
+
+Values:
+
+- `MILLISECONDS`
+- `SECONDS`
 
 ## FontScriptType
 
@@ -5317,6 +5329,7 @@ Values:
 - `opsworkscm`
 - `organizations`
 - `outposts`
+- `panorama`
 - `personalize`
 - `personalize-events`
 - `personalize-runtime`

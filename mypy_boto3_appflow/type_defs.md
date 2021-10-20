@@ -84,6 +84,7 @@ type annotations stubs module
   - [RedshiftDestinationPropertiesTypeDef](#redshiftdestinationpropertiestypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3DestinationPropertiesTypeDef](#s3destinationpropertiestypedef)
+  - [S3InputFormatConfigTypeDef](#s3inputformatconfigtypedef)
   - [S3OutputFormatConfigTypeDef](#s3outputformatconfigtypedef)
   - [S3SourcePropertiesTypeDef](#s3sourcepropertiestypedef)
   - [SAPODataConnectorProfileCredentialsTypeDef](#sapodataconnectorprofilecredentialstypedef)
@@ -1289,6 +1290,16 @@ Optional fields:
 - `s3OutputFormatConfig`:
   [S3OutputFormatConfigTypeDef](./type_defs.md#s3outputformatconfigtypedef)
 
+## S3InputFormatConfigTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import S3InputFormatConfigTypeDef
+```
+
+Optional fields:
+
+- `s3InputFileType`: [S3InputFileTypeType](./literals.md#s3inputfiletypetype)
+
 ## S3OutputFormatConfigTypeDef
 
 ```python
@@ -1315,6 +1326,8 @@ Required fields:
 Optional fields:
 
 - `bucketPrefix`: `str`
+- `s3InputFormatConfig`:
+  [S3InputFormatConfigTypeDef](./type_defs.md#s3inputformatconfigtypedef)
 
 ## SAPODataConnectorProfileCredentialsTypeDef
 

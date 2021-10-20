@@ -28,6 +28,7 @@ type annotations stubs module
   - [PrivateConnectionProvisioningFailureCauseType](#privateconnectionprovisioningfailurecausetype)
   - [PrivateConnectionProvisioningStatusType](#privateconnectionprovisioningstatustype)
   - [S3ConnectorOperatorType](#s3connectoroperatortype)
+  - [S3InputFileTypeType](#s3inputfiletypetype)
   - [SAPODataConnectorOperatorType](#sapodataconnectoroperatortype)
   - [SalesforceConnectorOperatorType](#salesforceconnectoroperatortype)
   - [ScheduleFrequencyTypeType](#schedulefrequencytypetype)
@@ -397,6 +398,17 @@ Values:
 - `VALIDATE_NON_NULL`
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
+
+## S3InputFileTypeType
+
+```python
+from mypy_boto3_appflow.literals import S3InputFileTypeType
+```
+
+Values:
+
+- `CSV`
+- `JSON`
 
 ## SAPODataConnectorOperatorType
 
@@ -877,6 +889,7 @@ Values:
 - `opsworkscm`
 - `organizations`
 - `outposts`
+- `panorama`
 - `personalize`
 - `personalize-events`
 - `personalize-runtime`

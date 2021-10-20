@@ -333,6 +333,8 @@ type annotations stubs module
   - [CountryTypeDef](#countrytypedef)
   - [CreateActionTargetRequestRequestTypeDef](#createactiontargetrequestrequesttypedef)
   - [CreateActionTargetResponseTypeDef](#createactiontargetresponsetypedef)
+  - [CreateFindingAggregatorRequestRequestTypeDef](#createfindingaggregatorrequestrequesttypedef)
+  - [CreateFindingAggregatorResponseTypeDef](#createfindingaggregatorresponsetypedef)
   - [CreateInsightRequestRequestTypeDef](#createinsightrequestrequesttypedef)
   - [CreateInsightResponseTypeDef](#createinsightresponsetypedef)
   - [CreateMembersRequestRequestTypeDef](#createmembersrequestrequesttypedef)
@@ -347,6 +349,7 @@ type annotations stubs module
   - [DeclineInvitationsResponseTypeDef](#declineinvitationsresponsetypedef)
   - [DeleteActionTargetRequestRequestTypeDef](#deleteactiontargetrequestrequesttypedef)
   - [DeleteActionTargetResponseTypeDef](#deleteactiontargetresponsetypedef)
+  - [DeleteFindingAggregatorRequestRequestTypeDef](#deletefindingaggregatorrequestrequesttypedef)
   - [DeleteInsightRequestRequestTypeDef](#deleteinsightrequestrequesttypedef)
   - [DeleteInsightResponseTypeDef](#deleteinsightresponsetypedef)
   - [DeleteInvitationsRequestRequestTypeDef](#deleteinvitationsrequestrequesttypedef)
@@ -372,12 +375,15 @@ type annotations stubs module
   - [EnableImportFindingsForProductResponseTypeDef](#enableimportfindingsforproductresponsetypedef)
   - [EnableOrganizationAdminAccountRequestRequestTypeDef](#enableorganizationadminaccountrequestrequesttypedef)
   - [EnableSecurityHubRequestRequestTypeDef](#enablesecurityhubrequestrequesttypedef)
+  - [FindingAggregatorTypeDef](#findingaggregatortypedef)
   - [FindingProviderFieldsTypeDef](#findingproviderfieldstypedef)
   - [FindingProviderSeverityTypeDef](#findingproviderseveritytypedef)
   - [GeoLocationTypeDef](#geolocationtypedef)
   - [GetAdministratorAccountResponseTypeDef](#getadministratoraccountresponsetypedef)
   - [GetEnabledStandardsRequestRequestTypeDef](#getenabledstandardsrequestrequesttypedef)
   - [GetEnabledStandardsResponseTypeDef](#getenabledstandardsresponsetypedef)
+  - [GetFindingAggregatorRequestRequestTypeDef](#getfindingaggregatorrequestrequesttypedef)
+  - [GetFindingAggregatorResponseTypeDef](#getfindingaggregatorresponsetypedef)
   - [GetFindingsRequestRequestTypeDef](#getfindingsrequestrequesttypedef)
   - [GetFindingsResponseTypeDef](#getfindingsresponsetypedef)
   - [GetInsightResultsRequestRequestTypeDef](#getinsightresultsrequestrequesttypedef)
@@ -402,6 +408,8 @@ type annotations stubs module
   - [KeywordFilterTypeDef](#keywordfiltertypedef)
   - [ListEnabledProductsForImportRequestRequestTypeDef](#listenabledproductsforimportrequestrequesttypedef)
   - [ListEnabledProductsForImportResponseTypeDef](#listenabledproductsforimportresponsetypedef)
+  - [ListFindingAggregatorsRequestRequestTypeDef](#listfindingaggregatorsrequestrequesttypedef)
+  - [ListFindingAggregatorsResponseTypeDef](#listfindingaggregatorsresponsetypedef)
   - [ListInvitationsRequestRequestTypeDef](#listinvitationsrequestrequesttypedef)
   - [ListInvitationsResponseTypeDef](#listinvitationsresponsetypedef)
   - [ListMembersRequestRequestTypeDef](#listmembersrequestrequesttypedef)
@@ -457,6 +465,8 @@ type annotations stubs module
   - [ThreatIntelIndicatorTypeDef](#threatintelindicatortypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateActionTargetRequestRequestTypeDef](#updateactiontargetrequestrequesttypedef)
+  - [UpdateFindingAggregatorRequestRequestTypeDef](#updatefindingaggregatorrequestrequesttypedef)
+  - [UpdateFindingAggregatorResponseTypeDef](#updatefindingaggregatorresponsetypedef)
   - [UpdateFindingsRequestRequestTypeDef](#updatefindingsrequestrequesttypedef)
   - [UpdateInsightRequestRequestTypeDef](#updateinsightrequestrequesttypedef)
   - [UpdateOrganizationConfigurationRequestRequestTypeDef](#updateorganizationconfigurationrequestrequesttypedef)
@@ -5464,6 +5474,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateFindingAggregatorRequestRequestTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import CreateFindingAggregatorRequestRequestTypeDef
+```
+
+Required fields:
+
+- `RegionLinkingMode`: `str`
+
+Optional fields:
+
+- `Regions`: `Sequence`\[`str`\]
+
+## CreateFindingAggregatorResponseTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import CreateFindingAggregatorResponseTypeDef
+```
+
+Required fields:
+
+- `FindingAggregatorArn`: `str`
+- `FindingAggregationRegion`: `str`
+- `RegionLinkingMode`: `str`
+- `Regions`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateInsightRequestRequestTypeDef
 
 ```python
@@ -5633,6 +5672,16 @@ Required fields:
 - `ActionTargetArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteFindingAggregatorRequestRequestTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import DeleteFindingAggregatorRequestRequestTypeDef
+```
+
+Required fields:
+
+- `FindingAggregatorArn`: `str`
 
 ## DeleteInsightRequestRequestTypeDef
 
@@ -5928,6 +5977,16 @@ Optional fields:
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `EnableDefaultStandards`: `bool`
 
+## FindingAggregatorTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import FindingAggregatorTypeDef
+```
+
+Optional fields:
+
+- `FindingAggregatorArn`: `str`
+
 ## FindingProviderFieldsTypeDef
 
 ```python
@@ -6001,6 +6060,31 @@ Required fields:
 - `StandardsSubscriptions`:
   `List`\[[StandardsSubscriptionTypeDef](./type_defs.md#standardssubscriptiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetFindingAggregatorRequestRequestTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import GetFindingAggregatorRequestRequestTypeDef
+```
+
+Required fields:
+
+- `FindingAggregatorArn`: `str`
+
+## GetFindingAggregatorResponseTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import GetFindingAggregatorResponseTypeDef
+```
+
+Required fields:
+
+- `FindingAggregatorArn`: `str`
+- `FindingAggregationRegion`: `str`
+- `RegionLinkingMode`: `str`
+- `Regions`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -6291,6 +6375,31 @@ from mypy_boto3_securityhub.type_defs import ListEnabledProductsForImportRespons
 Required fields:
 
 - `ProductSubscriptions`: `List`\[`str`\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListFindingAggregatorsRequestRequestTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import ListFindingAggregatorsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListFindingAggregatorsResponseTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import ListFindingAggregatorsResponseTypeDef
+```
+
+Required fields:
+
+- `FindingAggregators`:
+  `List`\[[FindingAggregatorTypeDef](./type_defs.md#findingaggregatortypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -7151,6 +7260,36 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
+
+## UpdateFindingAggregatorRequestRequestTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import UpdateFindingAggregatorRequestRequestTypeDef
+```
+
+Required fields:
+
+- `FindingAggregatorArn`: `str`
+- `RegionLinkingMode`: `str`
+
+Optional fields:
+
+- `Regions`: `Sequence`\[`str`\]
+
+## UpdateFindingAggregatorResponseTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import UpdateFindingAggregatorResponseTypeDef
+```
+
+Required fields:
+
+- `FindingAggregatorArn`: `str`
+- `FindingAggregationRegion`: `str`
+- `RegionLinkingMode`: `str`
+- `Regions`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateFindingsRequestRequestTypeDef
 
