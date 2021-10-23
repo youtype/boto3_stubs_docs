@@ -733,7 +733,7 @@ Returns
 ### describe_input_security_group
 
 Produces a summary of an Input Security Group See also:
-`AWS API Documentation < https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeInputSecuri tyGroup>`\_
+`AWS API Documentation < https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10- 14/DescribeInputSecurityGroup>`\_
 **Request Syntax** response = client.describe_input_security_group(
 InputSecurityGroupId='string' ).
 
@@ -944,7 +944,7 @@ Returns
 ### list_input_security_groups
 
 Produces a list of Input Security Groups for an account See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/List InputSecurityGroups>`\_
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10- 14/ListInputSecurityGroups>`\_
 **Request Syntax** response = client.list_input_security_groups(
 MaxResults=123, NextToken='strin...
 
@@ -1090,7 +1090,7 @@ Returns
 ### list_tags_for_resource
 
 Produces list of tags that have been created for a resource See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/List TagsForResource>`\_
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10- 14/ListTagsForResource>`\_
 **Request Syntax** response = client.list_tags_for_resource(
 ResourceArn='string' ).
 

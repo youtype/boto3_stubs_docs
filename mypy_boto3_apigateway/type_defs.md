@@ -1244,7 +1244,7 @@ Required fields:
 
 - `contentType`: `str`
 - `contentDisposition`: `str`
-- `body`: `bytes`
+- `body`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2564,7 +2564,7 @@ Required fields:
 
 - `contentType`: `str`
 - `contentDisposition`: `str`
-- `body`: `bytes`
+- `body`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

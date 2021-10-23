@@ -548,6 +548,7 @@ from mypy_boto3_quicksight.type_defs import AccountCustomizationTypeDef, ...
 - [RegisterUserResponseTypeDef](./type_defs.md#registeruserresponsetypedef)
 - [RegisteredUserDashboardEmbeddingConfigurationTypeDef](./type_defs.md#registereduserdashboardembeddingconfigurationtypedef)
 - [RegisteredUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#registereduserembeddingexperienceconfigurationtypedef)
+- [RegisteredUserQSearchBarEmbeddingConfigurationTypeDef](./type_defs.md#registereduserqsearchbarembeddingconfigurationtypedef)
 - [RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef](./type_defs.md#registereduserquicksightconsoleembeddingconfigurationtypedef)
 - [RelationalTableTypeDef](./type_defs.md#relationaltabletypedef)
 - [RenameColumnOperationTypeDef](./type_defs.md#renamecolumnoperationtypedef)

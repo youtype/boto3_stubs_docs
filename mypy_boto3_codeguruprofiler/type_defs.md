@@ -449,7 +449,7 @@ Required fields:
 
 - `contentEncoding`: `str`
 - `contentType`: `str`
-- `profile`: `bytes`
+- `profile`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

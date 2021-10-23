@@ -462,8 +462,8 @@ Returns
 
 ### deregister_organization_admin_account
 
-Removes the specified member account as a delegated administrator for Audit
-Manager.
+Removes the specified member Amazon Web Services account as a delegated
+administrator for Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").deregister_organization_admin_account` method.
@@ -799,7 +799,7 @@ Returns
 
 ### get_settings
 
-Returns the settings for the specified account.
+Returns the settings for the specified Amazon Web Services account.
 
 Type annotations for `boto3.client("auditmanager").get_settings` method.
 
@@ -968,7 +968,7 @@ Returns
 
 ### register_account
 
-Enables Audit Manager for the specified account.
+Enables Audit Manager for the specified Amazon Web Services account.
 
 Type annotations for `boto3.client("auditmanager").register_account` method.
 
@@ -988,8 +988,8 @@ Returns
 
 ### register_organization_admin_account
 
-Enables an account within the organization as the delegated administrator for
-Audit Manager.
+Enables an Amazon Web Services account within the organization as the delegated
+administrator for Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").register_organization_admin_account` method.

@@ -417,7 +417,7 @@ from mypy_boto3_schemas.type_defs import GetCodeBindingSourceResponseTypeDef
 
 Required fields:
 
-- `Body`: `bytes`
+- `Body`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

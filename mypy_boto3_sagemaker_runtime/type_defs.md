@@ -75,7 +75,7 @@ from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointOutputTypeDef
 
 Required fields:
 
-- `Body`: `bytes`
+- `Body`: `StreamingBody`
 - `ContentType`: `str`
 - `InvokedProductionVariant`: `str`
 - `CustomAttributes`: `str`

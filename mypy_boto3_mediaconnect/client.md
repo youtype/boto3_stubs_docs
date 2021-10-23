@@ -446,7 +446,7 @@ Returns
 ### list_tags_for_resource
 
 List all tags on an AWS Elemental MediaConnect resource See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/L istTagsForResource>`\_
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11- 14/ListTagsForResource>`\_
 **Request Syntax** response = client.list_tags_for_resource(
 ResourceArn='string' ).
 

@@ -2086,7 +2086,7 @@ from mypy_boto3_cloudfront.type_defs import GetFunctionResultTypeDef
 
 Required fields:
 
-- `FunctionCode`: `bytes`
+- `FunctionCode`: `StreamingBody`
 - `ETag`: `str`
 - `ContentType`: `str`
 - `ResponseMetadata`:

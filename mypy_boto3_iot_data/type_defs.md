@@ -47,7 +47,7 @@ from mypy_boto3_iot_data.type_defs import DeleteThingShadowResponseTypeDef
 
 Required fields:
 
-- `payload`: `bytes`
+- `payload`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -98,7 +98,7 @@ from mypy_boto3_iot_data.type_defs import GetThingShadowResponseTypeDef
 
 Required fields:
 
-- `payload`: `bytes`
+- `payload`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -234,6 +234,6 @@ from mypy_boto3_iot_data.type_defs import UpdateThingShadowResponseTypeDef
 
 Required fields:
 
-- `payload`: `bytes`
+- `payload`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

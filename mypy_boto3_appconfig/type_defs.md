@@ -160,7 +160,7 @@ from mypy_boto3_appconfig.type_defs import ConfigurationTypeDef
 
 Required fields:
 
-- `Content`: `bytes`
+- `Content`: `StreamingBody`
 - `ConfigurationVersion`: `str`
 - `ContentType`: `str`
 - `ResponseMetadata`:
@@ -591,7 +591,7 @@ Required fields:
 - `ConfigurationProfileId`: `str`
 - `VersionNumber`: `int`
 - `Description`: `str`
-- `Content`: `bytes`
+- `Content`: `StreamingBody`
 - `ContentType`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

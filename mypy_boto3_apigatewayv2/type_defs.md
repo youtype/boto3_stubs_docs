@@ -1024,7 +1024,7 @@ from mypy_boto3_apigatewayv2.type_defs import ExportApiResponseTypeDef
 
 Required fields:
 
-- `body`: `bytes`
+- `body`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

@@ -409,7 +409,7 @@ Returns
 
 ### create_hours_of_operation
 
-This API is in preview release for Amazon Connect and is subject to change.
+Creates hours of operation.
 
 Type annotations for `boto3.client("connect").create_hours_of_operation`
 method.
@@ -641,7 +641,7 @@ Returns
 
 ### delete_hours_of_operation
 
-This API is in preview release for Amazon Connect and is subject to change.
+Deletes an hours of operation.
 
 Type annotations for `boto3.client("connect").delete_hours_of_operation`
 method.
@@ -803,7 +803,7 @@ Returns
 
 ### describe_hours_of_operation
 
-This API is in preview release for Amazon Connect and is subject to change.
+Describes the hours of operation.
 
 Type annotations for `boto3.client("connect").describe_hours_of_operation`
 method.
@@ -2109,7 +2109,7 @@ Keyword-only arguments:
 
 ### update_hours_of_operation
 
-This API is in preview release for Amazon Connect and is subject to change.
+Updates the hours of operation.
 
 Type annotations for `boto3.client("connect").update_hours_of_operation`
 method.
