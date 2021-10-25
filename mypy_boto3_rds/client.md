@@ -27,6 +27,7 @@ type annotations stubs module
     - [copy_db_snapshot](#copy_db_snapshot)
     - [copy_option_group](#copy_option_group)
     - [create_custom_availability_zone](#create_custom_availability_zone)
+    - [create_custom_db_engine_version](#create_custom_db_engine_version)
     - [create_db_cluster](#create_db_cluster)
     - [create_db_cluster_endpoint](#create_db_cluster_endpoint)
     - [create_db_cluster_parameter_group](#create_db_cluster_parameter_group)
@@ -43,6 +44,7 @@ type annotations stubs module
     - [create_global_cluster](#create_global_cluster)
     - [create_option_group](#create_option_group)
     - [delete_custom_availability_zone](#delete_custom_availability_zone)
+    - [delete_custom_db_engine_version](#delete_custom_db_engine_version)
     - [delete_db_cluster](#delete_db_cluster)
     - [delete_db_cluster_endpoint](#delete_db_cluster_endpoint)
     - [delete_db_cluster_parameter_group](#delete_db_cluster_parameter_group)
@@ -109,6 +111,7 @@ type annotations stubs module
     - [list_tags_for_resource](#list_tags_for_resource)
     - [modify_certificates](#modify_certificates)
     - [modify_current_db_cluster_capacity](#modify_current_db_cluster_capacity)
+    - [modify_custom_db_engine_version](#modify_custom_db_engine_version)
     - [modify_db_cluster](#modify_db_cluster)
     - [modify_db_cluster_endpoint](#modify_db_cluster_endpoint)
     - [modify_db_cluster_parameter_group](#modify_db_cluster_parameter_group)
@@ -194,6 +197,9 @@ Exceptions:
 - `Exceptions.CustomAvailabilityZoneAlreadyExistsFault`
 - `Exceptions.CustomAvailabilityZoneNotFoundFault`
 - `Exceptions.CustomAvailabilityZoneQuotaExceededFault`
+- `Exceptions.CustomDBEngineVersionAlreadyExistsFault`
+- `Exceptions.CustomDBEngineVersionNotFoundFault`
+- `Exceptions.CustomDBEngineVersionQuotaExceededFault`
 - `Exceptions.DBClusterAlreadyExistsFault`
 - `Exceptions.DBClusterBacktrackNotFoundFault`
 - `Exceptions.DBClusterEndpointAlreadyExistsFault`
@@ -256,6 +262,7 @@ Exceptions:
 - `Exceptions.InsufficientDBClusterCapacityFault`
 - `Exceptions.InsufficientDBInstanceCapacityFault`
 - `Exceptions.InsufficientStorageClusterCapacityFault`
+- `Exceptions.InvalidCustomDBEngineVersionStateFault`
 - `Exceptions.InvalidDBClusterCapacityFault`
 - `Exceptions.InvalidDBClusterEndpointStateFault`
 - `Exceptions.InvalidDBClusterSnapshotStateFault`
@@ -638,6 +645,33 @@ Keyword-only arguments:
 Returns
 [CreateCustomAvailabilityZoneResultTypeDef](./type_defs.md#createcustomavailabilityzoneresulttypedef).
 
+### create_custom_db_engine_version
+
+Creates a custom DB engine version (CEV).
+
+Type annotations for `boto3.client("rds").create_custom_db_engine_version`
+method.
+
+Boto3 documentation:
+[RDS.Client.create_custom_db_engine_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_custom_db_engine_version)
+
+Arguments mapping described in
+[CreateCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#createcustomdbengineversionmessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `Engine`: `str` *(required)*
+- `EngineVersion`: `str` *(required)*
+- `DatabaseInstallationFilesS3BucketName`: `str` *(required)*
+- `KMSKeyId`: `str` *(required)*
+- `Manifest`: `str` *(required)*
+- `DatabaseInstallationFilesS3Prefix`: `str`
+- `Description`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef).
+
 ### create_db_cluster
 
 Creates a new Amazon Aurora DB cluster.
@@ -823,6 +857,7 @@ Keyword-only arguments:
 - `DeletionProtection`: `bool`
 - `MaxAllocatedStorage`: `int`
 - `EnableCustomerOwnedIp`: `bool`
+- `CustomIamInstanceProfile`: `str`
 
 Returns
 [CreateDBInstanceResultTypeDef](./type_defs.md#createdbinstanceresulttypedef).
@@ -876,6 +911,7 @@ Keyword-only arguments:
 - `DomainIAMRoleName`: `str`
 - `ReplicaMode`: [ReplicaModeType](./literals.md#replicamodetype)
 - `MaxAllocatedStorage`: `int`
+- `CustomIamInstanceProfile`: `str`
 - `SourceRegion`: `str`
 
 Returns
@@ -1116,6 +1152,27 @@ Keyword-only arguments:
 
 Returns
 [DeleteCustomAvailabilityZoneResultTypeDef](./type_defs.md#deletecustomavailabilityzoneresulttypedef).
+
+### delete_custom_db_engine_version
+
+Deletes a custom engine version.
+
+Type annotations for `boto3.client("rds").delete_custom_db_engine_version`
+method.
+
+Boto3 documentation:
+[RDS.Client.delete_custom_db_engine_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_custom_db_engine_version)
+
+Arguments mapping described in
+[DeleteCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#deletecustomdbengineversionmessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `Engine`: `str` *(required)*
+- `EngineVersion`: `str` *(required)*
+
+Returns
+[DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef).
 
 ### delete_db_cluster
 
@@ -2566,6 +2623,30 @@ Keyword-only arguments:
 Returns
 [DBClusterCapacityInfoTypeDef](./type_defs.md#dbclustercapacityinfotypedef).
 
+### modify_custom_db_engine_version
+
+Modifies the status of a custom engine version (CEV).
+
+Type annotations for `boto3.client("rds").modify_custom_db_engine_version`
+method.
+
+Boto3 documentation:
+[RDS.Client.modify_custom_db_engine_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_custom_db_engine_version)
+
+Arguments mapping described in
+[ModifyCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#modifycustomdbengineversionmessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `Engine`: `str` *(required)*
+- `EngineVersion`: `str` *(required)*
+- `Description`: `str`
+- `Status`:
+  [CustomEngineVersionStatusType](./literals.md#customengineversionstatustype)
+
+Returns
+[DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef).
+
 ### modify_db_cluster
 
 Modify a setting for an Amazon Aurora DB cluster.
@@ -2740,6 +2821,8 @@ Keyword-only arguments:
 - `ReplicaMode`: [ReplicaModeType](./literals.md#replicamodetype)
 - `EnableCustomerOwnedIp`: `bool`
 - `AwsBackupRecoveryPointArn`: `str`
+- `AutomationMode`: [AutomationModeType](./literals.md#automationmodetype)
+- `ResumeFullAutomationModeMinutes`: `int`
 
 Returns
 [ModifyDBInstanceResultTypeDef](./type_defs.md#modifydbinstanceresulttypedef).
@@ -3399,6 +3482,7 @@ Keyword-only arguments:
 - `DBParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 - `EnableCustomerOwnedIp`: `bool`
+- `CustomIamInstanceProfile`: `str`
 
 Returns
 [RestoreDBInstanceFromDBSnapshotResultTypeDef](./type_defs.md#restoredbinstancefromdbsnapshotresulttypedef).
@@ -3517,6 +3601,7 @@ Keyword-only arguments:
 - `MaxAllocatedStorage`: `int`
 - `SourceDBInstanceAutomatedBackupsArn`: `str`
 - `EnableCustomerOwnedIp`: `bool`
+- `CustomIamInstanceProfile`: `str`
 
 Returns
 [RestoreDBInstanceToPointInTimeResultTypeDef](./type_defs.md#restoredbinstancetopointintimeresulttypedef).

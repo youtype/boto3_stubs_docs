@@ -43,6 +43,7 @@ type annotations stubs module
   - [CopyOptionGroupResultTypeDef](#copyoptiongroupresulttypedef)
   - [CreateCustomAvailabilityZoneMessageRequestTypeDef](#createcustomavailabilityzonemessagerequesttypedef)
   - [CreateCustomAvailabilityZoneResultTypeDef](#createcustomavailabilityzoneresulttypedef)
+  - [CreateCustomDBEngineVersionMessageRequestTypeDef](#createcustomdbengineversionmessagerequesttypedef)
   - [CreateDBClusterEndpointMessageRequestTypeDef](#createdbclusterendpointmessagerequesttypedef)
   - [CreateDBClusterMessageRequestTypeDef](#createdbclustermessagerequesttypedef)
   - [CreateDBClusterParameterGroupMessageRequestTypeDef](#createdbclusterparametergroupmessagerequesttypedef)
@@ -95,6 +96,7 @@ type annotations stubs module
   - [DBClusterSnapshotTypeDef](#dbclustersnapshottypedef)
   - [DBClusterTypeDef](#dbclustertypedef)
   - [DBEngineVersionMessageTypeDef](#dbengineversionmessagetypedef)
+  - [DBEngineVersionResponseMetadataTypeDef](#dbengineversionresponsemetadatatypedef)
   - [DBEngineVersionTypeDef](#dbengineversiontypedef)
   - [DBInstanceAutomatedBackupMessageTypeDef](#dbinstanceautomatedbackupmessagetypedef)
   - [DBInstanceAutomatedBackupTypeDef](#dbinstanceautomatedbackuptypedef)
@@ -123,6 +125,7 @@ type annotations stubs module
   - [DBSubnetGroupTypeDef](#dbsubnetgrouptypedef)
   - [DeleteCustomAvailabilityZoneMessageRequestTypeDef](#deletecustomavailabilityzonemessagerequesttypedef)
   - [DeleteCustomAvailabilityZoneResultTypeDef](#deletecustomavailabilityzoneresulttypedef)
+  - [DeleteCustomDBEngineVersionMessageRequestTypeDef](#deletecustomdbengineversionmessagerequesttypedef)
   - [DeleteDBClusterEndpointMessageRequestTypeDef](#deletedbclusterendpointmessagerequesttypedef)
   - [DeleteDBClusterMessageRequestTypeDef](#deletedbclustermessagerequesttypedef)
   - [DeleteDBClusterParameterGroupMessageRequestTypeDef](#deletedbclusterparametergroupmessagerequesttypedef)
@@ -235,6 +238,7 @@ type annotations stubs module
   - [ModifyCertificatesMessageRequestTypeDef](#modifycertificatesmessagerequesttypedef)
   - [ModifyCertificatesResultTypeDef](#modifycertificatesresulttypedef)
   - [ModifyCurrentDBClusterCapacityMessageRequestTypeDef](#modifycurrentdbclustercapacitymessagerequesttypedef)
+  - [ModifyCustomDBEngineVersionMessageRequestTypeDef](#modifycustomdbengineversionmessagerequesttypedef)
   - [ModifyDBClusterEndpointMessageRequestTypeDef](#modifydbclusterendpointmessagerequesttypedef)
   - [ModifyDBClusterMessageRequestTypeDef](#modifydbclustermessagerequesttypedef)
   - [ModifyDBClusterParameterGroupMessageRequestTypeDef](#modifydbclusterparametergroupmessagerequesttypedef)
@@ -841,6 +845,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateCustomDBEngineVersionMessageRequestTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateCustomDBEngineVersionMessageRequestTypeDef
+```
+
+Required fields:
+
+- `Engine`: `str`
+- `EngineVersion`: `str`
+- `DatabaseInstallationFilesS3BucketName`: `str`
+- `KMSKeyId`: `str`
+- `Manifest`: `str`
+
+Optional fields:
+
+- `DatabaseInstallationFilesS3Prefix`: `str`
+- `Description`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## CreateDBClusterEndpointMessageRequestTypeDef
 
 ```python
@@ -1035,6 +1059,7 @@ Optional fields:
 - `DeletionProtection`: `bool`
 - `MaxAllocatedStorage`: `int`
 - `EnableCustomerOwnedIp`: `bool`
+- `CustomIamInstanceProfile`: `str`
 
 ## CreateDBInstanceReadReplicaMessageRequestTypeDef
 
@@ -1080,6 +1105,7 @@ Optional fields:
 - `DomainIAMRoleName`: `str`
 - `ReplicaMode`: [ReplicaModeType](./literals.md#replicamodetype)
 - `MaxAllocatedStorage`: `int`
+- `CustomIamInstanceProfile`: `str`
 - `SourceRegion`: `str`
 
 ## CreateDBInstanceReadReplicaResultTypeDef
@@ -1776,6 +1802,47 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DBEngineVersionResponseMetadataTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DBEngineVersionResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Engine`: `str`
+- `EngineVersion`: `str`
+- `DBParameterGroupFamily`: `str`
+- `DBEngineDescription`: `str`
+- `DBEngineVersionDescription`: `str`
+- `DefaultCharacterSet`:
+  [CharacterSetTypeDef](./type_defs.md#charactersettypedef)
+- `SupportedCharacterSets`:
+  `List`\[[CharacterSetTypeDef](./type_defs.md#charactersettypedef)\]
+- `SupportedNcharCharacterSets`:
+  `List`\[[CharacterSetTypeDef](./type_defs.md#charactersettypedef)\]
+- `ValidUpgradeTarget`:
+  `List`\[[UpgradeTargetTypeDef](./type_defs.md#upgradetargettypedef)\]
+- `SupportedTimezones`:
+  `List`\[[TimezoneTypeDef](./type_defs.md#timezonetypedef)\]
+- `ExportableLogTypes`: `List`\[`str`\]
+- `SupportsLogExportsToCloudwatchLogs`: `bool`
+- `SupportsReadReplica`: `bool`
+- `SupportedEngineModes`: `List`\[`str`\]
+- `SupportedFeatureNames`: `List`\[`str`\]
+- `Status`: `str`
+- `SupportsParallelQuery`: `bool`
+- `SupportsGlobalDatabases`: `bool`
+- `MajorEngineVersion`: `str`
+- `DatabaseInstallationFilesS3BucketName`: `str`
+- `DatabaseInstallationFilesS3Prefix`: `str`
+- `DBEngineVersionArn`: `str`
+- `KMSKeyId`: `str`
+- `CreateTime`: `datetime`
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DBEngineVersionTypeDef
 
 ```python
@@ -1807,6 +1874,13 @@ Optional fields:
 - `Status`: `str`
 - `SupportsParallelQuery`: `bool`
 - `SupportsGlobalDatabases`: `bool`
+- `MajorEngineVersion`: `str`
+- `DatabaseInstallationFilesS3BucketName`: `str`
+- `DatabaseInstallationFilesS3Prefix`: `str`
+- `DBEngineVersionArn`: `str`
+- `KMSKeyId`: `str`
+- `CreateTime`: `datetime`
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DBInstanceAutomatedBackupMessageTypeDef
 
@@ -1997,6 +2071,9 @@ Optional fields:
 - `ActivityStreamMode`:
   [ActivityStreamModeType](./literals.md#activitystreammodetype)
 - `ActivityStreamEngineNativeAuditFieldsIncluded`: `bool`
+- `AutomationMode`: [AutomationModeType](./literals.md#automationmodetype)
+- `ResumeFullAutomationModeTime`: `datetime`
+- `CustomIamInstanceProfile`: `str`
 
 ## DBParameterGroupDetailsTypeDef
 
@@ -2313,6 +2390,17 @@ Required fields:
   [CustomAvailabilityZoneTypeDef](./type_defs.md#customavailabilityzonetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteCustomDBEngineVersionMessageRequestTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteCustomDBEngineVersionMessageRequestTypeDef
+```
+
+Required fields:
+
+- `Engine`: `str`
+- `EngineVersion`: `str`
 
 ## DeleteDBClusterEndpointMessageRequestTypeDef
 
@@ -3852,6 +3940,23 @@ Optional fields:
 - `SecondsBeforeTimeout`: `int`
 - `TimeoutAction`: `str`
 
+## ModifyCustomDBEngineVersionMessageRequestTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyCustomDBEngineVersionMessageRequestTypeDef
+```
+
+Required fields:
+
+- `Engine`: `str`
+- `EngineVersion`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `Status`:
+  [CustomEngineVersionStatusType](./literals.md#customengineversionstatustype)
+
 ## ModifyDBClusterEndpointMessageRequestTypeDef
 
 ```python
@@ -4017,6 +4122,8 @@ Optional fields:
 - `ReplicaMode`: [ReplicaModeType](./literals.md#replicamodetype)
 - `EnableCustomerOwnedIp`: `bool`
 - `AwsBackupRecoveryPointArn`: `str`
+- `AutomationMode`: [AutomationModeType](./literals.md#automationmodetype)
+- `ResumeFullAutomationModeMinutes`: `int`
 
 ## ModifyDBInstanceResultTypeDef
 
@@ -4632,6 +4739,8 @@ Optional fields:
 - `ProcessorFeatures`:
   `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `IAMDatabaseAuthenticationEnabled`: `bool`
+- `AutomationMode`: [AutomationModeType](./literals.md#automationmodetype)
+- `ResumeFullAutomationModeTime`: `datetime`
 
 ## ProcessorFeatureTypeDef
 
@@ -5206,6 +5315,7 @@ Optional fields:
 - `DBParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 - `EnableCustomerOwnedIp`: `bool`
+- `CustomIamInstanceProfile`: `str`
 
 ## RestoreDBInstanceFromDBSnapshotResultTypeDef
 
@@ -5334,6 +5444,7 @@ Optional fields:
 - `MaxAllocatedStorage`: `int`
 - `SourceDBInstanceAutomatedBackupsArn`: `str`
 - `EnableCustomerOwnedIp`: `bool`
+- `CustomIamInstanceProfile`: `str`
 
 ## RestoreDBInstanceToPointInTimeResultTypeDef
 

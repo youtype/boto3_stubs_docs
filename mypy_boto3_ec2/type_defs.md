@@ -25215,6 +25215,9 @@ Optional fields:
 - `VpnConnectionId`: `str`
 - `VpnGatewayId`: `str`
 - `TransitGatewayId`: `str`
+- `CoreNetworkArn`: `str`
+- `CoreNetworkAttachmentArn`: `str`
+- `GatewayAssociationState`: `str`
 - `Options`:
   [VpnConnectionOptionsTypeDef](./type_defs.md#vpnconnectionoptionstypedef)
 - `Routes`:

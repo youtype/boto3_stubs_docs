@@ -14,6 +14,7 @@ type annotations stubs module
   - [AssessmentControlTypeDef](#assessmentcontroltypedef)
   - [AssessmentEvidenceFolderTypeDef](#assessmentevidencefoldertypedef)
   - [AssessmentFrameworkMetadataTypeDef](#assessmentframeworkmetadatatypedef)
+  - [AssessmentFrameworkShareRequestTypeDef](#assessmentframeworksharerequesttypedef)
   - [AssessmentFrameworkTypeDef](#assessmentframeworktypedef)
   - [AssessmentMetadataItemTypeDef](#assessmentmetadataitemtypedef)
   - [AssessmentMetadataTypeDef](#assessmentmetadatatypedef)
@@ -57,6 +58,7 @@ type annotations stubs module
   - [DelegationMetadataTypeDef](#delegationmetadatatypedef)
   - [DelegationTypeDef](#delegationtypedef)
   - [DeleteAssessmentFrameworkRequestRequestTypeDef](#deleteassessmentframeworkrequestrequesttypedef)
+  - [DeleteAssessmentFrameworkShareRequestRequestTypeDef](#deleteassessmentframeworksharerequestrequesttypedef)
   - [DeleteAssessmentReportRequestRequestTypeDef](#deleteassessmentreportrequestrequesttypedef)
   - [DeleteAssessmentRequestRequestTypeDef](#deleteassessmentrequestrequesttypedef)
   - [DeleteControlRequestRequestTypeDef](#deletecontrolrequestrequesttypedef)
@@ -93,6 +95,8 @@ type annotations stubs module
   - [GetServicesInScopeResponseTypeDef](#getservicesinscoperesponsetypedef)
   - [GetSettingsRequestRequestTypeDef](#getsettingsrequestrequesttypedef)
   - [GetSettingsResponseTypeDef](#getsettingsresponsetypedef)
+  - [ListAssessmentFrameworkShareRequestsRequestRequestTypeDef](#listassessmentframeworksharerequestsrequestrequesttypedef)
+  - [ListAssessmentFrameworkShareRequestsResponseTypeDef](#listassessmentframeworksharerequestsresponsetypedef)
   - [ListAssessmentFrameworksRequestRequestTypeDef](#listassessmentframeworksrequestrequesttypedef)
   - [ListAssessmentFrameworksResponseTypeDef](#listassessmentframeworksresponsetypedef)
   - [ListAssessmentReportsRequestRequestTypeDef](#listassessmentreportsrequestrequesttypedef)
@@ -120,6 +124,8 @@ type annotations stubs module
   - [ServiceMetadataTypeDef](#servicemetadatatypedef)
   - [SettingsTypeDef](#settingstypedef)
   - [SourceKeywordTypeDef](#sourcekeywordtypedef)
+  - [StartAssessmentFrameworkShareRequestRequestTypeDef](#startassessmentframeworksharerequestrequesttypedef)
+  - [StartAssessmentFrameworkShareResponseTypeDef](#startassessmentframeworkshareresponsetypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [URLTypeDef](#urltypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
@@ -130,6 +136,8 @@ type annotations stubs module
   - [UpdateAssessmentFrameworkControlSetTypeDef](#updateassessmentframeworkcontrolsettypedef)
   - [UpdateAssessmentFrameworkRequestRequestTypeDef](#updateassessmentframeworkrequestrequesttypedef)
   - [UpdateAssessmentFrameworkResponseTypeDef](#updateassessmentframeworkresponsetypedef)
+  - [UpdateAssessmentFrameworkShareRequestRequestTypeDef](#updateassessmentframeworksharerequestrequesttypedef)
+  - [UpdateAssessmentFrameworkShareResponseTypeDef](#updateassessmentframeworkshareresponsetypedef)
   - [UpdateAssessmentRequestRequestTypeDef](#updateassessmentrequestrequesttypedef)
   - [UpdateAssessmentResponseTypeDef](#updateassessmentresponsetypedef)
   - [UpdateAssessmentStatusRequestRequestTypeDef](#updateassessmentstatusrequestrequesttypedef)
@@ -247,6 +255,30 @@ Optional fields:
 - `controlSetsCount`: `int`
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
+
+## AssessmentFrameworkShareRequestTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import AssessmentFrameworkShareRequestTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `frameworkId`: `str`
+- `frameworkName`: `str`
+- `frameworkDescription`: `str`
+- `status`: [ShareRequestStatusType](./literals.md#sharerequeststatustype)
+- `sourceAccount`: `str`
+- `destinationAccount`: `str`
+- `destinationRegion`: `str`
+- `expirationTime`: `datetime`
+- `creationTime`: `datetime`
+- `lastUpdated`: `datetime`
+- `comment`: `str`
+- `standardControlsCount`: `int`
+- `customControlsCount`: `int`
+- `complianceType`: `str`
 
 ## AssessmentFrameworkTypeDef
 
@@ -878,6 +910,17 @@ Required fields:
 
 - `frameworkId`: `str`
 
+## DeleteAssessmentFrameworkShareRequestRequestTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import DeleteAssessmentFrameworkShareRequestRequestTypeDef
+```
+
+Required fields:
+
+- `requestId`: `str`
+- `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
+
 ## DeleteAssessmentReportRequestRequestTypeDef
 
 ```python
@@ -1349,6 +1392,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListAssessmentFrameworkShareRequestsRequestRequestTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ListAssessmentFrameworkShareRequestsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListAssessmentFrameworkShareRequestsResponseTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ListAssessmentFrameworkShareRequestsResponseTypeDef
+```
+
+Required fields:
+
+- `assessmentFrameworkShareRequests`:
+  `List`\[[AssessmentFrameworkShareRequestTypeDef](./type_defs.md#assessmentframeworksharerequesttypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListAssessmentFrameworksRequestRequestTypeDef
 
 ```python
@@ -1694,6 +1766,35 @@ Optional fields:
   [KeywordInputTypeType](./literals.md#keywordinputtypetype))
 - `keywordValue`: `str`
 
+## StartAssessmentFrameworkShareRequestRequestTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import StartAssessmentFrameworkShareRequestRequestTypeDef
+```
+
+Required fields:
+
+- `frameworkId`: `str`
+- `destinationAccount`: `str`
+- `destinationRegion`: `str`
+
+Optional fields:
+
+- `comment`: `str`
+
+## StartAssessmentFrameworkShareResponseTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import StartAssessmentFrameworkShareResponseTypeDef
+```
+
+Required fields:
+
+- `assessmentFrameworkShareRequest`:
+  [AssessmentFrameworkShareRequestTypeDef](./type_defs.md#assessmentframeworksharerequesttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1826,6 +1927,31 @@ from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkResponseT
 Required fields:
 
 - `framework`: [FrameworkTypeDef](./type_defs.md#frameworktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateAssessmentFrameworkShareRequestRequestTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkShareRequestRequestTypeDef
+```
+
+Required fields:
+
+- `requestId`: `str`
+- `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
+- `action`: [ShareRequestActionType](./literals.md#sharerequestactiontype)
+
+## UpdateAssessmentFrameworkShareResponseTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkShareResponseTypeDef
+```
+
+Required fields:
+
+- `assessmentFrameworkShareRequest`:
+  [AssessmentFrameworkShareRequestTypeDef](./type_defs.md#assessmentframeworksharerequesttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

@@ -23,6 +23,9 @@ type annotations stubs module
   - [ObjectTypeEnumType](#objecttypeenumtype)
   - [RoleTypeType](#roletypetype)
   - [SettingAttributeType](#settingattributetype)
+  - [ShareRequestActionType](#sharerequestactiontype)
+  - [ShareRequestStatusType](#sharerequeststatustype)
+  - [ShareRequestTypeType](#sharerequesttypetype)
   - [SourceFrequencyType](#sourcefrequencytype)
   - [SourceSetUpOptionType](#sourcesetupoptiontype)
   - [SourceTypeType](#sourcetypetype)
@@ -209,6 +212,46 @@ Values:
 - `DEFAULT_PROCESS_OWNERS`
 - `IS_AWS_ORG_ENABLED`
 - `SNS_TOPIC`
+
+## ShareRequestActionType
+
+```python
+from mypy_boto3_auditmanager.literals import ShareRequestActionType
+```
+
+Values:
+
+- `ACCEPT`
+- `DECLINE`
+- `REVOKE`
+
+## ShareRequestStatusType
+
+```python
+from mypy_boto3_auditmanager.literals import ShareRequestStatusType
+```
+
+Values:
+
+- `ACTIVE`
+- `DECLINED`
+- `EXPIRED`
+- `EXPIRING`
+- `FAILED`
+- `REPLICATING`
+- `REVOKED`
+- `SHARED`
+
+## ShareRequestTypeType
+
+```python
+from mypy_boto3_auditmanager.literals import ShareRequestTypeType
+```
+
+Values:
+
+- `RECEIVED`
+- `SENT`
 
 ## SourceFrequencyType
 

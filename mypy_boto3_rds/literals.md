@@ -12,6 +12,8 @@ type annotations stubs module
   - [ActivityStreamStatusType](#activitystreamstatustype)
   - [ApplyMethodType](#applymethodtype)
   - [AuthSchemeType](#authschemetype)
+  - [AutomationModeType](#automationmodetype)
+  - [CustomEngineVersionStatusType](#customengineversionstatustype)
   - [DBClusterSnapshotAvailableWaiterName](#dbclustersnapshotavailablewaitername)
   - [DBClusterSnapshotDeletedWaiterName](#dbclustersnapshotdeletedwaitername)
   - [DBInstanceAvailableWaiterName](#dbinstanceavailablewaitername)
@@ -116,6 +118,29 @@ from mypy_boto3_rds.literals import AuthSchemeType
 Values:
 
 - `SECRETS`
+
+## AutomationModeType
+
+```python
+from mypy_boto3_rds.literals import AutomationModeType
+```
+
+Values:
+
+- `all-paused`
+- `full`
+
+## CustomEngineVersionStatusType
+
+```python
+from mypy_boto3_rds.literals import CustomEngineVersionStatusType
+```
+
+Values:
+
+- `available`
+- `inactive`
+- `inactive-except-restore`
 
 ## DBClusterSnapshotAvailableWaiterName
 
@@ -644,6 +669,7 @@ from mypy_boto3_rds.literals import SourceTypeType
 
 Values:
 
+- `custom-engine-version`
 - `db-cluster`
 - `db-cluster-snapshot`
 - `db-instance`
