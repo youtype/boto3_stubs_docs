@@ -111,6 +111,7 @@ from mypy_boto3_emr_containers.type_defs import CancelJobRunRequestRequestTypeDe
 
 - [CancelJobRunRequestRequestTypeDef](./type_defs.md#canceljobrunrequestrequesttypedef)
 - [CancelJobRunResponseTypeDef](./type_defs.md#canceljobrunresponsetypedef)
+- [CertificateTypeDef](./type_defs.md#certificatetypedef)
 - [CloudWatchMonitoringConfigurationTypeDef](./type_defs.md#cloudwatchmonitoringconfigurationtypedef)
 - [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
 - [ConfigurationTypeDef](./type_defs.md#configurationtypedef)

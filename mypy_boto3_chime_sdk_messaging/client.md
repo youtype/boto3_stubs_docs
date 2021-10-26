@@ -36,6 +36,7 @@ type annotations stubs module
     - [describe_channel_moderator](#describe_channel_moderator)
     - [disassociate_channel_flow](#disassociate_channel_flow)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_channel_membership_preferences](#get_channel_membership_preferences)
     - [get_channel_message](#get_channel_message)
     - [get_channel_message_status](#get_channel_message_status)
     - [get_messaging_session_endpoint](#get_messaging_session_endpoint)
@@ -49,6 +50,7 @@ type annotations stubs module
     - [list_channels_associated_with_channel_flow](#list_channels_associated_with_channel_flow)
     - [list_channels_moderated_by_app_instance_user](#list_channels_moderated_by_app_instance_user)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [put_channel_membership_preferences](#put_channel_membership_preferences)
     - [redact_channel_message](#redact_channel_message)
     - [send_channel_message](#send_channel_message)
     - [tag_resource](#tag_resource)
@@ -620,6 +622,30 @@ Arguments:
 
 Returns `str`.
 
+### get_channel_membership_preferences
+
+Gets the membership preferences of an `AppInstanceUser` for the specified
+channel.
+
+Type annotations for
+`boto3.client("chime-sdk-messaging").get_channel_membership_preferences`
+method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.get_channel_membership_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.get_channel_membership_preferences)
+
+Arguments mapping described in
+[GetChannelMembershipPreferencesRequestRequestTypeDef](./type_defs.md#getchannelmembershippreferencesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MemberArn`: `str` *(required)*
+- `ChimeBearer`: `str` *(required)*
+
+Returns
+[GetChannelMembershipPreferencesResponseTypeDef](./type_defs.md#getchannelmembershippreferencesresponsetypedef).
+
 ### get_channel_message
 
 Gets the full details of a channel message.
@@ -911,6 +937,33 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+### put_channel_membership_preferences
+
+Sets the membership preferences of an `AppInstanceUser` for the specified
+channel.
+
+Type annotations for
+`boto3.client("chime-sdk-messaging").put_channel_membership_preferences`
+method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.put_channel_membership_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.put_channel_membership_preferences)
+
+Arguments mapping described in
+[PutChannelMembershipPreferencesRequestRequestTypeDef](./type_defs.md#putchannelmembershippreferencesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MemberArn`: `str` *(required)*
+- `ChimeBearer`: `str` *(required)*
+- `Preferences`:
+  [ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef)
+  *(required)*
+
+Returns
+[PutChannelMembershipPreferencesResponseTypeDef](./type_defs.md#putchannelmembershippreferencesresponsetypedef).
+
 ### redact_channel_message
 
 Redacts message content, but not metadata.
@@ -958,6 +1011,10 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str` *(required)*
 - `ChimeBearer`: `str` *(required)*
 - `Metadata`: `str`
+- `PushNotification`:
+  [PushNotificationConfigurationTypeDef](./type_defs.md#pushnotificationconfigurationtypedef)
+- `MessageAttributes`: `Mapping`\[`str`,
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 
 Returns
 [SendChannelMessageResponseTypeDef](./type_defs.md#sendchannelmessageresponsetypedef).

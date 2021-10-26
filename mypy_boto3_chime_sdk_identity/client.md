@@ -19,17 +19,25 @@ type annotations stubs module
     - [delete_app_instance](#delete_app_instance)
     - [delete_app_instance_admin](#delete_app_instance_admin)
     - [delete_app_instance_user](#delete_app_instance_user)
+    - [deregister_app_instance_user_endpoint](#deregister_app_instance_user_endpoint)
     - [describe_app_instance](#describe_app_instance)
     - [describe_app_instance_admin](#describe_app_instance_admin)
     - [describe_app_instance_user](#describe_app_instance_user)
+    - [describe_app_instance_user_endpoint](#describe_app_instance_user_endpoint)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_app_instance_retention_settings](#get_app_instance_retention_settings)
     - [list_app_instance_admins](#list_app_instance_admins)
+    - [list_app_instance_user_endpoints](#list_app_instance_user_endpoints)
     - [list_app_instance_users](#list_app_instance_users)
     - [list_app_instances](#list_app_instances)
+    - [list_tags_for_resource](#list_tags_for_resource)
     - [put_app_instance_retention_settings](#put_app_instance_retention_settings)
+    - [register_app_instance_user_endpoint](#register_app_instance_user_endpoint)
+    - [tag_resource](#tag_resource)
+    - [untag_resource](#untag_resource)
     - [update_app_instance](#update_app_instance)
     - [update_app_instance_user](#update_app_instance_user)
+    - [update_app_instance_user_endpoint](#update_app_instance_user_endpoint)
 
 ## ChimeSDKIdentityClient
 
@@ -220,6 +228,25 @@ Keyword-only arguments:
 
 - `AppInstanceUserArn`: `str` *(required)*
 
+### deregister_app_instance_user_endpoint
+
+Deregisters an `AppInstanceUserEndpoint` .
+
+Type annotations for
+`boto3.client("chime-sdk-identity").deregister_app_instance_user_endpoint`
+method.
+
+Boto3 documentation:
+[ChimeSDKIdentity.Client.deregister_app_instance_user_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.deregister_app_instance_user_endpoint)
+
+Arguments mapping described in
+[DeregisterAppInstanceUserEndpointRequestRequestTypeDef](./type_defs.md#deregisterappinstanceuserendpointrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AppInstanceUserArn`: `str` *(required)*
+- `EndpointId`: `str` *(required)*
+
 ### describe_app_instance
 
 Returns the full details of an `AppInstance` .
@@ -280,6 +307,28 @@ Keyword-only arguments:
 
 Returns
 [DescribeAppInstanceUserResponseTypeDef](./type_defs.md#describeappinstanceuserresponsetypedef).
+
+### describe_app_instance_user_endpoint
+
+Returns the full details of an `AppInstanceUserEndpoint` .
+
+Type annotations for
+`boto3.client("chime-sdk-identity").describe_app_instance_user_endpoint`
+method.
+
+Boto3 documentation:
+[ChimeSDKIdentity.Client.describe_app_instance_user_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.describe_app_instance_user_endpoint)
+
+Arguments mapping described in
+[DescribeAppInstanceUserEndpointRequestRequestTypeDef](./type_defs.md#describeappinstanceuserendpointrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AppInstanceUserArn`: `str` *(required)*
+- `EndpointId`: `str` *(required)*
+
+Returns
+[DescribeAppInstanceUserEndpointResponseTypeDef](./type_defs.md#describeappinstanceuserendpointresponsetypedef).
 
 ### generate_presigned_url
 
@@ -343,6 +392,29 @@ Keyword-only arguments:
 Returns
 [ListAppInstanceAdminsResponseTypeDef](./type_defs.md#listappinstanceadminsresponsetypedef).
 
+### list_app_instance_user_endpoints
+
+Lists all the `AppInstanceUserEndpoints` created under a single
+`AppInstanceUser` .
+
+Type annotations for
+`boto3.client("chime-sdk-identity").list_app_instance_user_endpoints` method.
+
+Boto3 documentation:
+[ChimeSDKIdentity.Client.list_app_instance_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.list_app_instance_user_endpoints)
+
+Arguments mapping described in
+[ListAppInstanceUserEndpointsRequestRequestTypeDef](./type_defs.md#listappinstanceuserendpointsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AppInstanceUserArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAppInstanceUserEndpointsResponseTypeDef](./type_defs.md#listappinstanceuserendpointsresponsetypedef).
+
 ### list_app_instance_users
 
 List all `AppInstanceUsers` created under a single `AppInstance` .
@@ -386,6 +458,26 @@ Keyword-only arguments:
 Returns
 [ListAppInstancesResponseTypeDef](./type_defs.md#listappinstancesresponsetypedef).
 
+### list_tags_for_resource
+
+Lists the tags applied to an Amazon Chime SDK identity resource.
+
+Type annotations for
+`boto3.client("chime-sdk-identity").list_tags_for_resource` method.
+
+Boto3 documentation:
+[ChimeSDKIdentity.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
 ### put_app_instance_retention_settings
 
 Sets the amount of time in days that a given `AppInstance` retains data.
@@ -409,6 +501,73 @@ Keyword-only arguments:
 
 Returns
 [PutAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#putappinstanceretentionsettingsresponsetypedef).
+
+### register_app_instance_user_endpoint
+
+Registers an endpoint under an Amazon Chime `AppInstanceUser`.
+
+Type annotations for
+`boto3.client("chime-sdk-identity").register_app_instance_user_endpoint`
+method.
+
+Boto3 documentation:
+[ChimeSDKIdentity.Client.register_app_instance_user_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.register_app_instance_user_endpoint)
+
+Arguments mapping described in
+[RegisterAppInstanceUserEndpointRequestRequestTypeDef](./type_defs.md#registerappinstanceuserendpointrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AppInstanceUserArn`: `str` *(required)*
+- `Type`:
+  [AppInstanceUserEndpointTypeType](./literals.md#appinstanceuserendpointtypetype)
+  *(required)*
+- `ResourceArn`: `str` *(required)*
+- `EndpointAttributes`:
+  [EndpointAttributesTypeDef](./type_defs.md#endpointattributestypedef)
+  *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `Name`: `str`
+- `AllowMessages`: [AllowMessagesType](./literals.md#allowmessagestype)
+
+Returns
+[RegisterAppInstanceUserEndpointResponseTypeDef](./type_defs.md#registerappinstanceuserendpointresponsetypedef).
+
+### tag_resource
+
+Applies the specified tags to the specified Amazon Chime SDK identity resource.
+
+Type annotations for `boto3.client("chime-sdk-identity").tag_resource` method.
+
+Boto3 documentation:
+[ChimeSDKIdentity.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+### untag_resource
+
+Removes the specified tags from the specified Amazon Chime SDK identity
+resource.
+
+Type annotations for `boto3.client("chime-sdk-identity").untag_resource`
+method.
+
+Boto3 documentation:
+[ChimeSDKIdentity.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_app_instance
 
@@ -453,3 +612,26 @@ Keyword-only arguments:
 
 Returns
 [UpdateAppInstanceUserResponseTypeDef](./type_defs.md#updateappinstanceuserresponsetypedef).
+
+### update_app_instance_user_endpoint
+
+Updates the details of an `AppInstanceUserEndpoint`.
+
+Type annotations for
+`boto3.client("chime-sdk-identity").update_app_instance_user_endpoint` method.
+
+Boto3 documentation:
+[ChimeSDKIdentity.Client.update_app_instance_user_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.update_app_instance_user_endpoint)
+
+Arguments mapping described in
+[UpdateAppInstanceUserEndpointRequestRequestTypeDef](./type_defs.md#updateappinstanceuserendpointrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AppInstanceUserArn`: `str` *(required)*
+- `EndpointId`: `str` *(required)*
+- `Name`: `str`
+- `AllowMessages`: [AllowMessagesType](./literals.md#allowmessagestype)
+
+Returns
+[UpdateAppInstanceUserEndpointResponseTypeDef](./type_defs.md#updateappinstanceuserendpointresponsetypedef).

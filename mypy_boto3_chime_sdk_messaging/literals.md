@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_chime_sdk_messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
 
 - [Literals for boto3 ChimeSDKMessaging module](#literals-for-boto3-chimesdkmessaging-module)
+  - [AllowNotificationsType](#allownotificationstype)
   - [ChannelMembershipTypeType](#channelmembershiptypetype)
   - [ChannelMessagePersistenceTypeType](#channelmessagepersistencetypetype)
   - [ChannelMessageStatusType](#channelmessagestatustype)
@@ -17,8 +18,21 @@ type annotations stubs module
   - [ErrorCodeType](#errorcodetype)
   - [FallbackActionType](#fallbackactiontype)
   - [InvocationTypeType](#invocationtypetype)
+  - [PushNotificationTypeType](#pushnotificationtypetype)
   - [SortOrderType](#sortordertype)
   - [ServiceName](#servicename)
+
+## AllowNotificationsType
+
+```python
+from mypy_boto3_chime_sdk_messaging.literals import AllowNotificationsType
+```
+
+Values:
+
+- `ALL`
+- `FILTERED`
+- `NONE`
 
 ## ChannelMembershipTypeType
 
@@ -132,6 +146,17 @@ from mypy_boto3_chime_sdk_messaging.literals import InvocationTypeType
 Values:
 
 - `ASYNC`
+
+## PushNotificationTypeType
+
+```python
+from mypy_boto3_chime_sdk_messaging.literals import PushNotificationTypeType
+```
+
+Values:
+
+- `DEFAULT`
+- `VOIP`
 
 ## SortOrderType
 

@@ -134,8 +134,8 @@ Keyword-only arguments:
 - `type`: `str` *(required)*
 - `releaseLabel`: `str` *(required)*
 - `executionRoleArn`: `str` *(required)*
-- `certificateArn`: `str` *(required)*
 - `clientToken`: `str` *(required)*
+- `certificateArn`: `str`
 - `configurationOverrides`:
   [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
 - `tags`: `Mapping`\[`str`, `str`\]

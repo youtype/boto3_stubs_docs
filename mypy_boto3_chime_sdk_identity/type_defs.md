@@ -13,6 +13,8 @@ type annotations stubs module
   - [AppInstanceRetentionSettingsTypeDef](#appinstanceretentionsettingstypedef)
   - [AppInstanceSummaryTypeDef](#appinstancesummarytypedef)
   - [AppInstanceTypeDef](#appinstancetypedef)
+  - [AppInstanceUserEndpointSummaryTypeDef](#appinstanceuserendpointsummarytypedef)
+  - [AppInstanceUserEndpointTypeDef](#appinstanceuserendpointtypedef)
   - [AppInstanceUserSummaryTypeDef](#appinstanceusersummarytypedef)
   - [AppInstanceUserTypeDef](#appinstanceusertypedef)
   - [ChannelRetentionSettingsTypeDef](#channelretentionsettingstypedef)
@@ -25,27 +27,42 @@ type annotations stubs module
   - [DeleteAppInstanceAdminRequestRequestTypeDef](#deleteappinstanceadminrequestrequesttypedef)
   - [DeleteAppInstanceRequestRequestTypeDef](#deleteappinstancerequestrequesttypedef)
   - [DeleteAppInstanceUserRequestRequestTypeDef](#deleteappinstanceuserrequestrequesttypedef)
+  - [DeregisterAppInstanceUserEndpointRequestRequestTypeDef](#deregisterappinstanceuserendpointrequestrequesttypedef)
   - [DescribeAppInstanceAdminRequestRequestTypeDef](#describeappinstanceadminrequestrequesttypedef)
   - [DescribeAppInstanceAdminResponseTypeDef](#describeappinstanceadminresponsetypedef)
   - [DescribeAppInstanceRequestRequestTypeDef](#describeappinstancerequestrequesttypedef)
   - [DescribeAppInstanceResponseTypeDef](#describeappinstanceresponsetypedef)
+  - [DescribeAppInstanceUserEndpointRequestRequestTypeDef](#describeappinstanceuserendpointrequestrequesttypedef)
+  - [DescribeAppInstanceUserEndpointResponseTypeDef](#describeappinstanceuserendpointresponsetypedef)
   - [DescribeAppInstanceUserRequestRequestTypeDef](#describeappinstanceuserrequestrequesttypedef)
   - [DescribeAppInstanceUserResponseTypeDef](#describeappinstanceuserresponsetypedef)
+  - [EndpointAttributesTypeDef](#endpointattributestypedef)
+  - [EndpointStateTypeDef](#endpointstatetypedef)
   - [GetAppInstanceRetentionSettingsRequestRequestTypeDef](#getappinstanceretentionsettingsrequestrequesttypedef)
   - [GetAppInstanceRetentionSettingsResponseTypeDef](#getappinstanceretentionsettingsresponsetypedef)
   - [IdentityTypeDef](#identitytypedef)
   - [ListAppInstanceAdminsRequestRequestTypeDef](#listappinstanceadminsrequestrequesttypedef)
   - [ListAppInstanceAdminsResponseTypeDef](#listappinstanceadminsresponsetypedef)
+  - [ListAppInstanceUserEndpointsRequestRequestTypeDef](#listappinstanceuserendpointsrequestrequesttypedef)
+  - [ListAppInstanceUserEndpointsResponseTypeDef](#listappinstanceuserendpointsresponsetypedef)
   - [ListAppInstanceUsersRequestRequestTypeDef](#listappinstanceusersrequestrequesttypedef)
   - [ListAppInstanceUsersResponseTypeDef](#listappinstanceusersresponsetypedef)
   - [ListAppInstancesRequestRequestTypeDef](#listappinstancesrequestrequesttypedef)
   - [ListAppInstancesResponseTypeDef](#listappinstancesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [PutAppInstanceRetentionSettingsRequestRequestTypeDef](#putappinstanceretentionsettingsrequestrequesttypedef)
   - [PutAppInstanceRetentionSettingsResponseTypeDef](#putappinstanceretentionsettingsresponsetypedef)
+  - [RegisterAppInstanceUserEndpointRequestRequestTypeDef](#registerappinstanceuserendpointrequestrequesttypedef)
+  - [RegisterAppInstanceUserEndpointResponseTypeDef](#registerappinstanceuserendpointresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateAppInstanceRequestRequestTypeDef](#updateappinstancerequestrequesttypedef)
   - [UpdateAppInstanceResponseTypeDef](#updateappinstanceresponsetypedef)
+  - [UpdateAppInstanceUserEndpointRequestRequestTypeDef](#updateappinstanceuserendpointrequestrequesttypedef)
+  - [UpdateAppInstanceUserEndpointResponseTypeDef](#updateappinstanceuserendpointresponsetypedef)
   - [UpdateAppInstanceUserRequestRequestTypeDef](#updateappinstanceuserrequestrequesttypedef)
   - [UpdateAppInstanceUserResponseTypeDef](#updateappinstanceuserresponsetypedef)
 
@@ -107,6 +124,43 @@ Optional fields:
 - `CreatedTimestamp`: `datetime`
 - `LastUpdatedTimestamp`: `datetime`
 - `Metadata`: `str`
+
+## AppInstanceUserEndpointSummaryTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import AppInstanceUserEndpointSummaryTypeDef
+```
+
+Optional fields:
+
+- `AppInstanceUserArn`: `str`
+- `EndpointId`: `str`
+- `Name`: `str`
+- `Type`:
+  [AppInstanceUserEndpointTypeType](./literals.md#appinstanceuserendpointtypetype)
+- `AllowMessages`: [AllowMessagesType](./literals.md#allowmessagestype)
+- `EndpointState`: [EndpointStateTypeDef](./type_defs.md#endpointstatetypedef)
+
+## AppInstanceUserEndpointTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import AppInstanceUserEndpointTypeDef
+```
+
+Optional fields:
+
+- `AppInstanceUserArn`: `str`
+- `EndpointId`: `str`
+- `Name`: `str`
+- `Type`:
+  [AppInstanceUserEndpointTypeType](./literals.md#appinstanceuserendpointtypetype)
+- `ResourceArn`: `str`
+- `EndpointAttributes`:
+  [EndpointAttributesTypeDef](./type_defs.md#endpointattributestypedef)
+- `CreatedTimestamp`: `datetime`
+- `LastUpdatedTimestamp`: `datetime`
+- `AllowMessages`: [AllowMessagesType](./literals.md#allowmessagestype)
+- `EndpointState`: [EndpointStateTypeDef](./type_defs.md#endpointstatetypedef)
 
 ## AppInstanceUserSummaryTypeDef
 
@@ -257,6 +311,17 @@ Required fields:
 
 - `AppInstanceUserArn`: `str`
 
+## DeregisterAppInstanceUserEndpointRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import DeregisterAppInstanceUserEndpointRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AppInstanceUserArn`: `str`
+- `EndpointId`: `str`
+
 ## DescribeAppInstanceAdminRequestRequestTypeDef
 
 ```python
@@ -303,6 +368,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeAppInstanceUserEndpointRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import DescribeAppInstanceUserEndpointRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AppInstanceUserArn`: `str`
+- `EndpointId`: `str`
+
+## DescribeAppInstanceUserEndpointResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import DescribeAppInstanceUserEndpointResponseTypeDef
+```
+
+Required fields:
+
+- `AppInstanceUserEndpoint`:
+  [AppInstanceUserEndpointTypeDef](./type_defs.md#appinstanceuserendpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeAppInstanceUserRequestRequestTypeDef
 
 ```python
@@ -325,6 +414,35 @@ Required fields:
   [AppInstanceUserTypeDef](./type_defs.md#appinstanceusertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## EndpointAttributesTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import EndpointAttributesTypeDef
+```
+
+Required fields:
+
+- `DeviceToken`: `str`
+
+Optional fields:
+
+- `VoipDeviceToken`: `str`
+
+## EndpointStateTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import EndpointStateTypeDef
+```
+
+Required fields:
+
+- `Status`: [EndpointStatusType](./literals.md#endpointstatustype)
+
+Optional fields:
+
+- `StatusReason`:
+  [EndpointStatusReasonType](./literals.md#endpointstatusreasontype)
 
 ## GetAppInstanceRetentionSettingsRequestRequestTypeDef
 
@@ -391,6 +509,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListAppInstanceUserEndpointsRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import ListAppInstanceUserEndpointsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AppInstanceUserArn`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAppInstanceUserEndpointsResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import ListAppInstanceUserEndpointsResponseTypeDef
+```
+
+Required fields:
+
+- `AppInstanceUserEndpoints`:
+  `List`\[[AppInstanceUserEndpointSummaryTypeDef](./type_defs.md#appinstanceuserendpointsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListAppInstanceUsersRequestRequestTypeDef
 
 ```python
@@ -446,6 +593,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import ListTagsForResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+
+## ListTagsForResourceResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import ListTagsForResourceResponseTypeDef
+```
+
+Required fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## PutAppInstanceRetentionSettingsRequestRequestTypeDef
 
 ```python
@@ -472,6 +641,40 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## RegisterAppInstanceUserEndpointRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import RegisterAppInstanceUserEndpointRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AppInstanceUserArn`: `str`
+- `Type`:
+  [AppInstanceUserEndpointTypeType](./literals.md#appinstanceuserendpointtypetype)
+- `ResourceArn`: `str`
+- `EndpointAttributes`:
+  [EndpointAttributesTypeDef](./type_defs.md#endpointattributestypedef)
+- `ClientRequestToken`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `AllowMessages`: [AllowMessagesType](./literals.md#allowmessagestype)
+
+## RegisterAppInstanceUserEndpointResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import RegisterAppInstanceUserEndpointResponseTypeDef
+```
+
+Required fields:
+
+- `AppInstanceUserArn`: `str`
+- `EndpointId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -486,6 +689,17 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
+## TagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import TagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -496,6 +710,17 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+## UntagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import UntagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAppInstanceRequestRequestTypeDef
 
@@ -518,6 +743,35 @@ from mypy_boto3_chime_sdk_identity.type_defs import UpdateAppInstanceResponseTyp
 Required fields:
 
 - `AppInstanceArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateAppInstanceUserEndpointRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import UpdateAppInstanceUserEndpointRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AppInstanceUserArn`: `str`
+- `EndpointId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `AllowMessages`: [AllowMessagesType](./literals.md#allowmessagestype)
+
+## UpdateAppInstanceUserEndpointResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_identity.type_defs import UpdateAppInstanceUserEndpointResponseTypeDef
+```
+
+Required fields:
+
+- `AppInstanceUserArn`: `str`
+- `EndpointId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
