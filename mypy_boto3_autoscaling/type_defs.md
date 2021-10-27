@@ -8,6 +8,8 @@ type annotations stubs module
 [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 - [Typed dictionaries for boto3 AutoScaling module](#typed-dictionaries-for-boto3-autoscaling-module)
+  - [AcceleratorCountRequestTypeDef](#acceleratorcountrequesttypedef)
+  - [AcceleratorTotalMemoryMiBRequestTypeDef](#acceleratortotalmemorymibrequesttypedef)
   - [ActivitiesTypeTypeDef](#activitiestypetypedef)
   - [ActivityTypeDef](#activitytypedef)
   - [ActivityTypeTypeDef](#activitytypetypedef)
@@ -21,6 +23,7 @@ type annotations stubs module
   - [AutoScalingGroupsTypeTypeDef](#autoscalinggroupstypetypedef)
   - [AutoScalingInstanceDetailsTypeDef](#autoscalinginstancedetailstypedef)
   - [AutoScalingInstancesTypeTypeDef](#autoscalinginstancestypetypedef)
+  - [BaselineEbsBandwidthMbpsRequestTypeDef](#baselineebsbandwidthmbpsrequesttypedef)
   - [BatchDeleteScheduledActionAnswerTypeDef](#batchdeletescheduledactionanswertypedef)
   - [BatchDeleteScheduledActionTypeRequestTypeDef](#batchdeletescheduledactiontyperequesttypedef)
   - [BatchPutScheduledUpdateGroupActionAnswerTypeDef](#batchputscheduledupdategroupactionanswertypedef)
@@ -88,6 +91,7 @@ type annotations stubs module
   - [InstanceRefreshProgressDetailsTypeDef](#instancerefreshprogressdetailstypedef)
   - [InstanceRefreshTypeDef](#instancerefreshtypedef)
   - [InstanceRefreshWarmPoolProgressTypeDef](#instancerefreshwarmpoolprogresstypedef)
+  - [InstanceRequirementsTypeDef](#instancerequirementstypedef)
   - [InstanceTypeDef](#instancetypedef)
   - [InstancesDistributionTypeDef](#instancesdistributiontypedef)
   - [LaunchConfigurationNameTypeRequestTypeDef](#launchconfigurationnametyperequesttypedef)
@@ -102,10 +106,13 @@ type annotations stubs module
   - [LoadBalancerStateTypeDef](#loadbalancerstatetypedef)
   - [LoadBalancerTargetGroupStateTypeDef](#loadbalancertargetgroupstatetypedef)
   - [LoadForecastTypeDef](#loadforecasttypedef)
+  - [MemoryGiBPerVCpuRequestTypeDef](#memorygibpervcpurequesttypedef)
+  - [MemoryMiBRequestTypeDef](#memorymibrequesttypedef)
   - [MetricCollectionTypeTypeDef](#metriccollectiontypetypedef)
   - [MetricDimensionTypeDef](#metricdimensiontypedef)
   - [MetricGranularityTypeTypeDef](#metricgranularitytypetypedef)
   - [MixedInstancesPolicyTypeDef](#mixedinstancespolicytypedef)
+  - [NetworkInterfaceCountRequestTypeDef](#networkinterfacecountrequesttypedef)
   - [NotificationConfigurationTypeDef](#notificationconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PoliciesTypeTypeDef](#policiestypetypedef)
@@ -143,8 +150,32 @@ type annotations stubs module
   - [TagsTypeTypeDef](#tagstypetypedef)
   - [TargetTrackingConfigurationTypeDef](#targettrackingconfigurationtypedef)
   - [TerminateInstanceInAutoScalingGroupTypeRequestTypeDef](#terminateinstanceinautoscalinggrouptyperequesttypedef)
+  - [TotalLocalStorageGBRequestTypeDef](#totallocalstoragegbrequesttypedef)
   - [UpdateAutoScalingGroupTypeRequestTypeDef](#updateautoscalinggrouptyperequesttypedef)
+  - [VCpuCountRequestTypeDef](#vcpucountrequesttypedef)
   - [WarmPoolConfigurationTypeDef](#warmpoolconfigurationtypedef)
+
+## AcceleratorCountRequestTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import AcceleratorCountRequestTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
+
+## AcceleratorTotalMemoryMiBRequestTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import AcceleratorTotalMemoryMiBRequestTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
 
 ## ActivitiesTypeTypeDef
 
@@ -314,6 +345,7 @@ Optional fields:
   [WarmPoolConfigurationTypeDef](./type_defs.md#warmpoolconfigurationtypedef)
 - `WarmPoolSize`: `int`
 - `Context`: `str`
+- `DesiredCapacityType`: `str`
 
 ## AutoScalingGroupsTypeTypeDef
 
@@ -365,6 +397,17 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## BaselineEbsBandwidthMbpsRequestTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import BaselineEbsBandwidthMbpsRequestTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
 
 ## BatchDeleteScheduledActionAnswerTypeDef
 
@@ -519,6 +562,7 @@ Optional fields:
 - `ServiceLinkedRoleARN`: `str`
 - `MaxInstanceLifetime`: `int`
 - `Context`: `str`
+- `DesiredCapacityType`: `str`
 
 ## CreateLaunchConfigurationTypeRequestTypeDef
 
@@ -1310,6 +1354,54 @@ Optional fields:
 - `PercentageComplete`: `int`
 - `InstancesToUpdate`: `int`
 
+## InstanceRequirementsTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import InstanceRequirementsTypeDef
+```
+
+Required fields:
+
+- `VCpuCount`:
+  [VCpuCountRequestTypeDef](./type_defs.md#vcpucountrequesttypedef)
+- `MemoryMiB`:
+  [MemoryMiBRequestTypeDef](./type_defs.md#memorymibrequesttypedef)
+
+Optional fields:
+
+- `CpuManufacturers`:
+  `Sequence`\[[CpuManufacturerType](./literals.md#cpumanufacturertype)\]
+- `MemoryGiBPerVCpu`:
+  [MemoryGiBPerVCpuRequestTypeDef](./type_defs.md#memorygibpervcpurequesttypedef)
+- `ExcludedInstanceTypes`: `Sequence`\[`str`\]
+- `InstanceGenerations`:
+  `Sequence`\[[InstanceGenerationType](./literals.md#instancegenerationtype)\]
+- `SpotMaxPricePercentageOverLowestPrice`: `int`
+- `OnDemandMaxPricePercentageOverLowestPrice`: `int`
+- `BareMetal`: [BareMetalType](./literals.md#baremetaltype)
+- `BurstablePerformance`:
+  [BurstablePerformanceType](./literals.md#burstableperformancetype)
+- `RequireHibernateSupport`: `bool`
+- `NetworkInterfaceCount`:
+  [NetworkInterfaceCountRequestTypeDef](./type_defs.md#networkinterfacecountrequesttypedef)
+- `LocalStorage`: [LocalStorageType](./literals.md#localstoragetype)
+- `LocalStorageTypes`:
+  `Sequence`\[[LocalStorageTypeType](./literals.md#localstoragetypetype)\]
+- `TotalLocalStorageGB`:
+  [TotalLocalStorageGBRequestTypeDef](./type_defs.md#totallocalstoragegbrequesttypedef)
+- `BaselineEbsBandwidthMbps`:
+  [BaselineEbsBandwidthMbpsRequestTypeDef](./type_defs.md#baselineebsbandwidthmbpsrequesttypedef)
+- `AcceleratorTypes`:
+  `Sequence`\[[AcceleratorTypeType](./literals.md#acceleratortypetype)\]
+- `AcceleratorCount`:
+  [AcceleratorCountRequestTypeDef](./type_defs.md#acceleratorcountrequesttypedef)
+- `AcceleratorManufacturers`:
+  `Sequence`\[[AcceleratorManufacturerType](./literals.md#acceleratormanufacturertype)\]
+- `AcceleratorNames`:
+  `Sequence`\[[AcceleratorNameType](./literals.md#acceleratornametype)\]
+- `AcceleratorTotalMemoryMiB`:
+  [AcceleratorTotalMemoryMiBRequestTypeDef](./type_defs.md#acceleratortotalmemorymibrequesttypedef)
+
 ## InstanceTypeDef
 
 ```python
@@ -1430,6 +1522,8 @@ Optional fields:
 - `WeightedCapacity`: `str`
 - `LaunchTemplateSpecification`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
+- `InstanceRequirements`:
+  [InstanceRequirementsTypeDef](./type_defs.md#instancerequirementstypedef)
 
 ## LaunchTemplateSpecificationTypeDef
 
@@ -1528,6 +1622,31 @@ Required fields:
 - `MetricSpecification`:
   [PredictiveScalingMetricSpecificationTypeDef](./type_defs.md#predictivescalingmetricspecificationtypedef)
 
+## MemoryGiBPerVCpuRequestTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import MemoryGiBPerVCpuRequestTypeDef
+```
+
+Optional fields:
+
+- `Min`: `float`
+- `Max`: `float`
+
+## MemoryMiBRequestTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import MemoryMiBRequestTypeDef
+```
+
+Required fields:
+
+- `Min`: `int`
+
+Optional fields:
+
+- `Max`: `int`
+
 ## MetricCollectionTypeTypeDef
 
 ```python
@@ -1571,6 +1690,17 @@ Optional fields:
   [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
 - `InstancesDistribution`:
   [InstancesDistributionTypeDef](./type_defs.md#instancesdistributiontypedef)
+
+## NetworkInterfaceCountRequestTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import NetworkInterfaceCountRequestTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
 
 ## NotificationConfigurationTypeDef
 
@@ -2155,6 +2285,17 @@ Required fields:
 - `InstanceId`: `str`
 - `ShouldDecrementDesiredCapacity`: `bool`
 
+## TotalLocalStorageGBRequestTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import TotalLocalStorageGBRequestTypeDef
+```
+
+Optional fields:
+
+- `Min`: `float`
+- `Max`: `float`
+
 ## UpdateAutoScalingGroupTypeRequestTypeDef
 
 ```python
@@ -2187,6 +2328,21 @@ Optional fields:
 - `MaxInstanceLifetime`: `int`
 - `CapacityRebalance`: `bool`
 - `Context`: `str`
+- `DesiredCapacityType`: `str`
+
+## VCpuCountRequestTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import VCpuCountRequestTypeDef
+```
+
+Required fields:
+
+- `Min`: `int`
+
+Optional fields:
+
+- `Max`: `int`
 
 ## WarmPoolConfigurationTypeDef
 

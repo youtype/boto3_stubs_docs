@@ -52,6 +52,10 @@ type annotations stubs module
   - [AutoMLS3DataSourceTypeDef](#automls3datasourcetypedef)
   - [AutoMLSecurityConfigTypeDef](#automlsecurityconfigtypedef)
   - [AutoRollbackConfigTypeDef](#autorollbackconfigtypedef)
+  - [BatchDescribeModelPackageErrorTypeDef](#batchdescribemodelpackageerrortypedef)
+  - [BatchDescribeModelPackageInputRequestTypeDef](#batchdescribemodelpackageinputrequesttypedef)
+  - [BatchDescribeModelPackageOutputTypeDef](#batchdescribemodelpackageoutputtypedef)
+  - [BatchDescribeModelPackageSummaryTypeDef](#batchdescribemodelpackagesummarytypedef)
   - [BiasTypeDef](#biastypedef)
   - [BlueGreenUpdatePolicyTypeDef](#bluegreenupdatepolicytypedef)
   - [CacheHitResultTypeDef](#cachehitresulttypedef)
@@ -656,6 +660,7 @@ type annotations stubs module
   - [SendPipelineExecutionStepSuccessResponseTypeDef](#sendpipelineexecutionstepsuccessresponsetypedef)
   - [ServiceCatalogProvisionedProductDetailsTypeDef](#servicecatalogprovisionedproductdetailstypedef)
   - [ServiceCatalogProvisioningDetailsTypeDef](#servicecatalogprovisioningdetailstypedef)
+  - [ServiceCatalogProvisioningUpdateDetailsTypeDef](#servicecatalogprovisioningupdatedetailstypedef)
   - [SharingSettingsTypeDef](#sharingsettingstypedef)
   - [ShuffleConfigTypeDef](#shuffleconfigtypedef)
   - [SourceAlgorithmSpecificationTypeDef](#sourcealgorithmspecificationtypedef)
@@ -751,6 +756,8 @@ type annotations stubs module
   - [UpdatePipelineExecutionResponseTypeDef](#updatepipelineexecutionresponsetypedef)
   - [UpdatePipelineRequestRequestTypeDef](#updatepipelinerequestrequesttypedef)
   - [UpdatePipelineResponseTypeDef](#updatepipelineresponsetypedef)
+  - [UpdateProjectInputRequestTypeDef](#updateprojectinputrequesttypedef)
+  - [UpdateProjectOutputTypeDef](#updateprojectoutputtypedef)
   - [UpdateTrainingJobRequestRequestTypeDef](#updatetrainingjobrequestrequesttypedef)
   - [UpdateTrainingJobResponseTypeDef](#updatetrainingjobresponsetypedef)
   - [UpdateTrialComponentRequestRequestTypeDef](#updatetrialcomponentrequestrequesttypedef)
@@ -1392,6 +1399,65 @@ from mypy_boto3_sagemaker.type_defs import AutoRollbackConfigTypeDef
 Optional fields:
 
 - `Alarms`: `List`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
+
+## BatchDescribeModelPackageErrorTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import BatchDescribeModelPackageErrorTypeDef
+```
+
+Required fields:
+
+- `ErrorCode`: `str`
+- `ErrorResponse`: `str`
+
+## BatchDescribeModelPackageInputRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import BatchDescribeModelPackageInputRequestTypeDef
+```
+
+Required fields:
+
+- `ModelPackageArnList`: `Sequence`\[`str`\]
+
+## BatchDescribeModelPackageOutputTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import BatchDescribeModelPackageOutputTypeDef
+```
+
+Required fields:
+
+- `ModelPackageSummaries`: `Dict`\[`str`,
+  [BatchDescribeModelPackageSummaryTypeDef](./type_defs.md#batchdescribemodelpackagesummarytypedef)\]
+- `BatchDescribeModelPackageErrorMap`: `Dict`\[`str`,
+  [BatchDescribeModelPackageErrorTypeDef](./type_defs.md#batchdescribemodelpackageerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## BatchDescribeModelPackageSummaryTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import BatchDescribeModelPackageSummaryTypeDef
+```
+
+Required fields:
+
+- `ModelPackageGroupName`: `str`
+- `ModelPackageArn`: `str`
+- `CreationTime`: `datetime`
+- `InferenceSpecification`:
+  [InferenceSpecificationTypeDef](./type_defs.md#inferencespecificationtypedef)
+- `ModelPackageStatus`:
+  [ModelPackageStatusType](./literals.md#modelpackagestatustype)
+
+Optional fields:
+
+- `ModelPackageVersion`: `int`
+- `ModelPackageDescription`: `str`
+- `ModelApprovalStatus`:
+  [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 
 ## BiasTypeDef
 
@@ -2617,6 +2683,7 @@ Optional fields:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
 - `ModelMetrics`: [ModelMetricsTypeDef](./type_defs.md#modelmetricstypedef)
 - `ClientToken`: `str`
+- `CustomerMetadataProperties`: `Mapping`\[`str`, `str`\]
 
 ## CreateModelPackageOutputTypeDef
 
@@ -4995,6 +5062,7 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `ApprovalDescription`: `str`
+- `CustomerMetadataProperties`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5314,6 +5382,8 @@ Required fields:
 - `ProjectStatus`: [ProjectStatusType](./literals.md#projectstatustype)
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `CreationTime`: `datetime`
+- `LastModifiedTime`: `datetime`
+- `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -6636,16 +6706,16 @@ from mypy_boto3_sagemaker.type_defs import InferenceSpecificationTypeDef
 Required fields:
 
 - `Containers`:
-  `Sequence`\[[ModelPackageContainerDefinitionTypeDef](./type_defs.md#modelpackagecontainerdefinitiontypedef)\]
-- `SupportedContentTypes`: `Sequence`\[`str`\]
-- `SupportedResponseMIMETypes`: `Sequence`\[`str`\]
+  `List`\[[ModelPackageContainerDefinitionTypeDef](./type_defs.md#modelpackagecontainerdefinitiontypedef)\]
+- `SupportedContentTypes`: `List`\[`str`\]
+- `SupportedResponseMIMETypes`: `List`\[`str`\]
 
 Optional fields:
 
 - `SupportedTransformInstanceTypes`:
-  `Sequence`\[[TransformInstanceTypeType](./literals.md#transforminstancetypetype)\]
+  `List`\[[TransformInstanceTypeType](./literals.md#transforminstancetypetype)\]
 - `SupportedRealtimeInferenceInstanceTypes`:
-  `Sequence`\[[ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)\]
+  `List`\[[ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)\]
 
 ## InputConfigTypeDef
 
@@ -8930,7 +9000,7 @@ Optional fields:
 - `ImageDigest`: `str`
 - `ModelDataUrl`: `str`
 - `ProductId`: `str`
-- `Environment`: `Mapping`\[`str`, `str`\]
+- `Environment`: `Dict`\[`str`, `str`\]
 
 ## ModelPackageGroupSummaryTypeDef
 
@@ -9056,6 +9126,7 @@ Optional fields:
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `ApprovalDescription`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CustomerMetadataProperties`: `Dict`\[`str`, `str`\]
 
 ## ModelPackageValidationProfileTypeDef
 
@@ -10265,6 +10336,8 @@ Optional fields:
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `CreationTime`: `datetime`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `LastModifiedTime`: `datetime`
+- `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 
 ## PropertyNameQueryTypeDef
 
@@ -10760,6 +10833,18 @@ Optional fields:
 
 - `ProvisioningArtifactId`: `str`
 - `PathId`: `str`
+- `ProvisioningParameters`:
+  `Sequence`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
+
+## ServiceCatalogProvisioningUpdateDetailsTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ServiceCatalogProvisioningUpdateDetailsTypeDef
+```
+
+Optional fields:
+
+- `ProvisioningArtifactId`: `str`
 - `ProvisioningParameters`:
   `Sequence`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
 
@@ -12013,12 +12098,14 @@ from mypy_boto3_sagemaker.type_defs import UpdateModelPackageInputRequestTypeDef
 Required fields:
 
 - `ModelPackageArn`: `str`
-- `ModelApprovalStatus`:
-  [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 
 Optional fields:
 
+- `ModelApprovalStatus`:
+  [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 - `ApprovalDescription`: `str`
+- `CustomerMetadataProperties`: `Mapping`\[`str`, `str`\]
+- `CustomerMetadataPropertiesToRemove`: `Sequence`\[`str`\]
 
 ## UpdateModelPackageOutputTypeDef
 
@@ -12152,6 +12239,35 @@ from mypy_boto3_sagemaker.type_defs import UpdatePipelineResponseTypeDef
 Required fields:
 
 - `PipelineArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateProjectInputRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import UpdateProjectInputRequestTypeDef
+```
+
+Required fields:
+
+- `ProjectName`: `str`
+
+Optional fields:
+
+- `ProjectDescription`: `str`
+- `ServiceCatalogProvisioningUpdateDetails`:
+  [ServiceCatalogProvisioningUpdateDetailsTypeDef](./type_defs.md#servicecatalogprovisioningupdatedetailstypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## UpdateProjectOutputTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import UpdateProjectOutputTypeDef
+```
+
+Required fields:
+
+- `ProjectArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

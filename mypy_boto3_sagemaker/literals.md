@@ -2628,6 +2628,9 @@ Values:
 - `DeleteFailed`
 - `DeleteInProgress`
 - `Pending`
+- `UpdateCompleted`
+- `UpdateFailed`
+- `UpdateInProgress`
 
 ## RecordWrapperType
 

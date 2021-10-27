@@ -336,6 +336,7 @@ Keyword-only arguments:
 - `ServiceLinkedRoleARN`: `str`
 - `MaxInstanceLifetime`: `int`
 - `Context`: `str`
+- `DesiredCapacityType`: `str`
 
 ### create_launch_configuration
 
@@ -1447,6 +1448,7 @@ Keyword-only arguments:
 - `MaxInstanceLifetime`: `int`
 - `CapacityRebalance`: `bool`
 - `Context`: `str`
+- `DesiredCapacityType`: `str`
 
 ### get_paginator
 

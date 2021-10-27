@@ -19,8 +19,10 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [get_document_analysis](#get_document_analysis)
     - [get_document_text_detection](#get_document_text_detection)
+    - [get_expense_analysis](#get_expense_analysis)
     - [start_document_analysis](#start_document_analysis)
     - [start_document_text_detection](#start_document_text_detection)
+    - [start_expense_analysis](#start_expense_analysis)
 
 ## TextractClient
 
@@ -220,6 +222,28 @@ Keyword-only arguments:
 Returns
 [GetDocumentTextDetectionResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponsetypedef).
 
+### get_expense_analysis
+
+Gets the results for an Amazon Textract asynchronous operation that analyzes
+invoices and receipts.
+
+Type annotations for `boto3.client("textract").get_expense_analysis` method.
+
+Boto3 documentation:
+[Textract.Client.get_expense_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_expense_analysis)
+
+Arguments mapping described in
+[GetExpenseAnalysisRequestRequestTypeDef](./type_defs.md#getexpenseanalysisrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetExpenseAnalysisResponseTypeDef](./type_defs.md#getexpenseanalysisresponsetypedef).
+
 ### start_document_analysis
 
 Starts the asynchronous analysis of an input document for relationships between
@@ -277,3 +301,31 @@ Keyword-only arguments:
 
 Returns
 [StartDocumentTextDetectionResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponsetypedef).
+
+### start_expense_analysis
+
+Starts the asynchronous analysis of invoices or receipts for data like contact
+information, items purchased, and vendor names.
+
+Type annotations for `boto3.client("textract").start_expense_analysis` method.
+
+Boto3 documentation:
+[Textract.Client.start_expense_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_expense_analysis)
+
+Arguments mapping described in
+[StartExpenseAnalysisRequestRequestTypeDef](./type_defs.md#startexpenseanalysisrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DocumentLocation`:
+  [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)
+  *(required)*
+- `ClientRequestToken`: `str`
+- `JobTag`: `str`
+- `NotificationChannel`:
+  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
+- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
+- `KMSKeyId`: `str`
+
+Returns
+[StartExpenseAnalysisResponseTypeDef](./type_defs.md#startexpenseanalysisresponsetypedef).

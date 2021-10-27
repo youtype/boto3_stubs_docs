@@ -361,12 +361,14 @@ type annotations stubs module
     - [get_flow_logs_integration_template](#get_flow_logs_integration_template)
     - [get_groups_for_capacity_reservation](#get_groups_for_capacity_reservation)
     - [get_host_reservation_purchase_preview](#get_host_reservation_purchase_preview)
+    - [get_instance_types_from_instance_requirements](#get_instance_types_from_instance_requirements)
     - [get_launch_template_data](#get_launch_template_data)
     - [get_managed_prefix_list_associations](#get_managed_prefix_list_associations)
     - [get_managed_prefix_list_entries](#get_managed_prefix_list_entries)
     - [get_password_data](#get_password_data)
     - [get_reserved_instances_exchange_quote](#get_reserved_instances_exchange_quote)
     - [get_serial_console_access_status](#get_serial_console_access_status)
+    - [get_spot_placement_scores](#get_spot_placement_scores)
     - [get_subnet_cidr_reservations](#get_subnet_cidr_reservations)
     - [get_transit_gateway_attachment_propagations](#get_transit_gateway_attachment_propagations)
     - [get_transit_gateway_multicast_domain_associations](#get_transit_gateway_multicast_domain_associations)
@@ -8572,6 +8574,37 @@ Keyword-only arguments:
 Returns
 [GetHostReservationPurchasePreviewResultTypeDef](./type_defs.md#gethostreservationpurchasepreviewresulttypedef).
 
+### get_instance_types_from_instance_requirements
+
+Returns a list of instance types with the specified instance attributes.
+
+Type annotations for
+`boto3.client("ec2").get_instance_types_from_instance_requirements` method.
+
+Boto3 documentation:
+[EC2.Client.get_instance_types_from_instance_requirements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_instance_types_from_instance_requirements)
+
+Arguments mapping described in
+[GetInstanceTypesFromInstanceRequirementsRequestRequestTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ArchitectureTypes`:
+  `Sequence`\[[ArchitectureTypeType](./literals.md#architecturetypetype)\]
+  *(required)*
+- `VirtualizationTypes`:
+  `Sequence`\[[VirtualizationTypeType](./literals.md#virtualizationtypetype)\]
+  *(required)*
+- `InstanceRequirements`:
+  [InstanceRequirementsRequestTypeDef](./type_defs.md#instancerequirementsrequesttypedef)
+  *(required)*
+- `DryRun`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetInstanceTypesFromInstanceRequirementsResultTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsresulttypedef).
+
 ### get_launch_template_data
 
 Retrieves the configuration data of the specified instance.
@@ -8704,6 +8737,36 @@ Keyword-only arguments:
 
 Returns
 [GetSerialConsoleAccessStatusResultTypeDef](./type_defs.md#getserialconsoleaccessstatusresulttypedef).
+
+### get_spot_placement_scores
+
+Calculates the Spot placement score for a Region or Availability Zone based on
+the specified target capacity and compute requirements.
+
+Type annotations for `boto3.client("ec2").get_spot_placement_scores` method.
+
+Boto3 documentation:
+[EC2.Client.get_spot_placement_scores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_spot_placement_scores)
+
+Arguments mapping described in
+[GetSpotPlacementScoresRequestRequestTypeDef](./type_defs.md#getspotplacementscoresrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `TargetCapacity`: `int` *(required)*
+- `InstanceTypes`: `Sequence`\[`str`\]
+- `TargetCapacityUnitType`:
+  [TargetCapacityUnitTypeType](./literals.md#targetcapacityunittypetype)
+- `SingleAvailabilityZone`: `bool`
+- `RegionNames`: `Sequence`\[`str`\]
+- `InstanceRequirementsWithMetadata`:
+  [InstanceRequirementsWithMetadataRequestTypeDef](./type_defs.md#instancerequirementswithmetadatarequesttypedef)
+- `DryRun`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetSpotPlacementScoresResultTypeDef](./type_defs.md#getspotplacementscoresresulttypedef).
 
 ### get_subnet_cidr_reservations
 
@@ -9133,6 +9196,7 @@ Keyword-only arguments:
 - `EndDateType`: [EndDateTypeType](./literals.md#enddatetypetype)
 - `Accept`: `bool`
 - `DryRun`: `bool`
+- `AdditionalInfo`: `str`
 
 Returns
 [ModifyCapacityReservationResultTypeDef](./type_defs.md#modifycapacityreservationresulttypedef).
@@ -11807,10 +11871,14 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [GetAssociatedIpv6PoolCidrsPaginator](./paginators.md#getassociatedipv6poolcidrspaginator)
 - `client.get_paginator("get_groups_for_capacity_reservation")` ->
   [GetGroupsForCapacityReservationPaginator](./paginators.md#getgroupsforcapacityreservationpaginator)
+- `client.get_paginator("get_instance_types_from_instance_requirements")` ->
+  [GetInstanceTypesFromInstanceRequirementsPaginator](./paginators.md#getinstancetypesfrominstancerequirementspaginator)
 - `client.get_paginator("get_managed_prefix_list_associations")` ->
   [GetManagedPrefixListAssociationsPaginator](./paginators.md#getmanagedprefixlistassociationspaginator)
 - `client.get_paginator("get_managed_prefix_list_entries")` ->
   [GetManagedPrefixListEntriesPaginator](./paginators.md#getmanagedprefixlistentriespaginator)
+- `client.get_paginator("get_spot_placement_scores")` ->
+  [GetSpotPlacementScoresPaginator](./paginators.md#getspotplacementscorespaginator)
 - `client.get_paginator("get_transit_gateway_attachment_propagations")` ->
   [GetTransitGatewayAttachmentPropagationsPaginator](./paginators.md#gettransitgatewayattachmentpropagationspaginator)
 - `client.get_paginator("get_transit_gateway_multicast_domain_associations")`

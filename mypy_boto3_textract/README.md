@@ -39,8 +39,10 @@ from mypy_boto3_textract.client import TextractClient
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_document_analysis](./client.md#get_document_analysis)
 - [get_document_text_detection](./client.md#get_document_text_detection)
+- [get_expense_analysis](./client.md#get_expense_analysis)
 - [start_document_analysis](./client.md#start_document_analysis)
 - [start_document_text_detection](./client.md#start_document_text_detection)
+- [start_expense_analysis](./client.md#start_expense_analysis)
 
 ### Exceptions
 
@@ -113,6 +115,8 @@ from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestRequestTypeDef, 
 - [GetDocumentAnalysisResponseTypeDef](./type_defs.md#getdocumentanalysisresponsetypedef)
 - [GetDocumentTextDetectionRequestRequestTypeDef](./type_defs.md#getdocumenttextdetectionrequestrequesttypedef)
 - [GetDocumentTextDetectionResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponsetypedef)
+- [GetExpenseAnalysisRequestRequestTypeDef](./type_defs.md#getexpenseanalysisrequestrequesttypedef)
+- [GetExpenseAnalysisResponseTypeDef](./type_defs.md#getexpenseanalysisresponsetypedef)
 - [HumanLoopActivationOutputTypeDef](./type_defs.md#humanloopactivationoutputtypedef)
 - [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
 - [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
@@ -128,4 +132,6 @@ from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestRequestTypeDef, 
 - [StartDocumentAnalysisResponseTypeDef](./type_defs.md#startdocumentanalysisresponsetypedef)
 - [StartDocumentTextDetectionRequestRequestTypeDef](./type_defs.md#startdocumenttextdetectionrequestrequesttypedef)
 - [StartDocumentTextDetectionResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponsetypedef)
+- [StartExpenseAnalysisRequestRequestTypeDef](./type_defs.md#startexpenseanalysisrequestrequesttypedef)
+- [StartExpenseAnalysisResponseTypeDef](./type_defs.md#startexpenseanalysisresponsetypedef)
 - [WarningTypeDef](./type_defs.md#warningtypedef)

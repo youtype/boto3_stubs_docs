@@ -103,8 +103,10 @@ type annotations stubs module
   - [DescribeVpcsPaginator](#describevpcspaginator)
   - [GetAssociatedIpv6PoolCidrsPaginator](#getassociatedipv6poolcidrspaginator)
   - [GetGroupsForCapacityReservationPaginator](#getgroupsforcapacityreservationpaginator)
+  - [GetInstanceTypesFromInstanceRequirementsPaginator](#getinstancetypesfrominstancerequirementspaginator)
   - [GetManagedPrefixListAssociationsPaginator](#getmanagedprefixlistassociationspaginator)
   - [GetManagedPrefixListEntriesPaginator](#getmanagedprefixlistentriespaginator)
+  - [GetSpotPlacementScoresPaginator](#getspotplacementscorespaginator)
   - [GetTransitGatewayAttachmentPropagationsPaginator](#gettransitgatewayattachmentpropagationspaginator)
   - [GetTransitGatewayMulticastDomainAssociationsPaginator](#gettransitgatewaymulticastdomainassociationspaginator)
   - [GetTransitGatewayPrefixListReferencesPaginator](#gettransitgatewayprefixlistreferencespaginator)
@@ -2801,6 +2803,42 @@ Arguments for `GetGroupsForCapacityReservationPaginator.paginate` method:
 `GetGroupsForCapacityReservationPaginator.paginate` returns
 `_PageIterator`\[[GetGroupsForCapacityReservationResultTypeDef](./type_defs.md#getgroupsforcapacityreservationresulttypedef)\].
 
+## GetInstanceTypesFromInstanceRequirementsPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("get_instance_types_from_instance_requirements")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import GetInstanceTypesFromInstanceRequirementsPaginator
+
+def get_get_instance_types_from_instance_requirements_paginator() -> GetInstanceTypesFromInstanceRequirementsPaginator:
+    return boto3.client("ec2").get_paginator("get_instance_types_from_instance_requirements")
+```
+
+Boto3 documentation:
+[EC2.Paginator.GetInstanceTypesFromInstanceRequirements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetInstanceTypesFromInstanceRequirements)
+
+Arguments for `GetInstanceTypesFromInstanceRequirementsPaginator.paginate`
+method:
+
+- `ArchitectureTypes`:
+  `Sequence`\[[ArchitectureTypeType](./literals.md#architecturetypetype)\]
+  *(required)*
+- `VirtualizationTypes`:
+  `Sequence`\[[VirtualizationTypeType](./literals.md#virtualizationtypetype)\]
+  *(required)*
+- `InstanceRequirements`:
+  [InstanceRequirementsRequestTypeDef](./type_defs.md#instancerequirementsrequesttypedef)
+  *(required)*
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetInstanceTypesFromInstanceRequirementsPaginator.paginate` returns
+`_PageIterator`\[[GetInstanceTypesFromInstanceRequirementsResultTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsresulttypedef)\].
+
 ## GetManagedPrefixListAssociationsPaginator
 
 Type annotations for
@@ -2855,6 +2893,40 @@ Arguments for `GetManagedPrefixListEntriesPaginator.paginate` method:
 
 `GetManagedPrefixListEntriesPaginator.paginate` returns
 `_PageIterator`\[[GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef)\].
+
+## GetSpotPlacementScoresPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("get_spot_placement_scores")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import GetSpotPlacementScoresPaginator
+
+def get_get_spot_placement_scores_paginator() -> GetSpotPlacementScoresPaginator:
+    return boto3.client("ec2").get_paginator("get_spot_placement_scores")
+```
+
+Boto3 documentation:
+[EC2.Paginator.GetSpotPlacementScores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetSpotPlacementScores)
+
+Arguments for `GetSpotPlacementScoresPaginator.paginate` method:
+
+- `TargetCapacity`: `int` *(required)*
+- `InstanceTypes`: `Sequence`\[`str`\]
+- `TargetCapacityUnitType`:
+  [TargetCapacityUnitTypeType](./literals.md#targetcapacityunittypetype)
+- `SingleAvailabilityZone`: `bool`
+- `RegionNames`: `Sequence`\[`str`\]
+- `InstanceRequirementsWithMetadata`:
+  [InstanceRequirementsWithMetadataRequestTypeDef](./type_defs.md#instancerequirementswithmetadatarequesttypedef)
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetSpotPlacementScoresPaginator.paginate` returns
+`_PageIterator`\[[GetSpotPlacementScoresResultTypeDef](./type_defs.md#getspotplacementscoresresulttypedef)\].
 
 ## GetTransitGatewayAttachmentPropagationsPaginator
 
