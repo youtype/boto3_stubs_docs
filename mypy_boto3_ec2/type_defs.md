@@ -19851,6 +19851,7 @@ Optional fields:
 - `SubnetId`: `str`
 - `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcId`: `str`
+- `DenyAllIgwTraffic`: `bool`
 
 ## NewDhcpConfigurationTypeDef
 

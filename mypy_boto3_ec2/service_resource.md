@@ -2976,6 +2976,7 @@ Boto3 documentation:
 - `subnet_id`: `str`
 - `tag_set`: `List`\[`Any`\]
 - `vpc_id`: `str`
+- `deny_all_igw_traffic`: `bool`
 - `id`: `str`
 - `association`: [NetworkInterfaceAssociation](#networkinterfaceassociation)
 - `subnet`: [Subnet](#subnet)

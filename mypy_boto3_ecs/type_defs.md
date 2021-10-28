@@ -142,6 +142,7 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RunTaskRequestRequestTypeDef](#runtaskrequestrequesttypedef)
   - [RunTaskResponseTypeDef](#runtaskresponsetypedef)
+  - [RuntimePlatformTypeDef](#runtimeplatformtypedef)
   - [ScaleTypeDef](#scaletypedef)
   - [SecretTypeDef](#secrettypedef)
   - [ServiceEventTypeDef](#serviceeventtypedef)
@@ -895,6 +896,7 @@ Optional fields:
   `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 - `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
 - `platformVersion`: `str`
+- `platformFamily`: `str`
 - `networkConfiguration`:
   [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `rolloutState`:
@@ -2084,6 +2086,8 @@ Optional fields:
   `Sequence`\[[InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef)\]
 - `ephemeralStorage`:
   [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
+- `runtimePlatform`:
+  [RuntimePlatformTypeDef](./type_defs.md#runtimeplatformtypedef)
 
 ## RegisterTaskDefinitionResponseTypeDef
 
@@ -2195,6 +2199,17 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## RuntimePlatformTypeDef
+
+```python
+from mypy_boto3_ecs.type_defs import RuntimePlatformTypeDef
+```
+
+Optional fields:
+
+- `cpuArchitecture`: [CPUArchitectureType](./literals.md#cpuarchitecturetype)
+- `operatingSystemFamily`: [OSFamilyType](./literals.md#osfamilytype)
+
 ## ScaleTypeDef
 
 ```python
@@ -2266,6 +2281,7 @@ Optional fields:
 - `capacityProviderStrategy`:
   `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 - `platformVersion`: `str`
+- `platformFamily`: `str`
 - `taskDefinition`: `str`
 - `deploymentConfiguration`:
   [DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef)
@@ -2541,6 +2557,8 @@ Optional fields:
   `List`\[[TaskDefinitionPlacementConstraintTypeDef](./type_defs.md#taskdefinitionplacementconstrainttypedef)\]
 - `compatibilities`:
   `List`\[[CompatibilityType](./literals.md#compatibilitytype)\]
+- `runtimePlatform`:
+  [RuntimePlatformTypeDef](./type_defs.md#runtimeplatformtypedef)
 - `requiresCompatibilities`:
   `List`\[[CompatibilityType](./literals.md#compatibilitytype)\]
 - `cpu`: `str`
@@ -2601,6 +2619,7 @@ Optional fields:
 - `capacityProviderStrategy`:
   `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 - `platformVersion`: `str`
+- `platformFamily`: `str`
 - `networkConfiguration`:
   [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `loadBalancers`:
@@ -2644,6 +2663,7 @@ Optional fields:
 - `memory`: `str`
 - `overrides`: [TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef)
 - `platformVersion`: `str`
+- `platformFamily`: `str`
 - `pullStartedAt`: `datetime`
 - `pullStoppedAt`: `datetime`
 - `startedAt`: `datetime`

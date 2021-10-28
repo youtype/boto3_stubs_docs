@@ -14,6 +14,7 @@ type annotations stubs module
   - [AppImageConfigSortKeyType](#appimageconfigsortkeytype)
   - [AppInstanceTypeType](#appinstancetypetype)
   - [AppNetworkAccessTypeType](#appnetworkaccesstypetype)
+  - [AppSecurityGroupManagementType](#appsecuritygroupmanagementtype)
   - [AppSortKeyType](#appsortkeytype)
   - [AppStatusType](#appstatustype)
   - [AppTypeType](#apptypetype)
@@ -196,6 +197,8 @@ type annotations stubs module
   - [ProjectSortByType](#projectsortbytype)
   - [ProjectSortOrderType](#projectsortordertype)
   - [ProjectStatusType](#projectstatustype)
+  - [RStudioServerProAccessStatusType](#rstudioserverproaccessstatustype)
+  - [RStudioServerProUserGroupType](#rstudioserverprousergrouptype)
   - [RecordWrapperType](#recordwrappertype)
   - [RedshiftResultCompressionTypeType](#redshiftresultcompressiontypetype)
   - [RedshiftResultFormatType](#redshiftresultformattype)
@@ -369,6 +372,17 @@ Values:
 - `PublicInternetOnly`
 - `VpcOnly`
 
+## AppSecurityGroupManagementType
+
+```python
+from mypy_boto3_sagemaker.literals import AppSecurityGroupManagementType
+```
+
+Values:
+
+- `Customer`
+- `Service`
+
 ## AppSortKeyType
 
 ```python
@@ -403,6 +417,8 @@ Values:
 
 - `JupyterServer`
 - `KernelGateway`
+- `RSessionGateway`
+- `RStudioServerPro`
 - `TensorBoard`
 
 ## ArtifactSourceIdTypeType
@@ -2631,6 +2647,28 @@ Values:
 - `UpdateCompleted`
 - `UpdateFailed`
 - `UpdateInProgress`
+
+## RStudioServerProAccessStatusType
+
+```python
+from mypy_boto3_sagemaker.literals import RStudioServerProAccessStatusType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## RStudioServerProUserGroupType
+
+```python
+from mypy_boto3_sagemaker.literals import RStudioServerProUserGroupType
+```
+
+Values:
+
+- `R_STUDIO_ADMIN`
+- `R_STUDIO_USER`
 
 ## RecordWrapperType
 

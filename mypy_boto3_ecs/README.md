@@ -168,6 +168,7 @@ from mypy_boto3_ecs.literals import AgentUpdateStatusType, ...
 
 - [AgentUpdateStatusType](./literals.md#agentupdatestatustype)
 - [AssignPublicIpType](./literals.md#assignpubliciptype)
+- [CPUArchitectureType](./literals.md#cpuarchitecturetype)
 - [CapacityProviderFieldType](./literals.md#capacityproviderfieldtype)
 - [CapacityProviderStatusType](./literals.md#capacityproviderstatustype)
 - [CapacityProviderUpdateStatusType](./literals.md#capacityproviderupdatestatustype)
@@ -203,6 +204,7 @@ from mypy_boto3_ecs.literals import AgentUpdateStatusType, ...
 - [ManagedScalingStatusType](./literals.md#managedscalingstatustype)
 - [ManagedTerminationProtectionType](./literals.md#managedterminationprotectiontype)
 - [NetworkModeType](./literals.md#networkmodetype)
+- [OSFamilyType](./literals.md#osfamilytype)
 - [PidModeType](./literals.md#pidmodetype)
 - [PlacementConstraintTypeType](./literals.md#placementconstrainttypetype)
 - [PlacementStrategyTypeType](./literals.md#placementstrategytypetype)
@@ -380,6 +382,7 @@ from mypy_boto3_ecs.type_defs import AttachmentStateChangeTypeDef, ...
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RunTaskRequestRequestTypeDef](./type_defs.md#runtaskrequestrequesttypedef)
 - [RunTaskResponseTypeDef](./type_defs.md#runtaskresponsetypedef)
+- [RuntimePlatformTypeDef](./type_defs.md#runtimeplatformtypedef)
 - [ScaleTypeDef](./type_defs.md#scaletypedef)
 - [SecretTypeDef](./type_defs.md#secrettypedef)
 - [ServiceEventTypeDef](./type_defs.md#serviceeventtypedef)

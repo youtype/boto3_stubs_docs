@@ -231,7 +231,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_resource_policy
 
-Deletes the resource policy that AWS Resource Access Manager uses to share your
+Deletes the resource policy that Resource Access Manager uses to share your
 Incident Manager resource.
 
 Type annotations for `boto3.client("ssm-incidents").delete_resource_policy`
@@ -310,7 +310,7 @@ Returns `str`.
 
 ### get_incident_record
 
-Returns the details of the specified incident record.
+Returns the details for the specified incident record.
 
 Type annotations for `boto3.client("ssm-incidents").get_incident_record`
 method.
@@ -516,7 +516,7 @@ Returns
 
 ### list_timeline_events
 
-Lists timeline events of the specified incident record.
+Lists timeline events for the specified incident record.
 
 Type annotations for `boto3.client("ssm-incidents").list_timeline_events`
 method.

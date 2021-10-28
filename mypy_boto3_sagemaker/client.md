@@ -737,6 +737,10 @@ Keyword-only arguments:
   [AppNetworkAccessTypeType](./literals.md#appnetworkaccesstypetype)
 - `HomeEfsFileSystemKmsKeyId`: `str`
 - `KmsKeyId`: `str`
+- `AppSecurityGroupManagement`:
+  [AppSecurityGroupManagementType](./literals.md#appsecuritygroupmanagementtype)
+- `DomainSettings`:
+  [DomainSettingsTypeDef](./type_defs.md#domainsettingstypedef)
 
 Returns
 [CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
@@ -5491,6 +5495,8 @@ Keyword-only arguments:
 - `DomainId`: `str` *(required)*
 - `DefaultUserSettings`:
   [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
+- `DomainSettingsForUpdate`:
+  [DomainSettingsForUpdateTypeDef](./type_defs.md#domainsettingsforupdatetypedef)
 
 Returns
 [UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef).

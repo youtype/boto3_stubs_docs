@@ -77,6 +77,10 @@ Required fields:
 - `Type`: `Sequence`\[[ConnectionTypeType](./literals.md#connectiontypetype)\]
 - `ParticipantToken`: `str`
 
+Optional fields:
+
+- `ConnectParticipant`: `bool`
+
 ## CreateParticipantConnectionResponseTypeDef
 
 ```python

@@ -334,6 +334,8 @@ type annotations stubs module
   - [DisassociateTrialComponentRequestRequestTypeDef](#disassociatetrialcomponentrequestrequesttypedef)
   - [DisassociateTrialComponentResponseTypeDef](#disassociatetrialcomponentresponsetypedef)
   - [DomainDetailsTypeDef](#domaindetailstypedef)
+  - [DomainSettingsForUpdateTypeDef](#domainsettingsforupdatetypedef)
+  - [DomainSettingsTypeDef](#domainsettingstypedef)
   - [EdgeModelStatTypeDef](#edgemodelstattypedef)
   - [EdgeModelSummaryTypeDef](#edgemodelsummarytypedef)
   - [EdgeModelTypeDef](#edgemodeltypedef)
@@ -629,6 +631,9 @@ type annotations stubs module
   - [PublicWorkforceTaskPriceTypeDef](#publicworkforcetaskpricetypedef)
   - [PutModelPackageGroupPolicyInputRequestTypeDef](#putmodelpackagegrouppolicyinputrequesttypedef)
   - [PutModelPackageGroupPolicyOutputTypeDef](#putmodelpackagegrouppolicyoutputtypedef)
+  - [RStudioServerProAppSettingsTypeDef](#rstudioserverproappsettingstypedef)
+  - [RStudioServerProDomainSettingsForUpdateTypeDef](#rstudioserverprodomainsettingsforupdatetypedef)
+  - [RStudioServerProDomainSettingsTypeDef](#rstudioserverprodomainsettingstypedef)
   - [RedshiftDatasetDefinitionTypeDef](#redshiftdatasetdefinitiontypedef)
   - [RegisterDevicesRequestRequestTypeDef](#registerdevicesrequestrequesttypedef)
   - [RegisterModelStepMetadataTypeDef](#registermodelstepmetadatatypedef)
@@ -2167,6 +2172,10 @@ Optional fields:
   [AppNetworkAccessTypeType](./literals.md#appnetworkaccesstypetype)
 - `HomeEfsFileSystemKmsKeyId`: `str`
 - `KmsKeyId`: `str`
+- `AppSecurityGroupManagement`:
+  [AppSecurityGroupManagementType](./literals.md#appsecuritygroupmanagementtype)
+- `DomainSettings`:
+  [DomainSettingsTypeDef](./type_defs.md#domainsettingstypedef)
 
 ## CreateDomainResponseTypeDef
 
@@ -4477,6 +4486,11 @@ Required fields:
 - `Url`: `str`
 - `VpcId`: `str`
 - `KmsKeyId`: `str`
+- `DomainSettings`:
+  [DomainSettingsTypeDef](./type_defs.md#domainsettingstypedef)
+- `AppSecurityGroupManagement`:
+  [AppSecurityGroupManagementType](./literals.md#appsecuritygroupmanagementtype)
+- `SecurityGroupIdForDomainBoundary`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5834,6 +5848,29 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `Url`: `str`
+
+## DomainSettingsForUpdateTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DomainSettingsForUpdateTypeDef
+```
+
+Optional fields:
+
+- `RStudioServerProDomainSettingsForUpdate`:
+  [RStudioServerProDomainSettingsForUpdateTypeDef](./type_defs.md#rstudioserverprodomainsettingsforupdatetypedef)
+
+## DomainSettingsTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DomainSettingsTypeDef
+```
+
+Optional fields:
+
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `RStudioServerProDomainSettings`:
+  [RStudioServerProDomainSettingsTypeDef](./type_defs.md#rstudioserverprodomainsettingstypedef)
 
 ## EdgeModelStatTypeDef
 
@@ -10403,6 +10440,51 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## RStudioServerProAppSettingsTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RStudioServerProAppSettingsTypeDef
+```
+
+Optional fields:
+
+- `AccessStatus`:
+  [RStudioServerProAccessStatusType](./literals.md#rstudioserverproaccessstatustype)
+- `UserGroup`:
+  [RStudioServerProUserGroupType](./literals.md#rstudioserverprousergrouptype)
+
+## RStudioServerProDomainSettingsForUpdateTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RStudioServerProDomainSettingsForUpdateTypeDef
+```
+
+Required fields:
+
+- `DomainExecutionRoleArn`: `str`
+
+Optional fields:
+
+- `DefaultResourceSpec`:
+  [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
+
+## RStudioServerProDomainSettingsTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RStudioServerProDomainSettingsTypeDef
+```
+
+Required fields:
+
+- `DomainExecutionRoleArn`: `str`
+
+Optional fields:
+
+- `RStudioConnectUrl`: `str`
+- `RStudioPackageManagerUrl`: `str`
+- `DefaultResourceSpec`:
+  [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
+
 ## RedshiftDatasetDefinitionTypeDef
 
 ```python
@@ -11965,6 +12047,8 @@ Optional fields:
 
 - `DefaultUserSettings`:
   [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
+- `DomainSettingsForUpdate`:
+  [DomainSettingsForUpdateTypeDef](./type_defs.md#domainsettingsforupdatetypedef)
 
 ## UpdateDomainResponseTypeDef
 
@@ -12494,6 +12578,9 @@ Optional fields:
   [KernelGatewayAppSettingsTypeDef](./type_defs.md#kernelgatewayappsettingstypedef)
 - `TensorBoardAppSettings`:
   [TensorBoardAppSettingsTypeDef](./type_defs.md#tensorboardappsettingstypedef)
+- `RStudioServerProAppSettings`:
+  [RStudioServerProAppSettingsTypeDef](./type_defs.md#rstudioserverproappsettingstypedef)
+- `RSessionAppSettings`: `Mapping`\[`str`, `Any`\]
 
 ## VariantPropertyTypeDef
 

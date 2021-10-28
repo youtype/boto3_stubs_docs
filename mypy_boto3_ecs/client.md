@@ -1035,6 +1035,8 @@ Keyword-only arguments:
   `Sequence`\[[InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef)\]
 - `ephemeralStorage`:
   [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
+- `runtimePlatform`:
+  [RuntimePlatformTypeDef](./type_defs.md#runtimeplatformtypedef)
 
 Returns
 [RegisterTaskDefinitionResponseTypeDef](./type_defs.md#registertaskdefinitionresponsetypedef).

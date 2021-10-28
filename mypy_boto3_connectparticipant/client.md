@@ -129,6 +129,7 @@ Keyword-only arguments:
 - `Type`: `Sequence`\[[ConnectionTypeType](./literals.md#connectiontypetype)\]
   *(required)*
 - `ParticipantToken`: `str` *(required)*
+- `ConnectParticipant`: `bool`
 
 Returns
 [CreateParticipantConnectionResponseTypeDef](./type_defs.md#createparticipantconnectionresponsetypedef).
