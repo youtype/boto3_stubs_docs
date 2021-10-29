@@ -1796,6 +1796,8 @@ Keyword-only arguments:
 - `UserIds`: `Sequence`\[`str`\]
 - `Value`: `str`
 - `DryRun`: `bool`
+- `OrganizationArns`: `Sequence`\[`str`\]
+- `OrganizationalUnitArns`: `Sequence`\[`str`\]
 
 #### Image.reload method
 

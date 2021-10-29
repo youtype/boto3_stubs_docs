@@ -126,11 +126,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
+- `ResourceGroupName`: `str`
 - `OpsCenterEnabled`: `bool`
 - `CWEMonitorEnabled`: `bool`
 - `OpsItemSNSTopicArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `AutoConfigEnabled`: `bool`
+- `AutoCreate`: `bool`
 
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
@@ -562,6 +564,7 @@ Keyword-only arguments:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+- `ComponentName`: `str`
 
 Returns
 [ListProblemsResponseTypeDef](./type_defs.md#listproblemsresponsetypedef).
@@ -647,6 +650,7 @@ Keyword-only arguments:
 - `CWEMonitorEnabled`: `bool`
 - `OpsItemSNSTopicArn`: `str`
 - `RemoveSNSTopic`: `bool`
+- `AutoConfigEnabled`: `bool`
 
 Returns
 [UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
@@ -694,6 +698,7 @@ Keyword-only arguments:
 - `Monitor`: `bool`
 - `Tier`: [TierType](./literals.md#tiertype)
 - `ComponentConfiguration`: `str`
+- `AutoConfigEnabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
 

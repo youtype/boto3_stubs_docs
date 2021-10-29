@@ -280,6 +280,7 @@ Optional fields:
 - `Confidence`: `float`
 - `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Face`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
+- `KnownGender`: [KnownGenderTypeDef](./type_defs.md#knowngendertypedef)
 
 ## CelebrityRecognitionTypeDef
 

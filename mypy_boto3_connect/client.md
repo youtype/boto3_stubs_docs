@@ -91,10 +91,12 @@ type annotations stubs module
     - [resume_contact_recording](#resume_contact_recording)
     - [start_chat_contact](#start_chat_contact)
     - [start_contact_recording](#start_contact_recording)
+    - [start_contact_streaming](#start_contact_streaming)
     - [start_outbound_voice_contact](#start_outbound_voice_contact)
     - [start_task_contact](#start_task_contact)
     - [stop_contact](#stop_contact)
     - [stop_contact_recording](#stop_contact_recording)
+    - [stop_contact_streaming](#stop_contact_streaming)
     - [suspend_contact_recording](#suspend_contact_recording)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
@@ -1874,6 +1876,30 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### start_contact_streaming
+
+Initiates real-time message streaming for a new chat contact.
+
+Type annotations for `boto3.client("connect").start_contact_streaming` method.
+
+Boto3 documentation:
+[Connect.Client.start_contact_streaming](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_contact_streaming)
+
+Arguments mapping described in
+[StartContactStreamingRequestRequestTypeDef](./type_defs.md#startcontactstreamingrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ContactId`: `str` *(required)*
+- `ChatStreamingConfiguration`:
+  [ChatStreamingConfigurationTypeDef](./type_defs.md#chatstreamingconfigurationtypedef)
+  *(required)*
+- `ClientToken`: `str` *(required)*
+
+Returns
+[StartContactStreamingResponseTypeDef](./type_defs.md#startcontactstreamingresponsetypedef).
+
 ### start_outbound_voice_contact
 
 Places an outbound call to a contact, and then initiates the contact flow.
@@ -1967,6 +1993,26 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `ContactId`: `str` *(required)*
 - `InitialContactId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### stop_contact_streaming
+
+Ends message streaming on a specified contact.
+
+Type annotations for `boto3.client("connect").stop_contact_streaming` method.
+
+Boto3 documentation:
+[Connect.Client.stop_contact_streaming](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact_streaming)
+
+Arguments mapping described in
+[StopContactStreamingRequestRequestTypeDef](./type_defs.md#stopcontactstreamingrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ContactId`: `str` *(required)*
+- `StreamingId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

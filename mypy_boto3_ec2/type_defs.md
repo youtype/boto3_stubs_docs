@@ -17086,6 +17086,8 @@ Optional fields:
 - `Group`: `Literal['all']` (see
   [PermissionGroupType](./literals.md#permissiongrouptype))
 - `UserId`: `str`
+- `OrganizationArn`: `str`
+- `OrganizationalUnitArn`: `str`
 
 ## LaunchSpecificationTypeDef
 
@@ -18265,6 +18267,8 @@ Optional fields:
 - `UserIds`: `Sequence`\[`str`\]
 - `Value`: `str`
 - `DryRun`: `bool`
+- `OrganizationArns`: `Sequence`\[`str`\]
+- `OrganizationalUnitArns`: `Sequence`\[`str`\]
 
 ## ModifyImageAttributeRequestRequestTypeDef
 
@@ -18288,6 +18292,8 @@ Optional fields:
 - `UserIds`: `Sequence`\[`str`\]
 - `Value`: `str`
 - `DryRun`: `bool`
+- `OrganizationArns`: `Sequence`\[`str`\]
+- `OrganizationalUnitArns`: `Sequence`\[`str`\]
 
 ## ModifyInstanceAttributeRequestInstanceTypeDef
 

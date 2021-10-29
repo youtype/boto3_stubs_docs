@@ -171,6 +171,7 @@ from mypy_boto3_transcribe.type_defs import AbsoluteTimeRangeTypeDef, ...
 - [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - [InterruptionFilterTypeDef](./type_defs.md#interruptionfiltertypedef)
 - [JobExecutionSettingsTypeDef](./type_defs.md#jobexecutionsettingstypedef)
+- [LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef)
 - [LanguageModelTypeDef](./type_defs.md#languagemodeltypedef)
 - [ListCallAnalyticsCategoriesRequestRequestTypeDef](./type_defs.md#listcallanalyticscategoriesrequestrequesttypedef)
 - [ListCallAnalyticsCategoriesResponseTypeDef](./type_defs.md#listcallanalyticscategoriesresponsetypedef)

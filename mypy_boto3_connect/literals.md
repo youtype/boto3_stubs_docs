@@ -191,7 +191,9 @@ from mypy_boto3_connect.literals import GroupingType
 Values:
 
 - `CHANNEL`
+- `INSTANCE`
 - `QUEUE`
+- `ROUTING_PROFILE`
 
 ## HistoricalMetricNameType
 
@@ -215,8 +217,10 @@ Values:
 - `CONTACTS_MISSED`
 - `CONTACTS_QUEUED`
 - `CONTACTS_TRANSFERRED_IN`
+- `CONTACTS_TRANSFERRED_IN_BY_AGENT`
 - `CONTACTS_TRANSFERRED_IN_FROM_QUEUE`
 - `CONTACTS_TRANSFERRED_OUT`
+- `CONTACTS_TRANSFERRED_OUT_BY_AGENT`
 - `CONTACTS_TRANSFERRED_OUT_FROM_QUEUE`
 - `HANDLE_TIME`
 - `HOLD_TIME`
@@ -851,6 +855,11 @@ from mypy_boto3_connect.literals import ReferenceTypeType
 
 Values:
 
+- `ATTACHMENT`
+- `DATE`
+- `EMAIL`
+- `NUMBER`
+- `STRING`
 - `URL`
 
 ## SourceTypeType
@@ -909,6 +918,7 @@ from mypy_boto3_connect.literals import UnitType
 Values:
 
 - `COUNT`
+- `MILLISECONDS`
 - `PERCENT`
 - `SECONDS`
 

@@ -52,6 +52,7 @@ type annotations stubs module
   - [InputDataConfigTypeDef](#inputdataconfigtypedef)
   - [InterruptionFilterTypeDef](#interruptionfiltertypedef)
   - [JobExecutionSettingsTypeDef](#jobexecutionsettingstypedef)
+  - [LanguageIdSettingsTypeDef](#languageidsettingstypedef)
   - [LanguageModelTypeDef](#languagemodeltypedef)
   - [ListCallAnalyticsCategoriesRequestRequestTypeDef](#listcallanalyticscategoriesrequestrequesttypedef)
   - [ListCallAnalyticsCategoriesResponseTypeDef](#listcallanalyticscategoriesresponsetypedef)
@@ -139,6 +140,9 @@ Optional fields:
   [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
 - `LanguageOptions`:
   `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
+- `LanguageIdSettings`:
+  `Dict`\[[LanguageCodeType](./literals.md#languagecodetype),
+  [LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef)\]
 
 ## CallAnalyticsJobSummaryTypeDef
 
@@ -689,6 +693,18 @@ Optional fields:
 
 - `AllowDeferredExecution`: `bool`
 - `DataAccessRoleArn`: `str`
+
+## LanguageIdSettingsTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import LanguageIdSettingsTypeDef
+```
+
+Optional fields:
+
+- `VocabularyName`: `str`
+- `VocabularyFilterName`: `str`
+- `LanguageModelName`: `str`
 
 ## LanguageModelTypeDef
 
@@ -1260,6 +1276,9 @@ Optional fields:
   `Sequence`\[[LanguageCodeType](./literals.md#languagecodetype)\]
 - `Subtitles`: [SubtitlesTypeDef](./type_defs.md#subtitlestypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `LanguageIdSettings`:
+  `Mapping`\[[LanguageCodeType](./literals.md#languagecodetype),
+  [LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef)\]
 
 ## StartTranscriptionJobResponseTypeDef
 
@@ -1406,6 +1425,9 @@ Optional fields:
 - `IdentifiedLanguageScore`: `float`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Subtitles`: [SubtitlesOutputTypeDef](./type_defs.md#subtitlesoutputtypedef)
+- `LanguageIdSettings`:
+  `Dict`\[[LanguageCodeType](./literals.md#languagecodetype),
+  [LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef)\]
 
 ## UntagResourceRequestRequestTypeDef
 
