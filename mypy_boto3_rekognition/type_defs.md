@@ -26,6 +26,8 @@ type annotations stubs module
   - [CoversBodyPartTypeDef](#coversbodyparttypedef)
   - [CreateCollectionRequestRequestTypeDef](#createcollectionrequestrequesttypedef)
   - [CreateCollectionResponseTypeDef](#createcollectionresponsetypedef)
+  - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
+  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
   - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
   - [CreateProjectResponseTypeDef](#createprojectresponsetypedef)
   - [CreateProjectVersionRequestRequestTypeDef](#createprojectversionrequestrequesttypedef)
@@ -33,8 +35,16 @@ type annotations stubs module
   - [CreateStreamProcessorRequestRequestTypeDef](#createstreamprocessorrequestrequesttypedef)
   - [CreateStreamProcessorResponseTypeDef](#createstreamprocessorresponsetypedef)
   - [CustomLabelTypeDef](#customlabeltypedef)
+  - [DatasetChangesTypeDef](#datasetchangestypedef)
+  - [DatasetDescriptionTypeDef](#datasetdescriptiontypedef)
+  - [DatasetLabelDescriptionTypeDef](#datasetlabeldescriptiontypedef)
+  - [DatasetLabelStatsTypeDef](#datasetlabelstatstypedef)
+  - [DatasetMetadataTypeDef](#datasetmetadatatypedef)
+  - [DatasetSourceTypeDef](#datasetsourcetypedef)
+  - [DatasetStatsTypeDef](#datasetstatstypedef)
   - [DeleteCollectionRequestRequestTypeDef](#deletecollectionrequestrequesttypedef)
   - [DeleteCollectionResponseTypeDef](#deletecollectionresponsetypedef)
+  - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
   - [DeleteFacesRequestRequestTypeDef](#deletefacesrequestrequesttypedef)
   - [DeleteFacesResponseTypeDef](#deletefacesresponsetypedef)
   - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
@@ -44,6 +54,8 @@ type annotations stubs module
   - [DeleteStreamProcessorRequestRequestTypeDef](#deletestreamprocessorrequestrequesttypedef)
   - [DescribeCollectionRequestRequestTypeDef](#describecollectionrequestrequesttypedef)
   - [DescribeCollectionResponseTypeDef](#describecollectionresponsetypedef)
+  - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
+  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
   - [DescribeProjectVersionsRequestRequestTypeDef](#describeprojectversionsrequestrequesttypedef)
   - [DescribeProjectVersionsResponseTypeDef](#describeprojectversionsresponsetypedef)
   - [DescribeProjectsRequestRequestTypeDef](#describeprojectsrequestrequesttypedef)
@@ -64,6 +76,8 @@ type annotations stubs module
   - [DetectTextRequestRequestTypeDef](#detecttextrequestrequesttypedef)
   - [DetectTextResponseTypeDef](#detecttextresponsetypedef)
   - [DetectionFilterTypeDef](#detectionfiltertypedef)
+  - [DistributeDatasetEntriesRequestRequestTypeDef](#distributedatasetentriesrequestrequesttypedef)
+  - [DistributeDatasetTypeDef](#distributedatasettypedef)
   - [EmotionTypeDef](#emotiontypedef)
   - [EquipmentDetectionTypeDef](#equipmentdetectiontypedef)
   - [EvaluationResultTypeDef](#evaluationresulttypedef)
@@ -112,6 +126,10 @@ type annotations stubs module
   - [LandmarkTypeDef](#landmarktypedef)
   - [ListCollectionsRequestRequestTypeDef](#listcollectionsrequestrequesttypedef)
   - [ListCollectionsResponseTypeDef](#listcollectionsresponsetypedef)
+  - [ListDatasetEntriesRequestRequestTypeDef](#listdatasetentriesrequestrequesttypedef)
+  - [ListDatasetEntriesResponseTypeDef](#listdatasetentriesresponsetypedef)
+  - [ListDatasetLabelsRequestRequestTypeDef](#listdatasetlabelsrequestrequesttypedef)
+  - [ListDatasetLabelsResponseTypeDef](#listdatasetlabelsresponsetypedef)
   - [ListFacesRequestRequestTypeDef](#listfacesrequestrequesttypedef)
   - [ListFacesResponseTypeDef](#listfacesresponsetypedef)
   - [ListStreamProcessorsRequestRequestTypeDef](#liststreamprocessorsrequestrequesttypedef)
@@ -191,6 +209,7 @@ type annotations stubs module
   - [TrainingDataTypeDef](#trainingdatatypedef)
   - [UnindexedFaceTypeDef](#unindexedfacetypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateDatasetEntriesRequestRequestTypeDef](#updatedatasetentriesrequestrequesttypedef)
   - [ValidationDataTypeDef](#validationdatatypedef)
   - [VideoMetadataTypeDef](#videometadatatypedef)
   - [VideoTypeDef](#videotypedef)
@@ -434,6 +453,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateDatasetRequestRequestTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import CreateDatasetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype)
+- `ProjectArn`: `str`
+
+Optional fields:
+
+- `DatasetSource`: [DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef)
+
+## CreateDatasetResponseTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import CreateDatasetResponseTypeDef
+```
+
+Required fields:
+
+- `DatasetArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateProjectRequestRequestTypeDef
 
 ```python
@@ -467,11 +513,11 @@ Required fields:
 - `ProjectArn`: `str`
 - `VersionName`: `str`
 - `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
-- `TrainingData`: [TrainingDataTypeDef](./type_defs.md#trainingdatatypedef)
-- `TestingData`: [TestingDataTypeDef](./type_defs.md#testingdatatypedef)
 
 Optional fields:
 
+- `TrainingData`: [TrainingDataTypeDef](./type_defs.md#trainingdatatypedef)
+- `TestingData`: [TestingDataTypeDef](./type_defs.md#testingdatatypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `KmsKeyId`: `str`
 
@@ -532,6 +578,96 @@ Optional fields:
 - `Confidence`: `float`
 - `Geometry`: [GeometryTypeDef](./type_defs.md#geometrytypedef)
 
+## DatasetChangesTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import DatasetChangesTypeDef
+```
+
+Required fields:
+
+- `GroundTruth`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+## DatasetDescriptionTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import DatasetDescriptionTypeDef
+```
+
+Optional fields:
+
+- `CreationTimestamp`: `datetime`
+- `LastUpdatedTimestamp`: `datetime`
+- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
+- `StatusMessage`: `str`
+- `StatusMessageCode`:
+  [DatasetStatusMessageCodeType](./literals.md#datasetstatusmessagecodetype)
+- `DatasetStats`: [DatasetStatsTypeDef](./type_defs.md#datasetstatstypedef)
+
+## DatasetLabelDescriptionTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import DatasetLabelDescriptionTypeDef
+```
+
+Optional fields:
+
+- `LabelName`: `str`
+- `LabelStats`:
+  [DatasetLabelStatsTypeDef](./type_defs.md#datasetlabelstatstypedef)
+
+## DatasetLabelStatsTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import DatasetLabelStatsTypeDef
+```
+
+Optional fields:
+
+- `EntryCount`: `int`
+- `BoundingBoxCount`: `int`
+
+## DatasetMetadataTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import DatasetMetadataTypeDef
+```
+
+Optional fields:
+
+- `CreationTimestamp`: `datetime`
+- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype)
+- `DatasetArn`: `str`
+- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
+- `StatusMessage`: `str`
+- `StatusMessageCode`:
+  [DatasetStatusMessageCodeType](./literals.md#datasetstatusmessagecodetype)
+
+## DatasetSourceTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import DatasetSourceTypeDef
+```
+
+Optional fields:
+
+- `GroundTruthManifest`:
+  [GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef)
+- `DatasetArn`: `str`
+
+## DatasetStatsTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import DatasetStatsTypeDef
+```
+
+Optional fields:
+
+- `LabeledEntries`: `int`
+- `TotalEntries`: `int`
+- `TotalLabels`: `int`
+- `ErrorEntries`: `int`
+
 ## DeleteCollectionRequestRequestTypeDef
 
 ```python
@@ -553,6 +689,16 @@ Required fields:
 - `StatusCode`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteDatasetRequestRequestTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import DeleteDatasetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatasetArn`: `str`
 
 ## DeleteFacesRequestRequestTypeDef
 
@@ -656,6 +802,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeDatasetRequestRequestTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import DescribeDatasetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatasetArn`: `str`
+
+## DescribeDatasetResponseTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import DescribeDatasetResponseTypeDef
+```
+
+Required fields:
+
+- `DatasetDescription`:
+  [DatasetDescriptionTypeDef](./type_defs.md#datasetdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeProjectVersionsRequestRequestTypeDef
 
 ```python
@@ -696,6 +865,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `ProjectNames`: `Sequence`\[`str`\]
 
 ## DescribeProjectsResponseTypeDef
 
@@ -949,6 +1119,27 @@ Optional fields:
 - `MinConfidence`: `float`
 - `MinBoundingBoxHeight`: `float`
 - `MinBoundingBoxWidth`: `float`
+
+## DistributeDatasetEntriesRequestRequestTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import DistributeDatasetEntriesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Datasets`:
+  `Sequence`\[[DistributeDatasetTypeDef](./type_defs.md#distributedatasettypedef)\]
+
+## DistributeDatasetTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import DistributeDatasetTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
 
 ## EmotionTypeDef
 
@@ -1617,6 +1808,67 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListDatasetEntriesRequestRequestTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import ListDatasetEntriesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatasetArn`: `str`
+
+Optional fields:
+
+- `ContainsLabels`: `Sequence`\[`str`\]
+- `Labeled`: `bool`
+- `SourceRefContains`: `str`
+- `HasErrors`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDatasetEntriesResponseTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import ListDatasetEntriesResponseTypeDef
+```
+
+Required fields:
+
+- `DatasetEntries`: `List`\[`str`\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListDatasetLabelsRequestRequestTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import ListDatasetLabelsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatasetArn`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDatasetLabelsResponseTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import ListDatasetLabelsResponseTypeDef
+```
+
+Required fields:
+
+- `DatasetLabelDescriptions`:
+  `List`\[[DatasetLabelDescriptionTypeDef](./type_defs.md#datasetlabeldescriptiontypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListFacesRequestRequestTypeDef
 
 ```python
@@ -1840,6 +2092,8 @@ Optional fields:
 - `ProjectArn`: `str`
 - `CreationTimestamp`: `datetime`
 - `Status`: [ProjectStatusType](./literals.md#projectstatustype)
+- `Datasets`:
+  `List`\[[DatasetMetadataTypeDef](./type_defs.md#datasetmetadatatypedef)\]
 
 ## ProjectVersionDescriptionTypeDef
 
@@ -2633,6 +2887,17 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+## UpdateDatasetEntriesRequestRequestTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import UpdateDatasetEntriesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatasetArn`: `str`
+- `Changes`: [DatasetChangesTypeDef](./type_defs.md#datasetchangestypedef)
 
 ## ValidationDataTypeDef
 

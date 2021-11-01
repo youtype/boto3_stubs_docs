@@ -15,15 +15,18 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [compare_faces](#compare_faces)
     - [create_collection](#create_collection)
+    - [create_dataset](#create_dataset)
     - [create_project](#create_project)
     - [create_project_version](#create_project_version)
     - [create_stream_processor](#create_stream_processor)
     - [delete_collection](#delete_collection)
+    - [delete_dataset](#delete_dataset)
     - [delete_faces](#delete_faces)
     - [delete_project](#delete_project)
     - [delete_project_version](#delete_project_version)
     - [delete_stream_processor](#delete_stream_processor)
     - [describe_collection](#describe_collection)
+    - [describe_dataset](#describe_dataset)
     - [describe_project_versions](#describe_project_versions)
     - [describe_projects](#describe_projects)
     - [describe_stream_processor](#describe_stream_processor)
@@ -33,6 +36,7 @@ type annotations stubs module
     - [detect_moderation_labels](#detect_moderation_labels)
     - [detect_protective_equipment](#detect_protective_equipment)
     - [detect_text](#detect_text)
+    - [distribute_dataset_entries](#distribute_dataset_entries)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_celebrity_info](#get_celebrity_info)
     - [get_celebrity_recognition](#get_celebrity_recognition)
@@ -45,6 +49,8 @@ type annotations stubs module
     - [get_text_detection](#get_text_detection)
     - [index_faces](#index_faces)
     - [list_collections](#list_collections)
+    - [list_dataset_entries](#list_dataset_entries)
+    - [list_dataset_labels](#list_dataset_labels)
     - [list_faces](#list_faces)
     - [list_stream_processors](#list_stream_processors)
     - [list_tags_for_resource](#list_tags_for_resource)
@@ -65,6 +71,7 @@ type annotations stubs module
     - [stop_stream_processor](#stop_stream_processor)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_dataset_entries](#update_dataset_entries)
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
@@ -189,6 +196,27 @@ Keyword-only arguments:
 Returns
 [CreateCollectionResponseTypeDef](./type_defs.md#createcollectionresponsetypedef).
 
+### create_dataset
+
+Creates a new Amazon Rekognition Custom Labels dataset.
+
+Type annotations for `boto3.client("rekognition").create_dataset` method.
+
+Boto3 documentation:
+[Rekognition.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_dataset)
+
+Arguments mapping described in
+[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype) *(required)*
+- `ProjectArn`: `str` *(required)*
+- `DatasetSource`: [DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef)
+
+Returns
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+
 ### create_project
 
 Creates a new Amazon Rekognition Custom Labels project.
@@ -228,9 +256,7 @@ Keyword-only arguments:
 - `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
   *(required)*
 - `TrainingData`: [TrainingDataTypeDef](./type_defs.md#trainingdatatypedef)
-  *(required)*
 - `TestingData`: [TestingDataTypeDef](./type_defs.md#testingdatatypedef)
-  *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `KmsKeyId`: `str`
 
@@ -287,6 +313,24 @@ Keyword-only arguments:
 
 Returns
 [DeleteCollectionResponseTypeDef](./type_defs.md#deletecollectionresponsetypedef).
+
+### delete_dataset
+
+Deletes an existing Amazon Rekognition Custom Labels dataset.
+
+Type annotations for `boto3.client("rekognition").delete_dataset` method.
+
+Boto3 documentation:
+[Rekognition.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_dataset)
+
+Arguments mapping described in
+[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DatasetArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_faces
 
@@ -385,9 +429,29 @@ Keyword-only arguments:
 Returns
 [DescribeCollectionResponseTypeDef](./type_defs.md#describecollectionresponsetypedef).
 
+### describe_dataset
+
+Describes an Amazon Rekognition Custom Labels dataset.
+
+Type annotations for `boto3.client("rekognition").describe_dataset` method.
+
+Boto3 documentation:
+[Rekognition.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_dataset)
+
+Arguments mapping described in
+[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DatasetArn`: `str` *(required)*
+
+Returns
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+
 ### describe_project_versions
 
-Lists and describes the models in an Amazon Rekognition Custom Labels project.
+Lists and describes the versions of a model in an Amazon Rekognition Custom
+Labels project.
 
 Type annotations for `boto3.client("rekognition").describe_project_versions`
 method.
@@ -410,8 +474,7 @@ Returns
 
 ### describe_projects
 
-Lists and gets information about your Amazon Rekognition Custom Labels
-projects.
+Gets information about your Amazon Rekognition Custom Labels projects.
 
 Type annotations for `boto3.client("rekognition").describe_projects` method.
 
@@ -425,6 +488,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `ProjectNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef).
@@ -579,6 +643,28 @@ Keyword-only arguments:
   [DetectTextFiltersTypeDef](./type_defs.md#detecttextfilterstypedef)
 
 Returns [DetectTextResponseTypeDef](./type_defs.md#detecttextresponsetypedef).
+
+### distribute_dataset_entries
+
+Distributes the entries (images) in a training dataset across the training
+dataset and the test dataset for a project.
+
+Type annotations for `boto3.client("rekognition").distribute_dataset_entries`
+method.
+
+Boto3 documentation:
+[Rekognition.Client.distribute_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.distribute_dataset_entries)
+
+Arguments mapping described in
+[DistributeDatasetEntriesRequestRequestTypeDef](./type_defs.md#distributedatasetentriesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Datasets`:
+  `Sequence`\[[DistributeDatasetTypeDef](./type_defs.md#distributedatasettypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
@@ -848,6 +934,52 @@ Keyword-only arguments:
 
 Returns
 [ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef).
+
+### list_dataset_entries
+
+Lists the entries (images) within a dataset.
+
+Type annotations for `boto3.client("rekognition").list_dataset_entries` method.
+
+Boto3 documentation:
+[Rekognition.Client.list_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_dataset_entries)
+
+Arguments mapping described in
+[ListDatasetEntriesRequestRequestTypeDef](./type_defs.md#listdatasetentriesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DatasetArn`: `str` *(required)*
+- `ContainsLabels`: `Sequence`\[`str`\]
+- `Labeled`: `bool`
+- `SourceRefContains`: `str`
+- `HasErrors`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef).
+
+### list_dataset_labels
+
+Lists the labels in a dataset.
+
+Type annotations for `boto3.client("rekognition").list_dataset_labels` method.
+
+Boto3 documentation:
+[Rekognition.Client.list_dataset_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_dataset_labels)
+
+Arguments mapping described in
+[ListDatasetLabelsRequestRequestTypeDef](./type_defs.md#listdatasetlabelsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DatasetArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDatasetLabelsResponseTypeDef](./type_defs.md#listdatasetlabelsresponsetypedef).
 
 ### list_faces
 
@@ -1300,6 +1432,27 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### update_dataset_entries
+
+Adds or updates one or more entries (images) in a dataset.
+
+Type annotations for `boto3.client("rekognition").update_dataset_entries`
+method.
+
+Boto3 documentation:
+[Rekognition.Client.update_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.update_dataset_entries)
+
+Arguments mapping described in
+[UpdateDatasetEntriesRequestRequestTypeDef](./type_defs.md#updatedatasetentriesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DatasetArn`: `str` *(required)*
+- `Changes`: [DatasetChangesTypeDef](./type_defs.md#datasetchangestypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### get_paginator
 
 Type annotations for `boto3.client("rekognition").get_paginator` method with
@@ -1311,6 +1464,10 @@ overloads.
   [DescribeProjectsPaginator](./paginators.md#describeprojectspaginator)
 - `client.get_paginator("list_collections")` ->
   [ListCollectionsPaginator](./paginators.md#listcollectionspaginator)
+- `client.get_paginator("list_dataset_entries")` ->
+  [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
+- `client.get_paginator("list_dataset_labels")` ->
+  [ListDatasetLabelsPaginator](./paginators.md#listdatasetlabelspaginator)
 - `client.get_paginator("list_faces")` ->
   [ListFacesPaginator](./paginators.md#listfacespaginator)
 - `client.get_paginator("list_stream_processors")` ->

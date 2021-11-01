@@ -9,6 +9,8 @@ type annotations stubs module
 
 - [Literals for boto3 NetworkManager module](#literals-for-boto3-networkmanager-module)
   - [ConnectionStateType](#connectionstatetype)
+  - [ConnectionStatusType](#connectionstatustype)
+  - [ConnectionTypeType](#connectiontypetype)
   - [CustomerGatewayAssociationStateType](#customergatewayassociationstatetype)
   - [DescribeGlobalNetworksPaginatorName](#describeglobalnetworkspaginatorname)
   - [DeviceStateType](#devicestatetype)
@@ -17,12 +19,22 @@ type annotations stubs module
   - [GetDevicesPaginatorName](#getdevicespaginatorname)
   - [GetLinkAssociationsPaginatorName](#getlinkassociationspaginatorname)
   - [GetLinksPaginatorName](#getlinkspaginatorname)
+  - [GetNetworkResourceCountsPaginatorName](#getnetworkresourcecountspaginatorname)
+  - [GetNetworkResourceRelationshipsPaginatorName](#getnetworkresourcerelationshipspaginatorname)
+  - [GetNetworkResourcesPaginatorName](#getnetworkresourcespaginatorname)
+  - [GetNetworkTelemetryPaginatorName](#getnetworktelemetrypaginatorname)
   - [GetSitesPaginatorName](#getsitespaginatorname)
   - [GetTransitGatewayConnectPeerAssociationsPaginatorName](#gettransitgatewayconnectpeerassociationspaginatorname)
   - [GetTransitGatewayRegistrationsPaginatorName](#gettransitgatewayregistrationspaginatorname)
   - [GlobalNetworkStateType](#globalnetworkstatetype)
   - [LinkAssociationStateType](#linkassociationstatetype)
   - [LinkStateType](#linkstatetype)
+  - [RouteAnalysisCompletionReasonCodeType](#routeanalysiscompletionreasoncodetype)
+  - [RouteAnalysisCompletionResultCodeType](#routeanalysiscompletionresultcodetype)
+  - [RouteAnalysisStatusType](#routeanalysisstatustype)
+  - [RouteStateType](#routestatetype)
+  - [RouteTableTypeType](#routetabletypetype)
+  - [RouteTypeType](#routetypetype)
   - [SiteStateType](#sitestatetype)
   - [TransitGatewayConnectPeerAssociationStateType](#transitgatewayconnectpeerassociationstatetype)
   - [TransitGatewayRegistrationStateType](#transitgatewayregistrationstatetype)
@@ -41,6 +53,28 @@ Values:
 - `DELETING`
 - `PENDING`
 - `UPDATING`
+
+## ConnectionStatusType
+
+```python
+from mypy_boto3_networkmanager.literals import ConnectionStatusType
+```
+
+Values:
+
+- `DOWN`
+- `UP`
+
+## ConnectionTypeType
+
+```python
+from mypy_boto3_networkmanager.literals import ConnectionTypeType
+```
+
+Values:
+
+- `BGP`
+- `IPSEC`
 
 ## CustomerGatewayAssociationStateType
 
@@ -128,6 +162,46 @@ Values:
 
 - `get_links`
 
+## GetNetworkResourceCountsPaginatorName
+
+```python
+from mypy_boto3_networkmanager.literals import GetNetworkResourceCountsPaginatorName
+```
+
+Values:
+
+- `get_network_resource_counts`
+
+## GetNetworkResourceRelationshipsPaginatorName
+
+```python
+from mypy_boto3_networkmanager.literals import GetNetworkResourceRelationshipsPaginatorName
+```
+
+Values:
+
+- `get_network_resource_relationships`
+
+## GetNetworkResourcesPaginatorName
+
+```python
+from mypy_boto3_networkmanager.literals import GetNetworkResourcesPaginatorName
+```
+
+Values:
+
+- `get_network_resources`
+
+## GetNetworkTelemetryPaginatorName
+
+```python
+from mypy_boto3_networkmanager.literals import GetNetworkTelemetryPaginatorName
+```
+
+Values:
+
+- `get_network_telemetry`
+
 ## GetSitesPaginatorName
 
 ```python
@@ -196,6 +270,81 @@ Values:
 - `DELETING`
 - `PENDING`
 - `UPDATING`
+
+## RouteAnalysisCompletionReasonCodeType
+
+```python
+from mypy_boto3_networkmanager.literals import RouteAnalysisCompletionReasonCodeType
+```
+
+Values:
+
+- `BLACKHOLE_ROUTE_FOR_DESTINATION_FOUND`
+- `CYCLIC_PATH_DETECTED`
+- `INACTIVE_ROUTE_FOR_DESTINATION_FOUND`
+- `MAX_HOPS_EXCEEDED`
+- `NO_DESTINATION_ARN_PROVIDED`
+- `POSSIBLE_MIDDLEBOX`
+- `ROUTE_NOT_FOUND`
+- `TRANSIT_GATEWAY_ATTACHMENT_ATTACH_ARN_NO_MATCH`
+- `TRANSIT_GATEWAY_ATTACHMENT_NOT_FOUND`
+- `TRANSIT_GATEWAY_ATTACHMENT_NOT_IN_TRANSIT_GATEWAY`
+- `TRANSIT_GATEWAY_ATTACHMENT_STABLE_ROUTE_TABLE_NOT_FOUND`
+
+## RouteAnalysisCompletionResultCodeType
+
+```python
+from mypy_boto3_networkmanager.literals import RouteAnalysisCompletionResultCodeType
+```
+
+Values:
+
+- `CONNECTED`
+- `NOT_CONNECTED`
+
+## RouteAnalysisStatusType
+
+```python
+from mypy_boto3_networkmanager.literals import RouteAnalysisStatusType
+```
+
+Values:
+
+- `COMPLETED`
+- `FAILED`
+- `RUNNING`
+
+## RouteStateType
+
+```python
+from mypy_boto3_networkmanager.literals import RouteStateType
+```
+
+Values:
+
+- `ACTIVE`
+- `BLACKHOLE`
+
+## RouteTableTypeType
+
+```python
+from mypy_boto3_networkmanager.literals import RouteTableTypeType
+```
+
+Values:
+
+- `TRANSIT_GATEWAY_ROUTE_TABLE`
+
+## RouteTypeType
+
+```python
+from mypy_boto3_networkmanager.literals import RouteTypeType
+```
+
+Values:
+
+- `PROPAGATED`
+- `STATIC`
 
 ## SiteStateType
 
@@ -545,6 +694,10 @@ Values:
 - `get_devices`
 - `get_link_associations`
 - `get_links`
+- `get_network_resource_counts`
+- `get_network_resource_relationships`
+- `get_network_resources`
+- `get_network_telemetry`
 - `get_sites`
 - `get_transit_gateway_connect_peer_associations`
 - `get_transit_gateway_registrations`

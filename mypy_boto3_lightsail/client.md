@@ -3293,6 +3293,8 @@ Keyword-only arguments:
 - `accessRules`: [AccessRulesTypeDef](./type_defs.md#accessrulestypedef)
 - `versioning`: `str`
 - `readonlyAccessAccounts`: `Sequence`\[`str`\]
+- `accessLogConfig`:
+  [BucketAccessLogConfigTypeDef](./type_defs.md#bucketaccesslogconfigtypedef)
 
 Returns [UpdateBucketResultTypeDef](./type_defs.md#updatebucketresulttypedef).
 

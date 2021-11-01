@@ -190,7 +190,7 @@ Returns [Exceptions](#exceptions).
 
 ### add_role_to_db_cluster
 
-Associates an Identity and Access Management (IAM) role from an Neptune DB
+Associates an Identity and Access Management (IAM) role with an Neptune DB
 cluster.
 
 Type annotations for `boto3.client("neptune").add_role_to_db_cluster` method.
@@ -1289,6 +1289,8 @@ Keyword-only arguments:
 - `CloudwatchLogsExportConfiguration`:
   [CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef)
 - `EngineVersion`: `str`
+- `AllowMajorVersionUpgrade`: `bool`
+- `DBInstanceParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 - `CopyTagsToSnapshot`: `bool`
 
@@ -1705,8 +1707,8 @@ Returns
 
 ### start_db_cluster
 
-Starts an Amazon Neptune DB cluster that was stopped using the AWS console, the
-Amazon CLI stop-db-cluster command, or the StopDBCluster API.
+Starts an Amazon Neptune DB cluster that was stopped using the Amazon console,
+the Amazon CLI stop-db-cluster command, or the StopDBCluster API.
 
 Type annotations for `boto3.client("neptune").start_db_cluster` method.
 

@@ -1893,6 +1893,8 @@ Optional fields:
 - `CloudwatchLogsExportConfiguration`:
   [CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef)
 - `EngineVersion`: `str`
+- `AllowMajorVersionUpgrade`: `bool`
+- `DBInstanceParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 - `CopyTagsToSnapshot`: `bool`
 
