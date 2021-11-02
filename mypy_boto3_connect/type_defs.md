@@ -116,7 +116,6 @@ type annotations stubs module
   - [HoursOfOperationSummaryTypeDef](#hoursofoperationsummarytypedef)
   - [HoursOfOperationTimeSliceTypeDef](#hoursofoperationtimeslicetypedef)
   - [HoursOfOperationTypeDef](#hoursofoperationtypedef)
-  - [InstanceReferenceTypeDef](#instancereferencetypedef)
   - [InstanceStatusReasonTypeDef](#instancestatusreasontypedef)
   - [InstanceStorageConfigTypeDef](#instancestorageconfigtypedef)
   - [InstanceSummaryTypeDef](#instancesummarytypedef)
@@ -196,7 +195,6 @@ type annotations stubs module
   - [RoutingProfileQueueConfigSummaryTypeDef](#routingprofilequeueconfigsummarytypedef)
   - [RoutingProfileQueueConfigTypeDef](#routingprofilequeueconfigtypedef)
   - [RoutingProfileQueueReferenceTypeDef](#routingprofilequeuereferencetypedef)
-  - [RoutingProfileReferenceTypeDef](#routingprofilereferencetypedef)
   - [RoutingProfileSummaryTypeDef](#routingprofilesummarytypedef)
   - [RoutingProfileTypeDef](#routingprofiletypedef)
   - [S3ConfigTypeDef](#s3configtypedef)
@@ -432,7 +430,7 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ChatMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `ContentType`: `str`
 - `Content`: `str`
@@ -1243,10 +1241,6 @@ Optional fields:
 
 - `Queue`: [QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef)
 - `Channel`: [ChannelType](./literals.md#channeltype)
-- `RoutingProfile`:
-  [RoutingProfileReferenceTypeDef](./type_defs.md#routingprofilereferencetypedef)
-- `InstanceReference`:
-  [InstanceReferenceTypeDef](./type_defs.md#instancereferencetypedef)
 
 ## DisassociateApprovedOriginRequestRequestTypeDef
 
@@ -1367,7 +1361,6 @@ from mypy_boto3_connect.type_defs import FiltersTypeDef
 Optional fields:
 
 - `Queues`: `Sequence`\[`str`\]
-- `RoutingProfiles`: `Sequence`\[`str`\]
 - `Channels`: `Sequence`\[[ChannelType](./literals.md#channeltype)\]
 
 ## GetContactAttributesRequestRequestTypeDef
@@ -1673,17 +1666,6 @@ Optional fields:
 - `Config`:
   `List`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
 - `Tags`: `Dict`\[`str`, `str`\]
-
-## InstanceReferenceTypeDef
-
-```python
-from mypy_boto3_connect.type_defs import InstanceReferenceTypeDef
-```
-
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
 
 ## InstanceStatusReasonTypeDef
 
@@ -2640,7 +2622,6 @@ Optional fields:
 
 - `Id`: `str`
 - `Arn`: `str`
-- `QueueType`: [QueueTypeType](./literals.md#queuetypetype)
 
 ## QueueSummaryTypeDef
 
@@ -2733,7 +2714,8 @@ from mypy_boto3_connect.type_defs import ReferenceTypeDef
 Required fields:
 
 - `Value`: `str`
-- `Type`: [ReferenceTypeType](./literals.md#referencetypetype)
+- `Type`: `Literal['URL']` (see
+  [ReferenceTypeType](./literals.md#referencetypetype))
 
 ## ResponseMetadataTypeDef
 
@@ -2799,17 +2781,6 @@ Required fields:
 
 - `QueueId`: `str`
 - `Channel`: [ChannelType](./literals.md#channeltype)
-
-## RoutingProfileReferenceTypeDef
-
-```python
-from mypy_boto3_connect.type_defs import RoutingProfileReferenceTypeDef
-```
-
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
 
 ## RoutingProfileSummaryTypeDef
 

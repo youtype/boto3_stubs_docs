@@ -8,8 +8,10 @@ type annotations stubs module
 [mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 - [Literals for boto3 NimbleStudio module](#literals-for-boto3-nimblestudio-module)
+  - [LaunchProfileDeletedWaiterName](#launchprofiledeletedwaitername)
   - [LaunchProfilePersonaType](#launchprofilepersonatype)
   - [LaunchProfilePlatformType](#launchprofileplatformtype)
+  - [LaunchProfileReadyWaiterName](#launchprofilereadywaitername)
   - [LaunchProfileStateType](#launchprofilestatetype)
   - [LaunchProfileStatusCodeType](#launchprofilestatuscodetype)
   - [ListEulaAcceptancesPaginatorName](#listeulaacceptancespaginatorname)
@@ -22,25 +24,46 @@ type annotations stubs module
   - [ListStudioMembersPaginatorName](#liststudiomemberspaginatorname)
   - [ListStudiosPaginatorName](#liststudiospaginatorname)
   - [StreamingClipboardModeType](#streamingclipboardmodetype)
+  - [StreamingImageDeletedWaiterName](#streamingimagedeletedwaitername)
   - [StreamingImageEncryptionConfigurationKeyTypeType](#streamingimageencryptionconfigurationkeytypetype)
+  - [StreamingImageReadyWaiterName](#streamingimagereadywaitername)
   - [StreamingImageStateType](#streamingimagestatetype)
   - [StreamingImageStatusCodeType](#streamingimagestatuscodetype)
   - [StreamingInstanceTypeType](#streaminginstancetypetype)
+  - [StreamingSessionDeletedWaiterName](#streamingsessiondeletedwaitername)
+  - [StreamingSessionReadyWaiterName](#streamingsessionreadywaitername)
   - [StreamingSessionStateType](#streamingsessionstatetype)
   - [StreamingSessionStatusCodeType](#streamingsessionstatuscodetype)
+  - [StreamingSessionStoppedWaiterName](#streamingsessionstoppedwaitername)
+  - [StreamingSessionStreamReadyWaiterName](#streamingsessionstreamreadywaitername)
   - [StreamingSessionStreamStateType](#streamingsessionstreamstatetype)
   - [StreamingSessionStreamStatusCodeType](#streamingsessionstreamstatuscodetype)
+  - [StudioComponentDeletedWaiterName](#studiocomponentdeletedwaitername)
   - [StudioComponentInitializationScriptRunContextType](#studiocomponentinitializationscriptruncontexttype)
+  - [StudioComponentReadyWaiterName](#studiocomponentreadywaitername)
   - [StudioComponentStateType](#studiocomponentstatetype)
   - [StudioComponentStatusCodeType](#studiocomponentstatuscodetype)
   - [StudioComponentSubtypeType](#studiocomponentsubtypetype)
   - [StudioComponentTypeType](#studiocomponenttypetype)
+  - [StudioDeletedWaiterName](#studiodeletedwaitername)
   - [StudioEncryptionConfigurationKeyTypeType](#studioencryptionconfigurationkeytypetype)
   - [StudioPersonaType](#studiopersonatype)
+  - [StudioReadyWaiterName](#studioreadywaitername)
   - [StudioStateType](#studiostatetype)
   - [StudioStatusCodeType](#studiostatuscodetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
+
+## LaunchProfileDeletedWaiterName
+
+```python
+from mypy_boto3_nimble.literals import LaunchProfileDeletedWaiterName
+```
+
+Values:
+
+- `launch_profile_deleted`
 
 ## LaunchProfilePersonaType
 
@@ -62,6 +85,16 @@ Values:
 
 - `LINUX`
 - `WINDOWS`
+
+## LaunchProfileReadyWaiterName
+
+```python
+from mypy_boto3_nimble.literals import LaunchProfileReadyWaiterName
+```
+
+Values:
+
+- `launch_profile_ready`
 
 ## LaunchProfileStateType
 
@@ -203,6 +236,16 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+## StreamingImageDeletedWaiterName
+
+```python
+from mypy_boto3_nimble.literals import StreamingImageDeletedWaiterName
+```
+
+Values:
+
+- `streaming_image_deleted`
+
 ## StreamingImageEncryptionConfigurationKeyTypeType
 
 ```python
@@ -212,6 +255,16 @@ from mypy_boto3_nimble.literals import StreamingImageEncryptionConfigurationKeyT
 Values:
 
 - `CUSTOMER_MANAGED_KEY`
+
+## StreamingImageReadyWaiterName
+
+```python
+from mypy_boto3_nimble.literals import StreamingImageReadyWaiterName
+```
+
+Values:
+
+- `streaming_image_ready`
 
 ## StreamingImageStateType
 
@@ -260,6 +313,26 @@ Values:
 - `g4dn.8xlarge`
 - `g4dn.xlarge`
 
+## StreamingSessionDeletedWaiterName
+
+```python
+from mypy_boto3_nimble.literals import StreamingSessionDeletedWaiterName
+```
+
+Values:
+
+- `streaming_session_deleted`
+
+## StreamingSessionReadyWaiterName
+
+```python
+from mypy_boto3_nimble.literals import StreamingSessionReadyWaiterName
+```
+
+Values:
+
+- `streaming_session_ready`
+
 ## StreamingSessionStateType
 
 ```python
@@ -274,6 +347,11 @@ Values:
 - `DELETE_IN_PROGRESS`
 - `DELETED`
 - `READY`
+- `START_FAILED`
+- `START_IN_PROGRESS`
+- `STOP_FAILED`
+- `STOP_IN_PROGRESS`
+- `STOPPED`
 
 ## StreamingSessionStatusCodeType
 
@@ -294,6 +372,30 @@ Values:
 - `STREAMING_SESSION_DELETE_IN_PROGRESS`
 - `STREAMING_SESSION_DELETED`
 - `STREAMING_SESSION_READY`
+- `STREAMING_SESSION_START_IN_PROGRESS`
+- `STREAMING_SESSION_STARTED`
+- `STREAMING_SESSION_STOP_IN_PROGRESS`
+- `STREAMING_SESSION_STOPPED`
+
+## StreamingSessionStoppedWaiterName
+
+```python
+from mypy_boto3_nimble.literals import StreamingSessionStoppedWaiterName
+```
+
+Values:
+
+- `streaming_session_stopped`
+
+## StreamingSessionStreamReadyWaiterName
+
+```python
+from mypy_boto3_nimble.literals import StreamingSessionStreamReadyWaiterName
+```
+
+Values:
+
+- `streaming_session_stream_ready`
 
 ## StreamingSessionStreamStateType
 
@@ -325,6 +427,16 @@ Values:
 - `STREAM_DELETED`
 - `STREAM_READY`
 
+## StudioComponentDeletedWaiterName
+
+```python
+from mypy_boto3_nimble.literals import StudioComponentDeletedWaiterName
+```
+
+Values:
+
+- `studio_component_deleted`
+
 ## StudioComponentInitializationScriptRunContextType
 
 ```python
@@ -335,6 +447,16 @@ Values:
 
 - `SYSTEM_INITIALIZATION`
 - `USER_INITIALIZATION`
+
+## StudioComponentReadyWaiterName
+
+```python
+from mypy_boto3_nimble.literals import StudioComponentReadyWaiterName
+```
+
+Values:
+
+- `studio_component_ready`
 
 ## StudioComponentStateType
 
@@ -399,6 +521,16 @@ Values:
 - `LICENSE_SERVICE`
 - `SHARED_FILE_SYSTEM`
 
+## StudioDeletedWaiterName
+
+```python
+from mypy_boto3_nimble.literals import StudioDeletedWaiterName
+```
+
+Values:
+
+- `studio_deleted`
+
 ## StudioEncryptionConfigurationKeyTypeType
 
 ```python
@@ -419,6 +551,16 @@ from mypy_boto3_nimble.literals import StudioPersonaType
 Values:
 
 - `ADMINISTRATOR`
+
+## StudioReadyWaiterName
+
+```python
+from mypy_boto3_nimble.literals import StudioReadyWaiterName
+```
+
+Values:
+
+- `studio_ready`
 
 ## StudioStateType
 
@@ -775,3 +917,24 @@ Values:
 - `list_studio_components`
 - `list_studio_members`
 - `list_studios`
+
+## WaiterName
+
+```python
+from mypy_boto3_nimble.literals import WaiterName
+```
+
+Values:
+
+- `launch_profile_deleted`
+- `launch_profile_ready`
+- `streaming_image_deleted`
+- `streaming_image_ready`
+- `streaming_session_deleted`
+- `streaming_session_ready`
+- `streaming_session_stopped`
+- `streaming_session_stream_ready`
+- `studio_component_deleted`
+- `studio_component_ready`
+- `studio_deleted`
+- `studio_ready`

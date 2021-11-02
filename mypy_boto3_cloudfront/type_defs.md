@@ -61,6 +61,8 @@ type annotations stubs module
   - [CreatePublicKeyResultTypeDef](#createpublickeyresulttypedef)
   - [CreateRealtimeLogConfigRequestRequestTypeDef](#createrealtimelogconfigrequestrequesttypedef)
   - [CreateRealtimeLogConfigResultTypeDef](#createrealtimelogconfigresulttypedef)
+  - [CreateResponseHeadersPolicyRequestRequestTypeDef](#createresponseheaderspolicyrequestrequesttypedef)
+  - [CreateResponseHeadersPolicyResultTypeDef](#createresponseheaderspolicyresulttypedef)
   - [CreateStreamingDistributionRequestRequestTypeDef](#createstreamingdistributionrequestrequesttypedef)
   - [CreateStreamingDistributionResultTypeDef](#createstreamingdistributionresulttypedef)
   - [CreateStreamingDistributionWithTagsRequestRequestTypeDef](#createstreamingdistributionwithtagsrequestrequesttypedef)
@@ -81,6 +83,7 @@ type annotations stubs module
   - [DeleteOriginRequestPolicyRequestRequestTypeDef](#deleteoriginrequestpolicyrequestrequesttypedef)
   - [DeletePublicKeyRequestRequestTypeDef](#deletepublickeyrequestrequesttypedef)
   - [DeleteRealtimeLogConfigRequestRequestTypeDef](#deleterealtimelogconfigrequestrequesttypedef)
+  - [DeleteResponseHeadersPolicyRequestRequestTypeDef](#deleteresponseheaderspolicyrequestrequesttypedef)
   - [DeleteStreamingDistributionRequestRequestTypeDef](#deletestreamingdistributionrequestrequesttypedef)
   - [DescribeFunctionRequestRequestTypeDef](#describefunctionrequestrequesttypedef)
   - [DescribeFunctionResultTypeDef](#describefunctionresulttypedef)
@@ -150,6 +153,10 @@ type annotations stubs module
   - [GetPublicKeyResultTypeDef](#getpublickeyresulttypedef)
   - [GetRealtimeLogConfigRequestRequestTypeDef](#getrealtimelogconfigrequestrequesttypedef)
   - [GetRealtimeLogConfigResultTypeDef](#getrealtimelogconfigresulttypedef)
+  - [GetResponseHeadersPolicyConfigRequestRequestTypeDef](#getresponseheaderspolicyconfigrequestrequesttypedef)
+  - [GetResponseHeadersPolicyConfigResultTypeDef](#getresponseheaderspolicyconfigresulttypedef)
+  - [GetResponseHeadersPolicyRequestRequestTypeDef](#getresponseheaderspolicyrequestrequesttypedef)
+  - [GetResponseHeadersPolicyResultTypeDef](#getresponseheaderspolicyresulttypedef)
   - [GetStreamingDistributionConfigRequestRequestTypeDef](#getstreamingdistributionconfigrequestrequesttypedef)
   - [GetStreamingDistributionConfigResultTypeDef](#getstreamingdistributionconfigresulttypedef)
   - [GetStreamingDistributionRequestRequestTypeDef](#getstreamingdistributionrequestrequesttypedef)
@@ -182,6 +189,8 @@ type annotations stubs module
   - [ListDistributionsByOriginRequestPolicyIdResultTypeDef](#listdistributionsbyoriginrequestpolicyidresulttypedef)
   - [ListDistributionsByRealtimeLogConfigRequestRequestTypeDef](#listdistributionsbyrealtimelogconfigrequestrequesttypedef)
   - [ListDistributionsByRealtimeLogConfigResultTypeDef](#listdistributionsbyrealtimelogconfigresulttypedef)
+  - [ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef](#listdistributionsbyresponseheaderspolicyidrequestrequesttypedef)
+  - [ListDistributionsByResponseHeadersPolicyIdResultTypeDef](#listdistributionsbyresponseheaderspolicyidresulttypedef)
   - [ListDistributionsByWebACLIdRequestRequestTypeDef](#listdistributionsbywebaclidrequestrequesttypedef)
   - [ListDistributionsByWebACLIdResultTypeDef](#listdistributionsbywebaclidresulttypedef)
   - [ListDistributionsRequestRequestTypeDef](#listdistributionsrequestrequesttypedef)
@@ -202,6 +211,8 @@ type annotations stubs module
   - [ListPublicKeysResultTypeDef](#listpublickeysresulttypedef)
   - [ListRealtimeLogConfigsRequestRequestTypeDef](#listrealtimelogconfigsrequestrequesttypedef)
   - [ListRealtimeLogConfigsResultTypeDef](#listrealtimelogconfigsresulttypedef)
+  - [ListResponseHeadersPoliciesRequestRequestTypeDef](#listresponseheaderspoliciesrequestrequesttypedef)
+  - [ListResponseHeadersPoliciesResultTypeDef](#listresponseheaderspoliciesresulttypedef)
   - [ListStreamingDistributionsRequestRequestTypeDef](#liststreamingdistributionsrequestrequesttypedef)
   - [ListStreamingDistributionsResultTypeDef](#liststreamingdistributionsresulttypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
@@ -242,6 +253,24 @@ type annotations stubs module
   - [RealtimeLogConfigTypeDef](#realtimelogconfigtypedef)
   - [RealtimeLogConfigsTypeDef](#realtimelogconfigstypedef)
   - [RealtimeMetricsSubscriptionConfigTypeDef](#realtimemetricssubscriptionconfigtypedef)
+  - [ResponseHeadersPolicyAccessControlAllowHeadersTypeDef](#responseheaderspolicyaccesscontrolallowheaderstypedef)
+  - [ResponseHeadersPolicyAccessControlAllowMethodsTypeDef](#responseheaderspolicyaccesscontrolallowmethodstypedef)
+  - [ResponseHeadersPolicyAccessControlAllowOriginsTypeDef](#responseheaderspolicyaccesscontrolalloworiginstypedef)
+  - [ResponseHeadersPolicyAccessControlExposeHeadersTypeDef](#responseheaderspolicyaccesscontrolexposeheaderstypedef)
+  - [ResponseHeadersPolicyConfigTypeDef](#responseheaderspolicyconfigtypedef)
+  - [ResponseHeadersPolicyContentSecurityPolicyTypeDef](#responseheaderspolicycontentsecuritypolicytypedef)
+  - [ResponseHeadersPolicyContentTypeOptionsTypeDef](#responseheaderspolicycontenttypeoptionstypedef)
+  - [ResponseHeadersPolicyCorsConfigTypeDef](#responseheaderspolicycorsconfigtypedef)
+  - [ResponseHeadersPolicyCustomHeaderTypeDef](#responseheaderspolicycustomheadertypedef)
+  - [ResponseHeadersPolicyCustomHeadersConfigTypeDef](#responseheaderspolicycustomheadersconfigtypedef)
+  - [ResponseHeadersPolicyFrameOptionsTypeDef](#responseheaderspolicyframeoptionstypedef)
+  - [ResponseHeadersPolicyListTypeDef](#responseheaderspolicylisttypedef)
+  - [ResponseHeadersPolicyReferrerPolicyTypeDef](#responseheaderspolicyreferrerpolicytypedef)
+  - [ResponseHeadersPolicySecurityHeadersConfigTypeDef](#responseheaderspolicysecurityheadersconfigtypedef)
+  - [ResponseHeadersPolicyStrictTransportSecurityTypeDef](#responseheaderspolicystricttransportsecuritytypedef)
+  - [ResponseHeadersPolicySummaryTypeDef](#responseheaderspolicysummarytypedef)
+  - [ResponseHeadersPolicyTypeDef](#responseheaderspolicytypedef)
+  - [ResponseHeadersPolicyXSSProtectionTypeDef](#responseheaderspolicyxssprotectiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RestrictionsTypeDef](#restrictionstypedef)
   - [S3OriginConfigTypeDef](#s3originconfigtypedef)
@@ -284,6 +313,8 @@ type annotations stubs module
   - [UpdatePublicKeyResultTypeDef](#updatepublickeyresulttypedef)
   - [UpdateRealtimeLogConfigRequestRequestTypeDef](#updaterealtimelogconfigrequestrequesttypedef)
   - [UpdateRealtimeLogConfigResultTypeDef](#updaterealtimelogconfigresulttypedef)
+  - [UpdateResponseHeadersPolicyRequestRequestTypeDef](#updateresponseheaderspolicyrequestrequesttypedef)
+  - [UpdateResponseHeadersPolicyResultTypeDef](#updateresponseheaderspolicyresulttypedef)
   - [UpdateStreamingDistributionRequestRequestTypeDef](#updatestreamingdistributionrequestrequesttypedef)
   - [UpdateStreamingDistributionResultTypeDef](#updatestreamingdistributionresulttypedef)
   - [ViewerCertificateTypeDef](#viewercertificatetypedef)
@@ -402,6 +433,7 @@ Optional fields:
 - `RealtimeLogConfigArn`: `str`
 - `CachePolicyId`: `str`
 - `OriginRequestPolicyId`: `str`
+- `ResponseHeadersPolicyId`: `str`
 - `ForwardedValues`:
   [ForwardedValuesTypeDef](./type_defs.md#forwardedvaluestypedef)
 - `MinTTL`: `int`
@@ -1031,6 +1063,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateResponseHeadersPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateResponseHeadersPolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResponseHeadersPolicyConfig`:
+  [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
+
+## CreateResponseHeadersPolicyResultTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateResponseHeadersPolicyResultTypeDef
+```
+
+Required fields:
+
+- `ResponseHeadersPolicy`:
+  [ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef)
+- `Location`: `str`
+- `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateStreamingDistributionRequestRequestTypeDef
 
 ```python
@@ -1179,6 +1237,7 @@ Optional fields:
 - `RealtimeLogConfigArn`: `str`
 - `CachePolicyId`: `str`
 - `OriginRequestPolicyId`: `str`
+- `ResponseHeadersPolicyId`: `str`
 - `ForwardedValues`:
   [ForwardedValuesTypeDef](./type_defs.md#forwardedvaluestypedef)
 - `MinTTL`: `int`
@@ -1328,6 +1387,20 @@ Optional fields:
 
 - `Name`: `str`
 - `ARN`: `str`
+
+## DeleteResponseHeadersPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DeleteResponseHeadersPolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
 
 ## DeleteStreamingDistributionRequestRequestTypeDef
 
@@ -2304,6 +2377,54 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetResponseHeadersPolicyConfigRequestRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetResponseHeadersPolicyConfigRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## GetResponseHeadersPolicyConfigResultTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetResponseHeadersPolicyConfigResultTypeDef
+```
+
+Required fields:
+
+- `ResponseHeadersPolicyConfig`:
+  [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
+- `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetResponseHeadersPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetResponseHeadersPolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## GetResponseHeadersPolicyResultTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetResponseHeadersPolicyResultTypeDef
+```
+
+Required fields:
+
+- `ResponseHeadersPolicy`:
+  [ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef)
+- `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetStreamingDistributionConfigRequestRequestTypeDef
 
 ```python
@@ -2731,6 +2852,34 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResponseHeadersPolicyId`: `str`
+
+Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListDistributionsByResponseHeadersPolicyIdResultTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListDistributionsByResponseHeadersPolicyIdResultTypeDef
+```
+
+Required fields:
+
+- `DistributionIdList`:
+  [DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListDistributionsByWebACLIdRequestRequestTypeDef
 
 ```python
@@ -2976,6 +3125,32 @@ Required fields:
 
 - `RealtimeLogConfigs`:
   [RealtimeLogConfigsTypeDef](./type_defs.md#realtimelogconfigstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListResponseHeadersPoliciesRequestRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListResponseHeadersPoliciesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `Type`:
+  [ResponseHeadersPolicyTypeType](./literals.md#responseheaderspolicytypetype)
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListResponseHeadersPoliciesResultTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListResponseHeadersPoliciesResultTypeDef
+```
+
+Required fields:
+
+- `ResponseHeadersPolicyList`:
+  [ResponseHeadersPolicyListTypeDef](./type_defs.md#responseheaderspolicylisttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -3533,6 +3708,264 @@ Required fields:
 
 - `RealtimeMetricsSubscriptionStatus`:
   [RealtimeMetricsSubscriptionStatusType](./literals.md#realtimemetricssubscriptionstatustype)
+
+## ResponseHeadersPolicyAccessControlAllowHeadersTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyAccessControlAllowHeadersTypeDef
+```
+
+Required fields:
+
+- `Quantity`: `int`
+- `Items`: `Sequence`\[`str`\]
+
+## ResponseHeadersPolicyAccessControlAllowMethodsTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyAccessControlAllowMethodsTypeDef
+```
+
+Required fields:
+
+- `Quantity`: `int`
+- `Items`:
+  `Sequence`\[[ResponseHeadersPolicyAccessControlAllowMethodsValuesType](./literals.md#responseheaderspolicyaccesscontrolallowmethodsvaluestype)\]
+
+## ResponseHeadersPolicyAccessControlAllowOriginsTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyAccessControlAllowOriginsTypeDef
+```
+
+Required fields:
+
+- `Quantity`: `int`
+- `Items`: `Sequence`\[`str`\]
+
+## ResponseHeadersPolicyAccessControlExposeHeadersTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyAccessControlExposeHeadersTypeDef
+```
+
+Required fields:
+
+- `Quantity`: `int`
+
+Optional fields:
+
+- `Items`: `Sequence`\[`str`\]
+
+## ResponseHeadersPolicyConfigTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyConfigTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `Comment`: `str`
+- `CorsConfig`:
+  [ResponseHeadersPolicyCorsConfigTypeDef](./type_defs.md#responseheaderspolicycorsconfigtypedef)
+- `SecurityHeadersConfig`:
+  [ResponseHeadersPolicySecurityHeadersConfigTypeDef](./type_defs.md#responseheaderspolicysecurityheadersconfigtypedef)
+- `CustomHeadersConfig`:
+  [ResponseHeadersPolicyCustomHeadersConfigTypeDef](./type_defs.md#responseheaderspolicycustomheadersconfigtypedef)
+
+## ResponseHeadersPolicyContentSecurityPolicyTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyContentSecurityPolicyTypeDef
+```
+
+Required fields:
+
+- `Override`: `bool`
+- `ContentSecurityPolicy`: `str`
+
+## ResponseHeadersPolicyContentTypeOptionsTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyContentTypeOptionsTypeDef
+```
+
+Required fields:
+
+- `Override`: `bool`
+
+## ResponseHeadersPolicyCorsConfigTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyCorsConfigTypeDef
+```
+
+Required fields:
+
+- `AccessControlAllowOrigins`:
+  [ResponseHeadersPolicyAccessControlAllowOriginsTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolalloworiginstypedef)
+- `AccessControlAllowHeaders`:
+  [ResponseHeadersPolicyAccessControlAllowHeadersTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolallowheaderstypedef)
+- `AccessControlAllowMethods`:
+  [ResponseHeadersPolicyAccessControlAllowMethodsTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolallowmethodstypedef)
+- `AccessControlAllowCredentials`: `bool`
+- `OriginOverride`: `bool`
+
+Optional fields:
+
+- `AccessControlExposeHeaders`:
+  [ResponseHeadersPolicyAccessControlExposeHeadersTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolexposeheaderstypedef)
+- `AccessControlMaxAgeSec`: `int`
+
+## ResponseHeadersPolicyCustomHeaderTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyCustomHeaderTypeDef
+```
+
+Required fields:
+
+- `Header`: `str`
+- `Value`: `str`
+- `Override`: `bool`
+
+## ResponseHeadersPolicyCustomHeadersConfigTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyCustomHeadersConfigTypeDef
+```
+
+Required fields:
+
+- `Quantity`: `int`
+
+Optional fields:
+
+- `Items`:
+  `Sequence`\[[ResponseHeadersPolicyCustomHeaderTypeDef](./type_defs.md#responseheaderspolicycustomheadertypedef)\]
+
+## ResponseHeadersPolicyFrameOptionsTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyFrameOptionsTypeDef
+```
+
+Required fields:
+
+- `Override`: `bool`
+- `FrameOption`: [FrameOptionsListType](./literals.md#frameoptionslisttype)
+
+## ResponseHeadersPolicyListTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyListTypeDef
+```
+
+Required fields:
+
+- `MaxItems`: `int`
+- `Quantity`: `int`
+
+Optional fields:
+
+- `NextMarker`: `str`
+- `Items`:
+  `List`\[[ResponseHeadersPolicySummaryTypeDef](./type_defs.md#responseheaderspolicysummarytypedef)\]
+
+## ResponseHeadersPolicyReferrerPolicyTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyReferrerPolicyTypeDef
+```
+
+Required fields:
+
+- `Override`: `bool`
+- `ReferrerPolicy`:
+  [ReferrerPolicyListType](./literals.md#referrerpolicylisttype)
+
+## ResponseHeadersPolicySecurityHeadersConfigTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicySecurityHeadersConfigTypeDef
+```
+
+Optional fields:
+
+- `XSSProtection`:
+  [ResponseHeadersPolicyXSSProtectionTypeDef](./type_defs.md#responseheaderspolicyxssprotectiontypedef)
+- `FrameOptions`:
+  [ResponseHeadersPolicyFrameOptionsTypeDef](./type_defs.md#responseheaderspolicyframeoptionstypedef)
+- `ReferrerPolicy`:
+  [ResponseHeadersPolicyReferrerPolicyTypeDef](./type_defs.md#responseheaderspolicyreferrerpolicytypedef)
+- `ContentSecurityPolicy`:
+  [ResponseHeadersPolicyContentSecurityPolicyTypeDef](./type_defs.md#responseheaderspolicycontentsecuritypolicytypedef)
+- `ContentTypeOptions`:
+  [ResponseHeadersPolicyContentTypeOptionsTypeDef](./type_defs.md#responseheaderspolicycontenttypeoptionstypedef)
+- `StrictTransportSecurity`:
+  [ResponseHeadersPolicyStrictTransportSecurityTypeDef](./type_defs.md#responseheaderspolicystricttransportsecuritytypedef)
+
+## ResponseHeadersPolicyStrictTransportSecurityTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyStrictTransportSecurityTypeDef
+```
+
+Required fields:
+
+- `Override`: `bool`
+- `AccessControlMaxAgeSec`: `int`
+
+Optional fields:
+
+- `IncludeSubdomains`: `bool`
+- `Preload`: `bool`
+
+## ResponseHeadersPolicySummaryTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicySummaryTypeDef
+```
+
+Required fields:
+
+- `Type`:
+  [ResponseHeadersPolicyTypeType](./literals.md#responseheaderspolicytypetype)
+- `ResponseHeadersPolicy`:
+  [ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef)
+
+## ResponseHeadersPolicyTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `LastModifiedTime`: `datetime`
+- `ResponseHeadersPolicyConfig`:
+  [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
+
+## ResponseHeadersPolicyXSSProtectionTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyXSSProtectionTypeDef
+```
+
+Required fields:
+
+- `Override`: `bool`
+- `Protection`: `bool`
+
+Optional fields:
+
+- `ModeBlock`: `bool`
+- `ReportUri`: `str`
 
 ## ResponseMetadataTypeDef
 
@@ -4126,6 +4559,36 @@ Required fields:
 
 - `RealtimeLogConfig`:
   [RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateResponseHeadersPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateResponseHeadersPolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResponseHeadersPolicyConfig`:
+  [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
+- `Id`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
+
+## UpdateResponseHeadersPolicyResultTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateResponseHeadersPolicyResultTypeDef
+```
+
+Required fields:
+
+- `ResponseHeadersPolicy`:
+  [ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef)
+- `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

@@ -95,8 +95,12 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ScriptParameterKeyValueTypeDef](#scriptparameterkeyvaluetypedef)
   - [SharedFileSystemConfigurationTypeDef](#sharedfilesystemconfigurationtypedef)
+  - [StartStreamingSessionRequestRequestTypeDef](#startstreamingsessionrequestrequesttypedef)
+  - [StartStreamingSessionResponseTypeDef](#startstreamingsessionresponsetypedef)
   - [StartStudioSSOConfigurationRepairRequestRequestTypeDef](#startstudiossoconfigurationrepairrequestrequesttypedef)
   - [StartStudioSSOConfigurationRepairResponseTypeDef](#startstudiossoconfigurationrepairresponsetypedef)
+  - [StopStreamingSessionRequestRequestTypeDef](#stopstreamingsessionrequestrequesttypedef)
+  - [StopStreamingSessionResponseTypeDef](#stopstreamingsessionresponsetypedef)
   - [StreamConfigurationCreateTypeDef](#streamconfigurationcreatetypedef)
   - [StreamConfigurationTypeDef](#streamconfigurationtypedef)
   - [StreamingImageEncryptionConfigurationTypeDef](#streamingimageencryptionconfigurationtypedef)
@@ -122,6 +126,7 @@ type annotations stubs module
   - [UpdateStudioComponentResponseTypeDef](#updatestudiocomponentresponsetypedef)
   - [UpdateStudioRequestRequestTypeDef](#updatestudiorequestrequesttypedef)
   - [UpdateStudioResponseTypeDef](#updatestudioresponsetypedef)
+  - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 ## AcceptEulasRequestRequestTypeDef
 
@@ -907,6 +912,7 @@ Optional fields:
 - `persona`: `Literal['USER']` (see
   [LaunchProfilePersonaType](./literals.md#launchprofilepersonatype))
 - `principalId`: `str`
+- `sid`: `str`
 
 ## LaunchProfileTypeDef
 
@@ -1334,6 +1340,33 @@ Optional fields:
 - `shareName`: `str`
 - `windowsMountDrive`: `str`
 
+## StartStreamingSessionRequestRequestTypeDef
+
+```python
+from mypy_boto3_nimble.type_defs import StartStreamingSessionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `sessionId`: `str`
+- `studioId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## StartStreamingSessionResponseTypeDef
+
+```python
+from mypy_boto3_nimble.type_defs import StartStreamingSessionResponseTypeDef
+```
+
+Required fields:
+
+- `session`: [StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## StartStudioSSOConfigurationRepairRequestRequestTypeDef
 
 ```python
@@ -1360,6 +1393,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## StopStreamingSessionRequestRequestTypeDef
+
+```python
+from mypy_boto3_nimble.type_defs import StopStreamingSessionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `sessionId`: `str`
+- `studioId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## StopStreamingSessionResponseTypeDef
+
+```python
+from mypy_boto3_nimble.type_defs import StopStreamingSessionResponseTypeDef
+```
+
+Required fields:
+
+- `session`: [StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## StreamConfigurationCreateTypeDef
 
 ```python
@@ -1377,6 +1437,7 @@ Required fields:
 Optional fields:
 
 - `maxSessionLengthInMinutes`: `int`
+- `maxStoppedSessionLengthInMinutes`: `int`
 
 ## StreamConfigurationTypeDef
 
@@ -1384,14 +1445,18 @@ Optional fields:
 from mypy_boto3_nimble.type_defs import StreamConfigurationTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `clipboardMode`:
   [StreamingClipboardModeType](./literals.md#streamingclipboardmodetype)
 - `ec2InstanceTypes`:
   `List`\[[StreamingInstanceTypeType](./literals.md#streaminginstancetypetype)\]
-- `maxSessionLengthInMinutes`: `int`
 - `streamingImageIds`: `List`\[`str`\]
+
+Optional fields:
+
+- `maxSessionLengthInMinutes`: `int`
+- `maxStoppedSessionLengthInMinutes`: `int`
 
 ## StreamingImageEncryptionConfigurationTypeDef
 
@@ -1466,10 +1531,15 @@ Optional fields:
 - `launchProfileId`: `str`
 - `ownedBy`: `str`
 - `sessionId`: `str`
+- `startedAt`: `datetime`
+- `startedBy`: `str`
 - `state`: [StreamingSessionStateType](./literals.md#streamingsessionstatetype)
 - `statusCode`:
   [StreamingSessionStatusCodeType](./literals.md#streamingsessionstatuscodetype)
 - `statusMessage`: `str`
+- `stopAt`: `datetime`
+- `stoppedAt`: `datetime`
+- `stoppedBy`: `str`
 - `streamingImageId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 - `terminateAt`: `datetime`
@@ -1586,6 +1656,7 @@ Optional fields:
 - `persona`: `Literal['ADMINISTRATOR']` (see
   [StudioPersonaType](./literals.md#studiopersonatype))
 - `principalId`: `str`
+- `sid`: `str`
 
 ## StudioTypeDef
 
@@ -1800,3 +1871,14 @@ Required fields:
 - `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## WaiterConfigTypeDef
+
+```python
+from mypy_boto3_nimble.type_defs import WaiterConfigTypeDef
+```
+
+Optional fields:
+
+- `Delay`: `int`
+- `MaxAttempts`: `int`
