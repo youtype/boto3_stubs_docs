@@ -237,6 +237,8 @@ Keyword-only arguments:
 - `maximumMatchDistance`: `int`
 - `name`: `str`
 - `regex`: `str`
+- `severityLevels`:
+  `Sequence`\[[SeverityLevelTypeDef](./type_defs.md#severityleveltypedef)\]
 - `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
@@ -1261,7 +1263,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_member_session
 
-Enables an Amazon Macie administrator to suspend or re-enable a member account.
+Enables an Amazon Macie administrator to suspend or re-enable Macie for a
+member account.
 
 Type annotations for `boto3.client("macie2").update_member_session` method.
 
