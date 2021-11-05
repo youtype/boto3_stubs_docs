@@ -42,6 +42,8 @@ type annotations stubs module
   - [CreateQuickConnectResponseTypeDef](#createquickconnectresponsetypedef)
   - [CreateRoutingProfileRequestRequestTypeDef](#createroutingprofilerequestrequesttypedef)
   - [CreateRoutingProfileResponseTypeDef](#createroutingprofileresponsetypedef)
+  - [CreateSecurityProfileRequestRequestTypeDef](#createsecurityprofilerequestrequesttypedef)
+  - [CreateSecurityProfileResponseTypeDef](#createsecurityprofileresponsetypedef)
   - [CreateUseCaseRequestRequestTypeDef](#createusecaserequestrequesttypedef)
   - [CreateUseCaseResponseTypeDef](#createusecaseresponsetypedef)
   - [CreateUserHierarchyGroupRequestRequestTypeDef](#createuserhierarchygrouprequestrequesttypedef)
@@ -56,6 +58,7 @@ type annotations stubs module
   - [DeleteInstanceRequestRequestTypeDef](#deleteinstancerequestrequesttypedef)
   - [DeleteIntegrationAssociationRequestRequestTypeDef](#deleteintegrationassociationrequestrequesttypedef)
   - [DeleteQuickConnectRequestRequestTypeDef](#deletequickconnectrequestrequesttypedef)
+  - [DeleteSecurityProfileRequestRequestTypeDef](#deletesecurityprofilerequestrequesttypedef)
   - [DeleteUseCaseRequestRequestTypeDef](#deleteusecaserequestrequesttypedef)
   - [DeleteUserHierarchyGroupRequestRequestTypeDef](#deleteuserhierarchygrouprequestrequesttypedef)
   - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
@@ -77,6 +80,8 @@ type annotations stubs module
   - [DescribeQuickConnectResponseTypeDef](#describequickconnectresponsetypedef)
   - [DescribeRoutingProfileRequestRequestTypeDef](#describeroutingprofilerequestrequesttypedef)
   - [DescribeRoutingProfileResponseTypeDef](#describeroutingprofileresponsetypedef)
+  - [DescribeSecurityProfileRequestRequestTypeDef](#describesecurityprofilerequestrequesttypedef)
+  - [DescribeSecurityProfileResponseTypeDef](#describesecurityprofileresponsetypedef)
   - [DescribeUserHierarchyGroupRequestRequestTypeDef](#describeuserhierarchygrouprequestrequesttypedef)
   - [DescribeUserHierarchyGroupResponseTypeDef](#describeuserhierarchygroupresponsetypedef)
   - [DescribeUserHierarchyStructureRequestRequestTypeDef](#describeuserhierarchystructurerequestrequesttypedef)
@@ -165,6 +170,8 @@ type annotations stubs module
   - [ListRoutingProfilesResponseTypeDef](#listroutingprofilesresponsetypedef)
   - [ListSecurityKeysRequestRequestTypeDef](#listsecuritykeysrequestrequesttypedef)
   - [ListSecurityKeysResponseTypeDef](#listsecuritykeysresponsetypedef)
+  - [ListSecurityProfilePermissionsRequestRequestTypeDef](#listsecurityprofilepermissionsrequestrequesttypedef)
+  - [ListSecurityProfilePermissionsResponseTypeDef](#listsecurityprofilepermissionsresponsetypedef)
   - [ListSecurityProfilesRequestRequestTypeDef](#listsecurityprofilesrequestrequesttypedef)
   - [ListSecurityProfilesResponseTypeDef](#listsecurityprofilesresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
@@ -200,6 +207,7 @@ type annotations stubs module
   - [S3ConfigTypeDef](#s3configtypedef)
   - [SecurityKeyTypeDef](#securitykeytypedef)
   - [SecurityProfileSummaryTypeDef](#securityprofilesummarytypedef)
+  - [SecurityProfileTypeDef](#securityprofiletypedef)
   - [StartChatContactRequestRequestTypeDef](#startchatcontactrequestrequesttypedef)
   - [StartChatContactResponseTypeDef](#startchatcontactresponsetypedef)
   - [StartContactRecordingRequestRequestTypeDef](#startcontactrecordingrequestrequesttypedef)
@@ -234,6 +242,7 @@ type annotations stubs module
   - [UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef](#updateroutingprofiledefaultoutboundqueuerequestrequesttypedef)
   - [UpdateRoutingProfileNameRequestRequestTypeDef](#updateroutingprofilenamerequestrequesttypedef)
   - [UpdateRoutingProfileQueuesRequestRequestTypeDef](#updateroutingprofilequeuesrequestrequesttypedef)
+  - [UpdateSecurityProfileRequestRequestTypeDef](#updatesecurityprofilerequestrequesttypedef)
   - [UpdateUserHierarchyGroupNameRequestRequestTypeDef](#updateuserhierarchygroupnamerequestrequesttypedef)
   - [UpdateUserHierarchyRequestRequestTypeDef](#updateuserhierarchyrequestrequesttypedef)
   - [UpdateUserHierarchyStructureRequestRequestTypeDef](#updateuserhierarchystructurerequestrequesttypedef)
@@ -731,6 +740,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateSecurityProfileRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateSecurityProfileRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SecurityProfileName`: `str`
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `Permissions`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+## CreateSecurityProfileResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateSecurityProfileResponseTypeDef
+```
+
+Required fields:
+
+- `SecurityProfileId`: `str`
+- `SecurityProfileArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateUseCaseRequestRequestTypeDef
 
 ```python
@@ -914,6 +953,17 @@ Required fields:
 
 - `InstanceId`: `str`
 - `QuickConnectId`: `str`
+
+## DeleteSecurityProfileRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DeleteSecurityProfileRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `SecurityProfileId`: `str`
 
 ## DeleteUseCaseRequestRequestTypeDef
 
@@ -1158,6 +1208,30 @@ Required fields:
 
 - `RoutingProfile`:
   [RoutingProfileTypeDef](./type_defs.md#routingprofiletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeSecurityProfileRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DescribeSecurityProfileRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SecurityProfileId`: `str`
+- `InstanceId`: `str`
+
+## DescribeSecurityProfileResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DescribeSecurityProfileResponseTypeDef
+```
+
+Required fields:
+
+- `SecurityProfile`:
+  [SecurityProfileTypeDef](./type_defs.md#securityprofiletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2380,6 +2454,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListSecurityProfilePermissionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListSecurityProfilePermissionsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SecurityProfileId`: `str`
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListSecurityProfilePermissionsResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListSecurityProfilePermissionsResponseTypeDef
+```
+
+Required fields:
+
+- `Permissions`: `List`\[`str`\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListSecurityProfilesRequestRequestTypeDef
 
 ```python
@@ -2851,6 +2954,21 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
+
+## SecurityProfileTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import SecurityProfileTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `OrganizationResourceId`: `str`
+- `Arn`: `str`
+- `SecurityProfileName`: `str`
+- `Description`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## StartChatContactRequestRequestTypeDef
 
@@ -3330,6 +3448,22 @@ Required fields:
 - `RoutingProfileId`: `str`
 - `QueueConfigs`:
   `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+
+## UpdateSecurityProfileRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import UpdateSecurityProfileRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SecurityProfileId`: `str`
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `Permissions`: `Sequence`\[`str`\]
 
 ## UpdateUserHierarchyGroupNameRequestRequestTypeDef
 

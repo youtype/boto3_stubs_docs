@@ -14295,8 +14295,9 @@ from mypy_boto3_ec2.type_defs import FleetSpotCapacityRebalanceRequestTypeDef
 
 Optional fields:
 
-- `ReplacementStrategy`: `Literal['launch']` (see
-  [FleetReplacementStrategyType](./literals.md#fleetreplacementstrategytype))
+- `ReplacementStrategy`:
+  [FleetReplacementStrategyType](./literals.md#fleetreplacementstrategytype)
+- `TerminationDelay`: `int`
 
 ## FleetSpotCapacityRebalanceTypeDef
 
@@ -14306,8 +14307,9 @@ from mypy_boto3_ec2.type_defs import FleetSpotCapacityRebalanceTypeDef
 
 Optional fields:
 
-- `ReplacementStrategy`: `Literal['launch']` (see
-  [FleetReplacementStrategyType](./literals.md#fleetreplacementstrategytype))
+- `ReplacementStrategy`:
+  [FleetReplacementStrategyType](./literals.md#fleetreplacementstrategytype)
+- `TerminationDelay`: `int`
 
 ## FleetSpotMaintenanceStrategiesRequestTypeDef
 
@@ -23323,8 +23325,9 @@ from mypy_boto3_ec2.type_defs import SpotCapacityRebalanceTypeDef
 
 Optional fields:
 
-- `ReplacementStrategy`: `Literal['launch']` (see
-  [ReplacementStrategyType](./literals.md#replacementstrategytype))
+- `ReplacementStrategy`:
+  [ReplacementStrategyType](./literals.md#replacementstrategytype)
+- `TerminationDelay`: `int`
 
 ## SpotDatafeedSubscriptionTypeDef
 

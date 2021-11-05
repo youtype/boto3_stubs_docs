@@ -664,6 +664,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`

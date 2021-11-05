@@ -28,6 +28,7 @@ type annotations stubs module
   - [ListRoutingProfileQueuesPaginator](#listroutingprofilequeuespaginator)
   - [ListRoutingProfilesPaginator](#listroutingprofilespaginator)
   - [ListSecurityKeysPaginator](#listsecuritykeyspaginator)
+  - [ListSecurityProfilePermissionsPaginator](#listsecurityprofilepermissionspaginator)
   - [ListSecurityProfilesPaginator](#listsecurityprofilespaginator)
   - [ListUseCasesPaginator](#listusecasespaginator)
   - [ListUserHierarchyGroupsPaginator](#listuserhierarchygroupspaginator)
@@ -571,6 +572,33 @@ Arguments for `ListSecurityKeysPaginator.paginate` method:
 
 `ListSecurityKeysPaginator.paginate` returns
 `_PageIterator`\[[ListSecurityKeysResponseTypeDef](./type_defs.md#listsecuritykeysresponsetypedef)\].
+
+## ListSecurityProfilePermissionsPaginator
+
+Type annotations for
+`boto3.client("connect").get_paginator("list_security_profile_permissions")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_connect.paginator import ListSecurityProfilePermissionsPaginator
+
+def get_list_security_profile_permissions_paginator() -> ListSecurityProfilePermissionsPaginator:
+    return boto3.client("connect").get_paginator("list_security_profile_permissions")
+```
+
+Boto3 documentation:
+[Connect.Paginator.ListSecurityProfilePermissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListSecurityProfilePermissions)
+
+Arguments for `ListSecurityProfilePermissionsPaginator.paginate` method:
+
+- `SecurityProfileId`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListSecurityProfilePermissionsPaginator.paginate` returns
+`_PageIterator`\[[ListSecurityProfilePermissionsResponseTypeDef](./type_defs.md#listsecurityprofilepermissionsresponsetypedef)\].
 
 ## ListSecurityProfilesPaginator
 

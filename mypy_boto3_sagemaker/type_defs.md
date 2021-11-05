@@ -4446,6 +4446,7 @@ Required fields:
 - `Models`: `List`\[[EdgeModelTypeDef](./type_defs.md#edgemodeltypedef)\]
 - `MaxModels`: `int`
 - `NextToken`: `str`
+- `AgentVersion`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5793,6 +5794,7 @@ Optional fields:
 - `LatestHeartbeat`: `datetime`
 - `Models`:
   `List`\[[EdgeModelSummaryTypeDef](./type_defs.md#edgemodelsummarytypedef)\]
+- `AgentVersion`: `str`
 
 ## DeviceTypeDef
 

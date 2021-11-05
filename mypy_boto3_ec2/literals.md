@@ -2460,6 +2460,7 @@ from mypy_boto3_ec2.literals import FleetReplacementStrategyType
 Values:
 
 - `launch`
+- `launch-before-terminate`
 
 ## FleetStateCodeType
 
@@ -4075,6 +4076,7 @@ from mypy_boto3_ec2.literals import ReplacementStrategyType
 Values:
 
 - `launch`
+- `launch-before-terminate`
 
 ## ReportInstanceReasonCodesType
 
@@ -5313,6 +5315,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`

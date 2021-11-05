@@ -29,6 +29,7 @@ type annotations stubs module
     - [create_queue](#create_queue)
     - [create_quick_connect](#create_quick_connect)
     - [create_routing_profile](#create_routing_profile)
+    - [create_security_profile](#create_security_profile)
     - [create_use_case](#create_use_case)
     - [create_user](#create_user)
     - [create_user_hierarchy_group](#create_user_hierarchy_group)
@@ -36,6 +37,7 @@ type annotations stubs module
     - [delete_instance](#delete_instance)
     - [delete_integration_association](#delete_integration_association)
     - [delete_quick_connect](#delete_quick_connect)
+    - [delete_security_profile](#delete_security_profile)
     - [delete_use_case](#delete_use_case)
     - [delete_user](#delete_user)
     - [delete_user_hierarchy_group](#delete_user_hierarchy_group)
@@ -48,6 +50,7 @@ type annotations stubs module
     - [describe_queue](#describe_queue)
     - [describe_quick_connect](#describe_quick_connect)
     - [describe_routing_profile](#describe_routing_profile)
+    - [describe_security_profile](#describe_security_profile)
     - [describe_user](#describe_user)
     - [describe_user_hierarchy_group](#describe_user_hierarchy_group)
     - [describe_user_hierarchy_structure](#describe_user_hierarchy_structure)
@@ -83,6 +86,7 @@ type annotations stubs module
     - [list_routing_profile_queues](#list_routing_profile_queues)
     - [list_routing_profiles](#list_routing_profiles)
     - [list_security_keys](#list_security_keys)
+    - [list_security_profile_permissions](#list_security_profile_permissions)
     - [list_security_profiles](#list_security_profiles)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_use_cases](#list_use_cases)
@@ -118,6 +122,7 @@ type annotations stubs module
     - [update_routing_profile_default_outbound_queue](#update_routing_profile_default_outbound_queue)
     - [update_routing_profile_name](#update_routing_profile_name)
     - [update_routing_profile_queues](#update_routing_profile_queues)
+    - [update_security_profile](#update_security_profile)
     - [update_user_hierarchy](#update_user_hierarchy)
     - [update_user_hierarchy_group_name](#update_user_hierarchy_group_name)
     - [update_user_hierarchy_structure](#update_user_hierarchy_structure)
@@ -151,12 +156,13 @@ static analysis directly:
 ```python
 from mypy_boto3_connect.client import Exceptions
 
-def handle_error(exc: Exceptions.ClientError) -> None:
+def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
 Exceptions:
 
+- `Exceptions.AccessDeniedException`
 - `Exceptions.ClientError`
 - `Exceptions.ContactFlowNotPublishedException`
 - `Exceptions.ContactNotFoundException`
@@ -463,7 +469,8 @@ Returns
 
 ### create_integration_association
 
-Creates an AWS resource association with an Amazon Connect instance.
+Creates an Amazon Web Services resource association with an Amazon Connect
+instance.
 
 Type annotations for `boto3.client("connect").create_integration_association`
 method.
@@ -567,6 +574,29 @@ Keyword-only arguments:
 
 Returns
 [CreateRoutingProfileResponseTypeDef](./type_defs.md#createroutingprofileresponsetypedef).
+
+### create_security_profile
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").create_security_profile` method.
+
+Boto3 documentation:
+[Connect.Client.create_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_security_profile)
+
+Arguments mapping described in
+[CreateSecurityProfileRequestRequestTypeDef](./type_defs.md#createsecurityprofilerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SecurityProfileName`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+- `Description`: `str`
+- `Permissions`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+Returns
+[CreateSecurityProfileResponseTypeDef](./type_defs.md#createsecurityprofileresponsetypedef).
 
 ### create_use_case
 
@@ -677,7 +707,8 @@ Keyword-only arguments:
 
 ### delete_integration_association
 
-Deletes an AWS resource association from an Amazon Connect instance.
+Deletes an Amazon Web Services resource association from an Amazon Connect
+instance.
 
 Type annotations for `boto3.client("connect").delete_integration_association`
 method.
@@ -709,6 +740,23 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QuickConnectId`: `str` *(required)*
+
+### delete_security_profile
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").delete_security_profile` method.
+
+Boto3 documentation:
+[Connect.Client.delete_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_security_profile)
+
+Arguments mapping described in
+[DeleteSecurityProfileRequestRequestTypeDef](./type_defs.md#deletesecurityprofilerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `SecurityProfileId`: `str` *(required)*
 
 ### delete_use_case
 
@@ -949,6 +997,27 @@ Keyword-only arguments:
 
 Returns
 [DescribeRoutingProfileResponseTypeDef](./type_defs.md#describeroutingprofileresponsetypedef).
+
+### describe_security_profile
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").describe_security_profile`
+method.
+
+Boto3 documentation:
+[Connect.Client.describe_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_security_profile)
+
+Arguments mapping described in
+[DescribeSecurityProfileRequestRequestTypeDef](./type_defs.md#describesecurityprofilerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SecurityProfileId`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+
+Returns
+[DescribeSecurityProfileResponseTypeDef](./type_defs.md#describesecurityprofileresponsetypedef).
 
 ### describe_user
 
@@ -1452,8 +1521,8 @@ Returns
 
 ### list_integration_associations
 
-Provides summary information about the AWS resource associations for the
-specified Amazon Connect instance.
+Provides summary information about the Amazon Web Services resource
+associations for the specified Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").list_integration_associations`
 method.
@@ -1699,10 +1768,32 @@ Keyword-only arguments:
 Returns
 [ListSecurityKeysResponseTypeDef](./type_defs.md#listsecuritykeysresponsetypedef).
 
+### list_security_profile_permissions
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for
+`boto3.client("connect").list_security_profile_permissions` method.
+
+Boto3 documentation:
+[Connect.Client.list_security_profile_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_profile_permissions)
+
+Arguments mapping described in
+[ListSecurityProfilePermissionsRequestRequestTypeDef](./type_defs.md#listsecurityprofilepermissionsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SecurityProfileId`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListSecurityProfilePermissionsResponseTypeDef](./type_defs.md#listsecurityprofilepermissionsresponsetypedef).
+
 ### list_security_profiles
 
-Provides summary information about the security profiles for the specified
-Amazon Connect instance.
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").list_security_profiles` method.
 
@@ -2440,6 +2531,25 @@ Keyword-only arguments:
   `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
   *(required)*
 
+### update_security_profile
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").update_security_profile` method.
+
+Boto3 documentation:
+[Connect.Client.update_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_security_profile)
+
+Arguments mapping described in
+[UpdateSecurityProfileRequestRequestTypeDef](./type_defs.md#updatesecurityprofilerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SecurityProfileId`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+- `Description`: `str`
+- `Permissions`: `Sequence`\[`str`\]
+
 ### update_user_hierarchy
 
 Assigns the specified hierarchy group to the specified user.
@@ -2621,6 +2731,8 @@ overloads.
   [ListRoutingProfilesPaginator](./paginators.md#listroutingprofilespaginator)
 - `client.get_paginator("list_security_keys")` ->
   [ListSecurityKeysPaginator](./paginators.md#listsecuritykeyspaginator)
+- `client.get_paginator("list_security_profile_permissions")` ->
+  [ListSecurityProfilePermissionsPaginator](./paginators.md#listsecurityprofilepermissionspaginator)
 - `client.get_paginator("list_security_profiles")` ->
   [ListSecurityProfilesPaginator](./paginators.md#listsecurityprofilespaginator)
 - `client.get_paginator("list_use_cases")` ->
