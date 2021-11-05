@@ -166,7 +166,7 @@ Keyword-only arguments:
 
 ### describe_text_translation_job
 
-Gets the properties associated with an asycnhronous batch translation job
+Gets the properties associated with an asynchronous batch translation job
 including name, ID, status, source and target languages, input/output S3
 buckets, and so on.
 

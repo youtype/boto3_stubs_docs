@@ -360,6 +360,10 @@ Required fields:
 
 - `S3Uri`: `str`
 
+Optional fields:
+
+- `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
+
 ## PaginatorConfigTypeDef
 
 ```python

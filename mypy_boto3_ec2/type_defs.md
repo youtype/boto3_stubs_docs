@@ -16375,6 +16375,7 @@ from mypy_boto3_ec2.type_defs import InstanceNetworkInterfaceAssociationTypeDef
 Optional fields:
 
 - `CarrierIp`: `str`
+- `CustomerOwnedIp`: `str`
 - `IpOwnerId`: `str`
 - `PublicDnsName`: `str`
 - `PublicIp`: `str`

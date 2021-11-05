@@ -3217,6 +3217,7 @@ Boto3 documentation:
 ### NetworkInterfaceAssociation attributes
 
 - `carrier_ip`: `str`
+- `customer_owned_ip`: `str`
 - `ip_owner_id`: `str`
 - `public_dns_name`: `str`
 - `public_ip`: `str`
