@@ -14,6 +14,9 @@ type annotations stubs module
   - [AssociateWebACLRequestRequestTypeDef](#associatewebaclrequestrequesttypedef)
   - [BlockActionTypeDef](#blockactiontypedef)
   - [ByteMatchStatementTypeDef](#bytematchstatementtypedef)
+  - [CaptchaActionTypeDef](#captchaactiontypedef)
+  - [CaptchaConfigTypeDef](#captchaconfigtypedef)
+  - [CaptchaResponseTypeDef](#captcharesponsetypedef)
   - [CheckCapacityRequestRequestTypeDef](#checkcapacityrequestrequesttypedef)
   - [CheckCapacityResponseTypeDef](#checkcapacityresponsetypedef)
   - [ConditionTypeDef](#conditiontypedef)
@@ -75,6 +78,7 @@ type annotations stubs module
   - [IPSetReferenceStatementTypeDef](#ipsetreferencestatementtypedef)
   - [IPSetSummaryTypeDef](#ipsetsummarytypedef)
   - [IPSetTypeDef](#ipsettypedef)
+  - [ImmunityTimePropertyTypeDef](#immunitytimepropertytypedef)
   - [JsonBodyTypeDef](#jsonbodytypedef)
   - [JsonMatchPatternTypeDef](#jsonmatchpatterntypedef)
   - [LabelMatchStatementTypeDef](#labelmatchstatementtypedef)
@@ -227,6 +231,40 @@ Required fields:
   `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
 - `PositionalConstraint`:
   [PositionalConstraintType](./literals.md#positionalconstrainttype)
+
+## CaptchaActionTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import CaptchaActionTypeDef
+```
+
+Optional fields:
+
+- `CustomRequestHandling`:
+  [CustomRequestHandlingTypeDef](./type_defs.md#customrequesthandlingtypedef)
+
+## CaptchaConfigTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import CaptchaConfigTypeDef
+```
+
+Optional fields:
+
+- `ImmunityTimeProperty`:
+  [ImmunityTimePropertyTypeDef](./type_defs.md#immunitytimepropertytypedef)
+
+## CaptchaResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import CaptchaResponseTypeDef
+```
+
+Optional fields:
+
+- `ResponseCode`: `int`
+- `SolveTimestamp`: `int`
+- `FailureReason`: [FailureReasonType](./literals.md#failurereasontype)
 
 ## CheckCapacityRequestRequestTypeDef
 
@@ -392,6 +430,7 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
+- `CaptchaConfig`: [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
 
 ## CreateWebACLResponseTypeDef
 
@@ -1045,6 +1084,16 @@ Optional fields:
 
 - `Description`: `str`
 
+## ImmunityTimePropertyTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ImmunityTimePropertyTypeDef
+```
+
+Required fields:
+
+- `ImmunityTime`: `int`
+
 ## JsonBodyTypeDef
 
 ```python
@@ -1208,9 +1257,12 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import ListLoggingConfigurationsRequestRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Scope`: [ScopeType](./literals.md#scopetype)
+
+Optional fields:
+
 - `NextMarker`: `str`
 - `Limit`: `int`
 
@@ -1737,6 +1789,7 @@ Optional fields:
 - `Block`: [BlockActionTypeDef](./type_defs.md#blockactiontypedef)
 - `Allow`: [AllowActionTypeDef](./type_defs.md#allowactiontypedef)
 - `Count`: [CountActionTypeDef](./type_defs.md#countactiontypedef)
+- `Captcha`: [CaptchaActionTypeDef](./type_defs.md#captchaactiontypedef)
 
 ## RuleGroupReferenceStatementTypeDef
 
@@ -1825,6 +1878,7 @@ Optional fields:
 - `OverrideAction`:
   [OverrideActionTypeDef](./type_defs.md#overrideactiontypedef)
 - `RuleLabels`: `Sequence`\[[LabelTypeDef](./type_defs.md#labeltypedef)\]
+- `CaptchaConfig`: [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
 
 ## SampledHTTPRequestTypeDef
 
@@ -1846,6 +1900,8 @@ Optional fields:
   `List`\[[HTTPHeaderTypeDef](./type_defs.md#httpheadertypedef)\]
 - `ResponseCodeSent`: `int`
 - `Labels`: `List`\[[LabelTypeDef](./type_defs.md#labeltypedef)\]
+- `CaptchaResponse`:
+  [CaptchaResponseTypeDef](./type_defs.md#captcharesponsetypedef)
 
 ## SingleHeaderTypeDef
 
@@ -2143,6 +2199,7 @@ Optional fields:
 - `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
+- `CaptchaConfig`: [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
 
 ## UpdateWebACLResponseTypeDef
 
@@ -2221,6 +2278,7 @@ Optional fields:
 - `LabelNamespace`: `str`
 - `CustomResponseBodies`: `Dict`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
+- `CaptchaConfig`: [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
 
 ## XssMatchStatementTypeDef
 

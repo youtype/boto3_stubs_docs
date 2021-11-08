@@ -25654,7 +25654,8 @@ Optional fields:
 - `TransitGatewayId`: `str`
 - `CoreNetworkArn`: `str`
 - `CoreNetworkAttachmentArn`: `str`
-- `GatewayAssociationState`: `str`
+- `GatewayAssociationState`:
+  [GatewayAssociationStateType](./literals.md#gatewayassociationstatetype)
 - `Options`:
   [VpnConnectionOptionsTypeDef](./type_defs.md#vpnconnectionoptionstypedef)
 - `Routes`:

@@ -787,6 +787,8 @@ Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `EndpointConfigName`: `str` *(required)*
+- `DeploymentConfig`:
+  [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -5524,6 +5526,7 @@ Keyword-only arguments:
   `Sequence`\[[VariantPropertyTypeDef](./type_defs.md#variantpropertytypedef)\]
 - `DeploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
+- `RetainDeploymentConfig`: `bool`
 
 Returns
 [UpdateEndpointOutputTypeDef](./type_defs.md#updateendpointoutputtypedef).

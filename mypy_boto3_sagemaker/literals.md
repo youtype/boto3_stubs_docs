@@ -247,6 +247,7 @@ type annotations stubs module
   - [UserProfileSortKeyType](#userprofilesortkeytype)
   - [UserProfileStatusType](#userprofilestatustype)
   - [VariantPropertyTypeType](#variantpropertytypetype)
+  - [VariantStatusType](#variantstatustype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
@@ -3129,6 +3130,7 @@ Values:
 
 - `ALL_AT_ONCE`
 - `CANARY`
+- `LINEAR`
 
 ## TrainingInputModeType
 
@@ -3355,6 +3357,20 @@ Values:
 - `DataCaptureConfig`
 - `DesiredInstanceCount`
 - `DesiredWeight`
+
+## VariantStatusType
+
+```python
+from mypy_boto3_sagemaker.literals import VariantStatusType
+```
+
+Values:
+
+- `ActivatingTraffic`
+- `Baking`
+- `Creating`
+- `Deleting`
+- `Updating`
 
 ## ServiceName
 

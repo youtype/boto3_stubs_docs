@@ -597,6 +597,8 @@ type annotations stubs module
   - [ParameterTypeDef](#parametertypedef)
   - [ParentHyperParameterTuningJobTypeDef](#parenthyperparametertuningjobtypedef)
   - [ParentTypeDef](#parenttypedef)
+  - [PendingDeploymentSummaryTypeDef](#pendingdeploymentsummarytypedef)
+  - [PendingProductionVariantSummaryTypeDef](#pendingproductionvariantsummarytypedef)
   - [PipelineExecutionStepMetadataTypeDef](#pipelineexecutionstepmetadatatypedef)
   - [PipelineExecutionStepTypeDef](#pipelineexecutionsteptypedef)
   - [PipelineExecutionSummaryTypeDef](#pipelineexecutionsummarytypedef)
@@ -617,6 +619,7 @@ type annotations stubs module
   - [ProcessingS3OutputTypeDef](#processings3outputtypedef)
   - [ProcessingStoppingConditionTypeDef](#processingstoppingconditiontypedef)
   - [ProductionVariantCoreDumpConfigTypeDef](#productionvariantcoredumpconfigtypedef)
+  - [ProductionVariantStatusTypeDef](#productionvariantstatustypedef)
   - [ProductionVariantSummaryTypeDef](#productionvariantsummarytypedef)
   - [ProductionVariantTypeDef](#productionvarianttypedef)
   - [ProfilerConfigForUpdateTypeDef](#profilerconfigforupdatetypedef)
@@ -1403,7 +1406,7 @@ from mypy_boto3_sagemaker.type_defs import AutoRollbackConfigTypeDef
 
 Optional fields:
 
-- `Alarms`: `List`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
+- `Alarms`: `Sequence`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
 
 ## BatchDescribeModelPackageErrorTypeDef
 
@@ -2257,6 +2260,8 @@ Required fields:
 
 Optional fields:
 
+- `DeploymentConfig`:
+  [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEndpointOutputTypeDef
@@ -4598,6 +4603,8 @@ Required fields:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `AsyncInferenceConfig`:
   [AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef)
+- `PendingDeploymentSummary`:
+  [PendingDeploymentSummaryTypeDef](./type_defs.md#pendingdeploymentsummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -9883,6 +9890,47 @@ Optional fields:
 - `TrialName`: `str`
 - `ExperimentName`: `str`
 
+## PendingDeploymentSummaryTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import PendingDeploymentSummaryTypeDef
+```
+
+Required fields:
+
+- `EndpointConfigName`: `str`
+
+Optional fields:
+
+- `ProductionVariants`:
+  `List`\[[PendingProductionVariantSummaryTypeDef](./type_defs.md#pendingproductionvariantsummarytypedef)\]
+- `StartTime`: `datetime`
+
+## PendingProductionVariantSummaryTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import PendingProductionVariantSummaryTypeDef
+```
+
+Required fields:
+
+- `VariantName`: `str`
+
+Optional fields:
+
+- `DeployedImages`:
+  `List`\[[DeployedImageTypeDef](./type_defs.md#deployedimagetypedef)\]
+- `CurrentWeight`: `float`
+- `DesiredWeight`: `float`
+- `CurrentInstanceCount`: `int`
+- `DesiredInstanceCount`: `int`
+- `InstanceType`:
+  [ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)
+- `AcceleratorType`:
+  [ProductionVariantAcceleratorTypeType](./literals.md#productionvariantacceleratortypetype)
+- `VariantStatus`:
+  `List`\[[ProductionVariantStatusTypeDef](./type_defs.md#productionvariantstatustypedef)\]
+
 ## PipelineExecutionStepMetadataTypeDef
 
 ```python
@@ -10233,6 +10281,21 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 
+## ProductionVariantStatusTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ProductionVariantStatusTypeDef
+```
+
+Required fields:
+
+- `Status`: [VariantStatusType](./literals.md#variantstatustype)
+
+Optional fields:
+
+- `StatusMessage`: `str`
+- `StartTime`: `datetime`
+
 ## ProductionVariantSummaryTypeDef
 
 ```python
@@ -10251,6 +10314,8 @@ Optional fields:
 - `DesiredWeight`: `float`
 - `CurrentInstanceCount`: `int`
 - `DesiredInstanceCount`: `int`
+- `VariantStatus`:
+  `List`\[[ProductionVariantStatusTypeDef](./type_defs.md#productionvariantstatustypedef)\]
 
 ## ProductionVariantTypeDef
 
@@ -11284,6 +11349,7 @@ Required fields:
 Optional fields:
 
 - `CanarySize`: [CapacitySizeTypeDef](./type_defs.md#capacitysizetypedef)
+- `LinearStepSize`: [CapacitySizeTypeDef](./type_defs.md#capacitysizetypedef)
 
 ## TrainingJobDefinitionTypeDef
 
@@ -12082,6 +12148,7 @@ Optional fields:
   `Sequence`\[[VariantPropertyTypeDef](./type_defs.md#variantpropertytypedef)\]
 - `DeploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
+- `RetainDeploymentConfig`: `bool`
 
 ## UpdateEndpointOutputTypeDef
 

@@ -201,6 +201,7 @@ type annotations stubs module
   - [FlowLogsResourceTypeType](#flowlogsresourcetypetype)
   - [FpgaImageAttributeNameType](#fpgaimageattributenametype)
   - [FpgaImageStateCodeType](#fpgaimagestatecodetype)
+  - [GatewayAssociationStateType](#gatewayassociationstatetype)
   - [GatewayTypeType](#gatewaytypetype)
   - [GetAssociatedIpv6PoolCidrsPaginatorName](#getassociatedipv6poolcidrspaginatorname)
   - [GetGroupsForCapacityReservationPaginatorName](#getgroupsforcapacityreservationpaginatorname)
@@ -2527,6 +2528,19 @@ Values:
 - `failed`
 - `pending`
 - `unavailable`
+
+## GatewayAssociationStateType
+
+```python
+from mypy_boto3_ec2.literals import GatewayAssociationStateType
+```
+
+Values:
+
+- `associated`
+- `associating`
+- `disassociating`
+- `not-associated`
 
 ## GatewayTypeType
 

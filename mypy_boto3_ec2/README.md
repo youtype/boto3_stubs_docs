@@ -958,6 +958,7 @@ from mypy_boto3_ec2.literals import AcceleratorManufacturerType, ...
 - [FlowLogsResourceTypeType](./literals.md#flowlogsresourcetypetype)
 - [FpgaImageAttributeNameType](./literals.md#fpgaimageattributenametype)
 - [FpgaImageStateCodeType](./literals.md#fpgaimagestatecodetype)
+- [GatewayAssociationStateType](./literals.md#gatewayassociationstatetype)
 - [GatewayTypeType](./literals.md#gatewaytypetype)
 - [GetAssociatedIpv6PoolCidrsPaginatorName](./literals.md#getassociatedipv6poolcidrspaginatorname)
 - [GetGroupsForCapacityReservationPaginatorName](./literals.md#getgroupsforcapacityreservationpaginatorname)

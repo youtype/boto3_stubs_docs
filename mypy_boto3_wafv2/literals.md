@@ -12,6 +12,7 @@ type annotations stubs module
   - [BodyParsingFallbackBehaviorType](#bodyparsingfallbackbehaviortype)
   - [ComparisonOperatorType](#comparisonoperatortype)
   - [CountryCodeType](#countrycodetype)
+  - [FailureReasonType](#failurereasontype)
   - [FallbackBehaviorType](#fallbackbehaviortype)
   - [FilterBehaviorType](#filterbehaviortype)
   - [FilterRequirementType](#filterrequirementtype)
@@ -37,7 +38,9 @@ Values:
 
 - `ALLOW`
 - `BLOCK`
+- `CAPTCHA`
 - `COUNT`
+- `EXCLUDED_AS_COUNT`
 
 ## BodyParsingFallbackBehaviorType
 
@@ -323,6 +326,17 @@ Values:
 - `ZA`
 - `ZM`
 - `ZW`
+
+## FailureReasonType
+
+```python
+from mypy_boto3_wafv2.literals import FailureReasonType
+```
+
+Values:
+
+- `TOKEN_EXPIRED`
+- `TOKEN_MISSING`
 
 ## FallbackBehaviorType
 
