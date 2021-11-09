@@ -26,6 +26,7 @@ type annotations stubs module
   - [JobDefinitionTypeType](#jobdefinitiontypetype)
   - [JobStatusType](#jobstatustype)
   - [ListJobsPaginatorName](#listjobspaginatorname)
+  - [ListSchedulingPoliciesPaginatorName](#listschedulingpoliciespaginatorname)
   - [LogDriverType](#logdrivertype)
   - [PlatformCapabilityType](#platformcapabilitytype)
   - [ResourceTypeType](#resourcetypetype)
@@ -243,6 +244,16 @@ from mypy_boto3_batch.literals import ListJobsPaginatorName
 Values:
 
 - `list_jobs`
+
+## ListSchedulingPoliciesPaginatorName
+
+```python
+from mypy_boto3_batch.literals import ListSchedulingPoliciesPaginatorName
+```
+
+Values:
+
+- `list_scheduling_policies`
 
 ## LogDriverType
 
@@ -601,3 +612,4 @@ Values:
 - `describe_job_definitions`
 - `describe_job_queues`
 - `list_jobs`
+- `list_scheduling_policies`

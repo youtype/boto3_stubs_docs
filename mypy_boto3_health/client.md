@@ -94,7 +94,7 @@ Returns `bool`.
 
 ### describe_affected_accounts_for_organization
 
-Returns a list of accounts in the organization from AWS Organizations that are
+Returns a list of accounts in the organization from Organizations that are
 affected by the provided event.
 
 Type annotations for
@@ -143,8 +143,8 @@ Returns
 ### describe_affected_entities_for_organization
 
 Returns a list of entities that have been affected by one or more events for
-one or more accounts in your organization in AWS Organizations, based on the
-filter criteria.
+one or more accounts in your organization in Organizations, based on the filter
+criteria.
 
 Type annotations for
 `boto3.client("health").describe_affected_entities_for_organization` method.
@@ -236,7 +236,7 @@ Returns
 ### describe_event_details_for_organization
 
 Returns detailed information about one or more specified events for one or more
-AWS accounts in your organization.
+Amazon Web Services accounts in your organization.
 
 Type annotations for
 `boto3.client("health").describe_event_details_for_organization` method.
@@ -303,7 +303,7 @@ Returns
 
 ### describe_events_for_organization
 
-Returns information about events across your organization in AWS Organizations.
+Returns information about events across your organization in Organizations.
 
 Type annotations for `boto3.client("health").describe_events_for_organization`
 method.
@@ -327,8 +327,8 @@ Returns
 
 ### describe_health_service_status_for_organization
 
-This operation provides status information on enabling or disabling AWS Health
-to work with your organization.
+This operation provides status information on enabling or disabling Health to
+work with your organization.
 
 Type annotations for
 `boto3.client("health").describe_health_service_status_for_organization`
@@ -342,7 +342,7 @@ Returns
 
 ### disable_health_service_access_for_organization
 
-Disables AWS Health from working with AWS Organizations.
+Disables Health from working with Organizations.
 
 Type annotations for
 `boto3.client("health").disable_health_service_access_for_organization` method.
@@ -352,7 +352,7 @@ Boto3 documentation:
 
 ### enable_health_service_access_for_organization
 
-Enables AWS Health to work with AWS Organizations.
+Enables Health to work with Organizations.
 
 Type annotations for
 `boto3.client("health").enable_health_service_access_for_organization` method.

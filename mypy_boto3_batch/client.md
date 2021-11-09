@@ -16,15 +16,19 @@ type annotations stubs module
     - [cancel_job](#cancel_job)
     - [create_compute_environment](#create_compute_environment)
     - [create_job_queue](#create_job_queue)
+    - [create_scheduling_policy](#create_scheduling_policy)
     - [delete_compute_environment](#delete_compute_environment)
     - [delete_job_queue](#delete_job_queue)
+    - [delete_scheduling_policy](#delete_scheduling_policy)
     - [deregister_job_definition](#deregister_job_definition)
     - [describe_compute_environments](#describe_compute_environments)
     - [describe_job_definitions](#describe_job_definitions)
     - [describe_job_queues](#describe_job_queues)
     - [describe_jobs](#describe_jobs)
+    - [describe_scheduling_policies](#describe_scheduling_policies)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_jobs](#list_jobs)
+    - [list_scheduling_policies](#list_scheduling_policies)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [register_job_definition](#register_job_definition)
     - [submit_job](#submit_job)
@@ -33,6 +37,7 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_compute_environment](#update_compute_environment)
     - [update_job_queue](#update_job_queue)
+    - [update_scheduling_policy](#update_scheduling_policy)
     - [get_paginator](#get_paginator)
 
 ## BatchClient
@@ -133,6 +138,7 @@ Keyword-only arguments:
 - `computeEnvironmentName`: `str` *(required)*
 - `type`: [CETypeType](./literals.md#cetypetype) *(required)*
 - `state`: [CEStateType](./literals.md#cestatetype)
+- `unmanagedvCpus`: `int`
 - `computeResources`:
   [ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef)
 - `serviceRole`: `str`
@@ -161,10 +167,33 @@ Keyword-only arguments:
   `Sequence`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
   *(required)*
 - `state`: [JQStateType](./literals.md#jqstatetype)
+- `schedulingPolicyArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateJobQueueResponseTypeDef](./type_defs.md#createjobqueueresponsetypedef).
+
+### create_scheduling_policy
+
+Creates an Batch scheduling policy.
+
+Type annotations for `boto3.client("batch").create_scheduling_policy` method.
+
+Boto3 documentation:
+[Batch.Client.create_scheduling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_scheduling_policy)
+
+Arguments mapping described in
+[CreateSchedulingPolicyRequestRequestTypeDef](./type_defs.md#createschedulingpolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `name`: `str` *(required)*
+- `fairsharePolicy`:
+  [FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef)
+- `tags`: `Mapping`\[`str`, `str`\]
+
+Returns
+[CreateSchedulingPolicyResponseTypeDef](./type_defs.md#createschedulingpolicyresponsetypedef).
 
 ### delete_compute_environment
 
@@ -199,6 +228,24 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `jobQueue`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### delete_scheduling_policy
+
+Deletes the specified scheduling policy.
+
+Type annotations for `boto3.client("batch").delete_scheduling_policy` method.
+
+Boto3 documentation:
+[Batch.Client.delete_scheduling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_scheduling_policy)
+
+Arguments mapping described in
+[DeleteSchedulingPolicyRequestRequestTypeDef](./type_defs.md#deleteschedulingpolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `arn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -305,6 +352,26 @@ Keyword-only arguments:
 Returns
 [DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
 
+### describe_scheduling_policies
+
+Describes one or more of your scheduling policies.
+
+Type annotations for `boto3.client("batch").describe_scheduling_policies`
+method.
+
+Boto3 documentation:
+[Batch.Client.describe_scheduling_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_scheduling_policies)
+
+Arguments mapping described in
+[DescribeSchedulingPoliciesRequestRequestTypeDef](./type_defs.md#describeschedulingpoliciesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `arns`: `Sequence`\[`str`\] *(required)*
+
+Returns
+[DescribeSchedulingPoliciesResponseTypeDef](./type_defs.md#describeschedulingpoliciesresponsetypedef).
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -348,6 +415,26 @@ Keyword-only arguments:
 
 Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
+### list_scheduling_policies
+
+Returns a list of Batch scheduling policies.
+
+Type annotations for `boto3.client("batch").list_scheduling_policies` method.
+
+Boto3 documentation:
+[Batch.Client.list_scheduling_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_scheduling_policies)
+
+Arguments mapping described in
+[ListSchedulingPoliciesRequestRequestTypeDef](./type_defs.md#listschedulingpoliciesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListSchedulingPoliciesResponseTypeDef](./type_defs.md#listschedulingpoliciesresponsetypedef).
+
 ### list_tags_for_resource
 
 Lists the tags for an Batch resource.
@@ -385,6 +472,7 @@ Keyword-only arguments:
 - `type`: [JobDefinitionTypeType](./literals.md#jobdefinitiontypetype)
   *(required)*
 - `parameters`: `Mapping`\[`str`, `str`\]
+- `schedulingPriority`: `int`
 - `containerProperties`:
   [ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef)
 - `nodeProperties`:
@@ -416,6 +504,8 @@ Keyword-only arguments:
 - `jobName`: `str` *(required)*
 - `jobQueue`: `str` *(required)*
 - `jobDefinition`: `str` *(required)*
+- `shareIdentifier`: `str`
+- `schedulingPriorityOverride`: `int`
 - `arrayProperties`:
   [ArrayPropertiesTypeDef](./type_defs.md#arraypropertiestypedef)
 - `dependsOn`:
@@ -504,6 +594,7 @@ Keyword-only arguments:
 
 - `computeEnvironment`: `str` *(required)*
 - `state`: [CEStateType](./literals.md#cestatetype)
+- `unmanagedvCpus`: `int`
 - `computeResources`:
   [ComputeResourceUpdateTypeDef](./type_defs.md#computeresourceupdatetypedef)
 - `serviceRole`: `str`
@@ -527,12 +618,33 @@ Keyword-only arguments:
 
 - `jobQueue`: `str` *(required)*
 - `state`: [JQStateType](./literals.md#jqstatetype)
+- `schedulingPolicyArn`: `str`
 - `priority`: `int`
 - `computeEnvironmentOrder`:
   `Sequence`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
 
 Returns
 [UpdateJobQueueResponseTypeDef](./type_defs.md#updatejobqueueresponsetypedef).
+
+### update_scheduling_policy
+
+Updates a scheduling policy.
+
+Type annotations for `boto3.client("batch").update_scheduling_policy` method.
+
+Boto3 documentation:
+[Batch.Client.update_scheduling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_scheduling_policy)
+
+Arguments mapping described in
+[UpdateSchedulingPolicyRequestRequestTypeDef](./type_defs.md#updateschedulingpolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `arn`: `str` *(required)*
+- `fairsharePolicy`:
+  [FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
@@ -547,3 +659,5 @@ overloads.
   [DescribeJobQueuesPaginator](./paginators.md#describejobqueuespaginator)
 - `client.get_paginator("list_jobs")` ->
   [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("list_scheduling_policies")` ->
+  [ListSchedulingPoliciesPaginator](./paginators.md#listschedulingpoliciespaginator)

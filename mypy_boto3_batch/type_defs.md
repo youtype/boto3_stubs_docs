@@ -26,8 +26,11 @@ type annotations stubs module
   - [CreateComputeEnvironmentResponseTypeDef](#createcomputeenvironmentresponsetypedef)
   - [CreateJobQueueRequestRequestTypeDef](#createjobqueuerequestrequesttypedef)
   - [CreateJobQueueResponseTypeDef](#createjobqueueresponsetypedef)
+  - [CreateSchedulingPolicyRequestRequestTypeDef](#createschedulingpolicyrequestrequesttypedef)
+  - [CreateSchedulingPolicyResponseTypeDef](#createschedulingpolicyresponsetypedef)
   - [DeleteComputeEnvironmentRequestRequestTypeDef](#deletecomputeenvironmentrequestrequesttypedef)
   - [DeleteJobQueueRequestRequestTypeDef](#deletejobqueuerequestrequesttypedef)
+  - [DeleteSchedulingPolicyRequestRequestTypeDef](#deleteschedulingpolicyrequestrequesttypedef)
   - [DeregisterJobDefinitionRequestRequestTypeDef](#deregisterjobdefinitionrequestrequesttypedef)
   - [DescribeComputeEnvironmentsRequestRequestTypeDef](#describecomputeenvironmentsrequestrequesttypedef)
   - [DescribeComputeEnvironmentsResponseTypeDef](#describecomputeenvironmentsresponsetypedef)
@@ -37,11 +40,14 @@ type annotations stubs module
   - [DescribeJobQueuesResponseTypeDef](#describejobqueuesresponsetypedef)
   - [DescribeJobsRequestRequestTypeDef](#describejobsrequestrequesttypedef)
   - [DescribeJobsResponseTypeDef](#describejobsresponsetypedef)
+  - [DescribeSchedulingPoliciesRequestRequestTypeDef](#describeschedulingpoliciesrequestrequesttypedef)
+  - [DescribeSchedulingPoliciesResponseTypeDef](#describeschedulingpoliciesresponsetypedef)
   - [DeviceTypeDef](#devicetypedef)
   - [EFSAuthorizationConfigTypeDef](#efsauthorizationconfigtypedef)
   - [EFSVolumeConfigurationTypeDef](#efsvolumeconfigurationtypedef)
   - [Ec2ConfigurationTypeDef](#ec2configurationtypedef)
   - [EvaluateOnExitTypeDef](#evaluateonexittypedef)
+  - [FairsharePolicyTypeDef](#fairsharepolicytypedef)
   - [FargatePlatformConfigurationTypeDef](#fargateplatformconfigurationtypedef)
   - [HostTypeDef](#hosttypedef)
   - [JobDefinitionTypeDef](#jobdefinitiontypedef)
@@ -56,6 +62,8 @@ type annotations stubs module
   - [LinuxParametersTypeDef](#linuxparameterstypedef)
   - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
   - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
+  - [ListSchedulingPoliciesRequestRequestTypeDef](#listschedulingpoliciesrequestrequesttypedef)
+  - [ListSchedulingPoliciesResponseTypeDef](#listschedulingpoliciesresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LogConfigurationTypeDef](#logconfigurationtypedef)
@@ -74,7 +82,10 @@ type annotations stubs module
   - [ResourceRequirementTypeDef](#resourcerequirementtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RetryStrategyTypeDef](#retrystrategytypedef)
+  - [SchedulingPolicyDetailTypeDef](#schedulingpolicydetailtypedef)
+  - [SchedulingPolicyListingDetailTypeDef](#schedulingpolicylistingdetailtypedef)
   - [SecretTypeDef](#secrettypedef)
+  - [ShareAttributesTypeDef](#shareattributestypedef)
   - [SubmitJobRequestRequestTypeDef](#submitjobrequestrequesttypedef)
   - [SubmitJobResponseTypeDef](#submitjobresponsetypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
@@ -86,6 +97,7 @@ type annotations stubs module
   - [UpdateComputeEnvironmentResponseTypeDef](#updatecomputeenvironmentresponsetypedef)
   - [UpdateJobQueueRequestRequestTypeDef](#updatejobqueuerequestrequesttypedef)
   - [UpdateJobQueueResponseTypeDef](#updatejobqueueresponsetypedef)
+  - [UpdateSchedulingPolicyRequestRequestTypeDef](#updateschedulingpolicyrequestrequesttypedef)
   - [VolumeTypeDef](#volumetypedef)
 
 ## ArrayPropertiesDetailTypeDef
@@ -176,6 +188,7 @@ Required fields:
 
 Optional fields:
 
+- `unmanagedvCpus`: `int`
 - `tags`: `Dict`\[`str`, `str`\]
 - `type`: [CETypeType](./literals.md#cetypetype)
 - `state`: [CEStateType](./literals.md#cestatetype)
@@ -363,6 +376,7 @@ Required fields:
 Optional fields:
 
 - `state`: [CEStateType](./literals.md#cestatetype)
+- `unmanagedvCpus`: `int`
 - `computeResources`:
   [ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef)
 - `serviceRole`: `str`
@@ -397,6 +411,7 @@ Required fields:
 Optional fields:
 
 - `state`: [JQStateType](./literals.md#jqstatetype)
+- `schedulingPolicyArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateJobQueueResponseTypeDef
@@ -409,6 +424,35 @@ Required fields:
 
 - `jobQueueName`: `str`
 - `jobQueueArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateSchedulingPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import CreateSchedulingPolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+Optional fields:
+
+- `fairsharePolicy`:
+  [FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef)
+- `tags`: `Mapping`\[`str`, `str`\]
+
+## CreateSchedulingPolicyResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import CreateSchedulingPolicyResponseTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `arn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -431,6 +475,16 @@ from mypy_boto3_batch.type_defs import DeleteJobQueueRequestRequestTypeDef
 Required fields:
 
 - `jobQueue`: `str`
+
+## DeleteSchedulingPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import DeleteSchedulingPolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
 
 ## DeregisterJobDefinitionRequestRequestTypeDef
 
@@ -544,6 +598,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeSchedulingPoliciesRequestRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import DescribeSchedulingPoliciesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `arns`: `Sequence`\[`str`\]
+
+## DescribeSchedulingPoliciesResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import DescribeSchedulingPoliciesResponseTypeDef
+```
+
+Required fields:
+
+- `schedulingPolicies`:
+  `List`\[[SchedulingPolicyDetailTypeDef](./type_defs.md#schedulingpolicydetailtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DeviceTypeDef
 
 ```python
@@ -621,6 +698,19 @@ Optional fields:
 - `onReason`: `str`
 - `onExitCode`: `str`
 
+## FairsharePolicyTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import FairsharePolicyTypeDef
+```
+
+Optional fields:
+
+- `shareDecaySeconds`: `int`
+- `computeReservation`: `int`
+- `shareDistribution`:
+  `Sequence`\[[ShareAttributesTypeDef](./type_defs.md#shareattributestypedef)\]
+
 ## FargatePlatformConfigurationTypeDef
 
 ```python
@@ -657,6 +747,7 @@ Required fields:
 Optional fields:
 
 - `status`: `str`
+- `schedulingPriority`: `int`
 - `parameters`: `Dict`\[`str`, `str`\]
 - `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `containerProperties`:
@@ -698,6 +789,8 @@ Required fields:
 Optional fields:
 
 - `jobArn`: `str`
+- `shareIdentifier`: `str`
+- `schedulingPriority`: `int`
 - `attempts`:
   `List`\[[AttemptDetailTypeDef](./type_defs.md#attemptdetailtypedef)\]
 - `statusReason`: `str`
@@ -736,6 +829,7 @@ Required fields:
 
 Optional fields:
 
+- `schedulingPolicyArn`: `str`
 - `status`: [JQStatusType](./literals.md#jqstatustype)
 - `statusReason`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -853,6 +947,31 @@ Required fields:
 
 - `jobSummaryList`:
   `List`\[[JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListSchedulingPoliciesRequestRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import ListSchedulingPoliciesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListSchedulingPoliciesResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import ListSchedulingPoliciesResponseTypeDef
+```
+
+Required fields:
+
+- `schedulingPolicies`:
+  `List`\[[SchedulingPolicyListingDetailTypeDef](./type_defs.md#schedulingpolicylistingdetailtypedef)\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1032,6 +1151,7 @@ Required fields:
 Optional fields:
 
 - `parameters`: `Mapping`\[`str`, `str`\]
+- `schedulingPriority`: `int`
 - `containerProperties`:
   [ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef)
 - `nodeProperties`:
@@ -1094,6 +1214,33 @@ Optional fields:
 - `evaluateOnExit`:
   `List`\[[EvaluateOnExitTypeDef](./type_defs.md#evaluateonexittypedef)\]
 
+## SchedulingPolicyDetailTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import SchedulingPolicyDetailTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `arn`: `str`
+
+Optional fields:
+
+- `fairsharePolicy`:
+  [FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## SchedulingPolicyListingDetailTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import SchedulingPolicyListingDetailTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
 ## SecretTypeDef
 
 ```python
@@ -1104,6 +1251,20 @@ Required fields:
 
 - `name`: `str`
 - `valueFrom`: `str`
+
+## ShareAttributesTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import ShareAttributesTypeDef
+```
+
+Required fields:
+
+- `shareIdentifier`: `str`
+
+Optional fields:
+
+- `weightFactor`: `float`
 
 ## SubmitJobRequestRequestTypeDef
 
@@ -1119,6 +1280,8 @@ Required fields:
 
 Optional fields:
 
+- `shareIdentifier`: `str`
+- `schedulingPriorityOverride`: `int`
 - `arrayProperties`:
   [ArrayPropertiesTypeDef](./type_defs.md#arraypropertiestypedef)
 - `dependsOn`:
@@ -1219,6 +1382,7 @@ Required fields:
 Optional fields:
 
 - `state`: [CEStateType](./literals.md#cestatetype)
+- `unmanagedvCpus`: `int`
 - `computeResources`:
   [ComputeResourceUpdateTypeDef](./type_defs.md#computeresourceupdatetypedef)
 - `serviceRole`: `str`
@@ -1249,6 +1413,7 @@ Required fields:
 Optional fields:
 
 - `state`: [JQStateType](./literals.md#jqstatetype)
+- `schedulingPolicyArn`: `str`
 - `priority`: `int`
 - `computeEnvironmentOrder`:
   `Sequence`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
@@ -1265,6 +1430,21 @@ Required fields:
 - `jobQueueArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateSchedulingPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import UpdateSchedulingPolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+Optional fields:
+
+- `fairsharePolicy`:
+  [FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef)
 
 ## VolumeTypeDef
 

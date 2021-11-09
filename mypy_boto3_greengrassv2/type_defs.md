@@ -301,6 +301,7 @@ Optional fields:
 - `posixUser`: `str`
 - `systemResourceLimits`:
   [SystemResourceLimitsTypeDef](./type_defs.md#systemresourcelimitstypedef)
+- `windowsUser`: `str`
 
 ## ComponentTypeDef
 

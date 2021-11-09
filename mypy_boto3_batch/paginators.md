@@ -12,6 +12,7 @@ type annotations stubs module
   - [DescribeJobDefinitionsPaginator](#describejobdefinitionspaginator)
   - [DescribeJobQueuesPaginator](#describejobqueuespaginator)
   - [ListJobsPaginator](#listjobspaginator)
+  - [ListSchedulingPoliciesPaginator](#listschedulingpoliciespaginator)
 
 ## DescribeComputeEnvironmentsPaginator
 
@@ -122,3 +123,28 @@ Arguments for `ListJobsPaginator.paginate` method:
 
 `ListJobsPaginator.paginate` returns
 `_PageIterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
+
+## ListSchedulingPoliciesPaginator
+
+Type annotations for
+`boto3.client("batch").get_paginator("list_scheduling_policies")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_batch.paginator import ListSchedulingPoliciesPaginator
+
+def get_list_scheduling_policies_paginator() -> ListSchedulingPoliciesPaginator:
+    return boto3.client("batch").get_paginator("list_scheduling_policies")
+```
+
+Boto3 documentation:
+[Batch.Paginator.ListSchedulingPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.ListSchedulingPolicies)
+
+Arguments for `ListSchedulingPoliciesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListSchedulingPoliciesPaginator.paginate` returns
+`_PageIterator`\[[ListSchedulingPoliciesResponseTypeDef](./type_defs.md#listschedulingpoliciesresponsetypedef)\].
