@@ -10,6 +10,7 @@ type annotations stubs module
 - [Typed dictionaries for boto3 EMRContainers module](#typed-dictionaries-for-boto3-emrcontainers-module)
   - [CancelJobRunRequestRequestTypeDef](#canceljobrunrequestrequesttypedef)
   - [CancelJobRunResponseTypeDef](#canceljobrunresponsetypedef)
+  - [CertificateTypeDef](#certificatetypedef)
   - [CloudWatchMonitoringConfigurationTypeDef](#cloudwatchmonitoringconfigurationtypedef)
   - [ConfigurationOverridesTypeDef](#configurationoverridestypedef)
   - [ConfigurationTypeDef](#configurationtypedef)
@@ -75,6 +76,17 @@ Required fields:
 - `virtualClusterId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CertificateTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import CertificateTypeDef
+```
+
+Optional fields:
+
+- `certificateArn`: `str`
+- `certificateData`: `str`
 
 ## CloudWatchMonitoringConfigurationTypeDef
 
@@ -158,11 +170,11 @@ Required fields:
 - `type`: `str`
 - `releaseLabel`: `str`
 - `executionRoleArn`: `str`
-- `certificateArn`: `str`
 - `clientToken`: `str`
 
 Optional fields:
 
+- `certificateArn`: `str`
 - `configurationOverrides`:
   [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
@@ -355,6 +367,8 @@ Optional fields:
 - `releaseLabel`: `str`
 - `executionRoleArn`: `str`
 - `certificateArn`: `str`
+- `certificateAuthority`:
+  [CertificateTypeDef](./type_defs.md#certificatetypedef)
 - `configurationOverrides`:
   [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
 - `serverUrl`: `str`
@@ -557,7 +571,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## S3MonitoringConfigurationTypeDef

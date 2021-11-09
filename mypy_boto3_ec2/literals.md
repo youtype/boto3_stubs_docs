@@ -8,6 +8,9 @@ type annotations stubs module
 [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 - [Literals for boto3 EC2 module](#literals-for-boto3-ec2-module)
+  - [AcceleratorManufacturerType](#acceleratormanufacturertype)
+  - [AcceleratorNameType](#acceleratornametype)
+  - [AcceleratorTypeType](#acceleratortypetype)
   - [AccountAttributeNameType](#accountattributenametype)
   - [ActivityStatusType](#activitystatustype)
   - [AddressAttributeNameType](#addressattributenametype)
@@ -27,12 +30,14 @@ type annotations stubs module
   - [AutoPlacementType](#autoplacementtype)
   - [AvailabilityZoneOptInStatusType](#availabilityzoneoptinstatustype)
   - [AvailabilityZoneStateType](#availabilityzonestatetype)
+  - [BareMetalType](#baremetaltype)
   - [BatchStateType](#batchstatetype)
   - [BgpStatusType](#bgpstatustype)
   - [BootModeTypeType](#bootmodetypetype)
   - [BootModeValuesType](#bootmodevaluestype)
   - [BundleTaskCompleteWaiterName](#bundletaskcompletewaitername)
   - [BundleTaskStateType](#bundletaskstatetype)
+  - [BurstablePerformanceType](#burstableperformancetype)
   - [ByoipCidrStateType](#byoipcidrstatetype)
   - [CancelBatchErrorCodeType](#cancelbatcherrorcodetype)
   - [CancelSpotInstanceRequestStateType](#cancelspotinstancerequeststatetype)
@@ -58,6 +63,7 @@ type annotations stubs module
   - [ConversionTaskDeletedWaiterName](#conversiontaskdeletedwaitername)
   - [ConversionTaskStateType](#conversiontaskstatetype)
   - [CopyTagsFromSourceType](#copytagsfromsourcetype)
+  - [CpuManufacturerType](#cpumanufacturertype)
   - [CurrencyCodeValuesType](#currencycodevaluestype)
   - [CustomerGatewayAvailableWaiterName](#customergatewayavailablewaitername)
   - [DatafeedSubscriptionStateType](#datafeedsubscriptionstatetype)
@@ -195,11 +201,14 @@ type annotations stubs module
   - [FlowLogsResourceTypeType](#flowlogsresourcetypetype)
   - [FpgaImageAttributeNameType](#fpgaimageattributenametype)
   - [FpgaImageStateCodeType](#fpgaimagestatecodetype)
+  - [GatewayAssociationStateType](#gatewayassociationstatetype)
   - [GatewayTypeType](#gatewaytypetype)
   - [GetAssociatedIpv6PoolCidrsPaginatorName](#getassociatedipv6poolcidrspaginatorname)
   - [GetGroupsForCapacityReservationPaginatorName](#getgroupsforcapacityreservationpaginatorname)
+  - [GetInstanceTypesFromInstanceRequirementsPaginatorName](#getinstancetypesfrominstancerequirementspaginatorname)
   - [GetManagedPrefixListAssociationsPaginatorName](#getmanagedprefixlistassociationspaginatorname)
   - [GetManagedPrefixListEntriesPaginatorName](#getmanagedprefixlistentriespaginatorname)
+  - [GetSpotPlacementScoresPaginatorName](#getspotplacementscorespaginatorname)
   - [GetTransitGatewayAttachmentPropagationsPaginatorName](#gettransitgatewayattachmentpropagationspaginatorname)
   - [GetTransitGatewayMulticastDomainAssociationsPaginatorName](#gettransitgatewaymulticastdomainassociationspaginatorname)
   - [GetTransitGatewayPrefixListReferencesPaginatorName](#gettransitgatewayprefixlistreferencespaginatorname)
@@ -220,6 +229,7 @@ type annotations stubs module
   - [InstanceAttributeNameType](#instanceattributenametype)
   - [InstanceEventWindowStateType](#instanceeventwindowstatetype)
   - [InstanceExistsWaiterName](#instanceexistswaitername)
+  - [InstanceGenerationType](#instancegenerationtype)
   - [InstanceHealthStatusType](#instancehealthstatustype)
   - [InstanceInterruptionBehaviorType](#instanceinterruptionbehaviortype)
   - [InstanceLifecycleType](#instancelifecycletype)
@@ -250,6 +260,8 @@ type annotations stubs module
   - [ListingStatusType](#listingstatustype)
   - [LocalGatewayRouteStateType](#localgatewayroutestatetype)
   - [LocalGatewayRouteTypeType](#localgatewayroutetypetype)
+  - [LocalStorageType](#localstoragetype)
+  - [LocalStorageTypeType](#localstoragetypetype)
   - [LocationTypeType](#locationtypetype)
   - [LogDestinationTypeType](#logdestinationtypetype)
   - [MarketTypeType](#markettypetype)
@@ -325,6 +337,7 @@ type annotations stubs module
   - [SubnetStateType](#subnetstatetype)
   - [SummaryStatusType](#summarystatustype)
   - [SystemStatusOkWaiterName](#systemstatusokwaitername)
+  - [TargetCapacityUnitTypeType](#targetcapacityunittypetype)
   - [TelemetryStatusType](#telemetrystatustype)
   - [TenancyType](#tenancytype)
   - [TrafficDirectionType](#trafficdirectiontype)
@@ -383,6 +396,47 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
+
+## AcceleratorManufacturerType
+
+```python
+from mypy_boto3_ec2.literals import AcceleratorManufacturerType
+```
+
+Values:
+
+- `amazon-web-services`
+- `amd`
+- `nvidia`
+- `xilinx`
+
+## AcceleratorNameType
+
+```python
+from mypy_boto3_ec2.literals import AcceleratorNameType
+```
+
+Values:
+
+- `a100`
+- `k80`
+- `m60`
+- `radeon-pro-v520`
+- `t4`
+- `v100`
+- `vu9p`
+
+## AcceleratorTypeType
+
+```python
+from mypy_boto3_ec2.literals import AcceleratorTypeType
+```
+
+Values:
+
+- `fpga`
+- `gpu`
+- `inference`
 
 ## AccountAttributeNameType
 
@@ -612,6 +666,18 @@ Values:
 - `information`
 - `unavailable`
 
+## BareMetalType
+
+```python
+from mypy_boto3_ec2.literals import BareMetalType
+```
+
+Values:
+
+- `excluded`
+- `included`
+- `required`
+
 ## BatchStateType
 
 ```python
@@ -686,6 +752,18 @@ Values:
 - `pending`
 - `storing`
 - `waiting-for-shutdown`
+
+## BurstablePerformanceType
+
+```python
+from mypy_boto3_ec2.literals import BurstablePerformanceType
+```
+
+Values:
+
+- `excluded`
+- `included`
+- `required`
 
 ## ByoipCidrStateType
 
@@ -998,6 +1076,18 @@ from mypy_boto3_ec2.literals import CopyTagsFromSourceType
 Values:
 
 - `volume`
+
+## CpuManufacturerType
+
+```python
+from mypy_boto3_ec2.literals import CpuManufacturerType
+```
+
+Values:
+
+- `amazon-web-services`
+- `amd`
+- `intel`
 
 ## CurrencyCodeValuesType
 
@@ -2371,6 +2461,7 @@ from mypy_boto3_ec2.literals import FleetReplacementStrategyType
 Values:
 
 - `launch`
+- `launch-before-terminate`
 
 ## FleetStateCodeType
 
@@ -2438,6 +2529,19 @@ Values:
 - `pending`
 - `unavailable`
 
+## GatewayAssociationStateType
+
+```python
+from mypy_boto3_ec2.literals import GatewayAssociationStateType
+```
+
+Values:
+
+- `associated`
+- `associating`
+- `disassociating`
+- `not-associated`
+
 ## GatewayTypeType
 
 ```python
@@ -2468,6 +2572,16 @@ Values:
 
 - `get_groups_for_capacity_reservation`
 
+## GetInstanceTypesFromInstanceRequirementsPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import GetInstanceTypesFromInstanceRequirementsPaginatorName
+```
+
+Values:
+
+- `get_instance_types_from_instance_requirements`
+
 ## GetManagedPrefixListAssociationsPaginatorName
 
 ```python
@@ -2487,6 +2601,16 @@ from mypy_boto3_ec2.literals import GetManagedPrefixListEntriesPaginatorName
 Values:
 
 - `get_managed_prefix_list_entries`
+
+## GetSpotPlacementScoresPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import GetSpotPlacementScoresPaginatorName
+```
+
+Values:
+
+- `get_spot_placement_scores`
 
 ## GetTransitGatewayAttachmentPropagationsPaginatorName
 
@@ -2727,6 +2851,17 @@ from mypy_boto3_ec2.literals import InstanceExistsWaiterName
 Values:
 
 - `instance_exists`
+
+## InstanceGenerationType
+
+```python
+from mypy_boto3_ec2.literals import InstanceGenerationType
+```
+
+Values:
+
+- `current`
+- `previous`
 
 ## InstanceHealthStatusType
 
@@ -3005,6 +3140,7 @@ Values:
 - `d3en.6xlarge`
 - `d3en.8xlarge`
 - `d3en.xlarge`
+- `dl1.24xlarge`
 - `f1.16xlarge`
 - `f1.2xlarge`
 - `f1.4xlarge`
@@ -3487,6 +3623,29 @@ Values:
 - `propagated`
 - `static`
 
+## LocalStorageType
+
+```python
+from mypy_boto3_ec2.literals import LocalStorageType
+```
+
+Values:
+
+- `excluded`
+- `included`
+- `required`
+
+## LocalStorageTypeType
+
+```python
+from mypy_boto3_ec2.literals import LocalStorageTypeType
+```
+
+Values:
+
+- `hdd`
+- `ssd`
+
 ## LocationTypeType
 
 ```python
@@ -3931,6 +4090,7 @@ from mypy_boto3_ec2.literals import ReplacementStrategyType
 Values:
 
 - `launch`
+- `launch-before-terminate`
 
 ## ReportInstanceReasonCodesType
 
@@ -4443,6 +4603,18 @@ from mypy_boto3_ec2.literals import SystemStatusOkWaiterName
 Values:
 
 - `system_status_ok`
+
+## TargetCapacityUnitTypeType
+
+```python
+from mypy_boto3_ec2.literals import TargetCapacityUnitTypeType
+```
+
+Values:
+
+- `memory-mib`
+- `units`
+- `vcpu`
 
 ## TelemetryStatusType
 
@@ -5157,6 +5329,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`
@@ -5514,8 +5687,10 @@ Values:
 - `describe_vpcs`
 - `get_associated_ipv6_pool_cidrs`
 - `get_groups_for_capacity_reservation`
+- `get_instance_types_from_instance_requirements`
 - `get_managed_prefix_list_associations`
 - `get_managed_prefix_list_entries`
+- `get_spot_placement_scores`
 - `get_transit_gateway_attachment_propagations`
 - `get_transit_gateway_multicast_domain_associations`
 - `get_transit_gateway_prefix_list_references`

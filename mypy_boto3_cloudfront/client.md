@@ -27,6 +27,7 @@ type annotations stubs module
     - [create_origin_request_policy](#create_origin_request_policy)
     - [create_public_key](#create_public_key)
     - [create_realtime_log_config](#create_realtime_log_config)
+    - [create_response_headers_policy](#create_response_headers_policy)
     - [create_streaming_distribution](#create_streaming_distribution)
     - [create_streaming_distribution_with_tags](#create_streaming_distribution_with_tags)
     - [delete_cache_policy](#delete_cache_policy)
@@ -40,6 +41,7 @@ type annotations stubs module
     - [delete_origin_request_policy](#delete_origin_request_policy)
     - [delete_public_key](#delete_public_key)
     - [delete_realtime_log_config](#delete_realtime_log_config)
+    - [delete_response_headers_policy](#delete_response_headers_policy)
     - [delete_streaming_distribution](#delete_streaming_distribution)
     - [describe_function](#describe_function)
     - [generate_presigned_url](#generate_presigned_url)
@@ -63,6 +65,8 @@ type annotations stubs module
     - [get_public_key](#get_public_key)
     - [get_public_key_config](#get_public_key_config)
     - [get_realtime_log_config](#get_realtime_log_config)
+    - [get_response_headers_policy](#get_response_headers_policy)
+    - [get_response_headers_policy_config](#get_response_headers_policy_config)
     - [get_streaming_distribution](#get_streaming_distribution)
     - [get_streaming_distribution_config](#get_streaming_distribution_config)
     - [list_cache_policies](#list_cache_policies)
@@ -73,6 +77,7 @@ type annotations stubs module
     - [list_distributions_by_key_group](#list_distributions_by_key_group)
     - [list_distributions_by_origin_request_policy_id](#list_distributions_by_origin_request_policy_id)
     - [list_distributions_by_realtime_log_config](#list_distributions_by_realtime_log_config)
+    - [list_distributions_by_response_headers_policy_id](#list_distributions_by_response_headers_policy_id)
     - [list_distributions_by_web_acl_id](#list_distributions_by_web_acl_id)
     - [list_field_level_encryption_configs](#list_field_level_encryption_configs)
     - [list_field_level_encryption_profiles](#list_field_level_encryption_profiles)
@@ -82,6 +87,7 @@ type annotations stubs module
     - [list_origin_request_policies](#list_origin_request_policies)
     - [list_public_keys](#list_public_keys)
     - [list_realtime_log_configs](#list_realtime_log_configs)
+    - [list_response_headers_policies](#list_response_headers_policies)
     - [list_streaming_distributions](#list_streaming_distributions)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [publish_function](#publish_function)
@@ -98,6 +104,7 @@ type annotations stubs module
     - [update_origin_request_policy](#update_origin_request_policy)
     - [update_public_key](#update_public_key)
     - [update_realtime_log_config](#update_realtime_log_config)
+    - [update_response_headers_policy](#update_response_headers_policy)
     - [update_streaming_distribution](#update_streaming_distribution)
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
@@ -193,6 +200,7 @@ Exceptions:
 - `Exceptions.NoSuchPublicKey`
 - `Exceptions.NoSuchRealtimeLogConfig`
 - `Exceptions.NoSuchResource`
+- `Exceptions.NoSuchResponseHeadersPolicy`
 - `Exceptions.NoSuchStreamingDistribution`
 - `Exceptions.OriginRequestPolicyAlreadyExists`
 - `Exceptions.OriginRequestPolicyInUse`
@@ -204,6 +212,8 @@ Exceptions:
 - `Exceptions.RealtimeLogConfigInUse`
 - `Exceptions.RealtimeLogConfigOwnerMismatch`
 - `Exceptions.ResourceInUse`
+- `Exceptions.ResponseHeadersPolicyAlreadyExists`
+- `Exceptions.ResponseHeadersPolicyInUse`
 - `Exceptions.StreamingDistributionAlreadyExists`
 - `Exceptions.StreamingDistributionNotDisabled`
 - `Exceptions.TestFunctionFailed`
@@ -214,12 +224,14 @@ Exceptions:
 - `Exceptions.TooManyCookieNamesInWhiteList`
 - `Exceptions.TooManyCookiesInCachePolicy`
 - `Exceptions.TooManyCookiesInOriginRequestPolicy`
+- `Exceptions.TooManyCustomHeadersInResponseHeadersPolicy`
 - `Exceptions.TooManyDistributionCNAMEs`
 - `Exceptions.TooManyDistributions`
 - `Exceptions.TooManyDistributionsAssociatedToCachePolicy`
 - `Exceptions.TooManyDistributionsAssociatedToFieldLevelEncryptionConfig`
 - `Exceptions.TooManyDistributionsAssociatedToKeyGroup`
 - `Exceptions.TooManyDistributionsAssociatedToOriginRequestPolicy`
+- `Exceptions.TooManyDistributionsAssociatedToResponseHeadersPolicy`
 - `Exceptions.TooManyDistributionsWithFunctionAssociations`
 - `Exceptions.TooManyDistributionsWithLambdaAssociations`
 - `Exceptions.TooManyDistributionsWithSingleFunctionARN`
@@ -248,6 +260,7 @@ Exceptions:
 - `Exceptions.TooManyQueryStringsInCachePolicy`
 - `Exceptions.TooManyQueryStringsInOriginRequestPolicy`
 - `Exceptions.TooManyRealtimeLogConfigs`
+- `Exceptions.TooManyResponseHeadersPolicies`
 - `Exceptions.TooManyStreamingDistributionCNAMEs`
 - `Exceptions.TooManyStreamingDistributions`
 - `Exceptions.TooManyTrustedSigners`
@@ -591,6 +604,28 @@ Keyword-only arguments:
 Returns
 [CreateRealtimeLogConfigResultTypeDef](./type_defs.md#createrealtimelogconfigresulttypedef).
 
+### create_response_headers_policy
+
+Creates a response headers policy.
+
+Type annotations for
+`boto3.client("cloudfront").create_response_headers_policy` method.
+
+Boto3 documentation:
+[CloudFront.Client.create_response_headers_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_response_headers_policy)
+
+Arguments mapping described in
+[CreateResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#createresponseheaderspolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResponseHeadersPolicyConfig`:
+  [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
+  *(required)*
+
+Returns
+[CreateResponseHeadersPolicyResultTypeDef](./type_defs.md#createresponseheaderspolicyresulttypedef).
+
 ### create_streaming_distribution
 
 This API is deprecated.
@@ -829,6 +864,24 @@ Keyword-only arguments:
 
 - `Name`: `str`
 - `ARN`: `str`
+
+### delete_response_headers_policy
+
+Deletes a response headers policy.
+
+Type annotations for
+`boto3.client("cloudfront").delete_response_headers_policy` method.
+
+Boto3 documentation:
+[CloudFront.Client.delete_response_headers_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_response_headers_policy)
+
+Arguments mapping described in
+[DeleteResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#deleteresponseheaderspolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
 
 ### delete_streaming_distribution
 
@@ -1285,6 +1338,47 @@ Keyword-only arguments:
 Returns
 [GetRealtimeLogConfigResultTypeDef](./type_defs.md#getrealtimelogconfigresulttypedef).
 
+### get_response_headers_policy
+
+Gets a response headers policy, including metadata (the policy’s identifier and
+the date and time when the policy was last modified).
+
+Type annotations for `boto3.client("cloudfront").get_response_headers_policy`
+method.
+
+Boto3 documentation:
+[CloudFront.Client.get_response_headers_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_response_headers_policy)
+
+Arguments mapping described in
+[GetResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#getresponseheaderspolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetResponseHeadersPolicyResultTypeDef](./type_defs.md#getresponseheaderspolicyresulttypedef).
+
+### get_response_headers_policy_config
+
+Gets a response headers policy configuration.
+
+Type annotations for
+`boto3.client("cloudfront").get_response_headers_policy_config` method.
+
+Boto3 documentation:
+[CloudFront.Client.get_response_headers_policy_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_response_headers_policy_config)
+
+Arguments mapping described in
+[GetResponseHeadersPolicyConfigRequestRequestTypeDef](./type_defs.md#getresponseheaderspolicyconfigrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetResponseHeadersPolicyConfigResultTypeDef](./type_defs.md#getresponseheaderspolicyconfigresulttypedef).
+
 ### get_streaming_distribution
 
 Gets information about a specified RTMP distribution, including the
@@ -1507,6 +1601,30 @@ Keyword-only arguments:
 Returns
 [ListDistributionsByRealtimeLogConfigResultTypeDef](./type_defs.md#listdistributionsbyrealtimelogconfigresulttypedef).
 
+### list_distributions_by_response_headers_policy_id
+
+Gets a list of distribution IDs for distributions that have a cache behavior
+that’s associated with the specified response headers policy.
+
+Type annotations for
+`boto3.client("cloudfront").list_distributions_by_response_headers_policy_id`
+method.
+
+Boto3 documentation:
+[CloudFront.Client.list_distributions_by_response_headers_policy_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_response_headers_policy_id)
+
+Arguments mapping described in
+[ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef](./type_defs.md#listdistributionsbyresponseheaderspolicyidrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResponseHeadersPolicyId`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListDistributionsByResponseHeadersPolicyIdResultTypeDef](./type_defs.md#listdistributionsbyresponseheaderspolicyidresulttypedef).
+
 ### list_distributions_by_web_acl_id
 
 List the distributions that are associated with a specified WAF web ACL.
@@ -1575,7 +1693,7 @@ Returns
 
 ### list_functions
 
-Gets a list of all CloudFront functions in your account.
+Gets a list of all CloudFront functions in your Amazon Web Services account.
 
 Type annotations for `boto3.client("cloudfront").list_functions` method.
 
@@ -1698,6 +1816,29 @@ Keyword-only arguments:
 
 Returns
 [ListRealtimeLogConfigsResultTypeDef](./type_defs.md#listrealtimelogconfigsresulttypedef).
+
+### list_response_headers_policies
+
+Gets a list of response headers policies.
+
+Type annotations for
+`boto3.client("cloudfront").list_response_headers_policies` method.
+
+Boto3 documentation:
+[CloudFront.Client.list_response_headers_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_response_headers_policies)
+
+Arguments mapping described in
+[ListResponseHeadersPoliciesRequestRequestTypeDef](./type_defs.md#listresponseheaderspoliciesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Type`:
+  [ResponseHeadersPolicyTypeType](./literals.md#responseheaderspolicytypetype)
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListResponseHeadersPoliciesResultTypeDef](./type_defs.md#listresponseheaderspoliciesresulttypedef).
 
 ### list_streaming_distributions
 
@@ -2050,6 +2191,30 @@ Keyword-only arguments:
 
 Returns
 [UpdateRealtimeLogConfigResultTypeDef](./type_defs.md#updaterealtimelogconfigresulttypedef).
+
+### update_response_headers_policy
+
+Updates a response headers policy.
+
+Type annotations for
+`boto3.client("cloudfront").update_response_headers_policy` method.
+
+Boto3 documentation:
+[CloudFront.Client.update_response_headers_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_response_headers_policy)
+
+Arguments mapping described in
+[UpdateResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#updateresponseheaderspolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResponseHeadersPolicyConfig`:
+  [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
+  *(required)*
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
+
+Returns
+[UpdateResponseHeadersPolicyResultTypeDef](./type_defs.md#updateresponseheaderspolicyresulttypedef).
 
 ### update_streaming_distribution
 

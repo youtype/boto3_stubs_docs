@@ -13,6 +13,9 @@ type annotations stubs module
   - [EndpointTypeType](#endpointtypetype)
   - [FilterTypeType](#filtertypetype)
   - [GidType](#gidtype)
+  - [HdfsAuthenticationTypeType](#hdfsauthenticationtypetype)
+  - [HdfsDataTransferProtectionType](#hdfsdatatransferprotectiontype)
+  - [HdfsRpcProtectionType](#hdfsrpcprotectiontype)
   - [ListAgentsPaginatorName](#listagentspaginatorname)
   - [ListLocationsPaginatorName](#listlocationspaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
@@ -98,6 +101,43 @@ Values:
 - `INT_VALUE`
 - `NAME`
 - `NONE`
+
+## HdfsAuthenticationTypeType
+
+```python
+from mypy_boto3_datasync.literals import HdfsAuthenticationTypeType
+```
+
+Values:
+
+- `KERBEROS`
+- `SIMPLE`
+
+## HdfsDataTransferProtectionType
+
+```python
+from mypy_boto3_datasync.literals import HdfsDataTransferProtectionType
+```
+
+Values:
+
+- `AUTHENTICATION`
+- `DISABLED`
+- `INTEGRITY`
+- `PRIVACY`
+
+## HdfsRpcProtectionType
+
+```python
+from mypy_boto3_datasync.literals import HdfsRpcProtectionType
+```
+
+Values:
+
+- `AUTHENTICATION`
+- `DISABLED`
+- `INTEGRITY`
+- `PRIVACY`
 
 ## ListAgentsPaginatorName
 
@@ -451,6 +491,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`

@@ -11,6 +11,8 @@ type annotations stubs module
   - [DescribeProjectVersionsPaginator](#describeprojectversionspaginator)
   - [DescribeProjectsPaginator](#describeprojectspaginator)
   - [ListCollectionsPaginator](#listcollectionspaginator)
+  - [ListDatasetEntriesPaginator](#listdatasetentriespaginator)
+  - [ListDatasetLabelsPaginator](#listdatasetlabelspaginator)
   - [ListFacesPaginator](#listfacespaginator)
   - [ListStreamProcessorsPaginator](#liststreamprocessorspaginator)
 
@@ -60,6 +62,7 @@ Boto3 documentation:
 
 Arguments for `DescribeProjectsPaginator.paginate` method:
 
+- `ProjectNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -90,6 +93,62 @@ Arguments for `ListCollectionsPaginator.paginate` method:
 
 `ListCollectionsPaginator.paginate` returns
 `_PageIterator`\[[ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef)\].
+
+## ListDatasetEntriesPaginator
+
+Type annotations for
+`boto3.client("rekognition").get_paginator("list_dataset_entries")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_rekognition.paginator import ListDatasetEntriesPaginator
+
+def get_list_dataset_entries_paginator() -> ListDatasetEntriesPaginator:
+    return boto3.client("rekognition").get_paginator("list_dataset_entries")
+```
+
+Boto3 documentation:
+[Rekognition.Paginator.ListDatasetEntries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListDatasetEntries)
+
+Arguments for `ListDatasetEntriesPaginator.paginate` method:
+
+- `DatasetArn`: `str` *(required)*
+- `ContainsLabels`: `Sequence`\[`str`\]
+- `Labeled`: `bool`
+- `SourceRefContains`: `str`
+- `HasErrors`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListDatasetEntriesPaginator.paginate` returns
+`_PageIterator`\[[ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef)\].
+
+## ListDatasetLabelsPaginator
+
+Type annotations for
+`boto3.client("rekognition").get_paginator("list_dataset_labels")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_rekognition.paginator import ListDatasetLabelsPaginator
+
+def get_list_dataset_labels_paginator() -> ListDatasetLabelsPaginator:
+    return boto3.client("rekognition").get_paginator("list_dataset_labels")
+```
+
+Boto3 documentation:
+[Rekognition.Paginator.ListDatasetLabels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListDatasetLabels)
+
+Arguments for `ListDatasetLabelsPaginator.paginate` method:
+
+- `DatasetArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListDatasetLabelsPaginator.paginate` returns
+`_PageIterator`\[[ListDatasetLabelsResponseTypeDef](./type_defs.md#listdatasetlabelsresponsetypedef)\].
 
 ## ListFacesPaginator
 

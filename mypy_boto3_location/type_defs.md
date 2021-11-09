@@ -1006,7 +1006,7 @@ from mypy_boto3_location.type_defs import GetMapGlyphsResponseTypeDef
 
 Required fields:
 
-- `Blob`: `bytes`
+- `Blob`: `StreamingBody`
 - `ContentType`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1030,7 +1030,7 @@ from mypy_boto3_location.type_defs import GetMapSpritesResponseTypeDef
 
 Required fields:
 
-- `Blob`: `bytes`
+- `Blob`: `StreamingBody`
 - `ContentType`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1053,7 +1053,7 @@ from mypy_boto3_location.type_defs import GetMapStyleDescriptorResponseTypeDef
 
 Required fields:
 
-- `Blob`: `bytes`
+- `Blob`: `StreamingBody`
 - `ContentType`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1079,7 +1079,7 @@ from mypy_boto3_location.type_defs import GetMapTileResponseTypeDef
 
 Required fields:
 
-- `Blob`: `bytes`
+- `Blob`: `StreamingBody`
 - `ContentType`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1542,7 +1542,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## SearchForPositionResultTypeDef

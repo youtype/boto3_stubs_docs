@@ -15,6 +15,7 @@ type annotations stubs module
     - [add_association](#add_association)
     - [add_tags](#add_tags)
     - [associate_trial_component](#associate_trial_component)
+    - [batch_describe_model_package](#batch_describe_model_package)
     - [can_paginate](#can_paginate)
     - [create_action](#create_action)
     - [create_algorithm](#create_algorithm)
@@ -248,6 +249,7 @@ type annotations stubs module
     - [update_notebook_instance_lifecycle_config](#update_notebook_instance_lifecycle_config)
     - [update_pipeline](#update_pipeline)
     - [update_pipeline_execution](#update_pipeline_execution)
+    - [update_project](#update_project)
     - [update_training_job](#update_training_job)
     - [update_trial](#update_trial)
     - [update_trial_component](#update_trial_component)
@@ -368,6 +370,29 @@ Keyword-only arguments:
 
 Returns
 [AssociateTrialComponentResponseTypeDef](./type_defs.md#associatetrialcomponentresponsetypedef).
+
+### batch_describe_model_package
+
+This action batch describes a list of versioned model packages See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07- 24/BatchDescribeModelPackage>`\_
+**Request Syntax** response = client.batch_describe_model_package(
+ModelPackageArnList=\[ ...
+
+Type annotations for `boto3.client("sagemaker").batch_describe_model_package`
+method.
+
+Boto3 documentation:
+[SageMaker.Client.batch_describe_model_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.batch_describe_model_package)
+
+Arguments mapping described in
+[BatchDescribeModelPackageInputRequestTypeDef](./type_defs.md#batchdescribemodelpackageinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ModelPackageArnList`: `Sequence`\[`str`\] *(required)*
+
+Returns
+[BatchDescribeModelPackageOutputTypeDef](./type_defs.md#batchdescribemodelpackageoutputtypedef).
 
 ### can_paginate
 
@@ -712,6 +737,10 @@ Keyword-only arguments:
   [AppNetworkAccessTypeType](./literals.md#appnetworkaccesstypetype)
 - `HomeEfsFileSystemKmsKeyId`: `str`
 - `KmsKeyId`: `str`
+- `AppSecurityGroupManagement`:
+  [AppSecurityGroupManagementType](./literals.md#appsecuritygroupmanagementtype)
+- `DomainSettings`:
+  [DomainSettingsTypeDef](./type_defs.md#domainsettingstypedef)
 
 Returns
 [CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
@@ -758,6 +787,8 @@ Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `EndpointConfigName`: `str` *(required)*
+- `DeploymentConfig`:
+  [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -1146,6 +1177,7 @@ Keyword-only arguments:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
 - `ModelMetrics`: [ModelMetricsTypeDef](./type_defs.md#modelmetricstypedef)
 - `ClientToken`: `str`
+- `CustomerMetadataProperties`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateModelPackageOutputTypeDef](./type_defs.md#createmodelpackageoutputtypedef).
@@ -2904,7 +2936,7 @@ Returns
 ### describe_model_package
 
 Returns a description of the specified model package, which is used to create
-Amazon SageMaker models or list them on Amazon Web Services Marketplace.
+SageMaker models or list them on Amazon Web Services Marketplace.
 
 Type annotations for `boto3.client("sagemaker").describe_model_package` method.
 
@@ -5465,6 +5497,8 @@ Keyword-only arguments:
 - `DomainId`: `str` *(required)*
 - `DefaultUserSettings`:
   [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
+- `DomainSettingsForUpdate`:
+  [DomainSettingsForUpdateTypeDef](./type_defs.md#domainsettingsforupdatetypedef)
 
 Returns
 [UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef).
@@ -5492,6 +5526,7 @@ Keyword-only arguments:
   `Sequence`\[[VariantPropertyTypeDef](./type_defs.md#variantpropertytypedef)\]
 - `DeploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
+- `RetainDeploymentConfig`: `bool`
 
 Returns
 [UpdateEndpointOutputTypeDef](./type_defs.md#updateendpointoutputtypedef).
@@ -5580,8 +5615,10 @@ Keyword-only arguments:
 
 - `ModelPackageArn`: `str` *(required)*
 - `ModelApprovalStatus`:
-  [ModelApprovalStatusType](./literals.md#modelapprovalstatustype) *(required)*
+  [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 - `ApprovalDescription`: `str`
+- `CustomerMetadataProperties`: `Mapping`\[`str`, `str`\]
+- `CustomerMetadataPropertiesToRemove`: `Sequence`\[`str`\]
 
 Returns
 [UpdateModelPackageOutputTypeDef](./type_defs.md#updatemodelpackageoutputtypedef).
@@ -5709,6 +5746,30 @@ Keyword-only arguments:
 
 Returns
 [UpdatePipelineExecutionResponseTypeDef](./type_defs.md#updatepipelineexecutionresponsetypedef).
+
+### update_project
+
+Updates a machine learning (ML) project that is created from a template that
+sets up an ML pipeline from training to deploying an approved model.
+
+Type annotations for `boto3.client("sagemaker").update_project` method.
+
+Boto3 documentation:
+[SageMaker.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_project)
+
+Arguments mapping described in
+[UpdateProjectInputRequestTypeDef](./type_defs.md#updateprojectinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ProjectName`: `str` *(required)*
+- `ProjectDescription`: `str`
+- `ServiceCatalogProvisioningUpdateDetails`:
+  [ServiceCatalogProvisioningUpdateDetailsTypeDef](./type_defs.md#servicecatalogprovisioningupdatedetailstypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[UpdateProjectOutputTypeDef](./type_defs.md#updateprojectoutputtypedef).
 
 ### update_training_job
 

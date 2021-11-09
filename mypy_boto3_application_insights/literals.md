@@ -11,6 +11,7 @@ type annotations stubs module
   - [CloudWatchEventSourceType](#cloudwatcheventsourcetype)
   - [ConfigurationEventResourceTypeType](#configurationeventresourcetypetype)
   - [ConfigurationEventStatusType](#configurationeventstatustype)
+  - [DiscoveryTypeType](#discoverytypetype)
   - [FeedbackKeyType](#feedbackkeytype)
   - [FeedbackValueType](#feedbackvaluetype)
   - [LogFilterType](#logfiltertype)
@@ -57,6 +58,17 @@ Values:
 - `ERROR`
 - `INFO`
 - `WARN`
+
+## DiscoveryTypeType
+
+```python
+from mypy_boto3_application_insights.literals import DiscoveryTypeType
+```
+
+Values:
+
+- `ACCOUNT_BASED`
+- `RESOURCE_GROUP_BASED`
 
 ## FeedbackKeyType
 
@@ -125,6 +137,7 @@ Values:
 
 - `IGNORE`
 - `PENDING`
+- `RECURRING`
 - `RESOLVED`
 
 ## TierType
@@ -145,8 +158,13 @@ Values:
 - `MYSQL`
 - `ORACLE`
 - `POSTGRESQL`
+- `SAP_HANA`
+- `SAP_HANA_HIGH_AVAILABILITY`
+- `SAP_HANA_MULTI_NODE`
+- `SAP_HANA_SINGLE_NODE`
 - `SQL_SERVER`
 - `SQL_SERVER_ALWAYSON_AVAILABILITY_GROUP`
+- `SQL_SERVER_FAILOVER_CLUSTER_INSTANCE`
 
 ## ServiceName
 
@@ -188,6 +206,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`

@@ -47,6 +47,7 @@ from mypy_boto3_rds.client import RDSClient
 - [copy_db_snapshot](./client.md#copy_db_snapshot)
 - [copy_option_group](./client.md#copy_option_group)
 - [create_custom_availability_zone](./client.md#create_custom_availability_zone)
+- [create_custom_db_engine_version](./client.md#create_custom_db_engine_version)
 - [create_db_cluster](./client.md#create_db_cluster)
 - [create_db_cluster_endpoint](./client.md#create_db_cluster_endpoint)
 - [create_db_cluster_parameter_group](./client.md#create_db_cluster_parameter_group)
@@ -63,6 +64,7 @@ from mypy_boto3_rds.client import RDSClient
 - [create_global_cluster](./client.md#create_global_cluster)
 - [create_option_group](./client.md#create_option_group)
 - [delete_custom_availability_zone](./client.md#delete_custom_availability_zone)
+- [delete_custom_db_engine_version](./client.md#delete_custom_db_engine_version)
 - [delete_db_cluster](./client.md#delete_db_cluster)
 - [delete_db_cluster_endpoint](./client.md#delete_db_cluster_endpoint)
 - [delete_db_cluster_parameter_group](./client.md#delete_db_cluster_parameter_group)
@@ -132,6 +134,7 @@ from mypy_boto3_rds.client import RDSClient
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [modify_certificates](./client.md#modify_certificates)
 - [modify_current_db_cluster_capacity](./client.md#modify_current_db_cluster_capacity)
+- [modify_custom_db_engine_version](./client.md#modify_custom_db_engine_version)
 - [modify_db_cluster](./client.md#modify_db_cluster)
 - [modify_db_cluster_endpoint](./client.md#modify_db_cluster_endpoint)
 - [modify_db_cluster_parameter_group](./client.md#modify_db_cluster_parameter_group)
@@ -189,6 +192,9 @@ RDSClient [exceptions](./client.md#exceptions)
 - CustomAvailabilityZoneAlreadyExistsFault
 - CustomAvailabilityZoneNotFoundFault
 - CustomAvailabilityZoneQuotaExceededFault
+- CustomDBEngineVersionAlreadyExistsFault
+- CustomDBEngineVersionNotFoundFault
+- CustomDBEngineVersionQuotaExceededFault
 - DBClusterAlreadyExistsFault
 - DBClusterBacktrackNotFoundFault
 - DBClusterEndpointAlreadyExistsFault
@@ -251,6 +257,7 @@ RDSClient [exceptions](./client.md#exceptions)
 - InsufficientDBClusterCapacityFault
 - InsufficientDBInstanceCapacityFault
 - InsufficientStorageClusterCapacityFault
+- InvalidCustomDBEngineVersionStateFault
 - InvalidDBClusterCapacityFault
 - InvalidDBClusterEndpointStateFault
 - InvalidDBClusterSnapshotStateFault
@@ -380,6 +387,8 @@ from mypy_boto3_rds.literals import ActivityStreamModeType, ...
 - [ActivityStreamStatusType](./literals.md#activitystreamstatustype)
 - [ApplyMethodType](./literals.md#applymethodtype)
 - [AuthSchemeType](./literals.md#authschemetype)
+- [AutomationModeType](./literals.md#automationmodetype)
+- [CustomEngineVersionStatusType](./literals.md#customengineversionstatustype)
 - [DBClusterSnapshotAvailableWaiterName](./literals.md#dbclustersnapshotavailablewaitername)
 - [DBClusterSnapshotDeletedWaiterName](./literals.md#dbclustersnapshotdeletedwaitername)
 - [DBInstanceAvailableWaiterName](./literals.md#dbinstanceavailablewaitername)
@@ -486,6 +495,7 @@ from mypy_boto3_rds.type_defs import AccountAttributesMessageTypeDef, ...
 - [CopyOptionGroupResultTypeDef](./type_defs.md#copyoptiongroupresulttypedef)
 - [CreateCustomAvailabilityZoneMessageRequestTypeDef](./type_defs.md#createcustomavailabilityzonemessagerequesttypedef)
 - [CreateCustomAvailabilityZoneResultTypeDef](./type_defs.md#createcustomavailabilityzoneresulttypedef)
+- [CreateCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#createcustomdbengineversionmessagerequesttypedef)
 - [CreateDBClusterEndpointMessageRequestTypeDef](./type_defs.md#createdbclusterendpointmessagerequesttypedef)
 - [CreateDBClusterMessageRequestTypeDef](./type_defs.md#createdbclustermessagerequesttypedef)
 - [CreateDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#createdbclusterparametergroupmessagerequesttypedef)
@@ -538,6 +548,7 @@ from mypy_boto3_rds.type_defs import AccountAttributesMessageTypeDef, ...
 - [DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef)
 - [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
 - [DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef)
+- [DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef)
 - [DBEngineVersionTypeDef](./type_defs.md#dbengineversiontypedef)
 - [DBInstanceAutomatedBackupMessageTypeDef](./type_defs.md#dbinstanceautomatedbackupmessagetypedef)
 - [DBInstanceAutomatedBackupTypeDef](./type_defs.md#dbinstanceautomatedbackuptypedef)
@@ -566,6 +577,7 @@ from mypy_boto3_rds.type_defs import AccountAttributesMessageTypeDef, ...
 - [DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef)
 - [DeleteCustomAvailabilityZoneMessageRequestTypeDef](./type_defs.md#deletecustomavailabilityzonemessagerequesttypedef)
 - [DeleteCustomAvailabilityZoneResultTypeDef](./type_defs.md#deletecustomavailabilityzoneresulttypedef)
+- [DeleteCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#deletecustomdbengineversionmessagerequesttypedef)
 - [DeleteDBClusterEndpointMessageRequestTypeDef](./type_defs.md#deletedbclusterendpointmessagerequesttypedef)
 - [DeleteDBClusterMessageRequestTypeDef](./type_defs.md#deletedbclustermessagerequesttypedef)
 - [DeleteDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#deletedbclusterparametergroupmessagerequesttypedef)
@@ -678,6 +690,7 @@ from mypy_boto3_rds.type_defs import AccountAttributesMessageTypeDef, ...
 - [ModifyCertificatesMessageRequestTypeDef](./type_defs.md#modifycertificatesmessagerequesttypedef)
 - [ModifyCertificatesResultTypeDef](./type_defs.md#modifycertificatesresulttypedef)
 - [ModifyCurrentDBClusterCapacityMessageRequestTypeDef](./type_defs.md#modifycurrentdbclustercapacitymessagerequesttypedef)
+- [ModifyCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#modifycustomdbengineversionmessagerequesttypedef)
 - [ModifyDBClusterEndpointMessageRequestTypeDef](./type_defs.md#modifydbclusterendpointmessagerequesttypedef)
 - [ModifyDBClusterMessageRequestTypeDef](./type_defs.md#modifydbclustermessagerequesttypedef)
 - [ModifyDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#modifydbclusterparametergroupmessagerequesttypedef)

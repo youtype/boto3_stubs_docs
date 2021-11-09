@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Literals for boto3 Route53Resolver module](#literals-for-boto3-route53resolver-module)
   - [ActionType](#actiontype)
+  - [AutodefinedReverseFlagType](#autodefinedreverseflagtype)
   - [BlockOverrideDnsTypeType](#blockoverridednstypetype)
   - [BlockResponseType](#blockresponsetype)
   - [FirewallDomainImportOperationType](#firewalldomainimportoperationtype)
@@ -24,6 +25,7 @@ type annotations stubs module
   - [ListFirewallRuleGroupAssociationsPaginatorName](#listfirewallrulegroupassociationspaginatorname)
   - [ListFirewallRuleGroupsPaginatorName](#listfirewallrulegroupspaginatorname)
   - [ListFirewallRulesPaginatorName](#listfirewallrulespaginatorname)
+  - [ListResolverConfigsPaginatorName](#listresolverconfigspaginatorname)
   - [ListResolverDnssecConfigsPaginatorName](#listresolverdnssecconfigspaginatorname)
   - [ListResolverEndpointIpAddressesPaginatorName](#listresolverendpointipaddressespaginatorname)
   - [ListResolverEndpointsPaginatorName](#listresolverendpointspaginatorname)
@@ -33,6 +35,7 @@ type annotations stubs module
   - [ListResolverRulesPaginatorName](#listresolverrulespaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
   - [MutationProtectionStatusType](#mutationprotectionstatustype)
+  - [ResolverAutodefinedReverseStatusType](#resolverautodefinedreversestatustype)
   - [ResolverDNSSECValidationStatusType](#resolverdnssecvalidationstatustype)
   - [ResolverEndpointDirectionType](#resolverendpointdirectiontype)
   - [ResolverEndpointStatusType](#resolverendpointstatustype)
@@ -59,6 +62,17 @@ Values:
 - `ALERT`
 - `ALLOW`
 - `BLOCK`
+
+## AutodefinedReverseFlagType
+
+```python
+from mypy_boto3_route53resolver.literals import AutodefinedReverseFlagType
+```
+
+Values:
+
+- `DISABLE`
+- `ENABLE`
 
 ## BlockOverrideDnsTypeType
 
@@ -232,6 +246,16 @@ Values:
 
 - `list_firewall_rules`
 
+## ListResolverConfigsPaginatorName
+
+```python
+from mypy_boto3_route53resolver.literals import ListResolverConfigsPaginatorName
+```
+
+Values:
+
+- `list_resolver_configs`
+
 ## ListResolverDnssecConfigsPaginatorName
 
 ```python
@@ -322,6 +346,19 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+## ResolverAutodefinedReverseStatusType
+
+```python
+from mypy_boto3_route53resolver.literals import ResolverAutodefinedReverseStatusType
+```
+
+Values:
+
+- `DISABLED`
+- `DISABLING`
+- `ENABLED`
+- `ENABLING`
 
 ## ResolverDNSSECValidationStatusType
 
@@ -515,6 +552,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`
@@ -783,6 +821,7 @@ Values:
 - `list_firewall_rule_group_associations`
 - `list_firewall_rule_groups`
 - `list_firewall_rules`
+- `list_resolver_configs`
 - `list_resolver_dnssec_configs`
 - `list_resolver_endpoint_ip_addresses`
 - `list_resolver_endpoints`

@@ -8,7 +8,56 @@ type annotations stubs module
 [mypy_boto3_chime_sdk_identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
 
 - [Literals for boto3 ChimeSDKIdentity module](#literals-for-boto3-chimesdkidentity-module)
+  - [AllowMessagesType](#allowmessagestype)
+  - [AppInstanceUserEndpointTypeType](#appinstanceuserendpointtypetype)
+  - [EndpointStatusReasonType](#endpointstatusreasontype)
+  - [EndpointStatusType](#endpointstatustype)
   - [ServiceName](#servicename)
+
+## AllowMessagesType
+
+```python
+from mypy_boto3_chime_sdk_identity.literals import AllowMessagesType
+```
+
+Values:
+
+- `ALL`
+- `NONE`
+
+## AppInstanceUserEndpointTypeType
+
+```python
+from mypy_boto3_chime_sdk_identity.literals import AppInstanceUserEndpointTypeType
+```
+
+Values:
+
+- `APNS`
+- `APNS_SANDBOX`
+- `GCM`
+
+## EndpointStatusReasonType
+
+```python
+from mypy_boto3_chime_sdk_identity.literals import EndpointStatusReasonType
+```
+
+Values:
+
+- `INVALID_DEVICE_TOKEN`
+- `INVALID_PINPOINT_ARN`
+
+## EndpointStatusType
+
+```python
+from mypy_boto3_chime_sdk_identity.literals import EndpointStatusType
+```
+
+Values:
+
+- `ACTIVE`
+- `INACTIVE`
 
 ## ServiceName
 
@@ -50,6 +99,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`

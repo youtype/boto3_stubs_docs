@@ -75,7 +75,7 @@ from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointOutputTypeDef
 
 Required fields:
 
-- `Body`: `bytes`
+- `Body`: `StreamingBody`
 - `ContentType`: `str`
 - `InvokedProductionVariant`: `str`
 - `CustomAttributes`: `str`
@@ -93,5 +93,5 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`

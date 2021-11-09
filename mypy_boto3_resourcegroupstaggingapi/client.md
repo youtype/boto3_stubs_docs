@@ -155,7 +155,7 @@ Returns
 ### get_resources
 
 Returns all the tagged or previously tagged resources that are located in the
-specified Region for the AWS account.
+specified Amazon Web Services Region for the account.
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").get_resources`
 method.
@@ -182,8 +182,8 @@ Returns [GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef).
 
 ### get_tag_keys
 
-Returns all tag keys currently in use in the specified Region for the calling
-AWS account.
+Returns all tag keys currently in use in the specified Amazon Web Services
+Region for the calling account.
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_keys`
 method.
@@ -202,8 +202,8 @@ Returns [GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef).
 
 ### get_tag_values
 
-Returns all tag values for the specified key that are used in the specified AWS
-Region for the calling AWS account.
+Returns all tag values for the specified key that are used in the specified
+Amazon Web Services Region for the calling account.
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_values`
 method.

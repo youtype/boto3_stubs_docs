@@ -12,15 +12,23 @@ type annotations stubs module
   - [AbpV1_1TypeDef](#abpv1_1typedef)
   - [AssociateAwsAccountWithPartnerAccountRequestRequestTypeDef](#associateawsaccountwithpartneraccountrequestrequesttypedef)
   - [AssociateAwsAccountWithPartnerAccountResponseTypeDef](#associateawsaccountwithpartneraccountresponsetypedef)
+  - [AssociateMulticastGroupWithFuotaTaskRequestRequestTypeDef](#associatemulticastgroupwithfuotataskrequestrequesttypedef)
+  - [AssociateWirelessDeviceWithFuotaTaskRequestRequestTypeDef](#associatewirelessdevicewithfuotataskrequestrequesttypedef)
+  - [AssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef](#associatewirelessdevicewithmulticastgrouprequestrequesttypedef)
   - [AssociateWirelessDeviceWithThingRequestRequestTypeDef](#associatewirelessdevicewiththingrequestrequesttypedef)
   - [AssociateWirelessGatewayWithCertificateRequestRequestTypeDef](#associatewirelessgatewaywithcertificaterequestrequesttypedef)
   - [AssociateWirelessGatewayWithCertificateResponseTypeDef](#associatewirelessgatewaywithcertificateresponsetypedef)
   - [AssociateWirelessGatewayWithThingRequestRequestTypeDef](#associatewirelessgatewaywiththingrequestrequesttypedef)
+  - [CancelMulticastGroupSessionRequestRequestTypeDef](#cancelmulticastgroupsessionrequestrequesttypedef)
   - [CertificateListTypeDef](#certificatelisttypedef)
   - [CreateDestinationRequestRequestTypeDef](#createdestinationrequestrequesttypedef)
   - [CreateDestinationResponseTypeDef](#createdestinationresponsetypedef)
   - [CreateDeviceProfileRequestRequestTypeDef](#createdeviceprofilerequestrequesttypedef)
   - [CreateDeviceProfileResponseTypeDef](#createdeviceprofileresponsetypedef)
+  - [CreateFuotaTaskRequestRequestTypeDef](#createfuotataskrequestrequesttypedef)
+  - [CreateFuotaTaskResponseTypeDef](#createfuotataskresponsetypedef)
+  - [CreateMulticastGroupRequestRequestTypeDef](#createmulticastgrouprequestrequesttypedef)
+  - [CreateMulticastGroupResponseTypeDef](#createmulticastgroupresponsetypedef)
   - [CreateServiceProfileRequestRequestTypeDef](#createserviceprofilerequestrequesttypedef)
   - [CreateServiceProfileResponseTypeDef](#createserviceprofileresponsetypedef)
   - [CreateWirelessDeviceRequestRequestTypeDef](#createwirelessdevicerequestrequesttypedef)
@@ -33,6 +41,8 @@ type annotations stubs module
   - [CreateWirelessGatewayTaskResponseTypeDef](#createwirelessgatewaytaskresponsetypedef)
   - [DeleteDestinationRequestRequestTypeDef](#deletedestinationrequestrequesttypedef)
   - [DeleteDeviceProfileRequestRequestTypeDef](#deletedeviceprofilerequestrequesttypedef)
+  - [DeleteFuotaTaskRequestRequestTypeDef](#deletefuotataskrequestrequesttypedef)
+  - [DeleteMulticastGroupRequestRequestTypeDef](#deletemulticastgrouprequestrequesttypedef)
   - [DeleteServiceProfileRequestRequestTypeDef](#deleteserviceprofilerequestrequesttypedef)
   - [DeleteWirelessDeviceRequestRequestTypeDef](#deletewirelessdevicerequestrequesttypedef)
   - [DeleteWirelessGatewayRequestRequestTypeDef](#deletewirelessgatewayrequestrequesttypedef)
@@ -40,17 +50,31 @@ type annotations stubs module
   - [DeleteWirelessGatewayTaskRequestRequestTypeDef](#deletewirelessgatewaytaskrequestrequesttypedef)
   - [DestinationsTypeDef](#destinationstypedef)
   - [DeviceProfileTypeDef](#deviceprofiletypedef)
+  - [DeviceRegistrationStateEventConfigurationTypeDef](#deviceregistrationstateeventconfigurationtypedef)
   - [DisassociateAwsAccountFromPartnerAccountRequestRequestTypeDef](#disassociateawsaccountfrompartneraccountrequestrequesttypedef)
+  - [DisassociateMulticastGroupFromFuotaTaskRequestRequestTypeDef](#disassociatemulticastgroupfromfuotataskrequestrequesttypedef)
+  - [DisassociateWirelessDeviceFromFuotaTaskRequestRequestTypeDef](#disassociatewirelessdevicefromfuotataskrequestrequesttypedef)
+  - [DisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef](#disassociatewirelessdevicefrommulticastgrouprequestrequesttypedef)
   - [DisassociateWirelessDeviceFromThingRequestRequestTypeDef](#disassociatewirelessdevicefromthingrequestrequesttypedef)
   - [DisassociateWirelessGatewayFromCertificateRequestRequestTypeDef](#disassociatewirelessgatewayfromcertificaterequestrequesttypedef)
   - [DisassociateWirelessGatewayFromThingRequestRequestTypeDef](#disassociatewirelessgatewayfromthingrequestrequesttypedef)
+  - [FPortsTypeDef](#fportstypedef)
+  - [FuotaTaskTypeDef](#fuotatasktypedef)
   - [GetDestinationRequestRequestTypeDef](#getdestinationrequestrequesttypedef)
   - [GetDestinationResponseTypeDef](#getdestinationresponsetypedef)
   - [GetDeviceProfileRequestRequestTypeDef](#getdeviceprofilerequestrequesttypedef)
   - [GetDeviceProfileResponseTypeDef](#getdeviceprofileresponsetypedef)
+  - [GetFuotaTaskRequestRequestTypeDef](#getfuotataskrequestrequesttypedef)
+  - [GetFuotaTaskResponseTypeDef](#getfuotataskresponsetypedef)
   - [GetLogLevelsByResourceTypesResponseTypeDef](#getloglevelsbyresourcetypesresponsetypedef)
+  - [GetMulticastGroupRequestRequestTypeDef](#getmulticastgrouprequestrequesttypedef)
+  - [GetMulticastGroupResponseTypeDef](#getmulticastgroupresponsetypedef)
+  - [GetMulticastGroupSessionRequestRequestTypeDef](#getmulticastgroupsessionrequestrequesttypedef)
+  - [GetMulticastGroupSessionResponseTypeDef](#getmulticastgroupsessionresponsetypedef)
   - [GetPartnerAccountRequestRequestTypeDef](#getpartneraccountrequestrequesttypedef)
   - [GetPartnerAccountResponseTypeDef](#getpartneraccountresponsetypedef)
+  - [GetResourceEventConfigurationRequestRequestTypeDef](#getresourceeventconfigurationrequestrequesttypedef)
+  - [GetResourceEventConfigurationResponseTypeDef](#getresourceeventconfigurationresponsetypedef)
   - [GetResourceLogLevelRequestRequestTypeDef](#getresourceloglevelrequestrequesttypedef)
   - [GetResourceLogLevelResponseTypeDef](#getresourceloglevelresponsetypedef)
   - [GetServiceEndpointRequestRequestTypeDef](#getserviceendpointrequestrequesttypedef)
@@ -77,6 +101,12 @@ type annotations stubs module
   - [ListDestinationsResponseTypeDef](#listdestinationsresponsetypedef)
   - [ListDeviceProfilesRequestRequestTypeDef](#listdeviceprofilesrequestrequesttypedef)
   - [ListDeviceProfilesResponseTypeDef](#listdeviceprofilesresponsetypedef)
+  - [ListFuotaTasksRequestRequestTypeDef](#listfuotatasksrequestrequesttypedef)
+  - [ListFuotaTasksResponseTypeDef](#listfuotatasksresponsetypedef)
+  - [ListMulticastGroupsByFuotaTaskRequestRequestTypeDef](#listmulticastgroupsbyfuotataskrequestrequesttypedef)
+  - [ListMulticastGroupsByFuotaTaskResponseTypeDef](#listmulticastgroupsbyfuotataskresponsetypedef)
+  - [ListMulticastGroupsRequestRequestTypeDef](#listmulticastgroupsrequestrequesttypedef)
+  - [ListMulticastGroupsResponseTypeDef](#listmulticastgroupsresponsetypedef)
   - [ListPartnerAccountsRequestRequestTypeDef](#listpartneraccountsrequestrequesttypedef)
   - [ListPartnerAccountsResponseTypeDef](#listpartneraccountsresponsetypedef)
   - [ListServiceProfilesRequestRequestTypeDef](#listserviceprofilesrequestrequesttypedef)
@@ -92,22 +122,35 @@ type annotations stubs module
   - [LoRaWANDeviceMetadataTypeDef](#lorawandevicemetadatatypedef)
   - [LoRaWANDeviceProfileTypeDef](#lorawandeviceprofiletypedef)
   - [LoRaWANDeviceTypeDef](#lorawandevicetypedef)
+  - [LoRaWANFuotaTaskGetInfoTypeDef](#lorawanfuotataskgetinfotypedef)
+  - [LoRaWANFuotaTaskTypeDef](#lorawanfuotatasktypedef)
   - [LoRaWANGatewayCurrentVersionTypeDef](#lorawangatewaycurrentversiontypedef)
   - [LoRaWANGatewayMetadataTypeDef](#lorawangatewaymetadatatypedef)
   - [LoRaWANGatewayTypeDef](#lorawangatewaytypedef)
   - [LoRaWANGatewayVersionTypeDef](#lorawangatewayversiontypedef)
   - [LoRaWANGetServiceProfileInfoTypeDef](#lorawangetserviceprofileinfotypedef)
   - [LoRaWANListDeviceTypeDef](#lorawanlistdevicetypedef)
+  - [LoRaWANMulticastGetTypeDef](#lorawanmulticastgettypedef)
+  - [LoRaWANMulticastMetadataTypeDef](#lorawanmulticastmetadatatypedef)
+  - [LoRaWANMulticastSessionTypeDef](#lorawanmulticastsessiontypedef)
+  - [LoRaWANMulticastTypeDef](#lorawanmulticasttypedef)
   - [LoRaWANSendDataToDeviceTypeDef](#lorawansenddatatodevicetypedef)
   - [LoRaWANServiceProfileTypeDef](#lorawanserviceprofiletypedef)
+  - [LoRaWANStartFuotaTaskTypeDef](#lorawanstartfuotatasktypedef)
   - [LoRaWANUpdateDeviceTypeDef](#lorawanupdatedevicetypedef)
   - [LoRaWANUpdateGatewayTaskCreateTypeDef](#lorawanupdategatewaytaskcreatetypedef)
   - [LoRaWANUpdateGatewayTaskEntryTypeDef](#lorawanupdategatewaytaskentrytypedef)
+  - [MulticastGroupByFuotaTaskTypeDef](#multicastgroupbyfuotatasktypedef)
+  - [MulticastGroupTypeDef](#multicastgrouptypedef)
+  - [MulticastWirelessMetadataTypeDef](#multicastwirelessmetadatatypedef)
   - [OtaaV1_0_xTypeDef](#otaav1_0_xtypedef)
   - [OtaaV1_1TypeDef](#otaav1_1typedef)
+  - [ProximityEventConfigurationTypeDef](#proximityeventconfigurationtypedef)
   - [PutResourceLogLevelRequestRequestTypeDef](#putresourceloglevelrequestrequesttypedef)
   - [ResetResourceLogLevelRequestRequestTypeDef](#resetresourceloglevelrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SendDataToMulticastGroupRequestRequestTypeDef](#senddatatomulticastgrouprequestrequesttypedef)
+  - [SendDataToMulticastGroupResponseTypeDef](#senddatatomulticastgroupresponsetypedef)
   - [SendDataToWirelessDeviceRequestRequestTypeDef](#senddatatowirelessdevicerequestrequesttypedef)
   - [SendDataToWirelessDeviceResponseTypeDef](#senddatatowirelessdeviceresponsetypedef)
   - [ServiceProfileTypeDef](#serviceprofiletypedef)
@@ -117,17 +160,25 @@ type annotations stubs module
   - [SidewalkAccountInfoWithFingerprintTypeDef](#sidewalkaccountinfowithfingerprinttypedef)
   - [SidewalkDeviceMetadataTypeDef](#sidewalkdevicemetadatatypedef)
   - [SidewalkDeviceTypeDef](#sidewalkdevicetypedef)
+  - [SidewalkEventNotificationConfigurationsTypeDef](#sidewalkeventnotificationconfigurationstypedef)
   - [SidewalkListDeviceTypeDef](#sidewalklistdevicetypedef)
   - [SidewalkSendDataToDeviceTypeDef](#sidewalksenddatatodevicetypedef)
   - [SidewalkUpdateAccountTypeDef](#sidewalkupdateaccounttypedef)
+  - [StartBulkAssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef](#startbulkassociatewirelessdevicewithmulticastgrouprequestrequesttypedef)
+  - [StartBulkDisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef](#startbulkdisassociatewirelessdevicefrommulticastgrouprequestrequesttypedef)
+  - [StartFuotaTaskRequestRequestTypeDef](#startfuotataskrequestrequesttypedef)
+  - [StartMulticastGroupSessionRequestRequestTypeDef](#startmulticastgroupsessionrequestrequesttypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TestWirelessDeviceRequestRequestTypeDef](#testwirelessdevicerequestrequesttypedef)
   - [TestWirelessDeviceResponseTypeDef](#testwirelessdeviceresponsetypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateDestinationRequestRequestTypeDef](#updatedestinationrequestrequesttypedef)
+  - [UpdateFuotaTaskRequestRequestTypeDef](#updatefuotataskrequestrequesttypedef)
   - [UpdateLogLevelsByResourceTypesRequestRequestTypeDef](#updateloglevelsbyresourcetypesrequestrequesttypedef)
+  - [UpdateMulticastGroupRequestRequestTypeDef](#updatemulticastgrouprequestrequesttypedef)
   - [UpdatePartnerAccountRequestRequestTypeDef](#updatepartneraccountrequestrequesttypedef)
+  - [UpdateResourceEventConfigurationRequestRequestTypeDef](#updateresourceeventconfigurationrequestrequesttypedef)
   - [UpdateWirelessDeviceRequestRequestTypeDef](#updatewirelessdevicerequestrequesttypedef)
   - [UpdateWirelessGatewayRequestRequestTypeDef](#updatewirelessgatewayrequestrequesttypedef)
   - [UpdateWirelessGatewayTaskCreateTypeDef](#updatewirelessgatewaytaskcreatetypedef)
@@ -194,6 +245,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## AssociateMulticastGroupWithFuotaTaskRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import AssociateMulticastGroupWithFuotaTaskRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `MulticastGroupId`: `str`
+
+## AssociateWirelessDeviceWithFuotaTaskRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import AssociateWirelessDeviceWithFuotaTaskRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `WirelessDeviceId`: `str`
+
+## AssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import AssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `WirelessDeviceId`: `str`
+
 ## AssociateWirelessDeviceWithThingRequestRequestTypeDef
 
 ```python
@@ -238,6 +322,16 @@ Required fields:
 
 - `Id`: `str`
 - `ThingArn`: `str`
+
+## CancelMulticastGroupSessionRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import CancelMulticastGroupSessionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
 
 ## CertificateListTypeDef
 
@@ -300,6 +394,68 @@ Optional fields:
 
 ```python
 from mypy_boto3_iotwireless.type_defs import CreateDeviceProfileResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateFuotaTaskRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import CreateFuotaTaskRequestRequestTypeDef
+```
+
+Required fields:
+
+- `FirmwareUpdateImage`: `str`
+- `FirmwareUpdateRole`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `ClientRequestToken`: `str`
+- `LoRaWAN`: [LoRaWANFuotaTaskTypeDef](./type_defs.md#lorawanfuotatasktypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateFuotaTaskResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import CreateFuotaTaskResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateMulticastGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import CreateMulticastGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `LoRaWAN`: [LoRaWANMulticastTypeDef](./type_defs.md#lorawanmulticasttypedef)
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `ClientRequestToken`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateMulticastGroupResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import CreateMulticastGroupResponseTypeDef
 ```
 
 Required fields:
@@ -474,6 +630,26 @@ Required fields:
 
 - `Id`: `str`
 
+## DeleteFuotaTaskRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DeleteFuotaTaskRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DeleteMulticastGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DeleteMulticastGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
 ## DeleteServiceProfileRequestRequestTypeDef
 
 ```python
@@ -551,6 +727,17 @@ Optional fields:
 - `Name`: `str`
 - `Id`: `str`
 
+## DeviceRegistrationStateEventConfigurationTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DeviceRegistrationStateEventConfigurationTypeDef
+```
+
+Optional fields:
+
+- `Sidewalk`:
+  [SidewalkEventNotificationConfigurationsTypeDef](./type_defs.md#sidewalkeventnotificationconfigurationstypedef)
+
 ## DisassociateAwsAccountFromPartnerAccountRequestRequestTypeDef
 
 ```python
@@ -562,6 +749,39 @@ Required fields:
 - `PartnerAccountId`: `str`
 - `PartnerType`: `Literal['Sidewalk']` (see
   [PartnerTypeType](./literals.md#partnertypetype))
+
+## DisassociateMulticastGroupFromFuotaTaskRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DisassociateMulticastGroupFromFuotaTaskRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `MulticastGroupId`: `str`
+
+## DisassociateWirelessDeviceFromFuotaTaskRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DisassociateWirelessDeviceFromFuotaTaskRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `WirelessDeviceId`: `str`
+
+## DisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `WirelessDeviceId`: `str`
 
 ## DisassociateWirelessDeviceFromThingRequestRequestTypeDef
 
@@ -592,6 +812,30 @@ from mypy_boto3_iotwireless.type_defs import DisassociateWirelessGatewayFromThin
 Required fields:
 
 - `Id`: `str`
+
+## FPortsTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import FPortsTypeDef
+```
+
+Optional fields:
+
+- `Fuota`: `int`
+- `Multicast`: `int`
+- `ClockSync`: `int`
+
+## FuotaTaskTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import FuotaTaskTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `Arn`: `str`
+- `Name`: `str`
 
 ## GetDestinationRequestRequestTypeDef
 
@@ -646,6 +890,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetFuotaTaskRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetFuotaTaskRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## GetFuotaTaskResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetFuotaTaskResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Id`: `str`
+- `Status`: [FuotaTaskStatusType](./literals.md#fuotataskstatustype)
+- `Name`: `str`
+- `Description`: `str`
+- `LoRaWAN`:
+  [LoRaWANFuotaTaskGetInfoTypeDef](./type_defs.md#lorawanfuotataskgetinfotypedef)
+- `FirmwareUpdateImage`: `str`
+- `FirmwareUpdateRole`: `str`
+- `CreatedAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetLogLevelsByResourceTypesResponseTypeDef
 
 ```python
@@ -659,6 +934,58 @@ Required fields:
   `List`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
 - `WirelessDeviceLogOptions`:
   `List`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetMulticastGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetMulticastGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## GetMulticastGroupResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetMulticastGroupResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Id`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `Status`: `str`
+- `LoRaWAN`:
+  [LoRaWANMulticastGetTypeDef](./type_defs.md#lorawanmulticastgettypedef)
+- `CreatedAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetMulticastGroupSessionRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetMulticastGroupSessionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## GetMulticastGroupSessionResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetMulticastGroupSessionResponseTypeDef
+```
+
+Required fields:
+
+- `LoRaWAN`:
+  [LoRaWANMulticastSessionTypeDef](./type_defs.md#lorawanmulticastsessiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -685,6 +1012,38 @@ Required fields:
 - `Sidewalk`:
   [SidewalkAccountInfoWithFingerprintTypeDef](./type_defs.md#sidewalkaccountinfowithfingerprinttypedef)
 - `AccountLinked`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetResourceEventConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetResourceEventConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Identifier`: `str`
+- `IdentifierType`: `Literal['PartnerAccountId']` (see
+  [IdentifierTypeType](./literals.md#identifiertypetype))
+
+Optional fields:
+
+- `PartnerType`: `Literal['Sidewalk']` (see
+  [EventNotificationPartnerTypeType](./literals.md#eventnotificationpartnertypetype))
+
+## GetResourceEventConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetResourceEventConfigurationResponseTypeDef
+```
+
+Required fields:
+
+- `DeviceRegistrationState`:
+  [DeviceRegistrationStateEventConfigurationTypeDef](./type_defs.md#deviceregistrationstateeventconfigurationtypedef)
+- `Proximity`:
+  [ProximityEventConfigurationTypeDef](./type_defs.md#proximityeventconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1027,6 +1386,85 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListFuotaTasksRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListFuotaTasksRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListFuotaTasksResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListFuotaTasksResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `FuotaTaskList`:
+  `List`\[[FuotaTaskTypeDef](./type_defs.md#fuotatasktypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListMulticastGroupsByFuotaTaskRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListMulticastGroupsByFuotaTaskRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListMulticastGroupsByFuotaTaskResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListMulticastGroupsByFuotaTaskResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `MulticastGroupList`:
+  `List`\[[MulticastGroupByFuotaTaskTypeDef](./type_defs.md#multicastgroupbyfuotatasktypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListMulticastGroupsRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListMulticastGroupsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListMulticastGroupsResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListMulticastGroupsResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `MulticastGroupList`:
+  `List`\[[MulticastGroupTypeDef](./type_defs.md#multicastgrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListPartnerAccountsRequestRequestTypeDef
 
 ```python
@@ -1114,6 +1552,8 @@ Optional fields:
 - `ServiceProfileId`: `str`
 - `WirelessDeviceType`:
   [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
+- `FuotaTaskId`: `str`
+- `MulticastGroupId`: `str`
 
 ## ListWirelessDevicesResponseTypeDef
 
@@ -1240,6 +1680,28 @@ Optional fields:
 - `OtaaV1_0_x`: [OtaaV1_0_xTypeDef](./type_defs.md#otaav1_0_xtypedef)
 - `AbpV1_1`: [AbpV1_1TypeDef](./type_defs.md#abpv1_1typedef)
 - `AbpV1_0_x`: [AbpV1_0_xTypeDef](./type_defs.md#abpv1_0_xtypedef)
+- `FPorts`: [FPortsTypeDef](./type_defs.md#fportstypedef)
+
+## LoRaWANFuotaTaskGetInfoTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import LoRaWANFuotaTaskGetInfoTypeDef
+```
+
+Optional fields:
+
+- `RfRegion`: `str`
+- `StartTime`: `datetime`
+
+## LoRaWANFuotaTaskTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import LoRaWANFuotaTaskTypeDef
+```
+
+Optional fields:
+
+- `RfRegion`: [SupportedRfRegionType](./literals.md#supportedrfregiontype)
 
 ## LoRaWANGatewayCurrentVersionTypeDef
 
@@ -1328,6 +1790,53 @@ Optional fields:
 
 - `DevEui`: `str`
 
+## LoRaWANMulticastGetTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import LoRaWANMulticastGetTypeDef
+```
+
+Optional fields:
+
+- `RfRegion`: [SupportedRfRegionType](./literals.md#supportedrfregiontype)
+- `DlClass`: [DlClassType](./literals.md#dlclasstype)
+- `NumberOfDevicesRequested`: `int`
+- `NumberOfDevicesInGroup`: `int`
+
+## LoRaWANMulticastMetadataTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import LoRaWANMulticastMetadataTypeDef
+```
+
+Optional fields:
+
+- `FPort`: `int`
+
+## LoRaWANMulticastSessionTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import LoRaWANMulticastSessionTypeDef
+```
+
+Optional fields:
+
+- `DlDr`: `int`
+- `DlFreq`: `int`
+- `SessionStartTime`: `datetime`
+- `SessionTimeout`: `int`
+
+## LoRaWANMulticastTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import LoRaWANMulticastTypeDef
+```
+
+Optional fields:
+
+- `RfRegion`: [SupportedRfRegionType](./literals.md#supportedrfregiontype)
+- `DlClass`: [DlClassType](./literals.md#dlclasstype)
+
 ## LoRaWANSendDataToDeviceTypeDef
 
 ```python
@@ -1347,6 +1856,16 @@ from mypy_boto3_iotwireless.type_defs import LoRaWANServiceProfileTypeDef
 Optional fields:
 
 - `AddGwMetadata`: `bool`
+
+## LoRaWANStartFuotaTaskTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import LoRaWANStartFuotaTaskTypeDef
+```
+
+Optional fields:
+
+- `StartTime`: `Union`\[`datetime`, `str`\]
 
 ## LoRaWANUpdateDeviceTypeDef
 
@@ -1387,6 +1906,39 @@ Optional fields:
 - `UpdateVersion`:
   [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
 
+## MulticastGroupByFuotaTaskTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import MulticastGroupByFuotaTaskTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+
+## MulticastGroupTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import MulticastGroupTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `Arn`: `str`
+- `Name`: `str`
+
+## MulticastWirelessMetadataTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import MulticastWirelessMetadataTypeDef
+```
+
+Optional fields:
+
+- `LoRaWAN`:
+  [LoRaWANMulticastMetadataTypeDef](./type_defs.md#lorawanmulticastmetadatatypedef)
+
 ## OtaaV1_0_xTypeDef
 
 ```python
@@ -1397,6 +1949,7 @@ Optional fields:
 
 - `AppKey`: `str`
 - `AppEui`: `str`
+- `GenAppKey`: `str`
 
 ## OtaaV1_1TypeDef
 
@@ -1409,6 +1962,17 @@ Optional fields:
 - `AppKey`: `str`
 - `NwkKey`: `str`
 - `JoinEui`: `str`
+
+## ProximityEventConfigurationTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ProximityEventConfigurationTypeDef
+```
+
+Optional fields:
+
+- `Sidewalk`:
+  [SidewalkEventNotificationConfigurationsTypeDef](./type_defs.md#sidewalkeventnotificationconfigurationstypedef)
 
 ## PutResourceLogLevelRequestRequestTypeDef
 
@@ -1444,8 +2008,33 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## SendDataToMulticastGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import SendDataToMulticastGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `PayloadData`: `str`
+- `WirelessMetadata`:
+  [MulticastWirelessMetadataTypeDef](./type_defs.md#multicastwirelessmetadatatypedef)
+
+## SendDataToMulticastGroupResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import SendDataToMulticastGroupResponseTypeDef
+```
+
+Required fields:
+
+- `MessageId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SendDataToWirelessDeviceRequestRequestTypeDef
 
@@ -1562,6 +2151,17 @@ Optional fields:
 - `DeviceCertificates`:
   `List`\[[CertificateListTypeDef](./type_defs.md#certificatelisttypedef)\]
 
+## SidewalkEventNotificationConfigurationsTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import SidewalkEventNotificationConfigurationsTypeDef
+```
+
+Optional fields:
+
+- `AmazonIdEventTopic`:
+  [EventNotificationTopicStatusType](./literals.md#eventnotificationtopicstatustype)
+
 ## SidewalkListDeviceTypeDef
 
 ```python
@@ -1596,6 +2196,63 @@ from mypy_boto3_iotwireless.type_defs import SidewalkUpdateAccountTypeDef
 Optional fields:
 
 - `AppServerPrivateKey`: `str`
+
+## StartBulkAssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import StartBulkAssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `QueryString`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## StartBulkDisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import StartBulkDisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `QueryString`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## StartFuotaTaskRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import StartFuotaTaskRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `LoRaWAN`:
+  [LoRaWANStartFuotaTaskTypeDef](./type_defs.md#lorawanstartfuotatasktypedef)
+
+## StartMulticastGroupSessionRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import StartMulticastGroupSessionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `LoRaWAN`:
+  [LoRaWANMulticastSessionTypeDef](./type_defs.md#lorawanmulticastsessiontypedef)
 
 ## TagResourceRequestRequestTypeDef
 
@@ -1669,6 +2326,24 @@ Optional fields:
 - `Description`: `str`
 - `RoleArn`: `str`
 
+## UpdateFuotaTaskRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import UpdateFuotaTaskRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `LoRaWAN`: [LoRaWANFuotaTaskTypeDef](./type_defs.md#lorawanfuotatasktypedef)
+- `FirmwareUpdateImage`: `str`
+- `FirmwareUpdateRole`: `str`
+
 ## UpdateLogLevelsByResourceTypesRequestRequestTypeDef
 
 ```python
@@ -1683,6 +2358,22 @@ Optional fields:
 - `WirelessGatewayLogOptions`:
   `Sequence`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
 
+## UpdateMulticastGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import UpdateMulticastGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `LoRaWAN`: [LoRaWANMulticastTypeDef](./type_defs.md#lorawanmulticasttypedef)
+
 ## UpdatePartnerAccountRequestRequestTypeDef
 
 ```python
@@ -1696,6 +2387,27 @@ Required fields:
 - `PartnerAccountId`: `str`
 - `PartnerType`: `Literal['Sidewalk']` (see
   [PartnerTypeType](./literals.md#partnertypetype))
+
+## UpdateResourceEventConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import UpdateResourceEventConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Identifier`: `str`
+- `IdentifierType`: `Literal['PartnerAccountId']` (see
+  [IdentifierTypeType](./literals.md#identifiertypetype))
+
+Optional fields:
+
+- `PartnerType`: `Literal['Sidewalk']` (see
+  [EventNotificationPartnerTypeType](./literals.md#eventnotificationpartnertypetype))
+- `DeviceRegistrationState`:
+  [DeviceRegistrationStateEventConfigurationTypeDef](./type_defs.md#deviceregistrationstateeventconfigurationtypedef)
+- `Proximity`:
+  [ProximityEventConfigurationTypeDef](./type_defs.md#proximityeventconfigurationtypedef)
 
 ## UpdateWirelessDeviceRequestRequestTypeDef
 
@@ -1803,6 +2515,10 @@ Optional fields:
   [LoRaWANListDeviceTypeDef](./type_defs.md#lorawanlistdevicetypedef)
 - `Sidewalk`:
   [SidewalkListDeviceTypeDef](./type_defs.md#sidewalklistdevicetypedef)
+- `FuotaDeviceStatus`:
+  [FuotaDeviceStatusType](./literals.md#fuotadevicestatustype)
+- `MulticastDeviceStatus`: `str`
+- `McGroupId`: `int`
 
 ## WirelessGatewayEventLogOptionTypeDef
 

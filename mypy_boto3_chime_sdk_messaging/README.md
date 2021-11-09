@@ -56,6 +56,7 @@ from mypy_boto3_chime_sdk_messaging.client import ChimeSDKMessagingClient
 - [disassociate_channel_flow](./client.md#disassociate_channel_flow)
 - [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_channel_membership_preferences](./client.md#get_channel_membership_preferences)
 - [get_channel_message](./client.md#get_channel_message)
 - [get_channel_message_status](./client.md#get_channel_message_status)
 - [get_messaging_session_endpoint](./client.md#get_messaging_session_endpoint)
@@ -69,6 +70,7 @@ from mypy_boto3_chime_sdk_messaging.client import ChimeSDKMessagingClient
 - [list_channels_associated_with_channel_flow](./client.md#list_channels_associated_with_channel_flow)
 - [list_channels_moderated_by_app_instance_user](./client.md#list_channels_moderated_by_app_instance_user)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_channel_membership_preferences](./client.md#put_channel_membership_preferences)
 - [redact_channel_message](./client.md#redact_channel_message)
 - [send_channel_message](./client.md#send_channel_message)
 - [tag_resource](./client.md#tag_resource)
@@ -100,9 +102,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_chime_sdk_messaging.literals import ChannelMembershipTypeType, ...
+from mypy_boto3_chime_sdk_messaging.literals import AllowNotificationsType, ...
 ```
 
+- [AllowNotificationsType](./literals.md#allownotificationstype)
 - [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
 - [ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype)
 - [ChannelMessageStatusType](./literals.md#channelmessagestatustype)
@@ -112,6 +115,7 @@ from mypy_boto3_chime_sdk_messaging.literals import ChannelMembershipTypeType, .
 - [ErrorCodeType](./literals.md#errorcodetype)
 - [FallbackActionType](./literals.md#fallbackactiontype)
 - [InvocationTypeType](./literals.md#invocationtypetype)
+- [PushNotificationTypeType](./literals.md#pushnotificationtypetype)
 - [SortOrderType](./literals.md#sortordertype)
 - [ServiceName](./literals.md#servicename)
 
@@ -140,6 +144,7 @@ from mypy_boto3_chime_sdk_messaging.type_defs import AppInstanceUserMembershipSu
 - [ChannelFlowSummaryTypeDef](./type_defs.md#channelflowsummarytypedef)
 - [ChannelFlowTypeDef](./type_defs.md#channelflowtypedef)
 - [ChannelMembershipForAppInstanceUserSummaryTypeDef](./type_defs.md#channelmembershipforappinstanceusersummarytypedef)
+- [ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef)
 - [ChannelMembershipSummaryTypeDef](./type_defs.md#channelmembershipsummarytypedef)
 - [ChannelMembershipTypeDef](./type_defs.md#channelmembershiptypedef)
 - [ChannelMessageCallbackTypeDef](./type_defs.md#channelmessagecallbacktypedef)
@@ -182,6 +187,8 @@ from mypy_boto3_chime_sdk_messaging.type_defs import AppInstanceUserMembershipSu
 - [DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef)
 - [DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef)
 - [DisassociateChannelFlowRequestRequestTypeDef](./type_defs.md#disassociatechannelflowrequestrequesttypedef)
+- [GetChannelMembershipPreferencesRequestRequestTypeDef](./type_defs.md#getchannelmembershippreferencesrequestrequesttypedef)
+- [GetChannelMembershipPreferencesResponseTypeDef](./type_defs.md#getchannelmembershippreferencesresponsetypedef)
 - [GetChannelMessageRequestRequestTypeDef](./type_defs.md#getchannelmessagerequestrequesttypedef)
 - [GetChannelMessageResponseTypeDef](./type_defs.md#getchannelmessageresponsetypedef)
 - [GetChannelMessageStatusRequestRequestTypeDef](./type_defs.md#getchannelmessagestatusrequestrequesttypedef)
@@ -209,9 +216,14 @@ from mypy_boto3_chime_sdk_messaging.type_defs import AppInstanceUserMembershipSu
 - [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)
 - [MessagingSessionEndpointTypeDef](./type_defs.md#messagingsessionendpointtypedef)
 - [ProcessorConfigurationTypeDef](./type_defs.md#processorconfigurationtypedef)
 - [ProcessorTypeDef](./type_defs.md#processortypedef)
+- [PushNotificationConfigurationTypeDef](./type_defs.md#pushnotificationconfigurationtypedef)
+- [PushNotificationPreferencesTypeDef](./type_defs.md#pushnotificationpreferencestypedef)
+- [PutChannelMembershipPreferencesRequestRequestTypeDef](./type_defs.md#putchannelmembershippreferencesrequestrequesttypedef)
+- [PutChannelMembershipPreferencesResponseTypeDef](./type_defs.md#putchannelmembershippreferencesresponsetypedef)
 - [RedactChannelMessageRequestRequestTypeDef](./type_defs.md#redactchannelmessagerequestrequesttypedef)
 - [RedactChannelMessageResponseTypeDef](./type_defs.md#redactchannelmessageresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

@@ -89,6 +89,7 @@ from mypy_boto3_application_insights.literals import CloudWatchEventSourceType, 
 - [CloudWatchEventSourceType](./literals.md#cloudwatcheventsourcetype)
 - [ConfigurationEventResourceTypeType](./literals.md#configurationeventresourcetypetype)
 - [ConfigurationEventStatusType](./literals.md#configurationeventstatustype)
+- [DiscoveryTypeType](./literals.md#discoverytypetype)
 - [FeedbackKeyType](./literals.md#feedbackkeytype)
 - [FeedbackValueType](./literals.md#feedbackvaluetype)
 - [LogFilterType](./literals.md#logfiltertype)

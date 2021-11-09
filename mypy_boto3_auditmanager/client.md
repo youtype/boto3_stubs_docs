@@ -25,6 +25,7 @@ type annotations stubs module
     - [create_control](#create_control)
     - [delete_assessment](#delete_assessment)
     - [delete_assessment_framework](#delete_assessment_framework)
+    - [delete_assessment_framework_share](#delete_assessment_framework_share)
     - [delete_assessment_report](#delete_assessment_report)
     - [delete_control](#delete_control)
     - [deregister_account](#deregister_account)
@@ -46,6 +47,7 @@ type annotations stubs module
     - [get_organization_admin_account](#get_organization_admin_account)
     - [get_services_in_scope](#get_services_in_scope)
     - [get_settings](#get_settings)
+    - [list_assessment_framework_share_requests](#list_assessment_framework_share_requests)
     - [list_assessment_frameworks](#list_assessment_frameworks)
     - [list_assessment_reports](#list_assessment_reports)
     - [list_assessments](#list_assessments)
@@ -55,12 +57,14 @@ type annotations stubs module
     - [list_tags_for_resource](#list_tags_for_resource)
     - [register_account](#register_account)
     - [register_organization_admin_account](#register_organization_admin_account)
+    - [start_assessment_framework_share](#start_assessment_framework_share)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_assessment](#update_assessment)
     - [update_assessment_control](#update_assessment_control)
     - [update_assessment_control_set_status](#update_assessment_control_set_status)
     - [update_assessment_framework](#update_assessment_framework)
+    - [update_assessment_framework_share](#update_assessment_framework_share)
     - [update_assessment_status](#update_assessment_status)
     - [update_control](#update_control)
     - [update_settings](#update_settings)
@@ -117,8 +121,8 @@ Returns [Exceptions](#exceptions).
 
 ### associate_assessment_report_evidence_folder
 
-Associates an evidence folder to the specified assessment report in Audit
-Manager.
+Associates an evidence folder to an assessment report in a Audit Manager
+assessment.
 
 Type annotations for
 `boto3.client("auditmanager").associate_assessment_report_evidence_folder`
@@ -163,7 +167,7 @@ Returns
 
 ### batch_create_delegation_by_assessment
 
-Create a batch of delegations for a specified assessment in Audit Manager.
+Creates a batch of delegations for an assessment in Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").batch_create_delegation_by_assessment` method.
@@ -186,7 +190,7 @@ Returns
 
 ### batch_delete_delegation_by_assessment
 
-Deletes the delegations in the specified Audit Manager assessment.
+Deletes a batch of delegations for an assessment in Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").batch_delete_delegation_by_assessment` method.
@@ -207,8 +211,7 @@ Returns
 
 ### batch_disassociate_assessment_report_evidence
 
-Disassociates a list of evidence from the specified assessment report in Audit
-Manager.
+Disassociates a list of evidence from an assessment report in Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").batch_disassociate_assessment_report_evidence`
@@ -231,8 +234,8 @@ Returns
 
 ### batch_import_evidence_to_assessment_control
 
-Uploads one or more pieces of evidence to the specified control in the
-assessment in Audit Manager.
+Uploads one or more pieces of evidence to a control in an Audit Manager
+assessment.
 
 Type annotations for
 `boto3.client("auditmanager").batch_import_evidence_to_assessment_control`
@@ -410,6 +413,27 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### delete_assessment_framework_share
+
+Deletes a share request for a custom framework in Audit Manager.
+
+Type annotations for
+`boto3.client("auditmanager").delete_assessment_framework_share` method.
+
+Boto3 documentation:
+[AuditManager.Client.delete_assessment_framework_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework_share)
+
+Arguments mapping described in
+[DeleteAssessmentFrameworkShareRequestRequestTypeDef](./type_defs.md#deleteassessmentframeworksharerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `requestId`: `str` *(required)*
+- `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### delete_assessment_report
 
 Deletes an assessment report from an assessment in Audit Manager.
@@ -462,8 +486,8 @@ Returns
 
 ### deregister_organization_admin_account
 
-Removes the specified member account as a delegated administrator for Audit
-Manager.
+Removes the specified member Amazon Web Services account as a delegated
+administrator for Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").deregister_organization_admin_account` method.
@@ -574,7 +598,7 @@ Returns
 
 ### get_assessment_report_url
 
-Returns the URL of a specified assessment report in Audit Manager.
+Returns the URL of an assessment report in Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_assessment_report_url`
 method.
@@ -745,8 +769,8 @@ Returns
 
 ### get_evidence_folders_by_assessment_control
 
-Returns a list of evidence folders associated with a specified control of an
-assessment in Audit Manager.
+Returns a list of evidence folders that are associated with a specified control
+of an assessment in Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").get_evidence_folders_by_assessment_control`
@@ -799,7 +823,7 @@ Returns
 
 ### get_settings
 
-Returns the settings for the specified account.
+Returns the settings for the specified Amazon Web Services account.
 
 Type annotations for `boto3.client("auditmanager").get_settings` method.
 
@@ -817,10 +841,34 @@ Keyword-only arguments:
 Returns
 [GetSettingsResponseTypeDef](./type_defs.md#getsettingsresponsetypedef).
 
+### list_assessment_framework_share_requests
+
+Returns a list of sent or received share requests for custom frameworks in
+Audit Manager.
+
+Type annotations for
+`boto3.client("auditmanager").list_assessment_framework_share_requests` method.
+
+Boto3 documentation:
+[AuditManager.Client.list_assessment_framework_share_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_framework_share_requests)
+
+Arguments mapping described in
+[ListAssessmentFrameworkShareRequestsRequestRequestTypeDef](./type_defs.md#listassessmentframeworksharerequestsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
+  *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAssessmentFrameworkShareRequestsResponseTypeDef](./type_defs.md#listassessmentframeworksharerequestsresponsetypedef).
+
 ### list_assessment_frameworks
 
-Returns a list of the frameworks available in the Audit Manager framework
-library.
+Returns a list of the frameworks that are available in the Audit Manager
+framework library.
 
 Type annotations for `boto3.client("auditmanager").list_assessment_frameworks`
 method.
@@ -905,7 +953,7 @@ Returns
 
 ### list_keywords_for_data_source
 
-Returns a list of keywords that pre-mapped to the specified control data
+Returns a list of keywords that are pre-mapped to the specified control data
 source.
 
 Type annotations for
@@ -968,7 +1016,7 @@ Returns
 
 ### register_account
 
-Enables Audit Manager for the specified account.
+Enables Audit Manager for the specified Amazon Web Services account.
 
 Type annotations for `boto3.client("auditmanager").register_account` method.
 
@@ -988,8 +1036,8 @@ Returns
 
 ### register_organization_admin_account
 
-Enables an account within the organization as the delegated administrator for
-Audit Manager.
+Enables an Amazon Web Services account within the organization as the delegated
+administrator for Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").register_organization_admin_account` method.
@@ -1006,6 +1054,29 @@ Keyword-only arguments:
 
 Returns
 [RegisterOrganizationAdminAccountResponseTypeDef](./type_defs.md#registerorganizationadminaccountresponsetypedef).
+
+### start_assessment_framework_share
+
+Creates a share request for a custom framework in Audit Manager.
+
+Type annotations for
+`boto3.client("auditmanager").start_assessment_framework_share` method.
+
+Boto3 documentation:
+[AuditManager.Client.start_assessment_framework_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.start_assessment_framework_share)
+
+Arguments mapping described in
+[StartAssessmentFrameworkShareRequestRequestTypeDef](./type_defs.md#startassessmentframeworksharerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `frameworkId`: `str` *(required)*
+- `destinationAccount`: `str` *(required)*
+- `destinationRegion`: `str` *(required)*
+- `comment`: `str`
+
+Returns
+[StartAssessmentFrameworkShareResponseTypeDef](./type_defs.md#startassessmentframeworkshareresponsetypedef).
 
 ### tag_resource
 
@@ -1143,6 +1214,30 @@ Keyword-only arguments:
 
 Returns
 [UpdateAssessmentFrameworkResponseTypeDef](./type_defs.md#updateassessmentframeworkresponsetypedef).
+
+### update_assessment_framework_share
+
+Updates a share request for a custom framework in Audit Manager.
+
+Type annotations for
+`boto3.client("auditmanager").update_assessment_framework_share` method.
+
+Boto3 documentation:
+[AuditManager.Client.update_assessment_framework_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework_share)
+
+Arguments mapping described in
+[UpdateAssessmentFrameworkShareRequestRequestTypeDef](./type_defs.md#updateassessmentframeworksharerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `requestId`: `str` *(required)*
+- `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
+  *(required)*
+- `action`: [ShareRequestActionType](./literals.md#sharerequestactiontype)
+  *(required)*
+
+Returns
+[UpdateAssessmentFrameworkShareResponseTypeDef](./type_defs.md#updateassessmentframeworkshareresponsetypedef).
 
 ### update_assessment_status
 

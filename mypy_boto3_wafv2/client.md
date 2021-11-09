@@ -284,6 +284,7 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
+- `CaptchaConfig`: [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
 
 Returns
 [CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef).
@@ -783,7 +784,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `NextMarker`: `str`
 - `Limit`: `int`
 
@@ -1154,6 +1155,7 @@ Keyword-only arguments:
 - `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
+- `CaptchaConfig`: [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
 
 Returns
 [UpdateWebACLResponseTypeDef](./type_defs.md#updatewebaclresponsetypedef).

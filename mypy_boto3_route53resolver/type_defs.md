@@ -66,6 +66,8 @@ type annotations stubs module
   - [GetFirewallRuleGroupPolicyResponseTypeDef](#getfirewallrulegrouppolicyresponsetypedef)
   - [GetFirewallRuleGroupRequestRequestTypeDef](#getfirewallrulegrouprequestrequesttypedef)
   - [GetFirewallRuleGroupResponseTypeDef](#getfirewallrulegroupresponsetypedef)
+  - [GetResolverConfigRequestRequestTypeDef](#getresolverconfigrequestrequesttypedef)
+  - [GetResolverConfigResponseTypeDef](#getresolverconfigresponsetypedef)
   - [GetResolverDnssecConfigRequestRequestTypeDef](#getresolverdnssecconfigrequestrequesttypedef)
   - [GetResolverDnssecConfigResponseTypeDef](#getresolverdnssecconfigresponsetypedef)
   - [GetResolverEndpointRequestRequestTypeDef](#getresolverendpointrequestrequesttypedef)
@@ -99,6 +101,8 @@ type annotations stubs module
   - [ListFirewallRuleGroupsResponseTypeDef](#listfirewallrulegroupsresponsetypedef)
   - [ListFirewallRulesRequestRequestTypeDef](#listfirewallrulesrequestrequesttypedef)
   - [ListFirewallRulesResponseTypeDef](#listfirewallrulesresponsetypedef)
+  - [ListResolverConfigsRequestRequestTypeDef](#listresolverconfigsrequestrequesttypedef)
+  - [ListResolverConfigsResponseTypeDef](#listresolverconfigsresponsetypedef)
   - [ListResolverDnssecConfigsRequestRequestTypeDef](#listresolverdnssecconfigsrequestrequesttypedef)
   - [ListResolverDnssecConfigsResponseTypeDef](#listresolverdnssecconfigsresponsetypedef)
   - [ListResolverEndpointIpAddressesRequestRequestTypeDef](#listresolverendpointipaddressesrequestrequesttypedef)
@@ -122,6 +126,7 @@ type annotations stubs module
   - [PutResolverQueryLogConfigPolicyResponseTypeDef](#putresolverquerylogconfigpolicyresponsetypedef)
   - [PutResolverRulePolicyRequestRequestTypeDef](#putresolverrulepolicyrequestrequesttypedef)
   - [PutResolverRulePolicyResponseTypeDef](#putresolverrulepolicyresponsetypedef)
+  - [ResolverConfigTypeDef](#resolverconfigtypedef)
   - [ResolverDnssecConfigTypeDef](#resolverdnssecconfigtypedef)
   - [ResolverEndpointTypeDef](#resolverendpointtypedef)
   - [ResolverQueryLogConfigAssociationTypeDef](#resolverquerylogconfigassociationtypedef)
@@ -142,6 +147,8 @@ type annotations stubs module
   - [UpdateFirewallRuleGroupAssociationResponseTypeDef](#updatefirewallrulegroupassociationresponsetypedef)
   - [UpdateFirewallRuleRequestRequestTypeDef](#updatefirewallrulerequestrequesttypedef)
   - [UpdateFirewallRuleResponseTypeDef](#updatefirewallruleresponsetypedef)
+  - [UpdateResolverConfigRequestRequestTypeDef](#updateresolverconfigrequestrequesttypedef)
+  - [UpdateResolverConfigResponseTypeDef](#updateresolverconfigresponsetypedef)
   - [UpdateResolverDnssecConfigRequestRequestTypeDef](#updateresolverdnssecconfigrequestrequesttypedef)
   - [UpdateResolverDnssecConfigResponseTypeDef](#updateresolverdnssecconfigresponsetypedef)
   - [UpdateResolverEndpointRequestRequestTypeDef](#updateresolverendpointrequestrequesttypedef)
@@ -930,6 +937,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetResolverConfigRequestRequestTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetResolverConfigRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+
+## GetResolverConfigResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetResolverConfigResponseTypeDef
+```
+
+Required fields:
+
+- `ResolverConfig`:
+  [ResolverConfigTypeDef](./type_defs.md#resolverconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetResolverDnssecConfigRequestRequestTypeDef
 
 ```python
@@ -1346,6 +1376,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListResolverConfigsRequestRequestTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListResolverConfigsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListResolverConfigsResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListResolverConfigsResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `ResolverConfigs`:
+  `List`\[[ResolverConfigTypeDef](./type_defs.md#resolverconfigtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListResolverDnssecConfigsRequestRequestTypeDef
 
 ```python
@@ -1652,6 +1707,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ResolverConfigTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ResolverConfigTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `ResourceId`: `str`
+- `OwnerId`: `str`
+- `AutodefinedReverse`:
+  [ResolverAutodefinedReverseStatusType](./literals.md#resolverautodefinedreversestatustype)
+
 ## ResolverDnssecConfigTypeDef
 
 ```python
@@ -1791,7 +1860,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## TagResourceRequestRequestTypeDef
@@ -1956,6 +2025,31 @@ from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleResponseTypeD
 Required fields:
 
 - `FirewallRule`: [FirewallRuleTypeDef](./type_defs.md#firewallruletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateResolverConfigRequestRequestTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import UpdateResolverConfigRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+- `AutodefinedReverseFlag`:
+  [AutodefinedReverseFlagType](./literals.md#autodefinedreverseflagtype)
+
+## UpdateResolverConfigResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import UpdateResolverConfigResponseTypeDef
+```
+
+Required fields:
+
+- `ResolverConfig`:
+  [ResolverConfigTypeDef](./type_defs.md#resolverconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

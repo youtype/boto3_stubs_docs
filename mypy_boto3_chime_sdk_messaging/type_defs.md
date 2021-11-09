@@ -22,6 +22,7 @@ type annotations stubs module
   - [ChannelFlowSummaryTypeDef](#channelflowsummarytypedef)
   - [ChannelFlowTypeDef](#channelflowtypedef)
   - [ChannelMembershipForAppInstanceUserSummaryTypeDef](#channelmembershipforappinstanceusersummarytypedef)
+  - [ChannelMembershipPreferencesTypeDef](#channelmembershippreferencestypedef)
   - [ChannelMembershipSummaryTypeDef](#channelmembershipsummarytypedef)
   - [ChannelMembershipTypeDef](#channelmembershiptypedef)
   - [ChannelMessageCallbackTypeDef](#channelmessagecallbacktypedef)
@@ -64,6 +65,8 @@ type annotations stubs module
   - [DescribeChannelRequestRequestTypeDef](#describechannelrequestrequesttypedef)
   - [DescribeChannelResponseTypeDef](#describechannelresponsetypedef)
   - [DisassociateChannelFlowRequestRequestTypeDef](#disassociatechannelflowrequestrequesttypedef)
+  - [GetChannelMembershipPreferencesRequestRequestTypeDef](#getchannelmembershippreferencesrequestrequesttypedef)
+  - [GetChannelMembershipPreferencesResponseTypeDef](#getchannelmembershippreferencesresponsetypedef)
   - [GetChannelMessageRequestRequestTypeDef](#getchannelmessagerequestrequesttypedef)
   - [GetChannelMessageResponseTypeDef](#getchannelmessageresponsetypedef)
   - [GetChannelMessageStatusRequestRequestTypeDef](#getchannelmessagestatusrequestrequesttypedef)
@@ -91,9 +94,14 @@ type annotations stubs module
   - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [MessageAttributeValueTypeDef](#messageattributevaluetypedef)
   - [MessagingSessionEndpointTypeDef](#messagingsessionendpointtypedef)
   - [ProcessorConfigurationTypeDef](#processorconfigurationtypedef)
   - [ProcessorTypeDef](#processortypedef)
+  - [PushNotificationConfigurationTypeDef](#pushnotificationconfigurationtypedef)
+  - [PushNotificationPreferencesTypeDef](#pushnotificationpreferencestypedef)
+  - [PutChannelMembershipPreferencesRequestRequestTypeDef](#putchannelmembershippreferencesrequestrequesttypedef)
+  - [PutChannelMembershipPreferencesResponseTypeDef](#putchannelmembershippreferencesresponsetypedef)
   - [RedactChannelMessageRequestRequestTypeDef](#redactchannelmessagerequestrequesttypedef)
   - [RedactChannelMessageResponseTypeDef](#redactchannelmessageresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
@@ -296,6 +304,17 @@ Optional fields:
 - `AppInstanceUserMembershipSummary`:
   [AppInstanceUserMembershipSummaryTypeDef](./type_defs.md#appinstanceusermembershipsummarytypedef)
 
+## ChannelMembershipPreferencesTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ChannelMembershipPreferencesTypeDef
+```
+
+Optional fields:
+
+- `PushNotifications`:
+  [PushNotificationPreferencesTypeDef](./type_defs.md#pushnotificationpreferencestypedef)
+
 ## ChannelMembershipSummaryTypeDef
 
 ```python
@@ -366,6 +385,8 @@ Optional fields:
 - `Redacted`: `bool`
 - `Status`:
   [ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef)
+- `MessageAttributes`: `Dict`\[`str`,
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 
 ## ChannelMessageTypeDef
 
@@ -389,6 +410,8 @@ Optional fields:
   [ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype)
 - `Status`:
   [ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef)
+- `MessageAttributes`: `Dict`\[`str`,
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 
 ## ChannelModeratedByAppInstanceUserSummaryTypeDef
 
@@ -846,6 +869,33 @@ Required fields:
 - `ChannelFlowArn`: `str`
 - `ChimeBearer`: `str`
 
+## GetChannelMembershipPreferencesRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import GetChannelMembershipPreferencesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ChannelArn`: `str`
+- `MemberArn`: `str`
+- `ChimeBearer`: `str`
+
+## GetChannelMembershipPreferencesResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import GetChannelMembershipPreferencesResponseTypeDef
+```
+
+Required fields:
+
+- `ChannelArn`: `str`
+- `Member`: [IdentityTypeDef](./type_defs.md#identitytypedef)
+- `Preferences`:
+  [ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetChannelMessageRequestRequestTypeDef
 
 ```python
@@ -1231,6 +1281,16 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## MessageAttributeValueTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import MessageAttributeValueTypeDef
+```
+
+Optional fields:
+
+- `StringValues`: `List`\[`str`\]
+
 ## MessagingSessionEndpointTypeDef
 
 ```python
@@ -1265,6 +1325,62 @@ Required fields:
   [ProcessorConfigurationTypeDef](./type_defs.md#processorconfigurationtypedef)
 - `ExecutionOrder`: `int`
 - `FallbackAction`: [FallbackActionType](./literals.md#fallbackactiontype)
+
+## PushNotificationConfigurationTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import PushNotificationConfigurationTypeDef
+```
+
+Required fields:
+
+- `Title`: `str`
+- `Body`: `str`
+- `Type`: [PushNotificationTypeType](./literals.md#pushnotificationtypetype)
+
+## PushNotificationPreferencesTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import PushNotificationPreferencesTypeDef
+```
+
+Required fields:
+
+- `AllowNotifications`:
+  [AllowNotificationsType](./literals.md#allownotificationstype)
+
+Optional fields:
+
+- `FilterRule`: `str`
+
+## PutChannelMembershipPreferencesRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import PutChannelMembershipPreferencesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ChannelArn`: `str`
+- `MemberArn`: `str`
+- `ChimeBearer`: `str`
+- `Preferences`:
+  [ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef)
+
+## PutChannelMembershipPreferencesResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import PutChannelMembershipPreferencesResponseTypeDef
+```
+
+Required fields:
+
+- `ChannelArn`: `str`
+- `Member`: [IdentityTypeDef](./type_defs.md#identitytypedef)
+- `Preferences`:
+  [ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RedactChannelMessageRequestRequestTypeDef
 
@@ -1302,7 +1418,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## SendChannelMessageRequestRequestTypeDef
@@ -1324,6 +1440,10 @@ Required fields:
 Optional fields:
 
 - `Metadata`: `str`
+- `PushNotification`:
+  [PushNotificationConfigurationTypeDef](./type_defs.md#pushnotificationconfigurationtypedef)
+- `MessageAttributes`: `Mapping`\[`str`,
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 
 ## SendChannelMessageResponseTypeDef
 

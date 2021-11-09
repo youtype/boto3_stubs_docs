@@ -55,6 +55,8 @@ Values:
 - `AL2_ARM_64`
 - `AL2_x86_64`
 - `AL2_x86_64_GPU`
+- `BOTTLEROCKET_ARM_64`
+- `BOTTLEROCKET_x86_64`
 - `CUSTOM`
 
 ## AddonActiveWaiterName
@@ -518,6 +520,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`

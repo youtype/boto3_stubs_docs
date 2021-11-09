@@ -1024,7 +1024,7 @@ from mypy_boto3_apigatewayv2.type_defs import ExportApiResponseTypeDef
 
 Required fields:
 
-- `body`: `bytes`
+- `body`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2022,7 +2022,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## RouteResponseTypeDef

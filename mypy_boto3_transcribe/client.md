@@ -865,13 +865,16 @@ Keyword-only arguments:
   `Sequence`\[[LanguageCodeType](./literals.md#languagecodetype)\]
 - `Subtitles`: [SubtitlesTypeDef](./type_defs.md#subtitlestypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `LanguageIdSettings`:
+  `Mapping`\[[LanguageCodeType](./literals.md#languagecodetype),
+  [LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef)\]
 
 Returns
 [StartTranscriptionJobResponseTypeDef](./type_defs.md#starttranscriptionjobresponsetypedef).
 
 ### tag_resource
 
-Tags a Amazon Transcribe resource with the given list of tags.
+Tags an Amazon Transcribe resource with the given list of tags.
 
 Type annotations for `boto3.client("transcribe").tag_resource` method.
 

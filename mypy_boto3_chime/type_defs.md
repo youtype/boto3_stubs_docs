@@ -4913,7 +4913,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## RestorePhoneNumberRequestRequestTypeDef
@@ -5967,6 +5967,7 @@ Optional fields:
   `List`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
 - `CreatedTimestamp`: `datetime`
 - `UpdatedTimestamp`: `datetime`
+- `VoiceConnectorGroupArn`: `str`
 
 ## VoiceConnectorItemTypeDef
 
@@ -6005,3 +6006,4 @@ Optional fields:
 - `RequireEncryption`: `bool`
 - `CreatedTimestamp`: `datetime`
 - `UpdatedTimestamp`: `datetime`
+- `VoiceConnectorArn`: `str`

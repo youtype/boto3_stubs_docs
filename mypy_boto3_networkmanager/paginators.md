@@ -14,6 +14,10 @@ type annotations stubs module
   - [GetDevicesPaginator](#getdevicespaginator)
   - [GetLinkAssociationsPaginator](#getlinkassociationspaginator)
   - [GetLinksPaginator](#getlinkspaginator)
+  - [GetNetworkResourceCountsPaginator](#getnetworkresourcecountspaginator)
+  - [GetNetworkResourceRelationshipsPaginator](#getnetworkresourcerelationshipspaginator)
+  - [GetNetworkResourcesPaginator](#getnetworkresourcespaginator)
+  - [GetNetworkTelemetryPaginator](#getnetworktelemetrypaginator)
   - [GetSitesPaginator](#getsitespaginator)
   - [GetTransitGatewayConnectPeerAssociationsPaginator](#gettransitgatewayconnectpeerassociationspaginator)
   - [GetTransitGatewayRegistrationsPaginator](#gettransitgatewayregistrationspaginator)
@@ -184,6 +188,126 @@ Arguments for `GetLinksPaginator.paginate` method:
 
 `GetLinksPaginator.paginate` returns
 `_PageIterator`\[[GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef)\].
+
+## GetNetworkResourceCountsPaginator
+
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_network_resource_counts")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_networkmanager.paginator import GetNetworkResourceCountsPaginator
+
+def get_get_network_resource_counts_paginator() -> GetNetworkResourceCountsPaginator:
+    return boto3.client("networkmanager").get_paginator("get_network_resource_counts")
+```
+
+Boto3 documentation:
+[NetworkManager.Paginator.GetNetworkResourceCounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetNetworkResourceCounts)
+
+Arguments for `GetNetworkResourceCountsPaginator.paginate` method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `ResourceType`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetNetworkResourceCountsPaginator.paginate` returns
+`_PageIterator`\[[GetNetworkResourceCountsResponseTypeDef](./type_defs.md#getnetworkresourcecountsresponsetypedef)\].
+
+## GetNetworkResourceRelationshipsPaginator
+
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_network_resource_relationships")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_networkmanager.paginator import GetNetworkResourceRelationshipsPaginator
+
+def get_get_network_resource_relationships_paginator() -> GetNetworkResourceRelationshipsPaginator:
+    return boto3.client("networkmanager").get_paginator("get_network_resource_relationships")
+```
+
+Boto3 documentation:
+[NetworkManager.Paginator.GetNetworkResourceRelationships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetNetworkResourceRelationships)
+
+Arguments for `GetNetworkResourceRelationshipsPaginator.paginate` method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `RegisteredGatewayArn`: `str`
+- `AwsRegion`: `str`
+- `AccountId`: `str`
+- `ResourceType`: `str`
+- `ResourceArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetNetworkResourceRelationshipsPaginator.paginate` returns
+`_PageIterator`\[[GetNetworkResourceRelationshipsResponseTypeDef](./type_defs.md#getnetworkresourcerelationshipsresponsetypedef)\].
+
+## GetNetworkResourcesPaginator
+
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_network_resources")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_networkmanager.paginator import GetNetworkResourcesPaginator
+
+def get_get_network_resources_paginator() -> GetNetworkResourcesPaginator:
+    return boto3.client("networkmanager").get_paginator("get_network_resources")
+```
+
+Boto3 documentation:
+[NetworkManager.Paginator.GetNetworkResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetNetworkResources)
+
+Arguments for `GetNetworkResourcesPaginator.paginate` method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `RegisteredGatewayArn`: `str`
+- `AwsRegion`: `str`
+- `AccountId`: `str`
+- `ResourceType`: `str`
+- `ResourceArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetNetworkResourcesPaginator.paginate` returns
+`_PageIterator`\[[GetNetworkResourcesResponseTypeDef](./type_defs.md#getnetworkresourcesresponsetypedef)\].
+
+## GetNetworkTelemetryPaginator
+
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_network_telemetry")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_networkmanager.paginator import GetNetworkTelemetryPaginator
+
+def get_get_network_telemetry_paginator() -> GetNetworkTelemetryPaginator:
+    return boto3.client("networkmanager").get_paginator("get_network_telemetry")
+```
+
+Boto3 documentation:
+[NetworkManager.Paginator.GetNetworkTelemetry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetNetworkTelemetry)
+
+Arguments for `GetNetworkTelemetryPaginator.paginate` method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `RegisteredGatewayArn`: `str`
+- `AwsRegion`: `str`
+- `AccountId`: `str`
+- `ResourceType`: `str`
+- `ResourceArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetNetworkTelemetryPaginator.paginate` returns
+`_PageIterator`\[[GetNetworkTelemetryResponseTypeDef](./type_defs.md#getnetworktelemetryresponsetypedef)\].
 
 ## GetSitesPaginator
 

@@ -11,12 +11,19 @@ type annotations stubs module
   - [BatteryLevelType](#batteryleveltype)
   - [ConnectionStatusType](#connectionstatustype)
   - [DeviceStateType](#devicestatetype)
+  - [DlClassType](#dlclasstype)
+  - [EventNotificationPartnerTypeType](#eventnotificationpartnertypetype)
+  - [EventNotificationTopicStatusType](#eventnotificationtopicstatustype)
   - [EventType](#eventtype)
   - [ExpressionTypeType](#expressiontypetype)
+  - [FuotaDeviceStatusType](#fuotadevicestatustype)
+  - [FuotaTaskStatusType](#fuotataskstatustype)
+  - [IdentifierTypeType](#identifiertypetype)
   - [LogLevelType](#logleveltype)
   - [MessageTypeType](#messagetypetype)
   - [PartnerTypeType](#partnertypetype)
   - [SigningAlgType](#signingalgtype)
+  - [SupportedRfRegionType](#supportedrfregiontype)
   - [WirelessDeviceEventType](#wirelessdeviceeventtype)
   - [WirelessDeviceIdTypeType](#wirelessdeviceidtypetype)
   - [WirelessDeviceTypeType](#wirelessdevicetypetype)
@@ -64,6 +71,38 @@ Values:
 - `RegisteredReachable`
 - `RegisteredUnreachable`
 
+## DlClassType
+
+```python
+from mypy_boto3_iotwireless.literals import DlClassType
+```
+
+Values:
+
+- `ClassB`
+- `ClassC`
+
+## EventNotificationPartnerTypeType
+
+```python
+from mypy_boto3_iotwireless.literals import EventNotificationPartnerTypeType
+```
+
+Values:
+
+- `Sidewalk`
+
+## EventNotificationTopicStatusType
+
+```python
+from mypy_boto3_iotwireless.literals import EventNotificationTopicStatusType
+```
+
+Values:
+
+- `Disabled`
+- `Enabled`
+
 ## EventType
 
 ```python
@@ -88,6 +127,50 @@ Values:
 
 - `MqttTopic`
 - `RuleName`
+
+## FuotaDeviceStatusType
+
+```python
+from mypy_boto3_iotwireless.literals import FuotaDeviceStatusType
+```
+
+Values:
+
+- `FragAlgo_unsupported`
+- `FragIndex_unsupported`
+- `Initial`
+- `MemoryError`
+- `MICError`
+- `MissingFrag`
+- `Not_enough_memory`
+- `Package_Not_Supported`
+- `SessionCnt_replay`
+- `Successful`
+- `Wrong_descriptor`
+
+## FuotaTaskStatusType
+
+```python
+from mypy_boto3_iotwireless.literals import FuotaTaskStatusType
+```
+
+Values:
+
+- `Delete_Waiting`
+- `FuotaDone`
+- `FuotaSession_Waiting`
+- `In_FuotaSession`
+- `Pending`
+
+## IdentifierTypeType
+
+```python
+from mypy_boto3_iotwireless.literals import IdentifierTypeType
+```
+
+Values:
+
+- `PartnerAccountId`
 
 ## LogLevelType
 
@@ -134,6 +217,19 @@ Values:
 
 - `Ed25519`
 - `P256r1`
+
+## SupportedRfRegionType
+
+```python
+from mypy_boto3_iotwireless.literals import SupportedRfRegionType
+```
+
+Values:
+
+- `AS923-1`
+- `AU915`
+- `EU868`
+- `US915`
 
 ## WirelessDeviceEventType
 
@@ -282,6 +378,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`

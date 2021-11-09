@@ -77,6 +77,10 @@ Required fields:
 - `Type`: `Sequence`\[[ConnectionTypeType](./literals.md#connectiontypetype)\]
 - `ParticipantToken`: `str`
 
+Optional fields:
+
+- `ConnectParticipant`: `bool`
+
 ## CreateParticipantConnectionResponseTypeDef
 
 ```python
@@ -192,7 +196,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## SendEventRequestRequestTypeDef

@@ -360,6 +360,10 @@ Required fields:
 
 - `S3Uri`: `str`
 
+Optional fields:
+
+- `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -433,7 +437,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## StartTextTranslationJobRequestRequestTypeDef

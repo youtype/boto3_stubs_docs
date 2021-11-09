@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 ECS module](#literals-for-boto3-ecs-module)
   - [AgentUpdateStatusType](#agentupdatestatustype)
   - [AssignPublicIpType](#assignpubliciptype)
+  - [CPUArchitectureType](#cpuarchitecturetype)
   - [CapacityProviderFieldType](#capacityproviderfieldtype)
   - [CapacityProviderStatusType](#capacityproviderstatustype)
   - [CapacityProviderUpdateStatusType](#capacityproviderupdatestatustype)
@@ -45,6 +46,7 @@ type annotations stubs module
   - [ManagedScalingStatusType](#managedscalingstatustype)
   - [ManagedTerminationProtectionType](#managedterminationprotectiontype)
   - [NetworkModeType](#networkmodetype)
+  - [OSFamilyType](#osfamilytype)
   - [PidModeType](#pidmodetype)
   - [PlacementConstraintTypeType](#placementconstrainttypetype)
   - [PlacementStrategyTypeType](#placementstrategytypetype)
@@ -102,6 +104,17 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+## CPUArchitectureType
+
+```python
+from mypy_boto3_ecs.literals import CPUArchitectureType
+```
+
+Values:
+
+- `ARM64`
+- `X86_64`
 
 ## CapacityProviderFieldType
 
@@ -504,6 +517,23 @@ Values:
 - `host`
 - `none`
 
+## OSFamilyType
+
+```python
+from mypy_boto3_ecs.literals import OSFamilyType
+```
+
+Values:
+
+- `LINUX`
+- `WINDOWS_SERVER_2004_CORE`
+- `WINDOWS_SERVER_2016_FULL`
+- `WINDOWS_SERVER_2019_CORE`
+- `WINDOWS_SERVER_2019_FULL`
+- `WINDOWS_SERVER_2022_CORE`
+- `WINDOWS_SERVER_2022_FULL`
+- `WINDOWS_SERVER_20H2_CORE`
+
 ## PidModeType
 
 ```python
@@ -858,6 +888,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`

@@ -722,7 +722,7 @@ from mypy_boto3_appsync.type_defs import GetIntrospectionSchemaResponseTypeDef
 
 Required fields:
 
-- `schema`: `bytes`
+- `schema`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1213,7 +1213,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## StartSchemaCreationRequestRequestTypeDef

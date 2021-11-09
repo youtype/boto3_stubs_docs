@@ -142,9 +142,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.literals import DescribeAutoScalingGroupsPaginatorName, ...
+from mypy_boto3_autoscaling.literals import AcceleratorManufacturerType, ...
 ```
 
+- [AcceleratorManufacturerType](./literals.md#acceleratormanufacturertype)
+- [AcceleratorNameType](./literals.md#acceleratornametype)
+- [AcceleratorTypeType](./literals.md#acceleratortypetype)
+- [BareMetalType](./literals.md#baremetaltype)
+- [BurstablePerformanceType](./literals.md#burstableperformancetype)
+- [CpuManufacturerType](./literals.md#cpumanufacturertype)
 - [DescribeAutoScalingGroupsPaginatorName](./literals.md#describeautoscalinggroupspaginatorname)
 - [DescribeAutoScalingInstancesPaginatorName](./literals.md#describeautoscalinginstancespaginatorname)
 - [DescribeLaunchConfigurationsPaginatorName](./literals.md#describelaunchconfigurationspaginatorname)
@@ -155,10 +161,13 @@ from mypy_boto3_autoscaling.literals import DescribeAutoScalingGroupsPaginatorNa
 - [DescribeScalingActivitiesPaginatorName](./literals.md#describescalingactivitiespaginatorname)
 - [DescribeScheduledActionsPaginatorName](./literals.md#describescheduledactionspaginatorname)
 - [DescribeTagsPaginatorName](./literals.md#describetagspaginatorname)
+- [InstanceGenerationType](./literals.md#instancegenerationtype)
 - [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 - [InstanceMetadataHttpTokensStateType](./literals.md#instancemetadatahttptokensstatetype)
 - [InstanceRefreshStatusType](./literals.md#instancerefreshstatustype)
 - [LifecycleStateType](./literals.md#lifecyclestatetype)
+- [LocalStorageType](./literals.md#localstoragetype)
+- [LocalStorageTypeType](./literals.md#localstoragetypetype)
 - [MetricStatisticType](./literals.md#metricstatistictype)
 - [MetricTypeType](./literals.md#metrictypetype)
 - [PredefinedLoadMetricTypeType](./literals.md#predefinedloadmetrictypetype)
@@ -181,9 +190,11 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef, ...
+from mypy_boto3_autoscaling.type_defs import AcceleratorCountRequestTypeDef, ...
 ```
 
+- [AcceleratorCountRequestTypeDef](./type_defs.md#acceleratorcountrequesttypedef)
+- [AcceleratorTotalMemoryMiBRequestTypeDef](./type_defs.md#acceleratortotalmemorymibrequesttypedef)
 - [ActivitiesTypeTypeDef](./type_defs.md#activitiestypetypedef)
 - [ActivityTypeDef](./type_defs.md#activitytypedef)
 - [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
@@ -197,6 +208,7 @@ from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef, ...
 - [AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef)
 - [AutoScalingInstanceDetailsTypeDef](./type_defs.md#autoscalinginstancedetailstypedef)
 - [AutoScalingInstancesTypeTypeDef](./type_defs.md#autoscalinginstancestypetypedef)
+- [BaselineEbsBandwidthMbpsRequestTypeDef](./type_defs.md#baselineebsbandwidthmbpsrequesttypedef)
 - [BatchDeleteScheduledActionAnswerTypeDef](./type_defs.md#batchdeletescheduledactionanswertypedef)
 - [BatchDeleteScheduledActionTypeRequestTypeDef](./type_defs.md#batchdeletescheduledactiontyperequesttypedef)
 - [BatchPutScheduledUpdateGroupActionAnswerTypeDef](./type_defs.md#batchputscheduledupdategroupactionanswertypedef)
@@ -264,6 +276,7 @@ from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef, ...
 - [InstanceRefreshProgressDetailsTypeDef](./type_defs.md#instancerefreshprogressdetailstypedef)
 - [InstanceRefreshTypeDef](./type_defs.md#instancerefreshtypedef)
 - [InstanceRefreshWarmPoolProgressTypeDef](./type_defs.md#instancerefreshwarmpoolprogresstypedef)
+- [InstanceRequirementsTypeDef](./type_defs.md#instancerequirementstypedef)
 - [InstanceTypeDef](./type_defs.md#instancetypedef)
 - [InstancesDistributionTypeDef](./type_defs.md#instancesdistributiontypedef)
 - [LaunchConfigurationNameTypeRequestTypeDef](./type_defs.md#launchconfigurationnametyperequesttypedef)
@@ -278,10 +291,13 @@ from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef, ...
 - [LoadBalancerStateTypeDef](./type_defs.md#loadbalancerstatetypedef)
 - [LoadBalancerTargetGroupStateTypeDef](./type_defs.md#loadbalancertargetgroupstatetypedef)
 - [LoadForecastTypeDef](./type_defs.md#loadforecasttypedef)
+- [MemoryGiBPerVCpuRequestTypeDef](./type_defs.md#memorygibpervcpurequesttypedef)
+- [MemoryMiBRequestTypeDef](./type_defs.md#memorymibrequesttypedef)
 - [MetricCollectionTypeTypeDef](./type_defs.md#metriccollectiontypetypedef)
 - [MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)
 - [MetricGranularityTypeTypeDef](./type_defs.md#metricgranularitytypetypedef)
 - [MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef)
+- [NetworkInterfaceCountRequestTypeDef](./type_defs.md#networkinterfacecountrequesttypedef)
 - [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PoliciesTypeTypeDef](./type_defs.md#policiestypetypedef)
@@ -319,5 +335,7 @@ from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef, ...
 - [TagsTypeTypeDef](./type_defs.md#tagstypetypedef)
 - [TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef)
 - [TerminateInstanceInAutoScalingGroupTypeRequestTypeDef](./type_defs.md#terminateinstanceinautoscalinggrouptyperequesttypedef)
+- [TotalLocalStorageGBRequestTypeDef](./type_defs.md#totallocalstoragegbrequesttypedef)
 - [UpdateAutoScalingGroupTypeRequestTypeDef](./type_defs.md#updateautoscalinggrouptyperequesttypedef)
+- [VCpuCountRequestTypeDef](./type_defs.md#vcpucountrequesttypedef)
 - [WarmPoolConfigurationTypeDef](./type_defs.md#warmpoolconfigurationtypedef)

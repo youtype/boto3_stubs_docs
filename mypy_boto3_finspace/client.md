@@ -112,6 +112,9 @@ Keyword-only arguments:
 - `federationMode`: [FederationModeType](./literals.md#federationmodetype)
 - `federationParameters`:
   [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
+- `superuserParameters`:
+  [SuperuserParametersTypeDef](./type_defs.md#superuserparameterstypedef)
+- `dataBundles`: `Sequence`\[`str`\]
 
 Returns
 [CreateEnvironmentResponseTypeDef](./type_defs.md#createenvironmentresponsetypedef).

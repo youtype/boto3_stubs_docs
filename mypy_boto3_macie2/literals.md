@@ -12,6 +12,7 @@ type annotations stubs module
   - [AllowsUnencryptedObjectUploadsType](#allowsunencryptedobjectuploadstype)
   - [BucketMetadataErrorCodeType](#bucketmetadataerrorcodetype)
   - [CurrencyType](#currencytype)
+  - [DataIdentifierSeverityType](#dataidentifierseveritytype)
   - [DayOfWeekType](#dayofweektype)
   - [DescribeBucketsPaginatorName](#describebucketspaginatorname)
   - [EffectivePermissionType](#effectivepermissiontype)
@@ -108,6 +109,18 @@ from mypy_boto3_macie2.literals import CurrencyType
 Values:
 
 - `USD`
+
+## DataIdentifierSeverityType
+
+```python
+from mypy_boto3_macie2.literals import DataIdentifierSeverityType
+```
+
+Values:
+
+- `HIGH`
+- `LOW`
+- `MEDIUM`
 
 ## DayOfWeekType
 
@@ -774,6 +787,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`

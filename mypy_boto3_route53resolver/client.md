@@ -39,6 +39,7 @@ type annotations stubs module
     - [get_firewall_rule_group](#get_firewall_rule_group)
     - [get_firewall_rule_group_association](#get_firewall_rule_group_association)
     - [get_firewall_rule_group_policy](#get_firewall_rule_group_policy)
+    - [get_resolver_config](#get_resolver_config)
     - [get_resolver_dnssec_config](#get_resolver_dnssec_config)
     - [get_resolver_endpoint](#get_resolver_endpoint)
     - [get_resolver_query_log_config](#get_resolver_query_log_config)
@@ -54,6 +55,7 @@ type annotations stubs module
     - [list_firewall_rule_group_associations](#list_firewall_rule_group_associations)
     - [list_firewall_rule_groups](#list_firewall_rule_groups)
     - [list_firewall_rules](#list_firewall_rules)
+    - [list_resolver_configs](#list_resolver_configs)
     - [list_resolver_dnssec_configs](#list_resolver_dnssec_configs)
     - [list_resolver_endpoint_ip_addresses](#list_resolver_endpoint_ip_addresses)
     - [list_resolver_endpoints](#list_resolver_endpoints)
@@ -71,6 +73,7 @@ type annotations stubs module
     - [update_firewall_domains](#update_firewall_domains)
     - [update_firewall_rule](#update_firewall_rule)
     - [update_firewall_rule_group_association](#update_firewall_rule_group_association)
+    - [update_resolver_config](#update_resolver_config)
     - [update_resolver_dnssec_config](#update_resolver_dnssec_config)
     - [update_resolver_endpoint](#update_resolver_endpoint)
     - [update_resolver_rule](#update_resolver_rule)
@@ -735,6 +738,27 @@ Keyword-only arguments:
 Returns
 [GetFirewallRuleGroupPolicyResponseTypeDef](./type_defs.md#getfirewallrulegrouppolicyresponsetypedef).
 
+### get_resolver_config
+
+Retrieves the behavior configuration of Route 53 Resolver behavior for a single
+VPC from Amazon Virtual Private Cloud.
+
+Type annotations for `boto3.client("route53resolver").get_resolver_config`
+method.
+
+Boto3 documentation:
+[Route53Resolver.Client.get_resolver_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_config)
+
+Arguments mapping described in
+[GetResolverConfigRequestRequestTypeDef](./type_defs.md#getresolverconfigrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceId`: `str` *(required)*
+
+Returns
+[GetResolverConfigResponseTypeDef](./type_defs.md#getresolverconfigresponsetypedef).
+
 ### get_resolver_dnssec_config
 
 Gets DNSSEC validation information for a specified resource.
@@ -1066,6 +1090,27 @@ Keyword-only arguments:
 
 Returns
 [ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef).
+
+### list_resolver_configs
+
+Retrieves the Resolver configurations that you have defined.
+
+Type annotations for `boto3.client("route53resolver").list_resolver_configs`
+method.
+
+Boto3 documentation:
+[Route53Resolver.Client.list_resolver_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_configs)
+
+Arguments mapping described in
+[ListResolverConfigsRequestRequestTypeDef](./type_defs.md#listresolverconfigsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListResolverConfigsResponseTypeDef](./type_defs.md#listresolverconfigsresponsetypedef).
 
 ### list_resolver_dnssec_configs
 
@@ -1462,6 +1507,30 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallRuleGroupAssociationResponseTypeDef](./type_defs.md#updatefirewallrulegroupassociationresponsetypedef).
 
+### update_resolver_config
+
+Updates the behavior configuration of Route 53 Resolver behavior for a single
+VPC from Amazon Virtual Private Cloud.
+
+Type annotations for `boto3.client("route53resolver").update_resolver_config`
+method.
+
+Boto3 documentation:
+[Route53Resolver.Client.update_resolver_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_config)
+
+Arguments mapping described in
+[UpdateResolverConfigRequestRequestTypeDef](./type_defs.md#updateresolverconfigrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceId`: `str` *(required)*
+- `AutodefinedReverseFlag`:
+  [AutodefinedReverseFlagType](./literals.md#autodefinedreverseflagtype)
+  *(required)*
+
+Returns
+[UpdateResolverConfigResponseTypeDef](./type_defs.md#updateresolverconfigresponsetypedef).
+
 ### update_resolver_dnssec_config
 
 Updates an existing DNSSEC validation configuration.
@@ -1544,6 +1613,8 @@ with overloads.
   [ListFirewallRuleGroupsPaginator](./paginators.md#listfirewallrulegroupspaginator)
 - `client.get_paginator("list_firewall_rules")` ->
   [ListFirewallRulesPaginator](./paginators.md#listfirewallrulespaginator)
+- `client.get_paginator("list_resolver_configs")` ->
+  [ListResolverConfigsPaginator](./paginators.md#listresolverconfigspaginator)
 - `client.get_paginator("list_resolver_dnssec_configs")` ->
   [ListResolverDnssecConfigsPaginator](./paginators.md#listresolverdnssecconfigspaginator)
 - `client.get_paginator("list_resolver_endpoint_ip_addresses")` ->

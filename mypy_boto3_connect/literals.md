@@ -44,6 +44,7 @@ type annotations stubs module
   - [ListRoutingProfileQueuesPaginatorName](#listroutingprofilequeuespaginatorname)
   - [ListRoutingProfilesPaginatorName](#listroutingprofilespaginatorname)
   - [ListSecurityKeysPaginatorName](#listsecuritykeyspaginatorname)
+  - [ListSecurityProfilePermissionsPaginatorName](#listsecurityprofilepermissionspaginatorname)
   - [ListSecurityProfilesPaginatorName](#listsecurityprofilespaginatorname)
   - [ListUseCasesPaginatorName](#listusecasespaginatorname)
   - [ListUserHierarchyGroupsPaginatorName](#listuserhierarchygroupspaginatorname)
@@ -500,6 +501,16 @@ from mypy_boto3_connect.literals import ListSecurityKeysPaginatorName
 Values:
 
 - `list_security_keys`
+
+## ListSecurityProfilePermissionsPaginatorName
+
+```python
+from mypy_boto3_connect.literals import ListSecurityProfilePermissionsPaginatorName
+```
+
+Values:
+
+- `list_security_profile_permissions`
 
 ## ListSecurityProfilesPaginatorName
 
@@ -975,6 +986,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`
@@ -1257,6 +1269,7 @@ Values:
 - `list_routing_profile_queues`
 - `list_routing_profiles`
 - `list_security_keys`
+- `list_security_profile_permissions`
 - `list_security_profiles`
 - `list_use_cases`
 - `list_user_hierarchy_groups`

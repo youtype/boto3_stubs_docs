@@ -16,6 +16,7 @@ type annotations stubs module
   - [AssociateTransitGatewayConnectPeerRequestRequestTypeDef](#associatetransitgatewayconnectpeerrequestrequesttypedef)
   - [AssociateTransitGatewayConnectPeerResponseTypeDef](#associatetransitgatewayconnectpeerresponsetypedef)
   - [BandwidthTypeDef](#bandwidthtypedef)
+  - [ConnectionHealthTypeDef](#connectionhealthtypedef)
   - [ConnectionTypeDef](#connectiontypedef)
   - [CreateConnectionRequestRequestTypeDef](#createconnectionrequestrequesttypedef)
   - [CreateConnectionResponseTypeDef](#createconnectionresponsetypedef)
@@ -59,6 +60,18 @@ type annotations stubs module
   - [GetLinkAssociationsResponseTypeDef](#getlinkassociationsresponsetypedef)
   - [GetLinksRequestRequestTypeDef](#getlinksrequestrequesttypedef)
   - [GetLinksResponseTypeDef](#getlinksresponsetypedef)
+  - [GetNetworkResourceCountsRequestRequestTypeDef](#getnetworkresourcecountsrequestrequesttypedef)
+  - [GetNetworkResourceCountsResponseTypeDef](#getnetworkresourcecountsresponsetypedef)
+  - [GetNetworkResourceRelationshipsRequestRequestTypeDef](#getnetworkresourcerelationshipsrequestrequesttypedef)
+  - [GetNetworkResourceRelationshipsResponseTypeDef](#getnetworkresourcerelationshipsresponsetypedef)
+  - [GetNetworkResourcesRequestRequestTypeDef](#getnetworkresourcesrequestrequesttypedef)
+  - [GetNetworkResourcesResponseTypeDef](#getnetworkresourcesresponsetypedef)
+  - [GetNetworkRoutesRequestRequestTypeDef](#getnetworkroutesrequestrequesttypedef)
+  - [GetNetworkRoutesResponseTypeDef](#getnetworkroutesresponsetypedef)
+  - [GetNetworkTelemetryRequestRequestTypeDef](#getnetworktelemetryrequestrequesttypedef)
+  - [GetNetworkTelemetryResponseTypeDef](#getnetworktelemetryresponsetypedef)
+  - [GetRouteAnalysisRequestRequestTypeDef](#getrouteanalysisrequestrequesttypedef)
+  - [GetRouteAnalysisResponseTypeDef](#getrouteanalysisresponsetypedef)
   - [GetSitesRequestRequestTypeDef](#getsitesrequestrequesttypedef)
   - [GetSitesResponseTypeDef](#getsitesresponsetypedef)
   - [GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef](#gettransitgatewayconnectpeerassociationsrequestrequesttypedef)
@@ -71,11 +84,27 @@ type annotations stubs module
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LocationTypeDef](#locationtypedef)
+  - [NetworkResourceCountTypeDef](#networkresourcecounttypedef)
+  - [NetworkResourceSummaryTypeDef](#networkresourcesummarytypedef)
+  - [NetworkResourceTypeDef](#networkresourcetypedef)
+  - [NetworkRouteDestinationTypeDef](#networkroutedestinationtypedef)
+  - [NetworkRouteTypeDef](#networkroutetypedef)
+  - [NetworkTelemetryTypeDef](#networktelemetrytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [PathComponentTypeDef](#pathcomponenttypedef)
   - [RegisterTransitGatewayRequestRequestTypeDef](#registertransitgatewayrequestrequesttypedef)
   - [RegisterTransitGatewayResponseTypeDef](#registertransitgatewayresponsetypedef)
+  - [RelationshipTypeDef](#relationshiptypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RouteAnalysisCompletionTypeDef](#routeanalysiscompletiontypedef)
+  - [RouteAnalysisEndpointOptionsSpecificationTypeDef](#routeanalysisendpointoptionsspecificationtypedef)
+  - [RouteAnalysisEndpointOptionsTypeDef](#routeanalysisendpointoptionstypedef)
+  - [RouteAnalysisPathTypeDef](#routeanalysispathtypedef)
+  - [RouteAnalysisTypeDef](#routeanalysistypedef)
+  - [RouteTableIdentifierTypeDef](#routetableidentifiertypedef)
   - [SiteTypeDef](#sitetypedef)
+  - [StartRouteAnalysisRequestRequestTypeDef](#startrouteanalysisrequestrequesttypedef)
+  - [StartRouteAnalysisResponseTypeDef](#startrouteanalysisresponsetypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TransitGatewayConnectPeerAssociationTypeDef](#transitgatewayconnectpeerassociationtypedef)
@@ -90,6 +119,8 @@ type annotations stubs module
   - [UpdateGlobalNetworkResponseTypeDef](#updateglobalnetworkresponsetypedef)
   - [UpdateLinkRequestRequestTypeDef](#updatelinkrequestrequesttypedef)
   - [UpdateLinkResponseTypeDef](#updatelinkresponsetypedef)
+  - [UpdateNetworkResourceMetadataRequestRequestTypeDef](#updatenetworkresourcemetadatarequestrequesttypedef)
+  - [UpdateNetworkResourceMetadataResponseTypeDef](#updatenetworkresourcemetadataresponsetypedef)
   - [UpdateSiteRequestRequestTypeDef](#updatesiterequestrequesttypedef)
   - [UpdateSiteResponseTypeDef](#updatesiteresponsetypedef)
 
@@ -197,6 +228,18 @@ Optional fields:
 
 - `UploadSpeed`: `int`
 - `DownloadSpeed`: `int`
+
+## ConnectionHealthTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ConnectionHealthTypeDef
+```
+
+Optional fields:
+
+- `Type`: [ConnectionTypeType](./literals.md#connectiontypetype)
+- `Status`: [ConnectionStatusType](./literals.md#connectionstatustype)
+- `Timestamp`: `datetime`
 
 ## ConnectionTypeDef
 
@@ -794,6 +837,201 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetNetworkResourceCountsRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetNetworkResourceCountsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GlobalNetworkId`: `str`
+
+Optional fields:
+
+- `ResourceType`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetNetworkResourceCountsResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetNetworkResourceCountsResponseTypeDef
+```
+
+Required fields:
+
+- `NetworkResourceCounts`:
+  `List`\[[NetworkResourceCountTypeDef](./type_defs.md#networkresourcecounttypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetNetworkResourceRelationshipsRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetNetworkResourceRelationshipsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GlobalNetworkId`: `str`
+
+Optional fields:
+
+- `RegisteredGatewayArn`: `str`
+- `AwsRegion`: `str`
+- `AccountId`: `str`
+- `ResourceType`: `str`
+- `ResourceArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetNetworkResourceRelationshipsResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetNetworkResourceRelationshipsResponseTypeDef
+```
+
+Required fields:
+
+- `Relationships`:
+  `List`\[[RelationshipTypeDef](./type_defs.md#relationshiptypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetNetworkResourcesRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetNetworkResourcesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GlobalNetworkId`: `str`
+
+Optional fields:
+
+- `RegisteredGatewayArn`: `str`
+- `AwsRegion`: `str`
+- `AccountId`: `str`
+- `ResourceType`: `str`
+- `ResourceArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetNetworkResourcesResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetNetworkResourcesResponseTypeDef
+```
+
+Required fields:
+
+- `NetworkResources`:
+  `List`\[[NetworkResourceTypeDef](./type_defs.md#networkresourcetypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetNetworkRoutesRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetNetworkRoutesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GlobalNetworkId`: `str`
+- `RouteTableIdentifier`:
+  [RouteTableIdentifierTypeDef](./type_defs.md#routetableidentifiertypedef)
+
+Optional fields:
+
+- `ExactCidrMatches`: `Sequence`\[`str`\]
+- `LongestPrefixMatches`: `Sequence`\[`str`\]
+- `SubnetOfMatches`: `Sequence`\[`str`\]
+- `SupernetOfMatches`: `Sequence`\[`str`\]
+- `PrefixListIds`: `Sequence`\[`str`\]
+- `States`: `Sequence`\[[RouteStateType](./literals.md#routestatetype)\]
+- `Types`: `Sequence`\[[RouteTypeType](./literals.md#routetypetype)\]
+- `DestinationFilters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+
+## GetNetworkRoutesResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetNetworkRoutesResponseTypeDef
+```
+
+Required fields:
+
+- `RouteTableArn`: `str`
+- `RouteTableType`: `Literal['TRANSIT_GATEWAY_ROUTE_TABLE']` (see
+  [RouteTableTypeType](./literals.md#routetabletypetype))
+- `RouteTableTimestamp`: `datetime`
+- `NetworkRoutes`:
+  `List`\[[NetworkRouteTypeDef](./type_defs.md#networkroutetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetNetworkTelemetryRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetNetworkTelemetryRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GlobalNetworkId`: `str`
+
+Optional fields:
+
+- `RegisteredGatewayArn`: `str`
+- `AwsRegion`: `str`
+- `AccountId`: `str`
+- `ResourceType`: `str`
+- `ResourceArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetNetworkTelemetryResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetNetworkTelemetryResponseTypeDef
+```
+
+Required fields:
+
+- `NetworkTelemetry`:
+  `List`\[[NetworkTelemetryTypeDef](./type_defs.md#networktelemetrytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetRouteAnalysisRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetRouteAnalysisRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GlobalNetworkId`: `str`
+- `RouteAnalysisId`: `str`
+
+## GetRouteAnalysisResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetRouteAnalysisResponseTypeDef
+```
+
+Required fields:
+
+- `RouteAnalysis`: [RouteAnalysisTypeDef](./type_defs.md#routeanalysistypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetSitesRequestRequestTypeDef
 
 ```python
@@ -966,6 +1204,95 @@ Optional fields:
 - `Latitude`: `str`
 - `Longitude`: `str`
 
+## NetworkResourceCountTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import NetworkResourceCountTypeDef
+```
+
+Optional fields:
+
+- `ResourceType`: `str`
+- `Count`: `int`
+
+## NetworkResourceSummaryTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import NetworkResourceSummaryTypeDef
+```
+
+Optional fields:
+
+- `RegisteredGatewayArn`: `str`
+- `ResourceArn`: `str`
+- `ResourceType`: `str`
+- `Definition`: `str`
+- `NameTag`: `str`
+- `IsMiddlebox`: `bool`
+
+## NetworkResourceTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import NetworkResourceTypeDef
+```
+
+Optional fields:
+
+- `RegisteredGatewayArn`: `str`
+- `AwsRegion`: `str`
+- `AccountId`: `str`
+- `ResourceType`: `str`
+- `ResourceId`: `str`
+- `ResourceArn`: `str`
+- `Definition`: `str`
+- `DefinitionTimestamp`: `datetime`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Metadata`: `Dict`\[`str`, `str`\]
+
+## NetworkRouteDestinationTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import NetworkRouteDestinationTypeDef
+```
+
+Optional fields:
+
+- `TransitGatewayAttachmentId`: `str`
+- `ResourceType`: `str`
+- `ResourceId`: `str`
+
+## NetworkRouteTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import NetworkRouteTypeDef
+```
+
+Optional fields:
+
+- `DestinationCidrBlock`: `str`
+- `Destinations`:
+  `List`\[[NetworkRouteDestinationTypeDef](./type_defs.md#networkroutedestinationtypedef)\]
+- `PrefixListId`: `str`
+- `State`: [RouteStateType](./literals.md#routestatetype)
+- `Type`: [RouteTypeType](./literals.md#routetypetype)
+
+## NetworkTelemetryTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import NetworkTelemetryTypeDef
+```
+
+Optional fields:
+
+- `RegisteredGatewayArn`: `str`
+- `AwsRegion`: `str`
+- `AccountId`: `str`
+- `ResourceType`: `str`
+- `ResourceId`: `str`
+- `ResourceArn`: `str`
+- `Address`: `str`
+- `Health`: [ConnectionHealthTypeDef](./type_defs.md#connectionhealthtypedef)
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -977,6 +1304,19 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## PathComponentTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import PathComponentTypeDef
+```
+
+Optional fields:
+
+- `Sequence`: `int`
+- `Resource`:
+  [NetworkResourceSummaryTypeDef](./type_defs.md#networkresourcesummarytypedef)
+- `DestinationCidrBlock`: `str`
 
 ## RegisterTransitGatewayRequestRequestTypeDef
 
@@ -1002,6 +1342,17 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## RelationshipTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import RelationshipTypeDef
+```
+
+Optional fields:
+
+- `From`: `str`
+- `To`: `str`
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1013,8 +1364,91 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## RouteAnalysisCompletionTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import RouteAnalysisCompletionTypeDef
+```
+
+Optional fields:
+
+- `ResultCode`:
+  [RouteAnalysisCompletionResultCodeType](./literals.md#routeanalysiscompletionresultcodetype)
+- `ReasonCode`:
+  [RouteAnalysisCompletionReasonCodeType](./literals.md#routeanalysiscompletionreasoncodetype)
+- `ReasonContext`: `Dict`\[`str`, `str`\]
+
+## RouteAnalysisEndpointOptionsSpecificationTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import RouteAnalysisEndpointOptionsSpecificationTypeDef
+```
+
+Optional fields:
+
+- `TransitGatewayAttachmentArn`: `str`
+- `IpAddress`: `str`
+
+## RouteAnalysisEndpointOptionsTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import RouteAnalysisEndpointOptionsTypeDef
+```
+
+Optional fields:
+
+- `TransitGatewayAttachmentArn`: `str`
+- `TransitGatewayArn`: `str`
+- `IpAddress`: `str`
+
+## RouteAnalysisPathTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import RouteAnalysisPathTypeDef
+```
+
+Optional fields:
+
+- `CompletionStatus`:
+  [RouteAnalysisCompletionTypeDef](./type_defs.md#routeanalysiscompletiontypedef)
+- `Path`: `List`\[[PathComponentTypeDef](./type_defs.md#pathcomponenttypedef)\]
+
+## RouteAnalysisTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import RouteAnalysisTypeDef
+```
+
+Optional fields:
+
+- `GlobalNetworkId`: `str`
+- `OwnerAccountId`: `str`
+- `RouteAnalysisId`: `str`
+- `StartTimestamp`: `datetime`
+- `Status`: [RouteAnalysisStatusType](./literals.md#routeanalysisstatustype)
+- `Source`:
+  [RouteAnalysisEndpointOptionsTypeDef](./type_defs.md#routeanalysisendpointoptionstypedef)
+- `Destination`:
+  [RouteAnalysisEndpointOptionsTypeDef](./type_defs.md#routeanalysisendpointoptionstypedef)
+- `IncludeReturnPath`: `bool`
+- `UseMiddleboxes`: `bool`
+- `ForwardPath`:
+  [RouteAnalysisPathTypeDef](./type_defs.md#routeanalysispathtypedef)
+- `ReturnPath`:
+  [RouteAnalysisPathTypeDef](./type_defs.md#routeanalysispathtypedef)
+
+## RouteTableIdentifierTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import RouteTableIdentifierTypeDef
+```
+
+Optional fields:
+
+- `TransitGatewayRouteTableArn`: `str`
 
 ## SiteTypeDef
 
@@ -1032,6 +1466,37 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `State`: [SiteStateType](./literals.md#sitestatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## StartRouteAnalysisRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import StartRouteAnalysisRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GlobalNetworkId`: `str`
+- `Source`:
+  [RouteAnalysisEndpointOptionsSpecificationTypeDef](./type_defs.md#routeanalysisendpointoptionsspecificationtypedef)
+- `Destination`:
+  [RouteAnalysisEndpointOptionsSpecificationTypeDef](./type_defs.md#routeanalysisendpointoptionsspecificationtypedef)
+
+Optional fields:
+
+- `IncludeReturnPath`: `bool`
+- `UseMiddleboxes`: `bool`
+
+## StartRouteAnalysisResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import StartRouteAnalysisResponseTypeDef
+```
+
+Required fields:
+
+- `RouteAnalysis`: [RouteAnalysisTypeDef](./type_defs.md#routeanalysistypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TagResourceRequestRequestTypeDef
 
@@ -1222,6 +1687,31 @@ from mypy_boto3_networkmanager.type_defs import UpdateLinkResponseTypeDef
 Required fields:
 
 - `Link`: [LinkTypeDef](./type_defs.md#linktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateNetworkResourceMetadataRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import UpdateNetworkResourceMetadataRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GlobalNetworkId`: `str`
+- `ResourceArn`: `str`
+- `Metadata`: `Mapping`\[`str`, `str`\]
+
+## UpdateNetworkResourceMetadataResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import UpdateNetworkResourceMetadataResponseTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

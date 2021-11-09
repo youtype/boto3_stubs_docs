@@ -16,6 +16,7 @@ type annotations stubs module
   - [DistributionDeployedWaiterName](#distributiondeployedwaitername)
   - [EventTypeType](#eventtypetype)
   - [FormatType](#formattype)
+  - [FrameOptionsListType](#frameoptionslisttype)
   - [FunctionRuntimeType](#functionruntimetype)
   - [FunctionStageType](#functionstagetype)
   - [GeoRestrictionTypeType](#georestrictiontypetype)
@@ -36,6 +37,9 @@ type annotations stubs module
   - [OriginRequestPolicyTypeType](#originrequestpolicytypetype)
   - [PriceClassType](#priceclasstype)
   - [RealtimeMetricsSubscriptionStatusType](#realtimemetricssubscriptionstatustype)
+  - [ReferrerPolicyListType](#referrerpolicylisttype)
+  - [ResponseHeadersPolicyAccessControlAllowMethodsValuesType](#responseheaderspolicyaccesscontrolallowmethodsvaluestype)
+  - [ResponseHeadersPolicyTypeType](#responseheaderspolicytypetype)
   - [SSLSupportMethodType](#sslsupportmethodtype)
   - [SslProtocolType](#sslprotocoltype)
   - [StreamingDistributionDeployedWaiterName](#streamingdistributiondeployedwaitername)
@@ -136,6 +140,17 @@ from mypy_boto3_cloudfront.literals import FormatType
 Values:
 
 - `URLEncoded`
+
+## FrameOptionsListType
+
+```python
+from mypy_boto3_cloudfront.literals import FrameOptionsListType
+```
+
+Values:
+
+- `DENY`
+- `SAMEORIGIN`
 
 ## FunctionRuntimeType
 
@@ -370,6 +385,51 @@ Values:
 - `Disabled`
 - `Enabled`
 
+## ReferrerPolicyListType
+
+```python
+from mypy_boto3_cloudfront.literals import ReferrerPolicyListType
+```
+
+Values:
+
+- `no-referrer`
+- `no-referrer-when-downgrade`
+- `origin`
+- `origin-when-cross-origin`
+- `same-origin`
+- `strict-origin`
+- `strict-origin-when-cross-origin`
+- `unsafe-url`
+
+## ResponseHeadersPolicyAccessControlAllowMethodsValuesType
+
+```python
+from mypy_boto3_cloudfront.literals import ResponseHeadersPolicyAccessControlAllowMethodsValuesType
+```
+
+Values:
+
+- `ALL`
+- `DELETE`
+- `GET`
+- `HEAD`
+- `OPTIONS`
+- `PATCH`
+- `POST`
+- `PUT`
+
+## ResponseHeadersPolicyTypeType
+
+```python
+from mypy_boto3_cloudfront.literals import ResponseHeadersPolicyTypeType
+```
+
+Values:
+
+- `custom`
+- `managed`
+
 ## SSLSupportMethodType
 
 ```python
@@ -457,6 +517,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`

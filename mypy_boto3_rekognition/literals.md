@@ -13,6 +13,9 @@ type annotations stubs module
   - [CelebrityRecognitionSortByType](#celebrityrecognitionsortbytype)
   - [ContentClassifierType](#contentclassifiertype)
   - [ContentModerationSortByType](#contentmoderationsortbytype)
+  - [DatasetStatusMessageCodeType](#datasetstatusmessagecodetype)
+  - [DatasetStatusType](#datasetstatustype)
+  - [DatasetTypeType](#datasettypetype)
   - [DescribeProjectVersionsPaginatorName](#describeprojectversionspaginatorname)
   - [DescribeProjectsPaginatorName](#describeprojectspaginatorname)
   - [EmotionNameType](#emotionnametype)
@@ -23,6 +26,8 @@ type annotations stubs module
   - [LabelDetectionSortByType](#labeldetectionsortbytype)
   - [LandmarkTypeType](#landmarktypetype)
   - [ListCollectionsPaginatorName](#listcollectionspaginatorname)
+  - [ListDatasetEntriesPaginatorName](#listdatasetentriespaginatorname)
+  - [ListDatasetLabelsPaginatorName](#listdatasetlabelspaginatorname)
   - [ListFacesPaginatorName](#listfacespaginatorname)
   - [ListStreamProcessorsPaginatorName](#liststreamprocessorspaginatorname)
   - [OrientationCorrectionType](#orientationcorrectiontype)
@@ -100,6 +105,45 @@ Values:
 
 - `NAME`
 - `TIMESTAMP`
+
+## DatasetStatusMessageCodeType
+
+```python
+from mypy_boto3_rekognition.literals import DatasetStatusMessageCodeType
+```
+
+Values:
+
+- `CLIENT_ERROR`
+- `SERVICE_ERROR`
+- `SUCCESS`
+
+## DatasetStatusType
+
+```python
+from mypy_boto3_rekognition.literals import DatasetStatusType
+```
+
+Values:
+
+- `CREATE_COMPLETE`
+- `CREATE_FAILED`
+- `CREATE_IN_PROGRESS`
+- `DELETE_IN_PROGRESS`
+- `UPDATE_COMPLETE`
+- `UPDATE_FAILED`
+- `UPDATE_IN_PROGRESS`
+
+## DatasetTypeType
+
+```python
+from mypy_boto3_rekognition.literals import DatasetTypeType
+```
+
+Values:
+
+- `TEST`
+- `TRAIN`
 
 ## DescribeProjectVersionsPaginatorName
 
@@ -242,6 +286,26 @@ from mypy_boto3_rekognition.literals import ListCollectionsPaginatorName
 Values:
 
 - `list_collections`
+
+## ListDatasetEntriesPaginatorName
+
+```python
+from mypy_boto3_rekognition.literals import ListDatasetEntriesPaginatorName
+```
+
+Values:
+
+- `list_dataset_entries`
+
+## ListDatasetLabelsPaginatorName
+
+```python
+from mypy_boto3_rekognition.literals import ListDatasetLabelsPaginatorName
+```
+
+Values:
+
+- `list_dataset_labels`
 
 ## ListFacesPaginatorName
 
@@ -494,6 +558,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`
@@ -759,6 +824,8 @@ Values:
 - `describe_project_versions`
 - `describe_projects`
 - `list_collections`
+- `list_dataset_entries`
+- `list_dataset_labels`
 - `list_faces`
 - `list_stream_processors`
 

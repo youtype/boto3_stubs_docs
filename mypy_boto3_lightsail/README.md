@@ -364,6 +364,7 @@ from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef, ...
 - [AutoSnapshotDetailsTypeDef](./type_defs.md#autosnapshotdetailstypedef)
 - [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
 - [BlueprintTypeDef](./type_defs.md#blueprinttypedef)
+- [BucketAccessLogConfigTypeDef](./type_defs.md#bucketaccesslogconfigtypedef)
 - [BucketBundleTypeDef](./type_defs.md#bucketbundletypedef)
 - [BucketStateTypeDef](./type_defs.md#bucketstatetypedef)
 - [BucketTypeDef](./type_defs.md#buckettypedef)

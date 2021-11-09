@@ -31,6 +31,7 @@ type annotations stubs module
   - [AutoSnapshotDetailsTypeDef](#autosnapshotdetailstypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
   - [BlueprintTypeDef](#blueprinttypedef)
+  - [BucketAccessLogConfigTypeDef](#bucketaccesslogconfigtypedef)
   - [BucketBundleTypeDef](#bucketbundletypedef)
   - [BucketStateTypeDef](#bucketstatetypedef)
   - [BucketTypeDef](#buckettypedef)
@@ -709,6 +710,21 @@ Optional fields:
 - `licenseUrl`: `str`
 - `platform`: [InstancePlatformType](./literals.md#instanceplatformtype)
 
+## BucketAccessLogConfigTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import BucketAccessLogConfigTypeDef
+```
+
+Required fields:
+
+- `enabled`: `bool`
+
+Optional fields:
+
+- `destination`: `str`
+- `prefix`: `str`
+
 ## BucketBundleTypeDef
 
 ```python
@@ -759,6 +775,8 @@ Optional fields:
 - `resourcesReceivingAccess`:
   `List`\[[ResourceReceivingAccessTypeDef](./type_defs.md#resourcereceivingaccesstypedef)\]
 - `state`: [BucketStateTypeDef](./type_defs.md#bucketstatetypedef)
+- `accessLogConfig`:
+  [BucketAccessLogConfigTypeDef](./type_defs.md#bucketaccesslogconfigtypedef)
 
 ## BundleTypeDef
 
@@ -5198,7 +5216,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## SendContactMethodVerificationRequestRequestTypeDef
@@ -5524,6 +5542,8 @@ Optional fields:
 - `accessRules`: [AccessRulesTypeDef](./type_defs.md#accessrulestypedef)
 - `versioning`: `str`
 - `readonlyAccessAccounts`: `Sequence`\[`str`\]
+- `accessLogConfig`:
+  [BucketAccessLogConfigTypeDef](./type_defs.md#bucketaccesslogconfigtypedef)
 
 ## UpdateBucketResultTypeDef
 

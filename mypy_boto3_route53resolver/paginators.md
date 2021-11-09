@@ -14,6 +14,7 @@ type annotations stubs module
   - [ListFirewallRuleGroupAssociationsPaginator](#listfirewallrulegroupassociationspaginator)
   - [ListFirewallRuleGroupsPaginator](#listfirewallrulegroupspaginator)
   - [ListFirewallRulesPaginator](#listfirewallrulespaginator)
+  - [ListResolverConfigsPaginator](#listresolverconfigspaginator)
   - [ListResolverDnssecConfigsPaginator](#listresolverdnssecconfigspaginator)
   - [ListResolverEndpointIpAddressesPaginator](#listresolverendpointipaddressespaginator)
   - [ListResolverEndpointsPaginator](#listresolverendpointspaginator)
@@ -181,6 +182,31 @@ Arguments for `ListFirewallRulesPaginator.paginate` method:
 
 `ListFirewallRulesPaginator.paginate` returns
 `_PageIterator`\[[ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef)\].
+
+## ListResolverConfigsPaginator
+
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_resolver_configs")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_route53resolver.paginator import ListResolverConfigsPaginator
+
+def get_list_resolver_configs_paginator() -> ListResolverConfigsPaginator:
+    return boto3.client("route53resolver").get_paginator("list_resolver_configs")
+```
+
+Boto3 documentation:
+[Route53Resolver.Paginator.ListResolverConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverConfigs)
+
+Arguments for `ListResolverConfigsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListResolverConfigsPaginator.paginate` returns
+`_PageIterator`\[[ListResolverConfigsResponseTypeDef](./type_defs.md#listresolverconfigsresponsetypedef)\].
 
 ## ListResolverDnssecConfigsPaginator
 

@@ -95,6 +95,8 @@ Optional fields:
 - `OpsCenterEnabled`: `bool`
 - `CWEMonitorEnabled`: `bool`
 - `Remarks`: `str`
+- `AutoConfigEnabled`: `bool`
+- `DiscoveryType`: [DiscoveryTypeType](./literals.md#discoverytypetype)
 
 ## ConfigurationEventTypeDef
 
@@ -119,16 +121,15 @@ Optional fields:
 from mypy_boto3_application_insights.type_defs import CreateApplicationRequestRequestTypeDef
 ```
 
-Required fields:
-
-- `ResourceGroupName`: `str`
-
 Optional fields:
 
+- `ResourceGroupName`: `str`
 - `OpsCenterEnabled`: `bool`
 - `CWEMonitorEnabled`: `bool`
 - `OpsItemSNSTopicArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `AutoConfigEnabled`: `bool`
+- `AutoCreate`: `bool`
 
 ## CreateApplicationResponseTypeDef
 
@@ -561,6 +562,7 @@ Optional fields:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+- `ComponentName`: `str`
 
 ## ListProblemsResponseTypeDef
 
@@ -572,6 +574,7 @@ Required fields:
 
 - `ProblemList`: `List`\[[ProblemTypeDef](./type_defs.md#problemtypedef)\]
 - `NextToken`: `str`
+- `ResourceGroupName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -685,6 +688,8 @@ Optional fields:
 - `Feedback`: `Dict`\[`Literal['INSIGHTS_FEEDBACK']` (see
   [FeedbackKeyType](./literals.md#feedbackkeytype)),
   [FeedbackValueType](./literals.md#feedbackvaluetype)\]
+- `RecurringCount`: `int`
+- `LastRecurrenceTime`: `datetime`
 
 ## RelatedObservationsTypeDef
 
@@ -708,7 +713,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## TagResourceRequestRequestTypeDef
@@ -760,6 +765,7 @@ Optional fields:
 - `CWEMonitorEnabled`: `bool`
 - `OpsItemSNSTopicArn`: `str`
 - `RemoveSNSTopic`: `bool`
+- `AutoConfigEnabled`: `bool`
 
 ## UpdateApplicationResponseTypeDef
 
@@ -790,6 +796,7 @@ Optional fields:
 - `Monitor`: `bool`
 - `Tier`: [TierType](./literals.md#tiertype)
 - `ComponentConfiguration`: `str`
+- `AutoConfigEnabled`: `bool`
 
 ## UpdateComponentRequestRequestTypeDef
 

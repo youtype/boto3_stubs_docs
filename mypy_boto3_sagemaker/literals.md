@@ -14,6 +14,7 @@ type annotations stubs module
   - [AppImageConfigSortKeyType](#appimageconfigsortkeytype)
   - [AppInstanceTypeType](#appinstancetypetype)
   - [AppNetworkAccessTypeType](#appnetworkaccesstypetype)
+  - [AppSecurityGroupManagementType](#appsecuritygroupmanagementtype)
   - [AppSortKeyType](#appsortkeytype)
   - [AppStatusType](#appstatustype)
   - [AppTypeType](#apptypetype)
@@ -196,6 +197,8 @@ type annotations stubs module
   - [ProjectSortByType](#projectsortbytype)
   - [ProjectSortOrderType](#projectsortordertype)
   - [ProjectStatusType](#projectstatustype)
+  - [RStudioServerProAccessStatusType](#rstudioserverproaccessstatustype)
+  - [RStudioServerProUserGroupType](#rstudioserverprousergrouptype)
   - [RecordWrapperType](#recordwrappertype)
   - [RedshiftResultCompressionTypeType](#redshiftresultcompressiontypetype)
   - [RedshiftResultFormatType](#redshiftresultformattype)
@@ -244,6 +247,7 @@ type annotations stubs module
   - [UserProfileSortKeyType](#userprofilesortkeytype)
   - [UserProfileStatusType](#userprofilestatustype)
   - [VariantPropertyTypeType](#variantpropertytypetype)
+  - [VariantStatusType](#variantstatustype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
@@ -369,6 +373,17 @@ Values:
 - `PublicInternetOnly`
 - `VpcOnly`
 
+## AppSecurityGroupManagementType
+
+```python
+from mypy_boto3_sagemaker.literals import AppSecurityGroupManagementType
+```
+
+Values:
+
+- `Customer`
+- `Service`
+
 ## AppSortKeyType
 
 ```python
@@ -403,6 +418,8 @@ Values:
 
 - `JupyterServer`
 - `KernelGateway`
+- `RSessionGateway`
+- `RStudioServerPro`
 - `TensorBoard`
 
 ## ArtifactSourceIdTypeType
@@ -2628,6 +2645,31 @@ Values:
 - `DeleteFailed`
 - `DeleteInProgress`
 - `Pending`
+- `UpdateCompleted`
+- `UpdateFailed`
+- `UpdateInProgress`
+
+## RStudioServerProAccessStatusType
+
+```python
+from mypy_boto3_sagemaker.literals import RStudioServerProAccessStatusType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## RStudioServerProUserGroupType
+
+```python
+from mypy_boto3_sagemaker.literals import RStudioServerProUserGroupType
+```
+
+Values:
+
+- `R_STUDIO_ADMIN`
+- `R_STUDIO_USER`
 
 ## RecordWrapperType
 
@@ -3088,6 +3130,7 @@ Values:
 
 - `ALL_AT_ONCE`
 - `CANARY`
+- `LINEAR`
 
 ## TrainingInputModeType
 
@@ -3315,6 +3358,20 @@ Values:
 - `DesiredInstanceCount`
 - `DesiredWeight`
 
+## VariantStatusType
+
+```python
+from mypy_boto3_sagemaker.literals import VariantStatusType
+```
+
+Values:
+
+- `ActivatingTraffic`
+- `Baking`
+- `Creating`
+- `Deleting`
+- `Updating`
+
 ## ServiceName
 
 ```python
@@ -3355,6 +3412,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`

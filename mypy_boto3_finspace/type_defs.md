@@ -20,6 +20,7 @@ type annotations stubs module
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SuperuserParametersTypeDef](#superuserparameterstypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateEnvironmentRequestRequestTypeDef](#updateenvironmentrequestrequesttypedef)
@@ -43,6 +44,9 @@ Optional fields:
 - `federationMode`: [FederationModeType](./literals.md#federationmodetype)
 - `federationParameters`:
   [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
+- `superuserParameters`:
+  [SuperuserParametersTypeDef](./type_defs.md#superuserparameterstypedef)
+- `dataBundles`: `Sequence`\[`str`\]
 
 ## CreateEnvironmentResponseTypeDef
 
@@ -185,8 +189,20 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## SuperuserParametersTypeDef
+
+```python
+from mypy_boto3_finspace.type_defs import SuperuserParametersTypeDef
+```
+
+Required fields:
+
+- `emailAddress`: `str`
+- `firstName`: `str`
+- `lastName`: `str`
 
 ## TagResourceRequestRequestTypeDef
 

@@ -52,6 +52,10 @@ type annotations stubs module
   - [AutoMLS3DataSourceTypeDef](#automls3datasourcetypedef)
   - [AutoMLSecurityConfigTypeDef](#automlsecurityconfigtypedef)
   - [AutoRollbackConfigTypeDef](#autorollbackconfigtypedef)
+  - [BatchDescribeModelPackageErrorTypeDef](#batchdescribemodelpackageerrortypedef)
+  - [BatchDescribeModelPackageInputRequestTypeDef](#batchdescribemodelpackageinputrequesttypedef)
+  - [BatchDescribeModelPackageOutputTypeDef](#batchdescribemodelpackageoutputtypedef)
+  - [BatchDescribeModelPackageSummaryTypeDef](#batchdescribemodelpackagesummarytypedef)
   - [BiasTypeDef](#biastypedef)
   - [BlueGreenUpdatePolicyTypeDef](#bluegreenupdatepolicytypedef)
   - [CacheHitResultTypeDef](#cachehitresulttypedef)
@@ -330,6 +334,8 @@ type annotations stubs module
   - [DisassociateTrialComponentRequestRequestTypeDef](#disassociatetrialcomponentrequestrequesttypedef)
   - [DisassociateTrialComponentResponseTypeDef](#disassociatetrialcomponentresponsetypedef)
   - [DomainDetailsTypeDef](#domaindetailstypedef)
+  - [DomainSettingsForUpdateTypeDef](#domainsettingsforupdatetypedef)
+  - [DomainSettingsTypeDef](#domainsettingstypedef)
   - [EdgeModelStatTypeDef](#edgemodelstattypedef)
   - [EdgeModelSummaryTypeDef](#edgemodelsummarytypedef)
   - [EdgeModelTypeDef](#edgemodeltypedef)
@@ -591,6 +597,8 @@ type annotations stubs module
   - [ParameterTypeDef](#parametertypedef)
   - [ParentHyperParameterTuningJobTypeDef](#parenthyperparametertuningjobtypedef)
   - [ParentTypeDef](#parenttypedef)
+  - [PendingDeploymentSummaryTypeDef](#pendingdeploymentsummarytypedef)
+  - [PendingProductionVariantSummaryTypeDef](#pendingproductionvariantsummarytypedef)
   - [PipelineExecutionStepMetadataTypeDef](#pipelineexecutionstepmetadatatypedef)
   - [PipelineExecutionStepTypeDef](#pipelineexecutionsteptypedef)
   - [PipelineExecutionSummaryTypeDef](#pipelineexecutionsummarytypedef)
@@ -611,6 +619,7 @@ type annotations stubs module
   - [ProcessingS3OutputTypeDef](#processings3outputtypedef)
   - [ProcessingStoppingConditionTypeDef](#processingstoppingconditiontypedef)
   - [ProductionVariantCoreDumpConfigTypeDef](#productionvariantcoredumpconfigtypedef)
+  - [ProductionVariantStatusTypeDef](#productionvariantstatustypedef)
   - [ProductionVariantSummaryTypeDef](#productionvariantsummarytypedef)
   - [ProductionVariantTypeDef](#productionvarianttypedef)
   - [ProfilerConfigForUpdateTypeDef](#profilerconfigforupdatetypedef)
@@ -625,6 +634,9 @@ type annotations stubs module
   - [PublicWorkforceTaskPriceTypeDef](#publicworkforcetaskpricetypedef)
   - [PutModelPackageGroupPolicyInputRequestTypeDef](#putmodelpackagegrouppolicyinputrequesttypedef)
   - [PutModelPackageGroupPolicyOutputTypeDef](#putmodelpackagegrouppolicyoutputtypedef)
+  - [RStudioServerProAppSettingsTypeDef](#rstudioserverproappsettingstypedef)
+  - [RStudioServerProDomainSettingsForUpdateTypeDef](#rstudioserverprodomainsettingsforupdatetypedef)
+  - [RStudioServerProDomainSettingsTypeDef](#rstudioserverprodomainsettingstypedef)
   - [RedshiftDatasetDefinitionTypeDef](#redshiftdatasetdefinitiontypedef)
   - [RegisterDevicesRequestRequestTypeDef](#registerdevicesrequestrequesttypedef)
   - [RegisterModelStepMetadataTypeDef](#registermodelstepmetadatatypedef)
@@ -656,6 +668,7 @@ type annotations stubs module
   - [SendPipelineExecutionStepSuccessResponseTypeDef](#sendpipelineexecutionstepsuccessresponsetypedef)
   - [ServiceCatalogProvisionedProductDetailsTypeDef](#servicecatalogprovisionedproductdetailstypedef)
   - [ServiceCatalogProvisioningDetailsTypeDef](#servicecatalogprovisioningdetailstypedef)
+  - [ServiceCatalogProvisioningUpdateDetailsTypeDef](#servicecatalogprovisioningupdatedetailstypedef)
   - [SharingSettingsTypeDef](#sharingsettingstypedef)
   - [ShuffleConfigTypeDef](#shuffleconfigtypedef)
   - [SourceAlgorithmSpecificationTypeDef](#sourcealgorithmspecificationtypedef)
@@ -751,6 +764,8 @@ type annotations stubs module
   - [UpdatePipelineExecutionResponseTypeDef](#updatepipelineexecutionresponsetypedef)
   - [UpdatePipelineRequestRequestTypeDef](#updatepipelinerequestrequesttypedef)
   - [UpdatePipelineResponseTypeDef](#updatepipelineresponsetypedef)
+  - [UpdateProjectInputRequestTypeDef](#updateprojectinputrequesttypedef)
+  - [UpdateProjectOutputTypeDef](#updateprojectoutputtypedef)
   - [UpdateTrainingJobRequestRequestTypeDef](#updatetrainingjobrequestrequesttypedef)
   - [UpdateTrainingJobResponseTypeDef](#updatetrainingjobresponsetypedef)
   - [UpdateTrialComponentRequestRequestTypeDef](#updatetrialcomponentrequestrequesttypedef)
@@ -1391,7 +1406,66 @@ from mypy_boto3_sagemaker.type_defs import AutoRollbackConfigTypeDef
 
 Optional fields:
 
-- `Alarms`: `List`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
+- `Alarms`: `Sequence`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
+
+## BatchDescribeModelPackageErrorTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import BatchDescribeModelPackageErrorTypeDef
+```
+
+Required fields:
+
+- `ErrorCode`: `str`
+- `ErrorResponse`: `str`
+
+## BatchDescribeModelPackageInputRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import BatchDescribeModelPackageInputRequestTypeDef
+```
+
+Required fields:
+
+- `ModelPackageArnList`: `Sequence`\[`str`\]
+
+## BatchDescribeModelPackageOutputTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import BatchDescribeModelPackageOutputTypeDef
+```
+
+Required fields:
+
+- `ModelPackageSummaries`: `Dict`\[`str`,
+  [BatchDescribeModelPackageSummaryTypeDef](./type_defs.md#batchdescribemodelpackagesummarytypedef)\]
+- `BatchDescribeModelPackageErrorMap`: `Dict`\[`str`,
+  [BatchDescribeModelPackageErrorTypeDef](./type_defs.md#batchdescribemodelpackageerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## BatchDescribeModelPackageSummaryTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import BatchDescribeModelPackageSummaryTypeDef
+```
+
+Required fields:
+
+- `ModelPackageGroupName`: `str`
+- `ModelPackageArn`: `str`
+- `CreationTime`: `datetime`
+- `InferenceSpecification`:
+  [InferenceSpecificationTypeDef](./type_defs.md#inferencespecificationtypedef)
+- `ModelPackageStatus`:
+  [ModelPackageStatusType](./literals.md#modelpackagestatustype)
+
+Optional fields:
+
+- `ModelPackageVersion`: `int`
+- `ModelPackageDescription`: `str`
+- `ModelApprovalStatus`:
+  [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 
 ## BiasTypeDef
 
@@ -2101,6 +2175,10 @@ Optional fields:
   [AppNetworkAccessTypeType](./literals.md#appnetworkaccesstypetype)
 - `HomeEfsFileSystemKmsKeyId`: `str`
 - `KmsKeyId`: `str`
+- `AppSecurityGroupManagement`:
+  [AppSecurityGroupManagementType](./literals.md#appsecuritygroupmanagementtype)
+- `DomainSettings`:
+  [DomainSettingsTypeDef](./type_defs.md#domainsettingstypedef)
 
 ## CreateDomainResponseTypeDef
 
@@ -2182,6 +2260,8 @@ Required fields:
 
 Optional fields:
 
+- `DeploymentConfig`:
+  [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEndpointOutputTypeDef
@@ -2617,6 +2697,7 @@ Optional fields:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
 - `ModelMetrics`: [ModelMetricsTypeDef](./type_defs.md#modelmetricstypedef)
 - `ClientToken`: `str`
+- `CustomerMetadataProperties`: `Mapping`\[`str`, `str`\]
 
 ## CreateModelPackageOutputTypeDef
 
@@ -4370,6 +4451,7 @@ Required fields:
 - `Models`: `List`\[[EdgeModelTypeDef](./type_defs.md#edgemodeltypedef)\]
 - `MaxModels`: `int`
 - `NextToken`: `str`
+- `AgentVersion`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4410,6 +4492,11 @@ Required fields:
 - `Url`: `str`
 - `VpcId`: `str`
 - `KmsKeyId`: `str`
+- `DomainSettings`:
+  [DomainSettingsTypeDef](./type_defs.md#domainsettingstypedef)
+- `AppSecurityGroupManagement`:
+  [AppSecurityGroupManagementType](./literals.md#appsecuritygroupmanagementtype)
+- `SecurityGroupIdForDomainBoundary`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4516,6 +4603,8 @@ Required fields:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `AsyncInferenceConfig`:
   [AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef)
+- `PendingDeploymentSummary`:
+  [PendingDeploymentSummaryTypeDef](./type_defs.md#pendingdeploymentsummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4995,6 +5084,7 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `ApprovalDescription`: `str`
+- `CustomerMetadataProperties`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5314,6 +5404,8 @@ Required fields:
 - `ProjectStatus`: [ProjectStatusType](./literals.md#projectstatustype)
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `CreationTime`: `datetime`
+- `LastModifiedTime`: `datetime`
+- `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5709,6 +5801,7 @@ Optional fields:
 - `LatestHeartbeat`: `datetime`
 - `Models`:
   `List`\[[EdgeModelSummaryTypeDef](./type_defs.md#edgemodelsummarytypedef)\]
+- `AgentVersion`: `str`
 
 ## DeviceTypeDef
 
@@ -5764,6 +5857,29 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `Url`: `str`
+
+## DomainSettingsForUpdateTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DomainSettingsForUpdateTypeDef
+```
+
+Optional fields:
+
+- `RStudioServerProDomainSettingsForUpdate`:
+  [RStudioServerProDomainSettingsForUpdateTypeDef](./type_defs.md#rstudioserverprodomainsettingsforupdatetypedef)
+
+## DomainSettingsTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DomainSettingsTypeDef
+```
+
+Optional fields:
+
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `RStudioServerProDomainSettings`:
+  [RStudioServerProDomainSettingsTypeDef](./type_defs.md#rstudioserverprodomainsettingstypedef)
 
 ## EdgeModelStatTypeDef
 
@@ -6636,16 +6752,16 @@ from mypy_boto3_sagemaker.type_defs import InferenceSpecificationTypeDef
 Required fields:
 
 - `Containers`:
-  `Sequence`\[[ModelPackageContainerDefinitionTypeDef](./type_defs.md#modelpackagecontainerdefinitiontypedef)\]
-- `SupportedContentTypes`: `Sequence`\[`str`\]
-- `SupportedResponseMIMETypes`: `Sequence`\[`str`\]
+  `List`\[[ModelPackageContainerDefinitionTypeDef](./type_defs.md#modelpackagecontainerdefinitiontypedef)\]
+- `SupportedContentTypes`: `List`\[`str`\]
+- `SupportedResponseMIMETypes`: `List`\[`str`\]
 
 Optional fields:
 
 - `SupportedTransformInstanceTypes`:
-  `Sequence`\[[TransformInstanceTypeType](./literals.md#transforminstancetypetype)\]
+  `List`\[[TransformInstanceTypeType](./literals.md#transforminstancetypetype)\]
 - `SupportedRealtimeInferenceInstanceTypes`:
-  `Sequence`\[[ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)\]
+  `List`\[[ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)\]
 
 ## InputConfigTypeDef
 
@@ -8930,7 +9046,7 @@ Optional fields:
 - `ImageDigest`: `str`
 - `ModelDataUrl`: `str`
 - `ProductId`: `str`
-- `Environment`: `Mapping`\[`str`, `str`\]
+- `Environment`: `Dict`\[`str`, `str`\]
 
 ## ModelPackageGroupSummaryTypeDef
 
@@ -9056,6 +9172,7 @@ Optional fields:
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `ApprovalDescription`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CustomerMetadataProperties`: `Dict`\[`str`, `str`\]
 
 ## ModelPackageValidationProfileTypeDef
 
@@ -9773,6 +9890,47 @@ Optional fields:
 - `TrialName`: `str`
 - `ExperimentName`: `str`
 
+## PendingDeploymentSummaryTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import PendingDeploymentSummaryTypeDef
+```
+
+Required fields:
+
+- `EndpointConfigName`: `str`
+
+Optional fields:
+
+- `ProductionVariants`:
+  `List`\[[PendingProductionVariantSummaryTypeDef](./type_defs.md#pendingproductionvariantsummarytypedef)\]
+- `StartTime`: `datetime`
+
+## PendingProductionVariantSummaryTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import PendingProductionVariantSummaryTypeDef
+```
+
+Required fields:
+
+- `VariantName`: `str`
+
+Optional fields:
+
+- `DeployedImages`:
+  `List`\[[DeployedImageTypeDef](./type_defs.md#deployedimagetypedef)\]
+- `CurrentWeight`: `float`
+- `DesiredWeight`: `float`
+- `CurrentInstanceCount`: `int`
+- `DesiredInstanceCount`: `int`
+- `InstanceType`:
+  [ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)
+- `AcceleratorType`:
+  [ProductionVariantAcceleratorTypeType](./literals.md#productionvariantacceleratortypetype)
+- `VariantStatus`:
+  `List`\[[ProductionVariantStatusTypeDef](./type_defs.md#productionvariantstatustypedef)\]
+
 ## PipelineExecutionStepMetadataTypeDef
 
 ```python
@@ -10123,6 +10281,21 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 
+## ProductionVariantStatusTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ProductionVariantStatusTypeDef
+```
+
+Required fields:
+
+- `Status`: [VariantStatusType](./literals.md#variantstatustype)
+
+Optional fields:
+
+- `StatusMessage`: `str`
+- `StartTime`: `datetime`
+
 ## ProductionVariantSummaryTypeDef
 
 ```python
@@ -10141,6 +10314,8 @@ Optional fields:
 - `DesiredWeight`: `float`
 - `CurrentInstanceCount`: `int`
 - `DesiredInstanceCount`: `int`
+- `VariantStatus`:
+  `List`\[[ProductionVariantStatusTypeDef](./type_defs.md#productionvariantstatustypedef)\]
 
 ## ProductionVariantTypeDef
 
@@ -10265,6 +10440,8 @@ Optional fields:
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `CreationTime`: `datetime`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `LastModifiedTime`: `datetime`
+- `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 
 ## PropertyNameQueryTypeDef
 
@@ -10329,6 +10506,51 @@ Required fields:
 - `ModelPackageGroupArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RStudioServerProAppSettingsTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RStudioServerProAppSettingsTypeDef
+```
+
+Optional fields:
+
+- `AccessStatus`:
+  [RStudioServerProAccessStatusType](./literals.md#rstudioserverproaccessstatustype)
+- `UserGroup`:
+  [RStudioServerProUserGroupType](./literals.md#rstudioserverprousergrouptype)
+
+## RStudioServerProDomainSettingsForUpdateTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RStudioServerProDomainSettingsForUpdateTypeDef
+```
+
+Required fields:
+
+- `DomainExecutionRoleArn`: `str`
+
+Optional fields:
+
+- `DefaultResourceSpec`:
+  [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
+
+## RStudioServerProDomainSettingsTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RStudioServerProDomainSettingsTypeDef
+```
+
+Required fields:
+
+- `DomainExecutionRoleArn`: `str`
+
+Optional fields:
+
+- `RStudioConnectUrl`: `str`
+- `RStudioPackageManagerUrl`: `str`
+- `DefaultResourceSpec`:
+  [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
 
 ## RedshiftDatasetDefinitionTypeDef
 
@@ -10505,7 +10727,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## RetentionPolicyTypeDef
@@ -10760,6 +10982,18 @@ Optional fields:
 
 - `ProvisioningArtifactId`: `str`
 - `PathId`: `str`
+- `ProvisioningParameters`:
+  `Sequence`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
+
+## ServiceCatalogProvisioningUpdateDetailsTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ServiceCatalogProvisioningUpdateDetailsTypeDef
+```
+
+Optional fields:
+
+- `ProvisioningArtifactId`: `str`
 - `ProvisioningParameters`:
   `Sequence`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
 
@@ -11115,6 +11349,7 @@ Required fields:
 Optional fields:
 
 - `CanarySize`: [CapacitySizeTypeDef](./type_defs.md#capacitysizetypedef)
+- `LinearStepSize`: [CapacitySizeTypeDef](./type_defs.md#capacitysizetypedef)
 
 ## TrainingJobDefinitionTypeDef
 
@@ -11880,6 +12115,8 @@ Optional fields:
 
 - `DefaultUserSettings`:
   [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
+- `DomainSettingsForUpdate`:
+  [DomainSettingsForUpdateTypeDef](./type_defs.md#domainsettingsforupdatetypedef)
 
 ## UpdateDomainResponseTypeDef
 
@@ -11911,6 +12148,7 @@ Optional fields:
   `Sequence`\[[VariantPropertyTypeDef](./type_defs.md#variantpropertytypedef)\]
 - `DeploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
+- `RetainDeploymentConfig`: `bool`
 
 ## UpdateEndpointOutputTypeDef
 
@@ -12013,12 +12251,14 @@ from mypy_boto3_sagemaker.type_defs import UpdateModelPackageInputRequestTypeDef
 Required fields:
 
 - `ModelPackageArn`: `str`
-- `ModelApprovalStatus`:
-  [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 
 Optional fields:
 
+- `ModelApprovalStatus`:
+  [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 - `ApprovalDescription`: `str`
+- `CustomerMetadataProperties`: `Mapping`\[`str`, `str`\]
+- `CustomerMetadataPropertiesToRemove`: `Sequence`\[`str`\]
 
 ## UpdateModelPackageOutputTypeDef
 
@@ -12152,6 +12392,35 @@ from mypy_boto3_sagemaker.type_defs import UpdatePipelineResponseTypeDef
 Required fields:
 
 - `PipelineArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateProjectInputRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import UpdateProjectInputRequestTypeDef
+```
+
+Required fields:
+
+- `ProjectName`: `str`
+
+Optional fields:
+
+- `ProjectDescription`: `str`
+- `ServiceCatalogProvisioningUpdateDetails`:
+  [ServiceCatalogProvisioningUpdateDetailsTypeDef](./type_defs.md#servicecatalogprovisioningupdatedetailstypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## UpdateProjectOutputTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import UpdateProjectOutputTypeDef
+```
+
+Required fields:
+
+- `ProjectArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -12378,6 +12647,9 @@ Optional fields:
   [KernelGatewayAppSettingsTypeDef](./type_defs.md#kernelgatewayappsettingstypedef)
 - `TensorBoardAppSettings`:
   [TensorBoardAppSettingsTypeDef](./type_defs.md#tensorboardappsettingstypedef)
+- `RStudioServerProAppSettings`:
+  [RStudioServerProAppSettingsTypeDef](./type_defs.md#rstudioserverproappsettingstypedef)
+- `RSessionAppSettings`: `Mapping`\[`str`, `Any`\]
 
 ## VariantPropertyTypeDef
 

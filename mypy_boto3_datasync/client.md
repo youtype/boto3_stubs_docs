@@ -17,6 +17,7 @@ type annotations stubs module
     - [create_agent](#create_agent)
     - [create_location_efs](#create_location_efs)
     - [create_location_fsx_windows](#create_location_fsx_windows)
+    - [create_location_hdfs](#create_location_hdfs)
     - [create_location_nfs](#create_location_nfs)
     - [create_location_object_storage](#create_location_object_storage)
     - [create_location_s3](#create_location_s3)
@@ -28,6 +29,7 @@ type annotations stubs module
     - [describe_agent](#describe_agent)
     - [describe_location_efs](#describe_location_efs)
     - [describe_location_fsx_windows](#describe_location_fsx_windows)
+    - [describe_location_hdfs](#describe_location_hdfs)
     - [describe_location_nfs](#describe_location_nfs)
     - [describe_location_object_storage](#describe_location_object_storage)
     - [describe_location_s3](#describe_location_s3)
@@ -44,6 +46,7 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_agent](#update_agent)
+    - [update_location_hdfs](#update_location_hdfs)
     - [update_location_nfs](#update_location_nfs)
     - [update_location_object_storage](#update_location_object_storage)
     - [update_location_smb](#update_location_smb)
@@ -205,6 +208,43 @@ Keyword-only arguments:
 
 Returns
 [CreateLocationFsxWindowsResponseTypeDef](./type_defs.md#createlocationfsxwindowsresponsetypedef).
+
+### create_location_hdfs
+
+Creates an endpoint for a Hadoop Distributed File System (HDFS).
+
+Type annotations for `boto3.client("datasync").create_location_hdfs` method.
+
+Boto3 documentation:
+[DataSync.Client.create_location_hdfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_hdfs)
+
+Arguments mapping described in
+[CreateLocationHdfsRequestRequestTypeDef](./type_defs.md#createlocationhdfsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NameNodes`:
+  `Sequence`\[[HdfsNameNodeTypeDef](./type_defs.md#hdfsnamenodetypedef)\]
+  *(required)*
+- `AuthenticationType`:
+  [HdfsAuthenticationTypeType](./literals.md#hdfsauthenticationtypetype)
+  *(required)*
+- `AgentArns`: `Sequence`\[`str`\] *(required)*
+- `Subdirectory`: `str`
+- `BlockSize`: `int`
+- `ReplicationFactor`: `int`
+- `KmsKeyProviderUri`: `str`
+- `QopConfiguration`:
+  [QopConfigurationTypeDef](./type_defs.md#qopconfigurationtypedef)
+- `SimpleUser`: `str`
+- `KerberosPrincipal`: `str`
+- `KerberosKeytab`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `KerberosKrb5Conf`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+
+Returns
+[CreateLocationHdfsResponseTypeDef](./type_defs.md#createlocationhdfsresponsetypedef).
 
 ### create_location_nfs
 
@@ -459,6 +499,26 @@ Keyword-only arguments:
 
 Returns
 [DescribeLocationFsxWindowsResponseTypeDef](./type_defs.md#describelocationfsxwindowsresponsetypedef).
+
+### describe_location_hdfs
+
+Returns metadata, such as the authentication information about the Hadoop
+Distributed File System (HDFS) location.
+
+Type annotations for `boto3.client("datasync").describe_location_hdfs` method.
+
+Boto3 documentation:
+[DataSync.Client.describe_location_hdfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_hdfs)
+
+Arguments mapping described in
+[DescribeLocationHdfsRequestRequestTypeDef](./type_defs.md#describelocationhdfsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `LocationArn`: `str` *(required)*
+
+Returns
+[DescribeLocationHdfsResponseTypeDef](./type_defs.md#describelocationhdfsresponsetypedef).
 
 ### describe_location_nfs
 
@@ -778,6 +838,40 @@ Keyword-only arguments:
 
 - `AgentArn`: `str` *(required)*
 - `Name`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
+### update_location_hdfs
+
+Updates some parameters of a previously created location for a Hadoop
+Distributed File System cluster.
+
+Type annotations for `boto3.client("datasync").update_location_hdfs` method.
+
+Boto3 documentation:
+[DataSync.Client.update_location_hdfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_hdfs)
+
+Arguments mapping described in
+[UpdateLocationHdfsRequestRequestTypeDef](./type_defs.md#updatelocationhdfsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `LocationArn`: `str` *(required)*
+- `Subdirectory`: `str`
+- `NameNodes`:
+  `Sequence`\[[HdfsNameNodeTypeDef](./type_defs.md#hdfsnamenodetypedef)\]
+- `BlockSize`: `int`
+- `ReplicationFactor`: `int`
+- `KmsKeyProviderUri`: `str`
+- `QopConfiguration`:
+  [QopConfigurationTypeDef](./type_defs.md#qopconfigurationtypedef)
+- `AuthenticationType`:
+  [HdfsAuthenticationTypeType](./literals.md#hdfsauthenticationtypetype)
+- `SimpleUser`: `str`
+- `KerberosPrincipal`: `str`
+- `KerberosKeytab`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `KerberosKrb5Conf`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `AgentArns`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 

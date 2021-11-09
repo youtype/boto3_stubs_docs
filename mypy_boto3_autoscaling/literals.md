@@ -8,6 +8,12 @@ type annotations stubs module
 [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 - [Literals for boto3 AutoScaling module](#literals-for-boto3-autoscaling-module)
+  - [AcceleratorManufacturerType](#acceleratormanufacturertype)
+  - [AcceleratorNameType](#acceleratornametype)
+  - [AcceleratorTypeType](#acceleratortypetype)
+  - [BareMetalType](#baremetaltype)
+  - [BurstablePerformanceType](#burstableperformancetype)
+  - [CpuManufacturerType](#cpumanufacturertype)
   - [DescribeAutoScalingGroupsPaginatorName](#describeautoscalinggroupspaginatorname)
   - [DescribeAutoScalingInstancesPaginatorName](#describeautoscalinginstancespaginatorname)
   - [DescribeLaunchConfigurationsPaginatorName](#describelaunchconfigurationspaginatorname)
@@ -18,10 +24,13 @@ type annotations stubs module
   - [DescribeScalingActivitiesPaginatorName](#describescalingactivitiespaginatorname)
   - [DescribeScheduledActionsPaginatorName](#describescheduledactionspaginatorname)
   - [DescribeTagsPaginatorName](#describetagspaginatorname)
+  - [InstanceGenerationType](#instancegenerationtype)
   - [InstanceMetadataEndpointStateType](#instancemetadataendpointstatetype)
   - [InstanceMetadataHttpTokensStateType](#instancemetadatahttptokensstatetype)
   - [InstanceRefreshStatusType](#instancerefreshstatustype)
   - [LifecycleStateType](#lifecyclestatetype)
+  - [LocalStorageType](#localstoragetype)
+  - [LocalStorageTypeType](#localstoragetypetype)
   - [MetricStatisticType](#metricstatistictype)
   - [MetricTypeType](#metrictypetype)
   - [PredefinedLoadMetricTypeType](#predefinedloadmetrictypetype)
@@ -35,6 +44,83 @@ type annotations stubs module
   - [WarmPoolStatusType](#warmpoolstatustype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+## AcceleratorManufacturerType
+
+```python
+from mypy_boto3_autoscaling.literals import AcceleratorManufacturerType
+```
+
+Values:
+
+- `amazon-web-services`
+- `amd`
+- `nvidia`
+- `xilinx`
+
+## AcceleratorNameType
+
+```python
+from mypy_boto3_autoscaling.literals import AcceleratorNameType
+```
+
+Values:
+
+- `a100`
+- `k80`
+- `m60`
+- `radeon-pro-v520`
+- `t4`
+- `v100`
+- `vu9p`
+
+## AcceleratorTypeType
+
+```python
+from mypy_boto3_autoscaling.literals import AcceleratorTypeType
+```
+
+Values:
+
+- `fpga`
+- `gpu`
+- `inference`
+
+## BareMetalType
+
+```python
+from mypy_boto3_autoscaling.literals import BareMetalType
+```
+
+Values:
+
+- `excluded`
+- `included`
+- `required`
+
+## BurstablePerformanceType
+
+```python
+from mypy_boto3_autoscaling.literals import BurstablePerformanceType
+```
+
+Values:
+
+- `excluded`
+- `included`
+- `required`
+
+## CpuManufacturerType
+
+```python
+from mypy_boto3_autoscaling.literals import CpuManufacturerType
+```
+
+Values:
+
+- `amazon-web-services`
+- `amd`
+- `intel`
 
 ## DescribeAutoScalingGroupsPaginatorName
 
@@ -136,6 +222,17 @@ Values:
 
 - `describe_tags`
 
+## InstanceGenerationType
+
+```python
+from mypy_boto3_autoscaling.literals import InstanceGenerationType
+```
+
+Values:
+
+- `current`
+- `previous`
+
 ## InstanceMetadataEndpointStateType
 
 ```python
@@ -203,6 +300,29 @@ Values:
 - `Warmed:Terminating`
 - `Warmed:Terminating:Proceed`
 - `Warmed:Terminating:Wait`
+
+## LocalStorageType
+
+```python
+from mypy_boto3_autoscaling.literals import LocalStorageType
+```
+
+Values:
+
+- `excluded`
+- `included`
+- `required`
+
+## LocalStorageTypeType
+
+```python
+from mypy_boto3_autoscaling.literals import LocalStorageTypeType
+```
+
+Values:
+
+- `hdd`
+- `ssd`
 
 ## MetricStatisticType
 
@@ -384,6 +504,7 @@ Values:
 - `ce`
 - `chime`
 - `chime-sdk-identity`
+- `chime-sdk-meetings`
 - `chime-sdk-messaging`
 - `cloud9`
 - `cloudcontrol`

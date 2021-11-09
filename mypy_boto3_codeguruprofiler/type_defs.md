@@ -449,7 +449,7 @@ Required fields:
 
 - `contentEncoding`: `str`
 - `contentType`: `str`
-- `profile`: `bytes`
+- `profile`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -827,7 +827,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## SubmitFeedbackRequestRequestTypeDef

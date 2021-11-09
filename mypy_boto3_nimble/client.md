@@ -51,7 +51,9 @@ type annotations stubs module
     - [list_tags_for_resource](#list_tags_for_resource)
     - [put_launch_profile_members](#put_launch_profile_members)
     - [put_studio_members](#put_studio_members)
+    - [start_streaming_session](#start_streaming_session)
     - [start_studio_sso_configuration_repair](#start_studio_sso_configuration_repair)
+    - [stop_streaming_session](#stop_streaming_session)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_launch_profile](#update_launch_profile)
@@ -60,6 +62,7 @@ type annotations stubs module
     - [update_studio](#update_studio)
     - [update_studio_component](#update_studio_component)
     - [get_paginator](#get_paginator)
+    - [get_waiter](#get_waiter)
 
 ## NimbleStudioClient
 
@@ -961,9 +964,30 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### start_streaming_session
+
+Transitions sessions from the STOPPED state into the READY state.
+
+Type annotations for `boto3.client("nimble").start_streaming_session` method.
+
+Boto3 documentation:
+[NimbleStudio.Client.start_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_streaming_session)
+
+Arguments mapping described in
+[StartStreamingSessionRequestRequestTypeDef](./type_defs.md#startstreamingsessionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `sessionId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[StartStreamingSessionResponseTypeDef](./type_defs.md#startstreamingsessionresponsetypedef).
+
 ### start_studio_sso_configuration_repair
 
-Repairs the SSO configuration for a given studio.
+Repairs the Amazon Web Services SSO configuration for a given studio.
 
 Type annotations for
 `boto3.client("nimble").start_studio_sso_configuration_repair` method.
@@ -981,6 +1005,27 @@ Keyword-only arguments:
 
 Returns
 [StartStudioSSOConfigurationRepairResponseTypeDef](./type_defs.md#startstudiossoconfigurationrepairresponsetypedef).
+
+### stop_streaming_session
+
+Transitions sessions from the READY state into the STOPPED state.
+
+Type annotations for `boto3.client("nimble").stop_streaming_session` method.
+
+Boto3 documentation:
+[NimbleStudio.Client.stop_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.stop_streaming_session)
+
+Arguments mapping described in
+[StopStreamingSessionRequestRequestTypeDef](./type_defs.md#stopstreamingsessionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `sessionId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[StopStreamingSessionResponseTypeDef](./type_defs.md#stopstreamingsessionresponsetypedef).
 
 ### tag_resource
 
@@ -1175,3 +1220,32 @@ overloads.
   [ListStudioMembersPaginator](./paginators.md#liststudiomemberspaginator)
 - `client.get_paginator("list_studios")` ->
   [ListStudiosPaginator](./paginators.md#liststudiospaginator)
+
+### get_waiter
+
+Type annotations for `boto3.client("nimble").get_waiter` method with overloads.
+
+- `client.get_waiter("launch_profile_deleted")` ->
+  [LaunchProfileDeletedWaiter](./waiters.md#launchprofiledeletedwaiter)
+- `client.get_waiter("launch_profile_ready")` ->
+  [LaunchProfileReadyWaiter](./waiters.md#launchprofilereadywaiter)
+- `client.get_waiter("streaming_image_deleted")` ->
+  [StreamingImageDeletedWaiter](./waiters.md#streamingimagedeletedwaiter)
+- `client.get_waiter("streaming_image_ready")` ->
+  [StreamingImageReadyWaiter](./waiters.md#streamingimagereadywaiter)
+- `client.get_waiter("streaming_session_deleted")` ->
+  [StreamingSessionDeletedWaiter](./waiters.md#streamingsessiondeletedwaiter)
+- `client.get_waiter("streaming_session_ready")` ->
+  [StreamingSessionReadyWaiter](./waiters.md#streamingsessionreadywaiter)
+- `client.get_waiter("streaming_session_stopped")` ->
+  [StreamingSessionStoppedWaiter](./waiters.md#streamingsessionstoppedwaiter)
+- `client.get_waiter("streaming_session_stream_ready")` ->
+  [StreamingSessionStreamReadyWaiter](./waiters.md#streamingsessionstreamreadywaiter)
+- `client.get_waiter("studio_component_deleted")` ->
+  [StudioComponentDeletedWaiter](./waiters.md#studiocomponentdeletedwaiter)
+- `client.get_waiter("studio_component_ready")` ->
+  [StudioComponentReadyWaiter](./waiters.md#studiocomponentreadywaiter)
+- `client.get_waiter("studio_deleted")` ->
+  [StudioDeletedWaiter](./waiters.md#studiodeletedwaiter)
+- `client.get_waiter("studio_ready")` ->
+  [StudioReadyWaiter](./waiters.md#studioreadywaiter)

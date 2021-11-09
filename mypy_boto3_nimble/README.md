@@ -16,6 +16,7 @@ pip install mypy-boto3-nimble
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
+  - [Waiters](#waiters)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
@@ -61,6 +62,7 @@ from mypy_boto3_nimble.client import NimbleStudioClient
 - [get_studio](./client.md#get_studio)
 - [get_studio_component](./client.md#get_studio_component)
 - [get_studio_member](./client.md#get_studio_member)
+- [get_waiter](./client.md#get_waiter)
 - [list_eula_acceptances](./client.md#list_eula_acceptances)
 - [list_eulas](./client.md#list_eulas)
 - [list_launch_profile_members](./client.md#list_launch_profile_members)
@@ -73,7 +75,9 @@ from mypy_boto3_nimble.client import NimbleStudioClient
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [put_launch_profile_members](./client.md#put_launch_profile_members)
 - [put_studio_members](./client.md#put_studio_members)
+- [start_streaming_session](./client.md#start_streaming_session)
 - [start_studio_sso_configuration_repair](./client.md#start_studio_sso_configuration_repair)
+- [stop_streaming_session](./client.md#stop_streaming_session)
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 - [update_launch_profile](./client.md#update_launch_profile)
@@ -116,6 +120,30 @@ from mypy_boto3_nimble.paginators import ListEulaAcceptancesPaginator, ...
 - [ListStudioMembersPaginator](./paginators.md#liststudiomemberspaginator)
 - [ListStudiosPaginator](./paginators.md#liststudiospaginator)
 
+## Waiters
+
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("nimble").get_waiter("...")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_nimble.waiters import LaunchProfileDeletedWaiter, ...
+```
+
+- [LaunchProfileDeletedWaiter](./waiters.md#launchprofiledeletedwaiter)
+- [LaunchProfileReadyWaiter](./waiters.md#launchprofilereadywaiter)
+- [StreamingImageDeletedWaiter](./waiters.md#streamingimagedeletedwaiter)
+- [StreamingImageReadyWaiter](./waiters.md#streamingimagereadywaiter)
+- [StreamingSessionDeletedWaiter](./waiters.md#streamingsessiondeletedwaiter)
+- [StreamingSessionReadyWaiter](./waiters.md#streamingsessionreadywaiter)
+- [StreamingSessionStoppedWaiter](./waiters.md#streamingsessionstoppedwaiter)
+- [StreamingSessionStreamReadyWaiter](./waiters.md#streamingsessionstreamreadywaiter)
+- [StudioComponentDeletedWaiter](./waiters.md#studiocomponentdeletedwaiter)
+- [StudioComponentReadyWaiter](./waiters.md#studiocomponentreadywaiter)
+- [StudioDeletedWaiter](./waiters.md#studiodeletedwaiter)
+- [StudioReadyWaiter](./waiters.md#studioreadywaiter)
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -123,11 +151,13 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_nimble.literals import LaunchProfilePersonaType, ...
+from mypy_boto3_nimble.literals import LaunchProfileDeletedWaiterName, ...
 ```
 
+- [LaunchProfileDeletedWaiterName](./literals.md#launchprofiledeletedwaitername)
 - [LaunchProfilePersonaType](./literals.md#launchprofilepersonatype)
 - [LaunchProfilePlatformType](./literals.md#launchprofileplatformtype)
+- [LaunchProfileReadyWaiterName](./literals.md#launchprofilereadywaitername)
 - [LaunchProfileStateType](./literals.md#launchprofilestatetype)
 - [LaunchProfileStatusCodeType](./literals.md#launchprofilestatuscodetype)
 - [ListEulaAcceptancesPaginatorName](./literals.md#listeulaacceptancespaginatorname)
@@ -140,25 +170,36 @@ from mypy_boto3_nimble.literals import LaunchProfilePersonaType, ...
 - [ListStudioMembersPaginatorName](./literals.md#liststudiomemberspaginatorname)
 - [ListStudiosPaginatorName](./literals.md#liststudiospaginatorname)
 - [StreamingClipboardModeType](./literals.md#streamingclipboardmodetype)
+- [StreamingImageDeletedWaiterName](./literals.md#streamingimagedeletedwaitername)
 - [StreamingImageEncryptionConfigurationKeyTypeType](./literals.md#streamingimageencryptionconfigurationkeytypetype)
+- [StreamingImageReadyWaiterName](./literals.md#streamingimagereadywaitername)
 - [StreamingImageStateType](./literals.md#streamingimagestatetype)
 - [StreamingImageStatusCodeType](./literals.md#streamingimagestatuscodetype)
 - [StreamingInstanceTypeType](./literals.md#streaminginstancetypetype)
+- [StreamingSessionDeletedWaiterName](./literals.md#streamingsessiondeletedwaitername)
+- [StreamingSessionReadyWaiterName](./literals.md#streamingsessionreadywaitername)
 - [StreamingSessionStateType](./literals.md#streamingsessionstatetype)
 - [StreamingSessionStatusCodeType](./literals.md#streamingsessionstatuscodetype)
+- [StreamingSessionStoppedWaiterName](./literals.md#streamingsessionstoppedwaitername)
+- [StreamingSessionStreamReadyWaiterName](./literals.md#streamingsessionstreamreadywaitername)
 - [StreamingSessionStreamStateType](./literals.md#streamingsessionstreamstatetype)
 - [StreamingSessionStreamStatusCodeType](./literals.md#streamingsessionstreamstatuscodetype)
+- [StudioComponentDeletedWaiterName](./literals.md#studiocomponentdeletedwaitername)
 - [StudioComponentInitializationScriptRunContextType](./literals.md#studiocomponentinitializationscriptruncontexttype)
+- [StudioComponentReadyWaiterName](./literals.md#studiocomponentreadywaitername)
 - [StudioComponentStateType](./literals.md#studiocomponentstatetype)
 - [StudioComponentStatusCodeType](./literals.md#studiocomponentstatuscodetype)
 - [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
 - [StudioComponentTypeType](./literals.md#studiocomponenttypetype)
+- [StudioDeletedWaiterName](./literals.md#studiodeletedwaitername)
 - [StudioEncryptionConfigurationKeyTypeType](./literals.md#studioencryptionconfigurationkeytypetype)
 - [StudioPersonaType](./literals.md#studiopersonatype)
+- [StudioReadyWaiterName](./literals.md#studioreadywaitername)
 - [StudioStateType](./literals.md#studiostatetype)
 - [StudioStatusCodeType](./literals.md#studiostatuscodetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 
@@ -258,8 +299,12 @@ from mypy_boto3_nimble.type_defs import AcceptEulasRequestRequestTypeDef, ...
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)
 - [SharedFileSystemConfigurationTypeDef](./type_defs.md#sharedfilesystemconfigurationtypedef)
+- [StartStreamingSessionRequestRequestTypeDef](./type_defs.md#startstreamingsessionrequestrequesttypedef)
+- [StartStreamingSessionResponseTypeDef](./type_defs.md#startstreamingsessionresponsetypedef)
 - [StartStudioSSOConfigurationRepairRequestRequestTypeDef](./type_defs.md#startstudiossoconfigurationrepairrequestrequesttypedef)
 - [StartStudioSSOConfigurationRepairResponseTypeDef](./type_defs.md#startstudiossoconfigurationrepairresponsetypedef)
+- [StopStreamingSessionRequestRequestTypeDef](./type_defs.md#stopstreamingsessionrequestrequesttypedef)
+- [StopStreamingSessionResponseTypeDef](./type_defs.md#stopstreamingsessionresponsetypedef)
 - [StreamConfigurationCreateTypeDef](./type_defs.md#streamconfigurationcreatetypedef)
 - [StreamConfigurationTypeDef](./type_defs.md#streamconfigurationtypedef)
 - [StreamingImageEncryptionConfigurationTypeDef](./type_defs.md#streamingimageencryptionconfigurationtypedef)
@@ -285,3 +330,4 @@ from mypy_boto3_nimble.type_defs import AcceptEulasRequestRequestTypeDef, ...
 - [UpdateStudioComponentResponseTypeDef](./type_defs.md#updatestudiocomponentresponsetypedef)
 - [UpdateStudioRequestRequestTypeDef](./type_defs.md#updatestudiorequestrequesttypedef)
 - [UpdateStudioResponseTypeDef](./type_defs.md#updatestudioresponsetypedef)
+- [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

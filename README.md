@@ -151,6 +151,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [ChimeSDKIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity)
   service
 
+- [mypy-boto3-chime-sdk-meetings](./mypy_boto3_chime_sdk_meetings) for
+  [ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings)
+  service
+
 - [mypy-boto3-chime-sdk-messaging](./mypy_boto3_chime_sdk_messaging) for
   [ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging)
   service

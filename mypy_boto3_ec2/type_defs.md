@@ -8,6 +8,10 @@ type annotations stubs module
 [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 - [Typed dictionaries for boto3 EC2 module](#typed-dictionaries-for-boto3-ec2-module)
+  - [AcceleratorCountRequestTypeDef](#acceleratorcountrequesttypedef)
+  - [AcceleratorCountTypeDef](#acceleratorcounttypedef)
+  - [AcceleratorTotalMemoryMiBRequestTypeDef](#acceleratortotalmemorymibrequesttypedef)
+  - [AcceleratorTotalMemoryMiBTypeDef](#acceleratortotalmemorymibtypedef)
   - [AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef](#acceptreservedinstancesexchangequoterequestrequesttypedef)
   - [AcceptReservedInstancesExchangeQuoteResultTypeDef](#acceptreservedinstancesexchangequoteresulttypedef)
   - [AcceptTransitGatewayMulticastDomainAssociationsRequestRequestTypeDef](#accepttransitgatewaymulticastdomainassociationsrequestrequesttypedef)
@@ -111,6 +115,8 @@ type annotations stubs module
   - [AvailabilityZoneMessageTypeDef](#availabilityzonemessagetypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
   - [AvailableCapacityTypeDef](#availablecapacitytypedef)
+  - [BaselineEbsBandwidthMbpsRequestTypeDef](#baselineebsbandwidthmbpsrequesttypedef)
+  - [BaselineEbsBandwidthMbpsTypeDef](#baselineebsbandwidthmbpstypedef)
   - [BlobAttributeValueTypeDef](#blobattributevaluetypedef)
   - [BlockDeviceMappingTypeDef](#blockdevicemappingtypedef)
   - [BundleInstanceRequestRequestTypeDef](#bundleinstancerequestrequesttypedef)
@@ -918,6 +924,8 @@ type annotations stubs module
   - [GetGroupsForCapacityReservationResultTypeDef](#getgroupsforcapacityreservationresulttypedef)
   - [GetHostReservationPurchasePreviewRequestRequestTypeDef](#gethostreservationpurchasepreviewrequestrequesttypedef)
   - [GetHostReservationPurchasePreviewResultTypeDef](#gethostreservationpurchasepreviewresulttypedef)
+  - [GetInstanceTypesFromInstanceRequirementsRequestRequestTypeDef](#getinstancetypesfrominstancerequirementsrequestrequesttypedef)
+  - [GetInstanceTypesFromInstanceRequirementsResultTypeDef](#getinstancetypesfrominstancerequirementsresulttypedef)
   - [GetLaunchTemplateDataRequestRequestTypeDef](#getlaunchtemplatedatarequestrequesttypedef)
   - [GetLaunchTemplateDataResultTypeDef](#getlaunchtemplatedataresulttypedef)
   - [GetManagedPrefixListAssociationsRequestRequestTypeDef](#getmanagedprefixlistassociationsrequestrequesttypedef)
@@ -931,6 +939,8 @@ type annotations stubs module
   - [GetReservedInstancesExchangeQuoteResultTypeDef](#getreservedinstancesexchangequoteresulttypedef)
   - [GetSerialConsoleAccessStatusRequestRequestTypeDef](#getserialconsoleaccessstatusrequestrequesttypedef)
   - [GetSerialConsoleAccessStatusResultTypeDef](#getserialconsoleaccessstatusresulttypedef)
+  - [GetSpotPlacementScoresRequestRequestTypeDef](#getspotplacementscoresrequestrequesttypedef)
+  - [GetSpotPlacementScoresResultTypeDef](#getspotplacementscoresresulttypedef)
   - [GetSubnetCidrReservationsRequestRequestTypeDef](#getsubnetcidrreservationsrequestrequesttypedef)
   - [GetSubnetCidrReservationsResultTypeDef](#getsubnetcidrreservationsresulttypedef)
   - [GetTransitGatewayAttachmentPropagationsRequestRequestTypeDef](#gettransitgatewayattachmentpropagationsrequestrequesttypedef)
@@ -1023,6 +1033,9 @@ type annotations stubs module
   - [InstanceNetworkInterfaceSpecificationTypeDef](#instancenetworkinterfacespecificationtypedef)
   - [InstanceNetworkInterfaceTypeDef](#instancenetworkinterfacetypedef)
   - [InstancePrivateIpAddressTypeDef](#instanceprivateipaddresstypedef)
+  - [InstanceRequirementsRequestTypeDef](#instancerequirementsrequesttypedef)
+  - [InstanceRequirementsTypeDef](#instancerequirementstypedef)
+  - [InstanceRequirementsWithMetadataRequestTypeDef](#instancerequirementswithmetadatarequesttypedef)
   - [InstanceSpecificationTypeDef](#instancespecificationtypedef)
   - [InstanceStateChangeTypeDef](#instancestatechangetypedef)
   - [InstanceStateTypeDef](#instancestatetypedef)
@@ -1033,6 +1046,7 @@ type annotations stubs module
   - [InstanceStorageInfoTypeDef](#instancestorageinfotypedef)
   - [InstanceTagNotificationAttributeTypeDef](#instancetagnotificationattributetypedef)
   - [InstanceTypeDef](#instancetypedef)
+  - [InstanceTypeInfoFromInstanceRequirementsTypeDef](#instancetypeinfofrominstancerequirementstypedef)
   - [InstanceTypeInfoTypeDef](#instancetypeinfotypedef)
   - [InstanceTypeOfferingTypeDef](#instancetypeofferingtypedef)
   - [InstanceUsageTypeDef](#instanceusagetypedef)
@@ -1109,7 +1123,11 @@ type annotations stubs module
   - [LocalGatewayVirtualInterfaceGroupTypeDef](#localgatewayvirtualinterfacegrouptypedef)
   - [LocalGatewayVirtualInterfaceTypeDef](#localgatewayvirtualinterfacetypedef)
   - [ManagedPrefixListTypeDef](#managedprefixlisttypedef)
+  - [MemoryGiBPerVCpuRequestTypeDef](#memorygibpervcpurequesttypedef)
+  - [MemoryGiBPerVCpuTypeDef](#memorygibpervcputypedef)
   - [MemoryInfoTypeDef](#memoryinfotypedef)
+  - [MemoryMiBRequestTypeDef](#memorymibrequesttypedef)
+  - [MemoryMiBTypeDef](#memorymibtypedef)
   - [ModifyAddressAttributeRequestRequestTypeDef](#modifyaddressattributerequestrequesttypedef)
   - [ModifyAddressAttributeResultTypeDef](#modifyaddressattributeresulttypedef)
   - [ModifyAvailabilityZoneGroupRequestRequestTypeDef](#modifyavailabilityzonegrouprequestrequesttypedef)
@@ -1223,6 +1241,8 @@ type annotations stubs module
   - [NetworkInterfaceAssociationTypeDef](#networkinterfaceassociationtypedef)
   - [NetworkInterfaceAttachmentChangesTypeDef](#networkinterfaceattachmentchangestypedef)
   - [NetworkInterfaceAttachmentTypeDef](#networkinterfaceattachmenttypedef)
+  - [NetworkInterfaceCountRequestTypeDef](#networkinterfacecountrequesttypedef)
+  - [NetworkInterfaceCountTypeDef](#networkinterfacecounttypedef)
   - [NetworkInterfaceIpv6AddressTypeDef](#networkinterfaceipv6addresstypedef)
   - [NetworkInterfacePermissionStateTypeDef](#networkinterfacepermissionstatetypedef)
   - [NetworkInterfacePermissionTypeDef](#networkinterfacepermissiontypedef)
@@ -1466,6 +1486,7 @@ type annotations stubs module
   - [SpotMarketOptionsTypeDef](#spotmarketoptionstypedef)
   - [SpotOptionsRequestTypeDef](#spotoptionsrequesttypedef)
   - [SpotOptionsTypeDef](#spotoptionstypedef)
+  - [SpotPlacementScoreTypeDef](#spotplacementscoretypedef)
   - [SpotPlacementTypeDef](#spotplacementtypedef)
   - [SpotPriceTypeDef](#spotpricetypedef)
   - [StaleIpPermissionTypeDef](#staleippermissiontypedef)
@@ -1508,6 +1529,8 @@ type annotations stubs module
   - [TerminateInstancesRequestInstanceTypeDef](#terminateinstancesrequestinstancetypedef)
   - [TerminateInstancesRequestRequestTypeDef](#terminateinstancesrequestrequesttypedef)
   - [TerminateInstancesResultTypeDef](#terminateinstancesresulttypedef)
+  - [TotalLocalStorageGBRequestTypeDef](#totallocalstoragegbrequesttypedef)
+  - [TotalLocalStorageGBTypeDef](#totallocalstoragegbtypedef)
   - [TrafficMirrorFilterRuleTypeDef](#trafficmirrorfilterruletypedef)
   - [TrafficMirrorFilterTypeDef](#trafficmirrorfiltertypedef)
   - [TrafficMirrorPortRangeRequestTypeDef](#trafficmirrorportrangerequesttypedef)
@@ -1568,6 +1591,8 @@ type annotations stubs module
   - [UserBucketTypeDef](#userbuckettypedef)
   - [UserDataTypeDef](#userdatatypedef)
   - [UserIdGroupPairTypeDef](#useridgrouppairtypedef)
+  - [VCpuCountRangeRequestTypeDef](#vcpucountrangerequesttypedef)
+  - [VCpuCountRangeTypeDef](#vcpucountrangetypedef)
   - [VCpuInfoTypeDef](#vcpuinfotypedef)
   - [ValidationErrorTypeDef](#validationerrortypedef)
   - [ValidationWarningTypeDef](#validationwarningtypedef)
@@ -1606,6 +1631,50 @@ type annotations stubs module
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WithdrawByoipCidrRequestRequestTypeDef](#withdrawbyoipcidrrequestrequesttypedef)
   - [WithdrawByoipCidrResultTypeDef](#withdrawbyoipcidrresulttypedef)
+
+## AcceleratorCountRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
+
+## AcceleratorCountTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AcceleratorCountTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
+
+## AcceleratorTotalMemoryMiBRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AcceleratorTotalMemoryMiBRequestTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
+
+## AcceleratorTotalMemoryMiBTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AcceleratorTotalMemoryMiBTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
 
 ## AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef
 
@@ -3095,6 +3164,28 @@ Optional fields:
 - `AvailableInstanceCapacity`:
   `List`\[[InstanceCapacityTypeDef](./type_defs.md#instancecapacitytypedef)\]
 - `AvailableVCpus`: `int`
+
+## BaselineEbsBandwidthMbpsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import BaselineEbsBandwidthMbpsRequestTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
+
+## BaselineEbsBandwidthMbpsTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import BaselineEbsBandwidthMbpsTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
 
 ## BlobAttributeValueTypeDef
 
@@ -14150,6 +14241,8 @@ Optional fields:
 - `WeightedCapacity`: `float`
 - `Priority`: `float`
 - `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
+- `InstanceRequirements`:
+  [InstanceRequirementsRequestTypeDef](./type_defs.md#instancerequirementsrequesttypedef)
 
 ## FleetLaunchTemplateOverridesTypeDef
 
@@ -14167,6 +14260,8 @@ Optional fields:
 - `Priority`: `float`
 - `Placement`:
   [PlacementResponseTypeDef](./type_defs.md#placementresponsetypedef)
+- `InstanceRequirements`:
+  [InstanceRequirementsTypeDef](./type_defs.md#instancerequirementstypedef)
 
 ## FleetLaunchTemplateSpecificationRequestTypeDef
 
@@ -14200,8 +14295,9 @@ from mypy_boto3_ec2.type_defs import FleetSpotCapacityRebalanceRequestTypeDef
 
 Optional fields:
 
-- `ReplacementStrategy`: `Literal['launch']` (see
-  [FleetReplacementStrategyType](./literals.md#fleetreplacementstrategytype))
+- `ReplacementStrategy`:
+  [FleetReplacementStrategyType](./literals.md#fleetreplacementstrategytype)
+- `TerminationDelay`: `int`
 
 ## FleetSpotCapacityRebalanceTypeDef
 
@@ -14211,8 +14307,9 @@ from mypy_boto3_ec2.type_defs import FleetSpotCapacityRebalanceTypeDef
 
 Optional fields:
 
-- `ReplacementStrategy`: `Literal['launch']` (see
-  [FleetReplacementStrategyType](./literals.md#fleetreplacementstrategytype))
+- `ReplacementStrategy`:
+  [FleetReplacementStrategyType](./literals.md#fleetreplacementstrategytype)
+- `TerminationDelay`: `int`
 
 ## FleetSpotMaintenanceStrategiesRequestTypeDef
 
@@ -14698,6 +14795,41 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetInstanceTypesFromInstanceRequirementsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetInstanceTypesFromInstanceRequirementsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ArchitectureTypes`:
+  `Sequence`\[[ArchitectureTypeType](./literals.md#architecturetypetype)\]
+- `VirtualizationTypes`:
+  `Sequence`\[[VirtualizationTypeType](./literals.md#virtualizationtypetype)\]
+- `InstanceRequirements`:
+  [InstanceRequirementsRequestTypeDef](./type_defs.md#instancerequirementsrequesttypedef)
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetInstanceTypesFromInstanceRequirementsResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetInstanceTypesFromInstanceRequirementsResultTypeDef
+```
+
+Required fields:
+
+- `InstanceTypes`:
+  `List`\[[InstanceTypeInfoFromInstanceRequirementsTypeDef](./type_defs.md#instancetypeinfofrominstancerequirementstypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetLaunchTemplateDataRequestRequestTypeDef
 
 ```python
@@ -14883,6 +15015,43 @@ from mypy_boto3_ec2.type_defs import GetSerialConsoleAccessStatusResultTypeDef
 Required fields:
 
 - `SerialConsoleAccessEnabled`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetSpotPlacementScoresRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetSpotPlacementScoresRequestRequestTypeDef
+```
+
+Required fields:
+
+- `TargetCapacity`: `int`
+
+Optional fields:
+
+- `InstanceTypes`: `Sequence`\[`str`\]
+- `TargetCapacityUnitType`:
+  [TargetCapacityUnitTypeType](./literals.md#targetcapacityunittypetype)
+- `SingleAvailabilityZone`: `bool`
+- `RegionNames`: `Sequence`\[`str`\]
+- `InstanceRequirementsWithMetadata`:
+  [InstanceRequirementsWithMetadataRequestTypeDef](./type_defs.md#instancerequirementswithmetadatarequesttypedef)
+- `DryRun`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetSpotPlacementScoresResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetSpotPlacementScoresResultTypeDef
+```
+
+Required fields:
+
+- `SpotPlacementScores`:
+  `List`\[[SpotPlacementScoreTypeDef](./type_defs.md#spotplacementscoretypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -16206,6 +16375,7 @@ from mypy_boto3_ec2.type_defs import InstanceNetworkInterfaceAssociationTypeDef
 Optional fields:
 
 - `CarrierIp`: `str`
+- `CustomerOwnedIp`: `str`
 - `IpOwnerId`: `str`
 - `PublicDnsName`: `str`
 - `PublicIp`: `str`
@@ -16305,6 +16475,112 @@ Optional fields:
 - `Primary`: `bool`
 - `PrivateDnsName`: `str`
 - `PrivateIpAddress`: `str`
+
+## InstanceRequirementsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceRequirementsRequestTypeDef
+```
+
+Required fields:
+
+- `VCpuCount`:
+  [VCpuCountRangeRequestTypeDef](./type_defs.md#vcpucountrangerequesttypedef)
+- `MemoryMiB`:
+  [MemoryMiBRequestTypeDef](./type_defs.md#memorymibrequesttypedef)
+
+Optional fields:
+
+- `CpuManufacturers`:
+  `Sequence`\[[CpuManufacturerType](./literals.md#cpumanufacturertype)\]
+- `MemoryGiBPerVCpu`:
+  [MemoryGiBPerVCpuRequestTypeDef](./type_defs.md#memorygibpervcpurequesttypedef)
+- `ExcludedInstanceTypes`: `Sequence`\[`str`\]
+- `InstanceGenerations`:
+  `Sequence`\[[InstanceGenerationType](./literals.md#instancegenerationtype)\]
+- `SpotMaxPricePercentageOverLowestPrice`: `int`
+- `OnDemandMaxPricePercentageOverLowestPrice`: `int`
+- `BareMetal`: [BareMetalType](./literals.md#baremetaltype)
+- `BurstablePerformance`:
+  [BurstablePerformanceType](./literals.md#burstableperformancetype)
+- `RequireHibernateSupport`: `bool`
+- `NetworkInterfaceCount`:
+  [NetworkInterfaceCountRequestTypeDef](./type_defs.md#networkinterfacecountrequesttypedef)
+- `LocalStorage`: [LocalStorageType](./literals.md#localstoragetype)
+- `LocalStorageTypes`:
+  `Sequence`\[[LocalStorageTypeType](./literals.md#localstoragetypetype)\]
+- `TotalLocalStorageGB`:
+  [TotalLocalStorageGBRequestTypeDef](./type_defs.md#totallocalstoragegbrequesttypedef)
+- `BaselineEbsBandwidthMbps`:
+  [BaselineEbsBandwidthMbpsRequestTypeDef](./type_defs.md#baselineebsbandwidthmbpsrequesttypedef)
+- `AcceleratorTypes`:
+  `Sequence`\[[AcceleratorTypeType](./literals.md#acceleratortypetype)\]
+- `AcceleratorCount`:
+  [AcceleratorCountRequestTypeDef](./type_defs.md#acceleratorcountrequesttypedef)
+- `AcceleratorManufacturers`:
+  `Sequence`\[[AcceleratorManufacturerType](./literals.md#acceleratormanufacturertype)\]
+- `AcceleratorNames`:
+  `Sequence`\[[AcceleratorNameType](./literals.md#acceleratornametype)\]
+- `AcceleratorTotalMemoryMiB`:
+  [AcceleratorTotalMemoryMiBRequestTypeDef](./type_defs.md#acceleratortotalmemorymibrequesttypedef)
+
+## InstanceRequirementsTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceRequirementsTypeDef
+```
+
+Optional fields:
+
+- `VCpuCount`: [VCpuCountRangeTypeDef](./type_defs.md#vcpucountrangetypedef)
+- `MemoryMiB`: [MemoryMiBTypeDef](./type_defs.md#memorymibtypedef)
+- `CpuManufacturers`:
+  `List`\[[CpuManufacturerType](./literals.md#cpumanufacturertype)\]
+- `MemoryGiBPerVCpu`:
+  [MemoryGiBPerVCpuTypeDef](./type_defs.md#memorygibpervcputypedef)
+- `ExcludedInstanceTypes`: `List`\[`str`\]
+- `InstanceGenerations`:
+  `List`\[[InstanceGenerationType](./literals.md#instancegenerationtype)\]
+- `SpotMaxPricePercentageOverLowestPrice`: `int`
+- `OnDemandMaxPricePercentageOverLowestPrice`: `int`
+- `BareMetal`: [BareMetalType](./literals.md#baremetaltype)
+- `BurstablePerformance`:
+  [BurstablePerformanceType](./literals.md#burstableperformancetype)
+- `RequireHibernateSupport`: `bool`
+- `NetworkInterfaceCount`:
+  [NetworkInterfaceCountTypeDef](./type_defs.md#networkinterfacecounttypedef)
+- `LocalStorage`: [LocalStorageType](./literals.md#localstoragetype)
+- `LocalStorageTypes`:
+  `List`\[[LocalStorageTypeType](./literals.md#localstoragetypetype)\]
+- `TotalLocalStorageGB`:
+  [TotalLocalStorageGBTypeDef](./type_defs.md#totallocalstoragegbtypedef)
+- `BaselineEbsBandwidthMbps`:
+  [BaselineEbsBandwidthMbpsTypeDef](./type_defs.md#baselineebsbandwidthmbpstypedef)
+- `AcceleratorTypes`:
+  `List`\[[AcceleratorTypeType](./literals.md#acceleratortypetype)\]
+- `AcceleratorCount`:
+  [AcceleratorCountTypeDef](./type_defs.md#acceleratorcounttypedef)
+- `AcceleratorManufacturers`:
+  `List`\[[AcceleratorManufacturerType](./literals.md#acceleratormanufacturertype)\]
+- `AcceleratorNames`:
+  `List`\[[AcceleratorNameType](./literals.md#acceleratornametype)\]
+- `AcceleratorTotalMemoryMiB`:
+  [AcceleratorTotalMemoryMiBTypeDef](./type_defs.md#acceleratortotalmemorymibtypedef)
+
+## InstanceRequirementsWithMetadataRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceRequirementsWithMetadataRequestTypeDef
+```
+
+Optional fields:
+
+- `ArchitectureTypes`:
+  `Sequence`\[[ArchitectureTypeType](./literals.md#architecturetypetype)\]
+- `VirtualizationTypes`:
+  `Sequence`\[[VirtualizationTypeType](./literals.md#virtualizationtypetype)\]
+- `InstanceRequirements`:
+  [InstanceRequirementsRequestTypeDef](./type_defs.md#instancerequirementsrequesttypedef)
 
 ## InstanceSpecificationTypeDef
 
@@ -16501,6 +16777,16 @@ Optional fields:
 - `PlatformDetails`: `str`
 - `UsageOperation`: `str`
 - `UsageOperationUpdateTime`: `datetime`
+
+## InstanceTypeInfoFromInstanceRequirementsTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceTypeInfoFromInstanceRequirementsTypeDef
+```
+
+Optional fields:
+
+- `InstanceType`: `str`
 
 ## InstanceTypeInfoTypeDef
 
@@ -16803,6 +17089,8 @@ Optional fields:
 - `Group`: `Literal['all']` (see
   [PermissionGroupType](./literals.md#permissiongrouptype))
 - `UserId`: `str`
+- `OrganizationArn`: `str`
+- `OrganizationalUnitArn`: `str`
 
 ## LaunchSpecificationTypeDef
 
@@ -17214,6 +17502,8 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `WeightedCapacity`: `float`
 - `Priority`: `float`
+- `InstanceRequirements`:
+  [InstanceRequirementsTypeDef](./type_defs.md#instancerequirementstypedef)
 
 ## LaunchTemplatePlacementRequestTypeDef
 
@@ -17571,6 +17861,28 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OwnerId`: `str`
 
+## MemoryGiBPerVCpuRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import MemoryGiBPerVCpuRequestTypeDef
+```
+
+Optional fields:
+
+- `Min`: `float`
+- `Max`: `float`
+
+## MemoryGiBPerVCpuTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import MemoryGiBPerVCpuTypeDef
+```
+
+Optional fields:
+
+- `Min`: `float`
+- `Max`: `float`
+
 ## MemoryInfoTypeDef
 
 ```python
@@ -17580,6 +17892,31 @@ from mypy_boto3_ec2.type_defs import MemoryInfoTypeDef
 Optional fields:
 
 - `SizeInMiB`: `int`
+
+## MemoryMiBRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import MemoryMiBRequestTypeDef
+```
+
+Required fields:
+
+- `Min`: `int`
+
+Optional fields:
+
+- `Max`: `int`
+
+## MemoryMiBTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import MemoryMiBTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
 
 ## ModifyAddressAttributeRequestRequestTypeDef
 
@@ -17682,6 +18019,7 @@ Optional fields:
 - `EndDateType`: [EndDateTypeType](./literals.md#enddatetypetype)
 - `Accept`: `bool`
 - `DryRun`: `bool`
+- `AdditionalInfo`: `str`
 
 ## ModifyCapacityReservationResultTypeDef
 
@@ -17932,6 +18270,8 @@ Optional fields:
 - `UserIds`: `Sequence`\[`str`\]
 - `Value`: `str`
 - `DryRun`: `bool`
+- `OrganizationArns`: `Sequence`\[`str`\]
+- `OrganizationalUnitArns`: `Sequence`\[`str`\]
 
 ## ModifyImageAttributeRequestRequestTypeDef
 
@@ -17955,6 +18295,8 @@ Optional fields:
 - `UserIds`: `Sequence`\[`str`\]
 - `Value`: `str`
 - `DryRun`: `bool`
+- `OrganizationArns`: `Sequence`\[`str`\]
+- `OrganizationalUnitArns`: `Sequence`\[`str`\]
 
 ## ModifyInstanceAttributeRequestInstanceTypeDef
 
@@ -19403,6 +19745,28 @@ Optional fields:
 - `InstanceOwnerId`: `str`
 - `Status`: [AttachmentStatusType](./literals.md#attachmentstatustype)
 
+## NetworkInterfaceCountRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import NetworkInterfaceCountRequestTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
+
+## NetworkInterfaceCountTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import NetworkInterfaceCountTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
+
 ## NetworkInterfaceIpv6AddressTypeDef
 
 ```python
@@ -19496,6 +19860,7 @@ Optional fields:
 - `SubnetId`: `str`
 - `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcId`: `str`
+- `DenyAllIgwTraffic`: `bool`
 
 ## NewDhcpConfigurationTypeDef
 
@@ -20986,6 +21351,8 @@ Optional fields:
   [LaunchTemplateInstanceMetadataOptionsRequestTypeDef](./type_defs.md#launchtemplateinstancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
   [LaunchTemplateEnclaveOptionsRequestTypeDef](./type_defs.md#launchtemplateenclaveoptionsrequesttypedef)
+- `InstanceRequirements`:
+  [InstanceRequirementsRequestTypeDef](./type_defs.md#instancerequirementsrequesttypedef)
 
 ## RequestSpotFleetRequestRequestTypeDef
 
@@ -21564,6 +21931,8 @@ Optional fields:
   [LaunchTemplateInstanceMetadataOptionsTypeDef](./type_defs.md#launchtemplateinstancemetadataoptionstypedef)
 - `EnclaveOptions`:
   [LaunchTemplateEnclaveOptionsTypeDef](./type_defs.md#launchtemplateenclaveoptionstypedef)
+- `InstanceRequirements`:
+  [InstanceRequirementsTypeDef](./type_defs.md#instancerequirementstypedef)
 
 ## ResponseMetadataTypeDef
 
@@ -21576,7 +21945,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## RestoreAddressToClassicRequestRequestTypeDef
@@ -22957,8 +23326,9 @@ from mypy_boto3_ec2.type_defs import SpotCapacityRebalanceTypeDef
 
 Optional fields:
 
-- `ReplacementStrategy`: `Literal['launch']` (see
-  [ReplacementStrategyType](./literals.md#replacementstrategytype))
+- `ReplacementStrategy`:
+  [ReplacementStrategyType](./literals.md#replacementstrategytype)
+- `TerminationDelay`: `int`
 
 ## SpotDatafeedSubscriptionTypeDef
 
@@ -23008,6 +23378,8 @@ Optional fields:
 - `WeightedCapacity`: `float`
 - `TagSpecifications`:
   `List`\[[SpotFleetTagSpecificationTypeDef](./type_defs.md#spotfleettagspecificationtypedef)\]
+- `InstanceRequirements`:
+  [InstanceRequirementsTypeDef](./type_defs.md#instancerequirementstypedef)
 
 ## SpotFleetMonitoringTypeDef
 
@@ -23062,6 +23434,8 @@ Optional fields:
   [LoadBalancersConfigTypeDef](./type_defs.md#loadbalancersconfigtypedef)
 - `InstancePoolsToUseCount`: `int`
 - `Context`: `str`
+- `TargetCapacityUnitType`:
+  [TargetCapacityUnitTypeType](./literals.md#targetcapacityunittypetype)
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
@@ -23214,6 +23588,18 @@ Optional fields:
 - `SingleAvailabilityZone`: `bool`
 - `MinTargetCapacity`: `int`
 - `MaxTotalPrice`: `str`
+
+## SpotPlacementScoreTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import SpotPlacementScoreTypeDef
+```
+
+Optional fields:
+
+- `Region`: `str`
+- `AvailabilityZoneId`: `str`
+- `Score`: `int`
 
 ## SpotPlacementTypeDef
 
@@ -23615,6 +24001,8 @@ Optional fields:
 - `SpotTargetCapacity`: `int`
 - `DefaultTargetCapacityType`:
   [DefaultTargetCapacityTypeType](./literals.md#defaulttargetcapacitytypetype)
+- `TargetCapacityUnitType`:
+  [TargetCapacityUnitTypeType](./literals.md#targetcapacityunittypetype)
 
 ## TargetCapacitySpecificationTypeDef
 
@@ -23629,6 +24017,8 @@ Optional fields:
 - `SpotTargetCapacity`: `int`
 - `DefaultTargetCapacityType`:
   [DefaultTargetCapacityTypeType](./literals.md#defaulttargetcapacitytypetype)
+- `TargetCapacityUnitType`:
+  [TargetCapacityUnitTypeType](./literals.md#targetcapacityunittypetype)
 
 ## TargetConfigurationRequestTypeDef
 
@@ -23785,6 +24175,28 @@ Required fields:
   `List`\[[InstanceStateChangeTypeDef](./type_defs.md#instancestatechangetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TotalLocalStorageGBRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import TotalLocalStorageGBRequestTypeDef
+```
+
+Optional fields:
+
+- `Min`: `float`
+- `Max`: `float`
+
+## TotalLocalStorageGBTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import TotalLocalStorageGBTypeDef
+```
+
+Optional fields:
+
+- `Min`: `float`
+- `Max`: `float`
 
 ## TrafficMirrorFilterRuleTypeDef
 
@@ -24704,6 +25116,31 @@ Optional fields:
 - `VpcId`: `str`
 - `VpcPeeringConnectionId`: `str`
 
+## VCpuCountRangeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import VCpuCountRangeRequestTypeDef
+```
+
+Required fields:
+
+- `Min`: `int`
+
+Optional fields:
+
+- `Max`: `int`
+
+## VCpuCountRangeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import VCpuCountRangeTypeDef
+```
+
+Optional fields:
+
+- `Min`: `int`
+- `Max`: `int`
+
 ## VCpuInfoTypeDef
 
 ```python
@@ -25215,6 +25652,10 @@ Optional fields:
 - `VpnConnectionId`: `str`
 - `VpnGatewayId`: `str`
 - `TransitGatewayId`: `str`
+- `CoreNetworkArn`: `str`
+- `CoreNetworkAttachmentArn`: `str`
+- `GatewayAssociationState`:
+  [GatewayAssociationStateType](./literals.md#gatewayassociationstatetype)
 - `Options`:
   [VpnConnectionOptionsTypeDef](./type_defs.md#vpnconnectionoptionstypedef)
 - `Routes`:

@@ -16,6 +16,8 @@ type annotations stubs module
   - [CreateLocationEfsResponseTypeDef](#createlocationefsresponsetypedef)
   - [CreateLocationFsxWindowsRequestRequestTypeDef](#createlocationfsxwindowsrequestrequesttypedef)
   - [CreateLocationFsxWindowsResponseTypeDef](#createlocationfsxwindowsresponsetypedef)
+  - [CreateLocationHdfsRequestRequestTypeDef](#createlocationhdfsrequestrequesttypedef)
+  - [CreateLocationHdfsResponseTypeDef](#createlocationhdfsresponsetypedef)
   - [CreateLocationNfsRequestRequestTypeDef](#createlocationnfsrequestrequesttypedef)
   - [CreateLocationNfsResponseTypeDef](#createlocationnfsresponsetypedef)
   - [CreateLocationObjectStorageRequestRequestTypeDef](#createlocationobjectstoragerequestrequesttypedef)
@@ -35,6 +37,8 @@ type annotations stubs module
   - [DescribeLocationEfsResponseTypeDef](#describelocationefsresponsetypedef)
   - [DescribeLocationFsxWindowsRequestRequestTypeDef](#describelocationfsxwindowsrequestrequesttypedef)
   - [DescribeLocationFsxWindowsResponseTypeDef](#describelocationfsxwindowsresponsetypedef)
+  - [DescribeLocationHdfsRequestRequestTypeDef](#describelocationhdfsrequestrequesttypedef)
+  - [DescribeLocationHdfsResponseTypeDef](#describelocationhdfsresponsetypedef)
   - [DescribeLocationNfsRequestRequestTypeDef](#describelocationnfsrequestrequesttypedef)
   - [DescribeLocationNfsResponseTypeDef](#describelocationnfsresponsetypedef)
   - [DescribeLocationObjectStorageRequestRequestTypeDef](#describelocationobjectstoragerequestrequesttypedef)
@@ -49,6 +53,7 @@ type annotations stubs module
   - [DescribeTaskResponseTypeDef](#describetaskresponsetypedef)
   - [Ec2ConfigTypeDef](#ec2configtypedef)
   - [FilterRuleTypeDef](#filterruletypedef)
+  - [HdfsNameNodeTypeDef](#hdfsnamenodetypedef)
   - [ListAgentsRequestRequestTypeDef](#listagentsrequestrequesttypedef)
   - [ListAgentsResponseTypeDef](#listagentsresponsetypedef)
   - [ListLocationsRequestRequestTypeDef](#listlocationsrequestrequesttypedef)
@@ -66,6 +71,7 @@ type annotations stubs module
   - [OptionsTypeDef](#optionstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PrivateLinkConfigTypeDef](#privatelinkconfigtypedef)
+  - [QopConfigurationTypeDef](#qopconfigurationtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3ConfigTypeDef](#s3configtypedef)
   - [SmbMountOptionsTypeDef](#smbmountoptionstypedef)
@@ -80,6 +86,7 @@ type annotations stubs module
   - [TaskScheduleTypeDef](#taskscheduletypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateAgentRequestRequestTypeDef](#updateagentrequestrequesttypedef)
+  - [UpdateLocationHdfsRequestRequestTypeDef](#updatelocationhdfsrequestrequesttypedef)
   - [UpdateLocationNfsRequestRequestTypeDef](#updatelocationnfsrequestrequesttypedef)
   - [UpdateLocationObjectStorageRequestRequestTypeDef](#updatelocationobjectstoragerequestrequesttypedef)
   - [UpdateLocationSmbRequestRequestTypeDef](#updatelocationsmbrequestrequesttypedef)
@@ -192,6 +199,47 @@ Optional fields:
 
 ```python
 from mypy_boto3_datasync.type_defs import CreateLocationFsxWindowsResponseTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLocationHdfsRequestRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationHdfsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `NameNodes`:
+  `Sequence`\[[HdfsNameNodeTypeDef](./type_defs.md#hdfsnamenodetypedef)\]
+- `AuthenticationType`:
+  [HdfsAuthenticationTypeType](./literals.md#hdfsauthenticationtypetype)
+- `AgentArns`: `Sequence`\[`str`\]
+
+Optional fields:
+
+- `Subdirectory`: `str`
+- `BlockSize`: `int`
+- `ReplicationFactor`: `int`
+- `KmsKeyProviderUri`: `str`
+- `QopConfiguration`:
+  [QopConfigurationTypeDef](./type_defs.md#qopconfigurationtypedef)
+- `SimpleUser`: `str`
+- `KerberosPrincipal`: `str`
+- `KerberosKeytab`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `KerberosKrb5Conf`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+
+## CreateLocationHdfsResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationHdfsResponseTypeDef
 ```
 
 Required fields:
@@ -478,6 +526,42 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeLocationHdfsRequestRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeLocationHdfsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+
+## DescribeLocationHdfsResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeLocationHdfsResponseTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+- `LocationUri`: `str`
+- `NameNodes`:
+  `List`\[[HdfsNameNodeTypeDef](./type_defs.md#hdfsnamenodetypedef)\]
+- `BlockSize`: `int`
+- `ReplicationFactor`: `int`
+- `KmsKeyProviderUri`: `str`
+- `QopConfiguration`:
+  [QopConfigurationTypeDef](./type_defs.md#qopconfigurationtypedef)
+- `AuthenticationType`:
+  [HdfsAuthenticationTypeType](./literals.md#hdfsauthenticationtypetype)
+- `SimpleUser`: `str`
+- `KerberosPrincipal`: `str`
+- `AgentArns`: `List`\[`str`\]
+- `CreationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeLocationNfsRequestRequestTypeDef
 
 ```python
@@ -683,6 +767,17 @@ Optional fields:
 - `FilterType`: `Literal['SIMPLE_PATTERN']` (see
   [FilterTypeType](./literals.md#filtertypetype))
 - `Value`: `str`
+
+## HdfsNameNodeTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import HdfsNameNodeTypeDef
+```
+
+Required fields:
+
+- `Hostname`: `str`
+- `Port`: `int`
 
 ## ListAgentsRequestRequestTypeDef
 
@@ -911,6 +1006,18 @@ Optional fields:
 - `SubnetArns`: `List`\[`str`\]
 - `SecurityGroupArns`: `List`\[`str`\]
 
+## QopConfigurationTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import QopConfigurationTypeDef
+```
+
+Optional fields:
+
+- `RpcProtection`: [HdfsRpcProtectionType](./literals.md#hdfsrpcprotectiontype)
+- `DataTransferProtection`:
+  [HdfsDataTransferProtectionType](./literals.md#hdfsdatatransferprotectiontype)
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -922,7 +1029,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## S3ConfigTypeDef
@@ -1088,6 +1195,34 @@ Required fields:
 Optional fields:
 
 - `Name`: `str`
+
+## UpdateLocationHdfsRequestRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import UpdateLocationHdfsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+
+Optional fields:
+
+- `Subdirectory`: `str`
+- `NameNodes`:
+  `Sequence`\[[HdfsNameNodeTypeDef](./type_defs.md#hdfsnamenodetypedef)\]
+- `BlockSize`: `int`
+- `ReplicationFactor`: `int`
+- `KmsKeyProviderUri`: `str`
+- `QopConfiguration`:
+  [QopConfigurationTypeDef](./type_defs.md#qopconfigurationtypedef)
+- `AuthenticationType`:
+  [HdfsAuthenticationTypeType](./literals.md#hdfsauthenticationtypetype)
+- `SimpleUser`: `str`
+- `KerberosPrincipal`: `str`
+- `KerberosKeytab`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `KerberosKrb5Conf`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `AgentArns`: `Sequence`\[`str`\]
 
 ## UpdateLocationNfsRequestRequestTypeDef
 

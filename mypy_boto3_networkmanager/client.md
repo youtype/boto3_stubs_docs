@@ -37,17 +37,25 @@ type annotations stubs module
     - [get_devices](#get_devices)
     - [get_link_associations](#get_link_associations)
     - [get_links](#get_links)
+    - [get_network_resource_counts](#get_network_resource_counts)
+    - [get_network_resource_relationships](#get_network_resource_relationships)
+    - [get_network_resources](#get_network_resources)
+    - [get_network_routes](#get_network_routes)
+    - [get_network_telemetry](#get_network_telemetry)
+    - [get_route_analysis](#get_route_analysis)
     - [get_sites](#get_sites)
     - [get_transit_gateway_connect_peer_associations](#get_transit_gateway_connect_peer_associations)
     - [get_transit_gateway_registrations](#get_transit_gateway_registrations)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [register_transit_gateway](#register_transit_gateway)
+    - [start_route_analysis](#start_route_analysis)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_connection](#update_connection)
     - [update_device](#update_device)
     - [update_global_network](#update_global_network)
     - [update_link](#update_link)
+    - [update_network_resource_metadata](#update_network_resource_metadata)
     - [update_site](#update_site)
     - [get_paginator](#get_paginator)
 
@@ -646,6 +654,163 @@ Keyword-only arguments:
 
 Returns [GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef).
 
+### get_network_resource_counts
+
+Gets the count of network resources, by resource type, for the specified global
+network.
+
+Type annotations for
+`boto3.client("networkmanager").get_network_resource_counts` method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_network_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_resource_counts)
+
+Arguments mapping described in
+[GetNetworkResourceCountsRequestRequestTypeDef](./type_defs.md#getnetworkresourcecountsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `ResourceType`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetNetworkResourceCountsResponseTypeDef](./type_defs.md#getnetworkresourcecountsresponsetypedef).
+
+### get_network_resource_relationships
+
+Gets the network resource relationships for the specified global network.
+
+Type annotations for
+`boto3.client("networkmanager").get_network_resource_relationships` method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_network_resource_relationships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_resource_relationships)
+
+Arguments mapping described in
+[GetNetworkResourceRelationshipsRequestRequestTypeDef](./type_defs.md#getnetworkresourcerelationshipsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `RegisteredGatewayArn`: `str`
+- `AwsRegion`: `str`
+- `AccountId`: `str`
+- `ResourceType`: `str`
+- `ResourceArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetNetworkResourceRelationshipsResponseTypeDef](./type_defs.md#getnetworkresourcerelationshipsresponsetypedef).
+
+### get_network_resources
+
+Describes the network resources for the specified global network.
+
+Type annotations for `boto3.client("networkmanager").get_network_resources`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_network_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_resources)
+
+Arguments mapping described in
+[GetNetworkResourcesRequestRequestTypeDef](./type_defs.md#getnetworkresourcesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `RegisteredGatewayArn`: `str`
+- `AwsRegion`: `str`
+- `AccountId`: `str`
+- `ResourceType`: `str`
+- `ResourceArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetNetworkResourcesResponseTypeDef](./type_defs.md#getnetworkresourcesresponsetypedef).
+
+### get_network_routes
+
+Gets the network routes of the specified global network.
+
+Type annotations for `boto3.client("networkmanager").get_network_routes`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_network_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_routes)
+
+Arguments mapping described in
+[GetNetworkRoutesRequestRequestTypeDef](./type_defs.md#getnetworkroutesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `RouteTableIdentifier`:
+  [RouteTableIdentifierTypeDef](./type_defs.md#routetableidentifiertypedef)
+  *(required)*
+- `ExactCidrMatches`: `Sequence`\[`str`\]
+- `LongestPrefixMatches`: `Sequence`\[`str`\]
+- `SubnetOfMatches`: `Sequence`\[`str`\]
+- `SupernetOfMatches`: `Sequence`\[`str`\]
+- `PrefixListIds`: `Sequence`\[`str`\]
+- `States`: `Sequence`\[[RouteStateType](./literals.md#routestatetype)\]
+- `Types`: `Sequence`\[[RouteTypeType](./literals.md#routetypetype)\]
+- `DestinationFilters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+
+Returns
+[GetNetworkRoutesResponseTypeDef](./type_defs.md#getnetworkroutesresponsetypedef).
+
+### get_network_telemetry
+
+Gets the network telemetry of the specified global network.
+
+Type annotations for `boto3.client("networkmanager").get_network_telemetry`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_network_telemetry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_telemetry)
+
+Arguments mapping described in
+[GetNetworkTelemetryRequestRequestTypeDef](./type_defs.md#getnetworktelemetryrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `RegisteredGatewayArn`: `str`
+- `AwsRegion`: `str`
+- `AccountId`: `str`
+- `ResourceType`: `str`
+- `ResourceArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetNetworkTelemetryResponseTypeDef](./type_defs.md#getnetworktelemetryresponsetypedef).
+
+### get_route_analysis
+
+Gets information about the specified route analysis.
+
+Type annotations for `boto3.client("networkmanager").get_route_analysis`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_route_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_route_analysis)
+
+Arguments mapping described in
+[GetRouteAnalysisRequestRequestTypeDef](./type_defs.md#getrouteanalysisrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `RouteAnalysisId`: `str` *(required)*
+
+Returns
+[GetRouteAnalysisResponseTypeDef](./type_defs.md#getrouteanalysisresponsetypedef).
+
 ### get_sites
 
 Gets information about one or more of your sites in a global network.
@@ -756,6 +921,34 @@ Keyword-only arguments:
 
 Returns
 [RegisterTransitGatewayResponseTypeDef](./type_defs.md#registertransitgatewayresponsetypedef).
+
+### start_route_analysis
+
+Starts analyzing the routing path between the specified source and destination.
+
+Type annotations for `boto3.client("networkmanager").start_route_analysis`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.start_route_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.start_route_analysis)
+
+Arguments mapping described in
+[StartRouteAnalysisRequestRequestTypeDef](./type_defs.md#startrouteanalysisrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `Source`:
+  [RouteAnalysisEndpointOptionsSpecificationTypeDef](./type_defs.md#routeanalysisendpointoptionsspecificationtypedef)
+  *(required)*
+- `Destination`:
+  [RouteAnalysisEndpointOptionsSpecificationTypeDef](./type_defs.md#routeanalysisendpointoptionsspecificationtypedef)
+  *(required)*
+- `IncludeReturnPath`: `bool`
+- `UseMiddleboxes`: `bool`
+
+Returns
+[StartRouteAnalysisResponseTypeDef](./type_defs.md#startrouteanalysisresponsetypedef).
 
 ### tag_resource
 
@@ -890,6 +1083,28 @@ Keyword-only arguments:
 
 Returns [UpdateLinkResponseTypeDef](./type_defs.md#updatelinkresponsetypedef).
 
+### update_network_resource_metadata
+
+Updates the resource metadata for the specified global network.
+
+Type annotations for
+`boto3.client("networkmanager").update_network_resource_metadata` method.
+
+Boto3 documentation:
+[NetworkManager.Client.update_network_resource_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_network_resource_metadata)
+
+Arguments mapping described in
+[UpdateNetworkResourceMetadataRequestRequestTypeDef](./type_defs.md#updatenetworkresourcemetadatarequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `ResourceArn`: `str` *(required)*
+- `Metadata`: `Mapping`\[`str`, `str`\] *(required)*
+
+Returns
+[UpdateNetworkResourceMetadataResponseTypeDef](./type_defs.md#updatenetworkresourcemetadataresponsetypedef).
+
 ### update_site
 
 Updates the information for an existing site.
@@ -928,6 +1143,14 @@ overloads.
   [GetLinkAssociationsPaginator](./paginators.md#getlinkassociationspaginator)
 - `client.get_paginator("get_links")` ->
   [GetLinksPaginator](./paginators.md#getlinkspaginator)
+- `client.get_paginator("get_network_resource_counts")` ->
+  [GetNetworkResourceCountsPaginator](./paginators.md#getnetworkresourcecountspaginator)
+- `client.get_paginator("get_network_resource_relationships")` ->
+  [GetNetworkResourceRelationshipsPaginator](./paginators.md#getnetworkresourcerelationshipspaginator)
+- `client.get_paginator("get_network_resources")` ->
+  [GetNetworkResourcesPaginator](./paginators.md#getnetworkresourcespaginator)
+- `client.get_paginator("get_network_telemetry")` ->
+  [GetNetworkTelemetryPaginator](./paginators.md#getnetworktelemetrypaginator)
 - `client.get_paginator("get_sites")` ->
   [GetSitesPaginator](./paginators.md#getsitespaginator)
 - `client.get_paginator("get_transit_gateway_connect_peer_associations")` ->

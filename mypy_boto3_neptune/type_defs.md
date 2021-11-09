@@ -1893,6 +1893,8 @@ Optional fields:
 - `CloudwatchLogsExportConfiguration`:
   [CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef)
 - `EngineVersion`: `str`
+- `AllowMajorVersionUpgrade`: `bool`
+- `DBInstanceParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 - `CopyTagsToSnapshot`: `bool`
 
@@ -2395,7 +2397,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## RestoreDBClusterFromSnapshotMessageRequestTypeDef

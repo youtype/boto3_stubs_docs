@@ -28,6 +28,8 @@ type annotations stubs module
   - [GetDocumentAnalysisResponseTypeDef](#getdocumentanalysisresponsetypedef)
   - [GetDocumentTextDetectionRequestRequestTypeDef](#getdocumenttextdetectionrequestrequesttypedef)
   - [GetDocumentTextDetectionResponseTypeDef](#getdocumenttextdetectionresponsetypedef)
+  - [GetExpenseAnalysisRequestRequestTypeDef](#getexpenseanalysisrequestrequesttypedef)
+  - [GetExpenseAnalysisResponseTypeDef](#getexpenseanalysisresponsetypedef)
   - [HumanLoopActivationOutputTypeDef](#humanloopactivationoutputtypedef)
   - [HumanLoopConfigTypeDef](#humanloopconfigtypedef)
   - [HumanLoopDataAttributesTypeDef](#humanloopdataattributestypedef)
@@ -43,6 +45,8 @@ type annotations stubs module
   - [StartDocumentAnalysisResponseTypeDef](#startdocumentanalysisresponsetypedef)
   - [StartDocumentTextDetectionRequestRequestTypeDef](#startdocumenttextdetectionrequestrequesttypedef)
   - [StartDocumentTextDetectionResponseTypeDef](#startdocumenttextdetectionresponsetypedef)
+  - [StartExpenseAnalysisRequestRequestTypeDef](#startexpenseanalysisrequestrequesttypedef)
+  - [StartExpenseAnalysisResponseTypeDef](#startexpenseanalysisresponsetypedef)
   - [WarningTypeDef](#warningtypedef)
 
 ## AnalyzeDocumentRequestRequestTypeDef
@@ -328,6 +332,41 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetExpenseAnalysisRequestRequestTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import GetExpenseAnalysisRequestRequestTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetExpenseAnalysisResponseTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import GetExpenseAnalysisResponseTypeDef
+```
+
+Required fields:
+
+- `DocumentMetadata`:
+  [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `NextToken`: `str`
+- `ExpenseDocuments`:
+  `List`\[[ExpenseDocumentTypeDef](./type_defs.md#expensedocumenttypedef)\]
+- `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
+- `StatusMessage`: `str`
+- `AnalyzeExpenseModelVersion`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## HumanLoopActivationOutputTypeDef
 
 ```python
@@ -448,7 +487,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## S3ObjectTypeDef
@@ -521,6 +560,38 @@ Optional fields:
 
 ```python
 from mypy_boto3_textract.type_defs import StartDocumentTextDetectionResponseTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartExpenseAnalysisRequestRequestTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import StartExpenseAnalysisRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DocumentLocation`:
+  [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+- `JobTag`: `str`
+- `NotificationChannel`:
+  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
+- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
+- `KMSKeyId`: `str`
+
+## StartExpenseAnalysisResponseTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import StartExpenseAnalysisResponseTypeDef
 ```
 
 Required fields:

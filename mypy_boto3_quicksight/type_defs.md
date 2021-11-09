@@ -275,6 +275,7 @@ type annotations stubs module
   - [RegisterUserResponseTypeDef](#registeruserresponsetypedef)
   - [RegisteredUserDashboardEmbeddingConfigurationTypeDef](#registereduserdashboardembeddingconfigurationtypedef)
   - [RegisteredUserEmbeddingExperienceConfigurationTypeDef](#registereduserembeddingexperienceconfigurationtypedef)
+  - [RegisteredUserQSearchBarEmbeddingConfigurationTypeDef](#registereduserqsearchbarembeddingconfigurationtypedef)
   - [RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef](#registereduserquicksightconsoleembeddingconfigurationtypedef)
   - [RelationalTableTypeDef](#relationaltabletypedef)
   - [RenameColumnOperationTypeDef](#renamecolumnoperationtypedef)
@@ -4251,6 +4252,18 @@ Optional fields:
   [RegisteredUserDashboardEmbeddingConfigurationTypeDef](./type_defs.md#registereduserdashboardembeddingconfigurationtypedef)
 - `QuickSightConsole`:
   [RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef](./type_defs.md#registereduserquicksightconsoleembeddingconfigurationtypedef)
+- `QSearchBar`:
+  [RegisteredUserQSearchBarEmbeddingConfigurationTypeDef](./type_defs.md#registereduserqsearchbarembeddingconfigurationtypedef)
+
+## RegisteredUserQSearchBarEmbeddingConfigurationTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import RegisteredUserQSearchBarEmbeddingConfigurationTypeDef
+```
+
+Optional fields:
+
+- `InitialTopicId`: `str`
 
 ## RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef
 
@@ -4313,7 +4326,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## RestoreAnalysisRequestRequestTypeDef

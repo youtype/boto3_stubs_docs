@@ -181,6 +181,7 @@ type annotations stubs module
   - [SessionContextAttributesTypeDef](#sessioncontextattributestypedef)
   - [SessionContextTypeDef](#sessioncontexttypedef)
   - [SessionIssuerTypeDef](#sessionissuertypedef)
+  - [SeverityLevelTypeDef](#severityleveltypedef)
   - [SeverityTypeDef](#severitytypedef)
   - [SimpleCriterionForJobTypeDef](#simplecriterionforjobtypedef)
   - [SimpleScopeTermTypeDef](#simplescopetermtypedef)
@@ -673,6 +674,8 @@ Optional fields:
 - `maximumMatchDistance`: `int`
 - `name`: `str`
 - `regex`: `str`
+- `severityLevels`:
+  `Sequence`\[[SeverityLevelTypeDef](./type_defs.md#severityleveltypedef)\]
 - `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateCustomDataIdentifierResponseTypeDef
@@ -1297,6 +1300,8 @@ Required fields:
 - `maximumMatchDistance`: `int`
 - `name`: `str`
 - `regex`: `str`
+- `severityLevels`:
+  `List`\[[SeverityLevelTypeDef](./type_defs.md#severityleveltypedef)\]
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2228,7 +2233,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## S3BucketCriteriaForJobTypeDef
@@ -2548,6 +2553,18 @@ Optional fields:
 - `principalId`: `str`
 - `type`: `str`
 - `userName`: `str`
+
+## SeverityLevelTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import SeverityLevelTypeDef
+```
+
+Required fields:
+
+- `occurrencesThreshold`: `int`
+- `severity`:
+  [DataIdentifierSeverityType](./literals.md#dataidentifierseveritytype)
 
 ## SeverityTypeDef
 

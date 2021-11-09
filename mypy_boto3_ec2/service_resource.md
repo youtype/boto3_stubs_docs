@@ -1796,6 +1796,8 @@ Keyword-only arguments:
 - `UserIds`: `Sequence`\[`str`\]
 - `Value`: `str`
 - `DryRun`: `bool`
+- `OrganizationArns`: `Sequence`\[`str`\]
+- `OrganizationalUnitArns`: `Sequence`\[`str`\]
 
 #### Image.reload method
 
@@ -2976,6 +2978,7 @@ Boto3 documentation:
 - `subnet_id`: `str`
 - `tag_set`: `List`\[`Any`\]
 - `vpc_id`: `str`
+- `deny_all_igw_traffic`: `bool`
 - `id`: `str`
 - `association`: [NetworkInterfaceAssociation](#networkinterfaceassociation)
 - `subnet`: [Subnet](#subnet)
@@ -3214,6 +3217,7 @@ Boto3 documentation:
 ### NetworkInterfaceAssociation attributes
 
 - `carrier_ip`: `str`
+- `customer_owned_ip`: `str`
 - `ip_owner_id`: `str`
 - `public_dns_name`: `str`
 - `public_ip`: `str`

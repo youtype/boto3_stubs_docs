@@ -13,12 +13,18 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [associate_aws_account_with_partner_account](#associate_aws_account_with_partner_account)
+    - [associate_multicast_group_with_fuota_task](#associate_multicast_group_with_fuota_task)
+    - [associate_wireless_device_with_fuota_task](#associate_wireless_device_with_fuota_task)
+    - [associate_wireless_device_with_multicast_group](#associate_wireless_device_with_multicast_group)
     - [associate_wireless_device_with_thing](#associate_wireless_device_with_thing)
     - [associate_wireless_gateway_with_certificate](#associate_wireless_gateway_with_certificate)
     - [associate_wireless_gateway_with_thing](#associate_wireless_gateway_with_thing)
     - [can_paginate](#can_paginate)
+    - [cancel_multicast_group_session](#cancel_multicast_group_session)
     - [create_destination](#create_destination)
     - [create_device_profile](#create_device_profile)
+    - [create_fuota_task](#create_fuota_task)
+    - [create_multicast_group](#create_multicast_group)
     - [create_service_profile](#create_service_profile)
     - [create_wireless_device](#create_wireless_device)
     - [create_wireless_gateway](#create_wireless_gateway)
@@ -26,20 +32,29 @@ type annotations stubs module
     - [create_wireless_gateway_task_definition](#create_wireless_gateway_task_definition)
     - [delete_destination](#delete_destination)
     - [delete_device_profile](#delete_device_profile)
+    - [delete_fuota_task](#delete_fuota_task)
+    - [delete_multicast_group](#delete_multicast_group)
     - [delete_service_profile](#delete_service_profile)
     - [delete_wireless_device](#delete_wireless_device)
     - [delete_wireless_gateway](#delete_wireless_gateway)
     - [delete_wireless_gateway_task](#delete_wireless_gateway_task)
     - [delete_wireless_gateway_task_definition](#delete_wireless_gateway_task_definition)
     - [disassociate_aws_account_from_partner_account](#disassociate_aws_account_from_partner_account)
+    - [disassociate_multicast_group_from_fuota_task](#disassociate_multicast_group_from_fuota_task)
+    - [disassociate_wireless_device_from_fuota_task](#disassociate_wireless_device_from_fuota_task)
+    - [disassociate_wireless_device_from_multicast_group](#disassociate_wireless_device_from_multicast_group)
     - [disassociate_wireless_device_from_thing](#disassociate_wireless_device_from_thing)
     - [disassociate_wireless_gateway_from_certificate](#disassociate_wireless_gateway_from_certificate)
     - [disassociate_wireless_gateway_from_thing](#disassociate_wireless_gateway_from_thing)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_destination](#get_destination)
     - [get_device_profile](#get_device_profile)
+    - [get_fuota_task](#get_fuota_task)
     - [get_log_levels_by_resource_types](#get_log_levels_by_resource_types)
+    - [get_multicast_group](#get_multicast_group)
+    - [get_multicast_group_session](#get_multicast_group_session)
     - [get_partner_account](#get_partner_account)
+    - [get_resource_event_configuration](#get_resource_event_configuration)
     - [get_resource_log_level](#get_resource_log_level)
     - [get_service_endpoint](#get_service_endpoint)
     - [get_service_profile](#get_service_profile)
@@ -53,6 +68,9 @@ type annotations stubs module
     - [get_wireless_gateway_task_definition](#get_wireless_gateway_task_definition)
     - [list_destinations](#list_destinations)
     - [list_device_profiles](#list_device_profiles)
+    - [list_fuota_tasks](#list_fuota_tasks)
+    - [list_multicast_groups](#list_multicast_groups)
+    - [list_multicast_groups_by_fuota_task](#list_multicast_groups_by_fuota_task)
     - [list_partner_accounts](#list_partner_accounts)
     - [list_service_profiles](#list_service_profiles)
     - [list_tags_for_resource](#list_tags_for_resource)
@@ -62,13 +80,21 @@ type annotations stubs module
     - [put_resource_log_level](#put_resource_log_level)
     - [reset_all_resource_log_levels](#reset_all_resource_log_levels)
     - [reset_resource_log_level](#reset_resource_log_level)
+    - [send_data_to_multicast_group](#send_data_to_multicast_group)
     - [send_data_to_wireless_device](#send_data_to_wireless_device)
+    - [start_bulk_associate_wireless_device_with_multicast_group](#start_bulk_associate_wireless_device_with_multicast_group)
+    - [start_bulk_disassociate_wireless_device_from_multicast_group](#start_bulk_disassociate_wireless_device_from_multicast_group)
+    - [start_fuota_task](#start_fuota_task)
+    - [start_multicast_group_session](#start_multicast_group_session)
     - [tag_resource](#tag_resource)
     - [test_wireless_device](#test_wireless_device)
     - [untag_resource](#untag_resource)
     - [update_destination](#update_destination)
+    - [update_fuota_task](#update_fuota_task)
     - [update_log_levels_by_resource_types](#update_log_levels_by_resource_types)
+    - [update_multicast_group](#update_multicast_group)
     - [update_partner_account](#update_partner_account)
+    - [update_resource_event_configuration](#update_resource_event_configuration)
     - [update_wireless_device](#update_wireless_device)
     - [update_wireless_gateway](#update_wireless_gateway)
 
@@ -149,6 +175,67 @@ Keyword-only arguments:
 Returns
 [AssociateAwsAccountWithPartnerAccountResponseTypeDef](./type_defs.md#associateawsaccountwithpartneraccountresponsetypedef).
 
+### associate_multicast_group_with_fuota_task
+
+Associate a multicast group with a FUOTA task.
+
+Type annotations for
+`boto3.client("iotwireless").associate_multicast_group_with_fuota_task` method.
+
+Boto3 documentation:
+[IoTWireless.Client.associate_multicast_group_with_fuota_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_multicast_group_with_fuota_task)
+
+Arguments mapping described in
+[AssociateMulticastGroupWithFuotaTaskRequestRequestTypeDef](./type_defs.md#associatemulticastgroupwithfuotataskrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `MulticastGroupId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### associate_wireless_device_with_fuota_task
+
+Associate a wireless device with a FUOTA task.
+
+Type annotations for
+`boto3.client("iotwireless").associate_wireless_device_with_fuota_task` method.
+
+Boto3 documentation:
+[IoTWireless.Client.associate_wireless_device_with_fuota_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_device_with_fuota_task)
+
+Arguments mapping described in
+[AssociateWirelessDeviceWithFuotaTaskRequestRequestTypeDef](./type_defs.md#associatewirelessdevicewithfuotataskrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `WirelessDeviceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### associate_wireless_device_with_multicast_group
+
+Associates a wireless device with a multicast group.
+
+Type annotations for
+`boto3.client("iotwireless").associate_wireless_device_with_multicast_group`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.associate_wireless_device_with_multicast_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_device_with_multicast_group)
+
+Arguments mapping described in
+[AssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef](./type_defs.md#associatewirelessdevicewithmulticastgrouprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `WirelessDeviceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### associate_wireless_device_with_thing
 
 Associates a wireless device with a thing.
@@ -226,6 +313,25 @@ Arguments:
 
 Returns `bool`.
 
+### cancel_multicast_group_session
+
+Cancels an existing multicast group session.
+
+Type annotations for
+`boto3.client("iotwireless").cancel_multicast_group_session` method.
+
+Boto3 documentation:
+[IoTWireless.Client.cancel_multicast_group_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.cancel_multicast_group_session)
+
+Arguments mapping described in
+[CancelMulticastGroupSessionRequestRequestTypeDef](./type_defs.md#cancelmulticastgroupsessionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### create_destination
 
 Creates a new destination that maps a device message to an AWS IoT rule.
@@ -275,6 +381,56 @@ Keyword-only arguments:
 
 Returns
 [CreateDeviceProfileResponseTypeDef](./type_defs.md#createdeviceprofileresponsetypedef).
+
+### create_fuota_task
+
+Creates a FUOTA task.
+
+Type annotations for `boto3.client("iotwireless").create_fuota_task` method.
+
+Boto3 documentation:
+[IoTWireless.Client.create_fuota_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_fuota_task)
+
+Arguments mapping described in
+[CreateFuotaTaskRequestRequestTypeDef](./type_defs.md#createfuotataskrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FirmwareUpdateImage`: `str` *(required)*
+- `FirmwareUpdateRole`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `ClientRequestToken`: `str`
+- `LoRaWAN`: [LoRaWANFuotaTaskTypeDef](./type_defs.md#lorawanfuotatasktypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateFuotaTaskResponseTypeDef](./type_defs.md#createfuotataskresponsetypedef).
+
+### create_multicast_group
+
+Creates a multicast group.
+
+Type annotations for `boto3.client("iotwireless").create_multicast_group`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.create_multicast_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_multicast_group)
+
+Arguments mapping described in
+[CreateMulticastGroupRequestRequestTypeDef](./type_defs.md#createmulticastgrouprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `LoRaWAN`: [LoRaWANMulticastTypeDef](./type_defs.md#lorawanmulticasttypedef)
+  *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `ClientRequestToken`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateMulticastGroupResponseTypeDef](./type_defs.md#createmulticastgroupresponsetypedef).
 
 ### create_service_profile
 
@@ -435,6 +591,43 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### delete_fuota_task
+
+Deletes a FUOTA task.
+
+Type annotations for `boto3.client("iotwireless").delete_fuota_task` method.
+
+Boto3 documentation:
+[IoTWireless.Client.delete_fuota_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_fuota_task)
+
+Arguments mapping described in
+[DeleteFuotaTaskRequestRequestTypeDef](./type_defs.md#deletefuotataskrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### delete_multicast_group
+
+Deletes a multicast group if it is not in use by a fuota task.
+
+Type annotations for `boto3.client("iotwireless").delete_multicast_group`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.delete_multicast_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_multicast_group)
+
+Arguments mapping described in
+[DeleteMulticastGroupRequestRequestTypeDef](./type_defs.md#deletemulticastgrouprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### delete_service_profile
 
 Deletes a service profile.
@@ -549,6 +742,69 @@ Keyword-only arguments:
 - `PartnerAccountId`: `str` *(required)*
 - `PartnerType`: `Literal['Sidewalk']` (see
   [PartnerTypeType](./literals.md#partnertypetype)) *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### disassociate_multicast_group_from_fuota_task
+
+Disassociates a multicast group from a fuota task.
+
+Type annotations for
+`boto3.client("iotwireless").disassociate_multicast_group_from_fuota_task`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.disassociate_multicast_group_from_fuota_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_multicast_group_from_fuota_task)
+
+Arguments mapping described in
+[DisassociateMulticastGroupFromFuotaTaskRequestRequestTypeDef](./type_defs.md#disassociatemulticastgroupfromfuotataskrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `MulticastGroupId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### disassociate_wireless_device_from_fuota_task
+
+Disassociates a wireless device from a FUOTA task.
+
+Type annotations for
+`boto3.client("iotwireless").disassociate_wireless_device_from_fuota_task`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.disassociate_wireless_device_from_fuota_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_device_from_fuota_task)
+
+Arguments mapping described in
+[DisassociateWirelessDeviceFromFuotaTaskRequestRequestTypeDef](./type_defs.md#disassociatewirelessdevicefromfuotataskrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `WirelessDeviceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### disassociate_wireless_device_from_multicast_group
+
+Disassociates a wireless device from a multicast group.
+
+Type annotations for
+`boto3.client("iotwireless").disassociate_wireless_device_from_multicast_group`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.disassociate_wireless_device_from_multicast_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_device_from_multicast_group)
+
+Arguments mapping described in
+[DisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef](./type_defs.md#disassociatewirelessdevicefrommulticastgrouprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `WirelessDeviceId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -667,6 +923,25 @@ Keyword-only arguments:
 Returns
 [GetDeviceProfileResponseTypeDef](./type_defs.md#getdeviceprofileresponsetypedef).
 
+### get_fuota_task
+
+Gets information about a FUOTA task.
+
+Type annotations for `boto3.client("iotwireless").get_fuota_task` method.
+
+Boto3 documentation:
+[IoTWireless.Client.get_fuota_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_fuota_task)
+
+Arguments mapping described in
+[GetFuotaTaskRequestRequestTypeDef](./type_defs.md#getfuotataskrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetFuotaTaskResponseTypeDef](./type_defs.md#getfuotataskresponsetypedef).
+
 ### get_log_levels_by_resource_types
 
 Returns current default log levels or log levels by resource types.
@@ -679,6 +954,45 @@ Boto3 documentation:
 
 Returns
 [GetLogLevelsByResourceTypesResponseTypeDef](./type_defs.md#getloglevelsbyresourcetypesresponsetypedef).
+
+### get_multicast_group
+
+Gets information about a multicast group.
+
+Type annotations for `boto3.client("iotwireless").get_multicast_group` method.
+
+Boto3 documentation:
+[IoTWireless.Client.get_multicast_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_multicast_group)
+
+Arguments mapping described in
+[GetMulticastGroupRequestRequestTypeDef](./type_defs.md#getmulticastgrouprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetMulticastGroupResponseTypeDef](./type_defs.md#getmulticastgroupresponsetypedef).
+
+### get_multicast_group_session
+
+Gets information about a multicast group session.
+
+Type annotations for `boto3.client("iotwireless").get_multicast_group_session`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.get_multicast_group_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_multicast_group_session)
+
+Arguments mapping described in
+[GetMulticastGroupSessionRequestRequestTypeDef](./type_defs.md#getmulticastgroupsessionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetMulticastGroupSessionResponseTypeDef](./type_defs.md#getmulticastgroupsessionresponsetypedef).
 
 ### get_partner_account
 
@@ -700,6 +1014,30 @@ Keyword-only arguments:
 
 Returns
 [GetPartnerAccountResponseTypeDef](./type_defs.md#getpartneraccountresponsetypedef).
+
+### get_resource_event_configuration
+
+Get the event configuration for a particular resource identifier.
+
+Type annotations for
+`boto3.client("iotwireless").get_resource_event_configuration` method.
+
+Boto3 documentation:
+[IoTWireless.Client.get_resource_event_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_resource_event_configuration)
+
+Arguments mapping described in
+[GetResourceEventConfigurationRequestRequestTypeDef](./type_defs.md#getresourceeventconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Identifier`: `str` *(required)*
+- `IdentifierType`: `Literal['PartnerAccountId']` (see
+  [IdentifierTypeType](./literals.md#identifiertypetype)) *(required)*
+- `PartnerType`: `Literal['Sidewalk']` (see
+  [EventNotificationPartnerTypeType](./literals.md#eventnotificationpartnertypetype))
+
+Returns
+[GetResourceEventConfigurationResponseTypeDef](./type_defs.md#getresourceeventconfigurationresponsetypedef).
 
 ### get_resource_log_level
 
@@ -968,6 +1306,69 @@ Keyword-only arguments:
 Returns
 [ListDeviceProfilesResponseTypeDef](./type_defs.md#listdeviceprofilesresponsetypedef).
 
+### list_fuota_tasks
+
+Lists the FUOTA tasks registered to your AWS account.
+
+Type annotations for `boto3.client("iotwireless").list_fuota_tasks` method.
+
+Boto3 documentation:
+[IoTWireless.Client.list_fuota_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_fuota_tasks)
+
+Arguments mapping described in
+[ListFuotaTasksRequestRequestTypeDef](./type_defs.md#listfuotatasksrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListFuotaTasksResponseTypeDef](./type_defs.md#listfuotatasksresponsetypedef).
+
+### list_multicast_groups
+
+Lists the multicast groups registered to your AWS account.
+
+Type annotations for `boto3.client("iotwireless").list_multicast_groups`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.list_multicast_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_multicast_groups)
+
+Arguments mapping described in
+[ListMulticastGroupsRequestRequestTypeDef](./type_defs.md#listmulticastgroupsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMulticastGroupsResponseTypeDef](./type_defs.md#listmulticastgroupsresponsetypedef).
+
+### list_multicast_groups_by_fuota_task
+
+List all multicast groups associated with a fuota task.
+
+Type annotations for
+`boto3.client("iotwireless").list_multicast_groups_by_fuota_task` method.
+
+Boto3 documentation:
+[IoTWireless.Client.list_multicast_groups_by_fuota_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_multicast_groups_by_fuota_task)
+
+Arguments mapping described in
+[ListMulticastGroupsByFuotaTaskRequestRequestTypeDef](./type_defs.md#listmulticastgroupsbyfuotataskrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMulticastGroupsByFuotaTaskResponseTypeDef](./type_defs.md#listmulticastgroupsbyfuotataskresponsetypedef).
+
 ### list_partner_accounts
 
 Lists the partner accounts associated with your AWS account.
@@ -1052,6 +1453,8 @@ Keyword-only arguments:
 - `ServiceProfileId`: `str`
 - `WirelessDeviceType`:
   [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
+- `FuotaTaskId`: `str`
+- `MulticastGroupId`: `str`
 
 Returns
 [ListWirelessDevicesResponseTypeDef](./type_defs.md#listwirelessdevicesresponsetypedef).
@@ -1155,6 +1558,30 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### send_data_to_multicast_group
+
+Sends the specified data to a multicast group.
+
+Type annotations for `boto3.client("iotwireless").send_data_to_multicast_group`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.send_data_to_multicast_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.send_data_to_multicast_group)
+
+Arguments mapping described in
+[SendDataToMulticastGroupRequestRequestTypeDef](./type_defs.md#senddatatomulticastgrouprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `PayloadData`: `str` *(required)*
+- `WirelessMetadata`:
+  [MulticastWirelessMetadataTypeDef](./type_defs.md#multicastwirelessmetadatatypedef)
+  *(required)*
+
+Returns
+[SendDataToMulticastGroupResponseTypeDef](./type_defs.md#senddatatomulticastgroupresponsetypedef).
+
 ### send_data_to_wireless_device
 
 Sends a decrypted application data frame to a device.
@@ -1178,6 +1605,94 @@ Keyword-only arguments:
 
 Returns
 [SendDataToWirelessDeviceResponseTypeDef](./type_defs.md#senddatatowirelessdeviceresponsetypedef).
+
+### start_bulk_associate_wireless_device_with_multicast_group
+
+Starts a bulk association of all qualifying wireless devices with a multicast
+group.
+
+Type annotations for
+`boto3.client("iotwireless").start_bulk_associate_wireless_device_with_multicast_group`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.start_bulk_associate_wireless_device_with_multicast_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.start_bulk_associate_wireless_device_with_multicast_group)
+
+Arguments mapping described in
+[StartBulkAssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef](./type_defs.md#startbulkassociatewirelessdevicewithmulticastgrouprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `QueryString`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
+
+### start_bulk_disassociate_wireless_device_from_multicast_group
+
+Starts a bulk disassociatin of all qualifying wireless devices from a multicast
+group.
+
+Type annotations for
+`boto3.client("iotwireless").start_bulk_disassociate_wireless_device_from_multicast_group`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.start_bulk_disassociate_wireless_device_from_multicast_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.start_bulk_disassociate_wireless_device_from_multicast_group)
+
+Arguments mapping described in
+[StartBulkDisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef](./type_defs.md#startbulkdisassociatewirelessdevicefrommulticastgrouprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `QueryString`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
+
+### start_fuota_task
+
+Starts a FUOTA task.
+
+Type annotations for `boto3.client("iotwireless").start_fuota_task` method.
+
+Boto3 documentation:
+[IoTWireless.Client.start_fuota_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.start_fuota_task)
+
+Arguments mapping described in
+[StartFuotaTaskRequestRequestTypeDef](./type_defs.md#startfuotataskrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `LoRaWAN`:
+  [LoRaWANStartFuotaTaskTypeDef](./type_defs.md#lorawanstartfuotatasktypedef)
+
+Returns `Dict`\[`str`, `Any`\].
+
+### start_multicast_group_session
+
+Starts a multicast group session.
+
+Type annotations for
+`boto3.client("iotwireless").start_multicast_group_session` method.
+
+Boto3 documentation:
+[IoTWireless.Client.start_multicast_group_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.start_multicast_group_session)
+
+Arguments mapping described in
+[StartMulticastGroupSessionRequestRequestTypeDef](./type_defs.md#startmulticastgroupsessionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `LoRaWAN`:
+  [LoRaWANMulticastSessionTypeDef](./type_defs.md#lorawanmulticastsessiontypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
@@ -1258,6 +1773,29 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### update_fuota_task
+
+Updates properties of a FUOTA task.
+
+Type annotations for `boto3.client("iotwireless").update_fuota_task` method.
+
+Boto3 documentation:
+[IoTWireless.Client.update_fuota_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_fuota_task)
+
+Arguments mapping described in
+[UpdateFuotaTaskRequestRequestTypeDef](./type_defs.md#updatefuotataskrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `LoRaWAN`: [LoRaWANFuotaTaskTypeDef](./type_defs.md#lorawanfuotatasktypedef)
+- `FirmwareUpdateImage`: `str`
+- `FirmwareUpdateRole`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### update_log_levels_by_resource_types
 
 Set default log level, or log levels by resource types.
@@ -1278,6 +1816,28 @@ Keyword-only arguments:
   `Sequence`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
 - `WirelessGatewayLogOptions`:
   `Sequence`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
+
+### update_multicast_group
+
+Updates properties of a multicast group session.
+
+Type annotations for `boto3.client("iotwireless").update_multicast_group`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.update_multicast_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_multicast_group)
+
+Arguments mapping described in
+[UpdateMulticastGroupRequestRequestTypeDef](./type_defs.md#updatemulticastgrouprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `LoRaWAN`: [LoRaWANMulticastTypeDef](./type_defs.md#lorawanmulticasttypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1302,6 +1862,33 @@ Keyword-only arguments:
 - `PartnerAccountId`: `str` *(required)*
 - `PartnerType`: `Literal['Sidewalk']` (see
   [PartnerTypeType](./literals.md#partnertypetype)) *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### update_resource_event_configuration
+
+Update the event configuration for a particular resource identifier.
+
+Type annotations for
+`boto3.client("iotwireless").update_resource_event_configuration` method.
+
+Boto3 documentation:
+[IoTWireless.Client.update_resource_event_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_resource_event_configuration)
+
+Arguments mapping described in
+[UpdateResourceEventConfigurationRequestRequestTypeDef](./type_defs.md#updateresourceeventconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Identifier`: `str` *(required)*
+- `IdentifierType`: `Literal['PartnerAccountId']` (see
+  [IdentifierTypeType](./literals.md#identifiertypetype)) *(required)*
+- `PartnerType`: `Literal['Sidewalk']` (see
+  [EventNotificationPartnerTypeType](./literals.md#eventnotificationpartnertypetype))
+- `DeviceRegistrationState`:
+  [DeviceRegistrationStateEventConfigurationTypeDef](./type_defs.md#deviceregistrationstateeventconfigurationtypedef)
+- `Proximity`:
+  [ProximityEventConfigurationTypeDef](./type_defs.md#proximityeventconfigurationtypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 

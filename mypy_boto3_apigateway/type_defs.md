@@ -1244,7 +1244,7 @@ Required fields:
 
 - `contentType`: `str`
 - `contentDisposition`: `str`
-- `body`: `bytes`
+- `body`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2476,7 +2476,7 @@ Required fields:
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
 ## RestApiResponseMetadataTypeDef
@@ -2564,7 +2564,7 @@ Required fields:
 
 - `contentType`: `str`
 - `contentDisposition`: `str`
-- `body`: `bytes`
+- `body`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

@@ -48,6 +48,7 @@ from mypy_boto3_cloudfront.client import CloudFrontClient
 - [create_origin_request_policy](./client.md#create_origin_request_policy)
 - [create_public_key](./client.md#create_public_key)
 - [create_realtime_log_config](./client.md#create_realtime_log_config)
+- [create_response_headers_policy](./client.md#create_response_headers_policy)
 - [create_streaming_distribution](./client.md#create_streaming_distribution)
 - [create_streaming_distribution_with_tags](./client.md#create_streaming_distribution_with_tags)
 - [delete_cache_policy](./client.md#delete_cache_policy)
@@ -61,6 +62,7 @@ from mypy_boto3_cloudfront.client import CloudFrontClient
 - [delete_origin_request_policy](./client.md#delete_origin_request_policy)
 - [delete_public_key](./client.md#delete_public_key)
 - [delete_realtime_log_config](./client.md#delete_realtime_log_config)
+- [delete_response_headers_policy](./client.md#delete_response_headers_policy)
 - [delete_streaming_distribution](./client.md#delete_streaming_distribution)
 - [describe_function](./client.md#describe_function)
 - [exceptions](./client.md#exceptions)
@@ -86,6 +88,8 @@ from mypy_boto3_cloudfront.client import CloudFrontClient
 - [get_public_key](./client.md#get_public_key)
 - [get_public_key_config](./client.md#get_public_key_config)
 - [get_realtime_log_config](./client.md#get_realtime_log_config)
+- [get_response_headers_policy](./client.md#get_response_headers_policy)
+- [get_response_headers_policy_config](./client.md#get_response_headers_policy_config)
 - [get_streaming_distribution](./client.md#get_streaming_distribution)
 - [get_streaming_distribution_config](./client.md#get_streaming_distribution_config)
 - [get_waiter](./client.md#get_waiter)
@@ -97,6 +101,7 @@ from mypy_boto3_cloudfront.client import CloudFrontClient
 - [list_distributions_by_key_group](./client.md#list_distributions_by_key_group)
 - [list_distributions_by_origin_request_policy_id](./client.md#list_distributions_by_origin_request_policy_id)
 - [list_distributions_by_realtime_log_config](./client.md#list_distributions_by_realtime_log_config)
+- [list_distributions_by_response_headers_policy_id](./client.md#list_distributions_by_response_headers_policy_id)
 - [list_distributions_by_web_acl_id](./client.md#list_distributions_by_web_acl_id)
 - [list_field_level_encryption_configs](./client.md#list_field_level_encryption_configs)
 - [list_field_level_encryption_profiles](./client.md#list_field_level_encryption_profiles)
@@ -106,6 +111,7 @@ from mypy_boto3_cloudfront.client import CloudFrontClient
 - [list_origin_request_policies](./client.md#list_origin_request_policies)
 - [list_public_keys](./client.md#list_public_keys)
 - [list_realtime_log_configs](./client.md#list_realtime_log_configs)
+- [list_response_headers_policies](./client.md#list_response_headers_policies)
 - [list_streaming_distributions](./client.md#list_streaming_distributions)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [publish_function](./client.md#publish_function)
@@ -122,6 +128,7 @@ from mypy_boto3_cloudfront.client import CloudFrontClient
 - [update_origin_request_policy](./client.md#update_origin_request_policy)
 - [update_public_key](./client.md#update_public_key)
 - [update_realtime_log_config](./client.md#update_realtime_log_config)
+- [update_response_headers_policy](./client.md#update_response_headers_policy)
 - [update_streaming_distribution](./client.md#update_streaming_distribution)
 
 ### Exceptions
@@ -189,6 +196,7 @@ CloudFrontClient [exceptions](./client.md#exceptions)
 - NoSuchPublicKey
 - NoSuchRealtimeLogConfig
 - NoSuchResource
+- NoSuchResponseHeadersPolicy
 - NoSuchStreamingDistribution
 - OriginRequestPolicyAlreadyExists
 - OriginRequestPolicyInUse
@@ -200,6 +208,8 @@ CloudFrontClient [exceptions](./client.md#exceptions)
 - RealtimeLogConfigInUse
 - RealtimeLogConfigOwnerMismatch
 - ResourceInUse
+- ResponseHeadersPolicyAlreadyExists
+- ResponseHeadersPolicyInUse
 - StreamingDistributionAlreadyExists
 - StreamingDistributionNotDisabled
 - TestFunctionFailed
@@ -210,12 +220,14 @@ CloudFrontClient [exceptions](./client.md#exceptions)
 - TooManyCookieNamesInWhiteList
 - TooManyCookiesInCachePolicy
 - TooManyCookiesInOriginRequestPolicy
+- TooManyCustomHeadersInResponseHeadersPolicy
 - TooManyDistributionCNAMEs
 - TooManyDistributions
 - TooManyDistributionsAssociatedToCachePolicy
 - TooManyDistributionsAssociatedToFieldLevelEncryptionConfig
 - TooManyDistributionsAssociatedToKeyGroup
 - TooManyDistributionsAssociatedToOriginRequestPolicy
+- TooManyDistributionsAssociatedToResponseHeadersPolicy
 - TooManyDistributionsWithFunctionAssociations
 - TooManyDistributionsWithLambdaAssociations
 - TooManyDistributionsWithSingleFunctionARN
@@ -244,6 +256,7 @@ CloudFrontClient [exceptions](./client.md#exceptions)
 - TooManyQueryStringsInCachePolicy
 - TooManyQueryStringsInOriginRequestPolicy
 - TooManyRealtimeLogConfigs
+- TooManyResponseHeadersPolicies
 - TooManyStreamingDistributionCNAMEs
 - TooManyStreamingDistributions
 - TooManyTrustedSigners
@@ -300,6 +313,7 @@ from mypy_boto3_cloudfront.literals import CachePolicyCookieBehaviorType, ...
 - [DistributionDeployedWaiterName](./literals.md#distributiondeployedwaitername)
 - [EventTypeType](./literals.md#eventtypetype)
 - [FormatType](./literals.md#formattype)
+- [FrameOptionsListType](./literals.md#frameoptionslisttype)
 - [FunctionRuntimeType](./literals.md#functionruntimetype)
 - [FunctionStageType](./literals.md#functionstagetype)
 - [GeoRestrictionTypeType](./literals.md#georestrictiontypetype)
@@ -320,6 +334,9 @@ from mypy_boto3_cloudfront.literals import CachePolicyCookieBehaviorType, ...
 - [OriginRequestPolicyTypeType](./literals.md#originrequestpolicytypetype)
 - [PriceClassType](./literals.md#priceclasstype)
 - [RealtimeMetricsSubscriptionStatusType](./literals.md#realtimemetricssubscriptionstatustype)
+- [ReferrerPolicyListType](./literals.md#referrerpolicylisttype)
+- [ResponseHeadersPolicyAccessControlAllowMethodsValuesType](./literals.md#responseheaderspolicyaccesscontrolallowmethodsvaluestype)
+- [ResponseHeadersPolicyTypeType](./literals.md#responseheaderspolicytypetype)
 - [SSLSupportMethodType](./literals.md#sslsupportmethodtype)
 - [SslProtocolType](./literals.md#sslprotocoltype)
 - [StreamingDistributionDeployedWaiterName](./literals.md#streamingdistributiondeployedwaitername)
@@ -392,6 +409,8 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [CreatePublicKeyResultTypeDef](./type_defs.md#createpublickeyresulttypedef)
 - [CreateRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#createrealtimelogconfigrequestrequesttypedef)
 - [CreateRealtimeLogConfigResultTypeDef](./type_defs.md#createrealtimelogconfigresulttypedef)
+- [CreateResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#createresponseheaderspolicyrequestrequesttypedef)
+- [CreateResponseHeadersPolicyResultTypeDef](./type_defs.md#createresponseheaderspolicyresulttypedef)
 - [CreateStreamingDistributionRequestRequestTypeDef](./type_defs.md#createstreamingdistributionrequestrequesttypedef)
 - [CreateStreamingDistributionResultTypeDef](./type_defs.md#createstreamingdistributionresulttypedef)
 - [CreateStreamingDistributionWithTagsRequestRequestTypeDef](./type_defs.md#createstreamingdistributionwithtagsrequestrequesttypedef)
@@ -412,6 +431,7 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [DeleteOriginRequestPolicyRequestRequestTypeDef](./type_defs.md#deleteoriginrequestpolicyrequestrequesttypedef)
 - [DeletePublicKeyRequestRequestTypeDef](./type_defs.md#deletepublickeyrequestrequesttypedef)
 - [DeleteRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#deleterealtimelogconfigrequestrequesttypedef)
+- [DeleteResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#deleteresponseheaderspolicyrequestrequesttypedef)
 - [DeleteStreamingDistributionRequestRequestTypeDef](./type_defs.md#deletestreamingdistributionrequestrequesttypedef)
 - [DescribeFunctionRequestRequestTypeDef](./type_defs.md#describefunctionrequestrequesttypedef)
 - [DescribeFunctionResultTypeDef](./type_defs.md#describefunctionresulttypedef)
@@ -481,6 +501,10 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [GetPublicKeyResultTypeDef](./type_defs.md#getpublickeyresulttypedef)
 - [GetRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#getrealtimelogconfigrequestrequesttypedef)
 - [GetRealtimeLogConfigResultTypeDef](./type_defs.md#getrealtimelogconfigresulttypedef)
+- [GetResponseHeadersPolicyConfigRequestRequestTypeDef](./type_defs.md#getresponseheaderspolicyconfigrequestrequesttypedef)
+- [GetResponseHeadersPolicyConfigResultTypeDef](./type_defs.md#getresponseheaderspolicyconfigresulttypedef)
+- [GetResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#getresponseheaderspolicyrequestrequesttypedef)
+- [GetResponseHeadersPolicyResultTypeDef](./type_defs.md#getresponseheaderspolicyresulttypedef)
 - [GetStreamingDistributionConfigRequestRequestTypeDef](./type_defs.md#getstreamingdistributionconfigrequestrequesttypedef)
 - [GetStreamingDistributionConfigResultTypeDef](./type_defs.md#getstreamingdistributionconfigresulttypedef)
 - [GetStreamingDistributionRequestRequestTypeDef](./type_defs.md#getstreamingdistributionrequestrequesttypedef)
@@ -513,6 +537,8 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [ListDistributionsByOriginRequestPolicyIdResultTypeDef](./type_defs.md#listdistributionsbyoriginrequestpolicyidresulttypedef)
 - [ListDistributionsByRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#listdistributionsbyrealtimelogconfigrequestrequesttypedef)
 - [ListDistributionsByRealtimeLogConfigResultTypeDef](./type_defs.md#listdistributionsbyrealtimelogconfigresulttypedef)
+- [ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef](./type_defs.md#listdistributionsbyresponseheaderspolicyidrequestrequesttypedef)
+- [ListDistributionsByResponseHeadersPolicyIdResultTypeDef](./type_defs.md#listdistributionsbyresponseheaderspolicyidresulttypedef)
 - [ListDistributionsByWebACLIdRequestRequestTypeDef](./type_defs.md#listdistributionsbywebaclidrequestrequesttypedef)
 - [ListDistributionsByWebACLIdResultTypeDef](./type_defs.md#listdistributionsbywebaclidresulttypedef)
 - [ListDistributionsRequestRequestTypeDef](./type_defs.md#listdistributionsrequestrequesttypedef)
@@ -533,6 +559,8 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [ListPublicKeysResultTypeDef](./type_defs.md#listpublickeysresulttypedef)
 - [ListRealtimeLogConfigsRequestRequestTypeDef](./type_defs.md#listrealtimelogconfigsrequestrequesttypedef)
 - [ListRealtimeLogConfigsResultTypeDef](./type_defs.md#listrealtimelogconfigsresulttypedef)
+- [ListResponseHeadersPoliciesRequestRequestTypeDef](./type_defs.md#listresponseheaderspoliciesrequestrequesttypedef)
+- [ListResponseHeadersPoliciesResultTypeDef](./type_defs.md#listresponseheaderspoliciesresulttypedef)
 - [ListStreamingDistributionsRequestRequestTypeDef](./type_defs.md#liststreamingdistributionsrequestrequesttypedef)
 - [ListStreamingDistributionsResultTypeDef](./type_defs.md#liststreamingdistributionsresulttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -573,6 +601,24 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef)
 - [RealtimeLogConfigsTypeDef](./type_defs.md#realtimelogconfigstypedef)
 - [RealtimeMetricsSubscriptionConfigTypeDef](./type_defs.md#realtimemetricssubscriptionconfigtypedef)
+- [ResponseHeadersPolicyAccessControlAllowHeadersTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolallowheaderstypedef)
+- [ResponseHeadersPolicyAccessControlAllowMethodsTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolallowmethodstypedef)
+- [ResponseHeadersPolicyAccessControlAllowOriginsTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolalloworiginstypedef)
+- [ResponseHeadersPolicyAccessControlExposeHeadersTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolexposeheaderstypedef)
+- [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
+- [ResponseHeadersPolicyContentSecurityPolicyTypeDef](./type_defs.md#responseheaderspolicycontentsecuritypolicytypedef)
+- [ResponseHeadersPolicyContentTypeOptionsTypeDef](./type_defs.md#responseheaderspolicycontenttypeoptionstypedef)
+- [ResponseHeadersPolicyCorsConfigTypeDef](./type_defs.md#responseheaderspolicycorsconfigtypedef)
+- [ResponseHeadersPolicyCustomHeaderTypeDef](./type_defs.md#responseheaderspolicycustomheadertypedef)
+- [ResponseHeadersPolicyCustomHeadersConfigTypeDef](./type_defs.md#responseheaderspolicycustomheadersconfigtypedef)
+- [ResponseHeadersPolicyFrameOptionsTypeDef](./type_defs.md#responseheaderspolicyframeoptionstypedef)
+- [ResponseHeadersPolicyListTypeDef](./type_defs.md#responseheaderspolicylisttypedef)
+- [ResponseHeadersPolicyReferrerPolicyTypeDef](./type_defs.md#responseheaderspolicyreferrerpolicytypedef)
+- [ResponseHeadersPolicySecurityHeadersConfigTypeDef](./type_defs.md#responseheaderspolicysecurityheadersconfigtypedef)
+- [ResponseHeadersPolicyStrictTransportSecurityTypeDef](./type_defs.md#responseheaderspolicystricttransportsecuritytypedef)
+- [ResponseHeadersPolicySummaryTypeDef](./type_defs.md#responseheaderspolicysummarytypedef)
+- [ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef)
+- [ResponseHeadersPolicyXSSProtectionTypeDef](./type_defs.md#responseheaderspolicyxssprotectiontypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RestrictionsTypeDef](./type_defs.md#restrictionstypedef)
 - [S3OriginConfigTypeDef](./type_defs.md#s3originconfigtypedef)
@@ -615,6 +661,8 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [UpdatePublicKeyResultTypeDef](./type_defs.md#updatepublickeyresulttypedef)
 - [UpdateRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#updaterealtimelogconfigrequestrequesttypedef)
 - [UpdateRealtimeLogConfigResultTypeDef](./type_defs.md#updaterealtimelogconfigresulttypedef)
+- [UpdateResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#updateresponseheaderspolicyrequestrequesttypedef)
+- [UpdateResponseHeadersPolicyResultTypeDef](./type_defs.md#updateresponseheaderspolicyresulttypedef)
 - [UpdateStreamingDistributionRequestRequestTypeDef](./type_defs.md#updatestreamingdistributionrequestrequesttypedef)
 - [UpdateStreamingDistributionResultTypeDef](./type_defs.md#updatestreamingdistributionresulttypedef)
 - [ViewerCertificateTypeDef](./type_defs.md#viewercertificatetypedef)
