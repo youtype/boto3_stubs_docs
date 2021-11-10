@@ -205,7 +205,8 @@ Returns
 
 ### create_service
 
-Runs and maintains a desired number of tasks from a specified task definition.
+Runs and maintains your desired number of tasks from a specified task
+definition.
 
 Type annotations for `boto3.client("ecs").create_service` method.
 
@@ -511,8 +512,8 @@ Keyword-only arguments:
 
 - `containerInstances`: `Sequence`\[`str`\] *(required)*
 - `cluster`: `str`
-- `include`: `Sequence`\[`Literal['TAGS']` (see
-  [ContainerInstanceFieldType](./literals.md#containerinstancefieldtype))\]
+- `include`:
+  `Sequence`\[[ContainerInstanceFieldType](./literals.md#containerinstancefieldtype)\]
 
 Returns
 [DescribeContainerInstancesResponseTypeDef](./type_defs.md#describecontainerinstancesresponsetypedef).
@@ -805,9 +806,7 @@ Returns
 
 ### list_task_definition_families
 
-Returns a list of task definition families that are registered to your account
-(which may include task definition families that no longer have any `ACTIVE`
-task definition revisions).
+Returns a list of task definition families that are registered to your account.
 
 Type annotations for `boto3.client("ecs").list_task_definition_families`
 method.

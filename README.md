@@ -903,6 +903,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
   service
 
+- [mypy-boto3-resiliencehub](./mypy_boto3_resiliencehub) for
+  [ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub)
+  service
+
 - [mypy-boto3-resource-groups](./mypy_boto3_resource_groups) for
   [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
   service

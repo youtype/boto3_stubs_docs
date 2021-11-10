@@ -20,7 +20,9 @@ type annotations stubs module
   - [BackupSelectionsListMemberTypeDef](#backupselectionslistmembertypedef)
   - [BackupVaultListMemberTypeDef](#backupvaultlistmembertypedef)
   - [CalculatedLifecycleTypeDef](#calculatedlifecycletypedef)
+  - [ConditionParameterTypeDef](#conditionparametertypedef)
   - [ConditionTypeDef](#conditiontypedef)
+  - [ConditionsTypeDef](#conditionstypedef)
   - [ControlInputParameterTypeDef](#controlinputparametertypedef)
   - [ControlScopeTypeDef](#controlscopetypedef)
   - [CopyActionTypeDef](#copyactiontypedef)
@@ -317,6 +319,8 @@ Optional fields:
 - `Resources`: `Sequence`\[`str`\]
 - `ListOfTags`:
   `Sequence`\[[ConditionTypeDef](./type_defs.md#conditiontypedef)\]
+- `NotResources`: `Sequence`\[`str`\]
+- `Conditions`: [ConditionsTypeDef](./type_defs.md#conditionstypedef)
 
 ## BackupSelectionsListMemberTypeDef
 
@@ -363,6 +367,17 @@ Optional fields:
 - `MoveToColdStorageAt`: `datetime`
 - `DeleteAt`: `datetime`
 
+## ConditionParameterTypeDef
+
+```python
+from mypy_boto3_backup.type_defs import ConditionParameterTypeDef
+```
+
+Optional fields:
+
+- `ConditionKey`: `str`
+- `ConditionValue`: `str`
+
 ## ConditionTypeDef
 
 ```python
@@ -375,6 +390,23 @@ Required fields:
   [ConditionTypeType](./literals.md#conditiontypetype))
 - `ConditionKey`: `str`
 - `ConditionValue`: `str`
+
+## ConditionsTypeDef
+
+```python
+from mypy_boto3_backup.type_defs import ConditionsTypeDef
+```
+
+Optional fields:
+
+- `StringEquals`:
+  `Sequence`\[[ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef)\]
+- `StringNotEquals`:
+  `Sequence`\[[ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef)\]
+- `StringLike`:
+  `Sequence`\[[ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef)\]
+- `StringNotLike`:
+  `Sequence`\[[ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef)\]
 
 ## ControlInputParameterTypeDef
 

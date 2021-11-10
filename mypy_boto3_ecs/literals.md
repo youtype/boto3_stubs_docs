@@ -31,6 +31,8 @@ type annotations stubs module
   - [ExecuteCommandLoggingType](#executecommandloggingtype)
   - [FirelensConfigurationTypeType](#firelensconfigurationtypetype)
   - [HealthStatusType](#healthstatustype)
+  - [InstanceHealthCheckStateType](#instancehealthcheckstatetype)
+  - [InstanceHealthCheckTypeType](#instancehealthchecktypetype)
   - [IpcModeType](#ipcmodetype)
   - [LaunchTypeType](#launchtypetype)
   - [ListAccountSettingsPaginatorName](#listaccountsettingspaginatorname)
@@ -220,6 +222,7 @@ from mypy_boto3_ecs.literals import ContainerInstanceFieldType
 
 Values:
 
+- `CONTAINER_INSTANCE_HEALTH`
 - `TAGS`
 
 ## ContainerInstanceStatusType
@@ -350,6 +353,29 @@ Values:
 - `HEALTHY`
 - `UNHEALTHY`
 - `UNKNOWN`
+
+## InstanceHealthCheckStateType
+
+```python
+from mypy_boto3_ecs.literals import InstanceHealthCheckStateType
+```
+
+Values:
+
+- `IMPAIRED`
+- `INITIALIZING`
+- `INSUFFICIENT_DATA`
+- `OK`
+
+## InstanceHealthCheckTypeType
+
+```python
+from mypy_boto3_ecs.literals import InstanceHealthCheckTypeType
+```
+
+Values:
+
+- `CONTAINER_RUNTIME`
 
 ## IpcModeType
 
@@ -1075,6 +1101,7 @@ Values:
 - `redshift`
 - `redshift-data`
 - `rekognition`
+- `resiliencehub`
 - `resource-groups`
 - `resourcegroupstaggingapi`
 - `robomaker`

@@ -21,6 +21,7 @@ type annotations stubs module
   - [ClusterTypeDef](#clustertypedef)
   - [ContainerDefinitionTypeDef](#containerdefinitiontypedef)
   - [ContainerDependencyTypeDef](#containerdependencytypedef)
+  - [ContainerInstanceHealthStatusTypeDef](#containerinstancehealthstatustypedef)
   - [ContainerInstanceTypeDef](#containerinstancetypedef)
   - [ContainerOverrideTypeDef](#containeroverridetypedef)
   - [ContainerStateChangeTypeDef](#containerstatechangetypedef)
@@ -88,6 +89,7 @@ type annotations stubs module
   - [HostVolumePropertiesTypeDef](#hostvolumepropertiestypedef)
   - [InferenceAcceleratorOverrideTypeDef](#inferenceacceleratoroverridetypedef)
   - [InferenceAcceleratorTypeDef](#inferenceacceleratortypedef)
+  - [InstanceHealthCheckResultTypeDef](#instancehealthcheckresulttypedef)
   - [KernelCapabilitiesTypeDef](#kernelcapabilitiestypedef)
   - [KeyValuePairTypeDef](#keyvaluepairtypedef)
   - [LinuxParametersTypeDef](#linuxparameterstypedef)
@@ -436,6 +438,19 @@ Required fields:
 - `containerName`: `str`
 - `condition`: [ContainerConditionType](./literals.md#containerconditiontype)
 
+## ContainerInstanceHealthStatusTypeDef
+
+```python
+from mypy_boto3_ecs.type_defs import ContainerInstanceHealthStatusTypeDef
+```
+
+Optional fields:
+
+- `overallStatus`:
+  [InstanceHealthCheckStateType](./literals.md#instancehealthcheckstatetype)
+- `details`:
+  `List`\[[InstanceHealthCheckResultTypeDef](./type_defs.md#instancehealthcheckresulttypedef)\]
+
 ## ContainerInstanceTypeDef
 
 ```python
@@ -465,6 +480,8 @@ Optional fields:
 - `attachments`:
   `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `healthStatus`:
+  [ContainerInstanceHealthStatusTypeDef](./type_defs.md#containerinstancehealthstatustypedef)
 
 ## ContainerOverrideTypeDef
 
@@ -1020,8 +1037,8 @@ Required fields:
 Optional fields:
 
 - `cluster`: `str`
-- `include`: `Sequence`\[`Literal['TAGS']` (see
-  [ContainerInstanceFieldType](./literals.md#containerinstancefieldtype))\]
+- `include`:
+  `Sequence`\[[ContainerInstanceFieldType](./literals.md#containerinstancefieldtype)\]
 
 ## DescribeContainerInstancesResponseTypeDef
 
@@ -1433,6 +1450,21 @@ Required fields:
 
 - `deviceName`: `str`
 - `deviceType`: `str`
+
+## InstanceHealthCheckResultTypeDef
+
+```python
+from mypy_boto3_ecs.type_defs import InstanceHealthCheckResultTypeDef
+```
+
+Optional fields:
+
+- `type`: `Literal['CONTAINER_RUNTIME']` (see
+  [InstanceHealthCheckTypeType](./literals.md#instancehealthchecktypetype))
+- `status`:
+  [InstanceHealthCheckStateType](./literals.md#instancehealthcheckstatetype)
+- `lastUpdated`: `datetime`
+- `lastStatusChange`: `datetime`
 
 ## KernelCapabilitiesTypeDef
 

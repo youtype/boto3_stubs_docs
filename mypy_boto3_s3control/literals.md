@@ -633,6 +633,7 @@ Values:
 - `redshift`
 - `redshift-data`
 - `rekognition`
+- `resiliencehub`
 - `resource-groups`
 - `resourcegroupstaggingapi`
 - `robomaker`
