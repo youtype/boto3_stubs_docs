@@ -5620,6 +5620,7 @@ Optional fields:
 - `CarrierGatewayId`: `str`
 - `NetworkInterfaceId`: `str`
 - `VpcPeeringConnectionId`: `str`
+- `CoreNetworkArn`: `str`
 
 ## CreateRouteRequestRouteTableTypeDef
 
@@ -5643,6 +5644,7 @@ Optional fields:
 - `CarrierGatewayId`: `str`
 - `NetworkInterfaceId`: `str`
 - `VpcPeeringConnectionId`: `str`
+- `CoreNetworkArn`: `str`
 
 ## CreateRouteResultTypeDef
 
@@ -21163,6 +21165,7 @@ Optional fields:
 - `CarrierGatewayId`: `str`
 - `NetworkInterfaceId`: `str`
 - `VpcPeeringConnectionId`: `str`
+- `CoreNetworkArn`: `str`
 
 ## ReplaceRouteRequestRouteTypeDef
 
@@ -21186,6 +21189,7 @@ Optional fields:
 - `CarrierGatewayId`: `str`
 - `NetworkInterfaceId`: `str`
 - `VpcPeeringConnectionId`: `str`
+- `CoreNetworkArn`: `str`
 
 ## ReplaceRouteTableAssociationRequestRequestTypeDef
 
@@ -22214,6 +22218,7 @@ Optional fields:
 - `Origin`: [RouteOriginType](./literals.md#routeorigintype)
 - `State`: [RouteStateType](./literals.md#routestatetype)
 - `VpcPeeringConnectionId`: `str`
+- `CoreNetworkArn`: `str`
 
 ## RunInstancesMonitoringEnabledTypeDef
 

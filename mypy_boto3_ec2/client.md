@@ -2531,6 +2531,7 @@ Keyword-only arguments:
 - `CarrierGatewayId`: `str`
 - `NetworkInterfaceId`: `str`
 - `VpcPeeringConnectionId`: `str`
+- `CoreNetworkArn`: `str`
 
 Returns [CreateRouteResultTypeDef](./type_defs.md#createrouteresulttypedef).
 
@@ -10821,6 +10822,7 @@ Keyword-only arguments:
 - `CarrierGatewayId`: `str`
 - `NetworkInterfaceId`: `str`
 - `VpcPeeringConnectionId`: `str`
+- `CoreNetworkArn`: `str`
 
 ### replace_route_table_association
 

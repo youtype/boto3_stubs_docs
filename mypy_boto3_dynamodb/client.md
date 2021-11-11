@@ -143,7 +143,7 @@ Returns [Exceptions](#exceptions).
 
 ### batch_execute_statement
 
-This operation allows you to perform batch reads and writes on data stored in
+This operation allows you to perform batch reads or writes on data stored in
 DynamoDB, using PartiQL.
 
 Type annotations for `boto3.client("dynamodb").batch_execute_statement` method.
@@ -530,9 +530,9 @@ Returns
 
 ### describe_limits
 
-Returns the current provisioned-capacity quotas for your AWS account in a
-Region, both for the Region as a whole and for any one DynamoDB table that you
-create there.
+Returns the current provisioned-capacity quotas for your Amazon Web Services
+account in a Region, both for the Region as a whole and for any one DynamoDB
+table that you create there.
 
 Type annotations for `boto3.client("dynamodb").describe_limits` method.
 
@@ -770,7 +770,7 @@ Returns [GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef).
 
 ### list_backups
 
-List backups associated with an AWS account.
+List backups associated with an Amazon Web Services account.
 
 Type annotations for `boto3.client("dynamodb").list_backups` method.
 
@@ -934,7 +934,8 @@ Returns [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef).
 
 ### query
 
-The `Query` operation finds items based on primary key values.
+You must provide the name of the partition key attribute and a single value for
+that attribute.
 
 Type annotations for `boto3.client("dynamodb").query` method.
 

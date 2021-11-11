@@ -240,7 +240,6 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `TerminologyDataFormat`:
   [TerminologyDataFormatType](./literals.md#terminologydataformattype)
-  *(required)*
 
 Returns
 [GetTerminologyResponseTypeDef](./type_defs.md#getterminologyresponsetypedef).

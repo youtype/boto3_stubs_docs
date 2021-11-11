@@ -200,6 +200,9 @@ from mypy_boto3_translate.type_defs import GetTerminologyRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+Optional fields:
+
 - `TerminologyDataFormat`:
   [TerminologyDataFormatType](./literals.md#terminologydataformattype)
 
@@ -214,6 +217,8 @@ Required fields:
 - `TerminologyProperties`:
   [TerminologyPropertiesTypeDef](./type_defs.md#terminologypropertiestypedef)
 - `TerminologyDataLocation`:
+  [TerminologyDataLocationTypeDef](./type_defs.md#terminologydatalocationtypedef)
+- `AuxiliaryDataLocation`:
   [TerminologyDataLocationTypeDef](./type_defs.md#terminologydatalocationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -247,6 +252,8 @@ Required fields:
 
 - `TerminologyProperties`:
   [TerminologyPropertiesTypeDef](./type_defs.md#terminologypropertiestypedef)
+- `AuxiliaryDataLocation`:
+  [TerminologyDataLocationTypeDef](./type_defs.md#terminologydatalocationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -533,6 +540,10 @@ Required fields:
 - `Format`:
   [TerminologyDataFormatType](./literals.md#terminologydataformattype)
 
+Optional fields:
+
+- `Directionality`: [DirectionalityType](./literals.md#directionalitytype)
+
 ## TerminologyPropertiesTypeDef
 
 ```python
@@ -551,6 +562,11 @@ Optional fields:
 - `TermCount`: `int`
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
+- `Directionality`: [DirectionalityType](./literals.md#directionalitytype)
+- `Message`: `str`
+- `SkippedTermCount`: `int`
+- `Format`:
+  [TerminologyDataFormatType](./literals.md#terminologydataformattype)
 
 ## TextTranslationJobFilterTypeDef
 

@@ -378,7 +378,8 @@ Returns [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef).
 
 #### Table.query method
 
-The `Query` operation finds items based on primary key values.
+You must provide the name of the partition key attribute and a single value for
+that attribute.
 
 Type annotations for `boto3.resource("dynamodb").query` method.
 

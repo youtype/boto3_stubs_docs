@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
 
 - [Literals for boto3 Translate module](#literals-for-boto3-translate-module)
+  - [DirectionalityType](#directionalitytype)
   - [EncryptionKeyTypeType](#encryptionkeytypetype)
   - [JobStatusType](#jobstatustype)
   - [ListTerminologiesPaginatorName](#listterminologiespaginatorname)
@@ -17,6 +18,17 @@ type annotations stubs module
   - [TerminologyDataFormatType](#terminologydataformattype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+## DirectionalityType
+
+```python
+from mypy_boto3_translate.literals import DirectionalityType
+```
+
+Values:
+
+- `MULTI`
+- `UNI`
 
 ## EncryptionKeyTypeType
 
@@ -100,6 +112,7 @@ Values:
 
 - `CSV`
 - `TMX`
+- `TSV`
 
 ## ServiceName
 

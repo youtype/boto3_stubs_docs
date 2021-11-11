@@ -3406,6 +3406,7 @@ Boto3 documentation:
 - `origin`: `str`
 - `state`: `str`
 - `vpc_peering_connection_id`: `str`
+- `core_network_arn`: `str`
 - `route_table_id`: `str`
 - `destination_cidr_block`: `str`
 
@@ -3479,6 +3480,7 @@ Keyword-only arguments:
 - `CarrierGatewayId`: `str`
 - `NetworkInterfaceId`: `str`
 - `VpcPeeringConnectionId`: `str`
+- `CoreNetworkArn`: `str`
 
 ## RouteTable
 
@@ -3561,6 +3563,7 @@ Keyword-only arguments:
 - `CarrierGatewayId`: `str`
 - `NetworkInterfaceId`: `str`
 - `VpcPeeringConnectionId`: `str`
+- `CoreNetworkArn`: `str`
 
 Returns [Route](#route).
 

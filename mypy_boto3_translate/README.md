@@ -90,9 +90,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_translate.literals import EncryptionKeyTypeType, ...
+from mypy_boto3_translate.literals import DirectionalityType, ...
 ```
 
+- [DirectionalityType](./literals.md#directionalitytype)
 - [EncryptionKeyTypeType](./literals.md#encryptionkeytypetype)
 - [JobStatusType](./literals.md#jobstatustype)
 - [ListTerminologiesPaginatorName](./literals.md#listterminologiespaginatorname)
