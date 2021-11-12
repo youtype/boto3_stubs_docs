@@ -13,6 +13,7 @@ type annotations stubs module
   - [ListApprovedOriginsPaginator](#listapprovedoriginspaginator)
   - [ListBotsPaginator](#listbotspaginator)
   - [ListContactFlowsPaginator](#listcontactflowspaginator)
+  - [ListContactReferencesPaginator](#listcontactreferencespaginator)
   - [ListHoursOfOperationsPaginator](#listhoursofoperationspaginator)
   - [ListInstanceAttributesPaginator](#listinstanceattributespaginator)
   - [ListInstanceStorageConfigsPaginator](#listinstancestorageconfigspaginator)
@@ -174,6 +175,36 @@ Arguments for `ListContactFlowsPaginator.paginate` method:
 
 `ListContactFlowsPaginator.paginate` returns
 `_PageIterator`\[[ListContactFlowsResponseTypeDef](./type_defs.md#listcontactflowsresponsetypedef)\].
+
+## ListContactReferencesPaginator
+
+Type annotations for
+`boto3.client("connect").get_paginator("list_contact_references")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_connect.paginator import ListContactReferencesPaginator
+
+def get_list_contact_references_paginator() -> ListContactReferencesPaginator:
+    return boto3.client("connect").get_paginator("list_contact_references")
+```
+
+Boto3 documentation:
+[Connect.Paginator.ListContactReferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListContactReferences)
+
+Arguments for `ListContactReferencesPaginator.paginate` method:
+
+- `InstanceId`: `str` *(required)*
+- `ContactId`: `str` *(required)*
+- `ReferenceTypes`:
+  `Sequence`\[[ReferenceTypeType](./literals.md#referencetypetype)\]
+  *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListContactReferencesPaginator.paginate` returns
+`_PageIterator`\[[ListContactReferencesResponseTypeDef](./type_defs.md#listcontactreferencesresponsetypedef)\].
 
 ## ListHoursOfOperationsPaginator
 

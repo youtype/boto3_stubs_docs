@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 - [Paginators for boto3 DevOpsGuru module](#paginators-for-boto3-devopsguru-module)
+  - [DescribeOrganizationResourceCollectionHealthPaginator](#describeorganizationresourcecollectionhealthpaginator)
   - [DescribeResourceCollectionHealthPaginator](#describeresourcecollectionhealthpaginator)
   - [GetCostEstimationPaginator](#getcostestimationpaginator)
   - [GetResourceCollectionPaginator](#getresourcecollectionpaginator)
@@ -15,8 +16,42 @@ type annotations stubs module
   - [ListEventsPaginator](#listeventspaginator)
   - [ListInsightsPaginator](#listinsightspaginator)
   - [ListNotificationChannelsPaginator](#listnotificationchannelspaginator)
+  - [ListOrganizationInsightsPaginator](#listorganizationinsightspaginator)
   - [ListRecommendationsPaginator](#listrecommendationspaginator)
   - [SearchInsightsPaginator](#searchinsightspaginator)
+  - [SearchOrganizationInsightsPaginator](#searchorganizationinsightspaginator)
+
+## DescribeOrganizationResourceCollectionHealthPaginator
+
+Type annotations for
+`boto3.client("devops-guru").get_paginator("describe_organization_resource_collection_health")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_devops_guru.paginator import DescribeOrganizationResourceCollectionHealthPaginator
+
+def get_describe_organization_resource_collection_health_paginator() -> DescribeOrganizationResourceCollectionHealthPaginator:
+    return boto3.client("devops-guru").get_paginator("describe_organization_resource_collection_health")
+```
+
+Boto3 documentation:
+[DevOpsGuru.Paginator.DescribeOrganizationResourceCollectionHealth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.DescribeOrganizationResourceCollectionHealth)
+
+Arguments for `DescribeOrganizationResourceCollectionHealthPaginator.paginate`
+method:
+
+- `OrganizationResourceCollectionType`:
+  [OrganizationResourceCollectionTypeType](./literals.md#organizationresourcecollectiontypetype)
+  *(required)*
+- `AccountIds`: `Sequence`\[`str`\]
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
+- `MaxResults`: `int`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeOrganizationResourceCollectionHealthPaginator.paginate` returns
+`_PageIterator`\[[DescribeOrganizationResourceCollectionHealthResponseTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthresponsetypedef)\].
 
 ## DescribeResourceCollectionHealthPaginator
 
@@ -121,6 +156,7 @@ Arguments for `ListAnomaliesForInsightPaginator.paginate` method:
 - `InsightId`: `str` *(required)*
 - `StartTimeRange`:
   [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
+- `AccountId`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -149,6 +185,7 @@ Arguments for `ListEventsPaginator.paginate` method:
 - `Filters`:
   [ListEventsFiltersTypeDef](./type_defs.md#listeventsfilterstypedef)
   *(required)*
+- `AccountId`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -208,6 +245,36 @@ Arguments for `ListNotificationChannelsPaginator.paginate` method:
 `ListNotificationChannelsPaginator.paginate` returns
 `_PageIterator`\[[ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef)\].
 
+## ListOrganizationInsightsPaginator
+
+Type annotations for
+`boto3.client("devops-guru").get_paginator("list_organization_insights")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_devops_guru.paginator import ListOrganizationInsightsPaginator
+
+def get_list_organization_insights_paginator() -> ListOrganizationInsightsPaginator:
+    return boto3.client("devops-guru").get_paginator("list_organization_insights")
+```
+
+Boto3 documentation:
+[DevOpsGuru.Paginator.ListOrganizationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListOrganizationInsights)
+
+Arguments for `ListOrganizationInsightsPaginator.paginate` method:
+
+- `StatusFilter`:
+  [ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef)
+  *(required)*
+- `AccountIds`: `Sequence`\[`str`\]
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListOrganizationInsightsPaginator.paginate` returns
+`_PageIterator`\[[ListOrganizationInsightsResponseTypeDef](./type_defs.md#listorganizationinsightsresponsetypedef)\].
+
 ## ListRecommendationsPaginator
 
 Type annotations for
@@ -229,6 +296,7 @@ Arguments for `ListRecommendationsPaginator.paginate` method:
 
 - `InsightId`: `str` *(required)*
 - `Locale`: [LocaleType](./literals.md#localetype)
+- `AccountId`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -264,3 +332,34 @@ Arguments for `SearchInsightsPaginator.paginate` method:
 
 `SearchInsightsPaginator.paginate` returns
 `_PageIterator`\[[SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef)\].
+
+## SearchOrganizationInsightsPaginator
+
+Type annotations for
+`boto3.client("devops-guru").get_paginator("search_organization_insights")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_devops_guru.paginator import SearchOrganizationInsightsPaginator
+
+def get_search_organization_insights_paginator() -> SearchOrganizationInsightsPaginator:
+    return boto3.client("devops-guru").get_paginator("search_organization_insights")
+```
+
+Boto3 documentation:
+[DevOpsGuru.Paginator.SearchOrganizationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.SearchOrganizationInsights)
+
+Arguments for `SearchOrganizationInsightsPaginator.paginate` method:
+
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
+- `StartTimeRange`:
+  [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) *(required)*
+- `Type`: [InsightTypeType](./literals.md#insighttypetype) *(required)*
+- `Filters`:
+  [SearchOrganizationInsightsFiltersTypeDef](./type_defs.md#searchorganizationinsightsfilterstypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`SearchOrganizationInsightsPaginator.paginate` returns
+`_PageIterator`\[[SearchOrganizationInsightsResponseTypeDef](./type_defs.md#searchorganizationinsightsresponsetypedef)\].

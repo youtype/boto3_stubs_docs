@@ -39,6 +39,9 @@ from mypy_boto3_devops_guru.client import DevOpsGuruClient
 - [describe_anomaly](./client.md#describe_anomaly)
 - [describe_feedback](./client.md#describe_feedback)
 - [describe_insight](./client.md#describe_insight)
+- [describe_organization_health](./client.md#describe_organization_health)
+- [describe_organization_overview](./client.md#describe_organization_overview)
+- [describe_organization_resource_collection_health](./client.md#describe_organization_resource_collection_health)
 - [describe_resource_collection_health](./client.md#describe_resource_collection_health)
 - [describe_service_integration](./client.md#describe_service_integration)
 - [exceptions](./client.md#exceptions)
@@ -50,10 +53,12 @@ from mypy_boto3_devops_guru.client import DevOpsGuruClient
 - [list_events](./client.md#list_events)
 - [list_insights](./client.md#list_insights)
 - [list_notification_channels](./client.md#list_notification_channels)
+- [list_organization_insights](./client.md#list_organization_insights)
 - [list_recommendations](./client.md#list_recommendations)
 - [put_feedback](./client.md#put_feedback)
 - [remove_notification_channel](./client.md#remove_notification_channel)
 - [search_insights](./client.md#search_insights)
+- [search_organization_insights](./client.md#search_organization_insights)
 - [start_cost_estimation](./client.md#start_cost_estimation)
 - [update_resource_collection](./client.md#update_resource_collection)
 - [update_service_integration](./client.md#update_service_integration)
@@ -79,9 +84,10 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.paginators import DescribeResourceCollectionHealthPaginator, ...
+from mypy_boto3_devops_guru.paginators import DescribeOrganizationResourceCollectionHealthPaginator, ...
 ```
 
+- [DescribeOrganizationResourceCollectionHealthPaginator](./paginators.md#describeorganizationresourcecollectionhealthpaginator)
 - [DescribeResourceCollectionHealthPaginator](./paginators.md#describeresourcecollectionhealthpaginator)
 - [GetCostEstimationPaginator](./paginators.md#getcostestimationpaginator)
 - [GetResourceCollectionPaginator](./paginators.md#getresourcecollectionpaginator)
@@ -89,8 +95,10 @@ from mypy_boto3_devops_guru.paginators import DescribeResourceCollectionHealthPa
 - [ListEventsPaginator](./paginators.md#listeventspaginator)
 - [ListInsightsPaginator](./paginators.md#listinsightspaginator)
 - [ListNotificationChannelsPaginator](./paginators.md#listnotificationchannelspaginator)
+- [ListOrganizationInsightsPaginator](./paginators.md#listorganizationinsightspaginator)
 - [ListRecommendationsPaginator](./paginators.md#listrecommendationspaginator)
 - [SearchInsightsPaginator](./paginators.md#searchinsightspaginator)
+- [SearchOrganizationInsightsPaginator](./paginators.md#searchorganizationinsightspaginator)
 
 ## Literals
 
@@ -104,9 +112,11 @@ from mypy_boto3_devops_guru.literals import AnomalySeverityType, ...
 
 - [AnomalySeverityType](./literals.md#anomalyseveritytype)
 - [AnomalyStatusType](./literals.md#anomalystatustype)
+- [CloudWatchMetricDataStatusCodeType](./literals.md#cloudwatchmetricdatastatuscodetype)
 - [CloudWatchMetricsStatType](./literals.md#cloudwatchmetricsstattype)
 - [CostEstimationServiceResourceStateType](./literals.md#costestimationserviceresourcestatetype)
 - [CostEstimationStatusType](./literals.md#costestimationstatustype)
+- [DescribeOrganizationResourceCollectionHealthPaginatorName](./literals.md#describeorganizationresourcecollectionhealthpaginatorname)
 - [DescribeResourceCollectionHealthPaginatorName](./literals.md#describeresourcecollectionhealthpaginatorname)
 - [EventClassType](./literals.md#eventclasstype)
 - [EventDataSourceType](./literals.md#eventdatasourcetype)
@@ -120,11 +130,14 @@ from mypy_boto3_devops_guru.literals import AnomalySeverityType, ...
 - [ListEventsPaginatorName](./literals.md#listeventspaginatorname)
 - [ListInsightsPaginatorName](./literals.md#listinsightspaginatorname)
 - [ListNotificationChannelsPaginatorName](./literals.md#listnotificationchannelspaginatorname)
+- [ListOrganizationInsightsPaginatorName](./literals.md#listorganizationinsightspaginatorname)
 - [ListRecommendationsPaginatorName](./literals.md#listrecommendationspaginatorname)
 - [LocaleType](./literals.md#localetype)
 - [OptInStatusType](./literals.md#optinstatustype)
+- [OrganizationResourceCollectionTypeType](./literals.md#organizationresourcecollectiontypetype)
 - [ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype)
 - [SearchInsightsPaginatorName](./literals.md#searchinsightspaginatorname)
+- [SearchOrganizationInsightsPaginatorName](./literals.md#searchorganizationinsightspaginatorname)
 - [ServiceNameType](./literals.md#servicenametype)
 - [UpdateResourceCollectionActionType](./literals.md#updateresourcecollectionactiontype)
 - [ServiceName](./literals.md#servicename)
@@ -138,9 +151,11 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.type_defs import AddNotificationChannelRequestRequestTypeDef, ...
+from mypy_boto3_devops_guru.type_defs import AccountHealthTypeDef, ...
 ```
 
+- [AccountHealthTypeDef](./type_defs.md#accounthealthtypedef)
+- [AccountInsightHealthTypeDef](./type_defs.md#accountinsighthealthtypedef)
 - [AddNotificationChannelRequestRequestTypeDef](./type_defs.md#addnotificationchannelrequestrequesttypedef)
 - [AddNotificationChannelResponseTypeDef](./type_defs.md#addnotificationchannelresponsetypedef)
 - [AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef)
@@ -150,6 +165,7 @@ from mypy_boto3_devops_guru.type_defs import AddNotificationChannelRequestReques
 - [CloudFormationCollectionTypeDef](./type_defs.md#cloudformationcollectiontypedef)
 - [CloudFormationCostEstimationResourceCollectionFilterTypeDef](./type_defs.md#cloudformationcostestimationresourcecollectionfiltertypedef)
 - [CloudFormationHealthTypeDef](./type_defs.md#cloudformationhealthtypedef)
+- [CloudWatchMetricsDataSummaryTypeDef](./type_defs.md#cloudwatchmetricsdatasummarytypedef)
 - [CloudWatchMetricsDetailTypeDef](./type_defs.md#cloudwatchmetricsdetailtypedef)
 - [CloudWatchMetricsDimensionTypeDef](./type_defs.md#cloudwatchmetricsdimensiontypedef)
 - [CostEstimationResourceCollectionFilterTypeDef](./type_defs.md#costestimationresourcecollectionfiltertypedef)
@@ -163,6 +179,12 @@ from mypy_boto3_devops_guru.type_defs import AddNotificationChannelRequestReques
 - [DescribeFeedbackResponseTypeDef](./type_defs.md#describefeedbackresponsetypedef)
 - [DescribeInsightRequestRequestTypeDef](./type_defs.md#describeinsightrequestrequesttypedef)
 - [DescribeInsightResponseTypeDef](./type_defs.md#describeinsightresponsetypedef)
+- [DescribeOrganizationHealthRequestRequestTypeDef](./type_defs.md#describeorganizationhealthrequestrequesttypedef)
+- [DescribeOrganizationHealthResponseTypeDef](./type_defs.md#describeorganizationhealthresponsetypedef)
+- [DescribeOrganizationOverviewRequestRequestTypeDef](./type_defs.md#describeorganizationoverviewrequestrequesttypedef)
+- [DescribeOrganizationOverviewResponseTypeDef](./type_defs.md#describeorganizationoverviewresponsetypedef)
+- [DescribeOrganizationResourceCollectionHealthRequestRequestTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthrequestrequesttypedef)
+- [DescribeOrganizationResourceCollectionHealthResponseTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthresponsetypedef)
 - [DescribeResourceCollectionHealthRequestRequestTypeDef](./type_defs.md#describeresourcecollectionhealthrequestrequesttypedef)
 - [DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef)
 - [DescribeServiceIntegrationResponseTypeDef](./type_defs.md#describeserviceintegrationresponsetypedef)
@@ -190,6 +212,8 @@ from mypy_boto3_devops_guru.type_defs import AddNotificationChannelRequestReques
 - [ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef)
 - [ListNotificationChannelsRequestRequestTypeDef](./type_defs.md#listnotificationchannelsrequestrequesttypedef)
 - [ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef)
+- [ListOrganizationInsightsRequestRequestTypeDef](./type_defs.md#listorganizationinsightsrequestrequesttypedef)
+- [ListOrganizationInsightsResponseTypeDef](./type_defs.md#listorganizationinsightsresponsetypedef)
 - [ListRecommendationsRequestRequestTypeDef](./type_defs.md#listrecommendationsrequestrequesttypedef)
 - [ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef)
 - [NotificationChannelConfigTypeDef](./type_defs.md#notificationchannelconfigtypedef)
@@ -202,11 +226,13 @@ from mypy_boto3_devops_guru.type_defs import AddNotificationChannelRequestReques
 - [ProactiveAnomalyTypeDef](./type_defs.md#proactiveanomalytypedef)
 - [ProactiveInsightSummaryTypeDef](./type_defs.md#proactiveinsightsummarytypedef)
 - [ProactiveInsightTypeDef](./type_defs.md#proactiveinsighttypedef)
+- [ProactiveOrganizationInsightSummaryTypeDef](./type_defs.md#proactiveorganizationinsightsummarytypedef)
 - [PutFeedbackRequestRequestTypeDef](./type_defs.md#putfeedbackrequestrequesttypedef)
 - [ReactiveAnomalySummaryTypeDef](./type_defs.md#reactiveanomalysummarytypedef)
 - [ReactiveAnomalyTypeDef](./type_defs.md#reactiveanomalytypedef)
 - [ReactiveInsightSummaryTypeDef](./type_defs.md#reactiveinsightsummarytypedef)
 - [ReactiveInsightTypeDef](./type_defs.md#reactiveinsighttypedef)
+- [ReactiveOrganizationInsightSummaryTypeDef](./type_defs.md#reactiveorganizationinsightsummarytypedef)
 - [RecommendationRelatedAnomalyResourceTypeDef](./type_defs.md#recommendationrelatedanomalyresourcetypedef)
 - [RecommendationRelatedAnomalySourceDetailTypeDef](./type_defs.md#recommendationrelatedanomalysourcedetailtypedef)
 - [RecommendationRelatedAnomalyTypeDef](./type_defs.md#recommendationrelatedanomalytypedef)
@@ -221,6 +247,9 @@ from mypy_boto3_devops_guru.type_defs import AddNotificationChannelRequestReques
 - [SearchInsightsFiltersTypeDef](./type_defs.md#searchinsightsfilterstypedef)
 - [SearchInsightsRequestRequestTypeDef](./type_defs.md#searchinsightsrequestrequesttypedef)
 - [SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef)
+- [SearchOrganizationInsightsFiltersTypeDef](./type_defs.md#searchorganizationinsightsfilterstypedef)
+- [SearchOrganizationInsightsRequestRequestTypeDef](./type_defs.md#searchorganizationinsightsrequestrequesttypedef)
+- [SearchOrganizationInsightsResponseTypeDef](./type_defs.md#searchorganizationinsightsresponsetypedef)
 - [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
 - [ServiceHealthTypeDef](./type_defs.md#servicehealthtypedef)
 - [ServiceInsightHealthTypeDef](./type_defs.md#serviceinsighthealthtypedef)
@@ -229,6 +258,7 @@ from mypy_boto3_devops_guru.type_defs import AddNotificationChannelRequestReques
 - [SnsChannelConfigTypeDef](./type_defs.md#snschannelconfigtypedef)
 - [StartCostEstimationRequestRequestTypeDef](./type_defs.md#startcostestimationrequestrequesttypedef)
 - [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
+- [TimestampMetricValuePairTypeDef](./type_defs.md#timestampmetricvaluepairtypedef)
 - [UpdateCloudFormationCollectionFilterTypeDef](./type_defs.md#updatecloudformationcollectionfiltertypedef)
 - [UpdateResourceCollectionFilterTypeDef](./type_defs.md#updateresourcecollectionfiltertypedef)
 - [UpdateResourceCollectionRequestRequestTypeDef](./type_defs.md#updateresourcecollectionrequestrequesttypedef)

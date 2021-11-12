@@ -8,6 +8,8 @@ type annotations stubs module
 [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 - [Typed dictionaries for boto3 DevOpsGuru module](#typed-dictionaries-for-boto3-devopsguru-module)
+  - [AccountHealthTypeDef](#accounthealthtypedef)
+  - [AccountInsightHealthTypeDef](#accountinsighthealthtypedef)
   - [AddNotificationChannelRequestRequestTypeDef](#addnotificationchannelrequestrequesttypedef)
   - [AddNotificationChannelResponseTypeDef](#addnotificationchannelresponsetypedef)
   - [AnomalyReportedTimeRangeTypeDef](#anomalyreportedtimerangetypedef)
@@ -17,6 +19,7 @@ type annotations stubs module
   - [CloudFormationCollectionTypeDef](#cloudformationcollectiontypedef)
   - [CloudFormationCostEstimationResourceCollectionFilterTypeDef](#cloudformationcostestimationresourcecollectionfiltertypedef)
   - [CloudFormationHealthTypeDef](#cloudformationhealthtypedef)
+  - [CloudWatchMetricsDataSummaryTypeDef](#cloudwatchmetricsdatasummarytypedef)
   - [CloudWatchMetricsDetailTypeDef](#cloudwatchmetricsdetailtypedef)
   - [CloudWatchMetricsDimensionTypeDef](#cloudwatchmetricsdimensiontypedef)
   - [CostEstimationResourceCollectionFilterTypeDef](#costestimationresourcecollectionfiltertypedef)
@@ -30,6 +33,12 @@ type annotations stubs module
   - [DescribeFeedbackResponseTypeDef](#describefeedbackresponsetypedef)
   - [DescribeInsightRequestRequestTypeDef](#describeinsightrequestrequesttypedef)
   - [DescribeInsightResponseTypeDef](#describeinsightresponsetypedef)
+  - [DescribeOrganizationHealthRequestRequestTypeDef](#describeorganizationhealthrequestrequesttypedef)
+  - [DescribeOrganizationHealthResponseTypeDef](#describeorganizationhealthresponsetypedef)
+  - [DescribeOrganizationOverviewRequestRequestTypeDef](#describeorganizationoverviewrequestrequesttypedef)
+  - [DescribeOrganizationOverviewResponseTypeDef](#describeorganizationoverviewresponsetypedef)
+  - [DescribeOrganizationResourceCollectionHealthRequestRequestTypeDef](#describeorganizationresourcecollectionhealthrequestrequesttypedef)
+  - [DescribeOrganizationResourceCollectionHealthResponseTypeDef](#describeorganizationresourcecollectionhealthresponsetypedef)
   - [DescribeResourceCollectionHealthRequestRequestTypeDef](#describeresourcecollectionhealthrequestrequesttypedef)
   - [DescribeResourceCollectionHealthResponseTypeDef](#describeresourcecollectionhealthresponsetypedef)
   - [DescribeServiceIntegrationResponseTypeDef](#describeserviceintegrationresponsetypedef)
@@ -57,6 +66,8 @@ type annotations stubs module
   - [ListInsightsStatusFilterTypeDef](#listinsightsstatusfiltertypedef)
   - [ListNotificationChannelsRequestRequestTypeDef](#listnotificationchannelsrequestrequesttypedef)
   - [ListNotificationChannelsResponseTypeDef](#listnotificationchannelsresponsetypedef)
+  - [ListOrganizationInsightsRequestRequestTypeDef](#listorganizationinsightsrequestrequesttypedef)
+  - [ListOrganizationInsightsResponseTypeDef](#listorganizationinsightsresponsetypedef)
   - [ListRecommendationsRequestRequestTypeDef](#listrecommendationsrequestrequesttypedef)
   - [ListRecommendationsResponseTypeDef](#listrecommendationsresponsetypedef)
   - [NotificationChannelConfigTypeDef](#notificationchannelconfigtypedef)
@@ -69,11 +80,13 @@ type annotations stubs module
   - [ProactiveAnomalyTypeDef](#proactiveanomalytypedef)
   - [ProactiveInsightSummaryTypeDef](#proactiveinsightsummarytypedef)
   - [ProactiveInsightTypeDef](#proactiveinsighttypedef)
+  - [ProactiveOrganizationInsightSummaryTypeDef](#proactiveorganizationinsightsummarytypedef)
   - [PutFeedbackRequestRequestTypeDef](#putfeedbackrequestrequesttypedef)
   - [ReactiveAnomalySummaryTypeDef](#reactiveanomalysummarytypedef)
   - [ReactiveAnomalyTypeDef](#reactiveanomalytypedef)
   - [ReactiveInsightSummaryTypeDef](#reactiveinsightsummarytypedef)
   - [ReactiveInsightTypeDef](#reactiveinsighttypedef)
+  - [ReactiveOrganizationInsightSummaryTypeDef](#reactiveorganizationinsightsummarytypedef)
   - [RecommendationRelatedAnomalyResourceTypeDef](#recommendationrelatedanomalyresourcetypedef)
   - [RecommendationRelatedAnomalySourceDetailTypeDef](#recommendationrelatedanomalysourcedetailtypedef)
   - [RecommendationRelatedAnomalyTypeDef](#recommendationrelatedanomalytypedef)
@@ -88,6 +101,9 @@ type annotations stubs module
   - [SearchInsightsFiltersTypeDef](#searchinsightsfilterstypedef)
   - [SearchInsightsRequestRequestTypeDef](#searchinsightsrequestrequesttypedef)
   - [SearchInsightsResponseTypeDef](#searchinsightsresponsetypedef)
+  - [SearchOrganizationInsightsFiltersTypeDef](#searchorganizationinsightsfilterstypedef)
+  - [SearchOrganizationInsightsRequestRequestTypeDef](#searchorganizationinsightsrequestrequesttypedef)
+  - [SearchOrganizationInsightsResponseTypeDef](#searchorganizationinsightsresponsetypedef)
   - [ServiceCollectionTypeDef](#servicecollectiontypedef)
   - [ServiceHealthTypeDef](#servicehealthtypedef)
   - [ServiceInsightHealthTypeDef](#serviceinsighthealthtypedef)
@@ -96,11 +112,35 @@ type annotations stubs module
   - [SnsChannelConfigTypeDef](#snschannelconfigtypedef)
   - [StartCostEstimationRequestRequestTypeDef](#startcostestimationrequestrequesttypedef)
   - [StartTimeRangeTypeDef](#starttimerangetypedef)
+  - [TimestampMetricValuePairTypeDef](#timestampmetricvaluepairtypedef)
   - [UpdateCloudFormationCollectionFilterTypeDef](#updatecloudformationcollectionfiltertypedef)
   - [UpdateResourceCollectionFilterTypeDef](#updateresourcecollectionfiltertypedef)
   - [UpdateResourceCollectionRequestRequestTypeDef](#updateresourcecollectionrequestrequesttypedef)
   - [UpdateServiceIntegrationConfigTypeDef](#updateserviceintegrationconfigtypedef)
   - [UpdateServiceIntegrationRequestRequestTypeDef](#updateserviceintegrationrequestrequesttypedef)
+
+## AccountHealthTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import AccountHealthTypeDef
+```
+
+Optional fields:
+
+- `AccountId`: `str`
+- `Insight`:
+  [AccountInsightHealthTypeDef](./type_defs.md#accountinsighthealthtypedef)
+
+## AccountInsightHealthTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import AccountInsightHealthTypeDef
+```
+
+Optional fields:
+
+- `OpenProactiveInsights`: `int`
+- `OpenReactiveInsights`: `int`
 
 ## AddNotificationChannelRequestRequestTypeDef
 
@@ -205,6 +245,19 @@ Optional fields:
 - `StackName`: `str`
 - `Insight`: [InsightHealthTypeDef](./type_defs.md#insighthealthtypedef)
 
+## CloudWatchMetricsDataSummaryTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import CloudWatchMetricsDataSummaryTypeDef
+```
+
+Optional fields:
+
+- `TimestampMetricValuePairList`:
+  `List`\[[TimestampMetricValuePairTypeDef](./type_defs.md#timestampmetricvaluepairtypedef)\]
+- `StatusCode`:
+  [CloudWatchMetricDataStatusCodeType](./literals.md#cloudwatchmetricdatastatuscodetype)
+
 ## CloudWatchMetricsDetailTypeDef
 
 ```python
@@ -220,6 +273,8 @@ Optional fields:
 - `Stat`: [CloudWatchMetricsStatType](./literals.md#cloudwatchmetricsstattype)
 - `Unit`: `str`
 - `Period`: `int`
+- `MetricDataSummary`:
+  [CloudWatchMetricsDataSummaryTypeDef](./type_defs.md#cloudwatchmetricsdatasummarytypedef)
 
 ## CloudWatchMetricsDimensionTypeDef
 
@@ -307,6 +362,10 @@ Required fields:
 
 - `Id`: `str`
 
+Optional fields:
+
+- `AccountId`: `str`
+
 ## DescribeAnomalyResponseTypeDef
 
 ```python
@@ -355,6 +414,10 @@ Required fields:
 
 - `Id`: `str`
 
+Optional fields:
+
+- `AccountId`: `str`
+
 ## DescribeInsightResponseTypeDef
 
 ```python
@@ -367,6 +430,97 @@ Required fields:
   [ProactiveInsightTypeDef](./type_defs.md#proactiveinsighttypedef)
 - `ReactiveInsight`:
   [ReactiveInsightTypeDef](./type_defs.md#reactiveinsighttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeOrganizationHealthRequestRequestTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import DescribeOrganizationHealthRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `AccountIds`: `Sequence`\[`str`\]
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
+
+## DescribeOrganizationHealthResponseTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import DescribeOrganizationHealthResponseTypeDef
+```
+
+Required fields:
+
+- `OpenReactiveInsights`: `int`
+- `OpenProactiveInsights`: `int`
+- `MetricsAnalyzed`: `int`
+- `ResourceHours`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeOrganizationOverviewRequestRequestTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import DescribeOrganizationOverviewRequestRequestTypeDef
+```
+
+Required fields:
+
+- `FromTime`: `Union`\[`datetime`, `str`\]
+
+Optional fields:
+
+- `ToTime`: `Union`\[`datetime`, `str`\]
+- `AccountIds`: `Sequence`\[`str`\]
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
+
+## DescribeOrganizationOverviewResponseTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import DescribeOrganizationOverviewResponseTypeDef
+```
+
+Required fields:
+
+- `ReactiveInsights`: `int`
+- `ProactiveInsights`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeOrganizationResourceCollectionHealthRequestRequestTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import DescribeOrganizationResourceCollectionHealthRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationResourceCollectionType`:
+  [OrganizationResourceCollectionTypeType](./literals.md#organizationresourcecollectiontypetype)
+
+Optional fields:
+
+- `AccountIds`: `Sequence`\[`str`\]
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeOrganizationResourceCollectionHealthResponseTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import DescribeOrganizationResourceCollectionHealthResponseTypeDef
+```
+
+Required fields:
+
+- `CloudFormation`:
+  `List`\[[CloudFormationHealthTypeDef](./type_defs.md#cloudformationhealthtypedef)\]
+- `Service`:
+  `List`\[[ServiceHealthTypeDef](./type_defs.md#servicehealthtypedef)\]
+- `Account`:
+  `List`\[[AccountHealthTypeDef](./type_defs.md#accounthealthtypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -580,6 +734,7 @@ Optional fields:
   [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
 - `MaxResults`: `int`
 - `NextToken`: `str`
+- `AccountId`: `str`
 
 ## ListAnomaliesForInsightResponseTypeDef
 
@@ -629,6 +784,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+- `AccountId`: `str`
 
 ## ListEventsResponseTypeDef
 
@@ -747,6 +903,40 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListOrganizationInsightsRequestRequestTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import ListOrganizationInsightsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StatusFilter`:
+  [ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef)
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `AccountIds`: `Sequence`\[`str`\]
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+
+## ListOrganizationInsightsResponseTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import ListOrganizationInsightsResponseTypeDef
+```
+
+Required fields:
+
+- `ProactiveInsights`:
+  `List`\[[ProactiveOrganizationInsightSummaryTypeDef](./type_defs.md#proactiveorganizationinsightsummarytypedef)\]
+- `ReactiveInsights`:
+  `List`\[[ReactiveOrganizationInsightSummaryTypeDef](./type_defs.md#reactiveorganizationinsightsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListRecommendationsRequestRequestTypeDef
 
 ```python
@@ -761,6 +951,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `Locale`: [LocaleType](./literals.md#localetype)
+- `AccountId`: `str`
 
 ## ListRecommendationsResponseTypeDef
 
@@ -935,6 +1126,29 @@ Optional fields:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `SsmOpsItemId`: `str`
 
+## ProactiveOrganizationInsightSummaryTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import ProactiveOrganizationInsightSummaryTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `AccountId`: `str`
+- `OrganizationalUnitId`: `str`
+- `Name`: `str`
+- `Severity`: [InsightSeverityType](./literals.md#insightseveritytype)
+- `Status`: [InsightStatusType](./literals.md#insightstatustype)
+- `InsightTimeRange`:
+  [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
+- `PredictionTimeRange`:
+  [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
+- `ResourceCollection`:
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
+- `ServiceCollection`:
+  [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
+
 ## PutFeedbackRequestRequestTypeDef
 
 ```python
@@ -1024,6 +1238,27 @@ Optional fields:
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `SsmOpsItemId`: `str`
+
+## ReactiveOrganizationInsightSummaryTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import ReactiveOrganizationInsightSummaryTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `AccountId`: `str`
+- `OrganizationalUnitId`: `str`
+- `Name`: `str`
+- `Severity`: [InsightSeverityType](./literals.md#insightseveritytype)
+- `Status`: [InsightStatusType](./literals.md#insightstatustype)
+- `InsightTimeRange`:
+  [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
+- `ResourceCollection`:
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
+- `ServiceCollection`:
+  [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
 
 ## RecommendationRelatedAnomalyResourceTypeDef
 
@@ -1209,6 +1444,59 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## SearchOrganizationInsightsFiltersTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import SearchOrganizationInsightsFiltersTypeDef
+```
+
+Optional fields:
+
+- `Severities`:
+  `Sequence`\[[InsightSeverityType](./literals.md#insightseveritytype)\]
+- `Statuses`:
+  `Sequence`\[[InsightStatusType](./literals.md#insightstatustype)\]
+- `ResourceCollection`:
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
+- `ServiceCollection`:
+  [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
+
+## SearchOrganizationInsightsRequestRequestTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import SearchOrganizationInsightsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AccountIds`: `Sequence`\[`str`\]
+- `StartTimeRange`:
+  [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
+- `Type`: [InsightTypeType](./literals.md#insighttypetype)
+
+Optional fields:
+
+- `Filters`:
+  [SearchOrganizationInsightsFiltersTypeDef](./type_defs.md#searchorganizationinsightsfilterstypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## SearchOrganizationInsightsResponseTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import SearchOrganizationInsightsResponseTypeDef
+```
+
+Required fields:
+
+- `ProactiveInsights`:
+  `List`\[[ProactiveInsightSummaryTypeDef](./type_defs.md#proactiveinsightsummarytypedef)\]
+- `ReactiveInsights`:
+  `List`\[[ReactiveInsightSummaryTypeDef](./type_defs.md#reactiveinsightsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ServiceCollectionTypeDef
 
 ```python
@@ -1303,6 +1591,17 @@ Optional fields:
 
 - `FromTime`: `Union`\[`datetime`, `str`\]
 - `ToTime`: `Union`\[`datetime`, `str`\]
+
+## TimestampMetricValuePairTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import TimestampMetricValuePairTypeDef
+```
+
+Optional fields:
+
+- `Timestamp`: `datetime`
+- `MetricValue`: `float`
 
 ## UpdateCloudFormationCollectionFilterTypeDef
 

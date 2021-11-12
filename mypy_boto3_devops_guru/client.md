@@ -19,6 +19,9 @@ type annotations stubs module
     - [describe_anomaly](#describe_anomaly)
     - [describe_feedback](#describe_feedback)
     - [describe_insight](#describe_insight)
+    - [describe_organization_health](#describe_organization_health)
+    - [describe_organization_overview](#describe_organization_overview)
+    - [describe_organization_resource_collection_health](#describe_organization_resource_collection_health)
     - [describe_resource_collection_health](#describe_resource_collection_health)
     - [describe_service_integration](#describe_service_integration)
     - [generate_presigned_url](#generate_presigned_url)
@@ -28,10 +31,12 @@ type annotations stubs module
     - [list_events](#list_events)
     - [list_insights](#list_insights)
     - [list_notification_channels](#list_notification_channels)
+    - [list_organization_insights](#list_organization_insights)
     - [list_recommendations](#list_recommendations)
     - [put_feedback](#put_feedback)
     - [remove_notification_channel](#remove_notification_channel)
     - [search_insights](#search_insights)
+    - [search_organization_insights](#search_organization_insights)
     - [start_cost_estimation](#start_cost_estimation)
     - [update_resource_collection](#update_resource_collection)
     - [update_service_integration](#update_service_integration)
@@ -129,7 +134,8 @@ Returns `bool`.
 ### describe_account_health
 
 Returns the number of open reactive insights, the number of open proactive
-insights, and the number of metrics analyzed in your AWS account.
+insights, and the number of metrics analyzed in your Amazon Web Services
+account.
 
 Type annotations for `boto3.client("devops-guru").describe_account_health`
 method.
@@ -178,14 +184,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
+- `AccountId`: `str`
 
 Returns
 [DescribeAnomalyResponseTypeDef](./type_defs.md#describeanomalyresponsetypedef).
 
 ### describe_feedback
 
-Returns the most recent feedback submitted in the current AWS account and
-Region.
+Returns the most recent feedback submitted in the current Amazon Web Services
+account and Region.
 
 Type annotations for `boto3.client("devops-guru").describe_feedback` method.
 
@@ -217,9 +224,83 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
+- `AccountId`: `str`
 
 Returns
 [DescribeInsightResponseTypeDef](./type_defs.md#describeinsightresponsetypedef).
+
+### describe_organization_health
+
+Returns active insights, predictive insights, and resource hours analyzed in
+last hour.
+
+Type annotations for `boto3.client("devops-guru").describe_organization_health`
+method.
+
+Boto3 documentation:
+[DevOpsGuru.Client.describe_organization_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_organization_health)
+
+Arguments mapping described in
+[DescribeOrganizationHealthRequestRequestTypeDef](./type_defs.md#describeorganizationhealthrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccountIds`: `Sequence`\[`str`\]
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
+
+Returns
+[DescribeOrganizationHealthResponseTypeDef](./type_defs.md#describeorganizationhealthresponsetypedef).
+
+### describe_organization_overview
+
+Returns an overview of your organization's history based on the specified time
+range.
+
+Type annotations for
+`boto3.client("devops-guru").describe_organization_overview` method.
+
+Boto3 documentation:
+[DevOpsGuru.Client.describe_organization_overview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_organization_overview)
+
+Arguments mapping described in
+[DescribeOrganizationOverviewRequestRequestTypeDef](./type_defs.md#describeorganizationoverviewrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FromTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `ToTime`: `Union`\[`datetime`, `str`\]
+- `AccountIds`: `Sequence`\[`str`\]
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
+
+Returns
+[DescribeOrganizationOverviewResponseTypeDef](./type_defs.md#describeorganizationoverviewresponsetypedef).
+
+### describe_organization_resource_collection_health
+
+Provides an overview of your system's health.
+
+Type annotations for
+`boto3.client("devops-guru").describe_organization_resource_collection_health`
+method.
+
+Boto3 documentation:
+[DevOpsGuru.Client.describe_organization_resource_collection_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_organization_resource_collection_health)
+
+Arguments mapping described in
+[DescribeOrganizationResourceCollectionHealthRequestRequestTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationResourceCollectionType`:
+  [OrganizationResourceCollectionTypeType](./literals.md#organizationresourcecollectiontypetype)
+  *(required)*
+- `AccountIds`: `Sequence`\[`str`\]
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeOrganizationResourceCollectionHealthResponseTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthresponsetypedef).
 
 ### describe_resource_collection_health
 
@@ -281,8 +362,8 @@ Returns `str`.
 
 ### get_cost_estimation
 
-Returns an estimate of the monthly cost for DevOps Guru to analyze your AWS
-resources.
+Returns an estimate of the monthly cost for DevOps Guru to analyze your Amazon
+Web Services resources.
 
 Type annotations for `boto3.client("devops-guru").get_cost_estimation` method.
 
@@ -301,7 +382,8 @@ Returns
 
 ### get_resource_collection
 
-Returns lists AWS resources that are of the specified resource collection type.
+Returns lists Amazon Web Services resources that are of the specified resource
+collection type.
 
 Type annotations for `boto3.client("devops-guru").get_resource_collection`
 method.
@@ -343,6 +425,7 @@ Keyword-only arguments:
   [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
 - `MaxResults`: `int`
 - `NextToken`: `str`
+- `AccountId`: `str`
 
 Returns
 [ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef).
@@ -367,12 +450,13 @@ Keyword-only arguments:
   *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
+- `AccountId`: `str`
 
 Returns [ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef).
 
 ### list_insights
 
-Returns a list of insights in your AWS account.
+Returns a list of insights in your Amazon Web Services account.
 
 Type annotations for `boto3.client("devops-guru").list_insights` method.
 
@@ -413,6 +497,32 @@ Keyword-only arguments:
 Returns
 [ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef).
 
+### list_organization_insights
+
+Returns a list of insights associated with the account or OU Id.
+
+Type annotations for `boto3.client("devops-guru").list_organization_insights`
+method.
+
+Boto3 documentation:
+[DevOpsGuru.Client.list_organization_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_organization_insights)
+
+Arguments mapping described in
+[ListOrganizationInsightsRequestRequestTypeDef](./type_defs.md#listorganizationinsightsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `StatusFilter`:
+  [ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef)
+  *(required)*
+- `MaxResults`: `int`
+- `AccountIds`: `Sequence`\[`str`\]
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+
+Returns
+[ListOrganizationInsightsResponseTypeDef](./type_defs.md#listorganizationinsightsresponsetypedef).
+
 ### list_recommendations
 
 Returns a list of a specified insight's recommendations.
@@ -430,6 +540,7 @@ Keyword-only arguments:
 - `InsightId`: `str` *(required)*
 - `NextToken`: `str`
 - `Locale`: [LocaleType](./literals.md#localetype)
+- `AccountId`: `str`
 
 Returns
 [ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef).
@@ -474,7 +585,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### search_insights
 
-Returns a list of insights in your AWS account.
+Returns a list of insights in your Amazon Web Services account.
 
 Type annotations for `boto3.client("devops-guru").search_insights` method.
 
@@ -497,10 +608,37 @@ Keyword-only arguments:
 Returns
 [SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef).
 
+### search_organization_insights
+
+Returns a list of insights in your organization.
+
+Type annotations for `boto3.client("devops-guru").search_organization_insights`
+method.
+
+Boto3 documentation:
+[DevOpsGuru.Client.search_organization_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.search_organization_insights)
+
+Arguments mapping described in
+[SearchOrganizationInsightsRequestRequestTypeDef](./type_defs.md#searchorganizationinsightsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
+- `StartTimeRange`:
+  [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) *(required)*
+- `Type`: [InsightTypeType](./literals.md#insighttypetype) *(required)*
+- `Filters`:
+  [SearchOrganizationInsightsFiltersTypeDef](./type_defs.md#searchorganizationinsightsfilterstypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[SearchOrganizationInsightsResponseTypeDef](./type_defs.md#searchorganizationinsightsresponsetypedef).
+
 ### start_cost_estimation
 
-Starts the creation of an estimate of the monthly cost to analyze your AWS
-resources.
+Starts the creation of an estimate of the monthly cost to analyze your Amazon
+Web Services resources.
 
 Type annotations for `boto3.client("devops-guru").start_cost_estimation`
 method.
@@ -571,6 +709,8 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("devops-guru").get_paginator` method with
 overloads.
 
+- `client.get_paginator("describe_organization_resource_collection_health")` ->
+  [DescribeOrganizationResourceCollectionHealthPaginator](./paginators.md#describeorganizationresourcecollectionhealthpaginator)
 - `client.get_paginator("describe_resource_collection_health")` ->
   [DescribeResourceCollectionHealthPaginator](./paginators.md#describeresourcecollectionhealthpaginator)
 - `client.get_paginator("get_cost_estimation")` ->
@@ -585,7 +725,11 @@ overloads.
   [ListInsightsPaginator](./paginators.md#listinsightspaginator)
 - `client.get_paginator("list_notification_channels")` ->
   [ListNotificationChannelsPaginator](./paginators.md#listnotificationchannelspaginator)
+- `client.get_paginator("list_organization_insights")` ->
+  [ListOrganizationInsightsPaginator](./paginators.md#listorganizationinsightspaginator)
 - `client.get_paginator("list_recommendations")` ->
   [ListRecommendationsPaginator](./paginators.md#listrecommendationspaginator)
 - `client.get_paginator("search_insights")` ->
   [SearchInsightsPaginator](./paginators.md#searchinsightspaginator)
+- `client.get_paginator("search_organization_insights")` ->
+  [SearchOrganizationInsightsPaginator](./paginators.md#searchorganizationinsightspaginator)

@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
 - [Typed dictionaries for boto3 Connect module](#typed-dictionaries-for-boto3-connect-module)
+  - [AgentInfoTypeDef](#agentinfotypedef)
   - [AgentStatusSummaryTypeDef](#agentstatussummarytypedef)
   - [AgentStatusTypeDef](#agentstatustypedef)
   - [AnswerMachineDetectionConfigTypeDef](#answermachinedetectionconfigtypedef)
@@ -21,11 +22,13 @@ type annotations stubs module
   - [AssociateRoutingProfileQueuesRequestRequestTypeDef](#associateroutingprofilequeuesrequestrequesttypedef)
   - [AssociateSecurityKeyRequestRequestTypeDef](#associatesecuritykeyrequestrequesttypedef)
   - [AssociateSecurityKeyResponseTypeDef](#associatesecuritykeyresponsetypedef)
+  - [AttachmentReferenceTypeDef](#attachmentreferencetypedef)
   - [AttributeTypeDef](#attributetypedef)
   - [ChatMessageTypeDef](#chatmessagetypedef)
   - [ChatStreamingConfigurationTypeDef](#chatstreamingconfigurationtypedef)
   - [ContactFlowSummaryTypeDef](#contactflowsummarytypedef)
   - [ContactFlowTypeDef](#contactflowtypedef)
+  - [ContactTypeDef](#contacttypedef)
   - [CreateAgentStatusRequestRequestTypeDef](#createagentstatusrequestrequesttypedef)
   - [CreateAgentStatusResponseTypeDef](#createagentstatusresponsetypedef)
   - [CreateContactFlowRequestRequestTypeDef](#createcontactflowrequestrequesttypedef)
@@ -66,6 +69,8 @@ type annotations stubs module
   - [DescribeAgentStatusResponseTypeDef](#describeagentstatusresponsetypedef)
   - [DescribeContactFlowRequestRequestTypeDef](#describecontactflowrequestrequesttypedef)
   - [DescribeContactFlowResponseTypeDef](#describecontactflowresponsetypedef)
+  - [DescribeContactRequestRequestTypeDef](#describecontactrequestrequesttypedef)
+  - [DescribeContactResponseTypeDef](#describecontactresponsetypedef)
   - [DescribeHoursOfOperationRequestRequestTypeDef](#describehoursofoperationrequestrequesttypedef)
   - [DescribeHoursOfOperationResponseTypeDef](#describehoursofoperationresponsetypedef)
   - [DescribeInstanceAttributeRequestRequestTypeDef](#describeinstanceattributerequestrequesttypedef)
@@ -140,6 +145,8 @@ type annotations stubs module
   - [ListBotsResponseTypeDef](#listbotsresponsetypedef)
   - [ListContactFlowsRequestRequestTypeDef](#listcontactflowsrequestrequesttypedef)
   - [ListContactFlowsResponseTypeDef](#listcontactflowsresponsetypedef)
+  - [ListContactReferencesRequestRequestTypeDef](#listcontactreferencesrequestrequesttypedef)
+  - [ListContactReferencesResponseTypeDef](#listcontactreferencesresponsetypedef)
   - [ListHoursOfOperationsRequestRequestTypeDef](#listhoursofoperationsrequestrequesttypedef)
   - [ListHoursOfOperationsResponseTypeDef](#listhoursofoperationsresponsetypedef)
   - [ListInstanceAttributesRequestRequestTypeDef](#listinstanceattributesrequestrequesttypedef)
@@ -189,6 +196,7 @@ type annotations stubs module
   - [PhoneNumberQuickConnectConfigTypeDef](#phonenumberquickconnectconfigtypedef)
   - [PhoneNumberSummaryTypeDef](#phonenumbersummarytypedef)
   - [PromptSummaryTypeDef](#promptsummarytypedef)
+  - [QueueInfoTypeDef](#queueinfotypedef)
   - [QueueQuickConnectConfigTypeDef](#queuequickconnectconfigtypedef)
   - [QueueReferenceTypeDef](#queuereferencetypedef)
   - [QueueSummaryTypeDef](#queuesummarytypedef)
@@ -196,6 +204,7 @@ type annotations stubs module
   - [QuickConnectConfigTypeDef](#quickconnectconfigtypedef)
   - [QuickConnectSummaryTypeDef](#quickconnectsummarytypedef)
   - [QuickConnectTypeDef](#quickconnecttypedef)
+  - [ReferenceSummaryTypeDef](#referencesummarytypedef)
   - [ReferenceTypeDef](#referencetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResumeContactRecordingRequestRequestTypeDef](#resumecontactrecordingrequestrequesttypedef)
@@ -228,6 +237,8 @@ type annotations stubs module
   - [UpdateContactAttributesRequestRequestTypeDef](#updatecontactattributesrequestrequesttypedef)
   - [UpdateContactFlowContentRequestRequestTypeDef](#updatecontactflowcontentrequestrequesttypedef)
   - [UpdateContactFlowNameRequestRequestTypeDef](#updatecontactflownamerequestrequesttypedef)
+  - [UpdateContactRequestRequestTypeDef](#updatecontactrequestrequesttypedef)
+  - [UpdateContactScheduleRequestRequestTypeDef](#updatecontactschedulerequestrequesttypedef)
   - [UpdateHoursOfOperationRequestRequestTypeDef](#updatehoursofoperationrequestrequesttypedef)
   - [UpdateInstanceAttributeRequestRequestTypeDef](#updateinstanceattributerequestrequesttypedef)
   - [UpdateInstanceStorageConfigRequestRequestTypeDef](#updateinstancestorageconfigrequestrequesttypedef)
@@ -250,6 +261,7 @@ type annotations stubs module
   - [UpdateUserPhoneConfigRequestRequestTypeDef](#updateuserphoneconfigrequestrequesttypedef)
   - [UpdateUserRoutingProfileRequestRequestTypeDef](#updateuserroutingprofilerequestrequesttypedef)
   - [UpdateUserSecurityProfilesRequestRequestTypeDef](#updateusersecurityprofilesrequestrequesttypedef)
+  - [UrlReferenceTypeDef](#urlreferencetypedef)
   - [UseCaseTypeDef](#usecasetypedef)
   - [UserIdentityInfoTypeDef](#useridentityinfotypedef)
   - [UserPhoneConfigTypeDef](#userphoneconfigtypedef)
@@ -257,6 +269,17 @@ type annotations stubs module
   - [UserSummaryTypeDef](#usersummarytypedef)
   - [UserTypeDef](#usertypedef)
   - [VoiceRecordingConfigurationTypeDef](#voicerecordingconfigurationtypedef)
+
+## AgentInfoTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import AgentInfoTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `ConnectedToAgentTimestamp`: `datetime`
 
 ## AgentStatusSummaryTypeDef
 
@@ -421,6 +444,18 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## AttachmentReferenceTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import AttachmentReferenceTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Value`: `str`
+- `Status`: [ReferenceStatusType](./literals.md#referencestatustype)
+
 ## AttributeTypeDef
 
 ```python
@@ -482,6 +517,30 @@ Optional fields:
 - `Description`: `str`
 - `Content`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+
+## ContactTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ContactTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `Id`: `str`
+- `InitialContactId`: `str`
+- `PreviousContactId`: `str`
+- `InitiationMethod`:
+  [ContactInitiationMethodType](./literals.md#contactinitiationmethodtype)
+- `Name`: `str`
+- `Description`: `str`
+- `Channel`: [ChannelType](./literals.md#channeltype)
+- `QueueInfo`: [QueueInfoTypeDef](./type_defs.md#queueinfotypedef)
+- `AgentInfo`: [AgentInfoTypeDef](./type_defs.md#agentinfotypedef)
+- `InitiationTimestamp`: `datetime`
+- `DisconnectTimestamp`: `datetime`
+- `LastUpdateTimestamp`: `datetime`
+- `ScheduledTimestamp`: `datetime`
 
 ## CreateAgentStatusRequestRequestTypeDef
 
@@ -1042,6 +1101,29 @@ from mypy_boto3_connect.type_defs import DescribeContactFlowResponseTypeDef
 Required fields:
 
 - `ContactFlow`: [ContactFlowTypeDef](./type_defs.md#contactflowtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeContactRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DescribeContactRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `ContactId`: `str`
+
+## DescribeContactResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DescribeContactResponseTypeDef
+```
+
+Required fields:
+
+- `Contact`: [ContactTypeDef](./type_defs.md#contacttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2014,6 +2096,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListContactReferencesRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListContactReferencesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `ContactId`: `str`
+- `ReferenceTypes`:
+  `Sequence`\[[ReferenceTypeType](./literals.md#referencetypetype)\]
+
+Optional fields:
+
+- `NextToken`: `str`
+
+## ListContactReferencesResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListContactReferencesResponseTypeDef
+```
+
+Required fields:
+
+- `ReferenceSummaryList`:
+  `List`\[[ReferenceSummaryTypeDef](./type_defs.md#referencesummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListHoursOfOperationsRequestRequestTypeDef
 
 ```python
@@ -2704,6 +2817,17 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 
+## QueueInfoTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import QueueInfoTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `EnqueueTimestamp`: `datetime`
+
 ## QueueQuickConnectConfigTypeDef
 
 ```python
@@ -2808,6 +2932,18 @@ Optional fields:
   [QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
+## ReferenceSummaryTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ReferenceSummaryTypeDef
+```
+
+Optional fields:
+
+- `Url`: [UrlReferenceTypeDef](./type_defs.md#urlreferencetypedef)
+- `Attachment`:
+  [AttachmentReferenceTypeDef](./type_defs.md#attachmentreferencetypedef)
+
 ## ReferenceTypeDef
 
 ```python
@@ -2817,8 +2953,7 @@ from mypy_boto3_connect.type_defs import ReferenceTypeDef
 Required fields:
 
 - `Value`: `str`
-- `Type`: `Literal['URL']` (see
-  [ReferenceTypeType](./literals.md#referencetypetype))
+- `Type`: [ReferenceTypeType](./literals.md#referencetypetype)
 
 ## ResponseMetadataTypeDef
 
@@ -3098,6 +3233,7 @@ Optional fields:
   [ReferenceTypeDef](./type_defs.md#referencetypedef)\]
 - `Description`: `str`
 - `ClientToken`: `str`
+- `ScheduledTime`: `Union`\[`datetime`, `str`\]
 
 ## StartTaskContactResponseTypeDef
 
@@ -3250,6 +3386,36 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
+
+## UpdateContactRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import UpdateContactRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `ContactId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `References`: `Mapping`\[`str`,
+  [ReferenceTypeDef](./type_defs.md#referencetypedef)\]
+
+## UpdateContactScheduleRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import UpdateContactScheduleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `ContactId`: `str`
+- `ScheduledTime`: `Union`\[`datetime`, `str`\]
 
 ## UpdateHoursOfOperationRequestRequestTypeDef
 
@@ -3553,6 +3719,17 @@ Required fields:
 - `SecurityProfileIds`: `Sequence`\[`str`\]
 - `UserId`: `str`
 - `InstanceId`: `str`
+
+## UrlReferenceTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import UrlReferenceTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Value`: `str`
 
 ## UseCaseTypeDef
 

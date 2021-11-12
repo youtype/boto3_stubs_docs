@@ -10,9 +10,11 @@ type annotations stubs module
 - [Literals for boto3 DevOpsGuru module](#literals-for-boto3-devopsguru-module)
   - [AnomalySeverityType](#anomalyseveritytype)
   - [AnomalyStatusType](#anomalystatustype)
+  - [CloudWatchMetricDataStatusCodeType](#cloudwatchmetricdatastatuscodetype)
   - [CloudWatchMetricsStatType](#cloudwatchmetricsstattype)
   - [CostEstimationServiceResourceStateType](#costestimationserviceresourcestatetype)
   - [CostEstimationStatusType](#costestimationstatustype)
+  - [DescribeOrganizationResourceCollectionHealthPaginatorName](#describeorganizationresourcecollectionhealthpaginatorname)
   - [DescribeResourceCollectionHealthPaginatorName](#describeresourcecollectionhealthpaginatorname)
   - [EventClassType](#eventclasstype)
   - [EventDataSourceType](#eventdatasourcetype)
@@ -26,11 +28,14 @@ type annotations stubs module
   - [ListEventsPaginatorName](#listeventspaginatorname)
   - [ListInsightsPaginatorName](#listinsightspaginatorname)
   - [ListNotificationChannelsPaginatorName](#listnotificationchannelspaginatorname)
+  - [ListOrganizationInsightsPaginatorName](#listorganizationinsightspaginatorname)
   - [ListRecommendationsPaginatorName](#listrecommendationspaginatorname)
   - [LocaleType](#localetype)
   - [OptInStatusType](#optinstatustype)
+  - [OrganizationResourceCollectionTypeType](#organizationresourcecollectiontypetype)
   - [ResourceCollectionTypeType](#resourcecollectiontypetype)
   - [SearchInsightsPaginatorName](#searchinsightspaginatorname)
+  - [SearchOrganizationInsightsPaginatorName](#searchorganizationinsightspaginatorname)
   - [ServiceNameType](#servicenametype)
   - [UpdateResourceCollectionActionType](#updateresourcecollectionactiontype)
   - [ServiceName](#servicename)
@@ -58,6 +63,18 @@ Values:
 
 - `CLOSED`
 - `ONGOING`
+
+## CloudWatchMetricDataStatusCodeType
+
+```python
+from mypy_boto3_devops_guru.literals import CloudWatchMetricDataStatusCodeType
+```
+
+Values:
+
+- `Complete`
+- `InternalError`
+- `PartialData`
 
 ## CloudWatchMetricsStatType
 
@@ -97,6 +114,16 @@ Values:
 
 - `COMPLETED`
 - `ONGOING`
+
+## DescribeOrganizationResourceCollectionHealthPaginatorName
+
+```python
+from mypy_boto3_devops_guru.literals import DescribeOrganizationResourceCollectionHealthPaginatorName
+```
+
+Values:
+
+- `describe_organization_resource_collection_health`
 
 ## DescribeResourceCollectionHealthPaginatorName
 
@@ -241,6 +268,16 @@ Values:
 
 - `list_notification_channels`
 
+## ListOrganizationInsightsPaginatorName
+
+```python
+from mypy_boto3_devops_guru.literals import ListOrganizationInsightsPaginatorName
+```
+
+Values:
+
+- `list_organization_insights`
+
 ## ListRecommendationsPaginatorName
 
 ```python
@@ -282,6 +319,18 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+## OrganizationResourceCollectionTypeType
+
+```python
+from mypy_boto3_devops_guru.literals import OrganizationResourceCollectionTypeType
+```
+
+Values:
+
+- `AWS_ACCOUNT`
+- `AWS_CLOUD_FORMATION`
+- `AWS_SERVICE`
+
 ## ResourceCollectionTypeType
 
 ```python
@@ -302,6 +351,16 @@ from mypy_boto3_devops_guru.literals import SearchInsightsPaginatorName
 Values:
 
 - `search_insights`
+
+## SearchOrganizationInsightsPaginatorName
+
+```python
+from mypy_boto3_devops_guru.literals import SearchOrganizationInsightsPaginatorName
+```
+
+Values:
+
+- `search_organization_insights`
 
 ## ServiceNameType
 
@@ -652,6 +711,7 @@ from mypy_boto3_devops_guru.literals import PaginatorName
 
 Values:
 
+- `describe_organization_resource_collection_health`
 - `describe_resource_collection_health`
 - `get_cost_estimation`
 - `get_resource_collection`
@@ -659,5 +719,7 @@ Values:
 - `list_events`
 - `list_insights`
 - `list_notification_channels`
+- `list_organization_insights`
 - `list_recommendations`
 - `search_insights`
+- `search_organization_insights`

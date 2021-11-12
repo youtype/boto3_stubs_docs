@@ -13,6 +13,7 @@ type annotations stubs module
   - [ChannelType](#channeltype)
   - [ComparisonType](#comparisontype)
   - [ContactFlowTypeType](#contactflowtypetype)
+  - [ContactInitiationMethodType](#contactinitiationmethodtype)
   - [CurrentMetricNameType](#currentmetricnametype)
   - [DirectoryTypeType](#directorytypetype)
   - [EncryptionTypeType](#encryptiontypetype)
@@ -29,6 +30,7 @@ type annotations stubs module
   - [ListApprovedOriginsPaginatorName](#listapprovedoriginspaginatorname)
   - [ListBotsPaginatorName](#listbotspaginatorname)
   - [ListContactFlowsPaginatorName](#listcontactflowspaginatorname)
+  - [ListContactReferencesPaginatorName](#listcontactreferencespaginatorname)
   - [ListHoursOfOperationsPaginatorName](#listhoursofoperationspaginatorname)
   - [ListInstanceAttributesPaginatorName](#listinstanceattributespaginatorname)
   - [ListInstanceStorageConfigsPaginatorName](#listinstancestorageconfigspaginatorname)
@@ -55,6 +57,7 @@ type annotations stubs module
   - [QueueStatusType](#queuestatustype)
   - [QueueTypeType](#queuetypetype)
   - [QuickConnectTypeType](#quickconnecttypetype)
+  - [ReferenceStatusType](#referencestatustype)
   - [ReferenceTypeType](#referencetypetype)
   - [SourceTypeType](#sourcetypetype)
   - [StatisticType](#statistictype)
@@ -128,6 +131,21 @@ Values:
 - `CUSTOMER_WHISPER`
 - `OUTBOUND_WHISPER`
 - `QUEUE_TRANSFER`
+
+## ContactInitiationMethodType
+
+```python
+from mypy_boto3_connect.literals import ContactInitiationMethodType
+```
+
+Values:
+
+- `API`
+- `CALLBACK`
+- `INBOUND`
+- `OUTBOUND`
+- `QUEUE_TRANSFER`
+- `TRANSFER`
 
 ## CurrentMetricNameType
 
@@ -351,6 +369,16 @@ from mypy_boto3_connect.literals import ListContactFlowsPaginatorName
 Values:
 
 - `list_contact_flows`
+
+## ListContactReferencesPaginatorName
+
+```python
+from mypy_boto3_connect.literals import ListContactReferencesPaginatorName
+```
+
+Values:
+
+- `list_contact_references`
 
 ## ListHoursOfOperationsPaginatorName
 
@@ -854,6 +882,17 @@ Values:
 - `QUEUE`
 - `USER`
 
+## ReferenceStatusType
+
+```python
+from mypy_boto3_connect.literals import ReferenceStatusType
+```
+
+Values:
+
+- `APPROVED`
+- `REJECTED`
+
 ## ReferenceTypeType
 
 ```python
@@ -862,6 +901,7 @@ from mypy_boto3_connect.literals import ReferenceTypeType
 
 Values:
 
+- `ATTACHMENT`
 - `URL`
 
 ## SourceTypeType
@@ -1255,6 +1295,7 @@ Values:
 - `list_approved_origins`
 - `list_bots`
 - `list_contact_flows`
+- `list_contact_references`
 - `list_hours_of_operations`
 - `list_instance_attributes`
 - `list_instance_storage_configs`

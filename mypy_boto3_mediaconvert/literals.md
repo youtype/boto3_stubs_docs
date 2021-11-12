@@ -2333,6 +2333,7 @@ from mypy_boto3_mediaconvert.literals import H264GopSizeUnitsType
 
 Values:
 
+- `AUTO`
 - `FRAMES`
 - `SECONDS`
 
@@ -2616,6 +2617,7 @@ from mypy_boto3_mediaconvert.literals import H265GopSizeUnitsType
 
 Values:
 
+- `AUTO`
 - `FRAMES`
 - `SECONDS`
 

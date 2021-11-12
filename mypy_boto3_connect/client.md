@@ -42,6 +42,7 @@ type annotations stubs module
     - [delete_user](#delete_user)
     - [delete_user_hierarchy_group](#delete_user_hierarchy_group)
     - [describe_agent_status](#describe_agent_status)
+    - [describe_contact](#describe_contact)
     - [describe_contact_flow](#describe_contact_flow)
     - [describe_hours_of_operation](#describe_hours_of_operation)
     - [describe_instance](#describe_instance)
@@ -71,6 +72,7 @@ type annotations stubs module
     - [list_approved_origins](#list_approved_origins)
     - [list_bots](#list_bots)
     - [list_contact_flows](#list_contact_flows)
+    - [list_contact_references](#list_contact_references)
     - [list_hours_of_operations](#list_hours_of_operations)
     - [list_instance_attributes](#list_instance_attributes)
     - [list_instance_storage_configs](#list_instance_storage_configs)
@@ -105,9 +107,11 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_agent_status](#update_agent_status)
+    - [update_contact](#update_contact)
     - [update_contact_attributes](#update_contact_attributes)
     - [update_contact_flow_content](#update_contact_flow_content)
     - [update_contact_flow_name](#update_contact_flow_name)
+    - [update_contact_schedule](#update_contact_schedule)
     - [update_hours_of_operation](#update_hours_of_operation)
     - [update_instance_attribute](#update_instance_attribute)
     - [update_instance_storage_config](#update_instance_storage_config)
@@ -469,8 +473,7 @@ Returns
 
 ### create_integration_association
 
-Creates an Amazon Web Services resource association with an Amazon Connect
-instance.
+Creates an AWS resource association with an Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").create_integration_association`
 method.
@@ -707,8 +710,7 @@ Keyword-only arguments:
 
 ### delete_integration_association
 
-Deletes an Amazon Web Services resource association from an Amazon Connect
-instance.
+Deletes an AWS resource association from an Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").delete_integration_association`
 method.
@@ -830,6 +832,26 @@ Keyword-only arguments:
 
 Returns
 [DescribeAgentStatusResponseTypeDef](./type_defs.md#describeagentstatusresponsetypedef).
+
+### describe_contact
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").describe_contact` method.
+
+Boto3 documentation:
+[Connect.Client.describe_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact)
+
+Arguments mapping described in
+[DescribeContactRequestRequestTypeDef](./type_defs.md#describecontactrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ContactId`: `str` *(required)*
+
+Returns
+[DescribeContactResponseTypeDef](./type_defs.md#describecontactresponsetypedef).
 
 ### describe_contact_flow
 
@@ -1431,6 +1453,30 @@ Keyword-only arguments:
 Returns
 [ListContactFlowsResponseTypeDef](./type_defs.md#listcontactflowsresponsetypedef).
 
+### list_contact_references
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").list_contact_references` method.
+
+Boto3 documentation:
+[Connect.Client.list_contact_references](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_references)
+
+Arguments mapping described in
+[ListContactReferencesRequestRequestTypeDef](./type_defs.md#listcontactreferencesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ContactId`: `str` *(required)*
+- `ReferenceTypes`:
+  `Sequence`\[[ReferenceTypeType](./literals.md#referencetypetype)\]
+  *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListContactReferencesResponseTypeDef](./type_defs.md#listcontactreferencesresponsetypedef).
+
 ### list_hours_of_operations
 
 Provides information about the hours of operation for the specified Amazon
@@ -1521,8 +1567,8 @@ Returns
 
 ### list_integration_associations
 
-Provides summary information about the Amazon Web Services resource
-associations for the specified Amazon Connect instance.
+Provides summary information about the AWS resource associations for the
+specified Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").list_integration_associations`
 method.
@@ -1793,7 +1839,8 @@ Returns
 
 ### list_security_profiles
 
-This API is in preview release for Amazon Connect and is subject to change.
+Provides summary information about the security profiles for the specified
+Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").list_security_profiles` method.
 
@@ -2023,7 +2070,8 @@ Returns
 
 ### start_task_contact
 
-Initiates a contact flow to start a new task.
+Initiates a contact flow to start a new task immediately or at a future date
+and time.
 
 Type annotations for `boto3.client("connect").start_task_contact` method.
 
@@ -2044,6 +2092,7 @@ Keyword-only arguments:
   [ReferenceTypeDef](./type_defs.md#referencetypedef)\]
 - `Description`: `str`
 - `ClientToken`: `str`
+- `ScheduledTime`: `Union`\[`datetime`, `str`\]
 
 Returns
 [StartTaskContactResponseTypeDef](./type_defs.md#starttaskcontactresponsetypedef).
@@ -2184,6 +2233,29 @@ Keyword-only arguments:
 - `DisplayOrder`: `int`
 - `ResetOrderNumber`: `bool`
 
+### update_contact
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").update_contact` method.
+
+Boto3 documentation:
+[Connect.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact)
+
+Arguments mapping described in
+[UpdateContactRequestRequestTypeDef](./type_defs.md#updatecontactrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ContactId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `References`: `Mapping`\[`str`,
+  [ReferenceTypeDef](./type_defs.md#referencetypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### update_contact_attributes
 
 Creates or updates user-defined contact attributes associated with the
@@ -2243,6 +2315,26 @@ Keyword-only arguments:
 - `ContactFlowId`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
+
+### update_contact_schedule
+
+Updates the scheduled time of a task contact that is already scheduled.
+
+Type annotations for `boto3.client("connect").update_contact_schedule` method.
+
+Boto3 documentation:
+[Connect.Client.update_contact_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_schedule)
+
+Arguments mapping described in
+[UpdateContactScheduleRequestRequestTypeDef](./type_defs.md#updatecontactschedulerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ContactId`: `str` *(required)*
+- `ScheduledTime`: `Union`\[`datetime`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_hours_of_operation
 
@@ -2701,6 +2793,8 @@ overloads.
   [ListBotsPaginator](./paginators.md#listbotspaginator)
 - `client.get_paginator("list_contact_flows")` ->
   [ListContactFlowsPaginator](./paginators.md#listcontactflowspaginator)
+- `client.get_paginator("list_contact_references")` ->
+  [ListContactReferencesPaginator](./paginators.md#listcontactreferencespaginator)
 - `client.get_paginator("list_hours_of_operations")` ->
   [ListHoursOfOperationsPaginator](./paginators.md#listhoursofoperationspaginator)
 - `client.get_paginator("list_instance_attributes")` ->
