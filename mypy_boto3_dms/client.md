@@ -278,6 +278,8 @@ Keyword-only arguments:
 - `ResourceIdentifier`: `str`
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
 - `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
+- `GcpMySQLSettings`:
+  [GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef)
 
 Returns
 [CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
@@ -1154,6 +1156,8 @@ Keyword-only arguments:
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
 - `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
 - `ExactSettings`: `bool`
+- `GcpMySQLSettings`:
+  [GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef)
 
 Returns
 [ModifyEndpointResponseTypeDef](./type_defs.md#modifyendpointresponsetypedef).

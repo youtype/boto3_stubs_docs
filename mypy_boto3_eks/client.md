@@ -75,12 +75,13 @@ static analysis directly:
 ```python
 from mypy_boto3_eks.client import Exceptions
 
-def handle_error(exc: Exceptions.BadRequestException) -> None:
+def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
 Exceptions:
 
+- `Exceptions.AccessDeniedException`
 - `Exceptions.BadRequestException`
 - `Exceptions.ClientError`
 - `Exceptions.ClientException`
@@ -750,6 +751,7 @@ Keyword-only arguments:
   [ConnectorConfigRequestTypeDef](./type_defs.md#connectorconfigrequesttypedef)
   *(required)*
 - `clientRequestToken`: `str`
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [RegisterClusterResponseTypeDef](./type_defs.md#registerclusterresponsetypedef).

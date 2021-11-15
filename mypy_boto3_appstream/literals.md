@@ -371,6 +371,7 @@ from mypy_boto3_appstream.literals import PlatformTypeType
 
 Values:
 
+- `AMAZON_LINUX2`
 - `WINDOWS`
 - `WINDOWS_SERVER_2016`
 - `WINDOWS_SERVER_2019`
@@ -693,6 +694,7 @@ Values:
 - `mgh`
 - `mgn`
 - `migrationhub-config`
+- `migrationhubstrategy`
 - `mobile`
 - `mq`
 - `mturk`

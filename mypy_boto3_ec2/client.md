@@ -9831,6 +9831,8 @@ Keyword-only arguments:
 - `MapCustomerOwnedIpOnLaunch`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `CustomerOwnedIpv4Pool`: `str`
+- `EnableDns64`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
 ### modify_traffic_mirror_filter_network_services
 

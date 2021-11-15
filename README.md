@@ -771,6 +771,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
   service
 
+- [mypy-boto3-migrationhubstrategy](./mypy_boto3_migrationhubstrategy) for
+  [MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations)
+  service
+
 - [mypy-boto3-mobile](./mypy_boto3_mobile) for
   [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
   service

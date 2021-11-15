@@ -329,6 +329,7 @@ from mypy_boto3_dms.type_defs import AccountQuotaTypeDef, ...
 - [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
 - [EventTypeDef](./type_defs.md#eventtypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
+- [GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef)
 - [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - [ImportCertificateMessageRequestTypeDef](./type_defs.md#importcertificatemessagerequesttypedef)
 - [ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef)

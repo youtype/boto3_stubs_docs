@@ -511,6 +511,7 @@ Values:
 - `mgh`
 - `mgn`
 - `migrationhub-config`
+- `migrationhubstrategy`
 - `mobile`
 - `mq`
 - `mturk`

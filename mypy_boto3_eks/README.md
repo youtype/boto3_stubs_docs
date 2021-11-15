@@ -76,6 +76,7 @@ from mypy_boto3_eks.client import EKSClient
 
 EKSClient [exceptions](./client.md#exceptions)
 
+- AccessDeniedException
 - BadRequestException
 - ClientError
 - ClientException

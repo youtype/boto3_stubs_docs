@@ -100,6 +100,7 @@ Exceptions:
 - `Exceptions.WAFInvalidPermissionPolicyException`
 - `Exceptions.WAFInvalidResourceException`
 - `Exceptions.WAFLimitsExceededException`
+- `Exceptions.WAFLogDestinationPermissionIssueException`
 - `Exceptions.WAFNonexistentItemException`
 - `Exceptions.WAFOptimisticLockException`
 - `Exceptions.WAFServiceLinkedRoleErrorException`

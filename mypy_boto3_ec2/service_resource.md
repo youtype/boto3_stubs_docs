@@ -4164,6 +4164,7 @@ Boto3 documentation:
 - `tags`: `List`\[`Any`\]
 - `subnet_arn`: `str`
 - `outpost_arn`: `str`
+- `enable_dns64`: `bool`
 - `id`: `str`
 - `vpc`: [Vpc](#vpc)
 - `instances`: [SubnetInstancesCollection](#subnetinstancescollection)

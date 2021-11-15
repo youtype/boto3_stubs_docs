@@ -5875,9 +5875,11 @@ Optional fields:
 - `EndDate`: `datetime`
 - `DocumentName`: `str`
 - `Owner`: `str`
+- `Reason`: `str`
 - `Details`: `str`
 - `OutputUrl`:
   [SessionManagerOutputUrlTypeDef](./type_defs.md#sessionmanageroutputurltypedef)
+- `MaxSessionDuration`: `str`
 
 ## SeveritySummaryTypeDef
 
@@ -5989,6 +5991,7 @@ Required fields:
 Optional fields:
 
 - `DocumentName`: `str`
+- `Reason`: `str`
 - `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 ## StartSessionResponseTypeDef

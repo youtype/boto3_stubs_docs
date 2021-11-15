@@ -703,6 +703,7 @@ Optional fields:
 - `Url`: `str`
 - `InvocationRole`: `str`
 - `DirectoryId`: `str`
+- `Function`: `str`
 
 ## ImportSshPublicKeyRequestRequestTypeDef
 

@@ -1308,6 +1308,7 @@ Required fields:
 Optional fields:
 
 - `clientRequestToken`: `str`
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## RegisterClusterResponseTypeDef
 

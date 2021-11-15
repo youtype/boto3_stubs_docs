@@ -93,6 +93,7 @@ WAFV2Client [exceptions](./client.md#exceptions)
 - WAFInvalidPermissionPolicyException
 - WAFInvalidResourceException
 - WAFLimitsExceededException
+- WAFLogDestinationPermissionIssueException
 - WAFNonexistentItemException
 - WAFOptimisticLockException
 - WAFServiceLinkedRoleErrorException

@@ -95,6 +95,7 @@ type annotations stubs module
   - [EventSubscriptionTypeDef](#eventsubscriptiontypedef)
   - [EventTypeDef](#eventtypedef)
   - [FilterTypeDef](#filtertypedef)
+  - [GcpMySQLSettingsTypeDef](#gcpmysqlsettingstypedef)
   - [IBMDb2SettingsTypeDef](#ibmdb2settingstypedef)
   - [ImportCertificateMessageRequestTypeDef](#importcertificatemessagerequesttypedef)
   - [ImportCertificateResponseTypeDef](#importcertificateresponsetypedef)
@@ -337,6 +338,8 @@ Optional fields:
 - `ResourceIdentifier`: `str`
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
 - `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
+- `GcpMySQLSettings`:
+  [GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef)
 
 ## CreateEndpointResponseTypeDef
 
@@ -1371,6 +1374,8 @@ Optional fields:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
 - `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
+- `GcpMySQLSettings`:
+  [GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef)
 
 ## EventCategoryGroupTypeDef
 
@@ -1426,6 +1431,29 @@ Required fields:
 
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+## GcpMySQLSettingsTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import GcpMySQLSettingsTypeDef
+```
+
+Optional fields:
+
+- `AfterConnectScript`: `str`
+- `CleanSourceMetadataOnMismatch`: `bool`
+- `DatabaseName`: `str`
+- `EventsPollInterval`: `int`
+- `TargetDbType`: [TargetDbTypeType](./literals.md#targetdbtypetype)
+- `MaxFileSize`: `int`
+- `ParallelLoadThreads`: `int`
+- `Password`: `str`
+- `Port`: `int`
+- `ServerName`: `str`
+- `ServerTimezone`: `str`
+- `Username`: `str`
+- `SecretsManagerAccessRoleArn`: `str`
+- `SecretsManagerSecretId`: `str`
 
 ## IBMDb2SettingsTypeDef
 
@@ -1625,6 +1653,8 @@ Optional fields:
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
 - `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
 - `ExactSettings`: `bool`
+- `GcpMySQLSettings`:
+  [GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef)
 
 ## ModifyEndpointResponseTypeDef
 
@@ -2400,6 +2430,7 @@ Optional fields:
 - `CsvNoSupValue`: `str`
 - `PreserveTransactions`: `bool`
 - `CdcPath`: `str`
+- `UseTaskStartTimeForFullLoadTimestamp`: `bool`
 - `CannedAclForObjects`:
   [CannedAclForObjectsValueType](./literals.md#cannedaclforobjectsvaluetype)
 - `AddColumnName`: `bool`

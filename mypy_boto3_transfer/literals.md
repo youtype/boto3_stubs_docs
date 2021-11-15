@@ -101,6 +101,7 @@ Values:
 
 - `API_GATEWAY`
 - `AWS_DIRECTORY_SERVICE`
+- `AWS_LAMBDA`
 - `SERVICE_MANAGED`
 
 ## ListServersPaginatorName
@@ -358,6 +359,7 @@ Values:
 - `mgh`
 - `mgn`
 - `migrationhub-config`
+- `migrationhubstrategy`
 - `mobile`
 - `mq`
 - `mturk`

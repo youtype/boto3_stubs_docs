@@ -18796,6 +18796,8 @@ Optional fields:
 - `MapCustomerOwnedIpOnLaunch`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `CustomerOwnedIpv4Pool`: `str`
+- `EnableDns64`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
 ## ModifyTrafficMirrorFilterNetworkServicesRequestRequestTypeDef
 
@@ -23931,6 +23933,7 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SubnetArn`: `str`
 - `OutpostArn`: `str`
+- `EnableDns64`: `bool`
 
 ## SuccessfulInstanceCreditSpecificationItemTypeDef
 
