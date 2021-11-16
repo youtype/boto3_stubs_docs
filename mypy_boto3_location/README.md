@@ -277,6 +277,7 @@ from mypy_boto3_location.type_defs import AssociateTrackerConsumerRequestRequest
 - [SearchPlaceIndexForTextSummaryTypeDef](./type_defs.md#searchplaceindexfortextsummarytypedef)
 - [StepTypeDef](./type_defs.md#steptypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [TimeZoneTypeDef](./type_defs.md#timezonetypedef)
 - [TruckDimensionsTypeDef](./type_defs.md#truckdimensionstypedef)
 - [TruckWeightTypeDef](./type_defs.md#truckweighttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)

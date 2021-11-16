@@ -123,6 +123,7 @@ type annotations stubs module
   - [SearchPlaceIndexForTextSummaryTypeDef](#searchplaceindexfortextsummarytypedef)
   - [StepTypeDef](#steptypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [TimeZoneTypeDef](#timezonetypedef)
   - [TruckDimensionsTypeDef](#truckdimensionstypedef)
   - [TruckWeightTypeDef](#truckweighttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
@@ -1497,6 +1498,7 @@ Optional fields:
 
 - `AddressNumber`: `str`
 - `Country`: `str`
+- `Interpolated`: `bool`
 - `Label`: `str`
 - `Municipality`: `str`
 - `Neighborhood`: `str`
@@ -1504,6 +1506,7 @@ Optional fields:
 - `Region`: `str`
 - `Street`: `str`
 - `SubRegion`: `str`
+- `TimeZone`: [TimeZoneTypeDef](./type_defs.md#timezonetypedef)
 
 ## PutGeofenceRequestRequestTypeDef
 
@@ -1553,6 +1556,7 @@ from mypy_boto3_location.type_defs import SearchForPositionResultTypeDef
 
 Required fields:
 
+- `Distance`: `float`
 - `Place`: [PlaceTypeDef](./type_defs.md#placetypedef)
 
 ## SearchForTextResultTypeDef
@@ -1564,6 +1568,11 @@ from mypy_boto3_location.type_defs import SearchForTextResultTypeDef
 Required fields:
 
 - `Place`: [PlaceTypeDef](./type_defs.md#placetypedef)
+
+Optional fields:
+
+- `Distance`: `float`
+- `Relevance`: `float`
 
 ## SearchPlaceIndexForPositionRequestRequestTypeDef
 
@@ -1578,6 +1587,7 @@ Required fields:
 
 Optional fields:
 
+- `Language`: `str`
 - `MaxResults`: `int`
 
 ## SearchPlaceIndexForPositionResponseTypeDef
@@ -1608,6 +1618,7 @@ Required fields:
 
 Optional fields:
 
+- `Language`: `str`
 - `MaxResults`: `int`
 
 ## SearchPlaceIndexForTextRequestRequestTypeDef
@@ -1626,6 +1637,7 @@ Optional fields:
 - `BiasPosition`: `Sequence`\[`float`\]
 - `FilterBBox`: `Sequence`\[`float`\]
 - `FilterCountries`: `Sequence`\[`str`\]
+- `Language`: `str`
 - `MaxResults`: `int`
 
 ## SearchPlaceIndexForTextResponseTypeDef
@@ -1659,6 +1671,7 @@ Optional fields:
 - `BiasPosition`: `List`\[`float`\]
 - `FilterBBox`: `List`\[`float`\]
 - `FilterCountries`: `List`\[`str`\]
+- `Language`: `str`
 - `MaxResults`: `int`
 - `ResultBBox`: `List`\[`float`\]
 
@@ -1689,6 +1702,20 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+## TimeZoneTypeDef
+
+```python
+from mypy_boto3_location.type_defs import TimeZoneTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `Offset`: `int`
 
 ## TruckDimensionsTypeDef
 

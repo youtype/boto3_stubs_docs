@@ -345,8 +345,7 @@ from mypy_boto3_cloudtrail.type_defs import InsightSelectorTypeDef
 
 Optional fields:
 
-- `InsightType`: `Literal['ApiCallRateInsight']` (see
-  [InsightTypeType](./literals.md#insighttypetype))
+- `InsightType`: [InsightTypeType](./literals.md#insighttypetype)
 
 ## ListPublicKeysRequestRequestTypeDef
 

@@ -371,8 +371,7 @@ Returns [CreateMapResponseTypeDef](./type_defs.md#createmapresponsetypedef).
 
 ### create_place_index
 
-Creates a place index resource in your AWS account, which supports functions
-with geospatial data sourced from your chosen data provider.
+Creates a place index resource in your AWS account.
 
 Type annotations for `boto3.client("location").create_place_index` method.
 
@@ -1040,6 +1039,7 @@ Keyword-only arguments:
 
 - `IndexName`: `str` *(required)*
 - `Position`: `Sequence`\[`float`\] *(required)*
+- `Language`: `str`
 - `MaxResults`: `int`
 
 Returns
@@ -1066,6 +1066,7 @@ Keyword-only arguments:
 - `BiasPosition`: `Sequence`\[`float`\]
 - `FilterBBox`: `Sequence`\[`float`\]
 - `FilterCountries`: `Sequence`\[`str`\]
+- `Language`: `str`
 - `MaxResults`: `int`
 
 Returns

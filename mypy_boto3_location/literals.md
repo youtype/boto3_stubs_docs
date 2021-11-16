@@ -174,6 +174,7 @@ from mypy_boto3_location.literals import PositionFilteringType
 
 Values:
 
+- `AccuracyBased`
 - `DistanceBased`
 - `TimeBased`
 

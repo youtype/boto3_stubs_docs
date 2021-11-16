@@ -38,6 +38,7 @@ from mypy_boto3_cloudtrail.literals import InsightTypeType
 Values:
 
 - `ApiCallRateInsight`
+- `ApiErrorRateInsight`
 
 ## ListPublicKeysPaginatorName
 
