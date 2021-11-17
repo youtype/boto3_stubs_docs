@@ -18,10 +18,12 @@ type annotations stubs module
     - [create_backend_api](#create_backend_api)
     - [create_backend_auth](#create_backend_auth)
     - [create_backend_config](#create_backend_config)
+    - [create_backend_storage](#create_backend_storage)
     - [create_token](#create_token)
     - [delete_backend](#delete_backend)
     - [delete_backend_api](#delete_backend_api)
     - [delete_backend_auth](#delete_backend_auth)
+    - [delete_backend_storage](#delete_backend_storage)
     - [delete_token](#delete_token)
     - [generate_backend_api_models](#generate_backend_api_models)
     - [generate_presigned_url](#generate_presigned_url)
@@ -30,15 +32,19 @@ type annotations stubs module
     - [get_backend_api_models](#get_backend_api_models)
     - [get_backend_auth](#get_backend_auth)
     - [get_backend_job](#get_backend_job)
+    - [get_backend_storage](#get_backend_storage)
     - [get_token](#get_token)
     - [import_backend_auth](#import_backend_auth)
+    - [import_backend_storage](#import_backend_storage)
     - [list_backend_jobs](#list_backend_jobs)
+    - [list_s3_buckets](#list_s3_buckets)
     - [remove_all_backends](#remove_all_backends)
     - [remove_backend_config](#remove_backend_config)
     - [update_backend_api](#update_backend_api)
     - [update_backend_auth](#update_backend_auth)
     - [update_backend_config](#update_backend_config)
     - [update_backend_job](#update_backend_job)
+    - [update_backend_storage](#update_backend_storage)
     - [get_paginator](#get_paginator)
 
 ## AmplifyBackendClient
@@ -220,6 +226,31 @@ Keyword-only arguments:
 Returns
 [CreateBackendConfigResponseTypeDef](./type_defs.md#createbackendconfigresponsetypedef).
 
+### create_backend_storage
+
+Creates a backend storage resource.
+
+Type annotations for `boto3.client("amplifybackend").create_backend_storage`
+method.
+
+Boto3 documentation:
+[AmplifyBackend.Client.create_backend_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_storage)
+
+Arguments mapping described in
+[CreateBackendStorageRequestRequestTypeDef](./type_defs.md#createbackendstoragerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceConfig`:
+  [CreateBackendStorageResourceConfigTypeDef](./type_defs.md#createbackendstorageresourceconfigtypedef)
+  *(required)*
+- `ResourceName`: `str` *(required)*
+
+Returns
+[CreateBackendStorageResponseTypeDef](./type_defs.md#createbackendstorageresponsetypedef).
+
 ### create_token
 
 Generates a one-time challenge code to authenticate a user into your Amplify
@@ -305,6 +336,30 @@ Keyword-only arguments:
 
 Returns
 [DeleteBackendAuthResponseTypeDef](./type_defs.md#deletebackendauthresponsetypedef).
+
+### delete_backend_storage
+
+Removes the specified backend storage resource.
+
+Type annotations for `boto3.client("amplifybackend").delete_backend_storage`
+method.
+
+Boto3 documentation:
+[AmplifyBackend.Client.delete_backend_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_storage)
+
+Arguments mapping described in
+[DeleteBackendStorageRequestRequestTypeDef](./type_defs.md#deletebackendstoragerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceName`: `str` *(required)*
+- `ServiceName`: `Literal['S3']` (see
+  [ServiceNameType](./literals.md#servicenametype)) *(required)*
+
+Returns
+[DeleteBackendStorageResponseTypeDef](./type_defs.md#deletebackendstorageresponsetypedef).
 
 ### delete_token
 
@@ -473,6 +528,28 @@ Keyword-only arguments:
 Returns
 [GetBackendJobResponseTypeDef](./type_defs.md#getbackendjobresponsetypedef).
 
+### get_backend_storage
+
+Gets details for a backend storage resource.
+
+Type annotations for `boto3.client("amplifybackend").get_backend_storage`
+method.
+
+Boto3 documentation:
+[AmplifyBackend.Client.get_backend_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_storage)
+
+Arguments mapping described in
+[GetBackendStorageRequestRequestTypeDef](./type_defs.md#getbackendstoragerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceName`: `str` *(required)*
+
+Returns
+[GetBackendStorageResponseTypeDef](./type_defs.md#getbackendstorageresponsetypedef).
+
 ### get_token
 
 Gets the challenge token based on the given appId and sessionId.
@@ -517,6 +594,30 @@ Keyword-only arguments:
 Returns
 [ImportBackendAuthResponseTypeDef](./type_defs.md#importbackendauthresponsetypedef).
 
+### import_backend_storage
+
+Imports an existing backend storage resource.
+
+Type annotations for `boto3.client("amplifybackend").import_backend_storage`
+method.
+
+Boto3 documentation:
+[AmplifyBackend.Client.import_backend_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.import_backend_storage)
+
+Arguments mapping described in
+[ImportBackendStorageRequestRequestTypeDef](./type_defs.md#importbackendstoragerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ServiceName`: `Literal['S3']` (see
+  [ServiceNameType](./literals.md#servicenametype)) *(required)*
+- `BucketName`: `str`
+
+Returns
+[ImportBackendStorageResponseTypeDef](./type_defs.md#importbackendstorageresponsetypedef).
+
 ### list_backend_jobs
 
 Lists the jobs for the backend of an Amplify app.
@@ -541,6 +642,25 @@ Keyword-only arguments:
 
 Returns
 [ListBackendJobsResponseTypeDef](./type_defs.md#listbackendjobsresponsetypedef).
+
+### list_s3_buckets
+
+The list of S3 buckets in your account.
+
+Type annotations for `boto3.client("amplifybackend").list_s3_buckets` method.
+
+Boto3 documentation:
+[AmplifyBackend.Client.list_s3_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.list_s3_buckets)
+
+Arguments mapping described in
+[ListS3BucketsRequestRequestTypeDef](./type_defs.md#lists3bucketsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+
+Returns
+[ListS3BucketsResponseTypeDef](./type_defs.md#lists3bucketsresponsetypedef).
 
 ### remove_all_backends
 
@@ -677,6 +797,31 @@ Keyword-only arguments:
 
 Returns
 [UpdateBackendJobResponseTypeDef](./type_defs.md#updatebackendjobresponsetypedef).
+
+### update_backend_storage
+
+Updates an existing backend storage resource.
+
+Type annotations for `boto3.client("amplifybackend").update_backend_storage`
+method.
+
+Boto3 documentation:
+[AmplifyBackend.Client.update_backend_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_storage)
+
+Arguments mapping described in
+[UpdateBackendStorageRequestRequestTypeDef](./type_defs.md#updatebackendstoragerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceConfig`:
+  [UpdateBackendStorageResourceConfigTypeDef](./type_defs.md#updatebackendstorageresourceconfigtypedef)
+  *(required)*
+- `ResourceName`: `str` *(required)*
+
+Returns
+[UpdateBackendStorageResponseTypeDef](./type_defs.md#updatebackendstorageresponsetypedef).
 
 ### get_paginator
 

@@ -66,6 +66,7 @@ from mypy_boto3_sns.client import SNSClient
 - [list_topics](./client.md#list_topics)
 - [opt_in_phone_number](./client.md#opt_in_phone_number)
 - [publish](./client.md#publish)
+- [publish_batch](./client.md#publish_batch)
 - [remove_permission](./client.md#remove_permission)
 - [set_endpoint_attributes](./client.md#set_endpoint_attributes)
 - [set_platform_application_attributes](./client.md#set_platform_application_attributes)
@@ -83,11 +84,15 @@ from mypy_boto3_sns.client import SNSClient
 SNSClient [exceptions](./client.md#exceptions)
 
 - AuthorizationErrorException
+- BatchEntryIdsNotDistinctException
+- BatchRequestTooLongException
 - ClientError
 - ConcurrentAccessException
+- EmptyBatchRequestException
 - EndpointDisabledException
 - FilterPolicyLimitExceededException
 - InternalErrorException
+- InvalidBatchEntryIdException
 - InvalidParameterException
 - InvalidParameterValueException
 - InvalidSecurityException
@@ -106,6 +111,7 @@ SNSClient [exceptions](./client.md#exceptions)
 - TagLimitExceededException
 - TagPolicyException
 - ThrottledException
+- TooManyEntriesInBatchRequestException
 - TopicLimitExceededException
 - UserErrorException
 - ValidationException
@@ -209,6 +215,7 @@ from mypy_boto3_sns.type_defs import AddPermissionInputRequestTypeDef, ...
 
 - [AddPermissionInputRequestTypeDef](./type_defs.md#addpermissioninputrequesttypedef)
 - [AddPermissionInputTopicTypeDef](./type_defs.md#addpermissioninputtopictypedef)
+- [BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef)
 - [CheckIfPhoneNumberIsOptedOutInputRequestTypeDef](./type_defs.md#checkifphonenumberisoptedoutinputrequesttypedef)
 - [CheckIfPhoneNumberIsOptedOutResponseTypeDef](./type_defs.md#checkifphonenumberisoptedoutresponsetypedef)
 - [ConfirmSubscriptionInputRequestTypeDef](./type_defs.md#confirmsubscriptioninputrequesttypedef)
@@ -263,6 +270,10 @@ from mypy_boto3_sns.type_defs import AddPermissionInputRequestTypeDef, ...
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PhoneNumberInformationTypeDef](./type_defs.md#phonenumberinformationtypedef)
 - [PlatformApplicationTypeDef](./type_defs.md#platformapplicationtypedef)
+- [PublishBatchInputRequestTypeDef](./type_defs.md#publishbatchinputrequesttypedef)
+- [PublishBatchRequestEntryTypeDef](./type_defs.md#publishbatchrequestentrytypedef)
+- [PublishBatchResponseTypeDef](./type_defs.md#publishbatchresponsetypedef)
+- [PublishBatchResultEntryTypeDef](./type_defs.md#publishbatchresultentrytypedef)
 - [PublishInputPlatformEndpointTypeDef](./type_defs.md#publishinputplatformendpointtypedef)
 - [PublishInputRequestTypeDef](./type_defs.md#publishinputrequesttypedef)
 - [PublishInputTopicTypeDef](./type_defs.md#publishinputtopictypedef)

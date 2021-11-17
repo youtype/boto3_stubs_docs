@@ -15,6 +15,7 @@ type annotations stubs module
   - [BackendAuthAppleProviderConfigTypeDef](#backendauthappleproviderconfigtypedef)
   - [BackendAuthSocialProviderConfigTypeDef](#backendauthsocialproviderconfigtypedef)
   - [BackendJobRespObjTypeDef](#backendjobrespobjtypedef)
+  - [BackendStoragePermissionsTypeDef](#backendstoragepermissionstypedef)
   - [CloneBackendRequestRequestTypeDef](#clonebackendrequestrequesttypedef)
   - [CloneBackendResponseTypeDef](#clonebackendresponsetypedef)
   - [CreateBackendAPIRequestRequestTypeDef](#createbackendapirequestrequesttypedef)
@@ -32,6 +33,9 @@ type annotations stubs module
   - [CreateBackendConfigResponseTypeDef](#createbackendconfigresponsetypedef)
   - [CreateBackendRequestRequestTypeDef](#createbackendrequestrequesttypedef)
   - [CreateBackendResponseTypeDef](#createbackendresponsetypedef)
+  - [CreateBackendStorageRequestRequestTypeDef](#createbackendstoragerequestrequesttypedef)
+  - [CreateBackendStorageResourceConfigTypeDef](#createbackendstorageresourceconfigtypedef)
+  - [CreateBackendStorageResponseTypeDef](#createbackendstorageresponsetypedef)
   - [CreateTokenRequestRequestTypeDef](#createtokenrequestrequesttypedef)
   - [CreateTokenResponseTypeDef](#createtokenresponsetypedef)
   - [DeleteBackendAPIRequestRequestTypeDef](#deletebackendapirequestrequesttypedef)
@@ -40,6 +44,8 @@ type annotations stubs module
   - [DeleteBackendAuthResponseTypeDef](#deletebackendauthresponsetypedef)
   - [DeleteBackendRequestRequestTypeDef](#deletebackendrequestrequesttypedef)
   - [DeleteBackendResponseTypeDef](#deletebackendresponsetypedef)
+  - [DeleteBackendStorageRequestRequestTypeDef](#deletebackendstoragerequestrequesttypedef)
+  - [DeleteBackendStorageResponseTypeDef](#deletebackendstorageresponsetypedef)
   - [DeleteTokenRequestRequestTypeDef](#deletetokenrequestrequesttypedef)
   - [DeleteTokenResponseTypeDef](#deletetokenresponsetypedef)
   - [EmailSettingsTypeDef](#emailsettingstypedef)
@@ -55,12 +61,19 @@ type annotations stubs module
   - [GetBackendJobResponseTypeDef](#getbackendjobresponsetypedef)
   - [GetBackendRequestRequestTypeDef](#getbackendrequestrequesttypedef)
   - [GetBackendResponseTypeDef](#getbackendresponsetypedef)
+  - [GetBackendStorageRequestRequestTypeDef](#getbackendstoragerequestrequesttypedef)
+  - [GetBackendStorageResourceConfigTypeDef](#getbackendstorageresourceconfigtypedef)
+  - [GetBackendStorageResponseTypeDef](#getbackendstorageresponsetypedef)
   - [GetTokenRequestRequestTypeDef](#gettokenrequestrequesttypedef)
   - [GetTokenResponseTypeDef](#gettokenresponsetypedef)
   - [ImportBackendAuthRequestRequestTypeDef](#importbackendauthrequestrequesttypedef)
   - [ImportBackendAuthResponseTypeDef](#importbackendauthresponsetypedef)
+  - [ImportBackendStorageRequestRequestTypeDef](#importbackendstoragerequestrequesttypedef)
+  - [ImportBackendStorageResponseTypeDef](#importbackendstorageresponsetypedef)
   - [ListBackendJobsRequestRequestTypeDef](#listbackendjobsrequestrequesttypedef)
   - [ListBackendJobsResponseTypeDef](#listbackendjobsresponsetypedef)
+  - [ListS3BucketsRequestRequestTypeDef](#lists3bucketsrequestrequesttypedef)
+  - [ListS3BucketsResponseTypeDef](#lists3bucketsresponsetypedef)
   - [LoginAuthConfigReqObjTypeDef](#loginauthconfigreqobjtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [RemoveAllBackendsRequestRequestTypeDef](#removeallbackendsrequestrequesttypedef)
@@ -68,6 +81,7 @@ type annotations stubs module
   - [RemoveBackendConfigRequestRequestTypeDef](#removebackendconfigrequestrequesttypedef)
   - [RemoveBackendConfigResponseTypeDef](#removebackendconfigresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [S3BucketInfoTypeDef](#s3bucketinfotypedef)
   - [SettingsTypeDef](#settingstypedef)
   - [SmsSettingsTypeDef](#smssettingstypedef)
   - [SocialProviderSettingsTypeDef](#socialprovidersettingstypedef)
@@ -86,6 +100,9 @@ type annotations stubs module
   - [UpdateBackendConfigResponseTypeDef](#updatebackendconfigresponsetypedef)
   - [UpdateBackendJobRequestRequestTypeDef](#updatebackendjobrequestrequesttypedef)
   - [UpdateBackendJobResponseTypeDef](#updatebackendjobresponsetypedef)
+  - [UpdateBackendStorageRequestRequestTypeDef](#updatebackendstoragerequestrequesttypedef)
+  - [UpdateBackendStorageResourceConfigTypeDef](#updatebackendstorageresourceconfigtypedef)
+  - [UpdateBackendStorageResponseTypeDef](#updatebackendstorageresponsetypedef)
 
 ## BackendAPIAppSyncAuthSettingsTypeDef
 
@@ -188,6 +205,22 @@ Optional fields:
 - `Operation`: `str`
 - `Status`: `str`
 - `UpdateTime`: `str`
+
+## BackendStoragePermissionsTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import BackendStoragePermissionsTypeDef
+```
+
+Required fields:
+
+- `Authenticated`:
+  `Sequence`\[[AuthenticatedElementType](./literals.md#authenticatedelementtype)\]
+
+Optional fields:
+
+- `UnAuthenticated`:
+  `Sequence`\[[UnAuthenticatedElementType](./literals.md#unauthenticatedelementtype)\]
 
 ## CloneBackendRequestRequestTypeDef
 
@@ -461,6 +494,52 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateBackendStorageRequestRequestTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import CreateBackendStorageRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceConfig`:
+  [CreateBackendStorageResourceConfigTypeDef](./type_defs.md#createbackendstorageresourceconfigtypedef)
+- `ResourceName`: `str`
+
+## CreateBackendStorageResourceConfigTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import CreateBackendStorageResourceConfigTypeDef
+```
+
+Required fields:
+
+- `Permissions`:
+  [BackendStoragePermissionsTypeDef](./type_defs.md#backendstoragepermissionstypedef)
+- `ServiceName`: `Literal['S3']` (see
+  [ServiceNameType](./literals.md#servicenametype))
+
+Optional fields:
+
+- `BucketName`: `str`
+
+## CreateBackendStorageResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import CreateBackendStorageResponseTypeDef
+```
+
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `JobId`: `str`
+- `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateTokenRequestRequestTypeDef
 
 ```python
@@ -573,6 +652,35 @@ Required fields:
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
+- `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteBackendStorageRequestRequestTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import DeleteBackendStorageRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceName`: `str`
+- `ServiceName`: `Literal['S3']` (see
+  [ServiceNameType](./literals.md#servicenametype))
+
+## DeleteBackendStorageResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import DeleteBackendStorageResponseTypeDef
+```
+
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `JobId`: `str`
 - `Status`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -791,6 +899,52 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetBackendStorageRequestRequestTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import GetBackendStorageRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceName`: `str`
+
+## GetBackendStorageResourceConfigTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import GetBackendStorageResourceConfigTypeDef
+```
+
+Required fields:
+
+- `Imported`: `bool`
+- `ServiceName`: `Literal['S3']` (see
+  [ServiceNameType](./literals.md#servicenametype))
+
+Optional fields:
+
+- `BucketName`: `str`
+- `Permissions`:
+  [BackendStoragePermissionsTypeDef](./type_defs.md#backendstoragepermissionstypedef)
+
+## GetBackendStorageResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import GetBackendStorageResponseTypeDef
+```
+
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceConfig`:
+  [GetBackendStorageResourceConfigTypeDef](./type_defs.md#getbackendstorageresourceconfigtypedef)
+- `ResourceName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetTokenRequestRequestTypeDef
 
 ```python
@@ -852,6 +1006,38 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ImportBackendStorageRequestRequestTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import ImportBackendStorageRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ServiceName`: `Literal['S3']` (see
+  [ServiceNameType](./literals.md#servicenametype))
+
+Optional fields:
+
+- `BucketName`: `str`
+
+## ImportBackendStorageResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import ImportBackendStorageResponseTypeDef
+```
+
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `JobId`: `str`
+- `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListBackendJobsRequestRequestTypeDef
 
 ```python
@@ -881,6 +1067,30 @@ Required fields:
 
 - `Jobs`:
   `List`\[[BackendJobRespObjTypeDef](./type_defs.md#backendjobrespobjtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListS3BucketsRequestRequestTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import ListS3BucketsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+
+## ListS3BucketsResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import ListS3BucketsResponseTypeDef
+```
+
+Required fields:
+
+- `Buckets`:
+  `List`\[[S3BucketInfoTypeDef](./type_defs.md#s3bucketinfotypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -975,6 +1185,17 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## S3BucketInfoTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import S3BucketInfoTypeDef
+```
+
+Optional fields:
+
+- `CreationDate`: `str`
+- `Name`: `str`
 
 ## SettingsTypeDef
 
@@ -1242,5 +1463,47 @@ Required fields:
 - `Operation`: `str`
 - `Status`: `str`
 - `UpdateTime`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateBackendStorageRequestRequestTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import UpdateBackendStorageRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceConfig`:
+  [UpdateBackendStorageResourceConfigTypeDef](./type_defs.md#updatebackendstorageresourceconfigtypedef)
+- `ResourceName`: `str`
+
+## UpdateBackendStorageResourceConfigTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import UpdateBackendStorageResourceConfigTypeDef
+```
+
+Required fields:
+
+- `Permissions`:
+  [BackendStoragePermissionsTypeDef](./type_defs.md#backendstoragepermissionstypedef)
+- `ServiceName`: `Literal['S3']` (see
+  [ServiceNameType](./literals.md#servicenametype))
+
+## UpdateBackendStorageResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import UpdateBackendStorageResponseTypeDef
+```
+
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `JobId`: `str`
+- `Status`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

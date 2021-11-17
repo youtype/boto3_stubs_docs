@@ -42,6 +42,7 @@ type annotations stubs module
     - [list_topics](#list_topics)
     - [opt_in_phone_number](#opt_in_phone_number)
     - [publish](#publish)
+    - [publish_batch](#publish_batch)
     - [remove_permission](#remove_permission)
     - [set_endpoint_attributes](#set_endpoint_attributes)
     - [set_platform_application_attributes](#set_platform_application_attributes)
@@ -86,11 +87,15 @@ def handle_error(exc: Exceptions.AuthorizationErrorException) -> None:
 Exceptions:
 
 - `Exceptions.AuthorizationErrorException`
+- `Exceptions.BatchEntryIdsNotDistinctException`
+- `Exceptions.BatchRequestTooLongException`
 - `Exceptions.ClientError`
 - `Exceptions.ConcurrentAccessException`
+- `Exceptions.EmptyBatchRequestException`
 - `Exceptions.EndpointDisabledException`
 - `Exceptions.FilterPolicyLimitExceededException`
 - `Exceptions.InternalErrorException`
+- `Exceptions.InvalidBatchEntryIdException`
 - `Exceptions.InvalidParameterException`
 - `Exceptions.InvalidParameterValueException`
 - `Exceptions.InvalidSecurityException`
@@ -109,6 +114,7 @@ Exceptions:
 - `Exceptions.TagLimitExceededException`
 - `Exceptions.TagPolicyException`
 - `Exceptions.ThrottledException`
+- `Exceptions.TooManyEntriesInBatchRequestException`
 - `Exceptions.TopicLimitExceededException`
 - `Exceptions.UserErrorException`
 - `Exceptions.ValidationException`
@@ -130,7 +136,7 @@ Returns [Exceptions](#exceptions).
 ### add_permission
 
 Adds a statement to a topic's access control policy, granting access for the
-specified accounts to the specified actions.
+specified Amazon Web Services accounts to the specified actions.
 
 Type annotations for `boto3.client("sns").add_permission` method.
 
@@ -165,7 +171,7 @@ Returns `bool`.
 ### check_if_phone_number_is_opted_out
 
 Accepts a phone number and indicates whether the phone holder has opted out of
-receiving SMS messages from your account.
+receiving SMS messages from your Amazon Web Services account.
 
 Type annotations for `boto3.client("sns").check_if_phone_number_is_opted_out`
 method.
@@ -253,8 +259,8 @@ Returns
 
 ### create_sms_sandbox_phone_number
 
-Adds a destination phone number to an account in the SMS sandbox and sends a
-one-time password (OTP) to that phone number.
+Adds a destination phone number to an Amazon Web Services account in the SMS
+sandbox and sends a one-time password (OTP) to that phone number.
 
 Type annotations for `boto3.client("sns").create_sms_sandbox_phone_number`
 method.
@@ -329,7 +335,8 @@ Keyword-only arguments:
 
 ### delete_sms_sandbox_phone_number
 
-Deletes an account's verified or pending phone number from the SMS sandbox.
+Deletes an Amazon Web Services account's verified or pending phone number from
+the SMS sandbox.
 
 Type annotations for `boto3.client("sns").delete_sms_sandbox_phone_number`
 method.
@@ -423,7 +430,8 @@ Returns
 
 ### get_sms_attributes
 
-Returns the settings for sending SMS messages from your account.
+Returns the settings for sending SMS messages from your Amazon Web Services
+account.
 
 Type annotations for `boto3.client("sns").get_sms_attributes` method.
 
@@ -442,7 +450,8 @@ Returns
 
 ### get_sms_sandbox_account_status
 
-Retrieves the SMS sandbox status for the calling account in the target Region.
+Retrieves the SMS sandbox status for the calling Amazon Web Services account in
+the target Amazon Web Services Region.
 
 Type annotations for `boto3.client("sns").get_sms_sandbox_account_status`
 method.
@@ -515,7 +524,8 @@ Returns
 
 ### list_origination_numbers
 
-Lists the calling account's dedicated origination numbers and their metadata.
+Lists the calling Amazon Web Services account's dedicated origination numbers
+and their metadata.
 
 Type annotations for `boto3.client("sns").list_origination_numbers` method.
 
@@ -575,8 +585,8 @@ Returns
 
 ### list_sms_sandbox_phone_numbers
 
-Lists the calling account's current verified and pending destination phone
-numbers in the SMS sandbox.
+Lists the calling Amazon Web Services account's current verified and pending
+destination phone numbers in the SMS sandbox.
 
 Type annotations for `boto3.client("sns").list_sms_sandbox_phone_numbers`
 method.
@@ -718,6 +728,28 @@ Keyword-only arguments:
 - `MessageGroupId`: `str`
 
 Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
+
+### publish_batch
+
+Publishes up to ten messages to the specified topic.
+
+Type annotations for `boto3.client("sns").publish_batch` method.
+
+Boto3 documentation:
+[SNS.Client.publish_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish_batch)
+
+Arguments mapping described in
+[PublishBatchInputRequestTypeDef](./type_defs.md#publishbatchinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `TopicArn`: `str` *(required)*
+- `PublishBatchRequestEntries`:
+  `Sequence`\[[PublishBatchRequestEntryTypeDef](./type_defs.md#publishbatchrequestentrytypedef)\]
+  *(required)*
+
+Returns
+[PublishBatchResponseTypeDef](./type_defs.md#publishbatchresponsetypedef).
 
 ### remove_permission
 
@@ -908,7 +940,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### verify_sms_sandbox_phone_number
 
 Verifies a destination phone number with a one-time password (OTP) for the
-calling account.
+calling Amazon Web Services account.
 
 Type annotations for `boto3.client("sns").verify_sms_sandbox_phone_number`
 method.

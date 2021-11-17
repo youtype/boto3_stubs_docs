@@ -10,6 +10,7 @@ type annotations stubs module
 - [Typed dictionaries for boto3 SNS module](#typed-dictionaries-for-boto3-sns-module)
   - [AddPermissionInputRequestTypeDef](#addpermissioninputrequesttypedef)
   - [AddPermissionInputTopicTypeDef](#addpermissioninputtopictypedef)
+  - [BatchResultErrorEntryTypeDef](#batchresulterrorentrytypedef)
   - [CheckIfPhoneNumberIsOptedOutInputRequestTypeDef](#checkifphonenumberisoptedoutinputrequesttypedef)
   - [CheckIfPhoneNumberIsOptedOutResponseTypeDef](#checkifphonenumberisoptedoutresponsetypedef)
   - [ConfirmSubscriptionInputRequestTypeDef](#confirmsubscriptioninputrequesttypedef)
@@ -64,6 +65,10 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PhoneNumberInformationTypeDef](#phonenumberinformationtypedef)
   - [PlatformApplicationTypeDef](#platformapplicationtypedef)
+  - [PublishBatchInputRequestTypeDef](#publishbatchinputrequesttypedef)
+  - [PublishBatchRequestEntryTypeDef](#publishbatchrequestentrytypedef)
+  - [PublishBatchResponseTypeDef](#publishbatchresponsetypedef)
+  - [PublishBatchResultEntryTypeDef](#publishbatchresultentrytypedef)
   - [PublishInputPlatformEndpointTypeDef](#publishinputplatformendpointtypedef)
   - [PublishInputRequestTypeDef](#publishinputrequesttypedef)
   - [PublishInputTopicTypeDef](#publishinputtopictypedef)
@@ -120,6 +125,22 @@ Required fields:
 - `Label`: `str`
 - `AWSAccountId`: `Sequence`\[`str`\]
 - `ActionName`: `Sequence`\[`str`\]
+
+## BatchResultErrorEntryTypeDef
+
+```python
+from mypy_boto3_sns.type_defs import BatchResultErrorEntryTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `Code`: `str`
+- `SenderFault`: `bool`
+
+Optional fields:
+
+- `Message`: `str`
 
 ## CheckIfPhoneNumberIsOptedOutInputRequestTypeDef
 
@@ -777,6 +798,65 @@ Optional fields:
 
 - `PlatformApplicationArn`: `str`
 - `Attributes`: `Dict`\[`str`, `str`\]
+
+## PublishBatchInputRequestTypeDef
+
+```python
+from mypy_boto3_sns.type_defs import PublishBatchInputRequestTypeDef
+```
+
+Required fields:
+
+- `TopicArn`: `str`
+- `PublishBatchRequestEntries`:
+  `Sequence`\[[PublishBatchRequestEntryTypeDef](./type_defs.md#publishbatchrequestentrytypedef)\]
+
+## PublishBatchRequestEntryTypeDef
+
+```python
+from mypy_boto3_sns.type_defs import PublishBatchRequestEntryTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `Message`: `str`
+
+Optional fields:
+
+- `Subject`: `str`
+- `MessageStructure`: `str`
+- `MessageAttributes`: `Mapping`\[`str`,
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
+- `MessageDeduplicationId`: `str`
+- `MessageGroupId`: `str`
+
+## PublishBatchResponseTypeDef
+
+```python
+from mypy_boto3_sns.type_defs import PublishBatchResponseTypeDef
+```
+
+Required fields:
+
+- `Successful`:
+  `List`\[[PublishBatchResultEntryTypeDef](./type_defs.md#publishbatchresultentrytypedef)\]
+- `Failed`:
+  `List`\[[BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PublishBatchResultEntryTypeDef
+
+```python
+from mypy_boto3_sns.type_defs import PublishBatchResultEntryTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `MessageId`: `str`
+- `SequenceNumber`: `str`
 
 ## PublishInputPlatformEndpointTypeDef
 

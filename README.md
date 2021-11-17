@@ -69,6 +69,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
   service
 
+- [mypy-boto3-appconfigdata](./mypy_boto3_appconfigdata) for
+  [AppConfigData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfigdata.html#AppConfigData)
+  service
+
 - [mypy-boto3-appflow](./mypy_boto3_appflow) for
   [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
   service
@@ -341,6 +345,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
 
 - [mypy-boto3-docdb](./mypy_boto3_docdb) for
   [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
+  service
+
+- [mypy-boto3-drs](./mypy_boto3_drs) for
+  [drs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs)
   service
 
 - [mypy-boto3-ds](./mypy_boto3_ds) for

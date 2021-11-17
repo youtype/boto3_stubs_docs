@@ -378,6 +378,7 @@ Values:
 - `apigatewaymanagementapi`
 - `apigatewayv2`
 - `appconfig`
+- `appconfigdata`
 - `appflow`
 - `appintegrations`
 - `application-autoscaling`
@@ -446,6 +447,7 @@ Values:
 - `dlm`
 - `dms`
 - `docdb`
+- `drs`
 - `ds`
 - `dynamodb`
 - `dynamodbstreams`

@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 AmplifyBackend module](#literals-for-boto3-amplifybackend-module)
   - [AdditionalConstraintsElementType](#additionalconstraintselementtype)
   - [AuthResourcesType](#authresourcestype)
+  - [AuthenticatedElementType](#authenticatedelementtype)
   - [DeliveryMethodType](#deliverymethodtype)
   - [ListBackendJobsPaginatorName](#listbackendjobspaginatorname)
   - [MFAModeType](#mfamodetype)
@@ -19,9 +20,11 @@ type annotations stubs module
   - [OAuthScopesElementType](#oauthscopeselementtype)
   - [RequiredSignUpAttributesElementType](#requiredsignupattributeselementtype)
   - [ResolutionStrategyType](#resolutionstrategytype)
+  - [ServiceNameType](#servicenametype)
   - [ServiceType](#servicetype)
   - [SignInMethodType](#signinmethodtype)
   - [StatusType](#statustype)
+  - [UnAuthenticatedElementType](#unauthenticatedelementtype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
@@ -48,6 +51,18 @@ Values:
 
 - `IDENTITY_POOL_AND_USER_POOL`
 - `USER_POOL_ONLY`
+
+## AuthenticatedElementType
+
+```python
+from mypy_boto3_amplifybackend.literals import AuthenticatedElementType
+```
+
+Values:
+
+- `CREATE_AND_UPDATE`
+- `DELETE`
+- `READ`
 
 ## DeliveryMethodType
 
@@ -170,6 +185,16 @@ Values:
 - `NONE`
 - `OPTIMISTIC_CONCURRENCY`
 
+## ServiceNameType
+
+```python
+from mypy_boto3_amplifybackend.literals import ServiceNameType
+```
+
+Values:
+
+- `S3`
+
 ## ServiceType
 
 ```python
@@ -204,6 +229,18 @@ Values:
 - `LATEST`
 - `STALE`
 
+## UnAuthenticatedElementType
+
+```python
+from mypy_boto3_amplifybackend.literals import UnAuthenticatedElementType
+```
+
+Values:
+
+- `CREATE_AND_UPDATE`
+- `DELETE`
+- `READ`
+
 ## ServiceName
 
 ```python
@@ -224,6 +261,7 @@ Values:
 - `apigatewaymanagementapi`
 - `apigatewayv2`
 - `appconfig`
+- `appconfigdata`
 - `appflow`
 - `appintegrations`
 - `application-autoscaling`
@@ -292,6 +330,7 @@ Values:
 - `dlm`
 - `dms`
 - `docdb`
+- `drs`
 - `ds`
 - `dynamodb`
 - `dynamodbstreams`
