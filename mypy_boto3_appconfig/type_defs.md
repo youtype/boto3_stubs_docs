@@ -119,6 +119,7 @@ Optional fields:
 - `LocationUri`: `str`
 - `ValidatorTypes`:
   `List`\[[ValidatorTypeType](./literals.md#validatortypetype)\]
+- `Type`: `str`
 
 ## ConfigurationProfileTypeDef
 
@@ -135,6 +136,7 @@ Required fields:
 - `LocationUri`: `str`
 - `RetrievalRoleArn`: `str`
 - `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
+- `Type`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -200,6 +202,7 @@ Optional fields:
 - `Validators`:
   `Sequence`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
 - `Tags`: `Mapping`\[`str`, `str`\]
+- `Type`: `str`
 
 ## CreateDeploymentStrategyRequestRequestTypeDef
 
@@ -635,6 +638,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+- `Type`: `str`
 
 ## ListDeploymentStrategiesRequestRequestTypeDef
 
@@ -710,9 +714,12 @@ Required fields:
 from mypy_boto3_appconfig.type_defs import MonitorTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `AlarmArn`: `str`
+
+Optional fields:
+
 - `AlarmRoleArn`: `str`
 
 ## ResourceTagsTypeDef

@@ -186,6 +186,7 @@ from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType,
 - [SlotValueResolutionStrategyType](./literals.md#slotvalueresolutionstrategytype)
 - [SortOrderType](./literals.md#sortordertype)
 - [TimeDimensionType](./literals.md#timedimensiontype)
+- [VoiceEngineType](./literals.md#voiceenginetype)
 - [ServiceName](./literals.md#servicename)
 - [WaiterName](./literals.md#waitername)
 

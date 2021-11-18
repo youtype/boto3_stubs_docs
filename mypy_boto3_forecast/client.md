@@ -13,9 +13,12 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
+    - [create_auto_predictor](#create_auto_predictor)
     - [create_dataset](#create_dataset)
     - [create_dataset_group](#create_dataset_group)
     - [create_dataset_import_job](#create_dataset_import_job)
+    - [create_explainability](#create_explainability)
+    - [create_explainability_export](#create_explainability_export)
     - [create_forecast](#create_forecast)
     - [create_forecast_export_job](#create_forecast_export_job)
     - [create_predictor](#create_predictor)
@@ -23,14 +26,19 @@ type annotations stubs module
     - [delete_dataset](#delete_dataset)
     - [delete_dataset_group](#delete_dataset_group)
     - [delete_dataset_import_job](#delete_dataset_import_job)
+    - [delete_explainability](#delete_explainability)
+    - [delete_explainability_export](#delete_explainability_export)
     - [delete_forecast](#delete_forecast)
     - [delete_forecast_export_job](#delete_forecast_export_job)
     - [delete_predictor](#delete_predictor)
     - [delete_predictor_backtest_export_job](#delete_predictor_backtest_export_job)
     - [delete_resource_tree](#delete_resource_tree)
+    - [describe_auto_predictor](#describe_auto_predictor)
     - [describe_dataset](#describe_dataset)
     - [describe_dataset_group](#describe_dataset_group)
     - [describe_dataset_import_job](#describe_dataset_import_job)
+    - [describe_explainability](#describe_explainability)
+    - [describe_explainability_export](#describe_explainability_export)
     - [describe_forecast](#describe_forecast)
     - [describe_forecast_export_job](#describe_forecast_export_job)
     - [describe_predictor](#describe_predictor)
@@ -40,6 +48,8 @@ type annotations stubs module
     - [list_dataset_groups](#list_dataset_groups)
     - [list_dataset_import_jobs](#list_dataset_import_jobs)
     - [list_datasets](#list_datasets)
+    - [list_explainabilities](#list_explainabilities)
+    - [list_explainability_exports](#list_explainability_exports)
     - [list_forecast_export_jobs](#list_forecast_export_jobs)
     - [list_forecasts](#list_forecasts)
     - [list_predictor_backtest_export_jobs](#list_predictor_backtest_export_jobs)
@@ -117,6 +127,37 @@ Arguments:
 
 Returns `bool`.
 
+### create_auto_predictor
+
+Creates an Amazon Forecast predictor.
+
+Type annotations for `boto3.client("forecast").create_auto_predictor` method.
+
+Boto3 documentation:
+[ForecastService.Client.create_auto_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_auto_predictor)
+
+Arguments mapping described in
+[CreateAutoPredictorRequestRequestTypeDef](./type_defs.md#createautopredictorrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `PredictorName`: `str` *(required)*
+- `ForecastHorizon`: `int`
+- `ForecastTypes`: `Sequence`\[`str`\]
+- `ForecastDimensions`: `Sequence`\[`str`\]
+- `ForecastFrequency`: `str`
+- `DataConfig`: [DataConfigTypeDef](./type_defs.md#dataconfigtypedef)
+- `EncryptionConfig`:
+  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
+- `ReferencePredictorArn`: `str`
+- `OptimizationMetric`:
+  [OptimizationMetricType](./literals.md#optimizationmetrictype)
+- `ExplainPredictor`: `bool`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateAutoPredictorResponseTypeDef](./type_defs.md#createautopredictorresponsetypedef).
+
 ### create_dataset
 
 Creates an Amazon Forecast dataset.
@@ -193,6 +234,60 @@ Keyword-only arguments:
 Returns
 [CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef).
 
+### create_explainability
+
+.
+
+Type annotations for `boto3.client("forecast").create_explainability` method.
+
+Boto3 documentation:
+[ForecastService.Client.create_explainability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_explainability)
+
+Arguments mapping described in
+[CreateExplainabilityRequestRequestTypeDef](./type_defs.md#createexplainabilityrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ExplainabilityName`: `str` *(required)*
+- `ResourceArn`: `str` *(required)*
+- `ExplainabilityConfig`:
+  [ExplainabilityConfigTypeDef](./type_defs.md#explainabilityconfigtypedef)
+  *(required)*
+- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
+- `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef)
+- `EnableVisualization`: `bool`
+- `StartDateTime`: `str`
+- `EndDateTime`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateExplainabilityResponseTypeDef](./type_defs.md#createexplainabilityresponsetypedef).
+
+### create_explainability_export
+
+Exports an Explainability resource created by the CreateExplainability
+operation.
+
+Type annotations for `boto3.client("forecast").create_explainability_export`
+method.
+
+Boto3 documentation:
+[ForecastService.Client.create_explainability_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_explainability_export)
+
+Arguments mapping described in
+[CreateExplainabilityExportRequestRequestTypeDef](./type_defs.md#createexplainabilityexportrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ExplainabilityExportName`: `str` *(required)*
+- `ExplainabilityArn`: `str` *(required)*
+- `Destination`:
+  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateExplainabilityExportResponseTypeDef](./type_defs.md#createexplainabilityexportresponsetypedef).
+
 ### create_forecast
 
 Creates a forecast for each item in the `TARGET_TIME_SERIES` dataset that was
@@ -243,7 +338,7 @@ Returns
 
 ### create_predictor
 
-Creates an Amazon Forecast predictor.
+.
 
 Type annotations for `boto3.client("forecast").create_predictor` method.
 
@@ -265,8 +360,8 @@ Keyword-only arguments:
 - `AlgorithmArn`: `str`
 - `ForecastTypes`: `Sequence`\[`str`\]
 - `PerformAutoML`: `bool`
-- `AutoMLOverrideStrategy`: `Literal['LatencyOptimized']` (see
-  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype))
+- `AutoMLOverrideStrategy`:
+  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype)
 - `PerformHPO`: `bool`
 - `TrainingParameters`: `Mapping`\[`str`, `str`\]
 - `EvaluationParameters`:
@@ -358,6 +453,39 @@ Keyword-only arguments:
 
 - `DatasetImportJobArn`: `str` *(required)*
 
+### delete_explainability
+
+Deletes an Explainability resource.
+
+Type annotations for `boto3.client("forecast").delete_explainability` method.
+
+Boto3 documentation:
+[ForecastService.Client.delete_explainability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_explainability)
+
+Arguments mapping described in
+[DeleteExplainabilityRequestRequestTypeDef](./type_defs.md#deleteexplainabilityrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ExplainabilityArn`: `str` *(required)*
+
+### delete_explainability_export
+
+Deletes an Explainability export job.
+
+Type annotations for `boto3.client("forecast").delete_explainability_export`
+method.
+
+Boto3 documentation:
+[ForecastService.Client.delete_explainability_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_explainability_export)
+
+Arguments mapping described in
+[DeleteExplainabilityExportRequestRequestTypeDef](./type_defs.md#deleteexplainabilityexportrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ExplainabilityExportArn`: `str` *(required)*
+
 ### delete_forecast
 
 Deletes a forecast created using the CreateForecast operation.
@@ -441,6 +569,25 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
+### describe_auto_predictor
+
+Describes a predictor created using the CreateAutoPredictor operation.
+
+Type annotations for `boto3.client("forecast").describe_auto_predictor` method.
+
+Boto3 documentation:
+[ForecastService.Client.describe_auto_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_auto_predictor)
+
+Arguments mapping described in
+[DescribeAutoPredictorRequestRequestTypeDef](./type_defs.md#describeautopredictorrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `PredictorArn`: `str` *(required)*
+
+Returns
+[DescribeAutoPredictorResponseTypeDef](./type_defs.md#describeautopredictorresponsetypedef).
+
 ### describe_dataset
 
 Describes an Amazon Forecast dataset created using the CreateDataset operation.
@@ -500,6 +647,47 @@ Keyword-only arguments:
 Returns
 [DescribeDatasetImportJobResponseTypeDef](./type_defs.md#describedatasetimportjobresponsetypedef).
 
+### describe_explainability
+
+Describes an Explainability resource created using the CreateExplainability
+operation.
+
+Type annotations for `boto3.client("forecast").describe_explainability` method.
+
+Boto3 documentation:
+[ForecastService.Client.describe_explainability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_explainability)
+
+Arguments mapping described in
+[DescribeExplainabilityRequestRequestTypeDef](./type_defs.md#describeexplainabilityrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ExplainabilityArn`: `str` *(required)*
+
+Returns
+[DescribeExplainabilityResponseTypeDef](./type_defs.md#describeexplainabilityresponsetypedef).
+
+### describe_explainability_export
+
+Describes an Explainability export created using the CreateExplainabilityExport
+operation.
+
+Type annotations for `boto3.client("forecast").describe_explainability_export`
+method.
+
+Boto3 documentation:
+[ForecastService.Client.describe_explainability_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_explainability_export)
+
+Arguments mapping described in
+[DescribeExplainabilityExportRequestRequestTypeDef](./type_defs.md#describeexplainabilityexportrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ExplainabilityExportArn`: `str` *(required)*
+
+Returns
+[DescribeExplainabilityExportResponseTypeDef](./type_defs.md#describeexplainabilityexportresponsetypedef).
+
 ### describe_forecast
 
 Describes a forecast created using the CreateForecast operation.
@@ -542,7 +730,7 @@ Returns
 
 ### describe_predictor
 
-Describes a predictor created using the CreatePredictor operation.
+.
 
 Type annotations for `boto3.client("forecast").describe_predictor` method.
 
@@ -681,6 +869,51 @@ Keyword-only arguments:
 
 Returns
 [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+
+### list_explainabilities
+
+Returns a list of Explainability resources created using the
+CreateExplainability operation.
+
+Type annotations for `boto3.client("forecast").list_explainabilities` method.
+
+Boto3 documentation:
+[ForecastService.Client.list_explainabilities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_explainabilities)
+
+Arguments mapping described in
+[ListExplainabilitiesRequestRequestTypeDef](./type_defs.md#listexplainabilitiesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+Returns
+[ListExplainabilitiesResponseTypeDef](./type_defs.md#listexplainabilitiesresponsetypedef).
+
+### list_explainability_exports
+
+Returns a list of Explainability exports created using the
+CreateExplainabilityExport operation.
+
+Type annotations for `boto3.client("forecast").list_explainability_exports`
+method.
+
+Boto3 documentation:
+[ForecastService.Client.list_explainability_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_explainability_exports)
+
+Arguments mapping described in
+[ListExplainabilityExportsRequestRequestTypeDef](./type_defs.md#listexplainabilityexportsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+Returns
+[ListExplainabilityExportsResponseTypeDef](./type_defs.md#listexplainabilityexportsresponsetypedef).
 
 ### list_forecast_export_jobs
 

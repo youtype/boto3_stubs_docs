@@ -8,14 +8,22 @@ type annotations stubs module
 [mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 - [Typed dictionaries for boto3 ForecastService module](#typed-dictionaries-for-boto3-forecastservice-module)
+  - [AdditionalDatasetTypeDef](#additionaldatasettypedef)
+  - [AttributeConfigTypeDef](#attributeconfigtypedef)
   - [CategoricalParameterRangeTypeDef](#categoricalparameterrangetypedef)
   - [ContinuousParameterRangeTypeDef](#continuousparameterrangetypedef)
+  - [CreateAutoPredictorRequestRequestTypeDef](#createautopredictorrequestrequesttypedef)
+  - [CreateAutoPredictorResponseTypeDef](#createautopredictorresponsetypedef)
   - [CreateDatasetGroupRequestRequestTypeDef](#createdatasetgrouprequestrequesttypedef)
   - [CreateDatasetGroupResponseTypeDef](#createdatasetgroupresponsetypedef)
   - [CreateDatasetImportJobRequestRequestTypeDef](#createdatasetimportjobrequestrequesttypedef)
   - [CreateDatasetImportJobResponseTypeDef](#createdatasetimportjobresponsetypedef)
   - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
   - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
+  - [CreateExplainabilityExportRequestRequestTypeDef](#createexplainabilityexportrequestrequesttypedef)
+  - [CreateExplainabilityExportResponseTypeDef](#createexplainabilityexportresponsetypedef)
+  - [CreateExplainabilityRequestRequestTypeDef](#createexplainabilityrequestrequesttypedef)
+  - [CreateExplainabilityResponseTypeDef](#createexplainabilityresponsetypedef)
   - [CreateForecastExportJobRequestRequestTypeDef](#createforecastexportjobrequestrequesttypedef)
   - [CreateForecastExportJobResponseTypeDef](#createforecastexportjobresponsetypedef)
   - [CreateForecastRequestRequestTypeDef](#createforecastrequestrequesttypedef)
@@ -24,6 +32,7 @@ type annotations stubs module
   - [CreatePredictorBacktestExportJobResponseTypeDef](#createpredictorbacktestexportjobresponsetypedef)
   - [CreatePredictorRequestRequestTypeDef](#createpredictorrequestrequesttypedef)
   - [CreatePredictorResponseTypeDef](#createpredictorresponsetypedef)
+  - [DataConfigTypeDef](#dataconfigtypedef)
   - [DataDestinationTypeDef](#datadestinationtypedef)
   - [DataSourceTypeDef](#datasourcetypedef)
   - [DatasetGroupSummaryTypeDef](#datasetgroupsummarytypedef)
@@ -32,17 +41,25 @@ type annotations stubs module
   - [DeleteDatasetGroupRequestRequestTypeDef](#deletedatasetgrouprequestrequesttypedef)
   - [DeleteDatasetImportJobRequestRequestTypeDef](#deletedatasetimportjobrequestrequesttypedef)
   - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
+  - [DeleteExplainabilityExportRequestRequestTypeDef](#deleteexplainabilityexportrequestrequesttypedef)
+  - [DeleteExplainabilityRequestRequestTypeDef](#deleteexplainabilityrequestrequesttypedef)
   - [DeleteForecastExportJobRequestRequestTypeDef](#deleteforecastexportjobrequestrequesttypedef)
   - [DeleteForecastRequestRequestTypeDef](#deleteforecastrequestrequesttypedef)
   - [DeletePredictorBacktestExportJobRequestRequestTypeDef](#deletepredictorbacktestexportjobrequestrequesttypedef)
   - [DeletePredictorRequestRequestTypeDef](#deletepredictorrequestrequesttypedef)
   - [DeleteResourceTreeRequestRequestTypeDef](#deleteresourcetreerequestrequesttypedef)
+  - [DescribeAutoPredictorRequestRequestTypeDef](#describeautopredictorrequestrequesttypedef)
+  - [DescribeAutoPredictorResponseTypeDef](#describeautopredictorresponsetypedef)
   - [DescribeDatasetGroupRequestRequestTypeDef](#describedatasetgrouprequestrequesttypedef)
   - [DescribeDatasetGroupResponseTypeDef](#describedatasetgroupresponsetypedef)
   - [DescribeDatasetImportJobRequestRequestTypeDef](#describedatasetimportjobrequestrequesttypedef)
   - [DescribeDatasetImportJobResponseTypeDef](#describedatasetimportjobresponsetypedef)
   - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
   - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
+  - [DescribeExplainabilityExportRequestRequestTypeDef](#describeexplainabilityexportrequestrequesttypedef)
+  - [DescribeExplainabilityExportResponseTypeDef](#describeexplainabilityexportresponsetypedef)
+  - [DescribeExplainabilityRequestRequestTypeDef](#describeexplainabilityrequestrequesttypedef)
+  - [DescribeExplainabilityResponseTypeDef](#describeexplainabilityresponsetypedef)
   - [DescribeForecastExportJobRequestRequestTypeDef](#describeforecastexportjobrequestrequesttypedef)
   - [DescribeForecastExportJobResponseTypeDef](#describeforecastexportjobresponsetypedef)
   - [DescribeForecastRequestRequestTypeDef](#describeforecastrequestrequesttypedef)
@@ -55,6 +72,10 @@ type annotations stubs module
   - [ErrorMetricTypeDef](#errormetrictypedef)
   - [EvaluationParametersTypeDef](#evaluationparameterstypedef)
   - [EvaluationResultTypeDef](#evaluationresulttypedef)
+  - [ExplainabilityConfigTypeDef](#explainabilityconfigtypedef)
+  - [ExplainabilityExportSummaryTypeDef](#explainabilityexportsummarytypedef)
+  - [ExplainabilityInfoTypeDef](#explainabilityinfotypedef)
+  - [ExplainabilitySummaryTypeDef](#explainabilitysummarytypedef)
   - [FeaturizationConfigTypeDef](#featurizationconfigtypedef)
   - [FeaturizationMethodTypeDef](#featurizationmethodtypedef)
   - [FeaturizationTypeDef](#featurizationtypedef)
@@ -72,6 +93,10 @@ type annotations stubs module
   - [ListDatasetImportJobsResponseTypeDef](#listdatasetimportjobsresponsetypedef)
   - [ListDatasetsRequestRequestTypeDef](#listdatasetsrequestrequesttypedef)
   - [ListDatasetsResponseTypeDef](#listdatasetsresponsetypedef)
+  - [ListExplainabilitiesRequestRequestTypeDef](#listexplainabilitiesrequestrequesttypedef)
+  - [ListExplainabilitiesResponseTypeDef](#listexplainabilitiesresponsetypedef)
+  - [ListExplainabilityExportsRequestRequestTypeDef](#listexplainabilityexportsrequestrequesttypedef)
+  - [ListExplainabilityExportsResponseTypeDef](#listexplainabilityexportsresponsetypedef)
   - [ListForecastExportJobsRequestRequestTypeDef](#listforecastexportjobsrequestrequesttypedef)
   - [ListForecastExportJobsResponseTypeDef](#listforecastexportjobsresponsetypedef)
   - [ListForecastsRequestRequestTypeDef](#listforecastsrequestrequesttypedef)
@@ -89,6 +114,7 @@ type annotations stubs module
   - [PredictorExecutionDetailsTypeDef](#predictorexecutiondetailstypedef)
   - [PredictorExecutionTypeDef](#predictorexecutiontypedef)
   - [PredictorSummaryTypeDef](#predictorsummarytypedef)
+  - [ReferencePredictorSummaryTypeDef](#referencepredictorsummarytypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3ConfigTypeDef](#s3configtypedef)
   - [SchemaAttributeTypeDef](#schemaattributetypedef)
@@ -103,6 +129,31 @@ type annotations stubs module
   - [UpdateDatasetGroupRequestRequestTypeDef](#updatedatasetgrouprequestrequesttypedef)
   - [WeightedQuantileLossTypeDef](#weightedquantilelosstypedef)
   - [WindowSummaryTypeDef](#windowsummarytypedef)
+
+## AdditionalDatasetTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import AdditionalDatasetTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `Configuration`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+
+## AttributeConfigTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import AttributeConfigTypeDef
+```
+
+Required fields:
+
+- `AttributeName`: `str`
+- `Transformations`: `Mapping`\[`str`, `str`\]
 
 ## CategoricalParameterRangeTypeDef
 
@@ -130,6 +181,43 @@ Required fields:
 Optional fields:
 
 - `ScalingType`: [ScalingTypeType](./literals.md#scalingtypetype)
+
+## CreateAutoPredictorRequestRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreateAutoPredictorRequestRequestTypeDef
+```
+
+Required fields:
+
+- `PredictorName`: `str`
+
+Optional fields:
+
+- `ForecastHorizon`: `int`
+- `ForecastTypes`: `Sequence`\[`str`\]
+- `ForecastDimensions`: `Sequence`\[`str`\]
+- `ForecastFrequency`: `str`
+- `DataConfig`: [DataConfigTypeDef](./type_defs.md#dataconfigtypedef)
+- `EncryptionConfig`:
+  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
+- `ReferencePredictorArn`: `str`
+- `OptimizationMetric`:
+  [OptimizationMetricType](./literals.md#optimizationmetrictype)
+- `ExplainPredictor`: `bool`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateAutoPredictorResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreateAutoPredictorResponseTypeDef
+```
+
+Required fields:
+
+- `PredictorArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateDatasetGroupRequestRequestTypeDef
 
@@ -220,6 +308,69 @@ from mypy_boto3_forecast.type_defs import CreateDatasetResponseTypeDef
 Required fields:
 
 - `DatasetArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateExplainabilityExportRequestRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreateExplainabilityExportRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ExplainabilityExportName`: `str`
+- `ExplainabilityArn`: `str`
+- `Destination`:
+  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
+
+Optional fields:
+
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateExplainabilityExportResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreateExplainabilityExportResponseTypeDef
+```
+
+Required fields:
+
+- `ExplainabilityExportArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateExplainabilityRequestRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreateExplainabilityRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ExplainabilityName`: `str`
+- `ResourceArn`: `str`
+- `ExplainabilityConfig`:
+  [ExplainabilityConfigTypeDef](./type_defs.md#explainabilityconfigtypedef)
+
+Optional fields:
+
+- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
+- `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef)
+- `EnableVisualization`: `bool`
+- `StartDateTime`: `str`
+- `EndDateTime`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateExplainabilityResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreateExplainabilityResponseTypeDef
+```
+
+Required fields:
+
+- `ExplainabilityArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -329,8 +480,8 @@ Optional fields:
 - `AlgorithmArn`: `str`
 - `ForecastTypes`: `Sequence`\[`str`\]
 - `PerformAutoML`: `bool`
-- `AutoMLOverrideStrategy`: `Literal['LatencyOptimized']` (see
-  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype))
+- `AutoMLOverrideStrategy`:
+  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype)
 - `PerformHPO`: `bool`
 - `TrainingParameters`: `Mapping`\[`str`, `str`\]
 - `EvaluationParameters`:
@@ -354,6 +505,23 @@ Required fields:
 - `PredictorArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DataConfigTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DataConfigTypeDef
+```
+
+Required fields:
+
+- `DatasetGroupArn`: `str`
+
+Optional fields:
+
+- `AttributeConfigs`:
+  `Sequence`\[[AttributeConfigTypeDef](./type_defs.md#attributeconfigtypedef)\]
+- `AdditionalDatasets`:
+  `Sequence`\[[AdditionalDatasetTypeDef](./type_defs.md#additionaldatasettypedef)\]
 
 ## DataDestinationTypeDef
 
@@ -449,6 +617,26 @@ Required fields:
 
 - `DatasetArn`: `str`
 
+## DeleteExplainabilityExportRequestRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DeleteExplainabilityExportRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ExplainabilityExportArn`: `str`
+
+## DeleteExplainabilityRequestRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DeleteExplainabilityRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ExplainabilityArn`: `str`
+
 ## DeleteForecastExportJobRequestRequestTypeDef
 
 ```python
@@ -498,6 +686,47 @@ from mypy_boto3_forecast.type_defs import DeleteResourceTreeRequestRequestTypeDe
 Required fields:
 
 - `ResourceArn`: `str`
+
+## DescribeAutoPredictorRequestRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribeAutoPredictorRequestRequestTypeDef
+```
+
+Required fields:
+
+- `PredictorArn`: `str`
+
+## DescribeAutoPredictorResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribeAutoPredictorResponseTypeDef
+```
+
+Required fields:
+
+- `PredictorArn`: `str`
+- `PredictorName`: `str`
+- `ForecastHorizon`: `int`
+- `ForecastTypes`: `List`\[`str`\]
+- `ForecastFrequency`: `str`
+- `DatasetImportJobArns`: `List`\[`str`\]
+- `DataConfig`: [DataConfigTypeDef](./type_defs.md#dataconfigtypedef)
+- `EncryptionConfig`:
+  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
+- `ReferencePredictorSummary`:
+  [ReferencePredictorSummaryTypeDef](./type_defs.md#referencepredictorsummarytypedef)
+- `EstimatedTimeRemainingInMinutes`: `int`
+- `Status`: `str`
+- `Message`: `str`
+- `CreationTime`: `datetime`
+- `LastModificationTime`: `datetime`
+- `OptimizationMetric`:
+  [OptimizationMetricType](./literals.md#optimizationmetrictype)
+- `ExplainabilityInfo`:
+  [ExplainabilityInfoTypeDef](./type_defs.md#explainabilityinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeDatasetGroupRequestRequestTypeDef
 
@@ -590,6 +819,72 @@ Required fields:
 - `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef)
 - `EncryptionConfig`:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
+- `Status`: `str`
+- `CreationTime`: `datetime`
+- `LastModificationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeExplainabilityExportRequestRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribeExplainabilityExportRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ExplainabilityExportArn`: `str`
+
+## DescribeExplainabilityExportResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribeExplainabilityExportResponseTypeDef
+```
+
+Required fields:
+
+- `ExplainabilityExportArn`: `str`
+- `ExplainabilityExportName`: `str`
+- `ExplainabilityArn`: `str`
+- `Destination`:
+  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
+- `Message`: `str`
+- `Status`: `str`
+- `CreationTime`: `datetime`
+- `LastModificationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeExplainabilityRequestRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribeExplainabilityRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ExplainabilityArn`: `str`
+
+## DescribeExplainabilityResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribeExplainabilityResponseTypeDef
+```
+
+Required fields:
+
+- `ExplainabilityArn`: `str`
+- `ExplainabilityName`: `str`
+- `ResourceArn`: `str`
+- `ExplainabilityConfig`:
+  [ExplainabilityConfigTypeDef](./type_defs.md#explainabilityconfigtypedef)
+- `EnableVisualization`: `bool`
+- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
+- `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef)
+- `StartDateTime`: `str`
+- `EndDateTime`: `str`
+- `EstimatedTimeRemainingInMinutes`: `int`
+- `Message`: `str`
 - `Status`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
@@ -708,11 +1003,12 @@ Required fields:
 - `PredictorArn`: `str`
 - `PredictorName`: `str`
 - `AlgorithmArn`: `str`
+- `AutoMLAlgorithmArns`: `List`\[`str`\]
 - `ForecastHorizon`: `int`
 - `ForecastTypes`: `List`\[`str`\]
 - `PerformAutoML`: `bool`
-- `AutoMLOverrideStrategy`: `Literal['LatencyOptimized']` (see
-  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype))
+- `AutoMLOverrideStrategy`:
+  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype)
 - `PerformHPO`: `bool`
 - `TrainingParameters`: `Dict`\[`str`, `str`\]
 - `EvaluationParameters`:
@@ -728,8 +1024,8 @@ Required fields:
 - `PredictorExecutionDetails`:
   [PredictorExecutionDetailsTypeDef](./type_defs.md#predictorexecutiondetailstypedef)
 - `EstimatedTimeRemainingInMinutes`: `int`
+- `IsAutoPredictor`: `bool`
 - `DatasetImportJobArns`: `List`\[`str`\]
-- `AutoMLAlgorithmArns`: `List`\[`str`\]
 - `Status`: `str`
 - `Message`: `str`
 - `CreationTime`: `datetime`
@@ -786,6 +1082,65 @@ Optional fields:
 - `AlgorithmArn`: `str`
 - `TestWindows`:
   `List`\[[WindowSummaryTypeDef](./type_defs.md#windowsummarytypedef)\]
+
+## ExplainabilityConfigTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ExplainabilityConfigTypeDef
+```
+
+Required fields:
+
+- `TimeSeriesGranularity`:
+  [TimeSeriesGranularityType](./literals.md#timeseriesgranularitytype)
+- `TimePointGranularity`:
+  [TimePointGranularityType](./literals.md#timepointgranularitytype)
+
+## ExplainabilityExportSummaryTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ExplainabilityExportSummaryTypeDef
+```
+
+Optional fields:
+
+- `ExplainabilityExportArn`: `str`
+- `ExplainabilityExportName`: `str`
+- `Destination`:
+  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
+- `Status`: `str`
+- `Message`: `str`
+- `CreationTime`: `datetime`
+- `LastModificationTime`: `datetime`
+
+## ExplainabilityInfoTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ExplainabilityInfoTypeDef
+```
+
+Optional fields:
+
+- `ExplainabilityArn`: `str`
+- `Status`: `str`
+
+## ExplainabilitySummaryTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ExplainabilitySummaryTypeDef
+```
+
+Optional fields:
+
+- `ExplainabilityArn`: `str`
+- `ExplainabilityName`: `str`
+- `ResourceArn`: `str`
+- `ExplainabilityConfig`:
+  [ExplainabilityConfigTypeDef](./type_defs.md#explainabilityconfigtypedef)
+- `Status`: `str`
+- `Message`: `str`
+- `CreationTime`: `datetime`
+- `LastModificationTime`: `datetime`
 
 ## FeaturizationConfigTypeDef
 
@@ -874,6 +1229,7 @@ Optional fields:
 - `ForecastArn`: `str`
 - `ForecastName`: `str`
 - `PredictorArn`: `str`
+- `CreatedUsingAutoPredictor`: `bool`
 - `DatasetGroupArn`: `str`
 - `Status`: `str`
 - `Message`: `str`
@@ -900,8 +1256,9 @@ Required fields:
 
 - `PredictorEvaluationResults`:
   `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
-- `AutoMLOverrideStrategy`: `Literal['LatencyOptimized']` (see
-  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype))
+- `IsAutoPredictor`: `bool`
+- `AutoMLOverrideStrategy`:
+  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype)
 - `OptimizationMetric`:
   [OptimizationMetricType](./literals.md#optimizationmetrictype)
 - `ResponseMetadata`:
@@ -1021,6 +1378,58 @@ Required fields:
 
 - `Datasets`:
   `List`\[[DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListExplainabilitiesRequestRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ListExplainabilitiesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListExplainabilitiesResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ListExplainabilitiesResponseTypeDef
+```
+
+Required fields:
+
+- `Explainabilities`:
+  `List`\[[ExplainabilitySummaryTypeDef](./type_defs.md#explainabilitysummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListExplainabilityExportsRequestRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ListExplainabilityExportsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListExplainabilityExportsResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ListExplainabilityExportsResponseTypeDef
+```
+
+Required fields:
+
+- `ExplainabilityExports`:
+  `List`\[[ExplainabilityExportSummaryTypeDef](./type_defs.md#explainabilityexportsummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1244,10 +1653,24 @@ Optional fields:
 - `PredictorArn`: `str`
 - `PredictorName`: `str`
 - `DatasetGroupArn`: `str`
+- `IsAutoPredictor`: `bool`
+- `ReferencePredictorSummary`:
+  [ReferencePredictorSummaryTypeDef](./type_defs.md#referencepredictorsummarytypedef)
 - `Status`: `str`
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
+
+## ReferencePredictorSummaryTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ReferencePredictorSummaryTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `State`: [StateType](./literals.md#statetype)
 
 ## ResponseMetadataTypeDef
 

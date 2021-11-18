@@ -47,11 +47,15 @@ type annotations stubs module
   - [RoomMembershipRoleType](#roommembershiproletype)
   - [SipRuleTriggerTypeType](#sipruletriggertypetype)
   - [SortOrderType](#sortordertype)
+  - [TranscribeContentIdentificationTypeType](#transcribecontentidentificationtypetype)
+  - [TranscribeContentRedactionTypeType](#transcribecontentredactiontypetype)
   - [TranscribeLanguageCodeType](#transcribelanguagecodetype)
+  - [TranscribeMedicalContentIdentificationTypeType](#transcribemedicalcontentidentificationtypetype)
   - [TranscribeMedicalLanguageCodeType](#transcribemedicallanguagecodetype)
   - [TranscribeMedicalRegionType](#transcribemedicalregiontype)
   - [TranscribeMedicalSpecialtyType](#transcribemedicalspecialtytype)
   - [TranscribeMedicalTypeType](#transcribemedicaltypetype)
+  - [TranscribePartialResultsStabilityType](#transcribepartialresultsstabilitytype)
   - [TranscribeRegionType](#transcriberegiontype)
   - [TranscribeVocabularyFilterMethodType](#transcribevocabularyfiltermethodtype)
   - [UserTypeType](#usertypetype)
@@ -524,6 +528,26 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
+## TranscribeContentIdentificationTypeType
+
+```python
+from mypy_boto3_chime.literals import TranscribeContentIdentificationTypeType
+```
+
+Values:
+
+- `PII`
+
+## TranscribeContentRedactionTypeType
+
+```python
+from mypy_boto3_chime.literals import TranscribeContentRedactionTypeType
+```
+
+Values:
+
+- `PII`
+
 ## TranscribeLanguageCodeType
 
 ```python
@@ -544,6 +568,16 @@ Values:
 - `ko-KR`
 - `pt-BR`
 - `zh-CN`
+
+## TranscribeMedicalContentIdentificationTypeType
+
+```python
+from mypy_boto3_chime.literals import TranscribeMedicalContentIdentificationTypeType
+```
+
+Values:
+
+- `PHI`
 
 ## TranscribeMedicalLanguageCodeType
 
@@ -596,6 +630,18 @@ Values:
 
 - `CONVERSATION`
 - `DICTATION`
+
+## TranscribePartialResultsStabilityType
+
+```python
+from mypy_boto3_chime.literals import TranscribePartialResultsStabilityType
+```
+
+Values:
+
+- `high`
+- `low`
+- `medium`
 
 ## TranscribeRegionType
 

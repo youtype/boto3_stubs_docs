@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 - [Literals for boto3 GlueDataBrew module](#literals-for-boto3-gluedatabrew-module)
+  - [AnalyticsModeType](#analyticsmodetype)
   - [CompressionFormatType](#compressionformattype)
   - [DatabaseOutputModeType](#databaseoutputmodetype)
   - [EncryptionModeType](#encryptionmodetype)
@@ -20,6 +21,7 @@ type annotations stubs module
   - [ListProjectsPaginatorName](#listprojectspaginatorname)
   - [ListRecipeVersionsPaginatorName](#listrecipeversionspaginatorname)
   - [ListRecipesPaginatorName](#listrecipespaginatorname)
+  - [ListRulesetsPaginatorName](#listrulesetspaginatorname)
   - [ListSchedulesPaginatorName](#listschedulespaginatorname)
   - [LogSubscriptionType](#logsubscriptiontype)
   - [OrderType](#ordertype)
@@ -30,8 +32,22 @@ type annotations stubs module
   - [SampleTypeType](#sampletypetype)
   - [SessionStatusType](#sessionstatustype)
   - [SourceType](#sourcetype)
+  - [ThresholdTypeType](#thresholdtypetype)
+  - [ThresholdUnitType](#thresholdunittype)
+  - [ValidationModeType](#validationmodetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+## AnalyticsModeType
+
+```python
+from mypy_boto3_databrew.literals import AnalyticsModeType
+```
+
+Values:
+
+- `DISABLE`
+- `ENABLE`
 
 ## CompressionFormatType
 
@@ -172,6 +188,16 @@ Values:
 
 - `list_recipes`
 
+## ListRulesetsPaginatorName
+
+```python
+from mypy_boto3_databrew.literals import ListRulesetsPaginatorName
+```
+
+Values:
+
+- `list_rulesets`
+
 ## ListSchedulesPaginatorName
 
 ```python
@@ -296,6 +322,40 @@ Values:
 - `DATA-CATALOG`
 - `DATABASE`
 - `S3`
+
+## ThresholdTypeType
+
+```python
+from mypy_boto3_databrew.literals import ThresholdTypeType
+```
+
+Values:
+
+- `GREATER_THAN`
+- `GREATER_THAN_OR_EQUAL`
+- `LESS_THAN`
+- `LESS_THAN_OR_EQUAL`
+
+## ThresholdUnitType
+
+```python
+from mypy_boto3_databrew.literals import ThresholdUnitType
+```
+
+Values:
+
+- `COUNT`
+- `PERCENTAGE`
+
+## ValidationModeType
+
+```python
+from mypy_boto3_databrew.literals import ValidationModeType
+```
+
+Values:
+
+- `CHECK_ALL`
 
 ## ServiceName
 
@@ -610,4 +670,5 @@ Values:
 - `list_projects`
 - `list_recipe_versions`
 - `list_recipes`
+- `list_rulesets`
 - `list_schedules`

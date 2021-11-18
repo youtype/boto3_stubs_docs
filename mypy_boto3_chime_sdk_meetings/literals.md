@@ -8,14 +8,38 @@ type annotations stubs module
 [mypy_boto3_chime_sdk_meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
 
 - [Literals for boto3 ChimeSDKMeetings module](#literals-for-boto3-chimesdkmeetings-module)
+  - [TranscribeContentIdentificationTypeType](#transcribecontentidentificationtypetype)
+  - [TranscribeContentRedactionTypeType](#transcribecontentredactiontypetype)
   - [TranscribeLanguageCodeType](#transcribelanguagecodetype)
+  - [TranscribeMedicalContentIdentificationTypeType](#transcribemedicalcontentidentificationtypetype)
   - [TranscribeMedicalLanguageCodeType](#transcribemedicallanguagecodetype)
   - [TranscribeMedicalRegionType](#transcribemedicalregiontype)
   - [TranscribeMedicalSpecialtyType](#transcribemedicalspecialtytype)
   - [TranscribeMedicalTypeType](#transcribemedicaltypetype)
+  - [TranscribePartialResultsStabilityType](#transcribepartialresultsstabilitytype)
   - [TranscribeRegionType](#transcriberegiontype)
   - [TranscribeVocabularyFilterMethodType](#transcribevocabularyfiltermethodtype)
   - [ServiceName](#servicename)
+
+## TranscribeContentIdentificationTypeType
+
+```python
+from mypy_boto3_chime_sdk_meetings.literals import TranscribeContentIdentificationTypeType
+```
+
+Values:
+
+- `PII`
+
+## TranscribeContentRedactionTypeType
+
+```python
+from mypy_boto3_chime_sdk_meetings.literals import TranscribeContentRedactionTypeType
+```
+
+Values:
+
+- `PII`
 
 ## TranscribeLanguageCodeType
 
@@ -37,6 +61,16 @@ Values:
 - `ko-KR`
 - `pt-BR`
 - `zh-CN`
+
+## TranscribeMedicalContentIdentificationTypeType
+
+```python
+from mypy_boto3_chime_sdk_meetings.literals import TranscribeMedicalContentIdentificationTypeType
+```
+
+Values:
+
+- `PHI`
 
 ## TranscribeMedicalLanguageCodeType
 
@@ -89,6 +123,18 @@ Values:
 
 - `CONVERSATION`
 - `DICTATION`
+
+## TranscribePartialResultsStabilityType
+
+```python
+from mypy_boto3_chime_sdk_meetings.literals import TranscribePartialResultsStabilityType
+```
+
+Values:
+
+- `high`
+- `low`
+- `medium`
 
 ## TranscribeRegionType
 

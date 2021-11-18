@@ -45,12 +45,12 @@ from mypy_boto3_redshift_data.type_defs import BatchExecuteStatementInputRequest
 
 Required fields:
 
+- `ClusterIdentifier`: `str`
 - `Database`: `str`
 - `Sqls`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `ClusterIdentifier`: `str`
 - `DbUser`: `str`
 - `SecretArn`: `str`
 - `StatementName`: `str`
@@ -166,11 +166,11 @@ from mypy_boto3_redshift_data.type_defs import DescribeTableRequestRequestTypeDe
 
 Required fields:
 
+- `ClusterIdentifier`: `str`
 - `Database`: `str`
 
 Optional fields:
 
-- `ClusterIdentifier`: `str`
 - `ConnectedDatabase`: `str`
 - `DbUser`: `str`
 - `MaxResults`: `int`
@@ -202,12 +202,12 @@ from mypy_boto3_redshift_data.type_defs import ExecuteStatementInputRequestTypeD
 
 Required fields:
 
+- `ClusterIdentifier`: `str`
 - `Database`: `str`
 - `Sql`: `str`
 
 Optional fields:
 
-- `ClusterIdentifier`: `str`
 - `DbUser`: `str`
 - `Parameters`:
   `Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
@@ -285,11 +285,11 @@ from mypy_boto3_redshift_data.type_defs import ListDatabasesRequestRequestTypeDe
 
 Required fields:
 
+- `ClusterIdentifier`: `str`
 - `Database`: `str`
 
 Optional fields:
 
-- `ClusterIdentifier`: `str`
 - `DbUser`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -316,11 +316,11 @@ from mypy_boto3_redshift_data.type_defs import ListSchemasRequestRequestTypeDef
 
 Required fields:
 
+- `ClusterIdentifier`: `str`
 - `Database`: `str`
 
 Optional fields:
 
-- `ClusterIdentifier`: `str`
 - `ConnectedDatabase`: `str`
 - `DbUser`: `str`
 - `MaxResults`: `int`
@@ -377,11 +377,11 @@ from mypy_boto3_redshift_data.type_defs import ListTablesRequestRequestTypeDef
 
 Required fields:
 
+- `ClusterIdentifier`: `str`
 - `Database`: `str`
 
 Optional fields:
 
-- `ClusterIdentifier`: `str`
 - `ConnectedDatabase`: `str`
 - `DbUser`: `str`
 - `MaxResults`: `int`

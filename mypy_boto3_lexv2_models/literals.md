@@ -56,6 +56,7 @@ type annotations stubs module
   - [SlotValueResolutionStrategyType](#slotvalueresolutionstrategytype)
   - [SortOrderType](#sortordertype)
   - [TimeDimensionType](#timedimensiontype)
+  - [VoiceEngineType](#voiceenginetype)
   - [ServiceName](#servicename)
   - [WaiterName](#waitername)
 
@@ -580,6 +581,17 @@ Values:
 - `Days`
 - `Hours`
 - `Weeks`
+
+## VoiceEngineType
+
+```python
+from mypy_boto3_lexv2_models.literals import VoiceEngineType
+```
+
+Values:
+
+- `neural`
+- `standard`
 
 ## ServiceName
 

@@ -133,6 +133,7 @@ Boto3 documentation:
 
 Arguments for `ListStreamsPaginator.paginate` method:
 
+- `filterBy`: [StreamFiltersTypeDef](./type_defs.md#streamfilterstypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

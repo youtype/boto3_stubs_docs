@@ -54,7 +54,6 @@ RedshiftDataAPIServiceClient [exceptions](./client.md#exceptions)
 - ActiveStatementsExceededException
 - BatchExecuteStatementException
 - ClientError
-- DatabaseConnectionException
 - ExecuteStatementException
 - InternalServerException
 - ResourceNotFoundException

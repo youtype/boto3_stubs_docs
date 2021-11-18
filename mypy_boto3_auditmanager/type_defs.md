@@ -39,6 +39,9 @@ type annotations stubs module
   - [BatchImportEvidenceToAssessmentControlResponseTypeDef](#batchimportevidencetoassessmentcontrolresponsetypedef)
   - [ChangeLogTypeDef](#changelogtypedef)
   - [ControlCommentTypeDef](#controlcommenttypedef)
+  - [ControlDomainInsightsTypeDef](#controldomaininsightstypedef)
+  - [ControlInsightsMetadataByAssessmentItemTypeDef](#controlinsightsmetadatabyassessmentitemtypedef)
+  - [ControlInsightsMetadataItemTypeDef](#controlinsightsmetadataitemtypedef)
   - [ControlMappingSourceTypeDef](#controlmappingsourcetypedef)
   - [ControlMetadataTypeDef](#controlmetadatatypedef)
   - [ControlSetTypeDef](#controlsettypedef)
@@ -65,6 +68,7 @@ type annotations stubs module
   - [DeregisterAccountResponseTypeDef](#deregisteraccountresponsetypedef)
   - [DeregisterOrganizationAdminAccountRequestRequestTypeDef](#deregisterorganizationadminaccountrequestrequesttypedef)
   - [DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef](#disassociateassessmentreportevidencefolderrequestrequesttypedef)
+  - [EvidenceInsightsTypeDef](#evidenceinsightstypedef)
   - [EvidenceTypeDef](#evidencetypedef)
   - [FrameworkMetadataTypeDef](#frameworkmetadatatypedef)
   - [FrameworkTypeDef](#frameworktypedef)
@@ -91,10 +95,17 @@ type annotations stubs module
   - [GetEvidenceFoldersByAssessmentResponseTypeDef](#getevidencefoldersbyassessmentresponsetypedef)
   - [GetEvidenceRequestRequestTypeDef](#getevidencerequestrequesttypedef)
   - [GetEvidenceResponseTypeDef](#getevidenceresponsetypedef)
+  - [GetInsightsByAssessmentRequestRequestTypeDef](#getinsightsbyassessmentrequestrequesttypedef)
+  - [GetInsightsByAssessmentResponseTypeDef](#getinsightsbyassessmentresponsetypedef)
+  - [GetInsightsResponseTypeDef](#getinsightsresponsetypedef)
   - [GetOrganizationAdminAccountResponseTypeDef](#getorganizationadminaccountresponsetypedef)
   - [GetServicesInScopeResponseTypeDef](#getservicesinscoperesponsetypedef)
   - [GetSettingsRequestRequestTypeDef](#getsettingsrequestrequesttypedef)
   - [GetSettingsResponseTypeDef](#getsettingsresponsetypedef)
+  - [InsightsByAssessmentTypeDef](#insightsbyassessmenttypedef)
+  - [InsightsTypeDef](#insightstypedef)
+  - [ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef](#listassessmentcontrolinsightsbycontroldomainrequestrequesttypedef)
+  - [ListAssessmentControlInsightsByControlDomainResponseTypeDef](#listassessmentcontrolinsightsbycontroldomainresponsetypedef)
   - [ListAssessmentFrameworkShareRequestsRequestRequestTypeDef](#listassessmentframeworksharerequestsrequestrequesttypedef)
   - [ListAssessmentFrameworkShareRequestsResponseTypeDef](#listassessmentframeworksharerequestsresponsetypedef)
   - [ListAssessmentFrameworksRequestRequestTypeDef](#listassessmentframeworksrequestrequesttypedef)
@@ -103,6 +114,12 @@ type annotations stubs module
   - [ListAssessmentReportsResponseTypeDef](#listassessmentreportsresponsetypedef)
   - [ListAssessmentsRequestRequestTypeDef](#listassessmentsrequestrequesttypedef)
   - [ListAssessmentsResponseTypeDef](#listassessmentsresponsetypedef)
+  - [ListControlDomainInsightsByAssessmentRequestRequestTypeDef](#listcontroldomaininsightsbyassessmentrequestrequesttypedef)
+  - [ListControlDomainInsightsByAssessmentResponseTypeDef](#listcontroldomaininsightsbyassessmentresponsetypedef)
+  - [ListControlDomainInsightsRequestRequestTypeDef](#listcontroldomaininsightsrequestrequesttypedef)
+  - [ListControlDomainInsightsResponseTypeDef](#listcontroldomaininsightsresponsetypedef)
+  - [ListControlInsightsByControlDomainRequestRequestTypeDef](#listcontrolinsightsbycontroldomainrequestrequesttypedef)
+  - [ListControlInsightsByControlDomainResponseTypeDef](#listcontrolinsightsbycontroldomainresponsetypedef)
   - [ListControlsRequestRequestTypeDef](#listcontrolsrequestrequesttypedef)
   - [ListControlsResponseTypeDef](#listcontrolsresponsetypedef)
   - [ListKeywordsForDataSourceRequestRequestTypeDef](#listkeywordsfordatasourcerequestrequesttypedef)
@@ -617,6 +634,51 @@ Optional fields:
 - `commentBody`: `str`
 - `postedDate`: `datetime`
 
+## ControlDomainInsightsTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ControlDomainInsightsTypeDef
+```
+
+Optional fields:
+
+- `name`: `str`
+- `id`: `str`
+- `controlsCountByNoncompliantEvidence`: `int`
+- `totalControlsCount`: `int`
+- `evidenceInsights`:
+  [EvidenceInsightsTypeDef](./type_defs.md#evidenceinsightstypedef)
+- `lastUpdated`: `datetime`
+
+## ControlInsightsMetadataByAssessmentItemTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ControlInsightsMetadataByAssessmentItemTypeDef
+```
+
+Optional fields:
+
+- `name`: `str`
+- `id`: `str`
+- `evidenceInsights`:
+  [EvidenceInsightsTypeDef](./type_defs.md#evidenceinsightstypedef)
+- `controlSetName`: `str`
+- `lastUpdated`: `datetime`
+
+## ControlInsightsMetadataItemTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ControlInsightsMetadataItemTypeDef
+```
+
+Optional fields:
+
+- `name`: `str`
+- `id`: `str`
+- `evidenceInsights`:
+  [EvidenceInsightsTypeDef](./type_defs.md#evidenceinsightstypedef)
+- `lastUpdated`: `datetime`
+
 ## ControlMappingSourceTypeDef
 
 ```python
@@ -985,6 +1047,18 @@ Required fields:
 - `assessmentId`: `str`
 - `evidenceFolderId`: `str`
 
+## EvidenceInsightsTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import EvidenceInsightsTypeDef
+```
+
+Optional fields:
+
+- `noncompliantEvidenceCount`: `int`
+- `compliantEvidenceCount`: `int`
+- `inconclusiveEvidenceCount`: `int`
+
 ## EvidenceTypeDef
 
 ```python
@@ -1344,6 +1418,41 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetInsightsByAssessmentRequestRequestTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import GetInsightsByAssessmentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `assessmentId`: `str`
+
+## GetInsightsByAssessmentResponseTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import GetInsightsByAssessmentResponseTypeDef
+```
+
+Required fields:
+
+- `insights`:
+  [InsightsByAssessmentTypeDef](./type_defs.md#insightsbyassessmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetInsightsResponseTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import GetInsightsResponseTypeDef
+```
+
+Required fields:
+
+- `insights`: [InsightsTypeDef](./type_defs.md#insightstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetOrganizationAdminAccountResponseTypeDef
 
 ```python
@@ -1389,6 +1498,67 @@ from mypy_boto3_auditmanager.type_defs import GetSettingsResponseTypeDef
 Required fields:
 
 - `settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## InsightsByAssessmentTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import InsightsByAssessmentTypeDef
+```
+
+Optional fields:
+
+- `noncompliantEvidenceCount`: `int`
+- `compliantEvidenceCount`: `int`
+- `inconclusiveEvidenceCount`: `int`
+- `assessmentControlsCountByNoncompliantEvidence`: `int`
+- `totalAssessmentControlsCount`: `int`
+- `lastUpdated`: `datetime`
+
+## InsightsTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import InsightsTypeDef
+```
+
+Optional fields:
+
+- `activeAssessmentsCount`: `int`
+- `noncompliantEvidenceCount`: `int`
+- `compliantEvidenceCount`: `int`
+- `inconclusiveEvidenceCount`: `int`
+- `assessmentControlsCountByNoncompliantEvidence`: `int`
+- `totalAssessmentControlsCount`: `int`
+- `lastUpdated`: `datetime`
+
+## ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef
+```
+
+Required fields:
+
+- `controlDomainId`: `str`
+- `assessmentId`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListAssessmentControlInsightsByControlDomainResponseTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ListAssessmentControlInsightsByControlDomainResponseTypeDef
+```
+
+Required fields:
+
+- `controlInsightsByAssessment`:
+  `List`\[[ControlInsightsMetadataByAssessmentItemTypeDef](./type_defs.md#controlinsightsmetadatabyassessmentitemtypedef)\]
+- `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1483,6 +1653,7 @@ from mypy_boto3_auditmanager.type_defs import ListAssessmentsRequestRequestTypeD
 
 Optional fields:
 
+- `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -1496,6 +1667,89 @@ Required fields:
 
 - `assessmentMetadata`:
   `List`\[[AssessmentMetadataItemTypeDef](./type_defs.md#assessmentmetadataitemtypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListControlDomainInsightsByAssessmentRequestRequestTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ListControlDomainInsightsByAssessmentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `assessmentId`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListControlDomainInsightsByAssessmentResponseTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ListControlDomainInsightsByAssessmentResponseTypeDef
+```
+
+Required fields:
+
+- `controlDomainInsights`:
+  `List`\[[ControlDomainInsightsTypeDef](./type_defs.md#controldomaininsightstypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListControlDomainInsightsRequestRequestTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ListControlDomainInsightsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListControlDomainInsightsResponseTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ListControlDomainInsightsResponseTypeDef
+```
+
+Required fields:
+
+- `controlDomainInsights`:
+  `List`\[[ControlDomainInsightsTypeDef](./type_defs.md#controldomaininsightstypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListControlInsightsByControlDomainRequestRequestTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ListControlInsightsByControlDomainRequestRequestTypeDef
+```
+
+Required fields:
+
+- `controlDomainId`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListControlInsightsByControlDomainResponseTypeDef
+
+```python
+from mypy_boto3_auditmanager.type_defs import ListControlInsightsByControlDomainResponseTypeDef
+```
+
+Required fields:
+
+- `controlInsightsMetadata`:
+  `List`\[[ControlInsightsMetadataItemTypeDef](./type_defs.md#controlinsightsmetadataitemtypedef)\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

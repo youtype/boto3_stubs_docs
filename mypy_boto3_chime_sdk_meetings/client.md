@@ -80,7 +80,7 @@ Returns [Exceptions](#exceptions).
 
 ### batch_create_attendee
 
-Creates a group of meeting attendees.
+Creates up to 100 attendees for an active Amazon Chime SDK meeting.
 
 Type annotations for `boto3.client("chime-sdk-meetings").batch_create_attendee`
 method.

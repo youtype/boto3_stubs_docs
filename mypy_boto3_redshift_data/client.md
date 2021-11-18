@@ -59,7 +59,6 @@ Exceptions:
 - `Exceptions.ActiveStatementsExceededException`
 - `Exceptions.BatchExecuteStatementException`
 - `Exceptions.ClientError`
-- `Exceptions.DatabaseConnectionException`
 - `Exceptions.ExecuteStatementException`
 - `Exceptions.InternalServerException`
 - `Exceptions.ResourceNotFoundException`
@@ -94,9 +93,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
 - `Sqls`: `Sequence`\[`str`\] *(required)*
-- `ClusterIdentifier`: `str`
 - `DbUser`: `str`
 - `SecretArn`: `str`
 - `StatementName`: `str`
@@ -173,8 +172,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
-- `ClusterIdentifier`: `str`
 - `ConnectedDatabase`: `str`
 - `DbUser`: `str`
 - `MaxResults`: `int`
@@ -201,9 +200,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
 - `Sql`: `str` *(required)*
-- `ClusterIdentifier`: `str`
 - `DbUser`: `str`
 - `Parameters`:
   `Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
@@ -268,8 +267,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
-- `ClusterIdentifier`: `str`
 - `DbUser`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -292,8 +291,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
-- `ClusterIdentifier`: `str`
 - `ConnectedDatabase`: `str`
 - `DbUser`: `str`
 - `MaxResults`: `int`
@@ -341,8 +340,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
-- `ClusterIdentifier`: `str`
 - `ConnectedDatabase`: `str`
 - `DbUser`: `str`
 - `MaxResults`: `int`

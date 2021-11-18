@@ -19,17 +19,20 @@ type annotations stubs module
     - [create_project](#create_project)
     - [create_recipe](#create_recipe)
     - [create_recipe_job](#create_recipe_job)
+    - [create_ruleset](#create_ruleset)
     - [create_schedule](#create_schedule)
     - [delete_dataset](#delete_dataset)
     - [delete_job](#delete_job)
     - [delete_project](#delete_project)
     - [delete_recipe_version](#delete_recipe_version)
+    - [delete_ruleset](#delete_ruleset)
     - [delete_schedule](#delete_schedule)
     - [describe_dataset](#describe_dataset)
     - [describe_job](#describe_job)
     - [describe_job_run](#describe_job_run)
     - [describe_project](#describe_project)
     - [describe_recipe](#describe_recipe)
+    - [describe_ruleset](#describe_ruleset)
     - [describe_schedule](#describe_schedule)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_datasets](#list_datasets)
@@ -38,6 +41,7 @@ type annotations stubs module
     - [list_projects](#list_projects)
     - [list_recipe_versions](#list_recipe_versions)
     - [list_recipes](#list_recipes)
+    - [list_rulesets](#list_rulesets)
     - [list_schedules](#list_schedules)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [publish_recipe](#publish_recipe)
@@ -52,6 +56,7 @@ type annotations stubs module
     - [update_project](#update_project)
     - [update_recipe](#update_recipe)
     - [update_recipe_job](#update_recipe_job)
+    - [update_ruleset](#update_ruleset)
     - [update_schedule](#update_schedule)
     - [get_paginator](#get_paginator)
 
@@ -192,6 +197,8 @@ Keyword-only arguments:
 - `MaxRetries`: `int`
 - `Configuration`:
   [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
+- `ValidationConfigurations`:
+  `Sequence`\[[ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)\]
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `Timeout`: `int`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
@@ -284,6 +291,30 @@ Keyword-only arguments:
 
 Returns
 [CreateRecipeJobResponseTypeDef](./type_defs.md#createrecipejobresponsetypedef).
+
+### create_ruleset
+
+Creates a new ruleset that can be used in a profile job to validate the data
+quality of a dataset.
+
+Type annotations for `boto3.client("databrew").create_ruleset` method.
+
+Boto3 documentation:
+[GlueDataBrew.Client.create_ruleset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_ruleset)
+
+Arguments mapping described in
+[CreateRulesetRequestRequestTypeDef](./type_defs.md#createrulesetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `TargetArn`: `str` *(required)*
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+- `Description`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+Returns
+[CreateRulesetResponseTypeDef](./type_defs.md#createrulesetresponsetypedef).
 
 ### create_schedule
 
@@ -382,6 +413,25 @@ Keyword-only arguments:
 
 Returns
 [DeleteRecipeVersionResponseTypeDef](./type_defs.md#deleterecipeversionresponsetypedef).
+
+### delete_ruleset
+
+Deletes a ruleset.
+
+Type annotations for `boto3.client("databrew").delete_ruleset` method.
+
+Boto3 documentation:
+[GlueDataBrew.Client.delete_ruleset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_ruleset)
+
+Arguments mapping described in
+[DeleteRulesetRequestRequestTypeDef](./type_defs.md#deleterulesetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[DeleteRulesetResponseTypeDef](./type_defs.md#deleterulesetresponsetypedef).
 
 ### delete_schedule
 
@@ -499,6 +549,25 @@ Keyword-only arguments:
 
 Returns
 [DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef).
+
+### describe_ruleset
+
+Retrieves detailed information about the ruleset.
+
+Type annotations for `boto3.client("databrew").describe_ruleset` method.
+
+Boto3 documentation:
+[GlueDataBrew.Client.describe_ruleset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_ruleset)
+
+Arguments mapping described in
+[DescribeRulesetRequestRequestTypeDef](./type_defs.md#describerulesetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[DescribeRulesetResponseTypeDef](./type_defs.md#describerulesetresponsetypedef).
 
 ### describe_schedule
 
@@ -661,6 +730,28 @@ Keyword-only arguments:
 
 Returns
 [ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef).
+
+### list_rulesets
+
+List all rulesets available in the current account or rulesets associated with
+a specific resource (dataset).
+
+Type annotations for `boto3.client("databrew").list_rulesets` method.
+
+Boto3 documentation:
+[GlueDataBrew.Client.list_rulesets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_rulesets)
+
+Arguments mapping described in
+[ListRulesetsRequestRequestTypeDef](./type_defs.md#listrulesetsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `TargetArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListRulesetsResponseTypeDef](./type_defs.md#listrulesetsresponsetypedef).
 
 ### list_schedules
 
@@ -894,6 +985,8 @@ Keyword-only arguments:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
+- `ValidationConfigurations`:
+  `Sequence`\[[ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)\]
 - `Timeout`: `int`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 
@@ -973,6 +1066,27 @@ Keyword-only arguments:
 Returns
 [UpdateRecipeJobResponseTypeDef](./type_defs.md#updaterecipejobresponsetypedef).
 
+### update_ruleset
+
+Updates specified ruleset.
+
+Type annotations for `boto3.client("databrew").update_ruleset` method.
+
+Boto3 documentation:
+[GlueDataBrew.Client.update_ruleset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_ruleset)
+
+Arguments mapping described in
+[UpdateRulesetRequestRequestTypeDef](./type_defs.md#updaterulesetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+- `Description`: `str`
+
+Returns
+[UpdateRulesetResponseTypeDef](./type_defs.md#updaterulesetresponsetypedef).
+
 ### update_schedule
 
 Modifies the definition of an existing DataBrew schedule.
@@ -1011,5 +1125,7 @@ overloads.
   [ListRecipeVersionsPaginator](./paginators.md#listrecipeversionspaginator)
 - `client.get_paginator("list_recipes")` ->
   [ListRecipesPaginator](./paginators.md#listrecipespaginator)
+- `client.get_paginator("list_rulesets")` ->
+  [ListRulesetsPaginator](./paginators.md#listrulesetspaginator)
 - `client.get_paginator("list_schedules")` ->
   [ListSchedulesPaginator](./paginators.md#listschedulespaginator)

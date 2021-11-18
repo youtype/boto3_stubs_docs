@@ -28,11 +28,13 @@ type annotations stubs module
     - [get_recording_configuration](#get_recording_configuration)
     - [get_stream](#get_stream)
     - [get_stream_key](#get_stream_key)
+    - [get_stream_session](#get_stream_session)
     - [import_playback_key_pair](#import_playback_key_pair)
     - [list_channels](#list_channels)
     - [list_playback_key_pairs](#list_playback_key_pairs)
     - [list_recording_configurations](#list_recording_configurations)
     - [list_stream_keys](#list_stream_keys)
+    - [list_stream_sessions](#list_stream_sessions)
     - [list_streams](#list_streams)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [put_metadata](#put_metadata)
@@ -398,6 +400,26 @@ Keyword-only arguments:
 Returns
 [GetStreamKeyResponseTypeDef](./type_defs.md#getstreamkeyresponsetypedef).
 
+### get_stream_session
+
+Gets metadata on a specified stream.
+
+Type annotations for `boto3.client("ivs").get_stream_session` method.
+
+Boto3 documentation:
+[IVS.Client.get_stream_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream_session)
+
+Arguments mapping described in
+[GetStreamSessionRequestRequestTypeDef](./type_defs.md#getstreamsessionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `channelArn`: `str` *(required)*
+- `streamId`: `str`
+
+Returns
+[GetStreamSessionResponseTypeDef](./type_defs.md#getstreamsessionresponsetypedef).
+
 ### import_playback_key_pair
 
 Imports the public portion of a new key pair and returns its `arn` and
@@ -506,6 +528,28 @@ Keyword-only arguments:
 Returns
 [ListStreamKeysResponseTypeDef](./type_defs.md#liststreamkeysresponsetypedef).
 
+### list_stream_sessions
+
+Gets a summary of current and previous streams for a specified channel in your
+account, in the AWS region where the API request is processed.
+
+Type annotations for `boto3.client("ivs").list_stream_sessions` method.
+
+Boto3 documentation:
+[IVS.Client.list_stream_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_stream_sessions)
+
+Arguments mapping described in
+[ListStreamSessionsRequestRequestTypeDef](./type_defs.md#liststreamsessionsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `channelArn`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListStreamSessionsResponseTypeDef](./type_defs.md#liststreamsessionsresponsetypedef).
+
 ### list_streams
 
 Gets summary information about live streams in your account, in the Amazon Web
@@ -521,6 +565,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `filterBy`: [StreamFiltersTypeDef](./type_defs.md#streamfilterstypedef)
 - `maxResults`: `int`
 - `nextToken`: `str`
 

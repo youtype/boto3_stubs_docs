@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
 - [Typed dictionaries for boto3 IVS module](#typed-dictionaries-for-boto3-ivs-module)
+  - [AudioConfigurationTypeDef](#audioconfigurationtypedef)
   - [BatchErrorTypeDef](#batcherrortypedef)
   - [BatchGetChannelRequestRequestTypeDef](#batchgetchannelrequestrequesttypedef)
   - [BatchGetChannelResponseTypeDef](#batchgetchannelresponsetypedef)
@@ -36,8 +37,11 @@ type annotations stubs module
   - [GetStreamKeyResponseTypeDef](#getstreamkeyresponsetypedef)
   - [GetStreamRequestRequestTypeDef](#getstreamrequestrequesttypedef)
   - [GetStreamResponseTypeDef](#getstreamresponsetypedef)
+  - [GetStreamSessionRequestRequestTypeDef](#getstreamsessionrequestrequesttypedef)
+  - [GetStreamSessionResponseTypeDef](#getstreamsessionresponsetypedef)
   - [ImportPlaybackKeyPairRequestRequestTypeDef](#importplaybackkeypairrequestrequesttypedef)
   - [ImportPlaybackKeyPairResponseTypeDef](#importplaybackkeypairresponsetypedef)
+  - [IngestConfigurationTypeDef](#ingestconfigurationtypedef)
   - [ListChannelsRequestRequestTypeDef](#listchannelsrequestrequesttypedef)
   - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
   - [ListPlaybackKeyPairsRequestRequestTypeDef](#listplaybackkeypairsrequestrequesttypedef)
@@ -46,6 +50,8 @@ type annotations stubs module
   - [ListRecordingConfigurationsResponseTypeDef](#listrecordingconfigurationsresponsetypedef)
   - [ListStreamKeysRequestRequestTypeDef](#liststreamkeysrequestrequesttypedef)
   - [ListStreamKeysResponseTypeDef](#liststreamkeysresponsetypedef)
+  - [ListStreamSessionsRequestRequestTypeDef](#liststreamsessionsrequestrequesttypedef)
+  - [ListStreamSessionsResponseTypeDef](#liststreamsessionsresponsetypedef)
   - [ListStreamsRequestRequestTypeDef](#liststreamsrequestrequesttypedef)
   - [ListStreamsResponseTypeDef](#liststreamsresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
@@ -59,14 +65,32 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3DestinationConfigurationTypeDef](#s3destinationconfigurationtypedef)
   - [StopStreamRequestRequestTypeDef](#stopstreamrequestrequesttypedef)
+  - [StreamEventTypeDef](#streameventtypedef)
+  - [StreamFiltersTypeDef](#streamfilterstypedef)
   - [StreamKeySummaryTypeDef](#streamkeysummarytypedef)
   - [StreamKeyTypeDef](#streamkeytypedef)
+  - [StreamSessionSummaryTypeDef](#streamsessionsummarytypedef)
+  - [StreamSessionTypeDef](#streamsessiontypedef)
   - [StreamSummaryTypeDef](#streamsummarytypedef)
   - [StreamTypeDef](#streamtypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateChannelRequestRequestTypeDef](#updatechannelrequestrequesttypedef)
   - [UpdateChannelResponseTypeDef](#updatechannelresponsetypedef)
+  - [VideoConfigurationTypeDef](#videoconfigurationtypedef)
+
+## AudioConfigurationTypeDef
+
+```python
+from mypy_boto3_ivs.type_defs import AudioConfigurationTypeDef
+```
+
+Optional fields:
+
+- `channels`: `int`
+- `codec`: `str`
+- `sampleRate`: `int`
+- `targetBitrate`: `int`
 
 ## BatchErrorTypeDef
 
@@ -404,6 +428,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetStreamSessionRequestRequestTypeDef
+
+```python
+from mypy_boto3_ivs.type_defs import GetStreamSessionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `channelArn`: `str`
+
+Optional fields:
+
+- `streamId`: `str`
+
+## GetStreamSessionResponseTypeDef
+
+```python
+from mypy_boto3_ivs.type_defs import GetStreamSessionResponseTypeDef
+```
+
+Required fields:
+
+- `streamSession`: [StreamSessionTypeDef](./type_defs.md#streamsessiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ImportPlaybackKeyPairRequestRequestTypeDef
 
 ```python
@@ -430,6 +480,19 @@ Required fields:
 - `keyPair`: [PlaybackKeyPairTypeDef](./type_defs.md#playbackkeypairtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## IngestConfigurationTypeDef
+
+```python
+from mypy_boto3_ivs.type_defs import IngestConfigurationTypeDef
+```
+
+Optional fields:
+
+- `audio`:
+  [AudioConfigurationTypeDef](./type_defs.md#audioconfigurationtypedef)
+- `video`:
+  [VideoConfigurationTypeDef](./type_defs.md#videoconfigurationtypedef)
 
 ## ListChannelsRequestRequestTypeDef
 
@@ -537,6 +600,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListStreamSessionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ivs.type_defs import ListStreamSessionsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `channelArn`: `str`
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListStreamSessionsResponseTypeDef
+
+```python
+from mypy_boto3_ivs.type_defs import ListStreamSessionsResponseTypeDef
+```
+
+Required fields:
+
+- `nextToken`: `str`
+- `streamSessions`:
+  `List`\[[StreamSessionSummaryTypeDef](./type_defs.md#streamsessionsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListStreamsRequestRequestTypeDef
 
 ```python
@@ -545,6 +637,7 @@ from mypy_boto3_ivs.type_defs import ListStreamsRequestRequestTypeDef
 
 Optional fields:
 
+- `filterBy`: [StreamFiltersTypeDef](./type_defs.md#streamfilterstypedef)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -704,6 +797,28 @@ Required fields:
 
 - `channelArn`: `str`
 
+## StreamEventTypeDef
+
+```python
+from mypy_boto3_ivs.type_defs import StreamEventTypeDef
+```
+
+Optional fields:
+
+- `eventTime`: `datetime`
+- `name`: `str`
+- `type`: `str`
+
+## StreamFiltersTypeDef
+
+```python
+from mypy_boto3_ivs.type_defs import StreamFiltersTypeDef
+```
+
+Optional fields:
+
+- `health`: [StreamHealthType](./literals.md#streamhealthtype)
+
 ## StreamKeySummaryTypeDef
 
 ```python
@@ -729,6 +844,38 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `value`: `str`
 
+## StreamSessionSummaryTypeDef
+
+```python
+from mypy_boto3_ivs.type_defs import StreamSessionSummaryTypeDef
+```
+
+Optional fields:
+
+- `endTime`: `datetime`
+- `hasErrorEvent`: `bool`
+- `startTime`: `datetime`
+- `streamId`: `str`
+
+## StreamSessionTypeDef
+
+```python
+from mypy_boto3_ivs.type_defs import StreamSessionTypeDef
+```
+
+Optional fields:
+
+- `channel`: [ChannelTypeDef](./type_defs.md#channeltypedef)
+- `endTime`: `datetime`
+- `ingestConfiguration`:
+  [IngestConfigurationTypeDef](./type_defs.md#ingestconfigurationtypedef)
+- `recordingConfiguration`:
+  [RecordingConfigurationTypeDef](./type_defs.md#recordingconfigurationtypedef)
+- `startTime`: `datetime`
+- `streamId`: `str`
+- `truncatedEvents`:
+  `List`\[[StreamEventTypeDef](./type_defs.md#streameventtypedef)\]
+
 ## StreamSummaryTypeDef
 
 ```python
@@ -741,6 +888,7 @@ Optional fields:
 - `health`: [StreamHealthType](./literals.md#streamhealthtype)
 - `startTime`: `datetime`
 - `state`: [StreamStateType](./literals.md#streamstatetype)
+- `streamId`: `str`
 - `viewerCount`: `int`
 
 ## StreamTypeDef
@@ -756,6 +904,7 @@ Optional fields:
 - `playbackUrl`: `str`
 - `startTime`: `datetime`
 - `state`: [StreamStateType](./literals.md#streamstatetype)
+- `streamId`: `str`
 - `viewerCount`: `int`
 
 ## TagResourceRequestRequestTypeDef
@@ -809,3 +958,20 @@ Required fields:
 - `channel`: [ChannelTypeDef](./type_defs.md#channeltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## VideoConfigurationTypeDef
+
+```python
+from mypy_boto3_ivs.type_defs import VideoConfigurationTypeDef
+```
+
+Optional fields:
+
+- `avcLevel`: `str`
+- `avcProfile`: `str`
+- `codec`: `str`
+- `encoder`: `str`
+- `targetBitrate`: `int`
+- `targetFramerate`: `int`
+- `videoHeight`: `int`
+- `videoWidth`: `int`

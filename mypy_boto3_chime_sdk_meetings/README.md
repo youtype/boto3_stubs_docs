@@ -66,14 +66,18 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_chime_sdk_meetings.literals import TranscribeLanguageCodeType, ...
+from mypy_boto3_chime_sdk_meetings.literals import TranscribeContentIdentificationTypeType, ...
 ```
 
+- [TranscribeContentIdentificationTypeType](./literals.md#transcribecontentidentificationtypetype)
+- [TranscribeContentRedactionTypeType](./literals.md#transcribecontentredactiontypetype)
 - [TranscribeLanguageCodeType](./literals.md#transcribelanguagecodetype)
+- [TranscribeMedicalContentIdentificationTypeType](./literals.md#transcribemedicalcontentidentificationtypetype)
 - [TranscribeMedicalLanguageCodeType](./literals.md#transcribemedicallanguagecodetype)
 - [TranscribeMedicalRegionType](./literals.md#transcribemedicalregiontype)
 - [TranscribeMedicalSpecialtyType](./literals.md#transcribemedicalspecialtytype)
 - [TranscribeMedicalTypeType](./literals.md#transcribemedicaltypetype)
+- [TranscribePartialResultsStabilityType](./literals.md#transcribepartialresultsstabilitytype)
 - [TranscribeRegionType](./literals.md#transcriberegiontype)
 - [TranscribeVocabularyFilterMethodType](./literals.md#transcribevocabularyfiltermethodtype)
 - [ServiceName](./literals.md#servicename)

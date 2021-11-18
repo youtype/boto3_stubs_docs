@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 - [Typed dictionaries for boto3 GlueDataBrew module](#typed-dictionaries-for-boto3-gluedatabrew-module)
+  - [AllowedStatisticsTypeDef](#allowedstatisticstypedef)
   - [BatchDeleteRecipeVersionRequestRequestTypeDef](#batchdeleterecipeversionrequestrequesttypedef)
   - [BatchDeleteRecipeVersionResponseTypeDef](#batchdeleterecipeversionresponsetypedef)
   - [ColumnSelectorTypeDef](#columnselectortypedef)
@@ -23,6 +24,8 @@ type annotations stubs module
   - [CreateRecipeJobResponseTypeDef](#createrecipejobresponsetypedef)
   - [CreateRecipeRequestRequestTypeDef](#createreciperequestrequesttypedef)
   - [CreateRecipeResponseTypeDef](#createreciperesponsetypedef)
+  - [CreateRulesetRequestRequestTypeDef](#createrulesetrequestrequesttypedef)
+  - [CreateRulesetResponseTypeDef](#createrulesetresponsetypedef)
   - [CreateScheduleRequestRequestTypeDef](#createschedulerequestrequesttypedef)
   - [CreateScheduleResponseTypeDef](#createscheduleresponsetypedef)
   - [CsvOptionsTypeDef](#csvoptionstypedef)
@@ -43,6 +46,8 @@ type annotations stubs module
   - [DeleteProjectResponseTypeDef](#deleteprojectresponsetypedef)
   - [DeleteRecipeVersionRequestRequestTypeDef](#deleterecipeversionrequestrequesttypedef)
   - [DeleteRecipeVersionResponseTypeDef](#deleterecipeversionresponsetypedef)
+  - [DeleteRulesetRequestRequestTypeDef](#deleterulesetrequestrequesttypedef)
+  - [DeleteRulesetResponseTypeDef](#deleterulesetresponsetypedef)
   - [DeleteScheduleRequestRequestTypeDef](#deleteschedulerequestrequesttypedef)
   - [DeleteScheduleResponseTypeDef](#deletescheduleresponsetypedef)
   - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
@@ -55,8 +60,11 @@ type annotations stubs module
   - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
   - [DescribeRecipeRequestRequestTypeDef](#describereciperequestrequesttypedef)
   - [DescribeRecipeResponseTypeDef](#describereciperesponsetypedef)
+  - [DescribeRulesetRequestRequestTypeDef](#describerulesetrequestrequesttypedef)
+  - [DescribeRulesetResponseTypeDef](#describerulesetresponsetypedef)
   - [DescribeScheduleRequestRequestTypeDef](#describeschedulerequestrequesttypedef)
   - [DescribeScheduleResponseTypeDef](#describescheduleresponsetypedef)
+  - [EntityDetectorConfigurationTypeDef](#entitydetectorconfigurationtypedef)
   - [ExcelOptionsTypeDef](#exceloptionstypedef)
   - [FilesLimitTypeDef](#fileslimittypedef)
   - [FilterExpressionTypeDef](#filterexpressiontypedef)
@@ -78,10 +86,13 @@ type annotations stubs module
   - [ListRecipeVersionsResponseTypeDef](#listrecipeversionsresponsetypedef)
   - [ListRecipesRequestRequestTypeDef](#listrecipesrequestrequesttypedef)
   - [ListRecipesResponseTypeDef](#listrecipesresponsetypedef)
+  - [ListRulesetsRequestRequestTypeDef](#listrulesetsrequestrequesttypedef)
+  - [ListRulesetsResponseTypeDef](#listrulesetsresponsetypedef)
   - [ListSchedulesRequestRequestTypeDef](#listschedulesrequestrequesttypedef)
   - [ListSchedulesResponseTypeDef](#listschedulesresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [MetadataTypeDef](#metadatatypedef)
   - [OutputFormatOptionsTypeDef](#outputformatoptionstypedef)
   - [OutputTypeDef](#outputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
@@ -96,6 +107,8 @@ type annotations stubs module
   - [RecipeTypeDef](#recipetypedef)
   - [RecipeVersionErrorDetailTypeDef](#recipeversionerrordetailtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RuleTypeDef](#ruletypedef)
+  - [RulesetItemTypeDef](#rulesetitemtypedef)
   - [S3LocationTypeDef](#s3locationtypedef)
   - [S3TableOutputOptionsTypeDef](#s3tableoutputoptionstypedef)
   - [SampleTypeDef](#sampletypedef)
@@ -111,6 +124,7 @@ type annotations stubs module
   - [StopJobRunRequestRequestTypeDef](#stopjobrunrequestrequesttypedef)
   - [StopJobRunResponseTypeDef](#stopjobrunresponsetypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [ThresholdTypeDef](#thresholdtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateDatasetRequestRequestTypeDef](#updatedatasetrequestrequesttypedef)
   - [UpdateDatasetResponseTypeDef](#updatedatasetresponsetypedef)
@@ -122,9 +136,22 @@ type annotations stubs module
   - [UpdateRecipeJobResponseTypeDef](#updaterecipejobresponsetypedef)
   - [UpdateRecipeRequestRequestTypeDef](#updatereciperequestrequesttypedef)
   - [UpdateRecipeResponseTypeDef](#updatereciperesponsetypedef)
+  - [UpdateRulesetRequestRequestTypeDef](#updaterulesetrequestrequesttypedef)
+  - [UpdateRulesetResponseTypeDef](#updaterulesetresponsetypedef)
   - [UpdateScheduleRequestRequestTypeDef](#updateschedulerequestrequesttypedef)
   - [UpdateScheduleResponseTypeDef](#updatescheduleresponsetypedef)
+  - [ValidationConfigurationTypeDef](#validationconfigurationtypedef)
   - [ViewFrameTypeDef](#viewframetypedef)
+
+## AllowedStatisticsTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import AllowedStatisticsTypeDef
+```
+
+Required fields:
+
+- `Statistics`: `Sequence`\[`str`\]
 
 ## BatchDeleteRecipeVersionRequestRequestTypeDef
 
@@ -245,6 +272,8 @@ Optional fields:
 - `MaxRetries`: `int`
 - `Configuration`:
   [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
+- `ValidationConfigurations`:
+  `Sequence`\[[ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)\]
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `Timeout`: `int`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
@@ -361,6 +390,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateRulesetRequestRequestTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import CreateRulesetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `TargetArn`: `str`
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+
+Optional fields:
+
+- `Description`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+## CreateRulesetResponseTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import CreateRulesetResponseTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateScheduleRequestRequestTypeDef
 
 ```python
@@ -455,11 +513,12 @@ from mypy_boto3_databrew.type_defs import DatabaseInputDefinitionTypeDef
 Required fields:
 
 - `GlueConnectionName`: `str`
-- `DatabaseTableName`: `str`
 
 Optional fields:
 
+- `DatabaseTableName`: `str`
 - `TempDirectory`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+- `QueryString`: `str`
 
 ## DatabaseOutputTypeDef
 
@@ -640,6 +699,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DeleteRulesetRequestRequestTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import DeleteRulesetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeleteRulesetResponseTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import DeleteRulesetResponseTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DeleteScheduleRequestRequestTypeDef
 
 ```python
@@ -733,6 +814,8 @@ Required fields:
 - `ProjectName`: `str`
 - `ProfileConfiguration`:
   [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
+- `ValidationConfigurations`:
+  `List`\[[ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)\]
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
 - `ResourceArn`: `str`
@@ -770,6 +853,8 @@ Required fields:
 - `JobName`: `str`
 - `ProfileConfiguration`:
   [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
+- `ValidationConfigurations`:
+  `List`\[[ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)\]
 - `RunId`: `str`
 - `State`: [JobRunStateType](./literals.md#jobrunstatetype)
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
@@ -860,6 +945,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeRulesetRequestRequestTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import DescribeRulesetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DescribeRulesetResponseTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import DescribeRulesetResponseTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `TargetArn`: `str`
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `CreateDate`: `datetime`
+- `CreatedBy`: `str`
+- `LastModifiedBy`: `str`
+- `LastModifiedDate`: `datetime`
+- `ResourceArn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeScheduleRequestRequestTypeDef
 
 ```python
@@ -889,6 +1005,21 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## EntityDetectorConfigurationTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import EntityDetectorConfigurationTypeDef
+```
+
+Required fields:
+
+- `EntityTypes`: `Sequence`\[`str`\]
+
+Optional fields:
+
+- `AllowedStatistics`:
+  `Sequence`\[[AllowedStatisticsTypeDef](./type_defs.md#allowedstatisticstypedef)\]
 
 ## ExcelOptionsTypeDef
 
@@ -954,6 +1085,7 @@ Optional fields:
   [DataCatalogInputDefinitionTypeDef](./type_defs.md#datacataloginputdefinitiontypedef)
 - `DatabaseInputDefinition`:
   [DatabaseInputDefinitionTypeDef](./type_defs.md#databaseinputdefinitiontypedef)
+- `Metadata`: [MetadataTypeDef](./type_defs.md#metadatatypedef)
 
 ## JobRunTypeDef
 
@@ -983,6 +1115,8 @@ Optional fields:
 - `StartedBy`: `str`
 - `StartedOn`: `datetime`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
+- `ValidationConfigurations`:
+  `List`\[[ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)\]
 
 ## JobSampleTypeDef
 
@@ -1032,6 +1166,8 @@ Optional fields:
 - `Timeout`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
+- `ValidationConfigurations`:
+  `List`\[[ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)\]
 
 ## JsonOptionsTypeDef
 
@@ -1198,6 +1334,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListRulesetsRequestRequestTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import ListRulesetsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `TargetArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListRulesetsResponseTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import ListRulesetsResponseTypeDef
+```
+
+Required fields:
+
+- `Rulesets`: `List`\[[RulesetItemTypeDef](./type_defs.md#rulesetitemtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListSchedulesRequestRequestTypeDef
 
 ```python
@@ -1244,6 +1405,16 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## MetadataTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import MetadataTypeDef
+```
+
+Optional fields:
+
+- `SourceArn`: `str`
 
 ## OutputFormatOptionsTypeDef
 
@@ -1315,6 +1486,8 @@ Optional fields:
   `Sequence`\[[ColumnSelectorTypeDef](./type_defs.md#columnselectortypedef)\]
 - `ColumnStatisticsConfigurations`:
   `Sequence`\[[ColumnStatisticsConfigurationTypeDef](./type_defs.md#columnstatisticsconfigurationtypedef)\]
+- `EntityDetectorConfiguration`:
+  [EntityDetectorConfigurationTypeDef](./type_defs.md#entitydetectorconfigurationtypedef)
 
 ## ProjectTypeDef
 
@@ -1461,6 +1634,48 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## RuleTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import RuleTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `CheckExpression`: `str`
+
+Optional fields:
+
+- `Disabled`: `bool`
+- `SubstitutionMap`: `Mapping`\[`str`, `str`\]
+- `Threshold`: [ThresholdTypeDef](./type_defs.md#thresholdtypedef)
+- `ColumnSelectors`:
+  `Sequence`\[[ColumnSelectorTypeDef](./type_defs.md#columnselectortypedef)\]
+
+## RulesetItemTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import RulesetItemTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `TargetArn`: `str`
+
+Optional fields:
+
+- `AccountId`: `str`
+- `CreatedBy`: `str`
+- `CreateDate`: `datetime`
+- `Description`: `str`
+- `LastModifiedBy`: `str`
+- `LastModifiedDate`: `datetime`
+- `ResourceArn`: `str`
+- `RuleCount`: `int`
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## S3LocationTypeDef
 
@@ -1660,6 +1875,21 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+## ThresholdTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import ThresholdTypeDef
+```
+
+Required fields:
+
+- `Value`: `float`
+
+Optional fields:
+
+- `Type`: [ThresholdTypeType](./literals.md#thresholdtypetype)
+- `Unit`: [ThresholdUnitType](./literals.md#thresholdunittype)
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1721,6 +1951,8 @@ Optional fields:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
+- `ValidationConfigurations`:
+  `Sequence`\[[ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)\]
 - `Timeout`: `int`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 
@@ -1828,6 +2060,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## UpdateRulesetRequestRequestTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import UpdateRulesetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+
+Optional fields:
+
+- `Description`: `str`
+
+## UpdateRulesetResponseTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import UpdateRulesetResponseTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## UpdateScheduleRequestRequestTypeDef
 
 ```python
@@ -1855,6 +2114,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ValidationConfigurationTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import ValidationConfigurationTypeDef
+```
+
+Required fields:
+
+- `RulesetArn`: `str`
+
+Optional fields:
+
+- `ValidationMode`: `Literal['CHECK_ALL']` (see
+  [ValidationModeType](./literals.md#validationmodetype))
+
 ## ViewFrameTypeDef
 
 ```python
@@ -1869,3 +2143,6 @@ Optional fields:
 
 - `ColumnRange`: `int`
 - `HiddenColumns`: `Sequence`\[`str`\]
+- `StartRowIndex`: `int`
+- `RowRange`: `int`
+- `Analytics`: [AnalyticsModeType](./literals.md#analyticsmodetype)

@@ -116,8 +116,7 @@ Returns `bool`.
 
 ### create_application
 
-An application in AppConfig is a logical unit of code that provides
-capabilities for your customers.
+Creates an application.
 
 Type annotations for `boto3.client("appconfig").create_application` method.
 
@@ -138,7 +137,8 @@ Returns
 
 ### create_configuration_profile
 
-Information that enables AppConfig to access the configuration source.
+Creates a configuration profile, which is information that enables AppConfig to
+access the configuration source.
 
 Type annotations for `boto3.client("appconfig").create_configuration_profile`
 method.
@@ -159,14 +159,15 @@ Keyword-only arguments:
 - `Validators`:
   `Sequence`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
 - `Tags`: `Mapping`\[`str`, `str`\]
+- `Type`: `str`
 
 Returns
 [ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
 
 ### create_deployment_strategy
 
-A deployment strategy defines important criteria for rolling out your
-configuration to the designated targets.
+Creates a deployment strategy that defines important criteria for rolling out
+your configuration to the designated targets.
 
 Type annotations for `boto3.client("appconfig").create_deployment_strategy`
 method.
@@ -193,7 +194,7 @@ Returns
 
 ### create_environment
 
-For each application, you define one or more environments.
+Creates an environment.
 
 Type annotations for `boto3.client("appconfig").create_environment` method.
 
@@ -216,7 +217,7 @@ Returns
 
 ### create_hosted_configuration_version
 
-Create a new configuration in the AppConfig configuration store.
+Creates a new configuration in the AppConfig hosted configuration store.
 
 Type annotations for
 `boto3.client("appconfig").create_hosted_configuration_version` method.
@@ -241,7 +242,7 @@ Returns
 
 ### delete_application
 
-Delete an application.
+Deletes an application.
 
 Type annotations for `boto3.client("appconfig").delete_application` method.
 
@@ -257,7 +258,7 @@ Keyword-only arguments:
 
 ### delete_configuration_profile
 
-Delete a configuration profile.
+Deletes a configuration profile.
 
 Type annotations for `boto3.client("appconfig").delete_configuration_profile`
 method.
@@ -275,7 +276,7 @@ Keyword-only arguments:
 
 ### delete_deployment_strategy
 
-Delete a deployment strategy.
+Deletes a deployment strategy.
 
 Type annotations for `boto3.client("appconfig").delete_deployment_strategy`
 method.
@@ -292,7 +293,7 @@ Keyword-only arguments:
 
 ### delete_environment
 
-Delete an environment.
+Deletes an environment.
 
 Type annotations for `boto3.client("appconfig").delete_environment` method.
 
@@ -309,7 +310,8 @@ Keyword-only arguments:
 
 ### delete_hosted_configuration_version
 
-Delete a version of a configuration from the AppConfig configuration store.
+Deletes a version of a configuration from the AppConfig hosted configuration
+store.
 
 Type annotations for
 `boto3.client("appconfig").delete_hosted_configuration_version` method.
@@ -346,7 +348,7 @@ Returns `str`.
 
 ### get_application
 
-Retrieve information about an application.
+Retrieves information about an application.
 
 Type annotations for `boto3.client("appconfig").get_application` method.
 
@@ -365,7 +367,7 @@ Returns
 
 ### get_configuration
 
-Receive information about a configuration.
+Retrieves information about a configuration.
 
 Type annotations for `boto3.client("appconfig").get_configuration` method.
 
@@ -387,7 +389,7 @@ Returns [ConfigurationTypeDef](./type_defs.md#configurationtypedef).
 
 ### get_configuration_profile
 
-Retrieve information about a configuration profile.
+Retrieves information about a configuration profile.
 
 Type annotations for `boto3.client("appconfig").get_configuration_profile`
 method.
@@ -408,7 +410,7 @@ Returns
 
 ### get_deployment
 
-Retrieve information about a configuration deployment.
+Retrieves information about a configuration deployment.
 
 Type annotations for `boto3.client("appconfig").get_deployment` method.
 
@@ -428,7 +430,7 @@ Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 
 ### get_deployment_strategy
 
-Retrieve information about a deployment strategy.
+Retrieves information about a deployment strategy.
 
 Type annotations for `boto3.client("appconfig").get_deployment_strategy`
 method.
@@ -448,7 +450,7 @@ Returns
 
 ### get_environment
 
-Retrieve information about an environment.
+Retrieves information about an environment.
 
 Type annotations for `boto3.client("appconfig").get_environment` method.
 
@@ -468,7 +470,7 @@ Returns
 
 ### get_hosted_configuration_version
 
-Get information about a specific configuration version.
+Retrieves information about a specific configuration version.
 
 Type annotations for
 `boto3.client("appconfig").get_hosted_configuration_version` method.
@@ -490,7 +492,7 @@ Returns
 
 ### list_applications
 
-List all applications in your AWS account.
+Lists all applications in your Amazon Web Services account.
 
 Type annotations for `boto3.client("appconfig").list_applications` method.
 
@@ -525,13 +527,14 @@ Keyword-only arguments:
 - `ApplicationId`: `str` *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
+- `Type`: `str`
 
 Returns
 [ConfigurationProfilesTypeDef](./type_defs.md#configurationprofilestypedef).
 
 ### list_deployment_strategies
 
-List deployment strategies.
+Lists deployment strategies.
 
 Type annotations for `boto3.client("appconfig").list_deployment_strategies`
 method.
@@ -573,7 +576,7 @@ Returns [DeploymentsTypeDef](./type_defs.md#deploymentstypedef).
 
 ### list_environments
 
-List the environments for an application.
+Lists the environments for an application.
 
 Type annotations for `boto3.client("appconfig").list_environments` method.
 
@@ -593,7 +596,7 @@ Returns [EnvironmentsTypeDef](./type_defs.md#environmentstypedef).
 
 ### list_hosted_configuration_versions
 
-View a list of configurations stored in the AppConfig configuration store by
+Lists configurations stored in the AppConfig hosted configuration store by
 version.
 
 Type annotations for
@@ -679,7 +682,7 @@ Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 
 ### tag_resource
 
-Metadata to assign to an AppConfig resource.
+Assigns metadata to an AppConfig resource.
 
 Type annotations for `boto3.client("appconfig").tag_resource` method.
 

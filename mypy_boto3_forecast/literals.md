@@ -24,6 +24,9 @@ type annotations stubs module
   - [ListPredictorsPaginatorName](#listpredictorspaginatorname)
   - [OptimizationMetricType](#optimizationmetrictype)
   - [ScalingTypeType](#scalingtypetype)
+  - [StateType](#statetype)
+  - [TimePointGranularityType](#timepointgranularitytype)
+  - [TimeSeriesGranularityType](#timeseriesgranularitytype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
@@ -49,6 +52,7 @@ from mypy_boto3_forecast.literals import AutoMLOverrideStrategyType
 
 Values:
 
+- `AccuracyOptimized`
 - `LatencyOptimized`
 
 ## DatasetTypeType
@@ -207,6 +211,39 @@ Values:
 - `Linear`
 - `Logarithmic`
 - `ReverseLogarithmic`
+
+## StateType
+
+```python
+from mypy_boto3_forecast.literals import StateType
+```
+
+Values:
+
+- `Active`
+- `Deleted`
+
+## TimePointGranularityType
+
+```python
+from mypy_boto3_forecast.literals import TimePointGranularityType
+```
+
+Values:
+
+- `ALL`
+- `SPECIFIC`
+
+## TimeSeriesGranularityType
+
+```python
+from mypy_boto3_forecast.literals import TimeSeriesGranularityType
+```
+
+Values:
+
+- `ALL`
+- `SPECIFIC`
 
 ## ServiceName
 

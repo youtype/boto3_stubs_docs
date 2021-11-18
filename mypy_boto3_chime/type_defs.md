@@ -2558,6 +2558,8 @@ Optional fields:
 - `VocabularyName`: `str`
 - `Region`:
   [TranscribeMedicalRegionType](./literals.md#transcribemedicalregiontype)
+- `ContentIdentificationType`: `Literal['PHI']` (see
+  [TranscribeMedicalContentIdentificationTypeType](./literals.md#transcribemedicalcontentidentificationtypetype))
 
 ## EngineTranscribeSettingsTypeDef
 
@@ -2577,6 +2579,15 @@ Optional fields:
 - `VocabularyFilterName`: `str`
 - `VocabularyName`: `str`
 - `Region`: [TranscribeRegionType](./literals.md#transcriberegiontype)
+- `EnablePartialResultsStabilization`: `bool`
+- `PartialResultsStability`:
+  [TranscribePartialResultsStabilityType](./literals.md#transcribepartialresultsstabilitytype)
+- `ContentIdentificationType`: `Literal['PII']` (see
+  [TranscribeContentIdentificationTypeType](./literals.md#transcribecontentidentificationtypetype))
+- `ContentRedactionType`: `Literal['PII']` (see
+  [TranscribeContentRedactionTypeType](./literals.md#transcribecontentredactiontypetype))
+- `PiiEntityTypes`: `str`
+- `LanguageModelName`: `str`
 
 ## EventsConfigurationTypeDef
 

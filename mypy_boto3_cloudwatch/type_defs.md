@@ -71,6 +71,7 @@ type annotations stubs module
   - [MetricDataQueryTypeDef](#metricdataquerytypedef)
   - [MetricDataResultTypeDef](#metricdataresulttypedef)
   - [MetricDatumTypeDef](#metricdatumtypedef)
+  - [MetricMathAnomalyDetectorTypeDef](#metricmathanomalydetectortypedef)
   - [MetricStatTypeDef](#metricstattypedef)
   - [MetricStreamEntryTypeDef](#metricstreamentrytypedef)
   - [MetricStreamFilterTypeDef](#metricstreamfiltertypedef)
@@ -93,6 +94,7 @@ type annotations stubs module
   - [ServiceResourceMetricRequestTypeDef](#serviceresourcemetricrequesttypedef)
   - [SetAlarmStateInputAlarmTypeDef](#setalarmstateinputalarmtypedef)
   - [SetAlarmStateInputRequestTypeDef](#setalarmstateinputrequesttypedef)
+  - [SingleMetricAnomalyDetectorTypeDef](#singlemetricanomalydetectortypedef)
   - [StartMetricStreamsInputRequestTypeDef](#startmetricstreamsinputrequesttypedef)
   - [StatisticSetTypeDef](#statisticsettypedef)
   - [StopMetricStreamsInputRequestTypeDef](#stopmetricstreamsinputrequesttypedef)
@@ -143,6 +145,10 @@ Optional fields:
   [AnomalyDetectorConfigurationTypeDef](./type_defs.md#anomalydetectorconfigurationtypedef)
 - `StateValue`:
   [AnomalyDetectorStateValueType](./literals.md#anomalydetectorstatevaluetype)
+- `SingleMetricAnomalyDetector`:
+  [SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef)
+- `MetricMathAnomalyDetector`:
+  [MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef)
 
 ## CompositeAlarmTypeDef
 
@@ -223,16 +229,17 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import DeleteAnomalyDetectorInputRequestTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `Namespace`: `str`
 - `MetricName`: `str`
-- `Stat`: `str`
-
-Optional fields:
-
 - `Dimensions`:
   `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Stat`: `str`
+- `SingleMetricAnomalyDetector`:
+  [SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef)
+- `MetricMathAnomalyDetector`:
+  [MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef)
 
 ## DeleteDashboardsInputRequestTypeDef
 
@@ -405,6 +412,8 @@ Optional fields:
 - `MetricName`: `str`
 - `Dimensions`:
   `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `AnomalyDetectorTypes`:
+  `Sequence`\[[AnomalyDetectorTypeType](./literals.md#anomalydetectortypetype)\]
 
 ## DescribeAnomalyDetectorsOutputTypeDef
 
@@ -1021,6 +1030,17 @@ Optional fields:
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 - `StorageResolution`: `int`
 
+## MetricMathAnomalyDetectorTypeDef
+
+```python
+from mypy_boto3_cloudwatch.type_defs import MetricMathAnomalyDetectorTypeDef
+```
+
+Optional fields:
+
+- `MetricDataQueries`:
+  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+
 ## MetricStatTypeDef
 
 ```python
@@ -1074,7 +1094,8 @@ Optional fields:
 
 - `Namespace`: `str`
 - `MetricName`: `str`
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -1107,18 +1128,19 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import PutAnomalyDetectorInputRequestTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `Namespace`: `str`
 - `MetricName`: `str`
-- `Stat`: `str`
-
-Optional fields:
-
 - `Dimensions`:
   `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Stat`: `str`
 - `Configuration`:
   [AnomalyDetectorConfigurationTypeDef](./type_defs.md#anomalydetectorconfigurationtypedef)
+- `SingleMetricAnomalyDetector`:
+  [SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef)
+- `MetricMathAnomalyDetector`:
+  [MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef)
 
 ## PutCompositeAlarmInputRequestTypeDef
 
@@ -1374,6 +1396,20 @@ Required fields:
 Optional fields:
 
 - `StateReasonData`: `str`
+
+## SingleMetricAnomalyDetectorTypeDef
+
+```python
+from mypy_boto3_cloudwatch.type_defs import SingleMetricAnomalyDetectorTypeDef
+```
+
+Optional fields:
+
+- `Namespace`: `str`
+- `MetricName`: `str`
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Stat`: `str`
 
 ## StartMetricStreamsInputRequestTypeDef
 

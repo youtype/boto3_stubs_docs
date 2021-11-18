@@ -157,11 +157,15 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Namespace`: `str` *(required)*
-- `MetricName`: `str` *(required)*
-- `Stat`: `str` *(required)*
+- `Namespace`: `str`
+- `MetricName`: `str`
 - `Dimensions`:
   `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Stat`: `str`
+- `SingleMetricAnomalyDetector`:
+  [SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef)
+- `MetricMathAnomalyDetector`:
+  [MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -322,6 +326,8 @@ Keyword-only arguments:
 - `MetricName`: `str`
 - `Dimensions`:
   `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `AnomalyDetectorTypes`:
+  `Sequence`\[[AnomalyDetectorTypeType](./literals.md#anomalydetectortypetype)\]
 
 Returns
 [DescribeAnomalyDetectorsOutputTypeDef](./type_defs.md#describeanomalydetectorsoutputtypedef).
@@ -676,13 +682,17 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Namespace`: `str` *(required)*
-- `MetricName`: `str` *(required)*
-- `Stat`: `str` *(required)*
+- `Namespace`: `str`
+- `MetricName`: `str`
 - `Dimensions`:
   `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Stat`: `str`
 - `Configuration`:
   [AnomalyDetectorConfigurationTypeDef](./type_defs.md#anomalydetectorconfigurationtypedef)
+- `SingleMetricAnomalyDetector`:
+  [SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef)
+- `MetricMathAnomalyDetector`:
+  [MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 

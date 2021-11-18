@@ -49,11 +49,13 @@ from mypy_boto3_ivs.client import IVSClient
 - [get_recording_configuration](./client.md#get_recording_configuration)
 - [get_stream](./client.md#get_stream)
 - [get_stream_key](./client.md#get_stream_key)
+- [get_stream_session](./client.md#get_stream_session)
 - [import_playback_key_pair](./client.md#import_playback_key_pair)
 - [list_channels](./client.md#list_channels)
 - [list_playback_key_pairs](./client.md#list_playback_key_pairs)
 - [list_recording_configurations](./client.md#list_recording_configurations)
 - [list_stream_keys](./client.md#list_stream_keys)
+- [list_stream_sessions](./client.md#list_stream_sessions)
 - [list_streams](./client.md#list_streams)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [put_metadata](./client.md#put_metadata)
@@ -126,9 +128,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_ivs.type_defs import BatchErrorTypeDef, ...
+from mypy_boto3_ivs.type_defs import AudioConfigurationTypeDef, ...
 ```
 
+- [AudioConfigurationTypeDef](./type_defs.md#audioconfigurationtypedef)
 - [BatchErrorTypeDef](./type_defs.md#batcherrortypedef)
 - [BatchGetChannelRequestRequestTypeDef](./type_defs.md#batchgetchannelrequestrequesttypedef)
 - [BatchGetChannelResponseTypeDef](./type_defs.md#batchgetchannelresponsetypedef)
@@ -157,8 +160,11 @@ from mypy_boto3_ivs.type_defs import BatchErrorTypeDef, ...
 - [GetStreamKeyResponseTypeDef](./type_defs.md#getstreamkeyresponsetypedef)
 - [GetStreamRequestRequestTypeDef](./type_defs.md#getstreamrequestrequesttypedef)
 - [GetStreamResponseTypeDef](./type_defs.md#getstreamresponsetypedef)
+- [GetStreamSessionRequestRequestTypeDef](./type_defs.md#getstreamsessionrequestrequesttypedef)
+- [GetStreamSessionResponseTypeDef](./type_defs.md#getstreamsessionresponsetypedef)
 - [ImportPlaybackKeyPairRequestRequestTypeDef](./type_defs.md#importplaybackkeypairrequestrequesttypedef)
 - [ImportPlaybackKeyPairResponseTypeDef](./type_defs.md#importplaybackkeypairresponsetypedef)
+- [IngestConfigurationTypeDef](./type_defs.md#ingestconfigurationtypedef)
 - [ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef)
 - [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)
 - [ListPlaybackKeyPairsRequestRequestTypeDef](./type_defs.md#listplaybackkeypairsrequestrequesttypedef)
@@ -167,6 +173,8 @@ from mypy_boto3_ivs.type_defs import BatchErrorTypeDef, ...
 - [ListRecordingConfigurationsResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponsetypedef)
 - [ListStreamKeysRequestRequestTypeDef](./type_defs.md#liststreamkeysrequestrequesttypedef)
 - [ListStreamKeysResponseTypeDef](./type_defs.md#liststreamkeysresponsetypedef)
+- [ListStreamSessionsRequestRequestTypeDef](./type_defs.md#liststreamsessionsrequestrequesttypedef)
+- [ListStreamSessionsResponseTypeDef](./type_defs.md#liststreamsessionsresponsetypedef)
 - [ListStreamsRequestRequestTypeDef](./type_defs.md#liststreamsrequestrequesttypedef)
 - [ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -180,11 +188,16 @@ from mypy_boto3_ivs.type_defs import BatchErrorTypeDef, ...
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
 - [StopStreamRequestRequestTypeDef](./type_defs.md#stopstreamrequestrequesttypedef)
+- [StreamEventTypeDef](./type_defs.md#streameventtypedef)
+- [StreamFiltersTypeDef](./type_defs.md#streamfilterstypedef)
 - [StreamKeySummaryTypeDef](./type_defs.md#streamkeysummarytypedef)
 - [StreamKeyTypeDef](./type_defs.md#streamkeytypedef)
+- [StreamSessionSummaryTypeDef](./type_defs.md#streamsessionsummarytypedef)
+- [StreamSessionTypeDef](./type_defs.md#streamsessiontypedef)
 - [StreamSummaryTypeDef](./type_defs.md#streamsummarytypedef)
 - [StreamTypeDef](./type_defs.md#streamtypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef)
 - [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef)
+- [VideoConfigurationTypeDef](./type_defs.md#videoconfigurationtypedef)

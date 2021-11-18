@@ -11,6 +11,7 @@ type annotations stubs module
   - [AlarmExistsWaiterName](#alarmexistswaitername)
   - [AlarmTypeType](#alarmtypetype)
   - [AnomalyDetectorStateValueType](#anomalydetectorstatevaluetype)
+  - [AnomalyDetectorTypeType](#anomalydetectortypetype)
   - [ComparisonOperatorType](#comparisonoperatortype)
   - [CompositeAlarmExistsWaiterName](#compositealarmexistswaitername)
   - [DescribeAlarmHistoryPaginatorName](#describealarmhistorypaginatorname)
@@ -62,6 +63,17 @@ Values:
 - `PENDING_TRAINING`
 - `TRAINED`
 - `TRAINED_INSUFFICIENT_DATA`
+
+## AnomalyDetectorTypeType
+
+```python
+from mypy_boto3_cloudwatch.literals import AnomalyDetectorTypeType
+```
+
+Values:
+
+- `METRIC_MATH`
+- `SINGLE_METRIC`
 
 ## ComparisonOperatorType
 

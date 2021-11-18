@@ -39,17 +39,20 @@ from mypy_boto3_databrew.client import GlueDataBrewClient
 - [create_project](./client.md#create_project)
 - [create_recipe](./client.md#create_recipe)
 - [create_recipe_job](./client.md#create_recipe_job)
+- [create_ruleset](./client.md#create_ruleset)
 - [create_schedule](./client.md#create_schedule)
 - [delete_dataset](./client.md#delete_dataset)
 - [delete_job](./client.md#delete_job)
 - [delete_project](./client.md#delete_project)
 - [delete_recipe_version](./client.md#delete_recipe_version)
+- [delete_ruleset](./client.md#delete_ruleset)
 - [delete_schedule](./client.md#delete_schedule)
 - [describe_dataset](./client.md#describe_dataset)
 - [describe_job](./client.md#describe_job)
 - [describe_job_run](./client.md#describe_job_run)
 - [describe_project](./client.md#describe_project)
 - [describe_recipe](./client.md#describe_recipe)
+- [describe_ruleset](./client.md#describe_ruleset)
 - [describe_schedule](./client.md#describe_schedule)
 - [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
@@ -60,6 +63,7 @@ from mypy_boto3_databrew.client import GlueDataBrewClient
 - [list_projects](./client.md#list_projects)
 - [list_recipe_versions](./client.md#list_recipe_versions)
 - [list_recipes](./client.md#list_recipes)
+- [list_rulesets](./client.md#list_rulesets)
 - [list_schedules](./client.md#list_schedules)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [publish_recipe](./client.md#publish_recipe)
@@ -74,6 +78,7 @@ from mypy_boto3_databrew.client import GlueDataBrewClient
 - [update_project](./client.md#update_project)
 - [update_recipe](./client.md#update_recipe)
 - [update_recipe_job](./client.md#update_recipe_job)
+- [update_ruleset](./client.md#update_ruleset)
 - [update_schedule](./client.md#update_schedule)
 
 ### Exceptions
@@ -105,6 +110,7 @@ from mypy_boto3_databrew.paginators import ListDatasetsPaginator, ...
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
 - [ListRecipeVersionsPaginator](./paginators.md#listrecipeversionspaginator)
 - [ListRecipesPaginator](./paginators.md#listrecipespaginator)
+- [ListRulesetsPaginator](./paginators.md#listrulesetspaginator)
 - [ListSchedulesPaginator](./paginators.md#listschedulespaginator)
 
 ## Literals
@@ -114,9 +120,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_databrew.literals import CompressionFormatType, ...
+from mypy_boto3_databrew.literals import AnalyticsModeType, ...
 ```
 
+- [AnalyticsModeType](./literals.md#analyticsmodetype)
 - [CompressionFormatType](./literals.md#compressionformattype)
 - [DatabaseOutputModeType](./literals.md#databaseoutputmodetype)
 - [EncryptionModeType](./literals.md#encryptionmodetype)
@@ -129,6 +136,7 @@ from mypy_boto3_databrew.literals import CompressionFormatType, ...
 - [ListProjectsPaginatorName](./literals.md#listprojectspaginatorname)
 - [ListRecipeVersionsPaginatorName](./literals.md#listrecipeversionspaginatorname)
 - [ListRecipesPaginatorName](./literals.md#listrecipespaginatorname)
+- [ListRulesetsPaginatorName](./literals.md#listrulesetspaginatorname)
 - [ListSchedulesPaginatorName](./literals.md#listschedulespaginatorname)
 - [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - [OrderType](./literals.md#ordertype)
@@ -139,6 +147,9 @@ from mypy_boto3_databrew.literals import CompressionFormatType, ...
 - [SampleTypeType](./literals.md#sampletypetype)
 - [SessionStatusType](./literals.md#sessionstatustype)
 - [SourceType](./literals.md#sourcetype)
+- [ThresholdTypeType](./literals.md#thresholdtypetype)
+- [ThresholdUnitType](./literals.md#thresholdunittype)
+- [ValidationModeType](./literals.md#validationmodetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 
@@ -150,9 +161,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequestTypeDef, ...
+from mypy_boto3_databrew.type_defs import AllowedStatisticsTypeDef, ...
 ```
 
+- [AllowedStatisticsTypeDef](./type_defs.md#allowedstatisticstypedef)
 - [BatchDeleteRecipeVersionRequestRequestTypeDef](./type_defs.md#batchdeleterecipeversionrequestrequesttypedef)
 - [BatchDeleteRecipeVersionResponseTypeDef](./type_defs.md#batchdeleterecipeversionresponsetypedef)
 - [ColumnSelectorTypeDef](./type_defs.md#columnselectortypedef)
@@ -168,6 +180,8 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequest
 - [CreateRecipeJobResponseTypeDef](./type_defs.md#createrecipejobresponsetypedef)
 - [CreateRecipeRequestRequestTypeDef](./type_defs.md#createreciperequestrequesttypedef)
 - [CreateRecipeResponseTypeDef](./type_defs.md#createreciperesponsetypedef)
+- [CreateRulesetRequestRequestTypeDef](./type_defs.md#createrulesetrequestrequesttypedef)
+- [CreateRulesetResponseTypeDef](./type_defs.md#createrulesetresponsetypedef)
 - [CreateScheduleRequestRequestTypeDef](./type_defs.md#createschedulerequestrequesttypedef)
 - [CreateScheduleResponseTypeDef](./type_defs.md#createscheduleresponsetypedef)
 - [CsvOptionsTypeDef](./type_defs.md#csvoptionstypedef)
@@ -188,6 +202,8 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequest
 - [DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef)
 - [DeleteRecipeVersionRequestRequestTypeDef](./type_defs.md#deleterecipeversionrequestrequesttypedef)
 - [DeleteRecipeVersionResponseTypeDef](./type_defs.md#deleterecipeversionresponsetypedef)
+- [DeleteRulesetRequestRequestTypeDef](./type_defs.md#deleterulesetrequestrequesttypedef)
+- [DeleteRulesetResponseTypeDef](./type_defs.md#deleterulesetresponsetypedef)
 - [DeleteScheduleRequestRequestTypeDef](./type_defs.md#deleteschedulerequestrequesttypedef)
 - [DeleteScheduleResponseTypeDef](./type_defs.md#deletescheduleresponsetypedef)
 - [DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef)
@@ -200,8 +216,11 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequest
 - [DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef)
 - [DescribeRecipeRequestRequestTypeDef](./type_defs.md#describereciperequestrequesttypedef)
 - [DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef)
+- [DescribeRulesetRequestRequestTypeDef](./type_defs.md#describerulesetrequestrequesttypedef)
+- [DescribeRulesetResponseTypeDef](./type_defs.md#describerulesetresponsetypedef)
 - [DescribeScheduleRequestRequestTypeDef](./type_defs.md#describeschedulerequestrequesttypedef)
 - [DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef)
+- [EntityDetectorConfigurationTypeDef](./type_defs.md#entitydetectorconfigurationtypedef)
 - [ExcelOptionsTypeDef](./type_defs.md#exceloptionstypedef)
 - [FilesLimitTypeDef](./type_defs.md#fileslimittypedef)
 - [FilterExpressionTypeDef](./type_defs.md#filterexpressiontypedef)
@@ -223,10 +242,13 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequest
 - [ListRecipeVersionsResponseTypeDef](./type_defs.md#listrecipeversionsresponsetypedef)
 - [ListRecipesRequestRequestTypeDef](./type_defs.md#listrecipesrequestrequesttypedef)
 - [ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef)
+- [ListRulesetsRequestRequestTypeDef](./type_defs.md#listrulesetsrequestrequesttypedef)
+- [ListRulesetsResponseTypeDef](./type_defs.md#listrulesetsresponsetypedef)
 - [ListSchedulesRequestRequestTypeDef](./type_defs.md#listschedulesrequestrequesttypedef)
 - [ListSchedulesResponseTypeDef](./type_defs.md#listschedulesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [MetadataTypeDef](./type_defs.md#metadatatypedef)
 - [OutputFormatOptionsTypeDef](./type_defs.md#outputformatoptionstypedef)
 - [OutputTypeDef](./type_defs.md#outputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -241,6 +263,8 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequest
 - [RecipeTypeDef](./type_defs.md#recipetypedef)
 - [RecipeVersionErrorDetailTypeDef](./type_defs.md#recipeversionerrordetailtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [RuleTypeDef](./type_defs.md#ruletypedef)
+- [RulesetItemTypeDef](./type_defs.md#rulesetitemtypedef)
 - [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - [S3TableOutputOptionsTypeDef](./type_defs.md#s3tableoutputoptionstypedef)
 - [SampleTypeDef](./type_defs.md#sampletypedef)
@@ -256,6 +280,7 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequest
 - [StopJobRunRequestRequestTypeDef](./type_defs.md#stopjobrunrequestrequesttypedef)
 - [StopJobRunResponseTypeDef](./type_defs.md#stopjobrunresponsetypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [ThresholdTypeDef](./type_defs.md#thresholdtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateDatasetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef)
 - [UpdateDatasetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef)
@@ -267,6 +292,9 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequest
 - [UpdateRecipeJobResponseTypeDef](./type_defs.md#updaterecipejobresponsetypedef)
 - [UpdateRecipeRequestRequestTypeDef](./type_defs.md#updatereciperequestrequesttypedef)
 - [UpdateRecipeResponseTypeDef](./type_defs.md#updatereciperesponsetypedef)
+- [UpdateRulesetRequestRequestTypeDef](./type_defs.md#updaterulesetrequestrequesttypedef)
+- [UpdateRulesetResponseTypeDef](./type_defs.md#updaterulesetresponsetypedef)
 - [UpdateScheduleRequestRequestTypeDef](./type_defs.md#updateschedulerequestrequesttypedef)
 - [UpdateScheduleResponseTypeDef](./type_defs.md#updatescheduleresponsetypedef)
+- [ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)
 - [ViewFrameTypeDef](./type_defs.md#viewframetypedef)

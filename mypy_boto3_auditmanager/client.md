@@ -44,13 +44,19 @@ type annotations stubs module
     - [get_evidence_folder](#get_evidence_folder)
     - [get_evidence_folders_by_assessment](#get_evidence_folders_by_assessment)
     - [get_evidence_folders_by_assessment_control](#get_evidence_folders_by_assessment_control)
+    - [get_insights](#get_insights)
+    - [get_insights_by_assessment](#get_insights_by_assessment)
     - [get_organization_admin_account](#get_organization_admin_account)
     - [get_services_in_scope](#get_services_in_scope)
     - [get_settings](#get_settings)
+    - [list_assessment_control_insights_by_control_domain](#list_assessment_control_insights_by_control_domain)
     - [list_assessment_framework_share_requests](#list_assessment_framework_share_requests)
     - [list_assessment_frameworks](#list_assessment_frameworks)
     - [list_assessment_reports](#list_assessment_reports)
     - [list_assessments](#list_assessments)
+    - [list_control_domain_insights](#list_control_domain_insights)
+    - [list_control_domain_insights_by_assessment](#list_control_domain_insights_by_assessment)
+    - [list_control_insights_by_control_domain](#list_control_insights_by_control_domain)
     - [list_controls](#list_controls)
     - [list_keywords_for_data_source](#list_keywords_for_data_source)
     - [list_notifications](#list_notifications)
@@ -793,6 +799,38 @@ Keyword-only arguments:
 Returns
 [GetEvidenceFoldersByAssessmentControlResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentcontrolresponsetypedef).
 
+### get_insights
+
+Gets the latest analytics data for all your current active assessments.
+
+Type annotations for `boto3.client("auditmanager").get_insights` method.
+
+Boto3 documentation:
+[AuditManager.Client.get_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_insights)
+
+Returns
+[GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef).
+
+### get_insights_by_assessment
+
+Gets the latest analytics data for a specific active assessment.
+
+Type annotations for `boto3.client("auditmanager").get_insights_by_assessment`
+method.
+
+Boto3 documentation:
+[AuditManager.Client.get_insights_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_insights_by_assessment)
+
+Arguments mapping described in
+[GetInsightsByAssessmentRequestRequestTypeDef](./type_defs.md#getinsightsbyassessmentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `assessmentId`: `str` *(required)*
+
+Returns
+[GetInsightsByAssessmentResponseTypeDef](./type_defs.md#getinsightsbyassessmentresponsetypedef).
+
 ### get_organization_admin_account
 
 Returns the name of the delegated Amazon Web Services administrator account for
@@ -840,6 +878,31 @@ Keyword-only arguments:
 
 Returns
 [GetSettingsResponseTypeDef](./type_defs.md#getsettingsresponsetypedef).
+
+### list_assessment_control_insights_by_control_domain
+
+Lists the latest analytics data for controls within a specific control domain
+and a specific active assessment.
+
+Type annotations for
+`boto3.client("auditmanager").list_assessment_control_insights_by_control_domain`
+method.
+
+Boto3 documentation:
+[AuditManager.Client.list_assessment_control_insights_by_control_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_control_insights_by_control_domain)
+
+Arguments mapping described in
+[ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef](./type_defs.md#listassessmentcontrolinsightsbycontroldomainrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `controlDomainId`: `str` *(required)*
+- `assessmentId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAssessmentControlInsightsByControlDomainResponseTypeDef](./type_defs.md#listassessmentcontrolinsightsbycontroldomainresponsetypedef).
 
 ### list_assessment_framework_share_requests
 
@@ -924,11 +987,80 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
 [ListAssessmentsResponseTypeDef](./type_defs.md#listassessmentsresponsetypedef).
+
+### list_control_domain_insights
+
+Lists the latest analytics data for control domains across all of your active
+assessments.
+
+Type annotations for
+`boto3.client("auditmanager").list_control_domain_insights` method.
+
+Boto3 documentation:
+[AuditManager.Client.list_control_domain_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_control_domain_insights)
+
+Arguments mapping described in
+[ListControlDomainInsightsRequestRequestTypeDef](./type_defs.md#listcontroldomaininsightsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListControlDomainInsightsResponseTypeDef](./type_defs.md#listcontroldomaininsightsresponsetypedef).
+
+### list_control_domain_insights_by_assessment
+
+Lists analytics data for control domains within a specified active assessment.
+
+Type annotations for
+`boto3.client("auditmanager").list_control_domain_insights_by_assessment`
+method.
+
+Boto3 documentation:
+[AuditManager.Client.list_control_domain_insights_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_control_domain_insights_by_assessment)
+
+Arguments mapping described in
+[ListControlDomainInsightsByAssessmentRequestRequestTypeDef](./type_defs.md#listcontroldomaininsightsbyassessmentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `assessmentId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListControlDomainInsightsByAssessmentResponseTypeDef](./type_defs.md#listcontroldomaininsightsbyassessmentresponsetypedef).
+
+### list_control_insights_by_control_domain
+
+Lists the latest analytics data for controls within a specific control domain
+across all active assessments.
+
+Type annotations for
+`boto3.client("auditmanager").list_control_insights_by_control_domain` method.
+
+Boto3 documentation:
+[AuditManager.Client.list_control_insights_by_control_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_control_insights_by_control_domain)
+
+Arguments mapping described in
+[ListControlInsightsByControlDomainRequestRequestTypeDef](./type_defs.md#listcontrolinsightsbycontroldomainrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `controlDomainId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListControlInsightsByControlDomainResponseTypeDef](./type_defs.md#listcontrolinsightsbycontroldomainresponsetypedef).
 
 ### list_controls
 

@@ -43,6 +43,7 @@ type annotations stubs module
     - [update_cluster_configuration](#update_cluster_configuration)
     - [update_cluster_kafka_version](#update_cluster_kafka_version)
     - [update_configuration](#update_configuration)
+    - [update_connectivity](#update_connectivity)
     - [update_monitoring](#update_monitoring)
     - [update_security](#update_security)
     - [get_paginator](#get_paginator)
@@ -479,7 +480,7 @@ Returns
 
 ### list_kafka_versions
 
-Returns a list of Kafka versions.
+Returns a list of Apache Kafka versions.
 
 Type annotations for `boto3.client("kafka").list_kafka_versions` method.
 
@@ -746,6 +747,29 @@ Keyword-only arguments:
 
 Returns
 [UpdateConfigurationResponseTypeDef](./type_defs.md#updateconfigurationresponsetypedef).
+
+### update_connectivity
+
+Updates the cluster's connectivity configuration.
+
+Type annotations for `boto3.client("kafka").update_connectivity` method.
+
+Boto3 documentation:
+[Kafka.Client.update_connectivity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_connectivity)
+
+Arguments mapping described in
+[UpdateConnectivityRequestRequestTypeDef](./type_defs.md#updateconnectivityrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `ConnectivityInfo`:
+  [ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)
+  *(required)*
+- `CurrentVersion`: `str` *(required)*
+
+Returns
+[UpdateConnectivityResponseTypeDef](./type_defs.md#updateconnectivityresponsetypedef).
 
 ### update_monitoring
 

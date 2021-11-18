@@ -14,6 +14,7 @@ type annotations stubs module
   - [ListProjectsPaginator](#listprojectspaginator)
   - [ListRecipeVersionsPaginator](#listrecipeversionspaginator)
   - [ListRecipesPaginator](#listrecipespaginator)
+  - [ListRulesetsPaginator](#listrulesetspaginator)
   - [ListSchedulesPaginator](#listschedulespaginator)
 
 ## ListDatasetsPaginator
@@ -165,6 +166,31 @@ Arguments for `ListRecipesPaginator.paginate` method:
 
 `ListRecipesPaginator.paginate` returns
 `_PageIterator`\[[ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef)\].
+
+## ListRulesetsPaginator
+
+Type annotations for `boto3.client("databrew").get_paginator("list_rulesets")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_databrew.paginator import ListRulesetsPaginator
+
+def get_list_rulesets_paginator() -> ListRulesetsPaginator:
+    return boto3.client("databrew").get_paginator("list_rulesets")
+```
+
+Boto3 documentation:
+[GlueDataBrew.Paginator.ListRulesets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRulesets)
+
+Arguments for `ListRulesetsPaginator.paginate` method:
+
+- `TargetArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListRulesetsPaginator.paginate` returns
+`_PageIterator`\[[ListRulesetsResponseTypeDef](./type_defs.md#listrulesetsresponsetypedef)\].
 
 ## ListSchedulesPaginator
 

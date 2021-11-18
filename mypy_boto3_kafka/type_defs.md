@@ -27,6 +27,7 @@ type annotations stubs module
   - [ConfigurationInfoTypeDef](#configurationinfotypedef)
   - [ConfigurationRevisionTypeDef](#configurationrevisiontypedef)
   - [ConfigurationTypeDef](#configurationtypedef)
+  - [ConnectivityInfoTypeDef](#connectivityinfotypedef)
   - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
   - [CreateClusterResponseTypeDef](#createclusterresponsetypedef)
   - [CreateConfigurationRequestRequestTypeDef](#createconfigurationrequestrequesttypedef)
@@ -83,6 +84,7 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PrometheusInfoTypeDef](#prometheusinfotypedef)
   - [PrometheusTypeDef](#prometheustypedef)
+  - [PublicAccessTypeDef](#publicaccesstypedef)
   - [RebootBrokerRequestRequestTypeDef](#rebootbrokerrequestrequesttypedef)
   - [RebootBrokerResponseTypeDef](#rebootbrokerresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
@@ -108,6 +110,8 @@ type annotations stubs module
   - [UpdateClusterKafkaVersionResponseTypeDef](#updateclusterkafkaversionresponsetypedef)
   - [UpdateConfigurationRequestRequestTypeDef](#updateconfigurationrequestrequesttypedef)
   - [UpdateConfigurationResponseTypeDef](#updateconfigurationresponsetypedef)
+  - [UpdateConnectivityRequestRequestTypeDef](#updateconnectivityrequestrequesttypedef)
+  - [UpdateConnectivityResponseTypeDef](#updateconnectivityresponsetypedef)
   - [UpdateMonitoringRequestRequestTypeDef](#updatemonitoringrequestrequesttypedef)
   - [UpdateMonitoringResponseTypeDef](#updatemonitoringresponsetypedef)
   - [UpdateSecurityRequestRequestTypeDef](#updatesecurityrequestrequesttypedef)
@@ -205,6 +209,8 @@ Optional fields:
   [BrokerAZDistributionType](./literals.md#brokerazdistributiontype))
 - `SecurityGroups`: `Sequence`\[`str`\]
 - `StorageInfo`: [StorageInfoTypeDef](./type_defs.md#storageinfotypedef)
+- `ConnectivityInfo`:
+  [ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)
 
 ## BrokerNodeInfoTypeDef
 
@@ -392,6 +398,16 @@ Required fields:
   [ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef)
 - `Name`: `str`
 - `State`: [ConfigurationStateType](./literals.md#configurationstatetype)
+
+## ConnectivityInfoTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import ConnectivityInfoTypeDef
+```
+
+Optional fields:
+
+- `PublicAccess`: [PublicAccessTypeDef](./type_defs.md#publicaccesstypedef)
 
 ## CreateClusterRequestRequestTypeDef
 
@@ -711,6 +727,9 @@ Required fields:
 - `BootstrapBrokerStringTls`: `str`
 - `BootstrapBrokerStringSaslScram`: `str`
 - `BootstrapBrokerStringSaslIam`: `str`
+- `BootstrapBrokerStringPublicTls`: `str`
+- `BootstrapBrokerStringPublicSaslScram`: `str`
+- `BootstrapBrokerStringPublicSaslIam`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1024,6 +1043,8 @@ Optional fields:
   [ClientAuthenticationTypeDef](./type_defs.md#clientauthenticationtypedef)
 - `EncryptionInfo`:
   [EncryptionInfoTypeDef](./type_defs.md#encryptioninfotypedef)
+- `ConnectivityInfo`:
+  [ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)
 
 ## NodeExporterInfoTypeDef
 
@@ -1118,6 +1139,16 @@ Optional fields:
 
 - `JmxExporter`: [JmxExporterTypeDef](./type_defs.md#jmxexportertypedef)
 - `NodeExporter`: [NodeExporterTypeDef](./type_defs.md#nodeexportertypedef)
+
+## PublicAccessTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import PublicAccessTypeDef
+```
+
+Optional fields:
+
+- `Type`: `str`
 
 ## RebootBrokerRequestRequestTypeDef
 
@@ -1428,6 +1459,32 @@ Required fields:
 - `Arn`: `str`
 - `LatestRevision`:
   [ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateConnectivityRequestRequestTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import UpdateConnectivityRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterArn`: `str`
+- `ConnectivityInfo`:
+  [ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)
+- `CurrentVersion`: `str`
+
+## UpdateConnectivityResponseTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import UpdateConnectivityResponseTypeDef
+```
+
+Required fields:
+
+- `ClusterArn`: `str`
+- `ClusterOperationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

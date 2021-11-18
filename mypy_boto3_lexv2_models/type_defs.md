@@ -3306,6 +3306,10 @@ Required fields:
 
 - `voiceId`: `str`
 
+Optional fields:
+
+- `engine`: [VoiceEngineType](./literals.md#voiceenginetype)
+
 ## WaitAndContinueSpecificationTypeDef
 
 ```python
