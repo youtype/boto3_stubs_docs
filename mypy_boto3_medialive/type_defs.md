@@ -2890,6 +2890,7 @@ Optional fields:
 - `InputFilter`: [InputFilterType](./literals.md#inputfiltertype)
 - `NetworkInputSettings`:
   [NetworkInputSettingsTypeDef](./type_defs.md#networkinputsettingstypedef)
+- `Scte35Pid`: `int`
 - `Smpte2038DataPreference`:
   [Smpte2038DataPreferenceType](./literals.md#smpte2038datapreferencetype)
 - `SourceEndBehavior`:

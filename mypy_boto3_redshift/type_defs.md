@@ -858,6 +858,7 @@ Optional fields:
 - `TotalStorageCapacityInMegaBytes`: `int`
 - `AquaConfiguration`:
   [AquaConfigurationTypeDef](./type_defs.md#aquaconfigurationtypedef)
+- `DefaultIamRoleArn`: `str`
 
 ## ClusterVersionTypeDef
 
@@ -994,6 +995,7 @@ Optional fields:
 - `AvailabilityZoneRelocation`: `bool`
 - `AquaConfigurationStatus`:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
+- `DefaultIamRoleArn`: `str`
 
 ## CreateClusterParameterGroupMessageRequestTypeDef
 
@@ -2804,6 +2806,7 @@ Optional fields:
 
 - `AddIamRoles`: `Sequence`\[`str`\]
 - `RemoveIamRoles`: `Sequence`\[`str`\]
+- `DefaultIamRoleArn`: `str`
 
 ## ModifyClusterIamRolesResultTypeDef
 
@@ -3599,6 +3602,7 @@ Optional fields:
 - `AvailabilityZoneRelocation`: `bool`
 - `AquaConfigurationStatus`:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
+- `DefaultIamRoleArn`: `str`
 
 ## RestoreFromClusterSnapshotResultTypeDef
 

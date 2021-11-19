@@ -110,6 +110,7 @@ type annotations stubs module
   - [ListTypesInputRequestTypeDef](#listtypesinputrequesttypedef)
   - [ListTypesOutputTypeDef](#listtypesoutputtypedef)
   - [LoggingConfigTypeDef](#loggingconfigtypedef)
+  - [ManagedExecutionTypeDef](#managedexecutiontypedef)
   - [ModuleInfoTypeDef](#moduleinfotypedef)
   - [OutputTypeDef](#outputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
@@ -551,6 +552,8 @@ Optional fields:
   [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
 - `CallAs`: [CallAsType](./literals.md#callastype)
 - `ClientRequestToken`: `str`
+- `ManagedExecution`:
+  [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
 
 ## CreateStackSetOutputTypeDef
 
@@ -1713,6 +1716,16 @@ Required fields:
 - `LogRoleArn`: `str`
 - `LogGroupName`: `str`
 
+## ManagedExecutionTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ManagedExecutionTypeDef
+```
+
+Optional fields:
+
+- `Active`: `bool`
+
 ## ModuleInfoTypeDef
 
 ```python
@@ -2535,6 +2548,8 @@ Optional fields:
 - `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
 - `DriftStatus`: [StackDriftStatusType](./literals.md#stackdriftstatustype)
 - `LastDriftCheckTimestamp`: `datetime`
+- `ManagedExecution`:
+  [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
 
 ## StackSetTypeDef
 
@@ -2561,6 +2576,8 @@ Optional fields:
   [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
 - `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
 - `OrganizationalUnitIds`: `List`\[`str`\]
+- `ManagedExecution`:
+  [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
 
 ## StackSummaryTypeDef
 
@@ -2907,6 +2924,8 @@ Optional fields:
 - `Accounts`: `Sequence`\[`str`\]
 - `Regions`: `Sequence`\[`str`\]
 - `CallAs`: [CallAsType](./literals.md#callastype)
+- `ManagedExecution`:
+  [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
 
 ## UpdateStackSetOutputTypeDef
 

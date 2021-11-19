@@ -120,6 +120,7 @@ Required fields:
 Optional fields:
 
 - `slotToElicit`: `str`
+- `slotElicitationStyle`: [StyleTypeType](./literals.md#styletypetype)
 
 ## GetSessionRequestRequestTypeDef
 

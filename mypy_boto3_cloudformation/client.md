@@ -391,6 +391,8 @@ Keyword-only arguments:
   [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
 - `CallAs`: [CallAsType](./literals.md#callastype)
 - `ClientRequestToken`: `str`
+- `ManagedExecution`:
+  [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
 
 Returns
 [CreateStackSetOutputTypeDef](./type_defs.md#createstacksetoutputtypedef).
@@ -1680,6 +1682,8 @@ Keyword-only arguments:
 - `Accounts`: `Sequence`\[`str`\]
 - `Regions`: `Sequence`\[`str`\]
 - `CallAs`: [CallAsType](./literals.md#callastype)
+- `ManagedExecution`:
+  [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
 
 Returns
 [UpdateStackSetOutputTypeDef](./type_defs.md#updatestacksetoutputtypedef).

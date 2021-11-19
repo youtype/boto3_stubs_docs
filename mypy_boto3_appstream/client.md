@@ -12,11 +12,14 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [exceptions](#exceptions)
+    - [associate_application_fleet](#associate_application_fleet)
     - [associate_fleet](#associate_fleet)
     - [batch_associate_user_stack](#batch_associate_user_stack)
     - [batch_disassociate_user_stack](#batch_disassociate_user_stack)
     - [can_paginate](#can_paginate)
     - [copy_image](#copy_image)
+    - [create_app_block](#create_app_block)
+    - [create_application](#create_application)
     - [create_directory_config](#create_directory_config)
     - [create_fleet](#create_fleet)
     - [create_image_builder](#create_image_builder)
@@ -26,6 +29,8 @@ type annotations stubs module
     - [create_updated_image](#create_updated_image)
     - [create_usage_report_subscription](#create_usage_report_subscription)
     - [create_user](#create_user)
+    - [delete_app_block](#delete_app_block)
+    - [delete_application](#delete_application)
     - [delete_directory_config](#delete_directory_config)
     - [delete_fleet](#delete_fleet)
     - [delete_image](#delete_image)
@@ -34,6 +39,9 @@ type annotations stubs module
     - [delete_stack](#delete_stack)
     - [delete_usage_report_subscription](#delete_usage_report_subscription)
     - [delete_user](#delete_user)
+    - [describe_app_blocks](#describe_app_blocks)
+    - [describe_application_fleet_associations](#describe_application_fleet_associations)
+    - [describe_applications](#describe_applications)
     - [describe_directory_configs](#describe_directory_configs)
     - [describe_fleets](#describe_fleets)
     - [describe_image_builders](#describe_image_builders)
@@ -45,6 +53,7 @@ type annotations stubs module
     - [describe_user_stack_associations](#describe_user_stack_associations)
     - [describe_users](#describe_users)
     - [disable_user](#disable_user)
+    - [disassociate_application_fleet](#disassociate_application_fleet)
     - [disassociate_fleet](#disassociate_fleet)
     - [enable_user](#enable_user)
     - [expire_session](#expire_session)
@@ -58,6 +67,7 @@ type annotations stubs module
     - [stop_image_builder](#stop_image_builder)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_application](#update_application)
     - [update_directory_config](#update_directory_config)
     - [update_fleet](#update_fleet)
     - [update_image_permissions](#update_image_permissions)
@@ -121,6 +131,27 @@ Boto3 documentation:
 [AppStream.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+### associate_application_fleet
+
+Associates the specified application with the specified fleet.
+
+Type annotations for `boto3.client("appstream").associate_application_fleet`
+method.
+
+Boto3 documentation:
+[AppStream.Client.associate_application_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.associate_application_fleet)
+
+Arguments mapping described in
+[AssociateApplicationFleetRequestRequestTypeDef](./type_defs.md#associateapplicationfleetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FleetName`: `str` *(required)*
+- `ApplicationArn`: `str` *(required)*
+
+Returns
+[AssociateApplicationFleetResultTypeDef](./type_defs.md#associateapplicationfleetresulttypedef).
 
 ### associate_fleet
 
@@ -222,6 +253,63 @@ Keyword-only arguments:
 
 Returns [CopyImageResponseTypeDef](./type_defs.md#copyimageresponsetypedef).
 
+### create_app_block
+
+Creates an app block.
+
+Type annotations for `boto3.client("appstream").create_app_block` method.
+
+Boto3 documentation:
+[AppStream.Client.create_app_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_app_block)
+
+Arguments mapping described in
+[CreateAppBlockRequestRequestTypeDef](./type_defs.md#createappblockrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `SourceS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+  *(required)*
+- `SetupScriptDetails`:
+  [ScriptDetailsTypeDef](./type_defs.md#scriptdetailstypedef) *(required)*
+- `Description`: `str`
+- `DisplayName`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+Returns
+[CreateAppBlockResultTypeDef](./type_defs.md#createappblockresulttypedef).
+
+### create_application
+
+Creates an application.
+
+Type annotations for `boto3.client("appstream").create_application` method.
+
+Boto3 documentation:
+[AppStream.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_application)
+
+Arguments mapping described in
+[CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `IconS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+  *(required)*
+- `LaunchPath`: `str` *(required)*
+- `Platforms`: `Sequence`\[[PlatformTypeType](./literals.md#platformtypetype)\]
+  *(required)*
+- `InstanceFamilies`: `Sequence`\[`str`\] *(required)*
+- `AppBlockArn`: `str` *(required)*
+- `DisplayName`: `str`
+- `Description`: `str`
+- `WorkingDirectory`: `str`
+- `LaunchParameters`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+Returns
+[CreateApplicationResultTypeDef](./type_defs.md#createapplicationresulttypedef).
+
 ### create_directory_config
 
 Creates a Directory Config object in AppStream 2.0.
@@ -261,11 +349,11 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `InstanceType`: `str` *(required)*
-- `ComputeCapacity`:
-  [ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef) *(required)*
 - `ImageName`: `str`
 - `ImageArn`: `str`
 - `FleetType`: [FleetTypeType](./literals.md#fleettypetype)
+- `ComputeCapacity`:
+  [ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef)
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `MaxUserDurationInSeconds`: `int`
 - `DisconnectTimeoutInSeconds`: `int`
@@ -278,6 +366,9 @@ Keyword-only arguments:
 - `IdleDisconnectTimeoutInSeconds`: `int`
 - `IamRoleArn`: `str`
 - `StreamView`: [StreamViewType](./literals.md#streamviewtype)
+- `Platform`: [PlatformTypeType](./literals.md#platformtypetype)
+- `MaxConcurrentSessions`: `int`
+- `UsbDeviceFilterStrings`: `Sequence`\[`str`\]
 
 Returns [CreateFleetResultTypeDef](./type_defs.md#createfleetresulttypedef).
 
@@ -453,6 +544,42 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### delete_app_block
+
+Deletes an app block.
+
+Type annotations for `boto3.client("appstream").delete_app_block` method.
+
+Boto3 documentation:
+[AppStream.Client.delete_app_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_app_block)
+
+Arguments mapping described in
+[DeleteAppBlockRequestRequestTypeDef](./type_defs.md#deleteappblockrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### delete_application
+
+Deletes an application.
+
+Type annotations for `boto3.client("appstream").delete_application` method.
+
+Boto3 documentation:
+[AppStream.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_application)
+
+Arguments mapping described in
+[DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### delete_directory_config
 
 Deletes the specified Directory Config object from AppStream 2.0.
@@ -596,6 +723,71 @@ Keyword-only arguments:
   [AuthenticationTypeType](./literals.md#authenticationtypetype) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### describe_app_blocks
+
+Retrieves a list that describes one or more app blocks.
+
+Type annotations for `boto3.client("appstream").describe_app_blocks` method.
+
+Boto3 documentation:
+[AppStream.Client.describe_app_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_app_blocks)
+
+Arguments mapping described in
+[DescribeAppBlocksRequestRequestTypeDef](./type_defs.md#describeappblocksrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Arns`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeAppBlocksResultTypeDef](./type_defs.md#describeappblocksresulttypedef).
+
+### describe_application_fleet_associations
+
+Retrieves a list that describes one or more application fleet associations.
+
+Type annotations for
+`boto3.client("appstream").describe_application_fleet_associations` method.
+
+Boto3 documentation:
+[AppStream.Client.describe_application_fleet_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_application_fleet_associations)
+
+Arguments mapping described in
+[DescribeApplicationFleetAssociationsRequestRequestTypeDef](./type_defs.md#describeapplicationfleetassociationsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FleetName`: `str`
+- `ApplicationArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeApplicationFleetAssociationsResultTypeDef](./type_defs.md#describeapplicationfleetassociationsresulttypedef).
+
+### describe_applications
+
+Retrieves a list that describes one or more applications.
+
+Type annotations for `boto3.client("appstream").describe_applications` method.
+
+Boto3 documentation:
+[AppStream.Client.describe_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_applications)
+
+Arguments mapping described in
+[DescribeApplicationsRequestRequestTypeDef](./type_defs.md#describeapplicationsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Arns`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeApplicationsResultTypeDef](./type_defs.md#describeapplicationsresulttypedef).
 
 ### describe_directory_configs
 
@@ -847,6 +1039,26 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### disassociate_application_fleet
+
+Disassociates the specified application from the fleet.
+
+Type annotations for `boto3.client("appstream").disassociate_application_fleet`
+method.
+
+Boto3 documentation:
+[AppStream.Client.disassociate_application_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disassociate_application_fleet)
+
+Arguments mapping described in
+[DisassociateApplicationFleetRequestRequestTypeDef](./type_defs.md#disassociateapplicationfleetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FleetName`: `str` *(required)*
+- `ApplicationArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### disassociate_fleet
 
 Disassociates the specified fleet from the specified stack.
@@ -1095,6 +1307,34 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### update_application
+
+Updates the specified application.
+
+Type annotations for `boto3.client("appstream").update_application` method.
+
+Boto3 documentation:
+[AppStream.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_application)
+
+Arguments mapping described in
+[UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `DisplayName`: `str`
+- `Description`: `str`
+- `IconS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+- `LaunchPath`: `str`
+- `WorkingDirectory`: `str`
+- `LaunchParameters`: `str`
+- `AppBlockArn`: `str`
+- `AttributesToDelete`:
+  `Sequence`\[[ApplicationAttributeType](./literals.md#applicationattributetype)\]
+
+Returns
+[UpdateApplicationResultTypeDef](./type_defs.md#updateapplicationresulttypedef).
+
 ### update_directory_config
 
 Updates the specified Directory Config object in AppStream 2.0.
@@ -1152,6 +1392,9 @@ Keyword-only arguments:
   `Sequence`\[[FleetAttributeType](./literals.md#fleetattributetype)\]
 - `IamRoleArn`: `str`
 - `StreamView`: [StreamViewType](./literals.md#streamviewtype)
+- `Platform`: [PlatformTypeType](./literals.md#platformtypetype)
+- `MaxConcurrentSessions`: `int`
+- `UsbDeviceFilterStrings`: `Sequence`\[`str`\]
 
 Returns [UpdateFleetResultTypeDef](./type_defs.md#updatefleetresulttypedef).
 

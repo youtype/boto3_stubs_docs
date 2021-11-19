@@ -628,6 +628,7 @@ Keyword-only arguments:
 - `AvailabilityZoneRelocation`: `bool`
 - `AquaConfigurationStatus`:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
+- `DefaultIamRoleArn`: `str`
 
 Returns
 [CreateClusterResultTypeDef](./type_defs.md#createclusterresulttypedef).
@@ -2396,6 +2397,7 @@ Keyword-only arguments:
 - `ClusterIdentifier`: `str` *(required)*
 - `AddIamRoles`: `Sequence`\[`str`\]
 - `RemoveIamRoles`: `Sequence`\[`str`\]
+- `DefaultIamRoleArn`: `str`
 
 Returns
 [ModifyClusterIamRolesResultTypeDef](./type_defs.md#modifyclusteriamrolesresulttypedef).
@@ -2818,6 +2820,7 @@ Keyword-only arguments:
 - `AvailabilityZoneRelocation`: `bool`
 - `AquaConfigurationStatus`:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
+- `DefaultIamRoleArn`: `str`
 
 Returns
 [RestoreFromClusterSnapshotResultTypeDef](./type_defs.md#restorefromclustersnapshotresulttypedef).

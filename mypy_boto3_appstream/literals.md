@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 AppStream module](#literals-for-boto3-appstream-module)
   - [AccessEndpointTypeType](#accessendpointtypetype)
   - [ActionType](#actiontype)
+  - [ApplicationAttributeType](#applicationattributetype)
   - [AuthenticationTypeType](#authenticationtypetype)
   - [DescribeDirectoryConfigsPaginatorName](#describedirectoryconfigspaginatorname)
   - [DescribeFleetsPaginatorName](#describefleetspaginatorname)
@@ -73,6 +74,17 @@ Values:
 - `FILE_DOWNLOAD`
 - `FILE_UPLOAD`
 - `PRINTING_TO_LOCAL_DEVICE`
+
+## ApplicationAttributeType
+
+```python
+from mypy_boto3_appstream.literals import ApplicationAttributeType
+```
+
+Values:
+
+- `LAUNCH_PARAMETERS`
+- `WORKING_DIRECTORY`
 
 ## AuthenticationTypeType
 
@@ -176,6 +188,7 @@ Values:
 
 - `DOMAIN_JOIN_INFO`
 - `IAM_ROLE_ARN`
+- `USB_DEVICE_FILTER_STRINGS`
 - `VPC_CONFIGURATION`
 - `VPC_CONFIGURATION_SECURITY_GROUP_IDS`
 
@@ -260,6 +273,7 @@ from mypy_boto3_appstream.literals import FleetTypeType
 Values:
 
 - `ALWAYS_ON`
+- `ELASTIC`
 - `ON_DEMAND`
 
 ## ImageBuilderStateChangeReasonCodeType

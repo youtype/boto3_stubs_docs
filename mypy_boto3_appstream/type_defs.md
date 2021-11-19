@@ -9,9 +9,13 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 AppStream module](#typed-dictionaries-for-boto3-appstream-module)
   - [AccessEndpointTypeDef](#accessendpointtypedef)
+  - [AppBlockTypeDef](#appblocktypedef)
+  - [ApplicationFleetAssociationTypeDef](#applicationfleetassociationtypedef)
   - [ApplicationSettingsResponseTypeDef](#applicationsettingsresponsetypedef)
   - [ApplicationSettingsTypeDef](#applicationsettingstypedef)
   - [ApplicationTypeDef](#applicationtypedef)
+  - [AssociateApplicationFleetRequestRequestTypeDef](#associateapplicationfleetrequestrequesttypedef)
+  - [AssociateApplicationFleetResultTypeDef](#associateapplicationfleetresulttypedef)
   - [AssociateFleetRequestRequestTypeDef](#associatefleetrequestrequesttypedef)
   - [BatchAssociateUserStackRequestRequestTypeDef](#batchassociateuserstackrequestrequesttypedef)
   - [BatchAssociateUserStackResultTypeDef](#batchassociateuserstackresulttypedef)
@@ -21,6 +25,10 @@ type annotations stubs module
   - [ComputeCapacityTypeDef](#computecapacitytypedef)
   - [CopyImageRequestRequestTypeDef](#copyimagerequestrequesttypedef)
   - [CopyImageResponseTypeDef](#copyimageresponsetypedef)
+  - [CreateAppBlockRequestRequestTypeDef](#createappblockrequestrequesttypedef)
+  - [CreateAppBlockResultTypeDef](#createappblockresulttypedef)
+  - [CreateApplicationRequestRequestTypeDef](#createapplicationrequestrequesttypedef)
+  - [CreateApplicationResultTypeDef](#createapplicationresulttypedef)
   - [CreateDirectoryConfigRequestRequestTypeDef](#createdirectoryconfigrequestrequesttypedef)
   - [CreateDirectoryConfigResultTypeDef](#createdirectoryconfigresulttypedef)
   - [CreateFleetRequestRequestTypeDef](#createfleetrequestrequesttypedef)
@@ -37,6 +45,8 @@ type annotations stubs module
   - [CreateUpdatedImageResultTypeDef](#createupdatedimageresulttypedef)
   - [CreateUsageReportSubscriptionResultTypeDef](#createusagereportsubscriptionresulttypedef)
   - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
+  - [DeleteAppBlockRequestRequestTypeDef](#deleteappblockrequestrequesttypedef)
+  - [DeleteApplicationRequestRequestTypeDef](#deleteapplicationrequestrequesttypedef)
   - [DeleteDirectoryConfigRequestRequestTypeDef](#deletedirectoryconfigrequestrequesttypedef)
   - [DeleteFleetRequestRequestTypeDef](#deletefleetrequestrequesttypedef)
   - [DeleteImageBuilderRequestRequestTypeDef](#deleteimagebuilderrequestrequesttypedef)
@@ -46,6 +56,12 @@ type annotations stubs module
   - [DeleteImageResultTypeDef](#deleteimageresulttypedef)
   - [DeleteStackRequestRequestTypeDef](#deletestackrequestrequesttypedef)
   - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
+  - [DescribeAppBlocksRequestRequestTypeDef](#describeappblocksrequestrequesttypedef)
+  - [DescribeAppBlocksResultTypeDef](#describeappblocksresulttypedef)
+  - [DescribeApplicationFleetAssociationsRequestRequestTypeDef](#describeapplicationfleetassociationsrequestrequesttypedef)
+  - [DescribeApplicationFleetAssociationsResultTypeDef](#describeapplicationfleetassociationsresulttypedef)
+  - [DescribeApplicationsRequestRequestTypeDef](#describeapplicationsrequestrequesttypedef)
+  - [DescribeApplicationsResultTypeDef](#describeapplicationsresulttypedef)
   - [DescribeDirectoryConfigsRequestRequestTypeDef](#describedirectoryconfigsrequestrequesttypedef)
   - [DescribeDirectoryConfigsResultTypeDef](#describedirectoryconfigsresulttypedef)
   - [DescribeFleetsRequestRequestTypeDef](#describefleetsrequestrequesttypedef)
@@ -68,6 +84,7 @@ type annotations stubs module
   - [DescribeUsersResultTypeDef](#describeusersresulttypedef)
   - [DirectoryConfigTypeDef](#directoryconfigtypedef)
   - [DisableUserRequestRequestTypeDef](#disableuserrequestrequesttypedef)
+  - [DisassociateApplicationFleetRequestRequestTypeDef](#disassociateapplicationfleetrequestrequesttypedef)
   - [DisassociateFleetRequestRequestTypeDef](#disassociatefleetrequestrequesttypedef)
   - [DomainJoinInfoTypeDef](#domainjoininfotypedef)
   - [EnableUserRequestRequestTypeDef](#enableuserrequestrequesttypedef)
@@ -90,6 +107,8 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResourceErrorTypeDef](#resourceerrortypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [S3LocationTypeDef](#s3locationtypedef)
+  - [ScriptDetailsTypeDef](#scriptdetailstypedef)
   - [ServiceAccountCredentialsTypeDef](#serviceaccountcredentialstypedef)
   - [SessionTypeDef](#sessiontypedef)
   - [SharedImagePermissionsTypeDef](#sharedimagepermissionstypedef)
@@ -104,6 +123,8 @@ type annotations stubs module
   - [StorageConnectorTypeDef](#storageconnectortypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
+  - [UpdateApplicationResultTypeDef](#updateapplicationresulttypedef)
   - [UpdateDirectoryConfigRequestRequestTypeDef](#updatedirectoryconfigrequestrequesttypedef)
   - [UpdateDirectoryConfigResultTypeDef](#updatedirectoryconfigresulttypedef)
   - [UpdateFleetRequestRequestTypeDef](#updatefleetrequestrequesttypedef)
@@ -133,6 +154,37 @@ Required fields:
 Optional fields:
 
 - `VpceId`: `str`
+
+## AppBlockTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import AppBlockTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Arn`: `str`
+- `SetupScriptDetails`:
+  [ScriptDetailsTypeDef](./type_defs.md#scriptdetailstypedef)
+
+Optional fields:
+
+- `Description`: `str`
+- `DisplayName`: `str`
+- `SourceS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+- `CreatedTime`: `datetime`
+
+## ApplicationFleetAssociationTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import ApplicationFleetAssociationTypeDef
+```
+
+Required fields:
+
+- `FleetName`: `str`
+- `ApplicationArn`: `str`
 
 ## ApplicationSettingsResponseTypeDef
 
@@ -175,6 +227,38 @@ Optional fields:
 - `LaunchParameters`: `str`
 - `Enabled`: `bool`
 - `Metadata`: `Dict`\[`str`, `str`\]
+- `WorkingDirectory`: `str`
+- `Description`: `str`
+- `Arn`: `str`
+- `AppBlockArn`: `str`
+- `IconS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+- `Platforms`: `List`\[[PlatformTypeType](./literals.md#platformtypetype)\]
+- `InstanceFamilies`: `List`\[`str`\]
+- `CreatedTime`: `datetime`
+
+## AssociateApplicationFleetRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import AssociateApplicationFleetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `FleetName`: `str`
+- `ApplicationArn`: `str`
+
+## AssociateApplicationFleetResultTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import AssociateApplicationFleetResultTypeDef
+```
+
+Required fields:
+
+- `ApplicationFleetAssociation`:
+  [ApplicationFleetAssociationTypeDef](./type_defs.md#applicationfleetassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AssociateFleetRequestRequestTypeDef
 
@@ -289,6 +373,72 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateAppBlockRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateAppBlockRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `SourceS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+- `SetupScriptDetails`:
+  [ScriptDetailsTypeDef](./type_defs.md#scriptdetailstypedef)
+
+Optional fields:
+
+- `Description`: `str`
+- `DisplayName`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+## CreateAppBlockResultTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateAppBlockResultTypeDef
+```
+
+Required fields:
+
+- `AppBlock`: [AppBlockTypeDef](./type_defs.md#appblocktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateApplicationRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateApplicationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `IconS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+- `LaunchPath`: `str`
+- `Platforms`: `Sequence`\[[PlatformTypeType](./literals.md#platformtypetype)\]
+- `InstanceFamilies`: `Sequence`\[`str`\]
+- `AppBlockArn`: `str`
+
+Optional fields:
+
+- `DisplayName`: `str`
+- `Description`: `str`
+- `WorkingDirectory`: `str`
+- `LaunchParameters`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+## CreateApplicationResultTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateApplicationResultTypeDef
+```
+
+Required fields:
+
+- `Application`: [ApplicationTypeDef](./type_defs.md#applicationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateDirectoryConfigRequestRequestTypeDef
 
 ```python
@@ -328,14 +478,14 @@ Required fields:
 
 - `Name`: `str`
 - `InstanceType`: `str`
-- `ComputeCapacity`:
-  [ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef)
 
 Optional fields:
 
 - `ImageName`: `str`
 - `ImageArn`: `str`
 - `FleetType`: [FleetTypeType](./literals.md#fleettypetype)
+- `ComputeCapacity`:
+  [ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef)
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `MaxUserDurationInSeconds`: `int`
 - `DisconnectTimeoutInSeconds`: `int`
@@ -348,6 +498,9 @@ Optional fields:
 - `IdleDisconnectTimeoutInSeconds`: `int`
 - `IamRoleArn`: `str`
 - `StreamView`: [StreamViewType](./literals.md#streamviewtype)
+- `Platform`: [PlatformTypeType](./literals.md#platformtypetype)
+- `MaxConcurrentSessions`: `int`
+- `UsbDeviceFilterStrings`: `Sequence`\[`str`\]
 
 ## CreateFleetResultTypeDef
 
@@ -560,6 +713,26 @@ Optional fields:
 - `FirstName`: `str`
 - `LastName`: `str`
 
+## DeleteAppBlockRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DeleteAppBlockRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeleteApplicationRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DeleteApplicationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
 ## DeleteDirectoryConfigRequestRequestTypeDef
 
 ```python
@@ -656,6 +829,84 @@ Required fields:
 - `UserName`: `str`
 - `AuthenticationType`:
   [AuthenticationTypeType](./literals.md#authenticationtypetype)
+
+## DescribeAppBlocksRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeAppBlocksRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `Arns`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeAppBlocksResultTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeAppBlocksResultTypeDef
+```
+
+Required fields:
+
+- `AppBlocks`: `List`\[[AppBlockTypeDef](./type_defs.md#appblocktypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeApplicationFleetAssociationsRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeApplicationFleetAssociationsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `FleetName`: `str`
+- `ApplicationArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeApplicationFleetAssociationsResultTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeApplicationFleetAssociationsResultTypeDef
+```
+
+Required fields:
+
+- `ApplicationFleetAssociations`:
+  `List`\[[ApplicationFleetAssociationTypeDef](./type_defs.md#applicationfleetassociationtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeApplicationsRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeApplicationsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `Arns`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeApplicationsResultTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeApplicationsResultTypeDef
+```
+
+Required fields:
+
+- `Applications`:
+  `List`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeDirectoryConfigsRequestRequestTypeDef
 
@@ -959,6 +1210,17 @@ Required fields:
 - `AuthenticationType`:
   [AuthenticationTypeType](./literals.md#authenticationtypetype)
 
+## DisassociateApplicationFleetRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DisassociateApplicationFleetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `FleetName`: `str`
+- `ApplicationArn`: `str`
+
 ## DisassociateFleetRequestRequestTypeDef
 
 ```python
@@ -1048,6 +1310,9 @@ Optional fields:
 - `IdleDisconnectTimeoutInSeconds`: `int`
 - `IamRoleArn`: `str`
 - `StreamView`: [StreamViewType](./literals.md#streamviewtype)
+- `Platform`: [PlatformTypeType](./literals.md#platformtypetype)
+- `MaxConcurrentSessions`: `int`
+- `UsbDeviceFilterStrings`: `List`\[`str`\]
 
 ## ImageBuilderStateChangeReasonTypeDef
 
@@ -1289,6 +1554,33 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+## S3LocationTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import S3LocationTypeDef
+```
+
+Required fields:
+
+- `S3Bucket`: `str`
+- `S3Key`: `str`
+
+## ScriptDetailsTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import ScriptDetailsTypeDef
+```
+
+Required fields:
+
+- `ScriptS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+- `ExecutablePath`: `str`
+- `TimeoutInSeconds`: `int`
+
+Optional fields:
+
+- `ExecutableParameters`: `str`
+
 ## ServiceAccountCredentialsTypeDef
 
 ```python
@@ -1484,6 +1776,40 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
 
+## UpdateApplicationRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import UpdateApplicationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `DisplayName`: `str`
+- `Description`: `str`
+- `IconS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+- `LaunchPath`: `str`
+- `WorkingDirectory`: `str`
+- `LaunchParameters`: `str`
+- `AppBlockArn`: `str`
+- `AttributesToDelete`:
+  `Sequence`\[[ApplicationAttributeType](./literals.md#applicationattributetype)\]
+
+## UpdateApplicationResultTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import UpdateApplicationResultTypeDef
+```
+
+Required fields:
+
+- `Application`: [ApplicationTypeDef](./type_defs.md#applicationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## UpdateDirectoryConfigRequestRequestTypeDef
 
 ```python
@@ -1541,6 +1867,9 @@ Optional fields:
   `Sequence`\[[FleetAttributeType](./literals.md#fleetattributetype)\]
 - `IamRoleArn`: `str`
 - `StreamView`: [StreamViewType](./literals.md#streamviewtype)
+- `Platform`: [PlatformTypeType](./literals.md#platformtypetype)
+- `MaxConcurrentSessions`: `int`
+- `UsbDeviceFilterStrings`: `Sequence`\[`str`\]
 
 ## UpdateFleetResultTypeDef
 

@@ -415,6 +415,7 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [ListTypesInputRequestTypeDef](./type_defs.md#listtypesinputrequesttypedef)
 - [ListTypesOutputTypeDef](./type_defs.md#listtypesoutputtypedef)
 - [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
+- [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
 - [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
 - [OutputTypeDef](./type_defs.md#outputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

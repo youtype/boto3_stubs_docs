@@ -14,6 +14,7 @@ type annotations stubs module
   - [MessageContentTypeType](#messagecontenttypetype)
   - [SentimentTypeType](#sentimenttypetype)
   - [ShapeType](#shapetype)
+  - [StyleTypeType](#styletypetype)
   - [ServiceName](#servicename)
 
 ## ConfirmationStateType
@@ -94,6 +95,18 @@ Values:
 
 - `List`
 - `Scalar`
+
+## StyleTypeType
+
+```python
+from mypy_boto3_lexv2_runtime.literals import StyleTypeType
+```
+
+Values:
+
+- `Default`
+- `SpellByLetter`
+- `SpellByWord`
 
 ## ServiceName
 
