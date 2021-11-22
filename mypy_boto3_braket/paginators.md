@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Paginators for boto3 Braket module](#paginators-for-boto3-braket-module)
   - [SearchDevicesPaginator](#searchdevicespaginator)
+  - [SearchJobsPaginator](#searchjobspaginator)
   - [SearchQuantumTasksPaginator](#searchquantumtaskspaginator)
 
 ## SearchDevicesPaginator
@@ -37,6 +38,33 @@ Arguments for `SearchDevicesPaginator.paginate` method:
 
 `SearchDevicesPaginator.paginate` returns
 `_PageIterator`\[[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef)\].
+
+## SearchJobsPaginator
+
+Type annotations for `boto3.client("braket").get_paginator("search_jobs")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_braket.paginator import SearchJobsPaginator
+
+def get_search_jobs_paginator() -> SearchJobsPaginator:
+    return boto3.client("braket").get_paginator("search_jobs")
+```
+
+Boto3 documentation:
+[Braket.Paginator.SearchJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchJobs)
+
+Arguments for `SearchJobsPaginator.paginate` method:
+
+- `filters`:
+  `Sequence`\[[SearchJobsFilterTypeDef](./type_defs.md#searchjobsfiltertypedef)\]
+  *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`SearchJobsPaginator.paginate` returns
+`_PageIterator`\[[SearchJobsResponseTypeDef](./type_defs.md#searchjobsresponsetypedef)\].
 
 ## SearchQuantumTasksPaginator
 

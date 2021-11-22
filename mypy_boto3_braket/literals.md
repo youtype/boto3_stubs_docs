@@ -9,10 +9,16 @@ type annotations stubs module
 
 - [Literals for boto3 Braket module](#literals-for-boto3-braket-module)
   - [CancellationStatusType](#cancellationstatustype)
+  - [CompressionTypeType](#compressiontypetype)
   - [DeviceStatusType](#devicestatustype)
   - [DeviceTypeType](#devicetypetype)
+  - [InstanceTypeType](#instancetypetype)
+  - [JobEventTypeType](#jobeventtypetype)
+  - [JobPrimaryStatusType](#jobprimarystatustype)
   - [QuantumTaskStatusType](#quantumtaskstatustype)
   - [SearchDevicesPaginatorName](#searchdevicespaginatorname)
+  - [SearchJobsFilterOperatorType](#searchjobsfilteroperatortype)
+  - [SearchJobsPaginatorName](#searchjobspaginatorname)
   - [SearchQuantumTasksFilterOperatorType](#searchquantumtasksfilteroperatortype)
   - [SearchQuantumTasksPaginatorName](#searchquantumtaskspaginatorname)
   - [ServiceName](#servicename)
@@ -28,6 +34,17 @@ Values:
 
 - `CANCELLED`
 - `CANCELLING`
+
+## CompressionTypeType
+
+```python
+from mypy_boto3_braket.literals import CompressionTypeType
+```
+
+Values:
+
+- `GZIP`
+- `NONE`
 
 ## DeviceStatusType
 
@@ -51,6 +68,89 @@ Values:
 
 - `QPU`
 - `SIMULATOR`
+
+## InstanceTypeType
+
+```python
+from mypy_boto3_braket.literals import InstanceTypeType
+```
+
+Values:
+
+- `ml.c4.2xlarge`
+- `ml.c4.4xlarge`
+- `ml.c4.8xlarge`
+- `ml.c4.xlarge`
+- `ml.c5.18xlarge`
+- `ml.c5.2xlarge`
+- `ml.c5.4xlarge`
+- `ml.c5.9xlarge`
+- `ml.c5.xlarge`
+- `ml.c5n.18xlarge`
+- `ml.c5n.2xlarge`
+- `ml.c5n.4xlarge`
+- `ml.c5n.9xlarge`
+- `ml.c5n.xlarge`
+- `ml.g4dn.12xlarge`
+- `ml.g4dn.16xlarge`
+- `ml.g4dn.2xlarge`
+- `ml.g4dn.4xlarge`
+- `ml.g4dn.8xlarge`
+- `ml.g4dn.xlarge`
+- `ml.m4.10xlarge`
+- `ml.m4.16xlarge`
+- `ml.m4.2xlarge`
+- `ml.m4.4xlarge`
+- `ml.m4.xlarge`
+- `ml.m5.12xlarge`
+- `ml.m5.24xlarge`
+- `ml.m5.2xlarge`
+- `ml.m5.4xlarge`
+- `ml.m5.large`
+- `ml.m5.xlarge`
+- `ml.p2.16xlarge`
+- `ml.p2.8xlarge`
+- `ml.p2.xlarge`
+- `ml.p3.16xlarge`
+- `ml.p3.2xlarge`
+- `ml.p3.8xlarge`
+- `ml.p3dn.24xlarge`
+- `ml.p4d.24xlarge`
+
+## JobEventTypeType
+
+```python
+from mypy_boto3_braket.literals import JobEventTypeType
+```
+
+Values:
+
+- `CANCELLED`
+- `COMPLETED`
+- `DEPRIORITIZED_DUE_TO_INACTIVITY`
+- `DOWNLOADING_DATA`
+- `FAILED`
+- `MAX_RUNTIME_EXCEEDED`
+- `QUEUED_FOR_EXECUTION`
+- `RUNNING`
+- `STARTING_INSTANCE`
+- `UPLOADING_RESULTS`
+- `WAITING_FOR_PRIORITY`
+
+## JobPrimaryStatusType
+
+```python
+from mypy_boto3_braket.literals import JobPrimaryStatusType
+```
+
+Values:
+
+- `CANCELLED`
+- `CANCELLING`
+- `COMPLETED`
+- `FAILED`
+- `QUEUED`
+- `RUNNING`
 
 ## QuantumTaskStatusType
 
@@ -77,6 +177,32 @@ from mypy_boto3_braket.literals import SearchDevicesPaginatorName
 Values:
 
 - `search_devices`
+
+## SearchJobsFilterOperatorType
+
+```python
+from mypy_boto3_braket.literals import SearchJobsFilterOperatorType
+```
+
+Values:
+
+- `BETWEEN`
+- `CONTAINS`
+- `EQUAL`
+- `GT`
+- `GTE`
+- `LT`
+- `LTE`
+
+## SearchJobsPaginatorName
+
+```python
+from mypy_boto3_braket.literals import SearchJobsPaginatorName
+```
+
+Values:
+
+- `search_jobs`
 
 ## SearchQuantumTasksFilterOperatorType
 
@@ -411,4 +537,5 @@ from mypy_boto3_braket.literals import PaginatorName
 Values:
 
 - `search_devices`
+- `search_jobs`
 - `search_quantum_tasks`

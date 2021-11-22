@@ -488,7 +488,7 @@ Returns
 
 ### create_iam_policy_assignment
 
-Creates an assignment with one specified IAMpolicy, identified by its Amazon
+Creates an assignment with one specified IAM policy, identified by its Amazon
 Resource Name (ARN).
 
 Type annotations for `boto3.client("quicksight").create_iam_policy_assignment`
@@ -857,7 +857,7 @@ Returns
 
 ### delete_iam_policy_assignment
 
-Deletes an existing IAMpolicy assignment.
+Deletes an existing IAM policy assignment.
 
 Type annotations for `boto3.client("quicksight").delete_iam_policy_assignment`
 method.
@@ -1322,7 +1322,7 @@ Returns
 
 ### describe_iam_policy_assignment
 
-Describes an existing IAMpolicy assignment, as specified by the assignment
+Describes an existing IAM policy assignment, as specified by the assignment
 name.
 
 Type annotations for
@@ -1366,7 +1366,7 @@ Returns
 
 ### describe_ip_restriction
 
-Provides a summary and status of IP Rules.
+Provides a summary and status of IP rules.
 
 Type annotations for `boto3.client("quicksight").describe_ip_restriction`
 method.
@@ -1883,7 +1883,7 @@ Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
 ### list_iam_policy_assignments
 
-Lists IAMpolicy assignments in the current Amazon QuickSight account.
+Lists IAM policy assignments in the current Amazon QuickSight account.
 
 Type annotations for `boto3.client("quicksight").list_iam_policy_assignments`
 method.
@@ -1908,9 +1908,9 @@ Returns
 
 ### list_iam_policy_assignments_for_user
 
-Lists all the IAMpolicy assignments, including the Amazon Resource Names (ARNs)
-for the IAM policies assigned to the specified user and group or groups that
-the user belongs to.
+Lists all the IAM policy assignments, including the Amazon Resource Names
+(ARNs) for the IAM policies assigned to the specified user and group or groups
+that the user belongs to.
 
 Type annotations for
 `boto3.client("quicksight").list_iam_policy_assignments_for_user` method.
@@ -2488,6 +2488,10 @@ Keyword-only arguments:
   `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
   `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `GrantLinkPermissions`:
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `RevokeLinkPermissions`:
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateDashboardPermissionsResponseTypeDef](./type_defs.md#updatedashboardpermissionsresponsetypedef).
@@ -2701,7 +2705,7 @@ Returns
 
 ### update_iam_policy_assignment
 
-Updates an existing IAMpolicy assignment.
+Updates an existing IAM policy assignment.
 
 Type annotations for `boto3.client("quicksight").update_iam_policy_assignment`
 method.
@@ -2727,7 +2731,7 @@ Returns
 
 ### update_ip_restriction
 
-Updates content and status of IP Rules.
+Updates the content and status of IP rules.
 
 Type annotations for `boto3.client("quicksight").update_ip_restriction` method.
 

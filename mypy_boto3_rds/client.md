@@ -858,6 +858,7 @@ Keyword-only arguments:
 - `MaxAllocatedStorage`: `int`
 - `EnableCustomerOwnedIp`: `bool`
 - `CustomIamInstanceProfile`: `str`
+- `BackupTarget`: `str`
 
 Returns
 [CreateDBInstanceResultTypeDef](./type_defs.md#createdbinstanceresulttypedef).
@@ -3483,6 +3484,7 @@ Keyword-only arguments:
 - `DeletionProtection`: `bool`
 - `EnableCustomerOwnedIp`: `bool`
 - `CustomIamInstanceProfile`: `str`
+- `BackupTarget`: `str`
 
 Returns
 [RestoreDBInstanceFromDBSnapshotResultTypeDef](./type_defs.md#restoredbinstancefromdbsnapshotresulttypedef).
@@ -3602,6 +3604,7 @@ Keyword-only arguments:
 - `SourceDBInstanceAutomatedBackupsArn`: `str`
 - `EnableCustomerOwnedIp`: `bool`
 - `CustomIamInstanceProfile`: `str`
+- `BackupTarget`: `str`
 
 Returns
 [RestoreDBInstanceToPointInTimeResultTypeDef](./type_defs.md#restoredbinstancetopointintimeresulttypedef).

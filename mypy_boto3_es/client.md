@@ -981,6 +981,7 @@ Keyword-only arguments:
   [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
 - `AutoTuneOptions`:
   [AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef)
+- `DryRun`: `bool`
 
 Returns
 [UpdateElasticsearchDomainConfigResponseTypeDef](./type_defs.md#updateelasticsearchdomainconfigresponsetypedef).

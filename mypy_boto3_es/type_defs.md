@@ -75,6 +75,7 @@ type annotations stubs module
   - [DomainInfoTypeDef](#domaininfotypedef)
   - [DomainInformationTypeDef](#domaininformationtypedef)
   - [DomainPackageDetailsTypeDef](#domainpackagedetailstypedef)
+  - [DryRunResultsTypeDef](#dryrunresultstypedef)
   - [DurationTypeDef](#durationtypedef)
   - [EBSOptionsStatusTypeDef](#ebsoptionsstatustypedef)
   - [EBSOptionsTypeDef](#ebsoptionstypedef)
@@ -1031,6 +1032,17 @@ Optional fields:
 - `PackageVersion`: `str`
 - `ReferencePath`: `str`
 - `ErrorDetails`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
+
+## DryRunResultsTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DryRunResultsTypeDef
+```
+
+Optional fields:
+
+- `DeploymentType`: `str`
+- `Message`: `str`
 
 ## DurationTypeDef
 
@@ -2046,6 +2058,7 @@ Optional fields:
   [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
 - `AutoTuneOptions`:
   [AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef)
+- `DryRun`: `bool`
 
 ## UpdateElasticsearchDomainConfigResponseTypeDef
 
@@ -2057,6 +2070,7 @@ Required fields:
 
 - `DomainConfig`:
   [ElasticsearchDomainConfigTypeDef](./type_defs.md#elasticsearchdomainconfigtypedef)
+- `DryRunResults`: [DryRunResultsTypeDef](./type_defs.md#dryrunresultstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

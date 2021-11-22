@@ -26,11 +26,15 @@ type annotations stubs module
   - [AttributeTypeDef](#attributetypedef)
   - [ChatMessageTypeDef](#chatmessagetypedef)
   - [ChatStreamingConfigurationTypeDef](#chatstreamingconfigurationtypedef)
+  - [ContactFlowModuleSummaryTypeDef](#contactflowmodulesummarytypedef)
+  - [ContactFlowModuleTypeDef](#contactflowmoduletypedef)
   - [ContactFlowSummaryTypeDef](#contactflowsummarytypedef)
   - [ContactFlowTypeDef](#contactflowtypedef)
   - [ContactTypeDef](#contacttypedef)
   - [CreateAgentStatusRequestRequestTypeDef](#createagentstatusrequestrequesttypedef)
   - [CreateAgentStatusResponseTypeDef](#createagentstatusresponsetypedef)
+  - [CreateContactFlowModuleRequestRequestTypeDef](#createcontactflowmodulerequestrequesttypedef)
+  - [CreateContactFlowModuleResponseTypeDef](#createcontactflowmoduleresponsetypedef)
   - [CreateContactFlowRequestRequestTypeDef](#createcontactflowrequestrequesttypedef)
   - [CreateContactFlowResponseTypeDef](#createcontactflowresponsetypedef)
   - [CreateHoursOfOperationRequestRequestTypeDef](#createhoursofoperationrequestrequesttypedef)
@@ -57,6 +61,8 @@ type annotations stubs module
   - [CurrentMetricDataTypeDef](#currentmetricdatatypedef)
   - [CurrentMetricResultTypeDef](#currentmetricresulttypedef)
   - [CurrentMetricTypeDef](#currentmetrictypedef)
+  - [DeleteContactFlowModuleRequestRequestTypeDef](#deletecontactflowmodulerequestrequesttypedef)
+  - [DeleteContactFlowRequestRequestTypeDef](#deletecontactflowrequestrequesttypedef)
   - [DeleteHoursOfOperationRequestRequestTypeDef](#deletehoursofoperationrequestrequesttypedef)
   - [DeleteInstanceRequestRequestTypeDef](#deleteinstancerequestrequesttypedef)
   - [DeleteIntegrationAssociationRequestRequestTypeDef](#deleteintegrationassociationrequestrequesttypedef)
@@ -67,6 +73,8 @@ type annotations stubs module
   - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
   - [DescribeAgentStatusRequestRequestTypeDef](#describeagentstatusrequestrequesttypedef)
   - [DescribeAgentStatusResponseTypeDef](#describeagentstatusresponsetypedef)
+  - [DescribeContactFlowModuleRequestRequestTypeDef](#describecontactflowmodulerequestrequesttypedef)
+  - [DescribeContactFlowModuleResponseTypeDef](#describecontactflowmoduleresponsetypedef)
   - [DescribeContactFlowRequestRequestTypeDef](#describecontactflowrequestrequesttypedef)
   - [DescribeContactFlowResponseTypeDef](#describecontactflowresponsetypedef)
   - [DescribeContactRequestRequestTypeDef](#describecontactrequestrequesttypedef)
@@ -143,6 +151,8 @@ type annotations stubs module
   - [ListApprovedOriginsResponseTypeDef](#listapprovedoriginsresponsetypedef)
   - [ListBotsRequestRequestTypeDef](#listbotsrequestrequesttypedef)
   - [ListBotsResponseTypeDef](#listbotsresponsetypedef)
+  - [ListContactFlowModulesRequestRequestTypeDef](#listcontactflowmodulesrequestrequesttypedef)
+  - [ListContactFlowModulesResponseTypeDef](#listcontactflowmodulesresponsetypedef)
   - [ListContactFlowsRequestRequestTypeDef](#listcontactflowsrequestrequesttypedef)
   - [ListContactFlowsResponseTypeDef](#listcontactflowsresponsetypedef)
   - [ListContactReferencesRequestRequestTypeDef](#listcontactreferencesrequestrequesttypedef)
@@ -236,6 +246,9 @@ type annotations stubs module
   - [UpdateAgentStatusRequestRequestTypeDef](#updateagentstatusrequestrequesttypedef)
   - [UpdateContactAttributesRequestRequestTypeDef](#updatecontactattributesrequestrequesttypedef)
   - [UpdateContactFlowContentRequestRequestTypeDef](#updatecontactflowcontentrequestrequesttypedef)
+  - [UpdateContactFlowMetadataRequestRequestTypeDef](#updatecontactflowmetadatarequestrequesttypedef)
+  - [UpdateContactFlowModuleContentRequestRequestTypeDef](#updatecontactflowmodulecontentrequestrequesttypedef)
+  - [UpdateContactFlowModuleMetadataRequestRequestTypeDef](#updatecontactflowmodulemetadatarequestrequesttypedef)
   - [UpdateContactFlowNameRequestRequestTypeDef](#updatecontactflownamerequestrequesttypedef)
   - [UpdateContactRequestRequestTypeDef](#updatecontactrequestrequesttypedef)
   - [UpdateContactScheduleRequestRequestTypeDef](#updatecontactschedulerequestrequesttypedef)
@@ -489,6 +502,39 @@ Required fields:
 
 - `StreamingEndpointArn`: `str`
 
+## ContactFlowModuleSummaryTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ContactFlowModuleSummaryTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `Arn`: `str`
+- `Name`: `str`
+- `State`:
+  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
+
+## ContactFlowModuleTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ContactFlowModuleTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `Id`: `str`
+- `Name`: `str`
+- `Content`: `str`
+- `Description`: `str`
+- `State`:
+  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
+- `Status`:
+  [ContactFlowModuleStatusType](./literals.md#contactflowmodulestatustype)
+- `Tags`: `Dict`\[`str`, `str`\]
+
 ## ContactFlowSummaryTypeDef
 
 ```python
@@ -501,6 +547,8 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `ContactFlowType`: [ContactFlowTypeType](./literals.md#contactflowtypetype)
+- `ContactFlowState`:
+  [ContactFlowStateType](./literals.md#contactflowstatetype)
 
 ## ContactFlowTypeDef
 
@@ -514,6 +562,7 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Type`: [ContactFlowTypeType](./literals.md#contactflowtypetype)
+- `State`: [ContactFlowStateType](./literals.md#contactflowstatetype)
 - `Description`: `str`
 - `Content`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -570,6 +619,37 @@ Required fields:
 
 - `AgentStatusARN`: `str`
 - `AgentStatusId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateContactFlowModuleRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateContactFlowModuleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `Name`: `str`
+- `Content`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `ClientToken`: `str`
+
+## CreateContactFlowModuleResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateContactFlowModuleResponseTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `Arn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -970,6 +1050,28 @@ Optional fields:
 - `Name`: [CurrentMetricNameType](./literals.md#currentmetricnametype)
 - `Unit`: [UnitType](./literals.md#unittype)
 
+## DeleteContactFlowModuleRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DeleteContactFlowModuleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `ContactFlowModuleId`: `str`
+
+## DeleteContactFlowRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DeleteContactFlowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `ContactFlowId`: `str`
+
 ## DeleteHoursOfOperationRequestRequestTypeDef
 
 ```python
@@ -1078,6 +1180,30 @@ from mypy_boto3_connect.type_defs import DescribeAgentStatusResponseTypeDef
 Required fields:
 
 - `AgentStatus`: [AgentStatusTypeDef](./type_defs.md#agentstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeContactFlowModuleRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DescribeContactFlowModuleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `ContactFlowModuleId`: `str`
+
+## DescribeContactFlowModuleResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DescribeContactFlowModuleResponseTypeDef
+```
+
+Required fields:
+
+- `ContactFlowModule`:
+  [ContactFlowModuleTypeDef](./type_defs.md#contactflowmoduletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2061,6 +2187,37 @@ Required fields:
 
 - `LexBots`:
   `List`\[[LexBotConfigTypeDef](./type_defs.md#lexbotconfigtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListContactFlowModulesRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListContactFlowModulesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ContactFlowModuleState`:
+  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
+
+## ListContactFlowModulesResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListContactFlowModulesResponseTypeDef
+```
+
+Required fields:
+
+- `ContactFlowModulesSummaryList`:
+  `List`\[[ContactFlowModuleSummaryTypeDef](./type_defs.md#contactflowmodulesummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -3370,6 +3527,54 @@ Required fields:
 - `InstanceId`: `str`
 - `ContactFlowId`: `str`
 - `Content`: `str`
+
+## UpdateContactFlowMetadataRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import UpdateContactFlowMetadataRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `ContactFlowId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `ContactFlowState`:
+  [ContactFlowStateType](./literals.md#contactflowstatetype)
+
+## UpdateContactFlowModuleContentRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import UpdateContactFlowModuleContentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `ContactFlowModuleId`: `str`
+- `Content`: `str`
+
+## UpdateContactFlowModuleMetadataRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import UpdateContactFlowModuleMetadataRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `ContactFlowModuleId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `State`:
+  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
 
 ## UpdateContactFlowNameRequestRequestTypeDef
 

@@ -86,6 +86,7 @@ EKSClient [exceptions](./client.md#exceptions)
 - ResourceInUseException
 - ResourceLimitExceededException
 - ResourceNotFoundException
+- ResourcePropagationDelayException
 - ServerException
 - ServiceUnavailableException
 - UnsupportedAvailabilityZoneException

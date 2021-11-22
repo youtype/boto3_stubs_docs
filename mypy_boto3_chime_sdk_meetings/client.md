@@ -159,6 +159,8 @@ Keyword-only arguments:
 - `MeetingHostId`: `str`
 - `NotificationsConfiguration`:
   [NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef)
+- `MeetingFeatures`:
+  [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
 
 Returns
 [CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef).
@@ -186,6 +188,8 @@ Keyword-only arguments:
   `Sequence`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
   *(required)*
 - `MeetingHostId`: `str`
+- `MeetingFeatures`:
+  [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
 - `NotificationsConfiguration`:
   [NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef)
 

@@ -296,7 +296,7 @@ Returns
 
 ### create_stack
 
-Creates a stack as specified in the template.
+.
 
 Type annotations for `boto3.client("cloudformation").create_stack` method.
 
@@ -332,8 +332,7 @@ Returns [CreateStackOutputTypeDef](./type_defs.md#createstackoutputtypedef).
 
 ### create_stack_instances
 
-Creates stack instances for the specified accounts, within the specified
-Regions.
+.
 
 Type annotations for `boto3.client("cloudformation").create_stack_instances`
 method.
@@ -363,7 +362,7 @@ Returns
 
 ### create_stack_set
 
-Creates a stack set.
+.
 
 Type annotations for `boto3.client("cloudformation").create_stack_set` method.
 
@@ -549,8 +548,7 @@ Returns
 
 ### describe_change_set
 
-Returns the inputs for the change set and a list of changes that CloudFormation
-will make if you execute the change set.
+.
 
 Type annotations for `boto3.client("cloudformation").describe_change_set`
 method.
@@ -634,8 +632,7 @@ Returns
 
 ### describe_stack_instance
 
-Returns the stack instance that's associated with the specified stack set,
-Amazon Web Services account, and Region.
+.
 
 Type annotations for `boto3.client("cloudformation").describe_stack_instance`
 method.
@@ -727,7 +724,7 @@ Returns
 
 ### describe_stack_set
 
-Returns the description of the specified stack set.
+.
 
 Type annotations for `boto3.client("cloudformation").describe_stack_set`
 method.
@@ -770,8 +767,7 @@ Returns
 
 ### describe_stacks
 
-Returns the description for the specified stack; if no stack name was
-specified, then it returns the description for all the stacks created.
+.
 
 Type annotations for `boto3.client("cloudformation").describe_stacks` method.
 
@@ -905,7 +901,7 @@ Returns
 
 ### estimate_template_cost
 
-Returns the estimated monthly cost of a template.
+.
 
 Type annotations for `boto3.client("cloudformation").estimate_template_cost`
 method.
@@ -1033,7 +1029,7 @@ Returns
 
 ### import_stacks_to_stack_set
 
-Import existing stacks into a new stack sets.
+Use the stack import operations for self-managed or service-managed StackSets.
 
 Type annotations for
 `boto3.client("cloudformation").import_stacks_to_stack_set` method.
@@ -1047,7 +1043,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
-- `StackIds`: `Sequence`\[`str`\] *(required)*
+- `StackIds`: `Sequence`\[`str`\]
+- `StackIdsUrl`: `str`
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
 - `OperationPreferences`:
   [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `OperationId`: `str`
@@ -1580,7 +1578,7 @@ Returns [TestTypeOutputTypeDef](./type_defs.md#testtypeoutputtypedef).
 
 ### update_stack
 
-Updates a stack as specified in the template.
+.
 
 Type annotations for `boto3.client("cloudformation").update_stack` method.
 
@@ -1616,8 +1614,7 @@ Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).
 
 ### update_stack_instances
 
-Updates the parameter values for stack instances for the specified accounts,
-within the specified Regions.
+.
 
 Type annotations for `boto3.client("cloudformation").update_stack_instances`
 method.
@@ -1647,8 +1644,7 @@ Returns
 
 ### update_stack_set
 
-Updates the stack set, and associated stack instances in the specified accounts
-and Regions.
+.
 
 Type annotations for `boto3.client("cloudformation").update_stack_set` method.
 

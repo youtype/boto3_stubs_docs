@@ -23,6 +23,7 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [create_agent_status](#create_agent_status)
     - [create_contact_flow](#create_contact_flow)
+    - [create_contact_flow_module](#create_contact_flow_module)
     - [create_hours_of_operation](#create_hours_of_operation)
     - [create_instance](#create_instance)
     - [create_integration_association](#create_integration_association)
@@ -33,6 +34,8 @@ type annotations stubs module
     - [create_use_case](#create_use_case)
     - [create_user](#create_user)
     - [create_user_hierarchy_group](#create_user_hierarchy_group)
+    - [delete_contact_flow](#delete_contact_flow)
+    - [delete_contact_flow_module](#delete_contact_flow_module)
     - [delete_hours_of_operation](#delete_hours_of_operation)
     - [delete_instance](#delete_instance)
     - [delete_integration_association](#delete_integration_association)
@@ -44,6 +47,7 @@ type annotations stubs module
     - [describe_agent_status](#describe_agent_status)
     - [describe_contact](#describe_contact)
     - [describe_contact_flow](#describe_contact_flow)
+    - [describe_contact_flow_module](#describe_contact_flow_module)
     - [describe_hours_of_operation](#describe_hours_of_operation)
     - [describe_instance](#describe_instance)
     - [describe_instance_attribute](#describe_instance_attribute)
@@ -71,6 +75,7 @@ type annotations stubs module
     - [list_agent_statuses](#list_agent_statuses)
     - [list_approved_origins](#list_approved_origins)
     - [list_bots](#list_bots)
+    - [list_contact_flow_modules](#list_contact_flow_modules)
     - [list_contact_flows](#list_contact_flows)
     - [list_contact_references](#list_contact_references)
     - [list_hours_of_operations](#list_hours_of_operations)
@@ -110,6 +115,9 @@ type annotations stubs module
     - [update_contact](#update_contact)
     - [update_contact_attributes](#update_contact_attributes)
     - [update_contact_flow_content](#update_contact_flow_content)
+    - [update_contact_flow_metadata](#update_contact_flow_metadata)
+    - [update_contact_flow_module_content](#update_contact_flow_module_content)
+    - [update_contact_flow_module_metadata](#update_contact_flow_module_metadata)
     - [update_contact_flow_name](#update_contact_flow_name)
     - [update_contact_schedule](#update_contact_schedule)
     - [update_hours_of_operation](#update_hours_of_operation)
@@ -172,8 +180,10 @@ Exceptions:
 - `Exceptions.ContactNotFoundException`
 - `Exceptions.DestinationNotAllowedException`
 - `Exceptions.DuplicateResourceException`
+- `Exceptions.IdempotencyException`
 - `Exceptions.InternalServiceException`
 - `Exceptions.InvalidContactFlowException`
+- `Exceptions.InvalidContactFlowModuleException`
 - `Exceptions.InvalidParameterException`
 - `Exceptions.InvalidRequestException`
 - `Exceptions.LimitExceededException`
@@ -419,9 +429,34 @@ Keyword-only arguments:
 Returns
 [CreateContactFlowResponseTypeDef](./type_defs.md#createcontactflowresponsetypedef).
 
+### create_contact_flow_module
+
+Creates a contact flow module for the specified Amazon Connect instance.
+
+Type annotations for `boto3.client("connect").create_contact_flow_module`
+method.
+
+Boto3 documentation:
+[Connect.Client.create_contact_flow_module](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_contact_flow_module)
+
+Arguments mapping described in
+[CreateContactFlowModuleRequestRequestTypeDef](./type_defs.md#createcontactflowmodulerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Content`: `str` *(required)*
+- `Description`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `ClientToken`: `str`
+
+Returns
+[CreateContactFlowModuleResponseTypeDef](./type_defs.md#createcontactflowmoduleresponsetypedef).
+
 ### create_hours_of_operation
 
-Creates hours of operation.
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").create_hours_of_operation`
 method.
@@ -674,9 +709,46 @@ Keyword-only arguments:
 Returns
 [CreateUserHierarchyGroupResponseTypeDef](./type_defs.md#createuserhierarchygroupresponsetypedef).
 
+### delete_contact_flow
+
+Deletes a contact flow for the specified Amazon Connect instance.
+
+Type annotations for `boto3.client("connect").delete_contact_flow` method.
+
+Boto3 documentation:
+[Connect.Client.delete_contact_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_contact_flow)
+
+Arguments mapping described in
+[DeleteContactFlowRequestRequestTypeDef](./type_defs.md#deletecontactflowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ContactFlowId`: `str` *(required)*
+
+### delete_contact_flow_module
+
+Deletes the specified contact flow module.
+
+Type annotations for `boto3.client("connect").delete_contact_flow_module`
+method.
+
+Boto3 documentation:
+[Connect.Client.delete_contact_flow_module](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_contact_flow_module)
+
+Arguments mapping described in
+[DeleteContactFlowModuleRequestRequestTypeDef](./type_defs.md#deletecontactflowmodulerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ContactFlowModuleId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### delete_hours_of_operation
 
-Deletes an hours of operation.
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").delete_hours_of_operation`
 method.
@@ -873,9 +945,30 @@ Keyword-only arguments:
 Returns
 [DescribeContactFlowResponseTypeDef](./type_defs.md#describecontactflowresponsetypedef).
 
+### describe_contact_flow_module
+
+Describes the specified contact flow module.
+
+Type annotations for `boto3.client("connect").describe_contact_flow_module`
+method.
+
+Boto3 documentation:
+[Connect.Client.describe_contact_flow_module](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact_flow_module)
+
+Arguments mapping described in
+[DescribeContactFlowModuleRequestRequestTypeDef](./type_defs.md#describecontactflowmodulerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ContactFlowModuleId`: `str` *(required)*
+
+Returns
+[DescribeContactFlowModuleResponseTypeDef](./type_defs.md#describecontactflowmoduleresponsetypedef).
+
 ### describe_hours_of_operation
 
-Describes the hours of operation.
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").describe_hours_of_operation`
 method.
@@ -1428,6 +1521,31 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
+
+### list_contact_flow_modules
+
+Provides information about the contact flow modules for the specified Amazon
+Connect instance.
+
+Type annotations for `boto3.client("connect").list_contact_flow_modules`
+method.
+
+Boto3 documentation:
+[Connect.Client.list_contact_flow_modules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_flow_modules)
+
+Arguments mapping described in
+[ListContactFlowModulesRequestRequestTypeDef](./type_defs.md#listcontactflowmodulesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ContactFlowModuleState`:
+  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
+
+Returns
+[ListContactFlowModulesResponseTypeDef](./type_defs.md#listcontactflowmodulesresponsetypedef).
 
 ### list_contact_flows
 
@@ -2070,8 +2188,7 @@ Returns
 
 ### start_task_contact
 
-Initiates a contact flow to start a new task immediately or at a future date
-and time.
+Initiates a contact flow to start a new task.
 
 Type annotations for `boto3.client("connect").start_task_contact` method.
 
@@ -2297,6 +2414,74 @@ Keyword-only arguments:
 - `ContactFlowId`: `str` *(required)*
 - `Content`: `str` *(required)*
 
+### update_contact_flow_metadata
+
+Updates metadata about specified contact flow.
+
+Type annotations for `boto3.client("connect").update_contact_flow_metadata`
+method.
+
+Boto3 documentation:
+[Connect.Client.update_contact_flow_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_metadata)
+
+Arguments mapping described in
+[UpdateContactFlowMetadataRequestRequestTypeDef](./type_defs.md#updatecontactflowmetadatarequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ContactFlowId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `ContactFlowState`:
+  [ContactFlowStateType](./literals.md#contactflowstatetype)
+
+### update_contact_flow_module_content
+
+Updates specified contact flow module for the specified Amazon Connect
+instance.
+
+Type annotations for
+`boto3.client("connect").update_contact_flow_module_content` method.
+
+Boto3 documentation:
+[Connect.Client.update_contact_flow_module_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_module_content)
+
+Arguments mapping described in
+[UpdateContactFlowModuleContentRequestRequestTypeDef](./type_defs.md#updatecontactflowmodulecontentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ContactFlowModuleId`: `str` *(required)*
+- `Content`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### update_contact_flow_module_metadata
+
+Updates metadata about specified contact flow module.
+
+Type annotations for
+`boto3.client("connect").update_contact_flow_module_metadata` method.
+
+Boto3 documentation:
+[Connect.Client.update_contact_flow_module_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_module_metadata)
+
+Arguments mapping described in
+[UpdateContactFlowModuleMetadataRequestRequestTypeDef](./type_defs.md#updatecontactflowmodulemetadatarequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ContactFlowModuleId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `State`:
+  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### update_contact_flow_name
 
 The name of the contact flow.
@@ -2338,7 +2523,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_hours_of_operation
 
-Updates the hours of operation.
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").update_hours_of_operation`
 method.
@@ -2791,6 +2976,8 @@ overloads.
   [ListApprovedOriginsPaginator](./paginators.md#listapprovedoriginspaginator)
 - `client.get_paginator("list_bots")` ->
   [ListBotsPaginator](./paginators.md#listbotspaginator)
+- `client.get_paginator("list_contact_flow_modules")` ->
+  [ListContactFlowModulesPaginator](./paginators.md#listcontactflowmodulespaginator)
 - `client.get_paginator("list_contact_flows")` ->
   [ListContactFlowsPaginator](./paginators.md#listcontactflowspaginator)
 - `client.get_paginator("list_contact_references")` ->

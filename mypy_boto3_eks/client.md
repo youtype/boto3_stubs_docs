@@ -91,6 +91,7 @@ Exceptions:
 - `Exceptions.ResourceInUseException`
 - `Exceptions.ResourceLimitExceededException`
 - `Exceptions.ResourceNotFoundException`
+- `Exceptions.ResourcePropagationDelayException`
 - `Exceptions.ServerException`
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.UnsupportedAvailabilityZoneException`

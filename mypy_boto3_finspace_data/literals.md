@@ -9,12 +9,18 @@ type annotations stubs module
 
 - [Literals for boto3 FinSpaceData module](#literals-for-boto3-finspacedata-module)
   - [ChangeTypeType](#changetypetype)
-  - [ChangesetStatusType](#changesetstatustype)
+  - [ColumnDataTypeType](#columndatatypetype)
+  - [DataViewStatusType](#dataviewstatustype)
+  - [DatasetKindType](#datasetkindtype)
+  - [DatasetStatusType](#datasetstatustype)
   - [ErrorCategoryType](#errorcategorytype)
-  - [FormatTypeType](#formattypetype)
-  - [SourceTypeType](#sourcetypetype)
+  - [IngestionStatusType](#ingestionstatustype)
+  - [ListChangesetsPaginatorName](#listchangesetspaginatorname)
+  - [ListDataViewsPaginatorName](#listdataviewspaginatorname)
+  - [ListDatasetsPaginatorName](#listdatasetspaginatorname)
   - [locationTypeType](#locationtypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ChangeTypeType
 
@@ -28,10 +34,59 @@ Values:
 - `MODIFY`
 - `REPLACE`
 
-## ChangesetStatusType
+## ColumnDataTypeType
 
 ```python
-from mypy_boto3_finspace_data.literals import ChangesetStatusType
+from mypy_boto3_finspace_data.literals import ColumnDataTypeType
+```
+
+Values:
+
+- `BIGINT`
+- `BINARY`
+- `BOOLEAN`
+- `CHAR`
+- `DATE`
+- `DATETIME`
+- `DOUBLE`
+- `FLOAT`
+- `INTEGER`
+- `SMALLINT`
+- `STRING`
+- `TINYINT`
+
+## DataViewStatusType
+
+```python
+from mypy_boto3_finspace_data.literals import DataViewStatusType
+```
+
+Values:
+
+- `CANCELLED`
+- `FAILED`
+- `FAILED_CLEANUP_FAILED`
+- `PENDING`
+- `RUNNING`
+- `STARTING`
+- `SUCCESS`
+- `TIMEOUT`
+
+## DatasetKindType
+
+```python
+from mypy_boto3_finspace_data.literals import DatasetKindType
+```
+
+Values:
+
+- `NON_TABULAR`
+- `TABULAR`
+
+## DatasetStatusType
+
+```python
+from mypy_boto3_finspace_data.literals import DatasetStatusType
 ```
 
 Values:
@@ -39,7 +94,6 @@ Values:
 - `FAILED`
 - `PENDING`
 - `RUNNING`
-- `STOP_REQUESTED`
 - `SUCCESS`
 
 ## ErrorCategoryType
@@ -50,37 +104,58 @@ from mypy_boto3_finspace_data.literals import ErrorCategoryType
 
 Values:
 
-- `A_user_recoverable_error_has_occurred`
-- `An_internal_error_has_occurred`
-- `Cancelled`
-- `Missing_required_permission_to_perform_this_request`
-- `One_or_more_inputs_to_this_request_were_not_found`
-- `Service_limits_have_been_exceeded`
-- `The_inputs_to_this_request_are_invalid`
-- `The_system_temporarily_lacks_sufficient_resources_to_process_the_request`
+- `ACCESS_DENIED`
+- `CANCELLED`
+- `INTERNAL_SERVICE_EXCEPTION`
+- `RESOURCE_NOT_FOUND`
+- `SERVICE_QUOTA_EXCEEDED`
+- `THROTTLING`
+- `USER_RECOVERABLE`
+- `VALIDATION`
 
-## FormatTypeType
+## IngestionStatusType
 
 ```python
-from mypy_boto3_finspace_data.literals import FormatTypeType
+from mypy_boto3_finspace_data.literals import IngestionStatusType
 ```
 
 Values:
 
-- `CSV`
-- `JSON`
-- `PARQUET`
-- `XML`
+- `FAILED`
+- `PENDING`
+- `RUNNING`
+- `STOP_REQUESTED`
+- `SUCCESS`
 
-## SourceTypeType
+## ListChangesetsPaginatorName
 
 ```python
-from mypy_boto3_finspace_data.literals import SourceTypeType
+from mypy_boto3_finspace_data.literals import ListChangesetsPaginatorName
 ```
 
 Values:
 
-- `S3`
+- `list_changesets`
+
+## ListDataViewsPaginatorName
+
+```python
+from mypy_boto3_finspace_data.literals import ListDataViewsPaginatorName
+```
+
+Values:
+
+- `list_data_views`
+
+## ListDatasetsPaginatorName
+
+```python
+from mypy_boto3_finspace_data.literals import ListDatasetsPaginatorName
+```
+
+Values:
+
+- `list_datasets`
 
 ## locationTypeType
 
@@ -391,3 +466,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_finspace_data.literals import PaginatorName
+```
+
+Values:
+
+- `list_changesets`
+- `list_data_views`
+- `list_datasets`

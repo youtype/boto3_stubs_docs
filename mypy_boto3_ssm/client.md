@@ -441,6 +441,8 @@ Keyword-only arguments:
 - `RegistrationLimit`: `int`
 - `ExpirationDate`: `Union`\[`datetime`, `str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RegistrationMetadata`:
+  `Sequence`\[[RegistrationMetadataItemTypeDef](./type_defs.md#registrationmetadataitemtypedef)\]
 
 Returns
 [CreateActivationResultTypeDef](./type_defs.md#createactivationresulttypedef).

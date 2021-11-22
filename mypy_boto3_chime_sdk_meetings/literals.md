@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_chime_sdk_meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
 
 - [Literals for boto3 ChimeSDKMeetings module](#literals-for-boto3-chimesdkmeetings-module)
+  - [MeetingFeatureStatusType](#meetingfeaturestatustype)
   - [TranscribeContentIdentificationTypeType](#transcribecontentidentificationtypetype)
   - [TranscribeContentRedactionTypeType](#transcribecontentredactiontypetype)
   - [TranscribeLanguageCodeType](#transcribelanguagecodetype)
@@ -20,6 +21,17 @@ type annotations stubs module
   - [TranscribeRegionType](#transcriberegiontype)
   - [TranscribeVocabularyFilterMethodType](#transcribevocabularyfiltermethodtype)
   - [ServiceName](#servicename)
+
+## MeetingFeatureStatusType
+
+```python
+from mypy_boto3_chime_sdk_meetings.literals import MeetingFeatureStatusType
+```
+
+Values:
+
+- `AVAILABLE`
+- `UNAVAILABLE`
 
 ## TranscribeContentIdentificationTypeType
 

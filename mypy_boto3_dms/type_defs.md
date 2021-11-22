@@ -2440,6 +2440,7 @@ Optional fields:
 - `IgnoreHeaderRows`: `int`
 - `MaxFileSize`: `int`
 - `Rfc4180`: `bool`
+- `DatePartitionTimezone`: `str`
 
 ## StartReplicationTaskAssessmentMessageRequestTypeDef
 

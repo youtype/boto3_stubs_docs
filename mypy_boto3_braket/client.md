@@ -13,13 +13,17 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
+    - [cancel_job](#cancel_job)
     - [cancel_quantum_task](#cancel_quantum_task)
+    - [create_job](#create_job)
     - [create_quantum_task](#create_quantum_task)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_device](#get_device)
+    - [get_job](#get_job)
     - [get_quantum_task](#get_quantum_task)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [search_devices](#search_devices)
+    - [search_jobs](#search_jobs)
     - [search_quantum_tasks](#search_quantum_tasks)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
@@ -94,6 +98,24 @@ Arguments:
 
 Returns `bool`.
 
+### cancel_job
+
+Cancels an Amazon Braket job.
+
+Type annotations for `boto3.client("braket").cancel_job` method.
+
+Boto3 documentation:
+[Braket.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.cancel_job)
+
+Arguments mapping described in
+[CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `jobArn`: `str` *(required)*
+
+Returns [CancelJobResponseTypeDef](./type_defs.md#canceljobresponsetypedef).
+
 ### cancel_quantum_task
 
 Cancels the specified task.
@@ -113,6 +135,44 @@ Keyword-only arguments:
 
 Returns
 [CancelQuantumTaskResponseTypeDef](./type_defs.md#cancelquantumtaskresponsetypedef).
+
+### create_job
+
+Creates an Amazon Braket job.
+
+Type annotations for `boto3.client("braket").create_job` method.
+
+Boto3 documentation:
+[Braket.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.create_job)
+
+Arguments mapping described in
+[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `algorithmSpecification`:
+  [AlgorithmSpecificationTypeDef](./type_defs.md#algorithmspecificationtypedef)
+  *(required)*
+- `clientToken`: `str` *(required)*
+- `deviceConfig`: [DeviceConfigTypeDef](./type_defs.md#deviceconfigtypedef)
+  *(required)*
+- `instanceConfig`:
+  [InstanceConfigTypeDef](./type_defs.md#instanceconfigtypedef) *(required)*
+- `jobName`: `str` *(required)*
+- `outputDataConfig`:
+  [JobOutputDataConfigTypeDef](./type_defs.md#joboutputdataconfigtypedef)
+  *(required)*
+- `roleArn`: `str` *(required)*
+- `checkpointConfig`:
+  [JobCheckpointConfigTypeDef](./type_defs.md#jobcheckpointconfigtypedef)
+- `hyperParameters`: `Mapping`\[`str`, `str`\]
+- `inputDataConfig`:
+  `Sequence`\[[InputFileConfigTypeDef](./type_defs.md#inputfileconfigtypedef)\]
+- `stoppingCondition`:
+  [JobStoppingConditionTypeDef](./type_defs.md#jobstoppingconditiontypedef)
+- `tags`: `Mapping`\[`str`, `str`\]
+
+Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
 ### create_quantum_task
 
@@ -135,6 +195,7 @@ Keyword-only arguments:
 - `outputS3KeyPrefix`: `str` *(required)*
 - `shots`: `int` *(required)*
 - `deviceParameters`: `str`
+- `jobToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
@@ -175,6 +236,24 @@ Keyword-only arguments:
 - `deviceArn`: `str` *(required)*
 
 Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
+
+### get_job
+
+Retrieves the specified Amazon Braket job.
+
+Type annotations for `boto3.client("braket").get_job` method.
+
+Boto3 documentation:
+[Braket.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.get_job)
+
+Arguments mapping described in
+[GetJobRequestRequestTypeDef](./type_defs.md#getjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `jobArn`: `str` *(required)*
+
+Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
 
 ### get_quantum_task
 
@@ -236,6 +315,28 @@ Keyword-only arguments:
 
 Returns
 [SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef).
+
+### search_jobs
+
+Searches for Amazon Braket jobs that match the specified filter values.
+
+Type annotations for `boto3.client("braket").search_jobs` method.
+
+Boto3 documentation:
+[Braket.Client.search_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.search_jobs)
+
+Arguments mapping described in
+[SearchJobsRequestRequestTypeDef](./type_defs.md#searchjobsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `filters`:
+  `Sequence`\[[SearchJobsFilterTypeDef](./type_defs.md#searchjobsfiltertypedef)\]
+  *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns [SearchJobsResponseTypeDef](./type_defs.md#searchjobsresponsetypedef).
 
 ### search_quantum_tasks
 
@@ -305,5 +406,7 @@ overloads.
 
 - `client.get_paginator("search_devices")` ->
   [SearchDevicesPaginator](./paginators.md#searchdevicespaginator)
+- `client.get_paginator("search_jobs")` ->
+  [SearchJobsPaginator](./paginators.md#searchjobspaginator)
 - `client.get_paginator("search_quantum_tasks")` ->
   [SearchQuantumTasksPaginator](./paginators.md#searchquantumtaskspaginator)

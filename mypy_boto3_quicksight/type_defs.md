@@ -180,6 +180,7 @@ type annotations stubs module
   - [DescribeUserRequestRequestTypeDef](#describeuserrequestrequesttypedef)
   - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
   - [ErrorInfoTypeDef](#errorinfotypedef)
+  - [ExasolParametersTypeDef](#exasolparameterstypedef)
   - [ExportToCSVOptionTypeDef](#exporttocsvoptiontypedef)
   - [FieldFolderTypeDef](#fieldfoldertypedef)
   - [FilterOperationTypeDef](#filteroperationtypedef)
@@ -207,6 +208,7 @@ type annotations stubs module
   - [JiraParametersTypeDef](#jiraparameterstypedef)
   - [JoinInstructionTypeDef](#joininstructiontypedef)
   - [JoinKeyPropertiesTypeDef](#joinkeypropertiestypedef)
+  - [LinkSharingConfigurationTypeDef](#linksharingconfigurationtypedef)
   - [ListAnalysesRequestRequestTypeDef](#listanalysesrequestrequesttypedef)
   - [ListAnalysesResponseTypeDef](#listanalysesresponsetypedef)
   - [ListDashboardVersionsRequestRequestTypeDef](#listdashboardversionsrequestrequesttypedef)
@@ -393,6 +395,7 @@ from mypy_boto3_quicksight.type_defs import AccountCustomizationTypeDef
 Optional fields:
 
 - `DefaultTheme`: `str`
+- `DefaultEmailCustomizationTemplate`: `str`
 
 ## AccountSettingsTypeDef
 
@@ -1666,6 +1669,8 @@ Optional fields:
   [TwitterParametersTypeDef](./type_defs.md#twitterparameterstypedef)
 - `AmazonOpenSearchParameters`:
   [AmazonOpenSearchParametersTypeDef](./type_defs.md#amazonopensearchparameterstypedef)
+- `ExasolParameters`:
+  [ExasolParametersTypeDef](./type_defs.md#exasolparameterstypedef)
 
 ## DataSourceTypeDef
 
@@ -2310,6 +2315,8 @@ Required fields:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `Status`: `int`
 - `RequestId`: `str`
+- `LinkSharingConfiguration`:
+  [LinkSharingConfigurationTypeDef](./type_defs.md#linksharingconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2865,6 +2872,17 @@ Optional fields:
 - `Type`: [IngestionErrorTypeType](./literals.md#ingestionerrortypetype)
 - `Message`: `str`
 
+## ExasolParametersTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import ExasolParametersTypeDef
+```
+
+Required fields:
+
+- `Host`: `str`
+- `Port`: `int`
+
 ## ExportToCSVOptionTypeDef
 
 ```python
@@ -3248,6 +3266,17 @@ from mypy_boto3_quicksight.type_defs import JoinKeyPropertiesTypeDef
 Optional fields:
 
 - `UniqueKey`: `bool`
+
+## LinkSharingConfigurationTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import LinkSharingConfigurationTypeDef
+```
+
+Optional fields:
+
+- `Permissions`:
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 ## ListAnalysesRequestRequestTypeDef
 
@@ -5199,6 +5228,10 @@ Optional fields:
   `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
   `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `GrantLinkPermissions`:
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `RevokeLinkPermissions`:
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 ## UpdateDashboardPermissionsResponseTypeDef
 
@@ -5214,6 +5247,8 @@ Required fields:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RequestId`: `str`
 - `Status`: `int`
+- `LinkSharingConfiguration`:
+  [LinkSharingConfigurationTypeDef](./type_defs.md#linksharingconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

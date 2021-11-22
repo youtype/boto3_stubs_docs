@@ -14,9 +14,21 @@ type annotations stubs module
     - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_changeset](#create_changeset)
+    - [create_data_view](#create_data_view)
+    - [create_dataset](#create_dataset)
+    - [delete_dataset](#delete_dataset)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_changeset](#get_changeset)
+    - [get_data_view](#get_data_view)
+    - [get_dataset](#get_dataset)
     - [get_programmatic_access_credentials](#get_programmatic_access_credentials)
     - [get_working_location](#get_working_location)
+    - [list_changesets](#list_changesets)
+    - [list_data_views](#list_data_views)
+    - [list_datasets](#list_datasets)
+    - [update_changeset](#update_changeset)
+    - [update_dataset](#update_dataset)
+    - [get_paginator](#get_paginator)
 
 ## FinSpaceDataClient
 
@@ -50,7 +62,9 @@ Exceptions:
 
 - `Exceptions.AccessDeniedException`
 - `Exceptions.ClientError`
+- `Exceptions.ConflictException`
 - `Exceptions.InternalServerException`
+- `Exceptions.LimitExceededException`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
@@ -85,7 +99,7 @@ Returns `bool`.
 
 ### create_changeset
 
-Creates a new changeset in a FinSpace dataset.
+Creates a new Changeset in a FinSpace Dataset.
 
 Type annotations for `boto3.client("finspace-data").create_changeset` method.
 
@@ -99,15 +113,88 @@ Keyword-only arguments:
 
 - `datasetId`: `str` *(required)*
 - `changeType`: [ChangeTypeType](./literals.md#changetypetype) *(required)*
-- `sourceType`: `Literal['S3']` (see
-  [SourceTypeType](./literals.md#sourcetypetype)) *(required)*
 - `sourceParams`: `Mapping`\[`str`, `str`\] *(required)*
-- `formatType`: [FormatTypeType](./literals.md#formattypetype)
-- `formatParams`: `Mapping`\[`str`, `str`\]
-- `tags`: `Mapping`\[`str`, `str`\]
+- `formatParams`: `Mapping`\[`str`, `str`\] *(required)*
+- `clientToken`: `str`
 
 Returns
 [CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef).
+
+### create_data_view
+
+Creates a Dataview for a Dataset.
+
+Type annotations for `boto3.client("finspace-data").create_data_view` method.
+
+Boto3 documentation:
+[FinSpaceData.Client.create_data_view](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_data_view)
+
+Arguments mapping described in
+[CreateDataViewRequestRequestTypeDef](./type_defs.md#createdataviewrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `datasetId`: `str` *(required)*
+- `destinationTypeParams`:
+  [DataViewDestinationTypeParamsTypeDef](./type_defs.md#dataviewdestinationtypeparamstypedef)
+  *(required)*
+- `clientToken`: `str`
+- `autoUpdate`: `bool`
+- `sortColumns`: `Sequence`\[`str`\]
+- `partitionColumns`: `Sequence`\[`str`\]
+- `asOfTimestamp`: `int`
+
+Returns
+[CreateDataViewResponseTypeDef](./type_defs.md#createdataviewresponsetypedef).
+
+### create_dataset
+
+Creates a new FinSpace Dataset.
+
+Type annotations for `boto3.client("finspace-data").create_dataset` method.
+
+Boto3 documentation:
+[FinSpaceData.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_dataset)
+
+Arguments mapping described in
+[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `datasetTitle`: `str` *(required)*
+- `kind`: [DatasetKindType](./literals.md#datasetkindtype) *(required)*
+- `datasetDescription`: `str` *(required)*
+- `permissionGroupParams`:
+  [PermissionGroupParamsTypeDef](./type_defs.md#permissiongroupparamstypedef)
+  *(required)*
+- `alias`: `str` *(required)*
+- `clientToken`: `str`
+- `ownerInfo`:
+  [DatasetOwnerInfoTypeDef](./type_defs.md#datasetownerinfotypedef)
+- `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
+
+Returns
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+
+### delete_dataset
+
+Deletes a FinSpace Dataset.
+
+Type annotations for `boto3.client("finspace-data").delete_dataset` method.
+
+Boto3 documentation:
+[FinSpaceData.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.delete_dataset)
+
+Arguments mapping described in
+[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `datasetId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
 
 ### generate_presigned_url
 
@@ -128,9 +215,67 @@ Arguments:
 
 Returns `str`.
 
+### get_changeset
+
+Get information about a Changeset.
+
+Type annotations for `boto3.client("finspace-data").get_changeset` method.
+
+Boto3 documentation:
+[FinSpaceData.Client.get_changeset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_changeset)
+
+Arguments mapping described in
+[GetChangesetRequestRequestTypeDef](./type_defs.md#getchangesetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `datasetId`: `str` *(required)*
+- `changesetId`: `str` *(required)*
+
+Returns
+[GetChangesetResponseTypeDef](./type_defs.md#getchangesetresponsetypedef).
+
+### get_data_view
+
+Gets information about a Dataview.
+
+Type annotations for `boto3.client("finspace-data").get_data_view` method.
+
+Boto3 documentation:
+[FinSpaceData.Client.get_data_view](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_data_view)
+
+Arguments mapping described in
+[GetDataViewRequestRequestTypeDef](./type_defs.md#getdataviewrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `dataViewId`: `str` *(required)*
+- `datasetId`: `str` *(required)*
+
+Returns
+[GetDataViewResponseTypeDef](./type_defs.md#getdataviewresponsetypedef).
+
+### get_dataset
+
+Returns information about a Dataset.
+
+Type annotations for `boto3.client("finspace-data").get_dataset` method.
+
+Boto3 documentation:
+[FinSpaceData.Client.get_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_dataset)
+
+Arguments mapping described in
+[GetDatasetRequestRequestTypeDef](./type_defs.md#getdatasetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `datasetId`: `str` *(required)*
+
+Returns [GetDatasetResponseTypeDef](./type_defs.md#getdatasetresponsetypedef).
+
 ### get_programmatic_access_credentials
 
-Request programmatic credentials to use with Habanero SDK.
+Request programmatic credentials to use with FinSpace SDK.
 
 Type annotations for
 `boto3.client("finspace-data").get_programmatic_access_credentials` method.
@@ -151,8 +296,8 @@ Returns
 
 ### get_working_location
 
-A temporary Amazon S3 location to copy your files from a source location to
-stage or use as a scratch space in Habanero notebook.
+A temporary Amazon S3 location, where you can copy your files from a source
+location to stage or use as a scratch space in FinSpace notebook.
 
 Type annotations for `boto3.client("finspace-data").get_working_location`
 method.
@@ -169,3 +314,125 @@ Keyword-only arguments:
 
 Returns
 [GetWorkingLocationResponseTypeDef](./type_defs.md#getworkinglocationresponsetypedef).
+
+### list_changesets
+
+Lists the FinSpace Changesets for a Dataset.
+
+Type annotations for `boto3.client("finspace-data").list_changesets` method.
+
+Boto3 documentation:
+[FinSpaceData.Client.list_changesets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_changesets)
+
+Arguments mapping described in
+[ListChangesetsRequestRequestTypeDef](./type_defs.md#listchangesetsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `datasetId`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListChangesetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef).
+
+### list_data_views
+
+Lists all available Dataviews for a Dataset.
+
+Type annotations for `boto3.client("finspace-data").list_data_views` method.
+
+Boto3 documentation:
+[FinSpaceData.Client.list_data_views](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_data_views)
+
+Arguments mapping described in
+[ListDataViewsRequestRequestTypeDef](./type_defs.md#listdataviewsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `datasetId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDataViewsResponseTypeDef](./type_defs.md#listdataviewsresponsetypedef).
+
+### list_datasets
+
+Lists all of the active Datasets that a user has access to.
+
+Type annotations for `boto3.client("finspace-data").list_datasets` method.
+
+Boto3 documentation:
+[FinSpaceData.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_datasets)
+
+Arguments mapping described in
+[ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+
+### update_changeset
+
+Updates a FinSpace Changeset.
+
+Type annotations for `boto3.client("finspace-data").update_changeset` method.
+
+Boto3 documentation:
+[FinSpaceData.Client.update_changeset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.update_changeset)
+
+Arguments mapping described in
+[UpdateChangesetRequestRequestTypeDef](./type_defs.md#updatechangesetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `datasetId`: `str` *(required)*
+- `changesetId`: `str` *(required)*
+- `sourceParams`: `Mapping`\[`str`, `str`\] *(required)*
+- `formatParams`: `Mapping`\[`str`, `str`\] *(required)*
+- `clientToken`: `str`
+
+Returns
+[UpdateChangesetResponseTypeDef](./type_defs.md#updatechangesetresponsetypedef).
+
+### update_dataset
+
+Updates a FinSpace Dataset.
+
+Type annotations for `boto3.client("finspace-data").update_dataset` method.
+
+Boto3 documentation:
+[FinSpaceData.Client.update_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.update_dataset)
+
+Arguments mapping described in
+[UpdateDatasetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `datasetId`: `str` *(required)*
+- `datasetTitle`: `str` *(required)*
+- `kind`: [DatasetKindType](./literals.md#datasetkindtype) *(required)*
+- `alias`: `str` *(required)*
+- `clientToken`: `str`
+- `datasetDescription`: `str`
+- `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
+
+Returns
+[UpdateDatasetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
+
+### get_paginator
+
+Type annotations for `boto3.client("finspace-data").get_paginator` method with
+overloads.
+
+- `client.get_paginator("list_changesets")` ->
+  [ListChangesetsPaginator](./paginators.md#listchangesetspaginator)
+- `client.get_paginator("list_data_views")` ->
+  [ListDataViewsPaginator](./paginators.md#listdataviewspaginator)
+- `client.get_paginator("list_datasets")` ->
+  [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)

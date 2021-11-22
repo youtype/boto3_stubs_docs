@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 ChimeSDKMeetings module](#typed-dictionaries-for-boto3-chimesdkmeetings-module)
   - [AttendeeTypeDef](#attendeetypedef)
+  - [AudioFeaturesTypeDef](#audiofeaturestypedef)
   - [BatchCreateAttendeeRequestRequestTypeDef](#batchcreateattendeerequestrequesttypedef)
   - [BatchCreateAttendeeResponseTypeDef](#batchcreateattendeeresponsetypedef)
   - [CreateAttendeeErrorTypeDef](#createattendeeerrortypedef)
@@ -30,6 +31,7 @@ type annotations stubs module
   - [ListAttendeesRequestRequestTypeDef](#listattendeesrequestrequesttypedef)
   - [ListAttendeesResponseTypeDef](#listattendeesresponsetypedef)
   - [MediaPlacementTypeDef](#mediaplacementtypedef)
+  - [MeetingFeaturesConfigurationTypeDef](#meetingfeaturesconfigurationtypedef)
   - [MeetingTypeDef](#meetingtypedef)
   - [NotificationsConfigurationTypeDef](#notificationsconfigurationtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
@@ -48,6 +50,17 @@ Optional fields:
 - `ExternalUserId`: `str`
 - `AttendeeId`: `str`
 - `JoinToken`: `str`
+
+## AudioFeaturesTypeDef
+
+```python
+from mypy_boto3_chime_sdk_meetings.type_defs import AudioFeaturesTypeDef
+```
+
+Optional fields:
+
+- `EchoReduction`:
+  [MeetingFeatureStatusType](./literals.md#meetingfeaturestatustype)
 
 ## BatchCreateAttendeeRequestRequestTypeDef
 
@@ -137,6 +150,8 @@ Optional fields:
 - `MeetingHostId`: `str`
 - `NotificationsConfiguration`:
   [NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef)
+- `MeetingFeatures`:
+  [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
 
 ## CreateMeetingResponseTypeDef
 
@@ -167,6 +182,8 @@ Required fields:
 Optional fields:
 
 - `MeetingHostId`: `str`
+- `MeetingFeatures`:
+  [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
 - `NotificationsConfiguration`:
   [NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef)
 
@@ -346,6 +363,16 @@ Optional fields:
 - `ScreenSharingUrl`: `str`
 - `EventIngestionUrl`: `str`
 
+## MeetingFeaturesConfigurationTypeDef
+
+```python
+from mypy_boto3_chime_sdk_meetings.type_defs import MeetingFeaturesConfigurationTypeDef
+```
+
+Optional fields:
+
+- `Audio`: [AudioFeaturesTypeDef](./type_defs.md#audiofeaturestypedef)
+
 ## MeetingTypeDef
 
 ```python
@@ -360,6 +387,8 @@ Optional fields:
 - `MediaRegion`: `str`
 - `MediaPlacement`:
   [MediaPlacementTypeDef](./type_defs.md#mediaplacementtypedef)
+- `MeetingFeatures`:
+  [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
 
 ## NotificationsConfigurationTypeDef
 

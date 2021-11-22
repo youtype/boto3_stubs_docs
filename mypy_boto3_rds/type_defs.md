@@ -1060,6 +1060,7 @@ Optional fields:
 - `MaxAllocatedStorage`: `int`
 - `EnableCustomerOwnedIp`: `bool`
 - `CustomIamInstanceProfile`: `str`
+- `BackupTarget`: `str`
 
 ## CreateDBInstanceReadReplicaMessageRequestTypeDef
 
@@ -1931,6 +1932,7 @@ Optional fields:
 - `DBInstanceAutomatedBackupsArn`: `str`
 - `DBInstanceAutomatedBackupsReplications`:
   `List`\[[DBInstanceAutomatedBackupsReplicationTypeDef](./type_defs.md#dbinstanceautomatedbackupsreplicationtypedef)\]
+- `BackupTarget`: `str`
 
 ## DBInstanceAutomatedBackupsReplicationTypeDef
 
@@ -2074,6 +2076,7 @@ Optional fields:
 - `AutomationMode`: [AutomationModeType](./literals.md#automationmodetype)
 - `ResumeFullAutomationModeTime`: `datetime`
 - `CustomIamInstanceProfile`: `str`
+- `BackupTarget`: `str`
 
 ## DBParameterGroupDetailsTypeDef
 
@@ -2338,6 +2341,7 @@ Optional fields:
 - `DbiResourceId`: `str`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OriginalSnapshotCreateTime`: `datetime`
+- `SnapshotTarget`: `str`
 
 ## DBSubnetGroupMessageTypeDef
 
@@ -5316,6 +5320,7 @@ Optional fields:
 - `DeletionProtection`: `bool`
 - `EnableCustomerOwnedIp`: `bool`
 - `CustomIamInstanceProfile`: `str`
+- `BackupTarget`: `str`
 
 ## RestoreDBInstanceFromDBSnapshotResultTypeDef
 
@@ -5445,6 +5450,7 @@ Optional fields:
 - `SourceDBInstanceAutomatedBackupsArn`: `str`
 - `EnableCustomerOwnedIp`: `bool`
 - `CustomIamInstanceProfile`: `str`
+- `BackupTarget`: `str`
 
 ## RestoreDBInstanceToPointInTimeResultTypeDef
 

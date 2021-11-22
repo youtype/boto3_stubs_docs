@@ -12,6 +12,9 @@ type annotations stubs module
   - [AgentStatusTypeType](#agentstatustypetype)
   - [ChannelType](#channeltype)
   - [ComparisonType](#comparisontype)
+  - [ContactFlowModuleStateType](#contactflowmodulestatetype)
+  - [ContactFlowModuleStatusType](#contactflowmodulestatustype)
+  - [ContactFlowStateType](#contactflowstatetype)
   - [ContactFlowTypeType](#contactflowtypetype)
   - [ContactInitiationMethodType](#contactinitiationmethodtype)
   - [CurrentMetricNameType](#currentmetricnametype)
@@ -29,6 +32,7 @@ type annotations stubs module
   - [ListAgentStatusesPaginatorName](#listagentstatusespaginatorname)
   - [ListApprovedOriginsPaginatorName](#listapprovedoriginspaginatorname)
   - [ListBotsPaginatorName](#listbotspaginatorname)
+  - [ListContactFlowModulesPaginatorName](#listcontactflowmodulespaginatorname)
   - [ListContactFlowsPaginatorName](#listcontactflowspaginatorname)
   - [ListContactReferencesPaginatorName](#listcontactreferencespaginatorname)
   - [ListHoursOfOperationsPaginatorName](#listhoursofoperationspaginatorname)
@@ -113,6 +117,39 @@ from mypy_boto3_connect.literals import ComparisonType
 Values:
 
 - `LT`
+
+## ContactFlowModuleStateType
+
+```python
+from mypy_boto3_connect.literals import ContactFlowModuleStateType
+```
+
+Values:
+
+- `ACTIVE`
+- `ARCHIVED`
+
+## ContactFlowModuleStatusType
+
+```python
+from mypy_boto3_connect.literals import ContactFlowModuleStatusType
+```
+
+Values:
+
+- `PUBLISHED`
+- `SAVED`
+
+## ContactFlowStateType
+
+```python
+from mypy_boto3_connect.literals import ContactFlowStateType
+```
+
+Values:
+
+- `ACTIVE`
+- `ARCHIVED`
 
 ## ContactFlowTypeType
 
@@ -359,6 +396,16 @@ from mypy_boto3_connect.literals import ListBotsPaginatorName
 Values:
 
 - `list_bots`
+
+## ListContactFlowModulesPaginatorName
+
+```python
+from mypy_boto3_connect.literals import ListContactFlowModulesPaginatorName
+```
+
+Values:
+
+- `list_contact_flow_modules`
 
 ## ListContactFlowsPaginatorName
 
@@ -1297,6 +1344,7 @@ Values:
 - `list_agent_statuses`
 - `list_approved_origins`
 - `list_bots`
+- `list_contact_flow_modules`
 - `list_contact_flows`
 - `list_contact_references`
 - `list_hours_of_operations`

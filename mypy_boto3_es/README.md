@@ -231,6 +231,7 @@ from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionReq
 - [DomainInfoTypeDef](./type_defs.md#domaininfotypedef)
 - [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
 - [DomainPackageDetailsTypeDef](./type_defs.md#domainpackagedetailstypedef)
+- [DryRunResultsTypeDef](./type_defs.md#dryrunresultstypedef)
 - [DurationTypeDef](./type_defs.md#durationtypedef)
 - [EBSOptionsStatusTypeDef](./type_defs.md#ebsoptionsstatustypedef)
 - [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)

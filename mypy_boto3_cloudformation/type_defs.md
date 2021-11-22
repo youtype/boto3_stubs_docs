@@ -1338,10 +1338,12 @@ from mypy_boto3_cloudformation.type_defs import ImportStacksToStackSetInputReque
 Required fields:
 
 - `StackSetName`: `str`
-- `StackIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
+- `StackIds`: `Sequence`\[`str`\]
+- `StackIdsUrl`: `str`
+- `OrganizationalUnitIds`: `Sequence`\[`str`\]
 - `OperationPreferences`:
   [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `OperationId`: `str`

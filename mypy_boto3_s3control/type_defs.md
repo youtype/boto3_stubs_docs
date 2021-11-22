@@ -18,6 +18,7 @@ type annotations stubs module
   - [AsyncResponseDetailsTypeDef](#asyncresponsedetailstypedef)
   - [AwsLambdaTransformationTypeDef](#awslambdatransformationtypedef)
   - [BucketLevelTypeDef](#bucketleveltypedef)
+  - [CloudWatchMetricsTypeDef](#cloudwatchmetricstypedef)
   - [CreateAccessPointForObjectLambdaRequestRequestTypeDef](#createaccesspointforobjectlambdarequestrequesttypedef)
   - [CreateAccessPointForObjectLambdaResultTypeDef](#createaccesspointforobjectlambdaresulttypedef)
   - [CreateAccessPointRequestRequestTypeDef](#createaccesspointrequestrequesttypedef)
@@ -317,6 +318,16 @@ Optional fields:
 - `ActivityMetrics`:
   [ActivityMetricsTypeDef](./type_defs.md#activitymetricstypedef)
 - `PrefixLevel`: [PrefixLevelTypeDef](./type_defs.md#prefixleveltypedef)
+
+## CloudWatchMetricsTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import CloudWatchMetricsTypeDef
+```
+
+Required fields:
+
+- `IsEnabled`: `bool`
 
 ## CreateAccessPointForObjectLambdaRequestRequestTypeDef
 
@@ -2322,10 +2333,12 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import StorageLensDataExportTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `S3BucketDestination`:
   [S3BucketDestinationTypeDef](./type_defs.md#s3bucketdestinationtypedef)
+- `CloudWatchMetrics`:
+  [CloudWatchMetricsTypeDef](./type_defs.md#cloudwatchmetricstypedef)
 
 ## StorageLensTagTypeDef
 

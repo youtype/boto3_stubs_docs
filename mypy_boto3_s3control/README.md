@@ -188,6 +188,7 @@ from mypy_boto3_s3control.type_defs import AbortIncompleteMultipartUploadTypeDef
 - [AsyncResponseDetailsTypeDef](./type_defs.md#asyncresponsedetailstypedef)
 - [AwsLambdaTransformationTypeDef](./type_defs.md#awslambdatransformationtypedef)
 - [BucketLevelTypeDef](./type_defs.md#bucketleveltypedef)
+- [CloudWatchMetricsTypeDef](./type_defs.md#cloudwatchmetricstypedef)
 - [CreateAccessPointForObjectLambdaRequestRequestTypeDef](./type_defs.md#createaccesspointforobjectlambdarequestrequesttypedef)
 - [CreateAccessPointForObjectLambdaResultTypeDef](./type_defs.md#createaccesspointforobjectlambdaresulttypedef)
 - [CreateAccessPointRequestRequestTypeDef](./type_defs.md#createaccesspointrequestrequesttypedef)

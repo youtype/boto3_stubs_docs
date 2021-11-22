@@ -12,6 +12,7 @@ type annotations stubs module
   - [ListAgentStatusesPaginator](#listagentstatusespaginator)
   - [ListApprovedOriginsPaginator](#listapprovedoriginspaginator)
   - [ListBotsPaginator](#listbotspaginator)
+  - [ListContactFlowModulesPaginator](#listcontactflowmodulespaginator)
   - [ListContactFlowsPaginator](#listcontactflowspaginator)
   - [ListContactReferencesPaginator](#listcontactreferencespaginator)
   - [ListHoursOfOperationsPaginator](#listhoursofoperationspaginator)
@@ -147,6 +148,34 @@ Arguments for `ListBotsPaginator.paginate` method:
 
 `ListBotsPaginator.paginate` returns
 `_PageIterator`\[[ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef)\].
+
+## ListContactFlowModulesPaginator
+
+Type annotations for
+`boto3.client("connect").get_paginator("list_contact_flow_modules")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_connect.paginator import ListContactFlowModulesPaginator
+
+def get_list_contact_flow_modules_paginator() -> ListContactFlowModulesPaginator:
+    return boto3.client("connect").get_paginator("list_contact_flow_modules")
+```
+
+Boto3 documentation:
+[Connect.Paginator.ListContactFlowModules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListContactFlowModules)
+
+Arguments for `ListContactFlowModulesPaginator.paginate` method:
+
+- `InstanceId`: `str` *(required)*
+- `ContactFlowModuleState`:
+  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListContactFlowModulesPaginator.paginate` returns
+`_PageIterator`\[[ListContactFlowModulesResponseTypeDef](./type_defs.md#listcontactflowmodulesresponsetypedef)\].
 
 ## ListContactFlowsPaginator
 

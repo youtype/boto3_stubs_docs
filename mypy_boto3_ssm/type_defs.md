@@ -336,6 +336,7 @@ type annotations stubs module
   - [RegisterTargetWithMaintenanceWindowResultTypeDef](#registertargetwithmaintenancewindowresulttypedef)
   - [RegisterTaskWithMaintenanceWindowRequestRequestTypeDef](#registertaskwithmaintenancewindowrequestrequesttypedef)
   - [RegisterTaskWithMaintenanceWindowResultTypeDef](#registertaskwithmaintenancewindowresulttypedef)
+  - [RegistrationMetadataItemTypeDef](#registrationmetadataitemtypedef)
   - [RelatedOpsItemTypeDef](#relatedopsitemtypedef)
   - [RemoveTagsFromResourceRequestRequestTypeDef](#removetagsfromresourcerequestrequesttypedef)
   - [ResetServiceSettingRequestRequestTypeDef](#resetservicesettingrequestrequesttypedef)
@@ -1071,6 +1072,8 @@ Optional fields:
 - `RegistrationLimit`: `int`
 - `ExpirationDate`: `Union`\[`datetime`, `str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RegistrationMetadata`:
+  `Sequence`\[[RegistrationMetadataItemTypeDef](./type_defs.md#registrationmetadataitemtypedef)\]
 
 ## CreateActivationResultTypeDef
 
@@ -5459,6 +5462,17 @@ Required fields:
 - `WindowTaskId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RegistrationMetadataItemTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import RegistrationMetadataItemTypeDef
+```
+
+Required fields:
+
+- `Key`: `str`
+- `Value`: `str`
 
 ## RelatedOpsItemTypeDef
 

@@ -66,9 +66,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_chime_sdk_meetings.literals import TranscribeContentIdentificationTypeType, ...
+from mypy_boto3_chime_sdk_meetings.literals import MeetingFeatureStatusType, ...
 ```
 
+- [MeetingFeatureStatusType](./literals.md#meetingfeaturestatustype)
 - [TranscribeContentIdentificationTypeType](./literals.md#transcribecontentidentificationtypetype)
 - [TranscribeContentRedactionTypeType](./literals.md#transcribecontentredactiontypetype)
 - [TranscribeLanguageCodeType](./literals.md#transcribelanguagecodetype)
@@ -94,6 +95,7 @@ from mypy_boto3_chime_sdk_meetings.type_defs import AttendeeTypeDef, ...
 ```
 
 - [AttendeeTypeDef](./type_defs.md#attendeetypedef)
+- [AudioFeaturesTypeDef](./type_defs.md#audiofeaturestypedef)
 - [BatchCreateAttendeeRequestRequestTypeDef](./type_defs.md#batchcreateattendeerequestrequesttypedef)
 - [BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef)
 - [CreateAttendeeErrorTypeDef](./type_defs.md#createattendeeerrortypedef)
@@ -115,6 +117,7 @@ from mypy_boto3_chime_sdk_meetings.type_defs import AttendeeTypeDef, ...
 - [ListAttendeesRequestRequestTypeDef](./type_defs.md#listattendeesrequestrequesttypedef)
 - [ListAttendeesResponseTypeDef](./type_defs.md#listattendeesresponsetypedef)
 - [MediaPlacementTypeDef](./type_defs.md#mediaplacementtypedef)
+- [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
 - [MeetingTypeDef](./type_defs.md#meetingtypedef)
 - [NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

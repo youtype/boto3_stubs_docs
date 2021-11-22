@@ -8,40 +8,94 @@ type annotations stubs module
 [mypy_boto3_finspace_data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 - [Typed dictionaries for boto3 FinSpaceData module](#typed-dictionaries-for-boto3-finspacedata-module)
-  - [ChangesetInfoTypeDef](#changesetinfotypedef)
+  - [ChangesetErrorInfoTypeDef](#changeseterrorinfotypedef)
+  - [ChangesetSummaryTypeDef](#changesetsummarytypedef)
+  - [ColumnDefinitionTypeDef](#columndefinitiontypedef)
   - [CreateChangesetRequestRequestTypeDef](#createchangesetrequestrequesttypedef)
   - [CreateChangesetResponseTypeDef](#createchangesetresponsetypedef)
+  - [CreateDataViewRequestRequestTypeDef](#createdataviewrequestrequesttypedef)
+  - [CreateDataViewResponseTypeDef](#createdataviewresponsetypedef)
+  - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
+  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
   - [CredentialsTypeDef](#credentialstypedef)
-  - [ErrorInfoTypeDef](#errorinfotypedef)
+  - [DataViewDestinationTypeParamsTypeDef](#dataviewdestinationtypeparamstypedef)
+  - [DataViewErrorInfoTypeDef](#dataviewerrorinfotypedef)
+  - [DataViewSummaryTypeDef](#dataviewsummarytypedef)
+  - [DatasetOwnerInfoTypeDef](#datasetownerinfotypedef)
+  - [DatasetTypeDef](#datasettypedef)
+  - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
+  - [DeleteDatasetResponseTypeDef](#deletedatasetresponsetypedef)
+  - [GetChangesetRequestRequestTypeDef](#getchangesetrequestrequesttypedef)
+  - [GetChangesetResponseTypeDef](#getchangesetresponsetypedef)
+  - [GetDataViewRequestRequestTypeDef](#getdataviewrequestrequesttypedef)
+  - [GetDataViewResponseTypeDef](#getdataviewresponsetypedef)
+  - [GetDatasetRequestRequestTypeDef](#getdatasetrequestrequesttypedef)
+  - [GetDatasetResponseTypeDef](#getdatasetresponsetypedef)
   - [GetProgrammaticAccessCredentialsRequestRequestTypeDef](#getprogrammaticaccesscredentialsrequestrequesttypedef)
   - [GetProgrammaticAccessCredentialsResponseTypeDef](#getprogrammaticaccesscredentialsresponsetypedef)
   - [GetWorkingLocationRequestRequestTypeDef](#getworkinglocationrequestrequesttypedef)
   - [GetWorkingLocationResponseTypeDef](#getworkinglocationresponsetypedef)
+  - [ListChangesetsRequestRequestTypeDef](#listchangesetsrequestrequesttypedef)
+  - [ListChangesetsResponseTypeDef](#listchangesetsresponsetypedef)
+  - [ListDataViewsRequestRequestTypeDef](#listdataviewsrequestrequesttypedef)
+  - [ListDataViewsResponseTypeDef](#listdataviewsresponsetypedef)
+  - [ListDatasetsRequestRequestTypeDef](#listdatasetsrequestrequesttypedef)
+  - [ListDatasetsResponseTypeDef](#listdatasetsresponsetypedef)
+  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [PermissionGroupParamsTypeDef](#permissiongroupparamstypedef)
+  - [ResourcePermissionTypeDef](#resourcepermissiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SchemaDefinitionTypeDef](#schemadefinitiontypedef)
+  - [SchemaUnionTypeDef](#schemauniontypedef)
+  - [UpdateChangesetRequestRequestTypeDef](#updatechangesetrequestrequesttypedef)
+  - [UpdateChangesetResponseTypeDef](#updatechangesetresponsetypedef)
+  - [UpdateDatasetRequestRequestTypeDef](#updatedatasetrequestrequesttypedef)
+  - [UpdateDatasetResponseTypeDef](#updatedatasetresponsetypedef)
 
-## ChangesetInfoTypeDef
+## ChangesetErrorInfoTypeDef
 
 ```python
-from mypy_boto3_finspace_data.type_defs import ChangesetInfoTypeDef
+from mypy_boto3_finspace_data.type_defs import ChangesetErrorInfoTypeDef
 ```
 
 Optional fields:
 
-- `id`: `str`
+- `errorMessage`: `str`
+- `errorCategory`: [ErrorCategoryType](./literals.md#errorcategorytype)
+
+## ChangesetSummaryTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ChangesetSummaryTypeDef
+```
+
+Optional fields:
+
+- `changesetId`: `str`
 - `changesetArn`: `str`
 - `datasetId`: `str`
 - `changeType`: [ChangeTypeType](./literals.md#changetypetype)
-- `sourceType`: `Literal['S3']` (see
-  [SourceTypeType](./literals.md#sourcetypetype))
 - `sourceParams`: `Dict`\[`str`, `str`\]
-- `formatType`: [FormatTypeType](./literals.md#formattypetype)
 - `formatParams`: `Dict`\[`str`, `str`\]
-- `createTimestamp`: `datetime`
-- `status`: [ChangesetStatusType](./literals.md#changesetstatustype)
-- `errorInfo`: [ErrorInfoTypeDef](./type_defs.md#errorinfotypedef)
-- `changesetLabels`: `Dict`\[`str`, `str`\]
+- `createTime`: `int`
+- `status`: [IngestionStatusType](./literals.md#ingestionstatustype)
+- `errorInfo`:
+  [ChangesetErrorInfoTypeDef](./type_defs.md#changeseterrorinfotypedef)
+- `activeUntilTimestamp`: `int`
 - `updatesChangesetId`: `str`
 - `updatedByChangesetId`: `str`
+
+## ColumnDefinitionTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ColumnDefinitionTypeDef
+```
+
+Optional fields:
+
+- `dataType`: [ColumnDataTypeType](./literals.md#columndatatypetype)
+- `columnName`: `str`
+- `columnDescription`: `str`
 
 ## CreateChangesetRequestRequestTypeDef
 
@@ -53,15 +107,12 @@ Required fields:
 
 - `datasetId`: `str`
 - `changeType`: [ChangeTypeType](./literals.md#changetypetype)
-- `sourceType`: `Literal['S3']` (see
-  [SourceTypeType](./literals.md#sourcetypetype))
 - `sourceParams`: `Mapping`\[`str`, `str`\]
+- `formatParams`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
-- `formatType`: [FormatTypeType](./literals.md#formattypetype)
-- `formatParams`: `Mapping`\[`str`, `str`\]
-- `tags`: `Mapping`\[`str`, `str`\]
+- `clientToken`: `str`
 
 ## CreateChangesetResponseTypeDef
 
@@ -71,7 +122,75 @@ from mypy_boto3_finspace_data.type_defs import CreateChangesetResponseTypeDef
 
 Required fields:
 
-- `changeset`: [ChangesetInfoTypeDef](./type_defs.md#changesetinfotypedef)
+- `datasetId`: `str`
+- `changesetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateDataViewRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import CreateDataViewRequestRequestTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
+- `destinationTypeParams`:
+  [DataViewDestinationTypeParamsTypeDef](./type_defs.md#dataviewdestinationtypeparamstypedef)
+
+Optional fields:
+
+- `clientToken`: `str`
+- `autoUpdate`: `bool`
+- `sortColumns`: `Sequence`\[`str`\]
+- `partitionColumns`: `Sequence`\[`str`\]
+- `asOfTimestamp`: `int`
+
+## CreateDataViewResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import CreateDataViewResponseTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
+- `dataViewId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateDatasetRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import CreateDatasetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `datasetTitle`: `str`
+- `kind`: [DatasetKindType](./literals.md#datasetkindtype)
+- `datasetDescription`: `str`
+- `permissionGroupParams`:
+  [PermissionGroupParamsTypeDef](./type_defs.md#permissiongroupparamstypedef)
+- `alias`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+- `ownerInfo`:
+  [DatasetOwnerInfoTypeDef](./type_defs.md#datasetownerinfotypedef)
+- `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
+
+## CreateDatasetResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import CreateDatasetResponseTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -87,16 +206,209 @@ Optional fields:
 - `secretAccessKey`: `str`
 - `sessionToken`: `str`
 
-## ErrorInfoTypeDef
+## DataViewDestinationTypeParamsTypeDef
 
 ```python
-from mypy_boto3_finspace_data.type_defs import ErrorInfoTypeDef
+from mypy_boto3_finspace_data.type_defs import DataViewDestinationTypeParamsTypeDef
+```
+
+Required fields:
+
+- `destinationType`: `str`
+
+## DataViewErrorInfoTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import DataViewErrorInfoTypeDef
 ```
 
 Optional fields:
 
 - `errorMessage`: `str`
 - `errorCategory`: [ErrorCategoryType](./literals.md#errorcategorytype)
+
+## DataViewSummaryTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import DataViewSummaryTypeDef
+```
+
+Optional fields:
+
+- `dataViewId`: `str`
+- `dataViewArn`: `str`
+- `datasetId`: `str`
+- `asOfTimestamp`: `int`
+- `partitionColumns`: `List`\[`str`\]
+- `sortColumns`: `List`\[`str`\]
+- `status`: [DataViewStatusType](./literals.md#dataviewstatustype)
+- `errorInfo`:
+  [DataViewErrorInfoTypeDef](./type_defs.md#dataviewerrorinfotypedef)
+- `destinationTypeProperties`:
+  [DataViewDestinationTypeParamsTypeDef](./type_defs.md#dataviewdestinationtypeparamstypedef)
+- `autoUpdate`: `bool`
+- `createTime`: `int`
+- `lastModifiedTime`: `int`
+
+## DatasetOwnerInfoTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import DatasetOwnerInfoTypeDef
+```
+
+Optional fields:
+
+- `name`: `str`
+- `phoneNumber`: `str`
+- `email`: `str`
+
+## DatasetTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import DatasetTypeDef
+```
+
+Optional fields:
+
+- `datasetId`: `str`
+- `datasetArn`: `str`
+- `datasetTitle`: `str`
+- `kind`: [DatasetKindType](./literals.md#datasetkindtype)
+- `datasetDescription`: `str`
+- `ownerInfo`:
+  [DatasetOwnerInfoTypeDef](./type_defs.md#datasetownerinfotypedef)
+- `createTime`: `int`
+- `lastModifiedTime`: `int`
+- `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
+- `alias`: `str`
+
+## DeleteDatasetRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import DeleteDatasetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## DeleteDatasetResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import DeleteDatasetResponseTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetChangesetRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import GetChangesetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
+- `changesetId`: `str`
+
+## GetChangesetResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import GetChangesetResponseTypeDef
+```
+
+Required fields:
+
+- `changesetId`: `str`
+- `changesetArn`: `str`
+- `datasetId`: `str`
+- `changeType`: [ChangeTypeType](./literals.md#changetypetype)
+- `sourceParams`: `Dict`\[`str`, `str`\]
+- `formatParams`: `Dict`\[`str`, `str`\]
+- `createTime`: `int`
+- `status`: [IngestionStatusType](./literals.md#ingestionstatustype)
+- `errorInfo`:
+  [ChangesetErrorInfoTypeDef](./type_defs.md#changeseterrorinfotypedef)
+- `activeUntilTimestamp`: `int`
+- `updatesChangesetId`: `str`
+- `updatedByChangesetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetDataViewRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import GetDataViewRequestRequestTypeDef
+```
+
+Required fields:
+
+- `dataViewId`: `str`
+- `datasetId`: `str`
+
+## GetDataViewResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import GetDataViewResponseTypeDef
+```
+
+Required fields:
+
+- `autoUpdate`: `bool`
+- `partitionColumns`: `List`\[`str`\]
+- `datasetId`: `str`
+- `asOfTimestamp`: `int`
+- `errorInfo`:
+  [DataViewErrorInfoTypeDef](./type_defs.md#dataviewerrorinfotypedef)
+- `lastModifiedTime`: `int`
+- `createTime`: `int`
+- `sortColumns`: `List`\[`str`\]
+- `dataViewId`: `str`
+- `dataViewArn`: `str`
+- `destinationTypeParams`:
+  [DataViewDestinationTypeParamsTypeDef](./type_defs.md#dataviewdestinationtypeparamstypedef)
+- `status`: [DataViewStatusType](./literals.md#dataviewstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetDatasetRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import GetDatasetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
+
+## GetDatasetResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import GetDatasetResponseTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
+- `datasetArn`: `str`
+- `datasetTitle`: `str`
+- `kind`: [DatasetKindType](./literals.md#datasetkindtype)
+- `datasetDescription`: `str`
+- `createTime`: `int`
+- `lastModifiedTime`: `int`
+- `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
+- `alias`: `str`
+- `status`: [DatasetStatusType](./literals.md#datasetstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetProgrammaticAccessCredentialsRequestRequestTypeDef
 
@@ -149,6 +461,122 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListChangesetsRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ListChangesetsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListChangesetsResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ListChangesetsResponseTypeDef
+```
+
+Required fields:
+
+- `changesets`:
+  `List`\[[ChangesetSummaryTypeDef](./type_defs.md#changesetsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListDataViewsRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ListDataViewsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListDataViewsResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ListDataViewsResponseTypeDef
+```
+
+Required fields:
+
+- `nextToken`: `str`
+- `dataViews`:
+  `List`\[[DataViewSummaryTypeDef](./type_defs.md#dataviewsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListDatasetsRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ListDatasetsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListDatasetsResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ListDatasetsResponseTypeDef
+```
+
+Required fields:
+
+- `datasets`: `List`\[[DatasetTypeDef](./type_defs.md#datasettypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PaginatorConfigTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import PaginatorConfigTypeDef
+```
+
+Optional fields:
+
+- `MaxItems`: `int`
+- `PageSize`: `int`
+- `StartingToken`: `str`
+
+## PermissionGroupParamsTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import PermissionGroupParamsTypeDef
+```
+
+Optional fields:
+
+- `permissionGroupId`: `str`
+- `datasetPermissions`:
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+
+## ResourcePermissionTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ResourcePermissionTypeDef
+```
+
+Optional fields:
+
+- `permission`: `str`
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -162,3 +590,87 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## SchemaDefinitionTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import SchemaDefinitionTypeDef
+```
+
+Optional fields:
+
+- `columns`:
+  `Sequence`\[[ColumnDefinitionTypeDef](./type_defs.md#columndefinitiontypedef)\]
+- `primaryKeyColumns`: `Sequence`\[`str`\]
+
+## SchemaUnionTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import SchemaUnionTypeDef
+```
+
+Optional fields:
+
+- `tabularSchemaConfig`:
+  [SchemaDefinitionTypeDef](./type_defs.md#schemadefinitiontypedef)
+
+## UpdateChangesetRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import UpdateChangesetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
+- `changesetId`: `str`
+- `sourceParams`: `Mapping`\[`str`, `str`\]
+- `formatParams`: `Mapping`\[`str`, `str`\]
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## UpdateChangesetResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import UpdateChangesetResponseTypeDef
+```
+
+Required fields:
+
+- `changesetId`: `str`
+- `datasetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateDatasetRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import UpdateDatasetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
+- `datasetTitle`: `str`
+- `kind`: [DatasetKindType](./literals.md#datasetkindtype)
+- `alias`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+- `datasetDescription`: `str`
+- `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
+
+## UpdateDatasetResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import UpdateDatasetResponseTypeDef
+```
+
+Required fields:
+
+- `datasetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

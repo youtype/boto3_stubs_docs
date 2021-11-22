@@ -855,6 +855,7 @@ from mypy_boto3_ssm.type_defs import AccountSharingInfoTypeDef, ...
 - [RegisterTargetWithMaintenanceWindowResultTypeDef](./type_defs.md#registertargetwithmaintenancewindowresulttypedef)
 - [RegisterTaskWithMaintenanceWindowRequestRequestTypeDef](./type_defs.md#registertaskwithmaintenancewindowrequestrequesttypedef)
 - [RegisterTaskWithMaintenanceWindowResultTypeDef](./type_defs.md#registertaskwithmaintenancewindowresulttypedef)
+- [RegistrationMetadataItemTypeDef](./type_defs.md#registrationmetadataitemtypedef)
 - [RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)
 - [RemoveTagsFromResourceRequestRequestTypeDef](./type_defs.md#removetagsfromresourcerequestrequesttypedef)
 - [ResetServiceSettingRequestRequestTypeDef](./type_defs.md#resetservicesettingrequestrequesttypedef)

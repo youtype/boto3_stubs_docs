@@ -155,7 +155,7 @@ Returns [StackResourceSummary](#stackresourcesummary).
 
 ### CloudFormationServiceResource.create_stack method
 
-Creates a stack as specified in the template.
+.
 
 Type annotations for `boto3.resource("cloudformation").create_stack` method.
 
@@ -421,7 +421,7 @@ Boto3 documentation:
 
 #### Stack.update method
 
-Updates a stack as specified in the template.
+.
 
 Type annotations for `boto3.resource("cloudformation").update` method.
 
