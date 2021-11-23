@@ -175,8 +175,7 @@ Returns
 
 ### create_backup_selection
 
-Creates a JSON document that specifies a set of resources to assign to a backup
-plan.
+.
 
 Type annotations for `boto3.client("backup").create_backup_selection` method.
 
@@ -744,8 +743,7 @@ Returns
 
 ### get_backup_selection
 
-Returns selection metadata and a document in JSON format that specifies a list
-of resources that are associated with a backup plan.
+.
 
 Type annotations for `boto3.client("backup").get_backup_selection` method.
 
@@ -1493,6 +1491,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceTypeOptInPreference`: `Mapping`\[`str`, `bool`\]
+- `ResourceTypeManagementPreference`: `Mapping`\[`str`, `bool`\]
 
 ### update_report_plan
 

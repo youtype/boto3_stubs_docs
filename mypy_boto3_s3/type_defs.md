@@ -3287,6 +3287,8 @@ Optional fields:
 
 - `Prefix`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ObjectSizeGreaterThan`: `int`
+- `ObjectSizeLessThan`: `int`
 
 ## LifecycleRuleFilterTypeDef
 
@@ -3298,6 +3300,8 @@ Optional fields:
 
 - `Prefix`: `str`
 - `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
+- `ObjectSizeGreaterThan`: `int`
+- `ObjectSizeLessThan`: `int`
 - `And`:
   [LifecycleRuleAndOperatorTypeDef](./type_defs.md#lifecycleruleandoperatortypedef)
 
@@ -3815,6 +3819,7 @@ from mypy_boto3_s3.type_defs import NoncurrentVersionExpirationTypeDef
 Optional fields:
 
 - `NoncurrentDays`: `int`
+- `NewerNoncurrentVersions`: `int`
 
 ## NoncurrentVersionTransitionTypeDef
 
@@ -3827,6 +3832,7 @@ Optional fields:
 - `NoncurrentDays`: `int`
 - `StorageClass`:
   [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
+- `NewerNoncurrentVersions`: `int`
 
 ## NotificationConfigurationDeprecatedResponseMetadataTypeDef
 

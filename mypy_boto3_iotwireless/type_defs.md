@@ -71,6 +71,8 @@ type annotations stubs module
   - [GetMulticastGroupResponseTypeDef](#getmulticastgroupresponsetypedef)
   - [GetMulticastGroupSessionRequestRequestTypeDef](#getmulticastgroupsessionrequestrequesttypedef)
   - [GetMulticastGroupSessionResponseTypeDef](#getmulticastgroupsessionresponsetypedef)
+  - [GetNetworkAnalyzerConfigurationRequestRequestTypeDef](#getnetworkanalyzerconfigurationrequestrequesttypedef)
+  - [GetNetworkAnalyzerConfigurationResponseTypeDef](#getnetworkanalyzerconfigurationresponsetypedef)
   - [GetPartnerAccountRequestRequestTypeDef](#getpartneraccountrequestrequesttypedef)
   - [GetPartnerAccountResponseTypeDef](#getpartneraccountresponsetypedef)
   - [GetResourceEventConfigurationRequestRequestTypeDef](#getresourceeventconfigurationrequestrequesttypedef)
@@ -172,11 +174,13 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [TestWirelessDeviceRequestRequestTypeDef](#testwirelessdevicerequestrequesttypedef)
   - [TestWirelessDeviceResponseTypeDef](#testwirelessdeviceresponsetypedef)
+  - [TraceContentTypeDef](#tracecontenttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateDestinationRequestRequestTypeDef](#updatedestinationrequestrequesttypedef)
   - [UpdateFuotaTaskRequestRequestTypeDef](#updatefuotataskrequestrequesttypedef)
   - [UpdateLogLevelsByResourceTypesRequestRequestTypeDef](#updateloglevelsbyresourcetypesrequestrequesttypedef)
   - [UpdateMulticastGroupRequestRequestTypeDef](#updatemulticastgrouprequestrequesttypedef)
+  - [UpdateNetworkAnalyzerConfigurationRequestRequestTypeDef](#updatenetworkanalyzerconfigurationrequestrequesttypedef)
   - [UpdatePartnerAccountRequestRequestTypeDef](#updatepartneraccountrequestrequesttypedef)
   - [UpdateResourceEventConfigurationRequestRequestTypeDef](#updateresourceeventconfigurationrequestrequesttypedef)
   - [UpdateWirelessDeviceRequestRequestTypeDef](#updatewirelessdevicerequestrequesttypedef)
@@ -986,6 +990,30 @@ Required fields:
 
 - `LoRaWAN`:
   [LoRaWANMulticastSessionTypeDef](./type_defs.md#lorawanmulticastsessiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetNetworkAnalyzerConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetNetworkAnalyzerConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigurationName`: `str`
+
+## GetNetworkAnalyzerConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetNetworkAnalyzerConfigurationResponseTypeDef
+```
+
+Required fields:
+
+- `TraceContent`: [TraceContentTypeDef](./type_defs.md#tracecontenttypedef)
+- `WirelessDevices`: `List`\[`str`\]
+- `WirelessGateways`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2298,6 +2326,18 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## TraceContentTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import TraceContentTypeDef
+```
+
+Optional fields:
+
+- `WirelessDeviceFrameInfo`:
+  [WirelessDeviceFrameInfoType](./literals.md#wirelessdeviceframeinfotype)
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2373,6 +2413,24 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `LoRaWAN`: [LoRaWANMulticastTypeDef](./type_defs.md#lorawanmulticasttypedef)
+
+## UpdateNetworkAnalyzerConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import UpdateNetworkAnalyzerConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigurationName`: `str`
+
+Optional fields:
+
+- `TraceContent`: [TraceContentTypeDef](./type_defs.md#tracecontenttypedef)
+- `WirelessDevicesToAdd`: `Sequence`\[`str`\]
+- `WirelessDevicesToRemove`: `Sequence`\[`str`\]
+- `WirelessGatewaysToAdd`: `Sequence`\[`str`\]
+- `WirelessGatewaysToRemove`: `Sequence`\[`str`\]
 
 ## UpdatePartnerAccountRequestRequestTypeDef
 

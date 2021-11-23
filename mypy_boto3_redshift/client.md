@@ -82,6 +82,7 @@ type annotations stubs module
     - [describe_node_configuration_options](#describe_node_configuration_options)
     - [describe_orderable_cluster_options](#describe_orderable_cluster_options)
     - [describe_partners](#describe_partners)
+    - [describe_reserved_node_exchange_status](#describe_reserved_node_exchange_status)
     - [describe_reserved_node_offerings](#describe_reserved_node_offerings)
     - [describe_reserved_nodes](#describe_reserved_nodes)
     - [describe_resize](#describe_resize)
@@ -99,6 +100,7 @@ type annotations stubs module
     - [enable_snapshot_copy](#enable_snapshot_copy)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_cluster_credentials](#get_cluster_credentials)
+    - [get_reserved_node_exchange_configuration_options](#get_reserved_node_exchange_configuration_options)
     - [get_reserved_node_exchange_offerings](#get_reserved_node_exchange_offerings)
     - [modify_aqua_configuration](#modify_aqua_configuration)
     - [modify_authentication_profile](#modify_authentication_profile)
@@ -249,6 +251,7 @@ Exceptions:
 - `Exceptions.PartnerNotFoundFault`
 - `Exceptions.ReservedNodeAlreadyExistsFault`
 - `Exceptions.ReservedNodeAlreadyMigratedFault`
+- `Exceptions.ReservedNodeExchangeNotFoundFault`
 - `Exceptions.ReservedNodeNotFoundFault`
 - `Exceptions.ReservedNodeOfferingNotFoundFault`
 - `Exceptions.ReservedNodeQuotaExceededFault`
@@ -1872,6 +1875,30 @@ Keyword-only arguments:
 Returns
 [DescribePartnersOutputMessageTypeDef](./type_defs.md#describepartnersoutputmessagetypedef).
 
+### describe_reserved_node_exchange_status
+
+Returns exchange status details and associated metadata for a reserved-node
+exchange.
+
+Type annotations for
+`boto3.client("redshift").describe_reserved_node_exchange_status` method.
+
+Boto3 documentation:
+[Redshift.Client.describe_reserved_node_exchange_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_reserved_node_exchange_status)
+
+Arguments mapping described in
+[DescribeReservedNodeExchangeStatusInputMessageRequestTypeDef](./type_defs.md#describereservednodeexchangestatusinputmessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `ReservedNodeId`: `str`
+- `ReservedNodeExchangeRequestId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeReservedNodeExchangeStatusOutputMessageTypeDef](./type_defs.md#describereservednodeexchangestatusoutputmessagetypedef).
+
 ### describe_reserved_node_offerings
 
 Returns a list of the available reserved node offerings by Amazon Redshift with
@@ -2247,6 +2274,33 @@ Keyword-only arguments:
 - `DbGroups`: `Sequence`\[`str`\]
 
 Returns [ClusterCredentialsTypeDef](./type_defs.md#clustercredentialstypedef).
+
+### get_reserved_node_exchange_configuration_options
+
+Gets the configuration options for the reserved-node exchange.
+
+Type annotations for
+`boto3.client("redshift").get_reserved_node_exchange_configuration_options`
+method.
+
+Boto3 documentation:
+[Redshift.Client.get_reserved_node_exchange_configuration_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.get_reserved_node_exchange_configuration_options)
+
+Arguments mapping described in
+[GetReservedNodeExchangeConfigurationOptionsInputMessageRequestTypeDef](./type_defs.md#getreservednodeexchangeconfigurationoptionsinputmessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `ActionType`:
+  [ReservedNodeExchangeActionTypeType](./literals.md#reservednodeexchangeactiontypetype)
+  *(required)*
+- `ClusterIdentifier`: `str`
+- `SnapshotIdentifier`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeconfigurationoptionsoutputmessagetypedef).
 
 ### get_reserved_node_exchange_offerings
 
@@ -2772,6 +2826,8 @@ Keyword-only arguments:
 - `NodeType`: `str`
 - `NumberOfNodes`: `int`
 - `Classic`: `bool`
+- `ReservedNodeId`: `str`
+- `TargetReservedNodeOfferingId`: `str`
 
 Returns
 [ResizeClusterResultTypeDef](./type_defs.md#resizeclusterresulttypedef).
@@ -2821,6 +2877,8 @@ Keyword-only arguments:
 - `AquaConfigurationStatus`:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
 - `DefaultIamRoleArn`: `str`
+- `ReservedNodeId`: `str`
+- `TargetReservedNodeOfferingId`: `str`
 
 Returns
 [RestoreFromClusterSnapshotResultTypeDef](./type_defs.md#restorefromclustersnapshotresulttypedef).
@@ -3008,6 +3066,12 @@ overloads.
   [DescribeClusterVersionsPaginator](./paginators.md#describeclusterversionspaginator)
 - `client.get_paginator("describe_clusters")` ->
   [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
+- `client.get_paginator("describe_data_shares")` ->
+  [DescribeDataSharesPaginator](./paginators.md#describedatasharespaginator)
+- `client.get_paginator("describe_data_shares_for_consumer")` ->
+  [DescribeDataSharesForConsumerPaginator](./paginators.md#describedatasharesforconsumerpaginator)
+- `client.get_paginator("describe_data_shares_for_producer")` ->
+  [DescribeDataSharesForProducerPaginator](./paginators.md#describedatasharesforproducerpaginator)
 - `client.get_paginator("describe_default_cluster_parameters")` ->
   [DescribeDefaultClusterParametersPaginator](./paginators.md#describedefaultclusterparameterspaginator)
 - `client.get_paginator("describe_endpoint_access")` ->
@@ -3026,6 +3090,8 @@ overloads.
   [DescribeNodeConfigurationOptionsPaginator](./paginators.md#describenodeconfigurationoptionspaginator)
 - `client.get_paginator("describe_orderable_cluster_options")` ->
   [DescribeOrderableClusterOptionsPaginator](./paginators.md#describeorderableclusteroptionspaginator)
+- `client.get_paginator("describe_reserved_node_exchange_status")` ->
+  [DescribeReservedNodeExchangeStatusPaginator](./paginators.md#describereservednodeexchangestatuspaginator)
 - `client.get_paginator("describe_reserved_node_offerings")` ->
   [DescribeReservedNodeOfferingsPaginator](./paginators.md#describereservednodeofferingspaginator)
 - `client.get_paginator("describe_reserved_nodes")` ->
@@ -3042,6 +3108,8 @@ overloads.
   [DescribeTagsPaginator](./paginators.md#describetagspaginator)
 - `client.get_paginator("describe_usage_limits")` ->
   [DescribeUsageLimitsPaginator](./paginators.md#describeusagelimitspaginator)
+- `client.get_paginator("get_reserved_node_exchange_configuration_options")` ->
+  [GetReservedNodeExchangeConfigurationOptionsPaginator](./paginators.md#getreservednodeexchangeconfigurationoptionspaginator)
 - `client.get_paginator("get_reserved_node_exchange_offerings")` ->
   [GetReservedNodeExchangeOfferingsPaginator](./paginators.md#getreservednodeexchangeofferingspaginator)
 

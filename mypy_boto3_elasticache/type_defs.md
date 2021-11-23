@@ -876,6 +876,7 @@ Optional fields:
 - `UserGroupIds`: `Sequence`\[`str`\]
 - `LogDeliveryConfigurations`:
   `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
+- `DataTieringEnabled`: `bool`
 
 ## CreateReplicationGroupResultTypeDef
 
@@ -2423,6 +2424,7 @@ Optional fields:
 - `LogDeliveryConfigurations`:
   `List`\[[LogDeliveryConfigurationTypeDef](./type_defs.md#logdeliveryconfigurationtypedef)\]
 - `ReplicationGroupCreateTime`: `datetime`
+- `DataTiering`: [DataTieringStatusType](./literals.md#datatieringstatustype)
 
 ## ReservedCacheNodeMessageTypeDef
 
@@ -2665,6 +2667,7 @@ Optional fields:
   `List`\[[NodeSnapshotTypeDef](./type_defs.md#nodesnapshottypedef)\]
 - `KmsKeyId`: `str`
 - `ARN`: `str`
+- `DataTiering`: [DataTieringStatusType](./literals.md#datatieringstatustype)
 
 ## StartMigrationMessageRequestTypeDef
 
@@ -2870,6 +2873,7 @@ Required fields:
 - `Status`: `str`
 - `Engine`: `str`
 - `UserIds`: `List`\[`str`\]
+- `MinimumEngineVersion`: `str`
 - `PendingChanges`:
   [UserGroupPendingChangesTypeDef](./type_defs.md#usergrouppendingchangestypedef)
 - `ReplicationGroups`: `List`\[`str`\]
@@ -2889,6 +2893,7 @@ Optional fields:
 - `Status`: `str`
 - `Engine`: `str`
 - `UserIds`: `List`\[`str`\]
+- `MinimumEngineVersion`: `str`
 - `PendingChanges`:
   [UserGroupPendingChangesTypeDef](./type_defs.md#usergrouppendingchangestypedef)
 - `ReplicationGroups`: `List`\[`str`\]
@@ -2917,6 +2922,7 @@ Required fields:
 - `UserName`: `str`
 - `Status`: `str`
 - `Engine`: `str`
+- `MinimumEngineVersion`: `str`
 - `AccessString`: `str`
 - `UserGroupIds`: `List`\[`str`\]
 - `Authentication`:
@@ -2937,6 +2943,7 @@ Optional fields:
 - `UserName`: `str`
 - `Status`: `str`
 - `Engine`: `str`
+- `MinimumEngineVersion`: `str`
 - `AccessString`: `str`
 - `UserGroupIds`: `List`\[`str`\]
 - `Authentication`:

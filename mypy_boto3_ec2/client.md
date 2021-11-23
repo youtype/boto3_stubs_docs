@@ -406,6 +406,7 @@ type annotations stubs module
     - [modify_launch_template](#modify_launch_template)
     - [modify_managed_prefix_list](#modify_managed_prefix_list)
     - [modify_network_interface_attribute](#modify_network_interface_attribute)
+    - [modify_private_dns_name_options](#modify_private_dns_name_options)
     - [modify_reserved_instances](#modify_reserved_instances)
     - [modify_security_group_rules](#modify_security_group_rules)
     - [modify_snapshot_attribute](#modify_snapshot_attribute)
@@ -1807,6 +1808,7 @@ Keyword-only arguments:
 
 - `AvailabilityZone`: `str` *(required)*
 - `DryRun`: `bool`
+- `Ipv6Native`: `bool`
 
 Returns
 [CreateDefaultSubnetResultTypeDef](./type_defs.md#createdefaultsubnetresulttypedef).
@@ -2694,15 +2696,16 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CidrBlock`: `str` *(required)*
 - `VpcId`: `str` *(required)*
 - `TagSpecifications`:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
+- `CidrBlock`: `str`
 - `Ipv6CidrBlock`: `str`
 - `OutpostArn`: `str`
 - `DryRun`: `bool`
+- `Ipv6Native`: `bool`
 
 Returns [CreateSubnetResultTypeDef](./type_defs.md#createsubnetresulttypedef).
 
@@ -9712,6 +9715,30 @@ Keyword-only arguments:
 - `SourceDestCheck`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
+### modify_private_dns_name_options
+
+Modifies the options for instance hostnames for the specified instance.
+
+Type annotations for `boto3.client("ec2").modify_private_dns_name_options`
+method.
+
+Boto3 documentation:
+[EC2.Client.modify_private_dns_name_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_private_dns_name_options)
+
+Arguments mapping described in
+[ModifyPrivateDnsNameOptionsRequestRequestTypeDef](./type_defs.md#modifyprivatednsnameoptionsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DryRun`: `bool`
+- `InstanceId`: `str`
+- `PrivateDnsHostnameType`: [HostnameTypeType](./literals.md#hostnametypetype)
+- `EnableResourceNameDnsARecord`: `bool`
+- `EnableResourceNameDnsAAAARecord`: `bool`
+
+Returns
+[ModifyPrivateDnsNameOptionsResultTypeDef](./type_defs.md#modifyprivatednsnameoptionsresulttypedef).
+
 ### modify_reserved_instances
 
 Modifies the Availability Zone, instance count, instance type, or network
@@ -9832,6 +9859,12 @@ Keyword-only arguments:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `CustomerOwnedIpv4Pool`: `str`
 - `EnableDns64`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `PrivateDnsHostnameTypeOnLaunch`:
+  [HostnameTypeType](./literals.md#hostnametypetype)
+- `EnableResourceNameDnsARecordOnLaunch`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `EnableResourceNameDnsAAAARecordOnLaunch`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
 ### modify_traffic_mirror_filter_network_services
@@ -11295,6 +11328,8 @@ Keyword-only arguments:
   [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
   [EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef)
+- `PrivateDnsNameOptions`:
+  [PrivateDnsNameOptionsRequestTypeDef](./type_defs.md#privatednsnameoptionsrequesttypedef)
 
 Returns
 [ReservationResponseMetadataTypeDef](./type_defs.md#reservationresponsemetadatatypedef).

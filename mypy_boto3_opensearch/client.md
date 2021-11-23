@@ -963,6 +963,7 @@ Keyword-only arguments:
   [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
 - `AutoTuneOptions`:
   [AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef)
+- `DryRun`: `bool`
 
 Returns
 [UpdateDomainConfigResponseTypeDef](./type_defs.md#updatedomainconfigresponsetypedef).

@@ -48,6 +48,8 @@ type annotations stubs module
   - [EventSourceMappingConfigurationResponseMetadataTypeDef](#eventsourcemappingconfigurationresponsemetadatatypedef)
   - [EventSourceMappingConfigurationTypeDef](#eventsourcemappingconfigurationtypedef)
   - [FileSystemConfigTypeDef](#filesystemconfigtypedef)
+  - [FilterCriteriaTypeDef](#filtercriteriatypedef)
+  - [FilterTypeDef](#filtertypedef)
   - [FunctionCodeLocationTypeDef](#functioncodelocationtypedef)
   - [FunctionCodeTypeDef](#functioncodetypedef)
   - [FunctionConfigurationResponseMetadataTypeDef](#functionconfigurationresponsemetadatatypedef)
@@ -425,6 +427,8 @@ Optional fields:
 - `EventSourceArn`: `str`
 - `Enabled`: `bool`
 - `BatchSize`: `int`
+- `FilterCriteria`:
+  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
 - `MaximumBatchingWindowInSeconds`: `int`
 - `ParallelizationFactor`: `int`
 - `StartingPosition`:
@@ -699,6 +703,8 @@ Required fields:
 - `MaximumBatchingWindowInSeconds`: `int`
 - `ParallelizationFactor`: `int`
 - `EventSourceArn`: `str`
+- `FilterCriteria`:
+  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
 - `FunctionArn`: `str`
 - `LastModified`: `datetime`
 - `LastProcessingResult`: `str`
@@ -737,6 +743,8 @@ Optional fields:
 - `MaximumBatchingWindowInSeconds`: `int`
 - `ParallelizationFactor`: `int`
 - `EventSourceArn`: `str`
+- `FilterCriteria`:
+  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
 - `FunctionArn`: `str`
 - `LastModified`: `datetime`
 - `LastProcessingResult`: `str`
@@ -767,6 +775,26 @@ Required fields:
 
 - `Arn`: `str`
 - `LocalMountPath`: `str`
+
+## FilterCriteriaTypeDef
+
+```python
+from mypy_boto3_lambda.type_defs import FilterCriteriaTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## FilterTypeDef
+
+```python
+from mypy_boto3_lambda.type_defs import FilterTypeDef
+```
+
+Optional fields:
+
+- `Pattern`: `str`
 
 ## FunctionCodeLocationTypeDef
 
@@ -2120,6 +2148,8 @@ Optional fields:
 - `FunctionName`: `str`
 - `Enabled`: `bool`
 - `BatchSize`: `int`
+- `FilterCriteria`:
+  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
 - `MaximumBatchingWindowInSeconds`: `int`
 - `DestinationConfig`:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)

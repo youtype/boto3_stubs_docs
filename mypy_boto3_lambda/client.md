@@ -299,6 +299,8 @@ Keyword-only arguments:
 - `EventSourceArn`: `str`
 - `Enabled`: `bool`
 - `BatchSize`: `int`
+- `FilterCriteria`:
+  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
 - `MaximumBatchingWindowInSeconds`: `int`
 - `ParallelizationFactor`: `int`
 - `StartingPosition`:
@@ -1511,6 +1513,8 @@ Keyword-only arguments:
 - `FunctionName`: `str`
 - `Enabled`: `bool`
 - `BatchSize`: `int`
+- `FilterCriteria`:
+  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
 - `MaximumBatchingWindowInSeconds`: `int`
 - `DestinationConfig`:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)

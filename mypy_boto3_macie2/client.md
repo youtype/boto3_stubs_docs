@@ -475,8 +475,8 @@ Returns
 
 ### describe_organization_configuration
 
-Retrieves the Amazon Macie configuration settings for an Amazon Web Services
-organization.
+Retrieves the Amazon Macie configuration settings for an organization in
+Organizations.
 
 Type annotations for
 `boto3.client("macie2").describe_organization_configuration` method.
@@ -489,7 +489,8 @@ Returns
 
 ### disable_macie
 
-Disables an Amazon Macie account and deletes Macie resources for the account.
+Disables Amazon Macie and deletes all settings and resources for a Macie
+account.
 
 Type annotations for `boto3.client("macie2").disable_macie` method.
 
@@ -501,7 +502,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### disable_organization_admin_account
 
 Disables an account as the delegated Amazon Macie administrator account for an
-Amazon Web Services organization.
+organization in Organizations.
 
 Type annotations for
 `boto3.client("macie2").disable_organization_admin_account` method.
@@ -586,7 +587,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### enable_organization_admin_account
 
 Designates an account as the delegated Amazon Macie administrator account for
-an Amazon Web Services organization.
+an organization in Organizations.
 
 Type annotations for `boto3.client("macie2").enable_organization_admin_account`
 method.
@@ -637,8 +638,8 @@ Returns
 
 ### get_bucket_statistics
 
-Retrieves (queries) aggregated statistical data for all the S3 buckets that
-Amazon Macie monitors and analyzes.
+Retrieves (queries) aggregated statistical data about S3 buckets that Amazon
+Macie monitors and analyzes.
 
 Type annotations for `boto3.client("macie2").get_bucket_statistics` method.
 
@@ -1023,7 +1024,7 @@ Returns
 ### list_organization_admin_accounts
 
 Retrieves information about the delegated Amazon Macie administrator account
-for an Amazon Web Services organization.
+for an organization in Organizations.
 
 Type annotations for `boto3.client("macie2").list_organization_admin_accounts`
 method.
@@ -1242,8 +1243,8 @@ Returns
 
 ### update_macie_session
 
-Suspends or re-enables an Amazon Macie account, or updates the configuration
-settings for a Macie account.
+Suspends or re-enables Amazon Macie, or updates the configuration settings for
+a Macie account.
 
 Type annotations for `boto3.client("macie2").update_macie_session` method.
 
@@ -1283,8 +1284,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_organization_configuration
 
-Updates the Amazon Macie configuration settings for an Amazon Web Services
-organization.
+Updates the Amazon Macie configuration settings for an organization in
+Organizations.
 
 Type annotations for `boto3.client("macie2").update_organization_configuration`
 method.

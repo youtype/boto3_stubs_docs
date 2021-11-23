@@ -276,6 +276,8 @@ from mypy_boto3_lambda.type_defs import AccountLimitTypeDef, ...
 - [EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef)
 - [EventSourceMappingConfigurationTypeDef](./type_defs.md#eventsourcemappingconfigurationtypedef)
 - [FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)
+- [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
+- [FilterTypeDef](./type_defs.md#filtertypedef)
 - [FunctionCodeLocationTypeDef](./type_defs.md#functioncodelocationtypedef)
 - [FunctionCodeTypeDef](./type_defs.md#functioncodetypedef)
 - [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef)

@@ -210,6 +210,7 @@ from mypy_boto3_opensearch.type_defs import AWSDomainInformationTypeDef, ...
 - [DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef)
 - [DomainPackageDetailsTypeDef](./type_defs.md#domainpackagedetailstypedef)
 - [DomainStatusTypeDef](./type_defs.md#domainstatustypedef)
+- [DryRunResultsTypeDef](./type_defs.md#dryrunresultstypedef)
 - [DurationTypeDef](./type_defs.md#durationtypedef)
 - [EBSOptionsStatusTypeDef](./type_defs.md#ebsoptionsstatustypedef)
 - [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)

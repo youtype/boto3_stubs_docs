@@ -159,6 +159,8 @@ Keyword-only arguments:
 - `Statements`:
   `Sequence`\[[BatchStatementRequestTypeDef](./type_defs.md#batchstatementrequesttypedef)\]
   *(required)*
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
 Returns
 [BatchExecuteStatementOutputTypeDef](./type_defs.md#batchexecutestatementoutputtypedef).
@@ -666,6 +668,8 @@ Keyword-only arguments:
   `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 - `NextToken`: `str`
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
 Returns
 [ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef).
@@ -689,6 +693,8 @@ Keyword-only arguments:
   `Sequence`\[[ParameterizedStatementTypeDef](./type_defs.md#parameterizedstatementtypedef)\]
   *(required)*
 - `ClientRequestToken`: `str`
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
 Returns
 [ExecuteTransactionOutputTypeDef](./type_defs.md#executetransactionoutputtypedef).

@@ -947,6 +947,7 @@ from mypy_boto3_backup.type_defs import DescribeRegionSettingsOutputTypeDef
 Required fields:
 
 - `ResourceTypeOptInPreference`: `Dict`\[`str`, `bool`\]
+- `ResourceTypeManagementPreference`: `Dict`\[`str`, `bool`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2204,6 +2205,7 @@ from mypy_boto3_backup.type_defs import UpdateRegionSettingsInputRequestTypeDef
 Optional fields:
 
 - `ResourceTypeOptInPreference`: `Mapping`\[`str`, `bool`\]
+- `ResourceTypeManagementPreference`: `Mapping`\[`str`, `bool`\]
 
 ## UpdateReportPlanInputRequestTypeDef
 

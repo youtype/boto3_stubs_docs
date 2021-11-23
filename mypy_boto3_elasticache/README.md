@@ -240,6 +240,7 @@ from mypy_boto3_elasticache.literals import AZModeType, ...
 - [CacheClusterAvailableWaiterName](./literals.md#cacheclusteravailablewaitername)
 - [CacheClusterDeletedWaiterName](./literals.md#cacheclusterdeletedwaitername)
 - [ChangeTypeType](./literals.md#changetypetype)
+- [DataTieringStatusType](./literals.md#datatieringstatustype)
 - [DescribeCacheClustersPaginatorName](./literals.md#describecacheclusterspaginatorname)
 - [DescribeCacheEngineVersionsPaginatorName](./literals.md#describecacheengineversionspaginatorname)
 - [DescribeCacheParameterGroupsPaginatorName](./literals.md#describecacheparametergroupspaginatorname)

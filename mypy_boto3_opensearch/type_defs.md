@@ -80,6 +80,7 @@ type annotations stubs module
   - [DomainInformationContainerTypeDef](#domaininformationcontainertypedef)
   - [DomainPackageDetailsTypeDef](#domainpackagedetailstypedef)
   - [DomainStatusTypeDef](#domainstatustypedef)
+  - [DryRunResultsTypeDef](#dryrunresultstypedef)
   - [DurationTypeDef](#durationtypedef)
   - [EBSOptionsStatusTypeDef](#ebsoptionsstatustypedef)
   - [EBSOptionsTypeDef](#ebsoptionstypedef)
@@ -1156,6 +1157,17 @@ Optional fields:
 - `AutoTuneOptions`:
   [AutoTuneOptionsOutputTypeDef](./type_defs.md#autotuneoptionsoutputtypedef)
 
+## DryRunResultsTypeDef
+
+```python
+from mypy_boto3_opensearch.type_defs import DryRunResultsTypeDef
+```
+
+Optional fields:
+
+- `DeploymentType`: `str`
+- `Message`: `str`
+
 ## DurationTypeDef
 
 ```python
@@ -2044,6 +2056,7 @@ Optional fields:
   [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
 - `AutoTuneOptions`:
   [AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef)
+- `DryRun`: `bool`
 
 ## UpdateDomainConfigResponseTypeDef
 
@@ -2054,6 +2067,7 @@ from mypy_boto3_opensearch.type_defs import UpdateDomainConfigResponseTypeDef
 Required fields:
 
 - `DomainConfig`: [DomainConfigTypeDef](./type_defs.md#domainconfigtypedef)
+- `DryRunResults`: [DryRunResultsTypeDef](./type_defs.md#dryrunresultstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

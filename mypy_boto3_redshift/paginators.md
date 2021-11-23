@@ -17,6 +17,9 @@ type annotations stubs module
   - [DescribeClusterTracksPaginator](#describeclustertrackspaginator)
   - [DescribeClusterVersionsPaginator](#describeclusterversionspaginator)
   - [DescribeClustersPaginator](#describeclusterspaginator)
+  - [DescribeDataSharesPaginator](#describedatasharespaginator)
+  - [DescribeDataSharesForConsumerPaginator](#describedatasharesforconsumerpaginator)
+  - [DescribeDataSharesForProducerPaginator](#describedatasharesforproducerpaginator)
   - [DescribeDefaultClusterParametersPaginator](#describedefaultclusterparameterspaginator)
   - [DescribeEndpointAccessPaginator](#describeendpointaccesspaginator)
   - [DescribeEndpointAuthorizationPaginator](#describeendpointauthorizationpaginator)
@@ -26,6 +29,7 @@ type annotations stubs module
   - [DescribeHsmConfigurationsPaginator](#describehsmconfigurationspaginator)
   - [DescribeNodeConfigurationOptionsPaginator](#describenodeconfigurationoptionspaginator)
   - [DescribeOrderableClusterOptionsPaginator](#describeorderableclusteroptionspaginator)
+  - [DescribeReservedNodeExchangeStatusPaginator](#describereservednodeexchangestatuspaginator)
   - [DescribeReservedNodeOfferingsPaginator](#describereservednodeofferingspaginator)
   - [DescribeReservedNodesPaginator](#describereservednodespaginator)
   - [DescribeScheduledActionsPaginator](#describescheduledactionspaginator)
@@ -34,6 +38,7 @@ type annotations stubs module
   - [DescribeTableRestoreStatusPaginator](#describetablerestorestatuspaginator)
   - [DescribeTagsPaginator](#describetagspaginator)
   - [DescribeUsageLimitsPaginator](#describeusagelimitspaginator)
+  - [GetReservedNodeExchangeConfigurationOptionsPaginator](#getreservednodeexchangeconfigurationoptionspaginator)
   - [GetReservedNodeExchangeOfferingsPaginator](#getreservednodeexchangeofferingspaginator)
 
 ## DescribeClusterDbRevisionsPaginator
@@ -290,6 +295,88 @@ Arguments for `DescribeClustersPaginator.paginate` method:
 `DescribeClustersPaginator.paginate` returns
 `_PageIterator`\[[ClustersMessageTypeDef](./type_defs.md#clustersmessagetypedef)\].
 
+## DescribeDataSharesPaginator
+
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_data_shares")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_redshift.paginator import DescribeDataSharesPaginator
+
+def get_describe_data_shares_paginator() -> DescribeDataSharesPaginator:
+    return boto3.client("redshift").get_paginator("describe_data_shares")
+```
+
+Boto3 documentation:
+[Redshift.Paginator.DescribeDataShares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDataShares)
+
+Arguments for `DescribeDataSharesPaginator.paginate` method:
+
+- `DataShareArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeDataSharesPaginator.paginate` returns
+`_PageIterator`\[[DescribeDataSharesResultTypeDef](./type_defs.md#describedatasharesresulttypedef)\].
+
+## DescribeDataSharesForConsumerPaginator
+
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_data_shares_for_consumer")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_redshift.paginator import DescribeDataSharesForConsumerPaginator
+
+def get_describe_data_shares_for_consumer_paginator() -> DescribeDataSharesForConsumerPaginator:
+    return boto3.client("redshift").get_paginator("describe_data_shares_for_consumer")
+```
+
+Boto3 documentation:
+[Redshift.Paginator.DescribeDataSharesForConsumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDataSharesForConsumer)
+
+Arguments for `DescribeDataSharesForConsumerPaginator.paginate` method:
+
+- `ConsumerArn`: `str`
+- `Status`:
+  [DataShareStatusForConsumerType](./literals.md#datasharestatusforconsumertype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeDataSharesForConsumerPaginator.paginate` returns
+`_PageIterator`\[[DescribeDataSharesForConsumerResultTypeDef](./type_defs.md#describedatasharesforconsumerresulttypedef)\].
+
+## DescribeDataSharesForProducerPaginator
+
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_data_shares_for_producer")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_redshift.paginator import DescribeDataSharesForProducerPaginator
+
+def get_describe_data_shares_for_producer_paginator() -> DescribeDataSharesForProducerPaginator:
+    return boto3.client("redshift").get_paginator("describe_data_shares_for_producer")
+```
+
+Boto3 documentation:
+[Redshift.Paginator.DescribeDataSharesForProducer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDataSharesForProducer)
+
+Arguments for `DescribeDataSharesForProducerPaginator.paginate` method:
+
+- `ProducerArn`: `str`
+- `Status`:
+  [DataShareStatusForProducerType](./literals.md#datasharestatusforproducertype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeDataSharesForProducerPaginator.paginate` returns
+`_PageIterator`\[[DescribeDataSharesForProducerResultTypeDef](./type_defs.md#describedatasharesforproducerresulttypedef)\].
+
 ## DescribeDefaultClusterParametersPaginator
 
 Type annotations for
@@ -545,6 +632,33 @@ Arguments for `DescribeOrderableClusterOptionsPaginator.paginate` method:
 `DescribeOrderableClusterOptionsPaginator.paginate` returns
 `_PageIterator`\[[OrderableClusterOptionsMessageTypeDef](./type_defs.md#orderableclusteroptionsmessagetypedef)\].
 
+## DescribeReservedNodeExchangeStatusPaginator
+
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_reserved_node_exchange_status")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_redshift.paginator import DescribeReservedNodeExchangeStatusPaginator
+
+def get_describe_reserved_node_exchange_status_paginator() -> DescribeReservedNodeExchangeStatusPaginator:
+    return boto3.client("redshift").get_paginator("describe_reserved_node_exchange_status")
+```
+
+Boto3 documentation:
+[Redshift.Paginator.DescribeReservedNodeExchangeStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeExchangeStatus)
+
+Arguments for `DescribeReservedNodeExchangeStatusPaginator.paginate` method:
+
+- `ReservedNodeId`: `str`
+- `ReservedNodeExchangeRequestId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeReservedNodeExchangeStatusPaginator.paginate` returns
+`_PageIterator`\[[DescribeReservedNodeExchangeStatusOutputMessageTypeDef](./type_defs.md#describereservednodeexchangestatusoutputmessagetypedef)\].
+
 ## DescribeReservedNodeOfferingsPaginator
 
 Type annotations for
@@ -772,6 +886,37 @@ Arguments for `DescribeUsageLimitsPaginator.paginate` method:
 
 `DescribeUsageLimitsPaginator.paginate` returns
 `_PageIterator`\[[UsageLimitListTypeDef](./type_defs.md#usagelimitlisttypedef)\].
+
+## GetReservedNodeExchangeConfigurationOptionsPaginator
+
+Type annotations for
+`boto3.client("redshift").get_paginator("get_reserved_node_exchange_configuration_options")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_redshift.paginator import GetReservedNodeExchangeConfigurationOptionsPaginator
+
+def get_get_reserved_node_exchange_configuration_options_paginator() -> GetReservedNodeExchangeConfigurationOptionsPaginator:
+    return boto3.client("redshift").get_paginator("get_reserved_node_exchange_configuration_options")
+```
+
+Boto3 documentation:
+[Redshift.Paginator.GetReservedNodeExchangeConfigurationOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeConfigurationOptions)
+
+Arguments for `GetReservedNodeExchangeConfigurationOptionsPaginator.paginate`
+method:
+
+- `ActionType`:
+  [ReservedNodeExchangeActionTypeType](./literals.md#reservednodeexchangeactiontypetype)
+  *(required)*
+- `ClusterIdentifier`: `str`
+- `SnapshotIdentifier`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetReservedNodeExchangeConfigurationOptionsPaginator.paginate` returns
+`_PageIterator`\[[GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeconfigurationoptionsoutputmessagetypedef)\].
 
 ## GetReservedNodeExchangeOfferingsPaginator
 

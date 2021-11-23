@@ -91,6 +91,7 @@ Values:
 - `ReceiveMessageWaitTimeSeconds`
 - `RedriveAllowPolicy`
 - `RedrivePolicy`
+- `SqsManagedSseEnabled`
 - `VisibilityTimeout`
 
 ## ServiceName

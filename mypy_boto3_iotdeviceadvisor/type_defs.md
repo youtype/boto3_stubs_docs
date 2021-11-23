@@ -12,6 +12,8 @@ type annotations stubs module
   - [CreateSuiteDefinitionResponseTypeDef](#createsuitedefinitionresponsetypedef)
   - [DeleteSuiteDefinitionRequestRequestTypeDef](#deletesuitedefinitionrequestrequesttypedef)
   - [DeviceUnderTestTypeDef](#deviceundertesttypedef)
+  - [GetEndpointRequestRequestTypeDef](#getendpointrequestrequesttypedef)
+  - [GetEndpointResponseTypeDef](#getendpointresponsetypedef)
   - [GetSuiteDefinitionRequestRequestTypeDef](#getsuitedefinitionrequestrequesttypedef)
   - [GetSuiteDefinitionResponseTypeDef](#getsuitedefinitionresponsetypedef)
   - [GetSuiteRunReportRequestRequestTypeDef](#getsuiterunreportrequestrequesttypedef)
@@ -87,6 +89,29 @@ Optional fields:
 
 - `thingArn`: `str`
 - `certificateArn`: `str`
+
+## GetEndpointRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import GetEndpointRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `thingArn`: `str`
+- `certificateArn`: `str`
+
+## GetEndpointResponseTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import GetEndpointResponseTypeDef
+```
+
+Required fields:
+
+- `endpoint`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetSuiteDefinitionRequestRequestTypeDef
 
@@ -362,6 +387,7 @@ Optional fields:
 - `primaryDevice`:
   [DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef)
 - `selectedTestList`: `List`\[`str`\]
+- `parallelRun`: `bool`
 
 ## SuiteRunInformationTypeDef
 

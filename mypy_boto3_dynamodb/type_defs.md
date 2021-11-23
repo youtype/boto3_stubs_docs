@@ -400,6 +400,11 @@ Required fields:
 - `Statements`:
   `Sequence`\[[BatchStatementRequestTypeDef](./type_defs.md#batchstatementrequesttypedef)\]
 
+Optional fields:
+
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+
 ## BatchExecuteStatementOutputTypeDef
 
 ```python
@@ -410,6 +415,8 @@ Required fields:
 
 - `Responses`:
   `List`\[[BatchStatementResponseTypeDef](./type_defs.md#batchstatementresponsetypedef)\]
+- `ConsumedCapacity`:
+  `List`\[[ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1334,6 +1341,8 @@ Optional fields:
   `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 - `NextToken`: `str`
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
 ## ExecuteStatementOutputTypeDef
 
@@ -1348,6 +1357,8 @@ Required fields:
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]\]
 - `NextToken`: `str`
+- `ConsumedCapacity`:
+  [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1365,6 +1376,8 @@ Required fields:
 Optional fields:
 
 - `ClientRequestToken`: `str`
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
 ## ExecuteTransactionOutputTypeDef
 
@@ -1376,6 +1389,8 @@ Required fields:
 
 - `Responses`:
   `List`\[[ItemResponseTypeDef](./type_defs.md#itemresponsetypedef)\]
+- `ConsumedCapacity`:
+  `List`\[[ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

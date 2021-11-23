@@ -16,6 +16,7 @@ type annotations stubs module
     - [create_suite_definition](#create_suite_definition)
     - [delete_suite_definition](#delete_suite_definition)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_endpoint](#get_endpoint)
     - [get_suite_definition](#get_suite_definition)
     - [get_suite_run](#get_suite_run)
     - [get_suite_run_report](#get_suite_run_report)
@@ -151,6 +152,29 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+### get_endpoint
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/iotdev iceadvisor-2020-09-18/GetEndpoint>`\_
+**Request Syntax** response = client.get_endpoint( thingArn='string',
+certificateArn='string' ).
+
+Type annotations for `boto3.client("iotdeviceadvisor").get_endpoint` method.
+
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.get_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_endpoint)
+
+Arguments mapping described in
+[GetEndpointRequestRequestTypeDef](./type_defs.md#getendpointrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `thingArn`: `str`
+- `certificateArn`: `str`
+
+Returns
+[GetEndpointResponseTypeDef](./type_defs.md#getendpointresponsetypedef).
 
 ### get_suite_definition
 

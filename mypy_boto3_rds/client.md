@@ -130,6 +130,7 @@ type annotations stubs module
     - [promote_read_replica](#promote_read_replica)
     - [promote_read_replica_db_cluster](#promote_read_replica_db_cluster)
     - [purchase_reserved_db_instances_offering](#purchase_reserved_db_instances_offering)
+    - [reboot_db_cluster](#reboot_db_cluster)
     - [reboot_db_instance](#reboot_db_instance)
     - [register_db_proxy_targets](#register_db_proxy_targets)
     - [remove_from_global_cluster](#remove_from_global_cluster)
@@ -326,8 +327,7 @@ Returns [Exceptions](#exceptions).
 
 ### add_role_to_db_cluster
 
-Associates an Identity and Access Management (IAM) role from an Amazon Aurora
-DB cluster.
+Associates an Identity and Access Management (IAM) role with a DB cluster.
 
 Type annotations for `boto3.client("rds").add_role_to_db_cluster` method.
 
@@ -674,7 +674,7 @@ Returns
 
 ### create_db_cluster
 
-Creates a new Amazon Aurora DB cluster.
+Creates a new Amazon Aurora DB cluster or Multi-AZ DB cluster.
 
 Type annotations for `boto3.client("rds").create_db_cluster` method.
 
@@ -720,6 +720,17 @@ Keyword-only arguments:
 - `Domain`: `str`
 - `DomainIAMRoleName`: `str`
 - `EnableGlobalWriteForwarding`: `bool`
+- `DBClusterInstanceClass`: `str`
+- `AllocatedStorage`: `int`
+- `StorageType`: `str`
+- `Iops`: `int`
+- `PubliclyAccessible`: `bool`
+- `AutoMinorVersionUpgrade`: `bool`
+- `MonitoringInterval`: `int`
+- `MonitoringRoleArn`: `str`
+- `EnablePerformanceInsights`: `bool`
+- `PerformanceInsightsKMSKeyId`: `str`
+- `PerformanceInsightsRetentionPeriod`: `int`
 - `SourceRegion`: `str`
 
 Returns
@@ -1699,7 +1710,7 @@ Returns
 
 ### describe_db_clusters
 
-Returns information about provisioned Aurora DB clusters.
+Returns information about Amazon Aurora DB clusters and Multi-AZ DB clusters.
 
 Type annotations for `boto3.client("rds").describe_db_clusters` method.
 
@@ -2281,7 +2292,8 @@ Returns [OptionGroupsTypeDef](./type_defs.md#optiongroupstypedef).
 
 ### describe_orderable_db_instance_options
 
-Returns a list of orderable DB instance options for the specified engine.
+Returns a list of orderable DB instance options for the specified DB engine, DB
+engine version, and DB instance class.
 
 Type annotations for
 `boto3.client("rds").describe_orderable_db_instance_options` method.
@@ -2650,7 +2662,7 @@ Returns
 
 ### modify_db_cluster
 
-Modify a setting for an Amazon Aurora DB cluster.
+Modify the settings for an Amazon Aurora DB cluster or a Multi-AZ DB cluster.
 
 Type annotations for `boto3.client("rds").modify_db_cluster` method.
 
@@ -2688,6 +2700,16 @@ Keyword-only arguments:
 - `EnableHttpEndpoint`: `bool`
 - `CopyTagsToSnapshot`: `bool`
 - `EnableGlobalWriteForwarding`: `bool`
+- `DBClusterInstanceClass`: `str`
+- `AllocatedStorage`: `int`
+- `StorageType`: `str`
+- `Iops`: `int`
+- `AutoMinorVersionUpgrade`: `bool`
+- `MonitoringInterval`: `int`
+- `MonitoringRoleArn`: `str`
+- `EnablePerformanceInsights`: `bool`
+- `PerformanceInsightsKMSKeyId`: `str`
+- `PerformanceInsightsRetentionPeriod`: `int`
 
 Returns
 [ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef).
@@ -3119,6 +3141,25 @@ Keyword-only arguments:
 Returns
 [PurchaseReservedDBInstancesOfferingResultTypeDef](./type_defs.md#purchasereserveddbinstancesofferingresulttypedef).
 
+### reboot_db_cluster
+
+You might need to reboot your DB cluster, usually for maintenance reasons.
+
+Type annotations for `boto3.client("rds").reboot_db_cluster` method.
+
+Boto3 documentation:
+[RDS.Client.reboot_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reboot_db_cluster)
+
+Arguments mapping described in
+[RebootDBClusterMessageRequestTypeDef](./type_defs.md#rebootdbclustermessagerequesttypedef).
+
+Keyword-only arguments:
+
+- `DBClusterIdentifier`: `str` *(required)*
+
+Returns
+[RebootDBClusterResultTypeDef](./type_defs.md#rebootdbclusterresulttypedef).
+
 ### reboot_db_instance
 
 You might need to reboot your DB instance, usually for maintenance reasons.
@@ -3184,8 +3225,8 @@ Returns
 
 ### remove_role_from_db_cluster
 
-Disassociates an Amazon Web Services Identity and Access Management (IAM) role
-from an Amazon Aurora DB cluster.
+Removes the asssociation of an Amazon Web Services Identity and Access
+Management (IAM) role from a DB cluster.
 
 Type annotations for `boto3.client("rds").remove_role_from_db_cluster` method.
 
@@ -3393,6 +3434,10 @@ Keyword-only arguments:
 - `CopyTagsToSnapshot`: `bool`
 - `Domain`: `str`
 - `DomainIAMRoleName`: `str`
+- `DBClusterInstanceClass`: `str`
+- `StorageType`: `str`
+- `Iops`: `int`
+- `PubliclyAccessible`: `bool`
 
 Returns
 [RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef).
@@ -3434,6 +3479,10 @@ Keyword-only arguments:
 - `ScalingConfiguration`:
   [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
 - `EngineMode`: `str`
+- `DBClusterInstanceClass`: `str`
+- `StorageType`: `str`
+- `PubliclyAccessible`: `bool`
+- `Iops`: `int`
 
 Returns
 [RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef).

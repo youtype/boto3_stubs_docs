@@ -27,6 +27,9 @@ type annotations stubs module
   - [DescribeClusterTracksPaginatorName](#describeclustertrackspaginatorname)
   - [DescribeClusterVersionsPaginatorName](#describeclusterversionspaginatorname)
   - [DescribeClustersPaginatorName](#describeclusterspaginatorname)
+  - [DescribeDataSharesForConsumerPaginatorName](#describedatasharesforconsumerpaginatorname)
+  - [DescribeDataSharesForProducerPaginatorName](#describedatasharesforproducerpaginatorname)
+  - [DescribeDataSharesPaginatorName](#describedatasharespaginatorname)
   - [DescribeDefaultClusterParametersPaginatorName](#describedefaultclusterparameterspaginatorname)
   - [DescribeEndpointAccessPaginatorName](#describeendpointaccesspaginatorname)
   - [DescribeEndpointAuthorizationPaginatorName](#describeendpointauthorizationpaginatorname)
@@ -36,6 +39,7 @@ type annotations stubs module
   - [DescribeHsmConfigurationsPaginatorName](#describehsmconfigurationspaginatorname)
   - [DescribeNodeConfigurationOptionsPaginatorName](#describenodeconfigurationoptionspaginatorname)
   - [DescribeOrderableClusterOptionsPaginatorName](#describeorderableclusteroptionspaginatorname)
+  - [DescribeReservedNodeExchangeStatusPaginatorName](#describereservednodeexchangestatuspaginatorname)
   - [DescribeReservedNodeOfferingsPaginatorName](#describereservednodeofferingspaginatorname)
   - [DescribeReservedNodesPaginatorName](#describereservednodespaginatorname)
   - [DescribeScheduledActionsPaginatorName](#describescheduledactionspaginatorname)
@@ -44,12 +48,15 @@ type annotations stubs module
   - [DescribeTableRestoreStatusPaginatorName](#describetablerestorestatuspaginatorname)
   - [DescribeTagsPaginatorName](#describetagspaginatorname)
   - [DescribeUsageLimitsPaginatorName](#describeusagelimitspaginatorname)
+  - [GetReservedNodeExchangeConfigurationOptionsPaginatorName](#getreservednodeexchangeconfigurationoptionspaginatorname)
   - [GetReservedNodeExchangeOfferingsPaginatorName](#getreservednodeexchangeofferingspaginatorname)
   - [ModeType](#modetype)
   - [NodeConfigurationOptionsFilterNameType](#nodeconfigurationoptionsfilternametype)
   - [OperatorTypeType](#operatortypetype)
   - [ParameterApplyTypeType](#parameterapplytypetype)
   - [PartnerIntegrationStatusType](#partnerintegrationstatustype)
+  - [ReservedNodeExchangeActionTypeType](#reservednodeexchangeactiontypetype)
+  - [ReservedNodeExchangeStatusTypeType](#reservednodeexchangestatustypetype)
   - [ReservedNodeOfferingTypeType](#reservednodeofferingtypetype)
   - [ScheduleStateType](#schedulestatetype)
   - [ScheduledActionFilterNameType](#scheduledactionfilternametype)
@@ -275,6 +282,36 @@ Values:
 
 - `describe_clusters`
 
+## DescribeDataSharesForConsumerPaginatorName
+
+```python
+from mypy_boto3_redshift.literals import DescribeDataSharesForConsumerPaginatorName
+```
+
+Values:
+
+- `describe_data_shares_for_consumer`
+
+## DescribeDataSharesForProducerPaginatorName
+
+```python
+from mypy_boto3_redshift.literals import DescribeDataSharesForProducerPaginatorName
+```
+
+Values:
+
+- `describe_data_shares_for_producer`
+
+## DescribeDataSharesPaginatorName
+
+```python
+from mypy_boto3_redshift.literals import DescribeDataSharesPaginatorName
+```
+
+Values:
+
+- `describe_data_shares`
+
 ## DescribeDefaultClusterParametersPaginatorName
 
 ```python
@@ -365,6 +402,16 @@ Values:
 
 - `describe_orderable_cluster_options`
 
+## DescribeReservedNodeExchangeStatusPaginatorName
+
+```python
+from mypy_boto3_redshift.literals import DescribeReservedNodeExchangeStatusPaginatorName
+```
+
+Values:
+
+- `describe_reserved_node_exchange_status`
+
 ## DescribeReservedNodeOfferingsPaginatorName
 
 ```python
@@ -445,6 +492,16 @@ Values:
 
 - `describe_usage_limits`
 
+## GetReservedNodeExchangeConfigurationOptionsPaginatorName
+
+```python
+from mypy_boto3_redshift.literals import GetReservedNodeExchangeConfigurationOptionsPaginatorName
+```
+
+Values:
+
+- `get_reserved_node_exchange_configuration_options`
+
 ## GetReservedNodeExchangeOfferingsPaginatorName
 
 ```python
@@ -518,6 +575,32 @@ Values:
 - `ConnectionFailure`
 - `Inactive`
 - `RuntimeFailure`
+
+## ReservedNodeExchangeActionTypeType
+
+```python
+from mypy_boto3_redshift.literals import ReservedNodeExchangeActionTypeType
+```
+
+Values:
+
+- `resize-cluster`
+- `restore-cluster`
+
+## ReservedNodeExchangeStatusTypeType
+
+```python
+from mypy_boto3_redshift.literals import ReservedNodeExchangeStatusTypeType
+```
+
+Values:
+
+- `FAILED`
+- `IN_PROGRESS`
+- `PENDING`
+- `REQUESTED`
+- `RETRYING`
+- `SUCCEEDED`
 
 ## ReservedNodeOfferingTypeType
 
@@ -999,6 +1082,9 @@ Values:
 - `describe_cluster_tracks`
 - `describe_cluster_versions`
 - `describe_clusters`
+- `describe_data_shares`
+- `describe_data_shares_for_consumer`
+- `describe_data_shares_for_producer`
 - `describe_default_cluster_parameters`
 - `describe_endpoint_access`
 - `describe_endpoint_authorization`
@@ -1008,6 +1094,7 @@ Values:
 - `describe_hsm_configurations`
 - `describe_node_configuration_options`
 - `describe_orderable_cluster_options`
+- `describe_reserved_node_exchange_status`
 - `describe_reserved_node_offerings`
 - `describe_reserved_nodes`
 - `describe_scheduled_actions`
@@ -1016,6 +1103,7 @@ Values:
 - `describe_table_restore_status`
 - `describe_tags`
 - `describe_usage_limits`
+- `get_reserved_node_exchange_configuration_options`
 - `get_reserved_node_exchange_offerings`
 
 ## WaiterName

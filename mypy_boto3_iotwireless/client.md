@@ -53,6 +53,7 @@ type annotations stubs module
     - [get_log_levels_by_resource_types](#get_log_levels_by_resource_types)
     - [get_multicast_group](#get_multicast_group)
     - [get_multicast_group_session](#get_multicast_group_session)
+    - [get_network_analyzer_configuration](#get_network_analyzer_configuration)
     - [get_partner_account](#get_partner_account)
     - [get_resource_event_configuration](#get_resource_event_configuration)
     - [get_resource_log_level](#get_resource_log_level)
@@ -93,6 +94,7 @@ type annotations stubs module
     - [update_fuota_task](#update_fuota_task)
     - [update_log_levels_by_resource_types](#update_log_levels_by_resource_types)
     - [update_multicast_group](#update_multicast_group)
+    - [update_network_analyzer_configuration](#update_network_analyzer_configuration)
     - [update_partner_account](#update_partner_account)
     - [update_resource_event_configuration](#update_resource_event_configuration)
     - [update_wireless_device](#update_wireless_device)
@@ -994,6 +996,26 @@ Keyword-only arguments:
 Returns
 [GetMulticastGroupSessionResponseTypeDef](./type_defs.md#getmulticastgroupsessionresponsetypedef).
 
+### get_network_analyzer_configuration
+
+Get NetworkAnalyzer configuration.
+
+Type annotations for
+`boto3.client("iotwireless").get_network_analyzer_configuration` method.
+
+Boto3 documentation:
+[IoTWireless.Client.get_network_analyzer_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_network_analyzer_configuration)
+
+Arguments mapping described in
+[GetNetworkAnalyzerConfigurationRequestRequestTypeDef](./type_defs.md#getnetworkanalyzerconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ConfigurationName`: `str` *(required)*
+
+Returns
+[GetNetworkAnalyzerConfigurationResponseTypeDef](./type_defs.md#getnetworkanalyzerconfigurationresponsetypedef).
+
 ### get_partner_account
 
 Gets information about a partner account.
@@ -1838,6 +1860,30 @@ Keyword-only arguments:
 - `Name`: `str`
 - `Description`: `str`
 - `LoRaWAN`: [LoRaWANMulticastTypeDef](./type_defs.md#lorawanmulticasttypedef)
+
+Returns `Dict`\[`str`, `Any`\].
+
+### update_network_analyzer_configuration
+
+Update NetworkAnalyzer configuration.
+
+Type annotations for
+`boto3.client("iotwireless").update_network_analyzer_configuration` method.
+
+Boto3 documentation:
+[IoTWireless.Client.update_network_analyzer_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_network_analyzer_configuration)
+
+Arguments mapping described in
+[UpdateNetworkAnalyzerConfigurationRequestRequestTypeDef](./type_defs.md#updatenetworkanalyzerconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ConfigurationName`: `str` *(required)*
+- `TraceContent`: [TraceContentTypeDef](./type_defs.md#tracecontenttypedef)
+- `WirelessDevicesToAdd`: `Sequence`\[`str`\]
+- `WirelessDevicesToRemove`: `Sequence`\[`str`\]
+- `WirelessGatewaysToAdd`: `Sequence`\[`str`\]
+- `WirelessGatewaysToRemove`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 

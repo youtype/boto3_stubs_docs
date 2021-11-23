@@ -137,6 +137,8 @@ type annotations stubs module
   - [DescribeOrderableClusterOptionsMessageRequestTypeDef](#describeorderableclusteroptionsmessagerequesttypedef)
   - [DescribePartnersInputMessageRequestTypeDef](#describepartnersinputmessagerequesttypedef)
   - [DescribePartnersOutputMessageTypeDef](#describepartnersoutputmessagetypedef)
+  - [DescribeReservedNodeExchangeStatusInputMessageRequestTypeDef](#describereservednodeexchangestatusinputmessagerequesttypedef)
+  - [DescribeReservedNodeExchangeStatusOutputMessageTypeDef](#describereservednodeexchangestatusoutputmessagetypedef)
   - [DescribeReservedNodeOfferingsMessageRequestTypeDef](#describereservednodeofferingsmessagerequesttypedef)
   - [DescribeReservedNodesMessageRequestTypeDef](#describereservednodesmessagerequesttypedef)
   - [DescribeResizeMessageRequestTypeDef](#describeresizemessagerequesttypedef)
@@ -171,6 +173,8 @@ type annotations stubs module
   - [EventTypeDef](#eventtypedef)
   - [EventsMessageTypeDef](#eventsmessagetypedef)
   - [GetClusterCredentialsMessageRequestTypeDef](#getclustercredentialsmessagerequesttypedef)
+  - [GetReservedNodeExchangeConfigurationOptionsInputMessageRequestTypeDef](#getreservednodeexchangeconfigurationoptionsinputmessagerequesttypedef)
+  - [GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef](#getreservednodeexchangeconfigurationoptionsoutputmessagetypedef)
   - [GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef](#getreservednodeexchangeofferingsinputmessagerequesttypedef)
   - [GetReservedNodeExchangeOfferingsOutputMessageTypeDef](#getreservednodeexchangeofferingsoutputmessagetypedef)
   - [HsmClientCertificateMessageTypeDef](#hsmclientcertificatemessagetypedef)
@@ -228,6 +232,8 @@ type annotations stubs module
   - [RebootClusterResultTypeDef](#rebootclusterresulttypedef)
   - [RecurringChargeTypeDef](#recurringchargetypedef)
   - [RejectDataShareMessageRequestTypeDef](#rejectdatasharemessagerequesttypedef)
+  - [ReservedNodeConfigurationOptionTypeDef](#reservednodeconfigurationoptiontypedef)
+  - [ReservedNodeExchangeStatusTypeDef](#reservednodeexchangestatustypedef)
   - [ReservedNodeOfferingTypeDef](#reservednodeofferingtypedef)
   - [ReservedNodeOfferingsMessageTypeDef](#reservednodeofferingsmessagetypedef)
   - [ReservedNodeTypeDef](#reservednodetypedef)
@@ -859,6 +865,8 @@ Optional fields:
 - `AquaConfiguration`:
   [AquaConfigurationTypeDef](./type_defs.md#aquaconfigurationtypedef)
 - `DefaultIamRoleArn`: `str`
+- `ReservedNodeExchangeStatus`:
+  [ReservedNodeExchangeStatusTypeDef](./type_defs.md#reservednodeexchangestatustypedef)
 
 ## ClusterVersionTypeDef
 
@@ -2085,6 +2093,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeReservedNodeExchangeStatusInputMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DescribeReservedNodeExchangeStatusInputMessageRequestTypeDef
+```
+
+Optional fields:
+
+- `ReservedNodeId`: `str`
+- `ReservedNodeExchangeRequestId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeReservedNodeExchangeStatusOutputMessageTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DescribeReservedNodeExchangeStatusOutputMessageTypeDef
+```
+
+Required fields:
+
+- `ReservedNodeExchangeStatusDetails`:
+  `List`\[[ReservedNodeExchangeStatusTypeDef](./type_defs.md#reservednodeexchangestatustypedef)\]
+- `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeReservedNodeOfferingsMessageRequestTypeDef
 
 ```python
@@ -2579,6 +2614,38 @@ Optional fields:
 - `DurationSeconds`: `int`
 - `AutoCreate`: `bool`
 - `DbGroups`: `Sequence`\[`str`\]
+
+## GetReservedNodeExchangeConfigurationOptionsInputMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import GetReservedNodeExchangeConfigurationOptionsInputMessageRequestTypeDef
+```
+
+Required fields:
+
+- `ActionType`:
+  [ReservedNodeExchangeActionTypeType](./literals.md#reservednodeexchangeactiontypetype)
+
+Optional fields:
+
+- `ClusterIdentifier`: `str`
+- `SnapshotIdentifier`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `ReservedNodeConfigurationOptionList`:
+  `List`\[[ReservedNodeConfigurationOptionTypeDef](./type_defs.md#reservednodeconfigurationoptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef
 
@@ -3376,6 +3443,39 @@ Required fields:
 
 - `DataShareArn`: `str`
 
+## ReservedNodeConfigurationOptionTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import ReservedNodeConfigurationOptionTypeDef
+```
+
+Optional fields:
+
+- `SourceReservedNode`:
+  [ReservedNodeTypeDef](./type_defs.md#reservednodetypedef)
+- `TargetReservedNodeCount`: `int`
+- `TargetReservedNodeOffering`:
+  [ReservedNodeOfferingTypeDef](./type_defs.md#reservednodeofferingtypedef)
+
+## ReservedNodeExchangeStatusTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import ReservedNodeExchangeStatusTypeDef
+```
+
+Optional fields:
+
+- `ReservedNodeExchangeRequestId`: `str`
+- `Status`:
+  [ReservedNodeExchangeStatusTypeType](./literals.md#reservednodeexchangestatustypetype)
+- `RequestTime`: `datetime`
+- `SourceReservedNodeId`: `str`
+- `SourceReservedNodeType`: `str`
+- `SourceReservedNodeCount`: `int`
+- `TargetReservedNodeOfferingId`: `str`
+- `TargetReservedNodeType`: `str`
+- `TargetReservedNodeCount`: `int`
+
 ## ReservedNodeOfferingTypeDef
 
 ```python
@@ -3480,6 +3580,8 @@ Optional fields:
 - `NodeType`: `str`
 - `NumberOfNodes`: `int`
 - `Classic`: `bool`
+- `ReservedNodeId`: `str`
+- `TargetReservedNodeOfferingId`: `str`
 
 ## ResizeClusterMessageTypeDef
 
@@ -3497,6 +3599,8 @@ Optional fields:
 - `NodeType`: `str`
 - `NumberOfNodes`: `int`
 - `Classic`: `bool`
+- `ReservedNodeId`: `str`
+- `TargetReservedNodeOfferingId`: `str`
 
 ## ResizeClusterResultTypeDef
 
@@ -3603,6 +3707,8 @@ Optional fields:
 - `AquaConfigurationStatus`:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
 - `DefaultIamRoleArn`: `str`
+- `ReservedNodeId`: `str`
+- `TargetReservedNodeOfferingId`: `str`
 
 ## RestoreFromClusterSnapshotResultTypeDef
 

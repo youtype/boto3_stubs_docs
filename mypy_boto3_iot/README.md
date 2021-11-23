@@ -129,6 +129,7 @@ from mypy_boto3_iot.client import IoTClient
 - [describe_job](./client.md#describe_job)
 - [describe_job_execution](./client.md#describe_job_execution)
 - [describe_job_template](./client.md#describe_job_template)
+- [describe_managed_job_template](./client.md#describe_managed_job_template)
 - [describe_mitigation_action](./client.md#describe_mitigation_action)
 - [describe_provisioning_template](./client.md#describe_provisioning_template)
 - [describe_provisioning_template_version](./client.md#describe_provisioning_template_version)
@@ -188,6 +189,7 @@ from mypy_boto3_iot.client import IoTClient
 - [list_job_executions_for_thing](./client.md#list_job_executions_for_thing)
 - [list_job_templates](./client.md#list_job_templates)
 - [list_jobs](./client.md#list_jobs)
+- [list_managed_job_templates](./client.md#list_managed_job_templates)
 - [list_mitigation_actions](./client.md#list_mitigation_actions)
 - [list_ota_updates](./client.md#list_ota_updates)
 - [list_outgoing_certificates](./client.md#list_outgoing_certificates)
@@ -284,6 +286,7 @@ IoTClient [exceptions](./client.md#exceptions)
 - IndexNotReadyException
 - InternalException
 - InternalFailureException
+- InternalServerException
 - InvalidAggregationException
 - InvalidQueryException
 - InvalidRequestException
@@ -708,6 +711,8 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [DescribeJobResponseTypeDef](./type_defs.md#describejobresponsetypedef)
 - [DescribeJobTemplateRequestRequestTypeDef](./type_defs.md#describejobtemplaterequestrequesttypedef)
 - [DescribeJobTemplateResponseTypeDef](./type_defs.md#describejobtemplateresponsetypedef)
+- [DescribeManagedJobTemplateRequestRequestTypeDef](./type_defs.md#describemanagedjobtemplaterequestrequesttypedef)
+- [DescribeManagedJobTemplateResponseTypeDef](./type_defs.md#describemanagedjobtemplateresponsetypedef)
 - [DescribeMitigationActionRequestRequestTypeDef](./type_defs.md#describemitigationactionrequestrequesttypedef)
 - [DescribeMitigationActionResponseTypeDef](./type_defs.md#describemitigationactionresponsetypedef)
 - [DescribeProvisioningTemplateRequestRequestTypeDef](./type_defs.md#describeprovisioningtemplaterequestrequesttypedef)
@@ -740,6 +745,7 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [DetectMitigationActionsTaskSummaryTypeDef](./type_defs.md#detectmitigationactionstasksummarytypedef)
 - [DetectMitigationActionsTaskTargetTypeDef](./type_defs.md#detectmitigationactionstasktargettypedef)
 - [DisableTopicRuleRequestRequestTypeDef](./type_defs.md#disabletopicrulerequestrequesttypedef)
+- [DocumentParameterTypeDef](./type_defs.md#documentparametertypedef)
 - [DomainConfigurationSummaryTypeDef](./type_defs.md#domainconfigurationsummarytypedef)
 - [DynamoDBActionTypeDef](./type_defs.md#dynamodbactiontypedef)
 - [DynamoDBv2ActionTypeDef](./type_defs.md#dynamodbv2actiontypedef)
@@ -854,6 +860,8 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef)
 - [ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef)
 - [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)
+- [ListManagedJobTemplatesRequestRequestTypeDef](./type_defs.md#listmanagedjobtemplatesrequestrequesttypedef)
+- [ListManagedJobTemplatesResponseTypeDef](./type_defs.md#listmanagedjobtemplatesresponsetypedef)
 - [ListMitigationActionsRequestRequestTypeDef](./type_defs.md#listmitigationactionsrequestrequesttypedef)
 - [ListMitigationActionsResponseTypeDef](./type_defs.md#listmitigationactionsresponsetypedef)
 - [ListOTAUpdatesRequestRequestTypeDef](./type_defs.md#listotaupdatesrequestrequesttypedef)
@@ -920,6 +928,7 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [LogTargetTypeDef](./type_defs.md#logtargettypedef)
 - [LoggingOptionsPayloadTypeDef](./type_defs.md#loggingoptionspayloadtypedef)
 - [MachineLearningDetectionConfigTypeDef](./type_defs.md#machinelearningdetectionconfigtypedef)
+- [ManagedJobTemplateSummaryTypeDef](./type_defs.md#managedjobtemplatesummarytypedef)
 - [MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)
 - [MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)
 - [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)

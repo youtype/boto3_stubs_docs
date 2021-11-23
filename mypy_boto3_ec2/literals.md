@@ -217,6 +217,7 @@ type annotations stubs module
   - [GetVpnConnectionDeviceTypesPaginatorName](#getvpnconnectiondevicetypespaginatorname)
   - [HostRecoveryType](#hostrecoverytype)
   - [HostTenancyType](#hosttenancytype)
+  - [HostnameTypeType](#hostnametypetype)
   - [HttpTokensStateType](#httptokensstatetype)
   - [HypervisorTypeType](#hypervisortypetype)
   - [IamInstanceProfileAssociationStateType](#iaminstanceprofileassociationstatetype)
@@ -2693,6 +2694,17 @@ Values:
 
 - `dedicated`
 - `host`
+
+## HostnameTypeType
+
+```python
+from mypy_boto3_ec2.literals import HostnameTypeType
+```
+
+Values:
+
+- `ip-name`
+- `resource-name`
 
 ## HttpTokensStateType
 

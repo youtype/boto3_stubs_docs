@@ -25,6 +25,7 @@ type annotations stubs module
   - [SigningAlgType](#signingalgtype)
   - [SupportedRfRegionType](#supportedrfregiontype)
   - [WirelessDeviceEventType](#wirelessdeviceeventtype)
+  - [WirelessDeviceFrameInfoType](#wirelessdeviceframeinfotype)
   - [WirelessDeviceIdTypeType](#wirelessdeviceidtypetype)
   - [WirelessDeviceTypeType](#wirelessdevicetypetype)
   - [WirelessGatewayEventType](#wirelessgatewayeventtype)
@@ -244,6 +245,17 @@ Values:
 - `Registration`
 - `Rejoin`
 - `Uplink_Data`
+
+## WirelessDeviceFrameInfoType
+
+```python
+from mypy_boto3_iotwireless.literals import WirelessDeviceFrameInfoType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
 
 ## WirelessDeviceIdTypeType
 

@@ -16,6 +16,7 @@ type annotations stubs module
   - [CacheClusterAvailableWaiterName](#cacheclusteravailablewaitername)
   - [CacheClusterDeletedWaiterName](#cacheclusterdeletedwaitername)
   - [ChangeTypeType](#changetypetype)
+  - [DataTieringStatusType](#datatieringstatustype)
   - [DescribeCacheClustersPaginatorName](#describecacheclusterspaginatorname)
   - [DescribeCacheEngineVersionsPaginatorName](#describecacheengineversionspaginatorname)
   - [DescribeCacheParameterGroupsPaginatorName](#describecacheparametergroupspaginatorname)
@@ -142,6 +143,17 @@ Values:
 
 - `immediate`
 - `requires-reboot`
+
+## DataTieringStatusType
+
+```python
+from mypy_boto3_elasticache.literals import DataTieringStatusType
+```
+
+Values:
+
+- `disabled`
+- `enabled`
 
 ## DescribeCacheClustersPaginatorName
 

@@ -524,6 +524,7 @@ Keyword-only arguments:
 - `UserGroupIds`: `Sequence`\[`str`\]
 - `LogDeliveryConfigurations`:
   `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
+- `DataTieringEnabled`: `bool`
 
 Returns
 [CreateReplicationGroupResultTypeDef](./type_defs.md#createreplicationgroupresulttypedef).
@@ -554,7 +555,7 @@ Returns
 
 ### create_user
 
-For Redis engine version 6.x onwards: Creates a Redis user.
+For Redis engine version 6.0 onwards: Creates a Redis user.
 
 Type annotations for `boto3.client("elasticache").create_user` method.
 
@@ -579,7 +580,7 @@ Returns
 
 ### create_user_group
 
-For Redis engine version 6.x onwards: Creates a Redis user group.
+For Redis engine version 6.0 onwards: Creates a Redis user group.
 
 Type annotations for `boto3.client("elasticache").create_user_group` method.
 
@@ -791,7 +792,7 @@ Returns
 
 ### delete_user
 
-For Redis engine version 6.x onwards: Deletes a user.
+For Redis engine version 6.0 onwards: Deletes a user.
 
 Type annotations for `boto3.client("elasticache").delete_user` method.
 
@@ -810,7 +811,7 @@ Returns
 
 ### delete_user_group
 
-For Redis engine version 6.x onwards: Deletes a user group.
+For Redis engine version 6.0 onwards: Deletes a user group.
 
 Type annotations for `boto3.client("elasticache").delete_user_group` method.
 

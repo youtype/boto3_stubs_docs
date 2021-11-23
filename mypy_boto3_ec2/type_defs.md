@@ -1100,6 +1100,8 @@ type annotations stubs module
   - [LaunchTemplateOverridesTypeDef](#launchtemplateoverridestypedef)
   - [LaunchTemplatePlacementRequestTypeDef](#launchtemplateplacementrequesttypedef)
   - [LaunchTemplatePlacementTypeDef](#launchtemplateplacementtypedef)
+  - [LaunchTemplatePrivateDnsNameOptionsRequestTypeDef](#launchtemplateprivatednsnameoptionsrequesttypedef)
+  - [LaunchTemplatePrivateDnsNameOptionsTypeDef](#launchtemplateprivatednsnameoptionstypedef)
   - [LaunchTemplateSpecificationTypeDef](#launchtemplatespecificationtypedef)
   - [LaunchTemplateSpotMarketOptionsRequestTypeDef](#launchtemplatespotmarketoptionsrequesttypedef)
   - [LaunchTemplateSpotMarketOptionsTypeDef](#launchtemplatespotmarketoptionstypedef)
@@ -1172,6 +1174,8 @@ type annotations stubs module
   - [ModifyManagedPrefixListResultTypeDef](#modifymanagedprefixlistresulttypedef)
   - [ModifyNetworkInterfaceAttributeRequestNetworkInterfaceTypeDef](#modifynetworkinterfaceattributerequestnetworkinterfacetypedef)
   - [ModifyNetworkInterfaceAttributeRequestRequestTypeDef](#modifynetworkinterfaceattributerequestrequesttypedef)
+  - [ModifyPrivateDnsNameOptionsRequestRequestTypeDef](#modifyprivatednsnameoptionsrequestrequesttypedef)
+  - [ModifyPrivateDnsNameOptionsResultTypeDef](#modifyprivatednsnameoptionsresulttypedef)
   - [ModifyReservedInstancesRequestRequestTypeDef](#modifyreservedinstancesrequestrequesttypedef)
   - [ModifyReservedInstancesResultTypeDef](#modifyreservedinstancesresulttypedef)
   - [ModifySecurityGroupRulesRequestRequestTypeDef](#modifysecuritygrouprulesrequestrequesttypedef)
@@ -1286,6 +1290,9 @@ type annotations stubs module
   - [PrincipalIdFormatTypeDef](#principalidformattypedef)
   - [PrivateDnsDetailsTypeDef](#privatednsdetailstypedef)
   - [PrivateDnsNameConfigurationTypeDef](#privatednsnameconfigurationtypedef)
+  - [PrivateDnsNameOptionsOnLaunchTypeDef](#privatednsnameoptionsonlaunchtypedef)
+  - [PrivateDnsNameOptionsRequestTypeDef](#privatednsnameoptionsrequesttypedef)
+  - [PrivateDnsNameOptionsResponseTypeDef](#privatednsnameoptionsresponsetypedef)
   - [PrivateIpAddressSpecificationTypeDef](#privateipaddressspecificationtypedef)
   - [ProcessorInfoTypeDef](#processorinfotypedef)
   - [ProductCodeTypeDef](#productcodetypedef)
@@ -4537,6 +4544,7 @@ Required fields:
 Optional fields:
 
 - `DryRun`: `bool`
+- `Ipv6Native`: `bool`
 
 ## CreateDefaultSubnetResultTypeDef
 
@@ -5962,7 +5970,6 @@ from mypy_boto3_ec2.type_defs import CreateSubnetRequestRequestTypeDef
 
 Required fields:
 
-- `CidrBlock`: `str`
 - `VpcId`: `str`
 
 Optional fields:
@@ -5971,9 +5978,11 @@ Optional fields:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
+- `CidrBlock`: `str`
 - `Ipv6CidrBlock`: `str`
 - `OutpostArn`: `str`
 - `DryRun`: `bool`
+- `Ipv6Native`: `bool`
 
 ## CreateSubnetRequestServiceResourceTypeDef
 
@@ -5983,7 +5992,6 @@ from mypy_boto3_ec2.type_defs import CreateSubnetRequestServiceResourceTypeDef
 
 Required fields:
 
-- `CidrBlock`: `str`
 - `VpcId`: `str`
 
 Optional fields:
@@ -5992,9 +6000,11 @@ Optional fields:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
+- `CidrBlock`: `str`
 - `Ipv6CidrBlock`: `str`
 - `OutpostArn`: `str`
 - `DryRun`: `bool`
+- `Ipv6Native`: `bool`
 
 ## CreateSubnetRequestVpcTypeDef
 
@@ -6002,19 +6012,17 @@ Optional fields:
 from mypy_boto3_ec2.type_defs import CreateSubnetRequestVpcTypeDef
 ```
 
-Required fields:
-
-- `CidrBlock`: `str`
-
 Optional fields:
 
 - `TagSpecifications`:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
+- `CidrBlock`: `str`
 - `Ipv6CidrBlock`: `str`
 - `OutpostArn`: `str`
 - `DryRun`: `bool`
+- `Ipv6Native`: `bool`
 
 ## CreateSubnetResultTypeDef
 
@@ -16779,6 +16787,9 @@ Optional fields:
 - `PlatformDetails`: `str`
 - `UsageOperation`: `str`
 - `UsageOperationUpdateTime`: `datetime`
+- `PrivateDnsNameOptions`:
+  [PrivateDnsNameOptionsResponseTypeDef](./type_defs.md#privatednsnameoptionsresponsetypedef)
+- `Ipv6Address`: `str`
 
 ## InstanceTypeInfoFromInstanceRequirementsTypeDef
 
@@ -17540,6 +17551,30 @@ Optional fields:
 - `SpreadDomain`: `str`
 - `HostResourceGroupArn`: `str`
 - `PartitionNumber`: `int`
+
+## LaunchTemplatePrivateDnsNameOptionsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import LaunchTemplatePrivateDnsNameOptionsRequestTypeDef
+```
+
+Optional fields:
+
+- `HostnameType`: [HostnameTypeType](./literals.md#hostnametypetype)
+- `EnableResourceNameDnsARecord`: `bool`
+- `EnableResourceNameDnsAAAARecord`: `bool`
+
+## LaunchTemplatePrivateDnsNameOptionsTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import LaunchTemplatePrivateDnsNameOptionsTypeDef
+```
+
+Optional fields:
+
+- `HostnameType`: [HostnameTypeType](./literals.md#hostnametypetype)
+- `EnableResourceNameDnsARecord`: `bool`
+- `EnableResourceNameDnsAAAARecord`: `bool`
 
 ## LaunchTemplateSpecificationTypeDef
 
@@ -18651,6 +18686,32 @@ Optional fields:
 - `SourceDestCheck`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
+## ModifyPrivateDnsNameOptionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyPrivateDnsNameOptionsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `InstanceId`: `str`
+- `PrivateDnsHostnameType`: [HostnameTypeType](./literals.md#hostnametypetype)
+- `EnableResourceNameDnsARecord`: `bool`
+- `EnableResourceNameDnsAAAARecord`: `bool`
+
+## ModifyPrivateDnsNameOptionsResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyPrivateDnsNameOptionsResultTypeDef
+```
+
+Required fields:
+
+- `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ModifyReservedInstancesRequestRequestTypeDef
 
 ```python
@@ -18797,6 +18858,12 @@ Optional fields:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `CustomerOwnedIpv4Pool`: `str`
 - `EnableDns64`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `PrivateDnsHostnameTypeOnLaunch`:
+  [HostnameTypeType](./literals.md#hostnametypetype)
+- `EnableResourceNameDnsARecordOnLaunch`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `EnableResourceNameDnsAAAARecordOnLaunch`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
 ## ModifyTrafficMirrorFilterNetworkServicesRequestRequestTypeDef
@@ -19865,6 +19932,8 @@ Optional fields:
 - `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcId`: `str`
 - `DenyAllIgwTraffic`: `bool`
+- `Ipv6Native`: `bool`
+- `Ipv6Address`: `str`
 
 ## NewDhcpConfigurationTypeDef
 
@@ -20320,6 +20389,42 @@ Optional fields:
 - `Type`: `str`
 - `Value`: `str`
 - `Name`: `str`
+
+## PrivateDnsNameOptionsOnLaunchTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PrivateDnsNameOptionsOnLaunchTypeDef
+```
+
+Optional fields:
+
+- `HostnameType`: [HostnameTypeType](./literals.md#hostnametypetype)
+- `EnableResourceNameDnsARecord`: `bool`
+- `EnableResourceNameDnsAAAARecord`: `bool`
+
+## PrivateDnsNameOptionsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PrivateDnsNameOptionsRequestTypeDef
+```
+
+Optional fields:
+
+- `HostnameType`: [HostnameTypeType](./literals.md#hostnametypetype)
+- `EnableResourceNameDnsARecord`: `bool`
+- `EnableResourceNameDnsAAAARecord`: `bool`
+
+## PrivateDnsNameOptionsResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PrivateDnsNameOptionsResponseTypeDef
+```
+
+Optional fields:
+
+- `HostnameType`: [HostnameTypeType](./literals.md#hostnametypetype)
+- `EnableResourceNameDnsARecord`: `bool`
+- `EnableResourceNameDnsAAAARecord`: `bool`
 
 ## PrivateIpAddressSpecificationTypeDef
 
@@ -21359,6 +21464,8 @@ Optional fields:
   [LaunchTemplateEnclaveOptionsRequestTypeDef](./type_defs.md#launchtemplateenclaveoptionsrequesttypedef)
 - `InstanceRequirements`:
   [InstanceRequirementsRequestTypeDef](./type_defs.md#instancerequirementsrequesttypedef)
+- `PrivateDnsNameOptions`:
+  [LaunchTemplatePrivateDnsNameOptionsRequestTypeDef](./type_defs.md#launchtemplateprivatednsnameoptionsrequesttypedef)
 
 ## RequestSpotFleetRequestRequestTypeDef
 
@@ -21939,6 +22046,8 @@ Optional fields:
   [LaunchTemplateEnclaveOptionsTypeDef](./type_defs.md#launchtemplateenclaveoptionstypedef)
 - `InstanceRequirements`:
   [InstanceRequirementsTypeDef](./type_defs.md#instancerequirementstypedef)
+- `PrivateDnsNameOptions`:
+  [LaunchTemplatePrivateDnsNameOptionsTypeDef](./type_defs.md#launchtemplateprivatednsnameoptionstypedef)
 
 ## ResponseMetadataTypeDef
 
@@ -22298,6 +22407,8 @@ Optional fields:
   [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
   [EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef)
+- `PrivateDnsNameOptions`:
+  [PrivateDnsNameOptionsRequestTypeDef](./type_defs.md#privatednsnameoptionsrequesttypedef)
 
 ## RunInstancesRequestServiceResourceTypeDef
 
@@ -22365,6 +22476,8 @@ Optional fields:
   [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
   [EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef)
+- `PrivateDnsNameOptions`:
+  [PrivateDnsNameOptionsRequestTypeDef](./type_defs.md#privatednsnameoptionsrequesttypedef)
 
 ## RunInstancesRequestSubnetTypeDef
 
@@ -22431,6 +22544,8 @@ Optional fields:
   [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
   [EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef)
+- `PrivateDnsNameOptions`:
+  [PrivateDnsNameOptionsRequestTypeDef](./type_defs.md#privatednsnameoptionsrequesttypedef)
 
 ## RunScheduledInstancesRequestRequestTypeDef
 
@@ -23934,6 +24049,9 @@ Optional fields:
 - `SubnetArn`: `str`
 - `OutpostArn`: `str`
 - `EnableDns64`: `bool`
+- `Ipv6Native`: `bool`
+- `PrivateDnsNameOptionsOnLaunch`:
+  [PrivateDnsNameOptionsOnLaunchTypeDef](./type_defs.md#privatednsnameoptionsonlaunchtypedef)
 
 ## SuccessfulInstanceCreditSpecificationItemTypeDef
 

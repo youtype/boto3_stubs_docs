@@ -997,6 +997,8 @@ Keyword-only arguments:
   [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
   [EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef)
+- `PrivateDnsNameOptions`:
+  [PrivateDnsNameOptionsRequestTypeDef](./type_defs.md#privatednsnameoptionsrequesttypedef)
 
 Returns `List`\[[Instance](#instance)\].
 
@@ -1206,15 +1208,16 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CidrBlock`: `str` *(required)*
 - `VpcId`: `str` *(required)*
 - `TagSpecifications`:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
+- `CidrBlock`: `str`
 - `Ipv6CidrBlock`: `str`
 - `OutpostArn`: `str`
 - `DryRun`: `bool`
+- `Ipv6Native`: `bool`
 
 Returns [Subnet](#subnet).
 
@@ -1907,6 +1910,8 @@ Boto3 documentation:
 - `platform_details`: `str`
 - `usage_operation`: `str`
 - `usage_operation_update_time`: `datetime`
+- `private_dns_name_options`: `Dict`\[`str`, `Any`\]
+- `ipv6_address`: `str`
 - `id`: `str`
 - `classic_address`: [ClassicAddress](#classicaddress)
 - `image`: [Image](#image)
@@ -2979,6 +2984,8 @@ Boto3 documentation:
 - `tag_set`: `List`\[`Any`\]
 - `vpc_id`: `str`
 - `deny_all_igw_traffic`: `bool`
+- `ipv6_native`: `bool`
+- `ipv6_address`: `str`
 - `id`: `str`
 - `association`: [NetworkInterfaceAssociation](#networkinterfaceassociation)
 - `subnet`: [Subnet](#subnet)
@@ -4165,6 +4172,8 @@ Boto3 documentation:
 - `subnet_arn`: `str`
 - `outpost_arn`: `str`
 - `enable_dns64`: `bool`
+- `ipv6_native`: `bool`
+- `private_dns_name_options_on_launch`: `Dict`\[`str`, `Any`\]
 - `id`: `str`
 - `vpc`: [Vpc](#vpc)
 - `instances`: [SubnetInstancesCollection](#subnetinstancescollection)
@@ -4283,6 +4292,8 @@ Keyword-only arguments:
   [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
   [EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef)
+- `PrivateDnsNameOptions`:
+  [PrivateDnsNameOptionsRequestTypeDef](./type_defs.md#privatednsnameoptionsrequesttypedef)
 
 Returns `List`\[[Instance](#instance)\].
 
@@ -5096,14 +5107,15 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CidrBlock`: `str` *(required)*
 - `TagSpecifications`:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
+- `CidrBlock`: `str`
 - `Ipv6CidrBlock`: `str`
 - `OutpostArn`: `str`
 - `DryRun`: `bool`
+- `Ipv6Native`: `bool`
 
 Returns [Subnet](#subnet).
 

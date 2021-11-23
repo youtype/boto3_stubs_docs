@@ -293,6 +293,8 @@ type annotations stubs module
   - [PurchaseReservedDBInstancesOfferingMessageRequestTypeDef](#purchasereserveddbinstancesofferingmessagerequesttypedef)
   - [PurchaseReservedDBInstancesOfferingResultTypeDef](#purchasereserveddbinstancesofferingresulttypedef)
   - [RangeTypeDef](#rangetypedef)
+  - [RebootDBClusterMessageRequestTypeDef](#rebootdbclustermessagerequesttypedef)
+  - [RebootDBClusterResultTypeDef](#rebootdbclusterresulttypedef)
   - [RebootDBInstanceMessageRequestTypeDef](#rebootdbinstancemessagerequesttypedef)
   - [RebootDBInstanceResultTypeDef](#rebootdbinstanceresulttypedef)
   - [RecurringChargeTypeDef](#recurringchargetypedef)
@@ -928,6 +930,17 @@ Optional fields:
 - `Domain`: `str`
 - `DomainIAMRoleName`: `str`
 - `EnableGlobalWriteForwarding`: `bool`
+- `DBClusterInstanceClass`: `str`
+- `AllocatedStorage`: `int`
+- `StorageType`: `str`
+- `Iops`: `int`
+- `PubliclyAccessible`: `bool`
+- `AutoMinorVersionUpgrade`: `bool`
+- `MonitoringInterval`: `int`
+- `MonitoringRoleArn`: `str`
+- `EnablePerformanceInsights`: `bool`
+- `PerformanceInsightsKMSKeyId`: `str`
+- `PerformanceInsightsRetentionPeriod`: `int`
 - `SourceRegion`: `str`
 
 ## CreateDBClusterParameterGroupMessageRequestTypeDef
@@ -1788,6 +1801,16 @@ Optional fields:
 - `GlobalWriteForwardingRequested`: `bool`
 - `PendingModifiedValues`:
   [ClusterPendingModifiedValuesTypeDef](./type_defs.md#clusterpendingmodifiedvaluestypedef)
+- `DBClusterInstanceClass`: `str`
+- `StorageType`: `str`
+- `Iops`: `int`
+- `PubliclyAccessible`: `bool`
+- `AutoMinorVersionUpgrade`: `bool`
+- `MonitoringInterval`: `int`
+- `MonitoringRoleArn`: `str`
+- `PerformanceInsightsEnabled`: `bool`
+- `PerformanceInsightsKMSKeyId`: `str`
+- `PerformanceInsightsRetentionPeriod`: `int`
 
 ## DBEngineVersionMessageTypeDef
 
@@ -4014,6 +4037,16 @@ Optional fields:
 - `EnableHttpEndpoint`: `bool`
 - `CopyTagsToSnapshot`: `bool`
 - `EnableGlobalWriteForwarding`: `bool`
+- `DBClusterInstanceClass`: `str`
+- `AllocatedStorage`: `int`
+- `StorageType`: `str`
+- `Iops`: `int`
+- `AutoMinorVersionUpgrade`: `bool`
+- `MonitoringInterval`: `int`
+- `MonitoringRoleArn`: `str`
+- `EnablePerformanceInsights`: `bool`
+- `PerformanceInsightsKMSKeyId`: `str`
+- `PerformanceInsightsRetentionPeriod`: `int`
 
 ## ModifyDBClusterParameterGroupMessageRequestTypeDef
 
@@ -4620,6 +4653,7 @@ Optional fields:
 - `OutpostCapable`: `bool`
 - `SupportedActivityStreamModes`: `List`\[`str`\]
 - `SupportsGlobalDatabases`: `bool`
+- `SupportsClusters`: `bool`
 
 ## OrderableDBInstanceOptionsMessageTypeDef
 
@@ -4846,6 +4880,28 @@ Optional fields:
 - `From`: `int`
 - `To`: `int`
 - `Step`: `int`
+
+## RebootDBClusterMessageRequestTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RebootDBClusterMessageRequestTypeDef
+```
+
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+
+## RebootDBClusterResultTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RebootDBClusterResultTypeDef
+```
+
+Required fields:
+
+- `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RebootDBInstanceMessageRequestTypeDef
 
@@ -5219,6 +5275,10 @@ Optional fields:
 - `CopyTagsToSnapshot`: `bool`
 - `Domain`: `str`
 - `DomainIAMRoleName`: `str`
+- `DBClusterInstanceClass`: `str`
+- `StorageType`: `str`
+- `Iops`: `int`
+- `PubliclyAccessible`: `bool`
 
 ## RestoreDBClusterFromSnapshotResultTypeDef
 
@@ -5265,6 +5325,10 @@ Optional fields:
 - `ScalingConfiguration`:
   [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
 - `EngineMode`: `str`
+- `DBClusterInstanceClass`: `str`
+- `StorageType`: `str`
+- `PubliclyAccessible`: `bool`
+- `Iops`: `int`
 
 ## RestoreDBClusterToPointInTimeResultTypeDef
 

@@ -203,6 +203,8 @@ type annotations stubs module
   - [DescribeJobResponseTypeDef](#describejobresponsetypedef)
   - [DescribeJobTemplateRequestRequestTypeDef](#describejobtemplaterequestrequesttypedef)
   - [DescribeJobTemplateResponseTypeDef](#describejobtemplateresponsetypedef)
+  - [DescribeManagedJobTemplateRequestRequestTypeDef](#describemanagedjobtemplaterequestrequesttypedef)
+  - [DescribeManagedJobTemplateResponseTypeDef](#describemanagedjobtemplateresponsetypedef)
   - [DescribeMitigationActionRequestRequestTypeDef](#describemitigationactionrequestrequesttypedef)
   - [DescribeMitigationActionResponseTypeDef](#describemitigationactionresponsetypedef)
   - [DescribeProvisioningTemplateRequestRequestTypeDef](#describeprovisioningtemplaterequestrequesttypedef)
@@ -235,6 +237,7 @@ type annotations stubs module
   - [DetectMitigationActionsTaskSummaryTypeDef](#detectmitigationactionstasksummarytypedef)
   - [DetectMitigationActionsTaskTargetTypeDef](#detectmitigationactionstasktargettypedef)
   - [DisableTopicRuleRequestRequestTypeDef](#disabletopicrulerequestrequesttypedef)
+  - [DocumentParameterTypeDef](#documentparametertypedef)
   - [DomainConfigurationSummaryTypeDef](#domainconfigurationsummarytypedef)
   - [DynamoDBActionTypeDef](#dynamodbactiontypedef)
   - [DynamoDBv2ActionTypeDef](#dynamodbv2actiontypedef)
@@ -349,6 +352,8 @@ type annotations stubs module
   - [ListJobTemplatesResponseTypeDef](#listjobtemplatesresponsetypedef)
   - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
   - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
+  - [ListManagedJobTemplatesRequestRequestTypeDef](#listmanagedjobtemplatesrequestrequesttypedef)
+  - [ListManagedJobTemplatesResponseTypeDef](#listmanagedjobtemplatesresponsetypedef)
   - [ListMitigationActionsRequestRequestTypeDef](#listmitigationactionsrequestrequesttypedef)
   - [ListMitigationActionsResponseTypeDef](#listmitigationactionsresponsetypedef)
   - [ListOTAUpdatesRequestRequestTypeDef](#listotaupdatesrequestrequesttypedef)
@@ -415,6 +420,7 @@ type annotations stubs module
   - [LogTargetTypeDef](#logtargettypedef)
   - [LoggingOptionsPayloadTypeDef](#loggingoptionspayloadtypedef)
   - [MachineLearningDetectionConfigTypeDef](#machinelearningdetectionconfigtypedef)
+  - [ManagedJobTemplateSummaryTypeDef](#managedjobtemplatesummarytypedef)
   - [MetricDimensionTypeDef](#metricdimensiontypedef)
   - [MetricToRetainTypeDef](#metrictoretaintypedef)
   - [MetricValueTypeDef](#metricvaluetypedef)
@@ -1839,6 +1845,7 @@ Optional fields:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `namespaceId`: `str`
 - `jobTemplateArn`: `str`
+- `documentParameters`: `Mapping`\[`str`, `str`\]
 
 ## CreateJobResponseTypeDef
 
@@ -3321,6 +3328,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeManagedJobTemplateRequestRequestTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import DescribeManagedJobTemplateRequestRequestTypeDef
+```
+
+Required fields:
+
+- `templateName`: `str`
+
+Optional fields:
+
+- `templateVersion`: `str`
+
+## DescribeManagedJobTemplateResponseTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import DescribeManagedJobTemplateResponseTypeDef
+```
+
+Required fields:
+
+- `templateName`: `str`
+- `templateArn`: `str`
+- `description`: `str`
+- `templateVersion`: `str`
+- `environments`: `List`\[`str`\]
+- `documentParameters`:
+  `List`\[[DocumentParameterTypeDef](./type_defs.md#documentparametertypedef)\]
+- `document`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeMitigationActionRequestRequestTypeDef
 
 ```python
@@ -3769,6 +3809,20 @@ from mypy_boto3_iot.type_defs import DisableTopicRuleRequestRequestTypeDef
 Required fields:
 
 - `ruleName`: `str`
+
+## DocumentParameterTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import DocumentParameterTypeDef
+```
+
+Optional fields:
+
+- `key`: `str`
+- `description`: `str`
+- `regex`: `str`
+- `example`: `str`
+- `optional`: `bool`
 
 ## DomainConfigurationSummaryTypeDef
 
@@ -4616,6 +4670,7 @@ Optional fields:
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - `namespaceId`: `str`
 - `jobTemplateArn`: `str`
+- `documentParameters`: `Dict`\[`str`, `str`\]
 
 ## KafkaActionTypeDef
 
@@ -5319,6 +5374,32 @@ from mypy_boto3_iot.type_defs import ListJobsResponseTypeDef
 Required fields:
 
 - `jobs`: `List`\[[JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListManagedJobTemplatesRequestRequestTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import ListManagedJobTemplatesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `templateName`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListManagedJobTemplatesResponseTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import ListManagedJobTemplatesResponseTypeDef
+```
+
+Required fields:
+
+- `managedJobTemplates`:
+  `List`\[[ManagedJobTemplateSummaryTypeDef](./type_defs.md#managedjobtemplatesummarytypedef)\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -6222,6 +6303,20 @@ from mypy_boto3_iot.type_defs import MachineLearningDetectionConfigTypeDef
 Required fields:
 
 - `confidenceLevel`: [ConfidenceLevelType](./literals.md#confidenceleveltype)
+
+## ManagedJobTemplateSummaryTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import ManagedJobTemplateSummaryTypeDef
+```
+
+Optional fields:
+
+- `templateArn`: `str`
+- `templateName`: `str`
+- `description`: `str`
+- `environments`: `List`\[`str`\]
+- `templateVersion`: `str`
 
 ## MetricDimensionTypeDef
 
