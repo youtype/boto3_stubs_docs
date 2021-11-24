@@ -49,6 +49,7 @@ type annotations stubs module
   - [TextTranslationJobPropertiesTypeDef](#texttranslationjobpropertiestypedef)
   - [TranslateTextRequestRequestTypeDef](#translatetextrequestrequesttypedef)
   - [TranslateTextResponseTypeDef](#translatetextresponsetypedef)
+  - [TranslationSettingsTypeDef](#translationsettingstypedef)
   - [UpdateParallelDataRequestRequestTypeDef](#updateparalleldatarequestrequesttypedef)
   - [UpdateParallelDataResponseTypeDef](#updateparalleldataresponsetypedef)
 
@@ -469,6 +470,8 @@ Optional fields:
 - `JobName`: `str`
 - `TerminologyNames`: `Sequence`\[`str`\]
 - `ParallelDataNames`: `Sequence`\[`str`\]
+- `Settings`:
+  [TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef)
 
 ## StartTextTranslationJobResponseTypeDef
 
@@ -605,6 +608,8 @@ Optional fields:
 - `OutputDataConfig`:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
 - `DataAccessRoleArn`: `str`
+- `Settings`:
+  [TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef)
 
 ## TranslateTextRequestRequestTypeDef
 
@@ -621,6 +626,8 @@ Required fields:
 Optional fields:
 
 - `TerminologyNames`: `Sequence`\[`str`\]
+- `Settings`:
+  [TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef)
 
 ## TranslateTextResponseTypeDef
 
@@ -635,8 +642,21 @@ Required fields:
 - `TargetLanguageCode`: `str`
 - `AppliedTerminologies`:
   `List`\[[AppliedTerminologyTypeDef](./type_defs.md#appliedterminologytypedef)\]
+- `AppliedSettings`:
+  [TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TranslationSettingsTypeDef
+
+```python
+from mypy_boto3_translate.type_defs import TranslationSettingsTypeDef
+```
+
+Optional fields:
+
+- `Profanity`: `Literal['MASK']` (see
+  [ProfanityType](./literals.md#profanitytype))
 
 ## UpdateParallelDataRequestRequestTypeDef
 

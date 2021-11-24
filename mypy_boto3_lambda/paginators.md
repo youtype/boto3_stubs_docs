@@ -12,7 +12,6 @@ type annotations stubs module
   - [ListCodeSigningConfigsPaginator](#listcodesigningconfigspaginator)
   - [ListEventSourceMappingsPaginator](#listeventsourcemappingspaginator)
   - [ListFunctionEventInvokeConfigsPaginator](#listfunctioneventinvokeconfigspaginator)
-  - [ListFunctionUrlConfigsPaginator](#listfunctionurlconfigspaginator)
   - [ListFunctionsPaginator](#listfunctionspaginator)
   - [ListFunctionsByCodeSigningConfigPaginator](#listfunctionsbycodesigningconfigpaginator)
   - [ListLayerVersionsPaginator](#listlayerversionspaginator)
@@ -123,32 +122,6 @@ Arguments for `ListFunctionEventInvokeConfigsPaginator.paginate` method:
 
 `ListFunctionEventInvokeConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListFunctionEventInvokeConfigsResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponsetypedef)\].
-
-## ListFunctionUrlConfigsPaginator
-
-Type annotations for
-`boto3.client("lambda").get_paginator("list_function_url_configs")`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_lambda.paginator import ListFunctionUrlConfigsPaginator
-
-def get_list_function_url_configs_paginator() -> ListFunctionUrlConfigsPaginator:
-    return boto3.client("lambda").get_paginator("list_function_url_configs")
-```
-
-Boto3 documentation:
-[Lambda.Paginator.ListFunctionUrlConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListFunctionUrlConfigs)
-
-Arguments for `ListFunctionUrlConfigsPaginator.paginate` method:
-
-- `FunctionName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-
-`ListFunctionUrlConfigsPaginator.paginate` returns
-`_PageIterator`\[[ListFunctionUrlConfigsResponseTypeDef](./type_defs.md#listfunctionurlconfigsresponsetypedef)\].
 
 ## ListFunctionsPaginator
 

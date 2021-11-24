@@ -22,14 +22,11 @@ type annotations stubs module
   - [CodeSigningPoliciesTypeDef](#codesigningpoliciestypedef)
   - [ConcurrencyResponseMetadataTypeDef](#concurrencyresponsemetadatatypedef)
   - [ConcurrencyTypeDef](#concurrencytypedef)
-  - [CorsTypeDef](#corstypedef)
   - [CreateAliasRequestRequestTypeDef](#createaliasrequestrequesttypedef)
   - [CreateCodeSigningConfigRequestRequestTypeDef](#createcodesigningconfigrequestrequesttypedef)
   - [CreateCodeSigningConfigResponseTypeDef](#createcodesigningconfigresponsetypedef)
   - [CreateEventSourceMappingRequestRequestTypeDef](#createeventsourcemappingrequestrequesttypedef)
   - [CreateFunctionRequestRequestTypeDef](#createfunctionrequestrequesttypedef)
-  - [CreateFunctionUrlConfigRequestRequestTypeDef](#createfunctionurlconfigrequestrequesttypedef)
-  - [CreateFunctionUrlConfigResponseTypeDef](#createfunctionurlconfigresponsetypedef)
   - [DeadLetterConfigTypeDef](#deadletterconfigtypedef)
   - [DeleteAliasRequestRequestTypeDef](#deletealiasrequestrequesttypedef)
   - [DeleteCodeSigningConfigRequestRequestTypeDef](#deletecodesigningconfigrequestrequesttypedef)
@@ -38,7 +35,6 @@ type annotations stubs module
   - [DeleteFunctionConcurrencyRequestRequestTypeDef](#deletefunctionconcurrencyrequestrequesttypedef)
   - [DeleteFunctionEventInvokeConfigRequestRequestTypeDef](#deletefunctioneventinvokeconfigrequestrequesttypedef)
   - [DeleteFunctionRequestRequestTypeDef](#deletefunctionrequestrequesttypedef)
-  - [DeleteFunctionUrlConfigRequestRequestTypeDef](#deletefunctionurlconfigrequestrequesttypedef)
   - [DeleteLayerVersionRequestRequestTypeDef](#deletelayerversionrequestrequesttypedef)
   - [DeleteProvisionedConcurrencyConfigRequestRequestTypeDef](#deleteprovisionedconcurrencyconfigrequestrequesttypedef)
   - [DestinationConfigTypeDef](#destinationconfigtypedef)
@@ -56,7 +52,6 @@ type annotations stubs module
   - [FunctionConfigurationTypeDef](#functionconfigurationtypedef)
   - [FunctionEventInvokeConfigResponseMetadataTypeDef](#functioneventinvokeconfigresponsemetadatatypedef)
   - [FunctionEventInvokeConfigTypeDef](#functioneventinvokeconfigtypedef)
-  - [FunctionUrlConfigTypeDef](#functionurlconfigtypedef)
   - [GetAccountSettingsResponseTypeDef](#getaccountsettingsresponsetypedef)
   - [GetAliasRequestRequestTypeDef](#getaliasrequestrequesttypedef)
   - [GetCodeSigningConfigRequestRequestTypeDef](#getcodesigningconfigrequestrequesttypedef)
@@ -70,8 +65,6 @@ type annotations stubs module
   - [GetFunctionEventInvokeConfigRequestRequestTypeDef](#getfunctioneventinvokeconfigrequestrequesttypedef)
   - [GetFunctionRequestRequestTypeDef](#getfunctionrequestrequesttypedef)
   - [GetFunctionResponseTypeDef](#getfunctionresponsetypedef)
-  - [GetFunctionUrlConfigRequestRequestTypeDef](#getfunctionurlconfigrequestrequesttypedef)
-  - [GetFunctionUrlConfigResponseTypeDef](#getfunctionurlconfigresponsetypedef)
   - [GetLayerVersionByArnRequestRequestTypeDef](#getlayerversionbyarnrequestrequesttypedef)
   - [GetLayerVersionPolicyRequestRequestTypeDef](#getlayerversionpolicyrequestrequesttypedef)
   - [GetLayerVersionPolicyResponseTypeDef](#getlayerversionpolicyresponsetypedef)
@@ -101,8 +94,6 @@ type annotations stubs module
   - [ListEventSourceMappingsResponseTypeDef](#listeventsourcemappingsresponsetypedef)
   - [ListFunctionEventInvokeConfigsRequestRequestTypeDef](#listfunctioneventinvokeconfigsrequestrequesttypedef)
   - [ListFunctionEventInvokeConfigsResponseTypeDef](#listfunctioneventinvokeconfigsresponsetypedef)
-  - [ListFunctionUrlConfigsRequestRequestTypeDef](#listfunctionurlconfigsrequestrequesttypedef)
-  - [ListFunctionUrlConfigsResponseTypeDef](#listfunctionurlconfigsresponsetypedef)
   - [ListFunctionsByCodeSigningConfigRequestRequestTypeDef](#listfunctionsbycodesigningconfigrequestrequesttypedef)
   - [ListFunctionsByCodeSigningConfigResponseTypeDef](#listfunctionsbycodesigningconfigresponsetypedef)
   - [ListFunctionsRequestRequestTypeDef](#listfunctionsrequestrequesttypedef)
@@ -146,8 +137,6 @@ type annotations stubs module
   - [UpdateFunctionCodeRequestRequestTypeDef](#updatefunctioncoderequestrequesttypedef)
   - [UpdateFunctionConfigurationRequestRequestTypeDef](#updatefunctionconfigurationrequestrequesttypedef)
   - [UpdateFunctionEventInvokeConfigRequestRequestTypeDef](#updatefunctioneventinvokeconfigrequestrequesttypedef)
-  - [UpdateFunctionUrlConfigRequestRequestTypeDef](#updatefunctionurlconfigrequestrequesttypedef)
-  - [UpdateFunctionUrlConfigResponseTypeDef](#updatefunctionurlconfigresponsetypedef)
   - [VpcConfigResponseTypeDef](#vpcconfigresponsetypedef)
   - [VpcConfigTypeDef](#vpcconfigtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
@@ -349,21 +338,6 @@ Optional fields:
 
 - `ReservedConcurrentExecutions`: `int`
 
-## CorsTypeDef
-
-```python
-from mypy_boto3_lambda.type_defs import CorsTypeDef
-```
-
-Optional fields:
-
-- `AllowCredentials`: `bool`
-- `AllowHeaders`: `Sequence`\[`str`\]
-- `AllowMethods`: `Sequence`\[`str`\]
-- `AllowOrigins`: `Sequence`\[`str`\]
-- `ExposeHeaders`: `Sequence`\[`str`\]
-- `MaxAge`: `int`
-
 ## CreateAliasRequestRequestTypeDef
 
 ```python
@@ -485,40 +459,6 @@ Optional fields:
 - `Architectures`:
   `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
 
-## CreateFunctionUrlConfigRequestRequestTypeDef
-
-```python
-from mypy_boto3_lambda.type_defs import CreateFunctionUrlConfigRequestRequestTypeDef
-```
-
-Required fields:
-
-- `FunctionName`: `str`
-- `AuthorizationType`:
-  [AuthorizationTypeType](./literals.md#authorizationtypetype)
-
-Optional fields:
-
-- `Qualifier`: `str`
-- `Cors`: [CorsTypeDef](./type_defs.md#corstypedef)
-
-## CreateFunctionUrlConfigResponseTypeDef
-
-```python
-from mypy_boto3_lambda.type_defs import CreateFunctionUrlConfigResponseTypeDef
-```
-
-Required fields:
-
-- `FunctionUrl`: `str`
-- `FunctionArn`: `str`
-- `AuthorizationType`:
-  [AuthorizationTypeType](./literals.md#authorizationtypetype)
-- `Cors`: [CorsTypeDef](./type_defs.md#corstypedef)
-- `CreationTime`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
 ## DeadLetterConfigTypeDef
 
 ```python
@@ -598,20 +538,6 @@ Optional fields:
 
 ```python
 from mypy_boto3_lambda.type_defs import DeleteFunctionRequestRequestTypeDef
-```
-
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Qualifier`: `str`
-
-## DeleteFunctionUrlConfigRequestRequestTypeDef
-
-```python
-from mypy_boto3_lambda.type_defs import DeleteFunctionUrlConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -955,25 +881,6 @@ Optional fields:
 - `DestinationConfig`:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 
-## FunctionUrlConfigTypeDef
-
-```python
-from mypy_boto3_lambda.type_defs import FunctionUrlConfigTypeDef
-```
-
-Required fields:
-
-- `FunctionUrl`: `str`
-- `FunctionArn`: `str`
-- `CreationTime`: `str`
-- `LastModifiedTime`: `str`
-- `AuthorizationType`:
-  [AuthorizationTypeType](./literals.md#authorizationtypetype)
-
-Optional fields:
-
-- `Cors`: [CorsTypeDef](./type_defs.md#corstypedef)
-
 ## GetAccountSettingsResponseTypeDef
 
 ```python
@@ -1132,38 +1039,6 @@ Required fields:
   [FunctionCodeLocationTypeDef](./type_defs.md#functioncodelocationtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Concurrency`: [ConcurrencyTypeDef](./type_defs.md#concurrencytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## GetFunctionUrlConfigRequestRequestTypeDef
-
-```python
-from mypy_boto3_lambda.type_defs import GetFunctionUrlConfigRequestRequestTypeDef
-```
-
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Qualifier`: `str`
-
-## GetFunctionUrlConfigResponseTypeDef
-
-```python
-from mypy_boto3_lambda.type_defs import GetFunctionUrlConfigResponseTypeDef
-```
-
-Required fields:
-
-- `FunctionUrl`: `str`
-- `FunctionArn`: `str`
-- `AuthorizationType`:
-  [AuthorizationTypeType](./literals.md#authorizationtypetype)
-- `Cors`: [CorsTypeDef](./type_defs.md#corstypedef)
-- `CreationTime`: `str`
-- `LastModifiedTime`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1556,35 +1431,6 @@ Required fields:
 
 - `FunctionEventInvokeConfigs`:
   `List`\[[FunctionEventInvokeConfigTypeDef](./type_defs.md#functioneventinvokeconfigtypedef)\]
-- `NextMarker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## ListFunctionUrlConfigsRequestRequestTypeDef
-
-```python
-from mypy_boto3_lambda.type_defs import ListFunctionUrlConfigsRequestRequestTypeDef
-```
-
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-## ListFunctionUrlConfigsResponseTypeDef
-
-```python
-from mypy_boto3_lambda.type_defs import ListFunctionUrlConfigsResponseTypeDef
-```
-
-Required fields:
-
-- `FunctionUrlConfigs`:
-  `List`\[[FunctionUrlConfigTypeDef](./type_defs.md#functionurlconfigtypedef)\]
 - `NextMarker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2233,41 +2079,6 @@ Optional fields:
 - `MaximumEventAgeInSeconds`: `int`
 - `DestinationConfig`:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-
-## UpdateFunctionUrlConfigRequestRequestTypeDef
-
-```python
-from mypy_boto3_lambda.type_defs import UpdateFunctionUrlConfigRequestRequestTypeDef
-```
-
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Qualifier`: `str`
-- `AuthorizationType`:
-  [AuthorizationTypeType](./literals.md#authorizationtypetype)
-- `Cors`: [CorsTypeDef](./type_defs.md#corstypedef)
-
-## UpdateFunctionUrlConfigResponseTypeDef
-
-```python
-from mypy_boto3_lambda.type_defs import UpdateFunctionUrlConfigResponseTypeDef
-```
-
-Required fields:
-
-- `FunctionUrl`: `str`
-- `FunctionArn`: `str`
-- `AuthorizationType`:
-  [AuthorizationTypeType](./literals.md#authorizationtypetype)
-- `Cors`: [CorsTypeDef](./type_defs.md#corstypedef)
-- `CreationTime`: `str`
-- `LastModifiedTime`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VpcConfigResponseTypeDef
 

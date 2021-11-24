@@ -8,9 +8,12 @@ type annotations stubs module
 [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
 - [Literals for boto3 CustomerProfiles module](#literals-for-boto3-customerprofiles-module)
+  - [ConflictResolvingModelType](#conflictresolvingmodeltype)
   - [DataPullModeType](#datapullmodetype)
   - [FieldContentTypeType](#fieldcontenttypetype)
   - [GenderType](#gendertype)
+  - [IdentityResolutionJobStatusType](#identityresolutionjobstatustype)
+  - [JobScheduleDayOfTheWeekType](#jobscheduledayoftheweektype)
   - [MarketoConnectorOperatorType](#marketoconnectoroperatortype)
   - [OperatorPropertiesKeysType](#operatorpropertieskeystype)
   - [PartyTypeType](#partytypetype)
@@ -23,6 +26,17 @@ type annotations stubs module
   - [TriggerTypeType](#triggertypetype)
   - [ZendeskConnectorOperatorType](#zendeskconnectoroperatortype)
   - [ServiceName](#servicename)
+
+## ConflictResolvingModelType
+
+```python
+from mypy_boto3_customer_profiles.literals import ConflictResolvingModelType
+```
+
+Values:
+
+- `RECENCY`
+- `SOURCE`
 
 ## DataPullModeType
 
@@ -60,6 +74,38 @@ Values:
 - `FEMALE`
 - `MALE`
 - `UNSPECIFIED`
+
+## IdentityResolutionJobStatusType
+
+```python
+from mypy_boto3_customer_profiles.literals import IdentityResolutionJobStatusType
+```
+
+Values:
+
+- `COMPLETED`
+- `FAILED`
+- `FIND_MATCHING`
+- `MERGING`
+- `PARTIAL_SUCCESS`
+- `PENDING`
+- `PREPROCESSING`
+
+## JobScheduleDayOfTheWeekType
+
+```python
+from mypy_boto3_customer_profiles.literals import JobScheduleDayOfTheWeekType
+```
+
+Values:
+
+- `FRIDAY`
+- `MONDAY`
+- `SATURDAY`
+- `SUNDAY`
+- `THURSDAY`
+- `TUESDAY`
+- `WEDNESDAY`
 
 ## MarketoConnectorOperatorType
 

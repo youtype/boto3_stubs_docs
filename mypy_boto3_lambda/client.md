@@ -19,7 +19,6 @@ type annotations stubs module
     - [create_code_signing_config](#create_code_signing_config)
     - [create_event_source_mapping](#create_event_source_mapping)
     - [create_function](#create_function)
-    - [create_function_url_config](#create_function_url_config)
     - [delete_alias](#delete_alias)
     - [delete_code_signing_config](#delete_code_signing_config)
     - [delete_event_source_mapping](#delete_event_source_mapping)
@@ -27,7 +26,6 @@ type annotations stubs module
     - [delete_function_code_signing_config](#delete_function_code_signing_config)
     - [delete_function_concurrency](#delete_function_concurrency)
     - [delete_function_event_invoke_config](#delete_function_event_invoke_config)
-    - [delete_function_url_config](#delete_function_url_config)
     - [delete_layer_version](#delete_layer_version)
     - [delete_provisioned_concurrency_config](#delete_provisioned_concurrency_config)
     - [generate_presigned_url](#generate_presigned_url)
@@ -40,7 +38,6 @@ type annotations stubs module
     - [get_function_concurrency](#get_function_concurrency)
     - [get_function_configuration](#get_function_configuration)
     - [get_function_event_invoke_config](#get_function_event_invoke_config)
-    - [get_function_url_config](#get_function_url_config)
     - [get_layer_version](#get_layer_version)
     - [get_layer_version_by_arn](#get_layer_version_by_arn)
     - [get_layer_version_policy](#get_layer_version_policy)
@@ -52,7 +49,6 @@ type annotations stubs module
     - [list_code_signing_configs](#list_code_signing_configs)
     - [list_event_source_mappings](#list_event_source_mappings)
     - [list_function_event_invoke_configs](#list_function_event_invoke_configs)
-    - [list_function_url_configs](#list_function_url_configs)
     - [list_functions](#list_functions)
     - [list_functions_by_code_signing_config](#list_functions_by_code_signing_config)
     - [list_layer_versions](#list_layer_versions)
@@ -76,7 +72,6 @@ type annotations stubs module
     - [update_function_code](#update_function_code)
     - [update_function_configuration](#update_function_configuration)
     - [update_function_event_invoke_config](#update_function_event_invoke_config)
-    - [update_function_url_config](#update_function_url_config)
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
@@ -367,34 +362,6 @@ Keyword-only arguments:
 Returns
 [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
 
-### create_function_url_config
-
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/lambda -2015-03-31/CreateFunctionUrlConfig>`\_
-**Request Syntax** response = client.create_function_url_config(
-FunctionName='string', Qualifier='string', AuthorizationType='NONE'|'AWS_IAM',
-C...
-
-Type annotations for `boto3.client("lambda").create_function_url_config`
-method.
-
-Boto3 documentation:
-[Lambda.Client.create_function_url_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_function_url_config)
-
-Arguments mapping described in
-[CreateFunctionUrlConfigRequestRequestTypeDef](./type_defs.md#createfunctionurlconfigrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `FunctionName`: `str` *(required)*
-- `AuthorizationType`:
-  [AuthorizationTypeType](./literals.md#authorizationtypetype) *(required)*
-- `Qualifier`: `str`
-- `Cors`: [CorsTypeDef](./type_defs.md#corstypedef)
-
-Returns
-[CreateFunctionUrlConfigResponseTypeDef](./type_defs.md#createfunctionurlconfigresponsetypedef).
-
 ### delete_alias
 
 Deletes a Lambda function
@@ -518,27 +485,6 @@ Boto3 documentation:
 
 Arguments mapping described in
 [DeleteFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#deletefunctioneventinvokeconfigrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
-
-### delete_function_url_config
-
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/lambda -2015-03-31/DeleteFunctionUrlConfig>`\_
-**Request Syntax** response = client.delete_function_url_config(
-FunctionName='string', Qualifier='string' ).
-
-Type annotations for `boto3.client("lambda").delete_function_url_config`
-method.
-
-Boto3 documentation:
-[Lambda.Client.delete_function_url_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_url_config)
-
-Arguments mapping described in
-[DeleteFunctionUrlConfigRequestRequestTypeDef](./type_defs.md#deletefunctionurlconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -775,29 +721,6 @@ Keyword-only arguments:
 
 Returns
 [FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef).
-
-### get_function_url_config
-
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/lambda -2015-03-31/GetFunctionUrlConfig>`\_
-**Request Syntax** response = client.get_function_url_config(
-FunctionName='string', Qualifier='string' ).
-
-Type annotations for `boto3.client("lambda").get_function_url_config` method.
-
-Boto3 documentation:
-[Lambda.Client.get_function_url_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_url_config)
-
-Arguments mapping described in
-[GetFunctionUrlConfigRequestRequestTypeDef](./type_defs.md#getfunctionurlconfigrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
-
-Returns
-[GetFunctionUrlConfigResponseTypeDef](./type_defs.md#getfunctionurlconfigresponsetypedef).
 
 ### get_layer_version
 
@@ -1039,30 +962,6 @@ Keyword-only arguments:
 
 Returns
 [ListFunctionEventInvokeConfigsResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponsetypedef).
-
-### list_function_url_configs
-
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/lambda -2015-03-31/ListFunctionUrlConfigs>`\_
-**Request Syntax** response = client.list_function_url_configs(
-FunctionName='string', Marker='string', MaxItems=123 ).
-
-Type annotations for `boto3.client("lambda").list_function_url_configs` method.
-
-Boto3 documentation:
-[Lambda.Client.list_function_url_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_function_url_configs)
-
-Arguments mapping described in
-[ListFunctionUrlConfigsRequestRequestTypeDef](./type_defs.md#listfunctionurlconfigsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `FunctionName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-Returns
-[ListFunctionUrlConfigsResponseTypeDef](./type_defs.md#listfunctionurlconfigsresponsetypedef).
 
 ### list_functions
 
@@ -1623,34 +1522,6 @@ Keyword-only arguments:
 Returns
 [FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef).
 
-### update_function_url_config
-
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/lambda -2015-03-31/UpdateFunctionUrlConfig>`\_
-**Request Syntax** response = client.update_function_url_config(
-FunctionName='string', Qualifier='string', AuthorizationType='NONE'|'AWS_IAM',
-C...
-
-Type annotations for `boto3.client("lambda").update_function_url_config`
-method.
-
-Boto3 documentation:
-[Lambda.Client.update_function_url_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_url_config)
-
-Arguments mapping described in
-[UpdateFunctionUrlConfigRequestRequestTypeDef](./type_defs.md#updatefunctionurlconfigrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
-- `AuthorizationType`:
-  [AuthorizationTypeType](./literals.md#authorizationtypetype)
-- `Cors`: [CorsTypeDef](./type_defs.md#corstypedef)
-
-Returns
-[UpdateFunctionUrlConfigResponseTypeDef](./type_defs.md#updatefunctionurlconfigresponsetypedef).
-
 ### get_paginator
 
 Type annotations for `boto3.client("lambda").get_paginator` method with
@@ -1664,8 +1535,6 @@ overloads.
   [ListEventSourceMappingsPaginator](./paginators.md#listeventsourcemappingspaginator)
 - `client.get_paginator("list_function_event_invoke_configs")` ->
   [ListFunctionEventInvokeConfigsPaginator](./paginators.md#listfunctioneventinvokeconfigspaginator)
-- `client.get_paginator("list_function_url_configs")` ->
-  [ListFunctionUrlConfigsPaginator](./paginators.md#listfunctionurlconfigspaginator)
 - `client.get_paginator("list_functions")` ->
   [ListFunctionsPaginator](./paginators.md#listfunctionspaginator)
 - `client.get_paginator("list_functions_by_code_signing_config")` ->

@@ -1482,6 +1482,8 @@ Optional fields:
 
 - `userIds`: `Sequence`\[`str`\]
 - `userGroups`: `Sequence`\[`str`\]
+- `organizationArns`: `Sequence`\[`str`\]
+- `organizationalUnitArns`: `Sequence`\[`str`\]
 
 ## LaunchTemplateConfigurationTypeDef
 

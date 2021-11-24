@@ -23,6 +23,7 @@ type annotations stubs module
   - [ComputeLocationType](#computelocationtype)
   - [ConfigurationStateType](#configurationstatetype)
   - [DetailedErrorCodeType](#detailederrorcodetype)
+  - [DisassociatedDataStorageStateType](#disassociateddatastoragestatetype)
   - [EncryptionTypeType](#encryptiontypetype)
   - [ErrorCodeType](#errorcodetype)
   - [ForwardingConfigStateType](#forwardingconfigstatetype)
@@ -42,6 +43,8 @@ type annotations stubs module
   - [ListPortalsPaginatorName](#listportalspaginatorname)
   - [ListProjectAssetsPaginatorName](#listprojectassetspaginatorname)
   - [ListProjectsPaginatorName](#listprojectspaginatorname)
+  - [ListTimeSeriesPaginatorName](#listtimeseriespaginatorname)
+  - [ListTimeSeriesTypeType](#listtimeseriestypetype)
   - [LoggingLevelType](#loggingleveltype)
   - [MonitorErrorCodeType](#monitorerrorcodetype)
   - [PermissionType](#permissiontype)
@@ -240,6 +243,17 @@ Values:
 - `INCOMPATIBLE_COMPUTE_LOCATION`
 - `INCOMPATIBLE_FORWARDING_CONFIGURATION`
 
+## DisassociatedDataStorageStateType
+
+```python
+from mypy_boto3_iotsitewise.literals import DisassociatedDataStorageStateType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
 ## EncryptionTypeType
 
 ```python
@@ -435,6 +449,27 @@ from mypy_boto3_iotsitewise.literals import ListProjectsPaginatorName
 Values:
 
 - `list_projects`
+
+## ListTimeSeriesPaginatorName
+
+```python
+from mypy_boto3_iotsitewise.literals import ListTimeSeriesPaginatorName
+```
+
+Values:
+
+- `list_time_series`
+
+## ListTimeSeriesTypeType
+
+```python
+from mypy_boto3_iotsitewise.literals import ListTimeSeriesTypeType
+```
+
+Values:
+
+- `ASSOCIATED`
+- `DISASSOCIATED`
 
 ## LoggingLevelType
 
@@ -916,6 +951,7 @@ Values:
 - `list_portals`
 - `list_project_assets`
 - `list_projects`
+- `list_time_series`
 
 ## WaiterName
 

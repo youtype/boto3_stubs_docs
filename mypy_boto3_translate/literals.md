@@ -15,6 +15,7 @@ type annotations stubs module
   - [MergeStrategyType](#mergestrategytype)
   - [ParallelDataFormatType](#paralleldataformattype)
   - [ParallelDataStatusType](#paralleldatastatustype)
+  - [ProfanityType](#profanitytype)
   - [TerminologyDataFormatType](#terminologydataformattype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
@@ -101,6 +102,16 @@ Values:
 - `DELETING`
 - `FAILED`
 - `UPDATING`
+
+## ProfanityType
+
+```python
+from mypy_boto3_translate.literals import ProfanityType
+```
+
+Values:
+
+- `MASK`
 
 ## TerminologyDataFormatType
 

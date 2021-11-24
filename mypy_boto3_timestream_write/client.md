@@ -140,6 +140,8 @@ Keyword-only arguments:
 - `RetentionProperties`:
   [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `MagneticStoreWriteProperties`:
+  [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
 
 Returns
 [CreateTableResponseTypeDef](./type_defs.md#createtableresponsetypedef).
@@ -391,7 +393,8 @@ Keyword-only arguments:
 - `TableName`: `str` *(required)*
 - `RetentionProperties`:
   [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
-  *(required)*
+- `MagneticStoreWriteProperties`:
+  [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
 
 Returns
 [UpdateTableResponseTypeDef](./type_defs.md#updatetableresponsetypedef).
@@ -416,3 +419,6 @@ Keyword-only arguments:
 - `Records`: `Sequence`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
   *(required)*
 - `CommonAttributes`: [RecordTypeDef](./type_defs.md#recordtypedef)
+
+Returns
+[WriteRecordsResponseTypeDef](./type_defs.md#writerecordsresponsetypedef).

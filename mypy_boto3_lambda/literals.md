@@ -9,7 +9,6 @@ type annotations stubs module
 
 - [Literals for boto3 Lambda module](#literals-for-boto3-lambda-module)
   - [ArchitectureType](#architecturetype)
-  - [AuthorizationTypeType](#authorizationtypetype)
   - [CodeSigningPolicyType](#codesigningpolicytype)
   - [EndPointTypeType](#endpointtypetype)
   - [EventSourcePositionType](#eventsourcepositiontype)
@@ -25,7 +24,6 @@ type annotations stubs module
   - [ListCodeSigningConfigsPaginatorName](#listcodesigningconfigspaginatorname)
   - [ListEventSourceMappingsPaginatorName](#listeventsourcemappingspaginatorname)
   - [ListFunctionEventInvokeConfigsPaginatorName](#listfunctioneventinvokeconfigspaginatorname)
-  - [ListFunctionUrlConfigsPaginatorName](#listfunctionurlconfigspaginatorname)
   - [ListFunctionsByCodeSigningConfigPaginatorName](#listfunctionsbycodesigningconfigpaginatorname)
   - [ListFunctionsPaginatorName](#listfunctionspaginatorname)
   - [ListLayerVersionsPaginatorName](#listlayerversionspaginatorname)
@@ -54,17 +52,6 @@ Values:
 
 - `arm64`
 - `x86_64`
-
-## AuthorizationTypeType
-
-```python
-from mypy_boto3_lambda.literals import AuthorizationTypeType
-```
-
-Values:
-
-- `AWS_IAM`
-- `NONE`
 
 ## CodeSigningPolicyType
 
@@ -231,16 +218,6 @@ from mypy_boto3_lambda.literals import ListFunctionEventInvokeConfigsPaginatorNa
 Values:
 
 - `list_function_event_invoke_configs`
-
-## ListFunctionUrlConfigsPaginatorName
-
-```python
-from mypy_boto3_lambda.literals import ListFunctionUrlConfigsPaginatorName
-```
-
-Values:
-
-- `list_function_url_configs`
 
 ## ListFunctionsByCodeSigningConfigPaginatorName
 
@@ -744,7 +721,6 @@ Values:
 - `list_code_signing_configs`
 - `list_event_source_mappings`
 - `list_function_event_invoke_configs`
-- `list_function_url_configs`
 - `list_functions`
 - `list_functions_by_code_signing_config`
 - `list_layer_versions`

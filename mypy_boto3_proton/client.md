@@ -21,35 +21,52 @@ type annotations stubs module
     - [create_environment_account_connection](#create_environment_account_connection)
     - [create_environment_template](#create_environment_template)
     - [create_environment_template_version](#create_environment_template_version)
+    - [create_repository](#create_repository)
     - [create_service](#create_service)
     - [create_service_template](#create_service_template)
     - [create_service_template_version](#create_service_template_version)
+    - [create_template_sync_config](#create_template_sync_config)
     - [delete_environment](#delete_environment)
     - [delete_environment_account_connection](#delete_environment_account_connection)
     - [delete_environment_template](#delete_environment_template)
     - [delete_environment_template_version](#delete_environment_template_version)
+    - [delete_repository](#delete_repository)
     - [delete_service](#delete_service)
     - [delete_service_template](#delete_service_template)
     - [delete_service_template_version](#delete_service_template_version)
+    - [delete_template_sync_config](#delete_template_sync_config)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_account_settings](#get_account_settings)
     - [get_environment](#get_environment)
     - [get_environment_account_connection](#get_environment_account_connection)
     - [get_environment_template](#get_environment_template)
     - [get_environment_template_version](#get_environment_template_version)
+    - [get_repository](#get_repository)
+    - [get_repository_sync_status](#get_repository_sync_status)
     - [get_service](#get_service)
     - [get_service_instance](#get_service_instance)
     - [get_service_template](#get_service_template)
     - [get_service_template_version](#get_service_template_version)
+    - [get_template_sync_config](#get_template_sync_config)
+    - [get_template_sync_status](#get_template_sync_status)
     - [list_environment_account_connections](#list_environment_account_connections)
+    - [list_environment_outputs](#list_environment_outputs)
+    - [list_environment_provisioned_resources](#list_environment_provisioned_resources)
     - [list_environment_template_versions](#list_environment_template_versions)
     - [list_environment_templates](#list_environment_templates)
     - [list_environments](#list_environments)
+    - [list_repositories](#list_repositories)
+    - [list_repository_sync_definitions](#list_repository_sync_definitions)
+    - [list_service_instance_outputs](#list_service_instance_outputs)
+    - [list_service_instance_provisioned_resources](#list_service_instance_provisioned_resources)
     - [list_service_instances](#list_service_instances)
+    - [list_service_pipeline_outputs](#list_service_pipeline_outputs)
+    - [list_service_pipeline_provisioned_resources](#list_service_pipeline_provisioned_resources)
     - [list_service_template_versions](#list_service_template_versions)
     - [list_service_templates](#list_service_templates)
     - [list_services](#list_services)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [notify_resource_deployment_status_change](#notify_resource_deployment_status_change)
     - [reject_environment_account_connection](#reject_environment_account_connection)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
@@ -63,6 +80,7 @@ type annotations stubs module
     - [update_service_pipeline](#update_service_pipeline)
     - [update_service_template](#update_service_template)
     - [update_service_template_version](#update_service_template_version)
+    - [update_template_sync_config](#update_template_sync_config)
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
@@ -238,6 +256,8 @@ Keyword-only arguments:
 - `description`: `str`
 - `environmentAccountConnectionId`: `str`
 - `protonServiceRoleArn`: `str`
+- `provisioningRepository`:
+  [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `templateMinorVersion`: `str`
 
@@ -265,13 +285,14 @@ Keyword-only arguments:
 - `managementAccountId`: `str` *(required)*
 - `roleArn`: `str` *(required)*
 - `clientToken`: `str`
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#createenvironmentaccountconnectionoutputtypedef).
 
 ### create_environment_template
 
-Create an environment template for AWS Proton.
+Create an environment template for Proton.
 
 Type annotations for `boto3.client("proton").create_environment_template`
 method.
@@ -322,9 +343,33 @@ Keyword-only arguments:
 Returns
 [CreateEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#createenvironmenttemplateversionoutputtypedef).
 
+### create_repository
+
+Create and register a link to a repository that can be used with pull request
+provisioning or template sync configurations.
+
+Type annotations for `boto3.client("proton").create_repository` method.
+
+Boto3 documentation:
+[Proton.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_repository)
+
+Arguments mapping described in
+[CreateRepositoryInputRequestTypeDef](./type_defs.md#createrepositoryinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `connectionArn`: `str` *(required)*
+- `name`: `str` *(required)*
+- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+  *(required)*
+- `encryptionKey`: `str`
+
+Returns
+[CreateRepositoryOutputTypeDef](./type_defs.md#createrepositoryoutputtypedef).
+
 ### create_service
 
-Create an AWS Proton service.
+Create an Proton service.
 
 Type annotations for `boto3.client("proton").create_service` method.
 
@@ -404,6 +449,33 @@ Keyword-only arguments:
 
 Returns
 [CreateServiceTemplateVersionOutputTypeDef](./type_defs.md#createservicetemplateversionoutputtypedef).
+
+### create_template_sync_config
+
+Set up a template for automated template version creation.
+
+Type annotations for `boto3.client("proton").create_template_sync_config`
+method.
+
+Boto3 documentation:
+[Proton.Client.create_template_sync_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_template_sync_config)
+
+Arguments mapping described in
+[CreateTemplateSyncConfigInputRequestTypeDef](./type_defs.md#createtemplatesyncconfiginputrequesttypedef).
+
+Keyword-only arguments:
+
+- `branch`: `str` *(required)*
+- `repositoryName`: `str` *(required)*
+- `repositoryProvider`:
+  [RepositoryProviderType](./literals.md#repositoryprovidertype) *(required)*
+- `templateName`: `str` *(required)*
+- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+  *(required)*
+- `subdirectory`: `str`
+
+Returns
+[CreateTemplateSyncConfigOutputTypeDef](./type_defs.md#createtemplatesyncconfigoutputtypedef).
 
 ### delete_environment
 
@@ -488,6 +560,27 @@ Keyword-only arguments:
 Returns
 [DeleteEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#deleteenvironmenttemplateversionoutputtypedef).
 
+### delete_repository
+
+De-register and unlink your repository.
+
+Type annotations for `boto3.client("proton").delete_repository` method.
+
+Boto3 documentation:
+[Proton.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_repository)
+
+Arguments mapping described in
+[DeleteRepositoryInputRequestTypeDef](./type_defs.md#deleterepositoryinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `name`: `str` *(required)*
+- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+  *(required)*
+
+Returns
+[DeleteRepositoryOutputTypeDef](./type_defs.md#deleterepositoryoutputtypedef).
+
 ### delete_service
 
 Delete a service.
@@ -550,6 +643,28 @@ Keyword-only arguments:
 Returns
 [DeleteServiceTemplateVersionOutputTypeDef](./type_defs.md#deleteservicetemplateversionoutputtypedef).
 
+### delete_template_sync_config
+
+Delete a template sync configuration.
+
+Type annotations for `boto3.client("proton").delete_template_sync_config`
+method.
+
+Boto3 documentation:
+[Proton.Client.delete_template_sync_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_template_sync_config)
+
+Arguments mapping described in
+[DeleteTemplateSyncConfigInputRequestTypeDef](./type_defs.md#deletetemplatesyncconfiginputrequesttypedef).
+
+Keyword-only arguments:
+
+- `templateName`: `str` *(required)*
+- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+  *(required)*
+
+Returns
+[DeleteTemplateSyncConfigOutputTypeDef](./type_defs.md#deletetemplatesyncconfigoutputtypedef).
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -570,7 +685,7 @@ Returns `str`.
 
 ### get_account_settings
 
-Get detail data for the AWS Proton pipeline service role.
+Get detail data for the Proton pipeline service role.
 
 Type annotations for `boto3.client("proton").get_account_settings` method.
 
@@ -661,6 +776,52 @@ Keyword-only arguments:
 Returns
 [GetEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#getenvironmenttemplateversionoutputtypedef).
 
+### get_repository
+
+Get detail data for a repository.
+
+Type annotations for `boto3.client("proton").get_repository` method.
+
+Boto3 documentation:
+[Proton.Client.get_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_repository)
+
+Arguments mapping described in
+[GetRepositoryInputRequestTypeDef](./type_defs.md#getrepositoryinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `name`: `str` *(required)*
+- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+  *(required)*
+
+Returns
+[GetRepositoryOutputTypeDef](./type_defs.md#getrepositoryoutputtypedef).
+
+### get_repository_sync_status
+
+Get the repository sync status.
+
+Type annotations for `boto3.client("proton").get_repository_sync_status`
+method.
+
+Boto3 documentation:
+[Proton.Client.get_repository_sync_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_repository_sync_status)
+
+Arguments mapping described in
+[GetRepositorySyncStatusInputRequestTypeDef](./type_defs.md#getrepositorysyncstatusinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `branch`: `str` *(required)*
+- `repositoryName`: `str` *(required)*
+- `repositoryProvider`:
+  [RepositoryProviderType](./literals.md#repositoryprovidertype) *(required)*
+- `syncType`: `Literal['TEMPLATE_SYNC']` (see
+  [SyncTypeType](./literals.md#synctypetype)) *(required)*
+
+Returns
+[GetRepositorySyncStatusOutputTypeDef](./type_defs.md#getrepositorysyncstatusoutputtypedef).
+
 ### get_service
 
 Get detail data for a service.
@@ -740,6 +901,49 @@ Keyword-only arguments:
 Returns
 [GetServiceTemplateVersionOutputTypeDef](./type_defs.md#getservicetemplateversionoutputtypedef).
 
+### get_template_sync_config
+
+Get detail data for a template sync configuration.
+
+Type annotations for `boto3.client("proton").get_template_sync_config` method.
+
+Boto3 documentation:
+[Proton.Client.get_template_sync_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_template_sync_config)
+
+Arguments mapping described in
+[GetTemplateSyncConfigInputRequestTypeDef](./type_defs.md#gettemplatesyncconfiginputrequesttypedef).
+
+Keyword-only arguments:
+
+- `templateName`: `str` *(required)*
+- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+  *(required)*
+
+Returns
+[GetTemplateSyncConfigOutputTypeDef](./type_defs.md#gettemplatesyncconfigoutputtypedef).
+
+### get_template_sync_status
+
+Get the status of a template sync.
+
+Type annotations for `boto3.client("proton").get_template_sync_status` method.
+
+Boto3 documentation:
+[Proton.Client.get_template_sync_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_template_sync_status)
+
+Arguments mapping described in
+[GetTemplateSyncStatusInputRequestTypeDef](./type_defs.md#gettemplatesyncstatusinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `templateName`: `str` *(required)*
+- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+  *(required)*
+- `templateVersion`: `str` *(required)*
+
+Returns
+[GetTemplateSyncStatusOutputTypeDef](./type_defs.md#gettemplatesyncstatusoutputtypedef).
+
 ### list_environment_account_connections
 
 View a list of environment account connections.
@@ -766,6 +970,47 @@ Keyword-only arguments:
 
 Returns
 [ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef).
+
+### list_environment_outputs
+
+List the infrastructure as code outputs for your environment.
+
+Type annotations for `boto3.client("proton").list_environment_outputs` method.
+
+Boto3 documentation:
+[Proton.Client.list_environment_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_outputs)
+
+Arguments mapping described in
+[ListEnvironmentOutputsInputRequestTypeDef](./type_defs.md#listenvironmentoutputsinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `environmentName`: `str` *(required)*
+- `nextToken`: `str`
+
+Returns
+[ListEnvironmentOutputsOutputTypeDef](./type_defs.md#listenvironmentoutputsoutputtypedef).
+
+### list_environment_provisioned_resources
+
+List the provisioned resources for your environment.
+
+Type annotations for
+`boto3.client("proton").list_environment_provisioned_resources` method.
+
+Boto3 documentation:
+[Proton.Client.list_environment_provisioned_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_provisioned_resources)
+
+Arguments mapping described in
+[ListEnvironmentProvisionedResourcesInputRequestTypeDef](./type_defs.md#listenvironmentprovisionedresourcesinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `environmentName`: `str` *(required)*
+- `nextToken`: `str`
+
+Returns
+[ListEnvironmentProvisionedResourcesOutputTypeDef](./type_defs.md#listenvironmentprovisionedresourcesoutputtypedef).
 
 ### list_environment_template_versions
 
@@ -833,6 +1078,95 @@ Keyword-only arguments:
 Returns
 [ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef).
 
+### list_repositories
+
+List repositories with detail data.
+
+Type annotations for `boto3.client("proton").list_repositories` method.
+
+Boto3 documentation:
+[Proton.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_repositories)
+
+Arguments mapping described in
+[ListRepositoriesInputRequestTypeDef](./type_defs.md#listrepositoriesinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef).
+
+### list_repository_sync_definitions
+
+List repository sync definitions with detail data.
+
+Type annotations for `boto3.client("proton").list_repository_sync_definitions`
+method.
+
+Boto3 documentation:
+[Proton.Client.list_repository_sync_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_repository_sync_definitions)
+
+Arguments mapping described in
+[ListRepositorySyncDefinitionsInputRequestTypeDef](./type_defs.md#listrepositorysyncdefinitionsinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `repositoryName`: `str` *(required)*
+- `repositoryProvider`:
+  [RepositoryProviderType](./literals.md#repositoryprovidertype) *(required)*
+- `syncType`: `Literal['TEMPLATE_SYNC']` (see
+  [SyncTypeType](./literals.md#synctypetype)) *(required)*
+- `nextToken`: `str`
+
+Returns
+[ListRepositorySyncDefinitionsOutputTypeDef](./type_defs.md#listrepositorysyncdefinitionsoutputtypedef).
+
+### list_service_instance_outputs
+
+View a list service instance infrastructure as code outputs with detail data.
+
+Type annotations for `boto3.client("proton").list_service_instance_outputs`
+method.
+
+Boto3 documentation:
+[Proton.Client.list_service_instance_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_instance_outputs)
+
+Arguments mapping described in
+[ListServiceInstanceOutputsInputRequestTypeDef](./type_defs.md#listserviceinstanceoutputsinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `serviceInstanceName`: `str` *(required)*
+- `serviceName`: `str` *(required)*
+- `nextToken`: `str`
+
+Returns
+[ListServiceInstanceOutputsOutputTypeDef](./type_defs.md#listserviceinstanceoutputsoutputtypedef).
+
+### list_service_instance_provisioned_resources
+
+List provisioned resources for a service instance with details.
+
+Type annotations for
+`boto3.client("proton").list_service_instance_provisioned_resources` method.
+
+Boto3 documentation:
+[Proton.Client.list_service_instance_provisioned_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_instance_provisioned_resources)
+
+Arguments mapping described in
+[ListServiceInstanceProvisionedResourcesInputRequestTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `serviceInstanceName`: `str` *(required)*
+- `serviceName`: `str` *(required)*
+- `nextToken`: `str`
+
+Returns
+[ListServiceInstanceProvisionedResourcesOutputTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesoutputtypedef).
+
 ### list_service_instances
 
 List service instances with summaries of detail data.
@@ -853,6 +1187,48 @@ Keyword-only arguments:
 
 Returns
 [ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef).
+
+### list_service_pipeline_outputs
+
+View a list service pipeline infrastructure as code outputs with detail.
+
+Type annotations for `boto3.client("proton").list_service_pipeline_outputs`
+method.
+
+Boto3 documentation:
+[Proton.Client.list_service_pipeline_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_pipeline_outputs)
+
+Arguments mapping described in
+[ListServicePipelineOutputsInputRequestTypeDef](./type_defs.md#listservicepipelineoutputsinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `serviceName`: `str` *(required)*
+- `nextToken`: `str`
+
+Returns
+[ListServicePipelineOutputsOutputTypeDef](./type_defs.md#listservicepipelineoutputsoutputtypedef).
+
+### list_service_pipeline_provisioned_resources
+
+List provisioned resources for a service and pipeline with details.
+
+Type annotations for
+`boto3.client("proton").list_service_pipeline_provisioned_resources` method.
+
+Boto3 documentation:
+[Proton.Client.list_service_pipeline_provisioned_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_pipeline_provisioned_resources)
+
+Arguments mapping described in
+[ListServicePipelineProvisionedResourcesInputRequestTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `serviceName`: `str` *(required)*
+- `nextToken`: `str`
+
+Returns
+[ListServicePipelineProvisionedResourcesOutputTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesoutputtypedef).
 
 ### list_service_template_versions
 
@@ -937,6 +1313,32 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
+### notify_resource_deployment_status_change
+
+Notify Proton of status changes to a provisioned resource when you use pull
+request provisioning.
+
+Type annotations for
+`boto3.client("proton").notify_resource_deployment_status_change` method.
+
+Boto3 documentation:
+[Proton.Client.notify_resource_deployment_status_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.notify_resource_deployment_status_change)
+
+Arguments mapping described in
+[NotifyResourceDeploymentStatusChangeInputRequestTypeDef](./type_defs.md#notifyresourcedeploymentstatuschangeinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `resourceArn`: `str` *(required)*
+- `status`:
+  [ResourceDeploymentStatusType](./literals.md#resourcedeploymentstatustype)
+  *(required)*
+- `deploymentId`: `str`
+- `outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `statusMessage`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### reject_environment_account_connection
 
 In a management account, reject an environment account connection from another
@@ -998,7 +1400,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_account_settings
 
-Update the AWS Proton pipeline service account settings.
+Update the Proton service pipeline role or repository settings.
 
 Type annotations for `boto3.client("proton").update_account_settings` method.
 
@@ -1010,6 +1412,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `pipelineProvisioningRepository`:
+  [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
 - `pipelineServiceRoleArn`: `str`
 
 Returns
@@ -1036,6 +1440,8 @@ Keyword-only arguments:
 - `description`: `str`
 - `environmentAccountConnectionId`: `str`
 - `protonServiceRoleArn`: `str`
+- `provisioningRepository`:
+  [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
 - `spec`: `str`
 - `templateMajorVersion`: `str`
 - `templateMinorVersion`: `str`
@@ -1232,6 +1638,34 @@ Keyword-only arguments:
 Returns
 [UpdateServiceTemplateVersionOutputTypeDef](./type_defs.md#updateservicetemplateversionoutputtypedef).
 
+### update_template_sync_config
+
+Update template sync configuration parameters, except for the `templateName`
+and `templateType` .
+
+Type annotations for `boto3.client("proton").update_template_sync_config`
+method.
+
+Boto3 documentation:
+[Proton.Client.update_template_sync_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_template_sync_config)
+
+Arguments mapping described in
+[UpdateTemplateSyncConfigInputRequestTypeDef](./type_defs.md#updatetemplatesyncconfiginputrequesttypedef).
+
+Keyword-only arguments:
+
+- `branch`: `str` *(required)*
+- `repositoryName`: `str` *(required)*
+- `repositoryProvider`:
+  [RepositoryProviderType](./literals.md#repositoryprovidertype) *(required)*
+- `templateName`: `str` *(required)*
+- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+  *(required)*
+- `subdirectory`: `str`
+
+Returns
+[UpdateTemplateSyncConfigOutputTypeDef](./type_defs.md#updatetemplatesyncconfigoutputtypedef).
+
 ### get_paginator
 
 Type annotations for `boto3.client("proton").get_paginator` method with
@@ -1239,14 +1673,30 @@ overloads.
 
 - `client.get_paginator("list_environment_account_connections")` ->
   [ListEnvironmentAccountConnectionsPaginator](./paginators.md#listenvironmentaccountconnectionspaginator)
+- `client.get_paginator("list_environment_outputs")` ->
+  [ListEnvironmentOutputsPaginator](./paginators.md#listenvironmentoutputspaginator)
+- `client.get_paginator("list_environment_provisioned_resources")` ->
+  [ListEnvironmentProvisionedResourcesPaginator](./paginators.md#listenvironmentprovisionedresourcespaginator)
 - `client.get_paginator("list_environment_template_versions")` ->
   [ListEnvironmentTemplateVersionsPaginator](./paginators.md#listenvironmenttemplateversionspaginator)
 - `client.get_paginator("list_environment_templates")` ->
   [ListEnvironmentTemplatesPaginator](./paginators.md#listenvironmenttemplatespaginator)
 - `client.get_paginator("list_environments")` ->
   [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+- `client.get_paginator("list_repositories")` ->
+  [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
+- `client.get_paginator("list_repository_sync_definitions")` ->
+  [ListRepositorySyncDefinitionsPaginator](./paginators.md#listrepositorysyncdefinitionspaginator)
+- `client.get_paginator("list_service_instance_outputs")` ->
+  [ListServiceInstanceOutputsPaginator](./paginators.md#listserviceinstanceoutputspaginator)
+- `client.get_paginator("list_service_instance_provisioned_resources")` ->
+  [ListServiceInstanceProvisionedResourcesPaginator](./paginators.md#listserviceinstanceprovisionedresourcespaginator)
 - `client.get_paginator("list_service_instances")` ->
   [ListServiceInstancesPaginator](./paginators.md#listserviceinstancespaginator)
+- `client.get_paginator("list_service_pipeline_outputs")` ->
+  [ListServicePipelineOutputsPaginator](./paginators.md#listservicepipelineoutputspaginator)
+- `client.get_paginator("list_service_pipeline_provisioned_resources")` ->
+  [ListServicePipelineProvisionedResourcesPaginator](./paginators.md#listservicepipelineprovisionedresourcespaginator)
 - `client.get_paginator("list_service_template_versions")` ->
   [ListServiceTemplateVersionsPaginator](./paginators.md#listservicetemplateversionspaginator)
 - `client.get_paginator("list_service_templates")` ->

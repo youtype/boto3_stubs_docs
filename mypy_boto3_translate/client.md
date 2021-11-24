@@ -360,6 +360,8 @@ Keyword-only arguments:
 - `JobName`: `str`
 - `TerminologyNames`: `Sequence`\[`str`\]
 - `ParallelDataNames`: `Sequence`\[`str`\]
+- `Settings`:
+  [TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef)
 
 Returns
 [StartTextTranslationJobResponseTypeDef](./type_defs.md#starttexttranslationjobresponsetypedef).
@@ -402,6 +404,8 @@ Keyword-only arguments:
 - `SourceLanguageCode`: `str` *(required)*
 - `TargetLanguageCode`: `str` *(required)*
 - `TerminologyNames`: `Sequence`\[`str`\]
+- `Settings`:
+  [TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef)
 
 Returns
 [TranslateTextResponseTypeDef](./type_defs.md#translatetextresponsetypedef).

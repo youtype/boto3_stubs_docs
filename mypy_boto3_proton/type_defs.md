@@ -27,12 +27,16 @@ type annotations stubs module
   - [CreateEnvironmentTemplateOutputTypeDef](#createenvironmenttemplateoutputtypedef)
   - [CreateEnvironmentTemplateVersionInputRequestTypeDef](#createenvironmenttemplateversioninputrequesttypedef)
   - [CreateEnvironmentTemplateVersionOutputTypeDef](#createenvironmenttemplateversionoutputtypedef)
+  - [CreateRepositoryInputRequestTypeDef](#createrepositoryinputrequesttypedef)
+  - [CreateRepositoryOutputTypeDef](#createrepositoryoutputtypedef)
   - [CreateServiceInputRequestTypeDef](#createserviceinputrequesttypedef)
   - [CreateServiceOutputTypeDef](#createserviceoutputtypedef)
   - [CreateServiceTemplateInputRequestTypeDef](#createservicetemplateinputrequesttypedef)
   - [CreateServiceTemplateOutputTypeDef](#createservicetemplateoutputtypedef)
   - [CreateServiceTemplateVersionInputRequestTypeDef](#createservicetemplateversioninputrequesttypedef)
   - [CreateServiceTemplateVersionOutputTypeDef](#createservicetemplateversionoutputtypedef)
+  - [CreateTemplateSyncConfigInputRequestTypeDef](#createtemplatesyncconfiginputrequesttypedef)
+  - [CreateTemplateSyncConfigOutputTypeDef](#createtemplatesyncconfigoutputtypedef)
   - [DeleteEnvironmentAccountConnectionInputRequestTypeDef](#deleteenvironmentaccountconnectioninputrequesttypedef)
   - [DeleteEnvironmentAccountConnectionOutputTypeDef](#deleteenvironmentaccountconnectionoutputtypedef)
   - [DeleteEnvironmentInputRequestTypeDef](#deleteenvironmentinputrequesttypedef)
@@ -41,12 +45,16 @@ type annotations stubs module
   - [DeleteEnvironmentTemplateOutputTypeDef](#deleteenvironmenttemplateoutputtypedef)
   - [DeleteEnvironmentTemplateVersionInputRequestTypeDef](#deleteenvironmenttemplateversioninputrequesttypedef)
   - [DeleteEnvironmentTemplateVersionOutputTypeDef](#deleteenvironmenttemplateversionoutputtypedef)
+  - [DeleteRepositoryInputRequestTypeDef](#deleterepositoryinputrequesttypedef)
+  - [DeleteRepositoryOutputTypeDef](#deleterepositoryoutputtypedef)
   - [DeleteServiceInputRequestTypeDef](#deleteserviceinputrequesttypedef)
   - [DeleteServiceOutputTypeDef](#deleteserviceoutputtypedef)
   - [DeleteServiceTemplateInputRequestTypeDef](#deleteservicetemplateinputrequesttypedef)
   - [DeleteServiceTemplateOutputTypeDef](#deleteservicetemplateoutputtypedef)
   - [DeleteServiceTemplateVersionInputRequestTypeDef](#deleteservicetemplateversioninputrequesttypedef)
   - [DeleteServiceTemplateVersionOutputTypeDef](#deleteservicetemplateversionoutputtypedef)
+  - [DeleteTemplateSyncConfigInputRequestTypeDef](#deletetemplatesyncconfiginputrequesttypedef)
+  - [DeleteTemplateSyncConfigOutputTypeDef](#deletetemplatesyncconfigoutputtypedef)
   - [EnvironmentAccountConnectionSummaryTypeDef](#environmentaccountconnectionsummarytypedef)
   - [EnvironmentAccountConnectionTypeDef](#environmentaccountconnectiontypedef)
   - [EnvironmentSummaryTypeDef](#environmentsummarytypedef)
@@ -65,6 +73,10 @@ type annotations stubs module
   - [GetEnvironmentTemplateOutputTypeDef](#getenvironmenttemplateoutputtypedef)
   - [GetEnvironmentTemplateVersionInputRequestTypeDef](#getenvironmenttemplateversioninputrequesttypedef)
   - [GetEnvironmentTemplateVersionOutputTypeDef](#getenvironmenttemplateversionoutputtypedef)
+  - [GetRepositoryInputRequestTypeDef](#getrepositoryinputrequesttypedef)
+  - [GetRepositoryOutputTypeDef](#getrepositoryoutputtypedef)
+  - [GetRepositorySyncStatusInputRequestTypeDef](#getrepositorysyncstatusinputrequesttypedef)
+  - [GetRepositorySyncStatusOutputTypeDef](#getrepositorysyncstatusoutputtypedef)
   - [GetServiceInputRequestTypeDef](#getserviceinputrequesttypedef)
   - [GetServiceInstanceInputRequestTypeDef](#getserviceinstanceinputrequesttypedef)
   - [GetServiceInstanceOutputTypeDef](#getserviceinstanceoutputtypedef)
@@ -73,16 +85,36 @@ type annotations stubs module
   - [GetServiceTemplateOutputTypeDef](#getservicetemplateoutputtypedef)
   - [GetServiceTemplateVersionInputRequestTypeDef](#getservicetemplateversioninputrequesttypedef)
   - [GetServiceTemplateVersionOutputTypeDef](#getservicetemplateversionoutputtypedef)
+  - [GetTemplateSyncConfigInputRequestTypeDef](#gettemplatesyncconfiginputrequesttypedef)
+  - [GetTemplateSyncConfigOutputTypeDef](#gettemplatesyncconfigoutputtypedef)
+  - [GetTemplateSyncStatusInputRequestTypeDef](#gettemplatesyncstatusinputrequesttypedef)
+  - [GetTemplateSyncStatusOutputTypeDef](#gettemplatesyncstatusoutputtypedef)
   - [ListEnvironmentAccountConnectionsInputRequestTypeDef](#listenvironmentaccountconnectionsinputrequesttypedef)
   - [ListEnvironmentAccountConnectionsOutputTypeDef](#listenvironmentaccountconnectionsoutputtypedef)
+  - [ListEnvironmentOutputsInputRequestTypeDef](#listenvironmentoutputsinputrequesttypedef)
+  - [ListEnvironmentOutputsOutputTypeDef](#listenvironmentoutputsoutputtypedef)
+  - [ListEnvironmentProvisionedResourcesInputRequestTypeDef](#listenvironmentprovisionedresourcesinputrequesttypedef)
+  - [ListEnvironmentProvisionedResourcesOutputTypeDef](#listenvironmentprovisionedresourcesoutputtypedef)
   - [ListEnvironmentTemplateVersionsInputRequestTypeDef](#listenvironmenttemplateversionsinputrequesttypedef)
   - [ListEnvironmentTemplateVersionsOutputTypeDef](#listenvironmenttemplateversionsoutputtypedef)
   - [ListEnvironmentTemplatesInputRequestTypeDef](#listenvironmenttemplatesinputrequesttypedef)
   - [ListEnvironmentTemplatesOutputTypeDef](#listenvironmenttemplatesoutputtypedef)
   - [ListEnvironmentsInputRequestTypeDef](#listenvironmentsinputrequesttypedef)
   - [ListEnvironmentsOutputTypeDef](#listenvironmentsoutputtypedef)
+  - [ListRepositoriesInputRequestTypeDef](#listrepositoriesinputrequesttypedef)
+  - [ListRepositoriesOutputTypeDef](#listrepositoriesoutputtypedef)
+  - [ListRepositorySyncDefinitionsInputRequestTypeDef](#listrepositorysyncdefinitionsinputrequesttypedef)
+  - [ListRepositorySyncDefinitionsOutputTypeDef](#listrepositorysyncdefinitionsoutputtypedef)
+  - [ListServiceInstanceOutputsInputRequestTypeDef](#listserviceinstanceoutputsinputrequesttypedef)
+  - [ListServiceInstanceOutputsOutputTypeDef](#listserviceinstanceoutputsoutputtypedef)
+  - [ListServiceInstanceProvisionedResourcesInputRequestTypeDef](#listserviceinstanceprovisionedresourcesinputrequesttypedef)
+  - [ListServiceInstanceProvisionedResourcesOutputTypeDef](#listserviceinstanceprovisionedresourcesoutputtypedef)
   - [ListServiceInstancesInputRequestTypeDef](#listserviceinstancesinputrequesttypedef)
   - [ListServiceInstancesOutputTypeDef](#listserviceinstancesoutputtypedef)
+  - [ListServicePipelineOutputsInputRequestTypeDef](#listservicepipelineoutputsinputrequesttypedef)
+  - [ListServicePipelineOutputsOutputTypeDef](#listservicepipelineoutputsoutputtypedef)
+  - [ListServicePipelineProvisionedResourcesInputRequestTypeDef](#listservicepipelineprovisionedresourcesinputrequesttypedef)
+  - [ListServicePipelineProvisionedResourcesOutputTypeDef](#listservicepipelineprovisionedresourcesoutputtypedef)
   - [ListServiceTemplateVersionsInputRequestTypeDef](#listservicetemplateversionsinputrequesttypedef)
   - [ListServiceTemplateVersionsOutputTypeDef](#listservicetemplateversionsoutputtypedef)
   - [ListServiceTemplatesInputRequestTypeDef](#listservicetemplatesinputrequesttypedef)
@@ -91,10 +123,23 @@ type annotations stubs module
   - [ListServicesOutputTypeDef](#listservicesoutputtypedef)
   - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
   - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
+  - [NotifyResourceDeploymentStatusChangeInputRequestTypeDef](#notifyresourcedeploymentstatuschangeinputrequesttypedef)
+  - [OutputTypeDef](#outputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ProvisionedResourceTypeDef](#provisionedresourcetypedef)
   - [RejectEnvironmentAccountConnectionInputRequestTypeDef](#rejectenvironmentaccountconnectioninputrequesttypedef)
   - [RejectEnvironmentAccountConnectionOutputTypeDef](#rejectenvironmentaccountconnectionoutputtypedef)
+  - [RepositoryBranchInputTypeDef](#repositorybranchinputtypedef)
+  - [RepositoryBranchTypeDef](#repositorybranchtypedef)
+  - [RepositorySummaryTypeDef](#repositorysummarytypedef)
+  - [RepositorySyncAttemptTypeDef](#repositorysyncattempttypedef)
+  - [RepositorySyncDefinitionTypeDef](#repositorysyncdefinitiontypedef)
+  - [RepositorySyncEventTypeDef](#repositorysynceventtypedef)
+  - [RepositoryTypeDef](#repositorytypedef)
+  - [ResourceSyncAttemptTypeDef](#resourcesyncattempttypedef)
+  - [ResourceSyncEventTypeDef](#resourcesynceventtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RevisionTypeDef](#revisiontypedef)
   - [S3ObjectSourceTypeDef](#s3objectsourcetypedef)
   - [ServiceInstanceSummaryTypeDef](#serviceinstancesummarytypedef)
   - [ServiceInstanceTypeDef](#serviceinstancetypedef)
@@ -107,6 +152,7 @@ type annotations stubs module
   - [ServiceTypeDef](#servicetypedef)
   - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
   - [TagTypeDef](#tagtypedef)
+  - [TemplateSyncConfigTypeDef](#templatesyncconfigtypedef)
   - [TemplateVersionSourceInputTypeDef](#templateversionsourceinputtypedef)
   - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
   - [UpdateAccountSettingsInputRequestTypeDef](#updateaccountsettingsinputrequesttypedef)
@@ -129,6 +175,8 @@ type annotations stubs module
   - [UpdateServiceTemplateOutputTypeDef](#updateservicetemplateoutputtypedef)
   - [UpdateServiceTemplateVersionInputRequestTypeDef](#updateservicetemplateversioninputrequesttypedef)
   - [UpdateServiceTemplateVersionOutputTypeDef](#updateservicetemplateversionoutputtypedef)
+  - [UpdateTemplateSyncConfigInputRequestTypeDef](#updatetemplatesyncconfiginputrequesttypedef)
+  - [UpdateTemplateSyncConfigOutputTypeDef](#updatetemplatesyncconfigoutputtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 ## AcceptEnvironmentAccountConnectionInputRequestTypeDef
@@ -162,6 +210,8 @@ from mypy_boto3_proton.type_defs import AccountSettingsTypeDef
 
 Optional fields:
 
+- `pipelineProvisioningRepository`:
+  [RepositoryBranchTypeDef](./type_defs.md#repositorybranchtypedef)
 - `pipelineServiceRoleArn`: `str`
 
 ## CancelEnvironmentDeploymentInputRequestTypeDef
@@ -269,6 +319,7 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEnvironmentAccountConnectionOutputTypeDef
 
@@ -301,6 +352,8 @@ Optional fields:
 - `description`: `str`
 - `environmentAccountConnectionId`: `str`
 - `protonServiceRoleArn`: `str`
+- `provisioningRepository`:
+  [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `templateMinorVersion`: `str`
 
@@ -377,6 +430,34 @@ Required fields:
 
 - `environmentTemplateVersion`:
   [EnvironmentTemplateVersionTypeDef](./type_defs.md#environmenttemplateversiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateRepositoryInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import CreateRepositoryInputRequestTypeDef
+```
+
+Required fields:
+
+- `connectionArn`: `str`
+- `name`: `str`
+- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+
+Optional fields:
+
+- `encryptionKey`: `str`
+
+## CreateRepositoryOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import CreateRepositoryOutputTypeDef
+```
+
+Required fields:
+
+- `repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -480,6 +561,38 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateTemplateSyncConfigInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import CreateTemplateSyncConfigInputRequestTypeDef
+```
+
+Required fields:
+
+- `branch`: `str`
+- `repositoryName`: `str`
+- `repositoryProvider`:
+  [RepositoryProviderType](./literals.md#repositoryprovidertype)
+- `templateName`: `str`
+- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+
+Optional fields:
+
+- `subdirectory`: `str`
+
+## CreateTemplateSyncConfigOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import CreateTemplateSyncConfigOutputTypeDef
+```
+
+Required fields:
+
+- `templateSyncConfig`:
+  [TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DeleteEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python
@@ -573,6 +686,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DeleteRepositoryInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import DeleteRepositoryInputRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+
+## DeleteRepositoryOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import DeleteRepositoryOutputTypeDef
+```
+
+Required fields:
+
+- `repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DeleteServiceInputRequestTypeDef
 
 ```python
@@ -640,6 +776,30 @@ Required fields:
 
 - `serviceTemplateVersion`:
   [ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteTemplateSyncConfigInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import DeleteTemplateSyncConfigInputRequestTypeDef
+```
+
+Required fields:
+
+- `templateName`: `str`
+- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+
+## DeleteTemplateSyncConfigOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import DeleteTemplateSyncConfigOutputTypeDef
+```
+
+Required fields:
+
+- `templateSyncConfig`:
+  [TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -839,6 +999,8 @@ Optional fields:
 - `protonServiceRoleArn`: `str`
 - `provisioning`: `Literal['CUSTOMER_MANAGED']` (see
   [ProvisioningType](./literals.md#provisioningtype))
+- `provisioningRepository`:
+  [RepositoryBranchTypeDef](./type_defs.md#repositorybranchtypedef)
 - `spec`: `str`
 
 ## GetAccountSettingsOutputTypeDef
@@ -947,6 +1109,57 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetRepositoryInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import GetRepositoryInputRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+
+## GetRepositoryOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import GetRepositoryOutputTypeDef
+```
+
+Required fields:
+
+- `repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetRepositorySyncStatusInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import GetRepositorySyncStatusInputRequestTypeDef
+```
+
+Required fields:
+
+- `branch`: `str`
+- `repositoryName`: `str`
+- `repositoryProvider`:
+  [RepositoryProviderType](./literals.md#repositoryprovidertype)
+- `syncType`: `Literal['TEMPLATE_SYNC']` (see
+  [SyncTypeType](./literals.md#synctypetype))
+
+## GetRepositorySyncStatusOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import GetRepositorySyncStatusOutputTypeDef
+```
+
+Required fields:
+
+- `latestSync`:
+  [RepositorySyncAttemptTypeDef](./type_defs.md#repositorysyncattempttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetServiceInputRequestTypeDef
 
 ```python
@@ -1041,6 +1254,58 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetTemplateSyncConfigInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import GetTemplateSyncConfigInputRequestTypeDef
+```
+
+Required fields:
+
+- `templateName`: `str`
+- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+
+## GetTemplateSyncConfigOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import GetTemplateSyncConfigOutputTypeDef
+```
+
+Required fields:
+
+- `templateSyncConfig`:
+  [TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetTemplateSyncStatusInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import GetTemplateSyncStatusInputRequestTypeDef
+```
+
+Required fields:
+
+- `templateName`: `str`
+- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+- `templateVersion`: `str`
+
+## GetTemplateSyncStatusOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import GetTemplateSyncStatusOutputTypeDef
+```
+
+Required fields:
+
+- `desiredState`: [RevisionTypeDef](./type_defs.md#revisiontypedef)
+- `latestSuccessfulSync`:
+  [ResourceSyncAttemptTypeDef](./type_defs.md#resourcesyncattempttypedef)
+- `latestSync`:
+  [ResourceSyncAttemptTypeDef](./type_defs.md#resourcesyncattempttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListEnvironmentAccountConnectionsInputRequestTypeDef
 
 ```python
@@ -1071,6 +1336,61 @@ Required fields:
 - `environmentAccountConnections`:
   `List`\[[EnvironmentAccountConnectionSummaryTypeDef](./type_defs.md#environmentaccountconnectionsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListEnvironmentOutputsInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListEnvironmentOutputsInputRequestTypeDef
+```
+
+Required fields:
+
+- `environmentName`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+
+## ListEnvironmentOutputsOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListEnvironmentOutputsOutputTypeDef
+```
+
+Required fields:
+
+- `nextToken`: `str`
+- `outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListEnvironmentProvisionedResourcesInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListEnvironmentProvisionedResourcesInputRequestTypeDef
+```
+
+Required fields:
+
+- `environmentName`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+
+## ListEnvironmentProvisionedResourcesOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListEnvironmentProvisionedResourcesOutputTypeDef
+```
+
+Required fields:
+
+- `nextToken`: `str`
+- `provisionedResources`:
+  `List`\[[ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1156,6 +1476,120 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListRepositoriesInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListRepositoriesInputRequestTypeDef
+```
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListRepositoriesOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListRepositoriesOutputTypeDef
+```
+
+Required fields:
+
+- `nextToken`: `str`
+- `repositories`:
+  `List`\[[RepositorySummaryTypeDef](./type_defs.md#repositorysummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListRepositorySyncDefinitionsInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListRepositorySyncDefinitionsInputRequestTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `repositoryProvider`:
+  [RepositoryProviderType](./literals.md#repositoryprovidertype)
+- `syncType`: `Literal['TEMPLATE_SYNC']` (see
+  [SyncTypeType](./literals.md#synctypetype))
+
+Optional fields:
+
+- `nextToken`: `str`
+
+## ListRepositorySyncDefinitionsOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListRepositorySyncDefinitionsOutputTypeDef
+```
+
+Required fields:
+
+- `nextToken`: `str`
+- `syncDefinitions`:
+  `List`\[[RepositorySyncDefinitionTypeDef](./type_defs.md#repositorysyncdefinitiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListServiceInstanceOutputsInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListServiceInstanceOutputsInputRequestTypeDef
+```
+
+Required fields:
+
+- `serviceInstanceName`: `str`
+- `serviceName`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+
+## ListServiceInstanceOutputsOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListServiceInstanceOutputsOutputTypeDef
+```
+
+Required fields:
+
+- `nextToken`: `str`
+- `outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListServiceInstanceProvisionedResourcesInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListServiceInstanceProvisionedResourcesInputRequestTypeDef
+```
+
+Required fields:
+
+- `serviceInstanceName`: `str`
+- `serviceName`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+
+## ListServiceInstanceProvisionedResourcesOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListServiceInstanceProvisionedResourcesOutputTypeDef
+```
+
+Required fields:
+
+- `nextToken`: `str`
+- `provisionedResources`:
+  `List`\[[ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListServiceInstancesInputRequestTypeDef
 
 ```python
@@ -1179,6 +1613,61 @@ Required fields:
 - `nextToken`: `str`
 - `serviceInstances`:
   `List`\[[ServiceInstanceSummaryTypeDef](./type_defs.md#serviceinstancesummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListServicePipelineOutputsInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListServicePipelineOutputsInputRequestTypeDef
+```
+
+Required fields:
+
+- `serviceName`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+
+## ListServicePipelineOutputsOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListServicePipelineOutputsOutputTypeDef
+```
+
+Required fields:
+
+- `nextToken`: `str`
+- `outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListServicePipelineProvisionedResourcesInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListServicePipelineProvisionedResourcesInputRequestTypeDef
+```
+
+Required fields:
+
+- `serviceName`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+
+## ListServicePipelineProvisionedResourcesOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ListServicePipelineProvisionedResourcesOutputTypeDef
+```
+
+Required fields:
+
+- `nextToken`: `str`
+- `provisionedResources`:
+  `List`\[[ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1290,6 +1779,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## NotifyResourceDeploymentStatusChangeInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import NotifyResourceDeploymentStatusChangeInputRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `status`:
+  [ResourceDeploymentStatusType](./literals.md#resourcedeploymentstatustype)
+
+Optional fields:
+
+- `deploymentId`: `str`
+- `outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `statusMessage`: `str`
+
+## OutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import OutputTypeDef
+```
+
+Optional fields:
+
+- `key`: `str`
+- `valueString`: `str`
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1301,6 +1819,19 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## ProvisionedResourceTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ProvisionedResourceTypeDef
+```
+
+Optional fields:
+
+- `identifier`: `str`
+- `name`: `str`
+- `provisioningEngine`:
+  [ProvisionedResourceEngineType](./literals.md#provisionedresourceenginetype)
 
 ## RejectEnvironmentAccountConnectionInputRequestTypeDef
 
@@ -1325,6 +1856,134 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## RepositoryBranchInputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import RepositoryBranchInputTypeDef
+```
+
+Required fields:
+
+- `branch`: `str`
+- `name`: `str`
+- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+
+## RepositoryBranchTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import RepositoryBranchTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+- `branch`: `str`
+- `name`: `str`
+- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+
+## RepositorySummaryTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import RepositorySummaryTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+- `name`: `str`
+- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+
+## RepositorySyncAttemptTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import RepositorySyncAttemptTypeDef
+```
+
+Required fields:
+
+- `events`:
+  `List`\[[RepositorySyncEventTypeDef](./type_defs.md#repositorysynceventtypedef)\]
+- `startedAt`: `datetime`
+- `status`: [RepositorySyncStatusType](./literals.md#repositorysyncstatustype)
+
+## RepositorySyncDefinitionTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import RepositorySyncDefinitionTypeDef
+```
+
+Required fields:
+
+- `branch`: `str`
+- `directory`: `str`
+- `parent`: `str`
+- `target`: `str`
+
+## RepositorySyncEventTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import RepositorySyncEventTypeDef
+```
+
+Required fields:
+
+- `event`: `str`
+- `time`: `datetime`
+- `type`: `str`
+
+Optional fields:
+
+- `externalId`: `str`
+
+## RepositoryTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import RepositoryTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+- `connectionArn`: `str`
+- `name`: `str`
+- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+
+Optional fields:
+
+- `encryptionKey`: `str`
+
+## ResourceSyncAttemptTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ResourceSyncAttemptTypeDef
+```
+
+Required fields:
+
+- `events`:
+  `List`\[[ResourceSyncEventTypeDef](./type_defs.md#resourcesynceventtypedef)\]
+- `initialRevision`: [RevisionTypeDef](./type_defs.md#revisiontypedef)
+- `startedAt`: `datetime`
+- `status`: [ResourceSyncStatusType](./literals.md#resourcesyncstatustype)
+- `target`: `str`
+- `targetRevision`: [RevisionTypeDef](./type_defs.md#revisiontypedef)
+
+## ResourceSyncEventTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import ResourceSyncEventTypeDef
+```
+
+Required fields:
+
+- `event`: `str`
+- `time`: `datetime`
+- `type`: `str`
+
+Optional fields:
+
+- `externalId`: `str`
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1338,6 +1997,21 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## RevisionTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import RevisionTypeDef
+```
+
+Required fields:
+
+- `branch`: `str`
+- `directory`: `str`
+- `repositoryName`: `str`
+- `repositoryProvider`:
+  [RepositoryProviderType](./literals.md#repositoryprovidertype)
+- `sha`: `str`
 
 ## S3ObjectSourceTypeDef
 
@@ -1583,6 +2257,25 @@ Required fields:
 - `key`: `str`
 - `value`: `str`
 
+## TemplateSyncConfigTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import TemplateSyncConfigTypeDef
+```
+
+Required fields:
+
+- `branch`: `str`
+- `repositoryName`: `str`
+- `repositoryProvider`:
+  [RepositoryProviderType](./literals.md#repositoryprovidertype)
+- `templateName`: `str`
+- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+
+Optional fields:
+
+- `subdirectory`: `str`
+
 ## TemplateVersionSourceInputTypeDef
 
 ```python
@@ -1612,6 +2305,8 @@ from mypy_boto3_proton.type_defs import UpdateAccountSettingsInputRequestTypeDef
 
 Optional fields:
 
+- `pipelineProvisioningRepository`:
+  [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
 - `pipelineServiceRoleArn`: `str`
 
 ## UpdateAccountSettingsOutputTypeDef
@@ -1668,6 +2363,8 @@ Optional fields:
 - `description`: `str`
 - `environmentAccountConnectionId`: `str`
 - `protonServiceRoleArn`: `str`
+- `provisioningRepository`:
+  [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
 - `spec`: `str`
 - `templateMajorVersion`: `str`
 - `templateMinorVersion`: `str`
@@ -1890,6 +2587,38 @@ Required fields:
 
 - `serviceTemplateVersion`:
   [ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateTemplateSyncConfigInputRequestTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import UpdateTemplateSyncConfigInputRequestTypeDef
+```
+
+Required fields:
+
+- `branch`: `str`
+- `repositoryName`: `str`
+- `repositoryProvider`:
+  [RepositoryProviderType](./literals.md#repositoryprovidertype)
+- `templateName`: `str`
+- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+
+Optional fields:
+
+- `subdirectory`: `str`
+
+## UpdateTemplateSyncConfigOutputTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import UpdateTemplateSyncConfigOutputTypeDef
+```
+
+Required fields:
+
+- `templateSyncConfig`:
+  [TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

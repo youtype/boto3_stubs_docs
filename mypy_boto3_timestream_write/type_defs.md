@@ -28,9 +28,14 @@ type annotations stubs module
   - [ListTablesResponseTypeDef](#listtablesresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [MagneticStoreRejectedDataLocationTypeDef](#magneticstorerejecteddatalocationtypedef)
+  - [MagneticStoreWritePropertiesTypeDef](#magneticstorewritepropertiestypedef)
+  - [MeasureValueTypeDef](#measurevaluetypedef)
   - [RecordTypeDef](#recordtypedef)
+  - [RecordsIngestedTypeDef](#recordsingestedtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RetentionPropertiesTypeDef](#retentionpropertiestypedef)
+  - [S3ConfigurationTypeDef](#s3configurationtypedef)
   - [TableTypeDef](#tabletypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
@@ -40,6 +45,7 @@ type annotations stubs module
   - [UpdateTableRequestRequestTypeDef](#updatetablerequestrequesttypedef)
   - [UpdateTableResponseTypeDef](#updatetableresponsetypedef)
   - [WriteRecordsRequestRequestTypeDef](#writerecordsrequestrequesttypedef)
+  - [WriteRecordsResponseTypeDef](#writerecordsresponsetypedef)
 
 ## CreateDatabaseRequestRequestTypeDef
 
@@ -84,6 +90,8 @@ Optional fields:
 - `RetentionProperties`:
   [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `MagneticStoreWriteProperties`:
+  [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
 
 ## CreateTableResponseTypeDef
 
@@ -288,6 +296,44 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## MagneticStoreRejectedDataLocationTypeDef
+
+```python
+from mypy_boto3_timestream_write.type_defs import MagneticStoreRejectedDataLocationTypeDef
+```
+
+Optional fields:
+
+- `S3Configuration`:
+  [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
+
+## MagneticStoreWritePropertiesTypeDef
+
+```python
+from mypy_boto3_timestream_write.type_defs import MagneticStoreWritePropertiesTypeDef
+```
+
+Required fields:
+
+- `EnableMagneticStoreWrites`: `bool`
+
+Optional fields:
+
+- `MagneticStoreRejectedDataLocation`:
+  [MagneticStoreRejectedDataLocationTypeDef](./type_defs.md#magneticstorerejecteddatalocationtypedef)
+
+## MeasureValueTypeDef
+
+```python
+from mypy_boto3_timestream_write.type_defs import MeasureValueTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Value`: `str`
+- `Type`: [MeasureValueTypeType](./literals.md#measurevaluetypetype)
+
 ## RecordTypeDef
 
 ```python
@@ -305,6 +351,20 @@ Optional fields:
 - `Time`: `str`
 - `TimeUnit`: [TimeUnitType](./literals.md#timeunittype)
 - `Version`: `int`
+- `MeasureValues`:
+  `Sequence`\[[MeasureValueTypeDef](./type_defs.md#measurevaluetypedef)\]
+
+## RecordsIngestedTypeDef
+
+```python
+from mypy_boto3_timestream_write.type_defs import RecordsIngestedTypeDef
+```
+
+Optional fields:
+
+- `Total`: `int`
+- `MemoryStore`: `int`
+- `MagneticStore`: `int`
 
 ## ResponseMetadataTypeDef
 
@@ -331,6 +391,20 @@ Required fields:
 - `MemoryStoreRetentionPeriodInHours`: `int`
 - `MagneticStoreRetentionPeriodInDays`: `int`
 
+## S3ConfigurationTypeDef
+
+```python
+from mypy_boto3_timestream_write.type_defs import S3ConfigurationTypeDef
+```
+
+Optional fields:
+
+- `BucketName`: `str`
+- `ObjectKeyPrefix`: `str`
+- `EncryptionOption`:
+  [S3EncryptionOptionType](./literals.md#s3encryptionoptiontype)
+- `KmsKeyId`: `str`
+
 ## TableTypeDef
 
 ```python
@@ -347,6 +421,8 @@ Optional fields:
   [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
 - `CreationTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
+- `MagneticStoreWriteProperties`:
+  [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
 
 ## TagResourceRequestRequestTypeDef
 
@@ -414,8 +490,13 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
+
+Optional fields:
+
 - `RetentionProperties`:
   [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
+- `MagneticStoreWriteProperties`:
+  [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
 
 ## UpdateTableResponseTypeDef
 
@@ -444,3 +525,16 @@ Required fields:
 Optional fields:
 
 - `CommonAttributes`: [RecordTypeDef](./type_defs.md#recordtypedef)
+
+## WriteRecordsResponseTypeDef
+
+```python
+from mypy_boto3_timestream_write.type_defs import WriteRecordsResponseTypeDef
+```
+
+Required fields:
+
+- `RecordsIngested`:
+  [RecordsIngestedTypeDef](./type_defs.md#recordsingestedtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

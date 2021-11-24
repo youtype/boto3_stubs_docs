@@ -13,6 +13,7 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [associate_assets](#associate_assets)
+    - [associate_time_series_to_asset_property](#associate_time_series_to_asset_property)
     - [batch_associate_project_assets](#batch_associate_project_assets)
     - [batch_disassociate_project_assets](#batch_disassociate_project_assets)
     - [batch_put_asset_property_value](#batch_put_asset_property_value)
@@ -31,6 +32,7 @@ type annotations stubs module
     - [delete_gateway](#delete_gateway)
     - [delete_portal](#delete_portal)
     - [delete_project](#delete_project)
+    - [delete_time_series](#delete_time_series)
     - [describe_access_policy](#describe_access_policy)
     - [describe_asset](#describe_asset)
     - [describe_asset_model](#describe_asset_model)
@@ -43,7 +45,9 @@ type annotations stubs module
     - [describe_portal](#describe_portal)
     - [describe_project](#describe_project)
     - [describe_storage_configuration](#describe_storage_configuration)
+    - [describe_time_series](#describe_time_series)
     - [disassociate_assets](#disassociate_assets)
+    - [disassociate_time_series_from_asset_property](#disassociate_time_series_from_asset_property)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_asset_property_aggregates](#get_asset_property_aggregates)
     - [get_asset_property_value](#get_asset_property_value)
@@ -60,6 +64,7 @@ type annotations stubs module
     - [list_project_assets](#list_project_assets)
     - [list_projects](#list_projects)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [list_time_series](#list_time_series)
     - [put_default_encryption_configuration](#put_default_encryption_configuration)
     - [put_logging_options](#put_logging_options)
     - [put_storage_configuration](#put_storage_configuration)
@@ -150,6 +155,26 @@ Keyword-only arguments:
 - `assetId`: `str` *(required)*
 - `hierarchyId`: `str` *(required)*
 - `childAssetId`: `str` *(required)*
+- `clientToken`: `str`
+
+### associate_time_series_to_asset_property
+
+Associates a time series (data stream) with an asset property.
+
+Type annotations for
+`boto3.client("iotsitewise").associate_time_series_to_asset_property` method.
+
+Boto3 documentation:
+[IoTSiteWise.Client.associate_time_series_to_asset_property](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.associate_time_series_to_asset_property)
+
+Arguments mapping described in
+[AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef](./type_defs.md#associatetimeseriestoassetpropertyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `alias`: `str` *(required)*
+- `assetId`: `str` *(required)*
+- `propertyId`: `str` *(required)*
 - `clientToken`: `str`
 
 ### batch_associate_project_assets
@@ -543,6 +568,25 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### delete_time_series
+
+Deletes a time series (data stream).
+
+Type annotations for `boto3.client("iotsitewise").delete_time_series` method.
+
+Boto3 documentation:
+[IoTSiteWise.Client.delete_time_series](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_time_series)
+
+Arguments mapping described in
+[DeleteTimeSeriesRequestRequestTypeDef](./type_defs.md#deletetimeseriesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `alias`: `str`
+- `assetId`: `str`
+- `propertyId`: `str`
+- `clientToken`: `str`
+
 ### describe_access_policy
 
 Describes an access policy, which specifies an identity's access to an IoT
@@ -760,6 +804,27 @@ Boto3 documentation:
 Returns
 [DescribeStorageConfigurationResponseTypeDef](./type_defs.md#describestorageconfigurationresponsetypedef).
 
+### describe_time_series
+
+Retrieves information about a time series (data stream).
+
+Type annotations for `boto3.client("iotsitewise").describe_time_series` method.
+
+Boto3 documentation:
+[IoTSiteWise.Client.describe_time_series](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_time_series)
+
+Arguments mapping described in
+[DescribeTimeSeriesRequestRequestTypeDef](./type_defs.md#describetimeseriesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `alias`: `str`
+- `assetId`: `str`
+- `propertyId`: `str`
+
+Returns
+[DescribeTimeSeriesResponseTypeDef](./type_defs.md#describetimeseriesresponsetypedef).
+
 ### disassociate_assets
 
 Disassociates a child asset from the given parent asset through a hierarchy
@@ -778,6 +843,27 @@ Keyword-only arguments:
 - `assetId`: `str` *(required)*
 - `hierarchyId`: `str` *(required)*
 - `childAssetId`: `str` *(required)*
+- `clientToken`: `str`
+
+### disassociate_time_series_from_asset_property
+
+Disassociates a time series (data stream) from an asset property.
+
+Type annotations for
+`boto3.client("iotsitewise").disassociate_time_series_from_asset_property`
+method.
+
+Boto3 documentation:
+[IoTSiteWise.Client.disassociate_time_series_from_asset_property](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.disassociate_time_series_from_asset_property)
+
+Arguments mapping described in
+[DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef](./type_defs.md#disassociatetimeseriesfromassetpropertyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `alias`: `str` *(required)*
+- `assetId`: `str` *(required)*
+- `propertyId`: `str` *(required)*
 - `clientToken`: `str`
 
 ### generate_presigned_url
@@ -1155,6 +1241,30 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+### list_time_series
+
+Retrieves a paginated list of time series (data streams).
+
+Type annotations for `boto3.client("iotsitewise").list_time_series` method.
+
+Boto3 documentation:
+[IoTSiteWise.Client.list_time_series](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_time_series)
+
+Arguments mapping described in
+[ListTimeSeriesRequestRequestTypeDef](./type_defs.md#listtimeseriesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `assetId`: `str`
+- `aliasPrefix`: `str`
+- `timeSeriesType`:
+  [ListTimeSeriesTypeType](./literals.md#listtimeseriestypetype)
+
+Returns
+[ListTimeSeriesResponseTypeDef](./type_defs.md#listtimeseriesresponsetypedef).
+
 ### put_default_encryption_configuration
 
 Sets the default encryption configuration for the Amazon Web Services account.
@@ -1214,6 +1324,8 @@ Keyword-only arguments:
 - `storageType`: [StorageTypeType](./literals.md#storagetypetype) *(required)*
 - `multiLayerStorage`:
   [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
+- `disassociatedDataStorage`:
+  [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
 
 Returns
 [PutStorageConfigurationResponseTypeDef](./type_defs.md#putstorageconfigurationresponsetypedef).
@@ -1494,6 +1606,8 @@ overloads.
   [ListProjectAssetsPaginator](./paginators.md#listprojectassetspaginator)
 - `client.get_paginator("list_projects")` ->
   [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+- `client.get_paginator("list_time_series")` ->
+  [ListTimeSeriesPaginator](./paginators.md#listtimeseriespaginator)
 
 ### get_waiter
 

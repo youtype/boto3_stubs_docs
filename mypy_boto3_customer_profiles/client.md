@@ -23,13 +23,16 @@ type annotations stubs module
     - [delete_profile_object](#delete_profile_object)
     - [delete_profile_object_type](#delete_profile_object_type)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_auto_merging_preview](#get_auto_merging_preview)
     - [get_domain](#get_domain)
+    - [get_identity_resolution_job](#get_identity_resolution_job)
     - [get_integration](#get_integration)
     - [get_matches](#get_matches)
     - [get_profile_object_type](#get_profile_object_type)
     - [get_profile_object_type_template](#get_profile_object_type_template)
     - [list_account_integrations](#list_account_integrations)
     - [list_domains](#list_domains)
+    - [list_identity_resolution_jobs](#list_identity_resolution_jobs)
     - [list_integrations](#list_integrations)
     - [list_profile_object_type_templates](#list_profile_object_type_templates)
     - [list_profile_object_types](#list_profile_object_types)
@@ -347,6 +350,32 @@ Arguments:
 
 Returns `str`.
 
+### get_auto_merging_preview
+
+Tests the auto-merging settings of your Identity Resolution Job without merging
+your data.
+
+Type annotations for
+`boto3.client("customer-profiles").get_auto_merging_preview` method.
+
+Boto3 documentation:
+[CustomerProfiles.Client.get_auto_merging_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_auto_merging_preview)
+
+Arguments mapping described in
+[GetAutoMergingPreviewRequestRequestTypeDef](./type_defs.md#getautomergingpreviewrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DomainName`: `str` *(required)*
+- `Consolidation`: [ConsolidationTypeDef](./type_defs.md#consolidationtypedef)
+  *(required)*
+- `ConflictResolution`:
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
+  *(required)*
+
+Returns
+[GetAutoMergingPreviewResponseTypeDef](./type_defs.md#getautomergingpreviewresponsetypedef).
+
 ### get_domain
 
 Returns information about a specific domain.
@@ -364,6 +393,27 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns [GetDomainResponseTypeDef](./type_defs.md#getdomainresponsetypedef).
+
+### get_identity_resolution_job
+
+Returns information about an Identity Resolution Job in a specific domain.
+
+Type annotations for
+`boto3.client("customer-profiles").get_identity_resolution_job` method.
+
+Boto3 documentation:
+[CustomerProfiles.Client.get_identity_resolution_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_identity_resolution_job)
+
+Arguments mapping described in
+[GetIdentityResolutionJobRequestRequestTypeDef](./type_defs.md#getidentityresolutionjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DomainName`: `str` *(required)*
+- `JobId`: `str` *(required)*
+
+Returns
+[GetIdentityResolutionJobResponseTypeDef](./type_defs.md#getidentityresolutionjobresponsetypedef).
 
 ### get_integration
 
@@ -488,6 +538,28 @@ Keyword-only arguments:
 
 Returns
 [ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
+
+### list_identity_resolution_jobs
+
+Lists all of the Identity Resolution Jobs in your domain.
+
+Type annotations for
+`boto3.client("customer-profiles").list_identity_resolution_jobs` method.
+
+Boto3 documentation:
+[CustomerProfiles.Client.list_identity_resolution_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_identity_resolution_jobs)
+
+Arguments mapping described in
+[ListIdentityResolutionJobsRequestRequestTypeDef](./type_defs.md#listidentityresolutionjobsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DomainName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListIdentityResolutionJobsResponseTypeDef](./type_defs.md#listidentityresolutionjobsresponsetypedef).
 
 ### list_integrations
 
@@ -693,6 +765,7 @@ Keyword-only arguments:
 - `ExpirationDays`: `int`
 - `EncryptionKey`: `str`
 - `AllowProfileCreation`: `bool`
+- `SourceLastUpdatedTimestampFormat`: `str`
 - `Fields`: `Mapping`\[`str`,
   [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)\]
 - `Keys`: `Mapping`\[`str`,

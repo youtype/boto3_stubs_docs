@@ -8,10 +8,62 @@ type annotations stubs module
 [mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 - [Literals for boto3 TimestreamQuery module](#literals-for-boto3-timestreamquery-module)
+  - [DimensionValueTypeType](#dimensionvaluetypetype)
+  - [ListScheduledQueriesPaginatorName](#listscheduledqueriespaginatorname)
+  - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
+  - [MeasureValueTypeType](#measurevaluetypetype)
   - [QueryPaginatorName](#querypaginatorname)
+  - [S3EncryptionOptionType](#s3encryptionoptiontype)
+  - [ScalarMeasureValueTypeType](#scalarmeasurevaluetypetype)
   - [ScalarTypeType](#scalartypetype)
+  - [ScheduledQueryRunStatusType](#scheduledqueryrunstatustype)
+  - [ScheduledQueryStateType](#scheduledquerystatetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+## DimensionValueTypeType
+
+```python
+from mypy_boto3_timestream_query.literals import DimensionValueTypeType
+```
+
+Values:
+
+- `VARCHAR`
+
+## ListScheduledQueriesPaginatorName
+
+```python
+from mypy_boto3_timestream_query.literals import ListScheduledQueriesPaginatorName
+```
+
+Values:
+
+- `list_scheduled_queries`
+
+## ListTagsForResourcePaginatorName
+
+```python
+from mypy_boto3_timestream_query.literals import ListTagsForResourcePaginatorName
+```
+
+Values:
+
+- `list_tags_for_resource`
+
+## MeasureValueTypeType
+
+```python
+from mypy_boto3_timestream_query.literals import MeasureValueTypeType
+```
+
+Values:
+
+- `BIGINT`
+- `BOOLEAN`
+- `DOUBLE`
+- `MULTI`
+- `VARCHAR`
 
 ## QueryPaginatorName
 
@@ -22,6 +74,30 @@ from mypy_boto3_timestream_query.literals import QueryPaginatorName
 Values:
 
 - `query`
+
+## S3EncryptionOptionType
+
+```python
+from mypy_boto3_timestream_query.literals import S3EncryptionOptionType
+```
+
+Values:
+
+- `SSE_KMS`
+- `SSE_S3`
+
+## ScalarMeasureValueTypeType
+
+```python
+from mypy_boto3_timestream_query.literals import ScalarMeasureValueTypeType
+```
+
+Values:
+
+- `BIGINT`
+- `BOOLEAN`
+- `DOUBLE`
+- `VARCHAR`
 
 ## ScalarTypeType
 
@@ -42,6 +118,30 @@ Values:
 - `TIMESTAMP`
 - `UNKNOWN`
 - `VARCHAR`
+
+## ScheduledQueryRunStatusType
+
+```python
+from mypy_boto3_timestream_query.literals import ScheduledQueryRunStatusType
+```
+
+Values:
+
+- `AUTO_TRIGGER_FAILURE`
+- `AUTO_TRIGGER_SUCCESS`
+- `MANUAL_TRIGGER_FAILURE`
+- `MANUAL_TRIGGER_SUCCESS`
+
+## ScheduledQueryStateType
+
+```python
+from mypy_boto3_timestream_query.literals import ScheduledQueryStateType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
 
 ## ServiceName
 
@@ -350,4 +450,6 @@ from mypy_boto3_timestream_query.literals import PaginatorName
 
 Values:
 
+- `list_scheduled_queries`
+- `list_tags_for_resource`
 - `query`

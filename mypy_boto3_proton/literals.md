@@ -15,15 +15,28 @@ type annotations stubs module
   - [EnvironmentDeployedWaiterName](#environmentdeployedwaitername)
   - [EnvironmentTemplateVersionRegisteredWaiterName](#environmenttemplateversionregisteredwaitername)
   - [ListEnvironmentAccountConnectionsPaginatorName](#listenvironmentaccountconnectionspaginatorname)
+  - [ListEnvironmentOutputsPaginatorName](#listenvironmentoutputspaginatorname)
+  - [ListEnvironmentProvisionedResourcesPaginatorName](#listenvironmentprovisionedresourcespaginatorname)
   - [ListEnvironmentTemplateVersionsPaginatorName](#listenvironmenttemplateversionspaginatorname)
   - [ListEnvironmentTemplatesPaginatorName](#listenvironmenttemplatespaginatorname)
   - [ListEnvironmentsPaginatorName](#listenvironmentspaginatorname)
+  - [ListRepositoriesPaginatorName](#listrepositoriespaginatorname)
+  - [ListRepositorySyncDefinitionsPaginatorName](#listrepositorysyncdefinitionspaginatorname)
+  - [ListServiceInstanceOutputsPaginatorName](#listserviceinstanceoutputspaginatorname)
+  - [ListServiceInstanceProvisionedResourcesPaginatorName](#listserviceinstanceprovisionedresourcespaginatorname)
   - [ListServiceInstancesPaginatorName](#listserviceinstancespaginatorname)
+  - [ListServicePipelineOutputsPaginatorName](#listservicepipelineoutputspaginatorname)
+  - [ListServicePipelineProvisionedResourcesPaginatorName](#listservicepipelineprovisionedresourcespaginatorname)
   - [ListServiceTemplateVersionsPaginatorName](#listservicetemplateversionspaginatorname)
   - [ListServiceTemplatesPaginatorName](#listservicetemplatespaginatorname)
   - [ListServicesPaginatorName](#listservicespaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
+  - [ProvisionedResourceEngineType](#provisionedresourceenginetype)
   - [ProvisioningType](#provisioningtype)
+  - [RepositoryProviderType](#repositoryprovidertype)
+  - [RepositorySyncStatusType](#repositorysyncstatustype)
+  - [ResourceDeploymentStatusType](#resourcedeploymentstatustype)
+  - [ResourceSyncStatusType](#resourcesyncstatustype)
   - [ServiceCreatedWaiterName](#servicecreatedwaitername)
   - [ServiceDeletedWaiterName](#servicedeletedwaitername)
   - [ServiceInstanceDeployedWaiterName](#serviceinstancedeployedwaitername)
@@ -31,6 +44,8 @@ type annotations stubs module
   - [ServiceStatusType](#servicestatustype)
   - [ServiceTemplateVersionRegisteredWaiterName](#servicetemplateversionregisteredwaitername)
   - [ServiceUpdatedWaiterName](#serviceupdatedwaitername)
+  - [SyncTypeType](#synctypetype)
+  - [TemplateTypeType](#templatetypetype)
   - [TemplateVersionStatusType](#templateversionstatustype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
@@ -119,6 +134,26 @@ Values:
 
 - `list_environment_account_connections`
 
+## ListEnvironmentOutputsPaginatorName
+
+```python
+from mypy_boto3_proton.literals import ListEnvironmentOutputsPaginatorName
+```
+
+Values:
+
+- `list_environment_outputs`
+
+## ListEnvironmentProvisionedResourcesPaginatorName
+
+```python
+from mypy_boto3_proton.literals import ListEnvironmentProvisionedResourcesPaginatorName
+```
+
+Values:
+
+- `list_environment_provisioned_resources`
+
 ## ListEnvironmentTemplateVersionsPaginatorName
 
 ```python
@@ -149,6 +184,46 @@ Values:
 
 - `list_environments`
 
+## ListRepositoriesPaginatorName
+
+```python
+from mypy_boto3_proton.literals import ListRepositoriesPaginatorName
+```
+
+Values:
+
+- `list_repositories`
+
+## ListRepositorySyncDefinitionsPaginatorName
+
+```python
+from mypy_boto3_proton.literals import ListRepositorySyncDefinitionsPaginatorName
+```
+
+Values:
+
+- `list_repository_sync_definitions`
+
+## ListServiceInstanceOutputsPaginatorName
+
+```python
+from mypy_boto3_proton.literals import ListServiceInstanceOutputsPaginatorName
+```
+
+Values:
+
+- `list_service_instance_outputs`
+
+## ListServiceInstanceProvisionedResourcesPaginatorName
+
+```python
+from mypy_boto3_proton.literals import ListServiceInstanceProvisionedResourcesPaginatorName
+```
+
+Values:
+
+- `list_service_instance_provisioned_resources`
+
 ## ListServiceInstancesPaginatorName
 
 ```python
@@ -158,6 +233,26 @@ from mypy_boto3_proton.literals import ListServiceInstancesPaginatorName
 Values:
 
 - `list_service_instances`
+
+## ListServicePipelineOutputsPaginatorName
+
+```python
+from mypy_boto3_proton.literals import ListServicePipelineOutputsPaginatorName
+```
+
+Values:
+
+- `list_service_pipeline_outputs`
+
+## ListServicePipelineProvisionedResourcesPaginatorName
+
+```python
+from mypy_boto3_proton.literals import ListServicePipelineProvisionedResourcesPaginatorName
+```
+
+Values:
+
+- `list_service_pipeline_provisioned_resources`
 
 ## ListServiceTemplateVersionsPaginatorName
 
@@ -199,6 +294,17 @@ Values:
 
 - `list_tags_for_resource`
 
+## ProvisionedResourceEngineType
+
+```python
+from mypy_boto3_proton.literals import ProvisionedResourceEngineType
+```
+
+Values:
+
+- `CLOUDFORMATION`
+- `TERRAFORM`
+
 ## ProvisioningType
 
 ```python
@@ -208,6 +314,57 @@ from mypy_boto3_proton.literals import ProvisioningType
 Values:
 
 - `CUSTOMER_MANAGED`
+
+## RepositoryProviderType
+
+```python
+from mypy_boto3_proton.literals import RepositoryProviderType
+```
+
+Values:
+
+- `BITBUCKET`
+- `GITHUB`
+- `GITHUB_ENTERPRISE`
+
+## RepositorySyncStatusType
+
+```python
+from mypy_boto3_proton.literals import RepositorySyncStatusType
+```
+
+Values:
+
+- `FAILED`
+- `IN_PROGRESS`
+- `INITIATED`
+- `QUEUED`
+- `SUCCEEDED`
+
+## ResourceDeploymentStatusType
+
+```python
+from mypy_boto3_proton.literals import ResourceDeploymentStatusType
+```
+
+Values:
+
+- `FAILED`
+- `IN_PROGRESS`
+- `SUCCEEDED`
+
+## ResourceSyncStatusType
+
+```python
+from mypy_boto3_proton.literals import ResourceSyncStatusType
+```
+
+Values:
+
+- `FAILED`
+- `IN_PROGRESS`
+- `INITIATED`
+- `SUCCEEDED`
 
 ## ServiceCreatedWaiterName
 
@@ -291,6 +448,27 @@ from mypy_boto3_proton.literals import ServiceUpdatedWaiterName
 Values:
 
 - `service_updated`
+
+## SyncTypeType
+
+```python
+from mypy_boto3_proton.literals import SyncTypeType
+```
+
+Values:
+
+- `TEMPLATE_SYNC`
+
+## TemplateTypeType
+
+```python
+from mypy_boto3_proton.literals import TemplateTypeType
+```
+
+Values:
+
+- `ENVIRONMENT`
+- `SERVICE`
 
 ## TemplateVersionStatusType
 
@@ -613,10 +791,18 @@ from mypy_boto3_proton.literals import PaginatorName
 Values:
 
 - `list_environment_account_connections`
+- `list_environment_outputs`
+- `list_environment_provisioned_resources`
 - `list_environment_template_versions`
 - `list_environment_templates`
 - `list_environments`
+- `list_repositories`
+- `list_repository_sync_definitions`
+- `list_service_instance_outputs`
+- `list_service_instance_provisioned_resources`
 - `list_service_instances`
+- `list_service_pipeline_outputs`
+- `list_service_pipeline_provisioned_resources`
 - `list_service_template_versions`
 - `list_service_templates`
 - `list_services`

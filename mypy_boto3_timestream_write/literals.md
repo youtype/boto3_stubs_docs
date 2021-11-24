@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 TimestreamWrite module](#literals-for-boto3-timestreamwrite-module)
   - [DimensionValueTypeType](#dimensionvaluetypetype)
   - [MeasureValueTypeType](#measurevaluetypetype)
+  - [S3EncryptionOptionType](#s3encryptionoptiontype)
   - [TableStatusType](#tablestatustype)
   - [TimeUnitType](#timeunittype)
   - [ServiceName](#servicename)
@@ -35,7 +36,20 @@ Values:
 - `BIGINT`
 - `BOOLEAN`
 - `DOUBLE`
+- `MULTI`
+- `TIMESTAMP`
 - `VARCHAR`
+
+## S3EncryptionOptionType
+
+```python
+from mypy_boto3_timestream_write.literals import S3EncryptionOptionType
+```
+
+Values:
+
+- `SSE_KMS`
+- `SSE_S3`
 
 ## TableStatusType
 

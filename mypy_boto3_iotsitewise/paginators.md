@@ -21,6 +21,7 @@ type annotations stubs module
   - [ListPortalsPaginator](#listportalspaginator)
   - [ListProjectAssetsPaginator](#listprojectassetspaginator)
   - [ListProjectsPaginator](#listprojectspaginator)
+  - [ListTimeSeriesPaginator](#listtimeseriespaginator)
 
 ## GetAssetPropertyAggregatesPaginator
 
@@ -392,3 +393,32 @@ Arguments for `ListProjectsPaginator.paginate` method:
 
 `ListProjectsPaginator.paginate` returns
 `_PageIterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].
+
+## ListTimeSeriesPaginator
+
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("list_time_series")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_iotsitewise.paginator import ListTimeSeriesPaginator
+
+def get_list_time_series_paginator() -> ListTimeSeriesPaginator:
+    return boto3.client("iotsitewise").get_paginator("list_time_series")
+```
+
+Boto3 documentation:
+[IoTSiteWise.Paginator.ListTimeSeries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListTimeSeries)
+
+Arguments for `ListTimeSeriesPaginator.paginate` method:
+
+- `assetId`: `str`
+- `aliasPrefix`: `str`
+- `timeSeriesType`:
+  [ListTimeSeriesTypeType](./literals.md#listtimeseriestypetype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListTimeSeriesPaginator.paginate` returns
+`_PageIterator`\[[ListTimeSeriesResponseTypeDef](./type_defs.md#listtimeseriesresponsetypedef)\].

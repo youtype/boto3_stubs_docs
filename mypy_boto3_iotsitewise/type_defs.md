@@ -30,6 +30,7 @@ type annotations stubs module
   - [AssetStatusTypeDef](#assetstatustypedef)
   - [AssetSummaryTypeDef](#assetsummarytypedef)
   - [AssociateAssetsRequestRequestTypeDef](#associateassetsrequestrequesttypedef)
+  - [AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef](#associatetimeseriestoassetpropertyrequestrequesttypedef)
   - [AssociatedAssetsSummaryTypeDef](#associatedassetssummarytypedef)
   - [AttributeTypeDef](#attributetypedef)
   - [BatchAssociateProjectAssetsRequestRequestTypeDef](#batchassociateprojectassetsrequestrequesttypedef)
@@ -69,6 +70,7 @@ type annotations stubs module
   - [DeletePortalRequestRequestTypeDef](#deleteportalrequestrequesttypedef)
   - [DeletePortalResponseTypeDef](#deleteportalresponsetypedef)
   - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
+  - [DeleteTimeSeriesRequestRequestTypeDef](#deletetimeseriesrequestrequesttypedef)
   - [DescribeAccessPolicyRequestRequestTypeDef](#describeaccesspolicyrequestrequesttypedef)
   - [DescribeAccessPolicyResponseTypeDef](#describeaccesspolicyresponsetypedef)
   - [DescribeAssetModelRequestRequestTypeDef](#describeassetmodelrequestrequesttypedef)
@@ -90,8 +92,11 @@ type annotations stubs module
   - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
   - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
   - [DescribeStorageConfigurationResponseTypeDef](#describestorageconfigurationresponsetypedef)
+  - [DescribeTimeSeriesRequestRequestTypeDef](#describetimeseriesrequestrequesttypedef)
+  - [DescribeTimeSeriesResponseTypeDef](#describetimeseriesresponsetypedef)
   - [DetailedErrorTypeDef](#detailederrortypedef)
   - [DisassociateAssetsRequestRequestTypeDef](#disassociateassetsrequestrequesttypedef)
+  - [DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef](#disassociatetimeseriesfromassetpropertyrequestrequesttypedef)
   - [ErrorDetailsTypeDef](#errordetailstypedef)
   - [ExpressionVariableTypeDef](#expressionvariabletypedef)
   - [ForwardingConfigTypeDef](#forwardingconfigtypedef)
@@ -138,6 +143,8 @@ type annotations stubs module
   - [ListProjectsResponseTypeDef](#listprojectsresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTimeSeriesRequestRequestTypeDef](#listtimeseriesrequestrequesttypedef)
+  - [ListTimeSeriesResponseTypeDef](#listtimeseriesresponsetypedef)
   - [LoggingOptionsTypeDef](#loggingoptionstypedef)
   - [MeasurementProcessingConfigTypeDef](#measurementprocessingconfigtypedef)
   - [MeasurementTypeDef](#measurementtypedef)
@@ -165,6 +172,7 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TimeInNanosTypeDef](#timeinnanostypedef)
+  - [TimeSeriesSummaryTypeDef](#timeseriessummarytypedef)
   - [TransformProcessingConfigTypeDef](#transformprocessingconfigtypedef)
   - [TransformTypeDef](#transformtypedef)
   - [TumblingWindowTypeDef](#tumblingwindowtypedef)
@@ -523,6 +531,22 @@ Required fields:
 - `assetId`: `str`
 - `hierarchyId`: `str`
 - `childAssetId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `alias`: `str`
+- `assetId`: `str`
+- `propertyId`: `str`
 
 Optional fields:
 
@@ -1084,6 +1108,19 @@ Optional fields:
 
 - `clientToken`: `str`
 
+## DeleteTimeSeriesRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DeleteTimeSeriesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `alias`: `str`
+- `assetId`: `str`
+- `propertyId`: `str`
+- `clientToken`: `str`
+
 ## DescribeAccessPolicyRequestRequestTypeDef
 
 ```python
@@ -1399,9 +1436,42 @@ Required fields:
 - `storageType`: [StorageTypeType](./literals.md#storagetypetype)
 - `multiLayerStorage`:
   [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
+- `disassociatedDataStorage`:
+  [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
 - `configurationStatus`:
   [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
 - `lastUpdateDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeTimeSeriesRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribeTimeSeriesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `alias`: `str`
+- `assetId`: `str`
+- `propertyId`: `str`
+
+## DescribeTimeSeriesResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribeTimeSeriesResponseTypeDef
+```
+
+Required fields:
+
+- `assetId`: `str`
+- `propertyId`: `str`
+- `alias`: `str`
+- `timeSeriesId`: `str`
+- `dataType`: [PropertyDataTypeType](./literals.md#propertydatatypetype)
+- `dataTypeSpec`: `str`
+- `timeSeriesCreationDate`: `datetime`
+- `timeSeriesLastUpdateDate`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1427,6 +1497,22 @@ Required fields:
 - `assetId`: `str`
 - `hierarchyId`: `str`
 - `childAssetId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `alias`: `str`
+- `assetId`: `str`
+- `propertyId`: `str`
 
 Optional fields:
 
@@ -2057,6 +2143,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListTimeSeriesRequestRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListTimeSeriesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `assetId`: `str`
+- `aliasPrefix`: `str`
+- `timeSeriesType`:
+  [ListTimeSeriesTypeType](./literals.md#listtimeseriestypetype)
+
+## ListTimeSeriesResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListTimeSeriesResponseTypeDef
+```
+
+Required fields:
+
+- `TimeSeriesSummaries`:
+  `List`\[[TimeSeriesSummaryTypeDef](./type_defs.md#timeseriessummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## LoggingOptionsTypeDef
 
 ```python
@@ -2350,6 +2465,8 @@ Optional fields:
 
 - `multiLayerStorage`:
   [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
+- `disassociatedDataStorage`:
+  [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
 
 ## PutStorageConfigurationResponseTypeDef
 
@@ -2362,6 +2479,8 @@ Required fields:
 - `storageType`: [StorageTypeType](./literals.md#storagetypetype)
 - `multiLayerStorage`:
   [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
+- `disassociatedDataStorage`:
+  [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
 - `configurationStatus`:
   [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
 - `ResponseMetadata`:
@@ -2416,6 +2535,26 @@ Required fields:
 Optional fields:
 
 - `offsetInNanos`: `int`
+
+## TimeSeriesSummaryTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import TimeSeriesSummaryTypeDef
+```
+
+Required fields:
+
+- `timeSeriesId`: `str`
+- `dataType`: [PropertyDataTypeType](./literals.md#propertydatatypetype)
+- `timeSeriesCreationDate`: `datetime`
+- `timeSeriesLastUpdateDate`: `datetime`
+
+Optional fields:
+
+- `assetId`: `str`
+- `propertyId`: `str`
+- `alias`: `str`
+- `dataTypeSpec`: `str`
 
 ## TransformProcessingConfigTypeDef
 

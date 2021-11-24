@@ -11,7 +11,10 @@ type annotations stubs module
   - [AddProfileKeyRequestRequestTypeDef](#addprofilekeyrequestrequesttypedef)
   - [AddProfileKeyResponseTypeDef](#addprofilekeyresponsetypedef)
   - [AddressTypeDef](#addresstypedef)
+  - [AutoMergingTypeDef](#automergingtypedef)
+  - [ConflictResolutionTypeDef](#conflictresolutiontypedef)
   - [ConnectorOperatorTypeDef](#connectoroperatortypedef)
+  - [ConsolidationTypeDef](#consolidationtypedef)
   - [CreateDomainRequestRequestTypeDef](#createdomainrequestrequesttypedef)
   - [CreateDomainResponseTypeDef](#createdomainresponsetypedef)
   - [CreateProfileRequestRequestTypeDef](#createprofilerequestrequesttypedef)
@@ -29,10 +32,16 @@ type annotations stubs module
   - [DeleteProfileRequestRequestTypeDef](#deleteprofilerequestrequesttypedef)
   - [DeleteProfileResponseTypeDef](#deleteprofileresponsetypedef)
   - [DomainStatsTypeDef](#domainstatstypedef)
+  - [ExportingConfigTypeDef](#exportingconfigtypedef)
+  - [ExportingLocationTypeDef](#exportinglocationtypedef)
   - [FieldSourceProfileIdsTypeDef](#fieldsourceprofileidstypedef)
   - [FlowDefinitionTypeDef](#flowdefinitiontypedef)
+  - [GetAutoMergingPreviewRequestRequestTypeDef](#getautomergingpreviewrequestrequesttypedef)
+  - [GetAutoMergingPreviewResponseTypeDef](#getautomergingpreviewresponsetypedef)
   - [GetDomainRequestRequestTypeDef](#getdomainrequestrequesttypedef)
   - [GetDomainResponseTypeDef](#getdomainresponsetypedef)
+  - [GetIdentityResolutionJobRequestRequestTypeDef](#getidentityresolutionjobrequestrequesttypedef)
+  - [GetIdentityResolutionJobResponseTypeDef](#getidentityresolutionjobresponsetypedef)
   - [GetIntegrationRequestRequestTypeDef](#getintegrationrequestrequesttypedef)
   - [GetIntegrationResponseTypeDef](#getintegrationresponsetypedef)
   - [GetMatchesRequestRequestTypeDef](#getmatchesrequestrequesttypedef)
@@ -41,12 +50,17 @@ type annotations stubs module
   - [GetProfileObjectTypeResponseTypeDef](#getprofileobjecttyperesponsetypedef)
   - [GetProfileObjectTypeTemplateRequestRequestTypeDef](#getprofileobjecttypetemplaterequestrequesttypedef)
   - [GetProfileObjectTypeTemplateResponseTypeDef](#getprofileobjecttypetemplateresponsetypedef)
+  - [IdentityResolutionJobTypeDef](#identityresolutionjobtypedef)
   - [IncrementalPullConfigTypeDef](#incrementalpullconfigtypedef)
+  - [JobScheduleTypeDef](#jobscheduletypedef)
+  - [JobStatsTypeDef](#jobstatstypedef)
   - [ListAccountIntegrationsRequestRequestTypeDef](#listaccountintegrationsrequestrequesttypedef)
   - [ListAccountIntegrationsResponseTypeDef](#listaccountintegrationsresponsetypedef)
   - [ListDomainItemTypeDef](#listdomainitemtypedef)
   - [ListDomainsRequestRequestTypeDef](#listdomainsrequestrequesttypedef)
   - [ListDomainsResponseTypeDef](#listdomainsresponsetypedef)
+  - [ListIdentityResolutionJobsRequestRequestTypeDef](#listidentityresolutionjobsrequestrequesttypedef)
+  - [ListIdentityResolutionJobsResponseTypeDef](#listidentityresolutionjobsresponsetypedef)
   - [ListIntegrationItemTypeDef](#listintegrationitemtypedef)
   - [ListIntegrationsRequestRequestTypeDef](#listintegrationsrequestrequesttypedef)
   - [ListIntegrationsResponseTypeDef](#listintegrationsresponsetypedef)
@@ -78,6 +92,8 @@ type annotations stubs module
   - [PutProfileObjectTypeRequestRequestTypeDef](#putprofileobjecttyperequestrequesttypedef)
   - [PutProfileObjectTypeResponseTypeDef](#putprofileobjecttyperesponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [S3ExportingConfigTypeDef](#s3exportingconfigtypedef)
+  - [S3ExportingLocationTypeDef](#s3exportinglocationtypedef)
   - [S3SourcePropertiesTypeDef](#s3sourcepropertiestypedef)
   - [SalesforceSourcePropertiesTypeDef](#salesforcesourcepropertiestypedef)
   - [ScheduledTriggerPropertiesTypeDef](#scheduledtriggerpropertiestypedef)
@@ -143,6 +159,37 @@ Optional fields:
 - `Country`: `str`
 - `PostalCode`: `str`
 
+## AutoMergingTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import AutoMergingTypeDef
+```
+
+Required fields:
+
+- `Enabled`: `bool`
+
+Optional fields:
+
+- `Consolidation`: [ConsolidationTypeDef](./type_defs.md#consolidationtypedef)
+- `ConflictResolution`:
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
+
+## ConflictResolutionTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import ConflictResolutionTypeDef
+```
+
+Required fields:
+
+- `ConflictResolvingModel`:
+  [ConflictResolvingModelType](./literals.md#conflictresolvingmodeltype)
+
+Optional fields:
+
+- `SourceName`: `str`
+
 ## ConnectorOperatorTypeDef
 
 ```python
@@ -160,6 +207,16 @@ Optional fields:
   [ServiceNowConnectorOperatorType](./literals.md#servicenowconnectoroperatortype)
 - `Zendesk`:
   [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
+
+## ConsolidationTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import ConsolidationTypeDef
+```
+
+Required fields:
+
+- `MatchingAttributesList`: `Sequence`\[`Sequence`\[`str`\]\]
 
 ## CreateDomainRequestRequestTypeDef
 
@@ -398,6 +455,28 @@ Optional fields:
 - `ObjectCount`: `int`
 - `TotalSize`: `int`
 
+## ExportingConfigTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import ExportingConfigTypeDef
+```
+
+Optional fields:
+
+- `S3Exporting`:
+  [S3ExportingConfigTypeDef](./type_defs.md#s3exportingconfigtypedef)
+
+## ExportingLocationTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import ExportingLocationTypeDef
+```
+
+Optional fields:
+
+- `S3Exporting`:
+  [S3ExportingLocationTypeDef](./type_defs.md#s3exportinglocationtypedef)
+
 ## FieldSourceProfileIdsTypeDef
 
 ```python
@@ -447,6 +526,34 @@ Optional fields:
 
 - `Description`: `str`
 
+## GetAutoMergingPreviewRequestRequestTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import GetAutoMergingPreviewRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+- `Consolidation`: [ConsolidationTypeDef](./type_defs.md#consolidationtypedef)
+- `ConflictResolution`:
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
+
+## GetAutoMergingPreviewResponseTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import GetAutoMergingPreviewResponseTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+- `NumberOfMatchesInSample`: `int`
+- `NumberOfProfilesInSample`: `int`
+- `NumberOfProfilesWillBeMerged`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetDomainRequestRequestTypeDef
 
 ```python
@@ -474,6 +581,41 @@ Required fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetIdentityResolutionJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import GetIdentityResolutionJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+- `JobId`: `str`
+
+## GetIdentityResolutionJobResponseTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import GetIdentityResolutionJobResponseTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+- `JobId`: `str`
+- `Status`:
+  [IdentityResolutionJobStatusType](./literals.md#identityresolutionjobstatustype)
+- `Message`: `str`
+- `JobStartTime`: `datetime`
+- `JobEndTime`: `datetime`
+- `LastUpdatedAt`: `datetime`
+- `JobExpirationTime`: `datetime`
+- `AutoMerging`: [AutoMergingTypeDef](./type_defs.md#automergingtypedef)
+- `ExportingLocation`:
+  [ExportingLocationTypeDef](./type_defs.md#exportinglocationtypedef)
+- `JobStats`: [JobStatsTypeDef](./type_defs.md#jobstatstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -560,6 +702,7 @@ Required fields:
 - `ExpirationDays`: `int`
 - `EncryptionKey`: `str`
 - `AllowProfileCreation`: `bool`
+- `SourceLastUpdatedTimestampFormat`: `str`
 - `Fields`: `Dict`\[`str`,
   [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)\]
 - `Keys`: `Dict`\[`str`,
@@ -592,12 +735,32 @@ Required fields:
 - `SourceName`: `str`
 - `SourceObject`: `str`
 - `AllowProfileCreation`: `bool`
+- `SourceLastUpdatedTimestampFormat`: `str`
 - `Fields`: `Dict`\[`str`,
   [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)\]
 - `Keys`: `Dict`\[`str`,
   `List`\[[ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef)\]\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## IdentityResolutionJobTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import IdentityResolutionJobTypeDef
+```
+
+Optional fields:
+
+- `DomainName`: `str`
+- `JobId`: `str`
+- `Status`:
+  [IdentityResolutionJobStatusType](./literals.md#identityresolutionjobstatustype)
+- `JobStartTime`: `datetime`
+- `JobEndTime`: `datetime`
+- `JobStats`: [JobStatsTypeDef](./type_defs.md#jobstatstypedef)
+- `ExportingLocation`:
+  [ExportingLocationTypeDef](./type_defs.md#exportinglocationtypedef)
+- `Message`: `str`
 
 ## IncrementalPullConfigTypeDef
 
@@ -608,6 +771,30 @@ from mypy_boto3_customer_profiles.type_defs import IncrementalPullConfigTypeDef
 Optional fields:
 
 - `DatetimeTypeFieldName`: `str`
+
+## JobScheduleTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import JobScheduleTypeDef
+```
+
+Required fields:
+
+- `DayOfTheWeek`:
+  [JobScheduleDayOfTheWeekType](./literals.md#jobscheduledayoftheweektype)
+- `Time`: `str`
+
+## JobStatsTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import JobStatsTypeDef
+```
+
+Optional fields:
+
+- `NumberOfProfilesReviewed`: `int`
+- `NumberOfMatchesFound`: `int`
+- `NumberOfMergesDone`: `int`
 
 ## ListAccountIntegrationsRequestRequestTypeDef
 
@@ -675,6 +862,35 @@ Required fields:
 
 - `Items`:
   `List`\[[ListDomainItemTypeDef](./type_defs.md#listdomainitemtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListIdentityResolutionJobsRequestRequestTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import ListIdentityResolutionJobsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListIdentityResolutionJobsResponseTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import ListIdentityResolutionJobsResponseTypeDef
+```
+
+Required fields:
+
+- `IdentityResolutionJobsList`:
+  `List`\[[IdentityResolutionJobTypeDef](./type_defs.md#identityresolutionjobtypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -895,6 +1111,7 @@ Optional fields:
 
 - `MatchId`: `str`
 - `ProfileIds`: `List`\[`str`\]
+- `ConfidenceScore`: `float`
 
 ## MatchingRequestTypeDef
 
@@ -906,6 +1123,13 @@ Required fields:
 
 - `Enabled`: `bool`
 
+Optional fields:
+
+- `JobSchedule`: [JobScheduleTypeDef](./type_defs.md#jobscheduletypedef)
+- `AutoMerging`: [AutoMergingTypeDef](./type_defs.md#automergingtypedef)
+- `ExportingConfig`:
+  [ExportingConfigTypeDef](./type_defs.md#exportingconfigtypedef)
+
 ## MatchingResponseTypeDef
 
 ```python
@@ -915,6 +1139,10 @@ from mypy_boto3_customer_profiles.type_defs import MatchingResponseTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
+- `JobSchedule`: [JobScheduleTypeDef](./type_defs.md#jobscheduletypedef)
+- `AutoMerging`: [AutoMergingTypeDef](./type_defs.md#automergingtypedef)
+- `ExportingConfig`:
+  [ExportingConfigTypeDef](./type_defs.md#exportingconfigtypedef)
 
 ## MergeProfilesRequestRequestTypeDef
 
@@ -1088,6 +1316,7 @@ Optional fields:
 - `ExpirationDays`: `int`
 - `EncryptionKey`: `str`
 - `AllowProfileCreation`: `bool`
+- `SourceLastUpdatedTimestampFormat`: `str`
 - `Fields`: `Mapping`\[`str`,
   [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)\]
 - `Keys`: `Mapping`\[`str`,
@@ -1108,6 +1337,7 @@ Required fields:
 - `ExpirationDays`: `int`
 - `EncryptionKey`: `str`
 - `AllowProfileCreation`: `bool`
+- `SourceLastUpdatedTimestampFormat`: `str`
 - `Fields`: `Dict`\[`str`,
   [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)\]
 - `Keys`: `Dict`\[`str`,
@@ -1131,6 +1361,31 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## S3ExportingConfigTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import S3ExportingConfigTypeDef
+```
+
+Required fields:
+
+- `S3BucketName`: `str`
+
+Optional fields:
+
+- `S3KeyName`: `str`
+
+## S3ExportingLocationTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import S3ExportingLocationTypeDef
+```
+
+Optional fields:
+
+- `S3BucketName`: `str`
+- `S3KeyName`: `str`
 
 ## S3SourcePropertiesTypeDef
 

@@ -109,8 +109,11 @@ type annotations stubs module
   - [MemoryGiBPerVCpuRequestTypeDef](#memorygibpervcpurequesttypedef)
   - [MemoryMiBRequestTypeDef](#memorymibrequesttypedef)
   - [MetricCollectionTypeTypeDef](#metriccollectiontypetypedef)
+  - [MetricDataQueryTypeDef](#metricdataquerytypedef)
   - [MetricDimensionTypeDef](#metricdimensiontypedef)
   - [MetricGranularityTypeTypeDef](#metricgranularitytypetypedef)
+  - [MetricStatTypeDef](#metricstattypedef)
+  - [MetricTypeDef](#metrictypedef)
   - [MixedInstancesPolicyTypeDef](#mixedinstancespolicytypedef)
   - [NetworkInterfaceCountRequestTypeDef](#networkinterfacecountrequesttypedef)
   - [NotificationConfigurationTypeDef](#notificationconfigurationtypedef)
@@ -119,6 +122,9 @@ type annotations stubs module
   - [PolicyARNTypeTypeDef](#policyarntypetypedef)
   - [PredefinedMetricSpecificationTypeDef](#predefinedmetricspecificationtypedef)
   - [PredictiveScalingConfigurationTypeDef](#predictivescalingconfigurationtypedef)
+  - [PredictiveScalingCustomizedCapacityMetricTypeDef](#predictivescalingcustomizedcapacitymetrictypedef)
+  - [PredictiveScalingCustomizedLoadMetricTypeDef](#predictivescalingcustomizedloadmetrictypedef)
+  - [PredictiveScalingCustomizedScalingMetricTypeDef](#predictivescalingcustomizedscalingmetrictypedef)
   - [PredictiveScalingMetricSpecificationTypeDef](#predictivescalingmetricspecificationtypedef)
   - [PredictiveScalingPredefinedLoadMetricTypeDef](#predictivescalingpredefinedloadmetrictypedef)
   - [PredictiveScalingPredefinedMetricPairTypeDef](#predictivescalingpredefinedmetricpairtypedef)
@@ -1657,6 +1663,23 @@ Optional fields:
 
 - `Metric`: `str`
 
+## MetricDataQueryTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import MetricDataQueryTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `Expression`: `str`
+- `MetricStat`: [MetricStatTypeDef](./type_defs.md#metricstattypedef)
+- `Label`: `str`
+- `ReturnData`: `bool`
+
 ## MetricDimensionTypeDef
 
 ```python
@@ -1677,6 +1700,37 @@ from mypy_boto3_autoscaling.type_defs import MetricGranularityTypeTypeDef
 Optional fields:
 
 - `Granularity`: `str`
+
+## MetricStatTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import MetricStatTypeDef
+```
+
+Required fields:
+
+- `Metric`: [MetricTypeDef](./type_defs.md#metrictypedef)
+- `Stat`: `str`
+
+Optional fields:
+
+- `Unit`: `str`
+
+## MetricTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import MetricTypeDef
+```
+
+Required fields:
+
+- `Namespace`: `str`
+- `MetricName`: `str`
+
+Optional fields:
+
+- `Dimensions`:
+  `List`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 
 ## MixedInstancesPolicyTypeDef
 
@@ -1786,6 +1840,39 @@ Optional fields:
   [PredictiveScalingMaxCapacityBreachBehaviorType](./literals.md#predictivescalingmaxcapacitybreachbehaviortype)
 - `MaxCapacityBuffer`: `int`
 
+## PredictiveScalingCustomizedCapacityMetricTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingCustomizedCapacityMetricTypeDef
+```
+
+Required fields:
+
+- `MetricDataQueries`:
+  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+
+## PredictiveScalingCustomizedLoadMetricTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingCustomizedLoadMetricTypeDef
+```
+
+Required fields:
+
+- `MetricDataQueries`:
+  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+
+## PredictiveScalingCustomizedScalingMetricTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingCustomizedScalingMetricTypeDef
+```
+
+Required fields:
+
+- `MetricDataQueries`:
+  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+
 ## PredictiveScalingMetricSpecificationTypeDef
 
 ```python
@@ -1804,6 +1891,12 @@ Optional fields:
   [PredictiveScalingPredefinedScalingMetricTypeDef](./type_defs.md#predictivescalingpredefinedscalingmetrictypedef)
 - `PredefinedLoadMetricSpecification`:
   [PredictiveScalingPredefinedLoadMetricTypeDef](./type_defs.md#predictivescalingpredefinedloadmetrictypedef)
+- `CustomizedScalingMetricSpecification`:
+  [PredictiveScalingCustomizedScalingMetricTypeDef](./type_defs.md#predictivescalingcustomizedscalingmetrictypedef)
+- `CustomizedLoadMetricSpecification`:
+  [PredictiveScalingCustomizedLoadMetricTypeDef](./type_defs.md#predictivescalingcustomizedloadmetrictypedef)
+- `CustomizedCapacityMetricSpecification`:
+  [PredictiveScalingCustomizedCapacityMetricTypeDef](./type_defs.md#predictivescalingcustomizedcapacitymetrictypedef)
 
 ## PredictiveScalingPredefinedLoadMetricTypeDef
 

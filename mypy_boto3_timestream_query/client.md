@@ -14,9 +14,19 @@ type annotations stubs module
     - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_query](#cancel_query)
+    - [create_scheduled_query](#create_scheduled_query)
+    - [delete_scheduled_query](#delete_scheduled_query)
     - [describe_endpoints](#describe_endpoints)
+    - [describe_scheduled_query](#describe_scheduled_query)
+    - [execute_scheduled_query](#execute_scheduled_query)
     - [generate_presigned_url](#generate_presigned_url)
+    - [list_scheduled_queries](#list_scheduled_queries)
+    - [list_tags_for_resource](#list_tags_for_resource)
+    - [prepare_query](#prepare_query)
     - [query](#query)
+    - [tag_resource](#tag_resource)
+    - [untag_resource](#untag_resource)
+    - [update_scheduled_query](#update_scheduled_query)
     - [get_paginator](#get_paginator)
 
 ## TimestreamQueryClient
@@ -55,6 +65,8 @@ Exceptions:
 - `Exceptions.InternalServerException`
 - `Exceptions.InvalidEndpointException`
 - `Exceptions.QueryExecutionException`
+- `Exceptions.ResourceNotFoundException`
+- `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
@@ -105,6 +117,60 @@ Keyword-only arguments:
 Returns
 [CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef).
 
+### create_scheduled_query
+
+Create a scheduled query that will be run on your behalf at the configured
+schedule.
+
+Type annotations for `boto3.client("timestream-query").create_scheduled_query`
+method.
+
+Boto3 documentation:
+[TimestreamQuery.Client.create_scheduled_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.create_scheduled_query)
+
+Arguments mapping described in
+[CreateScheduledQueryRequestRequestTypeDef](./type_defs.md#createscheduledqueryrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `QueryString`: `str` *(required)*
+- `ScheduleConfiguration`:
+  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
+  *(required)*
+- `NotificationConfiguration`:
+  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
+  *(required)*
+- `ScheduledQueryExecutionRoleArn`: `str` *(required)*
+- `ErrorReportConfiguration`:
+  [ErrorReportConfigurationTypeDef](./type_defs.md#errorreportconfigurationtypedef)
+  *(required)*
+- `TargetConfiguration`:
+  [TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef)
+- `ClientToken`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `KmsKeyId`: `str`
+
+Returns
+[CreateScheduledQueryResponseTypeDef](./type_defs.md#createscheduledqueryresponsetypedef).
+
+### delete_scheduled_query
+
+Deletes a given scheduled query.
+
+Type annotations for `boto3.client("timestream-query").delete_scheduled_query`
+method.
+
+Boto3 documentation:
+[TimestreamQuery.Client.delete_scheduled_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.delete_scheduled_query)
+
+Arguments mapping described in
+[DeleteScheduledQueryRequestRequestTypeDef](./type_defs.md#deletescheduledqueryrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ScheduledQueryArn`: `str` *(required)*
+
 ### describe_endpoints
 
 DescribeEndpoints returns a list of available endpoints to make Timestream API
@@ -118,6 +184,45 @@ Boto3 documentation:
 
 Returns
 [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
+
+### describe_scheduled_query
+
+Provides detailed information about a scheduled query.
+
+Type annotations for
+`boto3.client("timestream-query").describe_scheduled_query` method.
+
+Boto3 documentation:
+[TimestreamQuery.Client.describe_scheduled_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.describe_scheduled_query)
+
+Arguments mapping described in
+[DescribeScheduledQueryRequestRequestTypeDef](./type_defs.md#describescheduledqueryrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ScheduledQueryArn`: `str` *(required)*
+
+Returns
+[DescribeScheduledQueryResponseTypeDef](./type_defs.md#describescheduledqueryresponsetypedef).
+
+### execute_scheduled_query
+
+You can use this API to run a scheduled query manually.
+
+Type annotations for `boto3.client("timestream-query").execute_scheduled_query`
+method.
+
+Boto3 documentation:
+[TimestreamQuery.Client.execute_scheduled_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.execute_scheduled_query)
+
+Arguments mapping described in
+[ExecuteScheduledQueryRequestRequestTypeDef](./type_defs.md#executescheduledqueryrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ScheduledQueryArn`: `str` *(required)*
+- `InvocationTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `ClientToken`: `str`
 
 ### generate_presigned_url
 
@@ -138,9 +243,74 @@ Arguments:
 
 Returns `str`.
 
+### list_scheduled_queries
+
+Gets a list of all scheduled queries in the caller's Amazon account and Region.
+
+Type annotations for `boto3.client("timestream-query").list_scheduled_queries`
+method.
+
+Boto3 documentation:
+[TimestreamQuery.Client.list_scheduled_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.list_scheduled_queries)
+
+Arguments mapping described in
+[ListScheduledQueriesRequestRequestTypeDef](./type_defs.md#listscheduledqueriesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListScheduledQueriesResponseTypeDef](./type_defs.md#listscheduledqueriesresponsetypedef).
+
+### list_tags_for_resource
+
+List all tags on a Timestream query resource.
+
+Type annotations for `boto3.client("timestream-query").list_tags_for_resource`
+method.
+
+Boto3 documentation:
+[TimestreamQuery.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+### prepare_query
+
+A synchronous operation that allows you to submit a query with parameters to be
+stored by Timestream for later running.
+
+Type annotations for `boto3.client("timestream-query").prepare_query` method.
+
+Boto3 documentation:
+[TimestreamQuery.Client.prepare_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.prepare_query)
+
+Arguments mapping described in
+[PrepareQueryRequestRequestTypeDef](./type_defs.md#preparequeryrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `QueryString`: `str` *(required)*
+- `ValidateOnly`: `bool`
+
+Returns
+[PrepareQueryResponseTypeDef](./type_defs.md#preparequeryresponsetypedef).
+
 ### query
 
-Query is a synchronous operation that enables you to execute a query.
+`Query` is a synchronous operation that enables you to run a query against your
+Amazon Timestream data.
 
 Type annotations for `boto3.client("timestream-query").query` method.
 
@@ -159,10 +329,71 @@ Keyword-only arguments:
 
 Returns [QueryResponseTypeDef](./type_defs.md#queryresponsetypedef).
 
+### tag_resource
+
+Associate a set of tags with a Timestream resource.
+
+Type annotations for `boto3.client("timestream-query").tag_resource` method.
+
+Boto3 documentation:
+[TimestreamQuery.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### untag_resource
+
+Removes the association of tags from a Timestream query resource.
+
+Type annotations for `boto3.client("timestream-query").untag_resource` method.
+
+Boto3 documentation:
+[TimestreamQuery.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### update_scheduled_query
+
+Update a scheduled query.
+
+Type annotations for `boto3.client("timestream-query").update_scheduled_query`
+method.
+
+Boto3 documentation:
+[TimestreamQuery.Client.update_scheduled_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.update_scheduled_query)
+
+Arguments mapping described in
+[UpdateScheduledQueryRequestRequestTypeDef](./type_defs.md#updatescheduledqueryrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ScheduledQueryArn`: `str` *(required)*
+- `State`: [ScheduledQueryStateType](./literals.md#scheduledquerystatetype)
+  *(required)*
+
 ### get_paginator
 
 Type annotations for `boto3.client("timestream-query").get_paginator` method
 with overloads.
 
+- `client.get_paginator("list_scheduled_queries")` ->
+  [ListScheduledQueriesPaginator](./paginators.md#listscheduledqueriespaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 - `client.get_paginator("query")` ->
   [QueryPaginator](./paginators.md#querypaginator)
