@@ -37,10 +37,12 @@ from mypy_boto3_mgn.client import mgnClient
 - [delete_job](./client.md#delete_job)
 - [delete_replication_configuration_template](./client.md#delete_replication_configuration_template)
 - [delete_source_server](./client.md#delete_source_server)
+- [delete_vcenter_client](./client.md#delete_vcenter_client)
 - [describe_job_log_items](./client.md#describe_job_log_items)
 - [describe_jobs](./client.md#describe_jobs)
 - [describe_replication_configuration_templates](./client.md#describe_replication_configuration_templates)
 - [describe_source_servers](./client.md#describe_source_servers)
+- [describe_vcenter_clients](./client.md#describe_vcenter_clients)
 - [disconnect_from_service](./client.md#disconnect_from_service)
 - [exceptions](./client.md#exceptions)
 - [finalize_cutover](./client.md#finalize_cutover)
@@ -53,6 +55,7 @@ from mypy_boto3_mgn.client import mgnClient
 - [mark_as_archived](./client.md#mark_as_archived)
 - [retry_data_replication](./client.md#retry_data_replication)
 - [start_cutover](./client.md#start_cutover)
+- [start_replication](./client.md#start_replication)
 - [start_test](./client.md#start_test)
 - [tag_resource](./client.md#tag_resource)
 - [terminate_target_instances](./client.md#terminate_target_instances)
@@ -60,6 +63,7 @@ from mypy_boto3_mgn.client import mgnClient
 - [update_launch_configuration](./client.md#update_launch_configuration)
 - [update_replication_configuration](./client.md#update_replication_configuration)
 - [update_replication_configuration_template](./client.md#update_replication_configuration_template)
+- [update_source_server_replication_type](./client.md#update_source_server_replication_type)
 
 ### Exceptions
 
@@ -70,6 +74,7 @@ mgnClient [exceptions](./client.md#exceptions)
 - ConflictException
 - InternalServerException
 - ResourceNotFoundException
+- ServiceQuotaExceededException
 - ThrottlingException
 - UninitializedAccountException
 - ValidationException
@@ -89,6 +94,7 @@ from mypy_boto3_mgn.paginators import DescribeJobLogItemsPaginator, ...
 - [DescribeJobsPaginator](./paginators.md#describejobspaginator)
 - [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
 - [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
+- [DescribeVcenterClientsPaginator](./paginators.md#describevcenterclientspaginator)
 
 ## Literals
 
@@ -109,6 +115,7 @@ from mypy_boto3_mgn.literals import ChangeServerLifeCycleStateSourceServerLifecy
 - [DescribeJobsPaginatorName](./literals.md#describejobspaginatorname)
 - [DescribeReplicationConfigurationTemplatesPaginatorName](./literals.md#describereplicationconfigurationtemplatespaginatorname)
 - [DescribeSourceServersPaginatorName](./literals.md#describesourceserverspaginatorname)
+- [DescribeVcenterClientsPaginatorName](./literals.md#describevcenterclientspaginatorname)
 - [FirstBootType](./literals.md#firstboottype)
 - [InitiatedByType](./literals.md#initiatedbytype)
 - [JobLogEventType](./literals.md#joblogeventtype)
@@ -121,6 +128,7 @@ from mypy_boto3_mgn.literals import ChangeServerLifeCycleStateSourceServerLifecy
 - [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
 - [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
 - [ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype)
+- [ReplicationTypeType](./literals.md#replicationtypetype)
 - [TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
@@ -148,6 +156,7 @@ from mypy_boto3_mgn.type_defs import CPUTypeDef, ...
 - [DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef)
 - [DeleteReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationtemplaterequestrequesttypedef)
 - [DeleteSourceServerRequestRequestTypeDef](./type_defs.md#deletesourceserverrequestrequesttypedef)
+- [DeleteVcenterClientRequestRequestTypeDef](./type_defs.md#deletevcenterclientrequestrequesttypedef)
 - [DescribeJobLogItemsRequestRequestTypeDef](./type_defs.md#describejoblogitemsrequestrequesttypedef)
 - [DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef)
 - [DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef)
@@ -158,6 +167,8 @@ from mypy_boto3_mgn.type_defs import CPUTypeDef, ...
 - [DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef)
 - [DescribeSourceServersRequestRequestTypeDef](./type_defs.md#describesourceserversrequestrequesttypedef)
 - [DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef)
+- [DescribeVcenterClientsRequestRequestTypeDef](./type_defs.md#describevcenterclientsrequestrequesttypedef)
+- [DescribeVcenterClientsResponseTypeDef](./type_defs.md#describevcenterclientsresponsetypedef)
 - [DisconnectFromServiceRequestRequestTypeDef](./type_defs.md#disconnectfromservicerequestrequesttypedef)
 - [DiskTypeDef](./type_defs.md#disktypedef)
 - [FinalizeCutoverRequestRequestTypeDef](./type_defs.md#finalizecutoverrequestrequesttypedef)
@@ -197,6 +208,7 @@ from mypy_boto3_mgn.type_defs import CPUTypeDef, ...
 - [SourceServerTypeDef](./type_defs.md#sourceservertypedef)
 - [StartCutoverRequestRequestTypeDef](./type_defs.md#startcutoverrequestrequesttypedef)
 - [StartCutoverResponseTypeDef](./type_defs.md#startcutoverresponsetypedef)
+- [StartReplicationRequestRequestTypeDef](./type_defs.md#startreplicationrequestrequesttypedef)
 - [StartTestRequestRequestTypeDef](./type_defs.md#starttestrequestrequesttypedef)
 - [StartTestResponseTypeDef](./type_defs.md#starttestresponsetypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
@@ -206,3 +218,5 @@ from mypy_boto3_mgn.type_defs import CPUTypeDef, ...
 - [UpdateLaunchConfigurationRequestRequestTypeDef](./type_defs.md#updatelaunchconfigurationrequestrequesttypedef)
 - [UpdateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationrequestrequesttypedef)
 - [UpdateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationtemplaterequestrequesttypedef)
+- [UpdateSourceServerReplicationTypeRequestRequestTypeDef](./type_defs.md#updatesourceserverreplicationtyperequestrequesttypedef)
+- [VcenterClientTypeDef](./type_defs.md#vcenterclienttypedef)

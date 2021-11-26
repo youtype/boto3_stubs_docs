@@ -155,10 +155,7 @@ Returns `str`.
 
 ### get_endpoint
 
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/iotdev iceadvisor-2020-09-18/GetEndpoint>`\_
-**Request Syntax** response = client.get_endpoint( thingArn='string',
-certificateArn='string' ).
+Gets information about an Device Advisor endpoint.
 
 Type annotations for `boto3.client("iotdeviceadvisor").get_endpoint` method.
 
@@ -262,7 +259,7 @@ Returns
 
 ### list_suite_runs
 
-Lists the runs of the specified Device Advisor test suite.
+Lists runs of the specified Device Advisor test suite.
 
 Type annotations for `boto3.client("iotdeviceadvisor").list_suite_runs` method.
 

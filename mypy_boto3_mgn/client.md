@@ -18,10 +18,12 @@ type annotations stubs module
     - [delete_job](#delete_job)
     - [delete_replication_configuration_template](#delete_replication_configuration_template)
     - [delete_source_server](#delete_source_server)
+    - [delete_vcenter_client](#delete_vcenter_client)
     - [describe_job_log_items](#describe_job_log_items)
     - [describe_jobs](#describe_jobs)
     - [describe_replication_configuration_templates](#describe_replication_configuration_templates)
     - [describe_source_servers](#describe_source_servers)
+    - [describe_vcenter_clients](#describe_vcenter_clients)
     - [disconnect_from_service](#disconnect_from_service)
     - [finalize_cutover](#finalize_cutover)
     - [generate_presigned_url](#generate_presigned_url)
@@ -32,6 +34,7 @@ type annotations stubs module
     - [mark_as_archived](#mark_as_archived)
     - [retry_data_replication](#retry_data_replication)
     - [start_cutover](#start_cutover)
+    - [start_replication](#start_replication)
     - [start_test](#start_test)
     - [tag_resource](#tag_resource)
     - [terminate_target_instances](#terminate_target_instances)
@@ -39,6 +42,7 @@ type annotations stubs module
     - [update_launch_configuration](#update_launch_configuration)
     - [update_replication_configuration](#update_replication_configuration)
     - [update_replication_configuration_template](#update_replication_configuration_template)
+    - [update_source_server_replication_type](#update_source_server_replication_type)
     - [get_paginator](#get_paginator)
 
 ## mgnClient
@@ -76,6 +80,7 @@ Exceptions:
 - `Exceptions.ConflictException`
 - `Exceptions.InternalServerException`
 - `Exceptions.ResourceNotFoundException`
+- `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ThrottlingException`
 - `Exceptions.UninitializedAccountException`
 - `Exceptions.ValidationException`
@@ -228,6 +233,22 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### delete_vcenter_client
+
+Deletes a single vCenter client by ID.
+
+Type annotations for `boto3.client("mgn").delete_vcenter_client` method.
+
+Boto3 documentation:
+[mgn.Client.delete_vcenter_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_vcenter_client)
+
+Arguments mapping described in
+[DeleteVcenterClientRequestRequestTypeDef](./type_defs.md#deletevcenterclientrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `vcenterClientID`: `str` *(required)*
+
 ### describe_job_log_items
 
 Retrieves detailed Job log with paging.
@@ -316,6 +337,26 @@ Keyword-only arguments:
 
 Returns
 [DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef).
+
+### describe_vcenter_clients
+
+Lists all vCenter clients.
+
+Type annotations for `boto3.client("mgn").describe_vcenter_clients` method.
+
+Boto3 documentation:
+[mgn.Client.describe_vcenter_clients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_vcenter_clients)
+
+Arguments mapping described in
+[DescribeVcenterClientsRequestRequestTypeDef](./type_defs.md#describevcenterclientsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeVcenterClientsResponseTypeDef](./type_defs.md#describevcenterclientsresponsetypedef).
 
 ### disconnect_from_service
 
@@ -503,6 +544,25 @@ Keyword-only arguments:
 Returns
 [StartCutoverResponseTypeDef](./type_defs.md#startcutoverresponsetypedef).
 
+### start_replication
+
+Starts replication on source server by ID.
+
+Type annotations for `boto3.client("mgn").start_replication` method.
+
+Boto3 documentation:
+[mgn.Client.start_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_replication)
+
+Arguments mapping described in
+[StartReplicationRequestRequestTypeDef](./type_defs.md#startreplicationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `sourceServerID`: `str` *(required)*
+
+Returns
+[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+
 ### start_test
 
 Lauches a Test Instance for specific Source Servers.
@@ -679,6 +739,28 @@ Keyword-only arguments:
 Returns
 [ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef).
 
+### update_source_server_replication_type
+
+Updates source server Replication Type by ID.
+
+Type annotations for
+`boto3.client("mgn").update_source_server_replication_type` method.
+
+Boto3 documentation:
+[mgn.Client.update_source_server_replication_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_source_server_replication_type)
+
+Arguments mapping described in
+[UpdateSourceServerReplicationTypeRequestRequestTypeDef](./type_defs.md#updatesourceserverreplicationtyperequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `replicationType`: [ReplicationTypeType](./literals.md#replicationtypetype)
+  *(required)*
+- `sourceServerID`: `str` *(required)*
+
+Returns
+[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+
 ### get_paginator
 
 Type annotations for `boto3.client("mgn").get_paginator` method with overloads.
@@ -691,3 +773,5 @@ Type annotations for `boto3.client("mgn").get_paginator` method with overloads.
   [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
 - `client.get_paginator("describe_source_servers")` ->
   [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
+- `client.get_paginator("describe_vcenter_clients")` ->
+  [DescribeVcenterClientsPaginator](./paginators.md#describevcenterclientspaginator)

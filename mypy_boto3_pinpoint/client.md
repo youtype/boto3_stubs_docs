@@ -104,6 +104,7 @@ type annotations stubs module
     - [put_events](#put_events)
     - [remove_attributes](#remove_attributes)
     - [send_messages](#send_messages)
+    - [send_otp_message](#send_otp_message)
     - [send_users_messages](#send_users_messages)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
@@ -131,6 +132,7 @@ type annotations stubs module
     - [update_template_active_version](#update_template_active_version)
     - [update_voice_channel](#update_voice_channel)
     - [update_voice_template](#update_voice_template)
+    - [verify_otp_message](#verify_otp_message)
 
 ## PinpointClient
 
@@ -2134,6 +2136,31 @@ Keyword-only arguments:
 Returns
 [SendMessagesResponseTypeDef](./type_defs.md#sendmessagesresponsetypedef).
 
+### send_otp_message
+
+Send an OTP message See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/pinpoint-2016-12-01/SendOTPMessage>`\_
+**Request Syntax** response = client.send_otp_message( ApplicationId='string',
+SendOTPMessageRequestParameters={ 'AllowedAttempts':...
+
+Type annotations for `boto3.client("pinpoint").send_otp_message` method.
+
+Boto3 documentation:
+[Pinpoint.Client.send_otp_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_otp_message)
+
+Arguments mapping described in
+[SendOTPMessageRequestRequestTypeDef](./type_defs.md#sendotpmessagerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SendOTPMessageRequestParameters`:
+  [SendOTPMessageRequestParametersTypeDef](./type_defs.md#sendotpmessagerequestparameterstypedef)
+  *(required)*
+
+Returns
+[SendOTPMessageResponseTypeDef](./type_defs.md#sendotpmessageresponsetypedef).
+
 ### send_users_messages
 
 Creates and sends a message to a list of users.
@@ -2759,3 +2786,29 @@ Keyword-only arguments:
 
 Returns
 [UpdateVoiceTemplateResponseTypeDef](./type_defs.md#updatevoicetemplateresponsetypedef).
+
+### verify_otp_message
+
+Verify an OTP See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/pinpoint-2016-12-01/VerifyOTPMessage>`\_
+**Request Syntax** response = client.verify_otp_message(
+ApplicationId='string', VerifyOTPMessageRequestParameters={
+'DestinationIdenti...
+
+Type annotations for `boto3.client("pinpoint").verify_otp_message` method.
+
+Boto3 documentation:
+[Pinpoint.Client.verify_otp_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.verify_otp_message)
+
+Arguments mapping described in
+[VerifyOTPMessageRequestRequestTypeDef](./type_defs.md#verifyotpmessagerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `VerifyOTPMessageRequestParameters`:
+  [VerifyOTPMessageRequestParametersTypeDef](./type_defs.md#verifyotpmessagerequestparameterstypedef)
+  *(required)*
+
+Returns
+[VerifyOTPMessageResponseTypeDef](./type_defs.md#verifyotpmessageresponsetypedef).

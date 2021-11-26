@@ -12,6 +12,7 @@ type annotations stubs module
   - [DescribeJobsPaginator](#describejobspaginator)
   - [DescribeReplicationConfigurationTemplatesPaginator](#describereplicationconfigurationtemplatespaginator)
   - [DescribeSourceServersPaginator](#describesourceserverspaginator)
+  - [DescribeVcenterClientsPaginator](#describevcenterclientspaginator)
 
 ## DescribeJobLogItemsPaginator
 
@@ -120,3 +121,28 @@ Arguments for `DescribeSourceServersPaginator.paginate` method:
 
 `DescribeSourceServersPaginator.paginate` returns
 `_PageIterator`\[[DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef)\].
+
+## DescribeVcenterClientsPaginator
+
+Type annotations for
+`boto3.client("mgn").get_paginator("describe_vcenter_clients")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_mgn.paginator import DescribeVcenterClientsPaginator
+
+def get_describe_vcenter_clients_paginator() -> DescribeVcenterClientsPaginator:
+    return boto3.client("mgn").get_paginator("describe_vcenter_clients")
+```
+
+Boto3 documentation:
+[mgn.Paginator.DescribeVcenterClients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeVcenterClients)
+
+Arguments for `DescribeVcenterClientsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeVcenterClientsPaginator.paginate` returns
+`_PageIterator`\[[DescribeVcenterClientsResponseTypeDef](./type_defs.md#describevcenterclientsresponsetypedef)\].

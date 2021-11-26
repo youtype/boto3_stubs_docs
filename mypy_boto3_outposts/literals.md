@@ -8,10 +8,122 @@ type annotations stubs module
 [mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
 - [Literals for boto3 Outposts module](#literals-for-boto3-outposts-module)
+  - [AddressTypeType](#addresstypetype)
+  - [CatalogItemClassType](#catalogitemclasstype)
+  - [CatalogItemStatusType](#catalogitemstatustype)
+  - [FiberOpticCableTypeType](#fiberopticcabletypetype)
+  - [LineItemStatusType](#lineitemstatustype)
+  - [MaximumSupportedWeightLbsType](#maximumsupportedweightlbstype)
+  - [OpticalStandardType](#opticalstandardtype)
   - [OrderStatusType](#orderstatustype)
+  - [OrderTypeType](#ordertypetype)
   - [PaymentOptionType](#paymentoptiontype)
   - [PaymentTermType](#paymenttermtype)
+  - [PowerConnectorType](#powerconnectortype)
+  - [PowerDrawKvaType](#powerdrawkvatype)
+  - [PowerFeedDropType](#powerfeeddroptype)
+  - [PowerPhaseType](#powerphasetype)
+  - [SupportedStorageEnumType](#supportedstorageenumtype)
+  - [UplinkCountType](#uplinkcounttype)
+  - [UplinkGbpsType](#uplinkgbpstype)
   - [ServiceName](#servicename)
+
+## AddressTypeType
+
+```python
+from mypy_boto3_outposts.literals import AddressTypeType
+```
+
+Values:
+
+- `OPERATING_ADDRESS`
+- `SHIPPING_ADDRESS`
+
+## CatalogItemClassType
+
+```python
+from mypy_boto3_outposts.literals import CatalogItemClassType
+```
+
+Values:
+
+- `RACK`
+- `SERVER`
+
+## CatalogItemStatusType
+
+```python
+from mypy_boto3_outposts.literals import CatalogItemStatusType
+```
+
+Values:
+
+- `AVAILABLE`
+- `DISCONTINUED`
+
+## FiberOpticCableTypeType
+
+```python
+from mypy_boto3_outposts.literals import FiberOpticCableTypeType
+```
+
+Values:
+
+- `MULTI_MODE`
+- `SINGLE_MODE`
+
+## LineItemStatusType
+
+```python
+from mypy_boto3_outposts.literals import LineItemStatusType
+```
+
+Values:
+
+- `BUILDING`
+- `CANCELLED`
+- `DELIVERED`
+- `ERROR`
+- `INSTALLED`
+- `INSTALLING`
+- `PREPARING`
+- `SHIPPED`
+
+## MaximumSupportedWeightLbsType
+
+```python
+from mypy_boto3_outposts.literals import MaximumSupportedWeightLbsType
+```
+
+Values:
+
+- `MAX_1400_LBS`
+- `MAX_1600_LBS`
+- `MAX_1800_LBS`
+- `MAX_2000_LBS`
+- `NO_LIMIT`
+
+## OpticalStandardType
+
+```python
+from mypy_boto3_outposts.literals import OpticalStandardType
+```
+
+Values:
+
+- `OPTIC_1000BASE_LX`
+- `OPTIC_1000BASE_SX`
+- `OPTIC_100G_PSM4_MSA`
+- `OPTIC_100GBASE_CWDM4`
+- `OPTIC_100GBASE_LR4`
+- `OPTIC_100GBASE_SR4`
+- `OPTIC_10GBASE_IR`
+- `OPTIC_10GBASE_LR`
+- `OPTIC_10GBASE_SR`
+- `OPTIC_40GBASE_ESR`
+- `OPTIC_40GBASE_IR4_LR4L`
+- `OPTIC_40GBASE_LR4`
+- `OPTIC_40GBASE_SR`
 
 ## OrderStatusType
 
@@ -22,11 +134,26 @@ from mypy_boto3_outposts.literals import OrderStatusType
 Values:
 
 - `CANCELLED`
+- `COMPLETED`
+- `ERROR`
 - `FULFILLED`
+- `IN_PROGRESS`
 - `INSTALLING`
 - `PENDING`
+- `PREPARING`
 - `PROCESSING`
 - `RECEIVED`
+
+## OrderTypeType
+
+```python
+from mypy_boto3_outposts.literals import OrderTypeType
+```
+
+Values:
+
+- `OUTPOST`
+- `REPLACEMENT`
 
 ## PaymentOptionType
 
@@ -49,6 +176,96 @@ from mypy_boto3_outposts.literals import PaymentTermType
 Values:
 
 - `THREE_YEARS`
+
+## PowerConnectorType
+
+```python
+from mypy_boto3_outposts.literals import PowerConnectorType
+```
+
+Values:
+
+- `AH530P7W`
+- `AH532P6W`
+- `IEC309`
+- `L6_30P`
+
+## PowerDrawKvaType
+
+```python
+from mypy_boto3_outposts.literals import PowerDrawKvaType
+```
+
+Values:
+
+- `POWER_10_KVA`
+- `POWER_15_KVA`
+- `POWER_5_KVA`
+
+## PowerFeedDropType
+
+```python
+from mypy_boto3_outposts.literals import PowerFeedDropType
+```
+
+Values:
+
+- `ABOVE_RACK`
+- `BELOW_RACK`
+
+## PowerPhaseType
+
+```python
+from mypy_boto3_outposts.literals import PowerPhaseType
+```
+
+Values:
+
+- `SINGLE_PHASE`
+- `THREE_PHASE`
+
+## SupportedStorageEnumType
+
+```python
+from mypy_boto3_outposts.literals import SupportedStorageEnumType
+```
+
+Values:
+
+- `EBS`
+- `S3`
+
+## UplinkCountType
+
+```python
+from mypy_boto3_outposts.literals import UplinkCountType
+```
+
+Values:
+
+- `UPLINK_COUNT_1`
+- `UPLINK_COUNT_12`
+- `UPLINK_COUNT_16`
+- `UPLINK_COUNT_2`
+- `UPLINK_COUNT_3`
+- `UPLINK_COUNT_4`
+- `UPLINK_COUNT_5`
+- `UPLINK_COUNT_6`
+- `UPLINK_COUNT_7`
+- `UPLINK_COUNT_8`
+
+## UplinkGbpsType
+
+```python
+from mypy_boto3_outposts.literals import UplinkGbpsType
+```
+
+Values:
+
+- `UPLINK_100G`
+- `UPLINK_10G`
+- `UPLINK_1G`
+- `UPLINK_40G`
 
 ## ServiceName
 

@@ -17,6 +17,7 @@ type annotations stubs module
   - [DescribeJobsPaginatorName](#describejobspaginatorname)
   - [DescribeReplicationConfigurationTemplatesPaginatorName](#describereplicationconfigurationtemplatespaginatorname)
   - [DescribeSourceServersPaginatorName](#describesourceserverspaginatorname)
+  - [DescribeVcenterClientsPaginatorName](#describevcenterclientspaginatorname)
   - [FirstBootType](#firstboottype)
   - [InitiatedByType](#initiatedbytype)
   - [JobLogEventType](#joblogeventtype)
@@ -29,6 +30,7 @@ type annotations stubs module
   - [ReplicationConfigurationDefaultLargeStagingDiskTypeType](#replicationconfigurationdefaultlargestagingdisktypetype)
   - [ReplicationConfigurationEbsEncryptionType](#replicationconfigurationebsencryptiontype)
   - [ReplicationConfigurationReplicatedDiskStagingDiskTypeType](#replicationconfigurationreplicateddiskstagingdisktypetype)
+  - [ReplicationTypeType](#replicationtypetype)
   - [TargetInstanceTypeRightSizingMethodType](#targetinstancetyperightsizingmethodtype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
@@ -64,9 +66,11 @@ Values:
 - `FAILED_TO_LAUNCH_REPLICATION_SERVER`
 - `FAILED_TO_PAIR_REPLICATION_SERVER_WITH_AGENT`
 - `FAILED_TO_START_DATA_TRANSFER`
+- `LAST_SNAPSHOT_JOB_FAILED`
 - `NOT_CONVERGING`
 - `SNAPSHOTS_FAILURE`
 - `UNSTABLE_NETWORK`
+- `UNSUPPORTED_VM_CONFIGURATION`
 
 ## DataReplicationInitiationStepNameType
 
@@ -117,7 +121,9 @@ Values:
 - `INITIAL_SYNC`
 - `INITIATING`
 - `PAUSED`
+- `PENDING_SNAPSHOT_SHIPPING`
 - `RESCAN`
+- `SHIPPING_SNAPSHOT`
 - `STALLED`
 - `STOPPED`
 
@@ -160,6 +166,16 @@ from mypy_boto3_mgn.literals import DescribeSourceServersPaginatorName
 Values:
 
 - `describe_source_servers`
+
+## DescribeVcenterClientsPaginatorName
+
+```python
+from mypy_boto3_mgn.literals import DescribeVcenterClientsPaginatorName
+```
+
+Values:
+
+- `describe_vcenter_clients`
 
 ## FirstBootType
 
@@ -271,6 +287,7 @@ Values:
 - `CUTOVER`
 - `CUTTING_OVER`
 - `DISCONNECTED`
+- `DISCOVERED`
 - `NOT_READY`
 - `READY_FOR_CUTOVER`
 - `READY_FOR_TEST`
@@ -324,6 +341,17 @@ Values:
 - `SC1`
 - `ST1`
 - `STANDARD`
+
+## ReplicationTypeType
+
+```python
+from mypy_boto3_mgn.literals import ReplicationTypeType
+```
+
+Values:
+
+- `AGENT_BASED`
+- `SNAPSHOT_SHIPPING`
 
 ## TargetInstanceTypeRightSizingMethodType
 
@@ -647,3 +675,4 @@ Values:
 - `describe_jobs`
 - `describe_replication_configuration_templates`
 - `describe_source_servers`
+- `describe_vcenter_clients`

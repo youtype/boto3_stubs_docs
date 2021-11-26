@@ -20,6 +20,7 @@ type annotations stubs module
   - [DeleteJobRequestRequestTypeDef](#deletejobrequestrequesttypedef)
   - [DeleteReplicationConfigurationTemplateRequestRequestTypeDef](#deletereplicationconfigurationtemplaterequestrequesttypedef)
   - [DeleteSourceServerRequestRequestTypeDef](#deletesourceserverrequestrequesttypedef)
+  - [DeleteVcenterClientRequestRequestTypeDef](#deletevcenterclientrequestrequesttypedef)
   - [DescribeJobLogItemsRequestRequestTypeDef](#describejoblogitemsrequestrequesttypedef)
   - [DescribeJobLogItemsResponseTypeDef](#describejoblogitemsresponsetypedef)
   - [DescribeJobsRequestFiltersTypeDef](#describejobsrequestfilterstypedef)
@@ -30,6 +31,8 @@ type annotations stubs module
   - [DescribeSourceServersRequestFiltersTypeDef](#describesourceserversrequestfilterstypedef)
   - [DescribeSourceServersRequestRequestTypeDef](#describesourceserversrequestrequesttypedef)
   - [DescribeSourceServersResponseTypeDef](#describesourceserversresponsetypedef)
+  - [DescribeVcenterClientsRequestRequestTypeDef](#describevcenterclientsrequestrequesttypedef)
+  - [DescribeVcenterClientsResponseTypeDef](#describevcenterclientsresponsetypedef)
   - [DisconnectFromServiceRequestRequestTypeDef](#disconnectfromservicerequestrequesttypedef)
   - [DiskTypeDef](#disktypedef)
   - [FinalizeCutoverRequestRequestTypeDef](#finalizecutoverrequestrequesttypedef)
@@ -69,6 +72,7 @@ type annotations stubs module
   - [SourceServerTypeDef](#sourceservertypedef)
   - [StartCutoverRequestRequestTypeDef](#startcutoverrequestrequesttypedef)
   - [StartCutoverResponseTypeDef](#startcutoverresponsetypedef)
+  - [StartReplicationRequestRequestTypeDef](#startreplicationrequestrequesttypedef)
   - [StartTestRequestRequestTypeDef](#starttestrequestrequesttypedef)
   - [StartTestResponseTypeDef](#starttestresponsetypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
@@ -78,6 +82,8 @@ type annotations stubs module
   - [UpdateLaunchConfigurationRequestRequestTypeDef](#updatelaunchconfigurationrequestrequesttypedef)
   - [UpdateReplicationConfigurationRequestRequestTypeDef](#updatereplicationconfigurationrequestrequesttypedef)
   - [UpdateReplicationConfigurationTemplateRequestRequestTypeDef](#updatereplicationconfigurationtemplaterequestrequesttypedef)
+  - [UpdateSourceServerReplicationTypeRequestRequestTypeDef](#updatesourceserverreplicationtyperequestrequesttypedef)
+  - [VcenterClientTypeDef](#vcenterclienttypedef)
 
 ## CPUTypeDef
 
@@ -183,6 +189,7 @@ Optional fields:
   [DataReplicationStateType](./literals.md#datareplicationstatetype)
 - `etaDateTime`: `str`
 - `lagDuration`: `str`
+- `lastSnapshotDateTime`: `str`
 - `replicatedDisks`:
   `List`\[[DataReplicationInfoReplicatedDiskTypeDef](./type_defs.md#datareplicationinforeplicateddisktypedef)\]
 
@@ -241,6 +248,16 @@ from mypy_boto3_mgn.type_defs import DeleteSourceServerRequestRequestTypeDef
 Required fields:
 
 - `sourceServerID`: `str`
+
+## DeleteVcenterClientRequestRequestTypeDef
+
+```python
+from mypy_boto3_mgn.type_defs import DeleteVcenterClientRequestRequestTypeDef
+```
+
+Required fields:
+
+- `vcenterClientID`: `str`
 
 ## DescribeJobLogItemsRequestRequestTypeDef
 
@@ -349,6 +366,10 @@ from mypy_boto3_mgn.type_defs import DescribeSourceServersRequestFiltersTypeDef
 Optional fields:
 
 - `isArchived`: `bool`
+- `lifeCycleStates`:
+  `Sequence`\[[LifeCycleStateType](./literals.md#lifecyclestatetype)\]
+- `replicationTypes`:
+  `Sequence`\[[ReplicationTypeType](./literals.md#replicationtypetype)\]
 - `sourceServerIDs`: `Sequence`\[`str`\]
 
 ## DescribeSourceServersRequestRequestTypeDef
@@ -376,6 +397,31 @@ from mypy_boto3_mgn.type_defs import DescribeSourceServersResponseTypeDef
 Required fields:
 
 - `items`: `List`\[[SourceServerTypeDef](./type_defs.md#sourceservertypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeVcenterClientsRequestRequestTypeDef
+
+```python
+from mypy_boto3_mgn.type_defs import DescribeVcenterClientsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeVcenterClientsResponseTypeDef
+
+```python
+from mypy_boto3_mgn.type_defs import DescribeVcenterClientsResponseTypeDef
+```
+
+Required fields:
+
+- `items`:
+  `List`\[[VcenterClientTypeDef](./type_defs.md#vcenterclienttypedef)\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -442,6 +488,7 @@ Optional fields:
 - `awsInstanceID`: `str`
 - `fqdn`: `str`
 - `hostname`: `str`
+- `vmPath`: `str`
 - `vmWareUuid`: `str`
 
 ## JobLogEventDataTypeDef
@@ -882,10 +929,12 @@ Required fields:
 - `launchedInstance`:
   [LaunchedInstanceTypeDef](./type_defs.md#launchedinstancetypedef)
 - `lifeCycle`: [LifeCycleTypeDef](./type_defs.md#lifecycletypedef)
+- `replicationType`: [ReplicationTypeType](./literals.md#replicationtypetype)
 - `sourceProperties`:
   [SourcePropertiesTypeDef](./type_defs.md#sourcepropertiestypedef)
 - `sourceServerID`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `vcenterClientID`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -904,10 +953,12 @@ Optional fields:
 - `launchedInstance`:
   [LaunchedInstanceTypeDef](./type_defs.md#launchedinstancetypedef)
 - `lifeCycle`: [LifeCycleTypeDef](./type_defs.md#lifecycletypedef)
+- `replicationType`: [ReplicationTypeType](./literals.md#replicationtypetype)
 - `sourceProperties`:
   [SourcePropertiesTypeDef](./type_defs.md#sourcepropertiestypedef)
 - `sourceServerID`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `vcenterClientID`: `str`
 
 ## StartCutoverRequestRequestTypeDef
 
@@ -934,6 +985,16 @@ Required fields:
 - `job`: [JobTypeDef](./type_defs.md#jobtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartReplicationRequestRequestTypeDef
+
+```python
+from mypy_boto3_mgn.type_defs import StartReplicationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `sourceServerID`: `str`
 
 ## StartTestRequestRequestTypeDef
 
@@ -1089,3 +1150,31 @@ Optional fields:
 - `stagingAreaSubnetId`: `str`
 - `stagingAreaTags`: `Mapping`\[`str`, `str`\]
 - `useDedicatedReplicationServer`: `bool`
+
+## UpdateSourceServerReplicationTypeRequestRequestTypeDef
+
+```python
+from mypy_boto3_mgn.type_defs import UpdateSourceServerReplicationTypeRequestRequestTypeDef
+```
+
+Required fields:
+
+- `replicationType`: [ReplicationTypeType](./literals.md#replicationtypetype)
+- `sourceServerID`: `str`
+
+## VcenterClientTypeDef
+
+```python
+from mypy_boto3_mgn.type_defs import VcenterClientTypeDef
+```
+
+Optional fields:
+
+- `arn`: `str`
+- `datacenterName`: `str`
+- `hostname`: `str`
+- `lastSeenDatetime`: `str`
+- `sourceServerTags`: `Dict`\[`str`, `str`\]
+- `tags`: `Dict`\[`str`, `str`\]
+- `vcenterClientID`: `str`
+- `vcenterUUID`: `str`

@@ -124,6 +124,7 @@ from mypy_boto3_pinpoint.client import PinpointClient
 - [put_events](./client.md#put_events)
 - [remove_attributes](./client.md#remove_attributes)
 - [send_messages](./client.md#send_messages)
+- [send_otp_message](./client.md#send_otp_message)
 - [send_users_messages](./client.md#send_users_messages)
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
@@ -151,6 +152,7 @@ from mypy_boto3_pinpoint.client import PinpointClient
 - [update_template_active_version](./client.md#update_template_active_version)
 - [update_voice_channel](./client.md#update_voice_channel)
 - [update_voice_template](./client.md#update_voice_template)
+- [verify_otp_message](./client.md#verify_otp_message)
 
 ### Exceptions
 
@@ -557,6 +559,9 @@ from mypy_boto3_pinpoint.type_defs import ADMChannelRequestTypeDef, ...
 - [SegmentsResponseTypeDef](./type_defs.md#segmentsresponsetypedef)
 - [SendMessagesRequestRequestTypeDef](./type_defs.md#sendmessagesrequestrequesttypedef)
 - [SendMessagesResponseTypeDef](./type_defs.md#sendmessagesresponsetypedef)
+- [SendOTPMessageRequestParametersTypeDef](./type_defs.md#sendotpmessagerequestparameterstypedef)
+- [SendOTPMessageRequestRequestTypeDef](./type_defs.md#sendotpmessagerequestrequesttypedef)
+- [SendOTPMessageResponseTypeDef](./type_defs.md#sendotpmessageresponsetypedef)
 - [SendUsersMessageRequestTypeDef](./type_defs.md#sendusersmessagerequesttypedef)
 - [SendUsersMessageResponseTypeDef](./type_defs.md#sendusersmessageresponsetypedef)
 - [SendUsersMessagesRequestRequestTypeDef](./type_defs.md#sendusersmessagesrequestrequesttypedef)
@@ -629,6 +634,10 @@ from mypy_boto3_pinpoint.type_defs import ADMChannelRequestTypeDef, ...
 - [UpdateVoiceChannelResponseTypeDef](./type_defs.md#updatevoicechannelresponsetypedef)
 - [UpdateVoiceTemplateRequestRequestTypeDef](./type_defs.md#updatevoicetemplaterequestrequesttypedef)
 - [UpdateVoiceTemplateResponseTypeDef](./type_defs.md#updatevoicetemplateresponsetypedef)
+- [VerificationResponseTypeDef](./type_defs.md#verificationresponsetypedef)
+- [VerifyOTPMessageRequestParametersTypeDef](./type_defs.md#verifyotpmessagerequestparameterstypedef)
+- [VerifyOTPMessageRequestRequestTypeDef](./type_defs.md#verifyotpmessagerequestrequesttypedef)
+- [VerifyOTPMessageResponseTypeDef](./type_defs.md#verifyotpmessageresponsetypedef)
 - [VoiceChannelRequestTypeDef](./type_defs.md#voicechannelrequesttypedef)
 - [VoiceChannelResponseTypeDef](./type_defs.md#voicechannelresponsetypedef)
 - [VoiceMessageTypeDef](./type_defs.md#voicemessagetypedef)

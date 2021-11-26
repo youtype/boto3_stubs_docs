@@ -351,6 +351,9 @@ type annotations stubs module
   - [SegmentsResponseTypeDef](#segmentsresponsetypedef)
   - [SendMessagesRequestRequestTypeDef](#sendmessagesrequestrequesttypedef)
   - [SendMessagesResponseTypeDef](#sendmessagesresponsetypedef)
+  - [SendOTPMessageRequestParametersTypeDef](#sendotpmessagerequestparameterstypedef)
+  - [SendOTPMessageRequestRequestTypeDef](#sendotpmessagerequestrequesttypedef)
+  - [SendOTPMessageResponseTypeDef](#sendotpmessageresponsetypedef)
   - [SendUsersMessageRequestTypeDef](#sendusersmessagerequesttypedef)
   - [SendUsersMessageResponseTypeDef](#sendusersmessageresponsetypedef)
   - [SendUsersMessagesRequestRequestTypeDef](#sendusersmessagesrequestrequesttypedef)
@@ -423,6 +426,10 @@ type annotations stubs module
   - [UpdateVoiceChannelResponseTypeDef](#updatevoicechannelresponsetypedef)
   - [UpdateVoiceTemplateRequestRequestTypeDef](#updatevoicetemplaterequestrequesttypedef)
   - [UpdateVoiceTemplateResponseTypeDef](#updatevoicetemplateresponsetypedef)
+  - [VerificationResponseTypeDef](#verificationresponsetypedef)
+  - [VerifyOTPMessageRequestParametersTypeDef](#verifyotpmessagerequestparameterstypedef)
+  - [VerifyOTPMessageRequestRequestTypeDef](#verifyotpmessagerequestrequesttypedef)
+  - [VerifyOTPMessageResponseTypeDef](#verifyotpmessageresponsetypedef)
   - [VoiceChannelRequestTypeDef](#voicechannelrequesttypedef)
   - [VoiceChannelResponseTypeDef](#voicechannelresponsetypedef)
   - [VoiceMessageTypeDef](#voicemessagetypedef)
@@ -5359,6 +5366,54 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## SendOTPMessageRequestParametersTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import SendOTPMessageRequestParametersTypeDef
+```
+
+Required fields:
+
+- `BrandName`: `str`
+- `Channel`: `str`
+- `DestinationIdentity`: `str`
+- `OriginationIdentity`: `str`
+- `ReferenceId`: `str`
+
+Optional fields:
+
+- `AllowedAttempts`: `int`
+- `CodeLength`: `int`
+- `EntityId`: `str`
+- `Language`: `str`
+- `TemplateId`: `str`
+- `ValidityPeriod`: `int`
+
+## SendOTPMessageRequestRequestTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import SendOTPMessageRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `SendOTPMessageRequestParameters`:
+  [SendOTPMessageRequestParametersTypeDef](./type_defs.md#sendotpmessagerequestparameterstypedef)
+
+## SendOTPMessageResponseTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import SendOTPMessageResponseTypeDef
+```
+
+Required fields:
+
+- `MessageResponse`:
+  [MessageResponseTypeDef](./type_defs.md#messageresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## SendUsersMessageRequestTypeDef
 
 ```python
@@ -6327,6 +6382,53 @@ from mypy_boto3_pinpoint.type_defs import UpdateVoiceTemplateResponseTypeDef
 Required fields:
 
 - `MessageBody`: [MessageBodyTypeDef](./type_defs.md#messagebodytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## VerificationResponseTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import VerificationResponseTypeDef
+```
+
+Optional fields:
+
+- `Valid`: `bool`
+
+## VerifyOTPMessageRequestParametersTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import VerifyOTPMessageRequestParametersTypeDef
+```
+
+Required fields:
+
+- `DestinationIdentity`: `str`
+- `Otp`: `str`
+- `ReferenceId`: `str`
+
+## VerifyOTPMessageRequestRequestTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import VerifyOTPMessageRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `VerifyOTPMessageRequestParameters`:
+  [VerifyOTPMessageRequestParametersTypeDef](./type_defs.md#verifyotpmessagerequestparameterstypedef)
+
+## VerifyOTPMessageResponseTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import VerifyOTPMessageResponseTypeDef
+```
+
+Required fields:
+
+- `VerificationResponse`:
+  [VerificationResponseTypeDef](./type_defs.md#verificationresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

@@ -13,18 +13,29 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
+    - [cancel_order](#cancel_order)
     - [create_order](#create_order)
     - [create_outpost](#create_outpost)
+    - [create_site](#create_site)
     - [delete_outpost](#delete_outpost)
     - [delete_site](#delete_site)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_catalog_item](#get_catalog_item)
+    - [get_order](#get_order)
     - [get_outpost](#get_outpost)
     - [get_outpost_instance_types](#get_outpost_instance_types)
+    - [get_site](#get_site)
+    - [get_site_address](#get_site_address)
+    - [list_catalog_items](#list_catalog_items)
+    - [list_orders](#list_orders)
     - [list_outposts](#list_outposts)
     - [list_sites](#list_sites)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_site](#update_site)
+    - [update_site_address](#update_site_address)
+    - [update_site_rack_physical_properties](#update_site_rack_physical_properties)
 
 ## OutpostsClient
 
@@ -92,6 +103,24 @@ Arguments:
 
 Returns `bool`.
 
+### cancel_order
+
+Cancels an order for an Outpost.
+
+Type annotations for `boto3.client("outposts").cancel_order` method.
+
+Boto3 documentation:
+[Outposts.Client.cancel_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.cancel_order)
+
+Arguments mapping described in
+[CancelOrderInputRequestTypeDef](./type_defs.md#cancelorderinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrderId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### create_order
 
 Creates an order for an Outpost.
@@ -140,6 +169,31 @@ Keyword-only arguments:
 
 Returns
 [CreateOutpostOutputTypeDef](./type_defs.md#createoutpostoutputtypedef).
+
+### create_site
+
+Creates a site for an Outpost.
+
+Type annotations for `boto3.client("outposts").create_site` method.
+
+Boto3 documentation:
+[Outposts.Client.create_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_site)
+
+Arguments mapping described in
+[CreateSiteInputRequestTypeDef](./type_defs.md#createsiteinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `Description`: `str`
+- `Notes`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `OperatingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
+- `ShippingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
+- `RackPhysicalProperties`:
+  [RackPhysicalPropertiesTypeDef](./type_defs.md#rackphysicalpropertiestypedef)
+
+Returns [CreateSiteOutputTypeDef](./type_defs.md#createsiteoutputtypedef).
 
 ### delete_outpost
 
@@ -195,6 +249,43 @@ Arguments:
 
 Returns `str`.
 
+### get_catalog_item
+
+Gets information about a catalog item.
+
+Type annotations for `boto3.client("outposts").get_catalog_item` method.
+
+Boto3 documentation:
+[Outposts.Client.get_catalog_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_catalog_item)
+
+Arguments mapping described in
+[GetCatalogItemInputRequestTypeDef](./type_defs.md#getcatalogiteminputrequesttypedef).
+
+Keyword-only arguments:
+
+- `CatalogItemId`: `str` *(required)*
+
+Returns
+[GetCatalogItemOutputTypeDef](./type_defs.md#getcatalogitemoutputtypedef).
+
+### get_order
+
+Gets an order.
+
+Type annotations for `boto3.client("outposts").get_order` method.
+
+Boto3 documentation:
+[Outposts.Client.get_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_order)
+
+Arguments mapping described in
+[GetOrderInputRequestTypeDef](./type_defs.md#getorderinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrderId`: `str` *(required)*
+
+Returns [GetOrderOutputTypeDef](./type_defs.md#getorderoutputtypedef).
+
 ### get_outpost
 
 Gets information about the specified Outpost.
@@ -235,9 +326,92 @@ Keyword-only arguments:
 Returns
 [GetOutpostInstanceTypesOutputTypeDef](./type_defs.md#getoutpostinstancetypesoutputtypedef).
 
+### get_site
+
+Gets information about the specified Outpost site.
+
+Type annotations for `boto3.client("outposts").get_site` method.
+
+Boto3 documentation:
+[Outposts.Client.get_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_site)
+
+Arguments mapping described in
+[GetSiteInputRequestTypeDef](./type_defs.md#getsiteinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `SiteId`: `str` *(required)*
+
+Returns [GetSiteOutputTypeDef](./type_defs.md#getsiteoutputtypedef).
+
+### get_site_address
+
+Gets the site address.
+
+Type annotations for `boto3.client("outposts").get_site_address` method.
+
+Boto3 documentation:
+[Outposts.Client.get_site_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_site_address)
+
+Arguments mapping described in
+[GetSiteAddressInputRequestTypeDef](./type_defs.md#getsiteaddressinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `SiteId`: `str` *(required)*
+- `AddressType`: [AddressTypeType](./literals.md#addresstypetype) *(required)*
+
+Returns
+[GetSiteAddressOutputTypeDef](./type_defs.md#getsiteaddressoutputtypedef).
+
+### list_catalog_items
+
+Use to create a list of every item in the catalog.
+
+Type annotations for `boto3.client("outposts").list_catalog_items` method.
+
+Boto3 documentation:
+[Outposts.Client.list_catalog_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_catalog_items)
+
+Arguments mapping described in
+[ListCatalogItemsInputRequestTypeDef](./type_defs.md#listcatalogitemsinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ItemClassFilter`:
+  `Sequence`\[[CatalogItemClassType](./literals.md#catalogitemclasstype)\]
+- `SupportedStorageFilter`:
+  `Sequence`\[[SupportedStorageEnumType](./literals.md#supportedstorageenumtype)\]
+- `EC2FamilyFilter`: `Sequence`\[`str`\]
+
+Returns
+[ListCatalogItemsOutputTypeDef](./type_defs.md#listcatalogitemsoutputtypedef).
+
+### list_orders
+
+Create a list of the Outpost orders for your Amazon Web Services account.
+
+Type annotations for `boto3.client("outposts").list_orders` method.
+
+Boto3 documentation:
+[Outposts.Client.list_orders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_orders)
+
+Arguments mapping described in
+[ListOrdersInputRequestTypeDef](./type_defs.md#listordersinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `OutpostIdentifierFilter`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns [ListOrdersOutputTypeDef](./type_defs.md#listordersoutputtypedef).
+
 ### list_outposts
 
-Create a list of the Outposts for your AWS account.
+Create a list of the Outposts for your Amazon Web Services account.
 
 Type annotations for `boto3.client("outposts").list_outposts` method.
 
@@ -259,7 +433,7 @@ Returns [ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef).
 
 ### list_sites
 
-Lists the sites for the specified AWS account.
+Lists the sites for your Amazon Web Services account.
 
 Type annotations for `boto3.client("outposts").list_sites` method.
 
@@ -332,3 +506,76 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### update_site
+
+Updates the site.
+
+Type annotations for `boto3.client("outposts").update_site` method.
+
+Boto3 documentation:
+[Outposts.Client.update_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_site)
+
+Arguments mapping described in
+[UpdateSiteInputRequestTypeDef](./type_defs.md#updatesiteinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `SiteId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `Notes`: `str`
+
+Returns [UpdateSiteOutputTypeDef](./type_defs.md#updatesiteoutputtypedef).
+
+### update_site_address
+
+Updates the site address.
+
+Type annotations for `boto3.client("outposts").update_site_address` method.
+
+Boto3 documentation:
+[Outposts.Client.update_site_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_site_address)
+
+Arguments mapping described in
+[UpdateSiteAddressInputRequestTypeDef](./type_defs.md#updatesiteaddressinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `SiteId`: `str` *(required)*
+- `AddressType`: [AddressTypeType](./literals.md#addresstypetype) *(required)*
+- `Address`: [AddressTypeDef](./type_defs.md#addresstypedef) *(required)*
+
+Returns
+[UpdateSiteAddressOutputTypeDef](./type_defs.md#updatesiteaddressoutputtypedef).
+
+### update_site_rack_physical_properties
+
+Update the physical and logistical details for a rack at a site.
+
+Type annotations for
+`boto3.client("outposts").update_site_rack_physical_properties` method.
+
+Boto3 documentation:
+[Outposts.Client.update_site_rack_physical_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_site_rack_physical_properties)
+
+Arguments mapping described in
+[UpdateSiteRackPhysicalPropertiesInputRequestTypeDef](./type_defs.md#updatesiterackphysicalpropertiesinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `SiteId`: `str` *(required)*
+- `PowerDrawKva`: [PowerDrawKvaType](./literals.md#powerdrawkvatype)
+- `PowerPhase`: [PowerPhaseType](./literals.md#powerphasetype)
+- `PowerConnector`: [PowerConnectorType](./literals.md#powerconnectortype)
+- `PowerFeedDrop`: [PowerFeedDropType](./literals.md#powerfeeddroptype)
+- `UplinkGbps`: [UplinkGbpsType](./literals.md#uplinkgbpstype)
+- `UplinkCount`: [UplinkCountType](./literals.md#uplinkcounttype)
+- `FiberOpticCableType`:
+  [FiberOpticCableTypeType](./literals.md#fiberopticcabletypetype)
+- `OpticalStandard`: [OpticalStandardType](./literals.md#opticalstandardtype)
+- `MaximumSupportedWeightLbs`:
+  [MaximumSupportedWeightLbsType](./literals.md#maximumsupportedweightlbstype)
+
+Returns
+[UpdateSiteRackPhysicalPropertiesOutputTypeDef](./type_defs.md#updatesiterackphysicalpropertiesoutputtypedef).
