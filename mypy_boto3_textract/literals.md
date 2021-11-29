@@ -16,6 +16,7 @@ type annotations stubs module
   - [RelationshipTypeType](#relationshiptypetype)
   - [SelectionStatusType](#selectionstatustype)
   - [TextTypeType](#texttypetype)
+  - [ValueTypeType](#valuetypetype)
   - [ServiceName](#servicename)
 
 ## BlockTypeType
@@ -113,6 +114,16 @@ Values:
 
 - `HANDWRITING`
 - `PRINTED`
+
+## ValueTypeType
+
+```python
+from mypy_boto3_textract.literals import ValueTypeType
+```
+
+Values:
+
+- `DATE`
 
 ## ServiceName
 
@@ -309,6 +320,7 @@ Values:
 - `meteringmarketplace`
 - `mgh`
 - `mgn`
+- `migration-hub-refactor-spaces`
 - `migrationhub-config`
 - `migrationhubstrategy`
 - `mobile`

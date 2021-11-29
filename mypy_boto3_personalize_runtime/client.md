@@ -138,13 +138,14 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `campaignArn`: `str` *(required)*
+- `campaignArn`: `str`
 - `itemId`: `str`
 - `userId`: `str`
 - `numResults`: `int`
 - `context`: `Mapping`\[`str`, `str`\]
 - `filterArn`: `str`
 - `filterValues`: `Mapping`\[`str`, `str`\]
+- `recommenderArn`: `str`
 
 Returns
 [GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef).

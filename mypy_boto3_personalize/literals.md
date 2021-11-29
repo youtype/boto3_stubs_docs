@@ -8,8 +8,10 @@ type annotations stubs module
 [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 - [Literals for boto3 Personalize module](#literals-for-boto3-personalize-module)
+  - [DomainType](#domaintype)
   - [IngestionModeType](#ingestionmodetype)
   - [ListBatchInferenceJobsPaginatorName](#listbatchinferencejobspaginatorname)
+  - [ListBatchSegmentJobsPaginatorName](#listbatchsegmentjobspaginatorname)
   - [ListCampaignsPaginatorName](#listcampaignspaginatorname)
   - [ListDatasetExportJobsPaginatorName](#listdatasetexportjobspaginatorname)
   - [ListDatasetGroupsPaginatorName](#listdatasetgroupspaginatorname)
@@ -18,6 +20,7 @@ type annotations stubs module
   - [ListEventTrackersPaginatorName](#listeventtrackerspaginatorname)
   - [ListFiltersPaginatorName](#listfilterspaginatorname)
   - [ListRecipesPaginatorName](#listrecipespaginatorname)
+  - [ListRecommendersPaginatorName](#listrecommenderspaginatorname)
   - [ListSchemasPaginatorName](#listschemaspaginatorname)
   - [ListSolutionVersionsPaginatorName](#listsolutionversionspaginatorname)
   - [ListSolutionsPaginatorName](#listsolutionspaginatorname)
@@ -26,6 +29,17 @@ type annotations stubs module
   - [TrainingModeType](#trainingmodetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+## DomainType
+
+```python
+from mypy_boto3_personalize.literals import DomainType
+```
+
+Values:
+
+- `ECOMMERCE`
+- `VIDEO_ON_DEMAND`
 
 ## IngestionModeType
 
@@ -48,6 +62,16 @@ from mypy_boto3_personalize.literals import ListBatchInferenceJobsPaginatorName
 Values:
 
 - `list_batch_inference_jobs`
+
+## ListBatchSegmentJobsPaginatorName
+
+```python
+from mypy_boto3_personalize.literals import ListBatchSegmentJobsPaginatorName
+```
+
+Values:
+
+- `list_batch_segment_jobs`
 
 ## ListCampaignsPaginatorName
 
@@ -128,6 +152,16 @@ from mypy_boto3_personalize.literals import ListRecipesPaginatorName
 Values:
 
 - `list_recipes`
+
+## ListRecommendersPaginatorName
+
+```python
+from mypy_boto3_personalize.literals import ListRecommendersPaginatorName
+```
+
+Values:
+
+- `list_recommenders`
 
 ## ListSchemasPaginatorName
 
@@ -388,6 +422,7 @@ Values:
 - `meteringmarketplace`
 - `mgh`
 - `mgn`
+- `migration-hub-refactor-spaces`
 - `migrationhub-config`
 - `migrationhubstrategy`
 - `mobile`
@@ -501,6 +536,7 @@ from mypy_boto3_personalize.literals import PaginatorName
 Values:
 
 - `list_batch_inference_jobs`
+- `list_batch_segment_jobs`
 - `list_campaigns`
 - `list_dataset_export_jobs`
 - `list_dataset_groups`
@@ -509,6 +545,7 @@ Values:
 - `list_event_trackers`
 - `list_filters`
 - `list_recipes`
+- `list_recommenders`
 - `list_schemas`
 - `list_solution_versions`
 - `list_solutions`

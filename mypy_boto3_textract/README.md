@@ -33,6 +33,7 @@ from mypy_boto3_textract.client import TextractClient
 
 - [analyze_document](./client.md#analyze_document)
 - [analyze_expense](./client.md#analyze_expense)
+- [analyze_id](./client.md#analyze_id)
 - [can_paginate](./client.md#can_paginate)
 - [detect_document_text](./client.md#detect_document_text)
 - [exceptions](./client.md#exceptions)
@@ -82,6 +83,7 @@ from mypy_boto3_textract.literals import BlockTypeType, ...
 - [RelationshipTypeType](./literals.md#relationshiptypetype)
 - [SelectionStatusType](./literals.md#selectionstatustype)
 - [TextTypeType](./literals.md#texttypetype)
+- [ValueTypeType](./literals.md#valuetypetype)
 - [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
@@ -99,6 +101,9 @@ from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestRequestTypeDef, 
 - [AnalyzeDocumentResponseTypeDef](./type_defs.md#analyzedocumentresponsetypedef)
 - [AnalyzeExpenseRequestRequestTypeDef](./type_defs.md#analyzeexpenserequestrequesttypedef)
 - [AnalyzeExpenseResponseTypeDef](./type_defs.md#analyzeexpenseresponsetypedef)
+- [AnalyzeIDDetectionsTypeDef](./type_defs.md#analyzeiddetectionstypedef)
+- [AnalyzeIDRequestRequestTypeDef](./type_defs.md#analyzeidrequestrequesttypedef)
+- [AnalyzeIDResponseTypeDef](./type_defs.md#analyzeidresponsetypedef)
 - [BlockTypeDef](./type_defs.md#blocktypedef)
 - [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - [DetectDocumentTextRequestRequestTypeDef](./type_defs.md#detectdocumenttextrequestrequesttypedef)
@@ -120,8 +125,11 @@ from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestRequestTypeDef, 
 - [HumanLoopActivationOutputTypeDef](./type_defs.md#humanloopactivationoutputtypedef)
 - [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
 - [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
+- [IdentityDocumentFieldTypeDef](./type_defs.md#identitydocumentfieldtypedef)
+- [IdentityDocumentTypeDef](./type_defs.md#identitydocumenttypedef)
 - [LineItemFieldsTypeDef](./type_defs.md#lineitemfieldstypedef)
 - [LineItemGroupTypeDef](./type_defs.md#lineitemgrouptypedef)
+- [NormalizedValueTypeDef](./type_defs.md#normalizedvaluetypedef)
 - [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
 - [PointTypeDef](./type_defs.md#pointtypedef)

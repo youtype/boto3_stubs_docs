@@ -14,6 +14,7 @@ type annotations stubs module
     - [exceptions](#exceptions)
     - [analyze_document](#analyze_document)
     - [analyze_expense](#analyze_expense)
+    - [analyze_id](#analyze_id)
     - [can_paginate](#can_paginate)
     - [detect_document_text](#detect_document_text)
     - [generate_presigned_url](#generate_presigned_url)
@@ -108,7 +109,8 @@ Returns
 
 ### analyze_expense
 
-Analyzes an input document for financially related relationships between text.
+`AnalyzeExpense` synchronously analyzes an input document for financially
+related relationships between text.
 
 Type annotations for `boto3.client("textract").analyze_expense` method.
 
@@ -124,6 +126,25 @@ Keyword-only arguments:
 
 Returns
 [AnalyzeExpenseResponseTypeDef](./type_defs.md#analyzeexpenseresponsetypedef).
+
+### analyze_id
+
+Analyzes identity documents for relevant information.
+
+Type annotations for `boto3.client("textract").analyze_id` method.
+
+Boto3 documentation:
+[Textract.Client.analyze_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_id)
+
+Arguments mapping described in
+[AnalyzeIDRequestRequestTypeDef](./type_defs.md#analyzeidrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DocumentPages`:
+  `Sequence`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\] *(required)*
+
+Returns [AnalyzeIDResponseTypeDef](./type_defs.md#analyzeidresponsetypedef).
 
 ### can_paginate
 

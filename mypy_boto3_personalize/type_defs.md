@@ -17,6 +17,10 @@ type annotations stubs module
   - [BatchInferenceJobOutputTypeDef](#batchinferencejoboutputtypedef)
   - [BatchInferenceJobSummaryTypeDef](#batchinferencejobsummarytypedef)
   - [BatchInferenceJobTypeDef](#batchinferencejobtypedef)
+  - [BatchSegmentJobInputTypeDef](#batchsegmentjobinputtypedef)
+  - [BatchSegmentJobOutputTypeDef](#batchsegmentjoboutputtypedef)
+  - [BatchSegmentJobSummaryTypeDef](#batchsegmentjobsummarytypedef)
+  - [BatchSegmentJobTypeDef](#batchsegmentjobtypedef)
   - [CampaignConfigTypeDef](#campaignconfigtypedef)
   - [CampaignSummaryTypeDef](#campaignsummarytypedef)
   - [CampaignTypeDef](#campaigntypedef)
@@ -25,6 +29,8 @@ type annotations stubs module
   - [ContinuousHyperParameterRangeTypeDef](#continuoushyperparameterrangetypedef)
   - [CreateBatchInferenceJobRequestRequestTypeDef](#createbatchinferencejobrequestrequesttypedef)
   - [CreateBatchInferenceJobResponseTypeDef](#createbatchinferencejobresponsetypedef)
+  - [CreateBatchSegmentJobRequestRequestTypeDef](#createbatchsegmentjobrequestrequesttypedef)
+  - [CreateBatchSegmentJobResponseTypeDef](#createbatchsegmentjobresponsetypedef)
   - [CreateCampaignRequestRequestTypeDef](#createcampaignrequestrequesttypedef)
   - [CreateCampaignResponseTypeDef](#createcampaignresponsetypedef)
   - [CreateDatasetExportJobRequestRequestTypeDef](#createdatasetexportjobrequestrequesttypedef)
@@ -39,6 +45,8 @@ type annotations stubs module
   - [CreateEventTrackerResponseTypeDef](#createeventtrackerresponsetypedef)
   - [CreateFilterRequestRequestTypeDef](#createfilterrequestrequesttypedef)
   - [CreateFilterResponseTypeDef](#createfilterresponsetypedef)
+  - [CreateRecommenderRequestRequestTypeDef](#createrecommenderrequestrequesttypedef)
+  - [CreateRecommenderResponseTypeDef](#createrecommenderresponsetypedef)
   - [CreateSchemaRequestRequestTypeDef](#createschemarequestrequesttypedef)
   - [CreateSchemaResponseTypeDef](#createschemaresponsetypedef)
   - [CreateSolutionRequestRequestTypeDef](#createsolutionrequestrequesttypedef)
@@ -66,12 +74,15 @@ type annotations stubs module
   - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
   - [DeleteEventTrackerRequestRequestTypeDef](#deleteeventtrackerrequestrequesttypedef)
   - [DeleteFilterRequestRequestTypeDef](#deletefilterrequestrequesttypedef)
+  - [DeleteRecommenderRequestRequestTypeDef](#deleterecommenderrequestrequesttypedef)
   - [DeleteSchemaRequestRequestTypeDef](#deleteschemarequestrequesttypedef)
   - [DeleteSolutionRequestRequestTypeDef](#deletesolutionrequestrequesttypedef)
   - [DescribeAlgorithmRequestRequestTypeDef](#describealgorithmrequestrequesttypedef)
   - [DescribeAlgorithmResponseTypeDef](#describealgorithmresponsetypedef)
   - [DescribeBatchInferenceJobRequestRequestTypeDef](#describebatchinferencejobrequestrequesttypedef)
   - [DescribeBatchInferenceJobResponseTypeDef](#describebatchinferencejobresponsetypedef)
+  - [DescribeBatchSegmentJobRequestRequestTypeDef](#describebatchsegmentjobrequestrequesttypedef)
+  - [DescribeBatchSegmentJobResponseTypeDef](#describebatchsegmentjobresponsetypedef)
   - [DescribeCampaignRequestRequestTypeDef](#describecampaignrequestrequesttypedef)
   - [DescribeCampaignResponseTypeDef](#describecampaignresponsetypedef)
   - [DescribeDatasetExportJobRequestRequestTypeDef](#describedatasetexportjobrequestrequesttypedef)
@@ -90,6 +101,8 @@ type annotations stubs module
   - [DescribeFilterResponseTypeDef](#describefilterresponsetypedef)
   - [DescribeRecipeRequestRequestTypeDef](#describereciperequestrequesttypedef)
   - [DescribeRecipeResponseTypeDef](#describereciperesponsetypedef)
+  - [DescribeRecommenderRequestRequestTypeDef](#describerecommenderrequestrequesttypedef)
+  - [DescribeRecommenderResponseTypeDef](#describerecommenderresponsetypedef)
   - [DescribeSchemaRequestRequestTypeDef](#describeschemarequestrequesttypedef)
   - [DescribeSchemaResponseTypeDef](#describeschemaresponsetypedef)
   - [DescribeSolutionRequestRequestTypeDef](#describesolutionrequestrequesttypedef)
@@ -110,6 +123,8 @@ type annotations stubs module
   - [IntegerHyperParameterRangeTypeDef](#integerhyperparameterrangetypedef)
   - [ListBatchInferenceJobsRequestRequestTypeDef](#listbatchinferencejobsrequestrequesttypedef)
   - [ListBatchInferenceJobsResponseTypeDef](#listbatchinferencejobsresponsetypedef)
+  - [ListBatchSegmentJobsRequestRequestTypeDef](#listbatchsegmentjobsrequestrequesttypedef)
+  - [ListBatchSegmentJobsResponseTypeDef](#listbatchsegmentjobsresponsetypedef)
   - [ListCampaignsRequestRequestTypeDef](#listcampaignsrequestrequesttypedef)
   - [ListCampaignsResponseTypeDef](#listcampaignsresponsetypedef)
   - [ListDatasetExportJobsRequestRequestTypeDef](#listdatasetexportjobsrequestrequesttypedef)
@@ -126,6 +141,8 @@ type annotations stubs module
   - [ListFiltersResponseTypeDef](#listfiltersresponsetypedef)
   - [ListRecipesRequestRequestTypeDef](#listrecipesrequestrequesttypedef)
   - [ListRecipesResponseTypeDef](#listrecipesresponsetypedef)
+  - [ListRecommendersRequestRequestTypeDef](#listrecommendersrequestrequesttypedef)
+  - [ListRecommendersResponseTypeDef](#listrecommendersresponsetypedef)
   - [ListSchemasRequestRequestTypeDef](#listschemasrequestrequesttypedef)
   - [ListSchemasResponseTypeDef](#listschemasresponsetypedef)
   - [ListSolutionVersionsRequestRequestTypeDef](#listsolutionversionsrequestrequesttypedef)
@@ -136,6 +153,10 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [RecipeSummaryTypeDef](#recipesummarytypedef)
   - [RecipeTypeDef](#recipetypedef)
+  - [RecommenderConfigTypeDef](#recommenderconfigtypedef)
+  - [RecommenderSummaryTypeDef](#recommendersummarytypedef)
+  - [RecommenderTypeDef](#recommendertypedef)
+  - [RecommenderUpdateSummaryTypeDef](#recommenderupdatesummarytypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3DataConfigTypeDef](#s3dataconfigtypedef)
   - [SolutionConfigTypeDef](#solutionconfigtypedef)
@@ -147,6 +168,8 @@ type annotations stubs module
   - [TunedHPOParamsTypeDef](#tunedhpoparamstypedef)
   - [UpdateCampaignRequestRequestTypeDef](#updatecampaignrequestrequesttypedef)
   - [UpdateCampaignResponseTypeDef](#updatecampaignresponsetypedef)
+  - [UpdateRecommenderRequestRequestTypeDef](#updaterecommenderrequestrequesttypedef)
+  - [UpdateRecommenderResponseTypeDef](#updaterecommenderresponsetypedef)
 
 ## AlgorithmImageTypeDef
 
@@ -276,6 +299,66 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
+## BatchSegmentJobInputTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import BatchSegmentJobInputTypeDef
+```
+
+Required fields:
+
+- `s3DataSource`: [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
+
+## BatchSegmentJobOutputTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import BatchSegmentJobOutputTypeDef
+```
+
+Required fields:
+
+- `s3DataDestination`:
+  [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
+
+## BatchSegmentJobSummaryTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import BatchSegmentJobSummaryTypeDef
+```
+
+Optional fields:
+
+- `batchSegmentJobArn`: `str`
+- `jobName`: `str`
+- `status`: `str`
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
+- `failureReason`: `str`
+- `solutionVersionArn`: `str`
+
+## BatchSegmentJobTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import BatchSegmentJobTypeDef
+```
+
+Optional fields:
+
+- `jobName`: `str`
+- `batchSegmentJobArn`: `str`
+- `filterArn`: `str`
+- `failureReason`: `str`
+- `solutionVersionArn`: `str`
+- `numResults`: `int`
+- `jobInput`:
+  [BatchSegmentJobInputTypeDef](./type_defs.md#batchsegmentjobinputtypedef)
+- `jobOutput`:
+  [BatchSegmentJobOutputTypeDef](./type_defs.md#batchsegmentjoboutputtypedef)
+- `roleArn`: `str`
+- `status`: `str`
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
+
 ## CampaignConfigTypeDef
 
 ```python
@@ -397,6 +480,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateBatchSegmentJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateBatchSegmentJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `jobName`: `str`
+- `solutionVersionArn`: `str`
+- `jobInput`:
+  [BatchSegmentJobInputTypeDef](./type_defs.md#batchsegmentjobinputtypedef)
+- `jobOutput`:
+  [BatchSegmentJobOutputTypeDef](./type_defs.md#batchsegmentjoboutputtypedef)
+- `roleArn`: `str`
+
+Optional fields:
+
+- `filterArn`: `str`
+- `numResults`: `int`
+
+## CreateBatchSegmentJobResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateBatchSegmentJobResponseTypeDef
+```
+
+Required fields:
+
+- `batchSegmentJobArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateCampaignRequestRequestTypeDef
 
 ```python
@@ -470,6 +586,7 @@ Optional fields:
 
 - `roleArn`: `str`
 - `kmsKeyArn`: `str`
+- `domain`: [DomainType](./literals.md#domaintype)
 
 ## CreateDatasetGroupResponseTypeDef
 
@@ -480,6 +597,7 @@ from mypy_boto3_personalize.type_defs import CreateDatasetGroupResponseTypeDef
 Required fields:
 
 - `datasetGroupArn`: `str`
+- `domain`: [DomainType](./literals.md#domaintype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -581,6 +699,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateRecommenderRequestRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateRecommenderRequestRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `datasetGroupArn`: `str`
+- `recipeArn`: `str`
+
+Optional fields:
+
+- `recommenderConfig`:
+  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
+
+## CreateRecommenderResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateRecommenderResponseTypeDef
+```
+
+Required fields:
+
+- `recommenderArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateSchemaRequestRequestTypeDef
 
 ```python
@@ -591,6 +738,10 @@ Required fields:
 
 - `name`: `str`
 - `schema`: `str`
+
+Optional fields:
+
+- `domain`: [DomainType](./literals.md#domaintype)
 
 ## CreateSchemaResponseTypeDef
 
@@ -732,6 +883,7 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 - `failureReason`: `str`
+- `domain`: [DomainType](./literals.md#domaintype)
 
 ## DatasetGroupTypeDef
 
@@ -749,6 +901,7 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 - `failureReason`: `str`
+- `domain`: [DomainType](./literals.md#domaintype)
 
 ## DatasetImportJobSummaryTypeDef
 
@@ -795,6 +948,7 @@ Optional fields:
 - `schemaArn`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+- `domain`: [DomainType](./literals.md#domaintype)
 
 ## DatasetSchemaTypeDef
 
@@ -809,6 +963,7 @@ Optional fields:
 - `schema`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+- `domain`: [DomainType](./literals.md#domaintype)
 
 ## DatasetSummaryTypeDef
 
@@ -945,6 +1100,16 @@ Required fields:
 
 - `filterArn`: `str`
 
+## DeleteRecommenderRequestRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DeleteRecommenderRequestRequestTypeDef
+```
+
+Required fields:
+
+- `recommenderArn`: `str`
+
 ## DeleteSchemaRequestRequestTypeDef
 
 ```python
@@ -1007,6 +1172,29 @@ Required fields:
 
 - `batchInferenceJob`:
   [BatchInferenceJobTypeDef](./type_defs.md#batchinferencejobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeBatchSegmentJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeBatchSegmentJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `batchSegmentJobArn`: `str`
+
+## DescribeBatchSegmentJobResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeBatchSegmentJobResponseTypeDef
+```
+
+Required fields:
+
+- `batchSegmentJob`:
+  [BatchSegmentJobTypeDef](./type_defs.md#batchsegmentjobtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1208,6 +1396,28 @@ from mypy_boto3_personalize.type_defs import DescribeRecipeResponseTypeDef
 Required fields:
 
 - `recipe`: [RecipeTypeDef](./type_defs.md#recipetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeRecommenderRequestRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeRecommenderRequestRequestTypeDef
+```
+
+Required fields:
+
+- `recommenderArn`: `str`
+
+## DescribeRecommenderResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeRecommenderResponseTypeDef
+```
+
+Required fields:
+
+- `recommender`: [RecommenderTypeDef](./type_defs.md#recommendertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1470,6 +1680,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListBatchSegmentJobsRequestRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListBatchSegmentJobsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `solutionVersionArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListBatchSegmentJobsResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListBatchSegmentJobsResponseTypeDef
+```
+
+Required fields:
+
+- `batchSegmentJobs`:
+  `List`\[[BatchSegmentJobSummaryTypeDef](./type_defs.md#batchsegmentjobsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListCampaignsRequestRequestTypeDef
 
 ```python
@@ -1663,6 +1899,7 @@ Optional fields:
   [RecipeProviderType](./literals.md#recipeprovidertype))
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `domain`: [DomainType](./literals.md#domaintype)
 
 ## ListRecipesResponseTypeDef
 
@@ -1674,6 +1911,32 @@ Required fields:
 
 - `recipes`:
   `List`\[[RecipeSummaryTypeDef](./type_defs.md#recipesummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListRecommendersRequestRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListRecommendersRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `datasetGroupArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListRecommendersResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListRecommendersResponseTypeDef
+```
+
+Required fields:
+
+- `recommenders`:
+  `List`\[[RecommenderSummaryTypeDef](./type_defs.md#recommendersummarytypedef)\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1792,6 +2055,7 @@ Optional fields:
 - `status`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+- `domain`: [DomainType](./literals.md#domaintype)
 
 ## RecipeTypeDef
 
@@ -1810,6 +2074,70 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `recipeType`: `str`
 - `lastUpdatedDateTime`: `datetime`
+
+## RecommenderConfigTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import RecommenderConfigTypeDef
+```
+
+Optional fields:
+
+- `itemExplorationConfig`: `Mapping`\[`str`, `str`\]
+
+## RecommenderSummaryTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import RecommenderSummaryTypeDef
+```
+
+Optional fields:
+
+- `name`: `str`
+- `recommenderArn`: `str`
+- `datasetGroupArn`: `str`
+- `recipeArn`: `str`
+- `recommenderConfig`:
+  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
+- `status`: `str`
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
+
+## RecommenderTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import RecommenderTypeDef
+```
+
+Optional fields:
+
+- `recommenderArn`: `str`
+- `datasetGroupArn`: `str`
+- `name`: `str`
+- `recipeArn`: `str`
+- `recommenderConfig`:
+  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
+- `status`: `str`
+- `failureReason`: `str`
+- `latestRecommenderUpdate`:
+  [RecommenderUpdateSummaryTypeDef](./type_defs.md#recommenderupdatesummarytypedef)
+
+## RecommenderUpdateSummaryTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import RecommenderUpdateSummaryTypeDef
+```
+
+Optional fields:
+
+- `recommenderConfig`:
+  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
+- `status`: `str`
+- `failureReason`: `str`
 
 ## ResponseMetadataTypeDef
 
@@ -1979,5 +2307,29 @@ from mypy_boto3_personalize.type_defs import UpdateCampaignResponseTypeDef
 Required fields:
 
 - `campaignArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateRecommenderRequestRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import UpdateRecommenderRequestRequestTypeDef
+```
+
+Required fields:
+
+- `recommenderArn`: `str`
+- `recommenderConfig`:
+  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
+
+## UpdateRecommenderResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import UpdateRecommenderResponseTypeDef
+```
+
+Required fields:
+
+- `recommenderArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

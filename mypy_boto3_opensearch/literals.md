@@ -627,6 +627,7 @@ Values:
 - `meteringmarketplace`
 - `mgh`
 - `mgn`
+- `migration-hub-refactor-spaces`
 - `migrationhub-config`
 - `migrationhubstrategy`
 - `mobile`

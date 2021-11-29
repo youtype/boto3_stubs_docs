@@ -14,6 +14,7 @@ type annotations stubs module
     - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_batch_inference_job](#create_batch_inference_job)
+    - [create_batch_segment_job](#create_batch_segment_job)
     - [create_campaign](#create_campaign)
     - [create_dataset](#create_dataset)
     - [create_dataset_export_job](#create_dataset_export_job)
@@ -21,6 +22,7 @@ type annotations stubs module
     - [create_dataset_import_job](#create_dataset_import_job)
     - [create_event_tracker](#create_event_tracker)
     - [create_filter](#create_filter)
+    - [create_recommender](#create_recommender)
     - [create_schema](#create_schema)
     - [create_solution](#create_solution)
     - [create_solution_version](#create_solution_version)
@@ -29,10 +31,12 @@ type annotations stubs module
     - [delete_dataset_group](#delete_dataset_group)
     - [delete_event_tracker](#delete_event_tracker)
     - [delete_filter](#delete_filter)
+    - [delete_recommender](#delete_recommender)
     - [delete_schema](#delete_schema)
     - [delete_solution](#delete_solution)
     - [describe_algorithm](#describe_algorithm)
     - [describe_batch_inference_job](#describe_batch_inference_job)
+    - [describe_batch_segment_job](#describe_batch_segment_job)
     - [describe_campaign](#describe_campaign)
     - [describe_dataset](#describe_dataset)
     - [describe_dataset_export_job](#describe_dataset_export_job)
@@ -42,12 +46,14 @@ type annotations stubs module
     - [describe_feature_transformation](#describe_feature_transformation)
     - [describe_filter](#describe_filter)
     - [describe_recipe](#describe_recipe)
+    - [describe_recommender](#describe_recommender)
     - [describe_schema](#describe_schema)
     - [describe_solution](#describe_solution)
     - [describe_solution_version](#describe_solution_version)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_solution_metrics](#get_solution_metrics)
     - [list_batch_inference_jobs](#list_batch_inference_jobs)
+    - [list_batch_segment_jobs](#list_batch_segment_jobs)
     - [list_campaigns](#list_campaigns)
     - [list_dataset_export_jobs](#list_dataset_export_jobs)
     - [list_dataset_groups](#list_dataset_groups)
@@ -56,11 +62,13 @@ type annotations stubs module
     - [list_event_trackers](#list_event_trackers)
     - [list_filters](#list_filters)
     - [list_recipes](#list_recipes)
+    - [list_recommenders](#list_recommenders)
     - [list_schemas](#list_schemas)
     - [list_solution_versions](#list_solution_versions)
     - [list_solutions](#list_solutions)
     - [stop_solution_version_creation](#stop_solution_version_creation)
     - [update_campaign](#update_campaign)
+    - [update_recommender](#update_recommender)
     - [get_paginator](#get_paginator)
 
 ## PersonalizeClient
@@ -161,9 +169,39 @@ Keyword-only arguments:
 Returns
 [CreateBatchInferenceJobResponseTypeDef](./type_defs.md#createbatchinferencejobresponsetypedef).
 
+### create_batch_segment_job
+
+Creates a batch segment job.
+
+Type annotations for `boto3.client("personalize").create_batch_segment_job`
+method.
+
+Boto3 documentation:
+[Personalize.Client.create_batch_segment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_segment_job)
+
+Arguments mapping described in
+[CreateBatchSegmentJobRequestRequestTypeDef](./type_defs.md#createbatchsegmentjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `jobName`: `str` *(required)*
+- `solutionVersionArn`: `str` *(required)*
+- `jobInput`:
+  [BatchSegmentJobInputTypeDef](./type_defs.md#batchsegmentjobinputtypedef)
+  *(required)*
+- `jobOutput`:
+  [BatchSegmentJobOutputTypeDef](./type_defs.md#batchsegmentjoboutputtypedef)
+  *(required)*
+- `roleArn`: `str` *(required)*
+- `filterArn`: `str`
+- `numResults`: `int`
+
+Returns
+[CreateBatchSegmentJobResponseTypeDef](./type_defs.md#createbatchsegmentjobresponsetypedef).
+
 ### create_campaign
 
-Creates a campaign by deploying a solution version.
+Creates a campaign that deploys a solution version.
 
 Type annotations for `boto3.client("personalize").create_campaign` method.
 
@@ -249,6 +287,7 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `roleArn`: `str`
 - `kmsKeyArn`: `str`
+- `domain`: [DomainType](./literals.md#domaintype)
 
 Returns
 [CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef).
@@ -322,6 +361,30 @@ Keyword-only arguments:
 Returns
 [CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef).
 
+### create_recommender
+
+Creates a recommender with the recipe (a Domain dataset group use case) you
+specify.
+
+Type annotations for `boto3.client("personalize").create_recommender` method.
+
+Boto3 documentation:
+[Personalize.Client.create_recommender](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_recommender)
+
+Arguments mapping described in
+[CreateRecommenderRequestRequestTypeDef](./type_defs.md#createrecommenderrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `name`: `str` *(required)*
+- `datasetGroupArn`: `str` *(required)*
+- `recipeArn`: `str` *(required)*
+- `recommenderConfig`:
+  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
+
+Returns
+[CreateRecommenderResponseTypeDef](./type_defs.md#createrecommenderresponsetypedef).
+
 ### create_schema
 
 Creates an Amazon Personalize schema from the specified schema string.
@@ -338,6 +401,7 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `schema`: `str` *(required)*
+- `domain`: [DomainType](./literals.md#domaintype)
 
 Returns
 [CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
@@ -370,7 +434,7 @@ Returns
 
 ### create_solution_version
 
-Trains or retrains an active solution.
+Trains or retrains an active solution in a Custom dataset group.
 
 Type annotations for `boto3.client("personalize").create_solution_version`
 method.
@@ -469,6 +533,22 @@ Keyword-only arguments:
 
 - `filterArn`: `str` *(required)*
 
+### delete_recommender
+
+Deactivates and removes a recommender.
+
+Type annotations for `boto3.client("personalize").delete_recommender` method.
+
+Boto3 documentation:
+[Personalize.Client.delete_recommender](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_recommender)
+
+Arguments mapping described in
+[DeleteRecommenderRequestRequestTypeDef](./type_defs.md#deleterecommenderrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `recommenderArn`: `str` *(required)*
+
 ### delete_schema
 
 Deletes a schema.
@@ -541,6 +621,28 @@ Keyword-only arguments:
 
 Returns
 [DescribeBatchInferenceJobResponseTypeDef](./type_defs.md#describebatchinferencejobresponsetypedef).
+
+### describe_batch_segment_job
+
+Gets the properties of a batch segment job including name, Amazon Resource Name
+(ARN), status, input and output configurations, and the ARN of the solution
+version used to generate segments.
+
+Type annotations for `boto3.client("personalize").describe_batch_segment_job`
+method.
+
+Boto3 documentation:
+[Personalize.Client.describe_batch_segment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_segment_job)
+
+Arguments mapping described in
+[DescribeBatchSegmentJobRequestRequestTypeDef](./type_defs.md#describebatchsegmentjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `batchSegmentJobArn`: `str` *(required)*
+
+Returns
+[DescribeBatchSegmentJobResponseTypeDef](./type_defs.md#describebatchsegmentjobresponsetypedef).
 
 ### describe_campaign
 
@@ -720,6 +822,25 @@ Keyword-only arguments:
 Returns
 [DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef).
 
+### describe_recommender
+
+Describes the given recommender, including its status.
+
+Type annotations for `boto3.client("personalize").describe_recommender` method.
+
+Boto3 documentation:
+[Personalize.Client.describe_recommender](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recommender)
+
+Arguments mapping described in
+[DescribeRecommenderRequestRequestTypeDef](./type_defs.md#describerecommenderrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `recommenderArn`: `str` *(required)*
+
+Returns
+[DescribeRecommenderResponseTypeDef](./type_defs.md#describerecommenderresponsetypedef).
+
 ### describe_schema
 
 Describes a schema.
@@ -838,6 +959,29 @@ Keyword-only arguments:
 
 Returns
 [ListBatchInferenceJobsResponseTypeDef](./type_defs.md#listbatchinferencejobsresponsetypedef).
+
+### list_batch_segment_jobs
+
+Gets a list of the batch segment jobs that have been performed off of a
+solution version that you specify.
+
+Type annotations for `boto3.client("personalize").list_batch_segment_jobs`
+method.
+
+Boto3 documentation:
+[Personalize.Client.list_batch_segment_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_segment_jobs)
+
+Arguments mapping described in
+[ListBatchSegmentJobsRequestRequestTypeDef](./type_defs.md#listbatchsegmentjobsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `solutionVersionArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListBatchSegmentJobsResponseTypeDef](./type_defs.md#listbatchsegmentjobsresponsetypedef).
 
 ### list_campaigns
 
@@ -1005,9 +1149,31 @@ Keyword-only arguments:
   [RecipeProviderType](./literals.md#recipeprovidertype))
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `domain`: [DomainType](./literals.md#domaintype)
 
 Returns
 [ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef).
+
+### list_recommenders
+
+Returns a list of recommenders in a given Domain dataset group.
+
+Type annotations for `boto3.client("personalize").list_recommenders` method.
+
+Boto3 documentation:
+[Personalize.Client.list_recommenders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recommenders)
+
+Arguments mapping described in
+[ListRecommendersRequestRequestTypeDef](./type_defs.md#listrecommendersrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `datasetGroupArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListRecommendersResponseTypeDef](./type_defs.md#listrecommendersresponsetypedef).
 
 ### list_schemas
 
@@ -1114,6 +1280,28 @@ Keyword-only arguments:
 Returns
 [UpdateCampaignResponseTypeDef](./type_defs.md#updatecampaignresponsetypedef).
 
+### update_recommender
+
+Updates the recommender to modify the recommender configuration.
+
+Type annotations for `boto3.client("personalize").update_recommender` method.
+
+Boto3 documentation:
+[Personalize.Client.update_recommender](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_recommender)
+
+Arguments mapping described in
+[UpdateRecommenderRequestRequestTypeDef](./type_defs.md#updaterecommenderrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `recommenderArn`: `str` *(required)*
+- `recommenderConfig`:
+  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
+  *(required)*
+
+Returns
+[UpdateRecommenderResponseTypeDef](./type_defs.md#updaterecommenderresponsetypedef).
+
 ### get_paginator
 
 Type annotations for `boto3.client("personalize").get_paginator` method with
@@ -1121,6 +1309,8 @@ overloads.
 
 - `client.get_paginator("list_batch_inference_jobs")` ->
   [ListBatchInferenceJobsPaginator](./paginators.md#listbatchinferencejobspaginator)
+- `client.get_paginator("list_batch_segment_jobs")` ->
+  [ListBatchSegmentJobsPaginator](./paginators.md#listbatchsegmentjobspaginator)
 - `client.get_paginator("list_campaigns")` ->
   [ListCampaignsPaginator](./paginators.md#listcampaignspaginator)
 - `client.get_paginator("list_dataset_export_jobs")` ->
@@ -1137,6 +1327,8 @@ overloads.
   [ListFiltersPaginator](./paginators.md#listfilterspaginator)
 - `client.get_paginator("list_recipes")` ->
   [ListRecipesPaginator](./paginators.md#listrecipespaginator)
+- `client.get_paginator("list_recommenders")` ->
+  [ListRecommendersPaginator](./paginators.md#listrecommenderspaginator)
 - `client.get_paginator("list_schemas")` ->
   [ListSchemasPaginator](./paginators.md#listschemaspaginator)
 - `client.get_paginator("list_solution_versions")` ->

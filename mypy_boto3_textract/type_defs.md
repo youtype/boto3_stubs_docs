@@ -12,6 +12,9 @@ type annotations stubs module
   - [AnalyzeDocumentResponseTypeDef](#analyzedocumentresponsetypedef)
   - [AnalyzeExpenseRequestRequestTypeDef](#analyzeexpenserequestrequesttypedef)
   - [AnalyzeExpenseResponseTypeDef](#analyzeexpenseresponsetypedef)
+  - [AnalyzeIDDetectionsTypeDef](#analyzeiddetectionstypedef)
+  - [AnalyzeIDRequestRequestTypeDef](#analyzeidrequestrequesttypedef)
+  - [AnalyzeIDResponseTypeDef](#analyzeidresponsetypedef)
   - [BlockTypeDef](#blocktypedef)
   - [BoundingBoxTypeDef](#boundingboxtypedef)
   - [DetectDocumentTextRequestRequestTypeDef](#detectdocumenttextrequestrequesttypedef)
@@ -33,8 +36,11 @@ type annotations stubs module
   - [HumanLoopActivationOutputTypeDef](#humanloopactivationoutputtypedef)
   - [HumanLoopConfigTypeDef](#humanloopconfigtypedef)
   - [HumanLoopDataAttributesTypeDef](#humanloopdataattributestypedef)
+  - [IdentityDocumentFieldTypeDef](#identitydocumentfieldtypedef)
+  - [IdentityDocumentTypeDef](#identitydocumenttypedef)
   - [LineItemFieldsTypeDef](#lineitemfieldstypedef)
   - [LineItemGroupTypeDef](#lineitemgrouptypedef)
+  - [NormalizedValueTypeDef](#normalizedvaluetypedef)
   - [NotificationChannelTypeDef](#notificationchanneltypedef)
   - [OutputConfigTypeDef](#outputconfigtypedef)
   - [PointTypeDef](#pointtypedef)
@@ -105,6 +111,49 @@ Required fields:
   [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
 - `ExpenseDocuments`:
   `List`\[[ExpenseDocumentTypeDef](./type_defs.md#expensedocumenttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AnalyzeIDDetectionsTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import AnalyzeIDDetectionsTypeDef
+```
+
+Required fields:
+
+- `Text`: `str`
+
+Optional fields:
+
+- `NormalizedValue`:
+  [NormalizedValueTypeDef](./type_defs.md#normalizedvaluetypedef)
+- `Confidence`: `float`
+
+## AnalyzeIDRequestRequestTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import AnalyzeIDRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DocumentPages`:
+  `Sequence`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\]
+
+## AnalyzeIDResponseTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import AnalyzeIDResponseTypeDef
+```
+
+Required fields:
+
+- `IdentityDocuments`:
+  `List`\[[IdentityDocumentTypeDef](./type_defs.md#identitydocumenttypedef)\]
+- `DocumentMetadata`:
+  [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
+- `AnalyzeIDModelVersion`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -406,6 +455,31 @@ Optional fields:
 - `ContentClassifiers`:
   `Sequence`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
 
+## IdentityDocumentFieldTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import IdentityDocumentFieldTypeDef
+```
+
+Optional fields:
+
+- `Type`:
+  [AnalyzeIDDetectionsTypeDef](./type_defs.md#analyzeiddetectionstypedef)
+- `ValueDetection`:
+  [AnalyzeIDDetectionsTypeDef](./type_defs.md#analyzeiddetectionstypedef)
+
+## IdentityDocumentTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import IdentityDocumentTypeDef
+```
+
+Optional fields:
+
+- `DocumentIndex`: `int`
+- `IdentityDocumentFields`:
+  `List`\[[IdentityDocumentFieldTypeDef](./type_defs.md#identitydocumentfieldtypedef)\]
+
 ## LineItemFieldsTypeDef
 
 ```python
@@ -428,6 +502,18 @@ Optional fields:
 - `LineItemGroupIndex`: `int`
 - `LineItems`:
   `List`\[[LineItemFieldsTypeDef](./type_defs.md#lineitemfieldstypedef)\]
+
+## NormalizedValueTypeDef
+
+```python
+from mypy_boto3_textract.type_defs import NormalizedValueTypeDef
+```
+
+Optional fields:
+
+- `Value`: `str`
+- `ValueType`: `Literal['DATE']` (see
+  [ValueTypeType](./literals.md#valuetypetype))
 
 ## NotificationChannelTypeDef
 

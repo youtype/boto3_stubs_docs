@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Paginators for boto3 Personalize module](#paginators-for-boto3-personalize-module)
   - [ListBatchInferenceJobsPaginator](#listbatchinferencejobspaginator)
+  - [ListBatchSegmentJobsPaginator](#listbatchsegmentjobspaginator)
   - [ListCampaignsPaginator](#listcampaignspaginator)
   - [ListDatasetExportJobsPaginator](#listdatasetexportjobspaginator)
   - [ListDatasetGroupsPaginator](#listdatasetgroupspaginator)
@@ -17,6 +18,7 @@ type annotations stubs module
   - [ListEventTrackersPaginator](#listeventtrackerspaginator)
   - [ListFiltersPaginator](#listfilterspaginator)
   - [ListRecipesPaginator](#listrecipespaginator)
+  - [ListRecommendersPaginator](#listrecommenderspaginator)
   - [ListSchemasPaginator](#listschemaspaginator)
   - [ListSolutionVersionsPaginator](#listsolutionversionspaginator)
   - [ListSolutionsPaginator](#listsolutionspaginator)
@@ -46,6 +48,32 @@ Arguments for `ListBatchInferenceJobsPaginator.paginate` method:
 
 `ListBatchInferenceJobsPaginator.paginate` returns
 `_PageIterator`\[[ListBatchInferenceJobsResponseTypeDef](./type_defs.md#listbatchinferencejobsresponsetypedef)\].
+
+## ListBatchSegmentJobsPaginator
+
+Type annotations for
+`boto3.client("personalize").get_paginator("list_batch_segment_jobs")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_personalize.paginator import ListBatchSegmentJobsPaginator
+
+def get_list_batch_segment_jobs_paginator() -> ListBatchSegmentJobsPaginator:
+    return boto3.client("personalize").get_paginator("list_batch_segment_jobs")
+```
+
+Boto3 documentation:
+[Personalize.Paginator.ListBatchSegmentJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListBatchSegmentJobs)
+
+Arguments for `ListBatchSegmentJobsPaginator.paginate` method:
+
+- `solutionVersionArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListBatchSegmentJobsPaginator.paginate` returns
+`_PageIterator`\[[ListBatchSegmentJobsResponseTypeDef](./type_defs.md#listbatchsegmentjobsresponsetypedef)\].
 
 ## ListCampaignsPaginator
 
@@ -249,11 +277,38 @@ Arguments for `ListRecipesPaginator.paginate` method:
 
 - `recipeProvider`: `Literal['SERVICE']` (see
   [RecipeProviderType](./literals.md#recipeprovidertype))
+- `domain`: [DomainType](./literals.md#domaintype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRecipesPaginator.paginate` returns
 `_PageIterator`\[[ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef)\].
+
+## ListRecommendersPaginator
+
+Type annotations for
+`boto3.client("personalize").get_paginator("list_recommenders")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_personalize.paginator import ListRecommendersPaginator
+
+def get_list_recommenders_paginator() -> ListRecommendersPaginator:
+    return boto3.client("personalize").get_paginator("list_recommenders")
+```
+
+Boto3 documentation:
+[Personalize.Paginator.ListRecommenders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListRecommenders)
+
+Arguments for `ListRecommendersPaginator.paginate` method:
+
+- `datasetGroupArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListRecommendersPaginator.paginate` returns
+`_PageIterator`\[[ListRecommendersResponseTypeDef](./type_defs.md#listrecommendersresponsetypedef)\].
 
 ## ListSchemasPaginator
 

@@ -775,6 +775,11 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
   service
 
+- [mypy-boto3-migration-hub-refactor-spaces](./mypy_boto3_migration_hub_refactor_spaces)
+  for
+  [MigrationHubRefactorSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces)
+  service
+
 - [mypy-boto3-migrationhub-config](./mypy_boto3_migrationhub_config) for
   [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
   service

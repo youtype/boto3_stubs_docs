@@ -53,18 +53,16 @@ Required fields:
 from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsRequestRequestTypeDef
 ```
 
-Required fields:
-
-- `campaignArn`: `str`
-
 Optional fields:
 
+- `campaignArn`: `str`
 - `itemId`: `str`
 - `userId`: `str`
 - `numResults`: `int`
 - `context`: `Mapping`\[`str`, `str`\]
 - `filterArn`: `str`
 - `filterValues`: `Mapping`\[`str`, `str`\]
+- `recommenderArn`: `str`
 
 ## GetRecommendationsResponseTypeDef
 
