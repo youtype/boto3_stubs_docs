@@ -1490,6 +1490,7 @@ Boto3 documentation:
 - `topic_configurations`: `List`\[`Any`\]
 - `queue_configurations`: `List`\[`Any`\]
 - `lambda_function_configurations`: `List`\[`Any`\]
+- `event_bridge_configuration`: `Dict`\[`str`, `Any`\]
 - `bucket_name`: `str`
 
 ### BucketNotification methods
@@ -1544,6 +1545,7 @@ Keyword-only arguments:
   [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
+- `SkipDestinationValidation`: `bool`
 
 #### BucketNotification.reload method
 

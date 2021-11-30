@@ -170,6 +170,7 @@ type annotations stubs module
   - [PutStorageConfigurationResponseTypeDef](#putstorageconfigurationresponsetypedef)
   - [ResourceTypeDef](#resourcetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RetentionPeriodTypeDef](#retentionperiodtypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TimeInNanosTypeDef](#timeinnanostypedef)
   - [TimeSeriesSummaryTypeDef](#timeseriessummarytypedef)
@@ -1438,6 +1439,8 @@ Required fields:
   [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
 - `disassociatedDataStorage`:
   [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
+- `retentionPeriod`:
+  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `configurationStatus`:
   [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
 - `lastUpdateDate`: `datetime`
@@ -2467,6 +2470,8 @@ Optional fields:
   [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
 - `disassociatedDataStorage`:
   [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
+- `retentionPeriod`:
+  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 
 ## PutStorageConfigurationResponseTypeDef
 
@@ -2481,6 +2486,8 @@ Required fields:
   [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
 - `disassociatedDataStorage`:
   [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
+- `retentionPeriod`:
+  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `configurationStatus`:
   [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
 - `ResponseMetadata`:
@@ -2510,6 +2517,17 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## RetentionPeriodTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import RetentionPeriodTypeDef
+```
+
+Optional fields:
+
+- `numberOfDays`: `int`
+- `unlimited`: `bool`
 
 ## TagResourceRequestRequestTypeDef
 

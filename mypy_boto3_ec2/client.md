@@ -271,6 +271,7 @@ type annotations stubs module
     - [describe_security_group_rules](#describe_security_group_rules)
     - [describe_security_groups](#describe_security_groups)
     - [describe_snapshot_attribute](#describe_snapshot_attribute)
+    - [describe_snapshot_tier_status](#describe_snapshot_tier_status)
     - [describe_snapshots](#describe_snapshots)
     - [describe_spot_datafeed_subscription](#describe_spot_datafeed_subscription)
     - [describe_spot_fleet_instances](#describe_spot_fleet_instances)
@@ -383,6 +384,7 @@ type annotations stubs module
     - [import_key_pair](#import_key_pair)
     - [import_snapshot](#import_snapshot)
     - [import_volume](#import_volume)
+    - [list_snapshots_in_recycle_bin](#list_snapshots_in_recycle_bin)
     - [modify_address_attribute](#modify_address_attribute)
     - [modify_availability_zone_group](#modify_availability_zone_group)
     - [modify_capacity_reservation](#modify_capacity_reservation)
@@ -410,6 +412,7 @@ type annotations stubs module
     - [modify_reserved_instances](#modify_reserved_instances)
     - [modify_security_group_rules](#modify_security_group_rules)
     - [modify_snapshot_attribute](#modify_snapshot_attribute)
+    - [modify_snapshot_tier](#modify_snapshot_tier)
     - [modify_spot_fleet_request](#modify_spot_fleet_request)
     - [modify_subnet_attribute](#modify_subnet_attribute)
     - [modify_traffic_mirror_filter_network_services](#modify_traffic_mirror_filter_network_services)
@@ -467,6 +470,8 @@ type annotations stubs module
     - [reset_snapshot_attribute](#reset_snapshot_attribute)
     - [restore_address_to_classic](#restore_address_to_classic)
     - [restore_managed_prefix_list_version](#restore_managed_prefix_list_version)
+    - [restore_snapshot_from_recycle_bin](#restore_snapshot_from_recycle_bin)
+    - [restore_snapshot_tier](#restore_snapshot_tier)
     - [revoke_client_vpn_ingress](#revoke_client_vpn_ingress)
     - [revoke_security_group_egress](#revoke_security_group_egress)
     - [revoke_security_group_ingress](#revoke_security_group_ingress)
@@ -6578,6 +6583,29 @@ Keyword-only arguments:
 Returns
 [DescribeSnapshotAttributeResultTypeDef](./type_defs.md#describesnapshotattributeresulttypedef).
 
+### describe_snapshot_tier_status
+
+Describes the storage tier status of one or more Amazon EBS snapshots.
+
+Type annotations for `boto3.client("ec2").describe_snapshot_tier_status`
+method.
+
+Boto3 documentation:
+[EC2.Client.describe_snapshot_tier_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_snapshot_tier_status)
+
+Arguments mapping described in
+[DescribeSnapshotTierStatusRequestRequestTypeDef](./type_defs.md#describesnapshottierstatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeSnapshotTierStatusResultTypeDef](./type_defs.md#describesnapshottierstatusresulttypedef).
+
 ### describe_snapshots
 
 Describes the specified EBS snapshots available to you or all of the EBS
@@ -9133,6 +9161,29 @@ Keyword-only arguments:
 
 Returns [ImportVolumeResultTypeDef](./type_defs.md#importvolumeresulttypedef).
 
+### list_snapshots_in_recycle_bin
+
+Lists one or more snapshots that are currently in the Recycle Bin.
+
+Type annotations for `boto3.client("ec2").list_snapshots_in_recycle_bin`
+method.
+
+Boto3 documentation:
+[EC2.Client.list_snapshots_in_recycle_bin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.list_snapshots_in_recycle_bin)
+
+Arguments mapping described in
+[ListSnapshotsInRecycleBinRequestRequestTypeDef](./type_defs.md#listsnapshotsinrecyclebinrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SnapshotIds`: `Sequence`\[`str`\]
+- `DryRun`: `bool`
+
+Returns
+[ListSnapshotsInRecycleBinResultTypeDef](./type_defs.md#listsnapshotsinrecyclebinresulttypedef).
+
 ### modify_address_attribute
 
 Modifies an attribute of the specified Elastic IP address.
@@ -9809,6 +9860,28 @@ Keyword-only arguments:
 - `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
 - `UserIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
+
+### modify_snapshot_tier
+
+Archives an Amazon EBS snapshot.
+
+Type annotations for `boto3.client("ec2").modify_snapshot_tier` method.
+
+Boto3 documentation:
+[EC2.Client.modify_snapshot_tier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_snapshot_tier)
+
+Arguments mapping described in
+[ModifySnapshotTierRequestRequestTypeDef](./type_defs.md#modifysnapshottierrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SnapshotId`: `str` *(required)*
+- `StorageTier`: `Literal['archive']` (see
+  [TargetStorageTierType](./literals.md#targetstoragetiertype))
+- `DryRun`: `bool`
+
+Returns
+[ModifySnapshotTierResultTypeDef](./type_defs.md#modifysnapshottierresulttypedef).
 
 ### modify_spot_fleet_request
 
@@ -11177,6 +11250,51 @@ Keyword-only arguments:
 Returns
 [RestoreManagedPrefixListVersionResultTypeDef](./type_defs.md#restoremanagedprefixlistversionresulttypedef).
 
+### restore_snapshot_from_recycle_bin
+
+Restores a snapshot from the Recycle Bin.
+
+Type annotations for `boto3.client("ec2").restore_snapshot_from_recycle_bin`
+method.
+
+Boto3 documentation:
+[EC2.Client.restore_snapshot_from_recycle_bin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.restore_snapshot_from_recycle_bin)
+
+Arguments mapping described in
+[RestoreSnapshotFromRecycleBinRequestRequestTypeDef](./type_defs.md#restoresnapshotfromrecyclebinrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SnapshotId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[RestoreSnapshotFromRecycleBinResultTypeDef](./type_defs.md#restoresnapshotfromrecyclebinresulttypedef).
+
+### restore_snapshot_tier
+
+Restores an archived Amazon EBS snapshot for use temporarily or permanently, or
+modifies the restore period or restore type for a snapshot that was previously
+temporarily restored.
+
+Type annotations for `boto3.client("ec2").restore_snapshot_tier` method.
+
+Boto3 documentation:
+[EC2.Client.restore_snapshot_tier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.restore_snapshot_tier)
+
+Arguments mapping described in
+[RestoreSnapshotTierRequestRequestTypeDef](./type_defs.md#restoresnapshottierrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SnapshotId`: `str` *(required)*
+- `TemporaryRestoreDays`: `int`
+- `PermanentRestore`: `bool`
+- `DryRun`: `bool`
+
+Returns
+[RestoreSnapshotTierResultTypeDef](./type_defs.md#restoresnapshottierresulttypedef).
+
 ### revoke_client_vpn_ingress
 
 Removes an ingress authorization rule from a Client VPN endpoint.
@@ -11842,6 +11960,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [DescribeSecurityGroupRulesPaginator](./paginators.md#describesecuritygrouprulespaginator)
 - `client.get_paginator("describe_security_groups")` ->
   [DescribeSecurityGroupsPaginator](./paginators.md#describesecuritygroupspaginator)
+- `client.get_paginator("describe_snapshot_tier_status")` ->
+  [DescribeSnapshotTierStatusPaginator](./paginators.md#describesnapshottierstatuspaginator)
 - `client.get_paginator("describe_snapshots")` ->
   [DescribeSnapshotsPaginator](./paginators.md#describesnapshotspaginator)
 - `client.get_paginator("describe_spot_fleet_instances")` ->
@@ -11933,6 +12053,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [GetTransitGatewayRouteTablePropagationsPaginator](./paginators.md#gettransitgatewayroutetablepropagationspaginator)
 - `client.get_paginator("get_vpn_connection_device_types")` ->
   [GetVpnConnectionDeviceTypesPaginator](./paginators.md#getvpnconnectiondevicetypespaginator)
+- `client.get_paginator("list_snapshots_in_recycle_bin")` ->
+  [ListSnapshotsInRecycleBinPaginator](./paginators.md#listsnapshotsinrecyclebinpaginator)
 - `client.get_paginator("search_local_gateway_routes")` ->
   [SearchLocalGatewayRoutesPaginator](./paginators.md#searchlocalgatewayroutespaginator)
 - `client.get_paginator("search_transit_gateway_multicast_groups")` ->

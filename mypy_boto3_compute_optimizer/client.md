@@ -13,6 +13,7 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
+    - [delete_recommendation_preferences](#delete_recommendation_preferences)
     - [describe_recommendation_export_jobs](#describe_recommendation_export_jobs)
     - [export_auto_scaling_group_recommendations](#export_auto_scaling_group_recommendations)
     - [export_ebs_volume_recommendations](#export_ebs_volume_recommendations)
@@ -23,10 +24,13 @@ type annotations stubs module
     - [get_ebs_volume_recommendations](#get_ebs_volume_recommendations)
     - [get_ec2_instance_recommendations](#get_ec2_instance_recommendations)
     - [get_ec2_recommendation_projected_metrics](#get_ec2_recommendation_projected_metrics)
+    - [get_effective_recommendation_preferences](#get_effective_recommendation_preferences)
     - [get_enrollment_status](#get_enrollment_status)
     - [get_enrollment_statuses_for_organization](#get_enrollment_statuses_for_organization)
     - [get_lambda_function_recommendations](#get_lambda_function_recommendations)
+    - [get_recommendation_preferences](#get_recommendation_preferences)
     - [get_recommendation_summaries](#get_recommendation_summaries)
+    - [put_recommendation_preferences](#put_recommendation_preferences)
     - [update_enrollment_status](#update_enrollment_status)
 
 ## ComputeOptimizerClient
@@ -97,6 +101,31 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+### delete_recommendation_preferences
+
+Deletes a recommendation preference, such as enhanced infrastructure metrics.
+
+Type annotations for
+`boto3.client("compute-optimizer").delete_recommendation_preferences` method.
+
+Boto3 documentation:
+[ComputeOptimizer.Client.delete_recommendation_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.delete_recommendation_preferences)
+
+Arguments mapping described in
+[DeleteRecommendationPreferencesRequestRequestTypeDef](./type_defs.md#deleterecommendationpreferencesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
+- `recommendationPreferenceNames`:
+  `Sequence`\[`Literal['EnhancedInfrastructureMetrics']` (see
+  [RecommendationPreferenceNameType](./literals.md#recommendationpreferencenametype))\]
+  *(required)*
+- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_recommendation_export_jobs
 
@@ -368,6 +397,28 @@ Keyword-only arguments:
 Returns
 [GetEC2RecommendationProjectedMetricsResponseTypeDef](./type_defs.md#getec2recommendationprojectedmetricsresponsetypedef).
 
+### get_effective_recommendation_preferences
+
+Returns the recommendation preferences that are in effect for a given resource,
+such as enhanced infrastructure metrics.
+
+Type annotations for
+`boto3.client("compute-optimizer").get_effective_recommendation_preferences`
+method.
+
+Boto3 documentation:
+[ComputeOptimizer.Client.get_effective_recommendation_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_effective_recommendation_preferences)
+
+Arguments mapping described in
+[GetEffectiveRecommendationPreferencesRequestRequestTypeDef](./type_defs.md#geteffectiverecommendationpreferencesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[GetEffectiveRecommendationPreferencesResponseTypeDef](./type_defs.md#geteffectiverecommendationpreferencesresponsetypedef).
+
 ### get_enrollment_status
 
 Returns the enrollment (opt in) status of an account to the Compute Optimizer
@@ -432,6 +483,31 @@ Keyword-only arguments:
 Returns
 [GetLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#getlambdafunctionrecommendationsresponsetypedef).
 
+### get_recommendation_preferences
+
+Returns existing recommendation preferences, such as enhanced infrastructure
+metrics.
+
+Type annotations for
+`boto3.client("compute-optimizer").get_recommendation_preferences` method.
+
+Boto3 documentation:
+[ComputeOptimizer.Client.get_recommendation_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_recommendation_preferences)
+
+Arguments mapping described in
+[GetRecommendationPreferencesRequestRequestTypeDef](./type_defs.md#getrecommendationpreferencesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
+- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetRecommendationPreferencesResponseTypeDef](./type_defs.md#getrecommendationpreferencesresponsetypedef).
+
 ### get_recommendation_summaries
 
 Returns the optimization findings for an account.
@@ -453,6 +529,30 @@ Keyword-only arguments:
 
 Returns
 [GetRecommendationSummariesResponseTypeDef](./type_defs.md#getrecommendationsummariesresponsetypedef).
+
+### put_recommendation_preferences
+
+Creates a new recommendation preference or updates an existing recommendation
+preference, such as enhanced infrastructure metrics.
+
+Type annotations for
+`boto3.client("compute-optimizer").put_recommendation_preferences` method.
+
+Boto3 documentation:
+[ComputeOptimizer.Client.put_recommendation_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.put_recommendation_preferences)
+
+Arguments mapping described in
+[PutRecommendationPreferencesRequestRequestTypeDef](./type_defs.md#putrecommendationpreferencesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
+- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
+- `enhancedInfrastructureMetrics`:
+  [EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_enrollment_status
 

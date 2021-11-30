@@ -13,19 +13,31 @@ type annotations stubs module
   - [AssociateLensesInputRequestTypeDef](#associatelensesinputrequesttypedef)
   - [ChoiceAnswerSummaryTypeDef](#choiceanswersummarytypedef)
   - [ChoiceAnswerTypeDef](#choiceanswertypedef)
+  - [ChoiceContentTypeDef](#choicecontenttypedef)
+  - [ChoiceImprovementPlanTypeDef](#choiceimprovementplantypedef)
   - [ChoiceTypeDef](#choicetypedef)
   - [ChoiceUpdateTypeDef](#choiceupdatetypedef)
+  - [CreateLensShareInputRequestTypeDef](#createlensshareinputrequesttypedef)
+  - [CreateLensShareOutputTypeDef](#createlensshareoutputtypedef)
+  - [CreateLensVersionInputRequestTypeDef](#createlensversioninputrequesttypedef)
+  - [CreateLensVersionOutputTypeDef](#createlensversionoutputtypedef)
   - [CreateMilestoneInputRequestTypeDef](#createmilestoneinputrequesttypedef)
   - [CreateMilestoneOutputTypeDef](#createmilestoneoutputtypedef)
   - [CreateWorkloadInputRequestTypeDef](#createworkloadinputrequesttypedef)
   - [CreateWorkloadOutputTypeDef](#createworkloadoutputtypedef)
   - [CreateWorkloadShareInputRequestTypeDef](#createworkloadshareinputrequesttypedef)
   - [CreateWorkloadShareOutputTypeDef](#createworkloadshareoutputtypedef)
+  - [DeleteLensInputRequestTypeDef](#deletelensinputrequesttypedef)
+  - [DeleteLensShareInputRequestTypeDef](#deletelensshareinputrequesttypedef)
   - [DeleteWorkloadInputRequestTypeDef](#deleteworkloadinputrequesttypedef)
   - [DeleteWorkloadShareInputRequestTypeDef](#deleteworkloadshareinputrequesttypedef)
   - [DisassociateLensesInputRequestTypeDef](#disassociatelensesinputrequesttypedef)
+  - [ExportLensInputRequestTypeDef](#exportlensinputrequesttypedef)
+  - [ExportLensOutputTypeDef](#exportlensoutputtypedef)
   - [GetAnswerInputRequestTypeDef](#getanswerinputrequesttypedef)
   - [GetAnswerOutputTypeDef](#getansweroutputtypedef)
+  - [GetLensInputRequestTypeDef](#getlensinputrequesttypedef)
+  - [GetLensOutputTypeDef](#getlensoutputtypedef)
   - [GetLensReviewInputRequestTypeDef](#getlensreviewinputrequesttypedef)
   - [GetLensReviewOutputTypeDef](#getlensreviewoutputtypedef)
   - [GetLensReviewReportInputRequestTypeDef](#getlensreviewreportinputrequesttypedef)
@@ -36,11 +48,15 @@ type annotations stubs module
   - [GetMilestoneOutputTypeDef](#getmilestoneoutputtypedef)
   - [GetWorkloadInputRequestTypeDef](#getworkloadinputrequesttypedef)
   - [GetWorkloadOutputTypeDef](#getworkloadoutputtypedef)
+  - [ImportLensInputRequestTypeDef](#importlensinputrequesttypedef)
+  - [ImportLensOutputTypeDef](#importlensoutputtypedef)
   - [ImprovementSummaryTypeDef](#improvementsummarytypedef)
   - [LensReviewReportTypeDef](#lensreviewreporttypedef)
   - [LensReviewSummaryTypeDef](#lensreviewsummarytypedef)
   - [LensReviewTypeDef](#lensreviewtypedef)
+  - [LensShareSummaryTypeDef](#lenssharesummarytypedef)
   - [LensSummaryTypeDef](#lenssummarytypedef)
+  - [LensTypeDef](#lenstypedef)
   - [LensUpgradeSummaryTypeDef](#lensupgradesummarytypedef)
   - [ListAnswersInputRequestTypeDef](#listanswersinputrequesttypedef)
   - [ListAnswersOutputTypeDef](#listanswersoutputtypedef)
@@ -48,6 +64,8 @@ type annotations stubs module
   - [ListLensReviewImprovementsOutputTypeDef](#listlensreviewimprovementsoutputtypedef)
   - [ListLensReviewsInputRequestTypeDef](#listlensreviewsinputrequesttypedef)
   - [ListLensReviewsOutputTypeDef](#listlensreviewsoutputtypedef)
+  - [ListLensSharesInputRequestTypeDef](#listlenssharesinputrequesttypedef)
+  - [ListLensSharesOutputTypeDef](#listlenssharesoutputtypedef)
   - [ListLensesInputRequestTypeDef](#listlensesinputrequesttypedef)
   - [ListLensesOutputTypeDef](#listlensesoutputtypedef)
   - [ListMilestonesInputRequestTypeDef](#listmilestonesinputrequesttypedef)
@@ -123,6 +141,7 @@ Optional fields:
 - `QuestionDescription`: `str`
 - `ImprovementPlanUrl`: `str`
 - `HelpfulResourceUrl`: `str`
+- `HelpfulResourceDisplayText`: `str`
 - `Choices`: `List`\[[ChoiceTypeDef](./type_defs.md#choicetypedef)\]
 - `SelectedChoices`: `List`\[`str`\]
 - `ChoiceAnswers`:
@@ -168,6 +187,29 @@ Optional fields:
 - `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
 - `Notes`: `str`
 
+## ChoiceContentTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ChoiceContentTypeDef
+```
+
+Optional fields:
+
+- `DisplayText`: `str`
+- `Url`: `str`
+
+## ChoiceImprovementPlanTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ChoiceImprovementPlanTypeDef
+```
+
+Optional fields:
+
+- `ChoiceId`: `str`
+- `DisplayText`: `str`
+- `ImprovementPlanUrl`: `str`
+
 ## ChoiceTypeDef
 
 ```python
@@ -179,6 +221,10 @@ Optional fields:
 - `ChoiceId`: `str`
 - `Title`: `str`
 - `Description`: `str`
+- `HelpfulResource`:
+  [ChoiceContentTypeDef](./type_defs.md#choicecontenttypedef)
+- `ImprovementPlan`:
+  [ChoiceContentTypeDef](./type_defs.md#choicecontenttypedef)
 
 ## ChoiceUpdateTypeDef
 
@@ -194,6 +240,59 @@ Optional fields:
 
 - `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
 - `Notes`: `str`
+
+## CreateLensShareInputRequestTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import CreateLensShareInputRequestTypeDef
+```
+
+Required fields:
+
+- `LensAlias`: `str`
+- `SharedWith`: `str`
+- `ClientRequestToken`: `str`
+
+## CreateLensShareOutputTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import CreateLensShareOutputTypeDef
+```
+
+Required fields:
+
+- `ShareId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLensVersionInputRequestTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import CreateLensVersionInputRequestTypeDef
+```
+
+Required fields:
+
+- `LensAlias`: `str`
+- `LensVersion`: `str`
+- `ClientRequestToken`: `str`
+
+Optional fields:
+
+- `IsMajorVersion`: `bool`
+
+## CreateLensVersionOutputTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import CreateLensVersionOutputTypeDef
+```
+
+Required fields:
+
+- `LensArn`: `str`
+- `LensVersion`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateMilestoneInputRequestTypeDef
 
@@ -287,6 +386,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DeleteLensInputRequestTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import DeleteLensInputRequestTypeDef
+```
+
+Required fields:
+
+- `LensAlias`: `str`
+- `ClientRequestToken`: `str`
+- `LensStatus`: [LensStatusTypeType](./literals.md#lensstatustypetype)
+
+## DeleteLensShareInputRequestTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import DeleteLensShareInputRequestTypeDef
+```
+
+Required fields:
+
+- `ShareId`: `str`
+- `LensAlias`: `str`
+- `ClientRequestToken`: `str`
+
 ## DeleteWorkloadInputRequestTypeDef
 
 ```python
@@ -321,6 +444,32 @@ Required fields:
 - `WorkloadId`: `str`
 - `LensAliases`: `Sequence`\[`str`\]
 
+## ExportLensInputRequestTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ExportLensInputRequestTypeDef
+```
+
+Required fields:
+
+- `LensAlias`: `str`
+
+Optional fields:
+
+- `LensVersion`: `str`
+
+## ExportLensOutputTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ExportLensOutputTypeDef
+```
+
+Required fields:
+
+- `LensJSON`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetAnswerInputRequestTypeDef
 
 ```python
@@ -348,7 +497,34 @@ Required fields:
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `LensAlias`: `str`
+- `LensArn`: `str`
 - `Answer`: [AnswerTypeDef](./type_defs.md#answertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetLensInputRequestTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import GetLensInputRequestTypeDef
+```
+
+Required fields:
+
+- `LensAlias`: `str`
+
+Optional fields:
+
+- `LensVersion`: `str`
+
+## GetLensOutputTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import GetLensOutputTypeDef
+```
+
+Required fields:
+
+- `Lens`: [LensTypeDef](./type_defs.md#lenstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -420,7 +596,11 @@ from mypy_boto3_wellarchitected.type_defs import GetLensVersionDifferenceInputRe
 Required fields:
 
 - `LensAlias`: `str`
+
+Optional fields:
+
 - `BaseLensVersion`: `str`
+- `TargetLensVersion`: `str`
 
 ## GetLensVersionDifferenceOutputTypeDef
 
@@ -431,7 +611,9 @@ from mypy_boto3_wellarchitected.type_defs import GetLensVersionDifferenceOutputT
 Required fields:
 
 - `LensAlias`: `str`
+- `LensArn`: `str`
 - `BaseLensVersion`: `str`
+- `TargetLensVersion`: `str`
 - `LatestLensVersion`: `str`
 - `VersionDifferences`:
   [VersionDifferencesTypeDef](./type_defs.md#versiondifferencestypedef)
@@ -484,6 +666,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ImportLensInputRequestTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ImportLensInputRequestTypeDef
+```
+
+Required fields:
+
+- `JSONString`: `str`
+- `ClientRequestToken`: `str`
+
+Optional fields:
+
+- `LensAlias`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+## ImportLensOutputTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ImportLensOutputTypeDef
+```
+
+Required fields:
+
+- `LensArn`: `str`
+- `Status`: [ImportLensStatusType](./literals.md#importlensstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ImprovementSummaryTypeDef
 
 ```python
@@ -497,6 +708,8 @@ Optional fields:
 - `QuestionTitle`: `str`
 - `Risk`: [RiskType](./literals.md#risktype)
 - `ImprovementPlanUrl`: `str`
+- `ImprovementPlans`:
+  `List`\[[ChoiceImprovementPlanTypeDef](./type_defs.md#choiceimprovementplantypedef)\]
 
 ## LensReviewReportTypeDef
 
@@ -507,6 +720,7 @@ from mypy_boto3_wellarchitected.type_defs import LensReviewReportTypeDef
 Optional fields:
 
 - `LensAlias`: `str`
+- `LensArn`: `str`
 - `Base64String`: `str`
 
 ## LensReviewSummaryTypeDef
@@ -518,6 +732,7 @@ from mypy_boto3_wellarchitected.type_defs import LensReviewSummaryTypeDef
 Optional fields:
 
 - `LensAlias`: `str`
+- `LensArn`: `str`
 - `LensVersion`: `str`
 - `LensName`: `str`
 - `LensStatus`: [LensStatusType](./literals.md#lensstatustype)
@@ -533,6 +748,7 @@ from mypy_boto3_wellarchitected.type_defs import LensReviewTypeDef
 Optional fields:
 
 - `LensAlias`: `str`
+- `LensArn`: `str`
 - `LensVersion`: `str`
 - `LensName`: `str`
 - `LensStatus`: [LensStatusType](./literals.md#lensstatustype)
@@ -543,6 +759,18 @@ Optional fields:
 - `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
 - `NextToken`: `str`
 
+## LensShareSummaryTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import LensShareSummaryTypeDef
+```
+
+Optional fields:
+
+- `ShareId`: `str`
+- `SharedWith`: `str`
+- `Status`: [ShareStatusType](./literals.md#sharestatustype)
+
 ## LensSummaryTypeDef
 
 ```python
@@ -551,10 +779,31 @@ from mypy_boto3_wellarchitected.type_defs import LensSummaryTypeDef
 
 Optional fields:
 
+- `LensArn`: `str`
 - `LensAlias`: `str`
-- `LensVersion`: `str`
 - `LensName`: `str`
+- `LensType`: [LensTypeType](./literals.md#lenstypetype)
 - `Description`: `str`
+- `CreatedAt`: `datetime`
+- `UpdatedAt`: `datetime`
+- `LensVersion`: `str`
+- `Owner`: `str`
+- `LensStatus`: [LensStatusType](./literals.md#lensstatustype)
+
+## LensTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import LensTypeDef
+```
+
+Optional fields:
+
+- `LensArn`: `str`
+- `LensVersion`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `Owner`: `str`
+- `ShareInvitationId`: `str`
 
 ## LensUpgradeSummaryTypeDef
 
@@ -567,6 +816,7 @@ Optional fields:
 - `WorkloadId`: `str`
 - `WorkloadName`: `str`
 - `LensAlias`: `str`
+- `LensArn`: `str`
 - `CurrentLensVersion`: `str`
 - `LatestLensVersion`: `str`
 
@@ -599,6 +849,7 @@ Required fields:
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `LensAlias`: `str`
+- `LensArn`: `str`
 - `AnswerSummaries`:
   `List`\[[AnswerSummaryTypeDef](./type_defs.md#answersummarytypedef)\]
 - `NextToken`: `str`
@@ -634,6 +885,7 @@ Required fields:
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `LensAlias`: `str`
+- `LensArn`: `str`
 - `ImprovementSummaries`:
   `List`\[[ImprovementSummaryTypeDef](./type_defs.md#improvementsummarytypedef)\]
 - `NextToken`: `str`
@@ -672,6 +924,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListLensSharesInputRequestTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ListLensSharesInputRequestTypeDef
+```
+
+Required fields:
+
+- `LensAlias`: `str`
+
+Optional fields:
+
+- `SharedWithPrefix`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListLensSharesOutputTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ListLensSharesOutputTypeDef
+```
+
+Required fields:
+
+- `LensShareSummaries`:
+  `List`\[[LensShareSummaryTypeDef](./type_defs.md#lenssharesummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListLensesInputRequestTypeDef
 
 ```python
@@ -682,6 +964,9 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `LensType`: [LensTypeType](./literals.md#lenstypetype)
+- `LensStatus`: [LensStatusTypeType](./literals.md#lensstatustypetype)
+- `LensName`: `str`
 
 ## ListLensesOutputTypeDef
 
@@ -762,6 +1047,9 @@ from mypy_boto3_wellarchitected.type_defs import ListShareInvitationsInputReques
 Optional fields:
 
 - `WorkloadNamePrefix`: `str`
+- `LensNamePrefix`: `str`
+- `ShareResourceType`:
+  [ShareResourceTypeType](./literals.md#shareresourcetypetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -906,6 +1194,7 @@ from mypy_boto3_wellarchitected.type_defs import PillarDifferenceTypeDef
 Optional fields:
 
 - `PillarId`: `str`
+- `PillarName`: `str`
 - `DifferenceStatus`:
   [DifferenceStatusType](./literals.md#differencestatustype)
 - `QuestionDifferences`:
@@ -963,8 +1252,12 @@ Optional fields:
 - `SharedBy`: `str`
 - `SharedWith`: `str`
 - `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
+- `ShareResourceType`:
+  [ShareResourceTypeType](./literals.md#shareresourcetypetype)
 - `WorkloadName`: `str`
 - `WorkloadId`: `str`
+- `LensName`: `str`
+- `LensArn`: `str`
 
 ## ShareInvitationTypeDef
 
@@ -975,7 +1268,11 @@ from mypy_boto3_wellarchitected.type_defs import ShareInvitationTypeDef
 Optional fields:
 
 - `ShareInvitationId`: `str`
+- `ShareResourceType`:
+  [ShareResourceTypeType](./literals.md#shareresourcetypetype)
 - `WorkloadId`: `str`
+- `LensAlias`: `str`
+- `LensArn`: `str`
 
 ## TagResourceInputRequestTypeDef
 
@@ -1030,6 +1327,7 @@ Required fields:
 
 - `WorkloadId`: `str`
 - `LensAlias`: `str`
+- `LensArn`: `str`
 - `Answer`: [AnswerTypeDef](./type_defs.md#answertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

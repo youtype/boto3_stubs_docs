@@ -12,11 +12,15 @@ type annotations stubs module
   - [AutoScalingGroupConfigurationTypeDef](#autoscalinggroupconfigurationtypedef)
   - [AutoScalingGroupRecommendationOptionTypeDef](#autoscalinggrouprecommendationoptiontypedef)
   - [AutoScalingGroupRecommendationTypeDef](#autoscalinggrouprecommendationtypedef)
+  - [CurrentPerformanceRiskRatingsTypeDef](#currentperformanceriskratingstypedef)
+  - [DeleteRecommendationPreferencesRequestRequestTypeDef](#deleterecommendationpreferencesrequestrequesttypedef)
   - [DescribeRecommendationExportJobsRequestRequestTypeDef](#describerecommendationexportjobsrequestrequesttypedef)
   - [DescribeRecommendationExportJobsResponseTypeDef](#describerecommendationexportjobsresponsetypedef)
   - [EBSFilterTypeDef](#ebsfiltertypedef)
   - [EBSUtilizationMetricTypeDef](#ebsutilizationmetrictypedef)
+  - [EffectiveRecommendationPreferencesTypeDef](#effectiverecommendationpreferencestypedef)
   - [EnrollmentFilterTypeDef](#enrollmentfiltertypedef)
+  - [EstimatedMonthlySavingsTypeDef](#estimatedmonthlysavingstypedef)
   - [ExportAutoScalingGroupRecommendationsRequestRequestTypeDef](#exportautoscalinggrouprecommendationsrequestrequesttypedef)
   - [ExportAutoScalingGroupRecommendationsResponseTypeDef](#exportautoscalinggrouprecommendationsresponsetypedef)
   - [ExportDestinationTypeDef](#exportdestinationtypedef)
@@ -35,12 +39,16 @@ type annotations stubs module
   - [GetEC2InstanceRecommendationsResponseTypeDef](#getec2instancerecommendationsresponsetypedef)
   - [GetEC2RecommendationProjectedMetricsRequestRequestTypeDef](#getec2recommendationprojectedmetricsrequestrequesttypedef)
   - [GetEC2RecommendationProjectedMetricsResponseTypeDef](#getec2recommendationprojectedmetricsresponsetypedef)
+  - [GetEffectiveRecommendationPreferencesRequestRequestTypeDef](#geteffectiverecommendationpreferencesrequestrequesttypedef)
+  - [GetEffectiveRecommendationPreferencesResponseTypeDef](#geteffectiverecommendationpreferencesresponsetypedef)
   - [GetEnrollmentStatusResponseTypeDef](#getenrollmentstatusresponsetypedef)
   - [GetEnrollmentStatusesForOrganizationRequestRequestTypeDef](#getenrollmentstatusesfororganizationrequestrequesttypedef)
   - [GetEnrollmentStatusesForOrganizationResponseTypeDef](#getenrollmentstatusesfororganizationresponsetypedef)
   - [GetLambdaFunctionRecommendationsRequestRequestTypeDef](#getlambdafunctionrecommendationsrequestrequesttypedef)
   - [GetLambdaFunctionRecommendationsResponseTypeDef](#getlambdafunctionrecommendationsresponsetypedef)
   - [GetRecommendationErrorTypeDef](#getrecommendationerrortypedef)
+  - [GetRecommendationPreferencesRequestRequestTypeDef](#getrecommendationpreferencesrequestrequesttypedef)
+  - [GetRecommendationPreferencesResponseTypeDef](#getrecommendationpreferencesresponsetypedef)
   - [GetRecommendationSummariesRequestRequestTypeDef](#getrecommendationsummariesrequestrequesttypedef)
   - [GetRecommendationSummariesResponseTypeDef](#getrecommendationsummariesresponsetypedef)
   - [InstanceRecommendationOptionTypeDef](#instancerecommendationoptiontypedef)
@@ -52,8 +60,10 @@ type annotations stubs module
   - [LambdaFunctionRecommendationTypeDef](#lambdafunctionrecommendationtypedef)
   - [LambdaFunctionUtilizationMetricTypeDef](#lambdafunctionutilizationmetrictypedef)
   - [ProjectedMetricTypeDef](#projectedmetrictypedef)
+  - [PutRecommendationPreferencesRequestRequestTypeDef](#putrecommendationpreferencesrequestrequesttypedef)
   - [ReasonCodeSummaryTypeDef](#reasoncodesummarytypedef)
   - [RecommendationExportJobTypeDef](#recommendationexportjobtypedef)
+  - [RecommendationPreferencesDetailTypeDef](#recommendationpreferencesdetailtypedef)
   - [RecommendationPreferencesTypeDef](#recommendationpreferencestypedef)
   - [RecommendationSourceTypeDef](#recommendationsourcetypedef)
   - [RecommendationSummaryTypeDef](#recommendationsummarytypedef)
@@ -61,6 +71,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3DestinationConfigTypeDef](#s3destinationconfigtypedef)
   - [S3DestinationTypeDef](#s3destinationtypedef)
+  - [SavingsOpportunityTypeDef](#savingsopportunitytypedef)
+  - [ScopeTypeDef](#scopetypedef)
   - [SummaryTypeDef](#summarytypedef)
   - [UpdateEnrollmentStatusRequestRequestTypeDef](#updateenrollmentstatusrequestrequesttypedef)
   - [UpdateEnrollmentStatusResponseTypeDef](#updateenrollmentstatusresponsetypedef)
@@ -109,6 +121,8 @@ Optional fields:
   `List`\[[UtilizationMetricTypeDef](./type_defs.md#utilizationmetrictypedef)\]
 - `performanceRisk`: `float`
 - `rank`: `int`
+- `savingsOpportunity`:
+  [SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef)
 
 ## AutoScalingGroupRecommendationTypeDef
 
@@ -130,6 +144,40 @@ Optional fields:
 - `recommendationOptions`:
   `List`\[[AutoScalingGroupRecommendationOptionTypeDef](./type_defs.md#autoscalinggrouprecommendationoptiontypedef)\]
 - `lastRefreshTimestamp`: `datetime`
+- `currentPerformanceRisk`:
+  [CurrentPerformanceRiskType](./literals.md#currentperformancerisktype)
+- `effectiveRecommendationPreferences`:
+  [EffectiveRecommendationPreferencesTypeDef](./type_defs.md#effectiverecommendationpreferencestypedef)
+
+## CurrentPerformanceRiskRatingsTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import CurrentPerformanceRiskRatingsTypeDef
+```
+
+Optional fields:
+
+- `high`: `int`
+- `medium`: `int`
+- `low`: `int`
+- `veryLow`: `int`
+
+## DeleteRecommendationPreferencesRequestRequestTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import DeleteRecommendationPreferencesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `recommendationPreferenceNames`:
+  `Sequence`\[`Literal['EnhancedInfrastructureMetrics']` (see
+  [RecommendationPreferenceNameType](./literals.md#recommendationpreferencenametype))\]
+
+Optional fields:
+
+- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
 
 ## DescribeRecommendationExportJobsRequestRequestTypeDef
 
@@ -182,6 +230,19 @@ Optional fields:
 - `statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
 - `value`: `float`
 
+## EffectiveRecommendationPreferencesTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import EffectiveRecommendationPreferencesTypeDef
+```
+
+Optional fields:
+
+- `cpuVendorArchitectures`:
+  `List`\[[CpuVendorArchitectureType](./literals.md#cpuvendorarchitecturetype)\]
+- `enhancedInfrastructureMetrics`:
+  [EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype)
+
 ## EnrollmentFilterTypeDef
 
 ```python
@@ -193,6 +254,17 @@ Optional fields:
 - `name`: `Literal['Status']` (see
   [EnrollmentFilterNameType](./literals.md#enrollmentfilternametype))
 - `values`: `Sequence`\[`str`\]
+
+## EstimatedMonthlySavingsTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import EstimatedMonthlySavingsTypeDef
+```
+
+Optional fields:
+
+- `currency`: [CurrencyType](./literals.md#currencytype)
+- `value`: `float`
 
 ## ExportAutoScalingGroupRecommendationsRequestRequestTypeDef
 
@@ -482,6 +554,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetEffectiveRecommendationPreferencesRequestRequestTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import GetEffectiveRecommendationPreferencesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+
+## GetEffectiveRecommendationPreferencesResponseTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import GetEffectiveRecommendationPreferencesResponseTypeDef
+```
+
+Required fields:
+
+- `enhancedInfrastructureMetrics`:
+  [EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetEnrollmentStatusResponseTypeDef
 
 ```python
@@ -566,6 +661,36 @@ Optional fields:
 - `code`: `str`
 - `message`: `str`
 
+## GetRecommendationPreferencesRequestRequestTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import GetRecommendationPreferencesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+
+Optional fields:
+
+- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## GetRecommendationPreferencesResponseTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import GetRecommendationPreferencesResponseTypeDef
+```
+
+Required fields:
+
+- `nextToken`: `str`
+- `recommendationPreferencesDetails`:
+  `List`\[[RecommendationPreferencesDetailTypeDef](./type_defs.md#recommendationpreferencesdetailtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetRecommendationSummariesRequestRequestTypeDef
 
 ```python
@@ -607,6 +732,8 @@ Optional fields:
   `List`\[[PlatformDifferenceType](./literals.md#platformdifferencetype)\]
 - `performanceRisk`: `float`
 - `rank`: `int`
+- `savingsOpportunity`:
+  [SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef)
 
 ## InstanceRecommendationTypeDef
 
@@ -631,6 +758,10 @@ Optional fields:
 - `recommendationSources`:
   `List`\[[RecommendationSourceTypeDef](./type_defs.md#recommendationsourcetypedef)\]
 - `lastRefreshTimestamp`: `datetime`
+- `currentPerformanceRisk`:
+  [CurrentPerformanceRiskType](./literals.md#currentperformancerisktype)
+- `effectiveRecommendationPreferences`:
+  [EffectiveRecommendationPreferencesTypeDef](./type_defs.md#effectiverecommendationpreferencestypedef)
 
 ## JobFilterTypeDef
 
@@ -669,6 +800,8 @@ Optional fields:
 - `memorySize`: `int`
 - `projectedUtilizationMetrics`:
   `List`\[[LambdaFunctionMemoryProjectedMetricTypeDef](./type_defs.md#lambdafunctionmemoryprojectedmetrictypedef)\]
+- `savingsOpportunity`:
+  [SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef)
 
 ## LambdaFunctionRecommendationFilterTypeDef
 
@@ -705,6 +838,8 @@ Optional fields:
   `List`\[[LambdaFunctionRecommendationFindingReasonCodeType](./literals.md#lambdafunctionrecommendationfindingreasoncodetype)\]
 - `memorySizeRecommendationOptions`:
   `List`\[[LambdaFunctionMemoryRecommendationOptionTypeDef](./type_defs.md#lambdafunctionmemoryrecommendationoptiontypedef)\]
+- `currentPerformanceRisk`:
+  [CurrentPerformanceRiskType](./literals.md#currentperformancerisktype)
 
 ## LambdaFunctionUtilizationMetricTypeDef
 
@@ -731,6 +866,22 @@ Optional fields:
 - `name`: [MetricNameType](./literals.md#metricnametype)
 - `timestamps`: `List`\[`datetime`\]
 - `values`: `List`\[`float`\]
+
+## PutRecommendationPreferencesRequestRequestTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import PutRecommendationPreferencesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+
+Optional fields:
+
+- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
+- `enhancedInfrastructureMetrics`:
+  [EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype)
 
 ## ReasonCodeSummaryTypeDef
 
@@ -759,6 +910,19 @@ Optional fields:
 - `creationTimestamp`: `datetime`
 - `lastUpdatedTimestamp`: `datetime`
 - `failureReason`: `str`
+
+## RecommendationPreferencesDetailTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import RecommendationPreferencesDetailTypeDef
+```
+
+Optional fields:
+
+- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `enhancedInfrastructureMetrics`:
+  [EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype)
 
 ## RecommendationPreferencesTypeDef
 
@@ -795,6 +959,10 @@ Optional fields:
 - `recommendationResourceType`:
   [RecommendationSourceTypeType](./literals.md#recommendationsourcetypetype)
 - `accountId`: `str`
+- `savingsOpportunity`:
+  [SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef)
+- `currentPerformanceRiskRatings`:
+  [CurrentPerformanceRiskRatingsTypeDef](./type_defs.md#currentperformanceriskratingstypedef)
 
 ## RecommendedOptionProjectedMetricTypeDef
 
@@ -845,6 +1013,29 @@ Optional fields:
 - `bucket`: `str`
 - `key`: `str`
 - `metadataKey`: `str`
+
+## SavingsOpportunityTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import SavingsOpportunityTypeDef
+```
+
+Optional fields:
+
+- `savingsOpportunityPercentage`: `float`
+- `estimatedMonthlySavings`:
+  [EstimatedMonthlySavingsTypeDef](./type_defs.md#estimatedmonthlysavingstypedef)
+
+## ScopeTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import ScopeTypeDef
+```
+
+Optional fields:
+
+- `name`: [ScopeNameType](./literals.md#scopenametype)
+- `value`: `str`
 
 ## SummaryTypeDef
 
@@ -925,6 +1116,8 @@ Optional fields:
   [VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)
 - `performanceRisk`: `float`
 - `rank`: `int`
+- `savingsOpportunity`:
+  [SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef)
 
 ## VolumeRecommendationTypeDef
 
@@ -945,3 +1138,5 @@ Optional fields:
 - `volumeRecommendationOptions`:
   `List`\[[VolumeRecommendationOptionTypeDef](./type_defs.md#volumerecommendationoptiontypedef)\]
 - `lastRefreshTimestamp`: `datetime`
+- `currentPerformanceRisk`:
+  [CurrentPerformanceRiskType](./literals.md#currentperformancerisktype)

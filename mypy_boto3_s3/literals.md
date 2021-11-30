@@ -239,6 +239,12 @@ from mypy_boto3_s3.literals import EventType
 
 Values:
 
+- `s3:IntelligentTiering`
+- `s3:LifecycleExpiration:*`
+- `s3:LifecycleExpiration:Delete`
+- `s3:LifecycleExpiration:DeleteMarkerCreated`
+- `s3:LifecycleTransition`
+- `s3:ObjectAcl:Put`
 - `s3:ObjectCreated:*`
 - `s3:ObjectCreated:CompleteMultipartUpload`
 - `s3:ObjectCreated:Copy`
@@ -249,7 +255,11 @@ Values:
 - `s3:ObjectRemoved:DeleteMarkerCreated`
 - `s3:ObjectRestore:*`
 - `s3:ObjectRestore:Completed`
+- `s3:ObjectRestore:Delete`
 - `s3:ObjectRestore:Post`
+- `s3:ObjectTagging:*`
+- `s3:ObjectTagging:Delete`
+- `s3:ObjectTagging:Put`
 - `s3:ReducedRedundancyLostObject`
 - `s3:Replication:*`
 - `s3:Replication:OperationFailedReplication`
@@ -953,6 +963,7 @@ Values:
 - `emr-containers`
 - `es`
 - `events`
+- `evidently`
 - `finspace`
 - `finspace-data`
 - `firehose`
@@ -979,6 +990,7 @@ Values:
 - `imagebuilder`
 - `importexport`
 - `inspector`
+- `inspector2`
 - `iot`
 - `iot-data`
 - `iot-jobs-data`
@@ -1068,6 +1080,7 @@ Values:
 - `qldb-session`
 - `quicksight`
 - `ram`
+- `rbin`
 - `rds`
 - `rds-data`
 - `redshift`
@@ -1083,6 +1096,7 @@ Values:
 - `route53-recovery-readiness`
 - `route53domains`
 - `route53resolver`
+- `rum`
 - `s3`
 - `s3control`
 - `s3outposts`

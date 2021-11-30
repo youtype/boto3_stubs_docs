@@ -1326,6 +1326,8 @@ Keyword-only arguments:
   [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
 - `disassociatedDataStorage`:
   [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
+- `retentionPeriod`:
+  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 
 Returns
 [PutStorageConfigurationResponseTypeDef](./type_defs.md#putstorageconfigurationresponsetypedef).

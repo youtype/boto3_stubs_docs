@@ -422,8 +422,8 @@ Returns
 ### create_activation
 
 Generates an activation code and activation ID you can use to register your on-
-premises server or virtual machine (VM) with Amazon Web Services Systems
-Manager.
+premises servers, edge devices, or virtual machine (VM) with Amazon Web
+Services Systems Manager.
 
 Type annotations for `boto3.client("ssm").create_activation` method.
 
@@ -450,7 +450,7 @@ Returns
 ### create_association
 
 A State Manager association defines the state that you want to maintain on your
-instances.
+managed nodes.
 
 Type annotations for `boto3.client("ssm").create_association` method.
 
@@ -489,7 +489,7 @@ Returns
 ### create_association_batch
 
 Associates the specified Amazon Web Services Systems Manager document (SSM
-document) with the specified instances or targets.
+document) with the specified managed nodes or targets.
 
 Type annotations for `boto3.client("ssm").create_association_batch` method.
 
@@ -708,7 +708,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### delete_association
 
 Disassociates the specified Amazon Web Services Systems Manager document (SSM
-document) from the specified instance.
+document) from the specified managed node.
 
 Type annotations for `boto3.client("ssm").delete_association` method.
 
@@ -729,7 +729,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### delete_document
 
 Deletes the Amazon Web Services Systems Manager document (SSM document) and all
-instance associations to the document.
+managed node associations to the document.
 
 Type annotations for `boto3.client("ssm").delete_document` method.
 
@@ -970,8 +970,8 @@ Returns
 
 Describes details about the activation, such as the date and time the
 activation was created, its expiration date, the Identity and Access Management
-(IAM) role assigned to the instances in the activation, and the number of
-instances registered by using this activation.
+(IAM) role assigned to the managed nodes in the activation, and the number of
+nodes registered by using this activation.
 
 Type annotations for `boto3.client("ssm").describe_activations` method.
 
@@ -993,7 +993,7 @@ Returns
 
 ### describe_association
 
-Describes the association for the specified target or instance.
+Describes the association for the specified target or managed node.
 
 Type annotations for `boto3.client("ssm").describe_association` method.
 
@@ -1182,7 +1182,7 @@ Returns
 
 ### describe_effective_instance_associations
 
-All associations for the instance(s).
+All associations for the managed node(s).
 
 Type annotations for
 `boto3.client("ssm").describe_effective_instance_associations` method.
@@ -1227,7 +1227,7 @@ Returns
 
 ### describe_instance_associations_status
 
-The status of the associations for the instance(s).
+The status of the associations for the managed node(s).
 
 Type annotations for
 `boto3.client("ssm").describe_instance_associations_status` method.
@@ -1249,9 +1249,9 @@ Returns
 
 ### describe_instance_information
 
-Describes one or more of your instances, including information about the
-operating system platform, the version of SSM Agent installed on the instance,
-instance status, and so on.
+Describes one or more of your managed nodes, including information about the
+operating system platform, the version of SSM Agent installed on the managed
+node, node status, and so on.
 
 Type annotations for `boto3.client("ssm").describe_instance_information`
 method.
@@ -1322,8 +1322,8 @@ Returns
 
 ### describe_instance_patches
 
-Retrieves information about the patches on the specified instance and their
-state relative to the patch baseline being used for the instance.
+Retrieves information about the patches on the specified managed node and their
+state relative to the patch baseline being used for the node.
 
 Type annotations for `boto3.client("ssm").describe_instance_patches` method.
 
@@ -1539,8 +1539,8 @@ Returns
 
 ### describe_maintenance_windows_for_target
 
-Retrieves information about the maintenance window targets or tasks that an
-instance is associated with.
+Retrieves information about the maintenance window targets or tasks that a
+managed node is associated with.
 
 Type annotations for
 `boto3.client("ssm").describe_maintenance_windows_for_target` method.
@@ -1825,7 +1825,7 @@ Returns
 
 ### get_connection_status
 
-Retrieves the Session Manager connection status for an instance to determine
+Retrieves the Session Manager connection status for a managed node to determine
 whether it is running and ready to receive Session Manager connections.
 
 Type annotations for `boto3.client("ssm").get_connection_status` method.
@@ -1864,7 +1864,7 @@ Returns
 
 ### get_deployable_patch_snapshot_for_instance
 
-Retrieves the current snapshot for the patch baseline the instance uses.
+Retrieves the current snapshot for the patch baseline the managed node uses.
 
 Type annotations for
 `boto3.client("ssm").get_deployable_patch_snapshot_for_instance` method.
@@ -2340,7 +2340,7 @@ Returns
 
 ### list_command_invocations
 
-An invocation is copy of a command sent to a specific instance.
+An invocation is copy of a command sent to a specific managed node.
 
 Type annotations for `boto3.client("ssm").list_command_invocations` method.
 
@@ -2724,7 +2724,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_inventory
 
-Bulk update custom inventory items on one more instance.
+Bulk update custom inventory items on one or more managed nodes.
 
 Type annotations for `boto3.client("ssm").put_inventory` method.
 
@@ -2924,7 +2924,7 @@ Returns
 
 ### resume_session
 
-Reconnects a session to an instance after it has been disconnected.
+Reconnects a session to a managed node after it has been disconnected.
 
 Type annotations for `boto3.client("ssm").resume_session` method.
 
@@ -2964,7 +2964,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### send_command
 
-Runs commands on one or more managed instances.
+Runs commands on one or more managed nodes.
 
 Type annotations for `boto3.client("ssm").send_command` method.
 
@@ -3081,7 +3081,7 @@ Returns
 
 ### start_session
 
-Initiates a connection to a target (for example, an instance) for a Session
+Initiates a connection to a target (for example, a managed node) for a Session
 Manager session.
 
 Type annotations for `boto3.client("ssm").start_session` method.
@@ -3124,7 +3124,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### terminate_session
 
 Permanently ends a session and closes the data connection between the Session
-Manager client and SSM Agent on the instance.
+Manager client and SSM Agent on the managed node.
 
 Type annotations for `boto3.client("ssm").terminate_session` method.
 
@@ -3204,7 +3204,7 @@ Returns
 ### update_association_status
 
 Updates the status of the Amazon Web Services Systems Manager document (SSM
-document) associated with the specified instance.
+document) associated with the specified managed node.
 
 Type annotations for `boto3.client("ssm").update_association_status` method.
 
@@ -3392,7 +3392,7 @@ Returns
 ### update_managed_instance_role
 
 Changes the Identity and Access Management (IAM) role that is assigned to the
-on-premises instance or virtual machines (VM).
+on-premises server, edge device, or virtual machines (VM).
 
 Type annotations for `boto3.client("ssm").update_managed_instance_role` method.
 

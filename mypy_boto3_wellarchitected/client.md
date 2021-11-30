@@ -14,22 +14,30 @@ type annotations stubs module
     - [exceptions](#exceptions)
     - [associate_lenses](#associate_lenses)
     - [can_paginate](#can_paginate)
+    - [create_lens_share](#create_lens_share)
+    - [create_lens_version](#create_lens_version)
     - [create_milestone](#create_milestone)
     - [create_workload](#create_workload)
     - [create_workload_share](#create_workload_share)
+    - [delete_lens](#delete_lens)
+    - [delete_lens_share](#delete_lens_share)
     - [delete_workload](#delete_workload)
     - [delete_workload_share](#delete_workload_share)
     - [disassociate_lenses](#disassociate_lenses)
+    - [export_lens](#export_lens)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_answer](#get_answer)
+    - [get_lens](#get_lens)
     - [get_lens_review](#get_lens_review)
     - [get_lens_review_report](#get_lens_review_report)
     - [get_lens_version_difference](#get_lens_version_difference)
     - [get_milestone](#get_milestone)
     - [get_workload](#get_workload)
+    - [import_lens](#import_lens)
     - [list_answers](#list_answers)
     - [list_lens_review_improvements](#list_lens_review_improvements)
     - [list_lens_reviews](#list_lens_reviews)
+    - [list_lens_shares](#list_lens_shares)
     - [list_lenses](#list_lenses)
     - [list_milestones](#list_milestones)
     - [list_notifications](#list_notifications)
@@ -130,6 +138,51 @@ Arguments:
 
 Returns `bool`.
 
+### create_lens_share
+
+Create a lens share.
+
+Type annotations for `boto3.client("wellarchitected").create_lens_share`
+method.
+
+Boto3 documentation:
+[WellArchitected.Client.create_lens_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_lens_share)
+
+Arguments mapping described in
+[CreateLensShareInputRequestTypeDef](./type_defs.md#createlensshareinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `LensAlias`: `str` *(required)*
+- `SharedWith`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+
+Returns
+[CreateLensShareOutputTypeDef](./type_defs.md#createlensshareoutputtypedef).
+
+### create_lens_version
+
+Create a new lens version.
+
+Type annotations for `boto3.client("wellarchitected").create_lens_version`
+method.
+
+Boto3 documentation:
+[WellArchitected.Client.create_lens_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_lens_version)
+
+Arguments mapping described in
+[CreateLensVersionInputRequestTypeDef](./type_defs.md#createlensversioninputrequesttypedef).
+
+Keyword-only arguments:
+
+- `LensAlias`: `str` *(required)*
+- `LensVersion`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `IsMajorVersion`: `bool`
+
+Returns
+[CreateLensVersionOutputTypeDef](./type_defs.md#createlensversionoutputtypedef).
+
 ### create_milestone
 
 Create a milestone for an existing workload.
@@ -209,6 +262,44 @@ Keyword-only arguments:
 Returns
 [CreateWorkloadShareOutputTypeDef](./type_defs.md#createworkloadshareoutputtypedef).
 
+### delete_lens
+
+Delete an existing lens.
+
+Type annotations for `boto3.client("wellarchitected").delete_lens` method.
+
+Boto3 documentation:
+[WellArchitected.Client.delete_lens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_lens)
+
+Arguments mapping described in
+[DeleteLensInputRequestTypeDef](./type_defs.md#deletelensinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `LensAlias`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `LensStatus`: [LensStatusTypeType](./literals.md#lensstatustypetype)
+  *(required)*
+
+### delete_lens_share
+
+Delete a lens share.
+
+Type annotations for `boto3.client("wellarchitected").delete_lens_share`
+method.
+
+Boto3 documentation:
+[WellArchitected.Client.delete_lens_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_lens_share)
+
+Arguments mapping described in
+[DeleteLensShareInputRequestTypeDef](./type_defs.md#deletelensshareinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ShareId`: `str` *(required)*
+- `LensAlias`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+
 ### delete_workload
 
 Delete an existing workload.
@@ -263,6 +354,25 @@ Keyword-only arguments:
 - `WorkloadId`: `str` *(required)*
 - `LensAliases`: `Sequence`\[`str`\] *(required)*
 
+### export_lens
+
+Export an existing lens.
+
+Type annotations for `boto3.client("wellarchitected").export_lens` method.
+
+Boto3 documentation:
+[WellArchitected.Client.export_lens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.export_lens)
+
+Arguments mapping described in
+[ExportLensInputRequestTypeDef](./type_defs.md#exportlensinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `LensAlias`: `str` *(required)*
+- `LensVersion`: `str`
+
+Returns [ExportLensOutputTypeDef](./type_defs.md#exportlensoutputtypedef).
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -302,6 +412,25 @@ Keyword-only arguments:
 - `MilestoneNumber`: `int`
 
 Returns [GetAnswerOutputTypeDef](./type_defs.md#getansweroutputtypedef).
+
+### get_lens
+
+Get an existing lens.
+
+Type annotations for `boto3.client("wellarchitected").get_lens` method.
+
+Boto3 documentation:
+[WellArchitected.Client.get_lens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens)
+
+Arguments mapping described in
+[GetLensInputRequestTypeDef](./type_defs.md#getlensinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `LensAlias`: `str` *(required)*
+- `LensVersion`: `str`
+
+Returns [GetLensOutputTypeDef](./type_defs.md#getlensoutputtypedef).
 
 ### get_lens_review
 
@@ -362,7 +491,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LensAlias`: `str` *(required)*
-- `BaseLensVersion`: `str` *(required)*
+- `BaseLensVersion`: `str`
+- `TargetLensVersion`: `str`
 
 Returns
 [GetLensVersionDifferenceOutputTypeDef](./type_defs.md#getlensversiondifferenceoutputtypedef).
@@ -403,6 +533,27 @@ Keyword-only arguments:
 - `WorkloadId`: `str` *(required)*
 
 Returns [GetWorkloadOutputTypeDef](./type_defs.md#getworkloadoutputtypedef).
+
+### import_lens
+
+Import a new lens.
+
+Type annotations for `boto3.client("wellarchitected").import_lens` method.
+
+Boto3 documentation:
+[WellArchitected.Client.import_lens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.import_lens)
+
+Arguments mapping described in
+[ImportLensInputRequestTypeDef](./type_defs.md#importlensinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `JSONString`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `LensAlias`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+Returns [ImportLensOutputTypeDef](./type_defs.md#importlensoutputtypedef).
 
 ### list_answers
 
@@ -475,6 +626,28 @@ Keyword-only arguments:
 Returns
 [ListLensReviewsOutputTypeDef](./type_defs.md#listlensreviewsoutputtypedef).
 
+### list_lens_shares
+
+List the lens shares associated with the lens.
+
+Type annotations for `boto3.client("wellarchitected").list_lens_shares` method.
+
+Boto3 documentation:
+[WellArchitected.Client.list_lens_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_shares)
+
+Arguments mapping described in
+[ListLensSharesInputRequestTypeDef](./type_defs.md#listlenssharesinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `LensAlias`: `str` *(required)*
+- `SharedWithPrefix`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListLensSharesOutputTypeDef](./type_defs.md#listlenssharesoutputtypedef).
+
 ### list_lenses
 
 List the available lenses.
@@ -491,6 +664,9 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `LensType`: [LensTypeType](./literals.md#lenstypetype)
+- `LensStatus`: [LensStatusTypeType](./literals.md#lensstatustypetype)
+- `LensName`: `str`
 
 Returns [ListLensesOutputTypeDef](./type_defs.md#listlensesoutputtypedef).
 
@@ -553,6 +729,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `WorkloadNamePrefix`: `str`
+- `LensNamePrefix`: `str`
+- `ShareResourceType`:
+  [ShareResourceTypeType](./literals.md#shareresourcetypetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 

@@ -9,9 +9,12 @@ type annotations stubs module
 
 - [Literals for boto3 ComputeOptimizer module](#literals-for-boto3-computeoptimizer-module)
   - [CpuVendorArchitectureType](#cpuvendorarchitecturetype)
+  - [CurrencyType](#currencytype)
+  - [CurrentPerformanceRiskType](#currentperformancerisktype)
   - [EBSFilterNameType](#ebsfilternametype)
   - [EBSFindingType](#ebsfindingtype)
   - [EBSMetricNameType](#ebsmetricnametype)
+  - [EnhancedInfrastructureMetricsType](#enhancedinfrastructuremetricstype)
   - [EnrollmentFilterNameType](#enrollmentfilternametype)
   - [ExportableAutoScalingGroupFieldType](#exportableautoscalinggroupfieldtype)
   - [ExportableInstanceFieldType](#exportableinstancefieldtype)
@@ -34,8 +37,10 @@ type annotations stubs module
   - [MetricNameType](#metricnametype)
   - [MetricStatisticType](#metricstatistictype)
   - [PlatformDifferenceType](#platformdifferencetype)
+  - [RecommendationPreferenceNameType](#recommendationpreferencenametype)
   - [RecommendationSourceTypeType](#recommendationsourcetypetype)
   - [ResourceTypeType](#resourcetypetype)
+  - [ScopeNameType](#scopenametype)
   - [StatusType](#statustype)
   - [ServiceName](#servicename)
 
@@ -49,6 +54,30 @@ Values:
 
 - `AWS_ARM64`
 - `CURRENT`
+
+## CurrencyType
+
+```python
+from mypy_boto3_compute_optimizer.literals import CurrencyType
+```
+
+Values:
+
+- `CNY`
+- `USD`
+
+## CurrentPerformanceRiskType
+
+```python
+from mypy_boto3_compute_optimizer.literals import CurrentPerformanceRiskType
+```
+
+Values:
+
+- `High`
+- `Low`
+- `Medium`
+- `VeryLow`
 
 ## EBSFilterNameType
 
@@ -84,6 +113,17 @@ Values:
 - `VolumeWriteBytesPerSecond`
 - `VolumeWriteOpsPerSecond`
 
+## EnhancedInfrastructureMetricsType
+
+```python
+from mypy_boto3_compute_optimizer.literals import EnhancedInfrastructureMetricsType
+```
+
+Values:
+
+- `Active`
+- `Inactive`
+
 ## EnrollmentFilterNameType
 
 ```python
@@ -112,10 +152,13 @@ Values:
 - `CurrentMemory`
 - `CurrentNetwork`
 - `CurrentOnDemandPrice`
+- `CurrentPerformanceRisk`
 - `CurrentStandardOneYearNoUpfrontReservedPrice`
 - `CurrentStandardThreeYearNoUpfrontReservedPrice`
 - `CurrentStorage`
 - `CurrentVCpus`
+- `EffectiveRecommendationPreferencesCpuVendorArchitectures`
+- `EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics`
 - `Finding`
 - `LastRefreshTimestamp`
 - `LookbackPeriodInDays`
@@ -123,12 +166,15 @@ Values:
 - `RecommendationOptionsConfigurationInstanceType`
 - `RecommendationOptionsConfigurationMaxSize`
 - `RecommendationOptionsConfigurationMinSize`
+- `RecommendationOptionsEstimatedMonthlySavingsCurrency`
+- `RecommendationOptionsEstimatedMonthlySavingsValue`
 - `RecommendationOptionsMemory`
 - `RecommendationOptionsNetwork`
 - `RecommendationOptionsOnDemandPrice`
 - `RecommendationOptionsPerformanceRisk`
 - `RecommendationOptionsProjectedUtilizationMetricsCpuMaximum`
 - `RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum`
+- `RecommendationOptionsSavingsOpportunityPercentage`
 - `RecommendationOptionsStandardOneYearNoUpfrontReservedPrice`
 - `RecommendationOptionsStandardThreeYearNoUpfrontReservedPrice`
 - `RecommendationOptionsStorage`
@@ -161,16 +207,21 @@ Values:
 - `CurrentMemory`
 - `CurrentNetwork`
 - `CurrentOnDemandPrice`
+- `CurrentPerformanceRisk`
 - `CurrentStandardOneYearNoUpfrontReservedPrice`
 - `CurrentStandardThreeYearNoUpfrontReservedPrice`
 - `CurrentStorage`
 - `CurrentVCpus`
+- `EffectiveRecommendationPreferencesCpuVendorArchitectures`
+- `EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics`
 - `Finding`
 - `FindingReasonCodes`
 - `InstanceArn`
 - `InstanceName`
 - `LastRefreshTimestamp`
 - `LookbackPeriodInDays`
+- `RecommendationOptionsEstimatedMonthlySavingsCurrency`
+- `RecommendationOptionsEstimatedMonthlySavingsValue`
 - `RecommendationOptionsInstanceType`
 - `RecommendationOptionsMemory`
 - `RecommendationOptionsNetwork`
@@ -179,6 +230,7 @@ Values:
 - `RecommendationOptionsPlatformDifferences`
 - `RecommendationOptionsProjectedUtilizationMetricsCpuMaximum`
 - `RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum`
+- `RecommendationOptionsSavingsOpportunityPercentage`
 - `RecommendationOptionsStandardOneYearNoUpfrontReservedPrice`
 - `RecommendationOptionsStandardThreeYearNoUpfrontReservedPrice`
 - `RecommendationOptionsStorage`
@@ -213,6 +265,7 @@ Values:
 - `CurrentConfigurationTimeout`
 - `CurrentCostAverage`
 - `CurrentCostTotal`
+- `CurrentPerformanceRisk`
 - `Finding`
 - `FindingReasonCodes`
 - `FunctionArn`
@@ -223,9 +276,12 @@ Values:
 - `RecommendationOptionsConfigurationMemorySize`
 - `RecommendationOptionsCostHigh`
 - `RecommendationOptionsCostLow`
+- `RecommendationOptionsEstimatedMonthlySavingsCurrency`
+- `RecommendationOptionsEstimatedMonthlySavingsValue`
 - `RecommendationOptionsProjectedUtilizationMetricsDurationExpected`
 - `RecommendationOptionsProjectedUtilizationMetricsDurationLowerBound`
 - `RecommendationOptionsProjectedUtilizationMetricsDurationUpperBound`
+- `RecommendationOptionsSavingsOpportunityPercentage`
 - `UtilizationMetricsDurationAverage`
 - `UtilizationMetricsDurationMaximum`
 - `UtilizationMetricsMemoryAverage`
@@ -247,6 +303,7 @@ Values:
 - `CurrentConfigurationVolumeSize`
 - `CurrentConfigurationVolumeType`
 - `CurrentMonthlyPrice`
+- `CurrentPerformanceRisk`
 - `Finding`
 - `LastRefreshTimestamp`
 - `LookbackPeriodInDays`
@@ -256,8 +313,11 @@ Values:
 - `RecommendationOptionsConfigurationVolumeBurstThroughput`
 - `RecommendationOptionsConfigurationVolumeSize`
 - `RecommendationOptionsConfigurationVolumeType`
+- `RecommendationOptionsEstimatedMonthlySavingsCurrency`
+- `RecommendationOptionsEstimatedMonthlySavingsValue`
 - `RecommendationOptionsMonthlyPrice`
 - `RecommendationOptionsPerformanceRisk`
+- `RecommendationOptionsSavingsOpportunityPercentage`
 - `UtilizationMetricsVolumeReadBytesPerSecondMaximum`
 - `UtilizationMetricsVolumeReadOpsPerSecondMaximum`
 - `UtilizationMetricsVolumeWriteBytesPerSecondMaximum`
@@ -488,6 +548,16 @@ Values:
 - `StorageInterface`
 - `VirtualizationType`
 
+## RecommendationPreferenceNameType
+
+```python
+from mypy_boto3_compute_optimizer.literals import RecommendationPreferenceNameType
+```
+
+Values:
+
+- `EnhancedInfrastructureMetrics`
+
 ## RecommendationSourceTypeType
 
 ```python
@@ -513,6 +583,18 @@ Values:
 - `EbsVolume`
 - `Ec2Instance`
 - `LambdaFunction`
+
+## ScopeNameType
+
+```python
+from mypy_boto3_compute_optimizer.literals import ScopeNameType
+```
+
+Values:
+
+- `AccountId`
+- `Organization`
+- `ResourceArn`
 
 ## StatusType
 
@@ -638,6 +720,7 @@ Values:
 - `emr-containers`
 - `es`
 - `events`
+- `evidently`
 - `finspace`
 - `finspace-data`
 - `firehose`
@@ -664,6 +747,7 @@ Values:
 - `imagebuilder`
 - `importexport`
 - `inspector`
+- `inspector2`
 - `iot`
 - `iot-data`
 - `iot-jobs-data`
@@ -753,6 +837,7 @@ Values:
 - `qldb-session`
 - `quicksight`
 - `ram`
+- `rbin`
 - `rds`
 - `rds-data`
 - `redshift`
@@ -768,6 +853,7 @@ Values:
 - `route53-recovery-readiness`
 - `route53domains`
 - `route53resolver`
+- `rum`
 - `s3`
 - `s3control`
 - `s3outposts`

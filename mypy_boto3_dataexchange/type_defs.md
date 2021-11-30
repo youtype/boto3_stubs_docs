@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 DataExchange module](#typed-dictionaries-for-boto3-dataexchange-module)
   - [ActionTypeDef](#actiontypedef)
+  - [ApiGatewayApiAssetTypeDef](#apigatewayapiassettypedef)
   - [AssetDestinationEntryTypeDef](#assetdestinationentrytypedef)
   - [AssetDetailsTypeDef](#assetdetailstypedef)
   - [AssetEntryTypeDef](#assetentrytypedef)
@@ -49,6 +50,8 @@ type annotations stubs module
   - [GetJobResponseTypeDef](#getjobresponsetypedef)
   - [GetRevisionRequestRequestTypeDef](#getrevisionrequestrequesttypedef)
   - [GetRevisionResponseTypeDef](#getrevisionresponsetypedef)
+  - [ImportAssetFromApiGatewayApiRequestDetailsTypeDef](#importassetfromapigatewayapirequestdetailstypedef)
+  - [ImportAssetFromApiGatewayApiResponseDetailsTypeDef](#importassetfromapigatewayapiresponsedetailstypedef)
   - [ImportAssetFromSignedUrlJobErrorDetailsTypeDef](#importassetfromsignedurljoberrordetailstypedef)
   - [ImportAssetFromSignedUrlRequestDetailsTypeDef](#importassetfromsignedurlrequestdetailstypedef)
   - [ImportAssetFromSignedUrlResponseDetailsTypeDef](#importassetfromsignedurlresponsedetailstypedef)
@@ -81,6 +84,8 @@ type annotations stubs module
   - [RevisionEntryTypeDef](#revisionentrytypedef)
   - [RevisionPublishedTypeDef](#revisionpublishedtypedef)
   - [S3SnapshotAssetTypeDef](#s3snapshotassettypedef)
+  - [SendApiAssetRequestRequestTypeDef](#sendapiassetrequestrequesttypedef)
+  - [SendApiAssetResponseTypeDef](#sendapiassetresponsetypedef)
   - [StartJobRequestRequestTypeDef](#startjobrequestrequesttypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
@@ -103,6 +108,25 @@ Optional fields:
 
 - `ExportRevisionToS3`:
   [AutoExportRevisionToS3RequestDetailsTypeDef](./type_defs.md#autoexportrevisiontos3requestdetailstypedef)
+
+## ApiGatewayApiAssetTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import ApiGatewayApiAssetTypeDef
+```
+
+Optional fields:
+
+- `ApiDescription`: `str`
+- `ApiEndpoint`: `str`
+- `ApiId`: `str`
+- `ApiKey`: `str`
+- `ApiName`: `str`
+- `ApiSpecificationDownloadUrl`: `str`
+- `ApiSpecificationDownloadUrlExpiresAt`: `datetime`
+- `ProtocolType`: `Literal['REST']` (see
+  [ProtocolTypeType](./literals.md#protocoltypetype))
+- `Stage`: `str`
 
 ## AssetDestinationEntryTypeDef
 
@@ -131,6 +155,8 @@ Optional fields:
   [S3SnapshotAssetTypeDef](./type_defs.md#s3snapshotassettypedef)
 - `RedshiftDataShareAsset`:
   [RedshiftDataShareAssetTypeDef](./type_defs.md#redshiftdatashareassettypedef)
+- `ApiGatewayApiAsset`:
+  [ApiGatewayApiAssetTypeDef](./type_defs.md#apigatewayapiassettypedef)
 
 ## AssetEntryTypeDef
 
@@ -707,6 +733,52 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ImportAssetFromApiGatewayApiRequestDetailsTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import ImportAssetFromApiGatewayApiRequestDetailsTypeDef
+```
+
+Required fields:
+
+- `ApiId`: `str`
+- `ApiName`: `str`
+- `ApiSpecificationMd5Hash`: `str`
+- `DataSetId`: `str`
+- `ProtocolType`: `Literal['REST']` (see
+  [ProtocolTypeType](./literals.md#protocoltypetype))
+- `RevisionId`: `str`
+- `Stage`: `str`
+
+Optional fields:
+
+- `ApiDescription`: `str`
+- `ApiKey`: `str`
+
+## ImportAssetFromApiGatewayApiResponseDetailsTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import ImportAssetFromApiGatewayApiResponseDetailsTypeDef
+```
+
+Required fields:
+
+- `ApiId`: `str`
+- `ApiName`: `str`
+- `ApiSpecificationMd5Hash`: `str`
+- `ApiSpecificationUploadUrl`: `str`
+- `ApiSpecificationUploadUrlExpiresAt`: `datetime`
+- `DataSetId`: `str`
+- `ProtocolType`: `Literal['REST']` (see
+  [ProtocolTypeType](./literals.md#protocoltypetype))
+- `RevisionId`: `str`
+- `Stage`: `str`
+
+Optional fields:
+
+- `ApiDescription`: `str`
+- `ApiKey`: `str`
+
 ## ImportAssetFromSignedUrlJobErrorDetailsTypeDef
 
 ```python
@@ -1060,6 +1132,8 @@ Optional fields:
   [ImportAssetsFromS3RequestDetailsTypeDef](./type_defs.md#importassetsfroms3requestdetailstypedef)
 - `ImportAssetsFromRedshiftDataShares`:
   [ImportAssetsFromRedshiftDataSharesRequestDetailsTypeDef](./type_defs.md#importassetsfromredshiftdatasharesrequestdetailstypedef)
+- `ImportAssetFromApiGatewayApi`:
+  [ImportAssetFromApiGatewayApiRequestDetailsTypeDef](./type_defs.md#importassetfromapigatewayapirequestdetailstypedef)
 
 ## ResponseDetailsTypeDef
 
@@ -1081,6 +1155,8 @@ Optional fields:
   [ImportAssetsFromS3ResponseDetailsTypeDef](./type_defs.md#importassetsfroms3responsedetailstypedef)
 - `ImportAssetsFromRedshiftDataShares`:
   [ImportAssetsFromRedshiftDataSharesResponseDetailsTypeDef](./type_defs.md#importassetsfromredshiftdatasharesresponsedetailstypedef)
+- `ImportAssetFromApiGatewayApi`:
+  [ImportAssetFromApiGatewayApiResponseDetailsTypeDef](./type_defs.md#importassetfromapigatewayapiresponsedetailstypedef)
 
 ## ResponseMetadataTypeDef
 
@@ -1150,6 +1226,39 @@ from mypy_boto3_dataexchange.type_defs import S3SnapshotAssetTypeDef
 Required fields:
 
 - `Size`: `float`
+
+## SendApiAssetRequestRequestTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import SendApiAssetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AssetId`: `str`
+- `DataSetId`: `str`
+- `RevisionId`: `str`
+
+Optional fields:
+
+- `Body`: `str`
+- `QueryStringParameters`: `Mapping`\[`str`, `str`\]
+- `RequestHeaders`: `Mapping`\[`str`, `str`\]
+- `Method`: `str`
+- `Path`: `str`
+
+## SendApiAssetResponseTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import SendApiAssetResponseTypeDef
+```
+
+Required fields:
+
+- `Body`: `str`
+- `ResponseHeaders`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StartJobRequestRequestTypeDef
 

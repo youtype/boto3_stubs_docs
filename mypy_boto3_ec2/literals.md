@@ -132,6 +132,7 @@ type annotations stubs module
   - [DescribeScheduledInstancesPaginatorName](#describescheduledinstancespaginatorname)
   - [DescribeSecurityGroupRulesPaginatorName](#describesecuritygrouprulespaginatorname)
   - [DescribeSecurityGroupsPaginatorName](#describesecuritygroupspaginatorname)
+  - [DescribeSnapshotTierStatusPaginatorName](#describesnapshottierstatuspaginatorname)
   - [DescribeSnapshotsPaginatorName](#describesnapshotspaginatorname)
   - [DescribeSpotFleetInstancesPaginatorName](#describespotfleetinstancespaginatorname)
   - [DescribeSpotFleetRequestsPaginatorName](#describespotfleetrequestspaginatorname)
@@ -257,6 +258,7 @@ type annotations stubs module
   - [LaunchTemplateInstanceMetadataEndpointStateType](#launchtemplateinstancemetadataendpointstatetype)
   - [LaunchTemplateInstanceMetadataOptionsStateType](#launchtemplateinstancemetadataoptionsstatetype)
   - [LaunchTemplateInstanceMetadataProtocolIpv6Type](#launchtemplateinstancemetadataprotocolipv6type)
+  - [ListSnapshotsInRecycleBinPaginatorName](#listsnapshotsinrecyclebinpaginatorname)
   - [ListingStateType](#listingstatetype)
   - [ListingStatusType](#listingstatustype)
   - [LocalGatewayRouteStateType](#localgatewayroutestatetype)
@@ -332,6 +334,7 @@ type annotations stubs module
   - [StatusNameType](#statusnametype)
   - [StatusType](#statustype)
   - [StatusTypeType](#statustypetype)
+  - [StorageTierType](#storagetiertype)
   - [SubnetAvailableWaiterName](#subnetavailablewaitername)
   - [SubnetCidrBlockStateCodeType](#subnetcidrblockstatecodetype)
   - [SubnetCidrReservationTypeType](#subnetcidrreservationtypetype)
@@ -339,8 +342,10 @@ type annotations stubs module
   - [SummaryStatusType](#summarystatustype)
   - [SystemStatusOkWaiterName](#systemstatusokwaitername)
   - [TargetCapacityUnitTypeType](#targetcapacityunittypetype)
+  - [TargetStorageTierType](#targetstoragetiertype)
   - [TelemetryStatusType](#telemetrystatustype)
   - [TenancyType](#tenancytype)
+  - [TieringOperationStatusType](#tieringoperationstatustype)
   - [TrafficDirectionType](#trafficdirectiontype)
   - [TrafficMirrorFilterRuleFieldType](#trafficmirrorfilterrulefieldtype)
   - [TrafficMirrorNetworkServiceType](#trafficmirrornetworkservicetype)
@@ -1779,6 +1784,16 @@ Values:
 
 - `describe_security_groups`
 
+## DescribeSnapshotTierStatusPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeSnapshotTierStatusPaginatorName
+```
+
+Values:
+
+- `describe_snapshot_tier_status`
+
 ## DescribeSnapshotsPaginatorName
 
 ```python
@@ -3191,6 +3206,12 @@ Values:
 - `g5.4xlarge`
 - `g5.8xlarge`
 - `g5.xlarge`
+- `g5g.16xlarge`
+- `g5g.2xlarge`
+- `g5g.4xlarge`
+- `g5g.8xlarge`
+- `g5g.metal`
+- `g5g.xlarge`
 - `h1.16xlarge`
 - `h1.2xlarge`
 - `h1.4xlarge`
@@ -3296,6 +3317,16 @@ Values:
 - `m5zn.large`
 - `m5zn.metal`
 - `m5zn.xlarge`
+- `m6a.12xlarge`
+- `m6a.16xlarge`
+- `m6a.24xlarge`
+- `m6a.2xlarge`
+- `m6a.32xlarge`
+- `m6a.48xlarge`
+- `m6a.4xlarge`
+- `m6a.8xlarge`
+- `m6a.large`
+- `m6a.xlarge`
 - `m6g.12xlarge`
 - `m6g.16xlarge`
 - `m6g.2xlarge`
@@ -3600,6 +3631,16 @@ Values:
 
 - `disabled`
 - `enabled`
+
+## ListSnapshotsInRecycleBinPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import ListSnapshotsInRecycleBinPaginatorName
+```
+
+Values:
+
+- `list_snapshots_in_recycle_bin`
 
 ## ListingStateType
 
@@ -4438,6 +4479,8 @@ Values:
 - `completed`
 - `error`
 - `pending`
+- `recoverable`
+- `recovering`
 
 ## SpotAllocationStrategyType
 
@@ -4562,6 +4605,17 @@ Values:
 - `insufficient-data`
 - `passed`
 
+## StorageTierType
+
+```python
+from mypy_boto3_ec2.literals import StorageTierType
+```
+
+Values:
+
+- `archive`
+- `standard`
+
 ## SubnetAvailableWaiterName
 
 ```python
@@ -4645,6 +4699,16 @@ Values:
 - `units`
 - `vcpu`
 
+## TargetStorageTierType
+
+```python
+from mypy_boto3_ec2.literals import TargetStorageTierType
+```
+
+Values:
+
+- `archive`
+
 ## TelemetryStatusType
 
 ```python
@@ -4667,6 +4731,24 @@ Values:
 - `dedicated`
 - `default`
 - `host`
+
+## TieringOperationStatusType
+
+```python
+from mypy_boto3_ec2.literals import TieringOperationStatusType
+```
+
+Values:
+
+- `archival-completed`
+- `archival-failed`
+- `archival-in-progress`
+- `permanent-restore-completed`
+- `permanent-restore-failed`
+- `permanent-restore-in-progress`
+- `temporary-restore-completed`
+- `temporary-restore-failed`
+- `temporary-restore-in-progress`
 
 ## TrafficDirectionType
 
@@ -5429,6 +5511,7 @@ Values:
 - `emr-containers`
 - `es`
 - `events`
+- `evidently`
 - `finspace`
 - `finspace-data`
 - `firehose`
@@ -5455,6 +5538,7 @@ Values:
 - `imagebuilder`
 - `importexport`
 - `inspector`
+- `inspector2`
 - `iot`
 - `iot-data`
 - `iot-jobs-data`
@@ -5544,6 +5628,7 @@ Values:
 - `qldb-session`
 - `quicksight`
 - `ram`
+- `rbin`
 - `rds`
 - `rds-data`
 - `redshift`
@@ -5559,6 +5644,7 @@ Values:
 - `route53-recovery-readiness`
 - `route53domains`
 - `route53resolver`
+- `rum`
 - `s3`
 - `s3control`
 - `s3outposts`
@@ -5686,6 +5772,7 @@ Values:
 - `describe_scheduled_instances`
 - `describe_security_group_rules`
 - `describe_security_groups`
+- `describe_snapshot_tier_status`
 - `describe_snapshots`
 - `describe_spot_fleet_instances`
 - `describe_spot_fleet_requests`
@@ -5731,6 +5818,7 @@ Values:
 - `get_transit_gateway_route_table_associations`
 - `get_transit_gateway_route_table_propagations`
 - `get_vpn_connection_device_types`
+- `list_snapshots_in_recycle_bin`
 - `search_local_gateway_routes`
 - `search_transit_gateway_multicast_groups`
 

@@ -3890,6 +3890,7 @@ Required fields:
   `List`\[[QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef)\]
 - `LambdaFunctionConfigurations`:
   `List`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
+- `EventBridgeConfiguration`: `Dict`\[`str`, `Any`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -3907,6 +3908,7 @@ Optional fields:
   `Sequence`\[[QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef)\]
 - `LambdaFunctionConfigurations`:
   `Sequence`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
+- `EventBridgeConfiguration`: `Mapping`\[`str`, `Any`\]
 
 ## ObjectCopyRequestTypeDef
 
@@ -4515,6 +4517,7 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+- `SkipDestinationValidation`: `bool`
 
 ## PutBucketNotificationConfigurationRequestRequestTypeDef
 
@@ -4531,6 +4534,7 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+- `SkipDestinationValidation`: `bool`
 
 ## PutBucketNotificationRequestRequestTypeDef
 

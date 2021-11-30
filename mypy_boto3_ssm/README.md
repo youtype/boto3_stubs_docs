@@ -510,6 +510,7 @@ from mypy_boto3_ssm.literals import AssociationComplianceSeverityType, ...
 - [SessionStateType](./literals.md#sessionstatetype)
 - [SessionStatusType](./literals.md#sessionstatustype)
 - [SignalTypeType](./literals.md#signaltypetype)
+- [SourceTypeType](./literals.md#sourcetypetype)
 - [StepExecutionFilterKeyType](./literals.md#stepexecutionfilterkeytype)
 - [StopTypeType](./literals.md#stoptypetype)
 - [ServiceName](./literals.md#servicename)

@@ -68,6 +68,7 @@ type annotations stubs module
   - [DescribeScheduledInstancesPaginator](#describescheduledinstancespaginator)
   - [DescribeSecurityGroupRulesPaginator](#describesecuritygrouprulespaginator)
   - [DescribeSecurityGroupsPaginator](#describesecuritygroupspaginator)
+  - [DescribeSnapshotTierStatusPaginator](#describesnapshottierstatuspaginator)
   - [DescribeSnapshotsPaginator](#describesnapshotspaginator)
   - [DescribeSpotFleetInstancesPaginator](#describespotfleetinstancespaginator)
   - [DescribeSpotFleetRequestsPaginator](#describespotfleetrequestspaginator)
@@ -113,6 +114,7 @@ type annotations stubs module
   - [GetTransitGatewayRouteTableAssociationsPaginator](#gettransitgatewayroutetableassociationspaginator)
   - [GetTransitGatewayRouteTablePropagationsPaginator](#gettransitgatewayroutetablepropagationspaginator)
   - [GetVpnConnectionDeviceTypesPaginator](#getvpnconnectiondevicetypespaginator)
+  - [ListSnapshotsInRecycleBinPaginator](#listsnapshotsinrecyclebinpaginator)
   - [SearchLocalGatewayRoutesPaginator](#searchlocalgatewayroutespaginator)
   - [SearchTransitGatewayMulticastGroupsPaginator](#searchtransitgatewaymulticastgroupspaginator)
 
@@ -1826,6 +1828,33 @@ Arguments for `DescribeSecurityGroupsPaginator.paginate` method:
 `DescribeSecurityGroupsPaginator.paginate` returns
 `_PageIterator`\[[DescribeSecurityGroupsResultTypeDef](./type_defs.md#describesecuritygroupsresulttypedef)\].
 
+## DescribeSnapshotTierStatusPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_snapshot_tier_status")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeSnapshotTierStatusPaginator
+
+def get_describe_snapshot_tier_status_paginator() -> DescribeSnapshotTierStatusPaginator:
+    return boto3.client("ec2").get_paginator("describe_snapshot_tier_status")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeSnapshotTierStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSnapshotTierStatus)
+
+Arguments for `DescribeSnapshotTierStatusPaginator.paginate` method:
+
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeSnapshotTierStatusPaginator.paginate` returns
+`_PageIterator`\[[DescribeSnapshotTierStatusResultTypeDef](./type_defs.md#describesnapshottierstatusresulttypedef)\].
+
 ## DescribeSnapshotsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_snapshots")`.
@@ -3097,6 +3126,33 @@ Arguments for `GetVpnConnectionDeviceTypesPaginator.paginate` method:
 
 `GetVpnConnectionDeviceTypesPaginator.paginate` returns
 `_PageIterator`\[[GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef)\].
+
+## ListSnapshotsInRecycleBinPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("list_snapshots_in_recycle_bin")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import ListSnapshotsInRecycleBinPaginator
+
+def get_list_snapshots_in_recycle_bin_paginator() -> ListSnapshotsInRecycleBinPaginator:
+    return boto3.client("ec2").get_paginator("list_snapshots_in_recycle_bin")
+```
+
+Boto3 documentation:
+[EC2.Paginator.ListSnapshotsInRecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.ListSnapshotsInRecycleBin)
+
+Arguments for `ListSnapshotsInRecycleBinPaginator.paginate` method:
+
+- `SnapshotIds`: `Sequence`\[`str`\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListSnapshotsInRecycleBinPaginator.paginate` returns
+`_PageIterator`\[[ListSnapshotsInRecycleBinResultTypeDef](./type_defs.md#listsnapshotsinrecyclebinresulttypedef)\].
 
 ## SearchLocalGatewayRoutesPaginator
 

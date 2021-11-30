@@ -12,11 +12,15 @@ type annotations stubs module
   - [ChoiceReasonType](#choicereasontype)
   - [ChoiceStatusType](#choicestatustype)
   - [DifferenceStatusType](#differencestatustype)
+  - [ImportLensStatusType](#importlensstatustype)
   - [LensStatusType](#lensstatustype)
+  - [LensStatusTypeType](#lensstatustypetype)
+  - [LensTypeType](#lenstypetype)
   - [NotificationTypeType](#notificationtypetype)
   - [PermissionTypeType](#permissiontypetype)
   - [RiskType](#risktype)
   - [ShareInvitationActionType](#shareinvitationactiontype)
+  - [ShareResourceTypeType](#shareresourcetypetype)
   - [ShareStatusType](#sharestatustype)
   - [WorkloadEnvironmentType](#workloadenvironmenttype)
   - [WorkloadImprovementStatusType](#workloadimprovementstatustype)
@@ -74,6 +78,18 @@ Values:
 - `NEW`
 - `UPDATED`
 
+## ImportLensStatusType
+
+```python
+from mypy_boto3_wellarchitected.literals import ImportLensStatusType
+```
+
+Values:
+
+- `COMPLETE`
+- `ERROR`
+- `IN_PROGRESS`
+
 ## LensStatusType
 
 ```python
@@ -83,8 +99,34 @@ from mypy_boto3_wellarchitected.literals import LensStatusType
 Values:
 
 - `CURRENT`
+- `DELETED`
 - `DEPRECATED`
 - `NOT_CURRENT`
+- `UNSHARED`
+
+## LensStatusTypeType
+
+```python
+from mypy_boto3_wellarchitected.literals import LensStatusTypeType
+```
+
+Values:
+
+- `ALL`
+- `DRAFT`
+- `PUBLISHED`
+
+## LensTypeType
+
+```python
+from mypy_boto3_wellarchitected.literals import LensTypeType
+```
+
+Values:
+
+- `AWS_OFFICIAL`
+- `CUSTOM_SELF`
+- `CUSTOM_SHARED`
 
 ## NotificationTypeType
 
@@ -132,6 +174,17 @@ Values:
 
 - `ACCEPT`
 - `REJECT`
+
+## ShareResourceTypeType
+
+```python
+from mypy_boto3_wellarchitected.literals import ShareResourceTypeType
+```
+
+Values:
+
+- `LENS`
+- `WORKLOAD`
 
 ## ShareStatusType
 
@@ -283,6 +336,7 @@ Values:
 - `emr-containers`
 - `es`
 - `events`
+- `evidently`
 - `finspace`
 - `finspace-data`
 - `firehose`
@@ -309,6 +363,7 @@ Values:
 - `imagebuilder`
 - `importexport`
 - `inspector`
+- `inspector2`
 - `iot`
 - `iot-data`
 - `iot-jobs-data`
@@ -398,6 +453,7 @@ Values:
 - `qldb-session`
 - `quicksight`
 - `ram`
+- `rbin`
 - `rds`
 - `rds-data`
 - `redshift`
@@ -413,6 +469,7 @@ Values:
 - `route53-recovery-readiness`
 - `route53domains`
 - `route53resolver`
+- `rum`
 - `s3`
 - `s3control`
 - `s3outposts`

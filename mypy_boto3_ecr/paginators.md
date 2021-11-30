@@ -10,6 +10,7 @@ type annotations stubs module
 - [Paginators for boto3 ECR module](#paginators-for-boto3-ecr-module)
   - [DescribeImageScanFindingsPaginator](#describeimagescanfindingspaginator)
   - [DescribeImagesPaginator](#describeimagespaginator)
+  - [DescribePullThroughCacheRulesPaginator](#describepullthroughcacherulespaginator)
   - [DescribeRepositoriesPaginator](#describerepositoriespaginator)
   - [GetLifecyclePolicyPreviewPaginator](#getlifecyclepolicypreviewpaginator)
   - [ListImagesPaginator](#listimagespaginator)
@@ -72,6 +73,33 @@ Arguments for `DescribeImagesPaginator.paginate` method:
 
 `DescribeImagesPaginator.paginate` returns
 `_PageIterator`\[[DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef)\].
+
+## DescribePullThroughCacheRulesPaginator
+
+Type annotations for
+`boto3.client("ecr").get_paginator("describe_pull_through_cache_rules")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ecr.paginator import DescribePullThroughCacheRulesPaginator
+
+def get_describe_pull_through_cache_rules_paginator() -> DescribePullThroughCacheRulesPaginator:
+    return boto3.client("ecr").get_paginator("describe_pull_through_cache_rules")
+```
+
+Boto3 documentation:
+[ECR.Paginator.DescribePullThroughCacheRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribePullThroughCacheRules)
+
+Arguments for `DescribePullThroughCacheRulesPaginator.paginate` method:
+
+- `registryId`: `str`
+- `ecrRepositoryPrefixes`: `Sequence`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribePullThroughCacheRulesPaginator.paginate` returns
+`_PageIterator`\[[DescribePullThroughCacheRulesResponseTypeDef](./type_defs.md#describepullthroughcacherulesresponsetypedef)\].
 
 ## DescribeRepositoriesPaginator
 

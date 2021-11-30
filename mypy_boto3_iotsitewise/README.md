@@ -402,6 +402,7 @@ from mypy_boto3_iotsitewise.type_defs import AccessPolicySummaryTypeDef, ...
 - [PutStorageConfigurationResponseTypeDef](./type_defs.md#putstorageconfigurationresponsetypedef)
 - [ResourceTypeDef](./type_defs.md#resourcetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef)
 - [TimeSeriesSummaryTypeDef](./type_defs.md#timeseriessummarytypedef)

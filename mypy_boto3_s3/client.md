@@ -2028,6 +2028,7 @@ Keyword-only arguments:
   [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
+- `SkipDestinationValidation`: `bool`
 
 ### put_bucket_ownership_controls
 

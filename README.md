@@ -435,6 +435,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
   service
 
+- [mypy-boto3-evidently](./mypy_boto3_evidently) for
+  [CloudWatchEvidently](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently)
+  service
+
 - [mypy-boto3-finspace](./mypy_boto3_finspace) for
   [finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
   service
@@ -537,6 +541,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
 
 - [mypy-boto3-inspector](./mypy_boto3_inspector) for
   [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
+  service
+
+- [mypy-boto3-inspector2](./mypy_boto3_inspector2) for
+  [Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
   service
 
 - [mypy-boto3-iot](./mypy_boto3_iot) for
@@ -900,6 +908,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
   service
 
+- [mypy-boto3-rbin](./mypy_boto3_rbin) for
+  [RecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin)
+  service
+
 - [mypy-boto3-rds](./mypy_boto3_rds) for
   [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
   service
@@ -962,6 +974,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
 
 - [mypy-boto3-route53resolver](./mypy_boto3_route53resolver) for
   [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+  service
+
+- [mypy-boto3-rum](./mypy_boto3_rum) for
+  [CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
   service
 
 - [mypy-boto3-s3](./mypy_boto3_s3) for

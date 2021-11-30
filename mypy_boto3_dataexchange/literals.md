@@ -18,6 +18,7 @@ type annotations stubs module
   - [ListJobsPaginatorName](#listjobspaginatorname)
   - [ListRevisionAssetsPaginatorName](#listrevisionassetspaginatorname)
   - [OriginType](#origintype)
+  - [ProtocolTypeType](#protocoltypetype)
   - [ServerSideEncryptionTypesType](#serversideencryptiontypestype)
   - [StateType](#statetype)
   - [TypeType](#typetype)
@@ -32,6 +33,7 @@ from mypy_boto3_dataexchange.literals import AssetTypeType
 
 Values:
 
+- `API_GATEWAY_API`
 - `REDSHIFT_DATA_SHARE`
 - `S3_SNAPSHOT`
 
@@ -136,6 +138,16 @@ Values:
 - `ENTITLED`
 - `OWNED`
 
+## ProtocolTypeType
+
+```python
+from mypy_boto3_dataexchange.literals import ProtocolTypeType
+```
+
+Values:
+
+- `REST`
+
 ## ServerSideEncryptionTypesType
 
 ```python
@@ -173,6 +185,7 @@ Values:
 - `EXPORT_ASSET_TO_SIGNED_URL`
 - `EXPORT_ASSETS_TO_S3`
 - `EXPORT_REVISIONS_TO_S3`
+- `IMPORT_ASSET_FROM_API_GATEWAY_API`
 - `IMPORT_ASSET_FROM_SIGNED_URL`
 - `IMPORT_ASSETS_FROM_REDSHIFT_DATA_SHARES`
 - `IMPORT_ASSETS_FROM_S3`
@@ -288,6 +301,7 @@ Values:
 - `emr-containers`
 - `es`
 - `events`
+- `evidently`
 - `finspace`
 - `finspace-data`
 - `firehose`
@@ -314,6 +328,7 @@ Values:
 - `imagebuilder`
 - `importexport`
 - `inspector`
+- `inspector2`
 - `iot`
 - `iot-data`
 - `iot-jobs-data`
@@ -403,6 +418,7 @@ Values:
 - `qldb-session`
 - `quicksight`
 - `ram`
+- `rbin`
 - `rds`
 - `rds-data`
 - `redshift`
@@ -418,6 +434,7 @@ Values:
 - `route53-recovery-readiness`
 - `route53domains`
 - `route53resolver`
+- `rum`
 - `s3`
 - `s3control`
 - `s3outposts`

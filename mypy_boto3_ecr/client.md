@@ -15,16 +15,20 @@ type annotations stubs module
     - [batch_check_layer_availability](#batch_check_layer_availability)
     - [batch_delete_image](#batch_delete_image)
     - [batch_get_image](#batch_get_image)
+    - [batch_get_repository_scanning_configuration](#batch_get_repository_scanning_configuration)
     - [can_paginate](#can_paginate)
     - [complete_layer_upload](#complete_layer_upload)
+    - [create_pull_through_cache_rule](#create_pull_through_cache_rule)
     - [create_repository](#create_repository)
     - [delete_lifecycle_policy](#delete_lifecycle_policy)
+    - [delete_pull_through_cache_rule](#delete_pull_through_cache_rule)
     - [delete_registry_policy](#delete_registry_policy)
     - [delete_repository](#delete_repository)
     - [delete_repository_policy](#delete_repository_policy)
     - [describe_image_replication_status](#describe_image_replication_status)
     - [describe_image_scan_findings](#describe_image_scan_findings)
     - [describe_images](#describe_images)
+    - [describe_pull_through_cache_rules](#describe_pull_through_cache_rules)
     - [describe_registry](#describe_registry)
     - [describe_repositories](#describe_repositories)
     - [generate_presigned_url](#generate_presigned_url)
@@ -33,6 +37,7 @@ type annotations stubs module
     - [get_lifecycle_policy](#get_lifecycle_policy)
     - [get_lifecycle_policy_preview](#get_lifecycle_policy_preview)
     - [get_registry_policy](#get_registry_policy)
+    - [get_registry_scanning_configuration](#get_registry_scanning_configuration)
     - [get_repository_policy](#get_repository_policy)
     - [initiate_layer_upload](#initiate_layer_upload)
     - [list_images](#list_images)
@@ -42,6 +47,7 @@ type annotations stubs module
     - [put_image_tag_mutability](#put_image_tag_mutability)
     - [put_lifecycle_policy](#put_lifecycle_policy)
     - [put_registry_policy](#put_registry_policy)
+    - [put_registry_scanning_configuration](#put_registry_scanning_configuration)
     - [put_replication_configuration](#put_replication_configuration)
     - [set_repository_policy](#set_repository_policy)
     - [start_image_scan](#start_image_scan)
@@ -101,6 +107,8 @@ Exceptions:
 - `Exceptions.LifecyclePolicyPreviewInProgressException`
 - `Exceptions.LifecyclePolicyPreviewNotFoundException`
 - `Exceptions.LimitExceededException`
+- `Exceptions.PullThroughCacheRuleAlreadyExistsException`
+- `Exceptions.PullThroughCacheRuleNotFoundException`
 - `Exceptions.ReferencedImagesNotFoundException`
 - `Exceptions.RegistryPolicyNotFoundException`
 - `Exceptions.RepositoryAlreadyExistsException`
@@ -111,6 +119,7 @@ Exceptions:
 - `Exceptions.ServerException`
 - `Exceptions.TooManyTagsException`
 - `Exceptions.UnsupportedImageTypeException`
+- `Exceptions.UnsupportedUpstreamRegistryException`
 - `Exceptions.UploadNotFoundException`
 - `Exceptions.ValidationException`
 
@@ -196,6 +205,26 @@ Keyword-only arguments:
 Returns
 [BatchGetImageResponseTypeDef](./type_defs.md#batchgetimageresponsetypedef).
 
+### batch_get_repository_scanning_configuration
+
+Gets the scanning configuration for one or more repositories.
+
+Type annotations for
+`boto3.client("ecr").batch_get_repository_scanning_configuration` method.
+
+Boto3 documentation:
+[ECR.Client.batch_get_repository_scanning_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_get_repository_scanning_configuration)
+
+Arguments mapping described in
+[BatchGetRepositoryScanningConfigurationRequestRequestTypeDef](./type_defs.md#batchgetrepositoryscanningconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `repositoryNames`: `Sequence`\[`str`\] *(required)*
+
+Returns
+[BatchGetRepositoryScanningConfigurationResponseTypeDef](./type_defs.md#batchgetrepositoryscanningconfigurationresponsetypedef).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -233,6 +262,28 @@ Keyword-only arguments:
 
 Returns
 [CompleteLayerUploadResponseTypeDef](./type_defs.md#completelayeruploadresponsetypedef).
+
+### create_pull_through_cache_rule
+
+Creates a pull through cache rule.
+
+Type annotations for `boto3.client("ecr").create_pull_through_cache_rule`
+method.
+
+Boto3 documentation:
+[ECR.Client.create_pull_through_cache_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.create_pull_through_cache_rule)
+
+Arguments mapping described in
+[CreatePullThroughCacheRuleRequestRequestTypeDef](./type_defs.md#createpullthroughcacherulerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ecrRepositoryPrefix`: `str` *(required)*
+- `upstreamRegistryUrl`: `str` *(required)*
+- `registryId`: `str`
+
+Returns
+[CreatePullThroughCacheRuleResponseTypeDef](./type_defs.md#createpullthroughcacheruleresponsetypedef).
 
 ### create_repository
 
@@ -280,6 +331,27 @@ Keyword-only arguments:
 
 Returns
 [DeleteLifecyclePolicyResponseTypeDef](./type_defs.md#deletelifecyclepolicyresponsetypedef).
+
+### delete_pull_through_cache_rule
+
+Deletes a pull through cache rule.
+
+Type annotations for `boto3.client("ecr").delete_pull_through_cache_rule`
+method.
+
+Boto3 documentation:
+[ECR.Client.delete_pull_through_cache_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_pull_through_cache_rule)
+
+Arguments mapping described in
+[DeletePullThroughCacheRuleRequestRequestTypeDef](./type_defs.md#deletepullthroughcacherulerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ecrRepositoryPrefix`: `str` *(required)*
+- `registryId`: `str`
+
+Returns
+[DeletePullThroughCacheRuleResponseTypeDef](./type_defs.md#deletepullthroughcacheruleresponsetypedef).
 
 ### delete_registry_policy
 
@@ -406,6 +478,29 @@ Keyword-only arguments:
 
 Returns
 [DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef).
+
+### describe_pull_through_cache_rules
+
+Returns the pull through cache rules for a registry.
+
+Type annotations for `boto3.client("ecr").describe_pull_through_cache_rules`
+method.
+
+Boto3 documentation:
+[ECR.Client.describe_pull_through_cache_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_pull_through_cache_rules)
+
+Arguments mapping described in
+[DescribePullThroughCacheRulesRequestRequestTypeDef](./type_defs.md#describepullthroughcacherulesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `registryId`: `str`
+- `ecrRepositoryPrefixes`: `Sequence`\[`str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribePullThroughCacheRulesResponseTypeDef](./type_defs.md#describepullthroughcacherulesresponsetypedef).
 
 ### describe_registry
 
@@ -558,6 +653,19 @@ Boto3 documentation:
 
 Returns
 [GetRegistryPolicyResponseTypeDef](./type_defs.md#getregistrypolicyresponsetypedef).
+
+### get_registry_scanning_configuration
+
+Retrieves the scanning configuration for a registry.
+
+Type annotations for `boto3.client("ecr").get_registry_scanning_configuration`
+method.
+
+Boto3 documentation:
+[ECR.Client.get_registry_scanning_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_registry_scanning_configuration)
+
+Returns
+[GetRegistryScanningConfigurationResponseTypeDef](./type_defs.md#getregistryscanningconfigurationresponsetypedef).
 
 ### get_repository_policy
 
@@ -749,6 +857,28 @@ Keyword-only arguments:
 Returns
 [PutRegistryPolicyResponseTypeDef](./type_defs.md#putregistrypolicyresponsetypedef).
 
+### put_registry_scanning_configuration
+
+Creates or updates the scanning configuration for your private registry.
+
+Type annotations for `boto3.client("ecr").put_registry_scanning_configuration`
+method.
+
+Boto3 documentation:
+[ECR.Client.put_registry_scanning_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_registry_scanning_configuration)
+
+Arguments mapping described in
+[PutRegistryScanningConfigurationRequestRequestTypeDef](./type_defs.md#putregistryscanningconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `scanType`: [ScanTypeType](./literals.md#scantypetype)
+- `rules`:
+  `Sequence`\[[RegistryScanningRuleTypeDef](./type_defs.md#registryscanningruletypedef)\]
+
+Returns
+[PutRegistryScanningConfigurationResponseTypeDef](./type_defs.md#putregistryscanningconfigurationresponsetypedef).
+
 ### put_replication_configuration
 
 Creates or updates the replication configuration for a registry.
@@ -909,6 +1039,8 @@ Type annotations for `boto3.client("ecr").get_paginator` method with overloads.
   [DescribeImageScanFindingsPaginator](./paginators.md#describeimagescanfindingspaginator)
 - `client.get_paginator("describe_images")` ->
   [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
+- `client.get_paginator("describe_pull_through_cache_rules")` ->
+  [DescribePullThroughCacheRulesPaginator](./paginators.md#describepullthroughcacherulespaginator)
 - `client.get_paginator("describe_repositories")` ->
   [DescribeRepositoriesPaginator](./paginators.md#describerepositoriespaginator)
 - `client.get_paginator("get_lifecycle_policy_preview")` ->

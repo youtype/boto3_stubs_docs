@@ -34,6 +34,7 @@ type annotations stubs module
     - [list_jobs](#list_jobs)
     - [list_revision_assets](#list_revision_assets)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [send_api_asset](#send_api_asset)
     - [start_job](#start_job)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
@@ -519,6 +520,32 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+### send_api_asset
+
+This operation invokes an API Gateway API asset.
+
+Type annotations for `boto3.client("dataexchange").send_api_asset` method.
+
+Boto3 documentation:
+[DataExchange.Client.send_api_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.send_api_asset)
+
+Arguments mapping described in
+[SendApiAssetRequestRequestTypeDef](./type_defs.md#sendapiassetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AssetId`: `str` *(required)*
+- `DataSetId`: `str` *(required)*
+- `RevisionId`: `str` *(required)*
+- `Body`: `str`
+- `QueryStringParameters`: `Mapping`\[`str`, `str`\]
+- `RequestHeaders`: `Mapping`\[`str`, `str`\]
+- `Method`: `str`
+- `Path`: `str`
+
+Returns
+[SendApiAssetResponseTypeDef](./type_defs.md#sendapiassetresponsetypedef).
 
 ### start_job
 

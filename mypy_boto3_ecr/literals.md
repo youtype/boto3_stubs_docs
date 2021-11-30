@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 ECR module](#literals-for-boto3-ecr-module)
   - [DescribeImageScanFindingsPaginatorName](#describeimagescanfindingspaginatorname)
   - [DescribeImagesPaginatorName](#describeimagespaginatorname)
+  - [DescribePullThroughCacheRulesPaginatorName](#describepullthroughcacherulespaginatorname)
   - [DescribeRepositoriesPaginatorName](#describerepositoriespaginatorname)
   - [EncryptionTypeType](#encryptiontypetype)
   - [FindingSeverityType](#findingseveritytype)
@@ -25,7 +26,11 @@ type annotations stubs module
   - [ListImagesPaginatorName](#listimagespaginatorname)
   - [ReplicationStatusType](#replicationstatustype)
   - [RepositoryFilterTypeType](#repositoryfiltertypetype)
+  - [ScanFrequencyType](#scanfrequencytype)
   - [ScanStatusType](#scanstatustype)
+  - [ScanTypeType](#scantypetype)
+  - [ScanningConfigurationFailureCodeType](#scanningconfigurationfailurecodetype)
+  - [ScanningRepositoryFilterTypeType](#scanningrepositoryfiltertypetype)
   - [TagStatusType](#tagstatustype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
@@ -50,6 +55,16 @@ from mypy_boto3_ecr.literals import DescribeImagesPaginatorName
 Values:
 
 - `describe_images`
+
+## DescribePullThroughCacheRulesPaginatorName
+
+```python
+from mypy_boto3_ecr.literals import DescribePullThroughCacheRulesPaginatorName
+```
+
+Values:
+
+- `describe_pull_through_cache_rules`
 
 ## DescribeRepositoriesPaginatorName
 
@@ -221,6 +236,18 @@ Values:
 
 - `PREFIX_MATCH`
 
+## ScanFrequencyType
+
+```python
+from mypy_boto3_ecr.literals import ScanFrequencyType
+```
+
+Values:
+
+- `CONTINUOUS_SCAN`
+- `MANUAL`
+- `SCAN_ON_PUSH`
+
 ## ScanStatusType
 
 ```python
@@ -229,9 +256,45 @@ from mypy_boto3_ecr.literals import ScanStatusType
 
 Values:
 
+- `ACTIVE`
 - `COMPLETE`
 - `FAILED`
+- `FINDINGS_UNAVAILABLE`
 - `IN_PROGRESS`
+- `PENDING`
+- `SCAN_ELIGIBILITY_EXPIRED`
+- `UNSUPPORTED_IMAGE`
+
+## ScanTypeType
+
+```python
+from mypy_boto3_ecr.literals import ScanTypeType
+```
+
+Values:
+
+- `BASIC`
+- `ENHANCED`
+
+## ScanningConfigurationFailureCodeType
+
+```python
+from mypy_boto3_ecr.literals import ScanningConfigurationFailureCodeType
+```
+
+Values:
+
+- `REPOSITORY_NOT_FOUND`
+
+## ScanningRepositoryFilterTypeType
+
+```python
+from mypy_boto3_ecr.literals import ScanningRepositoryFilterTypeType
+```
+
+Values:
+
+- `WILDCARD`
 
 ## TagStatusType
 
@@ -356,6 +419,7 @@ Values:
 - `emr-containers`
 - `es`
 - `events`
+- `evidently`
 - `finspace`
 - `finspace-data`
 - `firehose`
@@ -382,6 +446,7 @@ Values:
 - `imagebuilder`
 - `importexport`
 - `inspector`
+- `inspector2`
 - `iot`
 - `iot-data`
 - `iot-jobs-data`
@@ -471,6 +536,7 @@ Values:
 - `qldb-session`
 - `quicksight`
 - `ram`
+- `rbin`
 - `rds`
 - `rds-data`
 - `redshift`
@@ -486,6 +552,7 @@ Values:
 - `route53-recovery-readiness`
 - `route53domains`
 - `route53resolver`
+- `rum`
 - `s3`
 - `s3control`
 - `s3outposts`
@@ -555,6 +622,7 @@ Values:
 
 - `describe_image_scan_findings`
 - `describe_images`
+- `describe_pull_through_cache_rules`
 - `describe_repositories`
 - `get_lifecycle_policy_preview`
 - `list_images`

@@ -668,6 +668,8 @@ type annotations stubs module
   - [DescribeSnapshotAttributeRequestRequestTypeDef](#describesnapshotattributerequestrequesttypedef)
   - [DescribeSnapshotAttributeRequestSnapshotTypeDef](#describesnapshotattributerequestsnapshottypedef)
   - [DescribeSnapshotAttributeResultTypeDef](#describesnapshotattributeresulttypedef)
+  - [DescribeSnapshotTierStatusRequestRequestTypeDef](#describesnapshottierstatusrequestrequesttypedef)
+  - [DescribeSnapshotTierStatusResultTypeDef](#describesnapshottierstatusresulttypedef)
   - [DescribeSnapshotsRequestRequestTypeDef](#describesnapshotsrequestrequesttypedef)
   - [DescribeSnapshotsResultTypeDef](#describesnapshotsresulttypedef)
   - [DescribeSpotDatafeedSubscriptionRequestRequestTypeDef](#describespotdatafeedsubscriptionrequestrequesttypedef)
@@ -1113,6 +1115,8 @@ type annotations stubs module
   - [LaunchTemplatesMonitoringTypeDef](#launchtemplatesmonitoringtypedef)
   - [LicenseConfigurationRequestTypeDef](#licenseconfigurationrequesttypedef)
   - [LicenseConfigurationTypeDef](#licenseconfigurationtypedef)
+  - [ListSnapshotsInRecycleBinRequestRequestTypeDef](#listsnapshotsinrecyclebinrequestrequesttypedef)
+  - [ListSnapshotsInRecycleBinResultTypeDef](#listsnapshotsinrecyclebinresulttypedef)
   - [LoadBalancersConfigTypeDef](#loadbalancersconfigtypedef)
   - [LoadPermissionModificationsTypeDef](#loadpermissionmodificationstypedef)
   - [LoadPermissionRequestTypeDef](#loadpermissionrequesttypedef)
@@ -1182,6 +1186,8 @@ type annotations stubs module
   - [ModifySecurityGroupRulesResultTypeDef](#modifysecuritygrouprulesresulttypedef)
   - [ModifySnapshotAttributeRequestRequestTypeDef](#modifysnapshotattributerequestrequesttypedef)
   - [ModifySnapshotAttributeRequestSnapshotTypeDef](#modifysnapshotattributerequestsnapshottypedef)
+  - [ModifySnapshotTierRequestRequestTypeDef](#modifysnapshottierrequestrequesttypedef)
+  - [ModifySnapshotTierResultTypeDef](#modifysnapshottierresulttypedef)
   - [ModifySpotFleetRequestRequestRequestTypeDef](#modifyspotfleetrequestrequestrequesttypedef)
   - [ModifySpotFleetRequestResponseTypeDef](#modifyspotfleetrequestresponsetypedef)
   - [ModifySubnetAttributeRequestRequestTypeDef](#modifysubnetattributerequestrequesttypedef)
@@ -1400,6 +1406,10 @@ type annotations stubs module
   - [RestoreAddressToClassicResultTypeDef](#restoreaddresstoclassicresulttypedef)
   - [RestoreManagedPrefixListVersionRequestRequestTypeDef](#restoremanagedprefixlistversionrequestrequesttypedef)
   - [RestoreManagedPrefixListVersionResultTypeDef](#restoremanagedprefixlistversionresulttypedef)
+  - [RestoreSnapshotFromRecycleBinRequestRequestTypeDef](#restoresnapshotfromrecyclebinrequestrequesttypedef)
+  - [RestoreSnapshotFromRecycleBinResultTypeDef](#restoresnapshotfromrecyclebinresulttypedef)
+  - [RestoreSnapshotTierRequestRequestTypeDef](#restoresnapshottierrequestrequesttypedef)
+  - [RestoreSnapshotTierResultTypeDef](#restoresnapshottierresulttypedef)
   - [RevokeClientVpnIngressRequestRequestTypeDef](#revokeclientvpningressrequestrequesttypedef)
   - [RevokeClientVpnIngressResultTypeDef](#revokeclientvpningressresulttypedef)
   - [RevokeSecurityGroupEgressRequestRequestTypeDef](#revokesecuritygroupegressrequestrequesttypedef)
@@ -1476,8 +1486,10 @@ type annotations stubs module
   - [SnapshotDetailTypeDef](#snapshotdetailtypedef)
   - [SnapshotDiskContainerTypeDef](#snapshotdiskcontainertypedef)
   - [SnapshotInfoTypeDef](#snapshotinfotypedef)
+  - [SnapshotRecycleBinInfoTypeDef](#snapshotrecyclebininfotypedef)
   - [SnapshotResponseMetadataTypeDef](#snapshotresponsemetadatatypedef)
   - [SnapshotTaskDetailTypeDef](#snapshottaskdetailtypedef)
+  - [SnapshotTierStatusTypeDef](#snapshottierstatustypedef)
   - [SnapshotTypeDef](#snapshottypedef)
   - [SpotCapacityRebalanceTypeDef](#spotcapacityrebalancetypedef)
   - [SpotDatafeedSubscriptionTypeDef](#spotdatafeedsubscriptiontypedef)
@@ -11226,6 +11238,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeSnapshotTierStatusRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSnapshotTierStatusRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeSnapshotTierStatusResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSnapshotTierStatusResultTypeDef
+```
+
+Required fields:
+
+- `SnapshotTierStatuses`:
+  `List`\[[SnapshotTierStatusTypeDef](./type_defs.md#snapshottierstatustypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeSnapshotsRequestRequestTypeDef
 
 ```python
@@ -17716,6 +17755,33 @@ Optional fields:
 
 - `LicenseConfigurationArn`: `str`
 
+## ListSnapshotsInRecycleBinRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ListSnapshotsInRecycleBinRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SnapshotIds`: `Sequence`\[`str`\]
+- `DryRun`: `bool`
+
+## ListSnapshotsInRecycleBinResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ListSnapshotsInRecycleBinResultTypeDef
+```
+
+Required fields:
+
+- `Snapshots`:
+  `List`\[[SnapshotRecycleBinInfoTypeDef](./type_defs.md#snapshotrecyclebininfotypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## LoadBalancersConfigTypeDef
 
 ```python
@@ -18805,6 +18871,35 @@ Optional fields:
 - `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
 - `UserIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
+
+## ModifySnapshotTierRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifySnapshotTierRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SnapshotId`: `str`
+
+Optional fields:
+
+- `StorageTier`: `Literal['archive']` (see
+  [TargetStorageTierType](./literals.md#targetstoragetiertype))
+- `DryRun`: `bool`
+
+## ModifySnapshotTierResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifySnapshotTierResultTypeDef
+```
+
+Required fields:
+
+- `SnapshotId`: `str`
+- `TieringStartTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ModifySpotFleetRequestRequestRequestTypeDef
 
@@ -22119,6 +22214,72 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## RestoreSnapshotFromRecycleBinRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RestoreSnapshotFromRecycleBinRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SnapshotId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## RestoreSnapshotFromRecycleBinResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RestoreSnapshotFromRecycleBinResultTypeDef
+```
+
+Required fields:
+
+- `SnapshotId`: `str`
+- `OutpostArn`: `str`
+- `Description`: `str`
+- `Encrypted`: `bool`
+- `OwnerId`: `str`
+- `Progress`: `str`
+- `StartTime`: `datetime`
+- `State`: [SnapshotStateType](./literals.md#snapshotstatetype)
+- `VolumeId`: `str`
+- `VolumeSize`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RestoreSnapshotTierRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RestoreSnapshotTierRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SnapshotId`: `str`
+
+Optional fields:
+
+- `TemporaryRestoreDays`: `int`
+- `PermanentRestore`: `bool`
+- `DryRun`: `bool`
+
+## RestoreSnapshotTierResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RestoreSnapshotTierResultTypeDef
+```
+
+Required fields:
+
+- `SnapshotId`: `str`
+- `RestoreStartTime`: `datetime`
+- `RestoreDuration`: `int`
+- `IsPermanentRestore`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## RevokeClientVpnIngressRequestRequestTypeDef
 
 ```python
@@ -23369,6 +23530,20 @@ Optional fields:
 - `SnapshotId`: `str`
 - `OutpostArn`: `str`
 
+## SnapshotRecycleBinInfoTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import SnapshotRecycleBinInfoTypeDef
+```
+
+Optional fields:
+
+- `SnapshotId`: `str`
+- `RecycleBinEnterTime`: `datetime`
+- `RecycleBinExitTime`: `datetime`
+- `Description`: `str`
+- `VolumeId`: `str`
+
 ## SnapshotResponseMetadataTypeDef
 
 ```python
@@ -23392,6 +23567,8 @@ Required fields:
 - `OwnerAlias`: `str`
 - `OutpostArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StorageTier`: [StorageTierType](./literals.md#storagetiertype)
+- `RestoreExpiryTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -23416,6 +23593,28 @@ Optional fields:
 - `UserBucket`:
   [UserBucketDetailsTypeDef](./type_defs.md#userbucketdetailstypedef)
 
+## SnapshotTierStatusTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import SnapshotTierStatusTypeDef
+```
+
+Optional fields:
+
+- `SnapshotId`: `str`
+- `VolumeId`: `str`
+- `Status`: [SnapshotStateType](./literals.md#snapshotstatetype)
+- `OwnerId`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StorageTier`: [StorageTierType](./literals.md#storagetiertype)
+- `LastTieringStartTime`: `datetime`
+- `LastTieringProgress`: `int`
+- `LastTieringOperationStatus`:
+  [TieringOperationStatusType](./literals.md#tieringoperationstatustype)
+- `LastTieringOperationStatusDetail`: `str`
+- `ArchivalCompleteTime`: `datetime`
+- `RestoreExpiryTime`: `datetime`
+
 ## SnapshotTypeDef
 
 ```python
@@ -23439,6 +23638,8 @@ Optional fields:
 - `OwnerAlias`: `str`
 - `OutpostArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StorageTier`: [StorageTierType](./literals.md#storagetiertype)
+- `RestoreExpiryTime`: `datetime`
 
 ## SpotCapacityRebalanceTypeDef
 

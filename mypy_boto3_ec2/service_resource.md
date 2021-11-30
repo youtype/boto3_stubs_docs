@@ -3963,6 +3963,8 @@ Boto3 documentation:
 - `owner_alias`: `str`
 - `outpost_arn`: `str`
 - `tags`: `List`\[`Any`\]
+- `storage_tier`: `str`
+- `restore_expiry_time`: `datetime`
 - `id`: `str`
 - `volume`: [Volume](#volume)
 

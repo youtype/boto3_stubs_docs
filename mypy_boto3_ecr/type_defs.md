@@ -10,18 +10,28 @@ type annotations stubs module
 - [Typed dictionaries for boto3 ECR module](#typed-dictionaries-for-boto3-ecr-module)
   - [AttributeTypeDef](#attributetypedef)
   - [AuthorizationDataTypeDef](#authorizationdatatypedef)
+  - [AwsEcrContainerImageDetailsTypeDef](#awsecrcontainerimagedetailstypedef)
   - [BatchCheckLayerAvailabilityRequestRequestTypeDef](#batchchecklayeravailabilityrequestrequesttypedef)
   - [BatchCheckLayerAvailabilityResponseTypeDef](#batchchecklayeravailabilityresponsetypedef)
   - [BatchDeleteImageRequestRequestTypeDef](#batchdeleteimagerequestrequesttypedef)
   - [BatchDeleteImageResponseTypeDef](#batchdeleteimageresponsetypedef)
   - [BatchGetImageRequestRequestTypeDef](#batchgetimagerequestrequesttypedef)
   - [BatchGetImageResponseTypeDef](#batchgetimageresponsetypedef)
+  - [BatchGetRepositoryScanningConfigurationRequestRequestTypeDef](#batchgetrepositoryscanningconfigurationrequestrequesttypedef)
+  - [BatchGetRepositoryScanningConfigurationResponseTypeDef](#batchgetrepositoryscanningconfigurationresponsetypedef)
   - [CompleteLayerUploadRequestRequestTypeDef](#completelayeruploadrequestrequesttypedef)
   - [CompleteLayerUploadResponseTypeDef](#completelayeruploadresponsetypedef)
+  - [CreatePullThroughCacheRuleRequestRequestTypeDef](#createpullthroughcacherulerequestrequesttypedef)
+  - [CreatePullThroughCacheRuleResponseTypeDef](#createpullthroughcacheruleresponsetypedef)
   - [CreateRepositoryRequestRequestTypeDef](#createrepositoryrequestrequesttypedef)
   - [CreateRepositoryResponseTypeDef](#createrepositoryresponsetypedef)
+  - [CvssScoreAdjustmentTypeDef](#cvssscoreadjustmenttypedef)
+  - [CvssScoreDetailsTypeDef](#cvssscoredetailstypedef)
+  - [CvssScoreTypeDef](#cvssscoretypedef)
   - [DeleteLifecyclePolicyRequestRequestTypeDef](#deletelifecyclepolicyrequestrequesttypedef)
   - [DeleteLifecyclePolicyResponseTypeDef](#deletelifecyclepolicyresponsetypedef)
+  - [DeletePullThroughCacheRuleRequestRequestTypeDef](#deletepullthroughcacherulerequestrequesttypedef)
+  - [DeletePullThroughCacheRuleResponseTypeDef](#deletepullthroughcacheruleresponsetypedef)
   - [DeleteRegistryPolicyResponseTypeDef](#deleteregistrypolicyresponsetypedef)
   - [DeleteRepositoryPolicyRequestRequestTypeDef](#deleterepositorypolicyrequestrequesttypedef)
   - [DeleteRepositoryPolicyResponseTypeDef](#deleterepositorypolicyresponsetypedef)
@@ -34,10 +44,13 @@ type annotations stubs module
   - [DescribeImagesFilterTypeDef](#describeimagesfiltertypedef)
   - [DescribeImagesRequestRequestTypeDef](#describeimagesrequestrequesttypedef)
   - [DescribeImagesResponseTypeDef](#describeimagesresponsetypedef)
+  - [DescribePullThroughCacheRulesRequestRequestTypeDef](#describepullthroughcacherulesrequestrequesttypedef)
+  - [DescribePullThroughCacheRulesResponseTypeDef](#describepullthroughcacherulesresponsetypedef)
   - [DescribeRegistryResponseTypeDef](#describeregistryresponsetypedef)
   - [DescribeRepositoriesRequestRequestTypeDef](#describerepositoriesrequestrequesttypedef)
   - [DescribeRepositoriesResponseTypeDef](#describerepositoriesresponsetypedef)
   - [EncryptionConfigurationTypeDef](#encryptionconfigurationtypedef)
+  - [EnhancedImageScanFindingTypeDef](#enhancedimagescanfindingtypedef)
   - [GetAuthorizationTokenRequestRequestTypeDef](#getauthorizationtokenrequestrequesttypedef)
   - [GetAuthorizationTokenResponseTypeDef](#getauthorizationtokenresponsetypedef)
   - [GetDownloadUrlForLayerRequestRequestTypeDef](#getdownloadurlforlayerrequestrequesttypedef)
@@ -47,6 +60,7 @@ type annotations stubs module
   - [GetLifecyclePolicyRequestRequestTypeDef](#getlifecyclepolicyrequestrequesttypedef)
   - [GetLifecyclePolicyResponseTypeDef](#getlifecyclepolicyresponsetypedef)
   - [GetRegistryPolicyResponseTypeDef](#getregistrypolicyresponsetypedef)
+  - [GetRegistryScanningConfigurationResponseTypeDef](#getregistryscanningconfigurationresponsetypedef)
   - [GetRepositoryPolicyRequestRequestTypeDef](#getrepositorypolicyrequestrequesttypedef)
   - [GetRepositoryPolicyResponseTypeDef](#getrepositorypolicyresponsetypedef)
   - [ImageDetailTypeDef](#imagedetailtypedef)
@@ -72,7 +86,9 @@ type annotations stubs module
   - [ListImagesResponseTypeDef](#listimagesresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [PackageVulnerabilityDetailsTypeDef](#packagevulnerabilitydetailstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [PullThroughCacheRuleTypeDef](#pullthroughcacheruletypedef)
   - [PutImageRequestRequestTypeDef](#putimagerequestrequesttypedef)
   - [PutImageResponseTypeDef](#putimageresponsetypedef)
   - [PutImageScanningConfigurationRequestRequestTypeDef](#putimagescanningconfigurationrequestrequesttypedef)
@@ -83,14 +99,26 @@ type annotations stubs module
   - [PutLifecyclePolicyResponseTypeDef](#putlifecyclepolicyresponsetypedef)
   - [PutRegistryPolicyRequestRequestTypeDef](#putregistrypolicyrequestrequesttypedef)
   - [PutRegistryPolicyResponseTypeDef](#putregistrypolicyresponsetypedef)
+  - [PutRegistryScanningConfigurationRequestRequestTypeDef](#putregistryscanningconfigurationrequestrequesttypedef)
+  - [PutRegistryScanningConfigurationResponseTypeDef](#putregistryscanningconfigurationresponsetypedef)
   - [PutReplicationConfigurationRequestRequestTypeDef](#putreplicationconfigurationrequestrequesttypedef)
   - [PutReplicationConfigurationResponseTypeDef](#putreplicationconfigurationresponsetypedef)
+  - [RecommendationTypeDef](#recommendationtypedef)
+  - [RegistryScanningConfigurationTypeDef](#registryscanningconfigurationtypedef)
+  - [RegistryScanningRuleTypeDef](#registryscanningruletypedef)
+  - [RemediationTypeDef](#remediationtypedef)
   - [ReplicationConfigurationTypeDef](#replicationconfigurationtypedef)
   - [ReplicationDestinationTypeDef](#replicationdestinationtypedef)
   - [ReplicationRuleTypeDef](#replicationruletypedef)
   - [RepositoryFilterTypeDef](#repositoryfiltertypedef)
+  - [RepositoryScanningConfigurationFailureTypeDef](#repositoryscanningconfigurationfailuretypedef)
+  - [RepositoryScanningConfigurationTypeDef](#repositoryscanningconfigurationtypedef)
   - [RepositoryTypeDef](#repositorytypedef)
+  - [ResourceDetailsTypeDef](#resourcedetailstypedef)
+  - [ResourceTypeDef](#resourcetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [ScanningRepositoryFilterTypeDef](#scanningrepositoryfiltertypedef)
+  - [ScoreDetailsTypeDef](#scoredetailstypedef)
   - [SetRepositoryPolicyRequestRequestTypeDef](#setrepositorypolicyrequestrequesttypedef)
   - [SetRepositoryPolicyResponseTypeDef](#setrepositorypolicyresponsetypedef)
   - [StartImageScanRequestRequestTypeDef](#startimagescanrequestrequesttypedef)
@@ -102,6 +130,7 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UploadLayerPartRequestRequestTypeDef](#uploadlayerpartrequestrequesttypedef)
   - [UploadLayerPartResponseTypeDef](#uploadlayerpartresponsetypedef)
+  - [VulnerablePackageTypeDef](#vulnerablepackagetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 ## AttributeTypeDef
@@ -129,6 +158,23 @@ Optional fields:
 - `authorizationToken`: `str`
 - `expiresAt`: `datetime`
 - `proxyEndpoint`: `str`
+
+## AwsEcrContainerImageDetailsTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import AwsEcrContainerImageDetailsTypeDef
+```
+
+Optional fields:
+
+- `architecture`: `str`
+- `author`: `str`
+- `imageHash`: `str`
+- `imageTags`: `List`\[`str`\]
+- `platform`: `str`
+- `pushedAt`: `datetime`
+- `registry`: `str`
+- `repositoryName`: `str`
 
 ## BatchCheckLayerAvailabilityRequestRequestTypeDef
 
@@ -221,6 +267,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## BatchGetRepositoryScanningConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import BatchGetRepositoryScanningConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `repositoryNames`: `Sequence`\[`str`\]
+
+## BatchGetRepositoryScanningConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import BatchGetRepositoryScanningConfigurationResponseTypeDef
+```
+
+Required fields:
+
+- `scanningConfigurations`:
+  `List`\[[RepositoryScanningConfigurationTypeDef](./type_defs.md#repositoryscanningconfigurationtypedef)\]
+- `failures`:
+  `List`\[[RepositoryScanningConfigurationFailureTypeDef](./type_defs.md#repositoryscanningconfigurationfailuretypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CompleteLayerUploadRequestRequestTypeDef
 
 ```python
@@ -249,6 +320,36 @@ Required fields:
 - `repositoryName`: `str`
 - `uploadId`: `str`
 - `layerDigest`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreatePullThroughCacheRuleRequestRequestTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import CreatePullThroughCacheRuleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ecrRepositoryPrefix`: `str`
+- `upstreamRegistryUrl`: `str`
+
+Optional fields:
+
+- `registryId`: `str`
+
+## CreatePullThroughCacheRuleResponseTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import CreatePullThroughCacheRuleResponseTypeDef
+```
+
+Required fields:
+
+- `ecrRepositoryPrefix`: `str`
+- `upstreamRegistryUrl`: `str`
+- `createdAt`: `datetime`
+- `registryId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -285,6 +386,45 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CvssScoreAdjustmentTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import CvssScoreAdjustmentTypeDef
+```
+
+Optional fields:
+
+- `metric`: `str`
+- `reason`: `str`
+
+## CvssScoreDetailsTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import CvssScoreDetailsTypeDef
+```
+
+Optional fields:
+
+- `adjustments`:
+  `List`\[[CvssScoreAdjustmentTypeDef](./type_defs.md#cvssscoreadjustmenttypedef)\]
+- `score`: `float`
+- `scoreSource`: `str`
+- `scoringVector`: `str`
+- `version`: `str`
+
+## CvssScoreTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import CvssScoreTypeDef
+```
+
+Optional fields:
+
+- `baseScore`: `float`
+- `scoringVector`: `str`
+- `source`: `str`
+- `version`: `str`
+
 ## DeleteLifecyclePolicyRequestRequestTypeDef
 
 ```python
@@ -311,6 +451,35 @@ Required fields:
 - `repositoryName`: `str`
 - `lifecyclePolicyText`: `str`
 - `lastEvaluatedAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeletePullThroughCacheRuleRequestRequestTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import DeletePullThroughCacheRuleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ecrRepositoryPrefix`: `str`
+
+Optional fields:
+
+- `registryId`: `str`
+
+## DeletePullThroughCacheRuleResponseTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import DeletePullThroughCacheRuleResponseTypeDef
+```
+
+Required fields:
+
+- `ecrRepositoryPrefix`: `str`
+- `upstreamRegistryUrl`: `str`
+- `createdAt`: `datetime`
+- `registryId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -492,6 +661,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribePullThroughCacheRulesRequestRequestTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import DescribePullThroughCacheRulesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `registryId`: `str`
+- `ecrRepositoryPrefixes`: `Sequence`\[`str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## DescribePullThroughCacheRulesResponseTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import DescribePullThroughCacheRulesResponseTypeDef
+```
+
+Required fields:
+
+- `pullThroughCacheRules`:
+  `List`\[[PullThroughCacheRuleTypeDef](./type_defs.md#pullthroughcacheruletypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeRegistryResponseTypeDef
 
 ```python
@@ -546,6 +742,31 @@ Required fields:
 Optional fields:
 
 - `kmsKey`: `str`
+
+## EnhancedImageScanFindingTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import EnhancedImageScanFindingTypeDef
+```
+
+Optional fields:
+
+- `awsAccountId`: `str`
+- `description`: `str`
+- `findingArn`: `str`
+- `firstObservedAt`: `datetime`
+- `lastObservedAt`: `datetime`
+- `packageVulnerabilityDetails`:
+  [PackageVulnerabilityDetailsTypeDef](./type_defs.md#packagevulnerabilitydetailstypedef)
+- `remediation`: [RemediationTypeDef](./type_defs.md#remediationtypedef)
+- `resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `score`: `float`
+- `scoreDetails`: [ScoreDetailsTypeDef](./type_defs.md#scoredetailstypedef)
+- `severity`: `str`
+- `status`: `str`
+- `title`: `str`
+- `type`: `str`
+- `updatedAt`: `datetime`
 
 ## GetAuthorizationTokenRequestRequestTypeDef
 
@@ -681,6 +902,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetRegistryScanningConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import GetRegistryScanningConfigurationResponseTypeDef
+```
+
+Required fields:
+
+- `registryId`: `str`
+- `scanningConfiguration`:
+  [RegistryScanningConfigurationTypeDef](./type_defs.md#registryscanningconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetRepositoryPolicyRequestRequestTypeDef
 
 ```python
@@ -803,10 +1038,12 @@ Optional fields:
 
 - `imageScanCompletedAt`: `datetime`
 - `vulnerabilitySourceUpdatedAt`: `datetime`
-- `findings`:
-  `List`\[[ImageScanFindingTypeDef](./type_defs.md#imagescanfindingtypedef)\]
 - `findingSeverityCounts`:
   `Dict`\[[FindingSeverityType](./literals.md#findingseveritytype), `int`\]
+- `findings`:
+  `List`\[[ImageScanFindingTypeDef](./type_defs.md#imagescanfindingtypedef)\]
+- `enhancedFindings`:
+  `List`\[[EnhancedImageScanFindingTypeDef](./type_defs.md#enhancedimagescanfindingtypedef)\]
 
 ## ImageScanStatusTypeDef
 
@@ -1005,6 +1242,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## PackageVulnerabilityDetailsTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import PackageVulnerabilityDetailsTypeDef
+```
+
+Optional fields:
+
+- `cvss`: `List`\[[CvssScoreTypeDef](./type_defs.md#cvssscoretypedef)\]
+- `referenceUrls`: `List`\[`str`\]
+- `relatedVulnerabilities`: `List`\[`str`\]
+- `source`: `str`
+- `sourceUrl`: `str`
+- `vendorCreatedAt`: `datetime`
+- `vendorSeverity`: `str`
+- `vendorUpdatedAt`: `datetime`
+- `vulnerabilityId`: `str`
+- `vulnerablePackages`:
+  `List`\[[VulnerablePackageTypeDef](./type_defs.md#vulnerablepackagetypedef)\]
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1016,6 +1273,19 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## PullThroughCacheRuleTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import PullThroughCacheRuleTypeDef
+```
+
+Optional fields:
+
+- `ecrRepositoryPrefix`: `str`
+- `upstreamRegistryUrl`: `str`
+- `createdAt`: `datetime`
+- `registryId`: `str`
 
 ## PutImageRequestRequestTypeDef
 
@@ -1161,6 +1431,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## PutRegistryScanningConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import PutRegistryScanningConfigurationRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `scanType`: [ScanTypeType](./literals.md#scantypetype)
+- `rules`:
+  `Sequence`\[[RegistryScanningRuleTypeDef](./type_defs.md#registryscanningruletypedef)\]
+
+## PutRegistryScanningConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import PutRegistryScanningConfigurationResponseTypeDef
+```
+
+Required fields:
+
+- `registryScanningConfiguration`:
+  [RegistryScanningConfigurationTypeDef](./type_defs.md#registryscanningconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## PutReplicationConfigurationRequestRequestTypeDef
 
 ```python
@@ -1184,6 +1479,52 @@ Required fields:
   [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RecommendationTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import RecommendationTypeDef
+```
+
+Optional fields:
+
+- `url`: `str`
+- `text`: `str`
+
+## RegistryScanningConfigurationTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import RegistryScanningConfigurationTypeDef
+```
+
+Optional fields:
+
+- `scanType`: [ScanTypeType](./literals.md#scantypetype)
+- `rules`:
+  `List`\[[RegistryScanningRuleTypeDef](./type_defs.md#registryscanningruletypedef)\]
+
+## RegistryScanningRuleTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import RegistryScanningRuleTypeDef
+```
+
+Required fields:
+
+- `scanFrequency`: [ScanFrequencyType](./literals.md#scanfrequencytype)
+- `repositoryFilters`:
+  `List`\[[ScanningRepositoryFilterTypeDef](./type_defs.md#scanningrepositoryfiltertypedef)\]
+
+## RemediationTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import RemediationTypeDef
+```
+
+Optional fields:
+
+- `recommendation`:
+  [RecommendationTypeDef](./type_defs.md#recommendationtypedef)
 
 ## ReplicationConfigurationTypeDef
 
@@ -1235,6 +1576,34 @@ Required fields:
 - `filterType`: `Literal['PREFIX_MATCH']` (see
   [RepositoryFilterTypeType](./literals.md#repositoryfiltertypetype))
 
+## RepositoryScanningConfigurationFailureTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import RepositoryScanningConfigurationFailureTypeDef
+```
+
+Optional fields:
+
+- `repositoryName`: `str`
+- `failureCode`: `Literal['REPOSITORY_NOT_FOUND']` (see
+  [ScanningConfigurationFailureCodeType](./literals.md#scanningconfigurationfailurecodetype))
+- `failureReason`: `str`
+
+## RepositoryScanningConfigurationTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import RepositoryScanningConfigurationTypeDef
+```
+
+Optional fields:
+
+- `repositoryArn`: `str`
+- `repositoryName`: `str`
+- `scanOnPush`: `bool`
+- `scanFrequency`: [ScanFrequencyType](./literals.md#scanfrequencytype)
+- `appliedScanFilters`:
+  `List`\[[ScanningRepositoryFilterTypeDef](./type_defs.md#scanningrepositoryfiltertypedef)\]
+
 ## RepositoryTypeDef
 
 ```python
@@ -1255,6 +1624,30 @@ Optional fields:
 - `encryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 
+## ResourceDetailsTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import ResourceDetailsTypeDef
+```
+
+Optional fields:
+
+- `awsEcrContainerImage`:
+  [AwsEcrContainerImageDetailsTypeDef](./type_defs.md#awsecrcontainerimagedetailstypedef)
+
+## ResourceTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import ResourceTypeDef
+```
+
+Optional fields:
+
+- `details`: [ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef)
+- `id`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+- `type`: `str`
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1268,6 +1661,28 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## ScanningRepositoryFilterTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import ScanningRepositoryFilterTypeDef
+```
+
+Required fields:
+
+- `filter`: `str`
+- `filterType`: `Literal['WILDCARD']` (see
+  [ScanningRepositoryFilterTypeType](./literals.md#scanningrepositoryfiltertypetype))
+
+## ScoreDetailsTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import ScoreDetailsTypeDef
+```
+
+Optional fields:
+
+- `cvss`: [CvssScoreDetailsTypeDef](./type_defs.md#cvssscoredetailstypedef)
 
 ## SetRepositoryPolicyRequestRequestTypeDef
 
@@ -1426,6 +1841,23 @@ Required fields:
 - `lastByteReceived`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## VulnerablePackageTypeDef
+
+```python
+from mypy_boto3_ecr.type_defs import VulnerablePackageTypeDef
+```
+
+Optional fields:
+
+- `arch`: `str`
+- `epoch`: `int`
+- `filePath`: `str`
+- `name`: `str`
+- `packageManager`: `str`
+- `release`: `str`
+- `sourceLayerHash`: `str`
+- `version`: `str`
 
 ## WaiterConfigTypeDef
 

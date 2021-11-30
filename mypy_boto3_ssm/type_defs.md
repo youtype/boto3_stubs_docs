@@ -3709,6 +3709,8 @@ Optional fields:
 - `LastSuccessfulAssociationExecutionDate`: `datetime`
 - `AssociationOverview`:
   [InstanceAggregatedAssociationOverviewTypeDef](./type_defs.md#instanceaggregatedassociationoverviewtypedef)
+- `SourceId`: `str`
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 
 ## InstancePatchStateFilterTypeDef
 
