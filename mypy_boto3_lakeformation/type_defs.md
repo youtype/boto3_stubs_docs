@@ -10,25 +10,39 @@ type annotations stubs module
 - [Typed dictionaries for boto3 LakeFormation module](#typed-dictionaries-for-boto3-lakeformation-module)
   - [AddLFTagsToResourceRequestRequestTypeDef](#addlftagstoresourcerequestrequesttypedef)
   - [AddLFTagsToResourceResponseTypeDef](#addlftagstoresourceresponsetypedef)
+  - [AddObjectInputTypeDef](#addobjectinputtypedef)
   - [BatchGrantPermissionsRequestRequestTypeDef](#batchgrantpermissionsrequestrequesttypedef)
   - [BatchGrantPermissionsResponseTypeDef](#batchgrantpermissionsresponsetypedef)
   - [BatchPermissionsFailureEntryTypeDef](#batchpermissionsfailureentrytypedef)
   - [BatchPermissionsRequestEntryTypeDef](#batchpermissionsrequestentrytypedef)
   - [BatchRevokePermissionsRequestRequestTypeDef](#batchrevokepermissionsrequestrequesttypedef)
   - [BatchRevokePermissionsResponseTypeDef](#batchrevokepermissionsresponsetypedef)
+  - [CancelTransactionRequestRequestTypeDef](#canceltransactionrequestrequesttypedef)
   - [ColumnLFTagTypeDef](#columnlftagtypedef)
   - [ColumnWildcardTypeDef](#columnwildcardtypedef)
+  - [CommitTransactionRequestRequestTypeDef](#committransactionrequestrequesttypedef)
+  - [CommitTransactionResponseTypeDef](#committransactionresponsetypedef)
+  - [CreateDataCellsFilterRequestRequestTypeDef](#createdatacellsfilterrequestrequesttypedef)
   - [CreateLFTagRequestRequestTypeDef](#createlftagrequestrequesttypedef)
+  - [DataCellsFilterResourceTypeDef](#datacellsfilterresourcetypedef)
+  - [DataCellsFilterTypeDef](#datacellsfiltertypedef)
   - [DataLakePrincipalTypeDef](#datalakeprincipaltypedef)
   - [DataLakeSettingsTypeDef](#datalakesettingstypedef)
   - [DataLocationResourceTypeDef](#datalocationresourcetypedef)
   - [DatabaseResourceTypeDef](#databaseresourcetypedef)
+  - [DeleteDataCellsFilterRequestRequestTypeDef](#deletedatacellsfilterrequestrequesttypedef)
   - [DeleteLFTagRequestRequestTypeDef](#deletelftagrequestrequesttypedef)
+  - [DeleteObjectInputTypeDef](#deleteobjectinputtypedef)
+  - [DeleteObjectsOnCancelRequestRequestTypeDef](#deleteobjectsoncancelrequestrequesttypedef)
   - [DeregisterResourceRequestRequestTypeDef](#deregisterresourcerequestrequesttypedef)
   - [DescribeResourceRequestRequestTypeDef](#describeresourcerequestrequesttypedef)
   - [DescribeResourceResponseTypeDef](#describeresourceresponsetypedef)
+  - [DescribeTransactionRequestRequestTypeDef](#describetransactionrequestrequesttypedef)
+  - [DescribeTransactionResponseTypeDef](#describetransactionresponsetypedef)
   - [DetailsMapTypeDef](#detailsmaptypedef)
   - [ErrorDetailTypeDef](#errordetailtypedef)
+  - [ExecutionStatisticsTypeDef](#executionstatisticstypedef)
+  - [ExtendTransactionRequestRequestTypeDef](#extendtransactionrequestrequesttypedef)
   - [FilterConditionTypeDef](#filterconditiontypedef)
   - [GetDataLakeSettingsRequestRequestTypeDef](#getdatalakesettingsrequestrequesttypedef)
   - [GetDataLakeSettingsResponseTypeDef](#getdatalakesettingsresponsetypedef)
@@ -36,23 +50,43 @@ type annotations stubs module
   - [GetEffectivePermissionsForPathResponseTypeDef](#geteffectivepermissionsforpathresponsetypedef)
   - [GetLFTagRequestRequestTypeDef](#getlftagrequestrequesttypedef)
   - [GetLFTagResponseTypeDef](#getlftagresponsetypedef)
+  - [GetQueryStateRequestRequestTypeDef](#getquerystaterequestrequesttypedef)
+  - [GetQueryStateResponseTypeDef](#getquerystateresponsetypedef)
+  - [GetQueryStatisticsRequestRequestTypeDef](#getquerystatisticsrequestrequesttypedef)
+  - [GetQueryStatisticsResponseTypeDef](#getquerystatisticsresponsetypedef)
   - [GetResourceLFTagsRequestRequestTypeDef](#getresourcelftagsrequestrequesttypedef)
   - [GetResourceLFTagsResponseTypeDef](#getresourcelftagsresponsetypedef)
+  - [GetTableObjectsRequestRequestTypeDef](#gettableobjectsrequestrequesttypedef)
+  - [GetTableObjectsResponseTypeDef](#gettableobjectsresponsetypedef)
+  - [GetWorkUnitResultsRequestRequestTypeDef](#getworkunitresultsrequestrequesttypedef)
+  - [GetWorkUnitResultsResponseTypeDef](#getworkunitresultsresponsetypedef)
+  - [GetWorkUnitsRequestRequestTypeDef](#getworkunitsrequestrequesttypedef)
+  - [GetWorkUnitsResponseTypeDef](#getworkunitsresponsetypedef)
   - [GrantPermissionsRequestRequestTypeDef](#grantpermissionsrequestrequesttypedef)
   - [LFTagErrorTypeDef](#lftagerrortypedef)
   - [LFTagKeyResourceTypeDef](#lftagkeyresourcetypedef)
   - [LFTagPairTypeDef](#lftagpairtypedef)
   - [LFTagPolicyResourceTypeDef](#lftagpolicyresourcetypedef)
   - [LFTagTypeDef](#lftagtypedef)
+  - [ListDataCellsFilterRequestRequestTypeDef](#listdatacellsfilterrequestrequesttypedef)
+  - [ListDataCellsFilterResponseTypeDef](#listdatacellsfilterresponsetypedef)
   - [ListLFTagsRequestRequestTypeDef](#listlftagsrequestrequesttypedef)
   - [ListLFTagsResponseTypeDef](#listlftagsresponsetypedef)
   - [ListPermissionsRequestRequestTypeDef](#listpermissionsrequestrequesttypedef)
   - [ListPermissionsResponseTypeDef](#listpermissionsresponsetypedef)
   - [ListResourcesRequestRequestTypeDef](#listresourcesrequestrequesttypedef)
   - [ListResourcesResponseTypeDef](#listresourcesresponsetypedef)
+  - [ListTableStorageOptimizersRequestRequestTypeDef](#listtablestorageoptimizersrequestrequesttypedef)
+  - [ListTableStorageOptimizersResponseTypeDef](#listtablestorageoptimizersresponsetypedef)
+  - [ListTransactionsRequestRequestTypeDef](#listtransactionsrequestrequesttypedef)
+  - [ListTransactionsResponseTypeDef](#listtransactionsresponsetypedef)
+  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [PartitionObjectsTypeDef](#partitionobjectstypedef)
+  - [PlanningStatisticsTypeDef](#planningstatisticstypedef)
   - [PrincipalPermissionsTypeDef](#principalpermissionstypedef)
   - [PrincipalResourcePermissionsTypeDef](#principalresourcepermissionstypedef)
   - [PutDataLakeSettingsRequestRequestTypeDef](#putdatalakesettingsrequestrequesttypedef)
+  - [QueryPlanningContextTypeDef](#queryplanningcontexttypedef)
   - [RegisterResourceRequestRequestTypeDef](#registerresourcerequestrequesttypedef)
   - [RemoveLFTagsFromResourceRequestRequestTypeDef](#removelftagsfromresourcerequestrequesttypedef)
   - [RemoveLFTagsFromResourceResponseTypeDef](#removelftagsfromresourceresponsetypedef)
@@ -60,16 +94,30 @@ type annotations stubs module
   - [ResourceTypeDef](#resourcetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RevokePermissionsRequestRequestTypeDef](#revokepermissionsrequestrequesttypedef)
+  - [RowFilterTypeDef](#rowfiltertypedef)
   - [SearchDatabasesByLFTagsRequestRequestTypeDef](#searchdatabasesbylftagsrequestrequesttypedef)
   - [SearchDatabasesByLFTagsResponseTypeDef](#searchdatabasesbylftagsresponsetypedef)
   - [SearchTablesByLFTagsRequestRequestTypeDef](#searchtablesbylftagsrequestrequesttypedef)
   - [SearchTablesByLFTagsResponseTypeDef](#searchtablesbylftagsresponsetypedef)
+  - [StartQueryPlanningRequestRequestTypeDef](#startqueryplanningrequestrequesttypedef)
+  - [StartQueryPlanningResponseTypeDef](#startqueryplanningresponsetypedef)
+  - [StartTransactionRequestRequestTypeDef](#starttransactionrequestrequesttypedef)
+  - [StartTransactionResponseTypeDef](#starttransactionresponsetypedef)
+  - [StorageOptimizerTypeDef](#storageoptimizertypedef)
+  - [TableObjectTypeDef](#tableobjecttypedef)
   - [TableResourceTypeDef](#tableresourcetypedef)
   - [TableWithColumnsResourceTypeDef](#tablewithcolumnsresourcetypedef)
   - [TaggedDatabaseTypeDef](#taggeddatabasetypedef)
   - [TaggedTableTypeDef](#taggedtabletypedef)
+  - [TransactionDescriptionTypeDef](#transactiondescriptiontypedef)
   - [UpdateLFTagRequestRequestTypeDef](#updatelftagrequestrequesttypedef)
   - [UpdateResourceRequestRequestTypeDef](#updateresourcerequestrequesttypedef)
+  - [UpdateTableObjectsRequestRequestTypeDef](#updatetableobjectsrequestrequesttypedef)
+  - [UpdateTableStorageOptimizerRequestRequestTypeDef](#updatetablestorageoptimizerrequestrequesttypedef)
+  - [UpdateTableStorageOptimizerResponseTypeDef](#updatetablestorageoptimizerresponsetypedef)
+  - [VirtualObjectTypeDef](#virtualobjecttypedef)
+  - [WorkUnitRangeTypeDef](#workunitrangetypedef)
+  - [WriteOperationTypeDef](#writeoperationtypedef)
 
 ## AddLFTagsToResourceRequestRequestTypeDef
 
@@ -97,6 +145,22 @@ Required fields:
 - `Failures`: `List`\[[LFTagErrorTypeDef](./type_defs.md#lftagerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AddObjectInputTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import AddObjectInputTypeDef
+```
+
+Required fields:
+
+- `Uri`: `str`
+- `ETag`: `str`
+- `Size`: `int`
+
+Optional fields:
+
+- `PartitionValues`: `Sequence`\[`str`\]
 
 ## BatchGrantPermissionsRequestRequestTypeDef
 
@@ -185,6 +249,16 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CancelTransactionRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import CancelTransactionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `TransactionId`: `str`
+
 ## ColumnLFTagTypeDef
 
 ```python
@@ -206,6 +280,39 @@ Optional fields:
 
 - `ExcludedColumnNames`: `Sequence`\[`str`\]
 
+## CommitTransactionRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import CommitTransactionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `TransactionId`: `str`
+
+## CommitTransactionResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import CommitTransactionResponseTypeDef
+```
+
+Required fields:
+
+- `TransactionStatus`:
+  [TransactionStatusType](./literals.md#transactionstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateDataCellsFilterRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import CreateDataCellsFilterRequestRequestTypeDef
+```
+
+Required fields:
+
+- `TableData`: [DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef)
+
 ## CreateLFTagRequestRequestTypeDef
 
 ```python
@@ -220,6 +327,39 @@ Required fields:
 Optional fields:
 
 - `CatalogId`: `str`
+
+## DataCellsFilterResourceTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import DataCellsFilterResourceTypeDef
+```
+
+Optional fields:
+
+- `TableCatalogId`: `str`
+- `DatabaseName`: `str`
+- `TableName`: `str`
+- `Name`: `str`
+
+## DataCellsFilterTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import DataCellsFilterTypeDef
+```
+
+Required fields:
+
+- `TableCatalogId`: `str`
+- `DatabaseName`: `str`
+- `TableName`: `str`
+- `Name`: `str`
+
+Optional fields:
+
+- `RowFilter`: [RowFilterTypeDef](./type_defs.md#rowfiltertypedef)
+- `ColumnNames`: `Sequence`\[`str`\]
+- `ColumnWildcard`:
+  [ColumnWildcardTypeDef](./type_defs.md#columnwildcardtypedef)
 
 ## DataLakePrincipalTypeDef
 
@@ -275,6 +415,19 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+## DeleteDataCellsFilterRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import DeleteDataCellsFilterRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `TableCatalogId`: `str`
+- `DatabaseName`: `str`
+- `TableName`: `str`
+- `Name`: `str`
+
 ## DeleteLFTagRequestRequestTypeDef
 
 ```python
@@ -284,6 +437,39 @@ from mypy_boto3_lakeformation.type_defs import DeleteLFTagRequestRequestTypeDef
 Required fields:
 
 - `TagKey`: `str`
+
+Optional fields:
+
+- `CatalogId`: `str`
+
+## DeleteObjectInputTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import DeleteObjectInputTypeDef
+```
+
+Required fields:
+
+- `Uri`: `str`
+
+Optional fields:
+
+- `ETag`: `str`
+- `PartitionValues`: `Sequence`\[`str`\]
+
+## DeleteObjectsOnCancelRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import DeleteObjectsOnCancelRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatabaseName`: `str`
+- `TableName`: `str`
+- `TransactionId`: `str`
+- `Objects`:
+  `Sequence`\[[VirtualObjectTypeDef](./type_defs.md#virtualobjecttypedef)\]
 
 Optional fields:
 
@@ -321,6 +507,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeTransactionRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import DescribeTransactionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `TransactionId`: `str`
+
+## DescribeTransactionResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import DescribeTransactionResponseTypeDef
+```
+
+Required fields:
+
+- `TransactionDescription`:
+  [TransactionDescriptionTypeDef](./type_defs.md#transactiondescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DetailsMapTypeDef
 
 ```python
@@ -341,6 +550,28 @@ Optional fields:
 
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
+
+## ExecutionStatisticsTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import ExecutionStatisticsTypeDef
+```
+
+Optional fields:
+
+- `AverageExecutionTimeMillis`: `int`
+- `DataScannedBytes`: `int`
+- `WorkUnitsExecutedCount`: `int`
+
+## ExtendTransactionRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import ExtendTransactionRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `TransactionId`: `str`
 
 ## FilterConditionTypeDef
 
@@ -436,6 +667,55 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetQueryStateRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetQueryStateRequestRequestTypeDef
+```
+
+Required fields:
+
+- `QueryId`: `str`
+
+## GetQueryStateResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetQueryStateResponseTypeDef
+```
+
+Required fields:
+
+- `Error`: `str`
+- `State`: [QueryStateStringType](./literals.md#querystatestringtype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetQueryStatisticsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetQueryStatisticsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `QueryId`: `str`
+
+## GetQueryStatisticsResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetQueryStatisticsResponseTypeDef
+```
+
+Required fields:
+
+- `ExecutionStatistics`:
+  [ExecutionStatisticsTypeDef](./type_defs.md#executionstatisticstypedef)
+- `PlanningStatistics`:
+  [PlanningStatisticsTypeDef](./type_defs.md#planningstatisticstypedef)
+- `QuerySubmissionTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetResourceLFTagsRequestRequestTypeDef
 
 ```python
@@ -465,6 +745,94 @@ Required fields:
   `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
 - `LFTagsOnColumns`:
   `List`\[[ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetTableObjectsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetTableObjectsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatabaseName`: `str`
+- `TableName`: `str`
+
+Optional fields:
+
+- `CatalogId`: `str`
+- `TransactionId`: `str`
+- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
+- `PartitionPredicate`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetTableObjectsResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetTableObjectsResponseTypeDef
+```
+
+Required fields:
+
+- `Objects`:
+  `List`\[[PartitionObjectsTypeDef](./type_defs.md#partitionobjectstypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetWorkUnitResultsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetWorkUnitResultsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `QueryId`: `str`
+- `WorkUnitId`: `int`
+- `WorkUnitToken`: `str`
+
+## GetWorkUnitResultsResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetWorkUnitResultsResponseTypeDef
+```
+
+Required fields:
+
+- `ResultStream`: `StreamingBody`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetWorkUnitsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetWorkUnitsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `QueryId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+## GetWorkUnitsResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetWorkUnitsResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `QueryId`: `str`
+- `WorkUnitRanges`:
+  `List`\[[WorkUnitRangeTypeDef](./type_defs.md#workunitrangetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -554,6 +922,32 @@ Required fields:
 - `TagKey`: `str`
 - `TagValues`: `Sequence`\[`str`\]
 
+## ListDataCellsFilterRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import ListDataCellsFilterRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `Table`: [TableResourceTypeDef](./type_defs.md#tableresourcetypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDataCellsFilterResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import ListDataCellsFilterResponseTypeDef
+```
+
+Required fields:
+
+- `DataCellsFilters`:
+  `List`\[[DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListLFTagsRequestRequestTypeDef
 
 ```python
@@ -597,6 +991,7 @@ Optional fields:
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `IncludeRelated`: `str`
 
 ## ListPermissionsResponseTypeDef
 
@@ -638,6 +1033,102 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTableStorageOptimizersRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import ListTableStorageOptimizersRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatabaseName`: `str`
+- `TableName`: `str`
+
+Optional fields:
+
+- `CatalogId`: `str`
+- `StorageOptimizerType`: [OptimizerTypeType](./literals.md#optimizertypetype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListTableStorageOptimizersResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import ListTableStorageOptimizersResponseTypeDef
+```
+
+Required fields:
+
+- `StorageOptimizerList`:
+  `List`\[[StorageOptimizerTypeDef](./type_defs.md#storageoptimizertypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTransactionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import ListTransactionsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `CatalogId`: `str`
+- `StatusFilter`:
+  [TransactionStatusFilterType](./literals.md#transactionstatusfiltertype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListTransactionsResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import ListTransactionsResponseTypeDef
+```
+
+Required fields:
+
+- `Transactions`:
+  `List`\[[TransactionDescriptionTypeDef](./type_defs.md#transactiondescriptiontypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PaginatorConfigTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import PaginatorConfigTypeDef
+```
+
+Optional fields:
+
+- `MaxItems`: `int`
+- `PageSize`: `int`
+- `StartingToken`: `str`
+
+## PartitionObjectsTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import PartitionObjectsTypeDef
+```
+
+Optional fields:
+
+- `PartitionValues`: `List`\[`str`\]
+- `Objects`: `List`\[[TableObjectTypeDef](./type_defs.md#tableobjecttypedef)\]
+
+## PlanningStatisticsTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import PlanningStatisticsTypeDef
+```
+
+Optional fields:
+
+- `EstimatedDataToScanBytes`: `int`
+- `PlanningTimeMillis`: `int`
+- `QueueTimeMillis`: `int`
+- `WorkUnitsGeneratedCount`: `int`
 
 ## PrincipalPermissionsTypeDef
 
@@ -681,6 +1172,23 @@ Required fields:
 Optional fields:
 
 - `CatalogId`: `str`
+
+## QueryPlanningContextTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import QueryPlanningContextTypeDef
+```
+
+Required fields:
+
+- `DatabaseName`: `str`
+
+Optional fields:
+
+- `CatalogId`: `str`
+- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
+- `QueryParameters`: `Mapping`\[`str`, `str`\]
+- `TransactionId`: `str`
 
 ## RegisterResourceRequestRequestTypeDef
 
@@ -751,6 +1259,8 @@ Optional fields:
   [TableWithColumnsResourceTypeDef](./type_defs.md#tablewithcolumnsresourcetypedef)
 - `DataLocation`:
   [DataLocationResourceTypeDef](./type_defs.md#datalocationresourcetypedef)
+- `DataCellsFilter`:
+  [DataCellsFilterResourceTypeDef](./type_defs.md#datacellsfilterresourcetypedef)
 - `LFTag`: [LFTagKeyResourceTypeDef](./type_defs.md#lftagkeyresourcetypedef)
 - `LFTagPolicy`:
   [LFTagPolicyResourceTypeDef](./type_defs.md#lftagpolicyresourcetypedef)
@@ -787,6 +1297,17 @@ Optional fields:
 - `CatalogId`: `str`
 - `PermissionsWithGrantOption`:
   `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
+
+## RowFilterTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import RowFilterTypeDef
+```
+
+Optional fields:
+
+- `FilterExpression`: `str`
+- `AllRowsWildcard`: `Mapping`\[`str`, `Any`\]
 
 ## SearchDatabasesByLFTagsRequestRequestTypeDef
 
@@ -847,6 +1368,78 @@ Required fields:
   `List`\[[TaggedTableTypeDef](./type_defs.md#taggedtabletypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartQueryPlanningRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import StartQueryPlanningRequestRequestTypeDef
+```
+
+Required fields:
+
+- `QueryPlanningContext`:
+  [QueryPlanningContextTypeDef](./type_defs.md#queryplanningcontexttypedef)
+- `QueryString`: `str`
+
+## StartQueryPlanningResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import StartQueryPlanningResponseTypeDef
+```
+
+Required fields:
+
+- `QueryId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartTransactionRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import StartTransactionRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `TransactionType`: [TransactionTypeType](./literals.md#transactiontypetype)
+
+## StartTransactionResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import StartTransactionResponseTypeDef
+```
+
+Required fields:
+
+- `TransactionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StorageOptimizerTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import StorageOptimizerTypeDef
+```
+
+Optional fields:
+
+- `StorageOptimizerType`: [OptimizerTypeType](./literals.md#optimizertypetype)
+- `Config`: `Dict`\[`str`, `str`\]
+- `ErrorMessage`: `str`
+- `Warnings`: `str`
+- `LastRunDetails`: `str`
+
+## TableObjectTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import TableObjectTypeDef
+```
+
+Optional fields:
+
+- `Uri`: `str`
+- `ETag`: `str`
+- `Size`: `int`
 
 ## TableResourceTypeDef
 
@@ -909,6 +1502,20 @@ Optional fields:
 - `LFTagsOnColumns`:
   `List`\[[ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef)\]
 
+## TransactionDescriptionTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import TransactionDescriptionTypeDef
+```
+
+Optional fields:
+
+- `TransactionId`: `str`
+- `TransactionStatus`:
+  [TransactionStatusType](./literals.md#transactionstatustype)
+- `TransactionStartTime`: `datetime`
+- `TransactionEndTime`: `datetime`
+
 ## UpdateLFTagRequestRequestTypeDef
 
 ```python
@@ -935,3 +1542,89 @@ Required fields:
 
 - `RoleArn`: `str`
 - `ResourceArn`: `str`
+
+## UpdateTableObjectsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import UpdateTableObjectsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatabaseName`: `str`
+- `TableName`: `str`
+- `TransactionId`: `str`
+- `WriteOperations`:
+  `Sequence`\[[WriteOperationTypeDef](./type_defs.md#writeoperationtypedef)\]
+
+Optional fields:
+
+- `CatalogId`: `str`
+
+## UpdateTableStorageOptimizerRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import UpdateTableStorageOptimizerRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DatabaseName`: `str`
+- `TableName`: `str`
+- `StorageOptimizerConfig`:
+  `Mapping`\[[OptimizerTypeType](./literals.md#optimizertypetype),
+  `Mapping`\[`str`, `str`\]\]
+
+Optional fields:
+
+- `CatalogId`: `str`
+
+## UpdateTableStorageOptimizerResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import UpdateTableStorageOptimizerResponseTypeDef
+```
+
+Required fields:
+
+- `Result`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## VirtualObjectTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import VirtualObjectTypeDef
+```
+
+Required fields:
+
+- `Uri`: `str`
+
+Optional fields:
+
+- `ETag`: `str`
+
+## WorkUnitRangeTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import WorkUnitRangeTypeDef
+```
+
+Required fields:
+
+- `WorkUnitIdMax`: `int`
+- `WorkUnitIdMin`: `int`
+- `WorkUnitToken`: `str`
+
+## WriteOperationTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import WriteOperationTypeDef
+```
+
+Optional fields:
+
+- `AddObject`: [AddObjectInputTypeDef](./type_defs.md#addobjectinputtypedef)
+- `DeleteObject`:
+  [DeleteObjectInputTypeDef](./type_defs.md#deleteobjectinputtypedef)

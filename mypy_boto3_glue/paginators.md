@@ -282,6 +282,8 @@ Arguments for `GetPartitionsPaginator.paginate` method:
 - `Expression`: `str`
 - `Segment`: [SegmentTypeDef](./type_defs.md#segmenttypedef)
 - `ExcludeColumnSchema`: `bool`
+- `TransactionId`: `str`
+- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -387,6 +389,8 @@ Arguments for `GetTablesPaginator.paginate` method:
 - `DatabaseName`: `str` *(required)*
 - `CatalogId`: `str`
 - `Expression`: `str`
+- `TransactionId`: `str`
+- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -23,6 +23,7 @@ type annotations stubs module
   - [ClusterOperationInfoTypeDef](#clusteroperationinfotypedef)
   - [ClusterOperationStepInfoTypeDef](#clusteroperationstepinfotypedef)
   - [ClusterOperationStepTypeDef](#clusteroperationsteptypedef)
+  - [ClusterTypeDef](#clustertypedef)
   - [CompatibleKafkaVersionTypeDef](#compatiblekafkaversiontypedef)
   - [ConfigurationInfoTypeDef](#configurationinfotypedef)
   - [ConfigurationRevisionTypeDef](#configurationrevisiontypedef)
@@ -30,6 +31,8 @@ type annotations stubs module
   - [ConnectivityInfoTypeDef](#connectivityinfotypedef)
   - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
   - [CreateClusterResponseTypeDef](#createclusterresponsetypedef)
+  - [CreateClusterV2RequestRequestTypeDef](#createclusterv2requestrequesttypedef)
+  - [CreateClusterV2ResponseTypeDef](#createclusterv2responsetypedef)
   - [CreateConfigurationRequestRequestTypeDef](#createconfigurationrequestrequesttypedef)
   - [CreateConfigurationResponseTypeDef](#createconfigurationresponsetypedef)
   - [DeleteClusterRequestRequestTypeDef](#deleteclusterrequestrequesttypedef)
@@ -40,6 +43,8 @@ type annotations stubs module
   - [DescribeClusterOperationResponseTypeDef](#describeclusteroperationresponsetypedef)
   - [DescribeClusterRequestRequestTypeDef](#describeclusterrequestrequesttypedef)
   - [DescribeClusterResponseTypeDef](#describeclusterresponsetypedef)
+  - [DescribeClusterV2RequestRequestTypeDef](#describeclusterv2requestrequesttypedef)
+  - [DescribeClusterV2ResponseTypeDef](#describeclusterv2responsetypedef)
   - [DescribeConfigurationRequestRequestTypeDef](#describeconfigurationrequestrequesttypedef)
   - [DescribeConfigurationResponseTypeDef](#describeconfigurationresponsetypedef)
   - [DescribeConfigurationRevisionRequestRequestTypeDef](#describeconfigurationrevisionrequestrequesttypedef)
@@ -62,6 +67,8 @@ type annotations stubs module
   - [ListClusterOperationsResponseTypeDef](#listclusteroperationsresponsetypedef)
   - [ListClustersRequestRequestTypeDef](#listclustersrequestrequesttypedef)
   - [ListClustersResponseTypeDef](#listclustersresponsetypedef)
+  - [ListClustersV2RequestRequestTypeDef](#listclustersv2requestrequesttypedef)
+  - [ListClustersV2ResponseTypeDef](#listclustersv2responsetypedef)
   - [ListConfigurationRevisionsRequestRequestTypeDef](#listconfigurationrevisionsrequestrequesttypedef)
   - [ListConfigurationRevisionsResponseTypeDef](#listconfigurationrevisionsresponsetypedef)
   - [ListConfigurationsRequestRequestTypeDef](#listconfigurationsrequestrequesttypedef)
@@ -84,6 +91,8 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PrometheusInfoTypeDef](#prometheusinfotypedef)
   - [PrometheusTypeDef](#prometheustypedef)
+  - [ProvisionedRequestTypeDef](#provisionedrequesttypedef)
+  - [ProvisionedTypeDef](#provisionedtypedef)
   - [PublicAccessTypeDef](#publicaccesstypedef)
   - [RebootBrokerRequestRequestTypeDef](#rebootbrokerrequestrequesttypedef)
   - [RebootBrokerResponseTypeDef](#rebootbrokerresponsetypedef)
@@ -91,6 +100,10 @@ type annotations stubs module
   - [S3TypeDef](#s3typedef)
   - [SaslTypeDef](#sasltypedef)
   - [ScramTypeDef](#scramtypedef)
+  - [ServerlessClientAuthenticationTypeDef](#serverlessclientauthenticationtypedef)
+  - [ServerlessRequestTypeDef](#serverlessrequesttypedef)
+  - [ServerlessSaslTypeDef](#serverlesssasltypedef)
+  - [ServerlessTypeDef](#serverlesstypedef)
   - [StateInfoTypeDef](#stateinfotypedef)
   - [StorageInfoTypeDef](#storageinfotypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
@@ -116,6 +129,7 @@ type annotations stubs module
   - [UpdateMonitoringResponseTypeDef](#updatemonitoringresponsetypedef)
   - [UpdateSecurityRequestRequestTypeDef](#updatesecurityrequestrequesttypedef)
   - [UpdateSecurityResponseTypeDef](#updatesecurityresponsetypedef)
+  - [VpcConfigTypeDef](#vpcconfigtypedef)
   - [ZookeeperNodeInfoTypeDef](#zookeepernodeinfotypedef)
 
 ## BatchAssociateScramSecretRequestRequestTypeDef
@@ -345,6 +359,26 @@ Optional fields:
   [ClusterOperationStepInfoTypeDef](./type_defs.md#clusteroperationstepinfotypedef)
 - `StepName`: `str`
 
+## ClusterTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import ClusterTypeDef
+```
+
+Optional fields:
+
+- `ActiveOperationArn`: `str`
+- `ClusterType`: [ClusterTypeType](./literals.md#clustertypetype)
+- `ClusterArn`: `str`
+- `ClusterName`: `str`
+- `CreationTime`: `datetime`
+- `CurrentVersion`: `str`
+- `State`: [ClusterStateType](./literals.md#clusterstatetype)
+- `StateInfo`: [StateInfoTypeDef](./type_defs.md#stateinfotypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+- `Provisioned`: [ProvisionedTypeDef](./type_defs.md#provisionedtypedef)
+- `Serverless`: [ServerlessTypeDef](./type_defs.md#serverlesstypedef)
+
 ## CompatibleKafkaVersionTypeDef
 
 ```python
@@ -449,6 +483,39 @@ Required fields:
 - `ClusterArn`: `str`
 - `ClusterName`: `str`
 - `State`: [ClusterStateType](./literals.md#clusterstatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateClusterV2RequestRequestTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import CreateClusterV2RequestRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterName`: `str`
+
+Optional fields:
+
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `Provisioned`:
+  [ProvisionedRequestTypeDef](./type_defs.md#provisionedrequesttypedef)
+- `Serverless`:
+  [ServerlessRequestTypeDef](./type_defs.md#serverlessrequesttypedef)
+
+## CreateClusterV2ResponseTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import CreateClusterV2ResponseTypeDef
+```
+
+Required fields:
+
+- `ClusterArn`: `str`
+- `ClusterName`: `str`
+- `State`: [ClusterStateType](./literals.md#clusterstatetype)
+- `ClusterType`: [ClusterTypeType](./literals.md#clustertypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -577,6 +644,28 @@ from mypy_boto3_kafka.type_defs import DescribeClusterResponseTypeDef
 Required fields:
 
 - `ClusterInfo`: [ClusterInfoTypeDef](./type_defs.md#clusterinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeClusterV2RequestRequestTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import DescribeClusterV2RequestRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterArn`: `str`
+
+## DescribeClusterV2ResponseTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import DescribeClusterV2ResponseTypeDef
+```
+
+Required fields:
+
+- `ClusterInfo`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -848,6 +937,32 @@ Required fields:
 
 - `ClusterInfoList`:
   `List`\[[ClusterInfoTypeDef](./type_defs.md#clusterinfotypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListClustersV2RequestRequestTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import ListClustersV2RequestRequestTypeDef
+```
+
+Optional fields:
+
+- `ClusterNameFilter`: `str`
+- `ClusterTypeFilter`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListClustersV2ResponseTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import ListClustersV2ResponseTypeDef
+```
+
+Required fields:
+
+- `ClusterInfoList`: `List`\[[ClusterTypeDef](./type_defs.md#clustertypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1140,6 +1255,61 @@ Optional fields:
 - `JmxExporter`: [JmxExporterTypeDef](./type_defs.md#jmxexportertypedef)
 - `NodeExporter`: [NodeExporterTypeDef](./type_defs.md#nodeexportertypedef)
 
+## ProvisionedRequestTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import ProvisionedRequestTypeDef
+```
+
+Required fields:
+
+- `BrokerNodeGroupInfo`:
+  [BrokerNodeGroupInfoTypeDef](./type_defs.md#brokernodegroupinfotypedef)
+- `KafkaVersion`: `str`
+- `NumberOfBrokerNodes`: `int`
+
+Optional fields:
+
+- `ClientAuthentication`:
+  [ClientAuthenticationTypeDef](./type_defs.md#clientauthenticationtypedef)
+- `ConfigurationInfo`:
+  [ConfigurationInfoTypeDef](./type_defs.md#configurationinfotypedef)
+- `EncryptionInfo`:
+  [EncryptionInfoTypeDef](./type_defs.md#encryptioninfotypedef)
+- `EnhancedMonitoring`:
+  [EnhancedMonitoringType](./literals.md#enhancedmonitoringtype)
+- `OpenMonitoring`:
+  [OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef)
+- `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
+
+## ProvisionedTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import ProvisionedTypeDef
+```
+
+Required fields:
+
+- `BrokerNodeGroupInfo`:
+  [BrokerNodeGroupInfoTypeDef](./type_defs.md#brokernodegroupinfotypedef)
+- `NumberOfBrokerNodes`: `int`
+
+Optional fields:
+
+- `CurrentBrokerSoftwareInfo`:
+  [BrokerSoftwareInfoTypeDef](./type_defs.md#brokersoftwareinfotypedef)
+- `ClientAuthentication`:
+  [ClientAuthenticationTypeDef](./type_defs.md#clientauthenticationtypedef)
+- `EncryptionInfo`:
+  [EncryptionInfoTypeDef](./type_defs.md#encryptioninfotypedef)
+- `EnhancedMonitoring`:
+  [EnhancedMonitoringType](./literals.md#enhancedmonitoringtype)
+- `OpenMonitoring`:
+  [OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef)
+- `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
+- `ZookeeperConnectString`: `str`
+- `ZookeeperConnectStringTls`: `str`
+
 ## PublicAccessTypeDef
 
 ```python
@@ -1223,6 +1393,57 @@ from mypy_boto3_kafka.type_defs import ScramTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
+
+## ServerlessClientAuthenticationTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import ServerlessClientAuthenticationTypeDef
+```
+
+Optional fields:
+
+- `Sasl`: [ServerlessSaslTypeDef](./type_defs.md#serverlesssasltypedef)
+
+## ServerlessRequestTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import ServerlessRequestTypeDef
+```
+
+Required fields:
+
+- `VpcConfigs`:
+  `Sequence`\[[VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)\]
+
+Optional fields:
+
+- `ClientAuthentication`:
+  [ServerlessClientAuthenticationTypeDef](./type_defs.md#serverlessclientauthenticationtypedef)
+
+## ServerlessSaslTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import ServerlessSaslTypeDef
+```
+
+Optional fields:
+
+- `Iam`: [IamTypeDef](./type_defs.md#iamtypedef)
+
+## ServerlessTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import ServerlessTypeDef
+```
+
+Required fields:
+
+- `VpcConfigs`: `List`\[[VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)\]
+
+Optional fields:
+
+- `ClientAuthentication`:
+  [ServerlessClientAuthenticationTypeDef](./type_defs.md#serverlessclientauthenticationtypedef)
 
 ## StateInfoTypeDef
 
@@ -1550,6 +1771,20 @@ Required fields:
 - `ClusterOperationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## VpcConfigTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import VpcConfigTypeDef
+```
+
+Required fields:
+
+- `SubnetIds`: `Sequence`\[`str`\]
+
+Optional fields:
+
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## ZookeeperNodeInfoTypeDef
 

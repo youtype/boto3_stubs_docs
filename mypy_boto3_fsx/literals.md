@@ -18,23 +18,33 @@ type annotations stubs module
   - [DataRepositoryTaskFilterNameType](#datarepositorytaskfilternametype)
   - [DataRepositoryTaskLifecycleType](#datarepositorytasklifecycletype)
   - [DataRepositoryTaskTypeType](#datarepositorytasktypetype)
+  - [DeleteOpenZFSVolumeOptionType](#deleteopenzfsvolumeoptiontype)
   - [DescribeBackupsPaginatorName](#describebackupspaginatorname)
   - [DescribeFileSystemsPaginatorName](#describefilesystemspaginatorname)
   - [DiskIopsConfigurationModeType](#diskiopsconfigurationmodetype)
   - [DriveCacheTypeType](#drivecachetypetype)
+  - [EventTypeType](#eventtypetype)
   - [FileSystemLifecycleType](#filesystemlifecycletype)
   - [FileSystemMaintenanceOperationType](#filesystemmaintenanceoperationtype)
   - [FileSystemTypeType](#filesystemtypetype)
   - [FilterNameType](#filternametype)
   - [FlexCacheEndpointTypeType](#flexcacheendpointtypetype)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
+  - [LustreAccessAuditLogLevelType](#lustreaccessauditlogleveltype)
   - [LustreDeploymentTypeType](#lustredeploymenttypetype)
   - [OntapDeploymentTypeType](#ontapdeploymenttypetype)
   - [OntapVolumeTypeType](#ontapvolumetypetype)
+  - [OpenZFSCopyStrategyType](#openzfscopystrategytype)
+  - [OpenZFSDataCompressionTypeType](#openzfsdatacompressiontypetype)
+  - [OpenZFSDeploymentTypeType](#openzfsdeploymenttypetype)
+  - [OpenZFSQuotaTypeType](#openzfsquotatypetype)
   - [ReportFormatType](#reportformattype)
   - [ReportScopeType](#reportscopetype)
   - [ResourceTypeType](#resourcetypetype)
+  - [RestoreOpenZFSVolumeOptionType](#restoreopenzfsvolumeoptiontype)
   - [SecurityStyleType](#securitystyletype)
+  - [SnapshotFilterNameType](#snapshotfilternametype)
+  - [SnapshotLifecycleType](#snapshotlifecycletype)
   - [StatusType](#statustype)
   - [StorageTypeType](#storagetypetype)
   - [StorageVirtualMachineFilterNameType](#storagevirtualmachinefilternametype)
@@ -61,7 +71,10 @@ Values:
 - `FILE_SYSTEM_ALIAS_ASSOCIATION`
 - `FILE_SYSTEM_ALIAS_DISASSOCIATION`
 - `FILE_SYSTEM_UPDATE`
+- `RELEASE_NFS_V3_LOCKS`
+- `SNAPSHOT_UPDATE`
 - `STORAGE_OPTIMIZATION`
+- `VOLUME_UPDATE`
 
 ## AliasLifecycleType
 
@@ -87,6 +100,7 @@ Values:
 
 - `NEW`
 - `NEW_CHANGED`
+- `NEW_CHANGED_DELETED`
 - `NONE`
 
 ## BackupLifecycleType
@@ -139,6 +153,7 @@ Values:
 - `AVAILABLE`
 - `CREATING`
 - `DELETING`
+- `FAILED`
 - `MISCONFIGURED`
 - `UPDATING`
 
@@ -150,6 +165,7 @@ from mypy_boto3_fsx.literals import DataRepositoryTaskFilterNameType
 
 Values:
 
+- `data-repository-association-id`
 - `file-system-id`
 - `task-lifecycle`
 
@@ -177,6 +193,17 @@ from mypy_boto3_fsx.literals import DataRepositoryTaskTypeType
 Values:
 
 - `EXPORT_TO_REPOSITORY`
+- `IMPORT_METADATA_FROM_REPOSITORY`
+
+## DeleteOpenZFSVolumeOptionType
+
+```python
+from mypy_boto3_fsx.literals import DeleteOpenZFSVolumeOptionType
+```
+
+Values:
+
+- `DELETE_CHILD_VOLUMES_AND_SNAPSHOTS`
 
 ## DescribeBackupsPaginatorName
 
@@ -220,6 +247,18 @@ Values:
 - `NONE`
 - `READ`
 
+## EventTypeType
+
+```python
+from mypy_boto3_fsx.literals import EventTypeType
+```
+
+Values:
+
+- `CHANGED`
+- `DELETED`
+- `NEW`
+
 ## FileSystemLifecycleType
 
 ```python
@@ -256,6 +295,7 @@ Values:
 
 - `LUSTRE`
 - `ONTAP`
+- `OPENZFS`
 - `WINDOWS`
 
 ## FilterNameType
@@ -267,6 +307,7 @@ from mypy_boto3_fsx.literals import FilterNameType
 Values:
 
 - `backup-type`
+- `data-repository-type`
 - `file-system-id`
 - `file-system-type`
 - `volume-id`
@@ -293,6 +334,19 @@ Values:
 
 - `list_tags_for_resource`
 
+## LustreAccessAuditLogLevelType
+
+```python
+from mypy_boto3_fsx.literals import LustreAccessAuditLogLevelType
+```
+
+Values:
+
+- `DISABLED`
+- `ERROR_ONLY`
+- `WARN_ERROR`
+- `WARN_ONLY`
+
 ## LustreDeploymentTypeType
 
 ```python
@@ -302,6 +356,7 @@ from mypy_boto3_fsx.literals import LustreDeploymentTypeType
 Values:
 
 - `PERSISTENT_1`
+- `PERSISTENT_2`
 - `SCRATCH_1`
 - `SCRATCH_2`
 
@@ -326,6 +381,49 @@ Values:
 - `DP`
 - `LS`
 - `RW`
+
+## OpenZFSCopyStrategyType
+
+```python
+from mypy_boto3_fsx.literals import OpenZFSCopyStrategyType
+```
+
+Values:
+
+- `CLONE`
+- `FULL_COPY`
+
+## OpenZFSDataCompressionTypeType
+
+```python
+from mypy_boto3_fsx.literals import OpenZFSDataCompressionTypeType
+```
+
+Values:
+
+- `NONE`
+- `ZSTD`
+
+## OpenZFSDeploymentTypeType
+
+```python
+from mypy_boto3_fsx.literals import OpenZFSDeploymentTypeType
+```
+
+Values:
+
+- `SINGLE_AZ_1`
+
+## OpenZFSQuotaTypeType
+
+```python
+from mypy_boto3_fsx.literals import OpenZFSQuotaTypeType
+```
+
+Values:
+
+- `GROUP`
+- `USER`
 
 ## ReportFormatType
 
@@ -358,6 +456,17 @@ Values:
 - `FILE_SYSTEM`
 - `VOLUME`
 
+## RestoreOpenZFSVolumeOptionType
+
+```python
+from mypy_boto3_fsx.literals import RestoreOpenZFSVolumeOptionType
+```
+
+Values:
+
+- `DELETE_CLONED_VOLUMES`
+- `DELETE_INTERMEDIATE_SNAPSHOTS`
+
 ## SecurityStyleType
 
 ```python
@@ -369,6 +478,30 @@ Values:
 - `MIXED`
 - `NTFS`
 - `UNIX`
+
+## SnapshotFilterNameType
+
+```python
+from mypy_boto3_fsx.literals import SnapshotFilterNameType
+```
+
+Values:
+
+- `file-system-id`
+- `volume-id`
+
+## SnapshotLifecycleType
+
+```python
+from mypy_boto3_fsx.literals import SnapshotLifecycleType
+```
+
+Values:
+
+- `AVAILABLE`
+- `CREATING`
+- `DELETING`
+- `PENDING`
 
 ## StatusType
 
@@ -477,6 +610,7 @@ from mypy_boto3_fsx.literals import VolumeLifecycleType
 
 Values:
 
+- `AVAILABLE`
 - `CREATED`
 - `CREATING`
 - `DELETING`
@@ -493,6 +627,7 @@ from mypy_boto3_fsx.literals import VolumeTypeType
 Values:
 
 - `ONTAP`
+- `OPENZFS`
 
 ## WindowsAccessAuditLogLevelType
 
@@ -554,6 +689,7 @@ Values:
 - `autoscaling`
 - `autoscaling-plans`
 - `backup`
+- `backup-gateway`
 - `batch`
 - `braket`
 - `budgets`
@@ -671,6 +807,7 @@ Values:
 - `iotsecuretunneling`
 - `iotsitewise`
 - `iotthingsgraph`
+- `iottwinmaker`
 - `iotwireless`
 - `ivs`
 - `kafka`
@@ -821,6 +958,7 @@ Values:
 - `workmail`
 - `workmailmessageflow`
 - `workspaces`
+- `workspaces-web`
 - `xray`
 
 ## PaginatorName

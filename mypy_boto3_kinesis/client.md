@@ -42,6 +42,7 @@ type annotations stubs module
     - [stop_stream_encryption](#stop_stream_encryption)
     - [subscribe_to_shard](#subscribe_to_shard)
     - [update_shard_count](#update_shard_count)
+    - [update_stream_mode](#update_stream_mode)
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
@@ -90,6 +91,7 @@ Exceptions:
 - `Exceptions.ProvisionedThroughputExceededException`
 - `Exceptions.ResourceInUseException`
 - `Exceptions.ResourceNotFoundException`
+- `Exceptions.ValidationException`
 
 ## Methods
 
@@ -151,7 +153,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
-- `ShardCount`: `int` *(required)*
+- `ShardCount`: `int`
+- `StreamModeDetails`:
+  [StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef)
 
 ### decrease_stream_retention_period
 
@@ -614,8 +618,8 @@ Keyword-only arguments:
 
 ### start_stream_encryption
 
-Enables or updates server-side encryption using an AWS KMS key for a specified
-stream.
+Enables or updates server-side encryption using an Amazon Web Services KMS key
+for a specified stream.
 
 Type annotations for `boto3.client("kinesis").start_stream_encryption` method.
 
@@ -698,6 +702,25 @@ Keyword-only arguments:
 
 Returns
 [UpdateShardCountOutputTypeDef](./type_defs.md#updateshardcountoutputtypedef).
+
+### update_stream_mode
+
+Updates the capacity mode of the data stream.
+
+Type annotations for `boto3.client("kinesis").update_stream_mode` method.
+
+Boto3 documentation:
+[Kinesis.Client.update_stream_mode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.update_stream_mode)
+
+Arguments mapping described in
+[UpdateStreamModeInputRequestTypeDef](./type_defs.md#updatestreammodeinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `StreamARN`: `str` *(required)*
+- `StreamModeDetails`:
+  [StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef)
+  *(required)*
 
 ### get_paginator
 

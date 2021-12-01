@@ -166,6 +166,8 @@ Keyword-only arguments:
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+- `SupportedHardwareType`:
+  [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
 
 Returns
 [CreateOutpostOutputTypeDef](./type_defs.md#createoutpostoutputtypedef).

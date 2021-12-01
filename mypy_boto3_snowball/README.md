@@ -202,6 +202,7 @@ from mypy_boto3_snowball.type_defs import AddressTypeDef, ...
 - [ShipmentTypeDef](./type_defs.md#shipmenttypedef)
 - [ShippingDetailsTypeDef](./type_defs.md#shippingdetailstypedef)
 - [SnowconeDeviceConfigurationTypeDef](./type_defs.md#snowconedeviceconfigurationtypedef)
+- [TGWOnDeviceServiceConfigurationTypeDef](./type_defs.md#tgwondeviceserviceconfigurationtypedef)
 - [TargetOnDeviceServiceTypeDef](./type_defs.md#targetondeviceservicetypedef)
 - [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
 - [UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef)

@@ -228,6 +228,8 @@ Arguments for `ValidatePolicyPaginator.paginate` method:
 - `policyDocument`: `str` *(required)*
 - `policyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
 - `locale`: [LocaleType](./literals.md#localetype)
+- `validatePolicyResourceType`:
+  [ValidatePolicyResourceTypeType](./literals.md#validatepolicyresourcetypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

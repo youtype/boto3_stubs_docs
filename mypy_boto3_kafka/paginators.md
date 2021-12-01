@@ -10,6 +10,7 @@ type annotations stubs module
 - [Paginators for boto3 Kafka module](#paginators-for-boto3-kafka-module)
   - [ListClusterOperationsPaginator](#listclusteroperationspaginator)
   - [ListClustersPaginator](#listclusterspaginator)
+  - [ListClustersV2Paginator](#listclustersv2paginator)
   - [ListConfigurationRevisionsPaginator](#listconfigurationrevisionspaginator)
   - [ListConfigurationsPaginator](#listconfigurationspaginator)
   - [ListKafkaVersionsPaginator](#listkafkaversionspaginator)
@@ -66,6 +67,32 @@ Arguments for `ListClustersPaginator.paginate` method:
 
 `ListClustersPaginator.paginate` returns
 `_PageIterator`\[[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef)\].
+
+## ListClustersV2Paginator
+
+Type annotations for `boto3.client("kafka").get_paginator("list_clusters_v2")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_kafka.paginator import ListClustersV2Paginator
+
+def get_list_clusters_v2_paginator() -> ListClustersV2Paginator:
+    return boto3.client("kafka").get_paginator("list_clusters_v2")
+```
+
+Boto3 documentation:
+[Kafka.Paginator.ListClustersV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListClustersV2)
+
+Arguments for `ListClustersV2Paginator.paginate` method:
+
+- `ClusterNameFilter`: `str`
+- `ClusterTypeFilter`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListClustersV2Paginator.paginate` returns
+`_PageIterator`\[[ListClustersV2ResponseTypeDef](./type_defs.md#listclustersv2responsetypedef)\].
 
 ## ListConfigurationRevisionsPaginator
 

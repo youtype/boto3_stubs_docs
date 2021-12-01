@@ -131,6 +131,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
   service
 
+- [mypy-boto3-backup-gateway](./mypy_boto3_backup_gateway) for
+  [BackupGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway)
+  service
+
 - [mypy-boto3-batch](./mypy_boto3_batch) for
   [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
   service
@@ -597,6 +601,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
 
 - [mypy-boto3-iotthingsgraph](./mypy_boto3_iotthingsgraph) for
   [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
+  service
+
+- [mypy-boto3-iottwinmaker](./mypy_boto3_iottwinmaker) for
+  [IoTTwinMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker)
   service
 
 - [mypy-boto3-iotwireless](./mypy_boto3_iotwireless) for
@@ -1208,6 +1216,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
 
 - [mypy-boto3-workspaces](./mypy_boto3_workspaces) for
   [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+  service
+
+- [mypy-boto3-workspaces-web](./mypy_boto3_workspaces_web) for
+  [WorkSpacesWeb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb)
   service
 
 - [mypy-boto3-xray](./mypy_boto3_xray) for

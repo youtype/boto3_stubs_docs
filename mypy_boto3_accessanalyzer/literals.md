@@ -34,6 +34,7 @@ type annotations stubs module
   - [TypeType](#typetype)
   - [ValidatePolicyFindingTypeType](#validatepolicyfindingtypetype)
   - [ValidatePolicyPaginatorName](#validatepolicypaginatorname)
+  - [ValidatePolicyResourceTypeType](#validatepolicyresourcetypetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
@@ -358,6 +359,19 @@ Values:
 
 - `validate_policy`
 
+## ValidatePolicyResourceTypeType
+
+```python
+from mypy_boto3_accessanalyzer.literals import ValidatePolicyResourceTypeType
+```
+
+Values:
+
+- `AWS::S3::AccessPoint`
+- `AWS::S3::Bucket`
+- `AWS::S3::MultiRegionAccessPoint`
+- `AWS::S3ObjectLambda::AccessPoint`
+
 ## ServiceName
 
 ```python
@@ -393,6 +407,7 @@ Values:
 - `autoscaling`
 - `autoscaling-plans`
 - `backup`
+- `backup-gateway`
 - `batch`
 - `braket`
 - `budgets`
@@ -510,6 +525,7 @@ Values:
 - `iotsecuretunneling`
 - `iotsitewise`
 - `iotthingsgraph`
+- `iottwinmaker`
 - `iotwireless`
 - `ivs`
 - `kafka`
@@ -660,6 +676,7 @@ Values:
 - `workmail`
 - `workmailmessageflow`
 - `workspaces`
+- `workspaces-web`
 - `xray`
 
 ## PaginatorName

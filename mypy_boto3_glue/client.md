@@ -229,9 +229,11 @@ Exceptions:
 - `Exceptions.IllegalWorkflowStateException`
 - `Exceptions.InternalServiceException`
 - `Exceptions.InvalidInputException`
+- `Exceptions.InvalidStateException`
 - `Exceptions.MLTransformNotReadyException`
 - `Exceptions.NoScheduleException`
 - `Exceptions.OperationTimeoutException`
+- `Exceptions.ResourceNotReadyException`
 - `Exceptions.ResourceNumberLimitExceededException`
 - `Exceptions.SchedulerNotRunningException`
 - `Exceptions.SchedulerRunningException`
@@ -337,6 +339,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `TablesToDelete`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
+- `TransactionId`: `str`
 
 Returns
 [BatchDeleteTableResponseTypeDef](./type_defs.md#batchdeletetableresponsetypedef).
@@ -992,6 +995,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 - `PartitionIndexes`:
   `Sequence`\[[PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)\]
+- `TransactionId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1422,6 +1426,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `CatalogId`: `str`
+- `TransactionId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2189,6 +2194,8 @@ Keyword-only arguments:
 - `Segment`: [SegmentTypeDef](./type_defs.md#segmenttypedef)
 - `MaxResults`: `int`
 - `ExcludeColumnSchema`: `bool`
+- `TransactionId`: `str`
+- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
 
 Returns
 [GetPartitionsResponseTypeDef](./type_defs.md#getpartitionsresponsetypedef).
@@ -2425,6 +2432,8 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `CatalogId`: `str`
+- `TransactionId`: `str`
+- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
 
 Returns [GetTableResponseTypeDef](./type_defs.md#gettableresponsetypedef).
 
@@ -2493,6 +2502,8 @@ Keyword-only arguments:
 - `Expression`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `TransactionId`: `str`
+- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
 
 Returns [GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef).
 
@@ -3833,6 +3844,7 @@ Keyword-only arguments:
   *(required)*
 - `CatalogId`: `str`
 - `SkipArchive`: `bool`
+- `TransactionId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 

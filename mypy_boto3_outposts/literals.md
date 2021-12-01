@@ -23,6 +23,7 @@ type annotations stubs module
   - [PowerDrawKvaType](#powerdrawkvatype)
   - [PowerFeedDropType](#powerfeeddroptype)
   - [PowerPhaseType](#powerphasetype)
+  - [SupportedHardwareTypeType](#supportedhardwaretypetype)
   - [SupportedStorageEnumType](#supportedstorageenumtype)
   - [UplinkCountType](#uplinkcounttype)
   - [UplinkGbpsType](#uplinkgbpstype)
@@ -224,6 +225,17 @@ Values:
 - `SINGLE_PHASE`
 - `THREE_PHASE`
 
+## SupportedHardwareTypeType
+
+```python
+from mypy_boto3_outposts.literals import SupportedHardwareTypeType
+```
+
+Values:
+
+- `RACK`
+- `SERVER`
+
 ## SupportedStorageEnumType
 
 ```python
@@ -302,6 +314,7 @@ Values:
 - `autoscaling`
 - `autoscaling-plans`
 - `backup`
+- `backup-gateway`
 - `batch`
 - `braket`
 - `budgets`
@@ -419,6 +432,7 @@ Values:
 - `iotsecuretunneling`
 - `iotsitewise`
 - `iotthingsgraph`
+- `iottwinmaker`
 - `iotwireless`
 - `ivs`
 - `kafka`
@@ -569,4 +583,5 @@ Values:
 - `workmail`
 - `workmailmessageflow`
 - `workspaces`
+- `workspaces-web`
 - `xray`

@@ -94,6 +94,7 @@ from mypy_boto3_outposts.literals import AddressTypeType, ...
 - [PowerDrawKvaType](./literals.md#powerdrawkvatype)
 - [PowerFeedDropType](./literals.md#powerfeeddroptype)
 - [PowerPhaseType](./literals.md#powerphasetype)
+- [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
 - [SupportedStorageEnumType](./literals.md#supportedstorageenumtype)
 - [UplinkCountType](./literals.md#uplinkcounttype)
 - [UplinkGbpsType](./literals.md#uplinkgbpstype)

@@ -72,6 +72,7 @@ type annotations stubs module
   - [ShipmentTypeDef](#shipmenttypedef)
   - [ShippingDetailsTypeDef](#shippingdetailstypedef)
   - [SnowconeDeviceConfigurationTypeDef](#snowconedeviceconfigurationtypedef)
+  - [TGWOnDeviceServiceConfigurationTypeDef](#tgwondeviceserviceconfigurationtypedef)
   - [TargetOnDeviceServiceTypeDef](#targetondeviceservicetypedef)
   - [TaxDocumentsTypeDef](#taxdocumentstypedef)
   - [UpdateClusterRequestRequestTypeDef](#updateclusterrequestrequesttypedef)
@@ -455,6 +456,7 @@ Required fields:
 
 - `Status`: [ShippingLabelStatusType](./literals.md#shippinglabelstatustype)
 - `ExpirationDate`: `datetime`
+- `ReturnShippingLabelURI`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -868,6 +870,8 @@ Optional fields:
 
 - `NFSOnDeviceService`:
   [NFSOnDeviceServiceConfigurationTypeDef](./type_defs.md#nfsondeviceserviceconfigurationtypedef)
+- `TGWOnDeviceService`:
+  [TGWOnDeviceServiceConfigurationTypeDef](./type_defs.md#tgwondeviceserviceconfigurationtypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -941,6 +945,18 @@ Optional fields:
 
 - `WirelessConnection`:
   [WirelessConnectionTypeDef](./type_defs.md#wirelessconnectiontypedef)
+
+## TGWOnDeviceServiceConfigurationTypeDef
+
+```python
+from mypy_boto3_snowball.type_defs import TGWOnDeviceServiceConfigurationTypeDef
+```
+
+Optional fields:
+
+- `StorageLimit`: `int`
+- `StorageUnit`: `Literal['TB']` (see
+  [StorageUnitType](./literals.md#storageunittype))
 
 ## TargetOnDeviceServiceTypeDef
 

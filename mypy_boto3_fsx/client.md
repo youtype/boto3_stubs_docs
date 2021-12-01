@@ -17,28 +17,38 @@ type annotations stubs module
     - [cancel_data_repository_task](#cancel_data_repository_task)
     - [copy_backup](#copy_backup)
     - [create_backup](#create_backup)
+    - [create_data_repository_association](#create_data_repository_association)
     - [create_data_repository_task](#create_data_repository_task)
     - [create_file_system](#create_file_system)
     - [create_file_system_from_backup](#create_file_system_from_backup)
+    - [create_snapshot](#create_snapshot)
     - [create_storage_virtual_machine](#create_storage_virtual_machine)
     - [create_volume](#create_volume)
     - [create_volume_from_backup](#create_volume_from_backup)
     - [delete_backup](#delete_backup)
+    - [delete_data_repository_association](#delete_data_repository_association)
     - [delete_file_system](#delete_file_system)
+    - [delete_snapshot](#delete_snapshot)
     - [delete_storage_virtual_machine](#delete_storage_virtual_machine)
     - [delete_volume](#delete_volume)
     - [describe_backups](#describe_backups)
+    - [describe_data_repository_associations](#describe_data_repository_associations)
     - [describe_data_repository_tasks](#describe_data_repository_tasks)
     - [describe_file_system_aliases](#describe_file_system_aliases)
     - [describe_file_systems](#describe_file_systems)
+    - [describe_snapshots](#describe_snapshots)
     - [describe_storage_virtual_machines](#describe_storage_virtual_machines)
     - [describe_volumes](#describe_volumes)
     - [disassociate_file_system_aliases](#disassociate_file_system_aliases)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [release_file_system_nfs_v3_locks](#release_file_system_nfs_v3_locks)
+    - [restore_volume_from_snapshot](#restore_volume_from_snapshot)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_data_repository_association](#update_data_repository_association)
     - [update_file_system](#update_file_system)
+    - [update_snapshot](#update_snapshot)
     - [update_storage_virtual_machine](#update_storage_virtual_machine)
     - [update_volume](#update_volume)
     - [get_paginator](#get_paginator)
@@ -80,6 +90,7 @@ Exceptions:
 - `Exceptions.BackupRestoring`
 - `Exceptions.BadRequest`
 - `Exceptions.ClientError`
+- `Exceptions.DataRepositoryAssociationNotFound`
 - `Exceptions.DataRepositoryTaskEnded`
 - `Exceptions.DataRepositoryTaskExecuting`
 - `Exceptions.DataRepositoryTaskNotFound`
@@ -87,6 +98,7 @@ Exceptions:
 - `Exceptions.IncompatibleParameterError`
 - `Exceptions.IncompatibleRegionForMultiAZ`
 - `Exceptions.InternalServerError`
+- `Exceptions.InvalidDataRepositoryType`
 - `Exceptions.InvalidDestinationKmsKey`
 - `Exceptions.InvalidExportPath`
 - `Exceptions.InvalidImportPath`
@@ -100,6 +112,7 @@ Exceptions:
 - `Exceptions.ResourceDoesNotSupportTagging`
 - `Exceptions.ResourceNotFound`
 - `Exceptions.ServiceLimitExceeded`
+- `Exceptions.SnapshotNotFound`
 - `Exceptions.SourceBackupUnavailable`
 - `Exceptions.StorageVirtualMachineNotFound`
 - `Exceptions.UnsupportedOperation`
@@ -203,8 +216,9 @@ Returns [CopyBackupResponseTypeDef](./type_defs.md#copybackupresponsetypedef).
 
 ### create_backup
 
-Creates a backup of an existing Amazon FSx for Windows File Server or Amazon
-FSx for Lustre file system, or of an Amazon FSx for NetApp ONTAP volume.
+Creates a backup of an existing Amazon FSx for Windows File Server file system,
+Amazon FSx for Lustre file system, Amazon FSx for NetApp ONTAP volume, or
+Amazon FSx for OpenZFS file system.
 
 Type annotations for `boto3.client("fsx").create_backup` method.
 
@@ -224,6 +238,34 @@ Keyword-only arguments:
 Returns
 [CreateBackupResponseTypeDef](./type_defs.md#createbackupresponsetypedef).
 
+### create_data_repository_association
+
+Creates an Amazon FSx for Lustre data repository association (DRA).
+
+Type annotations for `boto3.client("fsx").create_data_repository_association`
+method.
+
+Boto3 documentation:
+[FSx.Client.create_data_repository_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_data_repository_association)
+
+Arguments mapping described in
+[CreateDataRepositoryAssociationRequestRequestTypeDef](./type_defs.md#createdatarepositoryassociationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `FileSystemPath`: `str` *(required)*
+- `DataRepositoryPath`: `str` *(required)*
+- `BatchImportMetaDataOnCreate`: `bool`
+- `ImportedFileChunkSize`: `int`
+- `S3`:
+  [S3DataRepositoryConfigurationTypeDef](./type_defs.md#s3datarepositoryconfigurationtypedef)
+- `ClientRequestToken`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateDataRepositoryAssociationResponseTypeDef](./type_defs.md#createdatarepositoryassociationresponsetypedef).
+
 ### create_data_repository_task
 
 Creates an Amazon FSx for Lustre data repository task.
@@ -238,8 +280,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Type`: `Literal['EXPORT_TO_REPOSITORY']` (see
-  [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype))
+- `Type`:
+  [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype)
   *(required)*
 - `FileSystemId`: `str` *(required)*
 - `Report`: [CompletionReportTypeDef](./type_defs.md#completionreporttypedef)
@@ -281,14 +323,16 @@ Keyword-only arguments:
 - `OntapConfiguration`:
   [CreateFileSystemOntapConfigurationTypeDef](./type_defs.md#createfilesystemontapconfigurationtypedef)
 - `FileSystemTypeVersion`: `str`
+- `OpenZFSConfiguration`:
+  [CreateFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#createfilesystemopenzfsconfigurationtypedef)
 
 Returns
 [CreateFileSystemResponseTypeDef](./type_defs.md#createfilesystemresponsetypedef).
 
 ### create_file_system_from_backup
 
-Creates a new Amazon FSx for Lustre or Amazon FSx for Windows File Server file
-system from an existing Amazon FSx backup.
+Creates a new Amazon FSx for Lustre, Amazon FSx for Windows File Server, or
+Amazon FSx for OpenZFS file system from an existing Amazon FSx backup.
 
 Type annotations for `boto3.client("fsx").create_file_system_from_backup`
 method.
@@ -313,9 +357,33 @@ Keyword-only arguments:
 - `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
 - `KmsKeyId`: `str`
 - `FileSystemTypeVersion`: `str`
+- `OpenZFSConfiguration`:
+  [CreateFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#createfilesystemopenzfsconfigurationtypedef)
 
 Returns
 [CreateFileSystemFromBackupResponseTypeDef](./type_defs.md#createfilesystemfrombackupresponsetypedef).
+
+### create_snapshot
+
+Creates a snapshot of an existing Amazon FSx for OpenZFS file system.
+
+Type annotations for `boto3.client("fsx").create_snapshot` method.
+
+Boto3 documentation:
+[FSx.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_snapshot)
+
+Arguments mapping described in
+[CreateSnapshotRequestRequestTypeDef](./type_defs.md#createsnapshotrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `VolumeId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateSnapshotResponseTypeDef](./type_defs.md#createsnapshotresponsetypedef).
 
 ### create_storage_virtual_machine
 
@@ -348,7 +416,8 @@ Returns
 
 ### create_volume
 
-Creates an Amazon FSx for NetApp ONTAP storage volume.
+Creates an Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS storage
+volume.
 
 Type annotations for `boto3.client("fsx").create_volume` method.
 
@@ -360,13 +429,14 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `VolumeType`: `Literal['ONTAP']` (see
-  [VolumeTypeType](./literals.md#volumetypetype)) *(required)*
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype) *(required)*
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str`
 - `OntapConfiguration`:
   [CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OpenZFSConfiguration`:
+  [CreateOpenZFSVolumeConfigurationTypeDef](./type_defs.md#createopenzfsvolumeconfigurationtypedef)
 
 Returns
 [CreateVolumeResponseTypeDef](./type_defs.md#createvolumeresponsetypedef).
@@ -398,7 +468,7 @@ Returns
 
 ### delete_backup
 
-Deletes an Amazon FSx backup, deleting its contents.
+Deletes an Amazon FSx backup.
 
 Type annotations for `boto3.client("fsx").delete_backup` method.
 
@@ -416,9 +486,31 @@ Keyword-only arguments:
 Returns
 [DeleteBackupResponseTypeDef](./type_defs.md#deletebackupresponsetypedef).
 
+### delete_data_repository_association
+
+Deletes a data repository association on an Amazon FSx for Lustre file system.
+
+Type annotations for `boto3.client("fsx").delete_data_repository_association`
+method.
+
+Boto3 documentation:
+[FSx.Client.delete_data_repository_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_data_repository_association)
+
+Arguments mapping described in
+[DeleteDataRepositoryAssociationRequestRequestTypeDef](./type_defs.md#deletedatarepositoryassociationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AssociationId`: `str` *(required)*
+- `DeleteDataInFileSystem`: `bool` *(required)*
+- `ClientRequestToken`: `str`
+
+Returns
+[DeleteDataRepositoryAssociationResponseTypeDef](./type_defs.md#deletedatarepositoryassociationresponsetypedef).
+
 ### delete_file_system
 
-Deletes a file system, deleting its contents.
+Deletes a file system.
 
 Type annotations for `boto3.client("fsx").delete_file_system` method.
 
@@ -436,9 +528,31 @@ Keyword-only arguments:
   [DeleteFileSystemWindowsConfigurationTypeDef](./type_defs.md#deletefilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
   [DeleteFileSystemLustreConfigurationTypeDef](./type_defs.md#deletefilesystemlustreconfigurationtypedef)
+- `OpenZFSConfiguration`:
+  [DeleteFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#deletefilesystemopenzfsconfigurationtypedef)
 
 Returns
 [DeleteFileSystemResponseTypeDef](./type_defs.md#deletefilesystemresponsetypedef).
+
+### delete_snapshot
+
+Deletes the Amazon FSx snapshot.
+
+Type annotations for `boto3.client("fsx").delete_snapshot` method.
+
+Boto3 documentation:
+[FSx.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_snapshot)
+
+Arguments mapping described in
+[DeleteSnapshotRequestRequestTypeDef](./type_defs.md#deletesnapshotrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SnapshotId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+
+Returns
+[DeleteSnapshotResponseTypeDef](./type_defs.md#deletesnapshotresponsetypedef).
 
 ### delete_storage_virtual_machine
 
@@ -463,7 +577,7 @@ Returns
 
 ### delete_volume
 
-Deletes an Amazon FSx for NetApp ONTAP volume.
+Deletes an Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS volume.
 
 Type annotations for `boto3.client("fsx").delete_volume` method.
 
@@ -479,13 +593,15 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `OntapConfiguration`:
   [DeleteVolumeOntapConfigurationTypeDef](./type_defs.md#deletevolumeontapconfigurationtypedef)
+- `OpenZFSConfiguration`:
+  [DeleteVolumeOpenZFSConfigurationTypeDef](./type_defs.md#deletevolumeopenzfsconfigurationtypedef)
 
 Returns
 [DeleteVolumeResponseTypeDef](./type_defs.md#deletevolumeresponsetypedef).
 
 ### describe_backups
 
-Returns the description of specific Amazon FSx backups, if a `BackupIds` value
+Returns the description of a specific Amazon FSx backup, if a `BackupIds` value
 is provided for that backup.
 
 Type annotations for `boto3.client("fsx").describe_backups` method.
@@ -505,6 +621,31 @@ Keyword-only arguments:
 
 Returns
 [DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
+
+### describe_data_repository_associations
+
+Returns the description of specific Amazon FSx for Lustre data repository
+associations, if one or more `AssociationIds` values are provided in the
+request, or if filters are used in the request.
+
+Type annotations for
+`boto3.client("fsx").describe_data_repository_associations` method.
+
+Boto3 documentation:
+[FSx.Client.describe_data_repository_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_associations)
+
+Arguments mapping described in
+[DescribeDataRepositoryAssociationsRequestRequestTypeDef](./type_defs.md#describedatarepositoryassociationsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AssociationIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeDataRepositoryAssociationsResponseTypeDef](./type_defs.md#describedatarepositoryassociationsresponsetypedef).
 
 ### describe_data_repository_tasks
 
@@ -577,6 +718,30 @@ Keyword-only arguments:
 Returns
 [DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef).
 
+### describe_snapshots
+
+Returns the description of specific Amazon FSx snapshots, if a `SnapshotIds`
+value is provided.
+
+Type annotations for `boto3.client("fsx").describe_snapshots` method.
+
+Boto3 documentation:
+[FSx.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_snapshots)
+
+Arguments mapping described in
+[DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SnapshotIds`: `Sequence`\[`str`\]
+- `Filters`:
+  `Sequence`\[[SnapshotFilterTypeDef](./type_defs.md#snapshotfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeSnapshotsResponseTypeDef](./type_defs.md#describesnapshotsresponsetypedef).
+
 ### describe_storage_virtual_machines
 
 Describes one or more Amazon FSx for NetApp ONTAP storage virtual machines
@@ -604,7 +769,8 @@ Returns
 
 ### describe_volumes
 
-Describes one or more Amazon FSx for NetApp ONTAP volumes.
+Describes one or more Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS
+volumes.
 
 Type annotations for `boto3.client("fsx").describe_volumes` method.
 
@@ -688,6 +854,51 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+### release_file_system_nfs_v3_locks
+
+Releases the file system lock from an Amazon FSx for OpenZFS file system.
+
+Type annotations for `boto3.client("fsx").release_file_system_nfs_v3_locks`
+method.
+
+Boto3 documentation:
+[FSx.Client.release_file_system_nfs_v3_locks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.release_file_system_nfs_v3_locks)
+
+Arguments mapping described in
+[ReleaseFileSystemNfsV3LocksRequestRequestTypeDef](./type_defs.md#releasefilesystemnfsv3locksrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+
+Returns
+[ReleaseFileSystemNfsV3LocksResponseTypeDef](./type_defs.md#releasefilesystemnfsv3locksresponsetypedef).
+
+### restore_volume_from_snapshot
+
+Returns an Amazon FSx for OpenZFS volume to the state saved by the specified
+snapshot.
+
+Type annotations for `boto3.client("fsx").restore_volume_from_snapshot` method.
+
+Boto3 documentation:
+[FSx.Client.restore_volume_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.restore_volume_from_snapshot)
+
+Arguments mapping described in
+[RestoreVolumeFromSnapshotRequestRequestTypeDef](./type_defs.md#restorevolumefromsnapshotrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `VolumeId`: `str` *(required)*
+- `SnapshotId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `Options`:
+  `Sequence`\[[RestoreOpenZFSVolumeOptionType](./literals.md#restoreopenzfsvolumeoptiontype)\]
+
+Returns
+[RestoreVolumeFromSnapshotResponseTypeDef](./type_defs.md#restorevolumefromsnapshotresponsetypedef).
+
 ### tag_resource
 
 Tags an Amazon FSx resource.
@@ -726,6 +937,31 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### update_data_repository_association
+
+Updates the configuration of an existing data repository association on an
+Amazon FSx for Lustre file system.
+
+Type annotations for `boto3.client("fsx").update_data_repository_association`
+method.
+
+Boto3 documentation:
+[FSx.Client.update_data_repository_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_data_repository_association)
+
+Arguments mapping described in
+[UpdateDataRepositoryAssociationRequestRequestTypeDef](./type_defs.md#updatedatarepositoryassociationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AssociationId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `ImportedFileChunkSize`: `int`
+- `S3`:
+  [S3DataRepositoryConfigurationTypeDef](./type_defs.md#s3datarepositoryconfigurationtypedef)
+
+Returns
+[UpdateDataRepositoryAssociationResponseTypeDef](./type_defs.md#updatedatarepositoryassociationresponsetypedef).
+
 ### update_file_system
 
 Use this operation to update the configuration of an existing Amazon FSx file
@@ -750,9 +986,32 @@ Keyword-only arguments:
   [UpdateFileSystemLustreConfigurationTypeDef](./type_defs.md#updatefilesystemlustreconfigurationtypedef)
 - `OntapConfiguration`:
   [UpdateFileSystemOntapConfigurationTypeDef](./type_defs.md#updatefilesystemontapconfigurationtypedef)
+- `OpenZFSConfiguration`:
+  [UpdateFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#updatefilesystemopenzfsconfigurationtypedef)
 
 Returns
 [UpdateFileSystemResponseTypeDef](./type_defs.md#updatefilesystemresponsetypedef).
+
+### update_snapshot
+
+Updates the name of a snapshot.
+
+Type annotations for `boto3.client("fsx").update_snapshot` method.
+
+Boto3 documentation:
+[FSx.Client.update_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_snapshot)
+
+Arguments mapping described in
+[UpdateSnapshotRequestRequestTypeDef](./type_defs.md#updatesnapshotrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `SnapshotId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+
+Returns
+[UpdateSnapshotResponseTypeDef](./type_defs.md#updatesnapshotresponsetypedef).
 
 ### update_storage_virtual_machine
 
@@ -780,7 +1039,8 @@ Returns
 
 ### update_volume
 
-Updates an Amazon FSx for NetApp ONTAP volume's configuration.
+Updates the configuration of an Amazon FSx for NetApp ONTAP or Amazon FSx for
+OpenZFS volume.
 
 Type annotations for `boto3.client("fsx").update_volume` method.
 
@@ -796,6 +1056,9 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `OntapConfiguration`:
   [UpdateOntapVolumeConfigurationTypeDef](./type_defs.md#updateontapvolumeconfigurationtypedef)
+- `Name`: `str`
+- `OpenZFSConfiguration`:
+  [UpdateOpenZFSVolumeConfigurationTypeDef](./type_defs.md#updateopenzfsvolumeconfigurationtypedef)
 
 Returns
 [UpdateVolumeResponseTypeDef](./type_defs.md#updatevolumeresponsetypedef).

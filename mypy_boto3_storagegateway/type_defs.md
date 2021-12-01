@@ -1344,6 +1344,7 @@ Required fields:
 - `GatewayCapacity`: [GatewayCapacityType](./literals.md#gatewaycapacitytype)
 - `SupportedGatewayCapacities`:
   `List`\[[GatewayCapacityType](./literals.md#gatewaycapacitytype)\]
+- `HostEnvironmentId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1853,6 +1854,8 @@ Optional fields:
 - `GatewayName`: `str`
 - `Ec2InstanceId`: `str`
 - `Ec2InstanceRegion`: `str`
+- `HostEnvironment`: [HostEnvironmentType](./literals.md#hostenvironmenttype)
+- `HostEnvironmentId`: `str`
 
 ## JoinDomainInputRequestTypeDef
 

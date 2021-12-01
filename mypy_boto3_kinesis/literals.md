@@ -19,6 +19,7 @@ type annotations stubs module
   - [ShardFilterTypeType](#shardfiltertypetype)
   - [ShardIteratorTypeType](#sharditeratortypetype)
   - [StreamExistsWaiterName](#streamexistswaitername)
+  - [StreamModeType](#streammodetype)
   - [StreamNotExistsWaiterName](#streamnotexistswaitername)
   - [StreamStatusType](#streamstatustype)
   - [ServiceName](#servicename)
@@ -154,6 +155,17 @@ Values:
 
 - `stream_exists`
 
+## StreamModeType
+
+```python
+from mypy_boto3_kinesis.literals import StreamModeType
+```
+
+Values:
+
+- `ON_DEMAND`
+- `PROVISIONED`
+
 ## StreamNotExistsWaiterName
 
 ```python
@@ -212,6 +224,7 @@ Values:
 - `autoscaling`
 - `autoscaling-plans`
 - `backup`
+- `backup-gateway`
 - `batch`
 - `braket`
 - `budgets`
@@ -329,6 +342,7 @@ Values:
 - `iotsecuretunneling`
 - `iotsitewise`
 - `iotthingsgraph`
+- `iottwinmaker`
 - `iotwireless`
 - `ivs`
 - `kafka`
@@ -479,6 +493,7 @@ Values:
 - `workmail`
 - `workmailmessageflow`
 - `workspaces`
+- `workspaces-web`
 - `xray`
 
 ## PaginatorName

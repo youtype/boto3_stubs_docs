@@ -9939,6 +9939,9 @@ Keyword-only arguments:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `EnableResourceNameDnsAAAARecordOnLaunch`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `EnableLniAtDeviceIndex`: `int`
+- `DisableLniAtDeviceIndex`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
 ### modify_traffic_mirror_filter_network_services
 

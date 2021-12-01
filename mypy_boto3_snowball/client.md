@@ -267,7 +267,8 @@ Returns
 
 ### create_return_shipping_label
 
-Creates a shipping label that will be used to return the Snow device to AWS.
+Creates a shipping label that will be used to return the Snow device to Amazon
+Web Services.
 
 Type annotations for `boto3.client("snowball").create_return_shipping_label`
 method.
@@ -368,7 +369,7 @@ Returns [DescribeJobResultTypeDef](./type_defs.md#describejobresulttypedef).
 ### describe_return_shipping_label
 
 Information on the shipping label of a Snow device that is being returned to
-AWS.
+Amazon Web Services.
 
 Type annotations for `boto3.client("snowball").describe_return_shipping_label`
 method.
@@ -519,8 +520,8 @@ Returns [ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef).
 ### list_compatible_images
 
 This action returns a list of the different Amazon EC2 Amazon Machine Images
-(AMIs) that are owned by your AWS account that would be supported for use on a
-Snow device.
+(AMIs) that are owned by your Amazon Web Services accountthat would be
+supported for use on a Snow device.
 
 Type annotations for `boto3.client("snowball").list_compatible_images` method.
 

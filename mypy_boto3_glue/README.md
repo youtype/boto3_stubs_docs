@@ -223,9 +223,11 @@ GlueClient [exceptions](./client.md#exceptions)
 - IllegalWorkflowStateException
 - InternalServiceException
 - InvalidInputException
+- InvalidStateException
 - MLTransformNotReadyException
 - NoScheduleException
 - OperationTimeoutException
+- ResourceNotReadyException
 - ResourceNumberLimitExceededException
 - SchedulerNotRunningException
 - SchedulerRunningException

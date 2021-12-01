@@ -590,6 +590,7 @@ Required fields:
 Optional fields:
 
 - `CatalogId`: `str`
+- `TransactionId`: `str`
 
 ## BatchDeleteTableResponseTypeDef
 
@@ -1888,6 +1889,7 @@ Optional fields:
 - `CatalogId`: `str`
 - `PartitionIndexes`:
   `Sequence`\[[PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)\]
+- `TransactionId`: `str`
 
 ## CreateTriggerRequestRequestTypeDef
 
@@ -2421,6 +2423,7 @@ Required fields:
 Optional fields:
 
 - `CatalogId`: `str`
+- `TransactionId`: `str`
 
 ## DeleteTableVersionRequestRequestTypeDef
 
@@ -3592,6 +3595,8 @@ Optional fields:
 - `Segment`: [SegmentTypeDef](./type_defs.md#segmenttypedef)
 - `MaxResults`: `int`
 - `ExcludeColumnSchema`: `bool`
+- `TransactionId`: `str`
+- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
 
 ## GetPartitionsResponseTypeDef
 
@@ -3898,6 +3903,8 @@ Required fields:
 Optional fields:
 
 - `CatalogId`: `str`
+- `TransactionId`: `str`
+- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
 
 ## GetTableResponseTypeDef
 
@@ -3986,6 +3993,8 @@ Optional fields:
 - `Expression`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `TransactionId`: `str`
+- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
 
 ## GetTablesResponseTypeDef
 
@@ -6669,6 +6678,7 @@ Optional fields:
 
 - `CatalogId`: `str`
 - `SkipArchive`: `bool`
+- `TransactionId`: `str`
 
 ## UpdateTriggerRequestRequestTypeDef
 

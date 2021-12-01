@@ -1210,6 +1210,7 @@ Optional fields:
 - `GrantWrite`: `str`
 - `GrantWriteACP`: `str`
 - `ObjectLockEnabledForBucket`: `bool`
+- `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
 
 ## CreateBucketRequestRequestTypeDef
 
@@ -1232,6 +1233,7 @@ Optional fields:
 - `GrantWrite`: `str`
 - `GrantWriteACP`: `str`
 - `ObjectLockEnabledForBucket`: `bool`
+- `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
 
 ## CreateBucketRequestServiceResourceTypeDef
 
@@ -1254,6 +1256,7 @@ Optional fields:
 - `GrantWrite`: `str`
 - `GrantWriteACP`: `str`
 - `ObjectLockEnabledForBucket`: `bool`
+- `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
 
 ## CreateMultipartUploadOutputTypeDef
 

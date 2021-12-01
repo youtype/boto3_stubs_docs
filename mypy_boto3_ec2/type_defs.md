@@ -18960,6 +18960,9 @@ Optional fields:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `EnableResourceNameDnsAAAARecordOnLaunch`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `EnableLniAtDeviceIndex`: `int`
+- `DisableLniAtDeviceIndex`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
 ## ModifyTrafficMirrorFilterNetworkServicesRequestRequestTypeDef
 
@@ -24236,6 +24239,7 @@ Optional fields:
 - `AvailableIpAddressCount`: `int`
 - `CidrBlock`: `str`
 - `DefaultForAz`: `bool`
+- `EnableLniAtDeviceIndex`: `int`
 - `MapPublicIpOnLaunch`: `bool`
 - `MapCustomerOwnedIpOnLaunch`: `bool`
 - `CustomerOwnedIpv4Pool`: `str`

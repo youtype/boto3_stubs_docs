@@ -72,6 +72,7 @@ type annotations stubs module
   - [StopStreamEncryptionInputRequestTypeDef](#stopstreamencryptioninputrequesttypedef)
   - [StreamDescriptionSummaryTypeDef](#streamdescriptionsummarytypedef)
   - [StreamDescriptionTypeDef](#streamdescriptiontypedef)
+  - [StreamModeDetailsTypeDef](#streammodedetailstypedef)
   - [SubscribeToShardEventStreamTypeDef](#subscribetoshardeventstreamtypedef)
   - [SubscribeToShardEventTypeDef](#subscribetoshardeventtypedef)
   - [SubscribeToShardInputRequestTypeDef](#subscribetoshardinputrequesttypedef)
@@ -79,6 +80,7 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [UpdateShardCountInputRequestTypeDef](#updateshardcountinputrequesttypedef)
   - [UpdateShardCountOutputTypeDef](#updateshardcountoutputtypedef)
+  - [UpdateStreamModeInputRequestTypeDef](#updatestreammodeinputrequesttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 ## AddTagsToStreamInputRequestTypeDef
@@ -140,7 +142,12 @@ from mypy_boto3_kinesis.type_defs import CreateStreamInputRequestTypeDef
 Required fields:
 
 - `StreamName`: `str`
+
+Optional fields:
+
 - `ShardCount`: `int`
+- `StreamModeDetails`:
+  [StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef)
 
 ## DecreaseStreamRetentionPeriodInputRequestTypeDef
 
@@ -189,6 +196,8 @@ Required fields:
 
 - `ShardLimit`: `int`
 - `OpenShardCount`: `int`
+- `OnDemandStreamCount`: `int`
+- `OnDemandStreamCountLimit`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -892,6 +901,8 @@ Required fields:
 
 Optional fields:
 
+- `StreamModeDetails`:
+  [StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef)
 - `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 - `KeyId`: `str`
 - `ConsumerCount`: `int`
@@ -916,8 +927,20 @@ Required fields:
 
 Optional fields:
 
+- `StreamModeDetails`:
+  [StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef)
 - `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 - `KeyId`: `str`
+
+## StreamModeDetailsTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import StreamModeDetailsTypeDef
+```
+
+Required fields:
+
+- `StreamMode`: [StreamModeType](./literals.md#streammodetype)
 
 ## SubscribeToShardEventStreamTypeDef
 
@@ -1034,6 +1057,18 @@ Required fields:
 - `TargetShardCount`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateStreamModeInputRequestTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import UpdateStreamModeInputRequestTypeDef
+```
+
+Required fields:
+
+- `StreamARN`: `str`
+- `StreamModeDetails`:
+  [StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef)
 
 ## WaiterConfigTypeDef
 

@@ -719,6 +719,8 @@ Keyword-only arguments:
 - `locale`: [LocaleType](./literals.md#localetype)
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `validatePolicyResourceType`:
+  [ValidatePolicyResourceTypeType](./literals.md#validatepolicyresourcetypetype)
 
 Returns
 [ValidatePolicyResponseTypeDef](./type_defs.md#validatepolicyresponsetypedef).

@@ -495,6 +495,7 @@ Keyword-only arguments:
 - `GrantWrite`: `str`
 - `GrantWriteACP`: `str`
 - `ObjectLockEnabledForBucket`: `bool`
+- `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
 
 Returns [Bucket](#bucket).
 
@@ -782,6 +783,7 @@ Keyword-only arguments:
 - `GrantWrite`: `str`
 - `GrantWriteACP`: `str`
 - `ObjectLockEnabledForBucket`: `bool`
+- `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
 
 Returns [CreateBucketOutputTypeDef](./type_defs.md#createbucketoutputtypedef).
 

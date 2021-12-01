@@ -11,10 +11,21 @@ type annotations stubs module
   - [ComparisonOperatorType](#comparisonoperatortype)
   - [DataLakeResourceTypeType](#datalakeresourcetypetype)
   - [FieldNameStringType](#fieldnamestringtype)
+  - [GetWorkUnitsPaginatorName](#getworkunitspaginatorname)
+  - [ListDataCellsFilterPaginatorName](#listdatacellsfilterpaginatorname)
+  - [ListLFTagsPaginatorName](#listlftagspaginatorname)
+  - [OptimizerTypeType](#optimizertypetype)
   - [PermissionType](#permissiontype)
+  - [QueryStateStringType](#querystatestringtype)
   - [ResourceShareTypeType](#resourcesharetypetype)
   - [ResourceTypeType](#resourcetypetype)
+  - [SearchDatabasesByLFTagsPaginatorName](#searchdatabasesbylftagspaginatorname)
+  - [SearchTablesByLFTagsPaginatorName](#searchtablesbylftagspaginatorname)
+  - [TransactionStatusFilterType](#transactionstatusfiltertype)
+  - [TransactionStatusType](#transactionstatustype)
+  - [TransactionTypeType](#transactiontypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ComparisonOperatorType
 
@@ -65,6 +76,48 @@ Values:
 - `RESOURCE_ARN`
 - `ROLE_ARN`
 
+## GetWorkUnitsPaginatorName
+
+```python
+from mypy_boto3_lakeformation.literals import GetWorkUnitsPaginatorName
+```
+
+Values:
+
+- `get_work_units`
+
+## ListDataCellsFilterPaginatorName
+
+```python
+from mypy_boto3_lakeformation.literals import ListDataCellsFilterPaginatorName
+```
+
+Values:
+
+- `list_data_cells_filter`
+
+## ListLFTagsPaginatorName
+
+```python
+from mypy_boto3_lakeformation.literals import ListLFTagsPaginatorName
+```
+
+Values:
+
+- `list_lf_tags`
+
+## OptimizerTypeType
+
+```python
+from mypy_boto3_lakeformation.literals import OptimizerTypeType
+```
+
+Values:
+
+- `ALL`
+- `COMPACTION`
+- `GARBAGE_COLLECTION`
+
 ## PermissionType
 
 ```python
@@ -89,6 +142,20 @@ Values:
 - `INSERT`
 - `SELECT`
 
+## QueryStateStringType
+
+```python
+from mypy_boto3_lakeformation.literals import QueryStateStringType
+```
+
+Values:
+
+- `ERROR`
+- `EXPIRED`
+- `FINISHED`
+- `PENDING`
+- `WORKUNITS_AVAILABLE`
+
 ## ResourceShareTypeType
 
 ```python
@@ -110,6 +177,64 @@ Values:
 
 - `DATABASE`
 - `TABLE`
+
+## SearchDatabasesByLFTagsPaginatorName
+
+```python
+from mypy_boto3_lakeformation.literals import SearchDatabasesByLFTagsPaginatorName
+```
+
+Values:
+
+- `search_databases_by_lf_tags`
+
+## SearchTablesByLFTagsPaginatorName
+
+```python
+from mypy_boto3_lakeformation.literals import SearchTablesByLFTagsPaginatorName
+```
+
+Values:
+
+- `search_tables_by_lf_tags`
+
+## TransactionStatusFilterType
+
+```python
+from mypy_boto3_lakeformation.literals import TransactionStatusFilterType
+```
+
+Values:
+
+- `ABORTED`
+- `ACTIVE`
+- `ALL`
+- `COMMITTED`
+- `COMPLETED`
+
+## TransactionStatusType
+
+```python
+from mypy_boto3_lakeformation.literals import TransactionStatusType
+```
+
+Values:
+
+- `ABORTED`
+- `ACTIVE`
+- `COMMIT_IN_PROGRESS`
+- `COMMITTED`
+
+## TransactionTypeType
+
+```python
+from mypy_boto3_lakeformation.literals import TransactionTypeType
+```
+
+Values:
+
+- `READ_AND_WRITE`
+- `READ_ONLY`
 
 ## ServiceName
 
@@ -146,6 +271,7 @@ Values:
 - `autoscaling`
 - `autoscaling-plans`
 - `backup`
+- `backup-gateway`
 - `batch`
 - `braket`
 - `budgets`
@@ -263,6 +389,7 @@ Values:
 - `iotsecuretunneling`
 - `iotsitewise`
 - `iotthingsgraph`
+- `iottwinmaker`
 - `iotwireless`
 - `ivs`
 - `kafka`
@@ -413,4 +540,19 @@ Values:
 - `workmail`
 - `workmailmessageflow`
 - `workspaces`
+- `workspaces-web`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_lakeformation.literals import PaginatorName
+```
+
+Values:
+
+- `get_work_units`
+- `list_data_cells_filter`
+- `list_lf_tags`
+- `search_databases_by_lf_tags`
+- `search_tables_by_lf_tags`

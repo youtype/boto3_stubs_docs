@@ -158,6 +158,8 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+- `SupportedHardwareType`:
+  [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
 
 ## CreateOutpostOutputTypeDef
 
@@ -593,6 +595,8 @@ Optional fields:
 - `AvailabilityZoneId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `SiteArn`: `str`
+- `SupportedHardwareType`:
+  [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
 
 ## RackPhysicalPropertiesTypeDef
 

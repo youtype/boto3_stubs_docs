@@ -591,6 +591,7 @@ from mypy_boto3_s3.literals import ObjectOwnershipType
 
 Values:
 
+- `BucketOwnerEnforced`
 - `BucketOwnerPreferred`
 - `ObjectWriter`
 
@@ -604,6 +605,7 @@ Values:
 
 - `DEEP_ARCHIVE`
 - `GLACIER`
+- `GLACIER_IR`
 - `INTELLIGENT_TIERING`
 - `ONEZONE_IA`
 - `OUTPOSTS`
@@ -796,6 +798,7 @@ Values:
 
 - `DEEP_ARCHIVE`
 - `GLACIER`
+- `GLACIER_IR`
 - `INTELLIGENT_TIERING`
 - `ONEZONE_IA`
 - `OUTPOSTS`
@@ -836,6 +839,7 @@ Values:
 
 - `DEEP_ARCHIVE`
 - `GLACIER`
+- `GLACIER_IR`
 - `INTELLIGENT_TIERING`
 - `ONEZONE_IA`
 - `STANDARD_IA`
@@ -887,6 +891,7 @@ Values:
 - `autoscaling`
 - `autoscaling-plans`
 - `backup`
+- `backup-gateway`
 - `batch`
 - `braket`
 - `budgets`
@@ -1004,6 +1009,7 @@ Values:
 - `iotsecuretunneling`
 - `iotsitewise`
 - `iotthingsgraph`
+- `iottwinmaker`
 - `iotwireless`
 - `ivs`
 - `kafka`
@@ -1154,6 +1160,7 @@ Values:
 - `workmail`
 - `workmailmessageflow`
 - `workspaces`
+- `workspaces-web`
 - `xray`
 
 ## PaginatorName

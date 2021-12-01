@@ -3237,10 +3237,22 @@ Values:
 - `i3en.large`
 - `i3en.metal`
 - `i3en.xlarge`
+- `im4gn.16xlarge`
+- `im4gn.2xlarge`
+- `im4gn.4xlarge`
+- `im4gn.8xlarge`
+- `im4gn.large`
+- `im4gn.xlarge`
 - `inf1.24xlarge`
 - `inf1.2xlarge`
 - `inf1.6xlarge`
 - `inf1.xlarge`
+- `is4gen.2xlarge`
+- `is4gen.4xlarge`
+- `is4gen.8xlarge`
+- `is4gen.large`
+- `is4gen.medium`
+- `is4gen.xlarge`
 - `m1.large`
 - `m1.medium`
 - `m1.small`
@@ -5435,6 +5447,7 @@ Values:
 - `autoscaling`
 - `autoscaling-plans`
 - `backup`
+- `backup-gateway`
 - `batch`
 - `braket`
 - `budgets`
@@ -5552,6 +5565,7 @@ Values:
 - `iotsecuretunneling`
 - `iotsitewise`
 - `iotthingsgraph`
+- `iottwinmaker`
 - `iotwireless`
 - `ivs`
 - `kafka`
@@ -5702,6 +5716,7 @@ Values:
 - `workmail`
 - `workmailmessageflow`
 - `workspaces`
+- `workspaces-web`
 - `xray`
 
 ## PaginatorName

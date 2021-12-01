@@ -1409,6 +1409,8 @@ Optional fields:
 - `locale`: [LocaleType](./literals.md#localetype)
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `validatePolicyResourceType`:
+  [ValidatePolicyResourceTypeType](./literals.md#validatepolicyresourcetypetype)
 
 ## ValidatePolicyResponseTypeDef
 

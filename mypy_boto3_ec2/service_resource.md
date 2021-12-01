@@ -4161,6 +4161,7 @@ Boto3 documentation:
 - `available_ip_address_count`: `int`
 - `cidr_block`: `str`
 - `default_for_az`: `bool`
+- `enable_lni_at_device_index`: `int`
 - `map_public_ip_on_launch`: `bool`
 - `map_customer_owned_ip_on_launch`: `bool`
 - `customer_owned_ipv4_pool`: `str`

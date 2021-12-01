@@ -11,11 +11,13 @@ type annotations stubs module
   - [BrokerAZDistributionType](#brokerazdistributiontype)
   - [ClientBrokerType](#clientbrokertype)
   - [ClusterStateType](#clusterstatetype)
+  - [ClusterTypeType](#clustertypetype)
   - [ConfigurationStateType](#configurationstatetype)
   - [EnhancedMonitoringType](#enhancedmonitoringtype)
   - [KafkaVersionStatusType](#kafkaversionstatustype)
   - [ListClusterOperationsPaginatorName](#listclusteroperationspaginatorname)
   - [ListClustersPaginatorName](#listclusterspaginatorname)
+  - [ListClustersV2PaginatorName](#listclustersv2paginatorname)
   - [ListConfigurationRevisionsPaginatorName](#listconfigurationrevisionspaginatorname)
   - [ListConfigurationsPaginatorName](#listconfigurationspaginatorname)
   - [ListKafkaVersionsPaginatorName](#listkafkaversionspaginatorname)
@@ -63,6 +65,17 @@ Values:
 - `MAINTENANCE`
 - `REBOOTING_BROKER`
 - `UPDATING`
+
+## ClusterTypeType
+
+```python
+from mypy_boto3_kafka.literals import ClusterTypeType
+```
+
+Values:
+
+- `PROVISIONED`
+- `SERVERLESS`
 
 ## ConfigurationStateType
 
@@ -119,6 +132,16 @@ from mypy_boto3_kafka.literals import ListClustersPaginatorName
 Values:
 
 - `list_clusters`
+
+## ListClustersV2PaginatorName
+
+```python
+from mypy_boto3_kafka.literals import ListClustersV2PaginatorName
+```
+
+Values:
+
+- `list_clusters_v2`
 
 ## ListConfigurationRevisionsPaginatorName
 
@@ -215,6 +238,7 @@ Values:
 - `autoscaling`
 - `autoscaling-plans`
 - `backup`
+- `backup-gateway`
 - `batch`
 - `braket`
 - `budgets`
@@ -332,6 +356,7 @@ Values:
 - `iotsecuretunneling`
 - `iotsitewise`
 - `iotthingsgraph`
+- `iottwinmaker`
 - `iotwireless`
 - `ivs`
 - `kafka`
@@ -482,6 +507,7 @@ Values:
 - `workmail`
 - `workmailmessageflow`
 - `workspaces`
+- `workspaces-web`
 - `xray`
 
 ## PaginatorName
@@ -494,6 +520,7 @@ Values:
 
 - `list_cluster_operations`
 - `list_clusters`
+- `list_clusters_v2`
 - `list_configuration_revisions`
 - `list_configurations`
 - `list_kafka_versions`

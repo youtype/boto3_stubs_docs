@@ -34,8 +34,8 @@ Boto3 documentation:
 
 Arguments for `DescribeTablePaginator.paginate` method:
 
-- `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
+- `ClusterIdentifier`: `str`
 - `ConnectedDatabase`: `str`
 - `DbUser`: `str`
 - `Schema`: `str`
@@ -92,8 +92,8 @@ Boto3 documentation:
 
 Arguments for `ListDatabasesPaginator.paginate` method:
 
-- `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
+- `ClusterIdentifier`: `str`
 - `DbUser`: `str`
 - `SecretArn`: `str`
 - `PaginationConfig`:
@@ -121,8 +121,8 @@ Boto3 documentation:
 
 Arguments for `ListSchemasPaginator.paginate` method:
 
-- `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
+- `ClusterIdentifier`: `str`
 - `ConnectedDatabase`: `str`
 - `DbUser`: `str`
 - `SchemaPattern`: `str`
@@ -180,8 +180,8 @@ Boto3 documentation:
 
 Arguments for `ListTablesPaginator.paginate` method:
 
-- `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
+- `ClusterIdentifier`: `str`
 - `ConnectedDatabase`: `str`
 - `DbUser`: `str`
 - `SchemaPattern`: `str`

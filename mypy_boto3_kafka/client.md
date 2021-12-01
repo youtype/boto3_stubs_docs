@@ -16,11 +16,13 @@ type annotations stubs module
     - [batch_disassociate_scram_secret](#batch_disassociate_scram_secret)
     - [can_paginate](#can_paginate)
     - [create_cluster](#create_cluster)
+    - [create_cluster_v2](#create_cluster_v2)
     - [create_configuration](#create_configuration)
     - [delete_cluster](#delete_cluster)
     - [delete_configuration](#delete_configuration)
     - [describe_cluster](#describe_cluster)
     - [describe_cluster_operation](#describe_cluster_operation)
+    - [describe_cluster_v2](#describe_cluster_v2)
     - [describe_configuration](#describe_configuration)
     - [describe_configuration_revision](#describe_configuration_revision)
     - [generate_presigned_url](#generate_presigned_url)
@@ -28,6 +30,7 @@ type annotations stubs module
     - [get_compatible_kafka_versions](#get_compatible_kafka_versions)
     - [list_cluster_operations](#list_cluster_operations)
     - [list_clusters](#list_clusters)
+    - [list_clusters_v2](#list_clusters_v2)
     - [list_configuration_revisions](#list_configuration_revisions)
     - [list_configurations](#list_configurations)
     - [list_kafka_versions](#list_kafka_versions)
@@ -194,6 +197,30 @@ Keyword-only arguments:
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
+### create_cluster_v2
+
+Creates a new MSK cluster.
+
+Type annotations for `boto3.client("kafka").create_cluster_v2` method.
+
+Boto3 documentation:
+[Kafka.Client.create_cluster_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_cluster_v2)
+
+Arguments mapping described in
+[CreateClusterV2RequestRequestTypeDef](./type_defs.md#createclusterv2requestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClusterName`: `str` *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `Provisioned`:
+  [ProvisionedRequestTypeDef](./type_defs.md#provisionedrequesttypedef)
+- `Serverless`:
+  [ServerlessRequestTypeDef](./type_defs.md#serverlessrequesttypedef)
+
+Returns
+[CreateClusterV2ResponseTypeDef](./type_defs.md#createclusterv2responsetypedef).
+
 ### create_configuration
 
 Creates a new MSK configuration.
@@ -295,6 +322,26 @@ Keyword-only arguments:
 
 Returns
 [DescribeClusterOperationResponseTypeDef](./type_defs.md#describeclusteroperationresponsetypedef).
+
+### describe_cluster_v2
+
+Returns a description of the MSK cluster whose Amazon Resource Name (ARN) is
+specified in the request.
+
+Type annotations for `boto3.client("kafka").describe_cluster_v2` method.
+
+Boto3 documentation:
+[Kafka.Client.describe_cluster_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster_v2)
+
+Arguments mapping described in
+[DescribeClusterV2RequestRequestTypeDef](./type_defs.md#describeclusterv2requestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClusterArn`: `str` *(required)*
+
+Returns
+[DescribeClusterV2ResponseTypeDef](./type_defs.md#describeclusterv2responsetypedef).
 
 ### describe_configuration
 
@@ -435,6 +482,28 @@ Keyword-only arguments:
 
 Returns
 [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
+
+### list_clusters_v2
+
+Returns a list of all the MSK clusters in the current Region.
+
+Type annotations for `boto3.client("kafka").list_clusters_v2` method.
+
+Boto3 documentation:
+[Kafka.Client.list_clusters_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_clusters_v2)
+
+Arguments mapping described in
+[ListClustersV2RequestRequestTypeDef](./type_defs.md#listclustersv2requestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClusterNameFilter`: `str`
+- `ClusterTypeFilter`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListClustersV2ResponseTypeDef](./type_defs.md#listclustersv2responsetypedef).
 
 ### list_configuration_revisions
 
@@ -829,6 +898,8 @@ overloads.
   [ListClusterOperationsPaginator](./paginators.md#listclusteroperationspaginator)
 - `client.get_paginator("list_clusters")` ->
   [ListClustersPaginator](./paginators.md#listclusterspaginator)
+- `client.get_paginator("list_clusters_v2")` ->
+  [ListClustersV2Paginator](./paginators.md#listclustersv2paginator)
 - `client.get_paginator("list_configuration_revisions")` ->
   [ListConfigurationRevisionsPaginator](./paginators.md#listconfigurationrevisionspaginator)
 - `client.get_paginator("list_configurations")` ->

@@ -134,6 +134,7 @@ from mypy_boto3_accessanalyzer.literals import AccessPreviewStatusReasonCodeType
 - [TypeType](./literals.md#typetype)
 - [ValidatePolicyFindingTypeType](./literals.md#validatepolicyfindingtypetype)
 - [ValidatePolicyPaginatorName](./literals.md#validatepolicypaginatorname)
+- [ValidatePolicyResourceTypeType](./literals.md#validatepolicyresourcetypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 

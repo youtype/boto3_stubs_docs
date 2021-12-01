@@ -7618,6 +7618,7 @@ Optional fields:
 - `thingGroupNames`: `List`\[`str`\]
 - `attributes`: `Dict`\[`str`, `str`\]
 - `shadow`: `str`
+- `deviceDefender`: `str`
 - `connectivity`:
   [ThingConnectivityTypeDef](./type_defs.md#thingconnectivitytypedef)
 
@@ -7691,6 +7692,10 @@ Optional fields:
 
 - `thingConnectivityIndexingMode`:
   [ThingConnectivityIndexingModeType](./literals.md#thingconnectivityindexingmodetype)
+- `deviceDefenderIndexingMode`:
+  [DeviceDefenderIndexingModeType](./literals.md#devicedefenderindexingmodetype)
+- `namedShadowIndexingMode`:
+  [NamedShadowIndexingModeType](./literals.md#namedshadowindexingmodetype)
 - `managedFields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 - `customFields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 

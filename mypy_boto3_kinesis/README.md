@@ -65,6 +65,7 @@ from mypy_boto3_kinesis.client import KinesisClient
 - [stop_stream_encryption](./client.md#stop_stream_encryption)
 - [subscribe_to_shard](./client.md#subscribe_to_shard)
 - [update_shard_count](./client.md#update_shard_count)
+- [update_stream_mode](./client.md#update_stream_mode)
 
 ### Exceptions
 
@@ -85,6 +86,7 @@ KinesisClient [exceptions](./client.md#exceptions)
 - ProvisionedThroughputExceededException
 - ResourceInUseException
 - ResourceNotFoundException
+- ValidationException
 
 ## Paginators
 
@@ -137,6 +139,7 @@ from mypy_boto3_kinesis.literals import ConsumerStatusType, ...
 - [ShardFilterTypeType](./literals.md#shardfiltertypetype)
 - [ShardIteratorTypeType](./literals.md#sharditeratortypetype)
 - [StreamExistsWaiterName](./literals.md#streamexistswaitername)
+- [StreamModeType](./literals.md#streammodetype)
 - [StreamNotExistsWaiterName](./literals.md#streamnotexistswaitername)
 - [StreamStatusType](./literals.md#streamstatustype)
 - [ServiceName](./literals.md#servicename)
@@ -218,6 +221,7 @@ from mypy_boto3_kinesis.type_defs import AddTagsToStreamInputRequestTypeDef, ...
 - [StopStreamEncryptionInputRequestTypeDef](./type_defs.md#stopstreamencryptioninputrequesttypedef)
 - [StreamDescriptionSummaryTypeDef](./type_defs.md#streamdescriptionsummarytypedef)
 - [StreamDescriptionTypeDef](./type_defs.md#streamdescriptiontypedef)
+- [StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef)
 - [SubscribeToShardEventStreamTypeDef](./type_defs.md#subscribetoshardeventstreamtypedef)
 - [SubscribeToShardEventTypeDef](./type_defs.md#subscribetoshardeventtypedef)
 - [SubscribeToShardInputRequestTypeDef](./type_defs.md#subscribetoshardinputrequesttypedef)
@@ -225,4 +229,5 @@ from mypy_boto3_kinesis.type_defs import AddTagsToStreamInputRequestTypeDef, ...
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UpdateShardCountInputRequestTypeDef](./type_defs.md#updateshardcountinputrequesttypedef)
 - [UpdateShardCountOutputTypeDef](./type_defs.md#updateshardcountoutputtypedef)
+- [UpdateStreamModeInputRequestTypeDef](./type_defs.md#updatestreammodeinputrequesttypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

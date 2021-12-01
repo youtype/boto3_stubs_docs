@@ -14,6 +14,8 @@ type annotations stubs module
   - [AliasTypeDef](#aliastypedef)
   - [AssociateFileSystemAliasesRequestRequestTypeDef](#associatefilesystemaliasesrequestrequesttypedef)
   - [AssociateFileSystemAliasesResponseTypeDef](#associatefilesystemaliasesresponsetypedef)
+  - [AutoExportPolicyTypeDef](#autoexportpolicytypedef)
+  - [AutoImportPolicyTypeDef](#autoimportpolicytypedef)
   - [BackupFailureDetailsTypeDef](#backupfailuredetailstypedef)
   - [BackupTypeDef](#backuptypedef)
   - [CancelDataRepositoryTaskRequestRequestTypeDef](#canceldatarepositorytaskrequestrequesttypedef)
@@ -23,16 +25,23 @@ type annotations stubs module
   - [CopyBackupResponseTypeDef](#copybackupresponsetypedef)
   - [CreateBackupRequestRequestTypeDef](#createbackuprequestrequesttypedef)
   - [CreateBackupResponseTypeDef](#createbackupresponsetypedef)
+  - [CreateDataRepositoryAssociationRequestRequestTypeDef](#createdatarepositoryassociationrequestrequesttypedef)
+  - [CreateDataRepositoryAssociationResponseTypeDef](#createdatarepositoryassociationresponsetypedef)
   - [CreateDataRepositoryTaskRequestRequestTypeDef](#createdatarepositorytaskrequestrequesttypedef)
   - [CreateDataRepositoryTaskResponseTypeDef](#createdatarepositorytaskresponsetypedef)
   - [CreateFileSystemFromBackupRequestRequestTypeDef](#createfilesystemfrombackuprequestrequesttypedef)
   - [CreateFileSystemFromBackupResponseTypeDef](#createfilesystemfrombackupresponsetypedef)
   - [CreateFileSystemLustreConfigurationTypeDef](#createfilesystemlustreconfigurationtypedef)
   - [CreateFileSystemOntapConfigurationTypeDef](#createfilesystemontapconfigurationtypedef)
+  - [CreateFileSystemOpenZFSConfigurationTypeDef](#createfilesystemopenzfsconfigurationtypedef)
   - [CreateFileSystemRequestRequestTypeDef](#createfilesystemrequestrequesttypedef)
   - [CreateFileSystemResponseTypeDef](#createfilesystemresponsetypedef)
   - [CreateFileSystemWindowsConfigurationTypeDef](#createfilesystemwindowsconfigurationtypedef)
   - [CreateOntapVolumeConfigurationTypeDef](#createontapvolumeconfigurationtypedef)
+  - [CreateOpenZFSOriginSnapshotConfigurationTypeDef](#createopenzfsoriginsnapshotconfigurationtypedef)
+  - [CreateOpenZFSVolumeConfigurationTypeDef](#createopenzfsvolumeconfigurationtypedef)
+  - [CreateSnapshotRequestRequestTypeDef](#createsnapshotrequestrequesttypedef)
+  - [CreateSnapshotResponseTypeDef](#createsnapshotresponsetypedef)
   - [CreateStorageVirtualMachineRequestRequestTypeDef](#createstoragevirtualmachinerequestrequesttypedef)
   - [CreateStorageVirtualMachineResponseTypeDef](#createstoragevirtualmachineresponsetypedef)
   - [CreateSvmActiveDirectoryConfigurationTypeDef](#createsvmactivedirectoryconfigurationtypedef)
@@ -40,6 +49,7 @@ type annotations stubs module
   - [CreateVolumeFromBackupResponseTypeDef](#createvolumefrombackupresponsetypedef)
   - [CreateVolumeRequestRequestTypeDef](#createvolumerequestrequesttypedef)
   - [CreateVolumeResponseTypeDef](#createvolumeresponsetypedef)
+  - [DataRepositoryAssociationTypeDef](#datarepositoryassociationtypedef)
   - [DataRepositoryConfigurationTypeDef](#datarepositoryconfigurationtypedef)
   - [DataRepositoryFailureDetailsTypeDef](#datarepositoryfailuredetailstypedef)
   - [DataRepositoryTaskFailureDetailsTypeDef](#datarepositorytaskfailuredetailstypedef)
@@ -48,26 +58,37 @@ type annotations stubs module
   - [DataRepositoryTaskTypeDef](#datarepositorytasktypedef)
   - [DeleteBackupRequestRequestTypeDef](#deletebackuprequestrequesttypedef)
   - [DeleteBackupResponseTypeDef](#deletebackupresponsetypedef)
+  - [DeleteDataRepositoryAssociationRequestRequestTypeDef](#deletedatarepositoryassociationrequestrequesttypedef)
+  - [DeleteDataRepositoryAssociationResponseTypeDef](#deletedatarepositoryassociationresponsetypedef)
   - [DeleteFileSystemLustreConfigurationTypeDef](#deletefilesystemlustreconfigurationtypedef)
   - [DeleteFileSystemLustreResponseTypeDef](#deletefilesystemlustreresponsetypedef)
+  - [DeleteFileSystemOpenZFSConfigurationTypeDef](#deletefilesystemopenzfsconfigurationtypedef)
+  - [DeleteFileSystemOpenZFSResponseTypeDef](#deletefilesystemopenzfsresponsetypedef)
   - [DeleteFileSystemRequestRequestTypeDef](#deletefilesystemrequestrequesttypedef)
   - [DeleteFileSystemResponseTypeDef](#deletefilesystemresponsetypedef)
   - [DeleteFileSystemWindowsConfigurationTypeDef](#deletefilesystemwindowsconfigurationtypedef)
   - [DeleteFileSystemWindowsResponseTypeDef](#deletefilesystemwindowsresponsetypedef)
+  - [DeleteSnapshotRequestRequestTypeDef](#deletesnapshotrequestrequesttypedef)
+  - [DeleteSnapshotResponseTypeDef](#deletesnapshotresponsetypedef)
   - [DeleteStorageVirtualMachineRequestRequestTypeDef](#deletestoragevirtualmachinerequestrequesttypedef)
   - [DeleteStorageVirtualMachineResponseTypeDef](#deletestoragevirtualmachineresponsetypedef)
   - [DeleteVolumeOntapConfigurationTypeDef](#deletevolumeontapconfigurationtypedef)
   - [DeleteVolumeOntapResponseTypeDef](#deletevolumeontapresponsetypedef)
+  - [DeleteVolumeOpenZFSConfigurationTypeDef](#deletevolumeopenzfsconfigurationtypedef)
   - [DeleteVolumeRequestRequestTypeDef](#deletevolumerequestrequesttypedef)
   - [DeleteVolumeResponseTypeDef](#deletevolumeresponsetypedef)
   - [DescribeBackupsRequestRequestTypeDef](#describebackupsrequestrequesttypedef)
   - [DescribeBackupsResponseTypeDef](#describebackupsresponsetypedef)
+  - [DescribeDataRepositoryAssociationsRequestRequestTypeDef](#describedatarepositoryassociationsrequestrequesttypedef)
+  - [DescribeDataRepositoryAssociationsResponseTypeDef](#describedatarepositoryassociationsresponsetypedef)
   - [DescribeDataRepositoryTasksRequestRequestTypeDef](#describedatarepositorytasksrequestrequesttypedef)
   - [DescribeDataRepositoryTasksResponseTypeDef](#describedatarepositorytasksresponsetypedef)
   - [DescribeFileSystemAliasesRequestRequestTypeDef](#describefilesystemaliasesrequestrequesttypedef)
   - [DescribeFileSystemAliasesResponseTypeDef](#describefilesystemaliasesresponsetypedef)
   - [DescribeFileSystemsRequestRequestTypeDef](#describefilesystemsrequestrequesttypedef)
   - [DescribeFileSystemsResponseTypeDef](#describefilesystemsresponsetypedef)
+  - [DescribeSnapshotsRequestRequestTypeDef](#describesnapshotsrequestrequesttypedef)
+  - [DescribeSnapshotsResponseTypeDef](#describesnapshotsresponsetypedef)
   - [DescribeStorageVirtualMachinesRequestRequestTypeDef](#describestoragevirtualmachinesrequestrequesttypedef)
   - [DescribeStorageVirtualMachinesResponseTypeDef](#describestoragevirtualmachinesresponsetypedef)
   - [DescribeVolumesRequestRequestTypeDef](#describevolumesrequestrequesttypedef)
@@ -84,13 +105,29 @@ type annotations stubs module
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LustreFileSystemConfigurationTypeDef](#lustrefilesystemconfigurationtypedef)
+  - [LustreLogConfigurationTypeDef](#lustrelogconfigurationtypedef)
+  - [LustreLogCreateConfigurationTypeDef](#lustrelogcreateconfigurationtypedef)
   - [OntapFileSystemConfigurationTypeDef](#ontapfilesystemconfigurationtypedef)
   - [OntapVolumeConfigurationTypeDef](#ontapvolumeconfigurationtypedef)
+  - [OpenZFSClientConfigurationTypeDef](#openzfsclientconfigurationtypedef)
+  - [OpenZFSCreateRootVolumeConfigurationTypeDef](#openzfscreaterootvolumeconfigurationtypedef)
+  - [OpenZFSFileSystemConfigurationTypeDef](#openzfsfilesystemconfigurationtypedef)
+  - [OpenZFSNfsExportTypeDef](#openzfsnfsexporttypedef)
+  - [OpenZFSOriginSnapshotConfigurationTypeDef](#openzfsoriginsnapshotconfigurationtypedef)
+  - [OpenZFSUserOrGroupQuotaTypeDef](#openzfsuserorgroupquotatypedef)
+  - [OpenZFSVolumeConfigurationTypeDef](#openzfsvolumeconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ReleaseFileSystemNfsV3LocksRequestRequestTypeDef](#releasefilesystemnfsv3locksrequestrequesttypedef)
+  - [ReleaseFileSystemNfsV3LocksResponseTypeDef](#releasefilesystemnfsv3locksresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RestoreVolumeFromSnapshotRequestRequestTypeDef](#restorevolumefromsnapshotrequestrequesttypedef)
+  - [RestoreVolumeFromSnapshotResponseTypeDef](#restorevolumefromsnapshotresponsetypedef)
+  - [S3DataRepositoryConfigurationTypeDef](#s3datarepositoryconfigurationtypedef)
   - [SelfManagedActiveDirectoryAttributesTypeDef](#selfmanagedactivedirectoryattributestypedef)
   - [SelfManagedActiveDirectoryConfigurationTypeDef](#selfmanagedactivedirectoryconfigurationtypedef)
   - [SelfManagedActiveDirectoryConfigurationUpdatesTypeDef](#selfmanagedactivedirectoryconfigurationupdatestypedef)
+  - [SnapshotFilterTypeDef](#snapshotfiltertypedef)
+  - [SnapshotTypeDef](#snapshottypedef)
   - [StorageVirtualMachineFilterTypeDef](#storagevirtualmachinefiltertypedef)
   - [StorageVirtualMachineTypeDef](#storagevirtualmachinetypedef)
   - [SvmActiveDirectoryConfigurationTypeDef](#svmactivedirectoryconfigurationtypedef)
@@ -100,12 +137,18 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [TieringPolicyTypeDef](#tieringpolicytypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateDataRepositoryAssociationRequestRequestTypeDef](#updatedatarepositoryassociationrequestrequesttypedef)
+  - [UpdateDataRepositoryAssociationResponseTypeDef](#updatedatarepositoryassociationresponsetypedef)
   - [UpdateFileSystemLustreConfigurationTypeDef](#updatefilesystemlustreconfigurationtypedef)
   - [UpdateFileSystemOntapConfigurationTypeDef](#updatefilesystemontapconfigurationtypedef)
+  - [UpdateFileSystemOpenZFSConfigurationTypeDef](#updatefilesystemopenzfsconfigurationtypedef)
   - [UpdateFileSystemRequestRequestTypeDef](#updatefilesystemrequestrequesttypedef)
   - [UpdateFileSystemResponseTypeDef](#updatefilesystemresponsetypedef)
   - [UpdateFileSystemWindowsConfigurationTypeDef](#updatefilesystemwindowsconfigurationtypedef)
   - [UpdateOntapVolumeConfigurationTypeDef](#updateontapvolumeconfigurationtypedef)
+  - [UpdateOpenZFSVolumeConfigurationTypeDef](#updateopenzfsvolumeconfigurationtypedef)
+  - [UpdateSnapshotRequestRequestTypeDef](#updatesnapshotrequestrequesttypedef)
+  - [UpdateSnapshotResponseTypeDef](#updatesnapshotresponsetypedef)
   - [UpdateStorageVirtualMachineRequestRequestTypeDef](#updatestoragevirtualmachinerequestrequesttypedef)
   - [UpdateStorageVirtualMachineResponseTypeDef](#updatestoragevirtualmachineresponsetypedef)
   - [UpdateSvmActiveDirectoryConfigurationTypeDef](#updatesvmactivedirectoryconfigurationtypedef)
@@ -157,6 +200,7 @@ Optional fields:
 - `FailureDetails`:
   [AdministrativeActionFailureDetailsTypeDef](./type_defs.md#administrativeactionfailuredetailstypedef)
 - `TargetVolumeValues`: [VolumeTypeDef](./type_defs.md#volumetypedef)
+- `TargetSnapshotValues`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
 
 ## AliasTypeDef
 
@@ -195,6 +239,26 @@ Required fields:
 - `Aliases`: `List`\[[AliasTypeDef](./type_defs.md#aliastypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AutoExportPolicyTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import AutoExportPolicyTypeDef
+```
+
+Optional fields:
+
+- `Events`: `Sequence`\[[EventTypeType](./literals.md#eventtypetype)\]
+
+## AutoImportPolicyTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import AutoImportPolicyTypeDef
+```
+
+Optional fields:
+
+- `Events`: `Sequence`\[[EventTypeType](./literals.md#eventtypetype)\]
 
 ## BackupFailureDetailsTypeDef
 
@@ -333,6 +397,40 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateDataRepositoryAssociationRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateDataRepositoryAssociationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `FileSystemId`: `str`
+- `FileSystemPath`: `str`
+- `DataRepositoryPath`: `str`
+
+Optional fields:
+
+- `BatchImportMetaDataOnCreate`: `bool`
+- `ImportedFileChunkSize`: `int`
+- `S3`:
+  [S3DataRepositoryConfigurationTypeDef](./type_defs.md#s3datarepositoryconfigurationtypedef)
+- `ClientRequestToken`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDataRepositoryAssociationResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateDataRepositoryAssociationResponseTypeDef
+```
+
+Required fields:
+
+- `Association`:
+  [DataRepositoryAssociationTypeDef](./type_defs.md#datarepositoryassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateDataRepositoryTaskRequestRequestTypeDef
 
 ```python
@@ -341,8 +439,8 @@ from mypy_boto3_fsx.type_defs import CreateDataRepositoryTaskRequestRequestTypeD
 
 Required fields:
 
-- `Type`: `Literal['EXPORT_TO_REPOSITORY']` (see
-  [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype))
+- `Type`:
+  [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype)
 - `FileSystemId`: `str`
 - `Report`: [CompletionReportTypeDef](./type_defs.md#completionreporttypedef)
 
@@ -388,6 +486,8 @@ Optional fields:
 - `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
 - `KmsKeyId`: `str`
 - `FileSystemTypeVersion`: `str`
+- `OpenZFSConfiguration`:
+  [CreateFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#createfilesystemopenzfsconfigurationtypedef)
 
 ## CreateFileSystemFromBackupResponseTypeDef
 
@@ -424,6 +524,8 @@ Optional fields:
 - `DriveCacheType`: [DriveCacheTypeType](./literals.md#drivecachetypetype)
 - `DataCompressionType`:
   [DataCompressionTypeType](./literals.md#datacompressiontypetype)
+- `LogConfiguration`:
+  [LustreLogCreateConfigurationTypeDef](./type_defs.md#lustrelogcreateconfigurationtypedef)
 
 ## CreateFileSystemOntapConfigurationTypeDef
 
@@ -448,6 +550,30 @@ Optional fields:
 - `PreferredSubnetId`: `str`
 - `RouteTableIds`: `Sequence`\[`str`\]
 - `WeeklyMaintenanceStartTime`: `str`
+
+## CreateFileSystemOpenZFSConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateFileSystemOpenZFSConfigurationTypeDef
+```
+
+Required fields:
+
+- `DeploymentType`: `Literal['SINGLE_AZ_1']` (see
+  [OpenZFSDeploymentTypeType](./literals.md#openzfsdeploymenttypetype))
+- `ThroughputCapacity`: `int`
+
+Optional fields:
+
+- `AutomaticBackupRetentionDays`: `int`
+- `CopyTagsToBackups`: `bool`
+- `CopyTagsToVolumes`: `bool`
+- `DailyAutomaticBackupStartTime`: `str`
+- `WeeklyMaintenanceStartTime`: `str`
+- `DiskIopsConfiguration`:
+  [DiskIopsConfigurationTypeDef](./type_defs.md#diskiopsconfigurationtypedef)
+- `RootVolumeConfiguration`:
+  [OpenZFSCreateRootVolumeConfigurationTypeDef](./type_defs.md#openzfscreaterootvolumeconfigurationtypedef)
 
 ## CreateFileSystemRequestRequestTypeDef
 
@@ -475,6 +601,8 @@ Optional fields:
 - `OntapConfiguration`:
   [CreateFileSystemOntapConfigurationTypeDef](./type_defs.md#createfilesystemontapconfigurationtypedef)
 - `FileSystemTypeVersion`: `str`
+- `OpenZFSConfiguration`:
+  [CreateFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#createfilesystemopenzfsconfigurationtypedef)
 
 ## CreateFileSystemResponseTypeDef
 
@@ -531,6 +659,71 @@ Optional fields:
 
 - `SecurityStyle`: [SecurityStyleType](./literals.md#securitystyletype)
 - `TieringPolicy`: [TieringPolicyTypeDef](./type_defs.md#tieringpolicytypedef)
+
+## CreateOpenZFSOriginSnapshotConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateOpenZFSOriginSnapshotConfigurationTypeDef
+```
+
+Required fields:
+
+- `SnapshotARN`: `str`
+- `CopyStrategy`:
+  [OpenZFSCopyStrategyType](./literals.md#openzfscopystrategytype)
+
+## CreateOpenZFSVolumeConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateOpenZFSVolumeConfigurationTypeDef
+```
+
+Required fields:
+
+- `ParentVolumeId`: `str`
+
+Optional fields:
+
+- `StorageCapacityReservationGiB`: `int`
+- `StorageCapacityQuotaGiB`: `int`
+- `DataCompressionType`:
+  [OpenZFSDataCompressionTypeType](./literals.md#openzfsdatacompressiontypetype)
+- `CopyTagsToSnapshots`: `bool`
+- `OriginSnapshot`:
+  [CreateOpenZFSOriginSnapshotConfigurationTypeDef](./type_defs.md#createopenzfsoriginsnapshotconfigurationtypedef)
+- `ReadOnly`: `bool`
+- `NfsExports`:
+  `Sequence`\[[OpenZFSNfsExportTypeDef](./type_defs.md#openzfsnfsexporttypedef)\]
+- `UserAndGroupQuotas`:
+  `Sequence`\[[OpenZFSUserOrGroupQuotaTypeDef](./type_defs.md#openzfsuserorgroupquotatypedef)\]
+
+## CreateSnapshotRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateSnapshotRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `VolumeId`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateSnapshotResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateSnapshotResponseTypeDef
+```
+
+Required fields:
+
+- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateStorageVirtualMachineRequestRequestTypeDef
 
@@ -619,8 +812,7 @@ from mypy_boto3_fsx.type_defs import CreateVolumeRequestRequestTypeDef
 
 Required fields:
 
-- `VolumeType`: `Literal['ONTAP']` (see
-  [VolumeTypeType](./literals.md#volumetypetype))
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `Name`: `str`
 
 Optional fields:
@@ -629,6 +821,8 @@ Optional fields:
 - `OntapConfiguration`:
   [CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OpenZFSConfiguration`:
+  [CreateOpenZFSVolumeConfigurationTypeDef](./type_defs.md#createopenzfsvolumeconfigurationtypedef)
 
 ## CreateVolumeResponseTypeDef
 
@@ -641,6 +835,30 @@ Required fields:
 - `Volume`: [VolumeTypeDef](./type_defs.md#volumetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DataRepositoryAssociationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DataRepositoryAssociationTypeDef
+```
+
+Optional fields:
+
+- `AssociationId`: `str`
+- `ResourceARN`: `str`
+- `FileSystemId`: `str`
+- `Lifecycle`:
+  [DataRepositoryLifecycleType](./literals.md#datarepositorylifecycletype)
+- `FailureDetails`:
+  [DataRepositoryFailureDetailsTypeDef](./type_defs.md#datarepositoryfailuredetailstypedef)
+- `FileSystemPath`: `str`
+- `DataRepositoryPath`: `str`
+- `BatchImportMetaDataOnCreate`: `bool`
+- `ImportedFileChunkSize`: `int`
+- `S3`:
+  [S3DataRepositoryConfigurationTypeDef](./type_defs.md#s3datarepositoryconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CreationTime`: `datetime`
 
 ## DataRepositoryConfigurationTypeDef
 
@@ -716,8 +934,8 @@ Required fields:
 - `TaskId`: `str`
 - `Lifecycle`:
   [DataRepositoryTaskLifecycleType](./literals.md#datarepositorytasklifecycletype)
-- `Type`: `Literal['EXPORT_TO_REPOSITORY']` (see
-  [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype))
+- `Type`:
+  [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype)
 - `CreationTime`: `datetime`
 - `FileSystemId`: `str`
 
@@ -761,6 +979,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DeleteDataRepositoryAssociationRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteDataRepositoryAssociationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AssociationId`: `str`
+- `DeleteDataInFileSystem`: `bool`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+
+## DeleteDataRepositoryAssociationResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteDataRepositoryAssociationResponseTypeDef
+```
+
+Required fields:
+
+- `AssociationId`: `str`
+- `Lifecycle`:
+  [DataRepositoryLifecycleType](./literals.md#datarepositorylifecycletype)
+- `DeleteDataInFileSystem`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DeleteFileSystemLustreConfigurationTypeDef
 
 ```python
@@ -776,6 +1024,28 @@ Optional fields:
 
 ```python
 from mypy_boto3_fsx.type_defs import DeleteFileSystemLustreResponseTypeDef
+```
+
+Optional fields:
+
+- `FinalBackupId`: `str`
+- `FinalBackupTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## DeleteFileSystemOpenZFSConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteFileSystemOpenZFSConfigurationTypeDef
+```
+
+Optional fields:
+
+- `SkipFinalBackup`: `bool`
+- `FinalBackupTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## DeleteFileSystemOpenZFSResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteFileSystemOpenZFSResponseTypeDef
 ```
 
 Optional fields:
@@ -800,6 +1070,8 @@ Optional fields:
   [DeleteFileSystemWindowsConfigurationTypeDef](./type_defs.md#deletefilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
   [DeleteFileSystemLustreConfigurationTypeDef](./type_defs.md#deletefilesystemlustreconfigurationtypedef)
+- `OpenZFSConfiguration`:
+  [DeleteFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#deletefilesystemopenzfsconfigurationtypedef)
 
 ## DeleteFileSystemResponseTypeDef
 
@@ -815,6 +1087,8 @@ Required fields:
   [DeleteFileSystemWindowsResponseTypeDef](./type_defs.md#deletefilesystemwindowsresponsetypedef)
 - `LustreResponse`:
   [DeleteFileSystemLustreResponseTypeDef](./type_defs.md#deletefilesystemlustreresponsetypedef)
+- `OpenZFSResponse`:
+  [DeleteFileSystemOpenZFSResponseTypeDef](./type_defs.md#deletefilesystemopenzfsresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -839,6 +1113,33 @@ Optional fields:
 
 - `FinalBackupId`: `str`
 - `FinalBackupTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## DeleteSnapshotRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteSnapshotRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SnapshotId`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+
+## DeleteSnapshotResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteSnapshotResponseTypeDef
+```
+
+Required fields:
+
+- `SnapshotId`: `str`
+- `Lifecycle`: [SnapshotLifecycleType](./literals.md#snapshotlifecycletype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteStorageVirtualMachineRequestRequestTypeDef
 
@@ -890,6 +1191,17 @@ Optional fields:
 - `FinalBackupId`: `str`
 - `FinalBackupTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+## DeleteVolumeOpenZFSConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteVolumeOpenZFSConfigurationTypeDef
+```
+
+Optional fields:
+
+- `Options`: `Sequence`\[`Literal['DELETE_CHILD_VOLUMES_AND_SNAPSHOTS']` (see
+  [DeleteOpenZFSVolumeOptionType](./literals.md#deleteopenzfsvolumeoptiontype))\]
+
 ## DeleteVolumeRequestRequestTypeDef
 
 ```python
@@ -905,6 +1217,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `OntapConfiguration`:
   [DeleteVolumeOntapConfigurationTypeDef](./type_defs.md#deletevolumeontapconfigurationtypedef)
+- `OpenZFSConfiguration`:
+  [DeleteVolumeOpenZFSConfigurationTypeDef](./type_defs.md#deletevolumeopenzfsconfigurationtypedef)
 
 ## DeleteVolumeResponseTypeDef
 
@@ -943,6 +1257,33 @@ from mypy_boto3_fsx.type_defs import DescribeBackupsResponseTypeDef
 Required fields:
 
 - `Backups`: `List`\[[BackupTypeDef](./type_defs.md#backuptypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeDataRepositoryAssociationsRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DescribeDataRepositoryAssociationsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `AssociationIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeDataRepositoryAssociationsResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DescribeDataRepositoryAssociationsResponseTypeDef
+```
+
+Required fields:
+
+- `Associations`:
+  `List`\[[DataRepositoryAssociationTypeDef](./type_defs.md#datarepositoryassociationtypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1026,6 +1367,33 @@ Required fields:
 
 - `FileSystems`:
   `List`\[[FileSystemTypeDef](./type_defs.md#filesystemtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeSnapshotsRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DescribeSnapshotsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `SnapshotIds`: `Sequence`\[`str`\]
+- `Filters`:
+  `Sequence`\[[SnapshotFilterTypeDef](./type_defs.md#snapshotfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeSnapshotsResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DescribeSnapshotsResponseTypeDef
+```
+
+Required fields:
+
+- `Snapshots`: `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1191,6 +1559,8 @@ Optional fields:
 - `OntapConfiguration`:
   [OntapFileSystemConfigurationTypeDef](./type_defs.md#ontapfilesystemconfigurationtypedef)
 - `FileSystemTypeVersion`: `str`
+- `OpenZFSConfiguration`:
+  [OpenZFSFileSystemConfigurationTypeDef](./type_defs.md#openzfsfilesystemconfigurationtypedef)
 
 ## FilterTypeDef
 
@@ -1262,6 +1632,38 @@ Optional fields:
 - `DriveCacheType`: [DriveCacheTypeType](./literals.md#drivecachetypetype)
 - `DataCompressionType`:
   [DataCompressionTypeType](./literals.md#datacompressiontypetype)
+- `LogConfiguration`:
+  [LustreLogConfigurationTypeDef](./type_defs.md#lustrelogconfigurationtypedef)
+
+## LustreLogConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import LustreLogConfigurationTypeDef
+```
+
+Required fields:
+
+- `Level`:
+  [LustreAccessAuditLogLevelType](./literals.md#lustreaccessauditlogleveltype)
+
+Optional fields:
+
+- `Destination`: `str`
+
+## LustreLogCreateConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import LustreLogCreateConfigurationTypeDef
+```
+
+Required fields:
+
+- `Level`:
+  [LustreAccessAuditLogLevelType](./literals.md#lustreaccessauditlogleveltype)
+
+Optional fields:
+
+- `Destination`: `str`
 
 ## OntapFileSystemConfigurationTypeDef
 
@@ -1305,6 +1707,112 @@ Optional fields:
 - `UUID`: `str`
 - `OntapVolumeType`: [OntapVolumeTypeType](./literals.md#ontapvolumetypetype)
 
+## OpenZFSClientConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import OpenZFSClientConfigurationTypeDef
+```
+
+Required fields:
+
+- `Clients`: `str`
+- `Options`: `List`\[`str`\]
+
+## OpenZFSCreateRootVolumeConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import OpenZFSCreateRootVolumeConfigurationTypeDef
+```
+
+Optional fields:
+
+- `DataCompressionType`:
+  [OpenZFSDataCompressionTypeType](./literals.md#openzfsdatacompressiontypetype)
+- `NfsExports`:
+  `Sequence`\[[OpenZFSNfsExportTypeDef](./type_defs.md#openzfsnfsexporttypedef)\]
+- `UserAndGroupQuotas`:
+  `Sequence`\[[OpenZFSUserOrGroupQuotaTypeDef](./type_defs.md#openzfsuserorgroupquotatypedef)\]
+- `CopyTagsToSnapshots`: `bool`
+- `ReadOnly`: `bool`
+
+## OpenZFSFileSystemConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import OpenZFSFileSystemConfigurationTypeDef
+```
+
+Optional fields:
+
+- `AutomaticBackupRetentionDays`: `int`
+- `CopyTagsToBackups`: `bool`
+- `CopyTagsToVolumes`: `bool`
+- `DailyAutomaticBackupStartTime`: `str`
+- `DeploymentType`: `Literal['SINGLE_AZ_1']` (see
+  [OpenZFSDeploymentTypeType](./literals.md#openzfsdeploymenttypetype))
+- `ThroughputCapacity`: `int`
+- `WeeklyMaintenanceStartTime`: `str`
+- `DiskIopsConfiguration`:
+  [DiskIopsConfigurationTypeDef](./type_defs.md#diskiopsconfigurationtypedef)
+- `RootVolumeId`: `str`
+
+## OpenZFSNfsExportTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import OpenZFSNfsExportTypeDef
+```
+
+Required fields:
+
+- `ClientConfigurations`:
+  `List`\[[OpenZFSClientConfigurationTypeDef](./type_defs.md#openzfsclientconfigurationtypedef)\]
+
+## OpenZFSOriginSnapshotConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import OpenZFSOriginSnapshotConfigurationTypeDef
+```
+
+Optional fields:
+
+- `SnapshotARN`: `str`
+- `CopyStrategy`:
+  [OpenZFSCopyStrategyType](./literals.md#openzfscopystrategytype)
+
+## OpenZFSUserOrGroupQuotaTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import OpenZFSUserOrGroupQuotaTypeDef
+```
+
+Required fields:
+
+- `Type`: [OpenZFSQuotaTypeType](./literals.md#openzfsquotatypetype)
+- `Id`: `int`
+- `StorageCapacityQuotaGiB`: `int`
+
+## OpenZFSVolumeConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import OpenZFSVolumeConfigurationTypeDef
+```
+
+Optional fields:
+
+- `ParentVolumeId`: `str`
+- `VolumePath`: `str`
+- `StorageCapacityReservationGiB`: `int`
+- `StorageCapacityQuotaGiB`: `int`
+- `DataCompressionType`:
+  [OpenZFSDataCompressionTypeType](./literals.md#openzfsdatacompressiontypetype)
+- `CopyTagsToSnapshots`: `bool`
+- `OriginSnapshot`:
+  [OpenZFSOriginSnapshotConfigurationTypeDef](./type_defs.md#openzfsoriginsnapshotconfigurationtypedef)
+- `ReadOnly`: `bool`
+- `NfsExports`:
+  `List`\[[OpenZFSNfsExportTypeDef](./type_defs.md#openzfsnfsexporttypedef)\]
+- `UserAndGroupQuotas`:
+  `List`\[[OpenZFSUserOrGroupQuotaTypeDef](./type_defs.md#openzfsuserorgroupquotatypedef)\]
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1316,6 +1824,32 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## ReleaseFileSystemNfsV3LocksRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import ReleaseFileSystemNfsV3LocksRequestRequestTypeDef
+```
+
+Required fields:
+
+- `FileSystemId`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+
+## ReleaseFileSystemNfsV3LocksResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import ReleaseFileSystemNfsV3LocksResponseTypeDef
+```
+
+Required fields:
+
+- `FileSystem`: [FileSystemTypeDef](./type_defs.md#filesystemtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ResponseMetadataTypeDef
 
@@ -1330,6 +1864,49 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## RestoreVolumeFromSnapshotRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import RestoreVolumeFromSnapshotRequestRequestTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+- `SnapshotId`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+- `Options`:
+  `Sequence`\[[RestoreOpenZFSVolumeOptionType](./literals.md#restoreopenzfsvolumeoptiontype)\]
+
+## RestoreVolumeFromSnapshotResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import RestoreVolumeFromSnapshotResponseTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+- `Lifecycle`: [VolumeLifecycleType](./literals.md#volumelifecycletype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## S3DataRepositoryConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import S3DataRepositoryConfigurationTypeDef
+```
+
+Optional fields:
+
+- `AutoImportPolicy`:
+  [AutoImportPolicyTypeDef](./type_defs.md#autoimportpolicytypedef)
+- `AutoExportPolicy`:
+  [AutoExportPolicyTypeDef](./type_defs.md#autoexportpolicytypedef)
 
 ## SelfManagedActiveDirectoryAttributesTypeDef
 
@@ -1374,6 +1951,35 @@ Optional fields:
 - `UserName`: `str`
 - `Password`: `str`
 - `DnsIps`: `Sequence`\[`str`\]
+
+## SnapshotFilterTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import SnapshotFilterTypeDef
+```
+
+Optional fields:
+
+- `Name`: [SnapshotFilterNameType](./literals.md#snapshotfilternametype)
+- `Values`: `Sequence`\[`str`\]
+
+## SnapshotTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import SnapshotTypeDef
+```
+
+Optional fields:
+
+- `ResourceARN`: `str`
+- `SnapshotId`: `str`
+- `Name`: `str`
+- `VolumeId`: `str`
+- `CreationTime`: `datetime`
+- `Lifecycle`: [SnapshotLifecycleType](./literals.md#snapshotlifecycletype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `AdministrativeActions`:
+  `List`\[[AdministrativeActionTypeDef](./type_defs.md#administrativeactiontypedef)\]
 
 ## StorageVirtualMachineFilterTypeDef
 
@@ -1494,6 +2100,36 @@ Required fields:
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
 
+## UpdateDataRepositoryAssociationRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateDataRepositoryAssociationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AssociationId`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+- `ImportedFileChunkSize`: `int`
+- `S3`:
+  [S3DataRepositoryConfigurationTypeDef](./type_defs.md#s3datarepositoryconfigurationtypedef)
+
+## UpdateDataRepositoryAssociationResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateDataRepositoryAssociationResponseTypeDef
+```
+
+Required fields:
+
+- `Association`:
+  [DataRepositoryAssociationTypeDef](./type_defs.md#datarepositoryassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## UpdateFileSystemLustreConfigurationTypeDef
 
 ```python
@@ -1509,6 +2145,8 @@ Optional fields:
   [AutoImportPolicyTypeType](./literals.md#autoimportpolicytypetype)
 - `DataCompressionType`:
   [DataCompressionTypeType](./literals.md#datacompressiontypetype)
+- `LogConfiguration`:
+  [LustreLogCreateConfigurationTypeDef](./type_defs.md#lustrelogcreateconfigurationtypedef)
 
 ## UpdateFileSystemOntapConfigurationTypeDef
 
@@ -1522,6 +2160,23 @@ Optional fields:
 - `DailyAutomaticBackupStartTime`: `str`
 - `FsxAdminPassword`: `str`
 - `WeeklyMaintenanceStartTime`: `str`
+
+## UpdateFileSystemOpenZFSConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateFileSystemOpenZFSConfigurationTypeDef
+```
+
+Optional fields:
+
+- `AutomaticBackupRetentionDays`: `int`
+- `CopyTagsToBackups`: `bool`
+- `CopyTagsToVolumes`: `bool`
+- `DailyAutomaticBackupStartTime`: `str`
+- `ThroughputCapacity`: `int`
+- `WeeklyMaintenanceStartTime`: `str`
+- `DiskIopsConfiguration`:
+  [DiskIopsConfigurationTypeDef](./type_defs.md#diskiopsconfigurationtypedef)
 
 ## UpdateFileSystemRequestRequestTypeDef
 
@@ -1543,6 +2198,8 @@ Optional fields:
   [UpdateFileSystemLustreConfigurationTypeDef](./type_defs.md#updatefilesystemlustreconfigurationtypedef)
 - `OntapConfiguration`:
   [UpdateFileSystemOntapConfigurationTypeDef](./type_defs.md#updatefilesystemontapconfigurationtypedef)
+- `OpenZFSConfiguration`:
+  [UpdateFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#updatefilesystemopenzfsconfigurationtypedef)
 
 ## UpdateFileSystemResponseTypeDef
 
@@ -1586,6 +2243,51 @@ Optional fields:
 - `SizeInMegabytes`: `int`
 - `StorageEfficiencyEnabled`: `bool`
 - `TieringPolicy`: [TieringPolicyTypeDef](./type_defs.md#tieringpolicytypedef)
+
+## UpdateOpenZFSVolumeConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateOpenZFSVolumeConfigurationTypeDef
+```
+
+Optional fields:
+
+- `StorageCapacityReservationGiB`: `int`
+- `StorageCapacityQuotaGiB`: `int`
+- `DataCompressionType`:
+  [OpenZFSDataCompressionTypeType](./literals.md#openzfsdatacompressiontypetype)
+- `NfsExports`:
+  `Sequence`\[[OpenZFSNfsExportTypeDef](./type_defs.md#openzfsnfsexporttypedef)\]
+- `UserAndGroupQuotas`:
+  `Sequence`\[[OpenZFSUserOrGroupQuotaTypeDef](./type_defs.md#openzfsuserorgroupquotatypedef)\]
+- `ReadOnly`: `bool`
+
+## UpdateSnapshotRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateSnapshotRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `SnapshotId`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+
+## UpdateSnapshotResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateSnapshotResponseTypeDef
+```
+
+Required fields:
+
+- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateStorageVirtualMachineRequestRequestTypeDef
 
@@ -1643,6 +2345,9 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `OntapConfiguration`:
   [UpdateOntapVolumeConfigurationTypeDef](./type_defs.md#updateontapvolumeconfigurationtypedef)
+- `Name`: `str`
+- `OpenZFSConfiguration`:
+  [UpdateOpenZFSVolumeConfigurationTypeDef](./type_defs.md#updateopenzfsvolumeconfigurationtypedef)
 
 ## UpdateVolumeResponseTypeDef
 
@@ -1684,10 +2389,13 @@ Optional fields:
 - `ResourceARN`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VolumeId`: `str`
-- `VolumeType`: `Literal['ONTAP']` (see
-  [VolumeTypeType](./literals.md#volumetypetype))
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `LifecycleTransitionReason`:
   [LifecycleTransitionReasonTypeDef](./type_defs.md#lifecycletransitionreasontypedef)
+- `AdministrativeActions`:
+  `List`\[[AdministrativeActionTypeDef](./type_defs.md#administrativeactiontypedef)\]
+- `OpenZFSConfiguration`:
+  [OpenZFSVolumeConfigurationTypeDef](./type_defs.md#openzfsvolumeconfigurationtypedef)
 
 ## WindowsAuditLogConfigurationTypeDef
 

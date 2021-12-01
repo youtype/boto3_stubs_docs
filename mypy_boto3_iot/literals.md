@@ -38,6 +38,7 @@ type annotations stubs module
   - [DetectMitigationActionExecutionStatusType](#detectmitigationactionexecutionstatustype)
   - [DetectMitigationActionsTaskStatusType](#detectmitigationactionstaskstatustype)
   - [DeviceCertificateUpdateActionType](#devicecertificateupdateactiontype)
+  - [DeviceDefenderIndexingModeType](#devicedefenderindexingmodetype)
   - [DimensionTypeType](#dimensiontypetype)
   - [DimensionValueOperatorType](#dimensionvalueoperatortype)
   - [DomainConfigurationStatusType](#domainconfigurationstatustype)
@@ -110,6 +111,7 @@ type annotations stubs module
   - [MessageFormatType](#messageformattype)
   - [MitigationActionTypeType](#mitigationactiontypetype)
   - [ModelStatusType](#modelstatustype)
+  - [NamedShadowIndexingModeType](#namedshadowindexingmodetype)
   - [OTAUpdateStatusType](#otaupdatestatustype)
   - [PolicyTemplateNameType](#policytemplatenametype)
   - [ProtocolType](#protocoltype)
@@ -504,6 +506,17 @@ from mypy_boto3_iot.literals import DeviceCertificateUpdateActionType
 Values:
 
 - `DEACTIVATE`
+
+## DeviceDefenderIndexingModeType
+
+```python
+from mypy_boto3_iot.literals import DeviceDefenderIndexingModeType
+```
+
+Values:
+
+- `OFF`
+- `VIOLATIONS`
 
 ## DimensionTypeType
 
@@ -1298,6 +1311,17 @@ Values:
 - `EXPIRED`
 - `PENDING_BUILD`
 
+## NamedShadowIndexingModeType
+
+```python
+from mypy_boto3_iot.literals import NamedShadowIndexingModeType
+```
+
+Values:
+
+- `OFF`
+- `ON`
+
 ## OTAUpdateStatusType
 
 ```python
@@ -1516,6 +1540,7 @@ Values:
 - `autoscaling`
 - `autoscaling-plans`
 - `backup`
+- `backup-gateway`
 - `batch`
 - `braket`
 - `budgets`
@@ -1633,6 +1658,7 @@ Values:
 - `iotsecuretunneling`
 - `iotsitewise`
 - `iotthingsgraph`
+- `iottwinmaker`
 - `iotwireless`
 - `ivs`
 - `kafka`
@@ -1783,6 +1809,7 @@ Values:
 - `workmail`
 - `workmailmessageflow`
 - `workspaces`
+- `workspaces-web`
 - `xray`
 
 ## PaginatorName
