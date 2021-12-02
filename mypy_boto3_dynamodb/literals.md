@@ -43,6 +43,7 @@ type annotations stubs module
   - [ScanPaginatorName](#scanpaginatorname)
   - [SelectType](#selecttype)
   - [StreamViewTypeType](#streamviewtypetype)
+  - [TableClassType](#tableclasstype)
   - [TableExistsWaiterName](#tableexistswaitername)
   - [TableNotExistsWaiterName](#tablenotexistswaitername)
   - [TableStatusType](#tablestatustype)
@@ -484,6 +485,17 @@ Values:
 - `NEW_AND_OLD_IMAGES`
 - `NEW_IMAGE`
 - `OLD_IMAGE`
+
+## TableClassType
+
+```python
+from mypy_boto3_dynamodb.literals import TableClassType
+```
+
+Values:
+
+- `STANDARD`
+- `STANDARD_INFREQUENT_ACCESS`
 
 ## TableExistsWaiterName
 

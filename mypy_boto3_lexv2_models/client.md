@@ -40,6 +40,7 @@ type annotations stubs module
     - [describe_bot](#describe_bot)
     - [describe_bot_alias](#describe_bot_alias)
     - [describe_bot_locale](#describe_bot_locale)
+    - [describe_bot_recommendation](#describe_bot_recommendation)
     - [describe_bot_version](#describe_bot_version)
     - [describe_export](#describe_export)
     - [describe_import](#describe_import)
@@ -51,6 +52,7 @@ type annotations stubs module
     - [list_aggregated_utterances](#list_aggregated_utterances)
     - [list_bot_aliases](#list_bot_aliases)
     - [list_bot_locales](#list_bot_locales)
+    - [list_bot_recommendations](#list_bot_recommendations)
     - [list_bot_versions](#list_bot_versions)
     - [list_bots](#list_bots)
     - [list_built_in_intents](#list_built_in_intents)
@@ -58,15 +60,19 @@ type annotations stubs module
     - [list_exports](#list_exports)
     - [list_imports](#list_imports)
     - [list_intents](#list_intents)
+    - [list_recommended_intents](#list_recommended_intents)
     - [list_slot_types](#list_slot_types)
     - [list_slots](#list_slots)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [search_associated_transcripts](#search_associated_transcripts)
+    - [start_bot_recommendation](#start_bot_recommendation)
     - [start_import](#start_import)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_bot](#update_bot)
     - [update_bot_alias](#update_bot_alias)
     - [update_bot_locale](#update_bot_locale)
+    - [update_bot_recommendation](#update_bot_recommendation)
     - [update_export](#update_export)
     - [update_intent](#update_intent)
     - [update_resource_policy](#update_resource_policy)
@@ -754,6 +760,29 @@ Keyword-only arguments:
 Returns
 [DescribeBotLocaleResponseTypeDef](./type_defs.md#describebotlocaleresponsetypedef).
 
+### describe_bot_recommendation
+
+Provides metadata information about a bot recommendation.
+
+Type annotations for `boto3.client("lexv2-models").describe_bot_recommendation`
+method.
+
+Boto3 documentation:
+[LexModelsV2.Client.describe_bot_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_recommendation)
+
+Arguments mapping described in
+[DescribeBotRecommendationRequestRequestTypeDef](./type_defs.md#describebotrecommendationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `botRecommendationId`: `str` *(required)*
+
+Returns
+[DescribeBotRecommendationResponseTypeDef](./type_defs.md#describebotrecommendationresponsetypedef).
+
 ### describe_bot_version
 
 Provides metadata about a version of a bot.
@@ -997,6 +1026,30 @@ Keyword-only arguments:
 Returns
 [ListBotLocalesResponseTypeDef](./type_defs.md#listbotlocalesresponsetypedef).
 
+### list_bot_recommendations
+
+Get a list of bot recommendations that meet the specified criteria.
+
+Type annotations for `boto3.client("lexv2-models").list_bot_recommendations`
+method.
+
+Boto3 documentation:
+[LexModelsV2.Client.list_bot_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_recommendations)
+
+Arguments mapping described in
+[ListBotRecommendationsRequestRequestTypeDef](./type_defs.md#listbotrecommendationsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListBotRecommendationsResponseTypeDef](./type_defs.md#listbotrecommendationsresponsetypedef).
+
 ### list_bot_versions
 
 Gets information about all of the versions of a bot.
@@ -1165,6 +1218,32 @@ Keyword-only arguments:
 Returns
 [ListIntentsResponseTypeDef](./type_defs.md#listintentsresponsetypedef).
 
+### list_recommended_intents
+
+Gets a list of recommended intents provided by the bot recommendation that you
+can use in your bot.
+
+Type annotations for `boto3.client("lexv2-models").list_recommended_intents`
+method.
+
+Boto3 documentation:
+[LexModelsV2.Client.list_recommended_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_recommended_intents)
+
+Arguments mapping described in
+[ListRecommendedIntentsRequestRequestTypeDef](./type_defs.md#listrecommendedintentsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `botRecommendationId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListRecommendedIntentsResponseTypeDef](./type_defs.md#listrecommendedintentsresponsetypedef).
+
 ### list_slot_types
 
 Gets a list of slot types that match the specified criteria.
@@ -1236,6 +1315,63 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+### search_associated_transcripts
+
+Search for associated transcripts that meet the specified criteria.
+
+Type annotations for
+`boto3.client("lexv2-models").search_associated_transcripts` method.
+
+Boto3 documentation:
+[LexModelsV2.Client.search_associated_transcripts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.search_associated_transcripts)
+
+Arguments mapping described in
+[SearchAssociatedTranscriptsRequestRequestTypeDef](./type_defs.md#searchassociatedtranscriptsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `botRecommendationId`: `str` *(required)*
+- `filters`:
+  `Sequence`\[[AssociatedTranscriptFilterTypeDef](./type_defs.md#associatedtranscriptfiltertypedef)\]
+  *(required)*
+- `searchOrder`: [SearchOrderType](./literals.md#searchordertype)
+- `maxResults`: `int`
+- `nextIndex`: `int`
+
+Returns
+[SearchAssociatedTranscriptsResponseTypeDef](./type_defs.md#searchassociatedtranscriptsresponsetypedef).
+
+### start_bot_recommendation
+
+Use this to provide your transcript data, and to start the bot recommendation
+process.
+
+Type annotations for `boto3.client("lexv2-models").start_bot_recommendation`
+method.
+
+Boto3 documentation:
+[LexModelsV2.Client.start_bot_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.start_bot_recommendation)
+
+Arguments mapping described in
+[StartBotRecommendationRequestRequestTypeDef](./type_defs.md#startbotrecommendationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `transcriptSourceSetting`:
+  [TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef)
+  *(required)*
+- `encryptionSetting`:
+  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
+
+Returns
+[StartBotRecommendationResponseTypeDef](./type_defs.md#startbotrecommendationresponsetypedef).
 
 ### start_import
 
@@ -1377,6 +1513,32 @@ Keyword-only arguments:
 
 Returns
 [UpdateBotLocaleResponseTypeDef](./type_defs.md#updatebotlocaleresponsetypedef).
+
+### update_bot_recommendation
+
+Updates an existing bot recommendation request.
+
+Type annotations for `boto3.client("lexv2-models").update_bot_recommendation`
+method.
+
+Boto3 documentation:
+[LexModelsV2.Client.update_bot_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_recommendation)
+
+Arguments mapping described in
+[UpdateBotRecommendationRequestRequestTypeDef](./type_defs.md#updatebotrecommendationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `botRecommendationId`: `str` *(required)*
+- `encryptionSetting`:
+  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
+  *(required)*
+
+Returns
+[UpdateBotRecommendationResponseTypeDef](./type_defs.md#updatebotrecommendationresponsetypedef).
 
 ### update_export
 

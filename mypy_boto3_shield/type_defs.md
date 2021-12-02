@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
 
 - [Typed dictionaries for boto3 Shield module](#typed-dictionaries-for-boto3-shield-module)
+  - [ApplicationLayerAutomaticResponseConfigurationTypeDef](#applicationlayerautomaticresponseconfigurationtypedef)
   - [AssociateDRTLogBucketRequestRequestTypeDef](#associatedrtlogbucketrequestrequesttypedef)
   - [AssociateDRTRoleRequestRequestTypeDef](#associatedrtrolerequestrequesttypedef)
   - [AssociateHealthCheckRequestRequestTypeDef](#associatehealthcheckrequestrequesttypedef)
@@ -35,9 +36,11 @@ type annotations stubs module
   - [DescribeProtectionRequestRequestTypeDef](#describeprotectionrequestrequesttypedef)
   - [DescribeProtectionResponseTypeDef](#describeprotectionresponsetypedef)
   - [DescribeSubscriptionResponseTypeDef](#describesubscriptionresponsetypedef)
+  - [DisableApplicationLayerAutomaticResponseRequestRequestTypeDef](#disableapplicationlayerautomaticresponserequestrequesttypedef)
   - [DisassociateDRTLogBucketRequestRequestTypeDef](#disassociatedrtlogbucketrequestrequesttypedef)
   - [DisassociateHealthCheckRequestRequestTypeDef](#disassociatehealthcheckrequestrequesttypedef)
   - [EmergencyContactTypeDef](#emergencycontacttypedef)
+  - [EnableApplicationLayerAutomaticResponseRequestRequestTypeDef](#enableapplicationlayerautomaticresponserequestrequesttypedef)
   - [GetSubscriptionStateResponseTypeDef](#getsubscriptionstateresponsetypedef)
   - [LimitTypeDef](#limittypedef)
   - [ListAttacksRequestRequestTypeDef](#listattacksrequestrequesttypedef)
@@ -58,6 +61,7 @@ type annotations stubs module
   - [ProtectionGroupTypeDef](#protectiongrouptypedef)
   - [ProtectionLimitsTypeDef](#protectionlimitstypedef)
   - [ProtectionTypeDef](#protectiontypedef)
+  - [ResponseActionTypeDef](#responseactiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SubResourceSummaryTypeDef](#subresourcesummarytypedef)
   - [SubscriptionLimitsTypeDef](#subscriptionlimitstypedef)
@@ -68,9 +72,22 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [TimeRangeTypeDef](#timerangetypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef](#updateapplicationlayerautomaticresponserequestrequesttypedef)
   - [UpdateEmergencyContactSettingsRequestRequestTypeDef](#updateemergencycontactsettingsrequestrequesttypedef)
   - [UpdateProtectionGroupRequestRequestTypeDef](#updateprotectiongrouprequestrequesttypedef)
   - [UpdateSubscriptionRequestRequestTypeDef](#updatesubscriptionrequestrequesttypedef)
+
+## ApplicationLayerAutomaticResponseConfigurationTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import ApplicationLayerAutomaticResponseConfigurationTypeDef
+```
+
+Required fields:
+
+- `Status`:
+  [ApplicationLayerAutomaticResponseStatusType](./literals.md#applicationlayerautomaticresponsestatustype)
+- `Action`: [ResponseActionTypeDef](./type_defs.md#responseactiontypedef)
 
 ## AssociateDRTLogBucketRequestRequestTypeDef
 
@@ -414,6 +431,16 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DisableApplicationLayerAutomaticResponseRequestRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import DisableApplicationLayerAutomaticResponseRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
 ## DisassociateDRTLogBucketRequestRequestTypeDef
 
 ```python
@@ -449,6 +476,17 @@ Optional fields:
 
 - `PhoneNumber`: `str`
 - `ContactNotes`: `str`
+
+## EnableApplicationLayerAutomaticResponseRequestRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import EnableApplicationLayerAutomaticResponseRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Action`: [ResponseActionTypeDef](./type_defs.md#responseactiontypedef)
 
 ## GetSubscriptionStateResponseTypeDef
 
@@ -702,6 +740,19 @@ Optional fields:
 - `ResourceArn`: `str`
 - `HealthCheckIds`: `List`\[`str`\]
 - `ProtectionArn`: `str`
+- `ApplicationLayerAutomaticResponseConfiguration`:
+  [ApplicationLayerAutomaticResponseConfigurationTypeDef](./type_defs.md#applicationlayerautomaticresponseconfigurationtypedef)
+
+## ResponseActionTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import ResponseActionTypeDef
+```
+
+Optional fields:
+
+- `Block`: `Dict`\[`str`, `Any`\]
+- `Count`: `Dict`\[`str`, `Any`\]
 
 ## ResponseMetadataTypeDef
 
@@ -840,6 +891,17 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+## UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Action`: [ResponseActionTypeDef](./type_defs.md#responseactiontypedef)
 
 ## UpdateEmergencyContactSettingsRequestRequestTypeDef
 

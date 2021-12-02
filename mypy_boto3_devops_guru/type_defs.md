@@ -13,6 +13,7 @@ type annotations stubs module
   - [AddNotificationChannelRequestRequestTypeDef](#addnotificationchannelrequestrequesttypedef)
   - [AddNotificationChannelResponseTypeDef](#addnotificationchannelresponsetypedef)
   - [AnomalyReportedTimeRangeTypeDef](#anomalyreportedtimerangetypedef)
+  - [AnomalyResourceTypeDef](#anomalyresourcetypedef)
   - [AnomalySourceDetailsTypeDef](#anomalysourcedetailstypedef)
   - [AnomalyTimeRangeTypeDef](#anomalytimerangetypedef)
   - [CloudFormationCollectionFilterTypeDef](#cloudformationcollectionfiltertypedef)
@@ -75,6 +76,14 @@ type annotations stubs module
   - [OpsCenterIntegrationConfigTypeDef](#opscenterintegrationconfigtypedef)
   - [OpsCenterIntegrationTypeDef](#opscenterintegrationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [PerformanceInsightsMetricDimensionGroupTypeDef](#performanceinsightsmetricdimensiongrouptypedef)
+  - [PerformanceInsightsMetricQueryTypeDef](#performanceinsightsmetricquerytypedef)
+  - [PerformanceInsightsMetricsDetailTypeDef](#performanceinsightsmetricsdetailtypedef)
+  - [PerformanceInsightsReferenceComparisonValuesTypeDef](#performanceinsightsreferencecomparisonvaluestypedef)
+  - [PerformanceInsightsReferenceDataTypeDef](#performanceinsightsreferencedatatypedef)
+  - [PerformanceInsightsReferenceMetricTypeDef](#performanceinsightsreferencemetrictypedef)
+  - [PerformanceInsightsReferenceScalarTypeDef](#performanceinsightsreferencescalartypedef)
+  - [PerformanceInsightsStatTypeDef](#performanceinsightsstattypedef)
   - [PredictionTimeRangeTypeDef](#predictiontimerangetypedef)
   - [ProactiveAnomalySummaryTypeDef](#proactiveanomalysummarytypedef)
   - [ProactiveAnomalyTypeDef](#proactiveanomalytypedef)
@@ -112,12 +121,17 @@ type annotations stubs module
   - [SnsChannelConfigTypeDef](#snschannelconfigtypedef)
   - [StartCostEstimationRequestRequestTypeDef](#startcostestimationrequestrequesttypedef)
   - [StartTimeRangeTypeDef](#starttimerangetypedef)
+  - [TagCollectionFilterTypeDef](#tagcollectionfiltertypedef)
+  - [TagCollectionTypeDef](#tagcollectiontypedef)
+  - [TagCostEstimationResourceCollectionFilterTypeDef](#tagcostestimationresourcecollectionfiltertypedef)
+  - [TagHealthTypeDef](#taghealthtypedef)
   - [TimestampMetricValuePairTypeDef](#timestampmetricvaluepairtypedef)
   - [UpdateCloudFormationCollectionFilterTypeDef](#updatecloudformationcollectionfiltertypedef)
   - [UpdateResourceCollectionFilterTypeDef](#updateresourcecollectionfiltertypedef)
   - [UpdateResourceCollectionRequestRequestTypeDef](#updateresourcecollectionrequestrequesttypedef)
   - [UpdateServiceIntegrationConfigTypeDef](#updateserviceintegrationconfigtypedef)
   - [UpdateServiceIntegrationRequestRequestTypeDef](#updateserviceintegrationrequestrequesttypedef)
+  - [UpdateTagCollectionFilterTypeDef](#updatetagcollectionfiltertypedef)
 
 ## AccountHealthTypeDef
 
@@ -179,6 +193,17 @@ Optional fields:
 
 - `CloseTime`: `datetime`
 
+## AnomalyResourceTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import AnomalyResourceTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Type`: `str`
+
 ## AnomalySourceDetailsTypeDef
 
 ```python
@@ -189,6 +214,8 @@ Optional fields:
 
 - `CloudWatchMetrics`:
   `List`\[[CloudWatchMetricsDetailTypeDef](./type_defs.md#cloudwatchmetricsdetailtypedef)\]
+- `PerformanceInsightsMetrics`:
+  `List`\[[PerformanceInsightsMetricsDetailTypeDef](./type_defs.md#performanceinsightsmetricsdetailtypedef)\]
 
 ## AnomalyTimeRangeTypeDef
 
@@ -297,6 +324,8 @@ Optional fields:
 
 - `CloudFormation`:
   [CloudFormationCostEstimationResourceCollectionFilterTypeDef](./type_defs.md#cloudformationcostestimationresourcecollectionfiltertypedef)
+- `Tags`:
+  `List`\[[TagCostEstimationResourceCollectionFilterTypeDef](./type_defs.md#tagcostestimationresourcecollectionfiltertypedef)\]
 
 ## CostEstimationTimeRangeTypeDef
 
@@ -552,6 +581,7 @@ Required fields:
 - `Service`:
   `List`\[[ServiceHealthTypeDef](./type_defs.md#servicehealthtypedef)\]
 - `NextToken`: `str`
+- `Tags`: `List`\[[TagHealthTypeDef](./type_defs.md#taghealthtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1021,6 +1051,107 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+## PerformanceInsightsMetricDimensionGroupTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import PerformanceInsightsMetricDimensionGroupTypeDef
+```
+
+Optional fields:
+
+- `Group`: `str`
+- `Dimensions`: `List`\[`str`\]
+- `Limit`: `int`
+
+## PerformanceInsightsMetricQueryTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import PerformanceInsightsMetricQueryTypeDef
+```
+
+Optional fields:
+
+- `Metric`: `str`
+- `GroupBy`:
+  [PerformanceInsightsMetricDimensionGroupTypeDef](./type_defs.md#performanceinsightsmetricdimensiongrouptypedef)
+- `Filter`: `Dict`\[`str`, `str`\]
+
+## PerformanceInsightsMetricsDetailTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import PerformanceInsightsMetricsDetailTypeDef
+```
+
+Optional fields:
+
+- `MetricDisplayName`: `str`
+- `Unit`: `str`
+- `MetricQuery`:
+  [PerformanceInsightsMetricQueryTypeDef](./type_defs.md#performanceinsightsmetricquerytypedef)
+- `ReferenceData`:
+  `List`\[[PerformanceInsightsReferenceDataTypeDef](./type_defs.md#performanceinsightsreferencedatatypedef)\]
+- `StatsAtAnomaly`:
+  `List`\[[PerformanceInsightsStatTypeDef](./type_defs.md#performanceinsightsstattypedef)\]
+- `StatsAtBaseline`:
+  `List`\[[PerformanceInsightsStatTypeDef](./type_defs.md#performanceinsightsstattypedef)\]
+
+## PerformanceInsightsReferenceComparisonValuesTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import PerformanceInsightsReferenceComparisonValuesTypeDef
+```
+
+Optional fields:
+
+- `ReferenceScalar`:
+  [PerformanceInsightsReferenceScalarTypeDef](./type_defs.md#performanceinsightsreferencescalartypedef)
+- `ReferenceMetric`:
+  [PerformanceInsightsReferenceMetricTypeDef](./type_defs.md#performanceinsightsreferencemetrictypedef)
+
+## PerformanceInsightsReferenceDataTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import PerformanceInsightsReferenceDataTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `ComparisonValues`:
+  [PerformanceInsightsReferenceComparisonValuesTypeDef](./type_defs.md#performanceinsightsreferencecomparisonvaluestypedef)
+
+## PerformanceInsightsReferenceMetricTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import PerformanceInsightsReferenceMetricTypeDef
+```
+
+Optional fields:
+
+- `MetricQuery`:
+  [PerformanceInsightsMetricQueryTypeDef](./type_defs.md#performanceinsightsmetricquerytypedef)
+
+## PerformanceInsightsReferenceScalarTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import PerformanceInsightsReferenceScalarTypeDef
+```
+
+Optional fields:
+
+- `Value`: `float`
+
+## PerformanceInsightsStatTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import PerformanceInsightsStatTypeDef
+```
+
+Optional fields:
+
+- `Type`: `str`
+- `Value`: `float`
+
 ## PredictionTimeRangeTypeDef
 
 ```python
@@ -1105,6 +1236,7 @@ Optional fields:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `ServiceCollection`:
   [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
+- `AssociatedResourceArns`: `List`\[`str`\]
 
 ## ProactiveInsightTypeDef
 
@@ -1180,6 +1312,12 @@ Optional fields:
 - `AssociatedInsightId`: `str`
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
+- `Type`: [AnomalyTypeType](./literals.md#anomalytypetype)
+- `Name`: `str`
+- `Description`: `str`
+- `CausalAnomalyId`: `str`
+- `AnomalyResources`:
+  `List`\[[AnomalyResourceTypeDef](./type_defs.md#anomalyresourcetypedef)\]
 
 ## ReactiveAnomalyTypeDef
 
@@ -1201,6 +1339,12 @@ Optional fields:
 - `AssociatedInsightId`: `str`
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
+- `Type`: [AnomalyTypeType](./literals.md#anomalytypetype)
+- `Name`: `str`
+- `Description`: `str`
+- `CausalAnomalyId`: `str`
+- `AnomalyResources`:
+  `List`\[[AnomalyResourceTypeDef](./type_defs.md#anomalyresourcetypedef)\]
 
 ## ReactiveInsightSummaryTypeDef
 
@@ -1220,6 +1364,7 @@ Optional fields:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `ServiceCollection`:
   [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
+- `AssociatedResourceArns`: `List`\[`str`\]
 
 ## ReactiveInsightTypeDef
 
@@ -1294,6 +1439,7 @@ Optional fields:
   `List`\[[RecommendationRelatedAnomalyResourceTypeDef](./type_defs.md#recommendationrelatedanomalyresourcetypedef)\]
 - `SourceDetails`:
   `List`\[[RecommendationRelatedAnomalySourceDetailTypeDef](./type_defs.md#recommendationrelatedanomalysourcedetailtypedef)\]
+- `AnomalyId`: `str`
 
 ## RecommendationRelatedCloudWatchMetricsSourceDetailTypeDef
 
@@ -1366,6 +1512,8 @@ Optional fields:
 
 - `CloudFormation`:
   [CloudFormationCollectionFilterTypeDef](./type_defs.md#cloudformationcollectionfiltertypedef)
+- `Tags`:
+  `List`\[[TagCollectionFilterTypeDef](./type_defs.md#tagcollectionfiltertypedef)\]
 
 ## ResourceCollectionTypeDef
 
@@ -1377,6 +1525,7 @@ Optional fields:
 
 - `CloudFormation`:
   [CloudFormationCollectionTypeDef](./type_defs.md#cloudformationcollectiontypedef)
+- `Tags`: `List`\[[TagCollectionTypeDef](./type_defs.md#tagcollectiontypedef)\]
 
 ## ResponseMetadataTypeDef
 
@@ -1592,6 +1741,51 @@ Optional fields:
 - `FromTime`: `Union`\[`datetime`, `str`\]
 - `ToTime`: `Union`\[`datetime`, `str`\]
 
+## TagCollectionFilterTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import TagCollectionFilterTypeDef
+```
+
+Required fields:
+
+- `AppBoundaryKey`: `str`
+- `TagValues`: `List`\[`str`\]
+
+## TagCollectionTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import TagCollectionTypeDef
+```
+
+Required fields:
+
+- `AppBoundaryKey`: `str`
+- `TagValues`: `List`\[`str`\]
+
+## TagCostEstimationResourceCollectionFilterTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import TagCostEstimationResourceCollectionFilterTypeDef
+```
+
+Required fields:
+
+- `AppBoundaryKey`: `str`
+- `TagValues`: `List`\[`str`\]
+
+## TagHealthTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import TagHealthTypeDef
+```
+
+Optional fields:
+
+- `AppBoundaryKey`: `str`
+- `TagValue`: `str`
+- `Insight`: [InsightHealthTypeDef](./type_defs.md#insighthealthtypedef)
+
 ## TimestampMetricValuePairTypeDef
 
 ```python
@@ -1623,6 +1817,8 @@ Optional fields:
 
 - `CloudFormation`:
   [UpdateCloudFormationCollectionFilterTypeDef](./type_defs.md#updatecloudformationcollectionfiltertypedef)
+- `Tags`:
+  `Sequence`\[[UpdateTagCollectionFilterTypeDef](./type_defs.md#updatetagcollectionfiltertypedef)\]
 
 ## UpdateResourceCollectionRequestRequestTypeDef
 
@@ -1658,3 +1854,14 @@ Required fields:
 
 - `ServiceIntegration`:
   [UpdateServiceIntegrationConfigTypeDef](./type_defs.md#updateserviceintegrationconfigtypedef)
+
+## UpdateTagCollectionFilterTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import UpdateTagCollectionFilterTypeDef
+```
+
+Required fields:
+
+- `AppBoundaryKey`: `str`
+- `TagValues`: `Sequence`\[`str`\]

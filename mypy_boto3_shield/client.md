@@ -30,10 +30,12 @@ type annotations stubs module
     - [describe_protection](#describe_protection)
     - [describe_protection_group](#describe_protection_group)
     - [describe_subscription](#describe_subscription)
+    - [disable_application_layer_automatic_response](#disable_application_layer_automatic_response)
     - [disable_proactive_engagement](#disable_proactive_engagement)
     - [disassociate_drt_log_bucket](#disassociate_drt_log_bucket)
     - [disassociate_drt_role](#disassociate_drt_role)
     - [disassociate_health_check](#disassociate_health_check)
+    - [enable_application_layer_automatic_response](#enable_application_layer_automatic_response)
     - [enable_proactive_engagement](#enable_proactive_engagement)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_subscription_state](#get_subscription_state)
@@ -44,6 +46,7 @@ type annotations stubs module
     - [list_tags_for_resource](#list_tags_for_resource)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_application_layer_automatic_response](#update_application_layer_automatic_response)
     - [update_emergency_contact_settings](#update_emergency_contact_settings)
     - [update_protection_group](#update_protection_group)
     - [update_subscription](#update_subscription)
@@ -425,6 +428,26 @@ Boto3 documentation:
 Returns
 [DescribeSubscriptionResponseTypeDef](./type_defs.md#describesubscriptionresponsetypedef).
 
+### disable_application_layer_automatic_response
+
+Disable the Shield Advanced automatic application layer DDoS mitigation feature
+for the resource.
+
+Type annotations for
+`boto3.client("shield").disable_application_layer_automatic_response` method.
+
+Boto3 documentation:
+[Shield.Client.disable_application_layer_automatic_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disable_application_layer_automatic_response)
+
+Arguments mapping described in
+[DisableApplicationLayerAutomaticResponseRequestRequestTypeDef](./type_defs.md#disableapplicationlayerautomaticresponserequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### disable_proactive_engagement
 
 Removes authorization from the Shield Response Team (SRT) to notify contacts
@@ -487,6 +510,28 @@ Keyword-only arguments:
 
 - `ProtectionId`: `str` *(required)*
 - `HealthCheckArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### enable_application_layer_automatic_response
+
+Enable the Shield Advanced automatic application layer DDoS mitigation for the
+resource.
+
+Type annotations for
+`boto3.client("shield").enable_application_layer_automatic_response` method.
+
+Boto3 documentation:
+[Shield.Client.enable_application_layer_automatic_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.enable_application_layer_automatic_response)
+
+Arguments mapping described in
+[EnableApplicationLayerAutomaticResponseRequestRequestTypeDef](./type_defs.md#enableapplicationlayerautomaticresponserequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Action`: [ResponseActionTypeDef](./type_defs.md#responseactiontypedef)
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -675,6 +720,28 @@ Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### update_application_layer_automatic_response
+
+Updates an existing Shield Advanced automatic application layer DDoS mitigation
+configuration for the specified resource.
+
+Type annotations for
+`boto3.client("shield").update_application_layer_automatic_response` method.
+
+Boto3 documentation:
+[Shield.Client.update_application_layer_automatic_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_application_layer_automatic_response)
+
+Arguments mapping described in
+[UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef](./type_defs.md#updateapplicationlayerautomaticresponserequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Action`: [ResponseActionTypeDef](./type_defs.md#responseactiontypedef)
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

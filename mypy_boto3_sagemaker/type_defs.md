@@ -14,6 +14,7 @@ type annotations stubs module
   - [AddAssociationResponseTypeDef](#addassociationresponsetypedef)
   - [AddTagsInputRequestTypeDef](#addtagsinputrequesttypedef)
   - [AddTagsOutputTypeDef](#addtagsoutputtypedef)
+  - [AdditionalInferenceSpecificationDefinitionTypeDef](#additionalinferencespecificationdefinitiontypedef)
   - [AgentVersionTypeDef](#agentversiontypedef)
   - [AlarmTypeDef](#alarmtypedef)
   - [AlgorithmSpecificationTypeDef](#algorithmspecificationtypedef)
@@ -67,9 +68,11 @@ type annotations stubs module
   - [CaptureOptionTypeDef](#captureoptiontypedef)
   - [CategoricalParameterRangeSpecificationTypeDef](#categoricalparameterrangespecificationtypedef)
   - [CategoricalParameterRangeTypeDef](#categoricalparameterrangetypedef)
+  - [CategoricalParameterTypeDef](#categoricalparametertypedef)
   - [ChannelSpecificationTypeDef](#channelspecificationtypedef)
   - [ChannelTypeDef](#channeltypedef)
   - [CheckpointConfigTypeDef](#checkpointconfigtypedef)
+  - [ClarifyCheckStepMetadataTypeDef](#clarifycheckstepmetadatatypedef)
   - [CodeRepositorySummaryTypeDef](#coderepositorysummarytypedef)
   - [CognitoConfigTypeDef](#cognitoconfigtypedef)
   - [CognitoMemberDefinitionTypeDef](#cognitomemberdefinitiontypedef)
@@ -123,6 +126,8 @@ type annotations stubs module
   - [CreateImageResponseTypeDef](#createimageresponsetypedef)
   - [CreateImageVersionRequestRequestTypeDef](#createimageversionrequestrequesttypedef)
   - [CreateImageVersionResponseTypeDef](#createimageversionresponsetypedef)
+  - [CreateInferenceRecommendationsJobRequestRequestTypeDef](#createinferencerecommendationsjobrequestrequesttypedef)
+  - [CreateInferenceRecommendationsJobResponseTypeDef](#createinferencerecommendationsjobresponsetypedef)
   - [CreateLabelingJobRequestRequestTypeDef](#createlabelingjobrequestrequesttypedef)
   - [CreateLabelingJobResponseTypeDef](#createlabelingjobresponsetypedef)
   - [CreateModelBiasJobDefinitionRequestRequestTypeDef](#createmodelbiasjobdefinitionrequestrequesttypedef)
@@ -278,8 +283,12 @@ type annotations stubs module
   - [DescribeImageResponseTypeDef](#describeimageresponsetypedef)
   - [DescribeImageVersionRequestRequestTypeDef](#describeimageversionrequestrequesttypedef)
   - [DescribeImageVersionResponseTypeDef](#describeimageversionresponsetypedef)
+  - [DescribeInferenceRecommendationsJobRequestRequestTypeDef](#describeinferencerecommendationsjobrequestrequesttypedef)
+  - [DescribeInferenceRecommendationsJobResponseTypeDef](#describeinferencerecommendationsjobresponsetypedef)
   - [DescribeLabelingJobRequestRequestTypeDef](#describelabelingjobrequestrequesttypedef)
   - [DescribeLabelingJobResponseTypeDef](#describelabelingjobresponsetypedef)
+  - [DescribeLineageGroupRequestRequestTypeDef](#describelineagegrouprequestrequesttypedef)
+  - [DescribeLineageGroupResponseTypeDef](#describelineagegroupresponsetypedef)
   - [DescribeModelBiasJobDefinitionRequestRequestTypeDef](#describemodelbiasjobdefinitionrequestrequesttypedef)
   - [DescribeModelBiasJobDefinitionResponseTypeDef](#describemodelbiasjobdefinitionresponsetypedef)
   - [DescribeModelExplainabilityJobDefinitionRequestRequestTypeDef](#describemodelexplainabilityjobdefinitionrequestrequesttypedef)
@@ -336,16 +345,26 @@ type annotations stubs module
   - [DomainDetailsTypeDef](#domaindetailstypedef)
   - [DomainSettingsForUpdateTypeDef](#domainsettingsforupdatetypedef)
   - [DomainSettingsTypeDef](#domainsettingstypedef)
+  - [DriftCheckBaselinesTypeDef](#driftcheckbaselinestypedef)
+  - [DriftCheckBiasTypeDef](#driftcheckbiastypedef)
+  - [DriftCheckExplainabilityTypeDef](#driftcheckexplainabilitytypedef)
+  - [DriftCheckModelDataQualityTypeDef](#driftcheckmodeldataqualitytypedef)
+  - [DriftCheckModelQualityTypeDef](#driftcheckmodelqualitytypedef)
   - [EdgeModelStatTypeDef](#edgemodelstattypedef)
   - [EdgeModelSummaryTypeDef](#edgemodelsummarytypedef)
   - [EdgeModelTypeDef](#edgemodeltypedef)
   - [EdgeOutputConfigTypeDef](#edgeoutputconfigtypedef)
   - [EdgePackagingJobSummaryTypeDef](#edgepackagingjobsummarytypedef)
   - [EdgePresetDeploymentOutputTypeDef](#edgepresetdeploymentoutputtypedef)
+  - [EdgeTypeDef](#edgetypedef)
   - [EndpointConfigSummaryTypeDef](#endpointconfigsummarytypedef)
+  - [EndpointInputConfigurationTypeDef](#endpointinputconfigurationtypedef)
   - [EndpointInputTypeDef](#endpointinputtypedef)
+  - [EndpointOutputConfigurationTypeDef](#endpointoutputconfigurationtypedef)
   - [EndpointSummaryTypeDef](#endpointsummarytypedef)
   - [EndpointTypeDef](#endpointtypedef)
+  - [EnvironmentParameterRangesTypeDef](#environmentparameterrangestypedef)
+  - [EnvironmentParameterTypeDef](#environmentparametertypedef)
   - [ExperimentConfigTypeDef](#experimentconfigtypedef)
   - [ExperimentSourceTypeDef](#experimentsourcetypedef)
   - [ExperimentSummaryTypeDef](#experimentsummarytypedef)
@@ -354,6 +373,7 @@ type annotations stubs module
   - [FeatureDefinitionTypeDef](#featuredefinitiontypedef)
   - [FeatureGroupSummaryTypeDef](#featuregroupsummarytypedef)
   - [FeatureGroupTypeDef](#featuregrouptypedef)
+  - [FileSourceTypeDef](#filesourcetypedef)
   - [FileSystemConfigTypeDef](#filesystemconfigtypedef)
   - [FileSystemDataSourceTypeDef](#filesystemdatasourcetypedef)
   - [FilterTypeDef](#filtertypedef)
@@ -363,6 +383,8 @@ type annotations stubs module
   - [FlowDefinitionSummaryTypeDef](#flowdefinitionsummarytypedef)
   - [GetDeviceFleetReportRequestRequestTypeDef](#getdevicefleetreportrequestrequesttypedef)
   - [GetDeviceFleetReportResponseTypeDef](#getdevicefleetreportresponsetypedef)
+  - [GetLineageGroupPolicyRequestRequestTypeDef](#getlineagegrouppolicyrequestrequesttypedef)
+  - [GetLineageGroupPolicyResponseTypeDef](#getlineagegrouppolicyresponsetypedef)
   - [GetModelPackageGroupPolicyInputRequestTypeDef](#getmodelpackagegrouppolicyinputrequesttypedef)
   - [GetModelPackageGroupPolicyOutputTypeDef](#getmodelpackagegrouppolicyoutputtypedef)
   - [GetSagemakerServicecatalogPortfolioStatusOutputTypeDef](#getsagemakerservicecatalogportfoliostatusoutputtypedef)
@@ -388,6 +410,8 @@ type annotations stubs module
   - [ImageTypeDef](#imagetypedef)
   - [ImageVersionTypeDef](#imageversiontypedef)
   - [InferenceExecutionConfigTypeDef](#inferenceexecutionconfigtypedef)
+  - [InferenceRecommendationTypeDef](#inferencerecommendationtypedef)
+  - [InferenceRecommendationsJobTypeDef](#inferencerecommendationsjobtypedef)
   - [InferenceSpecificationTypeDef](#inferencespecificationtypedef)
   - [InputConfigTypeDef](#inputconfigtypedef)
   - [IntegerParameterRangeSpecificationTypeDef](#integerparameterrangespecificationtypedef)
@@ -411,6 +435,7 @@ type annotations stubs module
   - [LabelingJobStoppingConditionsTypeDef](#labelingjobstoppingconditionstypedef)
   - [LabelingJobSummaryTypeDef](#labelingjobsummarytypedef)
   - [LambdaStepMetadataTypeDef](#lambdastepmetadatatypedef)
+  - [LineageGroupSummaryTypeDef](#lineagegroupsummarytypedef)
   - [ListActionsRequestRequestTypeDef](#listactionsrequestrequesttypedef)
   - [ListActionsResponseTypeDef](#listactionsresponsetypedef)
   - [ListAlgorithmsInputRequestTypeDef](#listalgorithmsinputrequesttypedef)
@@ -461,14 +486,20 @@ type annotations stubs module
   - [ListImageVersionsResponseTypeDef](#listimageversionsresponsetypedef)
   - [ListImagesRequestRequestTypeDef](#listimagesrequestrequesttypedef)
   - [ListImagesResponseTypeDef](#listimagesresponsetypedef)
+  - [ListInferenceRecommendationsJobsRequestRequestTypeDef](#listinferencerecommendationsjobsrequestrequesttypedef)
+  - [ListInferenceRecommendationsJobsResponseTypeDef](#listinferencerecommendationsjobsresponsetypedef)
   - [ListLabelingJobsForWorkteamRequestRequestTypeDef](#listlabelingjobsforworkteamrequestrequesttypedef)
   - [ListLabelingJobsForWorkteamResponseTypeDef](#listlabelingjobsforworkteamresponsetypedef)
   - [ListLabelingJobsRequestRequestTypeDef](#listlabelingjobsrequestrequesttypedef)
   - [ListLabelingJobsResponseTypeDef](#listlabelingjobsresponsetypedef)
+  - [ListLineageGroupsRequestRequestTypeDef](#listlineagegroupsrequestrequesttypedef)
+  - [ListLineageGroupsResponseTypeDef](#listlineagegroupsresponsetypedef)
   - [ListModelBiasJobDefinitionsRequestRequestTypeDef](#listmodelbiasjobdefinitionsrequestrequesttypedef)
   - [ListModelBiasJobDefinitionsResponseTypeDef](#listmodelbiasjobdefinitionsresponsetypedef)
   - [ListModelExplainabilityJobDefinitionsRequestRequestTypeDef](#listmodelexplainabilityjobdefinitionsrequestrequesttypedef)
   - [ListModelExplainabilityJobDefinitionsResponseTypeDef](#listmodelexplainabilityjobdefinitionsresponsetypedef)
+  - [ListModelMetadataRequestRequestTypeDef](#listmodelmetadatarequestrequesttypedef)
+  - [ListModelMetadataResponseTypeDef](#listmodelmetadataresponsetypedef)
   - [ListModelPackageGroupsInputRequestTypeDef](#listmodelpackagegroupsinputrequesttypedef)
   - [ListModelPackageGroupsOutputTypeDef](#listmodelpackagegroupsoutputtypedef)
   - [ListModelPackagesInputRequestTypeDef](#listmodelpackagesinputrequesttypedef)
@@ -530,6 +561,7 @@ type annotations stubs module
   - [ModelBiasBaselineConfigTypeDef](#modelbiasbaselineconfigtypedef)
   - [ModelBiasJobInputTypeDef](#modelbiasjobinputtypedef)
   - [ModelClientConfigTypeDef](#modelclientconfigtypedef)
+  - [ModelConfigurationTypeDef](#modelconfigurationtypedef)
   - [ModelDataQualityTypeDef](#modeldataqualitytypedef)
   - [ModelDeployConfigTypeDef](#modeldeployconfigtypedef)
   - [ModelDeployResultTypeDef](#modeldeployresulttypedef)
@@ -537,6 +569,11 @@ type annotations stubs module
   - [ModelExplainabilityAppSpecificationTypeDef](#modelexplainabilityappspecificationtypedef)
   - [ModelExplainabilityBaselineConfigTypeDef](#modelexplainabilitybaselineconfigtypedef)
   - [ModelExplainabilityJobInputTypeDef](#modelexplainabilityjobinputtypedef)
+  - [ModelInputTypeDef](#modelinputtypedef)
+  - [ModelLatencyThresholdTypeDef](#modellatencythresholdtypedef)
+  - [ModelMetadataFilterTypeDef](#modelmetadatafiltertypedef)
+  - [ModelMetadataSearchExpressionTypeDef](#modelmetadatasearchexpressiontypedef)
+  - [ModelMetadataSummaryTypeDef](#modelmetadatasummarytypedef)
   - [ModelMetricsTypeDef](#modelmetricstypedef)
   - [ModelPackageContainerDefinitionTypeDef](#modelpackagecontainerdefinitiontypedef)
   - [ModelPackageGroupSummaryTypeDef](#modelpackagegroupsummarytypedef)
@@ -599,6 +636,7 @@ type annotations stubs module
   - [ParentTypeDef](#parenttypedef)
   - [PendingDeploymentSummaryTypeDef](#pendingdeploymentsummarytypedef)
   - [PendingProductionVariantSummaryTypeDef](#pendingproductionvariantsummarytypedef)
+  - [PhaseTypeDef](#phasetypedef)
   - [PipelineExecutionStepMetadataTypeDef](#pipelineexecutionstepmetadatatypedef)
   - [PipelineExecutionStepTypeDef](#pipelineexecutionsteptypedef)
   - [PipelineExecutionSummaryTypeDef](#pipelineexecutionsummarytypedef)
@@ -619,6 +657,7 @@ type annotations stubs module
   - [ProcessingS3OutputTypeDef](#processings3outputtypedef)
   - [ProcessingStoppingConditionTypeDef](#processingstoppingconditiontypedef)
   - [ProductionVariantCoreDumpConfigTypeDef](#productionvariantcoredumpconfigtypedef)
+  - [ProductionVariantServerlessConfigTypeDef](#productionvariantserverlessconfigtypedef)
   - [ProductionVariantStatusTypeDef](#productionvariantstatustypedef)
   - [ProductionVariantSummaryTypeDef](#productionvariantsummarytypedef)
   - [ProductionVariantTypeDef](#productionvarianttypedef)
@@ -634,9 +673,17 @@ type annotations stubs module
   - [PublicWorkforceTaskPriceTypeDef](#publicworkforcetaskpricetypedef)
   - [PutModelPackageGroupPolicyInputRequestTypeDef](#putmodelpackagegrouppolicyinputrequesttypedef)
   - [PutModelPackageGroupPolicyOutputTypeDef](#putmodelpackagegrouppolicyoutputtypedef)
+  - [QualityCheckStepMetadataTypeDef](#qualitycheckstepmetadatatypedef)
+  - [QueryFiltersTypeDef](#queryfilterstypedef)
+  - [QueryLineageRequestRequestTypeDef](#querylineagerequestrequesttypedef)
+  - [QueryLineageResponseTypeDef](#querylineageresponsetypedef)
   - [RStudioServerProAppSettingsTypeDef](#rstudioserverproappsettingstypedef)
   - [RStudioServerProDomainSettingsForUpdateTypeDef](#rstudioserverprodomainsettingsforupdatetypedef)
   - [RStudioServerProDomainSettingsTypeDef](#rstudioserverprodomainsettingstypedef)
+  - [RecommendationJobInputConfigTypeDef](#recommendationjobinputconfigtypedef)
+  - [RecommendationJobResourceLimitTypeDef](#recommendationjobresourcelimittypedef)
+  - [RecommendationJobStoppingConditionsTypeDef](#recommendationjobstoppingconditionstypedef)
+  - [RecommendationMetricsTypeDef](#recommendationmetricstypedef)
   - [RedshiftDatasetDefinitionTypeDef](#redshiftdatasetdefinitiontypedef)
   - [RegisterDevicesRequestRequestTypeDef](#registerdevicesrequestrequesttypedef)
   - [RegisterModelStepMetadataTypeDef](#registermodelstepmetadatatypedef)
@@ -682,6 +729,7 @@ type annotations stubs module
   - [StopCompilationJobRequestRequestTypeDef](#stopcompilationjobrequestrequesttypedef)
   - [StopEdgePackagingJobRequestRequestTypeDef](#stopedgepackagingjobrequestrequesttypedef)
   - [StopHyperParameterTuningJobRequestRequestTypeDef](#stophyperparametertuningjobrequestrequesttypedef)
+  - [StopInferenceRecommendationsJobRequestRequestTypeDef](#stopinferencerecommendationsjobrequestrequesttypedef)
   - [StopLabelingJobRequestRequestTypeDef](#stoplabelingjobrequestrequesttypedef)
   - [StopMonitoringScheduleRequestRequestTypeDef](#stopmonitoringschedulerequestrequesttypedef)
   - [StopNotebookInstanceInputRequestTypeDef](#stopnotebookinstanceinputrequesttypedef)
@@ -698,6 +746,7 @@ type annotations stubs module
   - [TargetPlatformTypeDef](#targetplatformtypedef)
   - [TensorBoardAppSettingsTypeDef](#tensorboardappsettingstypedef)
   - [TensorBoardOutputConfigTypeDef](#tensorboardoutputconfigtypedef)
+  - [TrafficPatternTypeDef](#trafficpatterntypedef)
   - [TrafficRoutingConfigTypeDef](#trafficroutingconfigtypedef)
   - [TrainingJobDefinitionTypeDef](#trainingjobdefinitiontypedef)
   - [TrainingJobStatusCountersTypeDef](#trainingjobstatuscounterstypedef)
@@ -782,6 +831,7 @@ type annotations stubs module
   - [UserProfileDetailsTypeDef](#userprofiledetailstypedef)
   - [UserSettingsTypeDef](#usersettingstypedef)
   - [VariantPropertyTypeDef](#variantpropertytypedef)
+  - [VertexTypeDef](#vertextypedef)
   - [VpcConfigTypeDef](#vpcconfigtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WorkforceTypeDef](#workforcetypedef)
@@ -869,6 +919,28 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AdditionalInferenceSpecificationDefinitionTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import AdditionalInferenceSpecificationDefinitionTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Containers`:
+  `Sequence`\[[ModelPackageContainerDefinitionTypeDef](./type_defs.md#modelpackagecontainerdefinitiontypedef)\]
+
+Optional fields:
+
+- `Description`: `str`
+- `SupportedTransformInstanceTypes`:
+  `Sequence`\[[TransformInstanceTypeType](./literals.md#transforminstancetypetype)\]
+- `SupportedRealtimeInferenceInstanceTypes`:
+  `Sequence`\[[ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)\]
+- `SupportedContentTypes`: `Sequence`\[`str`\]
+- `SupportedResponseMIMETypes`: `Sequence`\[`str`\]
 
 ## AgentVersionTypeDef
 
@@ -1476,6 +1548,10 @@ from mypy_boto3_sagemaker.type_defs import BiasTypeDef
 Optional fields:
 
 - `Report`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+- `PreTrainingReport`:
+  [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+- `PostTrainingReport`:
+  [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
 
 ## BlueGreenUpdatePolicyTypeDef
 
@@ -1592,6 +1668,17 @@ Required fields:
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
 
+## CategoricalParameterTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import CategoricalParameterTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Value`: `Sequence`\[`str`\]
+
 ## ChannelSpecificationTypeDef
 
 ```python
@@ -1644,6 +1731,23 @@ Required fields:
 Optional fields:
 
 - `LocalPath`: `str`
+
+## ClarifyCheckStepMetadataTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ClarifyCheckStepMetadataTypeDef
+```
+
+Optional fields:
+
+- `CheckType`: `str`
+- `BaselineUsedForDriftCheckConstraints`: `str`
+- `CalculatedBaselineConstraints`: `str`
+- `ModelPackageGroupName`: `str`
+- `ViolationReport`: `str`
+- `CheckJobArn`: `str`
+- `SkipCheck`: `bool`
+- `RegisterNewBaseline`: `bool`
 
 ## CodeRepositorySummaryTypeDef
 
@@ -1748,6 +1852,7 @@ Optional fields:
 - `ModelDataUrl`: `str`
 - `Environment`: `Mapping`\[`str`, `str`\]
 - `ModelPackageName`: `str`
+- `InferenceSpecificationName`: `str`
 - `MultiModelConfig`:
   [MultiModelConfigTypeDef](./type_defs.md#multimodelconfigtypedef)
 
@@ -2041,13 +2146,14 @@ Required fields:
 
 - `CompilationJobName`: `str`
 - `RoleArn`: `str`
-- `InputConfig`: [InputConfigTypeDef](./type_defs.md#inputconfigtypedef)
 - `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
 - `StoppingCondition`:
   [StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef)
 
 Optional fields:
 
+- `ModelPackageVersionArn`: `str`
+- `InputConfig`: [InputConfigTypeDef](./type_defs.md#inputconfigtypedef)
 - `VpcConfig`: [NeoVpcConfigTypeDef](./type_defs.md#neovpcconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -2489,6 +2595,40 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateInferenceRecommendationsJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import CreateInferenceRecommendationsJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `JobName`: `str`
+- `JobType`:
+  [RecommendationJobTypeType](./literals.md#recommendationjobtypetype)
+- `RoleArn`: `str`
+- `InputConfig`:
+  [RecommendationJobInputConfigTypeDef](./type_defs.md#recommendationjobinputconfigtypedef)
+
+Optional fields:
+
+- `JobDescription`: `str`
+- `StoppingConditions`:
+  [RecommendationJobStoppingConditionsTypeDef](./type_defs.md#recommendationjobstoppingconditionstypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateInferenceRecommendationsJobResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import CreateInferenceRecommendationsJobResponseTypeDef
+```
+
+Required fields:
+
+- `JobArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateLabelingJobRequestRequestTypeDef
 
 ```python
@@ -2698,6 +2838,13 @@ Optional fields:
 - `ModelMetrics`: [ModelMetricsTypeDef](./type_defs.md#modelmetricstypedef)
 - `ClientToken`: `str`
 - `CustomerMetadataProperties`: `Mapping`\[`str`, `str`\]
+- `DriftCheckBaselines`:
+  [DriftCheckBaselinesTypeDef](./type_defs.md#driftcheckbaselinestypedef)
+- `Domain`: `str`
+- `Task`: `str`
+- `SamplePayloadUrl`: `str`
+- `AdditionalInferenceSpecifications`:
+  `Sequence`\[[AdditionalInferenceSpecificationDefinitionTypeDef](./type_defs.md#additionalinferencespecificationdefinitiontypedef)\]
 
 ## CreateModelPackageOutputTypeDef
 
@@ -4066,6 +4213,7 @@ Required fields:
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `MetadataProperties`:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
+- `LineageGroupArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4196,6 +4344,7 @@ Required fields:
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `MetadataProperties`:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
+- `LineageGroupArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4305,6 +4454,7 @@ Required fields:
 - `StoppingCondition`:
   [StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef)
 - `InferenceImage`: `str`
+- `ModelPackageVersionArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
@@ -4346,6 +4496,7 @@ Required fields:
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `LastModifiedTime`: `datetime`
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+- `LineageGroupArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4855,6 +5006,45 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeInferenceRecommendationsJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DescribeInferenceRecommendationsJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `JobName`: `str`
+
+## DescribeInferenceRecommendationsJobResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DescribeInferenceRecommendationsJobResponseTypeDef
+```
+
+Required fields:
+
+- `JobName`: `str`
+- `JobDescription`: `str`
+- `JobType`:
+  [RecommendationJobTypeType](./literals.md#recommendationjobtypetype)
+- `JobArn`: `str`
+- `RoleArn`: `str`
+- `Status`:
+  [RecommendationJobStatusType](./literals.md#recommendationjobstatustype)
+- `CreationTime`: `datetime`
+- `CompletionTime`: `datetime`
+- `LastModifiedTime`: `datetime`
+- `FailureReason`: `str`
+- `InputConfig`:
+  [RecommendationJobInputConfigTypeDef](./type_defs.md#recommendationjobinputconfigtypedef)
+- `StoppingConditions`:
+  [RecommendationJobStoppingConditionsTypeDef](./type_defs.md#recommendationjobstoppingconditionstypedef)
+- `InferenceRecommendations`:
+  `List`\[[InferenceRecommendationTypeDef](./type_defs.md#inferencerecommendationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeLabelingJobRequestRequestTypeDef
 
 ```python
@@ -4898,6 +5088,35 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `LabelingJobOutput`:
   [LabelingJobOutputTypeDef](./type_defs.md#labelingjoboutputtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeLineageGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DescribeLineageGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `LineageGroupName`: `str`
+
+## DescribeLineageGroupResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DescribeLineageGroupResponseTypeDef
+```
+
+Required fields:
+
+- `LineageGroupName`: `str`
+- `LineageGroupArn`: `str`
+- `DisplayName`: `str`
+- `Description`: `str`
+- `CreationTime`: `datetime`
+- `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+- `LastModifiedTime`: `datetime`
+- `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5085,6 +5304,13 @@ Required fields:
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `ApprovalDescription`: `str`
 - `CustomerMetadataProperties`: `Dict`\[`str`, `str`\]
+- `DriftCheckBaselines`:
+  [DriftCheckBaselinesTypeDef](./type_defs.md#driftcheckbaselinestypedef)
+- `Domain`: `str`
+- `Task`: `str`
+- `SamplePayloadUrl`: `str`
+- `AdditionalInferenceSpecifications`:
+  `List`\[[AdditionalInferenceSpecificationDefinitionTypeDef](./type_defs.md#additionalinferencespecificationdefinitiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5627,6 +5853,7 @@ Required fields:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
 - `Metrics`:
   `List`\[[TrialComponentMetricSummaryTypeDef](./type_defs.md#trialcomponentmetricsummarytypedef)\]
+- `LineageGroupArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5881,6 +6108,69 @@ Optional fields:
 - `RStudioServerProDomainSettings`:
   [RStudioServerProDomainSettingsTypeDef](./type_defs.md#rstudioserverprodomainsettingstypedef)
 
+## DriftCheckBaselinesTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DriftCheckBaselinesTypeDef
+```
+
+Optional fields:
+
+- `Bias`: [DriftCheckBiasTypeDef](./type_defs.md#driftcheckbiastypedef)
+- `Explainability`:
+  [DriftCheckExplainabilityTypeDef](./type_defs.md#driftcheckexplainabilitytypedef)
+- `ModelQuality`:
+  [DriftCheckModelQualityTypeDef](./type_defs.md#driftcheckmodelqualitytypedef)
+- `ModelDataQuality`:
+  [DriftCheckModelDataQualityTypeDef](./type_defs.md#driftcheckmodeldataqualitytypedef)
+
+## DriftCheckBiasTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DriftCheckBiasTypeDef
+```
+
+Optional fields:
+
+- `ConfigFile`: [FileSourceTypeDef](./type_defs.md#filesourcetypedef)
+- `PreTrainingConstraints`:
+  [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+- `PostTrainingConstraints`:
+  [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+
+## DriftCheckExplainabilityTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DriftCheckExplainabilityTypeDef
+```
+
+Optional fields:
+
+- `Constraints`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+- `ConfigFile`: [FileSourceTypeDef](./type_defs.md#filesourcetypedef)
+
+## DriftCheckModelDataQualityTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DriftCheckModelDataQualityTypeDef
+```
+
+Optional fields:
+
+- `Statistics`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+- `Constraints`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+
+## DriftCheckModelQualityTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DriftCheckModelQualityTypeDef
+```
+
+Optional fields:
+
+- `Statistics`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+- `Constraints`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+
 ## EdgeModelStatTypeDef
 
 ```python
@@ -5979,6 +6269,19 @@ Optional fields:
   [EdgePresetDeploymentStatusType](./literals.md#edgepresetdeploymentstatustype)
 - `StatusMessage`: `str`
 
+## EdgeTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import EdgeTypeDef
+```
+
+Optional fields:
+
+- `SourceArn`: `str`
+- `DestinationArn`: `str`
+- `AssociationType`:
+  [AssociationEdgeTypeType](./literals.md#associationedgetypetype)
+
 ## EndpointConfigSummaryTypeDef
 
 ```python
@@ -5990,6 +6293,23 @@ Required fields:
 - `EndpointConfigName`: `str`
 - `EndpointConfigArn`: `str`
 - `CreationTime`: `datetime`
+
+## EndpointInputConfigurationTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import EndpointInputConfigurationTypeDef
+```
+
+Required fields:
+
+- `InstanceType`:
+  [ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)
+
+Optional fields:
+
+- `InferenceSpecificationName`: `str`
+- `EnvironmentParameterRanges`:
+  [EnvironmentParameterRangesTypeDef](./type_defs.md#environmentparameterrangestypedef)
 
 ## EndpointInputTypeDef
 
@@ -6014,6 +6334,20 @@ Optional fields:
 - `ProbabilityThresholdAttribute`: `float`
 - `StartTimeOffset`: `str`
 - `EndTimeOffset`: `str`
+
+## EndpointOutputConfigurationTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import EndpointOutputConfigurationTypeDef
+```
+
+Required fields:
+
+- `EndpointName`: `str`
+- `VariantName`: `str`
+- `InstanceType`:
+  [ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)
+- `InitialInstanceCount`: `int`
 
 ## EndpointSummaryTypeDef
 
@@ -6054,6 +6388,29 @@ Optional fields:
 - `MonitoringSchedules`:
   `List`\[[MonitoringScheduleTypeDef](./type_defs.md#monitoringscheduletypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## EnvironmentParameterRangesTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import EnvironmentParameterRangesTypeDef
+```
+
+Optional fields:
+
+- `CategoricalParameterRanges`:
+  `Sequence`\[[CategoricalParameterTypeDef](./type_defs.md#categoricalparametertypedef)\]
+
+## EnvironmentParameterTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import EnvironmentParameterTypeDef
+```
+
+Required fields:
+
+- `Key`: `str`
+- `ValueType`: `str`
+- `Value`: `str`
 
 ## ExperimentConfigTypeDef
 
@@ -6183,6 +6540,21 @@ Optional fields:
 - `FailureReason`: `str`
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## FileSourceTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import FileSourceTypeDef
+```
+
+Required fields:
+
+- `S3Uri`: `str`
+
+Optional fields:
+
+- `ContentType`: `str`
+- `ContentDigest`: `str`
 
 ## FileSystemConfigTypeDef
 
@@ -6318,6 +6690,29 @@ Required fields:
   `List`\[[AgentVersionTypeDef](./type_defs.md#agentversiontypedef)\]
 - `ModelStats`:
   `List`\[[EdgeModelStatTypeDef](./type_defs.md#edgemodelstattypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetLineageGroupPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import GetLineageGroupPolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `LineageGroupName`: `str`
+
+## GetLineageGroupPolicyResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import GetLineageGroupPolicyResponseTypeDef
+```
+
+Required fields:
+
+- `LineageGroupArn`: `str`
+- `ResourcePolicy`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -6743,6 +7138,45 @@ Required fields:
 - `Mode`:
   [InferenceExecutionModeType](./literals.md#inferenceexecutionmodetype)
 
+## InferenceRecommendationTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import InferenceRecommendationTypeDef
+```
+
+Required fields:
+
+- `Metrics`:
+  [RecommendationMetricsTypeDef](./type_defs.md#recommendationmetricstypedef)
+- `EndpointConfiguration`:
+  [EndpointOutputConfigurationTypeDef](./type_defs.md#endpointoutputconfigurationtypedef)
+- `ModelConfiguration`:
+  [ModelConfigurationTypeDef](./type_defs.md#modelconfigurationtypedef)
+
+## InferenceRecommendationsJobTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import InferenceRecommendationsJobTypeDef
+```
+
+Required fields:
+
+- `JobName`: `str`
+- `JobDescription`: `str`
+- `JobType`:
+  [RecommendationJobTypeType](./literals.md#recommendationjobtypetype)
+- `JobArn`: `str`
+- `Status`:
+  [RecommendationJobStatusType](./literals.md#recommendationjobstatustype)
+- `CreationTime`: `datetime`
+- `RoleArn`: `str`
+- `LastModifiedTime`: `datetime`
+
+Optional fields:
+
+- `CompletionTime`: `datetime`
+- `FailureReason`: `str`
+
 ## InferenceSpecificationTypeDef
 
 ```python
@@ -7072,6 +7506,20 @@ Optional fields:
 - `Arn`: `str`
 - `OutputParameters`:
   `List`\[[OutputParameterTypeDef](./type_defs.md#outputparametertypedef)\]
+
+## LineageGroupSummaryTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import LineageGroupSummaryTypeDef
+```
+
+Optional fields:
+
+- `LineageGroupArn`: `str`
+- `LineageGroupName`: `str`
+- `DisplayName`: `str`
+- `CreationTime`: `datetime`
+- `LastModifiedTime`: `datetime`
 
 ## ListActionsRequestRequestTypeDef
 
@@ -7868,6 +8316,41 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListInferenceRecommendationsJobsRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ListInferenceRecommendationsJobsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `NameContains`: `str`
+- `StatusEquals`:
+  [RecommendationJobStatusType](./literals.md#recommendationjobstatustype)
+- `SortBy`:
+  [ListInferenceRecommendationsJobsSortByType](./literals.md#listinferencerecommendationsjobssortbytype)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListInferenceRecommendationsJobsResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ListInferenceRecommendationsJobsResponseTypeDef
+```
+
+Required fields:
+
+- `InferenceRecommendationsJobs`:
+  `List`\[[InferenceRecommendationsJobTypeDef](./type_defs.md#inferencerecommendationsjobtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListLabelingJobsForWorkteamRequestRequestTypeDef
 
 ```python
@@ -7936,6 +8419,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListLineageGroupsRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ListLineageGroupsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
+- `SortBy`: [SortLineageGroupsByType](./literals.md#sortlineagegroupsbytype)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListLineageGroupsResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ListLineageGroupsResponseTypeDef
+```
+
+Required fields:
+
+- `LineageGroupSummaries`:
+  `List`\[[LineageGroupSummaryTypeDef](./type_defs.md#lineagegroupsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListModelBiasJobDefinitionsRequestRequestTypeDef
 
 ```python
@@ -7996,6 +8508,33 @@ Required fields:
 
 - `JobDefinitionSummaries`:
   `List`\[[MonitoringJobDefinitionSummaryTypeDef](./type_defs.md#monitoringjobdefinitionsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListModelMetadataRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ListModelMetadataRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `SearchExpression`:
+  [ModelMetadataSearchExpressionTypeDef](./type_defs.md#modelmetadatasearchexpressiontypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListModelMetadataResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ListModelMetadataResponseTypeDef
+```
+
+Required fields:
+
+- `ModelMetadataSummaries`:
+  `List`\[[ModelMetadataSummaryTypeDef](./type_defs.md#modelmetadatasummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -8936,6 +9475,18 @@ Optional fields:
 - `InvocationsTimeoutInSeconds`: `int`
 - `InvocationsMaxRetries`: `int`
 
+## ModelConfigurationTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ModelConfigurationTypeDef
+```
+
+Optional fields:
+
+- `InferenceSpecificationName`: `str`
+- `EnvironmentParameters`:
+  `List`\[[EnvironmentParameterTypeDef](./type_defs.md#environmentparametertypedef)\]
+
 ## ModelDataQualityTypeDef
 
 ```python
@@ -9015,6 +9566,64 @@ Required fields:
 
 - `EndpointInput`: [EndpointInputTypeDef](./type_defs.md#endpointinputtypedef)
 
+## ModelInputTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ModelInputTypeDef
+```
+
+Required fields:
+
+- `DataInputConfig`: `str`
+
+## ModelLatencyThresholdTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ModelLatencyThresholdTypeDef
+```
+
+Optional fields:
+
+- `Percentile`: `str`
+- `ValueInMilliseconds`: `int`
+
+## ModelMetadataFilterTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ModelMetadataFilterTypeDef
+```
+
+Required fields:
+
+- `Name`:
+  [ModelMetadataFilterTypeType](./literals.md#modelmetadatafiltertypetype)
+- `Value`: `str`
+
+## ModelMetadataSearchExpressionTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ModelMetadataSearchExpressionTypeDef
+```
+
+Optional fields:
+
+- `Filters`:
+  `Sequence`\[[ModelMetadataFilterTypeDef](./type_defs.md#modelmetadatafiltertypedef)\]
+
+## ModelMetadataSummaryTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ModelMetadataSummaryTypeDef
+```
+
+Required fields:
+
+- `Domain`: `str`
+- `Framework`: `str`
+- `Task`: `str`
+- `Model`: `str`
+- `FrameworkVersion`: `str`
+
 ## ModelMetricsTypeDef
 
 ```python
@@ -9047,6 +9656,10 @@ Optional fields:
 - `ModelDataUrl`: `str`
 - `ProductId`: `str`
 - `Environment`: `Dict`\[`str`, `str`\]
+- `ModelInput`: [ModelInputTypeDef](./type_defs.md#modelinputtypedef)
+- `Framework`: `str`
+- `FrameworkVersion`: `str`
+- `NearestModelName`: `str`
 
 ## ModelPackageGroupSummaryTypeDef
 
@@ -9171,8 +9784,15 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `ApprovalDescription`: `str`
+- `Domain`: `str`
+- `Task`: `str`
+- `SamplePayloadUrl`: `str`
+- `AdditionalInferenceSpecifications`:
+  `List`\[[AdditionalInferenceSpecificationDefinitionTypeDef](./type_defs.md#additionalinferencespecificationdefinitiontypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CustomerMetadataProperties`: `Dict`\[`str`, `str`\]
+- `DriftCheckBaselines`:
+  [DriftCheckBaselinesTypeDef](./type_defs.md#driftcheckbaselinestypedef)
 
 ## ModelPackageValidationProfileTypeDef
 
@@ -9930,6 +10550,22 @@ Optional fields:
   [ProductionVariantAcceleratorTypeType](./literals.md#productionvariantacceleratortypetype)
 - `VariantStatus`:
   `List`\[[ProductionVariantStatusTypeDef](./type_defs.md#productionvariantstatustypedef)\]
+- `CurrentServerlessConfig`:
+  [ProductionVariantServerlessConfigTypeDef](./type_defs.md#productionvariantserverlessconfigtypedef)
+- `DesiredServerlessConfig`:
+  [ProductionVariantServerlessConfigTypeDef](./type_defs.md#productionvariantserverlessconfigtypedef)
+
+## PhaseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import PhaseTypeDef
+```
+
+Optional fields:
+
+- `InitialNumberOfUsers`: `int`
+- `SpawnRate`: `int`
+- `DurationInSeconds`: `int`
 
 ## PipelineExecutionStepMetadataTypeDef
 
@@ -9956,6 +10592,10 @@ Optional fields:
   [CallbackStepMetadataTypeDef](./type_defs.md#callbackstepmetadatatypedef)
 - `Lambda`:
   [LambdaStepMetadataTypeDef](./type_defs.md#lambdastepmetadatatypedef)
+- `QualityCheck`:
+  [QualityCheckStepMetadataTypeDef](./type_defs.md#qualitycheckstepmetadatatypedef)
+- `ClarifyCheck`:
+  [ClarifyCheckStepMetadataTypeDef](./type_defs.md#clarifycheckstepmetadatatypedef)
 
 ## PipelineExecutionStepTypeDef
 
@@ -10281,6 +10921,17 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 
+## ProductionVariantServerlessConfigTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ProductionVariantServerlessConfigTypeDef
+```
+
+Required fields:
+
+- `MemorySizeInMB`: `int`
+- `MaxConcurrency`: `int`
+
 ## ProductionVariantStatusTypeDef
 
 ```python
@@ -10316,6 +10967,10 @@ Optional fields:
 - `DesiredInstanceCount`: `int`
 - `VariantStatus`:
   `List`\[[ProductionVariantStatusTypeDef](./type_defs.md#productionvariantstatustypedef)\]
+- `CurrentServerlessConfig`:
+  [ProductionVariantServerlessConfigTypeDef](./type_defs.md#productionvariantserverlessconfigtypedef)
+- `DesiredServerlessConfig`:
+  [ProductionVariantServerlessConfigTypeDef](./type_defs.md#productionvariantserverlessconfigtypedef)
 
 ## ProductionVariantTypeDef
 
@@ -10327,17 +10982,19 @@ Required fields:
 
 - `VariantName`: `str`
 - `ModelName`: `str`
-- `InitialInstanceCount`: `int`
-- `InstanceType`:
-  [ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)
 
 Optional fields:
 
+- `InitialInstanceCount`: `int`
+- `InstanceType`:
+  [ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)
 - `InitialVariantWeight`: `float`
 - `AcceleratorType`:
   [ProductionVariantAcceleratorTypeType](./literals.md#productionvariantacceleratortypetype)
 - `CoreDumpConfig`:
   [ProductionVariantCoreDumpConfigTypeDef](./type_defs.md#productionvariantcoredumpconfigtypedef)
+- `ServerlessConfig`:
+  [ProductionVariantServerlessConfigTypeDef](./type_defs.md#productionvariantserverlessconfigtypedef)
 
 ## ProfilerConfigForUpdateTypeDef
 
@@ -10507,6 +11164,75 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## QualityCheckStepMetadataTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import QualityCheckStepMetadataTypeDef
+```
+
+Optional fields:
+
+- `CheckType`: `str`
+- `BaselineUsedForDriftCheckStatistics`: `str`
+- `BaselineUsedForDriftCheckConstraints`: `str`
+- `CalculatedBaselineStatistics`: `str`
+- `CalculatedBaselineConstraints`: `str`
+- `ModelPackageGroupName`: `str`
+- `ViolationReport`: `str`
+- `CheckJobArn`: `str`
+- `SkipCheck`: `bool`
+- `RegisterNewBaseline`: `bool`
+
+## QueryFiltersTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import QueryFiltersTypeDef
+```
+
+Optional fields:
+
+- `Types`: `Sequence`\[`str`\]
+- `LineageTypes`:
+  `Sequence`\[[LineageTypeType](./literals.md#lineagetypetype)\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `ModifiedBefore`: `Union`\[`datetime`, `str`\]
+- `ModifiedAfter`: `Union`\[`datetime`, `str`\]
+- `Properties`: `Mapping`\[`str`, `str`\]
+
+## QueryLineageRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import QueryLineageRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StartArns`: `Sequence`\[`str`\]
+
+Optional fields:
+
+- `Direction`: [DirectionType](./literals.md#directiontype)
+- `IncludeEdges`: `bool`
+- `Filters`: [QueryFiltersTypeDef](./type_defs.md#queryfilterstypedef)
+- `MaxDepth`: `int`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## QueryLineageResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import QueryLineageResponseTypeDef
+```
+
+Required fields:
+
+- `Vertices`: `List`\[[VertexTypeDef](./type_defs.md#vertextypedef)\]
+- `Edges`: `List`\[[EdgeTypeDef](./type_defs.md#edgetypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## RStudioServerProAppSettingsTypeDef
 
 ```python
@@ -10551,6 +11277,62 @@ Optional fields:
 - `RStudioPackageManagerUrl`: `str`
 - `DefaultResourceSpec`:
   [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
+
+## RecommendationJobInputConfigTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RecommendationJobInputConfigTypeDef
+```
+
+Required fields:
+
+- `ModelPackageVersionArn`: `str`
+
+Optional fields:
+
+- `JobDurationInSeconds`: `int`
+- `TrafficPattern`:
+  [TrafficPatternTypeDef](./type_defs.md#trafficpatterntypedef)
+- `ResourceLimit`:
+  [RecommendationJobResourceLimitTypeDef](./type_defs.md#recommendationjobresourcelimittypedef)
+- `EndpointConfigurations`:
+  `Sequence`\[[EndpointInputConfigurationTypeDef](./type_defs.md#endpointinputconfigurationtypedef)\]
+
+## RecommendationJobResourceLimitTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RecommendationJobResourceLimitTypeDef
+```
+
+Optional fields:
+
+- `MaxNumberOfTests`: `int`
+- `MaxParallelOfTests`: `int`
+
+## RecommendationJobStoppingConditionsTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RecommendationJobStoppingConditionsTypeDef
+```
+
+Optional fields:
+
+- `MaxInvocations`: `int`
+- `ModelLatencyThresholds`:
+  `Sequence`\[[ModelLatencyThresholdTypeDef](./type_defs.md#modellatencythresholdtypedef)\]
+
+## RecommendationMetricsTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RecommendationMetricsTypeDef
+```
+
+Required fields:
+
+- `CostPerHour`: `float`
+- `CostPerInference`: `float`
+- `MaxInvocations`: `int`
+- `ModelLatency`: `int`
 
 ## RedshiftDatasetDefinitionTypeDef
 
@@ -11145,6 +11927,16 @@ Required fields:
 
 - `HyperParameterTuningJobName`: `str`
 
+## StopInferenceRecommendationsJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import StopInferenceRecommendationsJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `JobName`: `str`
+
 ## StopLabelingJobRequestRequestTypeDef
 
 ```python
@@ -11333,6 +12125,18 @@ Required fields:
 Optional fields:
 
 - `LocalPath`: `str`
+
+## TrafficPatternTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import TrafficPatternTypeDef
+```
+
+Optional fields:
+
+- `TrafficType`: `Literal['PHASES']` (see
+  [TrafficTypeType](./literals.md#traffictypetype))
+- `Phases`: `Sequence`\[[PhaseTypeDef](./type_defs.md#phasetypedef)\]
 
 ## TrafficRoutingConfigTypeDef
 
@@ -11814,6 +12618,7 @@ Optional fields:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
 - `SourceDetail`:
   [TrialComponentSourceDetailTypeDef](./type_defs.md#trialcomponentsourcedetailtypedef)
+- `LineageGroupArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Parents`: `List`\[[ParentTypeDef](./type_defs.md#parenttypedef)\]
 
@@ -12259,6 +13064,8 @@ Optional fields:
 - `ApprovalDescription`: `str`
 - `CustomerMetadataProperties`: `Mapping`\[`str`, `str`\]
 - `CustomerMetadataPropertiesToRemove`: `Sequence`\[`str`\]
+- `AdditionalInferenceSpecificationsToAdd`:
+  `Sequence`\[[AdditionalInferenceSpecificationDefinitionTypeDef](./type_defs.md#additionalinferencespecificationdefinitiontypedef)\]
 
 ## UpdateModelPackageOutputTypeDef
 
@@ -12661,6 +13468,18 @@ Required fields:
 
 - `VariantPropertyType`:
   [VariantPropertyTypeType](./literals.md#variantpropertytypetype)
+
+## VertexTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import VertexTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `Type`: `str`
+- `LineageType`: [LineageTypeType](./literals.md#lineagetypetype)
 
 ## VpcConfigTypeDef
 

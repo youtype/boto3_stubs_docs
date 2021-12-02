@@ -33,10 +33,13 @@ type annotations stubs module
   - [ListHyperParameterTuningJobsPaginator](#listhyperparametertuningjobspaginator)
   - [ListImageVersionsPaginator](#listimageversionspaginator)
   - [ListImagesPaginator](#listimagespaginator)
+  - [ListInferenceRecommendationsJobsPaginator](#listinferencerecommendationsjobspaginator)
   - [ListLabelingJobsPaginator](#listlabelingjobspaginator)
   - [ListLabelingJobsForWorkteamPaginator](#listlabelingjobsforworkteampaginator)
+  - [ListLineageGroupsPaginator](#listlineagegroupspaginator)
   - [ListModelBiasJobDefinitionsPaginator](#listmodelbiasjobdefinitionspaginator)
   - [ListModelExplainabilityJobDefinitionsPaginator](#listmodelexplainabilityjobdefinitionspaginator)
+  - [ListModelMetadataPaginator](#listmodelmetadatapaginator)
   - [ListModelPackageGroupsPaginator](#listmodelpackagegroupspaginator)
   - [ListModelPackagesPaginator](#listmodelpackagespaginator)
   - [ListModelQualityJobDefinitionsPaginator](#listmodelqualityjobdefinitionspaginator)
@@ -849,6 +852,41 @@ Arguments for `ListImagesPaginator.paginate` method:
 `ListImagesPaginator.paginate` returns
 `_PageIterator`\[[ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef)\].
 
+## ListInferenceRecommendationsJobsPaginator
+
+Type annotations for
+`boto3.client("sagemaker").get_paginator("list_inference_recommendations_jobs")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sagemaker.paginator import ListInferenceRecommendationsJobsPaginator
+
+def get_list_inference_recommendations_jobs_paginator() -> ListInferenceRecommendationsJobsPaginator:
+    return boto3.client("sagemaker").get_paginator("list_inference_recommendations_jobs")
+```
+
+Boto3 documentation:
+[SageMaker.Paginator.ListInferenceRecommendationsJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListInferenceRecommendationsJobs)
+
+Arguments for `ListInferenceRecommendationsJobsPaginator.paginate` method:
+
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `NameContains`: `str`
+- `StatusEquals`:
+  [RecommendationJobStatusType](./literals.md#recommendationjobstatustype)
+- `SortBy`:
+  [ListInferenceRecommendationsJobsSortByType](./literals.md#listinferencerecommendationsjobssortbytype)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListInferenceRecommendationsJobsPaginator.paginate` returns
+`_PageIterator`\[[ListInferenceRecommendationsJobsResponseTypeDef](./type_defs.md#listinferencerecommendationsjobsresponsetypedef)\].
+
 ## ListLabelingJobsPaginator
 
 Type annotations for
@@ -914,6 +952,35 @@ Arguments for `ListLabelingJobsForWorkteamPaginator.paginate` method:
 `ListLabelingJobsForWorkteamPaginator.paginate` returns
 `_PageIterator`\[[ListLabelingJobsForWorkteamResponseTypeDef](./type_defs.md#listlabelingjobsforworkteamresponsetypedef)\].
 
+## ListLineageGroupsPaginator
+
+Type annotations for
+`boto3.client("sagemaker").get_paginator("list_lineage_groups")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sagemaker.paginator import ListLineageGroupsPaginator
+
+def get_list_lineage_groups_paginator() -> ListLineageGroupsPaginator:
+    return boto3.client("sagemaker").get_paginator("list_lineage_groups")
+```
+
+Boto3 documentation:
+[SageMaker.Paginator.ListLineageGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListLineageGroups)
+
+Arguments for `ListLineageGroupsPaginator.paginate` method:
+
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
+- `SortBy`: [SortLineageGroupsByType](./literals.md#sortlineagegroupsbytype)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListLineageGroupsPaginator.paginate` returns
+`_PageIterator`\[[ListLineageGroupsResponseTypeDef](./type_defs.md#listlineagegroupsresponsetypedef)\].
+
 ## ListModelBiasJobDefinitionsPaginator
 
 Type annotations for
@@ -977,6 +1044,33 @@ Arguments for `ListModelExplainabilityJobDefinitionsPaginator.paginate` method:
 
 `ListModelExplainabilityJobDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListModelExplainabilityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsresponsetypedef)\].
+
+## ListModelMetadataPaginator
+
+Type annotations for
+`boto3.client("sagemaker").get_paginator("list_model_metadata")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sagemaker.paginator import ListModelMetadataPaginator
+
+def get_list_model_metadata_paginator() -> ListModelMetadataPaginator:
+    return boto3.client("sagemaker").get_paginator("list_model_metadata")
+```
+
+Boto3 documentation:
+[SageMaker.Paginator.ListModelMetadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelMetadata)
+
+Arguments for `ListModelMetadataPaginator.paginate` method:
+
+- `SearchExpression`:
+  [ModelMetadataSearchExpressionTypeDef](./type_defs.md#modelmetadatasearchexpressiontypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListModelMetadataPaginator.paginate` returns
+`_PageIterator`\[[ListModelMetadataResponseTypeDef](./type_defs.md#listmodelmetadataresponsetypedef)\].
 
 ## ListModelPackageGroupsPaginator
 

@@ -11,6 +11,8 @@ type annotations stubs module
   - [AggregatedUtterancesFilterTypeDef](#aggregatedutterancesfiltertypedef)
   - [AggregatedUtterancesSortByTypeDef](#aggregatedutterancessortbytypedef)
   - [AggregatedUtterancesSummaryTypeDef](#aggregatedutterancessummarytypedef)
+  - [AssociatedTranscriptFilterTypeDef](#associatedtranscriptfiltertypedef)
+  - [AssociatedTranscriptTypeDef](#associatedtranscripttypedef)
   - [AudioLogDestinationTypeDef](#audiologdestinationtypedef)
   - [AudioLogSettingTypeDef](#audiologsettingtypedef)
   - [BotAliasHistoryEventTypeDef](#botaliashistoryeventtypedef)
@@ -25,6 +27,9 @@ type annotations stubs module
   - [BotLocaleImportSpecificationTypeDef](#botlocaleimportspecificationtypedef)
   - [BotLocaleSortByTypeDef](#botlocalesortbytypedef)
   - [BotLocaleSummaryTypeDef](#botlocalesummarytypedef)
+  - [BotRecommendationResultStatisticsTypeDef](#botrecommendationresultstatisticstypedef)
+  - [BotRecommendationResultsTypeDef](#botrecommendationresultstypedef)
+  - [BotRecommendationSummaryTypeDef](#botrecommendationsummarytypedef)
   - [BotSortByTypeDef](#botsortbytypedef)
   - [BotSummaryTypeDef](#botsummarytypedef)
   - [BotVersionLocaleDetailsTypeDef](#botversionlocaledetailstypedef)
@@ -63,6 +68,7 @@ type annotations stubs module
   - [CreateUploadUrlResponseTypeDef](#createuploadurlresponsetypedef)
   - [CustomPayloadTypeDef](#custompayloadtypedef)
   - [DataPrivacyTypeDef](#dataprivacytypedef)
+  - [DateRangeFilterTypeDef](#daterangefiltertypedef)
   - [DeleteBotAliasRequestRequestTypeDef](#deletebotaliasrequestrequesttypedef)
   - [DeleteBotAliasResponseTypeDef](#deletebotaliasresponsetypedef)
   - [DeleteBotLocaleRequestRequestTypeDef](#deletebotlocalerequestrequesttypedef)
@@ -87,6 +93,8 @@ type annotations stubs module
   - [DescribeBotAliasResponseTypeDef](#describebotaliasresponsetypedef)
   - [DescribeBotLocaleRequestRequestTypeDef](#describebotlocalerequestrequesttypedef)
   - [DescribeBotLocaleResponseTypeDef](#describebotlocaleresponsetypedef)
+  - [DescribeBotRecommendationRequestRequestTypeDef](#describebotrecommendationrequestrequesttypedef)
+  - [DescribeBotRecommendationResponseTypeDef](#describebotrecommendationresponsetypedef)
   - [DescribeBotRequestRequestTypeDef](#describebotrequestrequesttypedef)
   - [DescribeBotResponseTypeDef](#describebotresponsetypedef)
   - [DescribeBotVersionRequestRequestTypeDef](#describebotversionrequestrequesttypedef)
@@ -104,6 +112,7 @@ type annotations stubs module
   - [DescribeSlotTypeRequestRequestTypeDef](#describeslottyperequestrequesttypedef)
   - [DescribeSlotTypeResponseTypeDef](#describeslottyperesponsetypedef)
   - [DialogCodeHookSettingsTypeDef](#dialogcodehooksettingstypedef)
+  - [EncryptionSettingTypeDef](#encryptionsettingtypedef)
   - [ExportFilterTypeDef](#exportfiltertypedef)
   - [ExportResourceSpecificationTypeDef](#exportresourcespecificationtypedef)
   - [ExportSortByTypeDef](#exportsortbytypedef)
@@ -122,15 +131,19 @@ type annotations stubs module
   - [IntentConfirmationSettingTypeDef](#intentconfirmationsettingtypedef)
   - [IntentFilterTypeDef](#intentfiltertypedef)
   - [IntentSortByTypeDef](#intentsortbytypedef)
+  - [IntentStatisticsTypeDef](#intentstatisticstypedef)
   - [IntentSummaryTypeDef](#intentsummarytypedef)
   - [KendraConfigurationTypeDef](#kendraconfigurationtypedef)
   - [LambdaCodeHookTypeDef](#lambdacodehooktypedef)
+  - [LexTranscriptFilterTypeDef](#lextranscriptfiltertypedef)
   - [ListAggregatedUtterancesRequestRequestTypeDef](#listaggregatedutterancesrequestrequesttypedef)
   - [ListAggregatedUtterancesResponseTypeDef](#listaggregatedutterancesresponsetypedef)
   - [ListBotAliasesRequestRequestTypeDef](#listbotaliasesrequestrequesttypedef)
   - [ListBotAliasesResponseTypeDef](#listbotaliasesresponsetypedef)
   - [ListBotLocalesRequestRequestTypeDef](#listbotlocalesrequestrequesttypedef)
   - [ListBotLocalesResponseTypeDef](#listbotlocalesresponsetypedef)
+  - [ListBotRecommendationsRequestRequestTypeDef](#listbotrecommendationsrequestrequesttypedef)
+  - [ListBotRecommendationsResponseTypeDef](#listbotrecommendationsresponsetypedef)
   - [ListBotVersionsRequestRequestTypeDef](#listbotversionsrequestrequesttypedef)
   - [ListBotVersionsResponseTypeDef](#listbotversionsresponsetypedef)
   - [ListBotsRequestRequestTypeDef](#listbotsrequestrequesttypedef)
@@ -145,6 +158,8 @@ type annotations stubs module
   - [ListImportsResponseTypeDef](#listimportsresponsetypedef)
   - [ListIntentsRequestRequestTypeDef](#listintentsrequestrequesttypedef)
   - [ListIntentsResponseTypeDef](#listintentsresponsetypedef)
+  - [ListRecommendedIntentsRequestRequestTypeDef](#listrecommendedintentsrequestrequesttypedef)
+  - [ListRecommendedIntentsResponseTypeDef](#listrecommendedintentsresponsetypedef)
   - [ListSlotTypesRequestRequestTypeDef](#listslottypesrequestrequesttypedef)
   - [ListSlotTypesResponseTypeDef](#listslottypesresponsetypedef)
   - [ListSlotsRequestRequestTypeDef](#listslotsrequestrequesttypedef)
@@ -156,17 +171,22 @@ type annotations stubs module
   - [MultipleValuesSettingTypeDef](#multiplevaluessettingtypedef)
   - [ObfuscationSettingTypeDef](#obfuscationsettingtypedef)
   - [OutputContextTypeDef](#outputcontexttypedef)
+  - [PathFormatTypeDef](#pathformattypedef)
   - [PlainTextMessageTypeDef](#plaintextmessagetypedef)
   - [PostFulfillmentStatusSpecificationTypeDef](#postfulfillmentstatusspecificationtypedef)
   - [PrincipalTypeDef](#principaltypedef)
   - [PromptSpecificationTypeDef](#promptspecificationtypedef)
+  - [RecommendedIntentSummaryTypeDef](#recommendedintentsummarytypedef)
   - [RelativeAggregationDurationTypeDef](#relativeaggregationdurationtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResponseSpecificationTypeDef](#responsespecificationtypedef)
   - [S3BucketLogDestinationTypeDef](#s3bucketlogdestinationtypedef)
+  - [S3BucketTranscriptSourceTypeDef](#s3buckettranscriptsourcetypedef)
   - [SSMLMessageTypeDef](#ssmlmessagetypedef)
   - [SampleUtteranceTypeDef](#sampleutterancetypedef)
   - [SampleValueTypeDef](#samplevaluetypedef)
+  - [SearchAssociatedTranscriptsRequestRequestTypeDef](#searchassociatedtranscriptsrequestrequesttypedef)
+  - [SearchAssociatedTranscriptsResponseTypeDef](#searchassociatedtranscriptsresponsetypedef)
   - [SentimentAnalysisSettingsTypeDef](#sentimentanalysissettingstypedef)
   - [SlotDefaultValueSpecificationTypeDef](#slotdefaultvaluespecificationtypedef)
   - [SlotDefaultValueTypeDef](#slotdefaultvaluetypedef)
@@ -176,22 +196,29 @@ type annotations stubs module
   - [SlotSummaryTypeDef](#slotsummarytypedef)
   - [SlotTypeFilterTypeDef](#slottypefiltertypedef)
   - [SlotTypeSortByTypeDef](#slottypesortbytypedef)
+  - [SlotTypeStatisticsTypeDef](#slottypestatisticstypedef)
   - [SlotTypeSummaryTypeDef](#slottypesummarytypedef)
   - [SlotTypeValueTypeDef](#slottypevaluetypedef)
   - [SlotValueElicitationSettingTypeDef](#slotvalueelicitationsettingtypedef)
   - [SlotValueRegexFilterTypeDef](#slotvalueregexfiltertypedef)
   - [SlotValueSelectionSettingTypeDef](#slotvalueselectionsettingtypedef)
+  - [StartBotRecommendationRequestRequestTypeDef](#startbotrecommendationrequestrequesttypedef)
+  - [StartBotRecommendationResponseTypeDef](#startbotrecommendationresponsetypedef)
   - [StartImportRequestRequestTypeDef](#startimportrequestrequesttypedef)
   - [StartImportResponseTypeDef](#startimportresponsetypedef)
   - [StillWaitingResponseSpecificationTypeDef](#stillwaitingresponsespecificationtypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TextLogDestinationTypeDef](#textlogdestinationtypedef)
   - [TextLogSettingTypeDef](#textlogsettingtypedef)
+  - [TranscriptFilterTypeDef](#transcriptfiltertypedef)
+  - [TranscriptSourceSettingTypeDef](#transcriptsourcesettingtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateBotAliasRequestRequestTypeDef](#updatebotaliasrequestrequesttypedef)
   - [UpdateBotAliasResponseTypeDef](#updatebotaliasresponsetypedef)
   - [UpdateBotLocaleRequestRequestTypeDef](#updatebotlocalerequestrequesttypedef)
   - [UpdateBotLocaleResponseTypeDef](#updatebotlocaleresponsetypedef)
+  - [UpdateBotRecommendationRequestRequestTypeDef](#updatebotrecommendationrequestrequesttypedef)
+  - [UpdateBotRecommendationResponseTypeDef](#updatebotrecommendationresponsetypedef)
   - [UpdateBotRequestRequestTypeDef](#updatebotrequestrequesttypedef)
   - [UpdateBotResponseTypeDef](#updatebotresponsetypedef)
   - [UpdateExportRequestRequestTypeDef](#updateexportrequestrequesttypedef)
@@ -249,6 +276,28 @@ Optional fields:
 - `utteranceFirstRecordedInAggregationDuration`: `datetime`
 - `utteranceLastRecordedInAggregationDuration`: `datetime`
 - `containsDataFromDeletedResources`: `bool`
+
+## AssociatedTranscriptFilterTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import AssociatedTranscriptFilterTypeDef
+```
+
+Required fields:
+
+- `name`:
+  [AssociatedTranscriptFilterNameType](./literals.md#associatedtranscriptfilternametype)
+- `values`: `Sequence`\[`str`\]
+
+## AssociatedTranscriptTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import AssociatedTranscriptTypeDef
+```
+
+Optional fields:
+
+- `transcript`: `str`
 
 ## AudioLogDestinationTypeDef
 
@@ -438,6 +487,48 @@ Optional fields:
 - `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
 - `lastUpdatedDateTime`: `datetime`
 - `lastBuildSubmittedDateTime`: `datetime`
+
+## BotRecommendationResultStatisticsTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import BotRecommendationResultStatisticsTypeDef
+```
+
+Optional fields:
+
+- `intents`: [IntentStatisticsTypeDef](./type_defs.md#intentstatisticstypedef)
+- `slotTypes`:
+  [SlotTypeStatisticsTypeDef](./type_defs.md#slottypestatisticstypedef)
+
+## BotRecommendationResultsTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import BotRecommendationResultsTypeDef
+```
+
+Optional fields:
+
+- `botLocaleExportUrl`: `str`
+- `associatedTranscriptsUrl`: `str`
+- `statistics`:
+  [BotRecommendationResultStatisticsTypeDef](./type_defs.md#botrecommendationresultstatisticstypedef)
+
+## BotRecommendationSummaryTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import BotRecommendationSummaryTypeDef
+```
+
+Required fields:
+
+- `botRecommendationStatus`:
+  [BotRecommendationStatusType](./literals.md#botrecommendationstatustype)
+- `botRecommendationId`: `str`
+
+Optional fields:
+
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
 
 ## BotSortByTypeDef
 
@@ -1072,6 +1163,17 @@ Required fields:
 
 - `childDirected`: `bool`
 
+## DateRangeFilterTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DateRangeFilterTypeDef
+```
+
+Required fields:
+
+- `startDateTime`: `datetime`
+- `endDateTime`: `datetime`
+
 ## DeleteBotAliasRequestRequestTypeDef
 
 ```python
@@ -1421,6 +1523,45 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeBotRecommendationRequestRequestTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DescribeBotRecommendationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `botRecommendationId`: `str`
+
+## DescribeBotRecommendationResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DescribeBotRecommendationResponseTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `botRecommendationStatus`:
+  [BotRecommendationStatusType](./literals.md#botrecommendationstatustype)
+- `botRecommendationId`: `str`
+- `failureReasons`: `List`\[`str`\]
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
+- `transcriptSourceSetting`:
+  [TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef)
+- `encryptionSetting`:
+  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
+- `botRecommendationResults`:
+  [BotRecommendationResultsTypeDef](./type_defs.md#botrecommendationresultstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeBotRequestRequestTypeDef
 
 ```python
@@ -1708,6 +1849,18 @@ Required fields:
 
 - `enabled`: `bool`
 
+## EncryptionSettingTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import EncryptionSettingTypeDef
+```
+
+Optional fields:
+
+- `kmsKeyArn`: `str`
+- `botLocaleExportPassword`: `str`
+- `associatedTranscriptsPassword`: `str`
+
 ## ExportFilterTypeDef
 
 ```python
@@ -1969,6 +2122,16 @@ Required fields:
 - `attribute`: [IntentSortAttributeType](./literals.md#intentsortattributetype)
 - `order`: [SortOrderType](./literals.md#sortordertype)
 
+## IntentStatisticsTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import IntentStatisticsTypeDef
+```
+
+Optional fields:
+
+- `discoveredIntentCount`: `int`
+
 ## IntentSummaryTypeDef
 
 ```python
@@ -2012,6 +2175,17 @@ Required fields:
 
 - `lambdaARN`: `str`
 - `codeHookInterfaceVersion`: `str`
+
+## LexTranscriptFilterTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import LexTranscriptFilterTypeDef
+```
+
+Optional fields:
+
+- `dateRangeFilter`:
+  [DateRangeFilterTypeDef](./type_defs.md#daterangefiltertypedef)
 
 ## ListAggregatedUtterancesRequestRequestTypeDef
 
@@ -2122,6 +2296,40 @@ Required fields:
 - `nextToken`: `str`
 - `botLocaleSummaries`:
   `List`\[[BotLocaleSummaryTypeDef](./type_defs.md#botlocalesummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListBotRecommendationsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ListBotRecommendationsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListBotRecommendationsResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ListBotRecommendationsResponseTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `botRecommendationSummaries`:
+  `List`\[[BotRecommendationSummaryTypeDef](./type_defs.md#botrecommendationsummarytypedef)\]
+- `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2348,6 +2556,42 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListRecommendedIntentsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ListRecommendedIntentsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `botRecommendationId`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListRecommendedIntentsResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ListRecommendedIntentsResponseTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `botRecommendationId`: `str`
+- `summaryList`:
+  `List`\[[RecommendedIntentSummaryTypeDef](./type_defs.md#recommendedintentsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListSlotTypesRequestRequestTypeDef
 
 ```python
@@ -2508,6 +2752,16 @@ Required fields:
 - `timeToLiveInSeconds`: `int`
 - `turnsToLive`: `int`
 
+## PathFormatTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import PathFormatTypeDef
+```
+
+Optional fields:
+
+- `objectPrefixes`: `List`\[`str`\]
+
 ## PlainTextMessageTypeDef
 
 ```python
@@ -2559,6 +2813,18 @@ Required fields:
 Optional fields:
 
 - `allowInterrupt`: `bool`
+
+## RecommendedIntentSummaryTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import RecommendedIntentSummaryTypeDef
+```
+
+Optional fields:
+
+- `intentId`: `str`
+- `intentName`: `str`
+- `sampleUtterancesCount`: `int`
 
 ## RelativeAggregationDurationTypeDef
 
@@ -2615,6 +2881,25 @@ Optional fields:
 
 - `kmsKeyArn`: `str`
 
+## S3BucketTranscriptSourceTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import S3BucketTranscriptSourceTypeDef
+```
+
+Required fields:
+
+- `s3BucketName`: `str`
+- `transcriptFormat`: `Literal['Lex']` (see
+  [TranscriptFormatType](./literals.md#transcriptformattype))
+
+Optional fields:
+
+- `pathFormat`: [PathFormatTypeDef](./type_defs.md#pathformattypedef)
+- `transcriptFilter`:
+  [TranscriptFilterTypeDef](./type_defs.md#transcriptfiltertypedef)
+- `kmsKeyArn`: `str`
+
 ## SSMLMessageTypeDef
 
 ```python
@@ -2644,6 +2929,46 @@ from mypy_boto3_lexv2_models.type_defs import SampleValueTypeDef
 Required fields:
 
 - `value`: `str`
+
+## SearchAssociatedTranscriptsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import SearchAssociatedTranscriptsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `botRecommendationId`: `str`
+- `filters`:
+  `Sequence`\[[AssociatedTranscriptFilterTypeDef](./type_defs.md#associatedtranscriptfiltertypedef)\]
+
+Optional fields:
+
+- `searchOrder`: [SearchOrderType](./literals.md#searchordertype)
+- `maxResults`: `int`
+- `nextIndex`: `int`
+
+## SearchAssociatedTranscriptsResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import SearchAssociatedTranscriptsResponseTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `botRecommendationId`: `str`
+- `nextIndex`: `int`
+- `associatedTranscripts`:
+  `List`\[[AssociatedTranscriptTypeDef](./type_defs.md#associatedtranscripttypedef)\]
+- `totalResults`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SentimentAnalysisSettingsTypeDef
 
@@ -2754,6 +3079,16 @@ Required fields:
   [SlotTypeSortAttributeType](./literals.md#slottypesortattributetype)
 - `order`: [SortOrderType](./literals.md#sortordertype)
 
+## SlotTypeStatisticsTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import SlotTypeStatisticsTypeDef
+```
+
+Optional fields:
+
+- `discoveredSlotTypeCount`: `int`
+
 ## SlotTypeSummaryTypeDef
 
 ```python
@@ -2826,6 +3161,47 @@ Optional fields:
 
 - `regexFilter`:
   [SlotValueRegexFilterTypeDef](./type_defs.md#slotvalueregexfiltertypedef)
+
+## StartBotRecommendationRequestRequestTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import StartBotRecommendationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `transcriptSourceSetting`:
+  [TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef)
+
+Optional fields:
+
+- `encryptionSetting`:
+  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
+
+## StartBotRecommendationResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import StartBotRecommendationResponseTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `botRecommendationStatus`:
+  [BotRecommendationStatusType](./literals.md#botrecommendationstatustype)
+- `botRecommendationId`: `str`
+- `creationDateTime`: `datetime`
+- `transcriptSourceSetting`:
+  [TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef)
+- `encryptionSetting`:
+  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StartImportRequestRequestTypeDef
 
@@ -2911,6 +3287,28 @@ Required fields:
 - `enabled`: `bool`
 - `destination`:
   [TextLogDestinationTypeDef](./type_defs.md#textlogdestinationtypedef)
+
+## TranscriptFilterTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import TranscriptFilterTypeDef
+```
+
+Optional fields:
+
+- `lexTranscriptFilter`:
+  [LexTranscriptFilterTypeDef](./type_defs.md#lextranscriptfiltertypedef)
+
+## TranscriptSourceSettingTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import TranscriptSourceSettingTypeDef
+```
+
+Optional fields:
+
+- `s3BucketTranscriptSource`:
+  [S3BucketTranscriptSourceTypeDef](./type_defs.md#s3buckettranscriptsourcetypedef)
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -3008,6 +3406,44 @@ Required fields:
 - `failureReasons`: `List`\[`str`\]
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateBotRecommendationRequestRequestTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import UpdateBotRecommendationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `botRecommendationId`: `str`
+- `encryptionSetting`:
+  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
+
+## UpdateBotRecommendationResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import UpdateBotRecommendationResponseTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `botRecommendationStatus`:
+  [BotRecommendationStatusType](./literals.md#botrecommendationstatustype)
+- `botRecommendationId`: `str`
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
+- `transcriptSourceSetting`:
+  [TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef)
+- `encryptionSetting`:
+  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

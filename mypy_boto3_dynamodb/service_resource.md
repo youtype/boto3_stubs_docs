@@ -167,6 +167,7 @@ Keyword-only arguments:
 - `SSESpecification`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TableClass`: [TableClassType](./literals.md#tableclasstype)
 
 Returns [Table](#table).
 
@@ -221,6 +222,7 @@ Boto3 documentation:
 - `restore_summary`: `Dict`\[`str`, `Any`\]
 - `sse_description`: `Dict`\[`str`, `Any`\]
 - `archival_summary`: `Dict`\[`str`, `Any`\]
+- `table_class_summary`: `Dict`\[`str`, `Any`\]
 - `name`: `str`
 
 ### Table methods
@@ -500,6 +502,7 @@ Keyword-only arguments:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `ReplicaUpdates`:
   `Sequence`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
+- `TableClass`: [TableClassType](./literals.md#tableclasstype)
 
 Returns [Table](#table).
 

@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Literals for boto3 kendra module](#literals-for-boto3-kendra-module)
   - [AdditionalResultAttributeValueTypeType](#additionalresultattributevaluetypetype)
+  - [ConditionOperatorType](#conditionoperatortype)
   - [ConfluenceAttachmentFieldNameType](#confluenceattachmentfieldnametype)
   - [ConfluenceBlogFieldNameType](#confluenceblogfieldnametype)
   - [ConfluencePageFieldNameType](#confluencepagefieldnametype)
@@ -21,15 +22,21 @@ type annotations stubs module
   - [DatabaseEngineTypeType](#databaseenginetypetype)
   - [DocumentAttributeValueTypeType](#documentattributevaluetypetype)
   - [DocumentStatusType](#documentstatustype)
+  - [EndpointTypeType](#endpointtypetype)
+  - [EntityTypeType](#entitytypetype)
   - [ErrorCodeType](#errorcodetype)
+  - [ExperienceStatusType](#experiencestatustype)
   - [FaqFileFormatType](#faqfileformattype)
   - [FaqStatusType](#faqstatustype)
   - [HighlightTypeType](#highlighttypetype)
   - [IndexEditionType](#indexeditiontype)
   - [IndexStatusType](#indexstatustype)
+  - [IntervalType](#intervaltype)
   - [KeyLocationType](#keylocationtype)
+  - [MetricTypeType](#metrictypetype)
   - [ModeType](#modetype)
   - [OrderType](#ordertype)
+  - [PersonaType](#personatype)
   - [PrincipalMappingStatusType](#principalmappingstatustype)
   - [PrincipalTypeType](#principaltypetype)
   - [QueryIdentifiersEnclosingOptionType](#queryidentifiersenclosingoptiontype)
@@ -61,6 +68,26 @@ from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType
 Values:
 
 - `TEXT_WITH_HIGHLIGHTS_VALUE`
+
+## ConditionOperatorType
+
+```python
+from mypy_boto3_kendra.literals import ConditionOperatorType
+```
+
+Values:
+
+- `BeginsWith`
+- `Contains`
+- `Equals`
+- `Exists`
+- `GreaterThan`
+- `GreaterThanOrEquals`
+- `LessThan`
+- `LessThanOrEquals`
+- `NotContains`
+- `NotEquals`
+- `NotExists`
 
 ## ConfluenceAttachmentFieldNameType
 
@@ -250,6 +277,27 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATED`
 
+## EndpointTypeType
+
+```python
+from mypy_boto3_kendra.literals import EndpointTypeType
+```
+
+Values:
+
+- `HOME`
+
+## EntityTypeType
+
+```python
+from mypy_boto3_kendra.literals import EntityTypeType
+```
+
+Values:
+
+- `GROUP`
+- `USER`
+
 ## ErrorCodeType
 
 ```python
@@ -260,6 +308,19 @@ Values:
 
 - `InternalError`
 - `InvalidRequest`
+
+## ExperienceStatusType
+
+```python
+from mypy_boto3_kendra.literals import ExperienceStatusType
+```
+
+Values:
+
+- `ACTIVE`
+- `CREATING`
+- `DELETING`
+- `FAILED`
 
 ## FaqFileFormatType
 
@@ -324,6 +385,21 @@ Values:
 - `SYSTEM_UPDATING`
 - `UPDATING`
 
+## IntervalType
+
+```python
+from mypy_boto3_kendra.literals import IntervalType
+```
+
+Values:
+
+- `ONE_MONTH_AGO`
+- `ONE_WEEK_AGO`
+- `THIS_MONTH`
+- `THIS_WEEK`
+- `TWO_MONTHS_AGO`
+- `TWO_WEEKS_AGO`
+
 ## KeyLocationType
 
 ```python
@@ -334,6 +410,21 @@ Values:
 
 - `SECRET_MANAGER`
 - `URL`
+
+## MetricTypeType
+
+```python
+from mypy_boto3_kendra.literals import MetricTypeType
+```
+
+Values:
+
+- `AGG_QUERY_DOC_METRICS`
+- `DOCS_BY_CLICK_COUNT`
+- `QUERIES_BY_COUNT`
+- `QUERIES_BY_ZERO_CLICK_RATE`
+- `QUERIES_BY_ZERO_RESULT_RATE`
+- `TREND_QUERY_DOC_METRICS`
 
 ## ModeType
 
@@ -356,6 +447,17 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+## PersonaType
+
+```python
+from mypy_boto3_kendra.literals import PersonaType
+```
+
+Values:
+
+- `OWNER`
+- `VIEWER`
 
 ## PrincipalMappingStatusType
 

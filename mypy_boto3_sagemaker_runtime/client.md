@@ -48,8 +48,10 @@ def handle_error(exc: Exceptions.ClientError) -> None:
 Exceptions:
 
 - `Exceptions.ClientError`
+- `Exceptions.InternalDependencyException`
 - `Exceptions.InternalFailure`
 - `Exceptions.ModelError`
+- `Exceptions.ModelNotReadyException`
 - `Exceptions.ServiceUnavailable`
 - `Exceptions.ValidationError`
 

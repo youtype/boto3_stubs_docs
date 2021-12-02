@@ -39,6 +39,7 @@ type annotations stubs module
     - [create_hyper_parameter_tuning_job](#create_hyper_parameter_tuning_job)
     - [create_image](#create_image)
     - [create_image_version](#create_image_version)
+    - [create_inference_recommendations_job](#create_inference_recommendations_job)
     - [create_labeling_job](#create_labeling_job)
     - [create_model](#create_model)
     - [create_model_bias_job_definition](#create_model_bias_job_definition)
@@ -124,7 +125,9 @@ type annotations stubs module
     - [describe_hyper_parameter_tuning_job](#describe_hyper_parameter_tuning_job)
     - [describe_image](#describe_image)
     - [describe_image_version](#describe_image_version)
+    - [describe_inference_recommendations_job](#describe_inference_recommendations_job)
     - [describe_labeling_job](#describe_labeling_job)
+    - [describe_lineage_group](#describe_lineage_group)
     - [describe_model](#describe_model)
     - [describe_model_bias_job_definition](#describe_model_bias_job_definition)
     - [describe_model_explainability_job_definition](#describe_model_explainability_job_definition)
@@ -153,6 +156,7 @@ type annotations stubs module
     - [enable_sagemaker_servicecatalog_portfolio](#enable_sagemaker_servicecatalog_portfolio)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_device_fleet_report](#get_device_fleet_report)
+    - [get_lineage_group_policy](#get_lineage_group_policy)
     - [get_model_package_group_policy](#get_model_package_group_policy)
     - [get_sagemaker_servicecatalog_portfolio_status](#get_sagemaker_servicecatalog_portfolio_status)
     - [get_search_suggestions](#get_search_suggestions)
@@ -181,10 +185,13 @@ type annotations stubs module
     - [list_hyper_parameter_tuning_jobs](#list_hyper_parameter_tuning_jobs)
     - [list_image_versions](#list_image_versions)
     - [list_images](#list_images)
+    - [list_inference_recommendations_jobs](#list_inference_recommendations_jobs)
     - [list_labeling_jobs](#list_labeling_jobs)
     - [list_labeling_jobs_for_workteam](#list_labeling_jobs_for_workteam)
+    - [list_lineage_groups](#list_lineage_groups)
     - [list_model_bias_job_definitions](#list_model_bias_job_definitions)
     - [list_model_explainability_job_definitions](#list_model_explainability_job_definitions)
+    - [list_model_metadata](#list_model_metadata)
     - [list_model_package_groups](#list_model_package_groups)
     - [list_model_packages](#list_model_packages)
     - [list_model_quality_job_definitions](#list_model_quality_job_definitions)
@@ -211,6 +218,7 @@ type annotations stubs module
     - [list_workforces](#list_workforces)
     - [list_workteams](#list_workteams)
     - [put_model_package_group_policy](#put_model_package_group_policy)
+    - [query_lineage](#query_lineage)
     - [register_devices](#register_devices)
     - [render_ui_template](#render_ui_template)
     - [retry_pipeline_execution](#retry_pipeline_execution)
@@ -224,6 +232,7 @@ type annotations stubs module
     - [stop_compilation_job](#stop_compilation_job)
     - [stop_edge_packaging_job](#stop_edge_packaging_job)
     - [stop_hyper_parameter_tuning_job](#stop_hyper_parameter_tuning_job)
+    - [stop_inference_recommendations_job](#stop_inference_recommendations_job)
     - [stop_labeling_job](#stop_labeling_job)
     - [stop_monitoring_schedule](#stop_monitoring_schedule)
     - [stop_notebook_instance](#stop_notebook_instance)
@@ -611,13 +620,13 @@ Keyword-only arguments:
 
 - `CompilationJobName`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
-- `InputConfig`: [InputConfigTypeDef](./type_defs.md#inputconfigtypedef)
-  *(required)*
 - `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
   *(required)*
 - `StoppingCondition`:
   [StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef)
   *(required)*
+- `ModelPackageVersionArn`: `str`
+- `InputConfig`: [InputConfigTypeDef](./type_defs.md#inputconfigtypedef)
 - `VpcConfig`: [NeoVpcConfigTypeDef](./type_defs.md#neovpcconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -1001,6 +1010,37 @@ Keyword-only arguments:
 Returns
 [CreateImageVersionResponseTypeDef](./type_defs.md#createimageversionresponsetypedef).
 
+### create_inference_recommendations_job
+
+Starts a recommendation job.
+
+Type annotations for
+`boto3.client("sagemaker").create_inference_recommendations_job` method.
+
+Boto3 documentation:
+[SageMaker.Client.create_inference_recommendations_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_inference_recommendations_job)
+
+Arguments mapping described in
+[CreateInferenceRecommendationsJobRequestRequestTypeDef](./type_defs.md#createinferencerecommendationsjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `JobName`: `str` *(required)*
+- `JobType`:
+  [RecommendationJobTypeType](./literals.md#recommendationjobtypetype)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `InputConfig`:
+  [RecommendationJobInputConfigTypeDef](./type_defs.md#recommendationjobinputconfigtypedef)
+  *(required)*
+- `JobDescription`: `str`
+- `StoppingConditions`:
+  [RecommendationJobStoppingConditionsTypeDef](./type_defs.md#recommendationjobstoppingconditionstypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateInferenceRecommendationsJobResponseTypeDef](./type_defs.md#createinferencerecommendationsjobresponsetypedef).
+
 ### create_labeling_job
 
 .
@@ -1178,6 +1218,13 @@ Keyword-only arguments:
 - `ModelMetrics`: [ModelMetricsTypeDef](./type_defs.md#modelmetricstypedef)
 - `ClientToken`: `str`
 - `CustomerMetadataProperties`: `Mapping`\[`str`, `str`\]
+- `DriftCheckBaselines`:
+  [DriftCheckBaselinesTypeDef](./type_defs.md#driftcheckbaselinestypedef)
+- `Domain`: `str`
+- `Task`: `str`
+- `SamplePayloadUrl`: `str`
+- `AdditionalInferenceSpecifications`:
+  `Sequence`\[[AdditionalInferenceSpecificationDefinitionTypeDef](./type_defs.md#additionalinferencespecificationdefinitiontypedef)\]
 
 Returns
 [CreateModelPackageOutputTypeDef](./type_defs.md#createmodelpackageoutputtypedef).
@@ -2854,6 +2901,26 @@ Keyword-only arguments:
 Returns
 [DescribeImageVersionResponseTypeDef](./type_defs.md#describeimageversionresponsetypedef).
 
+### describe_inference_recommendations_job
+
+Provides the results of the Inference Recommender job.
+
+Type annotations for
+`boto3.client("sagemaker").describe_inference_recommendations_job` method.
+
+Boto3 documentation:
+[SageMaker.Client.describe_inference_recommendations_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_inference_recommendations_job)
+
+Arguments mapping described in
+[DescribeInferenceRecommendationsJobRequestRequestTypeDef](./type_defs.md#describeinferencerecommendationsjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `JobName`: `str` *(required)*
+
+Returns
+[DescribeInferenceRecommendationsJobResponseTypeDef](./type_defs.md#describeinferencerecommendationsjobresponsetypedef).
+
 ### describe_labeling_job
 
 Gets information about a labeling job.
@@ -2872,6 +2939,25 @@ Keyword-only arguments:
 
 Returns
 [DescribeLabelingJobResponseTypeDef](./type_defs.md#describelabelingjobresponsetypedef).
+
+### describe_lineage_group
+
+Provides a list of properties for the requested lineage group.
+
+Type annotations for `boto3.client("sagemaker").describe_lineage_group` method.
+
+Boto3 documentation:
+[SageMaker.Client.describe_lineage_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_lineage_group)
+
+Arguments mapping described in
+[DescribeLineageGroupRequestRequestTypeDef](./type_defs.md#describelineagegrouprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `LineageGroupName`: `str` *(required)*
+
+Returns
+[DescribeLineageGroupResponseTypeDef](./type_defs.md#describelineagegroupresponsetypedef).
 
 ### describe_model
 
@@ -3411,6 +3497,26 @@ Keyword-only arguments:
 
 Returns
 [GetDeviceFleetReportResponseTypeDef](./type_defs.md#getdevicefleetreportresponsetypedef).
+
+### get_lineage_group_policy
+
+The resource policy for the lineage group.
+
+Type annotations for `boto3.client("sagemaker").get_lineage_group_policy`
+method.
+
+Boto3 documentation:
+[SageMaker.Client.get_lineage_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_lineage_group_policy)
+
+Arguments mapping described in
+[GetLineageGroupPolicyRequestRequestTypeDef](./type_defs.md#getlineagegrouppolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `LineageGroupName`: `str` *(required)*
+
+Returns
+[GetLineageGroupPolicyResponseTypeDef](./type_defs.md#getlineagegrouppolicyresponsetypedef).
 
 ### get_model_package_group_policy
 
@@ -4137,6 +4243,37 @@ Keyword-only arguments:
 
 Returns [ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef).
 
+### list_inference_recommendations_jobs
+
+Lists recommendation jobs that satisfy various filters.
+
+Type annotations for
+`boto3.client("sagemaker").list_inference_recommendations_jobs` method.
+
+Boto3 documentation:
+[SageMaker.Client.list_inference_recommendations_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_inference_recommendations_jobs)
+
+Arguments mapping described in
+[ListInferenceRecommendationsJobsRequestRequestTypeDef](./type_defs.md#listinferencerecommendationsjobsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `NameContains`: `str`
+- `StatusEquals`:
+  [RecommendationJobStatusType](./literals.md#recommendationjobstatustype)
+- `SortBy`:
+  [ListInferenceRecommendationsJobsSortByType](./literals.md#listinferencerecommendationsjobssortbytype)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListInferenceRecommendationsJobsResponseTypeDef](./type_defs.md#listinferencerecommendationsjobsresponsetypedef).
+
 ### list_labeling_jobs
 
 Gets a list of labeling jobs.
@@ -4193,6 +4330,30 @@ Keyword-only arguments:
 Returns
 [ListLabelingJobsForWorkteamResponseTypeDef](./type_defs.md#listlabelingjobsforworkteamresponsetypedef).
 
+### list_lineage_groups
+
+A list of lineage groups shared with your Amazon Web Services account.
+
+Type annotations for `boto3.client("sagemaker").list_lineage_groups` method.
+
+Boto3 documentation:
+[SageMaker.Client.list_lineage_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_lineage_groups)
+
+Arguments mapping described in
+[ListLineageGroupsRequestRequestTypeDef](./type_defs.md#listlineagegroupsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
+- `SortBy`: [SortLineageGroupsByType](./literals.md#sortlineagegroupsbytype)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListLineageGroupsResponseTypeDef](./type_defs.md#listlineagegroupsresponsetypedef).
+
 ### list_model_bias_job_definitions
 
 Lists model bias jobs definitions that satisfy various filters.
@@ -4248,6 +4409,29 @@ Keyword-only arguments:
 
 Returns
 [ListModelExplainabilityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsresponsetypedef).
+
+### list_model_metadata
+
+Lists the domain, framework, task, and model name of standard machine learning
+models found in common model zoos.
+
+Type annotations for `boto3.client("sagemaker").list_model_metadata` method.
+
+Boto3 documentation:
+[SageMaker.Client.list_model_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_metadata)
+
+Arguments mapping described in
+[ListModelMetadataRequestRequestTypeDef](./type_defs.md#listmodelmetadatarequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SearchExpression`:
+  [ModelMetadataSearchExpressionTypeDef](./type_defs.md#modelmetadatasearchexpressiontypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListModelMetadataResponseTypeDef](./type_defs.md#listmodelmetadataresponsetypedef).
 
 ### list_model_package_groups
 
@@ -4951,6 +5135,32 @@ Keyword-only arguments:
 Returns
 [PutModelPackageGroupPolicyOutputTypeDef](./type_defs.md#putmodelpackagegrouppolicyoutputtypedef).
 
+### query_lineage
+
+Use this action to inspect your lineage and discover relationships between
+entities.
+
+Type annotations for `boto3.client("sagemaker").query_lineage` method.
+
+Boto3 documentation:
+[SageMaker.Client.query_lineage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.query_lineage)
+
+Arguments mapping described in
+[QueryLineageRequestRequestTypeDef](./type_defs.md#querylineagerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `StartArns`: `Sequence`\[`str`\] *(required)*
+- `Direction`: [DirectionType](./literals.md#directiontype)
+- `IncludeEdges`: `bool`
+- `Filters`: [QueryFiltersTypeDef](./type_defs.md#queryfilterstypedef)
+- `MaxDepth`: `int`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[QueryLineageResponseTypeDef](./type_defs.md#querylineageresponsetypedef).
+
 ### register_devices
 
 Register devices.
@@ -5211,6 +5421,23 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `HyperParameterTuningJobName`: `str` *(required)*
+
+### stop_inference_recommendations_job
+
+Stops an Inference Recommender job.
+
+Type annotations for
+`boto3.client("sagemaker").stop_inference_recommendations_job` method.
+
+Boto3 documentation:
+[SageMaker.Client.stop_inference_recommendations_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_inference_recommendations_job)
+
+Arguments mapping described in
+[StopInferenceRecommendationsJobRequestRequestTypeDef](./type_defs.md#stopinferencerecommendationsjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `JobName`: `str` *(required)*
 
 ### stop_labeling_job
 
@@ -5619,6 +5846,8 @@ Keyword-only arguments:
 - `ApprovalDescription`: `str`
 - `CustomerMetadataProperties`: `Mapping`\[`str`, `str`\]
 - `CustomerMetadataPropertiesToRemove`: `Sequence`\[`str`\]
+- `AdditionalInferenceSpecificationsToAdd`:
+  `Sequence`\[[AdditionalInferenceSpecificationDefinitionTypeDef](./type_defs.md#additionalinferencespecificationdefinitiontypedef)\]
 
 Returns
 [UpdateModelPackageOutputTypeDef](./type_defs.md#updatemodelpackageoutputtypedef).
@@ -5969,14 +6198,20 @@ overloads.
   [ListImageVersionsPaginator](./paginators.md#listimageversionspaginator)
 - `client.get_paginator("list_images")` ->
   [ListImagesPaginator](./paginators.md#listimagespaginator)
+- `client.get_paginator("list_inference_recommendations_jobs")` ->
+  [ListInferenceRecommendationsJobsPaginator](./paginators.md#listinferencerecommendationsjobspaginator)
 - `client.get_paginator("list_labeling_jobs")` ->
   [ListLabelingJobsPaginator](./paginators.md#listlabelingjobspaginator)
 - `client.get_paginator("list_labeling_jobs_for_workteam")` ->
   [ListLabelingJobsForWorkteamPaginator](./paginators.md#listlabelingjobsforworkteampaginator)
+- `client.get_paginator("list_lineage_groups")` ->
+  [ListLineageGroupsPaginator](./paginators.md#listlineagegroupspaginator)
 - `client.get_paginator("list_model_bias_job_definitions")` ->
   [ListModelBiasJobDefinitionsPaginator](./paginators.md#listmodelbiasjobdefinitionspaginator)
 - `client.get_paginator("list_model_explainability_job_definitions")` ->
   [ListModelExplainabilityJobDefinitionsPaginator](./paginators.md#listmodelexplainabilityjobdefinitionspaginator)
+- `client.get_paginator("list_model_metadata")` ->
+  [ListModelMetadataPaginator](./paginators.md#listmodelmetadatapaginator)
 - `client.get_paginator("list_model_package_groups")` ->
   [ListModelPackageGroupsPaginator](./paginators.md#listmodelpackagegroupspaginator)
 - `client.get_paginator("list_model_packages")` ->

@@ -49,10 +49,12 @@ from mypy_boto3_shield.client import ShieldClient
 - [describe_protection](./client.md#describe_protection)
 - [describe_protection_group](./client.md#describe_protection_group)
 - [describe_subscription](./client.md#describe_subscription)
+- [disable_application_layer_automatic_response](./client.md#disable_application_layer_automatic_response)
 - [disable_proactive_engagement](./client.md#disable_proactive_engagement)
 - [disassociate_drt_log_bucket](./client.md#disassociate_drt_log_bucket)
 - [disassociate_drt_role](./client.md#disassociate_drt_role)
 - [disassociate_health_check](./client.md#disassociate_health_check)
+- [enable_application_layer_automatic_response](./client.md#enable_application_layer_automatic_response)
 - [enable_proactive_engagement](./client.md#enable_proactive_engagement)
 - [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
@@ -65,6 +67,7 @@ from mypy_boto3_shield.client import ShieldClient
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
+- [update_application_layer_automatic_response](./client.md#update_application_layer_automatic_response)
 - [update_emergency_contact_settings](./client.md#update_emergency_contact_settings)
 - [update_protection_group](./client.md#update_protection_group)
 - [update_subscription](./client.md#update_subscription)
@@ -109,9 +112,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_shield.literals import AttackLayerType, ...
+from mypy_boto3_shield.literals import ApplicationLayerAutomaticResponseStatusType, ...
 ```
 
+- [ApplicationLayerAutomaticResponseStatusType](./literals.md#applicationlayerautomaticresponsestatustype)
 - [AttackLayerType](./literals.md#attacklayertype)
 - [AttackPropertyIdentifierType](./literals.md#attackpropertyidentifiertype)
 - [AutoRenewType](./literals.md#autorenewtype)
@@ -135,9 +139,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_shield.type_defs import AssociateDRTLogBucketRequestRequestTypeDef, ...
+from mypy_boto3_shield.type_defs import ApplicationLayerAutomaticResponseConfigurationTypeDef, ...
 ```
 
+- [ApplicationLayerAutomaticResponseConfigurationTypeDef](./type_defs.md#applicationlayerautomaticresponseconfigurationtypedef)
 - [AssociateDRTLogBucketRequestRequestTypeDef](./type_defs.md#associatedrtlogbucketrequestrequesttypedef)
 - [AssociateDRTRoleRequestRequestTypeDef](./type_defs.md#associatedrtrolerequestrequesttypedef)
 - [AssociateHealthCheckRequestRequestTypeDef](./type_defs.md#associatehealthcheckrequestrequesttypedef)
@@ -165,9 +170,11 @@ from mypy_boto3_shield.type_defs import AssociateDRTLogBucketRequestRequestTypeD
 - [DescribeProtectionRequestRequestTypeDef](./type_defs.md#describeprotectionrequestrequesttypedef)
 - [DescribeProtectionResponseTypeDef](./type_defs.md#describeprotectionresponsetypedef)
 - [DescribeSubscriptionResponseTypeDef](./type_defs.md#describesubscriptionresponsetypedef)
+- [DisableApplicationLayerAutomaticResponseRequestRequestTypeDef](./type_defs.md#disableapplicationlayerautomaticresponserequestrequesttypedef)
 - [DisassociateDRTLogBucketRequestRequestTypeDef](./type_defs.md#disassociatedrtlogbucketrequestrequesttypedef)
 - [DisassociateHealthCheckRequestRequestTypeDef](./type_defs.md#disassociatehealthcheckrequestrequesttypedef)
 - [EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)
+- [EnableApplicationLayerAutomaticResponseRequestRequestTypeDef](./type_defs.md#enableapplicationlayerautomaticresponserequestrequesttypedef)
 - [GetSubscriptionStateResponseTypeDef](./type_defs.md#getsubscriptionstateresponsetypedef)
 - [LimitTypeDef](./type_defs.md#limittypedef)
 - [ListAttacksRequestRequestTypeDef](./type_defs.md#listattacksrequestrequesttypedef)
@@ -188,6 +195,7 @@ from mypy_boto3_shield.type_defs import AssociateDRTLogBucketRequestRequestTypeD
 - [ProtectionGroupTypeDef](./type_defs.md#protectiongrouptypedef)
 - [ProtectionLimitsTypeDef](./type_defs.md#protectionlimitstypedef)
 - [ProtectionTypeDef](./type_defs.md#protectiontypedef)
+- [ResponseActionTypeDef](./type_defs.md#responseactiontypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SubResourceSummaryTypeDef](./type_defs.md#subresourcesummarytypedef)
 - [SubscriptionLimitsTypeDef](./type_defs.md#subscriptionlimitstypedef)
@@ -198,6 +206,7 @@ from mypy_boto3_shield.type_defs import AssociateDRTLogBucketRequestRequestTypeD
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef](./type_defs.md#updateapplicationlayerautomaticresponserequestrequesttypedef)
 - [UpdateEmergencyContactSettingsRequestRequestTypeDef](./type_defs.md#updateemergencycontactsettingsrequestrequesttypedef)
 - [UpdateProtectionGroupRequestRequestTypeDef](./type_defs.md#updateprotectiongrouprequestrequesttypedef)
 - [UpdateSubscriptionRequestRequestTypeDef](./type_defs.md#updatesubscriptionrequestrequesttypedef)

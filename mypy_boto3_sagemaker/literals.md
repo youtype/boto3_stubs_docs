@@ -51,6 +51,7 @@ type annotations stubs module
   - [DetailedAlgorithmStatusType](#detailedalgorithmstatustype)
   - [DetailedModelPackageStatusType](#detailedmodelpackagestatustype)
   - [DirectInternetAccessType](#directinternetaccesstype)
+  - [DirectionType](#directiontype)
   - [DomainStatusType](#domainstatustype)
   - [EdgePackagingJobStatusType](#edgepackagingjobstatustype)
   - [EdgePresetDeploymentStatusType](#edgepresetdeploymentstatustype)
@@ -92,6 +93,7 @@ type annotations stubs module
   - [InstanceTypeType](#instancetypetype)
   - [JoinSourceType](#joinsourcetype)
   - [LabelingJobStatusType](#labelingjobstatustype)
+  - [LineageTypeType](#lineagetypetype)
   - [ListActionsPaginatorName](#listactionspaginatorname)
   - [ListAlgorithmsPaginatorName](#listalgorithmspaginatorname)
   - [ListAppImageConfigsPaginatorName](#listappimageconfigspaginatorname)
@@ -120,11 +122,15 @@ type annotations stubs module
   - [ListHyperParameterTuningJobsPaginatorName](#listhyperparametertuningjobspaginatorname)
   - [ListImageVersionsPaginatorName](#listimageversionspaginatorname)
   - [ListImagesPaginatorName](#listimagespaginatorname)
+  - [ListInferenceRecommendationsJobsPaginatorName](#listinferencerecommendationsjobspaginatorname)
+  - [ListInferenceRecommendationsJobsSortByType](#listinferencerecommendationsjobssortbytype)
   - [ListLabelingJobsForWorkteamPaginatorName](#listlabelingjobsforworkteampaginatorname)
   - [ListLabelingJobsForWorkteamSortByOptionsType](#listlabelingjobsforworkteamsortbyoptionstype)
   - [ListLabelingJobsPaginatorName](#listlabelingjobspaginatorname)
+  - [ListLineageGroupsPaginatorName](#listlineagegroupspaginatorname)
   - [ListModelBiasJobDefinitionsPaginatorName](#listmodelbiasjobdefinitionspaginatorname)
   - [ListModelExplainabilityJobDefinitionsPaginatorName](#listmodelexplainabilityjobdefinitionspaginatorname)
+  - [ListModelMetadataPaginatorName](#listmodelmetadatapaginatorname)
   - [ListModelPackageGroupsPaginatorName](#listmodelpackagegroupspaginatorname)
   - [ListModelPackagesPaginatorName](#listmodelpackagespaginatorname)
   - [ListModelQualityJobDefinitionsPaginatorName](#listmodelqualityjobdefinitionspaginatorname)
@@ -154,6 +160,7 @@ type annotations stubs module
   - [MetricSetSourceType](#metricsetsourcetype)
   - [ModelApprovalStatusType](#modelapprovalstatustype)
   - [ModelCacheSettingType](#modelcachesettingtype)
+  - [ModelMetadataFilterTypeType](#modelmetadatafiltertypetype)
   - [ModelPackageGroupSortByType](#modelpackagegroupsortbytype)
   - [ModelPackageGroupStatusType](#modelpackagegroupstatustype)
   - [ModelPackageSortByType](#modelpackagesortbytype)
@@ -199,6 +206,8 @@ type annotations stubs module
   - [ProjectStatusType](#projectstatustype)
   - [RStudioServerProAccessStatusType](#rstudioserverproaccessstatustype)
   - [RStudioServerProUserGroupType](#rstudioserverprousergrouptype)
+  - [RecommendationJobStatusType](#recommendationjobstatustype)
+  - [RecommendationJobTypeType](#recommendationjobtypetype)
   - [RecordWrapperType](#recordwrappertype)
   - [RedshiftResultCompressionTypeType](#redshiftresultcompressiontypetype)
   - [RedshiftResultFormatType](#redshiftresultformattype)
@@ -220,6 +229,7 @@ type annotations stubs module
   - [SortByType](#sortbytype)
   - [SortContextsByType](#sortcontextsbytype)
   - [SortExperimentsByType](#sortexperimentsbytype)
+  - [SortLineageGroupsByType](#sortlineagegroupsbytype)
   - [SortOrderType](#sortordertype)
   - [SortPipelineExecutionsByType](#sortpipelineexecutionsbytype)
   - [SortPipelinesByType](#sortpipelinesbytype)
@@ -234,6 +244,7 @@ type annotations stubs module
   - [TargetPlatformArchType](#targetplatformarchtype)
   - [TargetPlatformOsType](#targetplatformostype)
   - [TrafficRoutingConfigTypeType](#trafficroutingconfigtypetype)
+  - [TrafficTypeType](#traffictypetype)
   - [TrainingInputModeType](#traininginputmodetype)
   - [TrainingInstanceTypeType](#traininginstancetypetype)
   - [TrainingJobCompletedOrStoppedWaiterName](#trainingjobcompletedorstoppedwaitername)
@@ -827,6 +838,18 @@ Values:
 - `Disabled`
 - `Enabled`
 
+## DirectionType
+
+```python
+from mypy_boto3_sagemaker.literals import DirectionType
+```
+
+Values:
+
+- `Ascendants`
+- `Both`
+- `Descendants`
+
 ## DomainStatusType
 
 ```python
@@ -1385,6 +1408,19 @@ Values:
 - `Stopped`
 - `Stopping`
 
+## LineageTypeType
+
+```python
+from mypy_boto3_sagemaker.literals import LineageTypeType
+```
+
+Values:
+
+- `Action`
+- `Artifact`
+- `Context`
+- `TrialComponent`
+
 ## ListActionsPaginatorName
 
 ```python
@@ -1673,6 +1709,28 @@ Values:
 
 - `list_images`
 
+## ListInferenceRecommendationsJobsPaginatorName
+
+```python
+from mypy_boto3_sagemaker.literals import ListInferenceRecommendationsJobsPaginatorName
+```
+
+Values:
+
+- `list_inference_recommendations_jobs`
+
+## ListInferenceRecommendationsJobsSortByType
+
+```python
+from mypy_boto3_sagemaker.literals import ListInferenceRecommendationsJobsSortByType
+```
+
+Values:
+
+- `CreationTime`
+- `Name`
+- `Status`
+
 ## ListLabelingJobsForWorkteamPaginatorName
 
 ```python
@@ -1703,6 +1761,16 @@ Values:
 
 - `list_labeling_jobs`
 
+## ListLineageGroupsPaginatorName
+
+```python
+from mypy_boto3_sagemaker.literals import ListLineageGroupsPaginatorName
+```
+
+Values:
+
+- `list_lineage_groups`
+
 ## ListModelBiasJobDefinitionsPaginatorName
 
 ```python
@@ -1722,6 +1790,16 @@ from mypy_boto3_sagemaker.literals import ListModelExplainabilityJobDefinitionsP
 Values:
 
 - `list_model_explainability_job_definitions`
+
+## ListModelMetadataPaginatorName
+
+```python
+from mypy_boto3_sagemaker.literals import ListModelMetadataPaginatorName
+```
+
+Values:
+
+- `list_model_metadata`
 
 ## ListModelPackageGroupsPaginatorName
 
@@ -2019,6 +2097,19 @@ Values:
 
 - `Disabled`
 - `Enabled`
+
+## ModelMetadataFilterTypeType
+
+```python
+from mypy_boto3_sagemaker.literals import ModelMetadataFilterTypeType
+```
+
+Values:
+
+- `Domain`
+- `Framework`
+- `FrameworkVersion`
+- `Task`
 
 ## ModelPackageGroupSortByType
 
@@ -2671,6 +2762,32 @@ Values:
 - `R_STUDIO_ADMIN`
 - `R_STUDIO_USER`
 
+## RecommendationJobStatusType
+
+```python
+from mypy_boto3_sagemaker.literals import RecommendationJobStatusType
+```
+
+Values:
+
+- `COMPLETED`
+- `FAILED`
+- `IN_PROGRESS`
+- `PENDING`
+- `STOPPED`
+- `STOPPING`
+
+## RecommendationJobTypeType
+
+```python
+from mypy_boto3_sagemaker.literals import RecommendationJobTypeType
+```
+
+Values:
+
+- `Advanced`
+- `Default`
+
 ## RecordWrapperType
 
 ```python
@@ -2937,6 +3054,17 @@ Values:
 - `CreationTime`
 - `Name`
 
+## SortLineageGroupsByType
+
+```python
+from mypy_boto3_sagemaker.literals import SortLineageGroupsByType
+```
+
+Values:
+
+- `CreationTime`
+- `Name`
+
 ## SortOrderType
 
 ```python
@@ -3131,6 +3259,16 @@ Values:
 - `ALL_AT_ONCE`
 - `CANARY`
 - `LINEAR`
+
+## TrafficTypeType
+
+```python
+from mypy_boto3_sagemaker.literals import TrafficTypeType
+```
+
+Values:
+
+- `PHASES`
 
 ## TrainingInputModeType
 
@@ -3712,10 +3850,13 @@ Values:
 - `list_hyper_parameter_tuning_jobs`
 - `list_image_versions`
 - `list_images`
+- `list_inference_recommendations_jobs`
 - `list_labeling_jobs`
 - `list_labeling_jobs_for_workteam`
+- `list_lineage_groups`
 - `list_model_bias_job_definitions`
 - `list_model_explainability_job_definitions`
+- `list_model_metadata`
 - `list_model_package_groups`
 - `list_model_packages`
 - `list_model_quality_job_definitions`

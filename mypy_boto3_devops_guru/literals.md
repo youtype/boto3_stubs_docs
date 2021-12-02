@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 DevOpsGuru module](#literals-for-boto3-devopsguru-module)
   - [AnomalySeverityType](#anomalyseveritytype)
   - [AnomalyStatusType](#anomalystatustype)
+  - [AnomalyTypeType](#anomalytypetype)
   - [CloudWatchMetricDataStatusCodeType](#cloudwatchmetricdatastatuscodetype)
   - [CloudWatchMetricsStatType](#cloudwatchmetricsstattype)
   - [CostEstimationServiceResourceStateType](#costestimationserviceresourcestatetype)
@@ -63,6 +64,17 @@ Values:
 
 - `CLOSED`
 - `ONGOING`
+
+## AnomalyTypeType
+
+```python
+from mypy_boto3_devops_guru.literals import AnomalyTypeType
+```
+
+Values:
+
+- `CAUSAL`
+- `CONTEXTUAL`
 
 ## CloudWatchMetricDataStatusCodeType
 
@@ -341,6 +353,7 @@ Values:
 
 - `AWS_CLOUD_FORMATION`
 - `AWS_SERVICE`
+- `AWS_TAGS`
 
 ## SearchInsightsPaginatorName
 

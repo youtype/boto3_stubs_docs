@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
 
 - [Literals for boto3 Shield module](#literals-for-boto3-shield-module)
+  - [ApplicationLayerAutomaticResponseStatusType](#applicationlayerautomaticresponsestatustype)
   - [AttackLayerType](#attacklayertype)
   - [AttackPropertyIdentifierType](#attackpropertyidentifiertype)
   - [AutoRenewType](#autorenewtype)
@@ -22,6 +23,17 @@ type annotations stubs module
   - [UnitType](#unittype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+## ApplicationLayerAutomaticResponseStatusType
+
+```python
+from mypy_boto3_shield.literals import ApplicationLayerAutomaticResponseStatusType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
 
 ## AttackLayerType
 

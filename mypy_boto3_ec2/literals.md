@@ -14,6 +14,7 @@ type annotations stubs module
   - [AccountAttributeNameType](#accountattributenametype)
   - [ActivityStatusType](#activitystatustype)
   - [AddressAttributeNameType](#addressattributenametype)
+  - [AddressFamilyType](#addressfamilytype)
   - [AffinityType](#affinitytype)
   - [AllocationStateType](#allocationstatetype)
   - [AllocationStrategyType](#allocationstrategytype)
@@ -104,6 +105,9 @@ type annotations stubs module
   - [DescribeInstanceTypesPaginatorName](#describeinstancetypespaginatorname)
   - [DescribeInstancesPaginatorName](#describeinstancespaginatorname)
   - [DescribeInternetGatewaysPaginatorName](#describeinternetgatewayspaginatorname)
+  - [DescribeIpamPoolsPaginatorName](#describeipampoolspaginatorname)
+  - [DescribeIpamScopesPaginatorName](#describeipamscopespaginatorname)
+  - [DescribeIpamsPaginatorName](#describeipamspaginatorname)
   - [DescribeIpv6PoolsPaginatorName](#describeipv6poolspaginatorname)
   - [DescribeLaunchTemplateVersionsPaginatorName](#describelaunchtemplateversionspaginatorname)
   - [DescribeLaunchTemplatesPaginatorName](#describelaunchtemplatespaginatorname)
@@ -117,6 +121,8 @@ type annotations stubs module
   - [DescribeMovingAddressesPaginatorName](#describemovingaddressespaginatorname)
   - [DescribeNatGatewaysPaginatorName](#describenatgatewayspaginatorname)
   - [DescribeNetworkAclsPaginatorName](#describenetworkaclspaginatorname)
+  - [DescribeNetworkInsightsAccessScopeAnalysesPaginatorName](#describenetworkinsightsaccessscopeanalysespaginatorname)
+  - [DescribeNetworkInsightsAccessScopesPaginatorName](#describenetworkinsightsaccessscopespaginatorname)
   - [DescribeNetworkInsightsAnalysesPaginatorName](#describenetworkinsightsanalysespaginatorname)
   - [DescribeNetworkInsightsPathsPaginatorName](#describenetworkinsightspathspaginatorname)
   - [DescribeNetworkInterfacePermissionsPaginatorName](#describenetworkinterfacepermissionspaginatorname)
@@ -189,6 +195,7 @@ type annotations stubs module
   - [ExportTaskCompletedWaiterName](#exporttaskcompletedwaitername)
   - [ExportTaskStateType](#exporttaskstatetype)
   - [FastSnapshotRestoreStateCodeType](#fastsnapshotrestorestatecodetype)
+  - [FindingsFoundType](#findingsfoundtype)
   - [FleetActivityStatusType](#fleetactivitystatustype)
   - [FleetCapacityReservationTenancyType](#fleetcapacityreservationtenancytype)
   - [FleetCapacityReservationUsageStrategyType](#fleetcapacityreservationusagestrategytype)
@@ -207,6 +214,10 @@ type annotations stubs module
   - [GetAssociatedIpv6PoolCidrsPaginatorName](#getassociatedipv6poolcidrspaginatorname)
   - [GetGroupsForCapacityReservationPaginatorName](#getgroupsforcapacityreservationpaginatorname)
   - [GetInstanceTypesFromInstanceRequirementsPaginatorName](#getinstancetypesfrominstancerequirementspaginatorname)
+  - [GetIpamAddressHistoryPaginatorName](#getipamaddresshistorypaginatorname)
+  - [GetIpamPoolAllocationsPaginatorName](#getipampoolallocationspaginatorname)
+  - [GetIpamPoolCidrsPaginatorName](#getipampoolcidrspaginatorname)
+  - [GetIpamResourceCidrsPaginatorName](#getipamresourcecidrspaginatorname)
   - [GetManagedPrefixListAssociationsPaginatorName](#getmanagedprefixlistassociationspaginatorname)
   - [GetManagedPrefixListEntriesPaginatorName](#getmanagedprefixlistentriespaginatorname)
   - [GetSpotPlacementScoresPaginatorName](#getspotplacementscorespaginatorname)
@@ -250,6 +261,19 @@ type annotations stubs module
   - [InstanceTypeType](#instancetypetype)
   - [InterfacePermissionTypeType](#interfacepermissiontypetype)
   - [InterfaceProtocolTypeType](#interfaceprotocoltypetype)
+  - [IpamAddressHistoryResourceTypeType](#ipamaddresshistoryresourcetypetype)
+  - [IpamComplianceStatusType](#ipamcompliancestatustype)
+  - [IpamManagementStateType](#ipammanagementstatetype)
+  - [IpamOverlapStatusType](#ipamoverlapstatustype)
+  - [IpamPoolAllocationResourceTypeType](#ipampoolallocationresourcetypetype)
+  - [IpamPoolAwsServiceType](#ipampoolawsservicetype)
+  - [IpamPoolCidrFailureCodeType](#ipampoolcidrfailurecodetype)
+  - [IpamPoolCidrStateType](#ipampoolcidrstatetype)
+  - [IpamPoolStateType](#ipampoolstatetype)
+  - [IpamResourceTypeType](#ipamresourcetypetype)
+  - [IpamScopeStateType](#ipamscopestatetype)
+  - [IpamScopeTypeType](#ipamscopetypetype)
+  - [IpamStateType](#ipamstatetype)
   - [Ipv6SupportValueType](#ipv6supportvaluetype)
   - [KeyPairExistsWaiterName](#keypairexistswaitername)
   - [KeyTypeType](#keytypetype)
@@ -477,6 +501,17 @@ from mypy_boto3_ec2.literals import AddressAttributeNameType
 Values:
 
 - `domain-name`
+
+## AddressFamilyType
+
+```python
+from mypy_boto3_ec2.literals import AddressFamilyType
+```
+
+Values:
+
+- `ipv4`
+- `ipv6`
 
 ## AffinityType
 
@@ -1504,6 +1539,36 @@ Values:
 
 - `describe_internet_gateways`
 
+## DescribeIpamPoolsPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeIpamPoolsPaginatorName
+```
+
+Values:
+
+- `describe_ipam_pools`
+
+## DescribeIpamScopesPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeIpamScopesPaginatorName
+```
+
+Values:
+
+- `describe_ipam_scopes`
+
+## DescribeIpamsPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeIpamsPaginatorName
+```
+
+Values:
+
+- `describe_ipams`
+
 ## DescribeIpv6PoolsPaginatorName
 
 ```python
@@ -1633,6 +1698,26 @@ from mypy_boto3_ec2.literals import DescribeNetworkAclsPaginatorName
 Values:
 
 - `describe_network_acls`
+
+## DescribeNetworkInsightsAccessScopeAnalysesPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeNetworkInsightsAccessScopeAnalysesPaginatorName
+```
+
+Values:
+
+- `describe_network_insights_access_scope_analyses`
+
+## DescribeNetworkInsightsAccessScopesPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeNetworkInsightsAccessScopesPaginatorName
+```
+
+Values:
+
+- `describe_network_insights_access_scopes`
 
 ## DescribeNetworkInsightsAnalysesPaginatorName
 
@@ -2391,6 +2476,18 @@ Values:
 - `enabling`
 - `optimizing`
 
+## FindingsFoundType
+
+```python
+from mypy_boto3_ec2.literals import FindingsFoundType
+```
+
+Values:
+
+- `false`
+- `true`
+- `unknown`
+
 ## FleetActivityStatusType
 
 ```python
@@ -2597,6 +2694,46 @@ from mypy_boto3_ec2.literals import GetInstanceTypesFromInstanceRequirementsPagi
 Values:
 
 - `get_instance_types_from_instance_requirements`
+
+## GetIpamAddressHistoryPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import GetIpamAddressHistoryPaginatorName
+```
+
+Values:
+
+- `get_ipam_address_history`
+
+## GetIpamPoolAllocationsPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import GetIpamPoolAllocationsPaginatorName
+```
+
+Values:
+
+- `get_ipam_pool_allocations`
+
+## GetIpamPoolCidrsPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import GetIpamPoolCidrsPaginatorName
+```
+
+Values:
+
+- `get_ipam_pool_cidrs`
+
+## GetIpamResourceCidrsPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import GetIpamResourceCidrsPaginatorName
+```
+
+Values:
+
+- `get_ipam_resource_cidrs`
 
 ## GetManagedPrefixListAssociationsPaginatorName
 
@@ -3553,6 +3690,186 @@ Values:
 - `GRE`
 - `VLAN`
 
+## IpamAddressHistoryResourceTypeType
+
+```python
+from mypy_boto3_ec2.literals import IpamAddressHistoryResourceTypeType
+```
+
+Values:
+
+- `eip`
+- `instance`
+- `network-interface`
+- `subnet`
+- `vpc`
+
+## IpamComplianceStatusType
+
+```python
+from mypy_boto3_ec2.literals import IpamComplianceStatusType
+```
+
+Values:
+
+- `compliant`
+- `ignored`
+- `noncompliant`
+- `unmanaged`
+
+## IpamManagementStateType
+
+```python
+from mypy_boto3_ec2.literals import IpamManagementStateType
+```
+
+Values:
+
+- `ignored`
+- `managed`
+- `unmanaged`
+
+## IpamOverlapStatusType
+
+```python
+from mypy_boto3_ec2.literals import IpamOverlapStatusType
+```
+
+Values:
+
+- `ignored`
+- `nonoverlapping`
+- `overlapping`
+
+## IpamPoolAllocationResourceTypeType
+
+```python
+from mypy_boto3_ec2.literals import IpamPoolAllocationResourceTypeType
+```
+
+Values:
+
+- `custom`
+- `ec2-public-ipv4-pool`
+- `ipam-pool`
+- `vpc`
+
+## IpamPoolAwsServiceType
+
+```python
+from mypy_boto3_ec2.literals import IpamPoolAwsServiceType
+```
+
+Values:
+
+- `ec2`
+
+## IpamPoolCidrFailureCodeType
+
+```python
+from mypy_boto3_ec2.literals import IpamPoolCidrFailureCodeType
+```
+
+Values:
+
+- `cidr-not-available`
+
+## IpamPoolCidrStateType
+
+```python
+from mypy_boto3_ec2.literals import IpamPoolCidrStateType
+```
+
+Values:
+
+- `deprovisioned`
+- `failed-deprovision`
+- `failed-import`
+- `failed-provision`
+- `pending-deprovision`
+- `pending-import`
+- `pending-provision`
+- `provisioned`
+
+## IpamPoolStateType
+
+```python
+from mypy_boto3_ec2.literals import IpamPoolStateType
+```
+
+Values:
+
+- `create-complete`
+- `create-failed`
+- `create-in-progress`
+- `delete-complete`
+- `delete-failed`
+- `delete-in-progress`
+- `modify-complete`
+- `modify-failed`
+- `modify-in-progress`
+
+## IpamResourceTypeType
+
+```python
+from mypy_boto3_ec2.literals import IpamResourceTypeType
+```
+
+Values:
+
+- `eip`
+- `ipv6-pool`
+- `public-ipv4-pool`
+- `subnet`
+- `vpc`
+
+## IpamScopeStateType
+
+```python
+from mypy_boto3_ec2.literals import IpamScopeStateType
+```
+
+Values:
+
+- `create-complete`
+- `create-failed`
+- `create-in-progress`
+- `delete-complete`
+- `delete-failed`
+- `delete-in-progress`
+- `modify-complete`
+- `modify-failed`
+- `modify-in-progress`
+
+## IpamScopeTypeType
+
+```python
+from mypy_boto3_ec2.literals import IpamScopeTypeType
+```
+
+Values:
+
+- `private`
+- `public`
+
+## IpamStateType
+
+```python
+from mypy_boto3_ec2.literals import IpamStateType
+```
+
+Values:
+
+- `create-complete`
+- `create-failed`
+- `create-in-progress`
+- `delete-complete`
+- `delete-failed`
+- `delete-in-progress`
+- `modify-complete`
+- `modify-failed`
+- `modify-in-progress`
+
 ## Ipv6SupportValueType
 
 ```python
@@ -4279,6 +4596,9 @@ Values:
 - `instance`
 - `instance-event-window`
 - `internet-gateway`
+- `ipam`
+- `ipam-pool`
+- `ipam-scope`
 - `ipv4pool-ec2`
 - `ipv6pool-ec2`
 - `key-pair`
@@ -4291,6 +4611,8 @@ Values:
 - `local-gateway-virtual-interface-group`
 - `natgateway`
 - `network-acl`
+- `network-insights-access-scope`
+- `network-insights-access-scope-analysis`
 - `network-insights-analysis`
 - `network-insights-path`
 - `network-interface`
@@ -5759,6 +6081,9 @@ Values:
 - `describe_instance_types`
 - `describe_instances`
 - `describe_internet_gateways`
+- `describe_ipam_pools`
+- `describe_ipam_scopes`
+- `describe_ipams`
 - `describe_ipv6_pools`
 - `describe_launch_template_versions`
 - `describe_launch_templates`
@@ -5772,6 +6097,8 @@ Values:
 - `describe_moving_addresses`
 - `describe_nat_gateways`
 - `describe_network_acls`
+- `describe_network_insights_access_scope_analyses`
+- `describe_network_insights_access_scopes`
 - `describe_network_insights_analyses`
 - `describe_network_insights_paths`
 - `describe_network_interface_permissions`
@@ -5824,6 +6151,10 @@ Values:
 - `get_associated_ipv6_pool_cidrs`
 - `get_groups_for_capacity_reservation`
 - `get_instance_types_from_instance_requirements`
+- `get_ipam_address_history`
+- `get_ipam_pool_allocations`
+- `get_ipam_pool_cidrs`
+- `get_ipam_resource_cidrs`
 - `get_managed_prefix_list_associations`
 - `get_managed_prefix_list_entries`
 - `get_spot_placement_scores`

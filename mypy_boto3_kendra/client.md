@@ -12,33 +12,44 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [exceptions](#exceptions)
+    - [associate_entities_to_experience](#associate_entities_to_experience)
+    - [associate_personas_to_entities](#associate_personas_to_entities)
     - [batch_delete_document](#batch_delete_document)
     - [batch_get_document_status](#batch_get_document_status)
     - [batch_put_document](#batch_put_document)
     - [can_paginate](#can_paginate)
     - [clear_query_suggestions](#clear_query_suggestions)
     - [create_data_source](#create_data_source)
+    - [create_experience](#create_experience)
     - [create_faq](#create_faq)
     - [create_index](#create_index)
     - [create_query_suggestions_block_list](#create_query_suggestions_block_list)
     - [create_thesaurus](#create_thesaurus)
     - [delete_data_source](#delete_data_source)
+    - [delete_experience](#delete_experience)
     - [delete_faq](#delete_faq)
     - [delete_index](#delete_index)
     - [delete_principal_mapping](#delete_principal_mapping)
     - [delete_query_suggestions_block_list](#delete_query_suggestions_block_list)
     - [delete_thesaurus](#delete_thesaurus)
     - [describe_data_source](#describe_data_source)
+    - [describe_experience](#describe_experience)
     - [describe_faq](#describe_faq)
     - [describe_index](#describe_index)
     - [describe_principal_mapping](#describe_principal_mapping)
     - [describe_query_suggestions_block_list](#describe_query_suggestions_block_list)
     - [describe_query_suggestions_config](#describe_query_suggestions_config)
     - [describe_thesaurus](#describe_thesaurus)
+    - [disassociate_entities_from_experience](#disassociate_entities_from_experience)
+    - [disassociate_personas_from_entities](#disassociate_personas_from_entities)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_query_suggestions](#get_query_suggestions)
+    - [get_snapshots](#get_snapshots)
     - [list_data_source_sync_jobs](#list_data_source_sync_jobs)
     - [list_data_sources](#list_data_sources)
+    - [list_entity_personas](#list_entity_personas)
+    - [list_experience_entities](#list_experience_entities)
+    - [list_experiences](#list_experiences)
     - [list_faqs](#list_faqs)
     - [list_groups_older_than_ordering_id](#list_groups_older_than_ordering_id)
     - [list_indices](#list_indices)
@@ -53,6 +64,7 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_data_source](#update_data_source)
+    - [update_experience](#update_experience)
     - [update_index](#update_index)
     - [update_query_suggestions_block_list](#update_query_suggestions_block_list)
     - [update_query_suggestions_config](#update_query_suggestions_config)
@@ -92,6 +104,7 @@ Exceptions:
 - `Exceptions.ClientError`
 - `Exceptions.ConflictException`
 - `Exceptions.InternalServerException`
+- `Exceptions.InvalidRequestException`
 - `Exceptions.ResourceAlreadyExistException`
 - `Exceptions.ResourceInUseException`
 - `Exceptions.ResourceNotFoundException`
@@ -112,6 +125,56 @@ Boto3 documentation:
 [kendra.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+### associate_entities_to_experience
+
+Grants users or groups in your Amazon Web Services SSO identity source access
+to your Amazon Kendra experience.
+
+Type annotations for `boto3.client("kendra").associate_entities_to_experience`
+method.
+
+Boto3 documentation:
+[kendra.Client.associate_entities_to_experience](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.associate_entities_to_experience)
+
+Arguments mapping described in
+[AssociateEntitiesToExperienceRequestRequestTypeDef](./type_defs.md#associateentitiestoexperiencerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+- `EntityList`:
+  `Sequence`\[[EntityConfigurationTypeDef](./type_defs.md#entityconfigurationtypedef)\]
+  *(required)*
+
+Returns
+[AssociateEntitiesToExperienceResponseTypeDef](./type_defs.md#associateentitiestoexperienceresponsetypedef).
+
+### associate_personas_to_entities
+
+Defines the specific permissions of users or groups in your Amazon Web Services
+SSO identity source with access to your Amazon Kendra experience.
+
+Type annotations for `boto3.client("kendra").associate_personas_to_entities`
+method.
+
+Boto3 documentation:
+[kendra.Client.associate_personas_to_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.associate_personas_to_entities)
+
+Arguments mapping described in
+[AssociatePersonasToEntitiesRequestRequestTypeDef](./type_defs.md#associatepersonastoentitiesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+- `Personas`:
+  `Sequence`\[[EntityPersonaConfigurationTypeDef](./type_defs.md#entitypersonaconfigurationtypedef)\]
+  *(required)*
+
+Returns
+[AssociatePersonasToEntitiesResponseTypeDef](./type_defs.md#associatepersonastoentitiesresponsetypedef).
 
 ### batch_delete_document
 
@@ -177,6 +240,8 @@ Keyword-only arguments:
 - `Documents`: `Sequence`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\]
   *(required)*
 - `RoleArn`: `str`
+- `CustomDocumentEnrichmentConfiguration`:
+  [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
 
 Returns
 [BatchPutDocumentResponseTypeDef](./type_defs.md#batchputdocumentresponsetypedef).
@@ -237,9 +302,36 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 - `LanguageCode`: `str`
+- `CustomDocumentEnrichmentConfiguration`:
+  [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
 
 Returns
 [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
+
+### create_experience
+
+Creates an Amazon Kendra experience such as a search application.
+
+Type annotations for `boto3.client("kendra").create_experience` method.
+
+Boto3 documentation:
+[kendra.Client.create_experience](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_experience)
+
+Arguments mapping described in
+[CreateExperienceRequestRequestTypeDef](./type_defs.md#createexperiencerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+- `RoleArn`: `str`
+- `Configuration`:
+  [ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef)
+- `Description`: `str`
+- `ClientToken`: `str`
+
+Returns
+[CreateExperienceResponseTypeDef](./type_defs.md#createexperienceresponsetypedef).
 
 ### create_faq
 
@@ -367,6 +459,25 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
 
+### delete_experience
+
+Deletes your Amazon Kendra experience such as a search application.
+
+Type annotations for `boto3.client("kendra").delete_experience` method.
+
+Boto3 documentation:
+[kendra.Client.delete_experience](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_experience)
+
+Arguments mapping described in
+[DeleteExperienceRequestRequestTypeDef](./type_defs.md#deleteexperiencerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### delete_faq
 
 Removes an FAQ from an index.
@@ -474,6 +585,27 @@ Keyword-only arguments:
 
 Returns
 [DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef).
+
+### describe_experience
+
+Gets information about your Amazon Kendra experience such as a search
+application.
+
+Type annotations for `boto3.client("kendra").describe_experience` method.
+
+Boto3 documentation:
+[kendra.Client.describe_experience](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_experience)
+
+Arguments mapping described in
+[DescribeExperienceRequestRequestTypeDef](./type_defs.md#describeexperiencerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+
+Returns
+[DescribeExperienceResponseTypeDef](./type_defs.md#describeexperienceresponsetypedef).
 
 ### describe_faq
 
@@ -600,6 +732,54 @@ Keyword-only arguments:
 Returns
 [DescribeThesaurusResponseTypeDef](./type_defs.md#describethesaurusresponsetypedef).
 
+### disassociate_entities_from_experience
+
+Prevents users or groups in your Amazon Web Services SSO identity source from
+accessing your Amazon Kendra experience.
+
+Type annotations for
+`boto3.client("kendra").disassociate_entities_from_experience` method.
+
+Boto3 documentation:
+[kendra.Client.disassociate_entities_from_experience](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.disassociate_entities_from_experience)
+
+Arguments mapping described in
+[DisassociateEntitiesFromExperienceRequestRequestTypeDef](./type_defs.md#disassociateentitiesfromexperiencerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+- `EntityList`:
+  `Sequence`\[[EntityConfigurationTypeDef](./type_defs.md#entityconfigurationtypedef)\]
+  *(required)*
+
+Returns
+[DisassociateEntitiesFromExperienceResponseTypeDef](./type_defs.md#disassociateentitiesfromexperienceresponsetypedef).
+
+### disassociate_personas_from_entities
+
+Removes the specific permissions of users or groups in your Amazon Web Services
+SSO identity source with access to your Amazon Kendra experience.
+
+Type annotations for
+`boto3.client("kendra").disassociate_personas_from_entities` method.
+
+Boto3 documentation:
+[kendra.Client.disassociate_personas_from_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.disassociate_personas_from_entities)
+
+Arguments mapping described in
+[DisassociatePersonasFromEntitiesRequestRequestTypeDef](./type_defs.md#disassociatepersonasfromentitiesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+- `EntityIds`: `Sequence`\[`str`\] *(required)*
+
+Returns
+[DisassociatePersonasFromEntitiesResponseTypeDef](./type_defs.md#disassociatepersonasfromentitiesresponsetypedef).
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -638,6 +818,29 @@ Keyword-only arguments:
 
 Returns
 [GetQuerySuggestionsResponseTypeDef](./type_defs.md#getquerysuggestionsresponsetypedef).
+
+### get_snapshots
+
+Retrieves search metrics data.
+
+Type annotations for `boto3.client("kendra").get_snapshots` method.
+
+Boto3 documentation:
+[kendra.Client.get_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.get_snapshots)
+
+Arguments mapping described in
+[GetSnapshotsRequestRequestTypeDef](./type_defs.md#getsnapshotsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IndexId`: `str` *(required)*
+- `Interval`: [IntervalType](./literals.md#intervaltype) *(required)*
+- `MetricType`: [MetricTypeType](./literals.md#metrictypetype) *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetSnapshotsResponseTypeDef](./type_defs.md#getsnapshotsresponsetypedef).
 
 ### list_data_source_sync_jobs
 
@@ -685,6 +888,72 @@ Keyword-only arguments:
 
 Returns
 [ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
+
+### list_entity_personas
+
+Lists specific permissions of users and groups with access to your Amazon
+Kendra experience.
+
+Type annotations for `boto3.client("kendra").list_entity_personas` method.
+
+Boto3 documentation:
+[kendra.Client.list_entity_personas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_entity_personas)
+
+Arguments mapping described in
+[ListEntityPersonasRequestRequestTypeDef](./type_defs.md#listentitypersonasrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListEntityPersonasResponseTypeDef](./type_defs.md#listentitypersonasresponsetypedef).
+
+### list_experience_entities
+
+Lists users or groups in your Amazon Web Services SSO identity source that are
+granted access to your Amazon Kendra experience.
+
+Type annotations for `boto3.client("kendra").list_experience_entities` method.
+
+Boto3 documentation:
+[kendra.Client.list_experience_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_experience_entities)
+
+Arguments mapping described in
+[ListExperienceEntitiesRequestRequestTypeDef](./type_defs.md#listexperienceentitiesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListExperienceEntitiesResponseTypeDef](./type_defs.md#listexperienceentitiesresponsetypedef).
+
+### list_experiences
+
+Lists one or more Amazon Kendra experiences.
+
+Type annotations for `boto3.client("kendra").list_experiences` method.
+
+Boto3 documentation:
+[kendra.Client.list_experiences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_experiences)
+
+Arguments mapping described in
+[ListExperiencesRequestRequestTypeDef](./type_defs.md#listexperiencesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IndexId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListExperiencesResponseTypeDef](./type_defs.md#listexperiencesresponsetypedef).
 
 ### list_faqs
 
@@ -990,6 +1259,30 @@ Keyword-only arguments:
 - `Schedule`: `str`
 - `RoleArn`: `str`
 - `LanguageCode`: `str`
+- `CustomDocumentEnrichmentConfiguration`:
+  [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
+
+### update_experience
+
+Updates your Amazon Kendra experience such as a search application.
+
+Type annotations for `boto3.client("kendra").update_experience` method.
+
+Boto3 documentation:
+[kendra.Client.update_experience](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_experience)
+
+Arguments mapping described in
+[UpdateExperienceRequestRequestTypeDef](./type_defs.md#updateexperiencerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+- `Name`: `str`
+- `RoleArn`: `str`
+- `Configuration`:
+  [ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef)
+- `Description`: `str`
 
 ### update_index
 

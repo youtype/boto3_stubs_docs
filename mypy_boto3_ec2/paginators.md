@@ -40,6 +40,9 @@ type annotations stubs module
   - [DescribeInstanceTypesPaginator](#describeinstancetypespaginator)
   - [DescribeInstancesPaginator](#describeinstancespaginator)
   - [DescribeInternetGatewaysPaginator](#describeinternetgatewayspaginator)
+  - [DescribeIpamPoolsPaginator](#describeipampoolspaginator)
+  - [DescribeIpamScopesPaginator](#describeipamscopespaginator)
+  - [DescribeIpamsPaginator](#describeipamspaginator)
   - [DescribeIpv6PoolsPaginator](#describeipv6poolspaginator)
   - [DescribeLaunchTemplateVersionsPaginator](#describelaunchtemplateversionspaginator)
   - [DescribeLaunchTemplatesPaginator](#describelaunchtemplatespaginator)
@@ -53,6 +56,8 @@ type annotations stubs module
   - [DescribeMovingAddressesPaginator](#describemovingaddressespaginator)
   - [DescribeNatGatewaysPaginator](#describenatgatewayspaginator)
   - [DescribeNetworkAclsPaginator](#describenetworkaclspaginator)
+  - [DescribeNetworkInsightsAccessScopeAnalysesPaginator](#describenetworkinsightsaccessscopeanalysespaginator)
+  - [DescribeNetworkInsightsAccessScopesPaginator](#describenetworkinsightsaccessscopespaginator)
   - [DescribeNetworkInsightsAnalysesPaginator](#describenetworkinsightsanalysespaginator)
   - [DescribeNetworkInsightsPathsPaginator](#describenetworkinsightspathspaginator)
   - [DescribeNetworkInterfacePermissionsPaginator](#describenetworkinterfacepermissionspaginator)
@@ -105,6 +110,10 @@ type annotations stubs module
   - [GetAssociatedIpv6PoolCidrsPaginator](#getassociatedipv6poolcidrspaginator)
   - [GetGroupsForCapacityReservationPaginator](#getgroupsforcapacityreservationpaginator)
   - [GetInstanceTypesFromInstanceRequirementsPaginator](#getinstancetypesfrominstancerequirementspaginator)
+  - [GetIpamAddressHistoryPaginator](#getipamaddresshistorypaginator)
+  - [GetIpamPoolAllocationsPaginator](#getipampoolallocationspaginator)
+  - [GetIpamPoolCidrsPaginator](#getipampoolcidrspaginator)
+  - [GetIpamResourceCidrsPaginator](#getipamresourcecidrspaginator)
   - [GetManagedPrefixListAssociationsPaginator](#getmanagedprefixlistassociationspaginator)
   - [GetManagedPrefixListEntriesPaginator](#getmanagedprefixlistentriespaginator)
   - [GetSpotPlacementScoresPaginator](#getspotplacementscorespaginator)
@@ -1011,6 +1020,89 @@ Arguments for `DescribeInternetGatewaysPaginator.paginate` method:
 `DescribeInternetGatewaysPaginator.paginate` returns
 `_PageIterator`\[[DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef)\].
 
+## DescribeIpamPoolsPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_ipam_pools")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeIpamPoolsPaginator
+
+def get_describe_ipam_pools_paginator() -> DescribeIpamPoolsPaginator:
+    return boto3.client("ec2").get_paginator("describe_ipam_pools")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeIpamPools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpamPools)
+
+Arguments for `DescribeIpamPoolsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `IpamPoolIds`: `Sequence`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeIpamPoolsPaginator.paginate` returns
+`_PageIterator`\[[DescribeIpamPoolsResultTypeDef](./type_defs.md#describeipampoolsresulttypedef)\].
+
+## DescribeIpamScopesPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_ipam_scopes")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeIpamScopesPaginator
+
+def get_describe_ipam_scopes_paginator() -> DescribeIpamScopesPaginator:
+    return boto3.client("ec2").get_paginator("describe_ipam_scopes")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeIpamScopes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpamScopes)
+
+Arguments for `DescribeIpamScopesPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `IpamScopeIds`: `Sequence`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeIpamScopesPaginator.paginate` returns
+`_PageIterator`\[[DescribeIpamScopesResultTypeDef](./type_defs.md#describeipamscopesresulttypedef)\].
+
+## DescribeIpamsPaginator
+
+Type annotations for `boto3.client("ec2").get_paginator("describe_ipams")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeIpamsPaginator
+
+def get_describe_ipams_paginator() -> DescribeIpamsPaginator:
+    return boto3.client("ec2").get_paginator("describe_ipams")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeIpams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpams)
+
+Arguments for `DescribeIpamsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `IpamIds`: `Sequence`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeIpamsPaginator.paginate` returns
+`_PageIterator`\[[DescribeIpamsResultTypeDef](./type_defs.md#describeipamsresulttypedef)\].
+
 ## DescribeIpv6PoolsPaginator
 
 Type annotations for
@@ -1385,6 +1477,66 @@ Arguments for `DescribeNetworkAclsPaginator.paginate` method:
 
 `DescribeNetworkAclsPaginator.paginate` returns
 `_PageIterator`\[[DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef)\].
+
+## DescribeNetworkInsightsAccessScopeAnalysesPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_network_insights_access_scope_analyses")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAccessScopeAnalysesPaginator
+
+def get_describe_network_insights_access_scope_analyses_paginator() -> DescribeNetworkInsightsAccessScopeAnalysesPaginator:
+    return boto3.client("ec2").get_paginator("describe_network_insights_access_scope_analyses")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeNetworkInsightsAccessScopeAnalyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsAccessScopeAnalyses)
+
+Arguments for `DescribeNetworkInsightsAccessScopeAnalysesPaginator.paginate`
+method:
+
+- `NetworkInsightsAccessScopeAnalysisIds`: `Sequence`\[`str`\]
+- `NetworkInsightsAccessScopeId`: `str`
+- `AnalysisStartTimeBegin`: `Union`\[`datetime`, `str`\]
+- `AnalysisStartTimeEnd`: `Union`\[`datetime`, `str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeNetworkInsightsAccessScopeAnalysesPaginator.paginate` returns
+`_PageIterator`\[[DescribeNetworkInsightsAccessScopeAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopeanalysesresulttypedef)\].
+
+## DescribeNetworkInsightsAccessScopesPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_network_insights_access_scopes")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAccessScopesPaginator
+
+def get_describe_network_insights_access_scopes_paginator() -> DescribeNetworkInsightsAccessScopesPaginator:
+    return boto3.client("ec2").get_paginator("describe_network_insights_access_scopes")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeNetworkInsightsAccessScopes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsAccessScopes)
+
+Arguments for `DescribeNetworkInsightsAccessScopesPaginator.paginate` method:
+
+- `NetworkInsightsAccessScopeIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeNetworkInsightsAccessScopesPaginator.paginate` returns
+`_PageIterator`\[[DescribeNetworkInsightsAccessScopesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopesresulttypedef)\].
 
 ## DescribeNetworkInsightsAnalysesPaginator
 
@@ -2867,6 +3019,128 @@ method:
 
 `GetInstanceTypesFromInstanceRequirementsPaginator.paginate` returns
 `_PageIterator`\[[GetInstanceTypesFromInstanceRequirementsResultTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsresulttypedef)\].
+
+## GetIpamAddressHistoryPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("get_ipam_address_history")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import GetIpamAddressHistoryPaginator
+
+def get_get_ipam_address_history_paginator() -> GetIpamAddressHistoryPaginator:
+    return boto3.client("ec2").get_paginator("get_ipam_address_history")
+```
+
+Boto3 documentation:
+[EC2.Paginator.GetIpamAddressHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamAddressHistory)
+
+Arguments for `GetIpamAddressHistoryPaginator.paginate` method:
+
+- `Cidr`: `str` *(required)*
+- `IpamScopeId`: `str` *(required)*
+- `DryRun`: `bool`
+- `VpcId`: `str`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetIpamAddressHistoryPaginator.paginate` returns
+`_PageIterator`\[[GetIpamAddressHistoryResultTypeDef](./type_defs.md#getipamaddresshistoryresulttypedef)\].
+
+## GetIpamPoolAllocationsPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("get_ipam_pool_allocations")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import GetIpamPoolAllocationsPaginator
+
+def get_get_ipam_pool_allocations_paginator() -> GetIpamPoolAllocationsPaginator:
+    return boto3.client("ec2").get_paginator("get_ipam_pool_allocations")
+```
+
+Boto3 documentation:
+[EC2.Paginator.GetIpamPoolAllocations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamPoolAllocations)
+
+Arguments for `GetIpamPoolAllocationsPaginator.paginate` method:
+
+- `IpamPoolId`: `str` *(required)*
+- `DryRun`: `bool`
+- `IpamPoolAllocationId`: `str`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetIpamPoolAllocationsPaginator.paginate` returns
+`_PageIterator`\[[GetIpamPoolAllocationsResultTypeDef](./type_defs.md#getipampoolallocationsresulttypedef)\].
+
+## GetIpamPoolCidrsPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("get_ipam_pool_cidrs")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import GetIpamPoolCidrsPaginator
+
+def get_get_ipam_pool_cidrs_paginator() -> GetIpamPoolCidrsPaginator:
+    return boto3.client("ec2").get_paginator("get_ipam_pool_cidrs")
+```
+
+Boto3 documentation:
+[EC2.Paginator.GetIpamPoolCidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamPoolCidrs)
+
+Arguments for `GetIpamPoolCidrsPaginator.paginate` method:
+
+- `IpamPoolId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetIpamPoolCidrsPaginator.paginate` returns
+`_PageIterator`\[[GetIpamPoolCidrsResultTypeDef](./type_defs.md#getipampoolcidrsresulttypedef)\].
+
+## GetIpamResourceCidrsPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("get_ipam_resource_cidrs")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import GetIpamResourceCidrsPaginator
+
+def get_get_ipam_resource_cidrs_paginator() -> GetIpamResourceCidrsPaginator:
+    return boto3.client("ec2").get_paginator("get_ipam_resource_cidrs")
+```
+
+Boto3 documentation:
+[EC2.Paginator.GetIpamResourceCidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamResourceCidrs)
+
+Arguments for `GetIpamResourceCidrsPaginator.paginate` method:
+
+- `IpamScopeId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `IpamPoolId`: `str`
+- `ResourceId`: `str`
+- `ResourceType`: [IpamResourceTypeType](./literals.md#ipamresourcetypetype)
+- `ResourceTag`:
+  [RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef)
+- `ResourceOwner`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetIpamResourceCidrsPaginator.paginate` returns
+`_PageIterator`\[[GetIpamResourceCidrsResultTypeDef](./type_defs.md#getipamresourcecidrsresulttypedef)\].
 
 ## GetManagedPrefixListAssociationsPaginator
 

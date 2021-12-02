@@ -21,6 +21,7 @@ type annotations stubs module
     - [advertise_byoip_cidr](#advertise_byoip_cidr)
     - [allocate_address](#allocate_address)
     - [allocate_hosts](#allocate_hosts)
+    - [allocate_ipam_pool_cidr](#allocate_ipam_pool_cidr)
     - [apply_security_groups_to_client_vpn_target_network](#apply_security_groups_to_client_vpn_target_network)
     - [assign_ipv6_addresses](#assign_ipv6_addresses)
     - [assign_private_ip_addresses](#assign_private_ip_addresses)
@@ -76,6 +77,9 @@ type annotations stubs module
     - [create_instance_event_window](#create_instance_event_window)
     - [create_instance_export_task](#create_instance_export_task)
     - [create_internet_gateway](#create_internet_gateway)
+    - [create_ipam](#create_ipam)
+    - [create_ipam_pool](#create_ipam_pool)
+    - [create_ipam_scope](#create_ipam_scope)
     - [create_key_pair](#create_key_pair)
     - [create_launch_template](#create_launch_template)
     - [create_launch_template_version](#create_launch_template_version)
@@ -85,10 +89,12 @@ type annotations stubs module
     - [create_nat_gateway](#create_nat_gateway)
     - [create_network_acl](#create_network_acl)
     - [create_network_acl_entry](#create_network_acl_entry)
+    - [create_network_insights_access_scope](#create_network_insights_access_scope)
     - [create_network_insights_path](#create_network_insights_path)
     - [create_network_interface](#create_network_interface)
     - [create_network_interface_permission](#create_network_interface_permission)
     - [create_placement_group](#create_placement_group)
+    - [create_public_ipv4_pool](#create_public_ipv4_pool)
     - [create_replace_root_volume_task](#create_replace_root_volume_task)
     - [create_reserved_instances_listing](#create_reserved_instances_listing)
     - [create_restore_image_task](#create_restore_image_task)
@@ -135,6 +141,9 @@ type annotations stubs module
     - [delete_fpga_image](#delete_fpga_image)
     - [delete_instance_event_window](#delete_instance_event_window)
     - [delete_internet_gateway](#delete_internet_gateway)
+    - [delete_ipam](#delete_ipam)
+    - [delete_ipam_pool](#delete_ipam_pool)
+    - [delete_ipam_scope](#delete_ipam_scope)
     - [delete_key_pair](#delete_key_pair)
     - [delete_launch_template](#delete_launch_template)
     - [delete_launch_template_versions](#delete_launch_template_versions)
@@ -144,11 +153,14 @@ type annotations stubs module
     - [delete_nat_gateway](#delete_nat_gateway)
     - [delete_network_acl](#delete_network_acl)
     - [delete_network_acl_entry](#delete_network_acl_entry)
+    - [delete_network_insights_access_scope](#delete_network_insights_access_scope)
+    - [delete_network_insights_access_scope_analysis](#delete_network_insights_access_scope_analysis)
     - [delete_network_insights_analysis](#delete_network_insights_analysis)
     - [delete_network_insights_path](#delete_network_insights_path)
     - [delete_network_interface](#delete_network_interface)
     - [delete_network_interface_permission](#delete_network_interface_permission)
     - [delete_placement_group](#delete_placement_group)
+    - [delete_public_ipv4_pool](#delete_public_ipv4_pool)
     - [delete_queued_reserved_instances](#delete_queued_reserved_instances)
     - [delete_route](#delete_route)
     - [delete_route_table](#delete_route_table)
@@ -181,6 +193,8 @@ type annotations stubs module
     - [delete_vpn_connection_route](#delete_vpn_connection_route)
     - [delete_vpn_gateway](#delete_vpn_gateway)
     - [deprovision_byoip_cidr](#deprovision_byoip_cidr)
+    - [deprovision_ipam_pool_cidr](#deprovision_ipam_pool_cidr)
+    - [deprovision_public_ipv4_pool_cidr](#deprovision_public_ipv4_pool_cidr)
     - [deregister_image](#deregister_image)
     - [deregister_instance_event_notification_attributes](#deregister_instance_event_notification_attributes)
     - [deregister_transit_gateway_multicast_group_members](#deregister_transit_gateway_multicast_group_members)
@@ -235,6 +249,9 @@ type annotations stubs module
     - [describe_instance_types](#describe_instance_types)
     - [describe_instances](#describe_instances)
     - [describe_internet_gateways](#describe_internet_gateways)
+    - [describe_ipam_pools](#describe_ipam_pools)
+    - [describe_ipam_scopes](#describe_ipam_scopes)
+    - [describe_ipams](#describe_ipams)
     - [describe_ipv6_pools](#describe_ipv6_pools)
     - [describe_key_pairs](#describe_key_pairs)
     - [describe_launch_template_versions](#describe_launch_template_versions)
@@ -249,6 +266,8 @@ type annotations stubs module
     - [describe_moving_addresses](#describe_moving_addresses)
     - [describe_nat_gateways](#describe_nat_gateways)
     - [describe_network_acls](#describe_network_acls)
+    - [describe_network_insights_access_scope_analyses](#describe_network_insights_access_scope_analyses)
+    - [describe_network_insights_access_scopes](#describe_network_insights_access_scopes)
     - [describe_network_insights_analyses](#describe_network_insights_analyses)
     - [describe_network_insights_paths](#describe_network_insights_paths)
     - [describe_network_interface_attribute](#describe_network_interface_attribute)
@@ -320,6 +339,7 @@ type annotations stubs module
     - [disable_ebs_encryption_by_default](#disable_ebs_encryption_by_default)
     - [disable_fast_snapshot_restores](#disable_fast_snapshot_restores)
     - [disable_image_deprecation](#disable_image_deprecation)
+    - [disable_ipam_organization_admin_account](#disable_ipam_organization_admin_account)
     - [disable_serial_console_access](#disable_serial_console_access)
     - [disable_transit_gateway_route_table_propagation](#disable_transit_gateway_route_table_propagation)
     - [disable_vgw_route_propagation](#disable_vgw_route_propagation)
@@ -339,6 +359,7 @@ type annotations stubs module
     - [enable_ebs_encryption_by_default](#enable_ebs_encryption_by_default)
     - [enable_fast_snapshot_restores](#enable_fast_snapshot_restores)
     - [enable_image_deprecation](#enable_image_deprecation)
+    - [enable_ipam_organization_admin_account](#enable_ipam_organization_admin_account)
     - [enable_serial_console_access](#enable_serial_console_access)
     - [enable_transit_gateway_route_table_propagation](#enable_transit_gateway_route_table_propagation)
     - [enable_vgw_route_propagation](#enable_vgw_route_propagation)
@@ -363,9 +384,15 @@ type annotations stubs module
     - [get_groups_for_capacity_reservation](#get_groups_for_capacity_reservation)
     - [get_host_reservation_purchase_preview](#get_host_reservation_purchase_preview)
     - [get_instance_types_from_instance_requirements](#get_instance_types_from_instance_requirements)
+    - [get_ipam_address_history](#get_ipam_address_history)
+    - [get_ipam_pool_allocations](#get_ipam_pool_allocations)
+    - [get_ipam_pool_cidrs](#get_ipam_pool_cidrs)
+    - [get_ipam_resource_cidrs](#get_ipam_resource_cidrs)
     - [get_launch_template_data](#get_launch_template_data)
     - [get_managed_prefix_list_associations](#get_managed_prefix_list_associations)
     - [get_managed_prefix_list_entries](#get_managed_prefix_list_entries)
+    - [get_network_insights_access_scope_analysis_findings](#get_network_insights_access_scope_analysis_findings)
+    - [get_network_insights_access_scope_content](#get_network_insights_access_scope_content)
     - [get_password_data](#get_password_data)
     - [get_reserved_instances_exchange_quote](#get_reserved_instances_exchange_quote)
     - [get_serial_console_access_status](#get_serial_console_access_status)
@@ -405,6 +432,10 @@ type annotations stubs module
     - [modify_instance_event_window](#modify_instance_event_window)
     - [modify_instance_metadata_options](#modify_instance_metadata_options)
     - [modify_instance_placement](#modify_instance_placement)
+    - [modify_ipam](#modify_ipam)
+    - [modify_ipam_pool](#modify_ipam_pool)
+    - [modify_ipam_resource_cidr](#modify_ipam_resource_cidr)
+    - [modify_ipam_scope](#modify_ipam_scope)
     - [modify_launch_template](#modify_launch_template)
     - [modify_managed_prefix_list](#modify_managed_prefix_list)
     - [modify_network_interface_attribute](#modify_network_interface_attribute)
@@ -436,7 +467,10 @@ type annotations stubs module
     - [modify_vpn_tunnel_options](#modify_vpn_tunnel_options)
     - [monitor_instances](#monitor_instances)
     - [move_address_to_vpc](#move_address_to_vpc)
+    - [move_byoip_cidr_to_ipam](#move_byoip_cidr_to_ipam)
     - [provision_byoip_cidr](#provision_byoip_cidr)
+    - [provision_ipam_pool_cidr](#provision_ipam_pool_cidr)
+    - [provision_public_ipv4_pool_cidr](#provision_public_ipv4_pool_cidr)
     - [purchase_host_reservation](#purchase_host_reservation)
     - [purchase_reserved_instances_offering](#purchase_reserved_instances_offering)
     - [purchase_scheduled_instances](#purchase_scheduled_instances)
@@ -452,6 +486,7 @@ type annotations stubs module
     - [reject_vpc_peering_connection](#reject_vpc_peering_connection)
     - [release_address](#release_address)
     - [release_hosts](#release_hosts)
+    - [release_ipam_pool_allocation](#release_ipam_pool_allocation)
     - [replace_iam_instance_profile_association](#replace_iam_instance_profile_association)
     - [replace_network_acl_association](#replace_network_acl_association)
     - [replace_network_acl_entry](#replace_network_acl_entry)
@@ -482,6 +517,7 @@ type annotations stubs module
     - [search_transit_gateway_routes](#search_transit_gateway_routes)
     - [send_diagnostic_interrupt](#send_diagnostic_interrupt)
     - [start_instances](#start_instances)
+    - [start_network_insights_access_scope_analysis](#start_network_insights_access_scope_analysis)
     - [start_network_insights_analysis](#start_network_insights_analysis)
     - [start_vpc_endpoint_service_private_dns_verification](#start_vpc_endpoint_service_private_dns_verification)
     - [stop_instances](#stop_instances)
@@ -748,6 +784,32 @@ Keyword-only arguments:
 
 Returns
 [AllocateHostsResultTypeDef](./type_defs.md#allocatehostsresulttypedef).
+
+### allocate_ipam_pool_cidr
+
+Allocate a CIDR from an IPAM pool.
+
+Type annotations for `boto3.client("ec2").allocate_ipam_pool_cidr` method.
+
+Boto3 documentation:
+[EC2.Client.allocate_ipam_pool_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.allocate_ipam_pool_cidr)
+
+Arguments mapping described in
+[AllocateIpamPoolCidrRequestRequestTypeDef](./type_defs.md#allocateipampoolcidrrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamPoolId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Cidr`: `str`
+- `NetmaskLength`: `int`
+- `ClientToken`: `str`
+- `Description`: `str`
+- `PreviewNextCidr`: `bool`
+- `DisallowedCidrs`: `Sequence`\[`str`\]
+
+Returns
+[AllocateIpamPoolCidrResultTypeDef](./type_defs.md#allocateipampoolcidrresulttypedef).
 
 ### apply_security_groups_to_client_vpn_target_network
 
@@ -1094,6 +1156,10 @@ Keyword-only arguments:
 - `Ipv6CidrBlockNetworkBorderGroup`: `str`
 - `Ipv6Pool`: `str`
 - `Ipv6CidrBlock`: `str`
+- `Ipv4IpamPoolId`: `str`
+- `Ipv4NetmaskLength`: `int`
+- `Ipv6IpamPoolId`: `str`
+- `Ipv6NetmaskLength`: `int`
 
 Returns
 [AssociateVpcCidrBlockResultTypeDef](./type_defs.md#associatevpccidrblockresulttypedef).
@@ -2089,6 +2155,90 @@ Keyword-only arguments:
 Returns
 [CreateInternetGatewayResultTypeDef](./type_defs.md#createinternetgatewayresulttypedef).
 
+### create_ipam
+
+Create an IPAM.
+
+Type annotations for `boto3.client("ec2").create_ipam` method.
+
+Boto3 documentation:
+[EC2.Client.create_ipam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_ipam)
+
+Arguments mapping described in
+[CreateIpamRequestRequestTypeDef](./type_defs.md#createipamrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DryRun`: `bool`
+- `Description`: `str`
+- `OperatingRegions`:
+  `Sequence`\[[AddIpamOperatingRegionTypeDef](./type_defs.md#addipamoperatingregiontypedef)\]
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
+
+Returns [CreateIpamResultTypeDef](./type_defs.md#createipamresulttypedef).
+
+### create_ipam_pool
+
+Create an IP address pool for Amazon VPC IP Address Manager (IPAM).
+
+Type annotations for `boto3.client("ec2").create_ipam_pool` method.
+
+Boto3 documentation:
+[EC2.Client.create_ipam_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_ipam_pool)
+
+Arguments mapping described in
+[CreateIpamPoolRequestRequestTypeDef](./type_defs.md#createipampoolrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamScopeId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Locale`: `str`
+- `SourceIpamPoolId`: `str`
+- `Description`: `str`
+- `AddressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
+- `AutoImport`: `bool`
+- `PubliclyAdvertisable`: `bool`
+- `AllocationMinNetmaskLength`: `int`
+- `AllocationMaxNetmaskLength`: `int`
+- `AllocationDefaultNetmaskLength`: `int`
+- `AllocationResourceTags`:
+  `Sequence`\[[RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef)\]
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
+- `AwsService`: `Literal['ec2']` (see
+  [IpamPoolAwsServiceType](./literals.md#ipampoolawsservicetype))
+
+Returns
+[CreateIpamPoolResultTypeDef](./type_defs.md#createipampoolresulttypedef).
+
+### create_ipam_scope
+
+Create an IPAM scope.
+
+Type annotations for `boto3.client("ec2").create_ipam_scope` method.
+
+Boto3 documentation:
+[EC2.Client.create_ipam_scope](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_ipam_scope)
+
+Arguments mapping described in
+[CreateIpamScopeRequestRequestTypeDef](./type_defs.md#createipamscoperequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Description`: `str`
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
+
+Returns
+[CreateIpamScopeResultTypeDef](./type_defs.md#createipamscoperesulttypedef).
+
 ### create_key_pair
 
 Creates an ED25519 or 2048-bit RSA key pair with the specified name.
@@ -2312,6 +2462,33 @@ Keyword-only arguments:
 - `Ipv6CidrBlock`: `str`
 - `PortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
 
+### create_network_insights_access_scope
+
+Creates a Network Access Scope.
+
+Type annotations for `boto3.client("ec2").create_network_insights_access_scope`
+method.
+
+Boto3 documentation:
+[EC2.Client.create_network_insights_access_scope](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_insights_access_scope)
+
+Arguments mapping described in
+[CreateNetworkInsightsAccessScopeRequestRequestTypeDef](./type_defs.md#createnetworkinsightsaccessscoperequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClientToken`: `str` *(required)*
+- `MatchPaths`:
+  `Sequence`\[[AccessScopePathRequestTypeDef](./type_defs.md#accessscopepathrequesttypedef)\]
+- `ExcludePaths`:
+  `Sequence`\[[AccessScopePathRequestTypeDef](./type_defs.md#accessscopepathrequesttypedef)\]
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+Returns
+[CreateNetworkInsightsAccessScopeResultTypeDef](./type_defs.md#createnetworkinsightsaccessscoperesulttypedef).
+
 ### create_network_insights_path
 
 Creates a path to analyze for reachability.
@@ -2430,6 +2607,27 @@ Keyword-only arguments:
 
 Returns
 [CreatePlacementGroupResultTypeDef](./type_defs.md#createplacementgroupresulttypedef).
+
+### create_public_ipv4_pool
+
+Creates a public IPv4 address pool.
+
+Type annotations for `boto3.client("ec2").create_public_ipv4_pool` method.
+
+Boto3 documentation:
+[EC2.Client.create_public_ipv4_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_public_ipv4_pool)
+
+Arguments mapping described in
+[CreatePublicIpv4PoolRequestRequestTypeDef](./type_defs.md#createpublicipv4poolrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+Returns
+[CreatePublicIpv4PoolResultTypeDef](./type_defs.md#createpublicipv4poolresulttypedef).
 
 ### create_replace_root_volume_task
 
@@ -3152,10 +3350,14 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CidrBlock`: `str` *(required)*
+- `CidrBlock`: `str`
 - `AmazonProvidedIpv6CidrBlock`: `bool`
 - `Ipv6Pool`: `str`
 - `Ipv6CidrBlock`: `str`
+- `Ipv4IpamPoolId`: `str`
+- `Ipv4NetmaskLength`: `int`
+- `Ipv6IpamPoolId`: `str`
+- `Ipv6NetmaskLength`: `int`
 - `DryRun`: `bool`
 - `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `Ipv6CidrBlockNetworkBorderGroup`: `str`
@@ -3561,6 +3763,65 @@ Keyword-only arguments:
 - `InternetGatewayId`: `str` *(required)*
 - `DryRun`: `bool`
 
+### delete_ipam
+
+Delete an IPAM.
+
+Type annotations for `boto3.client("ec2").delete_ipam` method.
+
+Boto3 documentation:
+[EC2.Client.delete_ipam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_ipam)
+
+Arguments mapping described in
+[DeleteIpamRequestRequestTypeDef](./type_defs.md#deleteipamrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns [DeleteIpamResultTypeDef](./type_defs.md#deleteipamresulttypedef).
+
+### delete_ipam_pool
+
+Delete an IPAM pool.
+
+Type annotations for `boto3.client("ec2").delete_ipam_pool` method.
+
+Boto3 documentation:
+[EC2.Client.delete_ipam_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_ipam_pool)
+
+Arguments mapping described in
+[DeleteIpamPoolRequestRequestTypeDef](./type_defs.md#deleteipampoolrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamPoolId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DeleteIpamPoolResultTypeDef](./type_defs.md#deleteipampoolresulttypedef).
+
+### delete_ipam_scope
+
+Delete the scope for an IPAM.
+
+Type annotations for `boto3.client("ec2").delete_ipam_scope` method.
+
+Boto3 documentation:
+[EC2.Client.delete_ipam_scope](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_ipam_scope)
+
+Arguments mapping described in
+[DeleteIpamScopeRequestRequestTypeDef](./type_defs.md#deleteipamscoperequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamScopeId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DeleteIpamScopeResultTypeDef](./type_defs.md#deleteipamscoperesulttypedef).
+
 ### delete_key_pair
 
 Deletes the specified key pair, by removing the public key from Amazon EC2.
@@ -3742,6 +4003,48 @@ Keyword-only arguments:
 - `RuleNumber`: `int` *(required)*
 - `DryRun`: `bool`
 
+### delete_network_insights_access_scope
+
+Deletes the specified Network Access Scope.
+
+Type annotations for `boto3.client("ec2").delete_network_insights_access_scope`
+method.
+
+Boto3 documentation:
+[EC2.Client.delete_network_insights_access_scope](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_insights_access_scope)
+
+Arguments mapping described in
+[DeleteNetworkInsightsAccessScopeRequestRequestTypeDef](./type_defs.md#deletenetworkinsightsaccessscoperequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NetworkInsightsAccessScopeId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DeleteNetworkInsightsAccessScopeResultTypeDef](./type_defs.md#deletenetworkinsightsaccessscoperesulttypedef).
+
+### delete_network_insights_access_scope_analysis
+
+Deletes the specified Network Access Scope analysis.
+
+Type annotations for
+`boto3.client("ec2").delete_network_insights_access_scope_analysis` method.
+
+Boto3 documentation:
+[EC2.Client.delete_network_insights_access_scope_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_insights_access_scope_analysis)
+
+Arguments mapping described in
+[DeleteNetworkInsightsAccessScopeAnalysisRequestRequestTypeDef](./type_defs.md#deletenetworkinsightsaccessscopeanalysisrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NetworkInsightsAccessScopeAnalysisId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DeleteNetworkInsightsAccessScopeAnalysisResultTypeDef](./type_defs.md#deletenetworkinsightsaccessscopeanalysisresulttypedef).
+
 ### delete_network_insights_analysis
 
 Deletes the specified network insights analysis.
@@ -3838,6 +4141,26 @@ Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `DryRun`: `bool`
+
+### delete_public_ipv4_pool
+
+Delete a public IPv4 pool.
+
+Type annotations for `boto3.client("ec2").delete_public_ipv4_pool` method.
+
+Boto3 documentation:
+[EC2.Client.delete_public_ipv4_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_public_ipv4_pool)
+
+Arguments mapping described in
+[DeletePublicIpv4PoolRequestRequestTypeDef](./type_defs.md#deletepublicipv4poolrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `PoolId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DeletePublicIpv4PoolResultTypeDef](./type_defs.md#deletepublicipv4poolresulttypedef).
 
 ### delete_queued_reserved_instances
 
@@ -4467,6 +4790,49 @@ Keyword-only arguments:
 
 Returns
 [DeprovisionByoipCidrResultTypeDef](./type_defs.md#deprovisionbyoipcidrresulttypedef).
+
+### deprovision_ipam_pool_cidr
+
+Deprovision a CIDR provisioned from an IPAM pool.
+
+Type annotations for `boto3.client("ec2").deprovision_ipam_pool_cidr` method.
+
+Boto3 documentation:
+[EC2.Client.deprovision_ipam_pool_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deprovision_ipam_pool_cidr)
+
+Arguments mapping described in
+[DeprovisionIpamPoolCidrRequestRequestTypeDef](./type_defs.md#deprovisionipampoolcidrrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamPoolId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Cidr`: `str`
+
+Returns
+[DeprovisionIpamPoolCidrResultTypeDef](./type_defs.md#deprovisionipampoolcidrresulttypedef).
+
+### deprovision_public_ipv4_pool_cidr
+
+Deprovision a CIDR from a public IPv4 pool.
+
+Type annotations for `boto3.client("ec2").deprovision_public_ipv4_pool_cidr`
+method.
+
+Boto3 documentation:
+[EC2.Client.deprovision_public_ipv4_pool_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deprovision_public_ipv4_pool_cidr)
+
+Arguments mapping described in
+[DeprovisionPublicIpv4PoolCidrRequestRequestTypeDef](./type_defs.md#deprovisionpublicipv4poolcidrrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `PoolId`: `str` *(required)*
+- `Cidr`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DeprovisionPublicIpv4PoolCidrResultTypeDef](./type_defs.md#deprovisionpublicipv4poolcidrresulttypedef).
 
 ### deregister_image
 
@@ -5711,6 +6077,75 @@ Keyword-only arguments:
 Returns
 [DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef).
 
+### describe_ipam_pools
+
+Get information about your IPAM pools.
+
+Type annotations for `boto3.client("ec2").describe_ipam_pools` method.
+
+Boto3 documentation:
+[EC2.Client.describe_ipam_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_ipam_pools)
+
+Arguments mapping described in
+[DescribeIpamPoolsRequestRequestTypeDef](./type_defs.md#describeipampoolsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `IpamPoolIds`: `Sequence`\[`str`\]
+
+Returns
+[DescribeIpamPoolsResultTypeDef](./type_defs.md#describeipampoolsresulttypedef).
+
+### describe_ipam_scopes
+
+Get information about your IPAM scopes.
+
+Type annotations for `boto3.client("ec2").describe_ipam_scopes` method.
+
+Boto3 documentation:
+[EC2.Client.describe_ipam_scopes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_ipam_scopes)
+
+Arguments mapping described in
+[DescribeIpamScopesRequestRequestTypeDef](./type_defs.md#describeipamscopesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `IpamScopeIds`: `Sequence`\[`str`\]
+
+Returns
+[DescribeIpamScopesResultTypeDef](./type_defs.md#describeipamscopesresulttypedef).
+
+### describe_ipams
+
+Get information about your IPAM pools.
+
+Type annotations for `boto3.client("ec2").describe_ipams` method.
+
+Boto3 documentation:
+[EC2.Client.describe_ipams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_ipams)
+
+Arguments mapping described in
+[DescribeIpamsRequestRequestTypeDef](./type_defs.md#describeipamsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `IpamIds`: `Sequence`\[`str`\]
+
+Returns
+[DescribeIpamsResultTypeDef](./type_defs.md#describeipamsresulttypedef).
+
 ### describe_ipv6_pools
 
 Describes your IPv6 address pools.
@@ -6050,6 +6485,57 @@ Keyword-only arguments:
 
 Returns
 [DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef).
+
+### describe_network_insights_access_scope_analyses
+
+Describes the specified Network Access Scope analyses.
+
+Type annotations for
+`boto3.client("ec2").describe_network_insights_access_scope_analyses` method.
+
+Boto3 documentation:
+[EC2.Client.describe_network_insights_access_scope_analyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_insights_access_scope_analyses)
+
+Arguments mapping described in
+[DescribeNetworkInsightsAccessScopeAnalysesRequestRequestTypeDef](./type_defs.md#describenetworkinsightsaccessscopeanalysesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NetworkInsightsAccessScopeAnalysisIds`: `Sequence`\[`str`\]
+- `NetworkInsightsAccessScopeId`: `str`
+- `AnalysisStartTimeBegin`: `Union`\[`datetime`, `str`\]
+- `AnalysisStartTimeEnd`: `Union`\[`datetime`, `str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+- `NextToken`: `str`
+
+Returns
+[DescribeNetworkInsightsAccessScopeAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopeanalysesresulttypedef).
+
+### describe_network_insights_access_scopes
+
+Describes the specified Network Access Scopes.
+
+Type annotations for
+`boto3.client("ec2").describe_network_insights_access_scopes` method.
+
+Boto3 documentation:
+[EC2.Client.describe_network_insights_access_scopes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_insights_access_scopes)
+
+Arguments mapping described in
+[DescribeNetworkInsightsAccessScopesRequestRequestTypeDef](./type_defs.md#describenetworkinsightsaccessscopesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NetworkInsightsAccessScopeIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+- `NextToken`: `str`
+
+Returns
+[DescribeNetworkInsightsAccessScopesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopesresulttypedef).
 
 ### describe_network_insights_analyses
 
@@ -7704,6 +8190,27 @@ Keyword-only arguments:
 Returns
 [DisableImageDeprecationResultTypeDef](./type_defs.md#disableimagedeprecationresulttypedef).
 
+### disable_ipam_organization_admin_account
+
+Disable the IPAM account.
+
+Type annotations for
+`boto3.client("ec2").disable_ipam_organization_admin_account` method.
+
+Boto3 documentation:
+[EC2.Client.disable_ipam_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_ipam_organization_admin_account)
+
+Arguments mapping described in
+[DisableIpamOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#disableipamorganizationadminaccountrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DelegatedAdminAccountId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DisableIpamOrganizationAdminAccountResultTypeDef](./type_defs.md#disableipamorganizationadminaccountresulttypedef).
+
 ### disable_serial_console_access
 
 Disables access to the EC2 serial console of all instances for your account.
@@ -8099,6 +8606,27 @@ Keyword-only arguments:
 
 Returns
 [EnableImageDeprecationResultTypeDef](./type_defs.md#enableimagedeprecationresulttypedef).
+
+### enable_ipam_organization_admin_account
+
+Enable an Organizations member account as the IPAM admin account.
+
+Type annotations for
+`boto3.client("ec2").enable_ipam_organization_admin_account` method.
+
+Boto3 documentation:
+[EC2.Client.enable_ipam_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_ipam_organization_admin_account)
+
+Arguments mapping described in
+[EnableIpamOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableipamorganizationadminaccountrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DelegatedAdminAccountId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[EnableIpamOrganizationAdminAccountResultTypeDef](./type_defs.md#enableipamorganizationadminaccountresulttypedef).
 
 ### enable_serial_console_access
 
@@ -8637,6 +9165,108 @@ Keyword-only arguments:
 Returns
 [GetInstanceTypesFromInstanceRequirementsResultTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsresulttypedef).
 
+### get_ipam_address_history
+
+Retrieve historical information about a CIDR within an IPAM scope.
+
+Type annotations for `boto3.client("ec2").get_ipam_address_history` method.
+
+Boto3 documentation:
+[EC2.Client.get_ipam_address_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ipam_address_history)
+
+Arguments mapping described in
+[GetIpamAddressHistoryRequestRequestTypeDef](./type_defs.md#getipamaddresshistoryrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Cidr`: `str` *(required)*
+- `IpamScopeId`: `str` *(required)*
+- `DryRun`: `bool`
+- `VpcId`: `str`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetIpamAddressHistoryResultTypeDef](./type_defs.md#getipamaddresshistoryresulttypedef).
+
+### get_ipam_pool_allocations
+
+Get a list of all the CIDR allocations in an IPAM pool.
+
+Type annotations for `boto3.client("ec2").get_ipam_pool_allocations` method.
+
+Boto3 documentation:
+[EC2.Client.get_ipam_pool_allocations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ipam_pool_allocations)
+
+Arguments mapping described in
+[GetIpamPoolAllocationsRequestRequestTypeDef](./type_defs.md#getipampoolallocationsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamPoolId`: `str` *(required)*
+- `DryRun`: `bool`
+- `IpamPoolAllocationId`: `str`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetIpamPoolAllocationsResultTypeDef](./type_defs.md#getipampoolallocationsresulttypedef).
+
+### get_ipam_pool_cidrs
+
+Get the CIDRs provisioned to an IPAM pool.
+
+Type annotations for `boto3.client("ec2").get_ipam_pool_cidrs` method.
+
+Boto3 documentation:
+[EC2.Client.get_ipam_pool_cidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ipam_pool_cidrs)
+
+Arguments mapping described in
+[GetIpamPoolCidrsRequestRequestTypeDef](./type_defs.md#getipampoolcidrsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamPoolId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetIpamPoolCidrsResultTypeDef](./type_defs.md#getipampoolcidrsresulttypedef).
+
+### get_ipam_resource_cidrs
+
+Get information about the resources in a scope.
+
+Type annotations for `boto3.client("ec2").get_ipam_resource_cidrs` method.
+
+Boto3 documentation:
+[EC2.Client.get_ipam_resource_cidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ipam_resource_cidrs)
+
+Arguments mapping described in
+[GetIpamResourceCidrsRequestRequestTypeDef](./type_defs.md#getipamresourcecidrsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamScopeId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `IpamPoolId`: `str`
+- `ResourceId`: `str`
+- `ResourceType`: [IpamResourceTypeType](./literals.md#ipamresourcetypetype)
+- `ResourceTag`:
+  [RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef)
+- `ResourceOwner`: `str`
+
+Returns
+[GetIpamResourceCidrsResultTypeDef](./type_defs.md#getipamresourcecidrsresulttypedef).
+
 ### get_launch_template_data
 
 Retrieves the configuration data of the specified instance.
@@ -8704,6 +9334,51 @@ Keyword-only arguments:
 
 Returns
 [GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef).
+
+### get_network_insights_access_scope_analysis_findings
+
+Gets the findings for the specified Network Access Scope analysis.
+
+Type annotations for
+`boto3.client("ec2").get_network_insights_access_scope_analysis_findings`
+method.
+
+Boto3 documentation:
+[EC2.Client.get_network_insights_access_scope_analysis_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_network_insights_access_scope_analysis_findings)
+
+Arguments mapping described in
+[GetNetworkInsightsAccessScopeAnalysisFindingsRequestRequestTypeDef](./type_defs.md#getnetworkinsightsaccessscopeanalysisfindingsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NetworkInsightsAccessScopeAnalysisId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+Returns
+[GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef](./type_defs.md#getnetworkinsightsaccessscopeanalysisfindingsresulttypedef).
+
+### get_network_insights_access_scope_content
+
+Gets the content for the specified Network Access Scope.
+
+Type annotations for
+`boto3.client("ec2").get_network_insights_access_scope_content` method.
+
+Boto3 documentation:
+[EC2.Client.get_network_insights_access_scope_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_network_insights_access_scope_content)
+
+Arguments mapping described in
+[GetNetworkInsightsAccessScopeContentRequestRequestTypeDef](./type_defs.md#getnetworkinsightsaccessscopecontentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NetworkInsightsAccessScopeId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[GetNetworkInsightsAccessScopeContentResultTypeDef](./type_defs.md#getnetworkinsightsaccessscopecontentresulttypedef).
 
 ### get_password_data
 
@@ -9692,6 +10367,106 @@ Keyword-only arguments:
 Returns
 [ModifyInstancePlacementResultTypeDef](./type_defs.md#modifyinstanceplacementresulttypedef).
 
+### modify_ipam
+
+Modify the configurations of an IPAM.
+
+Type annotations for `boto3.client("ec2").modify_ipam` method.
+
+Boto3 documentation:
+[EC2.Client.modify_ipam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_ipam)
+
+Arguments mapping described in
+[ModifyIpamRequestRequestTypeDef](./type_defs.md#modifyipamrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Description`: `str`
+- `AddOperatingRegions`:
+  `Sequence`\[[AddIpamOperatingRegionTypeDef](./type_defs.md#addipamoperatingregiontypedef)\]
+- `RemoveOperatingRegions`:
+  `Sequence`\[[RemoveIpamOperatingRegionTypeDef](./type_defs.md#removeipamoperatingregiontypedef)\]
+
+Returns [ModifyIpamResultTypeDef](./type_defs.md#modifyipamresulttypedef).
+
+### modify_ipam_pool
+
+Modify the configurations of an IPAM pool.
+
+Type annotations for `boto3.client("ec2").modify_ipam_pool` method.
+
+Boto3 documentation:
+[EC2.Client.modify_ipam_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_ipam_pool)
+
+Arguments mapping described in
+[ModifyIpamPoolRequestRequestTypeDef](./type_defs.md#modifyipampoolrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamPoolId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Description`: `str`
+- `AutoImport`: `bool`
+- `AllocationMinNetmaskLength`: `int`
+- `AllocationMaxNetmaskLength`: `int`
+- `AllocationDefaultNetmaskLength`: `int`
+- `ClearAllocationDefaultNetmaskLength`: `bool`
+- `AddAllocationResourceTags`:
+  `Sequence`\[[RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef)\]
+- `RemoveAllocationResourceTags`:
+  `Sequence`\[[RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef)\]
+
+Returns
+[ModifyIpamPoolResultTypeDef](./type_defs.md#modifyipampoolresulttypedef).
+
+### modify_ipam_resource_cidr
+
+Modify a resource CIDR.
+
+Type annotations for `boto3.client("ec2").modify_ipam_resource_cidr` method.
+
+Boto3 documentation:
+[EC2.Client.modify_ipam_resource_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_ipam_resource_cidr)
+
+Arguments mapping described in
+[ModifyIpamResourceCidrRequestRequestTypeDef](./type_defs.md#modifyipamresourcecidrrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceId`: `str` *(required)*
+- `ResourceCidr`: `str` *(required)*
+- `ResourceRegion`: `str` *(required)*
+- `CurrentIpamScopeId`: `str` *(required)*
+- `Monitored`: `bool` *(required)*
+- `DryRun`: `bool`
+- `DestinationIpamScopeId`: `str`
+
+Returns
+[ModifyIpamResourceCidrResultTypeDef](./type_defs.md#modifyipamresourcecidrresulttypedef).
+
+### modify_ipam_scope
+
+Modify an IPAM scope.
+
+Type annotations for `boto3.client("ec2").modify_ipam_scope` method.
+
+Boto3 documentation:
+[EC2.Client.modify_ipam_scope](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_ipam_scope)
+
+Arguments mapping described in
+[ModifyIpamScopeRequestRequestTypeDef](./type_defs.md#modifyipamscoperequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamScopeId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Description`: `str`
+
+Returns
+[ModifyIpamScopeResultTypeDef](./type_defs.md#modifyipamscoperesulttypedef).
+
 ### modify_launch_template
 
 Modifies a launch template.
@@ -10459,6 +11234,28 @@ Keyword-only arguments:
 Returns
 [MoveAddressToVpcResultTypeDef](./type_defs.md#moveaddresstovpcresulttypedef).
 
+### move_byoip_cidr_to_ipam
+
+Move an BYOIP IPv4 CIDR to IPAM from a public IPv4 pool.
+
+Type annotations for `boto3.client("ec2").move_byoip_cidr_to_ipam` method.
+
+Boto3 documentation:
+[EC2.Client.move_byoip_cidr_to_ipam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.move_byoip_cidr_to_ipam)
+
+Arguments mapping described in
+[MoveByoipCidrToIpamRequestRequestTypeDef](./type_defs.md#movebyoipcidrtoipamrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DryRun`: `bool`
+- `Cidr`: `str`
+- `IpamPoolId`: `str`
+- `IpamPoolOwner`: `str`
+
+Returns
+[MoveByoipCidrToIpamResultTypeDef](./type_defs.md#movebyoipcidrtoipamresulttypedef).
+
 ### provision_byoip_cidr
 
 Provisions an IPv4 or IPv6 address range for use with your Amazon Web Services
@@ -10487,6 +11284,52 @@ Keyword-only arguments:
 
 Returns
 [ProvisionByoipCidrResultTypeDef](./type_defs.md#provisionbyoipcidrresulttypedef).
+
+### provision_ipam_pool_cidr
+
+Provision a CIDR to an IPAM pool.
+
+Type annotations for `boto3.client("ec2").provision_ipam_pool_cidr` method.
+
+Boto3 documentation:
+[EC2.Client.provision_ipam_pool_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.provision_ipam_pool_cidr)
+
+Arguments mapping described in
+[ProvisionIpamPoolCidrRequestRequestTypeDef](./type_defs.md#provisionipampoolcidrrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamPoolId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Cidr`: `str`
+- `CidrAuthorizationContext`:
+  [IpamCidrAuthorizationContextTypeDef](./type_defs.md#ipamcidrauthorizationcontexttypedef)
+
+Returns
+[ProvisionIpamPoolCidrResultTypeDef](./type_defs.md#provisionipampoolcidrresulttypedef).
+
+### provision_public_ipv4_pool_cidr
+
+Provision a CIDR to a public IPv4 pool.
+
+Type annotations for `boto3.client("ec2").provision_public_ipv4_pool_cidr`
+method.
+
+Boto3 documentation:
+[EC2.Client.provision_public_ipv4_pool_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.provision_public_ipv4_pool_cidr)
+
+Arguments mapping described in
+[ProvisionPublicIpv4PoolCidrRequestRequestTypeDef](./type_defs.md#provisionpublicipv4poolcidrrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamPoolId`: `str` *(required)*
+- `PoolId`: `str` *(required)*
+- `NetmaskLength`: `int` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[ProvisionPublicIpv4PoolCidrResultTypeDef](./type_defs.md#provisionpublicipv4poolcidrresulttypedef).
 
 ### purchase_host_reservation
 
@@ -10832,6 +11675,28 @@ Keyword-only arguments:
 - `HostIds`: `Sequence`\[`str`\] *(required)*
 
 Returns [ReleaseHostsResultTypeDef](./type_defs.md#releasehostsresulttypedef).
+
+### release_ipam_pool_allocation
+
+Release an allocation within an IPAM pool.
+
+Type annotations for `boto3.client("ec2").release_ipam_pool_allocation` method.
+
+Boto3 documentation:
+[EC2.Client.release_ipam_pool_allocation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.release_ipam_pool_allocation)
+
+Arguments mapping described in
+[ReleaseIpamPoolAllocationRequestRequestTypeDef](./type_defs.md#releaseipampoolallocationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IpamPoolId`: `str` *(required)*
+- `Cidr`: `str` *(required)*
+- `DryRun`: `bool`
+- `IpamPoolAllocationId`: `str`
+
+Returns
+[ReleaseIpamPoolAllocationResultTypeDef](./type_defs.md#releaseipampoolallocationresulttypedef).
 
 ### replace_iam_instance_profile_association
 
@@ -11592,6 +12457,30 @@ Keyword-only arguments:
 Returns
 [StartInstancesResultTypeDef](./type_defs.md#startinstancesresulttypedef).
 
+### start_network_insights_access_scope_analysis
+
+Starts analyzing the specified Network Access Scope.
+
+Type annotations for
+`boto3.client("ec2").start_network_insights_access_scope_analysis` method.
+
+Boto3 documentation:
+[EC2.Client.start_network_insights_access_scope_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.start_network_insights_access_scope_analysis)
+
+Arguments mapping described in
+[StartNetworkInsightsAccessScopeAnalysisRequestRequestTypeDef](./type_defs.md#startnetworkinsightsaccessscopeanalysisrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NetworkInsightsAccessScopeId`: `str` *(required)*
+- `ClientToken`: `str` *(required)*
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+Returns
+[StartNetworkInsightsAccessScopeAnalysisResultTypeDef](./type_defs.md#startnetworkinsightsaccessscopeanalysisresulttypedef).
+
 ### start_network_insights_analysis
 
 Starts analyzing the specified path.
@@ -11905,6 +12794,12 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [DescribeInstancesPaginator](./paginators.md#describeinstancespaginator)
 - `client.get_paginator("describe_internet_gateways")` ->
   [DescribeInternetGatewaysPaginator](./paginators.md#describeinternetgatewayspaginator)
+- `client.get_paginator("describe_ipam_pools")` ->
+  [DescribeIpamPoolsPaginator](./paginators.md#describeipampoolspaginator)
+- `client.get_paginator("describe_ipam_scopes")` ->
+  [DescribeIpamScopesPaginator](./paginators.md#describeipamscopespaginator)
+- `client.get_paginator("describe_ipams")` ->
+  [DescribeIpamsPaginator](./paginators.md#describeipamspaginator)
 - `client.get_paginator("describe_ipv6_pools")` ->
   [DescribeIpv6PoolsPaginator](./paginators.md#describeipv6poolspaginator)
 - `client.get_paginator("describe_launch_template_versions")` ->
@@ -11933,6 +12828,10 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [DescribeNatGatewaysPaginator](./paginators.md#describenatgatewayspaginator)
 - `client.get_paginator("describe_network_acls")` ->
   [DescribeNetworkAclsPaginator](./paginators.md#describenetworkaclspaginator)
+- `client.get_paginator("describe_network_insights_access_scope_analyses")` ->
+  [DescribeNetworkInsightsAccessScopeAnalysesPaginator](./paginators.md#describenetworkinsightsaccessscopeanalysespaginator)
+- `client.get_paginator("describe_network_insights_access_scopes")` ->
+  [DescribeNetworkInsightsAccessScopesPaginator](./paginators.md#describenetworkinsightsaccessscopespaginator)
 - `client.get_paginator("describe_network_insights_analyses")` ->
   [DescribeNetworkInsightsAnalysesPaginator](./paginators.md#describenetworkinsightsanalysespaginator)
 - `client.get_paginator("describe_network_insights_paths")` ->
@@ -12037,6 +12936,14 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [GetGroupsForCapacityReservationPaginator](./paginators.md#getgroupsforcapacityreservationpaginator)
 - `client.get_paginator("get_instance_types_from_instance_requirements")` ->
   [GetInstanceTypesFromInstanceRequirementsPaginator](./paginators.md#getinstancetypesfrominstancerequirementspaginator)
+- `client.get_paginator("get_ipam_address_history")` ->
+  [GetIpamAddressHistoryPaginator](./paginators.md#getipamaddresshistorypaginator)
+- `client.get_paginator("get_ipam_pool_allocations")` ->
+  [GetIpamPoolAllocationsPaginator](./paginators.md#getipampoolallocationspaginator)
+- `client.get_paginator("get_ipam_pool_cidrs")` ->
+  [GetIpamPoolCidrsPaginator](./paginators.md#getipampoolcidrspaginator)
+- `client.get_paginator("get_ipam_resource_cidrs")` ->
+  [GetIpamResourceCidrsPaginator](./paginators.md#getipamresourcecidrspaginator)
 - `client.get_paginator("get_managed_prefix_list_associations")` ->
   [GetManagedPrefixListAssociationsPaginator](./paginators.md#getmanagedprefixlistassociationspaginator)
 - `client.get_paginator("get_managed_prefix_list_entries")` ->

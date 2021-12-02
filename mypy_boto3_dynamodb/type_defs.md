@@ -174,6 +174,7 @@ type annotations stubs module
   - [StreamSpecificationTypeDef](#streamspecificationtypedef)
   - [TableAutoScalingDescriptionTypeDef](#tableautoscalingdescriptiontypedef)
   - [TableBatchWriterRequestTypeDef](#tablebatchwriterrequesttypedef)
+  - [TableClassSummaryTypeDef](#tableclasssummarytypedef)
   - [TableDescriptionTypeDef](#tabledescriptiontypedef)
   - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
   - [TagTypeDef](#tagtypedef)
@@ -776,6 +777,7 @@ Optional fields:
   [ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef)
 - `GlobalSecondaryIndexes`:
   `Sequence`\[[ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef)\]
+- `TableClassOverride`: [TableClassType](./literals.md#tableclasstype)
 
 ## CreateTableInputRequestTypeDef
 
@@ -805,6 +807,7 @@ Optional fields:
 - `SSESpecification`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TableClass`: [TableClassType](./literals.md#tableclasstype)
 
 ## CreateTableInputServiceResourceTypeDef
 
@@ -834,6 +837,7 @@ Optional fields:
 - `SSESpecification`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TableClass`: [TableClassType](./literals.md#tableclasstype)
 
 ## CreateTableOutputTypeDef
 
@@ -2366,6 +2370,8 @@ Optional fields:
 - `GlobalSecondaryIndexes`:
   `List`\[[ReplicaGlobalSecondaryIndexDescriptionTypeDef](./type_defs.md#replicaglobalsecondaryindexdescriptiontypedef)\]
 - `ReplicaInaccessibleDateTime`: `datetime`
+- `ReplicaTableClassSummary`:
+  [TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef)
 
 ## ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef
 
@@ -2480,6 +2486,8 @@ Optional fields:
   [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
 - `ReplicaGlobalSecondaryIndexSettings`:
   `List`\[[ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef](./type_defs.md#replicaglobalsecondaryindexsettingsdescriptiontypedef)\]
+- `ReplicaTableClassSummary`:
+  [TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef)
 
 ## ReplicaSettingsUpdateTypeDef
 
@@ -2498,6 +2506,7 @@ Optional fields:
   [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
 - `ReplicaGlobalSecondaryIndexSettingsUpdate`:
   `Sequence`\[[ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef](./type_defs.md#replicaglobalsecondaryindexsettingsupdatetypedef)\]
+- `ReplicaTableClass`: [TableClassType](./literals.md#tableclasstype)
 
 ## ReplicaTypeDef
 
@@ -2849,6 +2858,17 @@ Optional fields:
 
 - `overwrite_by_pkeys`: `List`\[`str`\]
 
+## TableClassSummaryTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import TableClassSummaryTypeDef
+```
+
+Optional fields:
+
+- `TableClass`: [TableClassType](./literals.md#tableclasstype)
+- `LastUpdateDateTime`: `datetime`
+
 ## TableDescriptionTypeDef
 
 ```python
@@ -2889,6 +2909,8 @@ Optional fields:
   [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
 - `ArchivalSummary`:
   [ArchivalSummaryTypeDef](./type_defs.md#archivalsummarytypedef)
+- `TableClassSummary`:
+  [TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef)
 
 ## TagResourceInputRequestTypeDef
 
@@ -3268,6 +3290,7 @@ Optional fields:
   [ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef)
 - `GlobalSecondaryIndexes`:
   `Sequence`\[[ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef)\]
+- `TableClassOverride`: [TableClassType](./literals.md#tableclasstype)
 
 ## UpdateTableInputRequestTypeDef
 
@@ -3294,6 +3317,7 @@ Optional fields:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `ReplicaUpdates`:
   `Sequence`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
+- `TableClass`: [TableClassType](./literals.md#tableclasstype)
 
 ## UpdateTableInputTableTypeDef
 
@@ -3316,6 +3340,7 @@ Optional fields:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `ReplicaUpdates`:
   `Sequence`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
+- `TableClass`: [TableClassType](./literals.md#tableclasstype)
 
 ## UpdateTableOutputTypeDef
 

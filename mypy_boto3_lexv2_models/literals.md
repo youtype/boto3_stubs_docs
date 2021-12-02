@@ -11,6 +11,7 @@ type annotations stubs module
   - [AggregatedUtterancesFilterNameType](#aggregatedutterancesfilternametype)
   - [AggregatedUtterancesFilterOperatorType](#aggregatedutterancesfilteroperatortype)
   - [AggregatedUtterancesSortAttributeType](#aggregatedutterancessortattributetype)
+  - [AssociatedTranscriptFilterNameType](#associatedtranscriptfilternametype)
   - [BotAliasAvailableWaiterName](#botaliasavailablewaitername)
   - [BotAliasStatusType](#botaliasstatustype)
   - [BotAvailableWaiterName](#botavailablewaitername)
@@ -25,6 +26,7 @@ type annotations stubs module
   - [BotLocaleFilterOperatorType](#botlocalefilteroperatortype)
   - [BotLocaleSortAttributeType](#botlocalesortattributetype)
   - [BotLocaleStatusType](#botlocalestatustype)
+  - [BotRecommendationStatusType](#botrecommendationstatustype)
   - [BotSortAttributeType](#botsortattributetype)
   - [BotStatusType](#botstatustype)
   - [BotVersionAvailableWaiterName](#botversionavailablewaitername)
@@ -46,6 +48,7 @@ type annotations stubs module
   - [IntentSortAttributeType](#intentsortattributetype)
   - [MergeStrategyType](#mergestrategytype)
   - [ObfuscationSettingTypeType](#obfuscationsettingtypetype)
+  - [SearchOrderType](#searchordertype)
   - [SlotConstraintType](#slotconstrainttype)
   - [SlotFilterNameType](#slotfilternametype)
   - [SlotFilterOperatorType](#slotfilteroperatortype)
@@ -56,6 +59,7 @@ type annotations stubs module
   - [SlotValueResolutionStrategyType](#slotvalueresolutionstrategytype)
   - [SortOrderType](#sortordertype)
   - [TimeDimensionType](#timedimensiontype)
+  - [TranscriptFormatType](#transcriptformattype)
   - [VoiceEngineType](#voiceenginetype)
   - [ServiceName](#servicename)
   - [WaiterName](#waitername)
@@ -91,6 +95,17 @@ Values:
 
 - `HitCount`
 - `MissedCount`
+
+## AssociatedTranscriptFilterNameType
+
+```python
+from mypy_boto3_lexv2_models.literals import AssociatedTranscriptFilterNameType
+```
+
+Values:
+
+- `IntentId`
+- `SlotTypeId`
 
 ## BotAliasAvailableWaiterName
 
@@ -242,7 +257,24 @@ Values:
 - `Failed`
 - `Importing`
 - `NotBuilt`
+- `Processing`
 - `ReadyExpressTesting`
+
+## BotRecommendationStatusType
+
+```python
+from mypy_boto3_lexv2_models.literals import BotRecommendationStatusType
+```
+
+Values:
+
+- `Available`
+- `Deleted`
+- `Deleting`
+- `Downloading`
+- `Failed`
+- `Processing`
+- `Updating`
 
 ## BotSortAttributeType
 
@@ -459,6 +491,7 @@ from mypy_boto3_lexv2_models.literals import MergeStrategyType
 
 Values:
 
+- `Append`
 - `FailOnConflict`
 - `Overwrite`
 
@@ -472,6 +505,17 @@ Values:
 
 - `DefaultObfuscation`
 - `None`
+
+## SearchOrderType
+
+```python
+from mypy_boto3_lexv2_models.literals import SearchOrderType
+```
+
+Values:
+
+- `Ascending`
+- `Descending`
 
 ## SlotConstraintType
 
@@ -581,6 +625,16 @@ Values:
 - `Days`
 - `Hours`
 - `Weeks`
+
+## TranscriptFormatType
+
+```python
+from mypy_boto3_lexv2_models.literals import TranscriptFormatType
+```
+
+Values:
+
+- `Lex`
 
 ## VoiceEngineType
 

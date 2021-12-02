@@ -1660,6 +1660,7 @@ Optional fields:
 - `virtualGatewayId`: `str`
 - `directConnectGatewayId`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `enableSiteLink`: `bool`
 
 ## NewPublicVirtualInterfaceAllocationTypeDef
 
@@ -1741,6 +1742,7 @@ Optional fields:
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `directConnectGatewayId`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `enableSiteLink`: `bool`
 
 ## PaginatorConfigTypeDef
 
@@ -1986,6 +1988,8 @@ Required fields:
 Optional fields:
 
 - `mtu`: `int`
+- `enableSiteLink`: `bool`
+- `virtualInterfaceName`: `str`
 
 ## VirtualGatewayTypeDef
 
@@ -2046,6 +2050,7 @@ Required fields:
 - `awsDeviceV2`: `str`
 - `awsLogicalDeviceId`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `siteLinkEnabled`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2101,6 +2106,7 @@ Optional fields:
 - `awsDeviceV2`: `str`
 - `awsLogicalDeviceId`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `siteLinkEnabled`: `bool`
 
 ## VirtualInterfacesTypeDef
 

@@ -1540,6 +1540,8 @@ Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 - `mtu`: `int`
+- `enableSiteLink`: `bool`
+- `virtualInterfaceName`: `str`
 
 Returns
 [VirtualInterfaceResponseMetadataTypeDef](./type_defs.md#virtualinterfaceresponsemetadatatypedef).

@@ -1283,10 +1283,14 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CidrBlock`: `str` *(required)*
+- `CidrBlock`: `str`
 - `AmazonProvidedIpv6CidrBlock`: `bool`
 - `Ipv6Pool`: `str`
 - `Ipv6CidrBlock`: `str`
+- `Ipv4IpamPoolId`: `str`
+- `Ipv4NetmaskLength`: `int`
+- `Ipv6IpamPoolId`: `str`
+- `Ipv6NetmaskLength`: `int`
 - `DryRun`: `bool`
 - `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `Ipv6CidrBlockNetworkBorderGroup`: `str`

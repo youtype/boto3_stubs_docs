@@ -25,9 +25,13 @@ type annotations stubs module
   - [AcceptVpcPeeringConnectionRequestRequestTypeDef](#acceptvpcpeeringconnectionrequestrequesttypedef)
   - [AcceptVpcPeeringConnectionRequestVpcPeeringConnectionTypeDef](#acceptvpcpeeringconnectionrequestvpcpeeringconnectiontypedef)
   - [AcceptVpcPeeringConnectionResultTypeDef](#acceptvpcpeeringconnectionresulttypedef)
+  - [AccessScopeAnalysisFindingTypeDef](#accessscopeanalysisfindingtypedef)
+  - [AccessScopePathRequestTypeDef](#accessscopepathrequesttypedef)
+  - [AccessScopePathTypeDef](#accessscopepathtypedef)
   - [AccountAttributeTypeDef](#accountattributetypedef)
   - [AccountAttributeValueTypeDef](#accountattributevaluetypedef)
   - [ActiveInstanceTypeDef](#activeinstancetypedef)
+  - [AddIpamOperatingRegionTypeDef](#addipamoperatingregiontypedef)
   - [AddPrefixListEntryTypeDef](#addprefixlistentrytypedef)
   - [AddressAttributeTypeDef](#addressattributetypedef)
   - [AddressTypeDef](#addresstypedef)
@@ -37,6 +41,8 @@ type annotations stubs module
   - [AllocateAddressResultTypeDef](#allocateaddressresulttypedef)
   - [AllocateHostsRequestRequestTypeDef](#allocatehostsrequestrequesttypedef)
   - [AllocateHostsResultTypeDef](#allocatehostsresulttypedef)
+  - [AllocateIpamPoolCidrRequestRequestTypeDef](#allocateipampoolcidrrequestrequesttypedef)
+  - [AllocateIpamPoolCidrResultTypeDef](#allocateipampoolcidrresulttypedef)
   - [AllowedPrincipalTypeDef](#allowedprincipaltypedef)
   - [AlternatePathHintTypeDef](#alternatepathhinttypedef)
   - [AnalysisAclRuleTypeDef](#analysisaclruletypedef)
@@ -234,6 +240,12 @@ type annotations stubs module
   - [CreateInternetGatewayRequestRequestTypeDef](#createinternetgatewayrequestrequesttypedef)
   - [CreateInternetGatewayRequestServiceResourceTypeDef](#createinternetgatewayrequestserviceresourcetypedef)
   - [CreateInternetGatewayResultTypeDef](#createinternetgatewayresulttypedef)
+  - [CreateIpamPoolRequestRequestTypeDef](#createipampoolrequestrequesttypedef)
+  - [CreateIpamPoolResultTypeDef](#createipampoolresulttypedef)
+  - [CreateIpamRequestRequestTypeDef](#createipamrequestrequesttypedef)
+  - [CreateIpamResultTypeDef](#createipamresulttypedef)
+  - [CreateIpamScopeRequestRequestTypeDef](#createipamscoperequestrequesttypedef)
+  - [CreateIpamScopeResultTypeDef](#createipamscoperesulttypedef)
   - [CreateKeyPairRequestRequestTypeDef](#createkeypairrequestrequesttypedef)
   - [CreateKeyPairRequestServiceResourceTypeDef](#createkeypairrequestserviceresourcetypedef)
   - [CreateLaunchTemplateRequestRequestTypeDef](#createlaunchtemplaterequestrequesttypedef)
@@ -254,6 +266,8 @@ type annotations stubs module
   - [CreateNetworkAclRequestServiceResourceTypeDef](#createnetworkaclrequestserviceresourcetypedef)
   - [CreateNetworkAclRequestVpcTypeDef](#createnetworkaclrequestvpctypedef)
   - [CreateNetworkAclResultTypeDef](#createnetworkaclresulttypedef)
+  - [CreateNetworkInsightsAccessScopeRequestRequestTypeDef](#createnetworkinsightsaccessscoperequestrequesttypedef)
+  - [CreateNetworkInsightsAccessScopeResultTypeDef](#createnetworkinsightsaccessscoperesulttypedef)
   - [CreateNetworkInsightsPathRequestRequestTypeDef](#createnetworkinsightspathrequestrequesttypedef)
   - [CreateNetworkInsightsPathResultTypeDef](#createnetworkinsightspathresulttypedef)
   - [CreateNetworkInterfacePermissionRequestRequestTypeDef](#createnetworkinterfacepermissionrequestrequesttypedef)
@@ -265,6 +279,8 @@ type annotations stubs module
   - [CreatePlacementGroupRequestRequestTypeDef](#createplacementgrouprequestrequesttypedef)
   - [CreatePlacementGroupRequestServiceResourceTypeDef](#createplacementgrouprequestserviceresourcetypedef)
   - [CreatePlacementGroupResultTypeDef](#createplacementgroupresulttypedef)
+  - [CreatePublicIpv4PoolRequestRequestTypeDef](#createpublicipv4poolrequestrequesttypedef)
+  - [CreatePublicIpv4PoolResultTypeDef](#createpublicipv4poolresulttypedef)
   - [CreateReplaceRootVolumeTaskRequestRequestTypeDef](#createreplacerootvolumetaskrequestrequesttypedef)
   - [CreateReplaceRootVolumeTaskResultTypeDef](#createreplacerootvolumetaskresulttypedef)
   - [CreateReservedInstancesListingRequestRequestTypeDef](#createreservedinstanceslistingrequestrequesttypedef)
@@ -389,6 +405,12 @@ type annotations stubs module
   - [DeleteInstanceEventWindowResultTypeDef](#deleteinstanceeventwindowresulttypedef)
   - [DeleteInternetGatewayRequestInternetGatewayTypeDef](#deleteinternetgatewayrequestinternetgatewaytypedef)
   - [DeleteInternetGatewayRequestRequestTypeDef](#deleteinternetgatewayrequestrequesttypedef)
+  - [DeleteIpamPoolRequestRequestTypeDef](#deleteipampoolrequestrequesttypedef)
+  - [DeleteIpamPoolResultTypeDef](#deleteipampoolresulttypedef)
+  - [DeleteIpamRequestRequestTypeDef](#deleteipamrequestrequesttypedef)
+  - [DeleteIpamResultTypeDef](#deleteipamresulttypedef)
+  - [DeleteIpamScopeRequestRequestTypeDef](#deleteipamscoperequestrequesttypedef)
+  - [DeleteIpamScopeResultTypeDef](#deleteipamscoperesulttypedef)
   - [DeleteKeyPairRequestKeyPairInfoTypeDef](#deletekeypairrequestkeypairinfotypedef)
   - [DeleteKeyPairRequestKeyPairTypeDef](#deletekeypairrequestkeypairtypedef)
   - [DeleteKeyPairRequestRequestTypeDef](#deletekeypairrequestrequesttypedef)
@@ -410,6 +432,10 @@ type annotations stubs module
   - [DeleteNetworkAclEntryRequestRequestTypeDef](#deletenetworkaclentryrequestrequesttypedef)
   - [DeleteNetworkAclRequestNetworkAclTypeDef](#deletenetworkaclrequestnetworkacltypedef)
   - [DeleteNetworkAclRequestRequestTypeDef](#deletenetworkaclrequestrequesttypedef)
+  - [DeleteNetworkInsightsAccessScopeAnalysisRequestRequestTypeDef](#deletenetworkinsightsaccessscopeanalysisrequestrequesttypedef)
+  - [DeleteNetworkInsightsAccessScopeAnalysisResultTypeDef](#deletenetworkinsightsaccessscopeanalysisresulttypedef)
+  - [DeleteNetworkInsightsAccessScopeRequestRequestTypeDef](#deletenetworkinsightsaccessscoperequestrequesttypedef)
+  - [DeleteNetworkInsightsAccessScopeResultTypeDef](#deletenetworkinsightsaccessscoperesulttypedef)
   - [DeleteNetworkInsightsAnalysisRequestRequestTypeDef](#deletenetworkinsightsanalysisrequestrequesttypedef)
   - [DeleteNetworkInsightsAnalysisResultTypeDef](#deletenetworkinsightsanalysisresulttypedef)
   - [DeleteNetworkInsightsPathRequestRequestTypeDef](#deletenetworkinsightspathrequestrequesttypedef)
@@ -420,6 +446,8 @@ type annotations stubs module
   - [DeleteNetworkInterfaceRequestRequestTypeDef](#deletenetworkinterfacerequestrequesttypedef)
   - [DeletePlacementGroupRequestPlacementGroupTypeDef](#deleteplacementgrouprequestplacementgrouptypedef)
   - [DeletePlacementGroupRequestRequestTypeDef](#deleteplacementgrouprequestrequesttypedef)
+  - [DeletePublicIpv4PoolRequestRequestTypeDef](#deletepublicipv4poolrequestrequesttypedef)
+  - [DeletePublicIpv4PoolResultTypeDef](#deletepublicipv4poolresulttypedef)
   - [DeleteQueuedReservedInstancesErrorTypeDef](#deletequeuedreservedinstanceserrortypedef)
   - [DeleteQueuedReservedInstancesRequestRequestTypeDef](#deletequeuedreservedinstancesrequestrequesttypedef)
   - [DeleteQueuedReservedInstancesResultTypeDef](#deletequeuedreservedinstancesresulttypedef)
@@ -482,6 +510,10 @@ type annotations stubs module
   - [DeleteVpnGatewayRequestRequestTypeDef](#deletevpngatewayrequestrequesttypedef)
   - [DeprovisionByoipCidrRequestRequestTypeDef](#deprovisionbyoipcidrrequestrequesttypedef)
   - [DeprovisionByoipCidrResultTypeDef](#deprovisionbyoipcidrresulttypedef)
+  - [DeprovisionIpamPoolCidrRequestRequestTypeDef](#deprovisionipampoolcidrrequestrequesttypedef)
+  - [DeprovisionIpamPoolCidrResultTypeDef](#deprovisionipampoolcidrresulttypedef)
+  - [DeprovisionPublicIpv4PoolCidrRequestRequestTypeDef](#deprovisionpublicipv4poolcidrrequestrequesttypedef)
+  - [DeprovisionPublicIpv4PoolCidrResultTypeDef](#deprovisionpublicipv4poolcidrresulttypedef)
   - [DeregisterImageRequestImageTypeDef](#deregisterimagerequestimagetypedef)
   - [DeregisterImageRequestRequestTypeDef](#deregisterimagerequestrequesttypedef)
   - [DeregisterInstanceEventNotificationAttributesRequestRequestTypeDef](#deregisterinstanceeventnotificationattributesrequestrequesttypedef)
@@ -594,6 +626,12 @@ type annotations stubs module
   - [DescribeInstancesResultTypeDef](#describeinstancesresulttypedef)
   - [DescribeInternetGatewaysRequestRequestTypeDef](#describeinternetgatewaysrequestrequesttypedef)
   - [DescribeInternetGatewaysResultTypeDef](#describeinternetgatewaysresulttypedef)
+  - [DescribeIpamPoolsRequestRequestTypeDef](#describeipampoolsrequestrequesttypedef)
+  - [DescribeIpamPoolsResultTypeDef](#describeipampoolsresulttypedef)
+  - [DescribeIpamScopesRequestRequestTypeDef](#describeipamscopesrequestrequesttypedef)
+  - [DescribeIpamScopesResultTypeDef](#describeipamscopesresulttypedef)
+  - [DescribeIpamsRequestRequestTypeDef](#describeipamsrequestrequesttypedef)
+  - [DescribeIpamsResultTypeDef](#describeipamsresulttypedef)
   - [DescribeIpv6PoolsRequestRequestTypeDef](#describeipv6poolsrequestrequesttypedef)
   - [DescribeIpv6PoolsResultTypeDef](#describeipv6poolsresulttypedef)
   - [DescribeKeyPairsRequestRequestTypeDef](#describekeypairsrequestrequesttypedef)
@@ -622,6 +660,10 @@ type annotations stubs module
   - [DescribeNatGatewaysResultTypeDef](#describenatgatewaysresulttypedef)
   - [DescribeNetworkAclsRequestRequestTypeDef](#describenetworkaclsrequestrequesttypedef)
   - [DescribeNetworkAclsResultTypeDef](#describenetworkaclsresulttypedef)
+  - [DescribeNetworkInsightsAccessScopeAnalysesRequestRequestTypeDef](#describenetworkinsightsaccessscopeanalysesrequestrequesttypedef)
+  - [DescribeNetworkInsightsAccessScopeAnalysesResultTypeDef](#describenetworkinsightsaccessscopeanalysesresulttypedef)
+  - [DescribeNetworkInsightsAccessScopesRequestRequestTypeDef](#describenetworkinsightsaccessscopesrequestrequesttypedef)
+  - [DescribeNetworkInsightsAccessScopesResultTypeDef](#describenetworkinsightsaccessscopesresulttypedef)
   - [DescribeNetworkInsightsAnalysesRequestRequestTypeDef](#describenetworkinsightsanalysesrequestrequesttypedef)
   - [DescribeNetworkInsightsAnalysesResultTypeDef](#describenetworkinsightsanalysesresulttypedef)
   - [DescribeNetworkInsightsPathsRequestRequestTypeDef](#describenetworkinsightspathsrequestrequesttypedef)
@@ -782,6 +824,8 @@ type annotations stubs module
   - [DisableFastSnapshotRestoresResultTypeDef](#disablefastsnapshotrestoresresulttypedef)
   - [DisableImageDeprecationRequestRequestTypeDef](#disableimagedeprecationrequestrequesttypedef)
   - [DisableImageDeprecationResultTypeDef](#disableimagedeprecationresulttypedef)
+  - [DisableIpamOrganizationAdminAccountRequestRequestTypeDef](#disableipamorganizationadminaccountrequestrequesttypedef)
+  - [DisableIpamOrganizationAdminAccountResultTypeDef](#disableipamorganizationadminaccountresulttypedef)
   - [DisableSerialConsoleAccessRequestRequestTypeDef](#disableserialconsoleaccessrequestrequesttypedef)
   - [DisableSerialConsoleAccessResultTypeDef](#disableserialconsoleaccessresulttypedef)
   - [DisableTransitGatewayRouteTablePropagationRequestRequestTypeDef](#disabletransitgatewayroutetablepropagationrequestrequesttypedef)
@@ -847,6 +891,8 @@ type annotations stubs module
   - [EnableFastSnapshotRestoresResultTypeDef](#enablefastsnapshotrestoresresulttypedef)
   - [EnableImageDeprecationRequestRequestTypeDef](#enableimagedeprecationrequestrequesttypedef)
   - [EnableImageDeprecationResultTypeDef](#enableimagedeprecationresulttypedef)
+  - [EnableIpamOrganizationAdminAccountRequestRequestTypeDef](#enableipamorganizationadminaccountrequestrequesttypedef)
+  - [EnableIpamOrganizationAdminAccountResultTypeDef](#enableipamorganizationadminaccountresulttypedef)
   - [EnableSerialConsoleAccessRequestRequestTypeDef](#enableserialconsoleaccessrequestrequesttypedef)
   - [EnableSerialConsoleAccessResultTypeDef](#enableserialconsoleaccessresulttypedef)
   - [EnableTransitGatewayRouteTablePropagationRequestRequestTypeDef](#enabletransitgatewayroutetablepropagationrequestrequesttypedef)
@@ -928,12 +974,24 @@ type annotations stubs module
   - [GetHostReservationPurchasePreviewResultTypeDef](#gethostreservationpurchasepreviewresulttypedef)
   - [GetInstanceTypesFromInstanceRequirementsRequestRequestTypeDef](#getinstancetypesfrominstancerequirementsrequestrequesttypedef)
   - [GetInstanceTypesFromInstanceRequirementsResultTypeDef](#getinstancetypesfrominstancerequirementsresulttypedef)
+  - [GetIpamAddressHistoryRequestRequestTypeDef](#getipamaddresshistoryrequestrequesttypedef)
+  - [GetIpamAddressHistoryResultTypeDef](#getipamaddresshistoryresulttypedef)
+  - [GetIpamPoolAllocationsRequestRequestTypeDef](#getipampoolallocationsrequestrequesttypedef)
+  - [GetIpamPoolAllocationsResultTypeDef](#getipampoolallocationsresulttypedef)
+  - [GetIpamPoolCidrsRequestRequestTypeDef](#getipampoolcidrsrequestrequesttypedef)
+  - [GetIpamPoolCidrsResultTypeDef](#getipampoolcidrsresulttypedef)
+  - [GetIpamResourceCidrsRequestRequestTypeDef](#getipamresourcecidrsrequestrequesttypedef)
+  - [GetIpamResourceCidrsResultTypeDef](#getipamresourcecidrsresulttypedef)
   - [GetLaunchTemplateDataRequestRequestTypeDef](#getlaunchtemplatedatarequestrequesttypedef)
   - [GetLaunchTemplateDataResultTypeDef](#getlaunchtemplatedataresulttypedef)
   - [GetManagedPrefixListAssociationsRequestRequestTypeDef](#getmanagedprefixlistassociationsrequestrequesttypedef)
   - [GetManagedPrefixListAssociationsResultTypeDef](#getmanagedprefixlistassociationsresulttypedef)
   - [GetManagedPrefixListEntriesRequestRequestTypeDef](#getmanagedprefixlistentriesrequestrequesttypedef)
   - [GetManagedPrefixListEntriesResultTypeDef](#getmanagedprefixlistentriesresulttypedef)
+  - [GetNetworkInsightsAccessScopeAnalysisFindingsRequestRequestTypeDef](#getnetworkinsightsaccessscopeanalysisfindingsrequestrequesttypedef)
+  - [GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef](#getnetworkinsightsaccessscopeanalysisfindingsresulttypedef)
+  - [GetNetworkInsightsAccessScopeContentRequestRequestTypeDef](#getnetworkinsightsaccessscopecontentrequestrequesttypedef)
+  - [GetNetworkInsightsAccessScopeContentResultTypeDef](#getnetworkinsightsaccessscopecontentresulttypedef)
   - [GetPasswordDataRequestInstanceTypeDef](#getpassworddatarequestinstancetypedef)
   - [GetPasswordDataRequestRequestTypeDef](#getpassworddatarequestrequesttypedef)
   - [GetPasswordDataResultTypeDef](#getpassworddataresulttypedef)
@@ -1057,6 +1115,17 @@ type annotations stubs module
   - [InternetGatewayTypeDef](#internetgatewaytypedef)
   - [IpPermissionTypeDef](#ippermissiontypedef)
   - [IpRangeTypeDef](#iprangetypedef)
+  - [IpamAddressHistoryRecordTypeDef](#ipamaddresshistoryrecordtypedef)
+  - [IpamCidrAuthorizationContextTypeDef](#ipamcidrauthorizationcontexttypedef)
+  - [IpamOperatingRegionTypeDef](#ipamoperatingregiontypedef)
+  - [IpamPoolAllocationTypeDef](#ipampoolallocationtypedef)
+  - [IpamPoolCidrFailureReasonTypeDef](#ipampoolcidrfailurereasontypedef)
+  - [IpamPoolCidrTypeDef](#ipampoolcidrtypedef)
+  - [IpamPoolTypeDef](#ipampooltypedef)
+  - [IpamResourceCidrTypeDef](#ipamresourcecidrtypedef)
+  - [IpamResourceTagTypeDef](#ipamresourcetagtypedef)
+  - [IpamScopeTypeDef](#ipamscopetypedef)
+  - [IpamTypeDef](#ipamtypedef)
   - [Ipv4PrefixSpecificationRequestTypeDef](#ipv4prefixspecificationrequesttypedef)
   - [Ipv4PrefixSpecificationResponseTypeDef](#ipv4prefixspecificationresponsetypedef)
   - [Ipv4PrefixSpecificationTypeDef](#ipv4prefixspecificationtypedef)
@@ -1172,6 +1241,14 @@ type annotations stubs module
   - [ModifyInstanceMetadataOptionsResultTypeDef](#modifyinstancemetadataoptionsresulttypedef)
   - [ModifyInstancePlacementRequestRequestTypeDef](#modifyinstanceplacementrequestrequesttypedef)
   - [ModifyInstancePlacementResultTypeDef](#modifyinstanceplacementresulttypedef)
+  - [ModifyIpamPoolRequestRequestTypeDef](#modifyipampoolrequestrequesttypedef)
+  - [ModifyIpamPoolResultTypeDef](#modifyipampoolresulttypedef)
+  - [ModifyIpamRequestRequestTypeDef](#modifyipamrequestrequesttypedef)
+  - [ModifyIpamResourceCidrRequestRequestTypeDef](#modifyipamresourcecidrrequestrequesttypedef)
+  - [ModifyIpamResourceCidrResultTypeDef](#modifyipamresourcecidrresulttypedef)
+  - [ModifyIpamResultTypeDef](#modifyipamresulttypedef)
+  - [ModifyIpamScopeRequestRequestTypeDef](#modifyipamscoperequestrequesttypedef)
+  - [ModifyIpamScopeResultTypeDef](#modifyipamscoperesulttypedef)
   - [ModifyLaunchTemplateRequestRequestTypeDef](#modifylaunchtemplaterequestrequesttypedef)
   - [ModifyLaunchTemplateResultTypeDef](#modifylaunchtemplateresulttypedef)
   - [ModifyManagedPrefixListRequestRequestTypeDef](#modifymanagedprefixlistrequestrequesttypedef)
@@ -1238,6 +1315,8 @@ type annotations stubs module
   - [MonitoringTypeDef](#monitoringtypedef)
   - [MoveAddressToVpcRequestRequestTypeDef](#moveaddresstovpcrequestrequesttypedef)
   - [MoveAddressToVpcResultTypeDef](#moveaddresstovpcresulttypedef)
+  - [MoveByoipCidrToIpamRequestRequestTypeDef](#movebyoipcidrtoipamrequestrequesttypedef)
+  - [MoveByoipCidrToIpamResultTypeDef](#movebyoipcidrtoipamresulttypedef)
   - [MovingAddressStatusTypeDef](#movingaddressstatustypedef)
   - [NatGatewayAddressTypeDef](#natgatewayaddresstypedef)
   - [NatGatewayTypeDef](#natgatewaytypedef)
@@ -1246,6 +1325,9 @@ type annotations stubs module
   - [NetworkAclTypeDef](#networkacltypedef)
   - [NetworkCardInfoTypeDef](#networkcardinfotypedef)
   - [NetworkInfoTypeDef](#networkinfotypedef)
+  - [NetworkInsightsAccessScopeAnalysisTypeDef](#networkinsightsaccessscopeanalysistypedef)
+  - [NetworkInsightsAccessScopeContentTypeDef](#networkinsightsaccessscopecontenttypedef)
+  - [NetworkInsightsAccessScopeTypeDef](#networkinsightsaccessscopetypedef)
   - [NetworkInsightsAnalysisTypeDef](#networkinsightsanalysistypedef)
   - [NetworkInsightsPathTypeDef](#networkinsightspathtypedef)
   - [NetworkInterfaceAssociationTypeDef](#networkinterfaceassociationtypedef)
@@ -1261,8 +1343,12 @@ type annotations stubs module
   - [NewDhcpConfigurationTypeDef](#newdhcpconfigurationtypedef)
   - [OnDemandOptionsRequestTypeDef](#ondemandoptionsrequesttypedef)
   - [OnDemandOptionsTypeDef](#ondemandoptionstypedef)
+  - [PacketHeaderStatementRequestTypeDef](#packetheaderstatementrequesttypedef)
+  - [PacketHeaderStatementTypeDef](#packetheaderstatementtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PathComponentTypeDef](#pathcomponenttypedef)
+  - [PathStatementRequestTypeDef](#pathstatementrequesttypedef)
+  - [PathStatementTypeDef](#pathstatementtypedef)
   - [PciIdTypeDef](#pciidtypedef)
   - [PeeringAttachmentStatusTypeDef](#peeringattachmentstatustypedef)
   - [PeeringConnectionOptionsRequestTypeDef](#peeringconnectionoptionsrequesttypedef)
@@ -1305,6 +1391,10 @@ type annotations stubs module
   - [PropagatingVgwTypeDef](#propagatingvgwtypedef)
   - [ProvisionByoipCidrRequestRequestTypeDef](#provisionbyoipcidrrequestrequesttypedef)
   - [ProvisionByoipCidrResultTypeDef](#provisionbyoipcidrresulttypedef)
+  - [ProvisionIpamPoolCidrRequestRequestTypeDef](#provisionipampoolcidrrequestrequesttypedef)
+  - [ProvisionIpamPoolCidrResultTypeDef](#provisionipampoolcidrresulttypedef)
+  - [ProvisionPublicIpv4PoolCidrRequestRequestTypeDef](#provisionpublicipv4poolcidrrequestrequesttypedef)
+  - [ProvisionPublicIpv4PoolCidrResultTypeDef](#provisionpublicipv4poolcidrresulttypedef)
   - [ProvisionedBandwidthTypeDef](#provisionedbandwidthtypedef)
   - [PtrUpdateStatusTypeDef](#ptrupdatestatustypedef)
   - [PublicIpv4PoolRangeTypeDef](#publicipv4poolrangetypedef)
@@ -1348,6 +1438,9 @@ type annotations stubs module
   - [ReleaseAddressRequestVpcAddressTypeDef](#releaseaddressrequestvpcaddresstypedef)
   - [ReleaseHostsRequestRequestTypeDef](#releasehostsrequestrequesttypedef)
   - [ReleaseHostsResultTypeDef](#releasehostsresulttypedef)
+  - [ReleaseIpamPoolAllocationRequestRequestTypeDef](#releaseipampoolallocationrequestrequesttypedef)
+  - [ReleaseIpamPoolAllocationResultTypeDef](#releaseipampoolallocationresulttypedef)
+  - [RemoveIpamOperatingRegionTypeDef](#removeipamoperatingregiontypedef)
   - [RemovePrefixListEntryTypeDef](#removeprefixlistentrytypedef)
   - [ReplaceIamInstanceProfileAssociationRequestRequestTypeDef](#replaceiaminstanceprofileassociationrequestrequesttypedef)
   - [ReplaceIamInstanceProfileAssociationResultTypeDef](#replaceiaminstanceprofileassociationresulttypedef)
@@ -1366,6 +1459,7 @@ type annotations stubs module
   - [ReplaceTransitGatewayRouteResultTypeDef](#replacetransitgatewayrouteresulttypedef)
   - [ReportInstanceStatusRequestInstanceTypeDef](#reportinstancestatusrequestinstancetypedef)
   - [ReportInstanceStatusRequestRequestTypeDef](#reportinstancestatusrequestrequesttypedef)
+  - [RequestIpamResourceTagTypeDef](#requestipamresourcetagtypedef)
   - [RequestLaunchTemplateDataTypeDef](#requestlaunchtemplatedatatypedef)
   - [RequestSpotFleetRequestRequestTypeDef](#requestspotfleetrequestrequesttypedef)
   - [RequestSpotFleetResponseTypeDef](#requestspotfleetresponsetypedef)
@@ -1399,6 +1493,8 @@ type annotations stubs module
   - [ResetNetworkInterfaceAttributeRequestRequestTypeDef](#resetnetworkinterfaceattributerequestrequesttypedef)
   - [ResetSnapshotAttributeRequestRequestTypeDef](#resetsnapshotattributerequestrequesttypedef)
   - [ResetSnapshotAttributeRequestSnapshotTypeDef](#resetsnapshotattributerequestsnapshottypedef)
+  - [ResourceStatementRequestTypeDef](#resourcestatementrequesttypedef)
+  - [ResourceStatementTypeDef](#resourcestatementtypedef)
   - [ResponseErrorTypeDef](#responseerrortypedef)
   - [ResponseLaunchTemplateDataTypeDef](#responselaunchtemplatedatatypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
@@ -1513,6 +1609,8 @@ type annotations stubs module
   - [StartInstancesRequestInstanceTypeDef](#startinstancesrequestinstancetypedef)
   - [StartInstancesRequestRequestTypeDef](#startinstancesrequestrequesttypedef)
   - [StartInstancesResultTypeDef](#startinstancesresulttypedef)
+  - [StartNetworkInsightsAccessScopeAnalysisRequestRequestTypeDef](#startnetworkinsightsaccessscopeanalysisrequestrequesttypedef)
+  - [StartNetworkInsightsAccessScopeAnalysisResultTypeDef](#startnetworkinsightsaccessscopeanalysisresulttypedef)
   - [StartNetworkInsightsAnalysisRequestRequestTypeDef](#startnetworkinsightsanalysisrequestrequesttypedef)
   - [StartNetworkInsightsAnalysisResultTypeDef](#startnetworkinsightsanalysisresulttypedef)
   - [StartVpcEndpointServicePrivateDnsVerificationRequestRequestTypeDef](#startvpcendpointserviceprivatednsverificationrequestrequesttypedef)
@@ -1548,6 +1646,8 @@ type annotations stubs module
   - [TerminateInstancesRequestInstanceTypeDef](#terminateinstancesrequestinstancetypedef)
   - [TerminateInstancesRequestRequestTypeDef](#terminateinstancesrequestrequesttypedef)
   - [TerminateInstancesResultTypeDef](#terminateinstancesresulttypedef)
+  - [ThroughResourcesStatementRequestTypeDef](#throughresourcesstatementrequesttypedef)
+  - [ThroughResourcesStatementTypeDef](#throughresourcesstatementtypedef)
   - [TotalLocalStorageGBRequestTypeDef](#totallocalstoragegbrequesttypedef)
   - [TotalLocalStorageGBTypeDef](#totallocalstoragegbtypedef)
   - [TrafficMirrorFilterRuleTypeDef](#trafficmirrorfilterruletypedef)
@@ -1865,6 +1965,48 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## AccessScopeAnalysisFindingTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AccessScopeAnalysisFindingTypeDef
+```
+
+Optional fields:
+
+- `NetworkInsightsAccessScopeAnalysisId`: `str`
+- `NetworkInsightsAccessScopeId`: `str`
+- `FindingId`: `str`
+- `FindingComponents`:
+  `List`\[[PathComponentTypeDef](./type_defs.md#pathcomponenttypedef)\]
+
+## AccessScopePathRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AccessScopePathRequestTypeDef
+```
+
+Optional fields:
+
+- `Source`:
+  [PathStatementRequestTypeDef](./type_defs.md#pathstatementrequesttypedef)
+- `Destination`:
+  [PathStatementRequestTypeDef](./type_defs.md#pathstatementrequesttypedef)
+- `ThroughResources`:
+  `Sequence`\[[ThroughResourcesStatementRequestTypeDef](./type_defs.md#throughresourcesstatementrequesttypedef)\]
+
+## AccessScopePathTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AccessScopePathTypeDef
+```
+
+Optional fields:
+
+- `Source`: [PathStatementTypeDef](./type_defs.md#pathstatementtypedef)
+- `Destination`: [PathStatementTypeDef](./type_defs.md#pathstatementtypedef)
+- `ThroughResources`:
+  `List`\[[ThroughResourcesStatementTypeDef](./type_defs.md#throughresourcesstatementtypedef)\]
+
 ## AccountAttributeTypeDef
 
 ```python
@@ -1900,6 +2042,16 @@ Optional fields:
 - `SpotInstanceRequestId`: `str`
 - `InstanceHealth`:
   [InstanceHealthStatusType](./literals.md#instancehealthstatustype)
+
+## AddIpamOperatingRegionTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AddIpamOperatingRegionTypeDef
+```
+
+Optional fields:
+
+- `RegionName`: `str`
 
 ## AddPrefixListEntryTypeDef
 
@@ -2047,6 +2199,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## AllocateIpamPoolCidrRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AllocateIpamPoolCidrRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamPoolId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Cidr`: `str`
+- `NetmaskLength`: `int`
+- `ClientToken`: `str`
+- `Description`: `str`
+- `PreviewNextCidr`: `bool`
+- `DisallowedCidrs`: `Sequence`\[`str`\]
+
+## AllocateIpamPoolCidrResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AllocateIpamPoolCidrResultTypeDef
+```
+
+Required fields:
+
+- `IpamPoolAllocation`:
+  [IpamPoolAllocationTypeDef](./type_defs.md#ipampoolallocationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## AllowedPrincipalTypeDef
 
 ```python
@@ -2094,6 +2279,7 @@ Optional fields:
 
 - `Id`: `str`
 - `Arn`: `str`
+- `Name`: `str`
 
 ## AnalysisLoadBalancerListenerTypeDef
 
@@ -2667,6 +2853,10 @@ Optional fields:
 - `Ipv6CidrBlockNetworkBorderGroup`: `str`
 - `Ipv6Pool`: `str`
 - `Ipv6CidrBlock`: `str`
+- `Ipv4IpamPoolId`: `str`
+- `Ipv4NetmaskLength`: `int`
+- `Ipv6IpamPoolId`: `str`
+- `Ipv6NetmaskLength`: `int`
 
 ## AssociateVpcCidrBlockResultTypeDef
 
@@ -4977,6 +5167,106 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateIpamPoolRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateIpamPoolRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamScopeId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Locale`: `str`
+- `SourceIpamPoolId`: `str`
+- `Description`: `str`
+- `AddressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
+- `AutoImport`: `bool`
+- `PubliclyAdvertisable`: `bool`
+- `AllocationMinNetmaskLength`: `int`
+- `AllocationMaxNetmaskLength`: `int`
+- `AllocationDefaultNetmaskLength`: `int`
+- `AllocationResourceTags`:
+  `Sequence`\[[RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef)\]
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
+- `AwsService`: `Literal['ec2']` (see
+  [IpamPoolAwsServiceType](./literals.md#ipampoolawsservicetype))
+
+## CreateIpamPoolResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateIpamPoolResultTypeDef
+```
+
+Required fields:
+
+- `IpamPool`: [IpamPoolTypeDef](./type_defs.md#ipampooltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateIpamRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateIpamRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Description`: `str`
+- `OperatingRegions`:
+  `Sequence`\[[AddIpamOperatingRegionTypeDef](./type_defs.md#addipamoperatingregiontypedef)\]
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
+
+## CreateIpamResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateIpamResultTypeDef
+```
+
+Required fields:
+
+- `Ipam`: [IpamTypeDef](./type_defs.md#ipamtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateIpamScopeRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateIpamScopeRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Description`: `str`
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
+
+## CreateIpamScopeResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateIpamScopeResultTypeDef
+```
+
+Required fields:
+
+- `IpamScope`: [IpamScopeTypeDef](./type_defs.md#ipamscopetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateKeyPairRequestRequestTypeDef
 
 ```python
@@ -5305,6 +5595,41 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateNetworkInsightsAccessScopeRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNetworkInsightsAccessScopeRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ClientToken`: `str`
+
+Optional fields:
+
+- `MatchPaths`:
+  `Sequence`\[[AccessScopePathRequestTypeDef](./type_defs.md#accessscopepathrequesttypedef)\]
+- `ExcludePaths`:
+  `Sequence`\[[AccessScopePathRequestTypeDef](./type_defs.md#accessscopepathrequesttypedef)\]
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateNetworkInsightsAccessScopeResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNetworkInsightsAccessScopeResultTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScope`:
+  [NetworkInsightsAccessScopeTypeDef](./type_defs.md#networkinsightsaccessscopetypedef)
+- `NetworkInsightsAccessScopeContent`:
+  [NetworkInsightsAccessScopeContentTypeDef](./type_defs.md#networkinsightsaccessscopecontenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateNetworkInsightsPathRequestRequestTypeDef
 
 ```python
@@ -5523,6 +5848,30 @@ Required fields:
 
 - `PlacementGroup`:
   [PlacementGroupTypeDef](./type_defs.md#placementgrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreatePublicIpv4PoolRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreatePublicIpv4PoolRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreatePublicIpv4PoolResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreatePublicIpv4PoolResultTypeDef
+```
+
+Required fields:
+
+- `PoolId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -6943,15 +7292,16 @@ Required fields:
 from mypy_boto3_ec2.type_defs import CreateVpcRequestRequestTypeDef
 ```
 
-Required fields:
-
-- `CidrBlock`: `str`
-
 Optional fields:
 
+- `CidrBlock`: `str`
 - `AmazonProvidedIpv6CidrBlock`: `bool`
 - `Ipv6Pool`: `str`
 - `Ipv6CidrBlock`: `str`
+- `Ipv4IpamPoolId`: `str`
+- `Ipv4NetmaskLength`: `int`
+- `Ipv6IpamPoolId`: `str`
+- `Ipv6NetmaskLength`: `int`
 - `DryRun`: `bool`
 - `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `Ipv6CidrBlockNetworkBorderGroup`: `str`
@@ -6964,15 +7314,16 @@ Optional fields:
 from mypy_boto3_ec2.type_defs import CreateVpcRequestServiceResourceTypeDef
 ```
 
-Required fields:
-
-- `CidrBlock`: `str`
-
 Optional fields:
 
+- `CidrBlock`: `str`
 - `AmazonProvidedIpv6CidrBlock`: `bool`
 - `Ipv6Pool`: `str`
 - `Ipv6CidrBlock`: `str`
+- `Ipv4IpamPoolId`: `str`
+- `Ipv4NetmaskLength`: `int`
+- `Ipv6IpamPoolId`: `str`
+- `Ipv6NetmaskLength`: `int`
 - `DryRun`: `bool`
 - `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `Ipv6CidrBlockNetworkBorderGroup`: `str`
@@ -7419,6 +7770,84 @@ Optional fields:
 
 - `DryRun`: `bool`
 
+## DeleteIpamPoolRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteIpamPoolRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamPoolId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteIpamPoolResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteIpamPoolResultTypeDef
+```
+
+Required fields:
+
+- `IpamPool`: [IpamPoolTypeDef](./type_defs.md#ipampooltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteIpamRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteIpamRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteIpamResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteIpamResultTypeDef
+```
+
+Required fields:
+
+- `Ipam`: [IpamTypeDef](./type_defs.md#ipamtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteIpamScopeRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteIpamScopeRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamScopeId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteIpamScopeResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteIpamScopeResultTypeDef
+```
+
+Required fields:
+
+- `IpamScope`: [IpamScopeTypeDef](./type_defs.md#ipamscopetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DeleteKeyPairRequestKeyPairInfoTypeDef
 
 ```python
@@ -7696,6 +8125,58 @@ Optional fields:
 
 - `DryRun`: `bool`
 
+## DeleteNetworkInsightsAccessScopeAnalysisRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkInsightsAccessScopeAnalysisRequestRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScopeAnalysisId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteNetworkInsightsAccessScopeAnalysisResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkInsightsAccessScopeAnalysisResultTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScopeAnalysisId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteNetworkInsightsAccessScopeRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkInsightsAccessScopeRequestRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScopeId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteNetworkInsightsAccessScopeResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkInsightsAccessScopeResultTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScopeId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DeleteNetworkInsightsAnalysisRequestRequestTypeDef
 
 ```python
@@ -7822,6 +8303,32 @@ Required fields:
 Optional fields:
 
 - `DryRun`: `bool`
+
+## DeletePublicIpv4PoolRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeletePublicIpv4PoolRequestRequestTypeDef
+```
+
+Required fields:
+
+- `PoolId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeletePublicIpv4PoolResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeletePublicIpv4PoolResultTypeDef
+```
+
+Required fields:
+
+- `ReturnValue`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteQueuedReservedInstancesErrorTypeDef
 
@@ -8626,6 +9133,61 @@ from mypy_boto3_ec2.type_defs import DeprovisionByoipCidrResultTypeDef
 Required fields:
 
 - `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeprovisionIpamPoolCidrRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeprovisionIpamPoolCidrRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamPoolId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Cidr`: `str`
+
+## DeprovisionIpamPoolCidrResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeprovisionIpamPoolCidrResultTypeDef
+```
+
+Required fields:
+
+- `IpamPoolCidr`: [IpamPoolCidrTypeDef](./type_defs.md#ipampoolcidrtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeprovisionPublicIpv4PoolCidrRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeprovisionPublicIpv4PoolCidrRequestRequestTypeDef
+```
+
+Required fields:
+
+- `PoolId`: `str`
+- `Cidr`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeprovisionPublicIpv4PoolCidrResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeprovisionPublicIpv4PoolCidrResultTypeDef
+```
+
+Required fields:
+
+- `PoolId`: `str`
+- `DeprovisionedAddresses`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -10178,6 +10740,87 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeIpamPoolsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeIpamPoolsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `IpamPoolIds`: `Sequence`\[`str`\]
+
+## DescribeIpamPoolsResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeIpamPoolsResultTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `IpamPools`: `List`\[[IpamPoolTypeDef](./type_defs.md#ipampooltypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeIpamScopesRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeIpamScopesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `IpamScopeIds`: `Sequence`\[`str`\]
+
+## DescribeIpamScopesResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeIpamScopesResultTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `IpamScopes`: `List`\[[IpamScopeTypeDef](./type_defs.md#ipamscopetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeIpamsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeIpamsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `IpamIds`: `Sequence`\[`str`\]
+
+## DescribeIpamsResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeIpamsResultTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `Ipams`: `List`\[[IpamTypeDef](./type_defs.md#ipamtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeIpv6PoolsRequestRequestTypeDef
 
 ```python
@@ -10568,6 +11211,65 @@ Required fields:
 
 - `NetworkAcls`:
   `List`\[[NetworkAclTypeDef](./type_defs.md#networkacltypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeNetworkInsightsAccessScopeAnalysesRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsAccessScopeAnalysesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NetworkInsightsAccessScopeAnalysisIds`: `Sequence`\[`str`\]
+- `NetworkInsightsAccessScopeId`: `str`
+- `AnalysisStartTimeBegin`: `Union`\[`datetime`, `str`\]
+- `AnalysisStartTimeEnd`: `Union`\[`datetime`, `str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+- `NextToken`: `str`
+
+## DescribeNetworkInsightsAccessScopeAnalysesResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsAccessScopeAnalysesResultTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScopeAnalyses`:
+  `List`\[[NetworkInsightsAccessScopeAnalysisTypeDef](./type_defs.md#networkinsightsaccessscopeanalysistypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeNetworkInsightsAccessScopesRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsAccessScopesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NetworkInsightsAccessScopeIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+- `NextToken`: `str`
+
+## DescribeNetworkInsightsAccessScopesResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsAccessScopesResultTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScopes`:
+  `List`\[[NetworkInsightsAccessScopeTypeDef](./type_defs.md#networkinsightsaccessscopetypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -12827,6 +13529,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DisableIpamOrganizationAdminAccountRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableIpamOrganizationAdminAccountRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DelegatedAdminAccountId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DisableIpamOrganizationAdminAccountResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableIpamOrganizationAdminAccountResultTypeDef
+```
+
+Required fields:
+
+- `Success`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DisableSerialConsoleAccessRequestRequestTypeDef
 
 ```python
@@ -13657,6 +14385,32 @@ from mypy_boto3_ec2.type_defs import EnableImageDeprecationResultTypeDef
 Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## EnableIpamOrganizationAdminAccountRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableIpamOrganizationAdminAccountRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DelegatedAdminAccountId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## EnableIpamOrganizationAdminAccountResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableIpamOrganizationAdminAccountResultTypeDef
+```
+
+Required fields:
+
+- `Success`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -14879,6 +15633,140 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetIpamAddressHistoryRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetIpamAddressHistoryRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Cidr`: `str`
+- `IpamScopeId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `VpcId`: `str`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetIpamAddressHistoryResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetIpamAddressHistoryResultTypeDef
+```
+
+Required fields:
+
+- `HistoryRecords`:
+  `List`\[[IpamAddressHistoryRecordTypeDef](./type_defs.md#ipamaddresshistoryrecordtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetIpamPoolAllocationsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetIpamPoolAllocationsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamPoolId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `IpamPoolAllocationId`: `str`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetIpamPoolAllocationsResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetIpamPoolAllocationsResultTypeDef
+```
+
+Required fields:
+
+- `IpamPoolAllocations`:
+  `List`\[[IpamPoolAllocationTypeDef](./type_defs.md#ipampoolallocationtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetIpamPoolCidrsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetIpamPoolCidrsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamPoolId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetIpamPoolCidrsResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetIpamPoolCidrsResultTypeDef
+```
+
+Required fields:
+
+- `IpamPoolCidrs`:
+  `List`\[[IpamPoolCidrTypeDef](./type_defs.md#ipampoolcidrtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetIpamResourceCidrsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetIpamResourceCidrsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamScopeId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `IpamPoolId`: `str`
+- `ResourceId`: `str`
+- `ResourceType`: [IpamResourceTypeType](./literals.md#ipamresourcetypetype)
+- `ResourceTag`:
+  [RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef)
+- `ResourceOwner`: `str`
+
+## GetIpamResourceCidrsResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetIpamResourceCidrsResultTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `IpamResourceCidrs`:
+  `List`\[[IpamResourceCidrTypeDef](./type_defs.md#ipamresourcecidrtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetLaunchTemplateDataRequestRequestTypeDef
 
 ```python
@@ -14964,6 +15852,65 @@ Required fields:
 - `Entries`:
   `List`\[[PrefixListEntryTypeDef](./type_defs.md#prefixlistentrytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetNetworkInsightsAccessScopeAnalysisFindingsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetNetworkInsightsAccessScopeAnalysisFindingsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScopeAnalysisId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScopeAnalysisId`: `str`
+- `AnalysisStatus`: [AnalysisStatusType](./literals.md#analysisstatustype)
+- `AnalysisFindings`:
+  `List`\[[AccessScopeAnalysisFindingTypeDef](./type_defs.md#accessscopeanalysisfindingtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetNetworkInsightsAccessScopeContentRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetNetworkInsightsAccessScopeContentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScopeId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## GetNetworkInsightsAccessScopeContentResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetNetworkInsightsAccessScopeContentResultTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScopeContent`:
+  [NetworkInsightsAccessScopeContentTypeDef](./type_defs.md#networkinsightsaccessscopecontenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -16970,6 +17917,204 @@ Optional fields:
 - `CidrIp`: `str`
 - `Description`: `str`
 
+## IpamAddressHistoryRecordTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import IpamAddressHistoryRecordTypeDef
+```
+
+Optional fields:
+
+- `ResourceOwnerId`: `str`
+- `ResourceRegion`: `str`
+- `ResourceType`:
+  [IpamAddressHistoryResourceTypeType](./literals.md#ipamaddresshistoryresourcetypetype)
+- `ResourceId`: `str`
+- `ResourceCidr`: `str`
+- `ResourceName`: `str`
+- `ResourceComplianceStatus`:
+  [IpamComplianceStatusType](./literals.md#ipamcompliancestatustype)
+- `ResourceOverlapStatus`:
+  [IpamOverlapStatusType](./literals.md#ipamoverlapstatustype)
+- `VpcId`: `str`
+- `SampledStartTime`: `datetime`
+- `SampledEndTime`: `datetime`
+
+## IpamCidrAuthorizationContextTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import IpamCidrAuthorizationContextTypeDef
+```
+
+Optional fields:
+
+- `Message`: `str`
+- `Signature`: `str`
+
+## IpamOperatingRegionTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import IpamOperatingRegionTypeDef
+```
+
+Optional fields:
+
+- `RegionName`: `str`
+
+## IpamPoolAllocationTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import IpamPoolAllocationTypeDef
+```
+
+Optional fields:
+
+- `Cidr`: `str`
+- `IpamPoolAllocationId`: `str`
+- `Description`: `str`
+- `ResourceId`: `str`
+- `ResourceType`:
+  [IpamPoolAllocationResourceTypeType](./literals.md#ipampoolallocationresourcetypetype)
+- `ResourceRegion`: `str`
+- `ResourceOwner`: `str`
+
+## IpamPoolCidrFailureReasonTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import IpamPoolCidrFailureReasonTypeDef
+```
+
+Optional fields:
+
+- `Code`: `Literal['cidr-not-available']` (see
+  [IpamPoolCidrFailureCodeType](./literals.md#ipampoolcidrfailurecodetype))
+- `Message`: `str`
+
+## IpamPoolCidrTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import IpamPoolCidrTypeDef
+```
+
+Optional fields:
+
+- `Cidr`: `str`
+- `State`: [IpamPoolCidrStateType](./literals.md#ipampoolcidrstatetype)
+- `FailureReason`:
+  [IpamPoolCidrFailureReasonTypeDef](./type_defs.md#ipampoolcidrfailurereasontypedef)
+
+## IpamPoolTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import IpamPoolTypeDef
+```
+
+Optional fields:
+
+- `OwnerId`: `str`
+- `IpamPoolId`: `str`
+- `SourceIpamPoolId`: `str`
+- `IpamPoolArn`: `str`
+- `IpamScopeArn`: `str`
+- `IpamScopeType`: [IpamScopeTypeType](./literals.md#ipamscopetypetype)
+- `IpamArn`: `str`
+- `IpamRegion`: `str`
+- `Locale`: `str`
+- `PoolDepth`: `int`
+- `State`: [IpamPoolStateType](./literals.md#ipampoolstatetype)
+- `StateMessage`: `str`
+- `Description`: `str`
+- `AutoImport`: `bool`
+- `PubliclyAdvertisable`: `bool`
+- `AddressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
+- `AllocationMinNetmaskLength`: `int`
+- `AllocationMaxNetmaskLength`: `int`
+- `AllocationDefaultNetmaskLength`: `int`
+- `AllocationResourceTags`:
+  `List`\[[IpamResourceTagTypeDef](./type_defs.md#ipamresourcetagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `AwsService`: `Literal['ec2']` (see
+  [IpamPoolAwsServiceType](./literals.md#ipampoolawsservicetype))
+
+## IpamResourceCidrTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import IpamResourceCidrTypeDef
+```
+
+Optional fields:
+
+- `IpamId`: `str`
+- `IpamScopeId`: `str`
+- `IpamPoolId`: `str`
+- `ResourceRegion`: `str`
+- `ResourceOwnerId`: `str`
+- `ResourceId`: `str`
+- `ResourceName`: `str`
+- `ResourceCidr`: `str`
+- `ResourceType`: [IpamResourceTypeType](./literals.md#ipamresourcetypetype)
+- `ResourceTags`:
+  `List`\[[IpamResourceTagTypeDef](./type_defs.md#ipamresourcetagtypedef)\]
+- `IpUsage`: `float`
+- `ComplianceStatus`:
+  [IpamComplianceStatusType](./literals.md#ipamcompliancestatustype)
+- `ManagementState`:
+  [IpamManagementStateType](./literals.md#ipammanagementstatetype)
+- `OverlapStatus`: [IpamOverlapStatusType](./literals.md#ipamoverlapstatustype)
+- `VpcId`: `str`
+
+## IpamResourceTagTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import IpamResourceTagTypeDef
+```
+
+Optional fields:
+
+- `Key`: `str`
+- `Value`: `str`
+
+## IpamScopeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import IpamScopeTypeDef
+```
+
+Optional fields:
+
+- `OwnerId`: `str`
+- `IpamScopeId`: `str`
+- `IpamScopeArn`: `str`
+- `IpamArn`: `str`
+- `IpamRegion`: `str`
+- `IpamScopeType`: [IpamScopeTypeType](./literals.md#ipamscopetypetype)
+- `IsDefault`: `bool`
+- `Description`: `str`
+- `PoolCount`: `int`
+- `State`: [IpamScopeStateType](./literals.md#ipamscopestatetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## IpamTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import IpamTypeDef
+```
+
+Optional fields:
+
+- `OwnerId`: `str`
+- `IpamId`: `str`
+- `IpamArn`: `str`
+- `IpamRegion`: `str`
+- `PublicDefaultScopeId`: `str`
+- `PrivateDefaultScopeId`: `str`
+- `ScopeCount`: `int`
+- `Description`: `str`
+- `OperatingRegions`:
+  `List`\[[IpamOperatingRegionTypeDef](./type_defs.md#ipamoperatingregiontypedef)\]
+- `State`: [IpamStateType](./literals.md#ipamstatetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## Ipv4PrefixSpecificationRequestTypeDef
 
 ```python
@@ -18655,6 +19800,132 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ModifyIpamPoolRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyIpamPoolRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamPoolId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Description`: `str`
+- `AutoImport`: `bool`
+- `AllocationMinNetmaskLength`: `int`
+- `AllocationMaxNetmaskLength`: `int`
+- `AllocationDefaultNetmaskLength`: `int`
+- `ClearAllocationDefaultNetmaskLength`: `bool`
+- `AddAllocationResourceTags`:
+  `Sequence`\[[RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef)\]
+- `RemoveAllocationResourceTags`:
+  `Sequence`\[[RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef)\]
+
+## ModifyIpamPoolResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyIpamPoolResultTypeDef
+```
+
+Required fields:
+
+- `IpamPool`: [IpamPoolTypeDef](./type_defs.md#ipampooltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ModifyIpamRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyIpamRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Description`: `str`
+- `AddOperatingRegions`:
+  `Sequence`\[[AddIpamOperatingRegionTypeDef](./type_defs.md#addipamoperatingregiontypedef)\]
+- `RemoveOperatingRegions`:
+  `Sequence`\[[RemoveIpamOperatingRegionTypeDef](./type_defs.md#removeipamoperatingregiontypedef)\]
+
+## ModifyIpamResourceCidrRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyIpamResourceCidrRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+- `ResourceCidr`: `str`
+- `ResourceRegion`: `str`
+- `CurrentIpamScopeId`: `str`
+- `Monitored`: `bool`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `DestinationIpamScopeId`: `str`
+
+## ModifyIpamResourceCidrResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyIpamResourceCidrResultTypeDef
+```
+
+Required fields:
+
+- `IpamResourceCidr`:
+  [IpamResourceCidrTypeDef](./type_defs.md#ipamresourcecidrtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ModifyIpamResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyIpamResultTypeDef
+```
+
+Required fields:
+
+- `Ipam`: [IpamTypeDef](./type_defs.md#ipamtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ModifyIpamScopeRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyIpamScopeRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamScopeId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Description`: `str`
+
+## ModifyIpamScopeResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyIpamScopeResultTypeDef
+```
+
+Required fields:
+
+- `IpamScope`: [IpamScopeTypeDef](./type_defs.md#ipamscopetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ModifyLaunchTemplateRequestRequestTypeDef
 
 ```python
@@ -19696,6 +20967,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## MoveByoipCidrToIpamRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import MoveByoipCidrToIpamRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Cidr`: `str`
+- `IpamPoolId`: `str`
+- `IpamPoolOwner`: `str`
+
+## MoveByoipCidrToIpamResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import MoveByoipCidrToIpamResultTypeDef
+```
+
+Required fields:
+
+- `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## MovingAddressStatusTypeDef
 
 ```python
@@ -19825,6 +21121,54 @@ Optional fields:
 - `EfaInfo`: [EfaInfoTypeDef](./type_defs.md#efainfotypedef)
 - `EncryptionInTransitSupported`: `bool`
 
+## NetworkInsightsAccessScopeAnalysisTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import NetworkInsightsAccessScopeAnalysisTypeDef
+```
+
+Optional fields:
+
+- `NetworkInsightsAccessScopeAnalysisId`: `str`
+- `NetworkInsightsAccessScopeAnalysisArn`: `str`
+- `NetworkInsightsAccessScopeId`: `str`
+- `Status`: [AnalysisStatusType](./literals.md#analysisstatustype)
+- `StatusMessage`: `str`
+- `WarningMessage`: `str`
+- `StartDate`: `datetime`
+- `EndDate`: `datetime`
+- `FindingsFound`: [FindingsFoundType](./literals.md#findingsfoundtype)
+- `AnalyzedEniCount`: `int`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## NetworkInsightsAccessScopeContentTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import NetworkInsightsAccessScopeContentTypeDef
+```
+
+Optional fields:
+
+- `NetworkInsightsAccessScopeId`: `str`
+- `MatchPaths`:
+  `List`\[[AccessScopePathTypeDef](./type_defs.md#accessscopepathtypedef)\]
+- `ExcludePaths`:
+  `List`\[[AccessScopePathTypeDef](./type_defs.md#accessscopepathtypedef)\]
+
+## NetworkInsightsAccessScopeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import NetworkInsightsAccessScopeTypeDef
+```
+
+Optional fields:
+
+- `NetworkInsightsAccessScopeId`: `str`
+- `NetworkInsightsAccessScopeArn`: `str`
+- `CreatedDate`: `datetime`
+- `UpdatedDate`: `datetime`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## NetworkInsightsAnalysisTypeDef
 
 ```python
@@ -19840,6 +21184,7 @@ Optional fields:
 - `StartDate`: `datetime`
 - `Status`: [AnalysisStatusType](./literals.md#analysisstatustype)
 - `StatusMessage`: `str`
+- `WarningMessage`: `str`
 - `NetworkPathFound`: `bool`
 - `ForwardPathComponents`:
   `List`\[[PathComponentTypeDef](./type_defs.md#pathcomponenttypedef)\]
@@ -20078,6 +21423,38 @@ Optional fields:
 - `MinTargetCapacity`: `int`
 - `MaxTotalPrice`: `str`
 
+## PacketHeaderStatementRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PacketHeaderStatementRequestTypeDef
+```
+
+Optional fields:
+
+- `SourceAddresses`: `Sequence`\[`str`\]
+- `DestinationAddresses`: `Sequence`\[`str`\]
+- `SourcePorts`: `Sequence`\[`str`\]
+- `DestinationPorts`: `Sequence`\[`str`\]
+- `SourcePrefixLists`: `Sequence`\[`str`\]
+- `DestinationPrefixLists`: `Sequence`\[`str`\]
+- `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
+
+## PacketHeaderStatementTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PacketHeaderStatementTypeDef
+```
+
+Optional fields:
+
+- `SourceAddresses`: `List`\[`str`\]
+- `DestinationAddresses`: `List`\[`str`\]
+- `SourcePorts`: `List`\[`str`\]
+- `DestinationPorts`: `List`\[`str`\]
+- `SourcePrefixLists`: `List`\[`str`\]
+- `DestinationPrefixLists`: `List`\[`str`\]
+- `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -20100,6 +21477,8 @@ Optional fields:
 
 - `SequenceNumber`: `int`
 - `AclRule`: [AnalysisAclRuleTypeDef](./type_defs.md#analysisaclruletypedef)
+- `AttachedTo`:
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `Component`:
   [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `DestinationVpc`:
@@ -20116,6 +21495,32 @@ Optional fields:
   [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `Subnet`: [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `Vpc`: [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
+
+## PathStatementRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PathStatementRequestTypeDef
+```
+
+Optional fields:
+
+- `PacketHeaderStatement`:
+  [PacketHeaderStatementRequestTypeDef](./type_defs.md#packetheaderstatementrequesttypedef)
+- `ResourceStatement`:
+  [ResourceStatementRequestTypeDef](./type_defs.md#resourcestatementrequesttypedef)
+
+## PathStatementTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PathStatementTypeDef
+```
+
+Optional fields:
+
+- `PacketHeaderStatement`:
+  [PacketHeaderStatementTypeDef](./type_defs.md#packetheaderstatementtypedef)
+- `ResourceStatement`:
+  [ResourceStatementTypeDef](./type_defs.md#resourcestatementtypedef)
 
 ## PciIdTypeDef
 
@@ -20599,6 +22004,65 @@ from mypy_boto3_ec2.type_defs import ProvisionByoipCidrResultTypeDef
 Required fields:
 
 - `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ProvisionIpamPoolCidrRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ProvisionIpamPoolCidrRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamPoolId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Cidr`: `str`
+- `CidrAuthorizationContext`:
+  [IpamCidrAuthorizationContextTypeDef](./type_defs.md#ipamcidrauthorizationcontexttypedef)
+
+## ProvisionIpamPoolCidrResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ProvisionIpamPoolCidrResultTypeDef
+```
+
+Required fields:
+
+- `IpamPoolCidr`: [IpamPoolCidrTypeDef](./type_defs.md#ipampoolcidrtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ProvisionPublicIpv4PoolCidrRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ProvisionPublicIpv4PoolCidrRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamPoolId`: `str`
+- `PoolId`: `str`
+- `NetmaskLength`: `int`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ProvisionPublicIpv4PoolCidrResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ProvisionPublicIpv4PoolCidrResultTypeDef
+```
+
+Required fields:
+
+- `PoolId`: `str`
+- `PoolAddressRange`:
+  [PublicIpv4PoolRangeTypeDef](./type_defs.md#publicipv4poolrangetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -21208,6 +22672,44 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ReleaseIpamPoolAllocationRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReleaseIpamPoolAllocationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IpamPoolId`: `str`
+- `Cidr`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `IpamPoolAllocationId`: `str`
+
+## ReleaseIpamPoolAllocationResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReleaseIpamPoolAllocationResultTypeDef
+```
+
+Required fields:
+
+- `Success`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RemoveIpamOperatingRegionTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RemoveIpamOperatingRegionTypeDef
+```
+
+Optional fields:
+
+- `RegionName`: `str`
+
 ## RemovePrefixListEntryTypeDef
 
 ```python
@@ -21507,6 +23009,17 @@ Optional fields:
 - `DryRun`: `bool`
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
+
+## RequestIpamResourceTagTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RequestIpamResourceTagTypeDef
+```
+
+Optional fields:
+
+- `Key`: `str`
+- `Value`: `str`
 
 ## RequestLaunchTemplateDataTypeDef
 
@@ -22077,6 +23590,28 @@ Required fields:
 Optional fields:
 
 - `DryRun`: `bool`
+
+## ResourceStatementRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResourceStatementRequestTypeDef
+```
+
+Optional fields:
+
+- `Resources`: `Sequence`\[`str`\]
+- `ResourceTypes`: `Sequence`\[`str`\]
+
+## ResourceStatementTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResourceStatementTypeDef
+```
+
+Optional fields:
+
+- `Resources`: `List`\[`str`\]
+- `ResourceTypes`: `List`\[`str`\]
 
 ## ResponseErrorTypeDef
 
@@ -24026,6 +25561,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## StartNetworkInsightsAccessScopeAnalysisRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import StartNetworkInsightsAccessScopeAnalysisRequestRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScopeId`: `str`
+- `ClientToken`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## StartNetworkInsightsAccessScopeAnalysisResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import StartNetworkInsightsAccessScopeAnalysisResultTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsAccessScopeAnalysis`:
+  [NetworkInsightsAccessScopeAnalysisTypeDef](./type_defs.md#networkinsightsaccessscopeanalysistypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## StartNetworkInsightsAnalysisRequestRequestTypeDef
 
 ```python
@@ -24506,6 +26071,28 @@ Required fields:
   `List`\[[InstanceStateChangeTypeDef](./type_defs.md#instancestatechangetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ThroughResourcesStatementRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ThroughResourcesStatementRequestTypeDef
+```
+
+Optional fields:
+
+- `ResourceStatement`:
+  [ResourceStatementRequestTypeDef](./type_defs.md#resourcestatementrequesttypedef)
+
+## ThroughResourcesStatementTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ThroughResourcesStatementTypeDef
+```
+
+Optional fields:
+
+- `ResourceStatement`:
+  [ResourceStatementTypeDef](./type_defs.md#resourcestatementtypedef)
 
 ## TotalLocalStorageGBRequestTypeDef
 

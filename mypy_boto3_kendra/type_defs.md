@@ -12,6 +12,10 @@ type annotations stubs module
   - [AclConfigurationTypeDef](#aclconfigurationtypedef)
   - [AdditionalResultAttributeTypeDef](#additionalresultattributetypedef)
   - [AdditionalResultAttributeValueTypeDef](#additionalresultattributevaluetypedef)
+  - [AssociateEntitiesToExperienceRequestRequestTypeDef](#associateentitiestoexperiencerequestrequesttypedef)
+  - [AssociateEntitiesToExperienceResponseTypeDef](#associateentitiestoexperienceresponsetypedef)
+  - [AssociatePersonasToEntitiesRequestRequestTypeDef](#associatepersonastoentitiesrequestrequesttypedef)
+  - [AssociatePersonasToEntitiesResponseTypeDef](#associatepersonastoentitiesresponsetypedef)
   - [AttributeFilterTypeDef](#attributefiltertypedef)
   - [AuthenticationConfigurationTypeDef](#authenticationconfigurationtypedef)
   - [BasicAuthenticationConfigurationTypeDef](#basicauthenticationconfigurationtypedef)
@@ -38,8 +42,11 @@ type annotations stubs module
   - [ConfluenceSpaceConfigurationTypeDef](#confluencespaceconfigurationtypedef)
   - [ConfluenceSpaceToIndexFieldMappingTypeDef](#confluencespacetoindexfieldmappingtypedef)
   - [ConnectionConfigurationTypeDef](#connectionconfigurationtypedef)
+  - [ContentSourceConfigurationTypeDef](#contentsourceconfigurationtypedef)
   - [CreateDataSourceRequestRequestTypeDef](#createdatasourcerequestrequesttypedef)
   - [CreateDataSourceResponseTypeDef](#createdatasourceresponsetypedef)
+  - [CreateExperienceRequestRequestTypeDef](#createexperiencerequestrequesttypedef)
+  - [CreateExperienceResponseTypeDef](#createexperienceresponsetypedef)
   - [CreateFaqRequestRequestTypeDef](#createfaqrequestrequesttypedef)
   - [CreateFaqResponseTypeDef](#createfaqresponsetypedef)
   - [CreateIndexRequestRequestTypeDef](#createindexrequestrequesttypedef)
@@ -48,6 +55,7 @@ type annotations stubs module
   - [CreateQuerySuggestionsBlockListResponseTypeDef](#createquerysuggestionsblocklistresponsetypedef)
   - [CreateThesaurusRequestRequestTypeDef](#createthesaurusrequestrequesttypedef)
   - [CreateThesaurusResponseTypeDef](#createthesaurusresponsetypedef)
+  - [CustomDocumentEnrichmentConfigurationTypeDef](#customdocumentenrichmentconfigurationtypedef)
   - [DataSourceConfigurationTypeDef](#datasourceconfigurationtypedef)
   - [DataSourceGroupTypeDef](#datasourcegrouptypedef)
   - [DataSourceSummaryTypeDef](#datasourcesummarytypedef)
@@ -58,6 +66,7 @@ type annotations stubs module
   - [DataSourceVpcConfigurationTypeDef](#datasourcevpcconfigurationtypedef)
   - [DatabaseConfigurationTypeDef](#databaseconfigurationtypedef)
   - [DeleteDataSourceRequestRequestTypeDef](#deletedatasourcerequestrequesttypedef)
+  - [DeleteExperienceRequestRequestTypeDef](#deleteexperiencerequestrequesttypedef)
   - [DeleteFaqRequestRequestTypeDef](#deletefaqrequestrequesttypedef)
   - [DeleteIndexRequestRequestTypeDef](#deleteindexrequestrequesttypedef)
   - [DeletePrincipalMappingRequestRequestTypeDef](#deleteprincipalmappingrequestrequesttypedef)
@@ -65,6 +74,8 @@ type annotations stubs module
   - [DeleteThesaurusRequestRequestTypeDef](#deletethesaurusrequestrequesttypedef)
   - [DescribeDataSourceRequestRequestTypeDef](#describedatasourcerequestrequesttypedef)
   - [DescribeDataSourceResponseTypeDef](#describedatasourceresponsetypedef)
+  - [DescribeExperienceRequestRequestTypeDef](#describeexperiencerequestrequesttypedef)
+  - [DescribeExperienceResponseTypeDef](#describeexperienceresponsetypedef)
   - [DescribeFaqRequestRequestTypeDef](#describefaqrequestrequesttypedef)
   - [DescribeFaqResponseTypeDef](#describefaqresponsetypedef)
   - [DescribeIndexRequestRequestTypeDef](#describeindexrequestrequesttypedef)
@@ -77,6 +88,12 @@ type annotations stubs module
   - [DescribeQuerySuggestionsConfigResponseTypeDef](#describequerysuggestionsconfigresponsetypedef)
   - [DescribeThesaurusRequestRequestTypeDef](#describethesaurusrequestrequesttypedef)
   - [DescribeThesaurusResponseTypeDef](#describethesaurusresponsetypedef)
+  - [DisassociateEntitiesFromExperienceRequestRequestTypeDef](#disassociateentitiesfromexperiencerequestrequesttypedef)
+  - [DisassociateEntitiesFromExperienceResponseTypeDef](#disassociateentitiesfromexperienceresponsetypedef)
+  - [DisassociatePersonasFromEntitiesRequestRequestTypeDef](#disassociatepersonasfromentitiesrequestrequesttypedef)
+  - [DisassociatePersonasFromEntitiesResponseTypeDef](#disassociatepersonasfromentitiesresponsetypedef)
+  - [DocumentAttributeConditionTypeDef](#documentattributeconditiontypedef)
+  - [DocumentAttributeTargetTypeDef](#documentattributetargettypedef)
   - [DocumentAttributeTypeDef](#documentattributetypedef)
   - [DocumentAttributeValueCountPairTypeDef](#documentattributevaluecountpairtypedef)
   - [DocumentAttributeValueTypeDef](#documentattributevaluetypedef)
@@ -85,26 +102,44 @@ type annotations stubs module
   - [DocumentRelevanceConfigurationTypeDef](#documentrelevanceconfigurationtypedef)
   - [DocumentTypeDef](#documenttypedef)
   - [DocumentsMetadataConfigurationTypeDef](#documentsmetadataconfigurationtypedef)
+  - [EntityConfigurationTypeDef](#entityconfigurationtypedef)
+  - [EntityDisplayDataTypeDef](#entitydisplaydatatypedef)
+  - [EntityPersonaConfigurationTypeDef](#entitypersonaconfigurationtypedef)
+  - [ExperienceConfigurationTypeDef](#experienceconfigurationtypedef)
+  - [ExperienceEndpointTypeDef](#experienceendpointtypedef)
+  - [ExperienceEntitiesSummaryTypeDef](#experienceentitiessummarytypedef)
+  - [ExperiencesSummaryTypeDef](#experiencessummarytypedef)
   - [FacetResultTypeDef](#facetresulttypedef)
   - [FacetTypeDef](#facettypedef)
+  - [FailedEntityTypeDef](#failedentitytypedef)
   - [FaqStatisticsTypeDef](#faqstatisticstypedef)
   - [FaqSummaryTypeDef](#faqsummarytypedef)
   - [GetQuerySuggestionsRequestRequestTypeDef](#getquerysuggestionsrequestrequesttypedef)
   - [GetQuerySuggestionsResponseTypeDef](#getquerysuggestionsresponsetypedef)
+  - [GetSnapshotsRequestRequestTypeDef](#getsnapshotsrequestrequesttypedef)
+  - [GetSnapshotsResponseTypeDef](#getsnapshotsresponsetypedef)
   - [GoogleDriveConfigurationTypeDef](#googledriveconfigurationtypedef)
   - [GroupMembersTypeDef](#groupmemberstypedef)
   - [GroupOrderingIdSummaryTypeDef](#grouporderingidsummarytypedef)
   - [GroupSummaryTypeDef](#groupsummarytypedef)
   - [HierarchicalPrincipalTypeDef](#hierarchicalprincipaltypedef)
   - [HighlightTypeDef](#highlighttypedef)
+  - [HookConfigurationTypeDef](#hookconfigurationtypedef)
   - [IndexConfigurationSummaryTypeDef](#indexconfigurationsummarytypedef)
   - [IndexStatisticsTypeDef](#indexstatisticstypedef)
+  - [InlineCustomDocumentEnrichmentConfigurationTypeDef](#inlinecustomdocumentenrichmentconfigurationtypedef)
   - [JsonTokenTypeConfigurationTypeDef](#jsontokentypeconfigurationtypedef)
   - [JwtTokenTypeConfigurationTypeDef](#jwttokentypeconfigurationtypedef)
   - [ListDataSourceSyncJobsRequestRequestTypeDef](#listdatasourcesyncjobsrequestrequesttypedef)
   - [ListDataSourceSyncJobsResponseTypeDef](#listdatasourcesyncjobsresponsetypedef)
   - [ListDataSourcesRequestRequestTypeDef](#listdatasourcesrequestrequesttypedef)
   - [ListDataSourcesResponseTypeDef](#listdatasourcesresponsetypedef)
+  - [ListEntityPersonasRequestRequestTypeDef](#listentitypersonasrequestrequesttypedef)
+  - [ListEntityPersonasResponseTypeDef](#listentitypersonasresponsetypedef)
+  - [ListExperienceEntitiesRequestRequestTypeDef](#listexperienceentitiesrequestrequesttypedef)
+  - [ListExperienceEntitiesResponseTypeDef](#listexperienceentitiesresponsetypedef)
+  - [ListExperiencesRequestRequestTypeDef](#listexperiencesrequestrequesttypedef)
+  - [ListExperiencesResponseTypeDef](#listexperiencesresponsetypedef)
   - [ListFaqsRequestRequestTypeDef](#listfaqsrequestrequesttypedef)
   - [ListFaqsResponseTypeDef](#listfaqsresponsetypedef)
   - [ListGroupsOlderThanOrderingIdRequestRequestTypeDef](#listgroupsolderthanorderingidrequestrequesttypedef)
@@ -121,6 +156,7 @@ type annotations stubs module
   - [MemberUserTypeDef](#memberusertypedef)
   - [OneDriveConfigurationTypeDef](#onedriveconfigurationtypedef)
   - [OneDriveUsersTypeDef](#onedriveuserstypedef)
+  - [PersonasSummaryTypeDef](#personassummarytypedef)
   - [PrincipalTypeDef](#principaltypedef)
   - [ProxyConfigurationTypeDef](#proxyconfigurationtypedef)
   - [PutPrincipalMappingRequestRequestTypeDef](#putprincipalmappingrequestrequesttypedef)
@@ -168,6 +204,7 @@ type annotations stubs module
   - [TimeRangeTypeDef](#timerangetypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateDataSourceRequestRequestTypeDef](#updatedatasourcerequestrequesttypedef)
+  - [UpdateExperienceRequestRequestTypeDef](#updateexperiencerequestrequesttypedef)
   - [UpdateIndexRequestRequestTypeDef](#updateindexrequestrequesttypedef)
   - [UpdateQuerySuggestionsBlockListRequestRequestTypeDef](#updatequerysuggestionsblocklistrequestrequesttypedef)
   - [UpdateQuerySuggestionsConfigRequestRequestTypeDef](#updatequerysuggestionsconfigrequestrequesttypedef)
@@ -175,6 +212,7 @@ type annotations stubs module
   - [UrlsTypeDef](#urlstypedef)
   - [UserContextTypeDef](#usercontexttypedef)
   - [UserGroupResolutionConfigurationTypeDef](#usergroupresolutionconfigurationtypedef)
+  - [UserIdentityConfigurationTypeDef](#useridentityconfigurationtypedef)
   - [UserTokenConfigurationTypeDef](#usertokenconfigurationtypedef)
   - [WebCrawlerConfigurationTypeDef](#webcrawlerconfigurationtypedef)
   - [WorkDocsConfigurationTypeDef](#workdocsconfigurationtypedef)
@@ -223,6 +261,58 @@ Optional fields:
 
 - `TextWithHighlightsValue`:
   [TextWithHighlightsTypeDef](./type_defs.md#textwithhighlightstypedef)
+
+## AssociateEntitiesToExperienceRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import AssociateEntitiesToExperienceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+- `EntityList`:
+  `Sequence`\[[EntityConfigurationTypeDef](./type_defs.md#entityconfigurationtypedef)\]
+
+## AssociateEntitiesToExperienceResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import AssociateEntitiesToExperienceResponseTypeDef
+```
+
+Required fields:
+
+- `FailedEntityList`:
+  `List`\[[FailedEntityTypeDef](./type_defs.md#failedentitytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AssociatePersonasToEntitiesRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import AssociatePersonasToEntitiesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+- `Personas`:
+  `Sequence`\[[EntityPersonaConfigurationTypeDef](./type_defs.md#entitypersonaconfigurationtypedef)\]
+
+## AssociatePersonasToEntitiesResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import AssociatePersonasToEntitiesResponseTypeDef
+```
+
+Required fields:
+
+- `FailedEntityList`:
+  `List`\[[FailedEntityTypeDef](./type_defs.md#failedentitytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AttributeFilterTypeDef
 
@@ -368,6 +458,8 @@ Required fields:
 Optional fields:
 
 - `RoleArn`: `str`
+- `CustomDocumentEnrichmentConfiguration`:
+  [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
 
 ## BatchPutDocumentResponseFailedDocumentTypeDef
 
@@ -586,6 +678,18 @@ Required fields:
 - `TableName`: `str`
 - `SecretArn`: `str`
 
+## ContentSourceConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ContentSourceConfigurationTypeDef
+```
+
+Optional fields:
+
+- `DataSourceIds`: `Sequence`\[`str`\]
+- `FaqIds`: `Sequence`\[`str`\]
+- `DirectPutContent`: `bool`
+
 ## CreateDataSourceRequestRequestTypeDef
 
 ```python
@@ -608,11 +712,44 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 - `LanguageCode`: `str`
+- `CustomDocumentEnrichmentConfiguration`:
+  [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
 
 ## CreateDataSourceResponseTypeDef
 
 ```python
 from mypy_boto3_kendra.type_defs import CreateDataSourceResponseTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateExperienceRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import CreateExperienceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `IndexId`: `str`
+
+Optional fields:
+
+- `RoleArn`: `str`
+- `Configuration`:
+  [ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef)
+- `Description`: `str`
+- `ClientToken`: `str`
+
+## CreateExperienceResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import CreateExperienceResponseTypeDef
 ```
 
 Required fields:
@@ -753,6 +890,22 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CustomDocumentEnrichmentConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import CustomDocumentEnrichmentConfigurationTypeDef
+```
+
+Optional fields:
+
+- `InlineConfigurations`:
+  `Sequence`\[[InlineCustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#inlinecustomdocumentenrichmentconfigurationtypedef)\]
+- `PreExtractionHookConfiguration`:
+  [HookConfigurationTypeDef](./type_defs.md#hookconfigurationtypedef)
+- `PostExtractionHookConfiguration`:
+  [HookConfigurationTypeDef](./type_defs.md#hookconfigurationtypedef)
+- `RoleArn`: `str`
 
 ## DataSourceConfigurationTypeDef
 
@@ -918,6 +1071,17 @@ Required fields:
 - `Id`: `str`
 - `IndexId`: `str`
 
+## DeleteExperienceRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DeleteExperienceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
 ## DeleteFaqRequestRequestTypeDef
 
 ```python
@@ -1010,6 +1174,43 @@ Required fields:
 - `RoleArn`: `str`
 - `ErrorMessage`: `str`
 - `LanguageCode`: `str`
+- `CustomDocumentEnrichmentConfiguration`:
+  [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeExperienceRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribeExperienceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+## DescribeExperienceResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribeExperienceResponseTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+- `Name`: `str`
+- `Endpoints`:
+  `List`\[[ExperienceEndpointTypeDef](./type_defs.md#experienceendpointtypedef)\]
+- `Configuration`:
+  [ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef)
+- `CreatedAt`: `datetime`
+- `UpdatedAt`: `datetime`
+- `Description`: `str`
+- `Status`: [ExperienceStatusType](./literals.md#experiencestatustype)
+- `RoleArn`: `str`
+- `ErrorMessage`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1223,6 +1424,86 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DisassociateEntitiesFromExperienceRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DisassociateEntitiesFromExperienceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+- `EntityList`:
+  `Sequence`\[[EntityConfigurationTypeDef](./type_defs.md#entityconfigurationtypedef)\]
+
+## DisassociateEntitiesFromExperienceResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DisassociateEntitiesFromExperienceResponseTypeDef
+```
+
+Required fields:
+
+- `FailedEntityList`:
+  `List`\[[FailedEntityTypeDef](./type_defs.md#failedentitytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociatePersonasFromEntitiesRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DisassociatePersonasFromEntitiesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+- `EntityIds`: `Sequence`\[`str`\]
+
+## DisassociatePersonasFromEntitiesResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DisassociatePersonasFromEntitiesResponseTypeDef
+```
+
+Required fields:
+
+- `FailedEntityList`:
+  `List`\[[FailedEntityTypeDef](./type_defs.md#failedentitytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DocumentAttributeConditionTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DocumentAttributeConditionTypeDef
+```
+
+Required fields:
+
+- `ConditionDocumentAttributeKey`: `str`
+- `Operator`: [ConditionOperatorType](./literals.md#conditionoperatortype)
+
+Optional fields:
+
+- `ConditionOnValue`:
+  [DocumentAttributeValueTypeDef](./type_defs.md#documentattributevaluetypedef)
+
+## DocumentAttributeTargetTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DocumentAttributeTargetTypeDef
+```
+
+Optional fields:
+
+- `TargetDocumentAttributeKey`: `str`
+- `TargetDocumentAttributeValueDeletion`: `bool`
+- `TargetDocumentAttributeValue`:
+  [DocumentAttributeValueTypeDef](./type_defs.md#documentattributevaluetypedef)
+
 ## DocumentAttributeTypeDef
 
 ```python
@@ -1336,6 +1617,95 @@ Optional fields:
 
 - `S3Prefix`: `str`
 
+## EntityConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import EntityConfigurationTypeDef
+```
+
+Required fields:
+
+- `EntityId`: `str`
+- `EntityType`: [EntityTypeType](./literals.md#entitytypetype)
+
+## EntityDisplayDataTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import EntityDisplayDataTypeDef
+```
+
+Optional fields:
+
+- `UserName`: `str`
+- `GroupName`: `str`
+- `IdentifiedUserName`: `str`
+- `FirstName`: `str`
+- `LastName`: `str`
+
+## EntityPersonaConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import EntityPersonaConfigurationTypeDef
+```
+
+Required fields:
+
+- `EntityId`: `str`
+- `Persona`: [PersonaType](./literals.md#personatype)
+
+## ExperienceConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ExperienceConfigurationTypeDef
+```
+
+Optional fields:
+
+- `ContentSourceConfiguration`:
+  [ContentSourceConfigurationTypeDef](./type_defs.md#contentsourceconfigurationtypedef)
+- `UserIdentityConfiguration`:
+  [UserIdentityConfigurationTypeDef](./type_defs.md#useridentityconfigurationtypedef)
+
+## ExperienceEndpointTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ExperienceEndpointTypeDef
+```
+
+Optional fields:
+
+- `EndpointType`: `Literal['HOME']` (see
+  [EndpointTypeType](./literals.md#endpointtypetype))
+- `Endpoint`: `str`
+
+## ExperienceEntitiesSummaryTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ExperienceEntitiesSummaryTypeDef
+```
+
+Optional fields:
+
+- `EntityId`: `str`
+- `EntityType`: [EntityTypeType](./literals.md#entitytypetype)
+- `DisplayData`:
+  [EntityDisplayDataTypeDef](./type_defs.md#entitydisplaydatatypedef)
+
+## ExperiencesSummaryTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ExperiencesSummaryTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Id`: `str`
+- `CreatedAt`: `datetime`
+- `Status`: [ExperienceStatusType](./literals.md#experiencestatustype)
+- `Endpoints`:
+  `List`\[[ExperienceEndpointTypeDef](./type_defs.md#experienceendpointtypedef)\]
+
 ## FacetResultTypeDef
 
 ```python
@@ -1359,6 +1729,17 @@ from mypy_boto3_kendra.type_defs import FacetTypeDef
 Optional fields:
 
 - `DocumentAttributeKey`: `str`
+
+## FailedEntityTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import FailedEntityTypeDef
+```
+
+Optional fields:
+
+- `EntityId`: `str`
+- `ErrorMessage`: `str`
 
 ## FaqStatisticsTypeDef
 
@@ -1412,6 +1793,38 @@ Required fields:
 - `QuerySuggestionsId`: `str`
 - `Suggestions`:
   `List`\[[SuggestionTypeDef](./type_defs.md#suggestiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetSnapshotsRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import GetSnapshotsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `Interval`: [IntervalType](./literals.md#intervaltype)
+- `MetricType`: [MetricTypeType](./literals.md#metrictypetype)
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## GetSnapshotsResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import GetSnapshotsResponseTypeDef
+```
+
+Required fields:
+
+- `SnapShotTimeFilter`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
+- `SnapshotsDataHeader`: `List`\[`str`\]
+- `SnapshotsData`: `List`\[`List`\[`str`\]\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1502,6 +1915,22 @@ Optional fields:
 - `TopAnswer`: `bool`
 - `Type`: [HighlightTypeType](./literals.md#highlighttypetype)
 
+## HookConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import HookConfigurationTypeDef
+```
+
+Required fields:
+
+- `LambdaArn`: `str`
+- `S3Bucket`: `str`
+
+Optional fields:
+
+- `InvocationCondition`:
+  [DocumentAttributeConditionTypeDef](./type_defs.md#documentattributeconditiontypedef)
+
 ## IndexConfigurationSummaryTypeDef
 
 ```python
@@ -1531,6 +1960,20 @@ Required fields:
 - `FaqStatistics`: [FaqStatisticsTypeDef](./type_defs.md#faqstatisticstypedef)
 - `TextDocumentStatistics`:
   [TextDocumentStatisticsTypeDef](./type_defs.md#textdocumentstatisticstypedef)
+
+## InlineCustomDocumentEnrichmentConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import InlineCustomDocumentEnrichmentConfigurationTypeDef
+```
+
+Optional fields:
+
+- `Condition`:
+  [DocumentAttributeConditionTypeDef](./type_defs.md#documentattributeconditiontypedef)
+- `Target`:
+  [DocumentAttributeTargetTypeDef](./type_defs.md#documentattributetargettypedef)
+- `DocumentContentDeletion`: `bool`
 
 ## JsonTokenTypeConfigurationTypeDef
 
@@ -1620,6 +2063,94 @@ Required fields:
 
 - `SummaryItems`:
   `List`\[[DataSourceSummaryTypeDef](./type_defs.md#datasourcesummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListEntityPersonasRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListEntityPersonasRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListEntityPersonasResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListEntityPersonasResponseTypeDef
+```
+
+Required fields:
+
+- `SummaryItems`:
+  `List`\[[PersonasSummaryTypeDef](./type_defs.md#personassummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListExperienceEntitiesRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListExperienceEntitiesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+
+## ListExperienceEntitiesResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListExperienceEntitiesResponseTypeDef
+```
+
+Required fields:
+
+- `SummaryItems`:
+  `List`\[[ExperienceEntitiesSummaryTypeDef](./type_defs.md#experienceentitiessummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListExperiencesRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListExperiencesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListExperiencesResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListExperiencesResponseTypeDef
+```
+
+Required fields:
+
+- `SummaryItems`:
+  `List`\[[ExperiencesSummaryTypeDef](./type_defs.md#experiencessummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1843,6 +2374,19 @@ Optional fields:
 
 - `OneDriveUserList`: `Sequence`\[`str`\]
 - `OneDriveUserS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
+
+## PersonasSummaryTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import PersonasSummaryTypeDef
+```
+
+Optional fields:
+
+- `EntityId`: `str`
+- `Persona`: [PersonaType](./literals.md#personatype)
+- `CreatedAt`: `datetime`
+- `UpdatedAt`: `datetime`
 
 ## PrincipalTypeDef
 
@@ -2515,8 +3059,8 @@ from mypy_boto3_kendra.type_defs import TimeRangeTypeDef
 
 Optional fields:
 
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -2549,6 +3093,27 @@ Optional fields:
 - `Schedule`: `str`
 - `RoleArn`: `str`
 - `LanguageCode`: `str`
+- `CustomDocumentEnrichmentConfiguration`:
+  [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
+
+## UpdateExperienceRequestRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import UpdateExperienceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `RoleArn`: `str`
+- `Configuration`:
+  [ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef)
+- `Description`: `str`
 
 ## UpdateIndexRequestRequestTypeDef
 
@@ -2667,6 +3232,16 @@ Required fields:
 
 - `UserGroupResolutionMode`:
   [UserGroupResolutionModeType](./literals.md#usergroupresolutionmodetype)
+
+## UserIdentityConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import UserIdentityConfigurationTypeDef
+```
+
+Optional fields:
+
+- `IdentityAttributeName`: `str`
 
 ## UserTokenConfigurationTypeDef
 

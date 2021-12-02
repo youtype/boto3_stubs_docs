@@ -42,8 +42,10 @@ from mypy_boto3_sagemaker_runtime.client import SageMakerRuntimeClient
 SageMakerRuntimeClient [exceptions](./client.md#exceptions)
 
 - ClientError
+- InternalDependencyException
 - InternalFailure
 - ModelError
+- ModelNotReadyException
 - ServiceUnavailable
 - ValidationError
 
