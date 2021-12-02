@@ -52,6 +52,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
   service
 
+- [mypy-boto3-amplifyuibuilder](./mypy_boto3_amplifyuibuilder) for
+  [AmplifyUIBuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder)
+  service
+
 - [mypy-boto3-apigateway](./mypy_boto3_apigateway) for
   [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
   service

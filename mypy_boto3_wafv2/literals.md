@@ -523,6 +523,7 @@ Values:
 - `amp`
 - `amplify`
 - `amplifybackend`
+- `amplifyuibuilder`
 - `apigateway`
 - `apigatewaymanagementapi`
 - `apigatewayv2`

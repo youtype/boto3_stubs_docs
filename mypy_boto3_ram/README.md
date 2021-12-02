@@ -85,6 +85,7 @@ RAMClient [exceptions](./client.md#exceptions)
 - ServiceUnavailableException
 - TagLimitExceededException
 - TagPolicyViolationException
+- ThrottlingException
 - UnknownResourceException
 
 ## Paginators
@@ -122,6 +123,8 @@ from mypy_boto3_ram.literals import GetResourcePoliciesPaginatorName, ...
 - [ListPrincipalsPaginatorName](./literals.md#listprincipalspaginatorname)
 - [ListResourcesPaginatorName](./literals.md#listresourcespaginatorname)
 - [ResourceOwnerType](./literals.md#resourceownertype)
+- [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
+- [ResourceRegionScopeType](./literals.md#resourceregionscopetype)
 - [ResourceShareAssociationStatusType](./literals.md#resourceshareassociationstatustype)
 - [ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype)
 - [ResourceShareFeatureSetType](./literals.md#resourcesharefeaturesettype)

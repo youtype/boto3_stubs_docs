@@ -15,6 +15,8 @@ type annotations stubs module
   - [ListPrincipalsPaginatorName](#listprincipalspaginatorname)
   - [ListResourcesPaginatorName](#listresourcespaginatorname)
   - [ResourceOwnerType](#resourceownertype)
+  - [ResourceRegionScopeFilterType](#resourceregionscopefiltertype)
+  - [ResourceRegionScopeType](#resourceregionscopetype)
   - [ResourceShareAssociationStatusType](#resourceshareassociationstatustype)
   - [ResourceShareAssociationTypeType](#resourceshareassociationtypetype)
   - [ResourceShareFeatureSetType](#resourcesharefeaturesettype)
@@ -94,6 +96,29 @@ Values:
 
 - `OTHER-ACCOUNTS`
 - `SELF`
+
+## ResourceRegionScopeFilterType
+
+```python
+from mypy_boto3_ram.literals import ResourceRegionScopeFilterType
+```
+
+Values:
+
+- `ALL`
+- `GLOBAL`
+- `REGIONAL`
+
+## ResourceRegionScopeType
+
+```python
+from mypy_boto3_ram.literals import ResourceRegionScopeType
+```
+
+Values:
+
+- `GLOBAL`
+- `REGIONAL`
 
 ## ResourceShareAssociationStatusType
 
@@ -189,6 +214,7 @@ Values:
 - `amp`
 - `amplify`
 - `amplifybackend`
+- `amplifyuibuilder`
 - `apigateway`
 - `apigatewaymanagementapi`
 - `apigatewayv2`

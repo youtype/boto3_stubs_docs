@@ -9,17 +9,46 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 NetworkManager module](#typed-dictionaries-for-boto3-networkmanager-module)
   - [AWSLocationTypeDef](#awslocationtypedef)
+  - [AcceptAttachmentRequestRequestTypeDef](#acceptattachmentrequestrequesttypedef)
+  - [AcceptAttachmentResponseTypeDef](#acceptattachmentresponsetypedef)
+  - [AssociateConnectPeerRequestRequestTypeDef](#associateconnectpeerrequestrequesttypedef)
+  - [AssociateConnectPeerResponseTypeDef](#associateconnectpeerresponsetypedef)
   - [AssociateCustomerGatewayRequestRequestTypeDef](#associatecustomergatewayrequestrequesttypedef)
   - [AssociateCustomerGatewayResponseTypeDef](#associatecustomergatewayresponsetypedef)
   - [AssociateLinkRequestRequestTypeDef](#associatelinkrequestrequesttypedef)
   - [AssociateLinkResponseTypeDef](#associatelinkresponsetypedef)
   - [AssociateTransitGatewayConnectPeerRequestRequestTypeDef](#associatetransitgatewayconnectpeerrequestrequesttypedef)
   - [AssociateTransitGatewayConnectPeerResponseTypeDef](#associatetransitgatewayconnectpeerresponsetypedef)
+  - [AttachmentTypeDef](#attachmenttypedef)
   - [BandwidthTypeDef](#bandwidthtypedef)
+  - [BgpOptionsTypeDef](#bgpoptionstypedef)
+  - [ConnectAttachmentOptionsTypeDef](#connectattachmentoptionstypedef)
+  - [ConnectAttachmentTypeDef](#connectattachmenttypedef)
+  - [ConnectPeerAssociationTypeDef](#connectpeerassociationtypedef)
+  - [ConnectPeerBgpConfigurationTypeDef](#connectpeerbgpconfigurationtypedef)
+  - [ConnectPeerConfigurationTypeDef](#connectpeerconfigurationtypedef)
+  - [ConnectPeerSummaryTypeDef](#connectpeersummarytypedef)
+  - [ConnectPeerTypeDef](#connectpeertypedef)
   - [ConnectionHealthTypeDef](#connectionhealthtypedef)
   - [ConnectionTypeDef](#connectiontypedef)
+  - [CoreNetworkChangeTypeDef](#corenetworkchangetypedef)
+  - [CoreNetworkChangeValuesTypeDef](#corenetworkchangevaluestypedef)
+  - [CoreNetworkEdgeTypeDef](#corenetworkedgetypedef)
+  - [CoreNetworkPolicyErrorTypeDef](#corenetworkpolicyerrortypedef)
+  - [CoreNetworkPolicyTypeDef](#corenetworkpolicytypedef)
+  - [CoreNetworkPolicyVersionTypeDef](#corenetworkpolicyversiontypedef)
+  - [CoreNetworkSegmentEdgeIdentifierTypeDef](#corenetworksegmentedgeidentifiertypedef)
+  - [CoreNetworkSegmentTypeDef](#corenetworksegmenttypedef)
+  - [CoreNetworkSummaryTypeDef](#corenetworksummarytypedef)
+  - [CoreNetworkTypeDef](#corenetworktypedef)
+  - [CreateConnectAttachmentRequestRequestTypeDef](#createconnectattachmentrequestrequesttypedef)
+  - [CreateConnectAttachmentResponseTypeDef](#createconnectattachmentresponsetypedef)
+  - [CreateConnectPeerRequestRequestTypeDef](#createconnectpeerrequestrequesttypedef)
+  - [CreateConnectPeerResponseTypeDef](#createconnectpeerresponsetypedef)
   - [CreateConnectionRequestRequestTypeDef](#createconnectionrequestrequesttypedef)
   - [CreateConnectionResponseTypeDef](#createconnectionresponsetypedef)
+  - [CreateCoreNetworkRequestRequestTypeDef](#createcorenetworkrequestrequesttypedef)
+  - [CreateCoreNetworkResponseTypeDef](#createcorenetworkresponsetypedef)
   - [CreateDeviceRequestRequestTypeDef](#createdevicerequestrequesttypedef)
   - [CreateDeviceResponseTypeDef](#createdeviceresponsetypedef)
   - [CreateGlobalNetworkRequestRequestTypeDef](#createglobalnetworkrequestrequesttypedef)
@@ -28,15 +57,28 @@ type annotations stubs module
   - [CreateLinkResponseTypeDef](#createlinkresponsetypedef)
   - [CreateSiteRequestRequestTypeDef](#createsiterequestrequesttypedef)
   - [CreateSiteResponseTypeDef](#createsiteresponsetypedef)
+  - [CreateSiteToSiteVpnAttachmentRequestRequestTypeDef](#createsitetositevpnattachmentrequestrequesttypedef)
+  - [CreateSiteToSiteVpnAttachmentResponseTypeDef](#createsitetositevpnattachmentresponsetypedef)
+  - [CreateVpcAttachmentRequestRequestTypeDef](#createvpcattachmentrequestrequesttypedef)
+  - [CreateVpcAttachmentResponseTypeDef](#createvpcattachmentresponsetypedef)
   - [CustomerGatewayAssociationTypeDef](#customergatewayassociationtypedef)
+  - [DeleteAttachmentRequestRequestTypeDef](#deleteattachmentrequestrequesttypedef)
+  - [DeleteAttachmentResponseTypeDef](#deleteattachmentresponsetypedef)
+  - [DeleteConnectPeerRequestRequestTypeDef](#deleteconnectpeerrequestrequesttypedef)
+  - [DeleteConnectPeerResponseTypeDef](#deleteconnectpeerresponsetypedef)
   - [DeleteConnectionRequestRequestTypeDef](#deleteconnectionrequestrequesttypedef)
   - [DeleteConnectionResponseTypeDef](#deleteconnectionresponsetypedef)
+  - [DeleteCoreNetworkPolicyVersionRequestRequestTypeDef](#deletecorenetworkpolicyversionrequestrequesttypedef)
+  - [DeleteCoreNetworkPolicyVersionResponseTypeDef](#deletecorenetworkpolicyversionresponsetypedef)
+  - [DeleteCoreNetworkRequestRequestTypeDef](#deletecorenetworkrequestrequesttypedef)
+  - [DeleteCoreNetworkResponseTypeDef](#deletecorenetworkresponsetypedef)
   - [DeleteDeviceRequestRequestTypeDef](#deletedevicerequestrequesttypedef)
   - [DeleteDeviceResponseTypeDef](#deletedeviceresponsetypedef)
   - [DeleteGlobalNetworkRequestRequestTypeDef](#deleteglobalnetworkrequestrequesttypedef)
   - [DeleteGlobalNetworkResponseTypeDef](#deleteglobalnetworkresponsetypedef)
   - [DeleteLinkRequestRequestTypeDef](#deletelinkrequestrequesttypedef)
   - [DeleteLinkResponseTypeDef](#deletelinkresponsetypedef)
+  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
   - [DeleteSiteRequestRequestTypeDef](#deletesiterequestrequesttypedef)
   - [DeleteSiteResponseTypeDef](#deletesiteresponsetypedef)
   - [DeregisterTransitGatewayRequestRequestTypeDef](#deregistertransitgatewayrequestrequesttypedef)
@@ -44,14 +86,29 @@ type annotations stubs module
   - [DescribeGlobalNetworksRequestRequestTypeDef](#describeglobalnetworksrequestrequesttypedef)
   - [DescribeGlobalNetworksResponseTypeDef](#describeglobalnetworksresponsetypedef)
   - [DeviceTypeDef](#devicetypedef)
+  - [DisassociateConnectPeerRequestRequestTypeDef](#disassociateconnectpeerrequestrequesttypedef)
+  - [DisassociateConnectPeerResponseTypeDef](#disassociateconnectpeerresponsetypedef)
   - [DisassociateCustomerGatewayRequestRequestTypeDef](#disassociatecustomergatewayrequestrequesttypedef)
   - [DisassociateCustomerGatewayResponseTypeDef](#disassociatecustomergatewayresponsetypedef)
   - [DisassociateLinkRequestRequestTypeDef](#disassociatelinkrequestrequesttypedef)
   - [DisassociateLinkResponseTypeDef](#disassociatelinkresponsetypedef)
   - [DisassociateTransitGatewayConnectPeerRequestRequestTypeDef](#disassociatetransitgatewayconnectpeerrequestrequesttypedef)
   - [DisassociateTransitGatewayConnectPeerResponseTypeDef](#disassociatetransitgatewayconnectpeerresponsetypedef)
+  - [ExecuteCoreNetworkChangeSetRequestRequestTypeDef](#executecorenetworkchangesetrequestrequesttypedef)
+  - [GetConnectAttachmentRequestRequestTypeDef](#getconnectattachmentrequestrequesttypedef)
+  - [GetConnectAttachmentResponseTypeDef](#getconnectattachmentresponsetypedef)
+  - [GetConnectPeerAssociationsRequestRequestTypeDef](#getconnectpeerassociationsrequestrequesttypedef)
+  - [GetConnectPeerAssociationsResponseTypeDef](#getconnectpeerassociationsresponsetypedef)
+  - [GetConnectPeerRequestRequestTypeDef](#getconnectpeerrequestrequesttypedef)
+  - [GetConnectPeerResponseTypeDef](#getconnectpeerresponsetypedef)
   - [GetConnectionsRequestRequestTypeDef](#getconnectionsrequestrequesttypedef)
   - [GetConnectionsResponseTypeDef](#getconnectionsresponsetypedef)
+  - [GetCoreNetworkChangeSetRequestRequestTypeDef](#getcorenetworkchangesetrequestrequesttypedef)
+  - [GetCoreNetworkChangeSetResponseTypeDef](#getcorenetworkchangesetresponsetypedef)
+  - [GetCoreNetworkPolicyRequestRequestTypeDef](#getcorenetworkpolicyrequestrequesttypedef)
+  - [GetCoreNetworkPolicyResponseTypeDef](#getcorenetworkpolicyresponsetypedef)
+  - [GetCoreNetworkRequestRequestTypeDef](#getcorenetworkrequestrequesttypedef)
+  - [GetCoreNetworkResponseTypeDef](#getcorenetworkresponsetypedef)
   - [GetCustomerGatewayAssociationsRequestRequestTypeDef](#getcustomergatewayassociationsrequestrequesttypedef)
   - [GetCustomerGatewayAssociationsResponseTypeDef](#getcustomergatewayassociationsresponsetypedef)
   - [GetDevicesRequestRequestTypeDef](#getdevicesrequestrequesttypedef)
@@ -70,17 +127,31 @@ type annotations stubs module
   - [GetNetworkRoutesResponseTypeDef](#getnetworkroutesresponsetypedef)
   - [GetNetworkTelemetryRequestRequestTypeDef](#getnetworktelemetryrequestrequesttypedef)
   - [GetNetworkTelemetryResponseTypeDef](#getnetworktelemetryresponsetypedef)
+  - [GetResourcePolicyRequestRequestTypeDef](#getresourcepolicyrequestrequesttypedef)
+  - [GetResourcePolicyResponseTypeDef](#getresourcepolicyresponsetypedef)
   - [GetRouteAnalysisRequestRequestTypeDef](#getrouteanalysisrequestrequesttypedef)
   - [GetRouteAnalysisResponseTypeDef](#getrouteanalysisresponsetypedef)
+  - [GetSiteToSiteVpnAttachmentRequestRequestTypeDef](#getsitetositevpnattachmentrequestrequesttypedef)
+  - [GetSiteToSiteVpnAttachmentResponseTypeDef](#getsitetositevpnattachmentresponsetypedef)
   - [GetSitesRequestRequestTypeDef](#getsitesrequestrequesttypedef)
   - [GetSitesResponseTypeDef](#getsitesresponsetypedef)
   - [GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef](#gettransitgatewayconnectpeerassociationsrequestrequesttypedef)
   - [GetTransitGatewayConnectPeerAssociationsResponseTypeDef](#gettransitgatewayconnectpeerassociationsresponsetypedef)
   - [GetTransitGatewayRegistrationsRequestRequestTypeDef](#gettransitgatewayregistrationsrequestrequesttypedef)
   - [GetTransitGatewayRegistrationsResponseTypeDef](#gettransitgatewayregistrationsresponsetypedef)
+  - [GetVpcAttachmentRequestRequestTypeDef](#getvpcattachmentrequestrequesttypedef)
+  - [GetVpcAttachmentResponseTypeDef](#getvpcattachmentresponsetypedef)
   - [GlobalNetworkTypeDef](#globalnetworktypedef)
   - [LinkAssociationTypeDef](#linkassociationtypedef)
   - [LinkTypeDef](#linktypedef)
+  - [ListAttachmentsRequestRequestTypeDef](#listattachmentsrequestrequesttypedef)
+  - [ListAttachmentsResponseTypeDef](#listattachmentsresponsetypedef)
+  - [ListConnectPeersRequestRequestTypeDef](#listconnectpeersrequestrequesttypedef)
+  - [ListConnectPeersResponseTypeDef](#listconnectpeersresponsetypedef)
+  - [ListCoreNetworkPolicyVersionsRequestRequestTypeDef](#listcorenetworkpolicyversionsrequestrequesttypedef)
+  - [ListCoreNetworkPolicyVersionsResponseTypeDef](#listcorenetworkpolicyversionsresponsetypedef)
+  - [ListCoreNetworksRequestRequestTypeDef](#listcorenetworksrequestrequesttypedef)
+  - [ListCoreNetworksResponseTypeDef](#listcorenetworksresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LocationTypeDef](#locationtypedef)
@@ -92,16 +163,25 @@ type annotations stubs module
   - [NetworkTelemetryTypeDef](#networktelemetrytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PathComponentTypeDef](#pathcomponenttypedef)
+  - [ProposedSegmentChangeTypeDef](#proposedsegmentchangetypedef)
+  - [PutCoreNetworkPolicyRequestRequestTypeDef](#putcorenetworkpolicyrequestrequesttypedef)
+  - [PutCoreNetworkPolicyResponseTypeDef](#putcorenetworkpolicyresponsetypedef)
+  - [PutResourcePolicyRequestRequestTypeDef](#putresourcepolicyrequestrequesttypedef)
   - [RegisterTransitGatewayRequestRequestTypeDef](#registertransitgatewayrequestrequesttypedef)
   - [RegisterTransitGatewayResponseTypeDef](#registertransitgatewayresponsetypedef)
+  - [RejectAttachmentRequestRequestTypeDef](#rejectattachmentrequestrequesttypedef)
+  - [RejectAttachmentResponseTypeDef](#rejectattachmentresponsetypedef)
   - [RelationshipTypeDef](#relationshiptypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RestoreCoreNetworkPolicyVersionRequestRequestTypeDef](#restorecorenetworkpolicyversionrequestrequesttypedef)
+  - [RestoreCoreNetworkPolicyVersionResponseTypeDef](#restorecorenetworkpolicyversionresponsetypedef)
   - [RouteAnalysisCompletionTypeDef](#routeanalysiscompletiontypedef)
   - [RouteAnalysisEndpointOptionsSpecificationTypeDef](#routeanalysisendpointoptionsspecificationtypedef)
   - [RouteAnalysisEndpointOptionsTypeDef](#routeanalysisendpointoptionstypedef)
   - [RouteAnalysisPathTypeDef](#routeanalysispathtypedef)
   - [RouteAnalysisTypeDef](#routeanalysistypedef)
   - [RouteTableIdentifierTypeDef](#routetableidentifiertypedef)
+  - [SiteToSiteVpnAttachmentTypeDef](#sitetositevpnattachmenttypedef)
   - [SiteTypeDef](#sitetypedef)
   - [StartRouteAnalysisRequestRequestTypeDef](#startrouteanalysisrequestrequesttypedef)
   - [StartRouteAnalysisResponseTypeDef](#startrouteanalysisresponsetypedef)
@@ -113,6 +193,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateConnectionRequestRequestTypeDef](#updateconnectionrequestrequesttypedef)
   - [UpdateConnectionResponseTypeDef](#updateconnectionresponsetypedef)
+  - [UpdateCoreNetworkRequestRequestTypeDef](#updatecorenetworkrequestrequesttypedef)
+  - [UpdateCoreNetworkResponseTypeDef](#updatecorenetworkresponsetypedef)
   - [UpdateDeviceRequestRequestTypeDef](#updatedevicerequestrequesttypedef)
   - [UpdateDeviceResponseTypeDef](#updatedeviceresponsetypedef)
   - [UpdateGlobalNetworkRequestRequestTypeDef](#updateglobalnetworkrequestrequesttypedef)
@@ -123,6 +205,10 @@ type annotations stubs module
   - [UpdateNetworkResourceMetadataResponseTypeDef](#updatenetworkresourcemetadataresponsetypedef)
   - [UpdateSiteRequestRequestTypeDef](#updatesiterequestrequesttypedef)
   - [UpdateSiteResponseTypeDef](#updatesiteresponsetypedef)
+  - [UpdateVpcAttachmentRequestRequestTypeDef](#updatevpcattachmentrequestrequesttypedef)
+  - [UpdateVpcAttachmentResponseTypeDef](#updatevpcattachmentresponsetypedef)
+  - [VpcAttachmentTypeDef](#vpcattachmenttypedef)
+  - [VpcOptionsTypeDef](#vpcoptionstypedef)
 
 ## AWSLocationTypeDef
 
@@ -134,6 +220,57 @@ Optional fields:
 
 - `Zone`: `str`
 - `SubnetArn`: `str`
+
+## AcceptAttachmentRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import AcceptAttachmentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AttachmentId`: `str`
+
+## AcceptAttachmentResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import AcceptAttachmentResponseTypeDef
+```
+
+Required fields:
+
+- `Attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AssociateConnectPeerRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import AssociateConnectPeerRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GlobalNetworkId`: `str`
+- `ConnectPeerId`: `str`
+- `DeviceId`: `str`
+
+Optional fields:
+
+- `LinkId`: `str`
+
+## AssociateConnectPeerResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import AssociateConnectPeerResponseTypeDef
+```
+
+Required fields:
+
+- `ConnectPeerAssociation`:
+  [ConnectPeerAssociationTypeDef](./type_defs.md#connectpeerassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AssociateCustomerGatewayRequestRequestTypeDef
 
@@ -218,6 +355,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## AttachmentTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import AttachmentTypeDef
+```
+
+Optional fields:
+
+- `CoreNetworkId`: `str`
+- `CoreNetworkArn`: `str`
+- `AttachmentId`: `str`
+- `OwnerAccountId`: `str`
+- `AttachmentType`: [AttachmentTypeType](./literals.md#attachmenttypetype)
+- `State`: [AttachmentStateType](./literals.md#attachmentstatetype)
+- `EdgeLocation`: `str`
+- `ResourceArn`: `str`
+- `AttachmentPolicyRuleNumber`: `int`
+- `SegmentName`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ProposedSegmentChange`:
+  [ProposedSegmentChangeTypeDef](./type_defs.md#proposedsegmentchangetypedef)
+- `CreatedAt`: `datetime`
+- `UpdatedAt`: `datetime`
+
 ## BandwidthTypeDef
 
 ```python
@@ -228,6 +389,119 @@ Optional fields:
 
 - `UploadSpeed`: `int`
 - `DownloadSpeed`: `int`
+
+## BgpOptionsTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import BgpOptionsTypeDef
+```
+
+Optional fields:
+
+- `PeerAsn`: `int`
+
+## ConnectAttachmentOptionsTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ConnectAttachmentOptionsTypeDef
+```
+
+Optional fields:
+
+- `Protocol`: `Literal['GRE']` (see
+  [TunnelProtocolType](./literals.md#tunnelprotocoltype))
+
+## ConnectAttachmentTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ConnectAttachmentTypeDef
+```
+
+Optional fields:
+
+- `Attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
+- `TransportAttachmentId`: `str`
+- `Options`:
+  [ConnectAttachmentOptionsTypeDef](./type_defs.md#connectattachmentoptionstypedef)
+
+## ConnectPeerAssociationTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ConnectPeerAssociationTypeDef
+```
+
+Optional fields:
+
+- `ConnectPeerId`: `str`
+- `GlobalNetworkId`: `str`
+- `DeviceId`: `str`
+- `LinkId`: `str`
+- `State`:
+  [ConnectPeerAssociationStateType](./literals.md#connectpeerassociationstatetype)
+
+## ConnectPeerBgpConfigurationTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ConnectPeerBgpConfigurationTypeDef
+```
+
+Optional fields:
+
+- `CoreNetworkAsn`: `int`
+- `PeerAsn`: `int`
+- `CoreNetworkAddress`: `str`
+- `PeerAddress`: `str`
+
+## ConnectPeerConfigurationTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ConnectPeerConfigurationTypeDef
+```
+
+Optional fields:
+
+- `CoreNetworkAddress`: `str`
+- `PeerAddress`: `str`
+- `InsideCidrBlocks`: `List`\[`str`\]
+- `Protocol`: `Literal['GRE']` (see
+  [TunnelProtocolType](./literals.md#tunnelprotocoltype))
+- `BgpConfigurations`:
+  `List`\[[ConnectPeerBgpConfigurationTypeDef](./type_defs.md#connectpeerbgpconfigurationtypedef)\]
+
+## ConnectPeerSummaryTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ConnectPeerSummaryTypeDef
+```
+
+Optional fields:
+
+- `CoreNetworkId`: `str`
+- `ConnectAttachmentId`: `str`
+- `ConnectPeerId`: `str`
+- `EdgeLocation`: `str`
+- `ConnectPeerState`:
+  [ConnectPeerStateType](./literals.md#connectpeerstatetype)
+- `CreatedAt`: `datetime`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## ConnectPeerTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ConnectPeerTypeDef
+```
+
+Optional fields:
+
+- `CoreNetworkId`: `str`
+- `ConnectAttachmentId`: `str`
+- `ConnectPeerId`: `str`
+- `EdgeLocation`: `str`
+- `State`: [ConnectPeerStateType](./literals.md#connectpeerstatetype)
+- `CreatedAt`: `datetime`
+- `Configuration`:
+  [ConnectPeerConfigurationTypeDef](./type_defs.md#connectpeerconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ConnectionHealthTypeDef
 
@@ -261,6 +535,223 @@ Optional fields:
 - `State`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+## CoreNetworkChangeTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CoreNetworkChangeTypeDef
+```
+
+Optional fields:
+
+- `Type`: [ChangeTypeType](./literals.md#changetypetype)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
+- `Identifier`: `str`
+- `PreviousValues`:
+  [CoreNetworkChangeValuesTypeDef](./type_defs.md#corenetworkchangevaluestypedef)
+- `NewValues`:
+  [CoreNetworkChangeValuesTypeDef](./type_defs.md#corenetworkchangevaluestypedef)
+
+## CoreNetworkChangeValuesTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CoreNetworkChangeValuesTypeDef
+```
+
+Optional fields:
+
+- `SegmentName`: `str`
+- `EdgeLocations`: `List`\[`str`\]
+- `Asn`: `int`
+- `Cidr`: `str`
+- `DestinationIdentifier`: `str`
+- `InsideCidrBlocks`: `List`\[`str`\]
+- `SharedSegments`: `List`\[`str`\]
+
+## CoreNetworkEdgeTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CoreNetworkEdgeTypeDef
+```
+
+Optional fields:
+
+- `EdgeLocation`: `str`
+- `Asn`: `int`
+- `InsideCidrBlocks`: `List`\[`str`\]
+
+## CoreNetworkPolicyErrorTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CoreNetworkPolicyErrorTypeDef
+```
+
+Required fields:
+
+- `ErrorCode`: `str`
+- `Message`: `str`
+
+Optional fields:
+
+- `Path`: `str`
+
+## CoreNetworkPolicyTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CoreNetworkPolicyTypeDef
+```
+
+Optional fields:
+
+- `CoreNetworkId`: `str`
+- `PolicyVersionId`: `int`
+- `Alias`:
+  [CoreNetworkPolicyAliasType](./literals.md#corenetworkpolicyaliastype)
+- `Description`: `str`
+- `CreatedAt`: `datetime`
+- `ChangeSetState`: [ChangeSetStateType](./literals.md#changesetstatetype)
+- `PolicyErrors`:
+  `List`\[[CoreNetworkPolicyErrorTypeDef](./type_defs.md#corenetworkpolicyerrortypedef)\]
+- `PolicyDocument`: `str`
+
+## CoreNetworkPolicyVersionTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CoreNetworkPolicyVersionTypeDef
+```
+
+Optional fields:
+
+- `CoreNetworkId`: `str`
+- `PolicyVersionId`: `int`
+- `Alias`:
+  [CoreNetworkPolicyAliasType](./literals.md#corenetworkpolicyaliastype)
+- `Description`: `str`
+- `CreatedAt`: `datetime`
+- `ChangeSetState`: [ChangeSetStateType](./literals.md#changesetstatetype)
+
+## CoreNetworkSegmentEdgeIdentifierTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CoreNetworkSegmentEdgeIdentifierTypeDef
+```
+
+Optional fields:
+
+- `CoreNetworkId`: `str`
+- `SegmentName`: `str`
+- `EdgeLocation`: `str`
+
+## CoreNetworkSegmentTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CoreNetworkSegmentTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `EdgeLocations`: `List`\[`str`\]
+- `SharedSegments`: `List`\[`str`\]
+
+## CoreNetworkSummaryTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CoreNetworkSummaryTypeDef
+```
+
+Optional fields:
+
+- `CoreNetworkId`: `str`
+- `CoreNetworkArn`: `str`
+- `GlobalNetworkId`: `str`
+- `OwnerAccountId`: `str`
+- `State`: [CoreNetworkStateType](./literals.md#corenetworkstatetype)
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CoreNetworkTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CoreNetworkTypeDef
+```
+
+Optional fields:
+
+- `GlobalNetworkId`: `str`
+- `CoreNetworkId`: `str`
+- `CoreNetworkArn`: `str`
+- `Description`: `str`
+- `CreatedAt`: `datetime`
+- `State`: [CoreNetworkStateType](./literals.md#corenetworkstatetype)
+- `Segments`:
+  `List`\[[CoreNetworkSegmentTypeDef](./type_defs.md#corenetworksegmenttypedef)\]
+- `Edges`:
+  `List`\[[CoreNetworkEdgeTypeDef](./type_defs.md#corenetworkedgetypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateConnectAttachmentRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CreateConnectAttachmentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+- `EdgeLocation`: `str`
+- `TransportAttachmentId`: `str`
+- `Options`:
+  [ConnectAttachmentOptionsTypeDef](./type_defs.md#connectattachmentoptionstypedef)
+
+Optional fields:
+
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientToken`: `str`
+
+## CreateConnectAttachmentResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CreateConnectAttachmentResponseTypeDef
+```
+
+Required fields:
+
+- `ConnectAttachment`:
+  [ConnectAttachmentTypeDef](./type_defs.md#connectattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateConnectPeerRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CreateConnectPeerRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ConnectAttachmentId`: `str`
+- `PeerAddress`: `str`
+- `InsideCidrBlocks`: `Sequence`\[`str`\]
+
+Optional fields:
+
+- `CoreNetworkAddress`: `str`
+- `BgpOptions`: [BgpOptionsTypeDef](./type_defs.md#bgpoptionstypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientToken`: `str`
+
+## CreateConnectPeerResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CreateConnectPeerResponseTypeDef
+```
+
+Required fields:
+
+- `ConnectPeer`: [ConnectPeerTypeDef](./type_defs.md#connectpeertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateConnectionRequestRequestTypeDef
 
 ```python
@@ -289,6 +780,35 @@ from mypy_boto3_networkmanager.type_defs import CreateConnectionResponseTypeDef
 Required fields:
 
 - `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateCoreNetworkRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CreateCoreNetworkRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GlobalNetworkId`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `PolicyDocument`: `str`
+- `ClientToken`: `str`
+
+## CreateCoreNetworkResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CreateCoreNetworkResponseTypeDef
+```
+
+Required fields:
+
+- `CoreNetwork`: [CoreNetworkTypeDef](./type_defs.md#corenetworktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -408,6 +928,65 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateSiteToSiteVpnAttachmentRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CreateSiteToSiteVpnAttachmentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+- `VpnConnectionArn`: `str`
+
+Optional fields:
+
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientToken`: `str`
+
+## CreateSiteToSiteVpnAttachmentResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CreateSiteToSiteVpnAttachmentResponseTypeDef
+```
+
+Required fields:
+
+- `SiteToSiteVpnAttachment`:
+  [SiteToSiteVpnAttachmentTypeDef](./type_defs.md#sitetositevpnattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateVpcAttachmentRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CreateVpcAttachmentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+- `VpcArn`: `str`
+- `SubnetArns`: `Sequence`\[`str`\]
+
+Optional fields:
+
+- `Options`: [VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientToken`: `str`
+
+## CreateVpcAttachmentResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import CreateVpcAttachmentResponseTypeDef
+```
+
+Required fields:
+
+- `VpcAttachment`: [VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CustomerGatewayAssociationTypeDef
 
 ```python
@@ -422,6 +1001,50 @@ Optional fields:
 - `LinkId`: `str`
 - `State`:
   [CustomerGatewayAssociationStateType](./literals.md#customergatewayassociationstatetype)
+
+## DeleteAttachmentRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import DeleteAttachmentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AttachmentId`: `str`
+
+## DeleteAttachmentResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import DeleteAttachmentResponseTypeDef
+```
+
+Required fields:
+
+- `Attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteConnectPeerRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import DeleteConnectPeerRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ConnectPeerId`: `str`
+
+## DeleteConnectPeerResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import DeleteConnectPeerResponseTypeDef
+```
+
+Required fields:
+
+- `ConnectPeer`: [ConnectPeerTypeDef](./type_defs.md#connectpeertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteConnectionRequestRequestTypeDef
 
@@ -443,6 +1066,52 @@ from mypy_boto3_networkmanager.type_defs import DeleteConnectionResponseTypeDef
 Required fields:
 
 - `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteCoreNetworkPolicyVersionRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import DeleteCoreNetworkPolicyVersionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+- `PolicyVersionId`: `int`
+
+## DeleteCoreNetworkPolicyVersionResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import DeleteCoreNetworkPolicyVersionResponseTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkPolicy`:
+  [CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteCoreNetworkRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import DeleteCoreNetworkRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+
+## DeleteCoreNetworkResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import DeleteCoreNetworkResponseTypeDef
+```
+
+Required fields:
+
+- `CoreNetwork`: [CoreNetworkTypeDef](./type_defs.md#corenetworktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -513,6 +1182,16 @@ Required fields:
 - `Link`: [LinkTypeDef](./type_defs.md#linktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteResourcePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import DeleteResourcePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
 
 ## DeleteSiteRequestRequestTypeDef
 
@@ -610,6 +1289,30 @@ Optional fields:
 - `State`: [DeviceStateType](./literals.md#devicestatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+## DisassociateConnectPeerRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import DisassociateConnectPeerRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GlobalNetworkId`: `str`
+- `ConnectPeerId`: `str`
+
+## DisassociateConnectPeerResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import DisassociateConnectPeerResponseTypeDef
+```
+
+Required fields:
+
+- `ConnectPeerAssociation`:
+  [ConnectPeerAssociationTypeDef](./type_defs.md#connectpeerassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DisassociateCustomerGatewayRequestRequestTypeDef
 
 ```python
@@ -683,6 +1386,92 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ExecuteCoreNetworkChangeSetRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ExecuteCoreNetworkChangeSetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+- `PolicyVersionId`: `int`
+
+## GetConnectAttachmentRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetConnectAttachmentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AttachmentId`: `str`
+
+## GetConnectAttachmentResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetConnectAttachmentResponseTypeDef
+```
+
+Required fields:
+
+- `ConnectAttachment`:
+  [ConnectAttachmentTypeDef](./type_defs.md#connectattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetConnectPeerAssociationsRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetConnectPeerAssociationsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GlobalNetworkId`: `str`
+
+Optional fields:
+
+- `ConnectPeerIds`: `Sequence`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetConnectPeerAssociationsResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetConnectPeerAssociationsResponseTypeDef
+```
+
+Required fields:
+
+- `ConnectPeerAssociations`:
+  `List`\[[ConnectPeerAssociationTypeDef](./type_defs.md#connectpeerassociationtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetConnectPeerRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetConnectPeerRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ConnectPeerId`: `str`
+
+## GetConnectPeerResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetConnectPeerResponseTypeDef
+```
+
+Required fields:
+
+- `ConnectPeer`: [ConnectPeerTypeDef](./type_defs.md#connectpeertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetConnectionsRequestRequestTypeDef
 
 ```python
@@ -711,6 +1500,87 @@ Required fields:
 - `Connections`:
   `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetCoreNetworkChangeSetRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkChangeSetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+- `PolicyVersionId`: `int`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetCoreNetworkChangeSetResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkChangeSetResponseTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkChanges`:
+  `List`\[[CoreNetworkChangeTypeDef](./type_defs.md#corenetworkchangetypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetCoreNetworkPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkPolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+
+Optional fields:
+
+- `PolicyVersionId`: `int`
+- `Alias`:
+  [CoreNetworkPolicyAliasType](./literals.md#corenetworkpolicyaliastype)
+
+## GetCoreNetworkPolicyResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkPolicyResponseTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkPolicy`:
+  [CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetCoreNetworkRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+
+## GetCoreNetworkResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetCoreNetworkResponseTypeDef
+```
+
+Required fields:
+
+- `CoreNetwork`: [CoreNetworkTypeDef](./type_defs.md#corenetworktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -879,6 +1749,7 @@ Required fields:
 
 Optional fields:
 
+- `CoreNetworkId`: `str`
 - `RegisteredGatewayArn`: `str`
 - `AwsRegion`: `str`
 - `AccountId`: `str`
@@ -913,6 +1784,7 @@ Required fields:
 
 Optional fields:
 
+- `CoreNetworkId`: `str`
 - `RegisteredGatewayArn`: `str`
 - `AwsRegion`: `str`
 - `AccountId`: `str`
@@ -967,8 +1839,9 @@ from mypy_boto3_networkmanager.type_defs import GetNetworkRoutesResponseTypeDef
 Required fields:
 
 - `RouteTableArn`: `str`
-- `RouteTableType`: `Literal['TRANSIT_GATEWAY_ROUTE_TABLE']` (see
-  [RouteTableTypeType](./literals.md#routetabletypetype))
+- `CoreNetworkSegmentEdge`:
+  [CoreNetworkSegmentEdgeIdentifierTypeDef](./type_defs.md#corenetworksegmentedgeidentifiertypedef)
+- `RouteTableType`: [RouteTableTypeType](./literals.md#routetabletypetype)
 - `RouteTableTimestamp`: `datetime`
 - `NetworkRoutes`:
   `List`\[[NetworkRouteTypeDef](./type_defs.md#networkroutetypedef)\]
@@ -987,6 +1860,7 @@ Required fields:
 
 Optional fields:
 
+- `CoreNetworkId`: `str`
 - `RegisteredGatewayArn`: `str`
 - `AwsRegion`: `str`
 - `AccountId`: `str`
@@ -1006,6 +1880,28 @@ Required fields:
 - `NetworkTelemetry`:
   `List`\[[NetworkTelemetryTypeDef](./type_defs.md#networktelemetrytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetResourcePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetResourcePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+## GetResourcePolicyResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetResourcePolicyResponseTypeDef
+```
+
+Required fields:
+
+- `PolicyDocument`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1029,6 +1925,29 @@ from mypy_boto3_networkmanager.type_defs import GetRouteAnalysisResponseTypeDef
 Required fields:
 
 - `RouteAnalysis`: [RouteAnalysisTypeDef](./type_defs.md#routeanalysistypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetSiteToSiteVpnAttachmentRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetSiteToSiteVpnAttachmentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AttachmentId`: `str`
+
+## GetSiteToSiteVpnAttachmentResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetSiteToSiteVpnAttachmentResponseTypeDef
+```
+
+Required fields:
+
+- `SiteToSiteVpnAttachment`:
+  [SiteToSiteVpnAttachmentTypeDef](./type_defs.md#sitetositevpnattachmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1121,6 +2040,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetVpcAttachmentRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetVpcAttachmentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AttachmentId`: `str`
+
+## GetVpcAttachmentResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import GetVpcAttachmentResponseTypeDef
+```
+
+Required fields:
+
+- `VpcAttachment`: [VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GlobalNetworkTypeDef
 
 ```python
@@ -1169,6 +2110,116 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `State`: [LinkStateType](./literals.md#linkstatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## ListAttachmentsRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ListAttachmentsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `CoreNetworkId`: `str`
+- `AttachmentType`: [AttachmentTypeType](./literals.md#attachmenttypetype)
+- `EdgeLocation`: `str`
+- `State`: [AttachmentStateType](./literals.md#attachmentstatetype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAttachmentsResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ListAttachmentsResponseTypeDef
+```
+
+Required fields:
+
+- `Attachments`:
+  `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListConnectPeersRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ListConnectPeersRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `CoreNetworkId`: `str`
+- `ConnectAttachmentId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListConnectPeersResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ListConnectPeersResponseTypeDef
+```
+
+Required fields:
+
+- `ConnectPeers`:
+  `List`\[[ConnectPeerSummaryTypeDef](./type_defs.md#connectpeersummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListCoreNetworkPolicyVersionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ListCoreNetworkPolicyVersionsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListCoreNetworkPolicyVersionsResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ListCoreNetworkPolicyVersionsResponseTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkPolicyVersions`:
+  `List`\[[CoreNetworkPolicyVersionTypeDef](./type_defs.md#corenetworkpolicyversiontypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListCoreNetworksRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ListCoreNetworksRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListCoreNetworksResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ListCoreNetworksResponseTypeDef
+```
+
+Required fields:
+
+- `CoreNetworks`:
+  `List`\[[CoreNetworkSummaryTypeDef](./type_defs.md#corenetworksummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -1239,6 +2290,7 @@ from mypy_boto3_networkmanager.type_defs import NetworkResourceTypeDef
 Optional fields:
 
 - `RegisteredGatewayArn`: `str`
+- `CoreNetworkId`: `str`
 - `AwsRegion`: `str`
 - `AccountId`: `str`
 - `ResourceType`: `str`
@@ -1257,7 +2309,10 @@ from mypy_boto3_networkmanager.type_defs import NetworkRouteDestinationTypeDef
 
 Optional fields:
 
+- `CoreNetworkAttachmentId`: `str`
 - `TransitGatewayAttachmentId`: `str`
+- `SegmentName`: `str`
+- `EdgeLocation`: `str`
 - `ResourceType`: `str`
 - `ResourceId`: `str`
 
@@ -1285,6 +2340,7 @@ from mypy_boto3_networkmanager.type_defs import NetworkTelemetryTypeDef
 Optional fields:
 
 - `RegisteredGatewayArn`: `str`
+- `CoreNetworkId`: `str`
 - `AwsRegion`: `str`
 - `AccountId`: `str`
 - `ResourceType`: `str`
@@ -1318,6 +2374,59 @@ Optional fields:
   [NetworkResourceSummaryTypeDef](./type_defs.md#networkresourcesummarytypedef)
 - `DestinationCidrBlock`: `str`
 
+## ProposedSegmentChangeTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import ProposedSegmentChangeTypeDef
+```
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `AttachmentPolicyRuleNumber`: `int`
+- `SegmentName`: `str`
+
+## PutCoreNetworkPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import PutCoreNetworkPolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+- `PolicyDocument`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `LatestVersionId`: `int`
+- `ClientToken`: `str`
+
+## PutCoreNetworkPolicyResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import PutCoreNetworkPolicyResponseTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkPolicy`:
+  [CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PutResourcePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import PutResourcePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `PolicyDocument`: `str`
+- `ResourceArn`: `str`
+
 ## RegisterTransitGatewayRequestRequestTypeDef
 
 ```python
@@ -1339,6 +2448,28 @@ Required fields:
 
 - `TransitGatewayRegistration`:
   [TransitGatewayRegistrationTypeDef](./type_defs.md#transitgatewayregistrationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RejectAttachmentRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import RejectAttachmentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AttachmentId`: `str`
+
+## RejectAttachmentResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import RejectAttachmentResponseTypeDef
+```
+
+Required fields:
+
+- `Attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1366,6 +2497,30 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## RestoreCoreNetworkPolicyVersionRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import RestoreCoreNetworkPolicyVersionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+- `PolicyVersionId`: `int`
+
+## RestoreCoreNetworkPolicyVersionResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import RestoreCoreNetworkPolicyVersionResponseTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkPolicy`:
+  [CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RouteAnalysisCompletionTypeDef
 
@@ -1449,6 +2604,19 @@ from mypy_boto3_networkmanager.type_defs import RouteTableIdentifierTypeDef
 Optional fields:
 
 - `TransitGatewayRouteTableArn`: `str`
+- `CoreNetworkSegmentEdge`:
+  [CoreNetworkSegmentEdgeIdentifierTypeDef](./type_defs.md#corenetworksegmentedgeidentifiertypedef)
+
+## SiteToSiteVpnAttachmentTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import SiteToSiteVpnAttachmentTypeDef
+```
+
+Optional fields:
+
+- `Attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
+- `VpnConnectionArn`: `str`
 
 ## SiteTypeDef
 
@@ -1600,6 +2768,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## UpdateCoreNetworkRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import UpdateCoreNetworkRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CoreNetworkId`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+
+## UpdateCoreNetworkResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import UpdateCoreNetworkResponseTypeDef
+```
+
+Required fields:
+
+- `CoreNetwork`: [CoreNetworkTypeDef](./type_defs.md#corenetworktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## UpdateDeviceRequestRequestTypeDef
 
 ```python
@@ -1742,3 +2936,53 @@ Required fields:
 - `Site`: [SiteTypeDef](./type_defs.md#sitetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateVpcAttachmentRequestRequestTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import UpdateVpcAttachmentRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AttachmentId`: `str`
+
+Optional fields:
+
+- `AddSubnetArns`: `Sequence`\[`str`\]
+- `RemoveSubnetArns`: `Sequence`\[`str`\]
+- `Options`: [VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
+
+## UpdateVpcAttachmentResponseTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import UpdateVpcAttachmentResponseTypeDef
+```
+
+Required fields:
+
+- `VpcAttachment`: [VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## VpcAttachmentTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import VpcAttachmentTypeDef
+```
+
+Optional fields:
+
+- `Attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
+- `SubnetArns`: `List`\[`str`\]
+- `Options`: [VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
+
+## VpcOptionsTypeDef
+
+```python
+from mypy_boto3_networkmanager.type_defs import VpcOptionsTypeDef
+```
+
+Optional fields:
+
+- `Ipv6Support`: `bool`

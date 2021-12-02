@@ -190,6 +190,8 @@ Arguments for `ListResourcesPaginator.paginate` method:
 - `resourceType`: `str`
 - `resourceArns`: `Sequence`\[`str`\]
 - `resourceShareArns`: `Sequence`\[`str`\]
+- `resourceRegionScope`:
+  [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

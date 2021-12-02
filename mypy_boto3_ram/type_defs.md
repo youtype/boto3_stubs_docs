@@ -451,6 +451,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `resourceRegionScope`:
+  [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
 
 ## ListPendingInvitationResourcesResponseTypeDef
 
@@ -562,6 +564,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `resourceRegionScope`:
+  [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
 
 ## ListResourceTypesResponseTypeDef
 
@@ -595,6 +599,8 @@ Optional fields:
 - `resourceShareArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `resourceRegionScope`:
+  [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
 
 ## ListResourcesResponseTypeDef
 
@@ -797,6 +803,8 @@ Optional fields:
 - `statusMessage`: `str`
 - `creationTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
+- `resourceRegionScope`:
+  [ResourceRegionScopeType](./literals.md#resourceregionscopetype)
 
 ## ResponseMetadataTypeDef
 
@@ -822,6 +830,8 @@ Optional fields:
 
 - `resourceType`: `str`
 - `serviceName`: `str`
+- `resourceRegionScope`:
+  [ResourceRegionScopeType](./literals.md#resourceregionscopetype)
 
 ## TagFilterTypeDef
 

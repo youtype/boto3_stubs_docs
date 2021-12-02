@@ -12,27 +12,47 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [exceptions](#exceptions)
+    - [accept_attachment](#accept_attachment)
+    - [associate_connect_peer](#associate_connect_peer)
     - [associate_customer_gateway](#associate_customer_gateway)
     - [associate_link](#associate_link)
     - [associate_transit_gateway_connect_peer](#associate_transit_gateway_connect_peer)
     - [can_paginate](#can_paginate)
+    - [create_connect_attachment](#create_connect_attachment)
+    - [create_connect_peer](#create_connect_peer)
     - [create_connection](#create_connection)
+    - [create_core_network](#create_core_network)
     - [create_device](#create_device)
     - [create_global_network](#create_global_network)
     - [create_link](#create_link)
     - [create_site](#create_site)
+    - [create_site_to_site_vpn_attachment](#create_site_to_site_vpn_attachment)
+    - [create_vpc_attachment](#create_vpc_attachment)
+    - [delete_attachment](#delete_attachment)
+    - [delete_connect_peer](#delete_connect_peer)
     - [delete_connection](#delete_connection)
+    - [delete_core_network](#delete_core_network)
+    - [delete_core_network_policy_version](#delete_core_network_policy_version)
     - [delete_device](#delete_device)
     - [delete_global_network](#delete_global_network)
     - [delete_link](#delete_link)
+    - [delete_resource_policy](#delete_resource_policy)
     - [delete_site](#delete_site)
     - [deregister_transit_gateway](#deregister_transit_gateway)
     - [describe_global_networks](#describe_global_networks)
+    - [disassociate_connect_peer](#disassociate_connect_peer)
     - [disassociate_customer_gateway](#disassociate_customer_gateway)
     - [disassociate_link](#disassociate_link)
     - [disassociate_transit_gateway_connect_peer](#disassociate_transit_gateway_connect_peer)
+    - [execute_core_network_change_set](#execute_core_network_change_set)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_connect_attachment](#get_connect_attachment)
+    - [get_connect_peer](#get_connect_peer)
+    - [get_connect_peer_associations](#get_connect_peer_associations)
     - [get_connections](#get_connections)
+    - [get_core_network](#get_core_network)
+    - [get_core_network_change_set](#get_core_network_change_set)
+    - [get_core_network_policy](#get_core_network_policy)
     - [get_customer_gateway_associations](#get_customer_gateway_associations)
     - [get_devices](#get_devices)
     - [get_link_associations](#get_link_associations)
@@ -42,21 +62,34 @@ type annotations stubs module
     - [get_network_resources](#get_network_resources)
     - [get_network_routes](#get_network_routes)
     - [get_network_telemetry](#get_network_telemetry)
+    - [get_resource_policy](#get_resource_policy)
     - [get_route_analysis](#get_route_analysis)
+    - [get_site_to_site_vpn_attachment](#get_site_to_site_vpn_attachment)
     - [get_sites](#get_sites)
     - [get_transit_gateway_connect_peer_associations](#get_transit_gateway_connect_peer_associations)
     - [get_transit_gateway_registrations](#get_transit_gateway_registrations)
+    - [get_vpc_attachment](#get_vpc_attachment)
+    - [list_attachments](#list_attachments)
+    - [list_connect_peers](#list_connect_peers)
+    - [list_core_network_policy_versions](#list_core_network_policy_versions)
+    - [list_core_networks](#list_core_networks)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [put_core_network_policy](#put_core_network_policy)
+    - [put_resource_policy](#put_resource_policy)
     - [register_transit_gateway](#register_transit_gateway)
+    - [reject_attachment](#reject_attachment)
+    - [restore_core_network_policy_version](#restore_core_network_policy_version)
     - [start_route_analysis](#start_route_analysis)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_connection](#update_connection)
+    - [update_core_network](#update_core_network)
     - [update_device](#update_device)
     - [update_global_network](#update_global_network)
     - [update_link](#update_link)
     - [update_network_resource_metadata](#update_network_resource_metadata)
     - [update_site](#update_site)
+    - [update_vpc_attachment](#update_vpc_attachment)
     - [get_paginator](#get_paginator)
 
 ## NetworkManagerClient
@@ -92,6 +125,7 @@ Exceptions:
 - `Exceptions.AccessDeniedException`
 - `Exceptions.ClientError`
 - `Exceptions.ConflictException`
+- `Exceptions.CoreNetworkPolicyException`
 - `Exceptions.InternalServerException`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceQuotaExceededException`
@@ -110,6 +144,49 @@ Boto3 documentation:
 [NetworkManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+### accept_attachment
+
+Accepts a core network attachment request.
+
+Type annotations for `boto3.client("networkmanager").accept_attachment` method.
+
+Boto3 documentation:
+[NetworkManager.Client.accept_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.accept_attachment)
+
+Arguments mapping described in
+[AcceptAttachmentRequestRequestTypeDef](./type_defs.md#acceptattachmentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AttachmentId`: `str` *(required)*
+
+Returns
+[AcceptAttachmentResponseTypeDef](./type_defs.md#acceptattachmentresponsetypedef).
+
+### associate_connect_peer
+
+Associates a core network Connect peer with a device and optionally, with a
+link.
+
+Type annotations for `boto3.client("networkmanager").associate_connect_peer`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.associate_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_connect_peer)
+
+Arguments mapping described in
+[AssociateConnectPeerRequestRequestTypeDef](./type_defs.md#associateconnectpeerrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `ConnectPeerId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+- `LinkId`: `str`
+
+Returns
+[AssociateConnectPeerResponseTypeDef](./type_defs.md#associateconnectpeerresponsetypedef).
 
 ### associate_customer_gateway
 
@@ -194,6 +271,61 @@ Arguments:
 
 Returns `bool`.
 
+### create_connect_attachment
+
+Creates a core network Connect attachment from a specified core network
+attachment.
+
+Type annotations for `boto3.client("networkmanager").create_connect_attachment`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.create_connect_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connect_attachment)
+
+Arguments mapping described in
+[CreateConnectAttachmentRequestRequestTypeDef](./type_defs.md#createconnectattachmentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+- `EdgeLocation`: `str` *(required)*
+- `TransportAttachmentId`: `str` *(required)*
+- `Options`:
+  [ConnectAttachmentOptionsTypeDef](./type_defs.md#connectattachmentoptionstypedef)
+  *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientToken`: `str`
+
+Returns
+[CreateConnectAttachmentResponseTypeDef](./type_defs.md#createconnectattachmentresponsetypedef).
+
+### create_connect_peer
+
+Creates a core network connect peer for a specified core network connect
+attachment between a core network and an appliance.
+
+Type annotations for `boto3.client("networkmanager").create_connect_peer`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.create_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connect_peer)
+
+Arguments mapping described in
+[CreateConnectPeerRequestRequestTypeDef](./type_defs.md#createconnectpeerrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ConnectAttachmentId`: `str` *(required)*
+- `PeerAddress`: `str` *(required)*
+- `InsideCidrBlocks`: `Sequence`\[`str`\] *(required)*
+- `CoreNetworkAddress`: `str`
+- `BgpOptions`: [BgpOptionsTypeDef](./type_defs.md#bgpoptionstypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientToken`: `str`
+
+Returns
+[CreateConnectPeerResponseTypeDef](./type_defs.md#createconnectpeerresponsetypedef).
+
 ### create_connection
 
 Creates a connection between two devices.
@@ -218,6 +350,31 @@ Keyword-only arguments:
 
 Returns
 [CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
+
+### create_core_network
+
+Creates a core network as part of your global network, and optionally, with a
+core network policy.
+
+Type annotations for `boto3.client("networkmanager").create_core_network`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.create_core_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_core_network)
+
+Arguments mapping described in
+[CreateCoreNetworkRequestRequestTypeDef](./type_defs.md#createcorenetworkrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `Description`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `PolicyDocument`: `str`
+- `ClientToken`: `str`
+
+Returns
+[CreateCoreNetworkResponseTypeDef](./type_defs.md#createcorenetworkresponsetypedef).
 
 ### create_device
 
@@ -313,6 +470,93 @@ Keyword-only arguments:
 
 Returns [CreateSiteResponseTypeDef](./type_defs.md#createsiteresponsetypedef).
 
+### create_site_to_site_vpn_attachment
+
+Creates a site-to-site VPN attachment on an edge location of a core network.
+
+Type annotations for
+`boto3.client("networkmanager").create_site_to_site_vpn_attachment` method.
+
+Boto3 documentation:
+[NetworkManager.Client.create_site_to_site_vpn_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_site_to_site_vpn_attachment)
+
+Arguments mapping described in
+[CreateSiteToSiteVpnAttachmentRequestRequestTypeDef](./type_defs.md#createsitetositevpnattachmentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+- `VpnConnectionArn`: `str` *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientToken`: `str`
+
+Returns
+[CreateSiteToSiteVpnAttachmentResponseTypeDef](./type_defs.md#createsitetositevpnattachmentresponsetypedef).
+
+### create_vpc_attachment
+
+Creates a VPC attachment on an edge location of a core network.
+
+Type annotations for `boto3.client("networkmanager").create_vpc_attachment`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.create_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_vpc_attachment)
+
+Arguments mapping described in
+[CreateVpcAttachmentRequestRequestTypeDef](./type_defs.md#createvpcattachmentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+- `VpcArn`: `str` *(required)*
+- `SubnetArns`: `Sequence`\[`str`\] *(required)*
+- `Options`: [VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientToken`: `str`
+
+Returns
+[CreateVpcAttachmentResponseTypeDef](./type_defs.md#createvpcattachmentresponsetypedef).
+
+### delete_attachment
+
+Deletes an attachment.
+
+Type annotations for `boto3.client("networkmanager").delete_attachment` method.
+
+Boto3 documentation:
+[NetworkManager.Client.delete_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_attachment)
+
+Arguments mapping described in
+[DeleteAttachmentRequestRequestTypeDef](./type_defs.md#deleteattachmentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AttachmentId`: `str` *(required)*
+
+Returns
+[DeleteAttachmentResponseTypeDef](./type_defs.md#deleteattachmentresponsetypedef).
+
+### delete_connect_peer
+
+Deletes a Connect peer.
+
+Type annotations for `boto3.client("networkmanager").delete_connect_peer`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.delete_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_connect_peer)
+
+Arguments mapping described in
+[DeleteConnectPeerRequestRequestTypeDef](./type_defs.md#deleteconnectpeerrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ConnectPeerId`: `str` *(required)*
+
+Returns
+[DeleteConnectPeerResponseTypeDef](./type_defs.md#deleteconnectpeerresponsetypedef).
+
 ### delete_connection
 
 Deletes the specified connection in your global network.
@@ -332,6 +576,47 @@ Keyword-only arguments:
 
 Returns
 [DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
+
+### delete_core_network
+
+Deletes a core network along with all core network policies.
+
+Type annotations for `boto3.client("networkmanager").delete_core_network`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.delete_core_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_core_network)
+
+Arguments mapping described in
+[DeleteCoreNetworkRequestRequestTypeDef](./type_defs.md#deletecorenetworkrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+
+Returns
+[DeleteCoreNetworkResponseTypeDef](./type_defs.md#deletecorenetworkresponsetypedef).
+
+### delete_core_network_policy_version
+
+Deletes a policy version from a core network.
+
+Type annotations for
+`boto3.client("networkmanager").delete_core_network_policy_version` method.
+
+Boto3 documentation:
+[NetworkManager.Client.delete_core_network_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_core_network_policy_version)
+
+Arguments mapping described in
+[DeleteCoreNetworkPolicyVersionRequestRequestTypeDef](./type_defs.md#deletecorenetworkpolicyversionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+- `PolicyVersionId`: `int` *(required)*
+
+Returns
+[DeleteCoreNetworkPolicyVersionResponseTypeDef](./type_defs.md#deletecorenetworkpolicyversionresponsetypedef).
 
 ### delete_device
 
@@ -391,6 +676,25 @@ Keyword-only arguments:
 - `LinkId`: `str` *(required)*
 
 Returns [DeleteLinkResponseTypeDef](./type_defs.md#deletelinkresponsetypedef).
+
+### delete_resource_policy
+
+Deletes a resource policy for the specified resource.
+
+Type annotations for `boto3.client("networkmanager").delete_resource_policy`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_resource_policy)
+
+Arguments mapping described in
+[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_site
 
@@ -453,6 +757,27 @@ Keyword-only arguments:
 
 Returns
 [DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef).
+
+### disassociate_connect_peer
+
+Disassociates a core network Connect peer from a device and a link.
+
+Type annotations for `boto3.client("networkmanager").disassociate_connect_peer`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.disassociate_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_connect_peer)
+
+Arguments mapping described in
+[DisassociateConnectPeerRequestRequestTypeDef](./type_defs.md#disassociateconnectpeerrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `ConnectPeerId`: `str` *(required)*
+
+Returns
+[DisassociateConnectPeerResponseTypeDef](./type_defs.md#disassociateconnectpeerresponsetypedef).
 
 ### disassociate_customer_gateway
 
@@ -518,6 +843,26 @@ Keyword-only arguments:
 Returns
 [DisassociateTransitGatewayConnectPeerResponseTypeDef](./type_defs.md#disassociatetransitgatewayconnectpeerresponsetypedef).
 
+### execute_core_network_change_set
+
+Executes a change set on your core network.
+
+Type annotations for
+`boto3.client("networkmanager").execute_core_network_change_set` method.
+
+Boto3 documentation:
+[NetworkManager.Client.execute_core_network_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.execute_core_network_change_set)
+
+Arguments mapping described in
+[ExecuteCoreNetworkChangeSetRequestRequestTypeDef](./type_defs.md#executecorenetworkchangesetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+- `PolicyVersionId`: `int` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -536,6 +881,68 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+### get_connect_attachment
+
+Returns information about a core network Connect attachment.
+
+Type annotations for `boto3.client("networkmanager").get_connect_attachment`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_connect_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connect_attachment)
+
+Arguments mapping described in
+[GetConnectAttachmentRequestRequestTypeDef](./type_defs.md#getconnectattachmentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AttachmentId`: `str` *(required)*
+
+Returns
+[GetConnectAttachmentResponseTypeDef](./type_defs.md#getconnectattachmentresponsetypedef).
+
+### get_connect_peer
+
+Returns information about a core network Connect peer.
+
+Type annotations for `boto3.client("networkmanager").get_connect_peer` method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connect_peer)
+
+Arguments mapping described in
+[GetConnectPeerRequestRequestTypeDef](./type_defs.md#getconnectpeerrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ConnectPeerId`: `str` *(required)*
+
+Returns
+[GetConnectPeerResponseTypeDef](./type_defs.md#getconnectpeerresponsetypedef).
+
+### get_connect_peer_associations
+
+Returns information about a core network Connect peer associations.
+
+Type annotations for
+`boto3.client("networkmanager").get_connect_peer_associations` method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_connect_peer_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connect_peer_associations)
+
+Arguments mapping described in
+[GetConnectPeerAssociationsRequestRequestTypeDef](./type_defs.md#getconnectpeerassociationsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `ConnectPeerIds`: `Sequence`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetConnectPeerAssociationsResponseTypeDef](./type_defs.md#getconnectpeerassociationsresponsetypedef).
 
 ### get_connections
 
@@ -559,6 +966,72 @@ Keyword-only arguments:
 
 Returns
 [GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef).
+
+### get_core_network
+
+Returns information about a core network.
+
+Type annotations for `boto3.client("networkmanager").get_core_network` method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_core_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_core_network)
+
+Arguments mapping described in
+[GetCoreNetworkRequestRequestTypeDef](./type_defs.md#getcorenetworkrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+
+Returns
+[GetCoreNetworkResponseTypeDef](./type_defs.md#getcorenetworkresponsetypedef).
+
+### get_core_network_change_set
+
+Returns a change set between the LIVE core network policy and a submitted
+policy.
+
+Type annotations for
+`boto3.client("networkmanager").get_core_network_change_set` method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_core_network_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_core_network_change_set)
+
+Arguments mapping described in
+[GetCoreNetworkChangeSetRequestRequestTypeDef](./type_defs.md#getcorenetworkchangesetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+- `PolicyVersionId`: `int` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetCoreNetworkChangeSetResponseTypeDef](./type_defs.md#getcorenetworkchangesetresponsetypedef).
+
+### get_core_network_policy
+
+Gets details about a core network policy.
+
+Type annotations for `boto3.client("networkmanager").get_core_network_policy`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_core_network_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_core_network_policy)
+
+Arguments mapping described in
+[GetCoreNetworkPolicyRequestRequestTypeDef](./type_defs.md#getcorenetworkpolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+- `PolicyVersionId`: `int`
+- `Alias`:
+  [CoreNetworkPolicyAliasType](./literals.md#corenetworkpolicyaliastype)
+
+Returns
+[GetCoreNetworkPolicyResponseTypeDef](./type_defs.md#getcorenetworkpolicyresponsetypedef).
 
 ### get_customer_gateway_associations
 
@@ -694,6 +1167,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
+- `CoreNetworkId`: `str`
 - `RegisteredGatewayArn`: `str`
 - `AwsRegion`: `str`
 - `AccountId`: `str`
@@ -721,6 +1195,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
+- `CoreNetworkId`: `str`
 - `RegisteredGatewayArn`: `str`
 - `AwsRegion`: `str`
 - `AccountId`: `str`
@@ -779,6 +1254,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
+- `CoreNetworkId`: `str`
 - `RegisteredGatewayArn`: `str`
 - `AwsRegion`: `str`
 - `AccountId`: `str`
@@ -789,6 +1265,26 @@ Keyword-only arguments:
 
 Returns
 [GetNetworkTelemetryResponseTypeDef](./type_defs.md#getnetworktelemetryresponsetypedef).
+
+### get_resource_policy
+
+Returns information about a resource policy.
+
+Type annotations for `boto3.client("networkmanager").get_resource_policy`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_resource_policy)
+
+Arguments mapping described in
+[GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
 
 ### get_route_analysis
 
@@ -810,6 +1306,26 @@ Keyword-only arguments:
 
 Returns
 [GetRouteAnalysisResponseTypeDef](./type_defs.md#getrouteanalysisresponsetypedef).
+
+### get_site_to_site_vpn_attachment
+
+Returns information about a site-to-site VPN attachment.
+
+Type annotations for
+`boto3.client("networkmanager").get_site_to_site_vpn_attachment` method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_site_to_site_vpn_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_site_to_site_vpn_attachment)
+
+Arguments mapping described in
+[GetSiteToSiteVpnAttachmentRequestRequestTypeDef](./type_defs.md#getsitetositevpnattachmentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AttachmentId`: `str` *(required)*
+
+Returns
+[GetSiteToSiteVpnAttachmentResponseTypeDef](./type_defs.md#getsitetositevpnattachmentresponsetypedef).
 
 ### get_sites
 
@@ -881,6 +1397,116 @@ Keyword-only arguments:
 Returns
 [GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef).
 
+### get_vpc_attachment
+
+Returns information about a VPC attachment.
+
+Type annotations for `boto3.client("networkmanager").get_vpc_attachment`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.get_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_vpc_attachment)
+
+Arguments mapping described in
+[GetVpcAttachmentRequestRequestTypeDef](./type_defs.md#getvpcattachmentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AttachmentId`: `str` *(required)*
+
+Returns
+[GetVpcAttachmentResponseTypeDef](./type_defs.md#getvpcattachmentresponsetypedef).
+
+### list_attachments
+
+Returns a list of core network attachments.
+
+Type annotations for `boto3.client("networkmanager").list_attachments` method.
+
+Boto3 documentation:
+[NetworkManager.Client.list_attachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_attachments)
+
+Arguments mapping described in
+[ListAttachmentsRequestRequestTypeDef](./type_defs.md#listattachmentsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str`
+- `AttachmentType`: [AttachmentTypeType](./literals.md#attachmenttypetype)
+- `EdgeLocation`: `str`
+- `State`: [AttachmentStateType](./literals.md#attachmentstatetype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAttachmentsResponseTypeDef](./type_defs.md#listattachmentsresponsetypedef).
+
+### list_connect_peers
+
+Returns a list of core network Connect peers.
+
+Type annotations for `boto3.client("networkmanager").list_connect_peers`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.list_connect_peers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_connect_peers)
+
+Arguments mapping described in
+[ListConnectPeersRequestRequestTypeDef](./type_defs.md#listconnectpeersrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str`
+- `ConnectAttachmentId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListConnectPeersResponseTypeDef](./type_defs.md#listconnectpeersresponsetypedef).
+
+### list_core_network_policy_versions
+
+Returns a list of core network policy versions.
+
+Type annotations for
+`boto3.client("networkmanager").list_core_network_policy_versions` method.
+
+Boto3 documentation:
+[NetworkManager.Client.list_core_network_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_core_network_policy_versions)
+
+Arguments mapping described in
+[ListCoreNetworkPolicyVersionsRequestRequestTypeDef](./type_defs.md#listcorenetworkpolicyversionsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListCoreNetworkPolicyVersionsResponseTypeDef](./type_defs.md#listcorenetworkpolicyversionsresponsetypedef).
+
+### list_core_networks
+
+Returns a list of owned and shared core networks.
+
+Type annotations for `boto3.client("networkmanager").list_core_networks`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.list_core_networks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_core_networks)
+
+Arguments mapping described in
+[ListCoreNetworksRequestRequestTypeDef](./type_defs.md#listcorenetworksrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListCoreNetworksResponseTypeDef](./type_defs.md#listcorenetworksresponsetypedef).
+
 ### list_tags_for_resource
 
 Lists the tags for a specified resource.
@@ -900,6 +1526,50 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+### put_core_network_policy
+
+Creates a new, immutable version of a core network policy.
+
+Type annotations for `boto3.client("networkmanager").put_core_network_policy`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.put_core_network_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.put_core_network_policy)
+
+Arguments mapping described in
+[PutCoreNetworkPolicyRequestRequestTypeDef](./type_defs.md#putcorenetworkpolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+- `PolicyDocument`: `str` *(required)*
+- `Description`: `str`
+- `LatestVersionId`: `int`
+- `ClientToken`: `str`
+
+Returns
+[PutCoreNetworkPolicyResponseTypeDef](./type_defs.md#putcorenetworkpolicyresponsetypedef).
+
+### put_resource_policy
+
+Creates or updates a resource policy.
+
+Type annotations for `boto3.client("networkmanager").put_resource_policy`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.put_resource_policy)
+
+Arguments mapping described in
+[PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `PolicyDocument`: `str` *(required)*
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### register_transit_gateway
 
@@ -921,6 +1591,47 @@ Keyword-only arguments:
 
 Returns
 [RegisterTransitGatewayResponseTypeDef](./type_defs.md#registertransitgatewayresponsetypedef).
+
+### reject_attachment
+
+Rejects a core network attachment request.
+
+Type annotations for `boto3.client("networkmanager").reject_attachment` method.
+
+Boto3 documentation:
+[NetworkManager.Client.reject_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.reject_attachment)
+
+Arguments mapping described in
+[RejectAttachmentRequestRequestTypeDef](./type_defs.md#rejectattachmentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AttachmentId`: `str` *(required)*
+
+Returns
+[RejectAttachmentResponseTypeDef](./type_defs.md#rejectattachmentresponsetypedef).
+
+### restore_core_network_policy_version
+
+Restores a previous policy version as a new, immutable version of a core
+network policy.
+
+Type annotations for
+`boto3.client("networkmanager").restore_core_network_policy_version` method.
+
+Boto3 documentation:
+[NetworkManager.Client.restore_core_network_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.restore_core_network_policy_version)
+
+Arguments mapping described in
+[RestoreCoreNetworkPolicyVersionRequestRequestTypeDef](./type_defs.md#restorecorenetworkpolicyversionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+- `PolicyVersionId`: `int` *(required)*
+
+Returns
+[RestoreCoreNetworkPolicyVersionResponseTypeDef](./type_defs.md#restorecorenetworkpolicyversionresponsetypedef).
 
 ### start_route_analysis
 
@@ -1010,6 +1721,27 @@ Keyword-only arguments:
 
 Returns
 [UpdateConnectionResponseTypeDef](./type_defs.md#updateconnectionresponsetypedef).
+
+### update_core_network
+
+Updates the description of a core network.
+
+Type annotations for `boto3.client("networkmanager").update_core_network`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.update_core_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_core_network)
+
+Arguments mapping described in
+[UpdateCoreNetworkRequestRequestTypeDef](./type_defs.md#updatecorenetworkrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CoreNetworkId`: `str` *(required)*
+- `Description`: `str`
+
+Returns
+[UpdateCoreNetworkResponseTypeDef](./type_defs.md#updatecorenetworkresponsetypedef).
 
 ### update_device
 
@@ -1126,6 +1858,29 @@ Keyword-only arguments:
 
 Returns [UpdateSiteResponseTypeDef](./type_defs.md#updatesiteresponsetypedef).
 
+### update_vpc_attachment
+
+Updates a VPC attachment.
+
+Type annotations for `boto3.client("networkmanager").update_vpc_attachment`
+method.
+
+Boto3 documentation:
+[NetworkManager.Client.update_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_vpc_attachment)
+
+Arguments mapping described in
+[UpdateVpcAttachmentRequestRequestTypeDef](./type_defs.md#updatevpcattachmentrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AttachmentId`: `str` *(required)*
+- `AddSubnetArns`: `Sequence`\[`str`\]
+- `RemoveSubnetArns`: `Sequence`\[`str`\]
+- `Options`: [VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
+
+Returns
+[UpdateVpcAttachmentResponseTypeDef](./type_defs.md#updatevpcattachmentresponsetypedef).
+
 ### get_paginator
 
 Type annotations for `boto3.client("networkmanager").get_paginator` method with
@@ -1133,8 +1888,12 @@ overloads.
 
 - `client.get_paginator("describe_global_networks")` ->
   [DescribeGlobalNetworksPaginator](./paginators.md#describeglobalnetworkspaginator)
+- `client.get_paginator("get_connect_peer_associations")` ->
+  [GetConnectPeerAssociationsPaginator](./paginators.md#getconnectpeerassociationspaginator)
 - `client.get_paginator("get_connections")` ->
   [GetConnectionsPaginator](./paginators.md#getconnectionspaginator)
+- `client.get_paginator("get_core_network_change_set")` ->
+  [GetCoreNetworkChangeSetPaginator](./paginators.md#getcorenetworkchangesetpaginator)
 - `client.get_paginator("get_customer_gateway_associations")` ->
   [GetCustomerGatewayAssociationsPaginator](./paginators.md#getcustomergatewayassociationspaginator)
 - `client.get_paginator("get_devices")` ->
@@ -1157,3 +1916,11 @@ overloads.
   [GetTransitGatewayConnectPeerAssociationsPaginator](./paginators.md#gettransitgatewayconnectpeerassociationspaginator)
 - `client.get_paginator("get_transit_gateway_registrations")` ->
   [GetTransitGatewayRegistrationsPaginator](./paginators.md#gettransitgatewayregistrationspaginator)
+- `client.get_paginator("list_attachments")` ->
+  [ListAttachmentsPaginator](./paginators.md#listattachmentspaginator)
+- `client.get_paginator("list_connect_peers")` ->
+  [ListConnectPeersPaginator](./paginators.md#listconnectpeerspaginator)
+- `client.get_paginator("list_core_network_policy_versions")` ->
+  [ListCoreNetworkPolicyVersionsPaginator](./paginators.md#listcorenetworkpolicyversionspaginator)
+- `client.get_paginator("list_core_networks")` ->
+  [ListCoreNetworksPaginator](./paginators.md#listcorenetworkspaginator)

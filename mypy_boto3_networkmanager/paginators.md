@@ -9,7 +9,9 @@ type annotations stubs module
 
 - [Paginators for boto3 NetworkManager module](#paginators-for-boto3-networkmanager-module)
   - [DescribeGlobalNetworksPaginator](#describeglobalnetworkspaginator)
+  - [GetConnectPeerAssociationsPaginator](#getconnectpeerassociationspaginator)
   - [GetConnectionsPaginator](#getconnectionspaginator)
+  - [GetCoreNetworkChangeSetPaginator](#getcorenetworkchangesetpaginator)
   - [GetCustomerGatewayAssociationsPaginator](#getcustomergatewayassociationspaginator)
   - [GetDevicesPaginator](#getdevicespaginator)
   - [GetLinkAssociationsPaginator](#getlinkassociationspaginator)
@@ -21,6 +23,10 @@ type annotations stubs module
   - [GetSitesPaginator](#getsitespaginator)
   - [GetTransitGatewayConnectPeerAssociationsPaginator](#gettransitgatewayconnectpeerassociationspaginator)
   - [GetTransitGatewayRegistrationsPaginator](#gettransitgatewayregistrationspaginator)
+  - [ListAttachmentsPaginator](#listattachmentspaginator)
+  - [ListConnectPeersPaginator](#listconnectpeerspaginator)
+  - [ListCoreNetworkPolicyVersionsPaginator](#listcorenetworkpolicyversionspaginator)
+  - [ListCoreNetworksPaginator](#listcorenetworkspaginator)
 
 ## DescribeGlobalNetworksPaginator
 
@@ -47,6 +53,33 @@ Arguments for `DescribeGlobalNetworksPaginator.paginate` method:
 
 `DescribeGlobalNetworksPaginator.paginate` returns
 `_PageIterator`\[[DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef)\].
+
+## GetConnectPeerAssociationsPaginator
+
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_connect_peer_associations")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_networkmanager.paginator import GetConnectPeerAssociationsPaginator
+
+def get_get_connect_peer_associations_paginator() -> GetConnectPeerAssociationsPaginator:
+    return boto3.client("networkmanager").get_paginator("get_connect_peer_associations")
+```
+
+Boto3 documentation:
+[NetworkManager.Paginator.GetConnectPeerAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetConnectPeerAssociations)
+
+Arguments for `GetConnectPeerAssociationsPaginator.paginate` method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `ConnectPeerIds`: `Sequence`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetConnectPeerAssociationsPaginator.paginate` returns
+`_PageIterator`\[[GetConnectPeerAssociationsResponseTypeDef](./type_defs.md#getconnectpeerassociationsresponsetypedef)\].
 
 ## GetConnectionsPaginator
 
@@ -75,6 +108,33 @@ Arguments for `GetConnectionsPaginator.paginate` method:
 
 `GetConnectionsPaginator.paginate` returns
 `_PageIterator`\[[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef)\].
+
+## GetCoreNetworkChangeSetPaginator
+
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_core_network_change_set")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_networkmanager.paginator import GetCoreNetworkChangeSetPaginator
+
+def get_get_core_network_change_set_paginator() -> GetCoreNetworkChangeSetPaginator:
+    return boto3.client("networkmanager").get_paginator("get_core_network_change_set")
+```
+
+Boto3 documentation:
+[NetworkManager.Paginator.GetCoreNetworkChangeSet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetCoreNetworkChangeSet)
+
+Arguments for `GetCoreNetworkChangeSetPaginator.paginate` method:
+
+- `CoreNetworkId`: `str` *(required)*
+- `PolicyVersionId`: `int` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetCoreNetworkChangeSetPaginator.paginate` returns
+`_PageIterator`\[[GetCoreNetworkChangeSetResponseTypeDef](./type_defs.md#getcorenetworkchangesetresponsetypedef)\].
 
 ## GetCustomerGatewayAssociationsPaginator
 
@@ -236,6 +296,7 @@ Boto3 documentation:
 Arguments for `GetNetworkResourceRelationshipsPaginator.paginate` method:
 
 - `GlobalNetworkId`: `str` *(required)*
+- `CoreNetworkId`: `str`
 - `RegisteredGatewayArn`: `str`
 - `AwsRegion`: `str`
 - `AccountId`: `str`
@@ -267,6 +328,7 @@ Boto3 documentation:
 Arguments for `GetNetworkResourcesPaginator.paginate` method:
 
 - `GlobalNetworkId`: `str` *(required)*
+- `CoreNetworkId`: `str`
 - `RegisteredGatewayArn`: `str`
 - `AwsRegion`: `str`
 - `AccountId`: `str`
@@ -298,6 +360,7 @@ Boto3 documentation:
 Arguments for `GetNetworkTelemetryPaginator.paginate` method:
 
 - `GlobalNetworkId`: `str` *(required)*
+- `CoreNetworkId`: `str`
 - `RegisteredGatewayArn`: `str`
 - `AwsRegion`: `str`
 - `AccountId`: `str`
@@ -390,3 +453,110 @@ Arguments for `GetTransitGatewayRegistrationsPaginator.paginate` method:
 
 `GetTransitGatewayRegistrationsPaginator.paginate` returns
 `_PageIterator`\[[GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef)\].
+
+## ListAttachmentsPaginator
+
+Type annotations for
+`boto3.client("networkmanager").get_paginator("list_attachments")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_networkmanager.paginator import ListAttachmentsPaginator
+
+def get_list_attachments_paginator() -> ListAttachmentsPaginator:
+    return boto3.client("networkmanager").get_paginator("list_attachments")
+```
+
+Boto3 documentation:
+[NetworkManager.Paginator.ListAttachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.ListAttachments)
+
+Arguments for `ListAttachmentsPaginator.paginate` method:
+
+- `CoreNetworkId`: `str`
+- `AttachmentType`: [AttachmentTypeType](./literals.md#attachmenttypetype)
+- `EdgeLocation`: `str`
+- `State`: [AttachmentStateType](./literals.md#attachmentstatetype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListAttachmentsPaginator.paginate` returns
+`_PageIterator`\[[ListAttachmentsResponseTypeDef](./type_defs.md#listattachmentsresponsetypedef)\].
+
+## ListConnectPeersPaginator
+
+Type annotations for
+`boto3.client("networkmanager").get_paginator("list_connect_peers")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_networkmanager.paginator import ListConnectPeersPaginator
+
+def get_list_connect_peers_paginator() -> ListConnectPeersPaginator:
+    return boto3.client("networkmanager").get_paginator("list_connect_peers")
+```
+
+Boto3 documentation:
+[NetworkManager.Paginator.ListConnectPeers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.ListConnectPeers)
+
+Arguments for `ListConnectPeersPaginator.paginate` method:
+
+- `CoreNetworkId`: `str`
+- `ConnectAttachmentId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListConnectPeersPaginator.paginate` returns
+`_PageIterator`\[[ListConnectPeersResponseTypeDef](./type_defs.md#listconnectpeersresponsetypedef)\].
+
+## ListCoreNetworkPolicyVersionsPaginator
+
+Type annotations for
+`boto3.client("networkmanager").get_paginator("list_core_network_policy_versions")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_networkmanager.paginator import ListCoreNetworkPolicyVersionsPaginator
+
+def get_list_core_network_policy_versions_paginator() -> ListCoreNetworkPolicyVersionsPaginator:
+    return boto3.client("networkmanager").get_paginator("list_core_network_policy_versions")
+```
+
+Boto3 documentation:
+[NetworkManager.Paginator.ListCoreNetworkPolicyVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.ListCoreNetworkPolicyVersions)
+
+Arguments for `ListCoreNetworkPolicyVersionsPaginator.paginate` method:
+
+- `CoreNetworkId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListCoreNetworkPolicyVersionsPaginator.paginate` returns
+`_PageIterator`\[[ListCoreNetworkPolicyVersionsResponseTypeDef](./type_defs.md#listcorenetworkpolicyversionsresponsetypedef)\].
+
+## ListCoreNetworksPaginator
+
+Type annotations for
+`boto3.client("networkmanager").get_paginator("list_core_networks")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_networkmanager.paginator import ListCoreNetworksPaginator
+
+def get_list_core_networks_paginator() -> ListCoreNetworksPaginator:
+    return boto3.client("networkmanager").get_paginator("list_core_networks")
+```
+
+Boto3 documentation:
+[NetworkManager.Paginator.ListCoreNetworks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.ListCoreNetworks)
+
+Arguments for `ListCoreNetworksPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListCoreNetworksPaginator.paginate` returns
+`_PageIterator`\[[ListCoreNetworksResponseTypeDef](./type_defs.md#listcorenetworksresponsetypedef)\].

@@ -91,6 +91,7 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.TagLimitExceededException`
 - `Exceptions.TagPolicyViolationException`
+- `Exceptions.ThrottlingException`
 - `Exceptions.UnknownResourceException`
 
 ## Methods
@@ -130,8 +131,8 @@ Returns
 
 ### associate_resource_share
 
-Associates the specified resource share with the specified principals and
-resources.
+Adds the specified list of principals and list of resources to a resource
+share.
 
 Type annotations for `boto3.client("ram").associate_resource_share` method.
 
@@ -153,7 +154,8 @@ Returns
 
 ### associate_resource_share_permission
 
-Associates a permission with a resource share.
+Adds or replaces the RAM permission for a resource type included in a resource
+share.
 
 Type annotations for `boto3.client("ram").associate_resource_share_permission`
 method.
@@ -333,7 +335,8 @@ Returns
 
 ### get_resource_policies
 
-Gets the policies for the specified resources that you own and have shared.
+Retrieves the resource policies for the specified resources that you own and
+have shared.
 
 Type annotations for `boto3.client("ram").get_resource_policies` method.
 
@@ -355,7 +358,8 @@ Returns
 
 ### get_resource_share_associations
 
-Gets the resources or principals for the resource shares that you own.
+Retrieves the resource and principal associations for resource shares that you
+own.
 
 Type annotations for `boto3.client("ram").get_resource_share_associations`
 method.
@@ -384,7 +388,7 @@ Returns
 
 ### get_resource_share_invitations
 
-Gets the invitations that you have received for resource shares.
+Retrieves details about invitations that you have received for resource shares.
 
 Type annotations for `boto3.client("ram").get_resource_share_invitations`
 method.
@@ -407,7 +411,7 @@ Returns
 
 ### get_resource_shares
 
-Gets the resource shares that you own or the resource shares that are shared
+Retrieves details about the resource shares that you own or that are shared
 with you.
 
 Type annotations for `boto3.client("ram").get_resource_shares` method.
@@ -437,8 +441,8 @@ Returns
 
 ### list_pending_invitation_resources
 
-Lists the resources in a resource share that is shared with you but that the
-invitation is still pending for.
+Lists the resources in a resource share that is shared with you but for which
+the invitation is still `PENDING`.
 
 Type annotations for `boto3.client("ram").list_pending_invitation_resources`
 method.
@@ -454,13 +458,16 @@ Keyword-only arguments:
 - `resourceShareInvitationArn`: `str` *(required)*
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `resourceRegionScope`:
+  [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
 
 Returns
 [ListPendingInvitationResourcesResponseTypeDef](./type_defs.md#listpendinginvitationresourcesresponsetypedef).
 
 ### list_permissions
 
-Lists the RAM permissions.
+Retrieves a list of available RAM permissions that you can use for the
+supported resource types.
 
 Type annotations for `boto3.client("ram").list_permissions` method.
 
@@ -481,7 +488,7 @@ Returns
 
 ### list_principals
 
-Lists the principals that you have shared resources with or that have shared
+Lists the principals that you are sharing resources with or that are sharing
 resources with you.
 
 Type annotations for `boto3.client("ram").list_principals` method.
@@ -530,7 +537,7 @@ Returns
 
 ### list_resource_types
 
-Lists the shareable resource types supported by RAM.
+Lists the resource types that can be shared by RAM.
 
 Type annotations for `boto3.client("ram").list_resource_types` method.
 
@@ -544,6 +551,8 @@ Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `resourceRegionScope`:
+  [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
 
 Returns
 [ListResourceTypesResponseTypeDef](./type_defs.md#listresourcetypesresponsetypedef).
@@ -571,15 +580,16 @@ Keyword-only arguments:
 - `resourceShareArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `resourceRegionScope`:
+  [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
 
 Returns
 [ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
 
 ### promote_resource_share_created_from_policy
 
-Resource shares that were created by attaching a policy to a resource are
-visible only to the resource share owner, and the resource share cannot be
-modified in RAM.
+When you attach a resource-based permission policy to a resource, it
+automatically creates a resource share.
 
 Type annotations for
 `boto3.client("ram").promote_resource_share_created_from_policy` method.
@@ -621,7 +631,7 @@ Returns
 
 ### tag_resource
 
-Adds the specified tags to the specified resource share that you own.
+Adds the specified tag keys and values to the specified resource share.
 
 Type annotations for `boto3.client("ram").tag_resource` method.
 
@@ -640,7 +650,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes the specified tags from the specified resource share that you own.
+Removes the specified tag key and value pairs from the specified resource
+share.
 
 Type annotations for `boto3.client("ram").untag_resource` method.
 
@@ -659,7 +670,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_resource_share
 
-Updates the specified resource share that you own.
+Modifies some of the properties of the specified resource share.
 
 Type annotations for `boto3.client("ram").update_resource_share` method.
 
