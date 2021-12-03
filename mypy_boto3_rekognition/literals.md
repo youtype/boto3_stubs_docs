@@ -226,6 +226,8 @@ Values:
 
 - `Female`
 - `Male`
+- `Nonbinary`
+- `Unlisted`
 
 ## LabelDetectionSortByType
 
