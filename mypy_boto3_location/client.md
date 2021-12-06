@@ -56,6 +56,7 @@ type annotations stubs module
     - [list_trackers](#list_trackers)
     - [put_geofence](#put_geofence)
     - [search_place_index_for_position](#search_place_index_for_position)
+    - [search_place_index_for_suggestions](#search_place_index_for_suggestions)
     - [search_place_index_for_text](#search_place_index_for_text)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
@@ -1044,6 +1045,33 @@ Keyword-only arguments:
 
 Returns
 [SearchPlaceIndexForPositionResponseTypeDef](./type_defs.md#searchplaceindexforpositionresponsetypedef).
+
+### search_place_index_for_suggestions
+
+Generates suggestions for addresses and points of interest based on partial or
+misspelled free-form text.
+
+Type annotations for
+`boto3.client("location").search_place_index_for_suggestions` method.
+
+Boto3 documentation:
+[LocationService.Client.search_place_index_for_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_suggestions)
+
+Arguments mapping described in
+[SearchPlaceIndexForSuggestionsRequestRequestTypeDef](./type_defs.md#searchplaceindexforsuggestionsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IndexName`: `str` *(required)*
+- `Text`: `str` *(required)*
+- `BiasPosition`: `Sequence`\[`float`\]
+- `FilterBBox`: `Sequence`\[`float`\]
+- `FilterCountries`: `Sequence`\[`str`\]
+- `Language`: `str`
+- `MaxResults`: `int`
+
+Returns
+[SearchPlaceIndexForSuggestionsResponseTypeDef](./type_defs.md#searchplaceindexforsuggestionsresponsetypedef).
 
 ### search_place_index_for_text
 

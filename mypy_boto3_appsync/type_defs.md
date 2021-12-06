@@ -9,8 +9,11 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 AppSync module](#typed-dictionaries-for-boto3-appsync-module)
   - [AdditionalAuthenticationProviderTypeDef](#additionalauthenticationprovidertypedef)
+  - [ApiAssociationTypeDef](#apiassociationtypedef)
   - [ApiCacheTypeDef](#apicachetypedef)
   - [ApiKeyTypeDef](#apikeytypedef)
+  - [AssociateApiRequestRequestTypeDef](#associateapirequestrequesttypedef)
+  - [AssociateApiResponseTypeDef](#associateapiresponsetypedef)
   - [AuthorizationConfigTypeDef](#authorizationconfigtypedef)
   - [AwsIamConfigTypeDef](#awsiamconfigtypedef)
   - [CachingConfigTypeDef](#cachingconfigtypedef)
@@ -21,6 +24,8 @@ type annotations stubs module
   - [CreateApiKeyResponseTypeDef](#createapikeyresponsetypedef)
   - [CreateDataSourceRequestRequestTypeDef](#createdatasourcerequestrequesttypedef)
   - [CreateDataSourceResponseTypeDef](#createdatasourceresponsetypedef)
+  - [CreateDomainNameRequestRequestTypeDef](#createdomainnamerequestrequesttypedef)
+  - [CreateDomainNameResponseTypeDef](#createdomainnameresponsetypedef)
   - [CreateFunctionRequestRequestTypeDef](#createfunctionrequestrequesttypedef)
   - [CreateFunctionResponseTypeDef](#createfunctionresponsetypedef)
   - [CreateGraphqlApiRequestRequestTypeDef](#creategraphqlapirequestrequesttypedef)
@@ -33,19 +38,26 @@ type annotations stubs module
   - [DeleteApiCacheRequestRequestTypeDef](#deleteapicacherequestrequesttypedef)
   - [DeleteApiKeyRequestRequestTypeDef](#deleteapikeyrequestrequesttypedef)
   - [DeleteDataSourceRequestRequestTypeDef](#deletedatasourcerequestrequesttypedef)
+  - [DeleteDomainNameRequestRequestTypeDef](#deletedomainnamerequestrequesttypedef)
   - [DeleteFunctionRequestRequestTypeDef](#deletefunctionrequestrequesttypedef)
   - [DeleteGraphqlApiRequestRequestTypeDef](#deletegraphqlapirequestrequesttypedef)
   - [DeleteResolverRequestRequestTypeDef](#deleteresolverrequestrequesttypedef)
   - [DeleteTypeRequestRequestTypeDef](#deletetyperequestrequesttypedef)
   - [DeltaSyncConfigTypeDef](#deltasyncconfigtypedef)
+  - [DisassociateApiRequestRequestTypeDef](#disassociateapirequestrequesttypedef)
+  - [DomainNameConfigTypeDef](#domainnameconfigtypedef)
   - [DynamodbDataSourceConfigTypeDef](#dynamodbdatasourceconfigtypedef)
   - [ElasticsearchDataSourceConfigTypeDef](#elasticsearchdatasourceconfigtypedef)
   - [FlushApiCacheRequestRequestTypeDef](#flushapicacherequestrequesttypedef)
   - [FunctionConfigurationTypeDef](#functionconfigurationtypedef)
+  - [GetApiAssociationRequestRequestTypeDef](#getapiassociationrequestrequesttypedef)
+  - [GetApiAssociationResponseTypeDef](#getapiassociationresponsetypedef)
   - [GetApiCacheRequestRequestTypeDef](#getapicacherequestrequesttypedef)
   - [GetApiCacheResponseTypeDef](#getapicacheresponsetypedef)
   - [GetDataSourceRequestRequestTypeDef](#getdatasourcerequestrequesttypedef)
   - [GetDataSourceResponseTypeDef](#getdatasourceresponsetypedef)
+  - [GetDomainNameRequestRequestTypeDef](#getdomainnamerequestrequesttypedef)
+  - [GetDomainNameResponseTypeDef](#getdomainnameresponsetypedef)
   - [GetFunctionRequestRequestTypeDef](#getfunctionrequestrequesttypedef)
   - [GetFunctionResponseTypeDef](#getfunctionresponsetypedef)
   - [GetGraphqlApiRequestRequestTypeDef](#getgraphqlapirequestrequesttypedef)
@@ -67,6 +79,8 @@ type annotations stubs module
   - [ListApiKeysResponseTypeDef](#listapikeysresponsetypedef)
   - [ListDataSourcesRequestRequestTypeDef](#listdatasourcesrequestrequesttypedef)
   - [ListDataSourcesResponseTypeDef](#listdatasourcesresponsetypedef)
+  - [ListDomainNamesRequestRequestTypeDef](#listdomainnamesrequestrequesttypedef)
+  - [ListDomainNamesResponseTypeDef](#listdomainnamesresponsetypedef)
   - [ListFunctionsRequestRequestTypeDef](#listfunctionsrequestrequesttypedef)
   - [ListFunctionsResponseTypeDef](#listfunctionsresponsetypedef)
   - [ListGraphqlApisRequestRequestTypeDef](#listgraphqlapisrequestrequesttypedef)
@@ -100,6 +114,8 @@ type annotations stubs module
   - [UpdateApiKeyResponseTypeDef](#updateapikeyresponsetypedef)
   - [UpdateDataSourceRequestRequestTypeDef](#updatedatasourcerequestrequesttypedef)
   - [UpdateDataSourceResponseTypeDef](#updatedatasourceresponsetypedef)
+  - [UpdateDomainNameRequestRequestTypeDef](#updatedomainnamerequestrequesttypedef)
+  - [UpdateDomainNameResponseTypeDef](#updatedomainnameresponsetypedef)
   - [UpdateFunctionRequestRequestTypeDef](#updatefunctionrequestrequesttypedef)
   - [UpdateFunctionResponseTypeDef](#updatefunctionresponsetypedef)
   - [UpdateGraphqlApiRequestRequestTypeDef](#updategraphqlapirequestrequesttypedef)
@@ -126,6 +142,20 @@ Optional fields:
   [CognitoUserPoolConfigTypeDef](./type_defs.md#cognitouserpoolconfigtypedef)
 - `lambdaAuthorizerConfig`:
   [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
+
+## ApiAssociationTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import ApiAssociationTypeDef
+```
+
+Optional fields:
+
+- `domainName`: `str`
+- `apiId`: `str`
+- `associationStatus`:
+  [AssociationStatusType](./literals.md#associationstatustype)
+- `deploymentDetail`: `str`
 
 ## ApiCacheTypeDef
 
@@ -155,6 +185,30 @@ Optional fields:
 - `description`: `str`
 - `expires`: `int`
 - `deletes`: `int`
+
+## AssociateApiRequestRequestTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import AssociateApiRequestRequestTypeDef
+```
+
+Required fields:
+
+- `domainName`: `str`
+- `apiId`: `str`
+
+## AssociateApiResponseTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import AssociateApiResponseTypeDef
+```
+
+Required fields:
+
+- `apiAssociation`:
+  [ApiAssociationTypeDef](./type_defs.md#apiassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AuthorizationConfigTypeDef
 
@@ -304,6 +358,34 @@ from mypy_boto3_appsync.type_defs import CreateDataSourceResponseTypeDef
 Required fields:
 
 - `dataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateDomainNameRequestRequestTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import CreateDomainNameRequestRequestTypeDef
+```
+
+Required fields:
+
+- `domainName`: `str`
+- `certificateArn`: `str`
+
+Optional fields:
+
+- `description`: `str`
+
+## CreateDomainNameResponseTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import CreateDomainNameResponseTypeDef
+```
+
+Required fields:
+
+- `domainNameConfig`:
+  [DomainNameConfigTypeDef](./type_defs.md#domainnameconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -495,6 +577,16 @@ Required fields:
 - `apiId`: `str`
 - `name`: `str`
 
+## DeleteDomainNameRequestRequestTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import DeleteDomainNameRequestRequestTypeDef
+```
+
+Required fields:
+
+- `domainName`: `str`
+
 ## DeleteFunctionRequestRequestTypeDef
 
 ```python
@@ -550,6 +642,30 @@ Optional fields:
 - `baseTableTTL`: `int`
 - `deltaSyncTableName`: `str`
 - `deltaSyncTableTTL`: `int`
+
+## DisassociateApiRequestRequestTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import DisassociateApiRequestRequestTypeDef
+```
+
+Required fields:
+
+- `domainName`: `str`
+
+## DomainNameConfigTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import DomainNameConfigTypeDef
+```
+
+Optional fields:
+
+- `domainName`: `str`
+- `description`: `str`
+- `certificateArn`: `str`
+- `appsyncDomainName`: `str`
+- `hostedZoneId`: `str`
 
 ## DynamodbDataSourceConfigTypeDef
 
@@ -608,6 +724,29 @@ Optional fields:
 - `functionVersion`: `str`
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 
+## GetApiAssociationRequestRequestTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import GetApiAssociationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `domainName`: `str`
+
+## GetApiAssociationResponseTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import GetApiAssociationResponseTypeDef
+```
+
+Required fields:
+
+- `apiAssociation`:
+  [ApiAssociationTypeDef](./type_defs.md#apiassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetApiCacheRequestRequestTypeDef
 
 ```python
@@ -650,6 +789,29 @@ from mypy_boto3_appsync.type_defs import GetDataSourceResponseTypeDef
 Required fields:
 
 - `dataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetDomainNameRequestRequestTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import GetDomainNameRequestRequestTypeDef
+```
+
+Required fields:
+
+- `domainName`: `str`
+
+## GetDomainNameResponseTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import GetDomainNameResponseTypeDef
+```
+
+Required fields:
+
+- `domainNameConfig`:
+  [DomainNameConfigTypeDef](./type_defs.md#domainnameconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -924,6 +1086,31 @@ Required fields:
 
 - `dataSources`:
   `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListDomainNamesRequestRequestTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import ListDomainNamesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListDomainNamesResponseTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import ListDomainNamesResponseTypeDef
+```
+
+Required fields:
+
+- `domainNameConfigs`:
+  `List`\[[DomainNameConfigTypeDef](./type_defs.md#domainnameconfigtypedef)\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1382,6 +1569,33 @@ from mypy_boto3_appsync.type_defs import UpdateDataSourceResponseTypeDef
 Required fields:
 
 - `dataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateDomainNameRequestRequestTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import UpdateDomainNameRequestRequestTypeDef
+```
+
+Required fields:
+
+- `domainName`: `str`
+
+Optional fields:
+
+- `description`: `str`
+
+## UpdateDomainNameResponseTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import UpdateDomainNameResponseTypeDef
+```
+
+Required fields:
+
+- `domainNameConfig`:
+  [DomainNameConfigTypeDef](./type_defs.md#domainnameconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

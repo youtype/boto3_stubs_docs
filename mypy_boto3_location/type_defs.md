@@ -110,14 +110,19 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PlaceGeometryTypeDef](#placegeometrytypedef)
   - [PlaceTypeDef](#placetypedef)
+  - [PositionalAccuracyTypeDef](#positionalaccuracytypedef)
   - [PutGeofenceRequestRequestTypeDef](#putgeofencerequestrequesttypedef)
   - [PutGeofenceResponseTypeDef](#putgeofenceresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SearchForPositionResultTypeDef](#searchforpositionresulttypedef)
+  - [SearchForSuggestionsResultTypeDef](#searchforsuggestionsresulttypedef)
   - [SearchForTextResultTypeDef](#searchfortextresulttypedef)
   - [SearchPlaceIndexForPositionRequestRequestTypeDef](#searchplaceindexforpositionrequestrequesttypedef)
   - [SearchPlaceIndexForPositionResponseTypeDef](#searchplaceindexforpositionresponsetypedef)
   - [SearchPlaceIndexForPositionSummaryTypeDef](#searchplaceindexforpositionsummarytypedef)
+  - [SearchPlaceIndexForSuggestionsRequestRequestTypeDef](#searchplaceindexforsuggestionsrequestrequesttypedef)
+  - [SearchPlaceIndexForSuggestionsResponseTypeDef](#searchplaceindexforsuggestionsresponsetypedef)
+  - [SearchPlaceIndexForSuggestionsSummaryTypeDef](#searchplaceindexforsuggestionssummarytypedef)
   - [SearchPlaceIndexForTextRequestRequestTypeDef](#searchplaceindexfortextrequestrequesttypedef)
   - [SearchPlaceIndexForTextResponseTypeDef](#searchplaceindexfortextresponsetypedef)
   - [SearchPlaceIndexForTextSummaryTypeDef](#searchplaceindexfortextsummarytypedef)
@@ -868,7 +873,10 @@ Required fields:
 
 Optional fields:
 
+- `Accuracy`:
+  [PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef)
 - `DeviceId`: `str`
+- `PositionProperties`: `Dict`\[`str`, `str`\]
 
 ## DevicePositionUpdateTypeDef
 
@@ -881,6 +889,12 @@ Required fields:
 - `DeviceId`: `str`
 - `Position`: `Sequence`\[`float`\]
 - `SampleTime`: `Union`\[`datetime`, `str`\]
+
+Optional fields:
+
+- `Accuracy`:
+  [PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef)
+- `PositionProperties`: `Mapping`\[`str`, `str`\]
 
 ## DisassociateTrackerConsumerRequestRequestTypeDef
 
@@ -953,8 +967,11 @@ from mypy_boto3_location.type_defs import GetDevicePositionResponseTypeDef
 
 Required fields:
 
+- `Accuracy`:
+  [PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef)
 - `DeviceId`: `str`
 - `Position`: `List`\[`float`\]
+- `PositionProperties`: `Dict`\[`str`, `str`\]
 - `ReceivedTime`: `datetime`
 - `SampleTime`: `datetime`
 - `ResponseMetadata`:
@@ -1139,6 +1156,12 @@ Required fields:
 - `DeviceId`: `str`
 - `Position`: `List`\[`float`\]
 - `SampleTime`: `datetime`
+
+Optional fields:
+
+- `Accuracy`:
+  [PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef)
+- `PositionProperties`: `Dict`\[`str`, `str`\]
 
 ## ListDevicePositionsResponseTypeDef
 
@@ -1508,6 +1531,16 @@ Optional fields:
 - `SubRegion`: `str`
 - `TimeZone`: [TimeZoneTypeDef](./type_defs.md#timezonetypedef)
 
+## PositionalAccuracyTypeDef
+
+```python
+from mypy_boto3_location.type_defs import PositionalAccuracyTypeDef
+```
+
+Required fields:
+
+- `Horizontal`: `float`
+
 ## PutGeofenceRequestRequestTypeDef
 
 ```python
@@ -1558,6 +1591,16 @@ Required fields:
 
 - `Distance`: `float`
 - `Place`: [PlaceTypeDef](./type_defs.md#placetypedef)
+
+## SearchForSuggestionsResultTypeDef
+
+```python
+from mypy_boto3_location.type_defs import SearchForSuggestionsResultTypeDef
+```
+
+Required fields:
+
+- `Text`: `str`
 
 ## SearchForTextResultTypeDef
 
@@ -1618,6 +1661,59 @@ Required fields:
 
 Optional fields:
 
+- `Language`: `str`
+- `MaxResults`: `int`
+
+## SearchPlaceIndexForSuggestionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_location.type_defs import SearchPlaceIndexForSuggestionsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IndexName`: `str`
+- `Text`: `str`
+
+Optional fields:
+
+- `BiasPosition`: `Sequence`\[`float`\]
+- `FilterBBox`: `Sequence`\[`float`\]
+- `FilterCountries`: `Sequence`\[`str`\]
+- `Language`: `str`
+- `MaxResults`: `int`
+
+## SearchPlaceIndexForSuggestionsResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import SearchPlaceIndexForSuggestionsResponseTypeDef
+```
+
+Required fields:
+
+- `Results`:
+  `List`\[[SearchForSuggestionsResultTypeDef](./type_defs.md#searchforsuggestionsresulttypedef)\]
+- `Summary`:
+  [SearchPlaceIndexForSuggestionsSummaryTypeDef](./type_defs.md#searchplaceindexforsuggestionssummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## SearchPlaceIndexForSuggestionsSummaryTypeDef
+
+```python
+from mypy_boto3_location.type_defs import SearchPlaceIndexForSuggestionsSummaryTypeDef
+```
+
+Required fields:
+
+- `DataSource`: `str`
+- `Text`: `str`
+
+Optional fields:
+
+- `BiasPosition`: `List`\[`float`\]
+- `FilterBBox`: `List`\[`float`\]
+- `FilterCountries`: `List`\[`str`\]
 - `Language`: `str`
 - `MaxResults`: `int`
 

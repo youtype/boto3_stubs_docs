@@ -88,6 +88,7 @@ Values:
 - `ap-south-1`
 - `ap-southeast-1`
 - `ap-southeast-2`
+- `ap-southeast-3`
 - `ca-central-1`
 - `cn-north-1`
 - `cn-northwest-1`
@@ -104,6 +105,7 @@ Values:
 - `us-gov-east-1`
 - `us-gov-west-1`
 - `us-iso-east-1`
+- `us-iso-west-1`
 - `us-isob-east-1`
 - `us-west-1`
 - `us-west-2`
@@ -290,6 +292,7 @@ Values:
 - `ap-south-1`
 - `ap-southeast-1`
 - `ap-southeast-2`
+- `ap-southeast-3`
 - `ca-central-1`
 - `cn-north-1`
 - `cn-northwest-1`
@@ -367,6 +370,7 @@ Values:
 - `ap-south-1`
 - `ap-southeast-1`
 - `ap-southeast-2`
+- `ap-southeast-3`
 - `ca-central-1`
 - `cn-north-1`
 - `eu-central-1`
@@ -382,6 +386,7 @@ Values:
 - `us-gov-east-1`
 - `us-gov-west-1`
 - `us-iso-east-1`
+- `us-iso-west-1`
 - `us-isob-east-1`
 - `us-west-1`
 - `us-west-2`

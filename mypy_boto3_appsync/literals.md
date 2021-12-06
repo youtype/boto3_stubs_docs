@@ -11,6 +11,7 @@ type annotations stubs module
   - [ApiCacheStatusType](#apicachestatustype)
   - [ApiCacheTypeType](#apicachetypetype)
   - [ApiCachingBehaviorType](#apicachingbehaviortype)
+  - [AssociationStatusType](#associationstatustype)
   - [AuthenticationTypeType](#authenticationtypetype)
   - [AuthorizationTypeType](#authorizationtypetype)
   - [ConflictDetectionTypeType](#conflictdetectiontypetype)
@@ -81,6 +82,18 @@ Values:
 
 - `FULL_REQUEST_CACHING`
 - `PER_RESOLVER_CACHING`
+
+## AssociationStatusType
+
+```python
+from mypy_boto3_appsync.literals import AssociationStatusType
+```
+
+Values:
+
+- `FAILED`
+- `PROCESSING`
+- `SUCCESS`
 
 ## AuthenticationTypeType
 

@@ -12,10 +12,12 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [exceptions](#exceptions)
+    - [associate_api](#associate_api)
     - [can_paginate](#can_paginate)
     - [create_api_cache](#create_api_cache)
     - [create_api_key](#create_api_key)
     - [create_data_source](#create_data_source)
+    - [create_domain_name](#create_domain_name)
     - [create_function](#create_function)
     - [create_graphql_api](#create_graphql_api)
     - [create_resolver](#create_resolver)
@@ -23,14 +25,18 @@ type annotations stubs module
     - [delete_api_cache](#delete_api_cache)
     - [delete_api_key](#delete_api_key)
     - [delete_data_source](#delete_data_source)
+    - [delete_domain_name](#delete_domain_name)
     - [delete_function](#delete_function)
     - [delete_graphql_api](#delete_graphql_api)
     - [delete_resolver](#delete_resolver)
     - [delete_type](#delete_type)
+    - [disassociate_api](#disassociate_api)
     - [flush_api_cache](#flush_api_cache)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_api_association](#get_api_association)
     - [get_api_cache](#get_api_cache)
     - [get_data_source](#get_data_source)
+    - [get_domain_name](#get_domain_name)
     - [get_function](#get_function)
     - [get_graphql_api](#get_graphql_api)
     - [get_introspection_schema](#get_introspection_schema)
@@ -39,6 +45,7 @@ type annotations stubs module
     - [get_type](#get_type)
     - [list_api_keys](#list_api_keys)
     - [list_data_sources](#list_data_sources)
+    - [list_domain_names](#list_domain_names)
     - [list_functions](#list_functions)
     - [list_graphql_apis](#list_graphql_apis)
     - [list_resolvers](#list_resolvers)
@@ -51,6 +58,7 @@ type annotations stubs module
     - [update_api_cache](#update_api_cache)
     - [update_api_key](#update_api_key)
     - [update_data_source](#update_data_source)
+    - [update_domain_name](#update_domain_name)
     - [update_function](#update_function)
     - [update_graphql_api](#update_graphql_api)
     - [update_resolver](#update_resolver)
@@ -113,6 +121,26 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
+### associate_api
+
+Maps an endpoint to your custom domain.
+
+Type annotations for `boto3.client("appsync").associate_api` method.
+
+Boto3 documentation:
+[AppSync.Client.associate_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.associate_api)
+
+Arguments mapping described in
+[AssociateApiRequestRequestTypeDef](./type_defs.md#associateapirequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `domainName`: `str` *(required)*
+- `apiId`: `str` *(required)*
+
+Returns
+[AssociateApiResponseTypeDef](./type_defs.md#associateapiresponsetypedef).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -155,8 +183,7 @@ Returns
 
 ### create_api_key
 
-Creates a unique key that you can distribute to clients who are executing your
-API.
+Creates a unique key that you can distribute to clients who invoke your API.
 
 Type annotations for `boto3.client("appsync").create_api_key` method.
 
@@ -209,6 +236,27 @@ Keyword-only arguments:
 
 Returns
 [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
+
+### create_domain_name
+
+Creates a custom `DomainName` object.
+
+Type annotations for `boto3.client("appsync").create_domain_name` method.
+
+Boto3 documentation:
+[AppSync.Client.create_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_domain_name)
+
+Arguments mapping described in
+[CreateDomainNameRequestRequestTypeDef](./type_defs.md#createdomainnamerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `domainName`: `str` *(required)*
+- `certificateArn`: `str` *(required)*
+- `description`: `str`
+
+Returns
+[CreateDomainNameResponseTypeDef](./type_defs.md#createdomainnameresponsetypedef).
 
 ### create_function
 
@@ -374,6 +422,24 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### delete_domain_name
+
+Deletes a custom `DomainName` object.
+
+Type annotations for `boto3.client("appsync").delete_domain_name` method.
+
+Boto3 documentation:
+[AppSync.Client.delete_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_domain_name)
+
+Arguments mapping described in
+[DeleteDomainNameRequestRequestTypeDef](./type_defs.md#deletedomainnamerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `domainName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### delete_function
 
 Deletes a `Function` .
@@ -450,6 +516,24 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### disassociate_api
+
+Removes an `ApiAssociation` object from a custom domain.
+
+Type annotations for `boto3.client("appsync").disassociate_api` method.
+
+Boto3 documentation:
+[AppSync.Client.disassociate_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.disassociate_api)
+
+Arguments mapping described in
+[DisassociateApiRequestRequestTypeDef](./type_defs.md#disassociateapirequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `domainName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### flush_api_cache
 
 Flushes an `ApiCache` object.
@@ -485,6 +569,25 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+### get_api_association
+
+Retrieves an `ApiAssociation` object.
+
+Type annotations for `boto3.client("appsync").get_api_association` method.
+
+Boto3 documentation:
+[AppSync.Client.get_api_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_api_association)
+
+Arguments mapping described in
+[GetApiAssociationRequestRequestTypeDef](./type_defs.md#getapiassociationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `domainName`: `str` *(required)*
+
+Returns
+[GetApiAssociationResponseTypeDef](./type_defs.md#getapiassociationresponsetypedef).
 
 ### get_api_cache
 
@@ -524,6 +627,25 @@ Keyword-only arguments:
 
 Returns
 [GetDataSourceResponseTypeDef](./type_defs.md#getdatasourceresponsetypedef).
+
+### get_domain_name
+
+Retrieves a custom `DomainName` object.
+
+Type annotations for `boto3.client("appsync").get_domain_name` method.
+
+Boto3 documentation:
+[AppSync.Client.get_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_domain_name)
+
+Arguments mapping described in
+[GetDomainNameRequestRequestTypeDef](./type_defs.md#getdomainnamerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `domainName`: `str` *(required)*
+
+Returns
+[GetDomainNameResponseTypeDef](./type_defs.md#getdomainnameresponsetypedef).
 
 ### get_function
 
@@ -688,6 +810,26 @@ Keyword-only arguments:
 
 Returns
 [ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
+
+### list_domain_names
+
+Lists multiple custom domain names.
+
+Type annotations for `boto3.client("appsync").list_domain_names` method.
+
+Boto3 documentation:
+[AppSync.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_domain_names)
+
+Arguments mapping described in
+[ListDomainNamesRequestRequestTypeDef](./type_defs.md#listdomainnamesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
 
 ### list_functions
 
@@ -954,6 +1096,26 @@ Keyword-only arguments:
 
 Returns
 [UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef).
+
+### update_domain_name
+
+Updates a custom `DomainName` object.
+
+Type annotations for `boto3.client("appsync").update_domain_name` method.
+
+Boto3 documentation:
+[AppSync.Client.update_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_domain_name)
+
+Arguments mapping described in
+[UpdateDomainNameRequestRequestTypeDef](./type_defs.md#updatedomainnamerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `domainName`: `str` *(required)*
+- `description`: `str`
+
+Returns
+[UpdateDomainNameResponseTypeDef](./type_defs.md#updatedomainnameresponsetypedef).
 
 ### update_function
 
