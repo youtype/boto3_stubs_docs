@@ -53,6 +53,8 @@ type annotations stubs module
   - [SiteTypeDef](#sitetypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateOutpostInputRequestTypeDef](#updateoutpostinputrequesttypedef)
+  - [UpdateOutpostOutputTypeDef](#updateoutpostoutputtypedef)
   - [UpdateSiteAddressInputRequestTypeDef](#updatesiteaddressinputrequesttypedef)
   - [UpdateSiteAddressOutputTypeDef](#updatesiteaddressoutputtypedef)
   - [UpdateSiteInputRequestTypeDef](#updatesiteinputrequesttypedef)
@@ -674,6 +676,35 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+## UpdateOutpostInputRequestTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import UpdateOutpostInputRequestTypeDef
+```
+
+Required fields:
+
+- `OutpostId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `SupportedHardwareType`:
+  [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
+
+## UpdateOutpostOutputTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import UpdateOutpostOutputTypeDef
+```
+
+Required fields:
+
+- `Outpost`: [OutpostTypeDef](./type_defs.md#outposttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateSiteAddressInputRequestTypeDef
 

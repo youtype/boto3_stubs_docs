@@ -764,6 +764,7 @@ Keyword-only arguments:
 
 - `destinationName`: `str` *(required)*
 - `accessPolicy`: `str` *(required)*
+- `forceUpdate`: `bool`
 
 ### put_log_events
 

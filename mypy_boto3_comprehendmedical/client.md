@@ -17,24 +17,29 @@ type annotations stubs module
     - [describe_icd10_cm_inference_job](#describe_icd10_cm_inference_job)
     - [describe_phi_detection_job](#describe_phi_detection_job)
     - [describe_rx_norm_inference_job](#describe_rx_norm_inference_job)
+    - [describe_snomedct_inference_job](#describe_snomedct_inference_job)
     - [detect_entities](#detect_entities)
     - [detect_entities_v2](#detect_entities_v2)
     - [detect_phi](#detect_phi)
     - [generate_presigned_url](#generate_presigned_url)
     - [infer_icd10_cm](#infer_icd10_cm)
     - [infer_rx_norm](#infer_rx_norm)
+    - [infer_snomedct](#infer_snomedct)
     - [list_entities_detection_v2_jobs](#list_entities_detection_v2_jobs)
     - [list_icd10_cm_inference_jobs](#list_icd10_cm_inference_jobs)
     - [list_phi_detection_jobs](#list_phi_detection_jobs)
     - [list_rx_norm_inference_jobs](#list_rx_norm_inference_jobs)
+    - [list_snomedct_inference_jobs](#list_snomedct_inference_jobs)
     - [start_entities_detection_v2_job](#start_entities_detection_v2_job)
     - [start_icd10_cm_inference_job](#start_icd10_cm_inference_job)
     - [start_phi_detection_job](#start_phi_detection_job)
     - [start_rx_norm_inference_job](#start_rx_norm_inference_job)
+    - [start_snomedct_inference_job](#start_snomedct_inference_job)
     - [stop_entities_detection_v2_job](#stop_entities_detection_v2_job)
     - [stop_icd10_cm_inference_job](#stop_icd10_cm_inference_job)
     - [stop_phi_detection_job](#stop_phi_detection_job)
     - [stop_rx_norm_inference_job](#stop_rx_norm_inference_job)
+    - [stop_snomedct_inference_job](#stop_snomedct_inference_job)
 
 ## ComprehendMedicalClient
 
@@ -185,6 +190,26 @@ Keyword-only arguments:
 Returns
 [DescribeRxNormInferenceJobResponseTypeDef](./type_defs.md#describerxnorminferencejobresponsetypedef).
 
+### describe_snomedct_inference_job
+
+Gets the properties associated with an InferSNOMEDCT job.
+
+Type annotations for
+`boto3.client("comprehendmedical").describe_snomedct_inference_job` method.
+
+Boto3 documentation:
+[ComprehendMedical.Client.describe_snomedct_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_snomedct_inference_job)
+
+Arguments mapping described in
+[DescribeSNOMEDCTInferenceJobRequestRequestTypeDef](./type_defs.md#describesnomedctinferencejobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#describesnomedctinferencejobresponsetypedef).
+
 ### detect_entities
 
 The `DetectEntities` operation is deprecated.
@@ -307,6 +332,29 @@ Keyword-only arguments:
 Returns
 [InferRxNormResponseTypeDef](./type_defs.md#inferrxnormresponsetypedef).
 
+### infer_snomedct
+
+InferSNOMEDCT detects possible medical concepts as entities and links them to
+codes from the Systematized Nomenclature of Medicine, Clinical Terms
+(SNOMED-CT) ontology See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebA PI/comprehendmedical-2018-10-30/InferSNOMEDCT>`\_
+\*\*Re...
+
+Type annotations for `boto3.client("comprehendmedical").infer_snomedct` method.
+
+Boto3 documentation:
+[ComprehendMedical.Client.infer_snomedct](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_snomedct)
+
+Arguments mapping described in
+[InferSNOMEDCTRequestRequestTypeDef](./type_defs.md#infersnomedctrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Text`: `str` *(required)*
+
+Returns
+[InferSNOMEDCTResponseTypeDef](./type_defs.md#infersnomedctresponsetypedef).
+
 ### list_entities_detection_v2_jobs
 
 Gets a list of medical entity detection jobs that you have submitted.
@@ -399,6 +447,29 @@ Keyword-only arguments:
 
 Returns
 [ListRxNormInferenceJobsResponseTypeDef](./type_defs.md#listrxnorminferencejobsresponsetypedef).
+
+### list_snomedct_inference_jobs
+
+Gets a list of InferSNOMEDCT jobs a user has submitted.
+
+Type annotations for
+`boto3.client("comprehendmedical").list_snomedct_inference_jobs` method.
+
+Boto3 documentation:
+[ComprehendMedical.Client.list_snomedct_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_snomedct_inference_jobs)
+
+Arguments mapping described in
+[ListSNOMEDCTInferenceJobsRequestRequestTypeDef](./type_defs.md#listsnomedctinferencejobsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Filter`:
+  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListSNOMEDCTInferenceJobsResponseTypeDef](./type_defs.md#listsnomedctinferencejobsresponsetypedef).
 
 ### start_entities_detection_v2_job
 
@@ -523,6 +594,37 @@ Keyword-only arguments:
 Returns
 [StartRxNormInferenceJobResponseTypeDef](./type_defs.md#startrxnorminferencejobresponsetypedef).
 
+### start_snomedct_inference_job
+
+Starts an asynchronous job to detect medical concepts and link them to the
+SNOMED-CT ontology.
+
+Type annotations for
+`boto3.client("comprehendmedical").start_snomedct_inference_job` method.
+
+Boto3 documentation:
+[ComprehendMedical.Client.start_snomedct_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_snomedct_inference_job)
+
+Arguments mapping described in
+[StartSNOMEDCTInferenceJobRequestRequestTypeDef](./type_defs.md#startsnomedctinferencejobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `LanguageCode`: `Literal['en']` (see
+  [LanguageCodeType](./literals.md#languagecodetype)) *(required)*
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `KMSKey`: `str`
+
+Returns
+[StartSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#startsnomedctinferencejobresponsetypedef).
+
 ### stop_entities_detection_v2_job
 
 Stops a medical entities detection job in progress.
@@ -602,3 +704,23 @@ Keyword-only arguments:
 
 Returns
 [StopRxNormInferenceJobResponseTypeDef](./type_defs.md#stoprxnorminferencejobresponsetypedef).
+
+### stop_snomedct_inference_job
+
+Stops an InferSNOMEDCT inference job in progress.
+
+Type annotations for
+`boto3.client("comprehendmedical").stop_snomedct_inference_job` method.
+
+Boto3 documentation:
+[ComprehendMedical.Client.stop_snomedct_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_snomedct_inference_job)
+
+Arguments mapping described in
+[StopSNOMEDCTInferenceJobRequestRequestTypeDef](./type_defs.md#stopsnomedctinferencejobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[StopSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#stopsnomedctinferencejobresponsetypedef).

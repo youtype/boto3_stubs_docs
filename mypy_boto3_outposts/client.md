@@ -33,6 +33,7 @@ type annotations stubs module
     - [list_tags_for_resource](#list_tags_for_resource)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_outpost](#update_outpost)
     - [update_site](#update_site)
     - [update_site_address](#update_site_address)
     - [update_site_rack_physical_properties](#update_site_rack_physical_properties)
@@ -508,6 +509,29 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### update_outpost
+
+Updates an Outpost.
+
+Type annotations for `boto3.client("outposts").update_outpost` method.
+
+Boto3 documentation:
+[Outposts.Client.update_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_outpost)
+
+Arguments mapping described in
+[UpdateOutpostInputRequestTypeDef](./type_defs.md#updateoutpostinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `OutpostId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `SupportedHardwareType`:
+  [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
+
+Returns
+[UpdateOutpostOutputTypeDef](./type_defs.md#updateoutpostoutputtypedef).
 
 ### update_site
 

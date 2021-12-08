@@ -689,6 +689,7 @@ Keyword-only arguments:
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `signingDisabled`: `bool`
+- `enableCachingForHttp`: `bool`
 
 Returns
 [CreateAuthorizerResponseTypeDef](./type_defs.md#createauthorizerresponsetypedef).
@@ -4772,6 +4773,7 @@ Keyword-only arguments:
 - `tokenKeyName`: `str`
 - `tokenSigningPublicKeys`: `Mapping`\[`str`, `str`\]
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
+- `enableCachingForHttp`: `bool`
 
 Returns
 [UpdateAuthorizerResponseTypeDef](./type_defs.md#updateauthorizerresponsetypedef).

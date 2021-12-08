@@ -10,10 +10,16 @@ type annotations stubs module
 - [Literals for boto3 LookoutforVision module](#literals-for-boto3-lookoutforvision-module)
   - [DatasetStatusType](#datasetstatustype)
   - [ListDatasetEntriesPaginatorName](#listdatasetentriespaginatorname)
+  - [ListModelPackagingJobsPaginatorName](#listmodelpackagingjobspaginatorname)
   - [ListModelsPaginatorName](#listmodelspaginatorname)
   - [ListProjectsPaginatorName](#listprojectspaginatorname)
   - [ModelHostingStatusType](#modelhostingstatustype)
+  - [ModelPackagingJobStatusType](#modelpackagingjobstatustype)
   - [ModelStatusType](#modelstatustype)
+  - [TargetDeviceType](#targetdevicetype)
+  - [TargetPlatformAcceleratorType](#targetplatformacceleratortype)
+  - [TargetPlatformArchType](#targetplatformarchtype)
+  - [TargetPlatformOsType](#targetplatformostype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
@@ -45,6 +51,16 @@ from mypy_boto3_lookoutvision.literals import ListDatasetEntriesPaginatorName
 Values:
 
 - `list_dataset_entries`
+
+## ListModelPackagingJobsPaginatorName
+
+```python
+from mypy_boto3_lookoutvision.literals import ListModelPackagingJobsPaginatorName
+```
+
+Values:
+
+- `list_model_packaging_jobs`
 
 ## ListModelsPaginatorName
 
@@ -80,6 +96,19 @@ Values:
 - `STOPPING_HOSTING`
 - `SYSTEM_UPDATING`
 
+## ModelPackagingJobStatusType
+
+```python
+from mypy_boto3_lookoutvision.literals import ModelPackagingJobStatusType
+```
+
+Values:
+
+- `CREATED`
+- `FAILED`
+- `RUNNING`
+- `SUCCEEDED`
+
 ## ModelStatusType
 
 ```python
@@ -97,6 +126,47 @@ Values:
 - `TRAINED`
 - `TRAINING`
 - `TRAINING_FAILED`
+
+## TargetDeviceType
+
+```python
+from mypy_boto3_lookoutvision.literals import TargetDeviceType
+```
+
+Values:
+
+- `jetson_xavier`
+
+## TargetPlatformAcceleratorType
+
+```python
+from mypy_boto3_lookoutvision.literals import TargetPlatformAcceleratorType
+```
+
+Values:
+
+- `NVIDIA`
+
+## TargetPlatformArchType
+
+```python
+from mypy_boto3_lookoutvision.literals import TargetPlatformArchType
+```
+
+Values:
+
+- `ARM64`
+- `X86_64`
+
+## TargetPlatformOsType
+
+```python
+from mypy_boto3_lookoutvision.literals import TargetPlatformOsType
+```
+
+Values:
+
+- `LINUX`
 
 ## ServiceName
 
@@ -415,5 +485,6 @@ from mypy_boto3_lookoutvision.literals import PaginatorName
 Values:
 
 - `list_dataset_entries`
+- `list_model_packaging_jobs`
 - `list_models`
 - `list_projects`

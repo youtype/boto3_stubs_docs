@@ -3180,6 +3180,7 @@ from mypy_boto3_sagemaker.literals import TargetDeviceType
 Values:
 
 - `aisage`
+- `amba_cv2`
 - `amba_cv22`
 - `amba_cv25`
 - `coreml`

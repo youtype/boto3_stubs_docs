@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Paginators for boto3 LookoutforVision module](#paginators-for-boto3-lookoutforvision-module)
   - [ListDatasetEntriesPaginator](#listdatasetentriespaginator)
+  - [ListModelPackagingJobsPaginator](#listmodelpackagingjobspaginator)
   - [ListModelsPaginator](#listmodelspaginator)
   - [ListProjectsPaginator](#listprojectspaginator)
 
@@ -43,6 +44,32 @@ Arguments for `ListDatasetEntriesPaginator.paginate` method:
 
 `ListDatasetEntriesPaginator.paginate` returns
 `_PageIterator`\[[ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef)\].
+
+## ListModelPackagingJobsPaginator
+
+Type annotations for
+`boto3.client("lookoutvision").get_paginator("list_model_packaging_jobs")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_lookoutvision.paginator import ListModelPackagingJobsPaginator
+
+def get_list_model_packaging_jobs_paginator() -> ListModelPackagingJobsPaginator:
+    return boto3.client("lookoutvision").get_paginator("list_model_packaging_jobs")
+```
+
+Boto3 documentation:
+[LookoutforVision.Paginator.ListModelPackagingJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListModelPackagingJobs)
+
+Arguments for `ListModelPackagingJobsPaginator.paginate` method:
+
+- `ProjectName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListModelPackagingJobsPaginator.paginate` returns
+`_PageIterator`\[[ListModelPackagingJobsResponseTypeDef](./type_defs.md#listmodelpackagingjobsresponsetypedef)\].
 
 ## ListModelsPaginator
 

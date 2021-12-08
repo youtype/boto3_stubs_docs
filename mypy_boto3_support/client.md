@@ -108,7 +108,7 @@ Returns
 
 ### add_communication_to_case
 
-Adds additional customer communication to an AWS Support case.
+Adds additional customer communication to an Amazon Web Services Support case.
 
 Type annotations for `boto3.client("support").add_communication_to_case`
 method.
@@ -146,7 +146,7 @@ Returns `bool`.
 
 ### create_case
 
-Creates a case in the AWS Support Center.
+Creates a case in the Amazon Web Services Support Center.
 
 Type annotations for `boto3.client("support").create_case` method.
 
@@ -241,8 +241,8 @@ Returns
 
 ### describe_services
 
-Returns the current list of AWS services and a list of service categories for
-each service.
+Returns the current list of Amazon Web Services services and a list of service
+categories for each service.
 
 Type annotations for `boto3.client("support").describe_services` method.
 
@@ -281,7 +281,7 @@ Returns
 
 ### describe_trusted_advisor_check_refresh_statuses
 
-Returns the refresh status of the AWS Trusted Advisor checks that have the
+Returns the refresh status of the Trusted Advisor checks that have the
 specified check IDs.
 
 Type annotations for
@@ -303,8 +303,8 @@ Returns
 
 ### describe_trusted_advisor_check_result
 
-Returns the results of the AWS Trusted Advisor check that has the specified
-check ID.
+Returns the results of the Trusted Advisor check that has the specified check
+ID.
 
 Type annotations for
 `boto3.client("support").describe_trusted_advisor_check_result` method.
@@ -325,8 +325,8 @@ Returns
 
 ### describe_trusted_advisor_check_summaries
 
-Returns the results for the AWS Trusted Advisor check summaries for the check
-IDs that you specified.
+Returns the results for the Trusted Advisor check summaries for the check IDs
+that you specified.
 
 Type annotations for
 `boto3.client("support").describe_trusted_advisor_check_summaries` method.
@@ -346,8 +346,8 @@ Returns
 
 ### describe_trusted_advisor_checks
 
-Returns information about all available AWS Trusted Advisor checks, including
-the name, ID, category, description, and metadata.
+Returns information about all available Trusted Advisor checks, including the
+name, ID, category, description, and metadata.
 
 Type annotations for `boto3.client("support").describe_trusted_advisor_checks`
 method.
@@ -385,7 +385,7 @@ Returns `str`.
 
 ### refresh_trusted_advisor_check
 
-Refreshes the AWS Trusted Advisor check that you specify using the check ID.
+Refreshes the Trusted Advisor check that you specify using the check ID.
 
 Type annotations for `boto3.client("support").refresh_trusted_advisor_check`
 method.

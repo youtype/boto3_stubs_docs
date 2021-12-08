@@ -23,6 +23,11 @@ type annotations stubs module
   - [RxNormEntityCategoryType](#rxnormentitycategorytype)
   - [RxNormEntityTypeType](#rxnormentitytypetype)
   - [RxNormTraitNameType](#rxnormtraitnametype)
+  - [SNOMEDCTAttributeTypeType](#snomedctattributetypetype)
+  - [SNOMEDCTEntityCategoryType](#snomedctentitycategorytype)
+  - [SNOMEDCTEntityTypeType](#snomedctentitytypetype)
+  - [SNOMEDCTRelationshipTypeType](#snomedctrelationshiptypetype)
+  - [SNOMEDCTTraitNameType](#snomedcttraitnametype)
   - [ServiceName](#servicename)
 
 ## AttributeNameType
@@ -55,12 +60,15 @@ Values:
 - `DIRECTION`
 - `DOSAGE`
 - `DURATION`
+- `DX_NAME`
 - `EMAIL`
 - `FORM`
 - `FREQUENCY`
 - `GENERIC_NAME`
+- `ID`
 - `IDENTIFIER`
 - `NAME`
+- `PHONE_OR_FAX`
 - `PROCEDURE_NAME`
 - `PROFESSION`
 - `QUALITY`
@@ -70,6 +78,7 @@ Values:
 - `STRENGTH`
 - `SYSTEM_ORGAN_SITE`
 - `TEST_NAME`
+- `TEST_UNIT`
 - `TEST_UNITS`
 - `TEST_VALUE`
 - `TIME_EXPRESSION`
@@ -206,6 +215,7 @@ Values:
 - `ROUTE_OR_MODE`
 - `STRENGTH`
 - `SYSTEM_ORGAN_SITE`
+- `TEST_UNIT`
 - `TEST_UNITS`
 - `TEST_VALUE`
 - `WITH_DOSAGE`
@@ -256,6 +266,74 @@ from mypy_boto3_comprehendmedical.literals import RxNormTraitNameType
 Values:
 
 - `NEGATION`
+
+## SNOMEDCTAttributeTypeType
+
+```python
+from mypy_boto3_comprehendmedical.literals import SNOMEDCTAttributeTypeType
+```
+
+Values:
+
+- `ACUITY`
+- `DIRECTION`
+- `QUALITY`
+- `SYSTEM_ORGAN_SITE`
+- `TEST_UNIT`
+- `TEST_VALUE`
+
+## SNOMEDCTEntityCategoryType
+
+```python
+from mypy_boto3_comprehendmedical.literals import SNOMEDCTEntityCategoryType
+```
+
+Values:
+
+- `ANATOMY`
+- `MEDICAL_CONDITION`
+- `TEST_TREATMENT_PROCEDURE`
+
+## SNOMEDCTEntityTypeType
+
+```python
+from mypy_boto3_comprehendmedical.literals import SNOMEDCTEntityTypeType
+```
+
+Values:
+
+- `DX_NAME`
+- `PROCEDURE_NAME`
+- `TEST_NAME`
+- `TREATMENT_NAME`
+
+## SNOMEDCTRelationshipTypeType
+
+```python
+from mypy_boto3_comprehendmedical.literals import SNOMEDCTRelationshipTypeType
+```
+
+Values:
+
+- `ACUITY`
+- `DIRECTION`
+- `QUALITY`
+- `SYSTEM_ORGAN_SITE`
+- `TEST_UNITS`
+- `TEST_VALUE`
+
+## SNOMEDCTTraitNameType
+
+```python
+from mypy_boto3_comprehendmedical.literals import SNOMEDCTTraitNameType
+```
+
+Values:
+
+- `DIAGNOSIS`
+- `NEGATION`
+- `SIGN`
+- `SYMPTOM`
 
 ## ServiceName
 

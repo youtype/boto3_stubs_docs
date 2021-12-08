@@ -10611,6 +10611,7 @@ Optional fields:
 - `StepStatus`: [StepStatusType](./literals.md#stepstatustype)
 - `CacheHitResult`:
   [CacheHitResultTypeDef](./type_defs.md#cachehitresulttypedef)
+- `AttemptCount`: `int`
 - `FailureReason`: `str`
 - `Metadata`:
   [PipelineExecutionStepMetadataTypeDef](./type_defs.md#pipelineexecutionstepmetadatatypedef)

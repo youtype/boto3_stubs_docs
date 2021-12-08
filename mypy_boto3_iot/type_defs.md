@@ -1088,6 +1088,7 @@ Optional fields:
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
 - `signingDisabled`: `bool`
+- `enableCachingForHttp`: `bool`
 
 ## AuthorizerSummaryTypeDef
 
@@ -1581,6 +1582,7 @@ Optional fields:
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `signingDisabled`: `bool`
+- `enableCachingForHttp`: `bool`
 
 ## CreateAuthorizerResponseTypeDef
 
@@ -7999,6 +8001,7 @@ Optional fields:
 - `tokenKeyName`: `str`
 - `tokenSigningPublicKeys`: `Mapping`\[`str`, `str`\]
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
+- `enableCachingForHttp`: `bool`
 
 ## UpdateAuthorizerResponseTypeDef
 

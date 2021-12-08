@@ -21,14 +21,17 @@ type annotations stubs module
     - [delete_project](#delete_project)
     - [describe_dataset](#describe_dataset)
     - [describe_model](#describe_model)
+    - [describe_model_packaging_job](#describe_model_packaging_job)
     - [describe_project](#describe_project)
     - [detect_anomalies](#detect_anomalies)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_dataset_entries](#list_dataset_entries)
+    - [list_model_packaging_jobs](#list_model_packaging_jobs)
     - [list_models](#list_models)
     - [list_projects](#list_projects)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [start_model](#start_model)
+    - [start_model_packaging_job](#start_model_packaging_job)
     - [stop_model](#stop_model)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
@@ -271,6 +274,27 @@ Keyword-only arguments:
 Returns
 [DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef).
 
+### describe_model_packaging_job
+
+Describes an Amazon Lookout for Vision model packaging job.
+
+Type annotations for
+`boto3.client("lookoutvision").describe_model_packaging_job` method.
+
+Boto3 documentation:
+[LookoutforVision.Client.describe_model_packaging_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model_packaging_job)
+
+Arguments mapping described in
+[DescribeModelPackagingJobRequestRequestTypeDef](./type_defs.md#describemodelpackagingjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ProjectName`: `str` *(required)*
+- `JobName`: `str` *(required)*
+
+Returns
+[DescribeModelPackagingJobResponseTypeDef](./type_defs.md#describemodelpackagingjobresponsetypedef).
+
 ### describe_project
 
 Describes an Amazon Lookout for Vision project.
@@ -359,6 +383,29 @@ Keyword-only arguments:
 Returns
 [ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef).
 
+### list_model_packaging_jobs
+
+Lists the model packaging jobs created for an Amazon Lookout for Vision
+project.
+
+Type annotations for `boto3.client("lookoutvision").list_model_packaging_jobs`
+method.
+
+Boto3 documentation:
+[LookoutforVision.Client.list_model_packaging_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_model_packaging_jobs)
+
+Arguments mapping described in
+[ListModelPackagingJobsRequestRequestTypeDef](./type_defs.md#listmodelpackagingjobsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ProjectName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListModelPackagingJobsResponseTypeDef](./type_defs.md#listmodelpackagingjobsresponsetypedef).
+
 ### list_models
 
 Lists the versions of a model in an Amazon Lookout for Vision project.
@@ -441,6 +488,33 @@ Keyword-only arguments:
 
 Returns [StartModelResponseTypeDef](./type_defs.md#startmodelresponsetypedef).
 
+### start_model_packaging_job
+
+Starts an Amazon Lookout for Vision model packaging job.
+
+Type annotations for `boto3.client("lookoutvision").start_model_packaging_job`
+method.
+
+Boto3 documentation:
+[LookoutforVision.Client.start_model_packaging_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.start_model_packaging_job)
+
+Arguments mapping described in
+[StartModelPackagingJobRequestRequestTypeDef](./type_defs.md#startmodelpackagingjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ProjectName`: `str` *(required)*
+- `ModelVersion`: `str` *(required)*
+- `Configuration`:
+  [ModelPackagingConfigurationTypeDef](./type_defs.md#modelpackagingconfigurationtypedef)
+  *(required)*
+- `JobName`: `str`
+- `Description`: `str`
+- `ClientToken`: `str`
+
+Returns
+[StartModelPackagingJobResponseTypeDef](./type_defs.md#startmodelpackagingjobresponsetypedef).
+
 ### stop_model
 
 Stops the hosting of a running model.
@@ -501,7 +575,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_dataset_entries
 
-Adds one or more JSON Line entries to a dataset.
+Adds or updates one or more JSON Line entries in a dataset.
 
 Type annotations for `boto3.client("lookoutvision").update_dataset_entries`
 method.
@@ -529,6 +603,8 @@ overloads.
 
 - `client.get_paginator("list_dataset_entries")` ->
   [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
+- `client.get_paginator("list_model_packaging_jobs")` ->
+  [ListModelPackagingJobsPaginator](./paginators.md#listmodelpackagingjobspaginator)
 - `client.get_paginator("list_models")` ->
   [ListModelsPaginator](./paginators.md#listmodelspaginator)
 - `client.get_paginator("list_projects")` ->

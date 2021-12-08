@@ -26,6 +26,8 @@ type annotations stubs module
   - [DeleteProjectResponseTypeDef](#deleteprojectresponsetypedef)
   - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
   - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
+  - [DescribeModelPackagingJobRequestRequestTypeDef](#describemodelpackagingjobrequestrequesttypedef)
+  - [DescribeModelPackagingJobResponseTypeDef](#describemodelpackagingjobresponsetypedef)
   - [DescribeModelRequestRequestTypeDef](#describemodelrequestrequesttypedef)
   - [DescribeModelResponseTypeDef](#describemodelresponsetypedef)
   - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
@@ -33,10 +35,14 @@ type annotations stubs module
   - [DetectAnomaliesRequestRequestTypeDef](#detectanomaliesrequestrequesttypedef)
   - [DetectAnomaliesResponseTypeDef](#detectanomaliesresponsetypedef)
   - [DetectAnomalyResultTypeDef](#detectanomalyresulttypedef)
+  - [GreengrassConfigurationTypeDef](#greengrassconfigurationtypedef)
+  - [GreengrassOutputDetailsTypeDef](#greengrassoutputdetailstypedef)
   - [ImageSourceTypeDef](#imagesourcetypedef)
   - [InputS3ObjectTypeDef](#inputs3objecttypedef)
   - [ListDatasetEntriesRequestRequestTypeDef](#listdatasetentriesrequestrequesttypedef)
   - [ListDatasetEntriesResponseTypeDef](#listdatasetentriesresponsetypedef)
+  - [ListModelPackagingJobsRequestRequestTypeDef](#listmodelpackagingjobsrequestrequesttypedef)
+  - [ListModelPackagingJobsResponseTypeDef](#listmodelpackagingjobsresponsetypedef)
   - [ListModelsRequestRequestTypeDef](#listmodelsrequestrequesttypedef)
   - [ListModelsResponseTypeDef](#listmodelsresponsetypedef)
   - [ListProjectsRequestRequestTypeDef](#listprojectsrequestrequesttypedef)
@@ -45,6 +51,10 @@ type annotations stubs module
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ModelDescriptionTypeDef](#modeldescriptiontypedef)
   - [ModelMetadataTypeDef](#modelmetadatatypedef)
+  - [ModelPackagingConfigurationTypeDef](#modelpackagingconfigurationtypedef)
+  - [ModelPackagingDescriptionTypeDef](#modelpackagingdescriptiontypedef)
+  - [ModelPackagingJobMetadataTypeDef](#modelpackagingjobmetadatatypedef)
+  - [ModelPackagingOutputDetailsTypeDef](#modelpackagingoutputdetailstypedef)
   - [ModelPerformanceTypeDef](#modelperformancetypedef)
   - [OutputConfigTypeDef](#outputconfigtypedef)
   - [OutputS3ObjectTypeDef](#outputs3objecttypedef)
@@ -53,12 +63,15 @@ type annotations stubs module
   - [ProjectMetadataTypeDef](#projectmetadatatypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3LocationTypeDef](#s3locationtypedef)
+  - [StartModelPackagingJobRequestRequestTypeDef](#startmodelpackagingjobrequestrequesttypedef)
+  - [StartModelPackagingJobResponseTypeDef](#startmodelpackagingjobresponsetypedef)
   - [StartModelRequestRequestTypeDef](#startmodelrequestrequesttypedef)
   - [StartModelResponseTypeDef](#startmodelresponsetypedef)
   - [StopModelRequestRequestTypeDef](#stopmodelrequestrequesttypedef)
   - [StopModelResponseTypeDef](#stopmodelresponsetypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
+  - [TargetPlatformTypeDef](#targetplatformtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateDatasetEntriesRequestRequestTypeDef](#updatedatasetentriesrequestrequesttypedef)
   - [UpdateDatasetEntriesResponseTypeDef](#updatedatasetentriesresponsetypedef)
@@ -305,6 +318,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeModelPackagingJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import DescribeModelPackagingJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ProjectName`: `str`
+- `JobName`: `str`
+
+## DescribeModelPackagingJobResponseTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import DescribeModelPackagingJobResponseTypeDef
+```
+
+Required fields:
+
+- `ModelPackagingDescription`:
+  [ModelPackagingDescriptionTypeDef](./type_defs.md#modelpackagingdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeModelRequestRequestTypeDef
 
 ```python
@@ -390,6 +427,40 @@ Optional fields:
 - `IsAnomalous`: `bool`
 - `Confidence`: `float`
 
+## GreengrassConfigurationTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import GreengrassConfigurationTypeDef
+```
+
+Required fields:
+
+- `CompilerOptions`: `str`
+- `S3OutputLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+- `ComponentName`: `str`
+
+Optional fields:
+
+- `TargetDevice`: `Literal['jetson_xavier']` (see
+  [TargetDeviceType](./literals.md#targetdevicetype))
+- `TargetPlatform`:
+  [TargetPlatformTypeDef](./type_defs.md#targetplatformtypedef)
+- `ComponentVersion`: `str`
+- `ComponentDescription`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## GreengrassOutputDetailsTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import GreengrassOutputDetailsTypeDef
+```
+
+Optional fields:
+
+- `ComponentVersionArn`: `str`
+- `ComponentName`: `str`
+- `ComponentVersion`: `str`
+
 ## ImageSourceTypeDef
 
 ```python
@@ -445,6 +516,35 @@ from mypy_boto3_lookoutvision.type_defs import ListDatasetEntriesResponseTypeDef
 Required fields:
 
 - `DatasetEntries`: `List`\[`str`\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListModelPackagingJobsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import ListModelPackagingJobsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ProjectName`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListModelPackagingJobsResponseTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import ListModelPackagingJobsResponseTypeDef
+```
+
+Required fields:
+
+- `ModelPackagingJobs`:
+  `List`\[[ModelPackagingJobMetadataTypeDef](./type_defs.md#modelpackagingjobmetadatatypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -566,6 +666,70 @@ Optional fields:
 - `Performance`:
   [ModelPerformanceTypeDef](./type_defs.md#modelperformancetypedef)
 
+## ModelPackagingConfigurationTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import ModelPackagingConfigurationTypeDef
+```
+
+Required fields:
+
+- `Greengrass`:
+  [GreengrassConfigurationTypeDef](./type_defs.md#greengrassconfigurationtypedef)
+
+## ModelPackagingDescriptionTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import ModelPackagingDescriptionTypeDef
+```
+
+Optional fields:
+
+- `JobName`: `str`
+- `ProjectName`: `str`
+- `ModelVersion`: `str`
+- `ModelPackagingConfiguration`:
+  [ModelPackagingConfigurationTypeDef](./type_defs.md#modelpackagingconfigurationtypedef)
+- `ModelPackagingJobDescription`: `str`
+- `ModelPackagingMethod`: `str`
+- `ModelPackagingOutputDetails`:
+  [ModelPackagingOutputDetailsTypeDef](./type_defs.md#modelpackagingoutputdetailstypedef)
+- `Status`:
+  [ModelPackagingJobStatusType](./literals.md#modelpackagingjobstatustype)
+- `StatusMessage`: `str`
+- `CreationTimestamp`: `datetime`
+- `LastUpdatedTimestamp`: `datetime`
+
+## ModelPackagingJobMetadataTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import ModelPackagingJobMetadataTypeDef
+```
+
+Optional fields:
+
+- `JobName`: `str`
+- `ProjectName`: `str`
+- `ModelVersion`: `str`
+- `ModelPackagingJobDescription`: `str`
+- `ModelPackagingMethod`: `str`
+- `Status`:
+  [ModelPackagingJobStatusType](./literals.md#modelpackagingjobstatustype)
+- `StatusMessage`: `str`
+- `CreationTimestamp`: `datetime`
+- `LastUpdatedTimestamp`: `datetime`
+
+## ModelPackagingOutputDetailsTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import ModelPackagingOutputDetailsTypeDef
+```
+
+Optional fields:
+
+- `Greengrass`:
+  [GreengrassOutputDetailsTypeDef](./type_defs.md#greengrassoutputdetailstypedef)
+
 ## ModelPerformanceTypeDef
 
 ```python
@@ -665,6 +829,37 @@ Optional fields:
 
 - `Prefix`: `str`
 
+## StartModelPackagingJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import StartModelPackagingJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ProjectName`: `str`
+- `ModelVersion`: `str`
+- `Configuration`:
+  [ModelPackagingConfigurationTypeDef](./type_defs.md#modelpackagingconfigurationtypedef)
+
+Optional fields:
+
+- `JobName`: `str`
+- `Description`: `str`
+- `ClientToken`: `str`
+
+## StartModelPackagingJobResponseTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import StartModelPackagingJobResponseTypeDef
+```
+
+Required fields:
+
+- `JobName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## StartModelRequestRequestTypeDef
 
 ```python
@@ -741,6 +936,20 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+## TargetPlatformTypeDef
+
+```python
+from mypy_boto3_lookoutvision.type_defs import TargetPlatformTypeDef
+```
+
+Required fields:
+
+- `Os`: `Literal['LINUX']` (see
+  [TargetPlatformOsType](./literals.md#targetplatformostype))
+- `Arch`: [TargetPlatformArchType](./literals.md#targetplatformarchtype)
+- `Accelerator`: `Literal['NVIDIA']` (see
+  [TargetPlatformAcceleratorType](./literals.md#targetplatformacceleratortype))
 
 ## UntagResourceRequestRequestTypeDef
 

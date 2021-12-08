@@ -899,6 +899,10 @@ Required fields:
 - `destinationName`: `str`
 - `accessPolicy`: `str`
 
+Optional fields:
+
+- `forceUpdate`: `bool`
+
 ## PutDestinationRequestRequestTypeDef
 
 ```python
