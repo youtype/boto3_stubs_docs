@@ -12,11 +12,15 @@ type annotations stubs module
   - [CountryCodeType](#countrycodetype)
   - [DomainAvailabilityType](#domainavailabilitytype)
   - [ExtraParamNameType](#extraparamnametype)
+  - [ListDomainsAttributeNameType](#listdomainsattributenametype)
   - [ListDomainsPaginatorName](#listdomainspaginatorname)
   - [ListOperationsPaginatorName](#listoperationspaginatorname)
+  - [ListPricesPaginatorName](#listpricespaginatorname)
   - [OperationStatusType](#operationstatustype)
   - [OperationTypeType](#operationtypetype)
+  - [OperatorType](#operatortype)
   - [ReachabilityStatusType](#reachabilitystatustype)
+  - [SortOrderType](#sortordertype)
   - [TransferableType](#transferabletype)
   - [ViewBillingPaginatorName](#viewbillingpaginatorname)
   - [ServiceName](#servicename)
@@ -44,6 +48,7 @@ from mypy_boto3_route53domains.literals import CountryCodeType
 
 Values:
 
+- `AC`
 - `AD`
 - `AE`
 - `AF`
@@ -59,6 +64,7 @@ Values:
 - `AT`
 - `AU`
 - `AW`
+- `AX`
 - `AZ`
 - `BA`
 - `BB`
@@ -73,9 +79,11 @@ Values:
 - `BM`
 - `BN`
 - `BO`
+- `BQ`
 - `BR`
 - `BS`
 - `BT`
+- `BV`
 - `BW`
 - `BY`
 - `BZ`
@@ -94,6 +102,7 @@ Values:
 - `CR`
 - `CU`
 - `CV`
+- `CW`
 - `CX`
 - `CY`
 - `CZ`
@@ -106,6 +115,7 @@ Values:
 - `EC`
 - `EE`
 - `EG`
+- `EH`
 - `ER`
 - `ES`
 - `ET`
@@ -119,18 +129,23 @@ Values:
 - `GB`
 - `GD`
 - `GE`
+- `GF`
+- `GG`
 - `GH`
 - `GI`
 - `GL`
 - `GM`
 - `GN`
+- `GP`
 - `GQ`
 - `GR`
+- `GS`
 - `GT`
 - `GU`
 - `GW`
 - `GY`
 - `HK`
+- `HM`
 - `HN`
 - `HR`
 - `HT`
@@ -140,10 +155,12 @@ Values:
 - `IL`
 - `IM`
 - `IN`
+- `IO`
 - `IQ`
 - `IR`
 - `IS`
 - `IT`
+- `JE`
 - `JM`
 - `JO`
 - `JP`
@@ -182,6 +199,7 @@ Values:
 - `MN`
 - `MO`
 - `MP`
+- `MQ`
 - `MR`
 - `MS`
 - `MT`
@@ -194,6 +212,7 @@ Values:
 - `NA`
 - `NC`
 - `NE`
+- `NF`
 - `NG`
 - `NI`
 - `NL`
@@ -213,10 +232,12 @@ Values:
 - `PM`
 - `PN`
 - `PR`
+- `PS`
 - `PT`
 - `PW`
 - `PY`
 - `QA`
+- `RE`
 - `RO`
 - `RS`
 - `RU`
@@ -229,18 +250,22 @@ Values:
 - `SG`
 - `SH`
 - `SI`
+- `SJ`
 - `SK`
 - `SL`
 - `SM`
 - `SN`
 - `SO`
 - `SR`
+- `SS`
 - `ST`
 - `SV`
+- `SX`
 - `SY`
 - `SZ`
 - `TC`
 - `TD`
+- `TF`
 - `TG`
 - `TH`
 - `TJ`
@@ -249,6 +274,7 @@ Values:
 - `TM`
 - `TN`
 - `TO`
+- `TP`
 - `TR`
 - `TT`
 - `TV`
@@ -315,6 +341,7 @@ Values:
 - `ES_IDENTIFICATION`
 - `ES_IDENTIFICATION_TYPE`
 - `ES_LEGAL_FORM`
+- `EU_COUNTRY_OF_CITIZENSHIP`
 - `FI_BUSINESS_NUMBER`
 - `FI_ID_NUMBER`
 - `FI_NATIONALITY`
@@ -328,6 +355,17 @@ Values:
 - `UK_COMPANY_NUMBER`
 - `UK_CONTACT_TYPE`
 - `VAT_NUMBER`
+
+## ListDomainsAttributeNameType
+
+```python
+from mypy_boto3_route53domains.literals import ListDomainsAttributeNameType
+```
+
+Values:
+
+- `DomainName`
+- `Expiry`
 
 ## ListDomainsPaginatorName
 
@@ -348,6 +386,16 @@ from mypy_boto3_route53domains.literals import ListOperationsPaginatorName
 Values:
 
 - `list_operations`
+
+## ListPricesPaginatorName
+
+```python
+from mypy_boto3_route53domains.literals import ListPricesPaginatorName
+```
+
+Values:
+
+- `list_prices`
 
 ## OperationStatusType
 
@@ -390,6 +438,18 @@ Values:
 - `UPDATE_DOMAIN_CONTACT`
 - `UPDATE_NAMESERVER`
 
+## OperatorType
+
+```python
+from mypy_boto3_route53domains.literals import OperatorType
+```
+
+Values:
+
+- `BEGINS_WITH`
+- `GE`
+- `LE`
+
 ## ReachabilityStatusType
 
 ```python
@@ -401,6 +461,17 @@ Values:
 - `DONE`
 - `EXPIRED`
 - `PENDING`
+
+## SortOrderType
+
+```python
+from mypy_boto3_route53domains.literals import SortOrderType
+```
+
+Values:
+
+- `ASC`
+- `DESC`
 
 ## TransferableType
 
@@ -742,4 +813,5 @@ Values:
 
 - `list_domains`
 - `list_operations`
+- `list_prices`
 - `view_billing`

@@ -22,6 +22,7 @@ type annotations stubs module
   - [InstanceStatusOkWaiter](#instancestatusokwaiter)
   - [InstanceStoppedWaiter](#instancestoppedwaiter)
   - [InstanceTerminatedWaiter](#instanceterminatedwaiter)
+  - [InternetGatewayExistsWaiter](#internetgatewayexistswaiter)
   - [KeyPairExistsWaiter](#keypairexistswaiter)
   - [NatGatewayAvailableWaiter](#natgatewayavailablewaiter)
   - [NetworkInterfaceAvailableWaiter](#networkinterfaceavailablewaiter)
@@ -377,6 +378,32 @@ Arguments for `InstanceTerminatedWaiter.wait` method:
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+
+## InternetGatewayExistsWaiter
+
+Type annotations for
+`boto3.client("ec2").get_waiter("internet_gateway_exists")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.waiter import InternetGatewayExistsWaiter
+
+def get_internet_gateway_exists_waiter() -> InternetGatewayExistsWaiter:
+    return boto3.client("ec2").get_waiter("internet_gateway_exists")
+```
+
+Boto3 documentation:
+[EC2.Waiter.internet_gateway_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InternetGatewayExists)
+
+Arguments for `InternetGatewayExistsWaiter.wait` method:
+
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `InternetGatewayIds`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## KeyPairExistsWaiter

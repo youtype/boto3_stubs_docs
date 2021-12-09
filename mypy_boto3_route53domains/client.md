@@ -17,6 +17,7 @@ type annotations stubs module
     - [cancel_domain_transfer_to_another_aws_account](#cancel_domain_transfer_to_another_aws_account)
     - [check_domain_availability](#check_domain_availability)
     - [check_domain_transferability](#check_domain_transferability)
+    - [delete_domain](#delete_domain)
     - [delete_tags_for_domain](#delete_tags_for_domain)
     - [disable_domain_auto_renew](#disable_domain_auto_renew)
     - [disable_domain_transfer_lock](#disable_domain_transfer_lock)
@@ -29,6 +30,7 @@ type annotations stubs module
     - [get_operation_detail](#get_operation_detail)
     - [list_domains](#list_domains)
     - [list_operations](#list_operations)
+    - [list_prices](#list_prices)
     - [list_tags_for_domain](#list_tags_for_domain)
     - [register_domain](#register_domain)
     - [reject_domain_transfer_from_another_aws_account](#reject_domain_transfer_from_another_aws_account)
@@ -97,8 +99,8 @@ Returns [Exceptions](#exceptions).
 
 ### accept_domain_transfer_from_another_aws_account
 
-Accepts the transfer of a domain from another AWS account to the current AWS
-account.
+Accepts the transfer of a domain from another Amazon Web Services account to
+the currentAmazon Web Services account.
 
 Type annotations for
 `boto3.client("route53domains").accept_domain_transfer_from_another_aws_account`
@@ -135,8 +137,8 @@ Returns `bool`.
 
 ### cancel_domain_transfer_to_another_aws_account
 
-Cancels the transfer of a domain from the current AWS account to another AWS
-account.
+Cancels the transfer of a domain from the current Amazon Web Services account
+to another Amazon Web Services account.
 
 Type annotations for
 `boto3.client("route53domains").cancel_domain_transfer_to_another_aws_account`
@@ -196,6 +198,25 @@ Keyword-only arguments:
 
 Returns
 [CheckDomainTransferabilityResponseTypeDef](./type_defs.md#checkdomaintransferabilityresponsetypedef).
+
+### delete_domain
+
+This operation deletes the specified domain.
+
+Type annotations for `boto3.client("route53domains").delete_domain` method.
+
+Boto3 documentation:
+[Route53Domains.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.delete_domain)
+
+Arguments mapping described in
+[DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[DeleteDomainResponseTypeDef](./type_defs.md#deletedomainresponsetypedef).
 
 ### delete_tags_for_domain
 
@@ -343,7 +364,7 @@ Returns
 ### get_domain_detail
 
 This operation returns detailed information about a specified domain that is
-associated with the current AWS account.
+associated with the current Amazon Web Services account.
 
 Type annotations for `boto3.client("route53domains").get_domain_detail` method.
 
@@ -406,7 +427,7 @@ Returns
 ### list_domains
 
 This operation returns all the domain names registered with Amazon Route 53 for
-the current AWS account.
+the current Amazon Web Services account if no filtering conditions are used.
 
 Type annotations for `boto3.client("route53domains").list_domains` method.
 
@@ -418,6 +439,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `FilterConditions`:
+  `Sequence`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
+- `SortCondition`: [SortConditionTypeDef](./type_defs.md#sortconditiontypedef)
 - `Marker`: `str`
 - `MaxItems`: `int`
 
@@ -446,6 +470,29 @@ Keyword-only arguments:
 
 Returns
 [ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
+
+### list_prices
+
+Lists the following prices for either all the TLDs supported by Route 53, or
+the specified TLD * Registration * Transfer * Owner change * Domain renewal \*
+Domain restoration See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/route53domains-2014-05-1...`.
+
+Type annotations for `boto3.client("route53domains").list_prices` method.
+
+Boto3 documentation:
+[Route53Domains.Client.list_prices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_prices)
+
+Arguments mapping described in
+[ListPricesRequestRequestTypeDef](./type_defs.md#listpricesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Tld`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns [ListPricesResponseTypeDef](./type_defs.md#listpricesresponsetypedef).
 
 ### list_tags_for_domain
 
@@ -501,8 +548,8 @@ Returns
 
 ### reject_domain_transfer_from_another_aws_account
 
-Rejects the transfer of a domain from another AWS account to the current AWS
-account.
+Rejects the transfer of a domain from another Amazon Web Services account to
+the current Amazon Web Services account.
 
 Type annotations for
 `boto3.client("route53domains").reject_domain_transfer_from_another_aws_account`
@@ -621,7 +668,8 @@ Returns
 
 ### transfer_domain_to_another_aws_account
 
-Transfers a domain from the current AWS account to another AWS account.
+Transfers a domain from the current Amazon Web Services account to another
+Amazon Web Services account.
 
 Type annotations for
 `boto3.client("route53domains").transfer_domain_to_another_aws_account` method.
@@ -734,10 +782,10 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### view_billing
 
-Returns all the domain-related billing records for the current AWS account for
-a specified period See also:
-`AWS API Documentation <https://docs.aws.amazon.com/g oto/WebAPI/route53domains-2014-05-15/ViewBilling>`\_
-**Request Syntax** response = client.view_billing( Start=datetime(...
+Returns all the domain-related billing records for the current Amazon Web
+Services account for a specified period See also:
+`AWS API Documentation <https: //docs.aws.amazon.com/goto/WebAPI/route53domains-2014-05-15/ViewBilling>`\_
+**Request Syntax** response = client.view_billing( ...
 
 Type annotations for `boto3.client("route53domains").view_billing` method.
 
@@ -766,5 +814,7 @@ overloads.
   [ListDomainsPaginator](./paginators.md#listdomainspaginator)
 - `client.get_paginator("list_operations")` ->
   [ListOperationsPaginator](./paginators.md#listoperationspaginator)
+- `client.get_paginator("list_prices")` ->
+  [ListPricesPaginator](./paginators.md#listpricespaginator)
 - `client.get_paginator("view_billing")` ->
   [ViewBillingPaginator](./paginators.md#viewbillingpaginator)

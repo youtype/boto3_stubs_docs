@@ -37,6 +37,8 @@ type annotations stubs module
   - [DescribeLoggingConfigurationResponseTypeDef](#describeloggingconfigurationresponsetypedef)
   - [DescribeResourcePolicyRequestRequestTypeDef](#describeresourcepolicyrequestrequesttypedef)
   - [DescribeResourcePolicyResponseTypeDef](#describeresourcepolicyresponsetypedef)
+  - [DescribeRuleGroupMetadataRequestRequestTypeDef](#describerulegroupmetadatarequestrequesttypedef)
+  - [DescribeRuleGroupMetadataResponseTypeDef](#describerulegroupmetadataresponsetypedef)
   - [DescribeRuleGroupRequestRequestTypeDef](#describerulegrouprequestrequesttypedef)
   - [DescribeRuleGroupResponseTypeDef](#describerulegroupresponsetypedef)
   - [DimensionTypeDef](#dimensiontypedef)
@@ -77,6 +79,7 @@ type annotations stubs module
   - [RulesSourceListTypeDef](#rulessourcelisttypedef)
   - [RulesSourceTypeDef](#rulessourcetypedef)
   - [StatefulEngineOptionsTypeDef](#statefulengineoptionstypedef)
+  - [StatefulRuleGroupOverrideTypeDef](#statefulrulegroupoverridetypedef)
   - [StatefulRuleGroupReferenceTypeDef](#statefulrulegroupreferencetypedef)
   - [StatefulRuleOptionsTypeDef](#statefulruleoptionstypedef)
   - [StatefulRuleTypeDef](#statefulruletypedef)
@@ -499,6 +502,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeRuleGroupMetadataRequestRequestTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import DescribeRuleGroupMetadataRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `RuleGroupName`: `str`
+- `RuleGroupArn`: `str`
+- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
+
+## DescribeRuleGroupMetadataResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import DescribeRuleGroupMetadataResponseTypeDef
+```
+
+Required fields:
+
+- `RuleGroupArn`: `str`
+- `RuleGroupName`: `str`
+- `Description`: `str`
+- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
+- `Capacity`: `int`
+- `StatefulRuleOptions`:
+  [StatefulRuleOptionsTypeDef](./type_defs.md#statefulruleoptionstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeRuleGroupRequestRequestTypeDef
 
 ```python
@@ -764,6 +797,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `Scope`: [ResourceManagedStatusType](./literals.md#resourcemanagedstatustype)
 
 ## ListRuleGroupsResponseTypeDef
 
@@ -1056,6 +1090,17 @@ Optional fields:
 
 - `RuleOrder`: [RuleOrderType](./literals.md#ruleordertype)
 
+## StatefulRuleGroupOverrideTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import StatefulRuleGroupOverrideTypeDef
+```
+
+Optional fields:
+
+- `Action`: `Literal['DROP_TO_ALERT']` (see
+  [OverrideActionType](./literals.md#overrideactiontype))
+
 ## StatefulRuleGroupReferenceTypeDef
 
 ```python
@@ -1069,6 +1114,8 @@ Required fields:
 Optional fields:
 
 - `Priority`: `int`
+- `Override`:
+  [StatefulRuleGroupOverrideTypeDef](./type_defs.md#statefulrulegroupoverridetypedef)
 
 ## StatefulRuleOptionsTypeDef
 

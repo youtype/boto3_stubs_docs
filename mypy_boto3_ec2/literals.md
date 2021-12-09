@@ -261,6 +261,7 @@ type annotations stubs module
   - [InstanceTypeType](#instancetypetype)
   - [InterfacePermissionTypeType](#interfacepermissiontypetype)
   - [InterfaceProtocolTypeType](#interfaceprotocoltypetype)
+  - [InternetGatewayExistsWaiterName](#internetgatewayexistswaitername)
   - [IpamAddressHistoryResourceTypeType](#ipamaddresshistoryresourcetypetype)
   - [IpamComplianceStatusType](#ipamcompliancestatustype)
   - [IpamManagementStateType](#ipammanagementstatetype)
@@ -3690,6 +3691,16 @@ Values:
 - `GRE`
 - `VLAN`
 
+## InternetGatewayExistsWaiterName
+
+```python
+from mypy_boto3_ec2.literals import InternetGatewayExistsWaiterName
+```
+
+Values:
+
+- `internet_gateway_exists`
+
 ## IpamAddressHistoryResourceTypeType
 
 ```python
@@ -6191,6 +6202,7 @@ Values:
 - `instance_status_ok`
 - `instance_stopped`
 - `instance_terminated`
+- `internet_gateway_exists`
 - `key_pair_exists`
 - `nat_gateway_available`
 - `network_interface_available`

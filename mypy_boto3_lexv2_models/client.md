@@ -431,16 +431,17 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `slotTypeName`: `str` *(required)*
-- `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
-  *(required)*
 - `botId`: `str` *(required)*
 - `botVersion`: `str` *(required)*
 - `localeId`: `str` *(required)*
 - `description`: `str`
 - `slotTypeValues`:
   `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
+- `valueSelectionSetting`:
+  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
 - `parentSlotTypeSignature`: `str`
+- `externalSourceSetting`:
+  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
 
 Returns
 [CreateSlotTypeResponseTypeDef](./type_defs.md#createslottyperesponsetypedef).
@@ -1673,16 +1674,17 @@ Keyword-only arguments:
 
 - `slotTypeId`: `str` *(required)*
 - `slotTypeName`: `str` *(required)*
-- `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
-  *(required)*
 - `botId`: `str` *(required)*
 - `botVersion`: `str` *(required)*
 - `localeId`: `str` *(required)*
 - `description`: `str`
 - `slotTypeValues`:
   `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
+- `valueSelectionSetting`:
+  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
 - `parentSlotTypeSignature`: `str`
+- `externalSourceSetting`:
+  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
 
 Returns
 [UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef).

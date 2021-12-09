@@ -32,6 +32,9 @@ type annotations stubs module
     - [list_control_panels](#list_control_panels)
     - [list_routing_controls](#list_routing_controls)
     - [list_safety_rules](#list_safety_rules)
+    - [list_tags_for_resource](#list_tags_for_resource)
+    - [tag_resource](#tag_resource)
+    - [untag_resource](#untag_resource)
     - [update_control_panel](#update_control_panel)
     - [update_routing_control](#update_routing_control)
     - [update_safety_rule](#update_safety_rule)
@@ -123,6 +126,7 @@ Keyword-only arguments:
 
 - `ClusterName`: `str` *(required)*
 - `ClientToken`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
@@ -145,6 +149,7 @@ Keyword-only arguments:
 - `ClusterArn`: `str` *(required)*
 - `ControlPanelName`: `str` *(required)*
 - `ClientToken`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateControlPanelResponseTypeDef](./type_defs.md#createcontrolpanelresponsetypedef).
@@ -192,6 +197,7 @@ Keyword-only arguments:
   [NewAssertionRuleTypeDef](./type_defs.md#newassertionruletypedef)
 - `ClientToken`: `str`
 - `GatingRule`: [NewGatingRuleTypeDef](./type_defs.md#newgatingruletypedef)
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateSafetyRuleResponseTypeDef](./type_defs.md#createsafetyruleresponsetypedef).
@@ -337,8 +343,7 @@ Returns
 
 ### describe_safety_rule
 
-Describes the safety rules (that is, the assertion rules and gating rules) for
-the routing controls in a control panel.
+Returns information about a safety rule.
 
 Type annotations for
 `boto3.client("route53-recovery-control-config").describe_safety_rule` method.
@@ -423,7 +428,7 @@ Returns
 
 ### list_control_panels
 
-Returns an array of control panels for a cluster.
+Returns an array of control panels in an account or in a cluster.
 
 Type annotations for
 `boto3.client("route53-recovery-control-config").list_control_panels` method.
@@ -488,6 +493,67 @@ Keyword-only arguments:
 Returns
 [ListSafetyRulesResponseTypeDef](./type_defs.md#listsafetyrulesresponsetypedef).
 
+### list_tags_for_resource
+
+Lists the tags for a resource.
+
+Type annotations for
+`boto3.client("route53-recovery-control-config").list_tags_for_resource`
+method.
+
+Boto3 documentation:
+[Route53RecoveryControlConfig.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+### tag_resource
+
+Adds a tag to a resource.
+
+Type annotations for
+`boto3.client("route53-recovery-control-config").tag_resource` method.
+
+Boto3 documentation:
+[Route53RecoveryControlConfig.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### untag_resource
+
+Removes a tag from a resource.
+
+Type annotations for
+`boto3.client("route53-recovery-control-config").untag_resource` method.
+
+Boto3 documentation:
+[Route53RecoveryControlConfig.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### update_control_panel
 
 Updates a control panel.
@@ -533,8 +599,7 @@ Returns
 
 ### update_safety_rule
 
-Update a safety rule (an assertion rule or gating rule) for the routing
-controls in a control panel.
+Update a safety rule (an assertion rule or gating rule).
 
 Type annotations for
 `boto3.client("route53-recovery-control-config").update_safety_rule` method.

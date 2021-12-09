@@ -27,6 +27,7 @@ type annotations stubs module
     - [describe_logging_configuration](#describe_logging_configuration)
     - [describe_resource_policy](#describe_resource_policy)
     - [describe_rule_group](#describe_rule_group)
+    - [describe_rule_group_metadata](#describe_rule_group_metadata)
     - [disassociate_subnets](#disassociate_subnets)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_firewall_policies](#list_firewall_policies)
@@ -435,6 +436,29 @@ Keyword-only arguments:
 Returns
 [DescribeRuleGroupResponseTypeDef](./type_defs.md#describerulegroupresponsetypedef).
 
+### describe_rule_group_metadata
+
+High-level information about a rule group, returned by operations like create
+and describe.
+
+Type annotations for
+`boto3.client("network-firewall").describe_rule_group_metadata` method.
+
+Boto3 documentation:
+[NetworkFirewall.Client.describe_rule_group_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_rule_group_metadata)
+
+Arguments mapping described in
+[DescribeRuleGroupMetadataRequestRequestTypeDef](./type_defs.md#describerulegroupmetadatarequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `RuleGroupName`: `str`
+- `RuleGroupArn`: `str`
+- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
+
+Returns
+[DescribeRuleGroupMetadataResponseTypeDef](./type_defs.md#describerulegroupmetadataresponsetypedef).
+
 ### disassociate_subnets
 
 Removes the specified subnet associations from the firewall.
@@ -536,6 +560,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `Scope`: [ResourceManagedStatusType](./literals.md#resourcemanagedstatustype)
 
 Returns
 [ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef).
@@ -696,10 +721,8 @@ Returns
 
 ### update_firewall_policy_change_protection
 
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/network- firewall-2020-11-12/UpdateFirewallPolicyChangeProtection>`\_
-**Request Syntax** response = client.update_firewall_policy_change_protection(
-UpdateToken='string', FirewallArn='string', Firew...
+Modifies the flag, `ChangeProtection` , which indicates whether it is possible
+to change the firewall.
 
 Type annotations for
 `boto3.client("network-firewall").update_firewall_policy_change_protection`

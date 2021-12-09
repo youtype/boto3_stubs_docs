@@ -18,7 +18,9 @@ type annotations stubs module
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
   - [LogDestinationTypeType](#logdestinationtypetype)
   - [LogTypeType](#logtypetype)
+  - [OverrideActionType](#overrideactiontype)
   - [PerObjectSyncStatusType](#perobjectsyncstatustype)
+  - [ResourceManagedStatusType](#resourcemanagedstatustype)
   - [ResourceStatusType](#resourcestatustype)
   - [RuleGroupTypeType](#rulegrouptypetype)
   - [RuleOrderType](#ruleordertype)
@@ -140,6 +142,16 @@ Values:
 - `ALERT`
 - `FLOW`
 
+## OverrideActionType
+
+```python
+from mypy_boto3_network_firewall.literals import OverrideActionType
+```
+
+Values:
+
+- `DROP_TO_ALERT`
+
 ## PerObjectSyncStatusType
 
 ```python
@@ -150,6 +162,17 @@ Values:
 
 - `IN_SYNC`
 - `PENDING`
+
+## ResourceManagedStatusType
+
+```python
+from mypy_boto3_network_firewall.literals import ResourceManagedStatusType
+```
+
+Values:
+
+- `ACCOUNT`
+- `MANAGED`
 
 ## ResourceStatusType
 

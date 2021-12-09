@@ -13002,6 +13002,8 @@ Type annotations for `boto3.client("ec2").get_waiter` method with overloads.
   [InstanceStoppedWaiter](./waiters.md#instancestoppedwaiter)
 - `client.get_waiter("instance_terminated")` ->
   [InstanceTerminatedWaiter](./waiters.md#instanceterminatedwaiter)
+- `client.get_waiter("internet_gateway_exists")` ->
+  [InternetGatewayExistsWaiter](./waiters.md#internetgatewayexistswaiter)
 - `client.get_waiter("key_pair_exists")` ->
   [KeyPairExistsWaiter](./waiters.md#keypairexistswaiter)
 - `client.get_waiter("nat_gateway_available")` ->

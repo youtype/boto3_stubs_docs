@@ -18,10 +18,13 @@ type annotations stubs module
   - [CheckDomainTransferabilityRequestRequestTypeDef](#checkdomaintransferabilityrequestrequesttypedef)
   - [CheckDomainTransferabilityResponseTypeDef](#checkdomaintransferabilityresponsetypedef)
   - [ContactDetailTypeDef](#contactdetailtypedef)
+  - [DeleteDomainRequestRequestTypeDef](#deletedomainrequestrequesttypedef)
+  - [DeleteDomainResponseTypeDef](#deletedomainresponsetypedef)
   - [DeleteTagsForDomainRequestRequestTypeDef](#deletetagsfordomainrequestrequesttypedef)
   - [DisableDomainAutoRenewRequestRequestTypeDef](#disabledomainautorenewrequestrequesttypedef)
   - [DisableDomainTransferLockRequestRequestTypeDef](#disabledomaintransferlockrequestrequesttypedef)
   - [DisableDomainTransferLockResponseTypeDef](#disabledomaintransferlockresponsetypedef)
+  - [DomainPriceTypeDef](#domainpricetypedef)
   - [DomainSuggestionTypeDef](#domainsuggestiontypedef)
   - [DomainSummaryTypeDef](#domainsummarytypedef)
   - [DomainTransferabilityTypeDef](#domaintransferabilitytypedef)
@@ -29,6 +32,7 @@ type annotations stubs module
   - [EnableDomainTransferLockRequestRequestTypeDef](#enabledomaintransferlockrequestrequesttypedef)
   - [EnableDomainTransferLockResponseTypeDef](#enabledomaintransferlockresponsetypedef)
   - [ExtraParamTypeDef](#extraparamtypedef)
+  - [FilterConditionTypeDef](#filterconditiontypedef)
   - [GetContactReachabilityStatusRequestRequestTypeDef](#getcontactreachabilitystatusrequestrequesttypedef)
   - [GetContactReachabilityStatusResponseTypeDef](#getcontactreachabilitystatusresponsetypedef)
   - [GetDomainDetailRequestRequestTypeDef](#getdomaindetailrequestrequesttypedef)
@@ -41,11 +45,14 @@ type annotations stubs module
   - [ListDomainsResponseTypeDef](#listdomainsresponsetypedef)
   - [ListOperationsRequestRequestTypeDef](#listoperationsrequestrequesttypedef)
   - [ListOperationsResponseTypeDef](#listoperationsresponsetypedef)
+  - [ListPricesRequestRequestTypeDef](#listpricesrequestrequesttypedef)
+  - [ListPricesResponseTypeDef](#listpricesresponsetypedef)
   - [ListTagsForDomainRequestRequestTypeDef](#listtagsfordomainrequestrequesttypedef)
   - [ListTagsForDomainResponseTypeDef](#listtagsfordomainresponsetypedef)
   - [NameserverTypeDef](#nameservertypedef)
   - [OperationSummaryTypeDef](#operationsummarytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [PriceWithCurrencyTypeDef](#pricewithcurrencytypedef)
   - [RegisterDomainRequestRequestTypeDef](#registerdomainrequestrequesttypedef)
   - [RegisterDomainResponseTypeDef](#registerdomainresponsetypedef)
   - [RejectDomainTransferFromAnotherAwsAccountRequestRequestTypeDef](#rejectdomaintransferfromanotherawsaccountrequestrequesttypedef)
@@ -57,6 +64,7 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RetrieveDomainAuthCodeRequestRequestTypeDef](#retrievedomainauthcoderequestrequesttypedef)
   - [RetrieveDomainAuthCodeResponseTypeDef](#retrievedomainauthcoderesponsetypedef)
+  - [SortConditionTypeDef](#sortconditiontypedef)
   - [TagTypeDef](#tagtypedef)
   - [TransferDomainRequestRequestTypeDef](#transferdomainrequestrequesttypedef)
   - [TransferDomainResponseTypeDef](#transferdomainresponsetypedef)
@@ -209,6 +217,28 @@ Optional fields:
 - `ExtraParams`:
   `List`\[[ExtraParamTypeDef](./type_defs.md#extraparamtypedef)\]
 
+## DeleteDomainRequestRequestTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import DeleteDomainRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+## DeleteDomainResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import DeleteDomainResponseTypeDef
+```
+
+Required fields:
+
+- `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DeleteTagsForDomainRequestRequestTypeDef
 
 ```python
@@ -251,6 +281,26 @@ Required fields:
 - `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DomainPriceTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import DomainPriceTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `RegistrationPrice`:
+  [PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef)
+- `TransferPrice`:
+  [PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef)
+- `RenewalPrice`:
+  [PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef)
+- `ChangeOwnershipPrice`:
+  [PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef)
+- `RestorationPrice`:
+  [PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef)
 
 ## DomainSuggestionTypeDef
 
@@ -331,6 +381,19 @@ Required fields:
 
 - `Name`: [ExtraParamNameType](./literals.md#extraparamnametype)
 - `Value`: `str`
+
+## FilterConditionTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import FilterConditionTypeDef
+```
+
+Required fields:
+
+- `Name`:
+  [ListDomainsAttributeNameType](./literals.md#listdomainsattributenametype)
+- `Operator`: [OperatorType](./literals.md#operatortype)
+- `Values`: `Sequence`\[`str`\]
 
 ## GetContactReachabilityStatusRequestRequestTypeDef
 
@@ -459,6 +522,9 @@ from mypy_boto3_route53domains.type_defs import ListDomainsRequestRequestTypeDef
 
 Optional fields:
 
+- `FilterConditions`:
+  `Sequence`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
+- `SortCondition`: [SortConditionTypeDef](./type_defs.md#sortconditiontypedef)
 - `Marker`: `str`
 - `MaxItems`: `int`
 
@@ -498,6 +564,31 @@ Required fields:
 
 - `Operations`:
   `List`\[[OperationSummaryTypeDef](./type_defs.md#operationsummarytypedef)\]
+- `NextPageMarker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListPricesRequestRequestTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import ListPricesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `Tld`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+## ListPricesResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import ListPricesResponseTypeDef
+```
+
+Required fields:
+
+- `Prices`: `List`\[[DomainPriceTypeDef](./type_defs.md#domainpricetypedef)\]
 - `NextPageMarker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -562,6 +653,17 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## PriceWithCurrencyTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import PriceWithCurrencyTypeDef
+```
+
+Required fields:
+
+- `Price`: `float`
+- `Currency`: `str`
 
 ## RegisterDomainRequestRequestTypeDef
 
@@ -706,6 +808,18 @@ Required fields:
 - `AuthCode`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## SortConditionTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import SortConditionTypeDef
+```
+
+Required fields:
+
+- `Name`:
+  [ListDomainsAttributeNameType](./literals.md#listdomainsattributenametype)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 ## TagTypeDef
 

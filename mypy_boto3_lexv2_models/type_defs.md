@@ -117,10 +117,13 @@ type annotations stubs module
   - [ExportResourceSpecificationTypeDef](#exportresourcespecificationtypedef)
   - [ExportSortByTypeDef](#exportsortbytypedef)
   - [ExportSummaryTypeDef](#exportsummarytypedef)
+  - [ExternalSourceSettingTypeDef](#externalsourcesettingtypedef)
   - [FulfillmentCodeHookSettingsTypeDef](#fulfillmentcodehooksettingstypedef)
   - [FulfillmentStartResponseSpecificationTypeDef](#fulfillmentstartresponsespecificationtypedef)
   - [FulfillmentUpdateResponseSpecificationTypeDef](#fulfillmentupdateresponsespecificationtypedef)
   - [FulfillmentUpdatesSpecificationTypeDef](#fulfillmentupdatesspecificationtypedef)
+  - [GrammarSlotTypeSettingTypeDef](#grammarslottypesettingtypedef)
+  - [GrammarSlotTypeSourceTypeDef](#grammarslottypesourcetypedef)
   - [ImageResponseCardTypeDef](#imageresponsecardtypedef)
   - [ImportFilterTypeDef](#importfiltertypedef)
   - [ImportResourceSpecificationTypeDef](#importresourcespecificationtypedef)
@@ -1094,8 +1097,6 @@ from mypy_boto3_lexv2_models.type_defs import CreateSlotTypeRequestRequestTypeDe
 Required fields:
 
 - `slotTypeName`: `str`
-- `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
 - `botId`: `str`
 - `botVersion`: `str`
 - `localeId`: `str`
@@ -1105,7 +1106,11 @@ Optional fields:
 - `description`: `str`
 - `slotTypeValues`:
   `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
+- `valueSelectionSetting`:
+  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
 - `parentSlotTypeSignature`: `str`
+- `externalSourceSetting`:
+  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
 
 ## CreateSlotTypeResponseTypeDef
 
@@ -1127,6 +1132,8 @@ Required fields:
 - `botVersion`: `str`
 - `localeId`: `str`
 - `creationDateTime`: `datetime`
+- `externalSourceSetting`:
+  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1520,6 +1527,7 @@ Required fields:
 - `lastBuildSubmittedDateTime`: `datetime`
 - `botLocaleHistoryEvents`:
   `List`\[[BotLocaleHistoryEventTypeDef](./type_defs.md#botlocalehistoryeventtypedef)\]
+- `recommendedActions`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1836,6 +1844,8 @@ Required fields:
 - `localeId`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+- `externalSourceSetting`:
+  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1917,6 +1927,17 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
+## ExternalSourceSettingTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ExternalSourceSettingTypeDef
+```
+
+Optional fields:
+
+- `grammarSlotTypeSetting`:
+  [GrammarSlotTypeSettingTypeDef](./type_defs.md#grammarslottypesettingtypedef)
+
 ## FulfillmentCodeHookSettingsTypeDef
 
 ```python
@@ -1983,6 +2004,32 @@ Optional fields:
 - `updateResponse`:
   [FulfillmentUpdateResponseSpecificationTypeDef](./type_defs.md#fulfillmentupdateresponsespecificationtypedef)
 - `timeoutInSeconds`: `int`
+
+## GrammarSlotTypeSettingTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import GrammarSlotTypeSettingTypeDef
+```
+
+Optional fields:
+
+- `source`:
+  [GrammarSlotTypeSourceTypeDef](./type_defs.md#grammarslottypesourcetypedef)
+
+## GrammarSlotTypeSourceTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import GrammarSlotTypeSourceTypeDef
+```
+
+Required fields:
+
+- `s3BucketName`: `str`
+- `s3ObjectKey`: `str`
+
+Optional fields:
+
+- `kmsKeyArn`: `str`
 
 ## ImageResponseCardTypeDef
 
@@ -3061,8 +3108,7 @@ from mypy_boto3_lexv2_models.type_defs import SlotTypeFilterTypeDef
 
 Required fields:
 
-- `name`: `Literal['SlotTypeName']` (see
-  [SlotTypeFilterNameType](./literals.md#slottypefilternametype))
+- `name`: [SlotTypeFilterNameType](./literals.md#slottypefilternametype)
 - `values`: `Sequence`\[`str`\]
 - `operator`:
   [SlotTypeFilterOperatorType](./literals.md#slottypefilteroperatortype)
@@ -3102,6 +3148,8 @@ Optional fields:
 - `description`: `str`
 - `parentSlotTypeSignature`: `str`
 - `lastUpdatedDateTime`: `datetime`
+- `slotTypeCategory`:
+  [SlotTypeCategoryType](./literals.md#slottypecategorytype)
 
 ## SlotTypeValueTypeDef
 
@@ -3406,6 +3454,7 @@ Required fields:
 - `failureReasons`: `List`\[`str`\]
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+- `recommendedActions`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -3684,8 +3733,6 @@ Required fields:
 
 - `slotTypeId`: `str`
 - `slotTypeName`: `str`
-- `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
 - `botId`: `str`
 - `botVersion`: `str`
 - `localeId`: `str`
@@ -3695,7 +3742,11 @@ Optional fields:
 - `description`: `str`
 - `slotTypeValues`:
   `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
+- `valueSelectionSetting`:
+  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
 - `parentSlotTypeSignature`: `str`
+- `externalSourceSetting`:
+  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
 
 ## UpdateSlotTypeResponseTypeDef
 
@@ -3718,6 +3769,8 @@ Required fields:
 - `localeId`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+- `externalSourceSetting`:
+  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

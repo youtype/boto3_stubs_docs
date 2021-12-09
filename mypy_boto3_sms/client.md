@@ -283,7 +283,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_connector
 
-Disassociates the specified connector from AWS SMS.
+Disassociates the specified connector from Server Migration Service.
 
 Type annotations for `boto3.client("sms").disassociate_connector` method.
 
@@ -340,9 +340,8 @@ Returns `str`.
 
 ### generate_template
 
-Generates an AWS CloudFormation template based on the current launch
-configuration and writes it to an Amazon S3 object in the customer’s Amazon S3
-bucket.
+Generates an CloudFormation template based on the current launch configuration
+and writes it to an Amazon S3 object in the customer’s Amazon S3 bucket.
 
 Type annotations for `boto3.client("sms").generate_template` method.
 
@@ -460,7 +459,7 @@ Returns
 
 ### get_connectors
 
-Describes the connectors registered with the AWS SMS.
+Describes the connectors registered with the Server Migration Service.
 
 Type annotations for `boto3.client("sms").get_connectors` method.
 
@@ -543,7 +542,7 @@ Returns [GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef).
 
 ### import_app_catalog
 
-Allows application import from AWS Migration Hub.
+Allows application import from Migration Hub.
 
 Type annotations for `boto3.client("sms").import_app_catalog` method.
 
@@ -572,7 +571,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### launch_app
 
-Launches the specified application as a stack in AWS CloudFormation.
+Launches the specified application as a stack in CloudFormation.
 
 Type annotations for `boto3.client("sms").launch_app` method.
 
@@ -610,8 +609,8 @@ Returns [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef).
 
 ### notify_app_validation_output
 
-Provides information to AWS SMS about whether application validation is
-successful.
+Provides information to Server Migration Service about whether application
+validation is successful.
 
 Type annotations for `boto3.client("sms").notify_app_validation_output` method.
 

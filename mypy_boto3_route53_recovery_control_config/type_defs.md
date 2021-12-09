@@ -45,12 +45,16 @@ type annotations stubs module
   - [ListRoutingControlsResponseTypeDef](#listroutingcontrolsresponsetypedef)
   - [ListSafetyRulesRequestRequestTypeDef](#listsafetyrulesrequestrequesttypedef)
   - [ListSafetyRulesResponseTypeDef](#listsafetyrulesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [NewAssertionRuleTypeDef](#newassertionruletypedef)
   - [NewGatingRuleTypeDef](#newgatingruletypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RoutingControlTypeDef](#routingcontroltypedef)
   - [RuleConfigTypeDef](#ruleconfigtypedef)
   - [RuleTypeDef](#ruletypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateControlPanelRequestRequestTypeDef](#updatecontrolpanelrequestrequesttypedef)
   - [UpdateControlPanelResponseTypeDef](#updatecontrolpanelresponsetypedef)
   - [UpdateRoutingControlRequestRequestTypeDef](#updateroutingcontrolrequestrequesttypedef)
@@ -140,6 +144,7 @@ Required fields:
 Optional fields:
 
 - `ClientToken`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateClusterResponseTypeDef
 
@@ -167,6 +172,7 @@ Required fields:
 Optional fields:
 
 - `ClientToken`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateControlPanelResponseTypeDef
 
@@ -221,6 +227,7 @@ Optional fields:
   [NewAssertionRuleTypeDef](./type_defs.md#newassertionruletypedef)
 - `ClientToken`: `str`
 - `GatingRule`: [NewGatingRuleTypeDef](./type_defs.md#newgatingruletypedef)
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateSafetyRuleResponseTypeDef
 
@@ -529,6 +536,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_route53_recovery_control_config.type_defs import ListTagsForResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseTypeDef
+
+```python
+from mypy_boto3_route53_recovery_control_config.type_defs import ListTagsForResourceResponseTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## NewAssertionRuleTypeDef
 
 ```python
@@ -607,6 +636,28 @@ Optional fields:
 
 - `ASSERTION`: [AssertionRuleTypeDef](./type_defs.md#assertionruletypedef)
 - `GATING`: [GatingRuleTypeDef](./type_defs.md#gatingruletypedef)
+
+## TagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_route53_recovery_control_config.type_defs import TagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+## UntagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_route53_recovery_control_config.type_defs import UntagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateControlPanelRequestRequestTypeDef
 

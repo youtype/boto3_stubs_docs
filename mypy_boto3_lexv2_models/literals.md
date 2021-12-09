@@ -53,6 +53,7 @@ type annotations stubs module
   - [SlotFilterNameType](#slotfilternametype)
   - [SlotFilterOperatorType](#slotfilteroperatortype)
   - [SlotSortAttributeType](#slotsortattributetype)
+  - [SlotTypeCategoryType](#slottypecategorytype)
   - [SlotTypeFilterNameType](#slottypefilternametype)
   - [SlotTypeFilterOperatorType](#slottypefilteroperatortype)
   - [SlotTypeSortAttributeType](#slottypesortattributetype)
@@ -560,6 +561,18 @@ Values:
 - `LastUpdatedDateTime`
 - `SlotName`
 
+## SlotTypeCategoryType
+
+```python
+from mypy_boto3_lexv2_models.literals import SlotTypeCategoryType
+```
+
+Values:
+
+- `Custom`
+- `Extended`
+- `ExternalGrammar`
+
 ## SlotTypeFilterNameType
 
 ```python
@@ -568,6 +581,7 @@ from mypy_boto3_lexv2_models.literals import SlotTypeFilterNameType
 
 Values:
 
+- `ExternalSourceType`
 - `SlotTypeName`
 
 ## SlotTypeFilterOperatorType

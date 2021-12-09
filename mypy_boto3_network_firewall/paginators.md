@@ -83,6 +83,7 @@ Boto3 documentation:
 
 Arguments for `ListRuleGroupsPaginator.paginate` method:
 
+- `Scope`: [ResourceManagedStatusType](./literals.md#resourcemanagedstatustype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
