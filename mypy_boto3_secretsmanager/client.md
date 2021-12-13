@@ -112,8 +112,8 @@ Returns `bool`.
 
 ### cancel_rotate_secret
 
-Disables automatic scheduled rotation and cancels the rotation of a secret if
-currently in progress.
+Turns off automatic rotation, and if a rotation is currently in progress,
+cancels the rotation.
 
 Type annotations for `boto3.client("secretsmanager").cancel_rotate_secret`
 method.
@@ -181,7 +181,7 @@ Returns
 
 ### delete_secret
 
-Deletes an entire secret and all of the versions.
+Deletes a secret and all of its versions.
 
 Type annotations for `boto3.client("secretsmanager").delete_secret` method.
 
@@ -240,7 +240,7 @@ Returns `str`.
 
 ### get_random_password
 
-Generates a random password of the specified complexity.
+Generates a random password.
 
 Type annotations for `boto3.client("secretsmanager").get_random_password`
 method.
@@ -268,7 +268,7 @@ Returns
 ### get_resource_policy
 
 Retrieves the JSON text of the resource-based policy document attached to the
-specified secret.
+secret.
 
 Type annotations for `boto3.client("secretsmanager").get_resource_policy`
 method.
@@ -310,7 +310,7 @@ Returns
 
 ### list_secret_version_ids
 
-Lists all of the versions attached to the specified secret.
+Lists the versions for a secret.
 
 Type annotations for `boto3.client("secretsmanager").list_secret_version_ids`
 method.
@@ -333,8 +333,8 @@ Returns
 
 ### list_secrets
 
-Lists all of the secrets that are stored by Secrets Manager in the Amazon Web
-Services account.
+Lists the secrets that are stored by Secrets Manager in the Amazon Web Services
+account.
 
 Type annotations for `boto3.client("secretsmanager").list_secrets` method.
 
@@ -356,8 +356,7 @@ Returns
 
 ### put_resource_policy
 
-Attaches the contents of the specified resource-based permission policy to a
-secret.
+Attaches a resource-based permission policy to a secret.
 
 Type annotations for `boto3.client("secretsmanager").put_resource_policy`
 method.
@@ -379,7 +378,8 @@ Returns
 
 ### put_secret_value
 
-Stores a new encrypted secret value in the specified secret.
+Creates a new version with a new encrypted secret value and attaches it to the
+secret.
 
 Type annotations for `boto3.client("secretsmanager").put_secret_value` method.
 
@@ -402,7 +402,8 @@ Returns
 
 ### remove_regions_from_replication
 
-Remove regions from replication.
+For a secret that is replicated to other Regions, deletes the secret replicas
+from the Regions you specify.
 
 Type annotations for
 `boto3.client("secretsmanager").remove_regions_from_replication` method.
@@ -423,8 +424,7 @@ Returns
 
 ### replicate_secret_to_regions
 
-Converts an existing secret to a multi-Region secret and begins replication the
-secret to a list of new regions.
+Replicates the secret to a new Regions.
 
 Type annotations for
 `boto3.client("secretsmanager").replicate_secret_to_regions` method.
@@ -468,7 +468,7 @@ Returns
 
 ### rotate_secret
 
-Configures and starts the asynchronous process of rotating this secret.
+Configures and starts the asynchronous process of rotating the secret.
 
 Type annotations for `boto3.client("secretsmanager").rotate_secret` method.
 
@@ -491,8 +491,8 @@ Returns
 
 ### stop_replication_to_replica
 
-Removes the secret from replication and promotes the secret to a regional
-secret in the replica Region.
+Removes the link between the replica secret and the primary secret and promotes
+the replica to a primary secret in the replica Region.
 
 Type annotations for
 `boto3.client("secretsmanager").stop_replication_to_replica` method.
@@ -512,8 +512,7 @@ Returns
 
 ### tag_resource
 
-Attaches one or more tags, each consisting of a key name and a value, to the
-specified secret.
+Attaches tags to a secret.
 
 Type annotations for `boto3.client("secretsmanager").tag_resource` method.
 
@@ -530,7 +529,7 @@ Keyword-only arguments:
 
 ### untag_resource
 
-Removes one or more tags from the specified secret.
+Removes specific tags from a secret.
 
 Type annotations for `boto3.client("secretsmanager").untag_resource` method.
 
@@ -547,7 +546,7 @@ Keyword-only arguments:
 
 ### update_secret
 
-Modifies many of the details of the specified secret.
+Modifies the details of a secret, including metadata and the secret value.
 
 Type annotations for `boto3.client("secretsmanager").update_secret` method.
 
@@ -594,8 +593,8 @@ Returns
 
 ### validate_resource_policy
 
-Validates that the resource policy does not grant a wide range of IAM
-principals access to your secret.
+Validates that a resource policy does not grant a wide range of principals
+access to your secret.
 
 Type annotations for `boto3.client("secretsmanager").validate_resource_policy`
 method.
