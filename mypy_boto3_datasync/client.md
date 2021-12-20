@@ -16,6 +16,7 @@ type annotations stubs module
     - [cancel_task_execution](#cancel_task_execution)
     - [create_agent](#create_agent)
     - [create_location_efs](#create_location_efs)
+    - [create_location_fsx_lustre](#create_location_fsx_lustre)
     - [create_location_fsx_windows](#create_location_fsx_windows)
     - [create_location_hdfs](#create_location_hdfs)
     - [create_location_nfs](#create_location_nfs)
@@ -28,6 +29,7 @@ type annotations stubs module
     - [delete_task](#delete_task)
     - [describe_agent](#describe_agent)
     - [describe_location_efs](#describe_location_efs)
+    - [describe_location_fsx_lustre](#describe_location_fsx_lustre)
     - [describe_location_fsx_windows](#describe_location_fsx_windows)
     - [describe_location_hdfs](#describe_location_hdfs)
     - [describe_location_nfs](#describe_location_nfs)
@@ -181,6 +183,30 @@ Keyword-only arguments:
 
 Returns
 [CreateLocationEfsResponseTypeDef](./type_defs.md#createlocationefsresponsetypedef).
+
+### create_location_fsx_lustre
+
+Creates an endpoint for an Amazon FSx for Lustre file system.
+
+Type annotations for `boto3.client("datasync").create_location_fsx_lustre`
+method.
+
+Boto3 documentation:
+[DataSync.Client.create_location_fsx_lustre](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_lustre)
+
+Arguments mapping described in
+[CreateLocationFsxLustreRequestRequestTypeDef](./type_defs.md#createlocationfsxlustrerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FsxFilesystemArn`: `str` *(required)*
+- `SecurityGroupArns`: `Sequence`\[`str`\] *(required)*
+- `Subdirectory`: `str`
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+
+Returns
+[CreateLocationFsxLustreResponseTypeDef](./type_defs.md#createlocationfsxlustreresponsetypedef).
 
 ### create_location_fsx_windows
 
@@ -478,6 +504,27 @@ Keyword-only arguments:
 
 Returns
 [DescribeLocationEfsResponseTypeDef](./type_defs.md#describelocationefsresponsetypedef).
+
+### describe_location_fsx_lustre
+
+Returns metadata, such as the path information about an Amazon FSx for Lustre
+location.
+
+Type annotations for `boto3.client("datasync").describe_location_fsx_lustre`
+method.
+
+Boto3 documentation:
+[DataSync.Client.describe_location_fsx_lustre](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_lustre)
+
+Arguments mapping described in
+[DescribeLocationFsxLustreRequestRequestTypeDef](./type_defs.md#describelocationfsxlustrerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `LocationArn`: `str` *(required)*
+
+Returns
+[DescribeLocationFsxLustreResponseTypeDef](./type_defs.md#describelocationfsxlustreresponsetypedef).
 
 ### describe_location_fsx_windows
 

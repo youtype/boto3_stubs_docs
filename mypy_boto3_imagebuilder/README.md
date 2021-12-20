@@ -61,6 +61,7 @@ from mypy_boto3_imagebuilder.client import imagebuilderClient
 - [get_image_recipe_policy](./client.md#get_image_recipe_policy)
 - [get_infrastructure_configuration](./client.md#get_infrastructure_configuration)
 - [import_component](./client.md#import_component)
+- [import_vm_image](./client.md#import_vm_image)
 - [list_component_build_versions](./client.md#list_component_build_versions)
 - [list_components](./client.md#list_components)
 - [list_container_recipes](./client.md#list_container_recipes)
@@ -114,14 +115,16 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_imagebuilder.literals import ComponentFormatType, ...
+from mypy_boto3_imagebuilder.literals import BuildTypeType, ...
 ```
 
+- [BuildTypeType](./literals.md#buildtypetype)
 - [ComponentFormatType](./literals.md#componentformattype)
 - [ComponentStatusType](./literals.md#componentstatustype)
 - [ComponentTypeType](./literals.md#componenttypetype)
 - [ContainerRepositoryServiceType](./literals.md#containerrepositoryservicetype)
 - [ContainerTypeType](./literals.md#containertypetype)
+- [DiskImageFormatType](./literals.md#diskimageformattype)
 - [EbsVolumeTypeType](./literals.md#ebsvolumetypetype)
 - [ImageStatusType](./literals.md#imagestatustype)
 - [ImageTypeType](./literals.md#imagetypetype)
@@ -224,6 +227,8 @@ from mypy_boto3_imagebuilder.type_defs import AdditionalInstanceConfigurationTyp
 - [ImageVersionTypeDef](./type_defs.md#imageversiontypedef)
 - [ImportComponentRequestRequestTypeDef](./type_defs.md#importcomponentrequestrequesttypedef)
 - [ImportComponentResponseTypeDef](./type_defs.md#importcomponentresponsetypedef)
+- [ImportVmImageRequestRequestTypeDef](./type_defs.md#importvmimagerequestrequesttypedef)
+- [ImportVmImageResponseTypeDef](./type_defs.md#importvmimageresponsetypedef)
 - [InfrastructureConfigurationSummaryTypeDef](./type_defs.md#infrastructureconfigurationsummarytypedef)
 - [InfrastructureConfigurationTypeDef](./type_defs.md#infrastructureconfigurationtypedef)
 - [InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)
@@ -266,6 +271,7 @@ from mypy_boto3_imagebuilder.type_defs import AdditionalInstanceConfigurationTyp
 - [PutImageRecipePolicyRequestRequestTypeDef](./type_defs.md#putimagerecipepolicyrequestrequesttypedef)
 - [PutImageRecipePolicyResponseTypeDef](./type_defs.md#putimagerecipepolicyresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
 - [S3LogsTypeDef](./type_defs.md#s3logstypedef)
 - [ScheduleTypeDef](./type_defs.md#scheduletypedef)
 - [StartImagePipelineExecutionRequestRequestTypeDef](./type_defs.md#startimagepipelineexecutionrequestrequesttypedef)

@@ -31,11 +31,18 @@ type annotations stubs module
   - [AwsApiGatewayV2ApiDetailsTypeDef](#awsapigatewayv2apidetailstypedef)
   - [AwsApiGatewayV2RouteSettingsTypeDef](#awsapigatewayv2routesettingstypedef)
   - [AwsApiGatewayV2StageDetailsTypeDef](#awsapigatewayv2stagedetailstypedef)
+  - [AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef](#awsautoscalingautoscalinggroupavailabilityzoneslistdetailstypedef)
   - [AwsAutoScalingAutoScalingGroupDetailsTypeDef](#awsautoscalingautoscalinggroupdetailstypedef)
+  - [AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef](#awsautoscalingautoscalinggroupmixedinstancespolicydetailstypedef)
+  - [AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetailsTypeDef](#awsautoscalingautoscalinggroupmixedinstancespolicyinstancesdistributiondetailstypedef)
+  - [AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef](#awsautoscalingautoscalinggroupmixedinstancespolicylaunchtemplatedetailstypedef)
+  - [AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationTypeDef](#awsautoscalingautoscalinggroupmixedinstancespolicylaunchtemplatelaunchtemplatespecificationtypedef)
+  - [AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetailsTypeDef](#awsautoscalingautoscalinggroupmixedinstancespolicylaunchtemplateoverrideslistdetailstypedef)
   - [AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef](#awsautoscalinglaunchconfigurationblockdevicemappingsdetailstypedef)
   - [AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetailsTypeDef](#awsautoscalinglaunchconfigurationblockdevicemappingsebsdetailstypedef)
   - [AwsAutoScalingLaunchConfigurationDetailsTypeDef](#awsautoscalinglaunchconfigurationdetailstypedef)
   - [AwsAutoScalingLaunchConfigurationInstanceMonitoringDetailsTypeDef](#awsautoscalinglaunchconfigurationinstancemonitoringdetailstypedef)
+  - [AwsAutoScalingLaunchConfigurationMetadataOptionsTypeDef](#awsautoscalinglaunchconfigurationmetadataoptionstypedef)
   - [AwsCertificateManagerCertificateDetailsTypeDef](#awscertificatemanagercertificatedetailstypedef)
   - [AwsCertificateManagerCertificateDomainValidationOptionTypeDef](#awscertificatemanagercertificatedomainvalidationoptiontypedef)
   - [AwsCertificateManagerCertificateExtendedKeyUsageTypeDef](#awscertificatemanagercertificateextendedkeyusagetypedef)
@@ -223,6 +230,10 @@ type annotations stubs module
   - [AwsLambdaFunctionTracingConfigTypeDef](#awslambdafunctiontracingconfigtypedef)
   - [AwsLambdaFunctionVpcConfigTypeDef](#awslambdafunctionvpcconfigtypedef)
   - [AwsLambdaLayerVersionDetailsTypeDef](#awslambdalayerversiondetailstypedef)
+  - [AwsNetworkFirewallFirewallDetailsTypeDef](#awsnetworkfirewallfirewalldetailstypedef)
+  - [AwsNetworkFirewallFirewallPolicyDetailsTypeDef](#awsnetworkfirewallfirewallpolicydetailstypedef)
+  - [AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef](#awsnetworkfirewallfirewallsubnetmappingsdetailstypedef)
+  - [AwsNetworkFirewallRuleGroupDetailsTypeDef](#awsnetworkfirewallrulegroupdetailstypedef)
   - [AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef](#awsopensearchservicedomainclusterconfigdetailstypedef)
   - [AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetailsTypeDef](#awsopensearchservicedomainclusterconfigzoneawarenessconfigdetailstypedef)
   - [AwsOpenSearchServiceDomainDetailsTypeDef](#awsopensearchservicedomaindetailstypedef)
@@ -280,6 +291,7 @@ type annotations stubs module
   - [AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulesfilterpredicatetagdetailstypedef)
   - [AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulesnoncurrentversiontransitionsdetailstypedef)
   - [AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulestransitionsdetailstypedef)
+  - [AwsS3BucketBucketVersioningConfigurationTypeDef](#awss3bucketbucketversioningconfigurationtypedef)
   - [AwsS3BucketDetailsTypeDef](#awss3bucketdetailstypedef)
   - [AwsS3BucketLoggingConfigurationTypeDef](#awss3bucketloggingconfigurationtypedef)
   - [AwsS3BucketNotificationConfigurationDetailTypeDef](#awss3bucketnotificationconfigurationdetailtypedef)
@@ -378,6 +390,10 @@ type annotations stubs module
   - [FindingAggregatorTypeDef](#findingaggregatortypedef)
   - [FindingProviderFieldsTypeDef](#findingproviderfieldstypedef)
   - [FindingProviderSeverityTypeDef](#findingproviderseveritytypedef)
+  - [FirewallPolicyDetailsTypeDef](#firewallpolicydetailstypedef)
+  - [FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef](#firewallpolicystatefulrulegroupreferencesdetailstypedef)
+  - [FirewallPolicyStatelessCustomActionsDetailsTypeDef](#firewallpolicystatelesscustomactionsdetailstypedef)
+  - [FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef](#firewallpolicystatelessrulegroupreferencesdetailstypedef)
   - [GeoLocationTypeDef](#geolocationtypedef)
   - [GetAdministratorAccountResponseTypeDef](#getadministratoraccountresponsetypedef)
   - [GetEnabledStandardsRequestRequestTypeDef](#getenabledstandardsrequestrequesttypedef)
@@ -449,6 +465,25 @@ type annotations stubs module
   - [ResourceTypeDef](#resourcetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResultTypeDef](#resulttypedef)
+  - [RuleGroupDetailsTypeDef](#rulegroupdetailstypedef)
+  - [RuleGroupSourceCustomActionsDetailsTypeDef](#rulegroupsourcecustomactionsdetailstypedef)
+  - [RuleGroupSourceListDetailsTypeDef](#rulegroupsourcelistdetailstypedef)
+  - [RuleGroupSourceStatefulRulesDetailsTypeDef](#rulegroupsourcestatefulrulesdetailstypedef)
+  - [RuleGroupSourceStatefulRulesHeaderDetailsTypeDef](#rulegroupsourcestatefulrulesheaderdetailstypedef)
+  - [RuleGroupSourceStatefulRulesOptionsDetailsTypeDef](#rulegroupsourcestatefulrulesoptionsdetailstypedef)
+  - [RuleGroupSourceStatelessRuleDefinitionTypeDef](#rulegroupsourcestatelessruledefinitiontypedef)
+  - [RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef](#rulegroupsourcestatelessrulematchattributesdestinationportstypedef)
+  - [RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef](#rulegroupsourcestatelessrulematchattributesdestinationstypedef)
+  - [RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef](#rulegroupsourcestatelessrulematchattributessourceportstypedef)
+  - [RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef](#rulegroupsourcestatelessrulematchattributessourcestypedef)
+  - [RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef](#rulegroupsourcestatelessrulematchattributestcpflagstypedef)
+  - [RuleGroupSourceStatelessRuleMatchAttributesTypeDef](#rulegroupsourcestatelessrulematchattributestypedef)
+  - [RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef](#rulegroupsourcestatelessrulesandcustomactionsdetailstypedef)
+  - [RuleGroupSourceStatelessRulesDetailsTypeDef](#rulegroupsourcestatelessrulesdetailstypedef)
+  - [RuleGroupSourceTypeDef](#rulegroupsourcetypedef)
+  - [RuleGroupVariablesIpSetsDetailsTypeDef](#rulegroupvariablesipsetsdetailstypedef)
+  - [RuleGroupVariablesPortSetsDetailsTypeDef](#rulegroupvariablesportsetsdetailstypedef)
+  - [RuleGroupVariablesTypeDef](#rulegroupvariablestypedef)
   - [SensitiveDataDetectionsTypeDef](#sensitivedatadetectionstypedef)
   - [SensitiveDataResultTypeDef](#sensitivedataresulttypedef)
   - [SeverityTypeDef](#severitytypedef)
@@ -457,8 +492,12 @@ type annotations stubs module
   - [SortCriterionTypeDef](#sortcriteriontypedef)
   - [StandardTypeDef](#standardtypedef)
   - [StandardsControlTypeDef](#standardscontroltypedef)
+  - [StandardsStatusReasonTypeDef](#standardsstatusreasontypedef)
   - [StandardsSubscriptionRequestTypeDef](#standardssubscriptionrequesttypedef)
   - [StandardsSubscriptionTypeDef](#standardssubscriptiontypedef)
+  - [StatelessCustomActionDefinitionTypeDef](#statelesscustomactiondefinitiontypedef)
+  - [StatelessCustomPublishMetricActionDimensionTypeDef](#statelesscustompublishmetricactiondimensiontypedef)
+  - [StatelessCustomPublishMetricActionTypeDef](#statelesscustompublishmetricactiontypedef)
   - [StatusReasonTypeDef](#statusreasontypedef)
   - [StringFilterTypeDef](#stringfiltertypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
@@ -816,6 +855,16 @@ Optional fields:
 - `LastDeploymentStatusMessage`: `str`
 - `ApiGatewayManaged`: `bool`
 
+## AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef
+```
+
+Optional fields:
+
+- `Value`: `str`
+
 ## AwsAutoScalingAutoScalingGroupDetailsTypeDef
 
 ```python
@@ -829,6 +878,74 @@ Optional fields:
 - `HealthCheckType`: `str`
 - `HealthCheckGracePeriod`: `int`
 - `CreatedTime`: `str`
+- `MixedInstancesPolicy`:
+  [AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicydetailstypedef)
+- `AvailabilityZones`:
+  `Sequence`\[[AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupavailabilityzoneslistdetailstypedef)\]
+
+## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef
+```
+
+Optional fields:
+
+- `InstancesDistribution`:
+  [AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicyinstancesdistributiondetailstypedef)
+- `LaunchTemplate`:
+  [AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicylaunchtemplatedetailstypedef)
+
+## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetailsTypeDef
+```
+
+Optional fields:
+
+- `OnDemandAllocationStrategy`: `str`
+- `OnDemandBaseCapacity`: `int`
+- `OnDemandPercentageAboveBaseCapacity`: `int`
+- `SpotAllocationStrategy`: `str`
+- `SpotInstancePools`: `int`
+- `SpotMaxPrice`: `str`
+
+## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetailsTypeDef
+```
+
+Optional fields:
+
+- `LaunchTemplateSpecification`:
+  [AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicylaunchtemplatelaunchtemplatespecificationtypedef)
+- `Overrides`:
+  `Sequence`\[[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicylaunchtemplateoverrideslistdetailstypedef)\]
+
+## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationTypeDef
+```
+
+Optional fields:
+
+- `LaunchTemplateId`: `str`
+- `LaunchTemplateName`: `str`
+- `Version`: `str`
+
+## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetailsTypeDef
+```
+
+Optional fields:
+
+- `InstanceType`: `str`
+- `WeightedCapacity`: `str`
 
 ## AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef
 
@@ -887,6 +1004,8 @@ Optional fields:
 - `SecurityGroups`: `Sequence`\[`str`\]
 - `SpotPrice`: `str`
 - `UserData`: `str`
+- `MetadataOptions`:
+  [AwsAutoScalingLaunchConfigurationMetadataOptionsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationmetadataoptionstypedef)
 
 ## AwsAutoScalingLaunchConfigurationInstanceMonitoringDetailsTypeDef
 
@@ -897,6 +1016,18 @@ from mypy_boto3_securityhub.type_defs import AwsAutoScalingLaunchConfigurationIn
 Optional fields:
 
 - `Enabled`: `bool`
+
+## AwsAutoScalingLaunchConfigurationMetadataOptionsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingLaunchConfigurationMetadataOptionsTypeDef
+```
+
+Optional fields:
+
+- `HttpEndpoint`: `str`
+- `HttpPutResponseHopLimit`: `int`
+- `HttpTokens`: `str`
 
 ## AwsCertificateManagerCertificateDetailsTypeDef
 
@@ -3591,6 +3722,68 @@ Optional fields:
 - `CompatibleRuntimes`: `Sequence`\[`str`\]
 - `CreatedDate`: `str`
 
+## AwsNetworkFirewallFirewallDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsNetworkFirewallFirewallDetailsTypeDef
+```
+
+Optional fields:
+
+- `DeleteProtection`: `bool`
+- `Description`: `str`
+- `FirewallArn`: `str`
+- `FirewallId`: `str`
+- `FirewallName`: `str`
+- `FirewallPolicyArn`: `str`
+- `FirewallPolicyChangeProtection`: `bool`
+- `SubnetChangeProtection`: `bool`
+- `SubnetMappings`:
+  `Sequence`\[[AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef](./type_defs.md#awsnetworkfirewallfirewallsubnetmappingsdetailstypedef)\]
+- `VpcId`: `str`
+
+## AwsNetworkFirewallFirewallPolicyDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsNetworkFirewallFirewallPolicyDetailsTypeDef
+```
+
+Optional fields:
+
+- `FirewallPolicy`:
+  [FirewallPolicyDetailsTypeDef](./type_defs.md#firewallpolicydetailstypedef)
+- `FirewallPolicyArn`: `str`
+- `FirewallPolicyId`: `str`
+- `FirewallPolicyName`: `str`
+- `Description`: `str`
+
+## AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsNetworkFirewallFirewallSubnetMappingsDetailsTypeDef
+```
+
+Optional fields:
+
+- `SubnetId`: `str`
+
+## AwsNetworkFirewallRuleGroupDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsNetworkFirewallRuleGroupDetailsTypeDef
+```
+
+Optional fields:
+
+- `Capacity`: `int`
+- `Description`: `str`
+- `RuleGroup`:
+  [RuleGroupDetailsTypeDef](./type_defs.md#rulegroupdetailstypedef)
+- `RuleGroupArn`: `str`
+- `RuleGroupId`: `str`
+- `RuleGroupName`: `str`
+- `Type`: `str`
+
 ## AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef
 
 ```python
@@ -4538,6 +4731,17 @@ Optional fields:
 - `Days`: `int`
 - `StorageClass`: `str`
 
+## AwsS3BucketBucketVersioningConfigurationTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketVersioningConfigurationTypeDef
+```
+
+Optional fields:
+
+- `IsMfaDeleteEnabled`: `bool`
+- `Status`: `str`
+
 ## AwsS3BucketDetailsTypeDef
 
 ```python
@@ -4563,6 +4767,8 @@ Optional fields:
   [AwsS3BucketWebsiteConfigurationTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationtypedef)
 - `BucketNotificationConfiguration`:
   [AwsS3BucketNotificationConfigurationTypeDef](./type_defs.md#awss3bucketnotificationconfigurationtypedef)
+- `BucketVersioningConfiguration`:
+  [AwsS3BucketBucketVersioningConfigurationTypeDef](./type_defs.md#awss3bucketbucketversioningconfigurationtypedef)
 
 ## AwsS3BucketLoggingConfigurationTypeDef
 
@@ -6014,6 +6220,56 @@ Optional fields:
 - `Label`: [SeverityLabelType](./literals.md#severitylabeltype)
 - `Original`: `str`
 
+## FirewallPolicyDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import FirewallPolicyDetailsTypeDef
+```
+
+Optional fields:
+
+- `StatefulRuleGroupReferences`:
+  `Sequence`\[[FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef](./type_defs.md#firewallpolicystatefulrulegroupreferencesdetailstypedef)\]
+- `StatelessCustomActions`:
+  `Sequence`\[[FirewallPolicyStatelessCustomActionsDetailsTypeDef](./type_defs.md#firewallpolicystatelesscustomactionsdetailstypedef)\]
+- `StatelessDefaultActions`: `Sequence`\[`str`\]
+- `StatelessFragmentDefaultActions`: `Sequence`\[`str`\]
+- `StatelessRuleGroupReferences`:
+  `Sequence`\[[FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef](./type_defs.md#firewallpolicystatelessrulegroupreferencesdetailstypedef)\]
+
+## FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import FirewallPolicyStatefulRuleGroupReferencesDetailsTypeDef
+```
+
+Optional fields:
+
+- `ResourceArn`: `str`
+
+## FirewallPolicyStatelessCustomActionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import FirewallPolicyStatelessCustomActionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `ActionDefinition`:
+  [StatelessCustomActionDefinitionTypeDef](./type_defs.md#statelesscustomactiondefinitiontypedef)
+- `ActionName`: `str`
+
+## FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef
+```
+
+Optional fields:
+
+- `Priority`: `int`
+- `ResourceArn`: `str`
+
 ## GeoLocationTypeDef
 
 ```python
@@ -6998,6 +7254,12 @@ Optional fields:
   [AwsEcrRepositoryDetailsTypeDef](./type_defs.md#awsecrrepositorydetailstypedef)
 - `AwsEksCluster`:
   [AwsEksClusterDetailsTypeDef](./type_defs.md#awseksclusterdetailstypedef)
+- `AwsNetworkFirewallFirewallPolicy`:
+  [AwsNetworkFirewallFirewallPolicyDetailsTypeDef](./type_defs.md#awsnetworkfirewallfirewallpolicydetailstypedef)
+- `AwsNetworkFirewallFirewall`:
+  [AwsNetworkFirewallFirewallDetailsTypeDef](./type_defs.md#awsnetworkfirewallfirewalldetailstypedef)
+- `AwsNetworkFirewallRuleGroup`:
+  [AwsNetworkFirewallRuleGroupDetailsTypeDef](./type_defs.md#awsnetworkfirewallrulegroupdetailstypedef)
 
 ## ResourceTypeDef
 
@@ -7044,6 +7306,242 @@ Optional fields:
 
 - `AccountId`: `str`
 - `ProcessingResult`: `str`
+
+## RuleGroupDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupDetailsTypeDef
+```
+
+Optional fields:
+
+- `RuleVariables`:
+  [RuleGroupVariablesTypeDef](./type_defs.md#rulegroupvariablestypedef)
+- `RulesSource`:
+  [RuleGroupSourceTypeDef](./type_defs.md#rulegroupsourcetypedef)
+
+## RuleGroupSourceCustomActionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceCustomActionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `ActionDefinition`:
+  [StatelessCustomActionDefinitionTypeDef](./type_defs.md#statelesscustomactiondefinitiontypedef)
+- `ActionName`: `str`
+
+## RuleGroupSourceListDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceListDetailsTypeDef
+```
+
+Optional fields:
+
+- `GeneratedRulesType`: `str`
+- `TargetTypes`: `Sequence`\[`str`\]
+- `Targets`: `Sequence`\[`str`\]
+
+## RuleGroupSourceStatefulRulesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatefulRulesDetailsTypeDef
+```
+
+Optional fields:
+
+- `Action`: `str`
+- `Header`:
+  [RuleGroupSourceStatefulRulesHeaderDetailsTypeDef](./type_defs.md#rulegroupsourcestatefulrulesheaderdetailstypedef)
+- `RuleOptions`:
+  `Sequence`\[[RuleGroupSourceStatefulRulesOptionsDetailsTypeDef](./type_defs.md#rulegroupsourcestatefulrulesoptionsdetailstypedef)\]
+
+## RuleGroupSourceStatefulRulesHeaderDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatefulRulesHeaderDetailsTypeDef
+```
+
+Optional fields:
+
+- `Destination`: `str`
+- `DestinationPort`: `str`
+- `Direction`: `str`
+- `Protocol`: `str`
+- `Source`: `str`
+- `SourcePort`: `str`
+
+## RuleGroupSourceStatefulRulesOptionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatefulRulesOptionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Keyword`: `str`
+- `Settings`: `Sequence`\[`str`\]
+
+## RuleGroupSourceStatelessRuleDefinitionTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleDefinitionTypeDef
+```
+
+Optional fields:
+
+- `Actions`: `Sequence`\[`str`\]
+- `MatchAttributes`:
+  [RuleGroupSourceStatelessRuleMatchAttributesTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributestypedef)
+
+## RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef
+```
+
+Optional fields:
+
+- `FromPort`: `int`
+- `ToPort`: `int`
+
+## RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef
+```
+
+Optional fields:
+
+- `AddressDefinition`: `str`
+
+## RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef
+```
+
+Optional fields:
+
+- `FromPort`: `int`
+- `ToPort`: `int`
+
+## RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef
+```
+
+Optional fields:
+
+- `AddressDefinition`: `str`
+
+## RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef
+```
+
+Optional fields:
+
+- `Flags`: `Sequence`\[`str`\]
+- `Masks`: `Sequence`\[`str`\]
+
+## RuleGroupSourceStatelessRuleMatchAttributesTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRuleMatchAttributesTypeDef
+```
+
+Optional fields:
+
+- `DestinationPorts`:
+  `Sequence`\[[RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributesdestinationportstypedef)\]
+- `Destinations`:
+  `Sequence`\[[RuleGroupSourceStatelessRuleMatchAttributesDestinationsTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributesdestinationstypedef)\]
+- `Protocols`: `Sequence`\[`int`\]
+- `SourcePorts`:
+  `Sequence`\[[RuleGroupSourceStatelessRuleMatchAttributesSourcePortsTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributessourceportstypedef)\]
+- `Sources`:
+  `Sequence`\[[RuleGroupSourceStatelessRuleMatchAttributesSourcesTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributessourcestypedef)\]
+- `TcpFlags`:
+  `Sequence`\[[RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributestcpflagstypedef)\]
+
+## RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `CustomActions`:
+  `Sequence`\[[RuleGroupSourceCustomActionsDetailsTypeDef](./type_defs.md#rulegroupsourcecustomactionsdetailstypedef)\]
+- `StatelessRules`:
+  `Sequence`\[[RuleGroupSourceStatelessRulesDetailsTypeDef](./type_defs.md#rulegroupsourcestatelessrulesdetailstypedef)\]
+
+## RuleGroupSourceStatelessRulesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceStatelessRulesDetailsTypeDef
+```
+
+Optional fields:
+
+- `Priority`: `int`
+- `RuleDefinition`:
+  [RuleGroupSourceStatelessRuleDefinitionTypeDef](./type_defs.md#rulegroupsourcestatelessruledefinitiontypedef)
+
+## RuleGroupSourceTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupSourceTypeDef
+```
+
+Optional fields:
+
+- `RulesSourceList`:
+  [RuleGroupSourceListDetailsTypeDef](./type_defs.md#rulegroupsourcelistdetailstypedef)
+- `RulesString`: `str`
+- `StatefulRules`:
+  `Sequence`\[[RuleGroupSourceStatefulRulesDetailsTypeDef](./type_defs.md#rulegroupsourcestatefulrulesdetailstypedef)\]
+- `StatelessRulesAndCustomActions`:
+  [RuleGroupSourceStatelessRulesAndCustomActionsDetailsTypeDef](./type_defs.md#rulegroupsourcestatelessrulesandcustomactionsdetailstypedef)
+
+## RuleGroupVariablesIpSetsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupVariablesIpSetsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Definition`: `Sequence`\[`str`\]
+
+## RuleGroupVariablesPortSetsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupVariablesPortSetsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Definition`: `Sequence`\[`str`\]
+
+## RuleGroupVariablesTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import RuleGroupVariablesTypeDef
+```
+
+Optional fields:
+
+- `IpSets`:
+  [RuleGroupVariablesIpSetsDetailsTypeDef](./type_defs.md#rulegroupvariablesipsetsdetailstypedef)
+- `PortSets`:
+  [RuleGroupVariablesPortSetsDetailsTypeDef](./type_defs.md#rulegroupvariablesportsetsdetailstypedef)
 
 ## SensitiveDataDetectionsTypeDef
 
@@ -7154,6 +7652,17 @@ Optional fields:
 - `SeverityRating`: [SeverityRatingType](./literals.md#severityratingtype)
 - `RelatedRequirements`: `List`\[`str`\]
 
+## StandardsStatusReasonTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import StandardsStatusReasonTypeDef
+```
+
+Required fields:
+
+- `StatusReasonCode`:
+  [StatusReasonCodeType](./literals.md#statusreasoncodetype)
+
 ## StandardsSubscriptionRequestTypeDef
 
 ```python
@@ -7180,6 +7689,43 @@ Required fields:
 - `StandardsArn`: `str`
 - `StandardsInput`: `Dict`\[`str`, `str`\]
 - `StandardsStatus`: [StandardsStatusType](./literals.md#standardsstatustype)
+
+Optional fields:
+
+- `StandardsStatusReason`:
+  [StandardsStatusReasonTypeDef](./type_defs.md#standardsstatusreasontypedef)
+
+## StatelessCustomActionDefinitionTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import StatelessCustomActionDefinitionTypeDef
+```
+
+Optional fields:
+
+- `PublishMetricAction`:
+  [StatelessCustomPublishMetricActionTypeDef](./type_defs.md#statelesscustompublishmetricactiontypedef)
+
+## StatelessCustomPublishMetricActionDimensionTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import StatelessCustomPublishMetricActionDimensionTypeDef
+```
+
+Optional fields:
+
+- `Value`: `str`
+
+## StatelessCustomPublishMetricActionTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import StatelessCustomPublishMetricActionTypeDef
+```
+
+Optional fields:
+
+- `Dimensions`:
+  `Sequence`\[[StatelessCustomPublishMetricActionDimensionTypeDef](./type_defs.md#statelesscustompublishmetricactiondimensiontypedef)\]
 
 ## StatusReasonTypeDef
 

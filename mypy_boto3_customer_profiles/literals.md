@@ -282,6 +282,7 @@ Values:
 - `CASE`
 - `LOOKUP_ONLY`
 - `NEW_ONLY`
+- `ORDER`
 - `PROFILE`
 - `SECONDARY`
 - `UNIQUE`

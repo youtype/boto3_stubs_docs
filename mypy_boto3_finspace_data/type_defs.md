@@ -82,6 +82,7 @@ Optional fields:
 - `errorInfo`:
   [ChangesetErrorInfoTypeDef](./type_defs.md#changeseterrorinfotypedef)
 - `activeUntilTimestamp`: `int`
+- `activeFromTimestamp`: `int`
 - `updatesChangesetId`: `str`
 - `updatedByChangesetId`: `str`
 
@@ -170,16 +171,16 @@ Required fields:
 
 - `datasetTitle`: `str`
 - `kind`: [DatasetKindType](./literals.md#datasetkindtype)
-- `datasetDescription`: `str`
 - `permissionGroupParams`:
   [PermissionGroupParamsTypeDef](./type_defs.md#permissiongroupparamstypedef)
-- `alias`: `str`
 
 Optional fields:
 
 - `clientToken`: `str`
+- `datasetDescription`: `str`
 - `ownerInfo`:
   [DatasetOwnerInfoTypeDef](./type_defs.md#datasetownerinfotypedef)
+- `alias`: `str`
 - `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
 
 ## CreateDatasetResponseTypeDef
@@ -215,6 +216,12 @@ from mypy_boto3_finspace_data.type_defs import DataViewDestinationTypeParamsType
 Required fields:
 
 - `destinationType`: `str`
+
+Optional fields:
+
+- `s3DestinationExportFileFormat`:
+  [ExportFileFormatType](./literals.md#exportfileformattype)
+- `s3DestinationExportFileFormatOptions`: `Mapping`\[`str`, `str`\]
 
 ## DataViewErrorInfoTypeDef
 
@@ -338,6 +345,7 @@ Required fields:
 - `errorInfo`:
   [ChangesetErrorInfoTypeDef](./type_defs.md#changeseterrorinfotypedef)
 - `activeUntilTimestamp`: `int`
+- `activeFromTimestamp`: `int`
 - `updatesChangesetId`: `str`
 - `updatedByChangesetId`: `str`
 - `ResponseMetadata`:
@@ -655,12 +663,12 @@ Required fields:
 - `datasetId`: `str`
 - `datasetTitle`: `str`
 - `kind`: [DatasetKindType](./literals.md#datasetkindtype)
-- `alias`: `str`
 
 Optional fields:
 
 - `clientToken`: `str`
 - `datasetDescription`: `str`
+- `alias`: `str`
 - `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
 
 ## UpdateDatasetResponseTypeDef

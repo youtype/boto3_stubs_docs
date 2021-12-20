@@ -1375,6 +1375,7 @@ Required fields:
 - `AllowPubliclyAccessibleConsumers`: `bool`
 - `DataShareAssociations`:
   `List`\[[DataShareAssociationTypeDef](./type_defs.md#datashareassociationtypedef)\]
+- `ManagedBy`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1391,6 +1392,7 @@ Optional fields:
 - `AllowPubliclyAccessibleConsumers`: `bool`
 - `DataShareAssociations`:
   `List`\[[DataShareAssociationTypeDef](./type_defs.md#datashareassociationtypedef)\]
+- `ManagedBy`: `str`
 
 ## DataTransferProgressTypeDef
 

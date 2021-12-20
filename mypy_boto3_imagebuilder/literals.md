@@ -8,11 +8,13 @@ type annotations stubs module
 [mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 - [Literals for boto3 imagebuilder module](#literals-for-boto3-imagebuilder-module)
+  - [BuildTypeType](#buildtypetype)
   - [ComponentFormatType](#componentformattype)
   - [ComponentStatusType](#componentstatustype)
   - [ComponentTypeType](#componenttypetype)
   - [ContainerRepositoryServiceType](#containerrepositoryservicetype)
   - [ContainerTypeType](#containertypetype)
+  - [DiskImageFormatType](#diskimageformattype)
   - [EbsVolumeTypeType](#ebsvolumetypetype)
   - [ImageStatusType](#imagestatustype)
   - [ImageTypeType](#imagetypetype)
@@ -21,6 +23,18 @@ type annotations stubs module
   - [PipelineStatusType](#pipelinestatustype)
   - [PlatformType](#platformtype)
   - [ServiceName](#servicename)
+
+## BuildTypeType
+
+```python
+from mypy_boto3_imagebuilder.literals import BuildTypeType
+```
+
+Values:
+
+- `IMPORT`
+- `SCHEDULED`
+- `USER_INITIATED`
 
 ## ComponentFormatType
 
@@ -72,6 +86,18 @@ from mypy_boto3_imagebuilder.literals import ContainerTypeType
 Values:
 
 - `DOCKER`
+
+## DiskImageFormatType
+
+```python
+from mypy_boto3_imagebuilder.literals import DiskImageFormatType
+```
+
+Values:
+
+- `RAW`
+- `VHD`
+- `VMDK`
 
 ## EbsVolumeTypeType
 

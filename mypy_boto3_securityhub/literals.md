@@ -37,6 +37,7 @@ type annotations stubs module
   - [SeverityRatingType](#severityratingtype)
   - [SortOrderType](#sortordertype)
   - [StandardsStatusType](#standardsstatustype)
+  - [StatusReasonCodeType](#statusreasoncodetype)
   - [StringFilterComparisonType](#stringfiltercomparisontype)
   - [ThreatIntelIndicatorCategoryType](#threatintelindicatorcategorytype)
   - [ThreatIntelIndicatorTypeType](#threatintelindicatortypetype)
@@ -377,6 +378,17 @@ Values:
 - `INCOMPLETE`
 - `PENDING`
 - `READY`
+
+## StatusReasonCodeType
+
+```python
+from mypy_boto3_securityhub.literals import StatusReasonCodeType
+```
+
+Values:
+
+- `INTERNAL_ERROR`
+- `NO_AVAILABLE_CONFIGURATION_RECORDER`
 
 ## StringFilterComparisonType
 

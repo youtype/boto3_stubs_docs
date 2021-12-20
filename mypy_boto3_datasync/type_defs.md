@@ -14,6 +14,8 @@ type annotations stubs module
   - [CreateAgentResponseTypeDef](#createagentresponsetypedef)
   - [CreateLocationEfsRequestRequestTypeDef](#createlocationefsrequestrequesttypedef)
   - [CreateLocationEfsResponseTypeDef](#createlocationefsresponsetypedef)
+  - [CreateLocationFsxLustreRequestRequestTypeDef](#createlocationfsxlustrerequestrequesttypedef)
+  - [CreateLocationFsxLustreResponseTypeDef](#createlocationfsxlustreresponsetypedef)
   - [CreateLocationFsxWindowsRequestRequestTypeDef](#createlocationfsxwindowsrequestrequesttypedef)
   - [CreateLocationFsxWindowsResponseTypeDef](#createlocationfsxwindowsresponsetypedef)
   - [CreateLocationHdfsRequestRequestTypeDef](#createlocationhdfsrequestrequesttypedef)
@@ -35,6 +37,8 @@ type annotations stubs module
   - [DescribeAgentResponseTypeDef](#describeagentresponsetypedef)
   - [DescribeLocationEfsRequestRequestTypeDef](#describelocationefsrequestrequesttypedef)
   - [DescribeLocationEfsResponseTypeDef](#describelocationefsresponsetypedef)
+  - [DescribeLocationFsxLustreRequestRequestTypeDef](#describelocationfsxlustrerequestrequesttypedef)
+  - [DescribeLocationFsxLustreResponseTypeDef](#describelocationfsxlustreresponsetypedef)
   - [DescribeLocationFsxWindowsRequestRequestTypeDef](#describelocationfsxwindowsrequestrequesttypedef)
   - [DescribeLocationFsxWindowsResponseTypeDef](#describelocationfsxwindowsresponsetypedef)
   - [DescribeLocationHdfsRequestRequestTypeDef](#describelocationhdfsrequestrequesttypedef)
@@ -167,6 +171,35 @@ Optional fields:
 
 ```python
 from mypy_boto3_datasync.type_defs import CreateLocationEfsResponseTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLocationFsxLustreRequestRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationFsxLustreRequestRequestTypeDef
+```
+
+Required fields:
+
+- `FsxFilesystemArn`: `str`
+- `SecurityGroupArns`: `Sequence`\[`str`\]
+
+Optional fields:
+
+- `Subdirectory`: `str`
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+
+## CreateLocationFsxLustreResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationFsxLustreResponseTypeDef
 ```
 
 Required fields:
@@ -495,6 +528,31 @@ Required fields:
 - `LocationArn`: `str`
 - `LocationUri`: `str`
 - `Ec2Config`: [Ec2ConfigTypeDef](./type_defs.md#ec2configtypedef)
+- `CreationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeLocationFsxLustreRequestRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeLocationFsxLustreRequestRequestTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+
+## DescribeLocationFsxLustreResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeLocationFsxLustreResponseTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+- `LocationUri`: `str`
+- `SecurityGroupArns`: `List`\[`str`\]
 - `CreationTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

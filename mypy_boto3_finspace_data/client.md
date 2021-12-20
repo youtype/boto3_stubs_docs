@@ -163,14 +163,14 @@ Keyword-only arguments:
 
 - `datasetTitle`: `str` *(required)*
 - `kind`: [DatasetKindType](./literals.md#datasetkindtype) *(required)*
-- `datasetDescription`: `str` *(required)*
 - `permissionGroupParams`:
   [PermissionGroupParamsTypeDef](./type_defs.md#permissiongroupparamstypedef)
   *(required)*
-- `alias`: `str` *(required)*
 - `clientToken`: `str`
+- `datasetDescription`: `str`
 - `ownerInfo`:
   [DatasetOwnerInfoTypeDef](./type_defs.md#datasetownerinfotypedef)
+- `alias`: `str`
 - `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
 
 Returns
@@ -417,9 +417,9 @@ Keyword-only arguments:
 - `datasetId`: `str` *(required)*
 - `datasetTitle`: `str` *(required)*
 - `kind`: [DatasetKindType](./literals.md#datasetkindtype) *(required)*
-- `alias`: `str` *(required)*
 - `clientToken`: `str`
 - `datasetDescription`: `str`
+- `alias`: `str`
 - `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
 
 Returns

@@ -644,6 +644,7 @@ Required fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ObjectTypeNames`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -905,13 +906,14 @@ Required fields:
 
 - `DomainName`: `str`
 - `Uri`: `str`
-- `ObjectTypeName`: `str`
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 
 Optional fields:
 
+- `ObjectTypeName`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ObjectTypeNames`: `Dict`\[`str`, `str`\]
 
 ## ListIntegrationsRequestRequestTypeDef
 
@@ -1248,14 +1250,15 @@ from mypy_boto3_customer_profiles.type_defs import PutIntegrationRequestRequestT
 Required fields:
 
 - `DomainName`: `str`
-- `ObjectTypeName`: `str`
 
 Optional fields:
 
 - `Uri`: `str`
+- `ObjectTypeName`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `FlowDefinition`:
   [FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)
+- `ObjectTypeNames`: `Mapping`\[`str`, `str`\]
 
 ## PutIntegrationResponseTypeDef
 
@@ -1271,6 +1274,7 @@ Required fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ObjectTypeNames`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

@@ -550,6 +550,7 @@ Required fields:
 - `Account`:
   `List`\[[AccountHealthTypeDef](./type_defs.md#accounthealthtypedef)\]
 - `NextToken`: `str`
+- `Tags`: `List`\[[TagHealthTypeDef](./type_defs.md#taghealthtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

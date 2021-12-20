@@ -342,6 +342,7 @@ Values:
 - `AWS_ACCOUNT`
 - `AWS_CLOUD_FORMATION`
 - `AWS_SERVICE`
+- `AWS_TAGS`
 
 ## ResourceCollectionTypeType
 

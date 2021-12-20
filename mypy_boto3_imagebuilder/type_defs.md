@@ -90,6 +90,8 @@ type annotations stubs module
   - [ImageVersionTypeDef](#imageversiontypedef)
   - [ImportComponentRequestRequestTypeDef](#importcomponentrequestrequesttypedef)
   - [ImportComponentResponseTypeDef](#importcomponentresponsetypedef)
+  - [ImportVmImageRequestRequestTypeDef](#importvmimagerequestrequesttypedef)
+  - [ImportVmImageResponseTypeDef](#importvmimageresponsetypedef)
   - [InfrastructureConfigurationSummaryTypeDef](#infrastructureconfigurationsummarytypedef)
   - [InfrastructureConfigurationTypeDef](#infrastructureconfigurationtypedef)
   - [InstanceBlockDeviceMappingTypeDef](#instanceblockdevicemappingtypedef)
@@ -132,6 +134,7 @@ type annotations stubs module
   - [PutImageRecipePolicyRequestRequestTypeDef](#putimagerecipepolicyrequestrequesttypedef)
   - [PutImageRecipePolicyResponseTypeDef](#putimagerecipepolicyresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [S3ExportConfigurationTypeDef](#s3exportconfigurationtypedef)
   - [S3LogsTypeDef](#s3logstypedef)
   - [ScheduleTypeDef](#scheduletypedef)
   - [StartImagePipelineExecutionRequestRequestTypeDef](#startimagepipelineexecutionrequestrequesttypedef)
@@ -895,6 +898,8 @@ Optional fields:
 - `licenseConfigurationArns`: `Sequence`\[`str`\]
 - `launchTemplateConfigurations`:
   `Sequence`\[[LaunchTemplateConfigurationTypeDef](./type_defs.md#launchtemplateconfigurationtypedef)\]
+- `s3ExportConfiguration`:
+  [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
 
 ## EbsInstanceBlockDeviceSpecificationTypeDef
 
@@ -1291,6 +1296,7 @@ Optional fields:
 - `outputResources`:
   [OutputResourcesTypeDef](./type_defs.md#outputresourcestypedef)
 - `tags`: `Dict`\[`str`, `str`\]
+- `buildType`: [BuildTypeType](./literals.md#buildtypetype)
 
 ## ImageTestsConfigurationTypeDef
 
@@ -1334,6 +1340,7 @@ Optional fields:
 - `outputResources`:
   [OutputResourcesTypeDef](./type_defs.md#outputresourcestypedef)
 - `tags`: `Dict`\[`str`, `str`\]
+- `buildType`: [BuildTypeType](./literals.md#buildtypetype)
 
 ## ImageVersionTypeDef
 
@@ -1351,6 +1358,7 @@ Optional fields:
 - `osVersion`: `str`
 - `owner`: `str`
 - `dateCreated`: `str`
+- `buildType`: [BuildTypeType](./literals.md#buildtypetype)
 
 ## ImportComponentRequestRequestTypeDef
 
@@ -1388,6 +1396,40 @@ Required fields:
 - `requestId`: `str`
 - `clientToken`: `str`
 - `componentBuildVersionArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ImportVmImageRequestRequestTypeDef
+
+```python
+from mypy_boto3_imagebuilder.type_defs import ImportVmImageRequestRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `semanticVersion`: `str`
+- `platform`: [PlatformType](./literals.md#platformtype)
+- `vmImportTaskId`: `str`
+- `clientToken`: `str`
+
+Optional fields:
+
+- `description`: `str`
+- `osVersion`: `str`
+- `tags`: `Mapping`\[`str`, `str`\]
+
+## ImportVmImageResponseTypeDef
+
+```python
+from mypy_boto3_imagebuilder.type_defs import ImportVmImageResponseTypeDef
+```
+
+Required fields:
+
+- `requestId`: `str`
+- `imageArn`: `str`
+- `clientToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1970,6 +2012,22 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+## S3ExportConfigurationTypeDef
+
+```python
+from mypy_boto3_imagebuilder.type_defs import S3ExportConfigurationTypeDef
+```
+
+Required fields:
+
+- `roleName`: `str`
+- `diskImageFormat`: [DiskImageFormatType](./literals.md#diskimageformattype)
+- `s3Bucket`: `str`
+
+Optional fields:
+
+- `s3Prefix`: `str`
 
 ## S3LogsTypeDef
 

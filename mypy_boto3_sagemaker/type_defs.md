@@ -1327,6 +1327,7 @@ Required fields:
 Optional fields:
 
 - `CompressionType`: [CompressionTypeType](./literals.md#compressiontypetype)
+- `ContentType`: `str`
 
 ## AutoMLContainerDefinitionTypeDef
 

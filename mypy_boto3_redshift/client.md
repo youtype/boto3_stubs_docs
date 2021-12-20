@@ -399,7 +399,7 @@ Returns
 ### authorize_data_share
 
 From a data producer account, authorizes the sharing of a datashare with one or
-more consumer accounts.
+more consumer accounts or managing entities.
 
 Type annotations for `boto3.client("redshift").authorize_data_share` method.
 

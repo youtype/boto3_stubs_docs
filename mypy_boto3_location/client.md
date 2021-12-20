@@ -336,9 +336,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CollectionName`: `str` *(required)*
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype) *(required)*
 - `Description`: `str`
 - `KmsKeyId`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
@@ -364,8 +364,8 @@ Keyword-only arguments:
   [MapConfigurationTypeDef](./type_defs.md#mapconfigurationtypedef)
   *(required)*
 - `MapName`: `str` *(required)*
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype) *(required)*
 - `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateMapResponseTypeDef](./type_defs.md#createmapresponsetypedef).
@@ -386,10 +386,10 @@ Keyword-only arguments:
 
 - `DataSource`: `str` *(required)*
 - `IndexName`: `str` *(required)*
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype) *(required)*
 - `DataSourceConfiguration`:
   [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
 - `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
@@ -411,8 +411,8 @@ Keyword-only arguments:
 
 - `CalculatorName`: `str` *(required)*
 - `DataSource`: `str` *(required)*
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype) *(required)*
 - `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
@@ -433,12 +433,12 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype) *(required)*
 - `TrackerName`: `str` *(required)*
 - `Description`: `str`
 - `KmsKeyId`: `str`
 - `PositionFiltering`:
   [PositionFilteringType](./literals.md#positionfilteringtype)
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 

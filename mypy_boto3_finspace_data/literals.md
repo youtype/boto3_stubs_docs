@@ -14,6 +14,7 @@ type annotations stubs module
   - [DatasetKindType](#datasetkindtype)
   - [DatasetStatusType](#datasetstatustype)
   - [ErrorCategoryType](#errorcategorytype)
+  - [ExportFileFormatType](#exportfileformattype)
   - [IngestionStatusType](#ingestionstatustype)
   - [ListChangesetsPaginatorName](#listchangesetspaginatorname)
   - [ListDataViewsPaginatorName](#listdataviewspaginatorname)
@@ -112,6 +113,17 @@ Values:
 - `THROTTLING`
 - `USER_RECOVERABLE`
 - `VALIDATION`
+
+## ExportFileFormatType
+
+```python
+from mypy_boto3_finspace_data.literals import ExportFileFormatType
+```
+
+Values:
+
+- `DELIMITED_TEXT`
+- `PARQUET`
 
 ## IngestionStatusType
 

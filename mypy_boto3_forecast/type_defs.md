@@ -710,6 +710,7 @@ Required fields:
 - `ForecastHorizon`: `int`
 - `ForecastTypes`: `List`\[`str`\]
 - `ForecastFrequency`: `str`
+- `ForecastDimensions`: `List`\[`str`\]
 - `DatasetImportJobArns`: `List`\[`str`\]
 - `DataConfig`: [DataConfigTypeDef](./type_defs.md#dataconfigtypedef)
 - `EncryptionConfig`:

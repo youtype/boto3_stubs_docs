@@ -438,7 +438,11 @@ Returns
 
 ### get_matches
 
-This API is in preview release for Amazon Connect and subject to change.
+Before calling this API, use
+`CreateDomain <https://docs.aws.amazon.com/customer profiles/latest/APIReference/API_CreateDomain.html>`\_\_
+or
+`UpdateDomain <https:/ /docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UpdateDomain.html> `\_\_
+to enable identity resolution: set `Matching` to tr...
 
 Type annotations for `boto3.client("customer-profiles").get_matches` method.
 
@@ -674,7 +678,8 @@ Returns
 
 ### merge_profiles
 
-This API is in preview release for Amazon Connect and subject to change.
+Runs an AWS Lambda job that does the following * All the profileKeys in the
+`ProfileToBeMerged` will be moved to the main profile.
 
 Type annotations for `boto3.client("customer-profiles").merge_profiles` method.
 
@@ -712,11 +717,12 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
-- `ObjectTypeName`: `str` *(required)*
 - `Uri`: `str`
+- `ObjectTypeName`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `FlowDefinition`:
   [FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)
+- `ObjectTypeNames`: `Mapping`\[`str`, `str`\]
 
 Returns
 [PutIntegrationResponseTypeDef](./type_defs.md#putintegrationresponsetypedef).

@@ -95,6 +95,7 @@ from mypy_boto3_finspace_data.literals import ChangeTypeType, ...
 - [DatasetKindType](./literals.md#datasetkindtype)
 - [DatasetStatusType](./literals.md#datasetstatustype)
 - [ErrorCategoryType](./literals.md#errorcategorytype)
+- [ExportFileFormatType](./literals.md#exportfileformattype)
 - [IngestionStatusType](./literals.md#ingestionstatustype)
 - [ListChangesetsPaginatorName](./literals.md#listchangesetspaginatorname)
 - [ListDataViewsPaginatorName](./literals.md#listdataviewspaginatorname)

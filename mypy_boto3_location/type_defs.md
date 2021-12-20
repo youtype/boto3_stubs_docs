@@ -493,12 +493,12 @@ from mypy_boto3_location.type_defs import CreateGeofenceCollectionRequestRequest
 Required fields:
 
 - `CollectionName`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 
 Optional fields:
 
 - `Description`: `str`
 - `KmsKeyId`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
@@ -527,11 +527,11 @@ Required fields:
 - `Configuration`:
   [MapConfigurationTypeDef](./type_defs.md#mapconfigurationtypedef)
 - `MapName`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 
 Optional fields:
 
 - `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateMapResponseTypeDef
@@ -558,13 +558,13 @@ Required fields:
 
 - `DataSource`: `str`
 - `IndexName`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 
 Optional fields:
 
 - `DataSourceConfiguration`:
   [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
 - `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreatePlaceIndexResponseTypeDef
@@ -591,11 +591,11 @@ Required fields:
 
 - `CalculatorName`: `str`
 - `DataSource`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 
 Optional fields:
 
 - `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRouteCalculatorResponseTypeDef
@@ -620,7 +620,6 @@ from mypy_boto3_location.type_defs import CreateTrackerRequestRequestTypeDef
 
 Required fields:
 
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `TrackerName`: `str`
 
 Optional fields:
@@ -629,6 +628,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `PositionFiltering`:
   [PositionFilteringType](./literals.md#positionfilteringtype)
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 

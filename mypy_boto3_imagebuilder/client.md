@@ -41,6 +41,7 @@ type annotations stubs module
     - [get_image_recipe_policy](#get_image_recipe_policy)
     - [get_infrastructure_configuration](#get_infrastructure_configuration)
     - [import_component](#import_component)
+    - [import_vm_image](#import_vm_image)
     - [list_component_build_versions](#list_component_build_versions)
     - [list_components](#list_components)
     - [list_container_recipes](#list_container_recipes)
@@ -784,6 +785,34 @@ Keyword-only arguments:
 
 Returns
 [ImportComponentResponseTypeDef](./type_defs.md#importcomponentresponsetypedef).
+
+### import_vm_image
+
+When you export your virtual machine (VM) from its virtualization environment,
+that process creates a set of one or more disk container files that act as
+snapshots of your VM’s environment, settings, and data.
+
+Type annotations for `boto3.client("imagebuilder").import_vm_image` method.
+
+Boto3 documentation:
+[imagebuilder.Client.import_vm_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.import_vm_image)
+
+Arguments mapping described in
+[ImportVmImageRequestRequestTypeDef](./type_defs.md#importvmimagerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `name`: `str` *(required)*
+- `semanticVersion`: `str` *(required)*
+- `platform`: [PlatformType](./literals.md#platformtype) *(required)*
+- `vmImportTaskId`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+- `description`: `str`
+- `osVersion`: `str`
+- `tags`: `Mapping`\[`str`, `str`\]
+
+Returns
+[ImportVmImageResponseTypeDef](./type_defs.md#importvmimageresponsetypedef).
 
 ### list_component_build_versions
 
