@@ -52,6 +52,7 @@ type annotations stubs module
   - [GetFeedbackResponseTypeDef](#getfeedbackresponsetypedef)
   - [GetSampleDataRequestRequestTypeDef](#getsampledatarequestrequesttypedef)
   - [GetSampleDataResponseTypeDef](#getsampledataresponsetypedef)
+  - [InterMetricImpactDetailsTypeDef](#intermetricimpactdetailstypedef)
   - [ItemizedMetricStatsTypeDef](#itemizedmetricstatstypedef)
   - [JsonFormatDescriptorTypeDef](#jsonformatdescriptortypedef)
   - [LambdaConfigurationTypeDef](#lambdaconfigurationtypedef)
@@ -59,6 +60,8 @@ type annotations stubs module
   - [ListAlertsResponseTypeDef](#listalertsresponsetypedef)
   - [ListAnomalyDetectorsRequestRequestTypeDef](#listanomalydetectorsrequestrequesttypedef)
   - [ListAnomalyDetectorsResponseTypeDef](#listanomalydetectorsresponsetypedef)
+  - [ListAnomalyGroupRelatedMetricsRequestRequestTypeDef](#listanomalygrouprelatedmetricsrequestrequesttypedef)
+  - [ListAnomalyGroupRelatedMetricsResponseTypeDef](#listanomalygrouprelatedmetricsresponsetypedef)
   - [ListAnomalyGroupSummariesRequestRequestTypeDef](#listanomalygroupsummariesrequestrequesttypedef)
   - [ListAnomalyGroupSummariesResponseTypeDef](#listanomalygroupsummariesresponsetypedef)
   - [ListAnomalyGroupTimeSeriesRequestRequestTypeDef](#listanomalygrouptimeseriesrequestrequesttypedef)
@@ -686,6 +689,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## InterMetricImpactDetailsTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import InterMetricImpactDetailsTypeDef
+```
+
+Optional fields:
+
+- `MetricName`: `str`
+- `AnomalyGroupId`: `str`
+- `RelationshipType`:
+  [RelationshipTypeType](./literals.md#relationshiptypetype)
+- `ContributionPercentage`: `float`
+
 ## ItemizedMetricStatsTypeDef
 
 ```python
@@ -767,6 +784,38 @@ Required fields:
 
 - `AnomalyDetectorSummaryList`:
   `List`\[[AnomalyDetectorSummaryTypeDef](./type_defs.md#anomalydetectorsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListAnomalyGroupRelatedMetricsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupRelatedMetricsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
+- `AnomalyGroupId`: `str`
+
+Optional fields:
+
+- `RelationshipTypeFilter`:
+  [RelationshipTypeType](./literals.md#relationshiptypetype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAnomalyGroupRelatedMetricsResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupRelatedMetricsResponseTypeDef
+```
+
+Required fields:
+
+- `InterMetricImpactList`:
+  `List`\[[InterMetricImpactDetailsTypeDef](./type_defs.md#intermetricimpactdetailstypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

@@ -35,6 +35,7 @@ type annotations stubs module
   - [StreamingSessionStateType](#streamingsessionstatetype)
   - [StreamingSessionStatusCodeType](#streamingsessionstatuscodetype)
   - [StreamingSessionStoppedWaiterName](#streamingsessionstoppedwaitername)
+  - [StreamingSessionStorageModeType](#streamingsessionstoragemodetype)
   - [StreamingSessionStreamReadyWaiterName](#streamingsessionstreamreadywaitername)
   - [StreamingSessionStreamStateType](#streamingsessionstreamstatetype)
   - [StreamingSessionStreamStatusCodeType](#streamingsessionstreamstatuscodetype)
@@ -291,6 +292,7 @@ from mypy_boto3_nimble.literals import StreamingImageStatusCodeType
 
 Values:
 
+- `ACCESS_DENIED`
 - `INTERNAL_ERROR`
 - `STREAMING_IMAGE_CREATE_IN_PROGRESS`
 - `STREAMING_IMAGE_DELETE_IN_PROGRESS`
@@ -386,6 +388,16 @@ from mypy_boto3_nimble.literals import StreamingSessionStoppedWaiterName
 Values:
 
 - `streaming_session_stopped`
+
+## StreamingSessionStorageModeType
+
+```python
+from mypy_boto3_nimble.literals import StreamingSessionStorageModeType
+```
+
+Values:
+
+- `UPLOAD`
 
 ## StreamingSessionStreamReadyWaiterName
 

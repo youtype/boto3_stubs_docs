@@ -255,6 +255,7 @@ Optional fields:
 - `Name`: `str`
 - `Port`: `int`
 - `RemoteId`: `str`
+- `SenderControlPort`: `int`
 - `SmoothingLatency`: `int`
 - `StreamId`: `str`
 - `VpcInterfaceAttachment`:
@@ -1195,6 +1196,8 @@ Optional fields:
 - `MinLatency`: `int`
 - `Name`: `str`
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
+- `SenderControlPort`: `int`
+- `SenderIpAddress`: `str`
 - `StreamId`: `str`
 - `VpcInterfaceName`: `str`
 - `WhitelistCidr`: `str`
@@ -1230,6 +1233,8 @@ Optional fields:
 - `IngestPort`: `int`
 - `MediaStreamSourceConfigurations`:
   `List`\[[MediaStreamSourceConfigurationTypeDef](./type_defs.md#mediastreamsourceconfigurationtypedef)\]
+- `SenderControlPort`: `int`
+- `SenderIpAddress`: `str`
 - `Transport`: [TransportTypeDef](./type_defs.md#transporttypedef)
 - `VpcInterfaceName`: `str`
 - `WhitelistCidr`: `str`
@@ -1309,6 +1314,8 @@ Optional fields:
 - `MaxSyncBuffer`: `int`
 - `MinLatency`: `int`
 - `RemoteId`: `str`
+- `SenderControlPort`: `int`
+- `SenderIpAddress`: `str`
 - `SmoothingLatency`: `int`
 - `StreamId`: `str`
 
@@ -1446,6 +1453,8 @@ Optional fields:
 - `Port`: `int`
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `RemoteId`: `str`
+- `SenderControlPort`: `int`
+- `SenderIpAddress`: `str`
 - `SmoothingLatency`: `int`
 - `StreamId`: `str`
 - `VpcInterfaceAttachment`:
@@ -1516,6 +1525,8 @@ Optional fields:
   `Sequence`\[[MediaStreamSourceConfigurationRequestTypeDef](./type_defs.md#mediastreamsourceconfigurationrequesttypedef)\]
 - `MinLatency`: `int`
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
+- `SenderControlPort`: `int`
+- `SenderIpAddress`: `str`
 - `StreamId`: `str`
 - `VpcInterfaceName`: `str`
 - `WhitelistCidr`: `str`

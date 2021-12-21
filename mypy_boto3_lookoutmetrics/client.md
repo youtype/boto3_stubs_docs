@@ -30,6 +30,7 @@ type annotations stubs module
     - [get_sample_data](#get_sample_data)
     - [list_alerts](#list_alerts)
     - [list_anomaly_detectors](#list_anomaly_detectors)
+    - [list_anomaly_group_related_metrics](#list_anomaly_group_related_metrics)
     - [list_anomaly_group_summaries](#list_anomaly_group_summaries)
     - [list_anomaly_group_time_series](#list_anomaly_group_time_series)
     - [list_metric_sets](#list_metric_sets)
@@ -469,6 +470,32 @@ Keyword-only arguments:
 
 Returns
 [ListAnomalyDetectorsResponseTypeDef](./type_defs.md#listanomalydetectorsresponsetypedef).
+
+### list_anomaly_group_related_metrics
+
+Returns a list of measures that are potential causes or effects of an anomaly
+group.
+
+Type annotations for
+`boto3.client("lookoutmetrics").list_anomaly_group_related_metrics` method.
+
+Boto3 documentation:
+[LookoutMetrics.Client.list_anomaly_group_related_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_related_metrics)
+
+Arguments mapping described in
+[ListAnomalyGroupRelatedMetricsRequestRequestTypeDef](./type_defs.md#listanomalygrouprelatedmetricsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+- `AnomalyGroupId`: `str` *(required)*
+- `RelationshipTypeFilter`:
+  [RelationshipTypeType](./literals.md#relationshiptypetype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAnomalyGroupRelatedMetricsResponseTypeDef](./type_defs.md#listanomalygrouprelatedmetricsresponsetypedef).
 
 ### list_anomaly_group_summaries
 

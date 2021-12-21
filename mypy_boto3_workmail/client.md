@@ -24,6 +24,7 @@ type annotations stubs module
     - [create_user](#create_user)
     - [delete_access_control_rule](#delete_access_control_rule)
     - [delete_alias](#delete_alias)
+    - [delete_email_monitoring_configuration](#delete_email_monitoring_configuration)
     - [delete_group](#delete_group)
     - [delete_mailbox_permissions](#delete_mailbox_permissions)
     - [delete_mobile_device_access_override](#delete_mobile_device_access_override)
@@ -34,6 +35,7 @@ type annotations stubs module
     - [delete_user](#delete_user)
     - [deregister_from_work_mail](#deregister_from_work_mail)
     - [deregister_mail_domain](#deregister_mail_domain)
+    - [describe_email_monitoring_configuration](#describe_email_monitoring_configuration)
     - [describe_group](#describe_group)
     - [describe_inbound_dmarc_settings](#describe_inbound_dmarc_settings)
     - [describe_mailbox_export_job](#describe_mailbox_export_job)
@@ -64,6 +66,7 @@ type annotations stubs module
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_users](#list_users)
     - [put_access_control_rule](#put_access_control_rule)
+    - [put_email_monitoring_configuration](#put_email_monitoring_configuration)
     - [put_inbound_dmarc_settings](#put_inbound_dmarc_settings)
     - [put_mailbox_permissions](#put_mailbox_permissions)
     - [put_mobile_device_access_override](#put_mobile_device_access_override)
@@ -409,6 +412,25 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### delete_email_monitoring_configuration
+
+Deletes the email monitoring configuration for a specified organization.
+
+Type annotations for
+`boto3.client("workmail").delete_email_monitoring_configuration` method.
+
+Boto3 documentation:
+[WorkMail.Client.delete_email_monitoring_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_email_monitoring_configuration)
+
+Arguments mapping described in
+[DeleteEmailMonitoringConfigurationRequestRequestTypeDef](./type_defs.md#deleteemailmonitoringconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### delete_group
 
 Deletes a group from Amazon WorkMail.
@@ -610,6 +632,27 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### describe_email_monitoring_configuration
+
+Describes the current email monitoring configuration for a specified
+organization.
+
+Type annotations for
+`boto3.client("workmail").describe_email_monitoring_configuration` method.
+
+Boto3 documentation:
+[WorkMail.Client.describe_email_monitoring_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_email_monitoring_configuration)
+
+Arguments mapping described in
+[DescribeEmailMonitoringConfigurationRequestRequestTypeDef](./type_defs.md#describeemailmonitoringconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+
+Returns
+[DescribeEmailMonitoringConfigurationResponseTypeDef](./type_defs.md#describeemailmonitoringconfigurationresponsetypedef).
 
 ### describe_group
 
@@ -1251,6 +1294,28 @@ Keyword-only arguments:
 - `NotActions`: `Sequence`\[`str`\]
 - `UserIds`: `Sequence`\[`str`\]
 - `NotUserIds`: `Sequence`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
+
+### put_email_monitoring_configuration
+
+Creates or updates the email monitoring configuration for a specified
+organization.
+
+Type annotations for
+`boto3.client("workmail").put_email_monitoring_configuration` method.
+
+Boto3 documentation:
+[WorkMail.Client.put_email_monitoring_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_email_monitoring_configuration)
+
+Arguments mapping described in
+[PutEmailMonitoringConfigurationRequestRequestTypeDef](./type_defs.md#putemailmonitoringconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `LogGroupArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

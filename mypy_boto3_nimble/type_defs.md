@@ -102,9 +102,11 @@ type annotations stubs module
   - [StopStreamingSessionRequestRequestTypeDef](#stopstreamingsessionrequestrequesttypedef)
   - [StopStreamingSessionResponseTypeDef](#stopstreamingsessionresponsetypedef)
   - [StreamConfigurationCreateTypeDef](#streamconfigurationcreatetypedef)
+  - [StreamConfigurationSessionStorageTypeDef](#streamconfigurationsessionstoragetypedef)
   - [StreamConfigurationTypeDef](#streamconfigurationtypedef)
   - [StreamingImageEncryptionConfigurationTypeDef](#streamingimageencryptionconfigurationtypedef)
   - [StreamingImageTypeDef](#streamingimagetypedef)
+  - [StreamingSessionStorageRootTypeDef](#streamingsessionstorageroottypedef)
   - [StreamingSessionStreamTypeDef](#streamingsessionstreamtypedef)
   - [StreamingSessionTypeDef](#streamingsessiontypedef)
   - [StudioComponentConfigurationTypeDef](#studiocomponentconfigurationtypedef)
@@ -1438,6 +1440,24 @@ Optional fields:
 
 - `maxSessionLengthInMinutes`: `int`
 - `maxStoppedSessionLengthInMinutes`: `int`
+- `sessionStorage`:
+  [StreamConfigurationSessionStorageTypeDef](./type_defs.md#streamconfigurationsessionstoragetypedef)
+
+## StreamConfigurationSessionStorageTypeDef
+
+```python
+from mypy_boto3_nimble.type_defs import StreamConfigurationSessionStorageTypeDef
+```
+
+Required fields:
+
+- `mode`: `Sequence`\[`Literal['UPLOAD']` (see
+  [StreamingSessionStorageModeType](./literals.md#streamingsessionstoragemodetype))\]
+
+Optional fields:
+
+- `root`:
+  [StreamingSessionStorageRootTypeDef](./type_defs.md#streamingsessionstorageroottypedef)
 
 ## StreamConfigurationTypeDef
 
@@ -1457,6 +1477,8 @@ Optional fields:
 
 - `maxSessionLengthInMinutes`: `int`
 - `maxStoppedSessionLengthInMinutes`: `int`
+- `sessionStorage`:
+  [StreamConfigurationSessionStorageTypeDef](./type_defs.md#streamconfigurationsessionstoragetypedef)
 
 ## StreamingImageEncryptionConfigurationTypeDef
 
@@ -1496,6 +1518,17 @@ Optional fields:
 - `statusMessage`: `str`
 - `streamingImageId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+## StreamingSessionStorageRootTypeDef
+
+```python
+from mypy_boto3_nimble.type_defs import StreamingSessionStorageRootTypeDef
+```
+
+Optional fields:
+
+- `linux`: `str`
+- `windows`: `str`
 
 ## StreamingSessionStreamTypeDef
 

@@ -27,6 +27,7 @@ type annotations stubs module
   - [DelegateTypeDef](#delegatetypedef)
   - [DeleteAccessControlRuleRequestRequestTypeDef](#deleteaccesscontrolrulerequestrequesttypedef)
   - [DeleteAliasRequestRequestTypeDef](#deletealiasrequestrequesttypedef)
+  - [DeleteEmailMonitoringConfigurationRequestRequestTypeDef](#deleteemailmonitoringconfigurationrequestrequesttypedef)
   - [DeleteGroupRequestRequestTypeDef](#deletegrouprequestrequesttypedef)
   - [DeleteMailboxPermissionsRequestRequestTypeDef](#deletemailboxpermissionsrequestrequesttypedef)
   - [DeleteMobileDeviceAccessOverrideRequestRequestTypeDef](#deletemobiledeviceaccessoverriderequestrequesttypedef)
@@ -38,6 +39,8 @@ type annotations stubs module
   - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
   - [DeregisterFromWorkMailRequestRequestTypeDef](#deregisterfromworkmailrequestrequesttypedef)
   - [DeregisterMailDomainRequestRequestTypeDef](#deregistermaildomainrequestrequesttypedef)
+  - [DescribeEmailMonitoringConfigurationRequestRequestTypeDef](#describeemailmonitoringconfigurationrequestrequesttypedef)
+  - [DescribeEmailMonitoringConfigurationResponseTypeDef](#describeemailmonitoringconfigurationresponsetypedef)
   - [DescribeGroupRequestRequestTypeDef](#describegrouprequestrequesttypedef)
   - [DescribeGroupResponseTypeDef](#describegroupresponsetypedef)
   - [DescribeInboundDmarcSettingsRequestRequestTypeDef](#describeinbounddmarcsettingsrequestrequesttypedef)
@@ -106,6 +109,7 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PermissionTypeDef](#permissiontypedef)
   - [PutAccessControlRuleRequestRequestTypeDef](#putaccesscontrolrulerequestrequesttypedef)
+  - [PutEmailMonitoringConfigurationRequestRequestTypeDef](#putemailmonitoringconfigurationrequestrequesttypedef)
   - [PutInboundDmarcSettingsRequestRequestTypeDef](#putinbounddmarcsettingsrequestrequesttypedef)
   - [PutMailboxPermissionsRequestRequestTypeDef](#putmailboxpermissionsrequestrequesttypedef)
   - [PutMobileDeviceAccessOverrideRequestRequestTypeDef](#putmobiledeviceaccessoverriderequestrequesttypedef)
@@ -382,6 +386,16 @@ Required fields:
 - `EntityId`: `str`
 - `Alias`: `str`
 
+## DeleteEmailMonitoringConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeleteEmailMonitoringConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+
 ## DeleteGroupRequestRequestTypeDef
 
 ```python
@@ -510,6 +524,29 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `DomainName`: `str`
+
+## DescribeEmailMonitoringConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DescribeEmailMonitoringConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+
+## DescribeEmailMonitoringConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DescribeEmailMonitoringConfigurationResponseTypeDef
+```
+
+Required fields:
+
+- `RoleArn`: `str`
+- `LogGroupArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeGroupRequestRequestTypeDef
 
@@ -1470,6 +1507,18 @@ Optional fields:
 - `NotActions`: `Sequence`\[`str`\]
 - `UserIds`: `Sequence`\[`str`\]
 - `NotUserIds`: `Sequence`\[`str`\]
+
+## PutEmailMonitoringConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import PutEmailMonitoringConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `RoleArn`: `str`
+- `LogGroupArn`: `str`
 
 ## PutInboundDmarcSettingsRequestRequestTypeDef
 

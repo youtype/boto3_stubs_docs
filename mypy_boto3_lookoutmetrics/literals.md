@@ -16,6 +16,7 @@ type annotations stubs module
   - [CSVFileCompressionType](#csvfilecompressiontype)
   - [FrequencyType](#frequencytype)
   - [JsonFileCompressionType](#jsonfilecompressiontype)
+  - [RelationshipTypeType](#relationshiptypetype)
   - [ServiceName](#servicename)
 
 ## AggregationFunctionType
@@ -117,6 +118,17 @@ Values:
 
 - `GZIP`
 - `NONE`
+
+## RelationshipTypeType
+
+```python
+from mypy_boto3_lookoutmetrics.literals import RelationshipTypeType
+```
+
+Values:
+
+- `CAUSE_OF_INPUT_ANOMALY_GROUP`
+- `EFFECT_OF_INPUT_ANOMALY_GROUP`
 
 ## ServiceName
 

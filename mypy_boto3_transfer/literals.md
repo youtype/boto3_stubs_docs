@@ -19,6 +19,7 @@ type annotations stubs module
   - [OverwriteExistingType](#overwriteexistingtype)
   - [ProtocolType](#protocoltype)
   - [StateType](#statetype)
+  - [TlsSessionResumptionModeType](#tlssessionresumptionmodetype)
   - [WorkflowStepTypeType](#workflowsteptypetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
@@ -151,6 +152,18 @@ Values:
 - `STARTING`
 - `STOP_FAILED`
 - `STOPPING`
+
+## TlsSessionResumptionModeType
+
+```python
+from mypy_boto3_transfer.literals import TlsSessionResumptionModeType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+- `ENFORCED`
 
 ## WorkflowStepTypeType
 

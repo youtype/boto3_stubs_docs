@@ -354,6 +354,10 @@ Optional fields:
 
 - `Content`: `str`
 - `Metadata`: `str`
+- `PushNotification`:
+  [PushNotificationConfigurationTypeDef](./type_defs.md#pushnotificationconfigurationtypedef)
+- `MessageAttributes`: `Mapping`\[`str`,
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 
 ## ChannelMessageStatusStructureTypeDef
 
@@ -1289,7 +1293,7 @@ from mypy_boto3_chime_sdk_messaging.type_defs import MessageAttributeValueTypeDe
 
 Optional fields:
 
-- `StringValues`: `List`\[`str`\]
+- `StringValues`: `Sequence`\[`str`\]
 
 ## MessagingSessionEndpointTypeDef
 
@@ -1332,7 +1336,7 @@ Required fields:
 from mypy_boto3_chime_sdk_messaging.type_defs import PushNotificationConfigurationTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `Title`: `str`
 - `Body`: `str`

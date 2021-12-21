@@ -12,6 +12,7 @@ type annotations stubs module
   - [ErrorCauseType](#errorcausetype)
   - [ExportStatusType](#exportstatustype)
   - [LedgerStateType](#ledgerstatetype)
+  - [OutputFormatType](#outputformattype)
   - [PermissionsModeType](#permissionsmodetype)
   - [S3ObjectEncryptionTypeType](#s3objectencryptiontypetype)
   - [StreamStatusType](#streamstatustype)
@@ -64,6 +65,18 @@ Values:
 - `CREATING`
 - `DELETED`
 - `DELETING`
+
+## OutputFormatType
+
+```python
+from mypy_boto3_qldb.literals import OutputFormatType
+```
+
+Values:
+
+- `ION_BINARY`
+- `ION_TEXT`
+- `JSON`
 
 ## PermissionsModeType
 

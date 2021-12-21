@@ -124,7 +124,7 @@ Returns
 
 ### create_ledger
 
-Creates a new ledger in your account in the current Region.
+Creates a new ledger in your Amazon Web Services account in the current Region.
 
 Type annotations for `boto3.client("qldb").create_ledger` method.
 
@@ -247,6 +247,7 @@ Keyword-only arguments:
   [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
+- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
 
 Returns
 [ExportJournalToS3ResponseTypeDef](./type_defs.md#exportjournaltos3responsetypedef).
@@ -357,7 +358,7 @@ Returns
 ### list_journal_s3_exports
 
 Returns an array of journal export job descriptions for all ledgers that are
-associated with the current account and Region.
+associated with the current Amazon Web Services account and Region.
 
 Type annotations for `boto3.client("qldb").list_journal_s3_exports` method.
 
@@ -400,7 +401,7 @@ Returns
 ### list_ledgers
 
 Returns an array of ledger summaries that are associated with the current
-account and Region.
+Amazon Web Services account and Region.
 
 Type annotations for `boto3.client("qldb").list_ledgers` method.
 

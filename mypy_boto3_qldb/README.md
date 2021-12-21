@@ -80,6 +80,7 @@ from mypy_boto3_qldb.literals import EncryptionStatusType, ...
 - [ErrorCauseType](./literals.md#errorcausetype)
 - [ExportStatusType](./literals.md#exportstatustype)
 - [LedgerStateType](./literals.md#ledgerstatetype)
+- [OutputFormatType](./literals.md#outputformattype)
 - [PermissionsModeType](./literals.md#permissionsmodetype)
 - [S3ObjectEncryptionTypeType](./literals.md#s3objectencryptiontypetype)
 - [StreamStatusType](./literals.md#streamstatustype)

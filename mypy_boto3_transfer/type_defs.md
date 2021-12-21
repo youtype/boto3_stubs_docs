@@ -171,6 +171,8 @@ Optional fields:
   [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `LoggingRole`: `str`
 - `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
+- `ProtocolDetails`:
+  [ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef)
 - `SecurityPolicyName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `WorkflowDetails`:
@@ -1064,6 +1066,8 @@ from mypy_boto3_transfer.type_defs import ProtocolDetailsTypeDef
 Optional fields:
 
 - `PassiveIp`: `str`
+- `TlsSessionResumptionMode`:
+  [TlsSessionResumptionModeType](./literals.md#tlssessionresumptionmodetype)
 
 ## ResponseMetadataTypeDef
 

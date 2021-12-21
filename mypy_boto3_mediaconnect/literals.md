@@ -247,6 +247,7 @@ from mypy_boto3_mediaconnect.literals import ProtocolType
 Values:
 
 - `cdi`
+- `fujitsu-qos`
 - `rist`
 - `rtp`
 - `rtp-fec`

@@ -174,6 +174,8 @@ Keyword-only arguments:
   [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `LoggingRole`: `str`
 - `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
+- `ProtocolDetails`:
+  [ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef)
 - `SecurityPolicyName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `WorkflowDetails`:

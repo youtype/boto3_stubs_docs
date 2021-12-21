@@ -765,6 +765,8 @@ Keyword-only arguments:
 - `Port`: `int`
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `RemoteId`: `str`
+- `SenderControlPort`: `int`
+- `SenderIpAddress`: `str`
 - `SmoothingLatency`: `int`
 - `StreamId`: `str`
 - `VpcInterfaceAttachment`:
@@ -801,6 +803,8 @@ Keyword-only arguments:
   `Sequence`\[[MediaStreamSourceConfigurationRequestTypeDef](./type_defs.md#mediastreamsourceconfigurationrequesttypedef)\]
 - `MinLatency`: `int`
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
+- `SenderControlPort`: `int`
+- `SenderIpAddress`: `str`
 - `StreamId`: `str`
 - `VpcInterfaceName`: `str`
 - `WhitelistCidr`: `str`

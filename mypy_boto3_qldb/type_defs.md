@@ -215,6 +215,10 @@ Required fields:
   [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
 - `RoleArn`: `str`
 
+Optional fields:
+
+- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
+
 ## ExportJournalToS3ResponseTypeDef
 
 ```python
@@ -348,6 +352,10 @@ Required fields:
 - `S3ExportConfiguration`:
   [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
 - `RoleArn`: `str`
+
+Optional fields:
+
+- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
 
 ## KinesisConfigurationTypeDef
 

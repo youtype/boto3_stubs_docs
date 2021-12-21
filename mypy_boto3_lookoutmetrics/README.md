@@ -50,6 +50,7 @@ from mypy_boto3_lookoutmetrics.client import LookoutMetricsClient
 - [get_sample_data](./client.md#get_sample_data)
 - [list_alerts](./client.md#list_alerts)
 - [list_anomaly_detectors](./client.md#list_anomaly_detectors)
+- [list_anomaly_group_related_metrics](./client.md#list_anomaly_group_related_metrics)
 - [list_anomaly_group_summaries](./client.md#list_anomaly_group_summaries)
 - [list_anomaly_group_time_series](./client.md#list_anomaly_group_time_series)
 - [list_metric_sets](./client.md#list_metric_sets)
@@ -91,6 +92,7 @@ from mypy_boto3_lookoutmetrics.literals import AggregationFunctionType, ...
 - [CSVFileCompressionType](./literals.md#csvfilecompressiontype)
 - [FrequencyType](./literals.md#frequencytype)
 - [JsonFileCompressionType](./literals.md#jsonfilecompressiontype)
+- [RelationshipTypeType](./literals.md#relationshiptypetype)
 - [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
@@ -148,6 +150,7 @@ from mypy_boto3_lookoutmetrics.type_defs import ActionTypeDef, ...
 - [GetFeedbackResponseTypeDef](./type_defs.md#getfeedbackresponsetypedef)
 - [GetSampleDataRequestRequestTypeDef](./type_defs.md#getsampledatarequestrequesttypedef)
 - [GetSampleDataResponseTypeDef](./type_defs.md#getsampledataresponsetypedef)
+- [InterMetricImpactDetailsTypeDef](./type_defs.md#intermetricimpactdetailstypedef)
 - [ItemizedMetricStatsTypeDef](./type_defs.md#itemizedmetricstatstypedef)
 - [JsonFormatDescriptorTypeDef](./type_defs.md#jsonformatdescriptortypedef)
 - [LambdaConfigurationTypeDef](./type_defs.md#lambdaconfigurationtypedef)
@@ -155,6 +158,8 @@ from mypy_boto3_lookoutmetrics.type_defs import ActionTypeDef, ...
 - [ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef)
 - [ListAnomalyDetectorsRequestRequestTypeDef](./type_defs.md#listanomalydetectorsrequestrequesttypedef)
 - [ListAnomalyDetectorsResponseTypeDef](./type_defs.md#listanomalydetectorsresponsetypedef)
+- [ListAnomalyGroupRelatedMetricsRequestRequestTypeDef](./type_defs.md#listanomalygrouprelatedmetricsrequestrequesttypedef)
+- [ListAnomalyGroupRelatedMetricsResponseTypeDef](./type_defs.md#listanomalygrouprelatedmetricsresponsetypedef)
 - [ListAnomalyGroupSummariesRequestRequestTypeDef](./type_defs.md#listanomalygroupsummariesrequestrequesttypedef)
 - [ListAnomalyGroupSummariesResponseTypeDef](./type_defs.md#listanomalygroupsummariesresponsetypedef)
 - [ListAnomalyGroupTimeSeriesRequestRequestTypeDef](./type_defs.md#listanomalygrouptimeseriesrequestrequesttypedef)

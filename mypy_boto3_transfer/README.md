@@ -118,6 +118,7 @@ from mypy_boto3_transfer.literals import CustomStepStatusType, ...
 - [OverwriteExistingType](./literals.md#overwriteexistingtype)
 - [ProtocolType](./literals.md#protocoltype)
 - [StateType](./literals.md#statetype)
+- [TlsSessionResumptionModeType](./literals.md#tlssessionresumptionmodetype)
 - [WorkflowStepTypeType](./literals.md#workflowsteptypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
