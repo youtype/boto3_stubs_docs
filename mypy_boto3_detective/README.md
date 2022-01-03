@@ -37,18 +37,23 @@ from mypy_boto3_detective.client import DetectiveClient
 - [create_members](./client.md#create_members)
 - [delete_graph](./client.md#delete_graph)
 - [delete_members](./client.md#delete_members)
+- [describe_organization_configuration](./client.md#describe_organization_configuration)
+- [disable_organization_admin_account](./client.md#disable_organization_admin_account)
 - [disassociate_membership](./client.md#disassociate_membership)
+- [enable_organization_admin_account](./client.md#enable_organization_admin_account)
 - [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_members](./client.md#get_members)
 - [list_graphs](./client.md#list_graphs)
 - [list_invitations](./client.md#list_invitations)
 - [list_members](./client.md#list_members)
+- [list_organization_admin_accounts](./client.md#list_organization_admin_accounts)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [reject_invitation](./client.md#reject_invitation)
 - [start_monitoring_member](./client.md#start_monitoring_member)
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
+- [update_organization_configuration](./client.md#update_organization_configuration)
 
 ### Exceptions
 
@@ -59,6 +64,7 @@ DetectiveClient [exceptions](./client.md#exceptions)
 - InternalServerException
 - ResourceNotFoundException
 - ServiceQuotaExceededException
+- TooManyRequestsException
 - ValidationException
 
 ## Literals
@@ -68,9 +74,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_detective.literals import MemberDisabledReasonType, ...
+from mypy_boto3_detective.literals import InvitationTypeType, ...
 ```
 
+- [InvitationTypeType](./literals.md#invitationtypetype)
 - [MemberDisabledReasonType](./literals.md#memberdisabledreasontype)
 - [MemberStatusType](./literals.md#memberstatustype)
 - [ServiceName](./literals.md#servicename)
@@ -88,6 +95,7 @@ from mypy_boto3_detective.type_defs import AcceptInvitationRequestRequestTypeDef
 
 - [AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef)
 - [AccountTypeDef](./type_defs.md#accounttypedef)
+- [AdministratorTypeDef](./type_defs.md#administratortypedef)
 - [CreateGraphRequestRequestTypeDef](./type_defs.md#creategraphrequestrequesttypedef)
 - [CreateGraphResponseTypeDef](./type_defs.md#creategraphresponsetypedef)
 - [CreateMembersRequestRequestTypeDef](./type_defs.md#createmembersrequestrequesttypedef)
@@ -95,7 +103,10 @@ from mypy_boto3_detective.type_defs import AcceptInvitationRequestRequestTypeDef
 - [DeleteGraphRequestRequestTypeDef](./type_defs.md#deletegraphrequestrequesttypedef)
 - [DeleteMembersRequestRequestTypeDef](./type_defs.md#deletemembersrequestrequesttypedef)
 - [DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef)
+- [DescribeOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#describeorganizationconfigurationrequestrequesttypedef)
+- [DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef)
 - [DisassociateMembershipRequestRequestTypeDef](./type_defs.md#disassociatemembershiprequestrequesttypedef)
+- [EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef)
 - [GetMembersRequestRequestTypeDef](./type_defs.md#getmembersrequestrequesttypedef)
 - [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef)
 - [GraphTypeDef](./type_defs.md#graphtypedef)
@@ -105,6 +116,8 @@ from mypy_boto3_detective.type_defs import AcceptInvitationRequestRequestTypeDef
 - [ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)
 - [ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef)
 - [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)
+- [ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef)
+- [ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)
@@ -114,3 +127,4 @@ from mypy_boto3_detective.type_defs import AcceptInvitationRequestRequestTypeDef
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef)

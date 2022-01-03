@@ -10,6 +10,7 @@ type annotations stubs module
 - [Typed dictionaries for boto3 Detective module](#typed-dictionaries-for-boto3-detective-module)
   - [AcceptInvitationRequestRequestTypeDef](#acceptinvitationrequestrequesttypedef)
   - [AccountTypeDef](#accounttypedef)
+  - [AdministratorTypeDef](#administratortypedef)
   - [CreateGraphRequestRequestTypeDef](#creategraphrequestrequesttypedef)
   - [CreateGraphResponseTypeDef](#creategraphresponsetypedef)
   - [CreateMembersRequestRequestTypeDef](#createmembersrequestrequesttypedef)
@@ -17,7 +18,10 @@ type annotations stubs module
   - [DeleteGraphRequestRequestTypeDef](#deletegraphrequestrequesttypedef)
   - [DeleteMembersRequestRequestTypeDef](#deletemembersrequestrequesttypedef)
   - [DeleteMembersResponseTypeDef](#deletemembersresponsetypedef)
+  - [DescribeOrganizationConfigurationRequestRequestTypeDef](#describeorganizationconfigurationrequestrequesttypedef)
+  - [DescribeOrganizationConfigurationResponseTypeDef](#describeorganizationconfigurationresponsetypedef)
   - [DisassociateMembershipRequestRequestTypeDef](#disassociatemembershiprequestrequesttypedef)
+  - [EnableOrganizationAdminAccountRequestRequestTypeDef](#enableorganizationadminaccountrequestrequesttypedef)
   - [GetMembersRequestRequestTypeDef](#getmembersrequestrequesttypedef)
   - [GetMembersResponseTypeDef](#getmembersresponsetypedef)
   - [GraphTypeDef](#graphtypedef)
@@ -27,6 +31,8 @@ type annotations stubs module
   - [ListInvitationsResponseTypeDef](#listinvitationsresponsetypedef)
   - [ListMembersRequestRequestTypeDef](#listmembersrequestrequesttypedef)
   - [ListMembersResponseTypeDef](#listmembersresponsetypedef)
+  - [ListOrganizationAdminAccountsRequestRequestTypeDef](#listorganizationadminaccountsrequestrequesttypedef)
+  - [ListOrganizationAdminAccountsResponseTypeDef](#listorganizationadminaccountsresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MemberDetailTypeDef](#memberdetailtypedef)
@@ -36,6 +42,7 @@ type annotations stubs module
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UnprocessedAccountTypeDef](#unprocessedaccounttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateOrganizationConfigurationRequestRequestTypeDef](#updateorganizationconfigurationrequestrequesttypedef)
 
 ## AcceptInvitationRequestRequestTypeDef
 
@@ -57,6 +64,18 @@ Required fields:
 
 - `AccountId`: `str`
 - `EmailAddress`: `str`
+
+## AdministratorTypeDef
+
+```python
+from mypy_boto3_detective.type_defs import AdministratorTypeDef
+```
+
+Optional fields:
+
+- `AccountId`: `str`
+- `GraphArn`: `str`
+- `DelegationTime`: `datetime`
 
 ## CreateGraphRequestRequestTypeDef
 
@@ -146,6 +165,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeOrganizationConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_detective.type_defs import DescribeOrganizationConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GraphArn`: `str`
+
+## DescribeOrganizationConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_detective.type_defs import DescribeOrganizationConfigurationResponseTypeDef
+```
+
+Required fields:
+
+- `AutoEnable`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DisassociateMembershipRequestRequestTypeDef
 
 ```python
@@ -155,6 +196,16 @@ from mypy_boto3_detective.type_defs import DisassociateMembershipRequestRequestT
 Required fields:
 
 - `GraphArn`: `str`
+
+## EnableOrganizationAdminAccountRequestRequestTypeDef
+
+```python
+from mypy_boto3_detective.type_defs import EnableOrganizationAdminAccountRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
 
 ## GetMembersRequestRequestTypeDef
 
@@ -271,6 +322,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListOrganizationAdminAccountsRequestRequestTypeDef
+
+```python
+from mypy_boto3_detective.type_defs import ListOrganizationAdminAccountsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListOrganizationAdminAccountsResponseTypeDef
+
+```python
+from mypy_boto3_detective.type_defs import ListOrganizationAdminAccountsResponseTypeDef
+```
+
+Required fields:
+
+- `Administrators`:
+  `List`\[[AdministratorTypeDef](./type_defs.md#administratortypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -315,6 +391,7 @@ Optional fields:
 - `VolumeUsageUpdatedTime`: `datetime`
 - `PercentOfGraphUtilization`: `float`
 - `PercentOfGraphUtilizationUpdatedTime`: `datetime`
+- `InvitationType`: [InvitationTypeType](./literals.md#invitationtypetype)
 
 ## RejectInvitationRequestRequestTypeDef
 
@@ -383,3 +460,17 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+## UpdateOrganizationConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_detective.type_defs import UpdateOrganizationConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `GraphArn`: `str`
+
+Optional fields:
+
+- `AutoEnable`: `bool`

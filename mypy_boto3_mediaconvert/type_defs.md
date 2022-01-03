@@ -2772,6 +2772,8 @@ Optional fields:
 - `AggressiveMode`: `int`
 - `PostTemporalSharpening`:
   [NoiseFilterPostTemporalSharpeningType](./literals.md#noisefilterposttemporalsharpeningtype)
+- `PostTemporalSharpeningStrength`:
+  [NoiseFilterPostTemporalSharpeningStrengthType](./literals.md#noisefilterposttemporalsharpeningstrengthtype)
 - `Speed`: `int`
 - `Strength`: `int`
 

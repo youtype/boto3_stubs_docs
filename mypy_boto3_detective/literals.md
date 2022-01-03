@@ -8,9 +8,21 @@ type annotations stubs module
 [mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
 
 - [Literals for boto3 Detective module](#literals-for-boto3-detective-module)
+  - [InvitationTypeType](#invitationtypetype)
   - [MemberDisabledReasonType](#memberdisabledreasontype)
   - [MemberStatusType](#memberstatustype)
   - [ServiceName](#servicename)
+
+## InvitationTypeType
+
+```python
+from mypy_boto3_detective.literals import InvitationTypeType
+```
+
+Values:
+
+- `INVITATION`
+- `ORGANIZATION`
 
 ## MemberDisabledReasonType
 

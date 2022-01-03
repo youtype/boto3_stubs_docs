@@ -350,6 +350,7 @@ type annotations stubs module
   - [DriftCheckExplainabilityTypeDef](#driftcheckexplainabilitytypedef)
   - [DriftCheckModelDataQualityTypeDef](#driftcheckmodeldataqualitytypedef)
   - [DriftCheckModelQualityTypeDef](#driftcheckmodelqualitytypedef)
+  - [EMRStepMetadataTypeDef](#emrstepmetadatatypedef)
   - [EdgeModelStatTypeDef](#edgemodelstattypedef)
   - [EdgeModelSummaryTypeDef](#edgemodelsummarytypedef)
   - [EdgeModelTypeDef](#edgemodeltypedef)
@@ -629,6 +630,7 @@ type annotations stubs module
   - [OutputDataConfigTypeDef](#outputdataconfigtypedef)
   - [OutputParameterTypeDef](#outputparametertypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ParallelismConfigurationTypeDef](#parallelismconfigurationtypedef)
   - [ParameterRangeTypeDef](#parameterrangetypedef)
   - [ParameterRangesTypeDef](#parameterrangestypedef)
   - [ParameterTypeDef](#parametertypedef)
@@ -637,6 +639,7 @@ type annotations stubs module
   - [PendingDeploymentSummaryTypeDef](#pendingdeploymentsummarytypedef)
   - [PendingProductionVariantSummaryTypeDef](#pendingproductionvariantsummarytypedef)
   - [PhaseTypeDef](#phasetypedef)
+  - [PipelineDefinitionS3LocationTypeDef](#pipelinedefinitions3locationtypedef)
   - [PipelineExecutionStepMetadataTypeDef](#pipelineexecutionstepmetadatatypedef)
   - [PipelineExecutionStepTypeDef](#pipelineexecutionsteptypedef)
   - [PipelineExecutionSummaryTypeDef](#pipelineexecutionsummarytypedef)
@@ -3007,15 +3010,19 @@ from mypy_boto3_sagemaker.type_defs import CreatePipelineRequestRequestTypeDef
 Required fields:
 
 - `PipelineName`: `str`
-- `PipelineDefinition`: `str`
 - `ClientRequestToken`: `str`
 - `RoleArn`: `str`
 
 Optional fields:
 
 - `PipelineDisplayName`: `str`
+- `PipelineDefinition`: `str`
+- `PipelineDefinitionS3Location`:
+  [PipelineDefinitionS3LocationTypeDef](./type_defs.md#pipelinedefinitions3locationtypedef)
 - `PipelineDescription`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
 ## CreatePipelineResponseTypeDef
 
@@ -5516,6 +5523,8 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5550,6 +5559,8 @@ Required fields:
 - `LastRunTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -6171,6 +6182,19 @@ Optional fields:
 
 - `Statistics`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
 - `Constraints`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+
+## EMRStepMetadataTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import EMRStepMetadataTypeDef
+```
+
+Optional fields:
+
+- `ClusterId`: `str`
+- `StepId`: `str`
+- `StepName`: `str`
+- `LogFilePath`: `str`
 
 ## EdgeModelStatTypeDef
 
@@ -10449,6 +10473,16 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+## ParallelismConfigurationTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ParallelismConfigurationTypeDef
+```
+
+Required fields:
+
+- `MaxParallelExecutionSteps`: `int`
+
 ## ParameterRangeTypeDef
 
 ```python
@@ -10568,6 +10602,21 @@ Optional fields:
 - `SpawnRate`: `int`
 - `DurationInSeconds`: `int`
 
+## PipelineDefinitionS3LocationTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import PipelineDefinitionS3LocationTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `ObjectKey`: `str`
+
+Optional fields:
+
+- `VersionId`: `str`
+
 ## PipelineExecutionStepMetadataTypeDef
 
 ```python
@@ -10597,6 +10646,7 @@ Optional fields:
   [QualityCheckStepMetadataTypeDef](./type_defs.md#qualitycheckstepmetadatatypedef)
 - `ClarifyCheck`:
   [ClarifyCheckStepMetadataTypeDef](./type_defs.md#clarifycheckstepmetadatatypedef)
+- `EMR`: [EMRStepMetadataTypeDef](./type_defs.md#emrstepmetadatatypedef)
 
 ## PipelineExecutionStepTypeDef
 
@@ -10607,6 +10657,8 @@ from mypy_boto3_sagemaker.type_defs import PipelineExecutionStepTypeDef
 Optional fields:
 
 - `StepName`: `str`
+- `StepDisplayName`: `str`
+- `StepDescription`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `StepStatus`: [StepStatusType](./literals.md#stepstatustype)
@@ -10653,6 +10705,8 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 - `PipelineParameters`:
   `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
@@ -10704,6 +10758,8 @@ Optional fields:
 - `LastRunTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ProcessingClusterConfigTypeDef
@@ -11535,6 +11591,11 @@ Required fields:
 - `PipelineExecutionArn`: `str`
 - `ClientRequestToken`: `str`
 
+Optional fields:
+
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
+
 ## RetryPipelineExecutionResponseTypeDef
 
 ```python
@@ -11876,6 +11937,8 @@ Optional fields:
 - `PipelineParameters`:
   `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `PipelineExecutionDescription`: `str`
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
 ## StartPipelineExecutionResponseTypeDef
 
@@ -13162,6 +13225,8 @@ Optional fields:
 
 - `PipelineExecutionDescription`: `str`
 - `PipelineExecutionDisplayName`: `str`
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
 ## UpdatePipelineExecutionResponseTypeDef
 
@@ -13189,8 +13254,12 @@ Optional fields:
 
 - `PipelineDisplayName`: `str`
 - `PipelineDefinition`: `str`
+- `PipelineDefinitionS3Location`:
+  [PipelineDefinitionS3LocationTypeDef](./type_defs.md#pipelinedefinitions3locationtypedef)
 - `PipelineDescription`: `str`
 - `RoleArn`: `str`
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
 ## UpdatePipelineResponseTypeDef
 

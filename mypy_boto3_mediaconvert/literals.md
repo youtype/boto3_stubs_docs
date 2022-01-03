@@ -310,6 +310,7 @@ type annotations stubs module
   - [NielsenActiveWatermarkProcessTypeType](#nielsenactivewatermarkprocesstypetype)
   - [NielsenSourceWatermarkStatusTypeType](#nielsensourcewatermarkstatustypetype)
   - [NielsenUniqueTicPerAudioTrackTypeType](#nielsenuniqueticperaudiotracktypetype)
+  - [NoiseFilterPostTemporalSharpeningStrengthType](#noisefilterposttemporalsharpeningstrengthtype)
   - [NoiseFilterPostTemporalSharpeningType](#noisefilterposttemporalsharpeningtype)
   - [NoiseReducerFilterType](#noisereducerfiltertype)
   - [OrderType](#ordertype)
@@ -4181,6 +4182,18 @@ Values:
 
 - `RESERVE_UNIQUE_TICS_PER_TRACK`
 - `SAME_TICS_PER_TRACK`
+
+## NoiseFilterPostTemporalSharpeningStrengthType
+
+```python
+from mypy_boto3_mediaconvert.literals import NoiseFilterPostTemporalSharpeningStrengthType
+```
+
+Values:
+
+- `HIGH`
+- `LOW`
+- `MEDIUM`
 
 ## NoiseFilterPostTemporalSharpeningType
 

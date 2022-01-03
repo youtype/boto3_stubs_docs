@@ -1393,12 +1393,16 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PipelineName`: `str` *(required)*
-- `PipelineDefinition`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
 - `PipelineDisplayName`: `str`
+- `PipelineDefinition`: `str`
+- `PipelineDefinitionS3Location`:
+  [PipelineDefinitionS3LocationTypeDef](./type_defs.md#pipelinedefinitions3locationtypedef)
 - `PipelineDescription`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
 Returns
 [CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
@@ -5220,6 +5224,8 @@ Keyword-only arguments:
 
 - `PipelineExecutionArn`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
 Returns
 [RetryPipelineExecutionResponseTypeDef](./type_defs.md#retrypipelineexecutionresponsetypedef).
@@ -5351,6 +5357,8 @@ Keyword-only arguments:
 - `PipelineParameters`:
   `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `PipelineExecutionDescription`: `str`
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
 Returns
 [StartPipelineExecutionResponseTypeDef](./type_defs.md#startpipelineexecutionresponsetypedef).
@@ -5543,7 +5551,7 @@ Keyword-only arguments:
 
 ### stop_transform_job
 
-Stops a transform job.
+Stops a batch transform job.
 
 Type annotations for `boto3.client("sagemaker").stop_transform_job` method.
 
@@ -5948,8 +5956,12 @@ Keyword-only arguments:
 - `PipelineName`: `str` *(required)*
 - `PipelineDisplayName`: `str`
 - `PipelineDefinition`: `str`
+- `PipelineDefinitionS3Location`:
+  [PipelineDefinitionS3LocationTypeDef](./type_defs.md#pipelinedefinitions3locationtypedef)
 - `PipelineDescription`: `str`
 - `RoleArn`: `str`
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
 Returns
 [UpdatePipelineResponseTypeDef](./type_defs.md#updatepipelineresponsetypedef).
@@ -5972,6 +5984,8 @@ Keyword-only arguments:
 - `PipelineExecutionArn`: `str` *(required)*
 - `PipelineExecutionDescription`: `str`
 - `PipelineExecutionDisplayName`: `str`
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
 Returns
 [UpdatePipelineExecutionResponseTypeDef](./type_defs.md#updatepipelineexecutionresponsetypedef).

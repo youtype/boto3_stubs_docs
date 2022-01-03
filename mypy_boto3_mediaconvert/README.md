@@ -406,6 +406,7 @@ from mypy_boto3_mediaconvert.literals import AacAudioDescriptionBroadcasterMixTy
 - [NielsenActiveWatermarkProcessTypeType](./literals.md#nielsenactivewatermarkprocesstypetype)
 - [NielsenSourceWatermarkStatusTypeType](./literals.md#nielsensourcewatermarkstatustypetype)
 - [NielsenUniqueTicPerAudioTrackTypeType](./literals.md#nielsenuniqueticperaudiotracktypetype)
+- [NoiseFilterPostTemporalSharpeningStrengthType](./literals.md#noisefilterposttemporalsharpeningstrengthtype)
 - [NoiseFilterPostTemporalSharpeningType](./literals.md#noisefilterposttemporalsharpeningtype)
 - [NoiseReducerFilterType](./literals.md#noisereducerfiltertype)
 - [OrderType](./literals.md#ordertype)

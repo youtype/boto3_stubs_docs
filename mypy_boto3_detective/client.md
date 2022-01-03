@@ -18,17 +18,22 @@ type annotations stubs module
     - [create_members](#create_members)
     - [delete_graph](#delete_graph)
     - [delete_members](#delete_members)
+    - [describe_organization_configuration](#describe_organization_configuration)
+    - [disable_organization_admin_account](#disable_organization_admin_account)
     - [disassociate_membership](#disassociate_membership)
+    - [enable_organization_admin_account](#enable_organization_admin_account)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_members](#get_members)
     - [list_graphs](#list_graphs)
     - [list_invitations](#list_invitations)
     - [list_members](#list_members)
+    - [list_organization_admin_accounts](#list_organization_admin_accounts)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [reject_invitation](#reject_invitation)
     - [start_monitoring_member](#start_monitoring_member)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_organization_configuration](#update_organization_configuration)
 
 ## DetectiveClient
 
@@ -65,6 +70,7 @@ Exceptions:
 - `Exceptions.InternalServerException`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceQuotaExceededException`
+- `Exceptions.TooManyRequestsException`
 - `Exceptions.ValidationException`
 
 ## Methods
@@ -134,8 +140,7 @@ Returns
 
 ### create_members
 
-Sends a request to invite the specified AWS accounts to be member accounts in
-the behavior graph.
+`CreateMembers` is used to send invitations to accounts.
 
 Type annotations for `boto3.client("detective").create_members` method.
 
@@ -174,8 +179,7 @@ Keyword-only arguments:
 
 ### delete_members
 
-Deletes one or more member accounts from the administrator account's behavior
-graph.
+Removes the specified member accounts from the behavior graph.
 
 Type annotations for `boto3.client("detective").delete_members` method.
 
@@ -193,6 +197,38 @@ Keyword-only arguments:
 Returns
 [DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
 
+### describe_organization_configuration
+
+Returns information about the configuration for the organization behavior
+graph.
+
+Type annotations for
+`boto3.client("detective").describe_organization_configuration` method.
+
+Boto3 documentation:
+[Detective.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.describe_organization_configuration)
+
+Arguments mapping described in
+[DescribeOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#describeorganizationconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GraphArn`: `str` *(required)*
+
+Returns
+[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
+
+### disable_organization_admin_account
+
+Removes the Detective administrator account for the organization in the current
+Region.
+
+Type annotations for
+`boto3.client("detective").disable_organization_admin_account` method.
+
+Boto3 documentation:
+[Detective.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disable_organization_admin_account)
+
 ### disassociate_membership
 
 Removes the member account from the specified behavior graph.
@@ -209,6 +245,24 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
+
+### enable_organization_admin_account
+
+Designates the Detective administrator account for the organization in the
+current Region.
+
+Type annotations for
+`boto3.client("detective").enable_organization_admin_account` method.
+
+Boto3 documentation:
+[Detective.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.enable_organization_admin_account)
+
+Arguments mapping described in
+[EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccountId`: `str` *(required)*
 
 ### generate_presigned_url
 
@@ -310,6 +364,28 @@ Keyword-only arguments:
 Returns
 [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
 
+### list_organization_admin_accounts
+
+Returns information about the Detective administrator account for an
+organization.
+
+Type annotations for
+`boto3.client("detective").list_organization_admin_accounts` method.
+
+Boto3 documentation:
+[Detective.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_organization_admin_accounts)
+
+Arguments mapping described in
+[ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
+
 ### list_tags_for_resource
 
 Returns the tag values that are assigned to a behavior graph.
@@ -401,3 +477,22 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### update_organization_configuration
+
+Updates the configuration for the Organizations integration in the current
+Region.
+
+Type annotations for
+`boto3.client("detective").update_organization_configuration` method.
+
+Boto3 documentation:
+[Detective.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.update_organization_configuration)
+
+Arguments mapping described in
+[UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `GraphArn`: `str` *(required)*
+- `AutoEnable`: `bool`

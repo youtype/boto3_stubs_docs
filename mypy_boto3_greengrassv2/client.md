@@ -12,6 +12,7 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [exceptions](#exceptions)
+    - [associate_service_role_to_account](#associate_service_role_to_account)
     - [batch_associate_client_device_with_core_device](#batch_associate_client_device_with_core_device)
     - [batch_disassociate_client_device_from_core_device](#batch_disassociate_client_device_from_core_device)
     - [can_paginate](#can_paginate)
@@ -21,11 +22,14 @@ type annotations stubs module
     - [delete_component](#delete_component)
     - [delete_core_device](#delete_core_device)
     - [describe_component](#describe_component)
+    - [disassociate_service_role_from_account](#disassociate_service_role_from_account)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_component](#get_component)
     - [get_component_version_artifact](#get_component_version_artifact)
+    - [get_connectivity_info](#get_connectivity_info)
     - [get_core_device](#get_core_device)
     - [get_deployment](#get_deployment)
+    - [get_service_role_for_account](#get_service_role_for_account)
     - [list_client_devices_associated_with_core_device](#list_client_devices_associated_with_core_device)
     - [list_component_versions](#list_component_versions)
     - [list_components](#list_components)
@@ -37,6 +41,7 @@ type annotations stubs module
     - [resolve_component_candidates](#resolve_component_candidates)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_connectivity_info](#update_connectivity_info)
     - [get_paginator](#get_paginator)
 
 ## GreengrassV2Client
@@ -92,9 +97,30 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
+### associate_service_role_to_account
+
+Associates a Greengrass service role with IoT Greengrass for your Amazon Web
+Services account in this Amazon Web Services Region.
+
+Type annotations for
+`boto3.client("greengrassv2").associate_service_role_to_account` method.
+
+Boto3 documentation:
+[GreengrassV2.Client.associate_service_role_to_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.associate_service_role_to_account)
+
+Arguments mapping described in
+[AssociateServiceRoleToAccountRequestRequestTypeDef](./type_defs.md#associateserviceroletoaccountrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `roleArn`: `str` *(required)*
+
+Returns
+[AssociateServiceRoleToAccountResponseTypeDef](./type_defs.md#associateserviceroletoaccountresponsetypedef).
+
 ### batch_associate_client_device_with_core_device
 
-Associate a list of client devices with a core device.
+Associates a list of client devices with a core device.
 
 Type annotations for
 `boto3.client("greengrassv2").batch_associate_client_device_with_core_device`
@@ -117,7 +143,7 @@ Returns
 
 ### batch_disassociate_client_device_from_core_device
 
-Disassociate a list of client devices from a core device.
+Disassociates a list of client devices from a core device.
 
 Type annotations for
 `boto3.client("greengrassv2").batch_disassociate_client_device_from_core_device`
@@ -276,6 +302,20 @@ Keyword-only arguments:
 Returns
 [DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef).
 
+### disassociate_service_role_from_account
+
+Disassociates the Greengrass service role from IoT Greengrass for your Amazon
+Web Services account in this Amazon Web Services Region.
+
+Type annotations for
+`boto3.client("greengrassv2").disassociate_service_role_from_account` method.
+
+Boto3 documentation:
+[GreengrassV2.Client.disassociate_service_role_from_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.disassociate_service_role_from_account)
+
+Returns
+[DisassociateServiceRoleFromAccountResponseTypeDef](./type_defs.md#disassociateservicerolefromaccountresponsetypedef).
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -337,6 +377,26 @@ Keyword-only arguments:
 Returns
 [GetComponentVersionArtifactResponseTypeDef](./type_defs.md#getcomponentversionartifactresponsetypedef).
 
+### get_connectivity_info
+
+Retrieves connectivity information for a Greengrass core device.
+
+Type annotations for `boto3.client("greengrassv2").get_connectivity_info`
+method.
+
+Boto3 documentation:
+[GreengrassV2.Client.get_connectivity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_connectivity_info)
+
+Arguments mapping described in
+[GetConnectivityInfoRequestRequestTypeDef](./type_defs.md#getconnectivityinforequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `thingName`: `str` *(required)*
+
+Returns
+[GetConnectivityInfoResponseTypeDef](./type_defs.md#getconnectivityinforesponsetypedef).
+
 ### get_core_device
 
 Retrieves metadata for a Greengrass core device.
@@ -374,6 +434,20 @@ Keyword-only arguments:
 
 Returns
 [GetDeploymentResponseTypeDef](./type_defs.md#getdeploymentresponsetypedef).
+
+### get_service_role_for_account
+
+Gets the service role associated with IoT Greengrass for your Amazon Web
+Services account in this Amazon Web Services Region.
+
+Type annotations for
+`boto3.client("greengrassv2").get_service_role_for_account` method.
+
+Boto3 documentation:
+[GreengrassV2.Client.get_service_role_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_service_role_for_account)
+
+Returns
+[GetServiceRoleForAccountResponseTypeDef](./type_defs.md#getserviceroleforaccountresponsetypedef).
 
 ### list_client_devices_associated_with_core_device
 
@@ -617,6 +691,29 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### update_connectivity_info
+
+Updates connectivity information for a Greengrass core device.
+
+Type annotations for `boto3.client("greengrassv2").update_connectivity_info`
+method.
+
+Boto3 documentation:
+[GreengrassV2.Client.update_connectivity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.update_connectivity_info)
+
+Arguments mapping described in
+[UpdateConnectivityInfoRequestRequestTypeDef](./type_defs.md#updateconnectivityinforequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `thingName`: `str` *(required)*
+- `connectivityInfo`:
+  `Sequence`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
+  *(required)*
+
+Returns
+[UpdateConnectivityInfoResponseTypeDef](./type_defs.md#updateconnectivityinforesponsetypedef).
 
 ### get_paginator
 

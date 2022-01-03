@@ -10,6 +10,8 @@ type annotations stubs module
 - [Typed dictionaries for boto3 GreengrassV2 module](#typed-dictionaries-for-boto3-greengrassv2-module)
   - [AssociateClientDeviceWithCoreDeviceEntryTypeDef](#associateclientdevicewithcoredeviceentrytypedef)
   - [AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef](#associateclientdevicewithcoredeviceerrorentrytypedef)
+  - [AssociateServiceRoleToAccountRequestRequestTypeDef](#associateserviceroletoaccountrequestrequesttypedef)
+  - [AssociateServiceRoleToAccountResponseTypeDef](#associateserviceroletoaccountresponsetypedef)
   - [AssociatedClientDeviceTypeDef](#associatedclientdevicetypedef)
   - [BatchAssociateClientDeviceWithCoreDeviceRequestRequestTypeDef](#batchassociateclientdevicewithcoredevicerequestrequesttypedef)
   - [BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef](#batchassociateclientdevicewithcoredeviceresponsetypedef)
@@ -27,6 +29,7 @@ type annotations stubs module
   - [ComponentRunWithTypeDef](#componentrunwithtypedef)
   - [ComponentTypeDef](#componenttypedef)
   - [ComponentVersionListItemTypeDef](#componentversionlistitemtypedef)
+  - [ConnectivityInfoTypeDef](#connectivityinfotypedef)
   - [CoreDeviceTypeDef](#coredevicetypedef)
   - [CreateComponentVersionRequestRequestTypeDef](#createcomponentversionrequestrequesttypedef)
   - [CreateComponentVersionResponseTypeDef](#createcomponentversionresponsetypedef)
@@ -43,15 +46,19 @@ type annotations stubs module
   - [DescribeComponentResponseTypeDef](#describecomponentresponsetypedef)
   - [DisassociateClientDeviceFromCoreDeviceEntryTypeDef](#disassociateclientdevicefromcoredeviceentrytypedef)
   - [DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef](#disassociateclientdevicefromcoredeviceerrorentrytypedef)
+  - [DisassociateServiceRoleFromAccountResponseTypeDef](#disassociateservicerolefromaccountresponsetypedef)
   - [EffectiveDeploymentTypeDef](#effectivedeploymenttypedef)
   - [GetComponentRequestRequestTypeDef](#getcomponentrequestrequesttypedef)
   - [GetComponentResponseTypeDef](#getcomponentresponsetypedef)
   - [GetComponentVersionArtifactRequestRequestTypeDef](#getcomponentversionartifactrequestrequesttypedef)
   - [GetComponentVersionArtifactResponseTypeDef](#getcomponentversionartifactresponsetypedef)
+  - [GetConnectivityInfoRequestRequestTypeDef](#getconnectivityinforequestrequesttypedef)
+  - [GetConnectivityInfoResponseTypeDef](#getconnectivityinforesponsetypedef)
   - [GetCoreDeviceRequestRequestTypeDef](#getcoredevicerequestrequesttypedef)
   - [GetCoreDeviceResponseTypeDef](#getcoredeviceresponsetypedef)
   - [GetDeploymentRequestRequestTypeDef](#getdeploymentrequestrequesttypedef)
   - [GetDeploymentResponseTypeDef](#getdeploymentresponsetypedef)
+  - [GetServiceRoleForAccountResponseTypeDef](#getserviceroleforaccountresponsetypedef)
   - [InstalledComponentTypeDef](#installedcomponenttypedef)
   - [IoTJobAbortConfigTypeDef](#iotjobabortconfigtypedef)
   - [IoTJobAbortCriteriaTypeDef](#iotjobabortcriteriatypedef)
@@ -90,6 +97,8 @@ type annotations stubs module
   - [SystemResourceLimitsTypeDef](#systemresourcelimitstypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateConnectivityInfoRequestRequestTypeDef](#updateconnectivityinforequestrequesttypedef)
+  - [UpdateConnectivityInfoResponseTypeDef](#updateconnectivityinforesponsetypedef)
 
 ## AssociateClientDeviceWithCoreDeviceEntryTypeDef
 
@@ -112,6 +121,28 @@ Optional fields:
 - `thingName`: `str`
 - `code`: `str`
 - `message`: `str`
+
+## AssociateServiceRoleToAccountRequestRequestTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import AssociateServiceRoleToAccountRequestRequestTypeDef
+```
+
+Required fields:
+
+- `roleArn`: `str`
+
+## AssociateServiceRoleToAccountResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import AssociateServiceRoleToAccountResponseTypeDef
+```
+
+Required fields:
+
+- `associatedAt`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AssociatedClientDeviceTypeDef
 
@@ -327,6 +358,19 @@ Optional fields:
 - `componentName`: `str`
 - `componentVersion`: `str`
 - `arn`: `str`
+
+## ConnectivityInfoTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import ConnectivityInfoTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `hostAddress`: `str`
+- `portNumber`: `int`
+- `metadata`: `str`
 
 ## CoreDeviceTypeDef
 
@@ -550,6 +594,18 @@ Optional fields:
 - `code`: `str`
 - `message`: `str`
 
+## DisassociateServiceRoleFromAccountResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import DisassociateServiceRoleFromAccountResponseTypeDef
+```
+
+Required fields:
+
+- `disassociatedAt`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## EffectiveDeploymentTypeDef
 
 ```python
@@ -626,6 +682,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetConnectivityInfoRequestRequestTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import GetConnectivityInfoRequestRequestTypeDef
+```
+
+Required fields:
+
+- `thingName`: `str`
+
+## GetConnectivityInfoResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import GetConnectivityInfoResponseTypeDef
+```
+
+Required fields:
+
+- `connectivityInfo`:
+  `List`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
+- `message`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetCoreDeviceRequestRequestTypeDef
 
 ```python
@@ -689,6 +769,19 @@ Required fields:
 - `creationTimestamp`: `datetime`
 - `isLatestForTarget`: `bool`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetServiceRoleForAccountResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import GetServiceRoleForAccountResponseTypeDef
+```
+
+Required fields:
+
+- `associatedAt`: `str`
+- `roleArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1211,3 +1304,28 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+## UpdateConnectivityInfoRequestRequestTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import UpdateConnectivityInfoRequestRequestTypeDef
+```
+
+Required fields:
+
+- `thingName`: `str`
+- `connectivityInfo`:
+  `Sequence`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
+
+## UpdateConnectivityInfoResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import UpdateConnectivityInfoResponseTypeDef
+```
+
+Required fields:
+
+- `version`: `str`
+- `message`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
