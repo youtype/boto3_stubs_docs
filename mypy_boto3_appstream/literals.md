@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 AppStream module](#literals-for-boto3-appstream-module)
   - [AccessEndpointTypeType](#accessendpointtypetype)
   - [ActionType](#actiontype)
+  - [AppVisibilityType](#appvisibilitytype)
   - [ApplicationAttributeType](#applicationattributetype)
   - [AuthenticationTypeType](#authenticationtypetype)
   - [DescribeDirectoryConfigsPaginatorName](#describedirectoryconfigspaginatorname)
@@ -74,6 +75,17 @@ Values:
 - `FILE_DOWNLOAD`
 - `FILE_UPLOAD`
 - `PRINTING_TO_LOCAL_DEVICE`
+
+## AppVisibilityType
+
+```python
+from mypy_boto3_appstream.literals import AppVisibilityType
+```
+
+Values:
+
+- `ALL`
+- `ASSOCIATED`
 
 ## ApplicationAttributeType
 

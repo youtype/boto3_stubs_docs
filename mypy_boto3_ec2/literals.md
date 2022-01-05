@@ -312,6 +312,7 @@ type annotations stubs module
   - [OperationTypeType](#operationtypetype)
   - [PartitionLoadFrequencyType](#partitionloadfrequencytype)
   - [PasswordDataAvailableWaiterName](#passworddataavailablewaitername)
+  - [PayerResponsibilityType](#payerresponsibilitytype)
   - [PaymentOptionType](#paymentoptiontype)
   - [PermissionGroupType](#permissiongrouptype)
   - [PlacementGroupStateType](#placementgroupstatetype)
@@ -4315,6 +4316,16 @@ from mypy_boto3_ec2.literals import PasswordDataAvailableWaiterName
 Values:
 
 - `password_data_available`
+
+## PayerResponsibilityType
+
+```python
+from mypy_boto3_ec2.literals import PayerResponsibilityType
+```
+
+Values:
+
+- `ServiceOwner`
 
 ## PaymentOptionType
 

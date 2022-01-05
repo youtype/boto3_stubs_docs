@@ -11,6 +11,7 @@ type annotations stubs module
   - [AddLFTagsToResourceRequestRequestTypeDef](#addlftagstoresourcerequestrequesttypedef)
   - [AddLFTagsToResourceResponseTypeDef](#addlftagstoresourceresponsetypedef)
   - [AddObjectInputTypeDef](#addobjectinputtypedef)
+  - [AuditContextTypeDef](#auditcontexttypedef)
   - [BatchGrantPermissionsRequestRequestTypeDef](#batchgrantpermissionsrequestrequesttypedef)
   - [BatchGrantPermissionsResponseTypeDef](#batchgrantpermissionsresponsetypedef)
   - [BatchPermissionsFailureEntryTypeDef](#batchpermissionsfailureentrytypedef)
@@ -58,6 +59,10 @@ type annotations stubs module
   - [GetResourceLFTagsResponseTypeDef](#getresourcelftagsresponsetypedef)
   - [GetTableObjectsRequestRequestTypeDef](#gettableobjectsrequestrequesttypedef)
   - [GetTableObjectsResponseTypeDef](#gettableobjectsresponsetypedef)
+  - [GetTemporaryGluePartitionCredentialsRequestRequestTypeDef](#gettemporarygluepartitioncredentialsrequestrequesttypedef)
+  - [GetTemporaryGluePartitionCredentialsResponseTypeDef](#gettemporarygluepartitioncredentialsresponsetypedef)
+  - [GetTemporaryGlueTableCredentialsRequestRequestTypeDef](#gettemporarygluetablecredentialsrequestrequesttypedef)
+  - [GetTemporaryGlueTableCredentialsResponseTypeDef](#gettemporarygluetablecredentialsresponsetypedef)
   - [GetWorkUnitResultsRequestRequestTypeDef](#getworkunitresultsrequestrequesttypedef)
   - [GetWorkUnitResultsResponseTypeDef](#getworkunitresultsresponsetypedef)
   - [GetWorkUnitsRequestRequestTypeDef](#getworkunitsrequestrequesttypedef)
@@ -82,6 +87,7 @@ type annotations stubs module
   - [ListTransactionsResponseTypeDef](#listtransactionsresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PartitionObjectsTypeDef](#partitionobjectstypedef)
+  - [PartitionValueListTypeDef](#partitionvaluelisttypedef)
   - [PlanningStatisticsTypeDef](#planningstatisticstypedef)
   - [PrincipalPermissionsTypeDef](#principalpermissionstypedef)
   - [PrincipalResourcePermissionsTypeDef](#principalresourcepermissionstypedef)
@@ -161,6 +167,16 @@ Required fields:
 Optional fields:
 
 - `PartitionValues`: `Sequence`\[`str`\]
+
+## AuditContextTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import AuditContextTypeDef
+```
+
+Optional fields:
+
+- `AdditionalAuditContext`: `str`
 
 ## BatchGrantPermissionsRequestRequestTypeDef
 
@@ -386,6 +402,10 @@ Optional fields:
 - `CreateTableDefaultPermissions`:
   `List`\[[PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef)\]
 - `TrustedResourceOwners`: `List`\[`str`\]
+- `AllowExternalDataFiltering`: `bool`
+- `ExternalDataFilteringAllowList`:
+  `List`\[[DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)\]
+- `AuthorizedSessionTagValueList`: `List`\[`str`\]
 
 ## DataLocationResourceTypeDef
 
@@ -782,6 +802,74 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetTemporaryGluePartitionCredentialsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetTemporaryGluePartitionCredentialsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `TableArn`: `str`
+- `Partition`:
+  [PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)
+- `SupportedPermissionTypes`:
+  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+
+Optional fields:
+
+- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
+- `DurationSeconds`: `int`
+- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
+
+## GetTemporaryGluePartitionCredentialsResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetTemporaryGluePartitionCredentialsResponseTypeDef
+```
+
+Required fields:
+
+- `AccessKeyId`: `str`
+- `SecretAccessKey`: `str`
+- `SessionToken`: `str`
+- `Expiration`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetTemporaryGlueTableCredentialsRequestRequestTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetTemporaryGlueTableCredentialsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `TableArn`: `str`
+- `SupportedPermissionTypes`:
+  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+
+Optional fields:
+
+- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
+- `DurationSeconds`: `int`
+- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
+
+## GetTemporaryGlueTableCredentialsResponseTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import GetTemporaryGlueTableCredentialsResponseTypeDef
+```
+
+Required fields:
+
+- `AccessKeyId`: `str`
+- `SecretAccessKey`: `str`
+- `SessionToken`: `str`
+- `Expiration`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetWorkUnitResultsRequestRequestTypeDef
 
 ```python
@@ -1116,6 +1204,16 @@ Optional fields:
 
 - `PartitionValues`: `List`\[`str`\]
 - `Objects`: `List`\[[TableObjectTypeDef](./type_defs.md#tableobjecttypedef)\]
+
+## PartitionValueListTypeDef
+
+```python
+from mypy_boto3_lakeformation.type_defs import PartitionValueListTypeDef
+```
+
+Required fields:
+
+- `Values`: `Sequence`\[`str`\]
 
 ## PlanningStatisticsTypeDef
 

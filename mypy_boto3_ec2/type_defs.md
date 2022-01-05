@@ -1294,6 +1294,8 @@ type annotations stubs module
   - [ModifyVpcEndpointResultTypeDef](#modifyvpcendpointresulttypedef)
   - [ModifyVpcEndpointServiceConfigurationRequestRequestTypeDef](#modifyvpcendpointserviceconfigurationrequestrequesttypedef)
   - [ModifyVpcEndpointServiceConfigurationResultTypeDef](#modifyvpcendpointserviceconfigurationresulttypedef)
+  - [ModifyVpcEndpointServicePayerResponsibilityRequestRequestTypeDef](#modifyvpcendpointservicepayerresponsibilityrequestrequesttypedef)
+  - [ModifyVpcEndpointServicePayerResponsibilityResultTypeDef](#modifyvpcendpointservicepayerresponsibilityresulttypedef)
   - [ModifyVpcEndpointServicePermissionsRequestRequestTypeDef](#modifyvpcendpointservicepermissionsrequestrequesttypedef)
   - [ModifyVpcEndpointServicePermissionsResultTypeDef](#modifyvpcendpointservicepermissionsresulttypedef)
   - [ModifyVpcPeeringConnectionOptionsRequestRequestTypeDef](#modifyvpcpeeringconnectionoptionsrequestrequesttypedef)
@@ -20655,6 +20657,34 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ModifyVpcEndpointServicePayerResponsibilityRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpcEndpointServicePayerResponsibilityRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceId`: `str`
+- `PayerResponsibility`: `Literal['ServiceOwner']` (see
+  [PayerResponsibilityType](./literals.md#payerresponsibilitytype))
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ModifyVpcEndpointServicePayerResponsibilityResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpcEndpointServicePayerResponsibilityResultTypeDef
+```
+
+Required fields:
+
+- `ReturnValue`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ModifyVpcEndpointServicePermissionsRequestRequestTypeDef
 
 ```python
@@ -24743,6 +24773,8 @@ Optional fields:
 - `PrivateDnsName`: `str`
 - `PrivateDnsNameConfiguration`:
   [PrivateDnsNameConfigurationTypeDef](./type_defs.md#privatednsnameconfigurationtypedef)
+- `PayerResponsibility`: `Literal['ServiceOwner']` (see
+  [PayerResponsibilityType](./literals.md#payerresponsibilitytype))
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ServiceDetailTypeDef
@@ -24766,6 +24798,8 @@ Optional fields:
 - `VpcEndpointPolicySupported`: `bool`
 - `AcceptanceRequired`: `bool`
 - `ManagesVpcEndpoints`: `bool`
+- `PayerResponsibility`: `Literal['ServiceOwner']` (see
+  [PayerResponsibilityType](./literals.md#payerresponsibilitytype))
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `PrivateDnsNameVerificationState`:
   [DnsNameStateType](./literals.md#dnsnamestatetype)

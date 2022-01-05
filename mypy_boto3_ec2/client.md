@@ -458,6 +458,7 @@ type annotations stubs module
     - [modify_vpc_endpoint](#modify_vpc_endpoint)
     - [modify_vpc_endpoint_connection_notification](#modify_vpc_endpoint_connection_notification)
     - [modify_vpc_endpoint_service_configuration](#modify_vpc_endpoint_service_configuration)
+    - [modify_vpc_endpoint_service_payer_responsibility](#modify_vpc_endpoint_service_payer_responsibility)
     - [modify_vpc_endpoint_service_permissions](#modify_vpc_endpoint_service_permissions)
     - [modify_vpc_peering_connection_options](#modify_vpc_peering_connection_options)
     - [modify_vpc_tenancy](#modify_vpc_tenancy)
@@ -11024,6 +11025,30 @@ Keyword-only arguments:
 
 Returns
 [ModifyVpcEndpointServiceConfigurationResultTypeDef](./type_defs.md#modifyvpcendpointserviceconfigurationresulttypedef).
+
+### modify_vpc_endpoint_service_payer_responsibility
+
+Modifies the payer responsibility for your VPC endpoint service.
+
+Type annotations for
+`boto3.client("ec2").modify_vpc_endpoint_service_payer_responsibility` method.
+
+Boto3 documentation:
+[EC2.Client.modify_vpc_endpoint_service_payer_responsibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_service_payer_responsibility)
+
+Arguments mapping described in
+[ModifyVpcEndpointServicePayerResponsibilityRequestRequestTypeDef](./type_defs.md#modifyvpcendpointservicepayerresponsibilityrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ServiceId`: `str` *(required)*
+- `PayerResponsibility`: `Literal['ServiceOwner']` (see
+  [PayerResponsibilityType](./literals.md#payerresponsibilitytype))
+  *(required)*
+- `DryRun`: `bool`
+
+Returns
+[ModifyVpcEndpointServicePayerResponsibilityResultTypeDef](./type_defs.md#modifyvpcendpointservicepayerresponsibilityresulttypedef).
 
 ### modify_vpc_endpoint_service_permissions
 
