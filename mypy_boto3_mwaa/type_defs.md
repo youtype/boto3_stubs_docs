@@ -225,6 +225,7 @@ Optional fields:
 
 - `CreatedAt`: `datetime`
 - `Error`: [UpdateErrorTypeDef](./type_defs.md#updateerrortypedef)
+- `Source`: `str`
 - `Status`: [UpdateStatusType](./literals.md#updatestatustype)
 
 ## ListEnvironmentsInputRequestTypeDef

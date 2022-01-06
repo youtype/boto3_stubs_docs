@@ -1709,6 +1709,7 @@ Keyword-only arguments:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `OutpostArn`: `str`
+- `PlacementGroupArn`: `str`
 
 Returns
 [CreateCapacityReservationResultTypeDef](./type_defs.md#createcapacityreservationresulttypedef).
@@ -4927,7 +4928,7 @@ Returns
 
 ### describe_account_attributes
 
-Describes attributes of your AWS account.
+Describes attributes of your Amazon Web Services account.
 
 Type annotations for `boto3.client("ec2").describe_account_attributes` method.
 
@@ -10339,6 +10340,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `HttpProtocolIpv6`:
   [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
+- `InstanceMetadataTags`:
+  [InstanceMetadataTagsStateType](./literals.md#instancemetadatatagsstatetype)
 
 Returns
 [ModifyInstanceMetadataOptionsResultTypeDef](./type_defs.md#modifyinstancemetadataoptionsresulttypedef).
@@ -11273,10 +11276,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `Cidr`: `str` *(required)*
+- `IpamPoolId`: `str` *(required)*
+- `IpamPoolOwner`: `str` *(required)*
 - `DryRun`: `bool`
-- `Cidr`: `str`
-- `IpamPoolId`: `str`
-- `IpamPoolOwner`: `str`
 
 Returns
 [MoveByoipCidrToIpamResultTypeDef](./type_defs.md#movebyoipcidrtoipamresulttypedef).

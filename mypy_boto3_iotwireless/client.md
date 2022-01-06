@@ -34,6 +34,7 @@ type annotations stubs module
     - [delete_device_profile](#delete_device_profile)
     - [delete_fuota_task](#delete_fuota_task)
     - [delete_multicast_group](#delete_multicast_group)
+    - [delete_queued_messages](#delete_queued_messages)
     - [delete_service_profile](#delete_service_profile)
     - [delete_wireless_device](#delete_wireless_device)
     - [delete_wireless_gateway](#delete_wireless_gateway)
@@ -73,6 +74,7 @@ type annotations stubs module
     - [list_multicast_groups](#list_multicast_groups)
     - [list_multicast_groups_by_fuota_task](#list_multicast_groups_by_fuota_task)
     - [list_partner_accounts](#list_partner_accounts)
+    - [list_queued_messages](#list_queued_messages)
     - [list_service_profiles](#list_service_profiles)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_wireless_devices](#list_wireless_devices)
@@ -627,6 +629,28 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### delete_queued_messages
+
+The operation to delete queued messages.
+
+Type annotations for `boto3.client("iotwireless").delete_queued_messages`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.delete_queued_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_queued_messages)
+
+Arguments mapping described in
+[DeleteQueuedMessagesRequestRequestTypeDef](./type_defs.md#deletequeuedmessagesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `MessageId`: `str` *(required)*
+- `WirelessDeviceType`:
+  [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1411,6 +1435,29 @@ Keyword-only arguments:
 
 Returns
 [ListPartnerAccountsResponseTypeDef](./type_defs.md#listpartneraccountsresponsetypedef).
+
+### list_queued_messages
+
+The operation to list queued messages.
+
+Type annotations for `boto3.client("iotwireless").list_queued_messages` method.
+
+Boto3 documentation:
+[IoTWireless.Client.list_queued_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_queued_messages)
+
+Arguments mapping described in
+[ListQueuedMessagesRequestRequestTypeDef](./type_defs.md#listqueuedmessagesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `WirelessDeviceType`:
+  [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
+
+Returns
+[ListQueuedMessagesResponseTypeDef](./type_defs.md#listqueuedmessagesresponsetypedef).
 
 ### list_service_profiles
 

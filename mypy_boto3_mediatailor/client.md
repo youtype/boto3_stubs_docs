@@ -874,6 +874,7 @@ Keyword-only arguments:
 - `Outputs`:
   `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
   *(required)*
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 
 Returns
 [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).

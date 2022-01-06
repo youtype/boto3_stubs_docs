@@ -251,6 +251,7 @@ type annotations stubs module
   - [InstanceMetadataEndpointStateType](#instancemetadataendpointstatetype)
   - [InstanceMetadataOptionsStateType](#instancemetadataoptionsstatetype)
   - [InstanceMetadataProtocolStateType](#instancemetadataprotocolstatetype)
+  - [InstanceMetadataTagsStateType](#instancemetadatatagsstatetype)
   - [InstanceRunningWaiterName](#instancerunningwaitername)
   - [InstanceStateNameType](#instancestatenametype)
   - [InstanceStatusOkWaiterName](#instancestatusokwaitername)
@@ -283,6 +284,7 @@ type annotations stubs module
   - [LaunchTemplateInstanceMetadataEndpointStateType](#launchtemplateinstancemetadataendpointstatetype)
   - [LaunchTemplateInstanceMetadataOptionsStateType](#launchtemplateinstancemetadataoptionsstatetype)
   - [LaunchTemplateInstanceMetadataProtocolIpv6Type](#launchtemplateinstancemetadataprotocolipv6type)
+  - [LaunchTemplateInstanceMetadataTagsStateType](#launchtemplateinstancemetadatatagsstatetype)
   - [ListSnapshotsInRecycleBinPaginatorName](#listsnapshotsinrecyclebinpaginatorname)
   - [ListingStateType](#listingstatetype)
   - [ListingStatusType](#listingstatustype)
@@ -3118,6 +3120,17 @@ Values:
 - `disabled`
 - `enabled`
 
+## InstanceMetadataTagsStateType
+
+```python
+from mypy_boto3_ec2.literals import InstanceMetadataTagsStateType
+```
+
+Values:
+
+- `disabled`
+- `enabled`
+
 ## InstanceRunningWaiterName
 
 ```python
@@ -3966,6 +3979,17 @@ Values:
 
 ```python
 from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataProtocolIpv6Type
+```
+
+Values:
+
+- `disabled`
+- `enabled`
+
+## LaunchTemplateInstanceMetadataTagsStateType
+
+```python
+from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataTagsStateType
 ```
 
 Values:

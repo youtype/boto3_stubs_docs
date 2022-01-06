@@ -3915,6 +3915,7 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OutpostArn`: `str`
 - `CapacityReservationFleetId`: `str`
+- `PlacementGroupArn`: `str`
 
 ## CarrierGatewayTypeDef
 
@@ -4577,6 +4578,7 @@ Optional fields:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `OutpostArn`: `str`
+- `PlacementGroupArn`: `str`
 
 ## CreateCapacityReservationResultTypeDef
 
@@ -17335,6 +17337,8 @@ Optional fields:
   [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 - `HttpProtocolIpv6`:
   [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
+- `InstanceMetadataTags`:
+  [InstanceMetadataTagsStateType](./literals.md#instancemetadatatagsstatetype)
 
 ## InstanceMetadataOptionsResponseTypeDef
 
@@ -17352,6 +17356,8 @@ Optional fields:
   [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 - `HttpProtocolIpv6`:
   [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
+- `InstanceMetadataTags`:
+  [InstanceMetadataTagsStateType](./literals.md#instancemetadatatagsstatetype)
 
 ## InstanceMonitoringTypeDef
 
@@ -18584,6 +18590,8 @@ Optional fields:
   [LaunchTemplateInstanceMetadataEndpointStateType](./literals.md#launchtemplateinstancemetadataendpointstatetype)
 - `HttpProtocolIpv6`:
   [LaunchTemplateInstanceMetadataProtocolIpv6Type](./literals.md#launchtemplateinstancemetadataprotocolipv6type)
+- `InstanceMetadataTags`:
+  [LaunchTemplateInstanceMetadataTagsStateType](./literals.md#launchtemplateinstancemetadatatagsstatetype)
 
 ## LaunchTemplateInstanceMetadataOptionsTypeDef
 
@@ -18602,6 +18610,8 @@ Optional fields:
   [LaunchTemplateInstanceMetadataEndpointStateType](./literals.md#launchtemplateinstancemetadataendpointstatetype)
 - `HttpProtocolIpv6`:
   [LaunchTemplateInstanceMetadataProtocolIpv6Type](./literals.md#launchtemplateinstancemetadataprotocolipv6type)
+- `InstanceMetadataTags`:
+  [LaunchTemplateInstanceMetadataTagsStateType](./literals.md#launchtemplateinstancemetadatatagsstatetype)
 
 ## LaunchTemplateInstanceNetworkInterfaceSpecificationRequestTypeDef
 
@@ -19756,6 +19766,8 @@ Optional fields:
 - `DryRun`: `bool`
 - `HttpProtocolIpv6`:
   [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
+- `InstanceMetadataTags`:
+  [InstanceMetadataTagsStateType](./literals.md#instancemetadatatagsstatetype)
 
 ## ModifyInstanceMetadataOptionsResultTypeDef
 
@@ -21003,12 +21015,15 @@ Required fields:
 from mypy_boto3_ec2.type_defs import MoveByoipCidrToIpamRequestRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
-- `DryRun`: `bool`
 - `Cidr`: `str`
 - `IpamPoolId`: `str`
 - `IpamPoolOwner`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
 
 ## MoveByoipCidrToIpamResultTypeDef
 
@@ -21757,6 +21772,7 @@ Optional fields:
 - `PartitionCount`: `int`
 - `GroupId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `GroupArn`: `str`
 
 ## PlacementResponseTypeDef
 
