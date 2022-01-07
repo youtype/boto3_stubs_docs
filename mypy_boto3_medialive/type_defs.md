@@ -2488,6 +2488,8 @@ Optional fields:
   [HlsOutputSelectionType](./literals.md#hlsoutputselectiontype)
 - `ProgramDateTime`:
   [HlsProgramDateTimeType](./literals.md#hlsprogramdatetimetype)
+- `ProgramDateTimeClock`:
+  [HlsProgramDateTimeClockType](./literals.md#hlsprogramdatetimeclocktype)
 - `ProgramDateTimePeriod`: `int`
 - `RedundantManifest`:
   [HlsRedundantManifestType](./literals.md#hlsredundantmanifesttype)
