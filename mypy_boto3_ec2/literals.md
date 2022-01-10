@@ -88,6 +88,7 @@ type annotations stubs module
   - [DescribeDhcpOptionsPaginatorName](#describedhcpoptionspaginatorname)
   - [DescribeEgressOnlyInternetGatewaysPaginatorName](#describeegressonlyinternetgatewayspaginatorname)
   - [DescribeExportImageTasksPaginatorName](#describeexportimagetaskspaginatorname)
+  - [DescribeFastLaunchImagesPaginatorName](#describefastlaunchimagespaginatorname)
   - [DescribeFastSnapshotRestoresPaginatorName](#describefastsnapshotrestorespaginatorname)
   - [DescribeFleetsPaginatorName](#describefleetspaginatorname)
   - [DescribeFlowLogsPaginatorName](#describeflowlogspaginatorname)
@@ -194,6 +195,8 @@ type annotations stubs module
   - [ExportTaskCancelledWaiterName](#exporttaskcancelledwaitername)
   - [ExportTaskCompletedWaiterName](#exporttaskcompletedwaitername)
   - [ExportTaskStateType](#exporttaskstatetype)
+  - [FastLaunchResourceTypeType](#fastlaunchresourcetypetype)
+  - [FastLaunchStateCodeType](#fastlaunchstatecodetype)
   - [FastSnapshotRestoreStateCodeType](#fastsnapshotrestorestatecodetype)
   - [FindingsFoundType](#findingsfoundtype)
   - [FleetActivityStatusType](#fleetactivitystatustype)
@@ -1373,6 +1376,16 @@ Values:
 
 - `describe_export_image_tasks`
 
+## DescribeFastLaunchImagesPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeFastLaunchImagesPaginatorName
+```
+
+Values:
+
+- `describe_fast_launch_images`
+
 ## DescribeFastSnapshotRestoresPaginatorName
 
 ```python
@@ -2465,6 +2478,31 @@ Values:
 - `cancelled`
 - `cancelling`
 - `completed`
+
+## FastLaunchResourceTypeType
+
+```python
+from mypy_boto3_ec2.literals import FastLaunchResourceTypeType
+```
+
+Values:
+
+- `snapshot`
+
+## FastLaunchStateCodeType
+
+```python
+from mypy_boto3_ec2.literals import FastLaunchStateCodeType
+```
+
+Values:
+
+- `disabling`
+- `disabling-failed`
+- `enabled`
+- `enabled-failed`
+- `enabling`
+- `enabling-failed`
 
 ## FastSnapshotRestoreStateCodeType
 
@@ -6111,6 +6149,7 @@ Values:
 - `describe_dhcp_options`
 - `describe_egress_only_internet_gateways`
 - `describe_export_image_tasks`
+- `describe_fast_launch_images`
 - `describe_fast_snapshot_restores`
 - `describe_fleets`
 - `describe_flow_logs`

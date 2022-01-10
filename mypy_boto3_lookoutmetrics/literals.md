@@ -12,6 +12,7 @@ type annotations stubs module
   - [AlertStatusType](#alertstatustype)
   - [AlertTypeType](#alerttypetype)
   - [AnomalyDetectionTaskStatusType](#anomalydetectiontaskstatustype)
+  - [AnomalyDetectorFailureTypeType](#anomalydetectorfailuretypetype)
   - [AnomalyDetectorStatusType](#anomalydetectorstatustype)
   - [CSVFileCompressionType](#csvfilecompressiontype)
   - [FrequencyType](#frequencytype)
@@ -65,6 +66,18 @@ Values:
 - `FAILED_TO_SCHEDULE`
 - `IN_PROGRESS`
 - `PENDING`
+
+## AnomalyDetectorFailureTypeType
+
+```python
+from mypy_boto3_lookoutmetrics.literals import AnomalyDetectorFailureTypeType
+```
+
+Values:
+
+- `ACTIVATION_FAILURE`
+- `BACK_TEST_ACTIVATION_FAILURE`
+- `DELETION_FAILURE`
 
 ## AnomalyDetectorStatusType
 

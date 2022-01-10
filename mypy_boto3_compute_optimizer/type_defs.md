@@ -123,6 +123,7 @@ Optional fields:
 - `rank`: `int`
 - `savingsOpportunity`:
   [SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef)
+- `migrationEffort`: [MigrationEffortType](./literals.md#migrationefforttype)
 
 ## AutoScalingGroupRecommendationTypeDef
 
@@ -148,6 +149,8 @@ Optional fields:
   [CurrentPerformanceRiskType](./literals.md#currentperformancerisktype)
 - `effectiveRecommendationPreferences`:
   [EffectiveRecommendationPreferencesTypeDef](./type_defs.md#effectiverecommendationpreferencestypedef)
+- `inferredWorkloadTypes`:
+  `List`\[[InferredWorkloadTypeType](./literals.md#inferredworkloadtypetype)\]
 
 ## CurrentPerformanceRiskRatingsTypeDef
 
@@ -172,8 +175,7 @@ Required fields:
 
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `recommendationPreferenceNames`:
-  `Sequence`\[`Literal['EnhancedInfrastructureMetrics']` (see
-  [RecommendationPreferenceNameType](./literals.md#recommendationpreferencenametype))\]
+  `Sequence`\[[RecommendationPreferenceNameType](./literals.md#recommendationpreferencenametype)\]
 
 Optional fields:
 
@@ -242,6 +244,8 @@ Optional fields:
   `List`\[[CpuVendorArchitectureType](./literals.md#cpuvendorarchitecturetype)\]
 - `enhancedInfrastructureMetrics`:
   [EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype)
+- `inferredWorkloadTypes`:
+  [InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype)
 
 ## EnrollmentFilterTypeDef
 
@@ -734,6 +738,7 @@ Optional fields:
 - `rank`: `int`
 - `savingsOpportunity`:
   [SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef)
+- `migrationEffort`: [MigrationEffortType](./literals.md#migrationefforttype)
 
 ## InstanceRecommendationTypeDef
 
@@ -762,6 +767,8 @@ Optional fields:
   [CurrentPerformanceRiskType](./literals.md#currentperformancerisktype)
 - `effectiveRecommendationPreferences`:
   [EffectiveRecommendationPreferencesTypeDef](./type_defs.md#effectiverecommendationpreferencestypedef)
+- `inferredWorkloadTypes`:
+  `List`\[[InferredWorkloadTypeType](./literals.md#inferredworkloadtypetype)\]
 
 ## JobFilterTypeDef
 
@@ -882,6 +889,8 @@ Optional fields:
 - `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
 - `enhancedInfrastructureMetrics`:
   [EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype)
+- `inferredWorkloadTypes`:
+  [InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype)
 
 ## ReasonCodeSummaryTypeDef
 
@@ -923,6 +932,8 @@ Optional fields:
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `enhancedInfrastructureMetrics`:
   [EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype)
+- `inferredWorkloadTypes`:
+  [InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype)
 
 ## RecommendationPreferencesTypeDef
 

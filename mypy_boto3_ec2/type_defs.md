@@ -571,6 +571,9 @@ type annotations stubs module
   - [DescribeExportImageTasksResultTypeDef](#describeexportimagetasksresulttypedef)
   - [DescribeExportTasksRequestRequestTypeDef](#describeexporttasksrequestrequesttypedef)
   - [DescribeExportTasksResultTypeDef](#describeexporttasksresulttypedef)
+  - [DescribeFastLaunchImagesRequestRequestTypeDef](#describefastlaunchimagesrequestrequesttypedef)
+  - [DescribeFastLaunchImagesResultTypeDef](#describefastlaunchimagesresulttypedef)
+  - [DescribeFastLaunchImagesSuccessItemTypeDef](#describefastlaunchimagessuccessitemtypedef)
   - [DescribeFastSnapshotRestoreSuccessItemTypeDef](#describefastsnapshotrestoresuccessitemtypedef)
   - [DescribeFastSnapshotRestoresRequestRequestTypeDef](#describefastsnapshotrestoresrequestrequesttypedef)
   - [DescribeFastSnapshotRestoresResultTypeDef](#describefastsnapshotrestoresresulttypedef)
@@ -816,6 +819,8 @@ type annotations stubs module
   - [DirectoryServiceAuthenticationTypeDef](#directoryserviceauthenticationtypedef)
   - [DisableEbsEncryptionByDefaultRequestRequestTypeDef](#disableebsencryptionbydefaultrequestrequesttypedef)
   - [DisableEbsEncryptionByDefaultResultTypeDef](#disableebsencryptionbydefaultresulttypedef)
+  - [DisableFastLaunchRequestRequestTypeDef](#disablefastlaunchrequestrequesttypedef)
+  - [DisableFastLaunchResultTypeDef](#disablefastlaunchresulttypedef)
   - [DisableFastSnapshotRestoreErrorItemTypeDef](#disablefastsnapshotrestoreerroritemtypedef)
   - [DisableFastSnapshotRestoreStateErrorItemTypeDef](#disablefastsnapshotrestorestateerroritemtypedef)
   - [DisableFastSnapshotRestoreStateErrorTypeDef](#disablefastsnapshotrestorestateerrortypedef)
@@ -883,6 +888,8 @@ type annotations stubs module
   - [ElasticInferenceAcceleratorTypeDef](#elasticinferenceacceleratortypedef)
   - [EnableEbsEncryptionByDefaultRequestRequestTypeDef](#enableebsencryptionbydefaultrequestrequesttypedef)
   - [EnableEbsEncryptionByDefaultResultTypeDef](#enableebsencryptionbydefaultresulttypedef)
+  - [EnableFastLaunchRequestRequestTypeDef](#enablefastlaunchrequestrequesttypedef)
+  - [EnableFastLaunchResultTypeDef](#enablefastlaunchresulttypedef)
   - [EnableFastSnapshotRestoreErrorItemTypeDef](#enablefastsnapshotrestoreerroritemtypedef)
   - [EnableFastSnapshotRestoreStateErrorItemTypeDef](#enablefastsnapshotrestorestateerroritemtypedef)
   - [EnableFastSnapshotRestoreStateErrorTypeDef](#enablefastsnapshotrestorestateerrortypedef)
@@ -925,6 +932,10 @@ type annotations stubs module
   - [ExportTransitGatewayRoutesResultTypeDef](#exporttransitgatewayroutesresulttypedef)
   - [FailedCapacityReservationFleetCancellationResultTypeDef](#failedcapacityreservationfleetcancellationresulttypedef)
   - [FailedQueuedPurchaseDeletionTypeDef](#failedqueuedpurchasedeletiontypedef)
+  - [FastLaunchLaunchTemplateSpecificationRequestTypeDef](#fastlaunchlaunchtemplatespecificationrequesttypedef)
+  - [FastLaunchLaunchTemplateSpecificationResponseTypeDef](#fastlaunchlaunchtemplatespecificationresponsetypedef)
+  - [FastLaunchSnapshotConfigurationRequestTypeDef](#fastlaunchsnapshotconfigurationrequesttypedef)
+  - [FastLaunchSnapshotConfigurationResponseTypeDef](#fastlaunchsnapshotconfigurationresponsetypedef)
   - [FederatedAuthenticationRequestTypeDef](#federatedauthenticationrequesttypedef)
   - [FederatedAuthenticationTypeDef](#federatedauthenticationtypedef)
   - [FilterTypeDef](#filtertypedef)
@@ -9967,6 +9978,55 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeFastLaunchImagesRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeFastLaunchImagesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `ImageIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeFastLaunchImagesResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeFastLaunchImagesResultTypeDef
+```
+
+Required fields:
+
+- `FastLaunchImages`:
+  `List`\[[DescribeFastLaunchImagesSuccessItemTypeDef](./type_defs.md#describefastlaunchimagessuccessitemtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeFastLaunchImagesSuccessItemTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeFastLaunchImagesSuccessItemTypeDef
+```
+
+Optional fields:
+
+- `ImageId`: `str`
+- `ResourceType`: `Literal['snapshot']` (see
+  [FastLaunchResourceTypeType](./literals.md#fastlaunchresourcetypetype))
+- `SnapshotConfiguration`:
+  [FastLaunchSnapshotConfigurationResponseTypeDef](./type_defs.md#fastlaunchsnapshotconfigurationresponsetypedef)
+- `LaunchTemplate`:
+  [FastLaunchLaunchTemplateSpecificationResponseTypeDef](./type_defs.md#fastlaunchlaunchtemplatespecificationresponsetypedef)
+- `MaxParallelLaunches`: `int`
+- `OwnerId`: `str`
+- `State`: [FastLaunchStateCodeType](./literals.md#fastlaunchstatecodetype)
+- `StateTransitionReason`: `str`
+- `StateTransitionTime`: `datetime`
+
 ## DescribeFastSnapshotRestoreSuccessItemTypeDef
 
 ```python
@@ -13421,6 +13481,44 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DisableFastLaunchRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableFastLaunchRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ImageId`: `str`
+
+Optional fields:
+
+- `Force`: `bool`
+- `DryRun`: `bool`
+
+## DisableFastLaunchResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableFastLaunchResultTypeDef
+```
+
+Required fields:
+
+- `ImageId`: `str`
+- `ResourceType`: `Literal['snapshot']` (see
+  [FastLaunchResourceTypeType](./literals.md#fastlaunchresourcetypetype))
+- `SnapshotConfiguration`:
+  [FastLaunchSnapshotConfigurationResponseTypeDef](./type_defs.md#fastlaunchsnapshotconfigurationresponsetypedef)
+- `LaunchTemplate`:
+  [FastLaunchLaunchTemplateSpecificationResponseTypeDef](./type_defs.md#fastlaunchlaunchtemplatespecificationresponsetypedef)
+- `MaxParallelLaunches`: `int`
+- `OwnerId`: `str`
+- `State`: [FastLaunchStateCodeType](./literals.md#fastlaunchstatecodetype)
+- `StateTransitionReason`: `str`
+- `StateTransitionTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DisableFastSnapshotRestoreErrorItemTypeDef
 
 ```python
@@ -14279,6 +14377,49 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## EnableFastLaunchRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableFastLaunchRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ImageId`: `str`
+
+Optional fields:
+
+- `ResourceType`: `str`
+- `SnapshotConfiguration`:
+  [FastLaunchSnapshotConfigurationRequestTypeDef](./type_defs.md#fastlaunchsnapshotconfigurationrequesttypedef)
+- `LaunchTemplate`:
+  [FastLaunchLaunchTemplateSpecificationRequestTypeDef](./type_defs.md#fastlaunchlaunchtemplatespecificationrequesttypedef)
+- `MaxParallelLaunches`: `int`
+- `DryRun`: `bool`
+
+## EnableFastLaunchResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableFastLaunchResultTypeDef
+```
+
+Required fields:
+
+- `ImageId`: `str`
+- `ResourceType`: `Literal['snapshot']` (see
+  [FastLaunchResourceTypeType](./literals.md#fastlaunchresourcetypetype))
+- `SnapshotConfiguration`:
+  [FastLaunchSnapshotConfigurationResponseTypeDef](./type_defs.md#fastlaunchsnapshotconfigurationresponsetypedef)
+- `LaunchTemplate`:
+  [FastLaunchLaunchTemplateSpecificationResponseTypeDef](./type_defs.md#fastlaunchlaunchtemplatespecificationresponsetypedef)
+- `MaxParallelLaunches`: `int`
+- `OwnerId`: `str`
+- `State`: [FastLaunchStateCodeType](./literals.md#fastlaunchstatecodetype)
+- `StateTransitionReason`: `str`
+- `StateTransitionTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## EnableFastSnapshotRestoreErrorItemTypeDef
 
 ```python
@@ -14915,6 +15056,53 @@ Optional fields:
 - `Error`:
   [DeleteQueuedReservedInstancesErrorTypeDef](./type_defs.md#deletequeuedreservedinstanceserrortypedef)
 - `ReservedInstancesId`: `str`
+
+## FastLaunchLaunchTemplateSpecificationRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import FastLaunchLaunchTemplateSpecificationRequestTypeDef
+```
+
+Required fields:
+
+- `Version`: `str`
+
+Optional fields:
+
+- `LaunchTemplateId`: `str`
+- `LaunchTemplateName`: `str`
+
+## FastLaunchLaunchTemplateSpecificationResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import FastLaunchLaunchTemplateSpecificationResponseTypeDef
+```
+
+Optional fields:
+
+- `LaunchTemplateId`: `str`
+- `LaunchTemplateName`: `str`
+- `Version`: `str`
+
+## FastLaunchSnapshotConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import FastLaunchSnapshotConfigurationRequestTypeDef
+```
+
+Optional fields:
+
+- `TargetResourceCount`: `int`
+
+## FastLaunchSnapshotConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import FastLaunchSnapshotConfigurationResponseTypeDef
+```
+
+Optional fields:
+
+- `TargetResourceCount`: `int`
 
 ## FederatedAuthenticationRequestTypeDef
 

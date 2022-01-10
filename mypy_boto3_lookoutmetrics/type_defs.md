@@ -264,7 +264,7 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import AppFlowConfigTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `RoleArn`: `str`
 - `FlowName`: `str`
@@ -285,7 +285,7 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import CloudWatchConfigTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `RoleArn`: `str`
 
@@ -513,6 +513,8 @@ Required fields:
   [AnomalyDetectorStatusType](./literals.md#anomalydetectorstatustype)
 - `FailureReason`: `str`
 - `KmsKeyArn`: `str`
+- `FailureType`:
+  [AnomalyDetectorFailureTypeType](./literals.md#anomalydetectorfailuretypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1015,7 +1017,7 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import RDSSourceConfigTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `DBInstanceIdentifier`: `str`
 - `DatabaseHost`: `str`
@@ -1033,7 +1035,7 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import RedshiftSourceConfigTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `ClusterIdentifier`: `str`
 - `DatabaseHost`: `str`
@@ -1065,12 +1067,9 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import S3SourceConfigTypeDef
 ```
 
-Required fields:
-
-- `RoleArn`: `str`
-
 Optional fields:
 
+- `RoleArn`: `str`
 - `TemplatedPathList`: `Sequence`\[`str`\]
 - `HistoricalDataPathList`: `Sequence`\[`str`\]
 - `FileFormatDescriptor`:

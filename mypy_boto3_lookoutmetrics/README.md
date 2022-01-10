@@ -88,6 +88,7 @@ from mypy_boto3_lookoutmetrics.literals import AggregationFunctionType, ...
 - [AlertStatusType](./literals.md#alertstatustype)
 - [AlertTypeType](./literals.md#alerttypetype)
 - [AnomalyDetectionTaskStatusType](./literals.md#anomalydetectiontaskstatustype)
+- [AnomalyDetectorFailureTypeType](./literals.md#anomalydetectorfailuretypetype)
 - [AnomalyDetectorStatusType](./literals.md#anomalydetectorstatustype)
 - [CSVFileCompressionType](./literals.md#csvfilecompressiontype)
 - [FrequencyType](./literals.md#frequencytype)

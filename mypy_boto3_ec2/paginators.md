@@ -23,6 +23,7 @@ type annotations stubs module
   - [DescribeDhcpOptionsPaginator](#describedhcpoptionspaginator)
   - [DescribeEgressOnlyInternetGatewaysPaginator](#describeegressonlyinternetgatewayspaginator)
   - [DescribeExportImageTasksPaginator](#describeexportimagetaskspaginator)
+  - [DescribeFastLaunchImagesPaginator](#describefastlaunchimagespaginator)
   - [DescribeFastSnapshotRestoresPaginator](#describefastsnapshotrestorespaginator)
   - [DescribeFleetsPaginator](#describefleetspaginator)
   - [DescribeFlowLogsPaginator](#describeflowlogspaginator)
@@ -546,6 +547,34 @@ Arguments for `DescribeExportImageTasksPaginator.paginate` method:
 
 `DescribeExportImageTasksPaginator.paginate` returns
 `_PageIterator`\[[DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef)\].
+
+## DescribeFastLaunchImagesPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_fast_launch_images")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeFastLaunchImagesPaginator
+
+def get_describe_fast_launch_images_paginator() -> DescribeFastLaunchImagesPaginator:
+    return boto3.client("ec2").get_paginator("describe_fast_launch_images")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeFastLaunchImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFastLaunchImages)
+
+Arguments for `DescribeFastLaunchImagesPaginator.paginate` method:
+
+- `ImageIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeFastLaunchImagesPaginator.paginate` returns
+`_PageIterator`\[[DescribeFastLaunchImagesResultTypeDef](./type_defs.md#describefastlaunchimagesresulttypedef)\].
 
 ## DescribeFastSnapshotRestoresPaginator
 
