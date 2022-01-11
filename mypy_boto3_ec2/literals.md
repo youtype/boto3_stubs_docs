@@ -888,6 +888,12 @@ Values:
 - `Linux with SQL Server Web`
 - `Linux/UNIX`
 - `Red Hat Enterprise Linux`
+- `RHEL with HA`
+- `RHEL with HA and SQL Server Enterprise`
+- `RHEL with HA and SQL Server Standard`
+- `RHEL with SQL Server Enterprise`
+- `RHEL with SQL Server Standard`
+- `RHEL with SQL Server Web`
 - `SUSE Linux`
 - `Windows`
 - `Windows with SQL Server`

@@ -164,6 +164,7 @@ from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType, .
 - [ThesaurusStatusType](./literals.md#thesaurusstatustype)
 - [UserContextPolicyType](./literals.md#usercontextpolicytype)
 - [UserGroupResolutionModeType](./literals.md#usergroupresolutionmodetype)
+- [WarningCodeType](./literals.md#warningcodetype)
 - [WebCrawlerModeType](./literals.md#webcrawlermodetype)
 - [ServiceName](./literals.md#servicename)
 
@@ -384,5 +385,6 @@ from mypy_boto3_kendra.type_defs import AccessControlListConfigurationTypeDef, .
 - [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 - [UserIdentityConfigurationTypeDef](./type_defs.md#useridentityconfigurationtypedef)
 - [UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)
+- [WarningTypeDef](./type_defs.md#warningtypedef)
 - [WebCrawlerConfigurationTypeDef](./type_defs.md#webcrawlerconfigurationtypedef)
 - [WorkDocsConfigurationTypeDef](./type_defs.md#workdocsconfigurationtypedef)
