@@ -29,6 +29,7 @@ type annotations stubs module
     - [delete_bot_alias](#delete_bot_alias)
     - [delete_bot_locale](#delete_bot_locale)
     - [delete_bot_version](#delete_bot_version)
+    - [delete_custom_vocabulary](#delete_custom_vocabulary)
     - [delete_export](#delete_export)
     - [delete_import](#delete_import)
     - [delete_intent](#delete_intent)
@@ -42,6 +43,7 @@ type annotations stubs module
     - [describe_bot_locale](#describe_bot_locale)
     - [describe_bot_recommendation](#describe_bot_recommendation)
     - [describe_bot_version](#describe_bot_version)
+    - [describe_custom_vocabulary_metadata](#describe_custom_vocabulary_metadata)
     - [describe_export](#describe_export)
     - [describe_import](#describe_import)
     - [describe_intent](#describe_intent)
@@ -286,8 +288,8 @@ Keyword-only arguments:
 - `resourceSpecification`:
   [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
   *(required)*
-- `fileFormat`: `Literal['LexJson']` (see
-  [ImportExportFileFormatType](./literals.md#importexportfileformattype))
+- `fileFormat`:
+  [ImportExportFileFormatType](./literals.md#importexportfileformattype)
   *(required)*
 - `filePassword`: `str`
 
@@ -540,6 +542,28 @@ Keyword-only arguments:
 
 Returns
 [DeleteBotVersionResponseTypeDef](./type_defs.md#deletebotversionresponsetypedef).
+
+### delete_custom_vocabulary
+
+Removes a custom vocabulary from the specified locale in the specified bot.
+
+Type annotations for `boto3.client("lexv2-models").delete_custom_vocabulary`
+method.
+
+Boto3 documentation:
+[LexModelsV2.Client.delete_custom_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_custom_vocabulary)
+
+Arguments mapping described in
+[DeleteCustomVocabularyRequestRequestTypeDef](./type_defs.md#deletecustomvocabularyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+
+Returns
+[DeleteCustomVocabularyResponseTypeDef](./type_defs.md#deletecustomvocabularyresponsetypedef).
 
 ### delete_export
 
@@ -804,6 +828,28 @@ Keyword-only arguments:
 
 Returns
 [DescribeBotVersionResponseTypeDef](./type_defs.md#describebotversionresponsetypedef).
+
+### describe_custom_vocabulary_metadata
+
+Provides metadata information about a custom vocabulary.
+
+Type annotations for
+`boto3.client("lexv2-models").describe_custom_vocabulary_metadata` method.
+
+Boto3 documentation:
+[LexModelsV2.Client.describe_custom_vocabulary_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_custom_vocabulary_metadata)
+
+Arguments mapping described in
+[DescribeCustomVocabularyMetadataRequestRequestTypeDef](./type_defs.md#describecustomvocabularymetadatarequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+
+Returns
+[DescribeCustomVocabularyMetadataResponseTypeDef](./type_defs.md#describecustomvocabularymetadataresponsetypedef).
 
 ### describe_export
 
@@ -1145,7 +1191,7 @@ Returns
 
 ### list_exports
 
-Lists the exports for a bot or bot locale.
+Lists the exports for a bot, bot locale, or custom vocabulary.
 
 Type annotations for `boto3.client("lexv2-models").list_exports` method.
 
@@ -1164,13 +1210,14 @@ Keyword-only arguments:
   `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `localeId`: `str`
 
 Returns
 [ListExportsResponseTypeDef](./type_defs.md#listexportsresponsetypedef).
 
 ### list_imports
 
-Lists the imports for a bot or bot locale.
+Lists the imports for a bot, bot locale, or custom vocabulary.
 
 Type annotations for `boto3.client("lexv2-models").list_imports` method.
 
@@ -1189,6 +1236,7 @@ Keyword-only arguments:
   `Sequence`\[[ImportFilterTypeDef](./type_defs.md#importfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `localeId`: `str`
 
 Returns
 [ListImportsResponseTypeDef](./type_defs.md#listimportsresponsetypedef).
@@ -1376,8 +1424,8 @@ Returns
 
 ### start_import
 
-Starts importing a bot or bot locale from a zip archive that you uploaded to an
-S3 bucket.
+Starts importing a bot, bot locale, or custom vocabulary from a zip archive
+that you uploaded to an S3 bucket.
 
 Type annotations for `boto3.client("lexv2-models").start_import` method.
 

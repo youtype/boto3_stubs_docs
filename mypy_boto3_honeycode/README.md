@@ -46,8 +46,11 @@ from mypy_boto3_honeycode.client import HoneycodeClient
 - [list_table_columns](./client.md#list_table_columns)
 - [list_table_rows](./client.md#list_table_rows)
 - [list_tables](./client.md#list_tables)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [query_table_rows](./client.md#query_table_rows)
 - [start_table_data_import_job](./client.md#start_table_data_import_job)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
@@ -147,6 +150,8 @@ from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsRequestRequestTyp
 - [ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef)
 - [ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef)
 - [ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef)
+- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
+- [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [QueryTableRowsRequestRequestTypeDef](./type_defs.md#querytablerowsrequestrequesttypedef)
 - [QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef)
@@ -160,6 +165,8 @@ from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsRequestRequestTyp
 - [TableDataImportJobMetadataTypeDef](./type_defs.md#tabledataimportjobmetadatatypedef)
 - [TableRowTypeDef](./type_defs.md#tablerowtypedef)
 - [TableTypeDef](./type_defs.md#tabletypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateRowDataTypeDef](./type_defs.md#updaterowdatatypedef)
 - [UpsertRowDataTypeDef](./type_defs.md#upsertrowdatatypedef)
 - [UpsertRowsResultTypeDef](./type_defs.md#upsertrowsresulttypedef)

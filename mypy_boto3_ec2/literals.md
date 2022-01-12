@@ -3413,6 +3413,7 @@ Values:
 - `h1.4xlarge`
 - `h1.8xlarge`
 - `hi1.4xlarge`
+- `hpc6a.48xlarge`
 - `hs1.8xlarge`
 - `i2.2xlarge`
 - `i2.4xlarge`

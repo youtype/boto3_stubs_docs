@@ -41,6 +41,8 @@ type annotations stubs module
   - [ListTableRowsResultTypeDef](#listtablerowsresulttypedef)
   - [ListTablesRequestRequestTypeDef](#listtablesrequestrequesttypedef)
   - [ListTablesResultTypeDef](#listtablesresulttypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [QueryTableRowsRequestRequestTypeDef](#querytablerowsrequestrequesttypedef)
   - [QueryTableRowsResultTypeDef](#querytablerowsresulttypedef)
@@ -54,6 +56,8 @@ type annotations stubs module
   - [TableDataImportJobMetadataTypeDef](#tabledataimportjobmetadatatypedef)
   - [TableRowTypeDef](#tablerowtypedef)
   - [TableTypeDef](#tabletypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateRowDataTypeDef](#updaterowdatatypedef)
   - [UpsertRowDataTypeDef](#upsertrowdatatypedef)
   - [UpsertRowsResultTypeDef](#upsertrowsresulttypedef)
@@ -527,6 +531,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import ListTagsForResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResultTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import ListTagsForResourceResultTypeDef
+```
+
+Required fields:
+
+- `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -700,6 +726,28 @@ Optional fields:
 
 - `tableId`: `str`
 - `tableName`: `str`
+
+## TagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import TagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Mapping`\[`str`, `str`\]
+
+## UntagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import UntagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateRowDataTypeDef
 
