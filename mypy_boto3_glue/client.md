@@ -3472,6 +3472,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
+- `RunProperties`: `Mapping`\[`str`, `str`\]
 
 Returns
 [StartWorkflowRunResponseTypeDef](./type_defs.md#startworkflowrunresponsetypedef).

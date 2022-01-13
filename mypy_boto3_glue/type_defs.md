@@ -6043,6 +6043,10 @@ Required fields:
 
 - `Name`: `str`
 
+Optional fields:
+
+- `RunProperties`: `Mapping`\[`str`, `str`\]
+
 ## StartWorkflowRunResponseTypeDef
 
 ```python

@@ -369,6 +369,7 @@ from mypy_boto3_elasticache.literals import LogTypeType
 
 Values:
 
+- `engine-log`
 - `slow-log`
 
 ## MultiAZStatusType
