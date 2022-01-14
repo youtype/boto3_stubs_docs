@@ -198,6 +198,7 @@ from mypy_boto3_honeycode.type_defs import CellInputTypeDef
 Optional fields:
 
 - `fact`: `str`
+- `facts`: `Sequence`\[`str`\]
 
 ## CellTypeDef
 
@@ -211,6 +212,7 @@ Optional fields:
 - `format`: [FormatType](./literals.md#formattype)
 - `rawValue`: `str`
 - `formattedValue`: `str`
+- `formattedValues`: `List`\[`str`\]
 
 ## ColumnMetadataTypeDef
 
@@ -289,6 +291,7 @@ Required fields:
 - `message`: `str`
 - `jobMetadata`:
   [TableDataImportJobMetadataTypeDef](./type_defs.md#tabledataimportjobmetadatatypedef)
+- `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

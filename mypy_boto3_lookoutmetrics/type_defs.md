@@ -31,6 +31,7 @@ type annotations stubs module
   - [CreateMetricSetRequestRequestTypeDef](#createmetricsetrequestrequesttypedef)
   - [CreateMetricSetResponseTypeDef](#createmetricsetresponsetypedef)
   - [CsvFormatDescriptorTypeDef](#csvformatdescriptortypedef)
+  - [DeactivateAnomalyDetectorRequestRequestTypeDef](#deactivateanomalydetectorrequestrequesttypedef)
   - [DeleteAlertRequestRequestTypeDef](#deletealertrequestrequesttypedef)
   - [DeleteAnomalyDetectorRequestRequestTypeDef](#deleteanomalydetectorrequestrequesttypedef)
   - [DescribeAlertRequestRequestTypeDef](#describealertrequestrequesttypedef)
@@ -411,6 +412,16 @@ Optional fields:
 - `Delimiter`: `str`
 - `HeaderList`: `Sequence`\[`str`\]
 - `QuoteSymbol`: `str`
+
+## DeactivateAnomalyDetectorRequestRequestTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import DeactivateAnomalyDetectorRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
 
 ## DeleteAlertRequestRequestTypeDef
 

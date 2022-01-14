@@ -763,7 +763,7 @@ Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
-- `Fileobj`: `IO`\[`Any`\] *(required)*
+- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\] *(required)*
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
@@ -2484,7 +2484,7 @@ Arguments mapping described in
 
 Arguments:
 
-- `Fileobj`: `IO`\[`Any`\] *(required)*
+- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\] *(required)*
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]

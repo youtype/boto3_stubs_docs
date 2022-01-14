@@ -575,7 +575,7 @@ from mypy_boto3_s3.type_defs import BucketDownloadFileobjRequestTypeDef
 Required fields:
 
 - `Key`: `str`
-- `Fileobj`: `IO`\[`Any`\]
+- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\]
 
 Optional fields:
 
@@ -651,7 +651,7 @@ from mypy_boto3_s3.type_defs import BucketUploadFileobjRequestTypeDef
 
 Required fields:
 
-- `Fileobj`: `IO`\[`Any`\]
+- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\]
 - `Key`: `str`
 
 Optional fields:
@@ -765,7 +765,7 @@ Required fields:
 
 - `Bucket`: `str`
 - `Key`: `str`
-- `Fileobj`: `IO`\[`Any`\]
+- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\]
 
 Optional fields:
 
@@ -816,7 +816,7 @@ from mypy_boto3_s3.type_defs import ClientUploadFileobjRequestTypeDef
 
 Required fields:
 
-- `Fileobj`: `IO`\[`Any`\]
+- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\]
 - `Bucket`: `str`
 - `Key`: `str`
 
@@ -3954,7 +3954,7 @@ from mypy_boto3_s3.type_defs import ObjectDownloadFileobjRequestTypeDef
 
 Required fields:
 
-- `Fileobj`: `IO`\[`Any`\]
+- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\]
 
 Optional fields:
 
@@ -4092,7 +4092,7 @@ from mypy_boto3_s3.type_defs import ObjectUploadFileobjRequestTypeDef
 
 Required fields:
 
-- `Fileobj`: `IO`\[`Any`\]
+- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\]
 
 Optional fields:
 

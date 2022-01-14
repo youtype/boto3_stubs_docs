@@ -91,9 +91,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_honeycode.literals import FormatType, ...
+from mypy_boto3_honeycode.literals import ErrorCodeType, ...
 ```
 
+- [ErrorCodeType](./literals.md#errorcodetype)
 - [FormatType](./literals.md#formattype)
 - [ImportDataCharacterEncodingType](./literals.md#importdatacharacterencodingtype)
 - [ImportSourceDataFormatType](./literals.md#importsourcedataformattype)
