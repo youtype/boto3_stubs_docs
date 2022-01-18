@@ -16,6 +16,7 @@ type annotations stubs module
   - [ListLFTagsPaginatorName](#listlftagspaginatorname)
   - [OptimizerTypeType](#optimizertypetype)
   - [PermissionType](#permissiontype)
+  - [PermissionTypeType](#permissiontypetype)
   - [QueryStateStringType](#querystatestringtype)
   - [ResourceShareTypeType](#resourcesharetypetype)
   - [ResourceTypeType](#resourcetypetype)
@@ -141,6 +142,17 @@ Values:
 - `DROP`
 - `INSERT`
 - `SELECT`
+
+## PermissionTypeType
+
+```python
+from mypy_boto3_lakeformation.literals import PermissionTypeType
+```
+
+Values:
+
+- `CELL_FILTER_PERMISSION`
+- `COLUMN_PERMISSION`
 
 ## QueryStateStringType
 

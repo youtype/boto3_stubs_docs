@@ -16,11 +16,14 @@ type annotations stubs module
   - [ClientPropertiesResultTypeDef](#clientpropertiesresulttypedef)
   - [ClientPropertiesTypeDef](#clientpropertiestypedef)
   - [ComputeTypeTypeDef](#computetypetypedef)
+  - [ConnectClientAddInTypeDef](#connectclientaddintypedef)
   - [ConnectionAliasAssociationTypeDef](#connectionaliasassociationtypedef)
   - [ConnectionAliasPermissionTypeDef](#connectionaliaspermissiontypedef)
   - [ConnectionAliasTypeDef](#connectionaliastypedef)
   - [CopyWorkspaceImageRequestRequestTypeDef](#copyworkspaceimagerequestrequesttypedef)
   - [CopyWorkspaceImageResultTypeDef](#copyworkspaceimageresulttypedef)
+  - [CreateConnectClientAddInRequestRequestTypeDef](#createconnectclientaddinrequestrequesttypedef)
+  - [CreateConnectClientAddInResultTypeDef](#createconnectclientaddinresulttypedef)
   - [CreateConnectionAliasRequestRequestTypeDef](#createconnectionaliasrequestrequesttypedef)
   - [CreateConnectionAliasResultTypeDef](#createconnectionaliasresulttypedef)
   - [CreateIpGroupRequestRequestTypeDef](#createipgrouprequestrequesttypedef)
@@ -33,6 +36,7 @@ type annotations stubs module
   - [CreateWorkspacesRequestRequestTypeDef](#createworkspacesrequestrequesttypedef)
   - [CreateWorkspacesResultTypeDef](#createworkspacesresulttypedef)
   - [DefaultWorkspaceCreationPropertiesTypeDef](#defaultworkspacecreationpropertiestypedef)
+  - [DeleteConnectClientAddInRequestRequestTypeDef](#deleteconnectclientaddinrequestrequesttypedef)
   - [DeleteConnectionAliasRequestRequestTypeDef](#deleteconnectionaliasrequestrequesttypedef)
   - [DeleteIpGroupRequestRequestTypeDef](#deleteipgrouprequestrequesttypedef)
   - [DeleteTagsRequestRequestTypeDef](#deletetagsrequestrequesttypedef)
@@ -44,6 +48,8 @@ type annotations stubs module
   - [DescribeAccountResultTypeDef](#describeaccountresulttypedef)
   - [DescribeClientPropertiesRequestRequestTypeDef](#describeclientpropertiesrequestrequesttypedef)
   - [DescribeClientPropertiesResultTypeDef](#describeclientpropertiesresulttypedef)
+  - [DescribeConnectClientAddInsRequestRequestTypeDef](#describeconnectclientaddinsrequestrequesttypedef)
+  - [DescribeConnectClientAddInsResultTypeDef](#describeconnectclientaddinsresulttypedef)
   - [DescribeConnectionAliasPermissionsRequestRequestTypeDef](#describeconnectionaliaspermissionsrequestrequesttypedef)
   - [DescribeConnectionAliasPermissionsResultTypeDef](#describeconnectionaliaspermissionsresulttypedef)
   - [DescribeConnectionAliasesRequestRequestTypeDef](#describeconnectionaliasesrequestrequesttypedef)
@@ -111,6 +117,7 @@ type annotations stubs module
   - [TerminateRequestTypeDef](#terminaterequesttypedef)
   - [TerminateWorkspacesRequestRequestTypeDef](#terminateworkspacesrequestrequesttypedef)
   - [TerminateWorkspacesResultTypeDef](#terminateworkspacesresulttypedef)
+  - [UpdateConnectClientAddInRequestRequestTypeDef](#updateconnectclientaddinrequestrequesttypedef)
   - [UpdateConnectionAliasPermissionRequestRequestTypeDef](#updateconnectionaliaspermissionrequestrequesttypedef)
   - [UpdateResultTypeDef](#updateresulttypedef)
   - [UpdateRulesOfIpGroupRequestRequestTypeDef](#updaterulesofipgrouprequestrequesttypedef)
@@ -223,6 +230,19 @@ Optional fields:
 
 - `Name`: [ComputeType](./literals.md#computetype)
 
+## ConnectClientAddInTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import ConnectClientAddInTypeDef
+```
+
+Optional fields:
+
+- `AddInId`: `str`
+- `ResourceId`: `str`
+- `Name`: `str`
+- `URL`: `str`
+
 ## ConnectionAliasAssociationTypeDef
 
 ```python
@@ -289,6 +309,30 @@ from mypy_boto3_workspaces.type_defs import CopyWorkspaceImageResultTypeDef
 Required fields:
 
 - `ImageId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateConnectClientAddInRequestRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import CreateConnectClientAddInRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+- `Name`: `str`
+- `URL`: `str`
+
+## CreateConnectClientAddInResultTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import CreateConnectClientAddInResultTypeDef
+```
+
+Required fields:
+
+- `AddInId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -459,6 +503,17 @@ Optional fields:
 - `UserEnabledAsLocalAdministrator`: `bool`
 - `EnableMaintenanceMode`: `bool`
 
+## DeleteConnectClientAddInRequestRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DeleteConnectClientAddInRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AddInId`: `str`
+- `ResourceId`: `str`
+
 ## DeleteConnectionAliasRequestRequestTypeDef
 
 ```python
@@ -578,6 +633,35 @@ Required fields:
 
 - `ClientPropertiesList`:
   `List`\[[ClientPropertiesResultTypeDef](./type_defs.md#clientpropertiesresulttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeConnectClientAddInsRequestRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeConnectClientAddInsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeConnectClientAddInsResultTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeConnectClientAddInsResultTypeDef
+```
+
+Required fields:
+
+- `AddIns`:
+  `List`\[[ConnectClientAddInTypeDef](./type_defs.md#connectclientaddintypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1412,6 +1496,22 @@ Required fields:
   `List`\[[FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateConnectClientAddInRequestRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import UpdateConnectClientAddInRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AddInId`: `str`
+- `ResourceId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `URL`: `str`
 
 ## UpdateConnectionAliasPermissionRequestRequestTypeDef
 

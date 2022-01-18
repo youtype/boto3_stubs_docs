@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 - [Typed dictionaries for boto3 LexModelsV2 module](#typed-dictionaries-for-boto3-lexmodelsv2-module)
+  - [AdvancedRecognitionSettingTypeDef](#advancedrecognitionsettingtypedef)
   - [AggregatedUtterancesFilterTypeDef](#aggregatedutterancesfiltertypedef)
   - [AggregatedUtterancesSortByTypeDef](#aggregatedutterancessortbytypedef)
   - [AggregatedUtterancesSummaryTypeDef](#aggregatedutterancessummarytypedef)
@@ -67,6 +68,8 @@ type annotations stubs module
   - [CreateSlotTypeResponseTypeDef](#createslottyperesponsetypedef)
   - [CreateUploadUrlResponseTypeDef](#createuploadurlresponsetypedef)
   - [CustomPayloadTypeDef](#custompayloadtypedef)
+  - [CustomVocabularyExportSpecificationTypeDef](#customvocabularyexportspecificationtypedef)
+  - [CustomVocabularyImportSpecificationTypeDef](#customvocabularyimportspecificationtypedef)
   - [DataPrivacyTypeDef](#dataprivacytypedef)
   - [DateRangeFilterTypeDef](#daterangefiltertypedef)
   - [DeleteBotAliasRequestRequestTypeDef](#deletebotaliasrequestrequesttypedef)
@@ -77,6 +80,8 @@ type annotations stubs module
   - [DeleteBotResponseTypeDef](#deletebotresponsetypedef)
   - [DeleteBotVersionRequestRequestTypeDef](#deletebotversionrequestrequesttypedef)
   - [DeleteBotVersionResponseTypeDef](#deletebotversionresponsetypedef)
+  - [DeleteCustomVocabularyRequestRequestTypeDef](#deletecustomvocabularyrequestrequesttypedef)
+  - [DeleteCustomVocabularyResponseTypeDef](#deletecustomvocabularyresponsetypedef)
   - [DeleteExportRequestRequestTypeDef](#deleteexportrequestrequesttypedef)
   - [DeleteExportResponseTypeDef](#deleteexportresponsetypedef)
   - [DeleteImportRequestRequestTypeDef](#deleteimportrequestrequesttypedef)
@@ -99,6 +104,8 @@ type annotations stubs module
   - [DescribeBotResponseTypeDef](#describebotresponsetypedef)
   - [DescribeBotVersionRequestRequestTypeDef](#describebotversionrequestrequesttypedef)
   - [DescribeBotVersionResponseTypeDef](#describebotversionresponsetypedef)
+  - [DescribeCustomVocabularyMetadataRequestRequestTypeDef](#describecustomvocabularymetadatarequestrequesttypedef)
+  - [DescribeCustomVocabularyMetadataResponseTypeDef](#describecustomvocabularymetadataresponsetypedef)
   - [DescribeExportRequestRequestTypeDef](#describeexportrequestrequesttypedef)
   - [DescribeExportResponseTypeDef](#describeexportresponsetypedef)
   - [DescribeImportRequestRequestTypeDef](#describeimportrequestrequesttypedef)
@@ -238,6 +245,17 @@ type annotations stubs module
   - [VoiceSettingsTypeDef](#voicesettingstypedef)
   - [WaitAndContinueSpecificationTypeDef](#waitandcontinuespecificationtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
+
+## AdvancedRecognitionSettingTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import AdvancedRecognitionSettingTypeDef
+```
+
+Optional fields:
+
+- `audioRecognitionStrategy`: `Literal['UseSlotValuesAsCustomVocabulary']` (see
+  [AudioRecognitionStrategyType](./literals.md#audiorecognitionstrategytype))
 
 ## AggregatedUtterancesFilterTypeDef
 
@@ -886,8 +904,8 @@ Required fields:
 
 - `resourceSpecification`:
   [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
-- `fileFormat`: `Literal['LexJson']` (see
-  [ImportExportFileFormatType](./literals.md#importexportfileformattype))
+- `fileFormat`:
+  [ImportExportFileFormatType](./literals.md#importexportfileformattype)
 
 Optional fields:
 
@@ -904,8 +922,8 @@ Required fields:
 - `exportId`: `str`
 - `resourceSpecification`:
   [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
-- `fileFormat`: `Literal['LexJson']` (see
-  [ImportExportFileFormatType](./literals.md#importexportfileformattype))
+- `fileFormat`:
+  [ImportExportFileFormatType](./literals.md#importexportfileformattype)
 - `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
 - `creationDateTime`: `datetime`
 - `ResponseMetadata`:
@@ -1160,6 +1178,30 @@ Required fields:
 
 - `value`: `str`
 
+## CustomVocabularyExportSpecificationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import CustomVocabularyExportSpecificationTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+
+## CustomVocabularyImportSpecificationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import CustomVocabularyImportSpecificationTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+
 ## DataPrivacyTypeDef
 
 ```python
@@ -1290,6 +1332,34 @@ Required fields:
 - `botId`: `str`
 - `botVersion`: `str`
 - `botStatus`: [BotStatusType](./literals.md#botstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteCustomVocabularyRequestRequestTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DeleteCustomVocabularyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+
+## DeleteCustomVocabularyResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DeleteCustomVocabularyResponseTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `customVocabularyStatus`:
+  [CustomVocabularyStatusType](./literals.md#customvocabularystatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1632,6 +1702,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeCustomVocabularyMetadataRequestRequestTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DescribeCustomVocabularyMetadataRequestRequestTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+
+## DescribeCustomVocabularyMetadataResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DescribeCustomVocabularyMetadataResponseTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `customVocabularyStatus`:
+  [CustomVocabularyStatusType](./literals.md#customvocabularystatustype)
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeExportRequestRequestTypeDef
 
 ```python
@@ -1653,8 +1753,8 @@ Required fields:
 - `exportId`: `str`
 - `resourceSpecification`:
   [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
-- `fileFormat`: `Literal['LexJson']` (see
-  [ImportExportFileFormatType](./literals.md#importexportfileformattype))
+- `fileFormat`:
+  [ImportExportFileFormatType](./literals.md#importexportfileformattype)
 - `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
 - `failureReasons`: `List`\[`str`\]
 - `downloadUrl`: `str`
@@ -1897,6 +1997,8 @@ Optional fields:
   [BotExportSpecificationTypeDef](./type_defs.md#botexportspecificationtypedef)
 - `botLocaleExportSpecification`:
   [BotLocaleExportSpecificationTypeDef](./type_defs.md#botlocaleexportspecificationtypedef)
+- `customVocabularyExportSpecification`:
+  [CustomVocabularyExportSpecificationTypeDef](./type_defs.md#customvocabularyexportspecificationtypedef)
 
 ## ExportSortByTypeDef
 
@@ -1921,8 +2023,8 @@ Optional fields:
 - `exportId`: `str`
 - `resourceSpecification`:
   [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
-- `fileFormat`: `Literal['LexJson']` (see
-  [ImportExportFileFormatType](./literals.md#importexportfileformattype))
+- `fileFormat`:
+  [ImportExportFileFormatType](./literals.md#importexportfileformattype)
 - `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
@@ -2073,6 +2175,8 @@ Optional fields:
   [BotImportSpecificationTypeDef](./type_defs.md#botimportspecificationtypedef)
 - `botLocaleImportSpecification`:
   [BotLocaleImportSpecificationTypeDef](./type_defs.md#botlocaleimportspecificationtypedef)
+- `customVocabularyImportSpecification`:
+  [CustomVocabularyImportSpecificationTypeDef](./type_defs.md#customvocabularyimportspecificationtypedef)
 
 ## ImportSortByTypeDef
 
@@ -2101,6 +2205,8 @@ Optional fields:
 - `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+- `importedResourceType`:
+  [ImportResourceTypeType](./literals.md#importresourcetypetype)
 
 ## InputContextTypeDef
 
@@ -2517,6 +2623,7 @@ Optional fields:
   `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `localeId`: `str`
 
 ## ListExportsResponseTypeDef
 
@@ -2531,6 +2638,7 @@ Required fields:
 - `exportSummaries`:
   `List`\[[ExportSummaryTypeDef](./type_defs.md#exportsummarytypedef)\]
 - `nextToken`: `str`
+- `localeId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2549,6 +2657,7 @@ Optional fields:
   `Sequence`\[[ImportFilterTypeDef](./type_defs.md#importfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `localeId`: `str`
 
 ## ListImportsResponseTypeDef
 
@@ -2563,6 +2672,7 @@ Required fields:
 - `importSummaries`:
   `List`\[[ImportSummaryTypeDef](./type_defs.md#importsummarytypedef)\]
 - `nextToken`: `str`
+- `localeId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -3209,6 +3319,8 @@ Optional fields:
 
 - `regexFilter`:
   [SlotValueRegexFilterTypeDef](./type_defs.md#slotvalueregexfiltertypedef)
+- `advancedRecognitionSetting`:
+  [AdvancedRecognitionSettingTypeDef](./type_defs.md#advancedrecognitionsettingtypedef)
 
 ## StartBotRecommendationRequestRequestTypeDef
 
@@ -3559,8 +3671,8 @@ Required fields:
 - `exportId`: `str`
 - `resourceSpecification`:
   [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
-- `fileFormat`: `Literal['LexJson']` (see
-  [ImportExportFileFormatType](./literals.md#importexportfileformattype))
+- `fileFormat`:
+  [ImportExportFileFormatType](./literals.md#importexportfileformattype)
 - `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`

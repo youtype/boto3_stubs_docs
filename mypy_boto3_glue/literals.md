@@ -55,6 +55,7 @@ type annotations stubs module
   - [NodeTypeType](#nodetypetype)
   - [PartitionIndexStatusType](#partitionindexstatustype)
   - [PermissionType](#permissiontype)
+  - [PermissionTypeType](#permissiontypetype)
   - [PrincipalTypeType](#principaltypetype)
   - [RecrawlBehaviorType](#recrawlbehaviortype)
   - [RegistryStatusType](#registrystatustype)
@@ -654,6 +655,17 @@ Values:
 - `DROP`
 - `INSERT`
 - `SELECT`
+
+## PermissionTypeType
+
+```python
+from mypy_boto3_glue.literals import PermissionTypeType
+```
+
+Values:
+
+- `CELL_FILTER_PERMISSION`
+- `COLUMN_PERMISSION`
 
 ## PrincipalTypeType
 

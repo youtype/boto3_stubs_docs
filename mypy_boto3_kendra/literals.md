@@ -56,6 +56,7 @@ type annotations stubs module
   - [ThesaurusStatusType](#thesaurusstatustype)
   - [UserContextPolicyType](#usercontextpolicytype)
   - [UserGroupResolutionModeType](#usergroupresolutionmodetype)
+  - [WarningCodeType](#warningcodetype)
   - [WebCrawlerModeType](#webcrawlermodetype)
   - [ServiceName](#servicename)
 
@@ -699,6 +700,16 @@ Values:
 
 - `AWS_SSO`
 - `NONE`
+
+## WarningCodeType
+
+```python
+from mypy_boto3_kendra.literals import WarningCodeType
+```
+
+Values:
+
+- `QUERY_LANGUAGE_INVALID_SYNTAX`
 
 ## WebCrawlerModeType
 

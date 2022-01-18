@@ -16,6 +16,7 @@ type annotations stubs module
   - [ListStreamKeysPaginatorName](#liststreamkeyspaginatorname)
   - [ListStreamsPaginatorName](#liststreamspaginatorname)
   - [RecordingConfigurationStateType](#recordingconfigurationstatetype)
+  - [RecordingModeType](#recordingmodetype)
   - [StreamHealthType](#streamhealthtype)
   - [StreamStateType](#streamstatetype)
   - [ServiceName](#servicename)
@@ -104,6 +105,17 @@ Values:
 - `ACTIVE`
 - `CREATE_FAILED`
 - `CREATING`
+
+## RecordingModeType
+
+```python
+from mypy_boto3_ivs.literals import RecordingModeType
+```
+
+Values:
+
+- `DISABLED`
+- `INTERVAL`
 
 ## StreamHealthType
 

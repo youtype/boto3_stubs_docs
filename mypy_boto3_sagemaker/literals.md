@@ -3311,6 +3311,14 @@ Values:
 - `ml.g4dn.4xlarge`
 - `ml.g4dn.8xlarge`
 - `ml.g4dn.xlarge`
+- `ml.g5.12xlarge`
+- `ml.g5.16xlarge`
+- `ml.g5.24xlarge`
+- `ml.g5.2xlarge`
+- `ml.g5.48xlarge`
+- `ml.g5.4xlarge`
+- `ml.g5.8xlarge`
+- `ml.g5.xlarge`
 - `ml.m4.10xlarge`
 - `ml.m4.16xlarge`
 - `ml.m4.2xlarge`

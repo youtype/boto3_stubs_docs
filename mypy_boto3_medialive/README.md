@@ -298,6 +298,7 @@ from mypy_boto3_medialive.literals import AacCodingModeType, ...
 - [HlsMediaStoreStorageClassType](./literals.md#hlsmediastorestorageclasstype)
 - [HlsModeType](./literals.md#hlsmodetype)
 - [HlsOutputSelectionType](./literals.md#hlsoutputselectiontype)
+- [HlsProgramDateTimeClockType](./literals.md#hlsprogramdatetimeclocktype)
 - [HlsProgramDateTimeType](./literals.md#hlsprogramdatetimetype)
 - [HlsRedundantManifestType](./literals.md#hlsredundantmanifesttype)
 - [HlsScte35SourceTypeType](./literals.md#hlsscte35sourcetypetype)

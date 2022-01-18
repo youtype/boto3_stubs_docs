@@ -74,6 +74,7 @@ type annotations stubs module
   - [StreamSummaryTypeDef](#streamsummarytypedef)
   - [StreamTypeDef](#streamtypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [ThumbnailConfigurationTypeDef](#thumbnailconfigurationtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateChannelRequestRequestTypeDef](#updatechannelrequestrequesttypedef)
   - [UpdateChannelResponseTypeDef](#updatechannelresponsetypedef)
@@ -226,6 +227,8 @@ Optional fields:
 
 - `name`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+- `thumbnailConfiguration`:
+  [ThumbnailConfigurationTypeDef](./type_defs.md#thumbnailconfigurationtypedef)
 
 ## CreateRecordingConfigurationResponseTypeDef
 
@@ -762,6 +765,8 @@ Optional fields:
 
 - `name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `thumbnailConfiguration`:
+  [ThumbnailConfigurationTypeDef](./type_defs.md#thumbnailconfigurationtypedef)
 
 ## ResponseMetadataTypeDef
 
@@ -917,6 +922,17 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+## ThumbnailConfigurationTypeDef
+
+```python
+from mypy_boto3_ivs.type_defs import ThumbnailConfigurationTypeDef
+```
+
+Optional fields:
+
+- `recordingMode`: [RecordingModeType](./literals.md#recordingmodetype)
+- `targetIntervalSeconds`: `int`
 
 ## UntagResourceRequestRequestTypeDef
 

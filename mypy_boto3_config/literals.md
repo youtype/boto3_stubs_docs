@@ -700,6 +700,9 @@ Values:
 - `AWS::CloudTrail::Trail`
 - `AWS::CloudWatch::Alarm`
 - `AWS::CodeBuild::Project`
+- `AWS::CodeDeploy::Application`
+- `AWS::CodeDeploy::DeploymentConfig`
+- `AWS::CodeDeploy::DeploymentGroup`
 - `AWS::CodePipeline::Pipeline`
 - `AWS::Config::ConformancePackCompliance`
 - `AWS::Config::ResourceCompliance`
@@ -718,6 +721,7 @@ Values:
 - `AWS::EC2::RouteTable`
 - `AWS::EC2::SecurityGroup`
 - `AWS::EC2::Subnet`
+- `AWS::EC2::TransitGateway`
 - `AWS::EC2::Volume`
 - `AWS::EC2::VPC`
 - `AWS::EC2::VPCEndpoint`
@@ -742,6 +746,8 @@ Values:
 - `AWS::IAM::Policy`
 - `AWS::IAM::Role`
 - `AWS::IAM::User`
+- `AWS::Kinesis::Stream`
+- `AWS::Kinesis::StreamConsumer`
 - `AWS::KMS::Key`
 - `AWS::Lambda::Function`
 - `AWS::NetworkFirewall::Firewall`

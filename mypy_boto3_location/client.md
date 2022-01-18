@@ -20,6 +20,7 @@ type annotations stubs module
     - [batch_put_geofence](#batch_put_geofence)
     - [batch_update_device_position](#batch_update_device_position)
     - [calculate_route](#calculate_route)
+    - [calculate_route_matrix](#calculate_route_matrix)
     - [can_paginate](#can_paginate)
     - [create_geofence_collection](#create_geofence_collection)
     - [create_map](#create_map)
@@ -275,7 +276,7 @@ Returns
 ### calculate_route
 
 `Calculates a route <https://docs.aws.amazon.com/location/latest/developerguide/calculate- route.html>`\_\_
-given the following required parameters: `DeparturePostiton` and
+given the following required parameters: `DeparturePosition` and
 `DestinationPosition`.
 
 Type annotations for `boto3.client("location").calculate_route` method.
@@ -304,6 +305,37 @@ Keyword-only arguments:
 
 Returns
 [CalculateRouteResponseTypeDef](./type_defs.md#calculaterouteresponsetypedef).
+
+### calculate_route_matrix
+
+`Calculates a route matrix <https://docs.aws.amazon.com/location/latest/developerguide/calculate-route- matrix.html>`\_\_
+given the following required parameters: `DeparturePositions` and
+`DestinationPositions`.
+
+Type annotations for `boto3.client("location").calculate_route_matrix` method.
+
+Boto3 documentation:
+[LocationService.Client.calculate_route_matrix](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.calculate_route_matrix)
+
+Arguments mapping described in
+[CalculateRouteMatrixRequestRequestTypeDef](./type_defs.md#calculateroutematrixrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CalculatorName`: `str` *(required)*
+- `DeparturePositions`: `Sequence`\[`Sequence`\[`float`\]\] *(required)*
+- `DestinationPositions`: `Sequence`\[`Sequence`\[`float`\]\] *(required)*
+- `CarModeOptions`:
+  [CalculateRouteCarModeOptionsTypeDef](./type_defs.md#calculateroutecarmodeoptionstypedef)
+- `DepartNow`: `bool`
+- `DepartureTime`: `Union`\[`datetime`, `str`\]
+- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
+- `TravelMode`: [TravelModeType](./literals.md#travelmodetype)
+- `TruckModeOptions`:
+  [CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef)
+
+Returns
+[CalculateRouteMatrixResponseTypeDef](./type_defs.md#calculateroutematrixresponsetypedef).
 
 ### can_paginate
 

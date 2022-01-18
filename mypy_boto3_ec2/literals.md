@@ -88,6 +88,7 @@ type annotations stubs module
   - [DescribeDhcpOptionsPaginatorName](#describedhcpoptionspaginatorname)
   - [DescribeEgressOnlyInternetGatewaysPaginatorName](#describeegressonlyinternetgatewayspaginatorname)
   - [DescribeExportImageTasksPaginatorName](#describeexportimagetaskspaginatorname)
+  - [DescribeFastLaunchImagesPaginatorName](#describefastlaunchimagespaginatorname)
   - [DescribeFastSnapshotRestoresPaginatorName](#describefastsnapshotrestorespaginatorname)
   - [DescribeFleetsPaginatorName](#describefleetspaginatorname)
   - [DescribeFlowLogsPaginatorName](#describeflowlogspaginatorname)
@@ -194,6 +195,8 @@ type annotations stubs module
   - [ExportTaskCancelledWaiterName](#exporttaskcancelledwaitername)
   - [ExportTaskCompletedWaiterName](#exporttaskcompletedwaitername)
   - [ExportTaskStateType](#exporttaskstatetype)
+  - [FastLaunchResourceTypeType](#fastlaunchresourcetypetype)
+  - [FastLaunchStateCodeType](#fastlaunchstatecodetype)
   - [FastSnapshotRestoreStateCodeType](#fastsnapshotrestorestatecodetype)
   - [FindingsFoundType](#findingsfoundtype)
   - [FleetActivityStatusType](#fleetactivitystatustype)
@@ -251,6 +254,7 @@ type annotations stubs module
   - [InstanceMetadataEndpointStateType](#instancemetadataendpointstatetype)
   - [InstanceMetadataOptionsStateType](#instancemetadataoptionsstatetype)
   - [InstanceMetadataProtocolStateType](#instancemetadataprotocolstatetype)
+  - [InstanceMetadataTagsStateType](#instancemetadatatagsstatetype)
   - [InstanceRunningWaiterName](#instancerunningwaitername)
   - [InstanceStateNameType](#instancestatenametype)
   - [InstanceStatusOkWaiterName](#instancestatusokwaitername)
@@ -283,6 +287,7 @@ type annotations stubs module
   - [LaunchTemplateInstanceMetadataEndpointStateType](#launchtemplateinstancemetadataendpointstatetype)
   - [LaunchTemplateInstanceMetadataOptionsStateType](#launchtemplateinstancemetadataoptionsstatetype)
   - [LaunchTemplateInstanceMetadataProtocolIpv6Type](#launchtemplateinstancemetadataprotocolipv6type)
+  - [LaunchTemplateInstanceMetadataTagsStateType](#launchtemplateinstancemetadatatagsstatetype)
   - [ListSnapshotsInRecycleBinPaginatorName](#listsnapshotsinrecyclebinpaginatorname)
   - [ListingStateType](#listingstatetype)
   - [ListingStatusType](#listingstatustype)
@@ -312,6 +317,7 @@ type annotations stubs module
   - [OperationTypeType](#operationtypetype)
   - [PartitionLoadFrequencyType](#partitionloadfrequencytype)
   - [PasswordDataAvailableWaiterName](#passworddataavailablewaitername)
+  - [PayerResponsibilityType](#payerresponsibilitytype)
   - [PaymentOptionType](#paymentoptiontype)
   - [PermissionGroupType](#permissiongrouptype)
   - [PlacementGroupStateType](#placementgroupstatetype)
@@ -882,6 +888,12 @@ Values:
 - `Linux with SQL Server Web`
 - `Linux/UNIX`
 - `Red Hat Enterprise Linux`
+- `RHEL with HA`
+- `RHEL with HA and SQL Server Enterprise`
+- `RHEL with HA and SQL Server Standard`
+- `RHEL with SQL Server Enterprise`
+- `RHEL with SQL Server Standard`
+- `RHEL with SQL Server Web`
 - `SUSE Linux`
 - `Windows`
 - `Windows with SQL Server`
@@ -1369,6 +1381,16 @@ from mypy_boto3_ec2.literals import DescribeExportImageTasksPaginatorName
 Values:
 
 - `describe_export_image_tasks`
+
+## DescribeFastLaunchImagesPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeFastLaunchImagesPaginatorName
+```
+
+Values:
+
+- `describe_fast_launch_images`
 
 ## DescribeFastSnapshotRestoresPaginatorName
 
@@ -2463,6 +2485,31 @@ Values:
 - `cancelling`
 - `completed`
 
+## FastLaunchResourceTypeType
+
+```python
+from mypy_boto3_ec2.literals import FastLaunchResourceTypeType
+```
+
+Values:
+
+- `snapshot`
+
+## FastLaunchStateCodeType
+
+```python
+from mypy_boto3_ec2.literals import FastLaunchStateCodeType
+```
+
+Values:
+
+- `disabling`
+- `disabling-failed`
+- `enabled`
+- `enabled-failed`
+- `enabling`
+- `enabling-failed`
+
 ## FastSnapshotRestoreStateCodeType
 
 ```python
@@ -3117,6 +3164,17 @@ Values:
 - `disabled`
 - `enabled`
 
+## InstanceMetadataTagsStateType
+
+```python
+from mypy_boto3_ec2.literals import InstanceMetadataTagsStateType
+```
+
+Values:
+
+- `disabled`
+- `enabled`
+
 ## InstanceRunningWaiterName
 
 ```python
@@ -3355,6 +3413,7 @@ Values:
 - `h1.4xlarge`
 - `h1.8xlarge`
 - `hi1.4xlarge`
+- `hpc6a.48xlarge`
 - `hs1.8xlarge`
 - `i2.2xlarge`
 - `i2.4xlarge`
@@ -3972,6 +4031,17 @@ Values:
 - `disabled`
 - `enabled`
 
+## LaunchTemplateInstanceMetadataTagsStateType
+
+```python
+from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataTagsStateType
+```
+
+Values:
+
+- `disabled`
+- `enabled`
+
 ## ListSnapshotsInRecycleBinPaginatorName
 
 ```python
@@ -4315,6 +4385,16 @@ from mypy_boto3_ec2.literals import PasswordDataAvailableWaiterName
 Values:
 
 - `password_data_available`
+
+## PayerResponsibilityType
+
+```python
+from mypy_boto3_ec2.literals import PayerResponsibilityType
+```
+
+Values:
+
+- `ServiceOwner`
 
 ## PaymentOptionType
 
@@ -6076,6 +6156,7 @@ Values:
 - `describe_dhcp_options`
 - `describe_egress_only_internet_gateways`
 - `describe_export_image_tasks`
+- `describe_fast_launch_images`
 - `describe_fast_snapshot_restores`
 - `describe_fleets`
 - `describe_flow_logs`

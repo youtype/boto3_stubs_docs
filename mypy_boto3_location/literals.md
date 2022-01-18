@@ -23,6 +23,7 @@ type annotations stubs module
   - [ListTrackersPaginatorName](#listtrackerspaginatorname)
   - [PositionFilteringType](#positionfilteringtype)
   - [PricingPlanType](#pricingplantype)
+  - [RouteMatrixErrorCodeType](#routematrixerrorcodetype)
   - [TravelModeType](#travelmodetype)
   - [VehicleWeightUnitType](#vehicleweightunittype)
   - [ServiceName](#servicename)
@@ -189,6 +190,21 @@ Values:
 - `MobileAssetManagement`
 - `MobileAssetTracking`
 - `RequestBasedUsage`
+
+## RouteMatrixErrorCodeType
+
+```python
+from mypy_boto3_location.literals import RouteMatrixErrorCodeType
+```
+
+Values:
+
+- `DeparturePositionNotFound`
+- `DestinationPositionNotFound`
+- `OtherValidationError`
+- `PositionsNotFound`
+- `RouteNotFound`
+- `RouteTooLong`
 
 ## TravelModeType
 

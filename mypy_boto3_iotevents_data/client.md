@@ -144,7 +144,7 @@ Returns
 
 ### batch_put_message
 
-Sends a set of messages to the AWS IoT Events system.
+Sends a set of messages to the IoT Events system.
 
 Type annotations for `boto3.client("iotevents-data").batch_put_message` method.
 
