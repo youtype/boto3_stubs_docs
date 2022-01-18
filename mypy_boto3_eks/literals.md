@@ -23,7 +23,6 @@ type annotations stubs module
   - [FargateProfileActiveWaiterName](#fargateprofileactivewaitername)
   - [FargateProfileDeletedWaiterName](#fargateprofiledeletedwaitername)
   - [FargateProfileStatusType](#fargateprofilestatustype)
-  - [IpFamilyType](#ipfamilytype)
   - [ListAddonsPaginatorName](#listaddonspaginatorname)
   - [ListClustersPaginatorName](#listclusterspaginatorname)
   - [ListFargateProfilesPaginatorName](#listfargateprofilespaginatorname)
@@ -246,17 +245,6 @@ Values:
 - `CREATING`
 - `DELETE_FAILED`
 - `DELETING`
-
-## IpFamilyType
-
-```python
-from mypy_boto3_eks.literals import IpFamilyType
-```
-
-Values:
-
-- `ipv4`
-- `ipv6`
 
 ## ListAddonsPaginatorName
 

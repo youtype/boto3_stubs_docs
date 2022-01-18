@@ -14,34 +14,23 @@ type annotations stubs module
     - [exceptions](#exceptions)
     - [add_tags](#add_tags)
     - [can_paginate](#can_paginate)
-    - [cancel_query](#cancel_query)
-    - [create_event_data_store](#create_event_data_store)
     - [create_trail](#create_trail)
-    - [delete_event_data_store](#delete_event_data_store)
     - [delete_trail](#delete_trail)
-    - [describe_query](#describe_query)
     - [describe_trails](#describe_trails)
     - [generate_presigned_url](#generate_presigned_url)
-    - [get_event_data_store](#get_event_data_store)
     - [get_event_selectors](#get_event_selectors)
     - [get_insight_selectors](#get_insight_selectors)
-    - [get_query_results](#get_query_results)
     - [get_trail](#get_trail)
     - [get_trail_status](#get_trail_status)
-    - [list_event_data_stores](#list_event_data_stores)
     - [list_public_keys](#list_public_keys)
-    - [list_queries](#list_queries)
     - [list_tags](#list_tags)
     - [list_trails](#list_trails)
     - [lookup_events](#lookup_events)
     - [put_event_selectors](#put_event_selectors)
     - [put_insight_selectors](#put_insight_selectors)
     - [remove_tags](#remove_tags)
-    - [restore_event_data_store](#restore_event_data_store)
     - [start_logging](#start_logging)
-    - [start_query](#start_query)
     - [stop_logging](#stop_logging)
-    - [update_event_data_store](#update_event_data_store)
     - [update_trail](#update_trail)
     - [get_paginator](#get_paginator)
 
@@ -81,13 +70,6 @@ Exceptions:
 - `Exceptions.CloudTrailInvalidClientTokenIdException`
 - `Exceptions.CloudWatchLogsDeliveryUnavailableException`
 - `Exceptions.ConflictException`
-- `Exceptions.EventDataStoreARNInvalidException`
-- `Exceptions.EventDataStoreAlreadyExistsException`
-- `Exceptions.EventDataStoreMaxLimitExceededException`
-- `Exceptions.EventDataStoreNotFoundException`
-- `Exceptions.EventDataStoreTerminationProtectedException`
-- `Exceptions.InactiveEventDataStoreException`
-- `Exceptions.InactiveQueryException`
 - `Exceptions.InsightNotEnabledException`
 - `Exceptions.InsufficientDependencyServiceAccessPermissionException`
 - `Exceptions.InsufficientEncryptionPolicyException`
@@ -95,9 +77,7 @@ Exceptions:
 - `Exceptions.InsufficientSnsTopicPolicyException`
 - `Exceptions.InvalidCloudWatchLogsLogGroupArnException`
 - `Exceptions.InvalidCloudWatchLogsRoleArnException`
-- `Exceptions.InvalidDateRangeException`
 - `Exceptions.InvalidEventCategoryException`
-- `Exceptions.InvalidEventDataStoreStatusException`
 - `Exceptions.InvalidEventSelectorsException`
 - `Exceptions.InvalidHomeRegionException`
 - `Exceptions.InvalidInsightSelectorsException`
@@ -106,9 +86,6 @@ Exceptions:
 - `Exceptions.InvalidMaxResultsException`
 - `Exceptions.InvalidNextTokenException`
 - `Exceptions.InvalidParameterCombinationException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidQueryStatementException`
-- `Exceptions.InvalidQueryStatusException`
 - `Exceptions.InvalidS3BucketNameException`
 - `Exceptions.InvalidS3PrefixException`
 - `Exceptions.InvalidSnsTopicNameException`
@@ -119,13 +96,11 @@ Exceptions:
 - `Exceptions.KmsException`
 - `Exceptions.KmsKeyDisabledException`
 - `Exceptions.KmsKeyNotFoundException`
-- `Exceptions.MaxConcurrentQueriesException`
 - `Exceptions.MaximumNumberOfTrailsExceededException`
 - `Exceptions.NotOrganizationMasterAccountException`
 - `Exceptions.OperationNotPermittedException`
 - `Exceptions.OrganizationNotInAllFeaturesModeException`
 - `Exceptions.OrganizationsNotInUseException`
-- `Exceptions.QueryIdNotFoundException`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ResourceTypeNotSupportedException`
 - `Exceptions.S3BucketDoesNotExistException`
@@ -164,7 +139,6 @@ Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -182,54 +156,6 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
-
-### cancel_query
-
-Cancels a query if the query is not in a terminated state, such as `CANCELLED`
-, `FAILED` or `FINISHED`.
-
-Type annotations for `boto3.client("cloudtrail").cancel_query` method.
-
-Boto3 documentation:
-[CloudTrail.Client.cancel_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.cancel_query)
-
-Arguments mapping described in
-[CancelQueryRequestRequestTypeDef](./type_defs.md#cancelqueryrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `EventDataStore`: `str` *(required)*
-- `QueryId`: `str` *(required)*
-
-Returns
-[CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef).
-
-### create_event_data_store
-
-Creates a new event data store.
-
-Type annotations for `boto3.client("cloudtrail").create_event_data_store`
-method.
-
-Boto3 documentation:
-[CloudTrail.Client.create_event_data_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_event_data_store)
-
-Arguments mapping described in
-[CreateEventDataStoreRequestRequestTypeDef](./type_defs.md#createeventdatastorerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Name`: `str` *(required)*
-- `AdvancedEventSelectors`:
-  `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-Returns
-[CreateEventDataStoreResponseTypeDef](./type_defs.md#createeventdatastoreresponsetypedef).
 
 ### create_trail
 
@@ -262,26 +188,6 @@ Keyword-only arguments:
 Returns
 [CreateTrailResponseTypeDef](./type_defs.md#createtrailresponsetypedef).
 
-### delete_event_data_store
-
-Disables the event data store specified by `EventDataStore` , which accepts an
-event data store ARN.
-
-Type annotations for `boto3.client("cloudtrail").delete_event_data_store`
-method.
-
-Boto3 documentation:
-[CloudTrail.Client.delete_event_data_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_event_data_store)
-
-Arguments mapping described in
-[DeleteEventDataStoreRequestRequestTypeDef](./type_defs.md#deleteeventdatastorerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `EventDataStore`: `str` *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
 ### delete_trail
 
 Deletes a trail.
@@ -299,27 +205,6 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
-
-### describe_query
-
-Returns metadata about a query, including query run time in milliseconds,
-number of events scanned and matched, and query status.
-
-Type annotations for `boto3.client("cloudtrail").describe_query` method.
-
-Boto3 documentation:
-[CloudTrail.Client.describe_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.describe_query)
-
-Arguments mapping described in
-[DescribeQueryRequestRequestTypeDef](./type_defs.md#describequeryrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `EventDataStore`: `str` *(required)*
-- `QueryId`: `str` *(required)*
-
-Returns
-[DescribeQueryResponseTypeDef](./type_defs.md#describequeryresponsetypedef).
 
 ### describe_trails
 
@@ -361,26 +246,6 @@ Arguments:
 
 Returns `str`.
 
-### get_event_data_store
-
-Returns information about an event data store specified as either an ARN or the
-ID portion of the ARN.
-
-Type annotations for `boto3.client("cloudtrail").get_event_data_store` method.
-
-Boto3 documentation:
-[CloudTrail.Client.get_event_data_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_event_data_store)
-
-Arguments mapping described in
-[GetEventDataStoreRequestRequestTypeDef](./type_defs.md#geteventdatastorerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `EventDataStore`: `str` *(required)*
-
-Returns
-[GetEventDataStoreResponseTypeDef](./type_defs.md#geteventdatastoreresponsetypedef).
-
 ### get_event_selectors
 
 Describes the settings for the event selectors that you configured for your
@@ -421,28 +286,6 @@ Keyword-only arguments:
 Returns
 [GetInsightSelectorsResponseTypeDef](./type_defs.md#getinsightselectorsresponsetypedef).
 
-### get_query_results
-
-Gets event data results of a query.
-
-Type annotations for `boto3.client("cloudtrail").get_query_results` method.
-
-Boto3 documentation:
-[CloudTrail.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_query_results)
-
-Arguments mapping described in
-[GetQueryResultsRequestRequestTypeDef](./type_defs.md#getqueryresultsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `EventDataStore`: `str` *(required)*
-- `QueryId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxQueryResults`: `int`
-
-Returns
-[GetQueryResultsResponseTypeDef](./type_defs.md#getqueryresultsresponsetypedef).
-
 ### get_trail
 
 Returns settings information for a specified trail.
@@ -480,28 +323,6 @@ Keyword-only arguments:
 Returns
 [GetTrailStatusResponseTypeDef](./type_defs.md#gettrailstatusresponsetypedef).
 
-### list_event_data_stores
-
-Returns information about all event data stores in the account, in the current
-region.
-
-Type annotations for `boto3.client("cloudtrail").list_event_data_stores`
-method.
-
-Boto3 documentation:
-[CloudTrail.Client.list_event_data_stores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_event_data_stores)
-
-Arguments mapping described in
-[ListEventDataStoresRequestRequestTypeDef](./type_defs.md#listeventdatastoresrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-Returns
-[ListEventDataStoresResponseTypeDef](./type_defs.md#listeventdatastoresresponsetypedef).
-
 ### list_public_keys
 
 Returns all public keys whose private keys were used to sign the digest files
@@ -523,30 +344,6 @@ Keyword-only arguments:
 
 Returns
 [ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef).
-
-### list_queries
-
-Returns a list of queries and query statuses for the past seven days.
-
-Type annotations for `boto3.client("cloudtrail").list_queries` method.
-
-Boto3 documentation:
-[CloudTrail.Client.list_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_queries)
-
-Arguments mapping described in
-[ListQueriesRequestRequestTypeDef](./type_defs.md#listqueriesrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `EventDataStore`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
-
-Returns
-[ListQueriesResponseTypeDef](./type_defs.md#listqueriesresponsetypedef).
 
 ### list_tags
 
@@ -676,30 +473,8 @@ Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
-
-### restore_event_data_store
-
-Restores a deleted event data store specified by `EventDataStore` , which
-accepts an event data store ARN.
-
-Type annotations for `boto3.client("cloudtrail").restore_event_data_store`
-method.
-
-Boto3 documentation:
-[CloudTrail.Client.restore_event_data_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.restore_event_data_store)
-
-Arguments mapping described in
-[RestoreEventDataStoreRequestRequestTypeDef](./type_defs.md#restoreeventdatastorerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `EventDataStore`: `str` *(required)*
-
-Returns
-[RestoreEventDataStoreResponseTypeDef](./type_defs.md#restoreeventdatastoreresponsetypedef).
 
 ### start_logging
 
@@ -720,24 +495,6 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-### start_query
-
-Starts a CloudTrail Lake query.
-
-Type annotations for `boto3.client("cloudtrail").start_query` method.
-
-Boto3 documentation:
-[CloudTrail.Client.start_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_query)
-
-Arguments mapping described in
-[StartQueryRequestRequestTypeDef](./type_defs.md#startqueryrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `QueryStatement`: `str` *(required)*
-
-Returns [StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef).
-
 ### stop_logging
 
 Suspends the recording of Amazon Web Services API calls and log file delivery
@@ -756,33 +513,6 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
-
-### update_event_data_store
-
-Updates an event data store.
-
-Type annotations for `boto3.client("cloudtrail").update_event_data_store`
-method.
-
-Boto3 documentation:
-[CloudTrail.Client.update_event_data_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_event_data_store)
-
-Arguments mapping described in
-[UpdateEventDataStoreRequestRequestTypeDef](./type_defs.md#updateeventdatastorerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `EventDataStore`: `str` *(required)*
-- `Name`: `str`
-- `AdvancedEventSelectors`:
-  `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-
-Returns
-[UpdateEventDataStoreResponseTypeDef](./type_defs.md#updateeventdatastoreresponsetypedef).
 
 ### update_trail
 

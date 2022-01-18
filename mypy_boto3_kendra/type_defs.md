@@ -214,7 +214,6 @@ type annotations stubs module
   - [UserGroupResolutionConfigurationTypeDef](#usergroupresolutionconfigurationtypedef)
   - [UserIdentityConfigurationTypeDef](#useridentityconfigurationtypedef)
   - [UserTokenConfigurationTypeDef](#usertokenconfigurationtypedef)
-  - [WarningTypeDef](#warningtypedef)
   - [WebCrawlerConfigurationTypeDef](#webcrawlerconfigurationtypedef)
   - [WorkDocsConfigurationTypeDef](#workdocsconfigurationtypedef)
 
@@ -2447,10 +2446,10 @@ from mypy_boto3_kendra.type_defs import QueryRequestRequestTypeDef
 Required fields:
 
 - `IndexId`: `str`
+- `QueryText`: `str`
 
 Optional fields:
 
-- `QueryText`: `str`
 - `AttributeFilter`:
   [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
 - `Facets`: `Sequence`\[[FacetTypeDef](./type_defs.md#facettypedef)\]
@@ -2504,7 +2503,6 @@ Required fields:
 - `FacetResults`:
   `List`\[[FacetResultTypeDef](./type_defs.md#facetresulttypedef)\]
 - `TotalNumberOfResults`: `int`
-- `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -3257,18 +3255,6 @@ Optional fields:
   [JwtTokenTypeConfigurationTypeDef](./type_defs.md#jwttokentypeconfigurationtypedef)
 - `JsonTokenTypeConfiguration`:
   [JsonTokenTypeConfigurationTypeDef](./type_defs.md#jsontokentypeconfigurationtypedef)
-
-## WarningTypeDef
-
-```python
-from mypy_boto3_kendra.type_defs import WarningTypeDef
-```
-
-Optional fields:
-
-- `Message`: `str`
-- `Code`: `Literal['QUERY_LANGUAGE_INVALID_SYNTAX']` (see
-  [WarningCodeType](./literals.md#warningcodetype))
 
 ## WebCrawlerConfigurationTypeDef
 

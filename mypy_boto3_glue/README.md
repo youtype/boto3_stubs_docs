@@ -140,9 +140,6 @@ from mypy_boto3_glue.client import GlueClient
 - [get_tags](./client.md#get_tags)
 - [get_trigger](./client.md#get_trigger)
 - [get_triggers](./client.md#get_triggers)
-- [get_unfiltered_partition_metadata](./client.md#get_unfiltered_partition_metadata)
-- [get_unfiltered_partitions_metadata](./client.md#get_unfiltered_partitions_metadata)
-- [get_unfiltered_table_metadata](./client.md#get_unfiltered_table_metadata)
 - [get_user_defined_function](./client.md#get_user_defined_function)
 - [get_user_defined_functions](./client.md#get_user_defined_functions)
 - [get_workflow](./client.md#get_workflow)
@@ -230,7 +227,6 @@ GlueClient [exceptions](./client.md#exceptions)
 - MLTransformNotReadyException
 - NoScheduleException
 - OperationTimeoutException
-- PermissionTypeMismatchException
 - ResourceNotReadyException
 - ResourceNumberLimitExceededException
 - SchedulerNotRunningException
@@ -327,7 +323,6 @@ from mypy_boto3_glue.literals import BackfillErrorCodeType, ...
 - [NodeTypeType](./literals.md#nodetypetype)
 - [PartitionIndexStatusType](./literals.md#partitionindexstatustype)
 - [PermissionType](./literals.md#permissiontype)
-- [PermissionTypeType](./literals.md#permissiontypetype)
 - [PrincipalTypeType](./literals.md#principaltypetype)
 - [RecrawlBehaviorType](./literals.md#recrawlbehaviortype)
 - [RegistryStatusType](./literals.md#registrystatustype)
@@ -366,7 +361,6 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 ```
 
 - [ActionTypeDef](./type_defs.md#actiontypedef)
-- [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
 - [BackfillErrorTypeDef](./type_defs.md#backfillerrortypedef)
 - [BatchCreatePartitionRequestRequestTypeDef](./type_defs.md#batchcreatepartitionrequestrequesttypedef)
 - [BatchCreatePartitionResponseTypeDef](./type_defs.md#batchcreatepartitionresponsetypedef)
@@ -419,7 +413,6 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)
 - [ColumnErrorTypeDef](./type_defs.md#columnerrortypedef)
 - [ColumnImportanceTypeDef](./type_defs.md#columnimportancetypedef)
-- [ColumnRowFilterTypeDef](./type_defs.md#columnrowfiltertypedef)
 - [ColumnStatisticsDataTypeDef](./type_defs.md#columnstatisticsdatatypedef)
 - [ColumnStatisticsErrorTypeDef](./type_defs.md#columnstatisticserrortypedef)
 - [ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)
@@ -506,7 +499,6 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [DeleteUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#deleteuserdefinedfunctionrequestrequesttypedef)
 - [DeleteWorkflowRequestRequestTypeDef](./type_defs.md#deleteworkflowrequestrequesttypedef)
 - [DeleteWorkflowResponseTypeDef](./type_defs.md#deleteworkflowresponsetypedef)
-- [DeltaTargetTypeDef](./type_defs.md#deltatargettypedef)
 - [DevEndpointCustomLibrariesTypeDef](./type_defs.md#devendpointcustomlibrariestypedef)
 - [DevEndpointTypeDef](./type_defs.md#devendpointtypedef)
 - [DoubleColumnStatisticsDataTypeDef](./type_defs.md#doublecolumnstatisticsdatatypedef)
@@ -622,12 +614,6 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [GetTriggerResponseTypeDef](./type_defs.md#gettriggerresponsetypedef)
 - [GetTriggersRequestRequestTypeDef](./type_defs.md#gettriggersrequestrequesttypedef)
 - [GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef)
-- [GetUnfilteredPartitionMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredpartitionmetadatarequestrequesttypedef)
-- [GetUnfilteredPartitionMetadataResponseTypeDef](./type_defs.md#getunfilteredpartitionmetadataresponsetypedef)
-- [GetUnfilteredPartitionsMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredpartitionsmetadatarequestrequesttypedef)
-- [GetUnfilteredPartitionsMetadataResponseTypeDef](./type_defs.md#getunfilteredpartitionsmetadataresponsetypedef)
-- [GetUnfilteredTableMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredtablemetadatarequestrequesttypedef)
-- [GetUnfilteredTableMetadataResponseTypeDef](./type_defs.md#getunfilteredtablemetadataresponsetypedef)
 - [GetUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#getuserdefinedfunctionrequestrequesttypedef)
 - [GetUserDefinedFunctionResponseTypeDef](./type_defs.md#getuserdefinedfunctionresponsetypedef)
 - [GetUserDefinedFunctionsRequestRequestTypeDef](./type_defs.md#getuserdefinedfunctionsrequestrequesttypedef)
@@ -656,7 +642,6 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [JsonClassifierTypeDef](./type_defs.md#jsonclassifiertypedef)
 - [KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)
 - [LabelingSetGenerationTaskRunPropertiesTypeDef](./type_defs.md#labelingsetgenerationtaskrunpropertiestypedef)
-- [LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef)
 - [LastActiveDefinitionTypeDef](./type_defs.md#lastactivedefinitiontypedef)
 - [LastCrawlInfoTypeDef](./type_defs.md#lastcrawlinfotypedef)
 - [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
@@ -787,7 +772,6 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [TriggerNodeDetailsTypeDef](./type_defs.md#triggernodedetailstypedef)
 - [TriggerTypeDef](./type_defs.md#triggertypedef)
 - [TriggerUpdateTypeDef](./type_defs.md#triggerupdatetypedef)
-- [UnfilteredPartitionTypeDef](./type_defs.md#unfilteredpartitiontypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateBlueprintRequestRequestTypeDef](./type_defs.md#updateblueprintrequestrequesttypedef)
 - [UpdateBlueprintResponseTypeDef](./type_defs.md#updateblueprintresponsetypedef)

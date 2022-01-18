@@ -35,10 +35,7 @@ from mypy_boto3_pi.client import PIClient
 - [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_dimension_key_details](./client.md#get_dimension_key_details)
-- [get_resource_metadata](./client.md#get_resource_metadata)
 - [get_resource_metrics](./client.md#get_resource_metrics)
-- [list_available_resource_dimensions](./client.md#list_available_resource_dimensions)
-- [list_available_resource_metrics](./client.md#list_available_resource_metrics)
 
 ### Exceptions
 
@@ -60,7 +57,6 @@ from mypy_boto3_pi.literals import DetailStatusType, ...
 ```
 
 - [DetailStatusType](./literals.md#detailstatustype)
-- [FeatureStatusType](./literals.md#featurestatustype)
 - [ServiceTypeType](./literals.md#servicetypetype)
 - [ServiceName](./literals.md#servicename)
 
@@ -78,26 +74,15 @@ from mypy_boto3_pi.type_defs import DataPointTypeDef, ...
 - [DataPointTypeDef](./type_defs.md#datapointtypedef)
 - [DescribeDimensionKeysRequestRequestTypeDef](./type_defs.md#describedimensionkeysrequestrequesttypedef)
 - [DescribeDimensionKeysResponseTypeDef](./type_defs.md#describedimensionkeysresponsetypedef)
-- [DimensionDetailTypeDef](./type_defs.md#dimensiondetailtypedef)
-- [DimensionGroupDetailTypeDef](./type_defs.md#dimensiongroupdetailtypedef)
 - [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
 - [DimensionKeyDescriptionTypeDef](./type_defs.md#dimensionkeydescriptiontypedef)
 - [DimensionKeyDetailTypeDef](./type_defs.md#dimensionkeydetailtypedef)
-- [FeatureMetadataTypeDef](./type_defs.md#featuremetadatatypedef)
 - [GetDimensionKeyDetailsRequestRequestTypeDef](./type_defs.md#getdimensionkeydetailsrequestrequesttypedef)
 - [GetDimensionKeyDetailsResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponsetypedef)
-- [GetResourceMetadataRequestRequestTypeDef](./type_defs.md#getresourcemetadatarequestrequesttypedef)
-- [GetResourceMetadataResponseTypeDef](./type_defs.md#getresourcemetadataresponsetypedef)
 - [GetResourceMetricsRequestRequestTypeDef](./type_defs.md#getresourcemetricsrequestrequesttypedef)
 - [GetResourceMetricsResponseTypeDef](./type_defs.md#getresourcemetricsresponsetypedef)
-- [ListAvailableResourceDimensionsRequestRequestTypeDef](./type_defs.md#listavailableresourcedimensionsrequestrequesttypedef)
-- [ListAvailableResourceDimensionsResponseTypeDef](./type_defs.md#listavailableresourcedimensionsresponsetypedef)
-- [ListAvailableResourceMetricsRequestRequestTypeDef](./type_defs.md#listavailableresourcemetricsrequestrequesttypedef)
-- [ListAvailableResourceMetricsResponseTypeDef](./type_defs.md#listavailableresourcemetricsresponsetypedef)
-- [MetricDimensionGroupsTypeDef](./type_defs.md#metricdimensiongroupstypedef)
 - [MetricKeyDataPointsTypeDef](./type_defs.md#metrickeydatapointstypedef)
 - [MetricQueryTypeDef](./type_defs.md#metricquerytypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ResponsePartitionKeyTypeDef](./type_defs.md#responsepartitionkeytypedef)
 - [ResponseResourceMetricKeyTypeDef](./type_defs.md#responseresourcemetrickeytypedef)
-- [ResponseResourceMetricTypeDef](./type_defs.md#responseresourcemetrictypedef)

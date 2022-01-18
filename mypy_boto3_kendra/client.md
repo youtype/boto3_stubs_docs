@@ -1120,7 +1120,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
-- `QueryText`: `str`
+- `QueryText`: `str` *(required)*
 - `AttributeFilter`:
   [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
 - `Facets`: `Sequence`\[[FacetTypeDef](./type_defs.md#facettypedef)\]

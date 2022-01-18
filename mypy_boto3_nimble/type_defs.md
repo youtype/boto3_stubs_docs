@@ -128,7 +128,6 @@ type annotations stubs module
   - [UpdateStudioComponentResponseTypeDef](#updatestudiocomponentresponsetypedef)
   - [UpdateStudioRequestRequestTypeDef](#updatestudiorequestrequesttypedef)
   - [UpdateStudioResponseTypeDef](#updatestudioresponsetypedef)
-  - [ValidationResultTypeDef](#validationresulttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 ## AcceptEulasRequestRequestTypeDef
@@ -943,8 +942,6 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `updatedAt`: `datetime`
 - `updatedBy`: `str`
-- `validationResults`:
-  `List`\[[ValidationResultTypeDef](./type_defs.md#validationresulttypedef)\]
 
 ## LicenseServiceConfigurationTypeDef
 
@@ -1054,8 +1051,7 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `principalId`: `str`
-- `states`:
-  `Sequence`\[[LaunchProfileStateType](./literals.md#launchprofilestatetype)\]
+- `states`: `Sequence`\[`str`\]
 
 ## ListLaunchProfilesResponseTypeDef
 
@@ -1145,10 +1141,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `states`:
-  `Sequence`\[[StudioComponentStateType](./literals.md#studiocomponentstatetype)\]
-- `types`:
-  `Sequence`\[[StudioComponentTypeType](./literals.md#studiocomponenttypetype)\]
+- `states`: `Sequence`\[`str`\]
+- `types`: `Sequence`\[`str`\]
 
 ## ListStudioComponentsResponseTypeDef
 
@@ -1910,22 +1904,6 @@ Required fields:
 - `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## ValidationResultTypeDef
-
-```python
-from mypy_boto3_nimble.type_defs import ValidationResultTypeDef
-```
-
-Required fields:
-
-- `state`:
-  [LaunchProfileValidationStateType](./literals.md#launchprofilevalidationstatetype)
-- `statusCode`:
-  [LaunchProfileValidationStatusCodeType](./literals.md#launchprofilevalidationstatuscodetype)
-- `statusMessage`: `str`
-- `type`:
-  [LaunchProfileValidationTypeType](./literals.md#launchprofilevalidationtypetype)
 
 ## WaiterConfigTypeDef
 

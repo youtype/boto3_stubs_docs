@@ -240,7 +240,6 @@ Optional fields:
   [MasterUserOptionsTypeDef](./type_defs.md#masteruseroptionstypedef)
 - `SAMLOptions`:
   [SAMLOptionsInputTypeDef](./type_defs.md#samloptionsinputtypedef)
-- `AnonymousAuthEnabled`: `bool`
 
 ## AdvancedSecurityOptionsStatusTypeDef
 
@@ -266,8 +265,6 @@ Optional fields:
 - `InternalUserDatabaseEnabled`: `bool`
 - `SAMLOptions`:
   [SAMLOptionsOutputTypeDef](./type_defs.md#samloptionsoutputtypedef)
-- `AnonymousAuthDisableDate`: `datetime`
-- `AnonymousAuthEnabled`: `bool`
 
 ## AssociatePackageRequestRequestTypeDef
 

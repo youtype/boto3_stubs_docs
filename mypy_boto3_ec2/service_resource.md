@@ -3310,7 +3310,6 @@ Boto3 documentation:
 - `partition_count`: `int`
 - `group_id`: `str`
 - `tags`: `List`\[`Any`\]
-- `group_arn`: `str`
 - `name`: `str`
 - `instances`:
   [PlacementGroupInstancesCollection](#placementgroupinstancescollection)

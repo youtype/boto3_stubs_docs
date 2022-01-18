@@ -1690,7 +1690,6 @@ Required fields:
 Optional fields:
 
 - `Key`: `str`
-- `BucketOwner`: `str`
 
 ## S3TableOutputOptionsTypeDef
 

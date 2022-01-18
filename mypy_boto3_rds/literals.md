@@ -674,7 +674,6 @@ Values:
 - `db-cluster-snapshot`
 - `db-instance`
 - `db-parameter-group`
-- `db-proxy`
 - `db-security-group`
 - `db-snapshot`
 

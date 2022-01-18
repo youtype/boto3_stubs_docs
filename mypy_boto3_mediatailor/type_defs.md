@@ -1473,10 +1473,6 @@ Required fields:
 - `Outputs`:
   `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
 
-Optional fields:
-
-- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
-
 ## UpdateChannelResponseTypeDef
 
 ```python

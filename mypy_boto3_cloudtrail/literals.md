@@ -9,14 +9,12 @@ type annotations stubs module
 
 - [Literals for boto3 CloudTrail module](#literals-for-boto3-cloudtrail-module)
   - [EventCategoryType](#eventcategorytype)
-  - [EventDataStoreStatusType](#eventdatastorestatustype)
   - [InsightTypeType](#insighttypetype)
   - [ListPublicKeysPaginatorName](#listpublickeyspaginatorname)
   - [ListTagsPaginatorName](#listtagspaginatorname)
   - [ListTrailsPaginatorName](#listtrailspaginatorname)
   - [LookupAttributeKeyType](#lookupattributekeytype)
   - [LookupEventsPaginatorName](#lookupeventspaginatorname)
-  - [QueryStatusType](#querystatustype)
   - [ReadWriteTypeType](#readwritetypetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
@@ -30,18 +28,6 @@ from mypy_boto3_cloudtrail.literals import EventCategoryType
 Values:
 
 - `insight`
-
-## EventDataStoreStatusType
-
-```python
-from mypy_boto3_cloudtrail.literals import EventDataStoreStatusType
-```
-
-Values:
-
-- `CREATED`
-- `ENABLED`
-- `PENDING_DELETION`
 
 ## InsightTypeType
 
@@ -110,20 +96,6 @@ from mypy_boto3_cloudtrail.literals import LookupEventsPaginatorName
 Values:
 
 - `lookup_events`
-
-## QueryStatusType
-
-```python
-from mypy_boto3_cloudtrail.literals import QueryStatusType
-```
-
-Values:
-
-- `CANCELLED`
-- `FAILED`
-- `FINISHED`
-- `QUEUED`
-- `RUNNING`
 
 ## ReadWriteTypeType
 

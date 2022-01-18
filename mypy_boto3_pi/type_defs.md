@@ -11,29 +11,18 @@ type annotations stubs module
   - [DataPointTypeDef](#datapointtypedef)
   - [DescribeDimensionKeysRequestRequestTypeDef](#describedimensionkeysrequestrequesttypedef)
   - [DescribeDimensionKeysResponseTypeDef](#describedimensionkeysresponsetypedef)
-  - [DimensionDetailTypeDef](#dimensiondetailtypedef)
-  - [DimensionGroupDetailTypeDef](#dimensiongroupdetailtypedef)
   - [DimensionGroupTypeDef](#dimensiongrouptypedef)
   - [DimensionKeyDescriptionTypeDef](#dimensionkeydescriptiontypedef)
   - [DimensionKeyDetailTypeDef](#dimensionkeydetailtypedef)
-  - [FeatureMetadataTypeDef](#featuremetadatatypedef)
   - [GetDimensionKeyDetailsRequestRequestTypeDef](#getdimensionkeydetailsrequestrequesttypedef)
   - [GetDimensionKeyDetailsResponseTypeDef](#getdimensionkeydetailsresponsetypedef)
-  - [GetResourceMetadataRequestRequestTypeDef](#getresourcemetadatarequestrequesttypedef)
-  - [GetResourceMetadataResponseTypeDef](#getresourcemetadataresponsetypedef)
   - [GetResourceMetricsRequestRequestTypeDef](#getresourcemetricsrequestrequesttypedef)
   - [GetResourceMetricsResponseTypeDef](#getresourcemetricsresponsetypedef)
-  - [ListAvailableResourceDimensionsRequestRequestTypeDef](#listavailableresourcedimensionsrequestrequesttypedef)
-  - [ListAvailableResourceDimensionsResponseTypeDef](#listavailableresourcedimensionsresponsetypedef)
-  - [ListAvailableResourceMetricsRequestRequestTypeDef](#listavailableresourcemetricsrequestrequesttypedef)
-  - [ListAvailableResourceMetricsResponseTypeDef](#listavailableresourcemetricsresponsetypedef)
-  - [MetricDimensionGroupsTypeDef](#metricdimensiongroupstypedef)
   - [MetricKeyDataPointsTypeDef](#metrickeydatapointstypedef)
   - [MetricQueryTypeDef](#metricquerytypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResponsePartitionKeyTypeDef](#responsepartitionkeytypedef)
   - [ResponseResourceMetricKeyTypeDef](#responseresourcemetrickeytypedef)
-  - [ResponseResourceMetricTypeDef](#responseresourcemetrictypedef)
 
 ## DataPointTypeDef
 
@@ -54,7 +43,8 @@ from mypy_boto3_pi.type_defs import DescribeDimensionKeysRequestRequestTypeDef
 
 Required fields:
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
+- `ServiceType`: `Literal['RDS']` (see
+  [ServiceTypeType](./literals.md#servicetypetype))
 - `Identifier`: `str`
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
@@ -64,7 +54,6 @@ Required fields:
 Optional fields:
 
 - `PeriodInSeconds`: `int`
-- `AdditionalMetrics`: `Sequence`\[`str`\]
 - `PartitionBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
 - `Filter`: `Mapping`\[`str`, `str`\]
 - `MaxResults`: `int`
@@ -87,28 +76,6 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## DimensionDetailTypeDef
-
-```python
-from mypy_boto3_pi.type_defs import DimensionDetailTypeDef
-```
-
-Optional fields:
-
-- `Identifier`: `str`
-
-## DimensionGroupDetailTypeDef
-
-```python
-from mypy_boto3_pi.type_defs import DimensionGroupDetailTypeDef
-```
-
-Optional fields:
-
-- `Group`: `str`
-- `Dimensions`:
-  `List`\[[DimensionDetailTypeDef](./type_defs.md#dimensiondetailtypedef)\]
 
 ## DimensionGroupTypeDef
 
@@ -135,7 +102,6 @@ Optional fields:
 
 - `Dimensions`: `Dict`\[`str`, `str`\]
 - `Total`: `float`
-- `AdditionalMetrics`: `Dict`\[`str`, `float`\]
 - `Partitions`: `List`\[`float`\]
 
 ## DimensionKeyDetailTypeDef
@@ -150,16 +116,6 @@ Optional fields:
 - `Dimension`: `str`
 - `Status`: [DetailStatusType](./literals.md#detailstatustype)
 
-## FeatureMetadataTypeDef
-
-```python
-from mypy_boto3_pi.type_defs import FeatureMetadataTypeDef
-```
-
-Optional fields:
-
-- `Status`: [FeatureStatusType](./literals.md#featurestatustype)
-
 ## GetDimensionKeyDetailsRequestRequestTypeDef
 
 ```python
@@ -168,7 +124,8 @@ from mypy_boto3_pi.type_defs import GetDimensionKeyDetailsRequestRequestTypeDef
 
 Required fields:
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
+- `ServiceType`: `Literal['RDS']` (see
+  [ServiceTypeType](./literals.md#servicetypetype))
 - `Identifier`: `str`
 - `Group`: `str`
 - `GroupIdentifier`: `str`
@@ -190,31 +147,6 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourceMetadataRequestRequestTypeDef
-
-```python
-from mypy_boto3_pi.type_defs import GetResourceMetadataRequestRequestTypeDef
-```
-
-Required fields:
-
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `Identifier`: `str`
-
-## GetResourceMetadataResponseTypeDef
-
-```python
-from mypy_boto3_pi.type_defs import GetResourceMetadataResponseTypeDef
-```
-
-Required fields:
-
-- `Identifier`: `str`
-- `Features`: `Dict`\[`str`,
-  [FeatureMetadataTypeDef](./type_defs.md#featuremetadatatypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
 ## GetResourceMetricsRequestRequestTypeDef
 
 ```python
@@ -223,7 +155,8 @@ from mypy_boto3_pi.type_defs import GetResourceMetricsRequestRequestTypeDef
 
 Required fields:
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
+- `ServiceType`: `Literal['RDS']` (see
+  [ServiceTypeType](./literals.md#servicetypetype))
 - `Identifier`: `str`
 - `MetricQueries`:
   `Sequence`\[[MetricQueryTypeDef](./type_defs.md#metricquerytypedef)\]
@@ -252,80 +185,6 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## ListAvailableResourceDimensionsRequestRequestTypeDef
-
-```python
-from mypy_boto3_pi.type_defs import ListAvailableResourceDimensionsRequestRequestTypeDef
-```
-
-Required fields:
-
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `Identifier`: `str`
-- `Metrics`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-## ListAvailableResourceDimensionsResponseTypeDef
-
-```python
-from mypy_boto3_pi.type_defs import ListAvailableResourceDimensionsResponseTypeDef
-```
-
-Required fields:
-
-- `MetricDimensions`:
-  `List`\[[MetricDimensionGroupsTypeDef](./type_defs.md#metricdimensiongroupstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## ListAvailableResourceMetricsRequestRequestTypeDef
-
-```python
-from mypy_boto3_pi.type_defs import ListAvailableResourceMetricsRequestRequestTypeDef
-```
-
-Required fields:
-
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `Identifier`: `str`
-- `MetricTypes`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-## ListAvailableResourceMetricsResponseTypeDef
-
-```python
-from mypy_boto3_pi.type_defs import ListAvailableResourceMetricsResponseTypeDef
-```
-
-Required fields:
-
-- `Metrics`:
-  `List`\[[ResponseResourceMetricTypeDef](./type_defs.md#responseresourcemetrictypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## MetricDimensionGroupsTypeDef
-
-```python
-from mypy_boto3_pi.type_defs import MetricDimensionGroupsTypeDef
-```
-
-Optional fields:
-
-- `Metric`: `str`
-- `Groups`:
-  `List`\[[DimensionGroupDetailTypeDef](./type_defs.md#dimensiongroupdetailtypedef)\]
 
 ## MetricKeyDataPointsTypeDef
 
@@ -391,15 +250,3 @@ Required fields:
 Optional fields:
 
 - `Dimensions`: `Dict`\[`str`, `str`\]
-
-## ResponseResourceMetricTypeDef
-
-```python
-from mypy_boto3_pi.type_defs import ResponseResourceMetricTypeDef
-```
-
-Optional fields:
-
-- `Metric`: `str`
-- `Description`: `str`
-- `Unit`: `str`

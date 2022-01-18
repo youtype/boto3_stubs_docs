@@ -223,7 +223,6 @@ type annotations stubs module
     - [describe_elastic_gpus](#describe_elastic_gpus)
     - [describe_export_image_tasks](#describe_export_image_tasks)
     - [describe_export_tasks](#describe_export_tasks)
-    - [describe_fast_launch_images](#describe_fast_launch_images)
     - [describe_fast_snapshot_restores](#describe_fast_snapshot_restores)
     - [describe_fleet_history](#describe_fleet_history)
     - [describe_fleet_instances](#describe_fleet_instances)
@@ -338,7 +337,6 @@ type annotations stubs module
     - [detach_volume](#detach_volume)
     - [detach_vpn_gateway](#detach_vpn_gateway)
     - [disable_ebs_encryption_by_default](#disable_ebs_encryption_by_default)
-    - [disable_fast_launch](#disable_fast_launch)
     - [disable_fast_snapshot_restores](#disable_fast_snapshot_restores)
     - [disable_image_deprecation](#disable_image_deprecation)
     - [disable_ipam_organization_admin_account](#disable_ipam_organization_admin_account)
@@ -359,7 +357,6 @@ type annotations stubs module
     - [disassociate_trunk_interface](#disassociate_trunk_interface)
     - [disassociate_vpc_cidr_block](#disassociate_vpc_cidr_block)
     - [enable_ebs_encryption_by_default](#enable_ebs_encryption_by_default)
-    - [enable_fast_launch](#enable_fast_launch)
     - [enable_fast_snapshot_restores](#enable_fast_snapshot_restores)
     - [enable_image_deprecation](#enable_image_deprecation)
     - [enable_ipam_organization_admin_account](#enable_ipam_organization_admin_account)
@@ -461,7 +458,6 @@ type annotations stubs module
     - [modify_vpc_endpoint](#modify_vpc_endpoint)
     - [modify_vpc_endpoint_connection_notification](#modify_vpc_endpoint_connection_notification)
     - [modify_vpc_endpoint_service_configuration](#modify_vpc_endpoint_service_configuration)
-    - [modify_vpc_endpoint_service_payer_responsibility](#modify_vpc_endpoint_service_payer_responsibility)
     - [modify_vpc_endpoint_service_permissions](#modify_vpc_endpoint_service_permissions)
     - [modify_vpc_peering_connection_options](#modify_vpc_peering_connection_options)
     - [modify_vpc_tenancy](#modify_vpc_tenancy)
@@ -1712,7 +1708,6 @@ Keyword-only arguments:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `OutpostArn`: `str`
-- `PlacementGroupArn`: `str`
 
 Returns
 [CreateCapacityReservationResultTypeDef](./type_defs.md#createcapacityreservationresulttypedef).
@@ -4931,7 +4926,7 @@ Returns
 
 ### describe_account_attributes
 
-Describes attributes of your Amazon Web Services account.
+Describes attributes of your AWS account.
 
 Type annotations for `boto3.client("ec2").describe_account_attributes` method.
 
@@ -5479,29 +5474,6 @@ Keyword-only arguments:
 
 Returns
 [DescribeExportTasksResultTypeDef](./type_defs.md#describeexporttasksresulttypedef).
-
-### describe_fast_launch_images
-
-Describe details for Windows AMIs that are configured for faster launching.
-
-Type annotations for `boto3.client("ec2").describe_fast_launch_images` method.
-
-Boto3 documentation:
-[EC2.Client.describe_fast_launch_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fast_launch_images)
-
-Arguments mapping described in
-[DescribeFastLaunchImagesRequestRequestTypeDef](./type_defs.md#describefastlaunchimagesrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ImageIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `DryRun`: `bool`
-
-Returns
-[DescribeFastLaunchImagesResultTypeDef](./type_defs.md#describefastlaunchimagesresulttypedef).
 
 ### describe_fast_snapshot_restores
 
@@ -8175,28 +8147,6 @@ Keyword-only arguments:
 Returns
 [DisableEbsEncryptionByDefaultResultTypeDef](./type_defs.md#disableebsencryptionbydefaultresulttypedef).
 
-### disable_fast_launch
-
-Discontinue faster launching for a Windows AMI, and clean up existing pre-
-provisioned snapshots.
-
-Type annotations for `boto3.client("ec2").disable_fast_launch` method.
-
-Boto3 documentation:
-[EC2.Client.disable_fast_launch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_fast_launch)
-
-Arguments mapping described in
-[DisableFastLaunchRequestRequestTypeDef](./type_defs.md#disablefastlaunchrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ImageId`: `str` *(required)*
-- `Force`: `bool`
-- `DryRun`: `bool`
-
-Returns
-[DisableFastLaunchResultTypeDef](./type_defs.md#disablefastlaunchresulttypedef).
-
 ### disable_fast_snapshot_restores
 
 Disables fast snapshot restores for the specified snapshots in the specified
@@ -8612,33 +8562,6 @@ Keyword-only arguments:
 
 Returns
 [EnableEbsEncryptionByDefaultResultTypeDef](./type_defs.md#enableebsencryptionbydefaultresulttypedef).
-
-### enable_fast_launch
-
-When you enable faster launching for a Windows AMI, images are pre-provisioned,
-using snapshots to launch instances up to 65% faster.
-
-Type annotations for `boto3.client("ec2").enable_fast_launch` method.
-
-Boto3 documentation:
-[EC2.Client.enable_fast_launch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_fast_launch)
-
-Arguments mapping described in
-[EnableFastLaunchRequestRequestTypeDef](./type_defs.md#enablefastlaunchrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ImageId`: `str` *(required)*
-- `ResourceType`: `str`
-- `SnapshotConfiguration`:
-  [FastLaunchSnapshotConfigurationRequestTypeDef](./type_defs.md#fastlaunchsnapshotconfigurationrequesttypedef)
-- `LaunchTemplate`:
-  [FastLaunchLaunchTemplateSpecificationRequestTypeDef](./type_defs.md#fastlaunchlaunchtemplatespecificationrequesttypedef)
-- `MaxParallelLaunches`: `int`
-- `DryRun`: `bool`
-
-Returns
-[EnableFastLaunchResultTypeDef](./type_defs.md#enablefastlaunchresulttypedef).
 
 ### enable_fast_snapshot_restores
 
@@ -10415,8 +10338,6 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `HttpProtocolIpv6`:
   [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
-- `InstanceMetadataTags`:
-  [InstanceMetadataTagsStateType](./literals.md#instancemetadatatagsstatetype)
 
 Returns
 [ModifyInstanceMetadataOptionsResultTypeDef](./type_defs.md#modifyinstancemetadataoptionsresulttypedef).
@@ -11104,30 +11025,6 @@ Keyword-only arguments:
 Returns
 [ModifyVpcEndpointServiceConfigurationResultTypeDef](./type_defs.md#modifyvpcendpointserviceconfigurationresulttypedef).
 
-### modify_vpc_endpoint_service_payer_responsibility
-
-Modifies the payer responsibility for your VPC endpoint service.
-
-Type annotations for
-`boto3.client("ec2").modify_vpc_endpoint_service_payer_responsibility` method.
-
-Boto3 documentation:
-[EC2.Client.modify_vpc_endpoint_service_payer_responsibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_service_payer_responsibility)
-
-Arguments mapping described in
-[ModifyVpcEndpointServicePayerResponsibilityRequestRequestTypeDef](./type_defs.md#modifyvpcendpointservicepayerresponsibilityrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ServiceId`: `str` *(required)*
-- `PayerResponsibility`: `Literal['ServiceOwner']` (see
-  [PayerResponsibilityType](./literals.md#payerresponsibilitytype))
-  *(required)*
-- `DryRun`: `bool`
-
-Returns
-[ModifyVpcEndpointServicePayerResponsibilityResultTypeDef](./type_defs.md#modifyvpcendpointservicepayerresponsibilityresulttypedef).
-
 ### modify_vpc_endpoint_service_permissions
 
 Modifies the permissions for your
@@ -11351,10 +11248,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Cidr`: `str` *(required)*
-- `IpamPoolId`: `str` *(required)*
-- `IpamPoolOwner`: `str` *(required)*
 - `DryRun`: `bool`
+- `Cidr`: `str`
+- `IpamPoolId`: `str`
+- `IpamPoolOwner`: `str`
 
 Returns
 [MoveByoipCidrToIpamResultTypeDef](./type_defs.md#movebyoipcidrtoipamresulttypedef).
@@ -12863,8 +12760,6 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [DescribeEgressOnlyInternetGatewaysPaginator](./paginators.md#describeegressonlyinternetgatewayspaginator)
 - `client.get_paginator("describe_export_image_tasks")` ->
   [DescribeExportImageTasksPaginator](./paginators.md#describeexportimagetaskspaginator)
-- `client.get_paginator("describe_fast_launch_images")` ->
-  [DescribeFastLaunchImagesPaginator](./paginators.md#describefastlaunchimagespaginator)
 - `client.get_paginator("describe_fast_snapshot_restores")` ->
   [DescribeFastSnapshotRestoresPaginator](./paginators.md#describefastsnapshotrestorespaginator)
 - `client.get_paginator("describe_fleets")` ->

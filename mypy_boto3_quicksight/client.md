@@ -515,7 +515,9 @@ Returns
 
 ### create_ingestion
 
-Creates and starts a new SPICE ingestion for a dataset.
+Creates and starts a new SPICE ingestion on a dataset Any ingestions operating
+on tagged datasets inherit the same tags automatically for use in access
+control.
 
 Type annotations for `boto3.client("quicksight").create_ingestion` method.
 

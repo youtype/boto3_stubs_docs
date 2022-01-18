@@ -297,7 +297,6 @@ type annotations stubs module
   - [JobExecutionSummaryForThingTypeDef](#jobexecutionsummaryforthingtypedef)
   - [JobExecutionSummaryTypeDef](#jobexecutionsummarytypedef)
   - [JobExecutionTypeDef](#jobexecutiontypedef)
-  - [JobExecutionsRetryConfigTypeDef](#jobexecutionsretryconfigtypedef)
   - [JobExecutionsRolloutConfigTypeDef](#jobexecutionsrolloutconfigtypedef)
   - [JobProcessDetailsTypeDef](#jobprocessdetailstypedef)
   - [JobSummaryTypeDef](#jobsummarytypedef)
@@ -467,7 +466,6 @@ type annotations stubs module
   - [RepublishActionTypeDef](#republishactiontypedef)
   - [ResourceIdentifierTypeDef](#resourceidentifiertypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetryCriteriaTypeDef](#retrycriteriatypedef)
   - [RoleAliasDescriptionTypeDef](#rolealiasdescriptiontypedef)
   - [S3ActionTypeDef](#s3actiontypedef)
   - [S3DestinationTypeDef](#s3destinationtypedef)
@@ -1849,8 +1847,6 @@ Optional fields:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `namespaceId`: `str`
 - `jobTemplateArn`: `str`
-- `jobExecutionsRetryConfig`:
-  [JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef)
 - `documentParameters`: `Mapping`\[`str`, `str`\]
 
 ## CreateJobResponseTypeDef
@@ -1890,8 +1886,6 @@ Optional fields:
 - `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `jobExecutionsRetryConfig`:
-  [JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef)
 
 ## CreateJobTemplateResponseTypeDef
 
@@ -3333,8 +3327,6 @@ Required fields:
   [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
 - `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
-- `jobExecutionsRetryConfig`:
-  [JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4568,7 +4560,6 @@ Optional fields:
 - `startedAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `executionNumber`: `int`
-- `retryAttempt`: `int`
 
 ## JobExecutionTypeDef
 
@@ -4590,17 +4581,6 @@ Optional fields:
 - `executionNumber`: `int`
 - `versionNumber`: `int`
 - `approximateSecondsBeforeTimedOut`: `int`
-
-## JobExecutionsRetryConfigTypeDef
-
-```python
-from mypy_boto3_iot.type_defs import JobExecutionsRetryConfigTypeDef
-```
-
-Required fields:
-
-- `criteriaList`:
-  `Sequence`\[[RetryCriteriaTypeDef](./type_defs.md#retrycriteriatypedef)\]
 
 ## JobExecutionsRolloutConfigTypeDef
 
@@ -4692,8 +4672,6 @@ Optional fields:
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - `namespaceId`: `str`
 - `jobTemplateArn`: `str`
-- `jobExecutionsRetryConfig`:
-  [JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef)
 - `documentParameters`: `Dict`\[`str`, `str`\]
 
 ## KafkaActionTypeDef
@@ -5333,7 +5311,6 @@ Optional fields:
 - `namespaceId`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `jobId`: `str`
 
 ## ListJobExecutionsForThingResponseTypeDef
 
@@ -6967,18 +6944,6 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
-## RetryCriteriaTypeDef
-
-```python
-from mypy_boto3_iot.type_defs import RetryCriteriaTypeDef
-```
-
-Required fields:
-
-- `failureType`:
-  [RetryableFailureTypeType](./literals.md#retryablefailuretypetype)
-- `numberOfRetries`: `int`
-
 ## RoleAliasDescriptionTypeDef
 
 ```python
@@ -8318,8 +8283,6 @@ Optional fields:
 - `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - `namespaceId`: `str`
-- `jobExecutionsRetryConfig`:
-  [JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef)
 
 ## UpdateMitigationActionRequestRequestTypeDef
 

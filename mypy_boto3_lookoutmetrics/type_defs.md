@@ -31,7 +31,6 @@ type annotations stubs module
   - [CreateMetricSetRequestRequestTypeDef](#createmetricsetrequestrequesttypedef)
   - [CreateMetricSetResponseTypeDef](#createmetricsetresponsetypedef)
   - [CsvFormatDescriptorTypeDef](#csvformatdescriptortypedef)
-  - [DeactivateAnomalyDetectorRequestRequestTypeDef](#deactivateanomalydetectorrequestrequesttypedef)
   - [DeleteAlertRequestRequestTypeDef](#deletealertrequestrequesttypedef)
   - [DeleteAnomalyDetectorRequestRequestTypeDef](#deleteanomalydetectorrequestrequesttypedef)
   - [DescribeAlertRequestRequestTypeDef](#describealertrequestrequesttypedef)
@@ -265,7 +264,7 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import AppFlowConfigTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `RoleArn`: `str`
 - `FlowName`: `str`
@@ -286,7 +285,7 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import CloudWatchConfigTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `RoleArn`: `str`
 
@@ -413,16 +412,6 @@ Optional fields:
 - `HeaderList`: `Sequence`\[`str`\]
 - `QuoteSymbol`: `str`
 
-## DeactivateAnomalyDetectorRequestRequestTypeDef
-
-```python
-from mypy_boto3_lookoutmetrics.type_defs import DeactivateAnomalyDetectorRequestRequestTypeDef
-```
-
-Required fields:
-
-- `AnomalyDetectorArn`: `str`
-
 ## DeleteAlertRequestRequestTypeDef
 
 ```python
@@ -524,8 +513,6 @@ Required fields:
   [AnomalyDetectorStatusType](./literals.md#anomalydetectorstatustype)
 - `FailureReason`: `str`
 - `KmsKeyArn`: `str`
-- `FailureType`:
-  [AnomalyDetectorFailureTypeType](./literals.md#anomalydetectorfailuretypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1028,7 +1015,7 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import RDSSourceConfigTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DBInstanceIdentifier`: `str`
 - `DatabaseHost`: `str`
@@ -1046,7 +1033,7 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import RedshiftSourceConfigTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `ClusterIdentifier`: `str`
 - `DatabaseHost`: `str`
@@ -1078,9 +1065,12 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import S3SourceConfigTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `RoleArn`: `str`
+
+Optional fields:
+
 - `TemplatedPathList`: `Sequence`\[`str`\]
 - `HistoricalDataPathList`: `Sequence`\[`str`\]
 - `FileFormatDescriptor`:

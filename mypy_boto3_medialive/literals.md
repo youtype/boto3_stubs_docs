@@ -140,7 +140,6 @@ type annotations stubs module
   - [HlsMediaStoreStorageClassType](#hlsmediastorestorageclasstype)
   - [HlsModeType](#hlsmodetype)
   - [HlsOutputSelectionType](#hlsoutputselectiontype)
-  - [HlsProgramDateTimeClockType](#hlsprogramdatetimeclocktype)
   - [HlsProgramDateTimeType](#hlsprogramdatetimetype)
   - [HlsRedundantManifestType](#hlsredundantmanifesttype)
   - [HlsScte35SourceTypeType](#hlsscte35sourcetypetype)
@@ -1860,17 +1859,6 @@ Values:
 - `MANIFESTS_AND_SEGMENTS`
 - `SEGMENTS_ONLY`
 - `VARIANT_MANIFESTS_AND_SEGMENTS`
-
-## HlsProgramDateTimeClockType
-
-```python
-from mypy_boto3_medialive.literals import HlsProgramDateTimeClockType
-```
-
-Values:
-
-- `INITIALIZE_FROM_OUTPUT_TIMECODE`
-- `SYSTEM_CLOCK`
 
 ## HlsProgramDateTimeType
 

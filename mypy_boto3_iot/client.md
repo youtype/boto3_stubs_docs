@@ -895,8 +895,6 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `namespaceId`: `str`
 - `jobTemplateArn`: `str`
-- `jobExecutionsRetryConfig`:
-  [JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef)
 - `documentParameters`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
@@ -927,8 +925,6 @@ Keyword-only arguments:
 - `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `jobExecutionsRetryConfig`:
-  [JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef)
 
 Returns
 [CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
@@ -3439,7 +3435,6 @@ Keyword-only arguments:
 - `namespaceId`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `jobId`: `str`
 
 Returns
 [ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef).
@@ -5027,8 +5022,6 @@ Keyword-only arguments:
 - `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - `namespaceId`: `str`
-- `jobExecutionsRetryConfig`:
-  [JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef)
 
 ### update_mitigation_action
 

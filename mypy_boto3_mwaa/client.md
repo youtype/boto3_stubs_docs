@@ -93,7 +93,7 @@ Returns `bool`.
 
 ### create_cli_token
 
-Creates a CLI token for the Airflow CLI.
+Create a CLI token to use Airflow CLI.
 
 Type annotations for `boto3.client("mwaa").create_cli_token` method.
 
@@ -154,7 +154,8 @@ Returns
 
 ### create_web_login_token
 
-Creates a web login token for the Airflow Web UI.
+Create a JWT token to be used to login to Airflow Web UI with claims based
+Authentication.
 
 Type annotations for `boto3.client("mwaa").create_web_login_token` method.
 
@@ -209,7 +210,8 @@ Returns `str`.
 
 ### get_environment
 
-Describes an Amazon Managed Workflows for Apache Airflow (MWAA) environment.
+Retrieves the details of an Amazon Managed Workflows for Apache Airflow (MWAA)
+environment.
 
 Type annotations for `boto3.client("mwaa").get_environment` method.
 
@@ -268,7 +270,7 @@ Returns
 
 ### publish_metrics
 
-**Internal only**.
+An operation for publishing metrics from the customers to the Ops plane.
 
 Type annotations for `boto3.client("mwaa").publish_metrics` method.
 

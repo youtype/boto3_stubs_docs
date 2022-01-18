@@ -571,9 +571,6 @@ type annotations stubs module
   - [DescribeExportImageTasksResultTypeDef](#describeexportimagetasksresulttypedef)
   - [DescribeExportTasksRequestRequestTypeDef](#describeexporttasksrequestrequesttypedef)
   - [DescribeExportTasksResultTypeDef](#describeexporttasksresulttypedef)
-  - [DescribeFastLaunchImagesRequestRequestTypeDef](#describefastlaunchimagesrequestrequesttypedef)
-  - [DescribeFastLaunchImagesResultTypeDef](#describefastlaunchimagesresulttypedef)
-  - [DescribeFastLaunchImagesSuccessItemTypeDef](#describefastlaunchimagessuccessitemtypedef)
   - [DescribeFastSnapshotRestoreSuccessItemTypeDef](#describefastsnapshotrestoresuccessitemtypedef)
   - [DescribeFastSnapshotRestoresRequestRequestTypeDef](#describefastsnapshotrestoresrequestrequesttypedef)
   - [DescribeFastSnapshotRestoresResultTypeDef](#describefastsnapshotrestoresresulttypedef)
@@ -819,8 +816,6 @@ type annotations stubs module
   - [DirectoryServiceAuthenticationTypeDef](#directoryserviceauthenticationtypedef)
   - [DisableEbsEncryptionByDefaultRequestRequestTypeDef](#disableebsencryptionbydefaultrequestrequesttypedef)
   - [DisableEbsEncryptionByDefaultResultTypeDef](#disableebsencryptionbydefaultresulttypedef)
-  - [DisableFastLaunchRequestRequestTypeDef](#disablefastlaunchrequestrequesttypedef)
-  - [DisableFastLaunchResultTypeDef](#disablefastlaunchresulttypedef)
   - [DisableFastSnapshotRestoreErrorItemTypeDef](#disablefastsnapshotrestoreerroritemtypedef)
   - [DisableFastSnapshotRestoreStateErrorItemTypeDef](#disablefastsnapshotrestorestateerroritemtypedef)
   - [DisableFastSnapshotRestoreStateErrorTypeDef](#disablefastsnapshotrestorestateerrortypedef)
@@ -888,8 +883,6 @@ type annotations stubs module
   - [ElasticInferenceAcceleratorTypeDef](#elasticinferenceacceleratortypedef)
   - [EnableEbsEncryptionByDefaultRequestRequestTypeDef](#enableebsencryptionbydefaultrequestrequesttypedef)
   - [EnableEbsEncryptionByDefaultResultTypeDef](#enableebsencryptionbydefaultresulttypedef)
-  - [EnableFastLaunchRequestRequestTypeDef](#enablefastlaunchrequestrequesttypedef)
-  - [EnableFastLaunchResultTypeDef](#enablefastlaunchresulttypedef)
   - [EnableFastSnapshotRestoreErrorItemTypeDef](#enablefastsnapshotrestoreerroritemtypedef)
   - [EnableFastSnapshotRestoreStateErrorItemTypeDef](#enablefastsnapshotrestorestateerroritemtypedef)
   - [EnableFastSnapshotRestoreStateErrorTypeDef](#enablefastsnapshotrestorestateerrortypedef)
@@ -932,10 +925,6 @@ type annotations stubs module
   - [ExportTransitGatewayRoutesResultTypeDef](#exporttransitgatewayroutesresulttypedef)
   - [FailedCapacityReservationFleetCancellationResultTypeDef](#failedcapacityreservationfleetcancellationresulttypedef)
   - [FailedQueuedPurchaseDeletionTypeDef](#failedqueuedpurchasedeletiontypedef)
-  - [FastLaunchLaunchTemplateSpecificationRequestTypeDef](#fastlaunchlaunchtemplatespecificationrequesttypedef)
-  - [FastLaunchLaunchTemplateSpecificationResponseTypeDef](#fastlaunchlaunchtemplatespecificationresponsetypedef)
-  - [FastLaunchSnapshotConfigurationRequestTypeDef](#fastlaunchsnapshotconfigurationrequesttypedef)
-  - [FastLaunchSnapshotConfigurationResponseTypeDef](#fastlaunchsnapshotconfigurationresponsetypedef)
   - [FederatedAuthenticationRequestTypeDef](#federatedauthenticationrequesttypedef)
   - [FederatedAuthenticationTypeDef](#federatedauthenticationtypedef)
   - [FilterTypeDef](#filtertypedef)
@@ -1305,8 +1294,6 @@ type annotations stubs module
   - [ModifyVpcEndpointResultTypeDef](#modifyvpcendpointresulttypedef)
   - [ModifyVpcEndpointServiceConfigurationRequestRequestTypeDef](#modifyvpcendpointserviceconfigurationrequestrequesttypedef)
   - [ModifyVpcEndpointServiceConfigurationResultTypeDef](#modifyvpcendpointserviceconfigurationresulttypedef)
-  - [ModifyVpcEndpointServicePayerResponsibilityRequestRequestTypeDef](#modifyvpcendpointservicepayerresponsibilityrequestrequesttypedef)
-  - [ModifyVpcEndpointServicePayerResponsibilityResultTypeDef](#modifyvpcendpointservicepayerresponsibilityresulttypedef)
   - [ModifyVpcEndpointServicePermissionsRequestRequestTypeDef](#modifyvpcendpointservicepermissionsrequestrequesttypedef)
   - [ModifyVpcEndpointServicePermissionsResultTypeDef](#modifyvpcendpointservicepermissionsresulttypedef)
   - [ModifyVpcPeeringConnectionOptionsRequestRequestTypeDef](#modifyvpcpeeringconnectionoptionsrequestrequesttypedef)
@@ -3926,7 +3913,6 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OutpostArn`: `str`
 - `CapacityReservationFleetId`: `str`
-- `PlacementGroupArn`: `str`
 
 ## CarrierGatewayTypeDef
 
@@ -4589,7 +4575,6 @@ Optional fields:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `OutpostArn`: `str`
-- `PlacementGroupArn`: `str`
 
 ## CreateCapacityReservationResultTypeDef
 
@@ -9978,55 +9963,6 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFastLaunchImagesRequestRequestTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import DescribeFastLaunchImagesRequestRequestTypeDef
-```
-
-Optional fields:
-
-- `ImageIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `DryRun`: `bool`
-
-## DescribeFastLaunchImagesResultTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import DescribeFastLaunchImagesResultTypeDef
-```
-
-Required fields:
-
-- `FastLaunchImages`:
-  `List`\[[DescribeFastLaunchImagesSuccessItemTypeDef](./type_defs.md#describefastlaunchimagessuccessitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## DescribeFastLaunchImagesSuccessItemTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import DescribeFastLaunchImagesSuccessItemTypeDef
-```
-
-Optional fields:
-
-- `ImageId`: `str`
-- `ResourceType`: `Literal['snapshot']` (see
-  [FastLaunchResourceTypeType](./literals.md#fastlaunchresourcetypetype))
-- `SnapshotConfiguration`:
-  [FastLaunchSnapshotConfigurationResponseTypeDef](./type_defs.md#fastlaunchsnapshotconfigurationresponsetypedef)
-- `LaunchTemplate`:
-  [FastLaunchLaunchTemplateSpecificationResponseTypeDef](./type_defs.md#fastlaunchlaunchtemplatespecificationresponsetypedef)
-- `MaxParallelLaunches`: `int`
-- `OwnerId`: `str`
-- `State`: [FastLaunchStateCodeType](./literals.md#fastlaunchstatecodetype)
-- `StateTransitionReason`: `str`
-- `StateTransitionTime`: `datetime`
-
 ## DescribeFastSnapshotRestoreSuccessItemTypeDef
 
 ```python
@@ -13481,44 +13417,6 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisableFastLaunchRequestRequestTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import DisableFastLaunchRequestRequestTypeDef
-```
-
-Required fields:
-
-- `ImageId`: `str`
-
-Optional fields:
-
-- `Force`: `bool`
-- `DryRun`: `bool`
-
-## DisableFastLaunchResultTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import DisableFastLaunchResultTypeDef
-```
-
-Required fields:
-
-- `ImageId`: `str`
-- `ResourceType`: `Literal['snapshot']` (see
-  [FastLaunchResourceTypeType](./literals.md#fastlaunchresourcetypetype))
-- `SnapshotConfiguration`:
-  [FastLaunchSnapshotConfigurationResponseTypeDef](./type_defs.md#fastlaunchsnapshotconfigurationresponsetypedef)
-- `LaunchTemplate`:
-  [FastLaunchLaunchTemplateSpecificationResponseTypeDef](./type_defs.md#fastlaunchlaunchtemplatespecificationresponsetypedef)
-- `MaxParallelLaunches`: `int`
-- `OwnerId`: `str`
-- `State`: [FastLaunchStateCodeType](./literals.md#fastlaunchstatecodetype)
-- `StateTransitionReason`: `str`
-- `StateTransitionTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
 ## DisableFastSnapshotRestoreErrorItemTypeDef
 
 ```python
@@ -14377,49 +14275,6 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EnableFastLaunchRequestRequestTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import EnableFastLaunchRequestRequestTypeDef
-```
-
-Required fields:
-
-- `ImageId`: `str`
-
-Optional fields:
-
-- `ResourceType`: `str`
-- `SnapshotConfiguration`:
-  [FastLaunchSnapshotConfigurationRequestTypeDef](./type_defs.md#fastlaunchsnapshotconfigurationrequesttypedef)
-- `LaunchTemplate`:
-  [FastLaunchLaunchTemplateSpecificationRequestTypeDef](./type_defs.md#fastlaunchlaunchtemplatespecificationrequesttypedef)
-- `MaxParallelLaunches`: `int`
-- `DryRun`: `bool`
-
-## EnableFastLaunchResultTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import EnableFastLaunchResultTypeDef
-```
-
-Required fields:
-
-- `ImageId`: `str`
-- `ResourceType`: `Literal['snapshot']` (see
-  [FastLaunchResourceTypeType](./literals.md#fastlaunchresourcetypetype))
-- `SnapshotConfiguration`:
-  [FastLaunchSnapshotConfigurationResponseTypeDef](./type_defs.md#fastlaunchsnapshotconfigurationresponsetypedef)
-- `LaunchTemplate`:
-  [FastLaunchLaunchTemplateSpecificationResponseTypeDef](./type_defs.md#fastlaunchlaunchtemplatespecificationresponsetypedef)
-- `MaxParallelLaunches`: `int`
-- `OwnerId`: `str`
-- `State`: [FastLaunchStateCodeType](./literals.md#fastlaunchstatecodetype)
-- `StateTransitionReason`: `str`
-- `StateTransitionTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
 ## EnableFastSnapshotRestoreErrorItemTypeDef
 
 ```python
@@ -15056,53 +14911,6 @@ Optional fields:
 - `Error`:
   [DeleteQueuedReservedInstancesErrorTypeDef](./type_defs.md#deletequeuedreservedinstanceserrortypedef)
 - `ReservedInstancesId`: `str`
-
-## FastLaunchLaunchTemplateSpecificationRequestTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import FastLaunchLaunchTemplateSpecificationRequestTypeDef
-```
-
-Required fields:
-
-- `Version`: `str`
-
-Optional fields:
-
-- `LaunchTemplateId`: `str`
-- `LaunchTemplateName`: `str`
-
-## FastLaunchLaunchTemplateSpecificationResponseTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import FastLaunchLaunchTemplateSpecificationResponseTypeDef
-```
-
-Optional fields:
-
-- `LaunchTemplateId`: `str`
-- `LaunchTemplateName`: `str`
-- `Version`: `str`
-
-## FastLaunchSnapshotConfigurationRequestTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import FastLaunchSnapshotConfigurationRequestTypeDef
-```
-
-Optional fields:
-
-- `TargetResourceCount`: `int`
-
-## FastLaunchSnapshotConfigurationResponseTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import FastLaunchSnapshotConfigurationResponseTypeDef
-```
-
-Optional fields:
-
-- `TargetResourceCount`: `int`
 
 ## FederatedAuthenticationRequestTypeDef
 
@@ -17525,8 +17333,6 @@ Optional fields:
   [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 - `HttpProtocolIpv6`:
   [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
-- `InstanceMetadataTags`:
-  [InstanceMetadataTagsStateType](./literals.md#instancemetadatatagsstatetype)
 
 ## InstanceMetadataOptionsResponseTypeDef
 
@@ -17544,8 +17350,6 @@ Optional fields:
   [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 - `HttpProtocolIpv6`:
   [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
-- `InstanceMetadataTags`:
-  [InstanceMetadataTagsStateType](./literals.md#instancemetadatatagsstatetype)
 
 ## InstanceMonitoringTypeDef
 
@@ -18778,8 +18582,6 @@ Optional fields:
   [LaunchTemplateInstanceMetadataEndpointStateType](./literals.md#launchtemplateinstancemetadataendpointstatetype)
 - `HttpProtocolIpv6`:
   [LaunchTemplateInstanceMetadataProtocolIpv6Type](./literals.md#launchtemplateinstancemetadataprotocolipv6type)
-- `InstanceMetadataTags`:
-  [LaunchTemplateInstanceMetadataTagsStateType](./literals.md#launchtemplateinstancemetadatatagsstatetype)
 
 ## LaunchTemplateInstanceMetadataOptionsTypeDef
 
@@ -18798,8 +18600,6 @@ Optional fields:
   [LaunchTemplateInstanceMetadataEndpointStateType](./literals.md#launchtemplateinstancemetadataendpointstatetype)
 - `HttpProtocolIpv6`:
   [LaunchTemplateInstanceMetadataProtocolIpv6Type](./literals.md#launchtemplateinstancemetadataprotocolipv6type)
-- `InstanceMetadataTags`:
-  [LaunchTemplateInstanceMetadataTagsStateType](./literals.md#launchtemplateinstancemetadatatagsstatetype)
 
 ## LaunchTemplateInstanceNetworkInterfaceSpecificationRequestTypeDef
 
@@ -19954,8 +19754,6 @@ Optional fields:
 - `DryRun`: `bool`
 - `HttpProtocolIpv6`:
   [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
-- `InstanceMetadataTags`:
-  [InstanceMetadataTagsStateType](./literals.md#instancemetadatatagsstatetype)
 
 ## ModifyInstanceMetadataOptionsResultTypeDef
 
@@ -20857,34 +20655,6 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyVpcEndpointServicePayerResponsibilityRequestRequestTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import ModifyVpcEndpointServicePayerResponsibilityRequestRequestTypeDef
-```
-
-Required fields:
-
-- `ServiceId`: `str`
-- `PayerResponsibility`: `Literal['ServiceOwner']` (see
-  [PayerResponsibilityType](./literals.md#payerresponsibilitytype))
-
-Optional fields:
-
-- `DryRun`: `bool`
-
-## ModifyVpcEndpointServicePayerResponsibilityResultTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import ModifyVpcEndpointServicePayerResponsibilityResultTypeDef
-```
-
-Required fields:
-
-- `ReturnValue`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
 ## ModifyVpcEndpointServicePermissionsRequestRequestTypeDef
 
 ```python
@@ -21203,15 +20973,12 @@ Required fields:
 from mypy_boto3_ec2.type_defs import MoveByoipCidrToIpamRequestRequestTypeDef
 ```
 
-Required fields:
-
-- `Cidr`: `str`
-- `IpamPoolId`: `str`
-- `IpamPoolOwner`: `str`
-
 Optional fields:
 
 - `DryRun`: `bool`
+- `Cidr`: `str`
+- `IpamPoolId`: `str`
+- `IpamPoolOwner`: `str`
 
 ## MoveByoipCidrToIpamResultTypeDef
 
@@ -21960,7 +21727,6 @@ Optional fields:
 - `PartitionCount`: `int`
 - `GroupId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `GroupArn`: `str`
 
 ## PlacementResponseTypeDef
 
@@ -24977,8 +24743,6 @@ Optional fields:
 - `PrivateDnsName`: `str`
 - `PrivateDnsNameConfiguration`:
   [PrivateDnsNameConfigurationTypeDef](./type_defs.md#privatednsnameconfigurationtypedef)
-- `PayerResponsibility`: `Literal['ServiceOwner']` (see
-  [PayerResponsibilityType](./literals.md#payerresponsibilitytype))
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ServiceDetailTypeDef
@@ -25002,8 +24766,6 @@ Optional fields:
 - `VpcEndpointPolicySupported`: `bool`
 - `AcceptanceRequired`: `bool`
 - `ManagesVpcEndpoints`: `bool`
-- `PayerResponsibility`: `Literal['ServiceOwner']` (see
-  [PayerResponsibilityType](./literals.md#payerresponsibilitytype))
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `PrivateDnsNameVerificationState`:
   [DnsNameStateType](./literals.md#dnsnamestatetype)

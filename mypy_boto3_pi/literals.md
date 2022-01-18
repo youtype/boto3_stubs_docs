@@ -9,7 +9,6 @@ type annotations stubs module
 
 - [Literals for boto3 PI module](#literals-for-boto3-pi-module)
   - [DetailStatusType](#detailstatustype)
-  - [FeatureStatusType](#featurestatustype)
   - [ServiceTypeType](#servicetypetype)
   - [ServiceName](#servicename)
 
@@ -25,21 +24,6 @@ Values:
 - `PROCESSING`
 - `UNAVAILABLE`
 
-## FeatureStatusType
-
-```python
-from mypy_boto3_pi.literals import FeatureStatusType
-```
-
-Values:
-
-- `DISABLED`
-- `DISABLED_PENDING_REBOOT`
-- `ENABLED`
-- `ENABLED_PENDING_REBOOT`
-- `UNKNOWN`
-- `UNSUPPORTED`
-
 ## ServiceTypeType
 
 ```python
@@ -48,7 +32,6 @@ from mypy_boto3_pi.literals import ServiceTypeType
 
 Values:
 
-- `DOCDB`
 - `RDS`
 
 ## ServiceName

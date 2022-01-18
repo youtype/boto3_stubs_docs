@@ -656,7 +656,6 @@ Arguments for `ListJobExecutionsForThingPaginator.paginate` method:
 - `thingName`: `str` *(required)*
 - `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
 - `namespaceId`: `str`
-- `jobId`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -11,41 +11,25 @@ type annotations stubs module
   - [AddTagsRequestRequestTypeDef](#addtagsrequestrequesttypedef)
   - [AdvancedEventSelectorTypeDef](#advancedeventselectortypedef)
   - [AdvancedFieldSelectorTypeDef](#advancedfieldselectortypedef)
-  - [CancelQueryRequestRequestTypeDef](#cancelqueryrequestrequesttypedef)
-  - [CancelQueryResponseTypeDef](#cancelqueryresponsetypedef)
-  - [CreateEventDataStoreRequestRequestTypeDef](#createeventdatastorerequestrequesttypedef)
-  - [CreateEventDataStoreResponseTypeDef](#createeventdatastoreresponsetypedef)
   - [CreateTrailRequestRequestTypeDef](#createtrailrequestrequesttypedef)
   - [CreateTrailResponseTypeDef](#createtrailresponsetypedef)
   - [DataResourceTypeDef](#dataresourcetypedef)
-  - [DeleteEventDataStoreRequestRequestTypeDef](#deleteeventdatastorerequestrequesttypedef)
   - [DeleteTrailRequestRequestTypeDef](#deletetrailrequestrequesttypedef)
-  - [DescribeQueryRequestRequestTypeDef](#describequeryrequestrequesttypedef)
-  - [DescribeQueryResponseTypeDef](#describequeryresponsetypedef)
   - [DescribeTrailsRequestRequestTypeDef](#describetrailsrequestrequesttypedef)
   - [DescribeTrailsResponseTypeDef](#describetrailsresponsetypedef)
-  - [EventDataStoreTypeDef](#eventdatastoretypedef)
   - [EventSelectorTypeDef](#eventselectortypedef)
   - [EventTypeDef](#eventtypedef)
-  - [GetEventDataStoreRequestRequestTypeDef](#geteventdatastorerequestrequesttypedef)
-  - [GetEventDataStoreResponseTypeDef](#geteventdatastoreresponsetypedef)
   - [GetEventSelectorsRequestRequestTypeDef](#geteventselectorsrequestrequesttypedef)
   - [GetEventSelectorsResponseTypeDef](#geteventselectorsresponsetypedef)
   - [GetInsightSelectorsRequestRequestTypeDef](#getinsightselectorsrequestrequesttypedef)
   - [GetInsightSelectorsResponseTypeDef](#getinsightselectorsresponsetypedef)
-  - [GetQueryResultsRequestRequestTypeDef](#getqueryresultsrequestrequesttypedef)
-  - [GetQueryResultsResponseTypeDef](#getqueryresultsresponsetypedef)
   - [GetTrailRequestRequestTypeDef](#gettrailrequestrequesttypedef)
   - [GetTrailResponseTypeDef](#gettrailresponsetypedef)
   - [GetTrailStatusRequestRequestTypeDef](#gettrailstatusrequestrequesttypedef)
   - [GetTrailStatusResponseTypeDef](#gettrailstatusresponsetypedef)
   - [InsightSelectorTypeDef](#insightselectortypedef)
-  - [ListEventDataStoresRequestRequestTypeDef](#listeventdatastoresrequestrequesttypedef)
-  - [ListEventDataStoresResponseTypeDef](#listeventdatastoresresponsetypedef)
   - [ListPublicKeysRequestRequestTypeDef](#listpublickeysrequestrequesttypedef)
   - [ListPublicKeysResponseTypeDef](#listpublickeysresponsetypedef)
-  - [ListQueriesRequestRequestTypeDef](#listqueriesrequestrequesttypedef)
-  - [ListQueriesResponseTypeDef](#listqueriesresponsetypedef)
   - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
   - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
   - [ListTrailsRequestRequestTypeDef](#listtrailsrequestrequesttypedef)
@@ -59,24 +43,15 @@ type annotations stubs module
   - [PutEventSelectorsResponseTypeDef](#puteventselectorsresponsetypedef)
   - [PutInsightSelectorsRequestRequestTypeDef](#putinsightselectorsrequestrequesttypedef)
   - [PutInsightSelectorsResponseTypeDef](#putinsightselectorsresponsetypedef)
-  - [QueryStatisticsForDescribeQueryTypeDef](#querystatisticsfordescribequerytypedef)
-  - [QueryStatisticsTypeDef](#querystatisticstypedef)
-  - [QueryTypeDef](#querytypedef)
   - [RemoveTagsRequestRequestTypeDef](#removetagsrequestrequesttypedef)
   - [ResourceTagTypeDef](#resourcetagtypedef)
   - [ResourceTypeDef](#resourcetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreEventDataStoreRequestRequestTypeDef](#restoreeventdatastorerequestrequesttypedef)
-  - [RestoreEventDataStoreResponseTypeDef](#restoreeventdatastoreresponsetypedef)
   - [StartLoggingRequestRequestTypeDef](#startloggingrequestrequesttypedef)
-  - [StartQueryRequestRequestTypeDef](#startqueryrequestrequesttypedef)
-  - [StartQueryResponseTypeDef](#startqueryresponsetypedef)
   - [StopLoggingRequestRequestTypeDef](#stoploggingrequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TrailInfoTypeDef](#trailinfotypedef)
   - [TrailTypeDef](#trailtypedef)
-  - [UpdateEventDataStoreRequestRequestTypeDef](#updateeventdatastorerequestrequesttypedef)
-  - [UpdateEventDataStoreResponseTypeDef](#updateeventdatastoreresponsetypedef)
   - [UpdateTrailRequestRequestTypeDef](#updatetrailrequestrequesttypedef)
   - [UpdateTrailResponseTypeDef](#updatetrailresponsetypedef)
 
@@ -89,6 +64,9 @@ from mypy_boto3_cloudtrail.type_defs import AddTagsRequestRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
+
+Optional fields:
+
 - `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AdvancedEventSelectorTypeDef
@@ -100,7 +78,7 @@ from mypy_boto3_cloudtrail.type_defs import AdvancedEventSelectorTypeDef
 Required fields:
 
 - `FieldSelectors`:
-  `Sequence`\[[AdvancedFieldSelectorTypeDef](./type_defs.md#advancedfieldselectortypedef)\]
+  `List`\[[AdvancedFieldSelectorTypeDef](./type_defs.md#advancedfieldselectortypedef)\]
 
 Optional fields:
 
@@ -118,79 +96,12 @@ Required fields:
 
 Optional fields:
 
-- `Equals`: `Sequence`\[`str`\]
-- `StartsWith`: `Sequence`\[`str`\]
-- `EndsWith`: `Sequence`\[`str`\]
-- `NotEquals`: `Sequence`\[`str`\]
-- `NotStartsWith`: `Sequence`\[`str`\]
-- `NotEndsWith`: `Sequence`\[`str`\]
-
-## CancelQueryRequestRequestTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import CancelQueryRequestRequestTypeDef
-```
-
-Required fields:
-
-- `EventDataStore`: `str`
-- `QueryId`: `str`
-
-## CancelQueryResponseTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import CancelQueryResponseTypeDef
-```
-
-Required fields:
-
-- `QueryId`: `str`
-- `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## CreateEventDataStoreRequestRequestTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import CreateEventDataStoreRequestRequestTypeDef
-```
-
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `AdvancedEventSelectors`:
-  `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-## CreateEventDataStoreResponseTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import CreateEventDataStoreResponseTypeDef
-```
-
-Required fields:
-
-- `EventDataStoreArn`: `str`
-- `Name`: `str`
-- `Status`: [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)
-- `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-- `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CreatedTimestamp`: `datetime`
-- `UpdatedTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- `Equals`: `List`\[`str`\]
+- `StartsWith`: `List`\[`str`\]
+- `EndsWith`: `List`\[`str`\]
+- `NotEquals`: `List`\[`str`\]
+- `NotStartsWith`: `List`\[`str`\]
+- `NotEndsWith`: `List`\[`str`\]
 
 ## CreateTrailRequestRequestTypeDef
 
@@ -251,16 +162,6 @@ Optional fields:
 - `Type`: `str`
 - `Values`: `List`\[`str`\]
 
-## DeleteEventDataStoreRequestRequestTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import DeleteEventDataStoreRequestRequestTypeDef
-```
-
-Required fields:
-
-- `EventDataStore`: `str`
-
 ## DeleteTrailRequestRequestTypeDef
 
 ```python
@@ -270,34 +171,6 @@ from mypy_boto3_cloudtrail.type_defs import DeleteTrailRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
-
-## DescribeQueryRequestRequestTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import DescribeQueryRequestRequestTypeDef
-```
-
-Required fields:
-
-- `EventDataStore`: `str`
-- `QueryId`: `str`
-
-## DescribeQueryResponseTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import DescribeQueryResponseTypeDef
-```
-
-Required fields:
-
-- `QueryId`: `str`
-- `QueryString`: `str`
-- `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
-- `QueryStatistics`:
-  [QueryStatisticsForDescribeQueryTypeDef](./type_defs.md#querystatisticsfordescribequerytypedef)
-- `ErrorMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeTrailsRequestRequestTypeDef
 
@@ -321,26 +194,6 @@ Required fields:
 - `trailList`: `List`\[[TrailTypeDef](./type_defs.md#trailtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## EventDataStoreTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import EventDataStoreTypeDef
-```
-
-Optional fields:
-
-- `EventDataStoreArn`: `str`
-- `Name`: `str`
-- `TerminationProtectionEnabled`: `bool`
-- `Status`: [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)
-- `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `CreatedTimestamp`: `datetime`
-- `UpdatedTimestamp`: `datetime`
 
 ## EventSelectorTypeDef
 
@@ -373,38 +226,6 @@ Optional fields:
 - `Username`: `str`
 - `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `CloudTrailEvent`: `str`
-
-## GetEventDataStoreRequestRequestTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import GetEventDataStoreRequestRequestTypeDef
-```
-
-Required fields:
-
-- `EventDataStore`: `str`
-
-## GetEventDataStoreResponseTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import GetEventDataStoreResponseTypeDef
-```
-
-Required fields:
-
-- `EventDataStoreArn`: `str`
-- `Name`: `str`
-- `Status`: [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)
-- `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-- `CreatedTimestamp`: `datetime`
-- `UpdatedTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetEventSelectorsRequestRequestTypeDef
 
@@ -453,39 +274,6 @@ Required fields:
 - `TrailARN`: `str`
 - `InsightSelectors`:
   `List`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## GetQueryResultsRequestRequestTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import GetQueryResultsRequestRequestTypeDef
-```
-
-Required fields:
-
-- `EventDataStore`: `str`
-- `QueryId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxQueryResults`: `int`
-
-## GetQueryResultsResponseTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import GetQueryResultsResponseTypeDef
-```
-
-Required fields:
-
-- `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
-- `QueryStatistics`:
-  [QueryStatisticsTypeDef](./type_defs.md#querystatisticstypedef)
-- `QueryResultRows`: `List`\[`List`\[`Dict`\[`str`, `str`\]\]\]
-- `NextToken`: `str`
-- `ErrorMessage`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -559,31 +347,6 @@ Optional fields:
 
 - `InsightType`: [InsightTypeType](./literals.md#insighttypetype)
 
-## ListEventDataStoresRequestRequestTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import ListEventDataStoresRequestRequestTypeDef
-```
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-## ListEventDataStoresResponseTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import ListEventDataStoresResponseTypeDef
-```
-
-Required fields:
-
-- `EventDataStores`:
-  `List`\[[EventDataStoreTypeDef](./type_defs.md#eventdatastoretypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
 ## ListPublicKeysRequestRequestTypeDef
 
 ```python
@@ -606,37 +369,6 @@ Required fields:
 
 - `PublicKeyList`:
   `List`\[[PublicKeyTypeDef](./type_defs.md#publickeytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## ListQueriesRequestRequestTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import ListQueriesRequestRequestTypeDef
-```
-
-Required fields:
-
-- `EventDataStore`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
-
-## ListQueriesResponseTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import ListQueriesResponseTypeDef
-```
-
-Required fields:
-
-- `Queries`: `List`\[[QueryTypeDef](./type_defs.md#querytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -818,42 +550,6 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## QueryStatisticsForDescribeQueryTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import QueryStatisticsForDescribeQueryTypeDef
-```
-
-Optional fields:
-
-- `EventsMatched`: `int`
-- `EventsScanned`: `int`
-- `ExecutionTimeInMillis`: `int`
-- `CreationTime`: `datetime`
-
-## QueryStatisticsTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import QueryStatisticsTypeDef
-```
-
-Optional fields:
-
-- `ResultsCount`: `int`
-- `TotalResultsCount`: `int`
-
-## QueryTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import QueryTypeDef
-```
-
-Optional fields:
-
-- `QueryId`: `str`
-- `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
-- `CreationTime`: `datetime`
-
 ## RemoveTagsRequestRequestTypeDef
 
 ```python
@@ -863,6 +559,9 @@ from mypy_boto3_cloudtrail.type_defs import RemoveTagsRequestRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
+
+Optional fields:
+
 - `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ResourceTagTypeDef
@@ -901,38 +600,6 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
-## RestoreEventDataStoreRequestRequestTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import RestoreEventDataStoreRequestRequestTypeDef
-```
-
-Required fields:
-
-- `EventDataStore`: `str`
-
-## RestoreEventDataStoreResponseTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import RestoreEventDataStoreResponseTypeDef
-```
-
-Required fields:
-
-- `EventDataStoreArn`: `str`
-- `Name`: `str`
-- `Status`: [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)
-- `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-- `CreatedTimestamp`: `datetime`
-- `UpdatedTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
 ## StartLoggingRequestRequestTypeDef
 
 ```python
@@ -942,28 +609,6 @@ from mypy_boto3_cloudtrail.type_defs import StartLoggingRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
-
-## StartQueryRequestRequestTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import StartQueryRequestRequestTypeDef
-```
-
-Required fields:
-
-- `QueryStatement`: `str`
-
-## StartQueryResponseTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import StartQueryResponseTypeDef
-```
-
-Required fields:
-
-- `QueryId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StopLoggingRequestRequestTypeDef
 
@@ -1025,48 +670,6 @@ Optional fields:
 - `HasCustomEventSelectors`: `bool`
 - `HasInsightSelectors`: `bool`
 - `IsOrganizationTrail`: `bool`
-
-## UpdateEventDataStoreRequestRequestTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import UpdateEventDataStoreRequestRequestTypeDef
-```
-
-Required fields:
-
-- `EventDataStore`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `AdvancedEventSelectors`:
-  `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-
-## UpdateEventDataStoreResponseTypeDef
-
-```python
-from mypy_boto3_cloudtrail.type_defs import UpdateEventDataStoreResponseTypeDef
-```
-
-Required fields:
-
-- `EventDataStoreArn`: `str`
-- `Name`: `str`
-- `Status`: [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)
-- `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-- `CreatedTimestamp`: `datetime`
-- `UpdatedTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateTrailRequestRequestTypeDef
 

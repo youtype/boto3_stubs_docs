@@ -28,7 +28,6 @@ type annotations stubs module
     - [get_resource_share_invitations](#get_resource_share_invitations)
     - [get_resource_shares](#get_resource_shares)
     - [list_pending_invitation_resources](#list_pending_invitation_resources)
-    - [list_permission_versions](#list_permission_versions)
     - [list_permissions](#list_permissions)
     - [list_principals](#list_principals)
     - [list_resource_share_permissions](#list_resource_share_permissions)
@@ -464,27 +463,6 @@ Keyword-only arguments:
 
 Returns
 [ListPendingInvitationResourcesResponseTypeDef](./type_defs.md#listpendinginvitationresourcesresponsetypedef).
-
-### list_permission_versions
-
-Lists the available versions of the specified RAM permission.
-
-Type annotations for `boto3.client("ram").list_permission_versions` method.
-
-Boto3 documentation:
-[RAM.Client.list_permission_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_permission_versions)
-
-Arguments mapping described in
-[ListPermissionVersionsRequestRequestTypeDef](./type_defs.md#listpermissionversionsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `permissionArn`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-Returns
-[ListPermissionVersionsResponseTypeDef](./type_defs.md#listpermissionversionsresponsetypedef).
 
 ### list_permissions
 

@@ -24,8 +24,6 @@ type annotations stubs module
   - [FilterNameType](#filternametype)
   - [FindingReasonCodeType](#findingreasoncodetype)
   - [FindingType](#findingtype)
-  - [InferredWorkloadTypeType](#inferredworkloadtypetype)
-  - [InferredWorkloadTypesPreferenceType](#inferredworkloadtypespreferencetype)
   - [InstanceRecommendationFindingReasonCodeType](#instancerecommendationfindingreasoncodetype)
   - [JobFilterNameType](#jobfilternametype)
   - [JobStatusType](#jobstatustype)
@@ -38,7 +36,6 @@ type annotations stubs module
   - [LambdaFunctionRecommendationFindingType](#lambdafunctionrecommendationfindingtype)
   - [MetricNameType](#metricnametype)
   - [MetricStatisticType](#metricstatistictype)
-  - [MigrationEffortType](#migrationefforttype)
   - [PlatformDifferenceType](#platformdifferencetype)
   - [RecommendationPreferenceNameType](#recommendationpreferencenametype)
   - [RecommendationSourceTypeType](#recommendationsourcetypetype)
@@ -162,9 +159,7 @@ Values:
 - `CurrentVCpus`
 - `EffectiveRecommendationPreferencesCpuVendorArchitectures`
 - `EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics`
-- `EffectiveRecommendationPreferencesInferredWorkloadTypes`
 - `Finding`
-- `InferredWorkloadTypes`
 - `LastRefreshTimestamp`
 - `LookbackPeriodInDays`
 - `RecommendationOptionsConfigurationDesiredCapacity`
@@ -174,7 +169,6 @@ Values:
 - `RecommendationOptionsEstimatedMonthlySavingsCurrency`
 - `RecommendationOptionsEstimatedMonthlySavingsValue`
 - `RecommendationOptionsMemory`
-- `RecommendationOptionsMigrationEffort`
 - `RecommendationOptionsNetwork`
 - `RecommendationOptionsOnDemandPrice`
 - `RecommendationOptionsPerformanceRisk`
@@ -220,10 +214,8 @@ Values:
 - `CurrentVCpus`
 - `EffectiveRecommendationPreferencesCpuVendorArchitectures`
 - `EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics`
-- `EffectiveRecommendationPreferencesInferredWorkloadTypes`
 - `Finding`
 - `FindingReasonCodes`
-- `InferredWorkloadTypes`
 - `InstanceArn`
 - `InstanceName`
 - `LastRefreshTimestamp`
@@ -232,7 +224,6 @@ Values:
 - `RecommendationOptionsEstimatedMonthlySavingsValue`
 - `RecommendationOptionsInstanceType`
 - `RecommendationOptionsMemory`
-- `RecommendationOptionsMigrationEffort`
 - `RecommendationOptionsNetwork`
 - `RecommendationOptionsOnDemandPrice`
 - `RecommendationOptionsPerformanceRisk`
@@ -378,33 +369,6 @@ Values:
 - `Optimized`
 - `Overprovisioned`
 - `Underprovisioned`
-
-## InferredWorkloadTypeType
-
-```python
-from mypy_boto3_compute_optimizer.literals import InferredWorkloadTypeType
-```
-
-Values:
-
-- `AmazonEmr`
-- `ApacheCassandra`
-- `ApacheHadoop`
-- `Memcached`
-- `Nginx`
-- `PostgreSql`
-- `Redis`
-
-## InferredWorkloadTypesPreferenceType
-
-```python
-from mypy_boto3_compute_optimizer.literals import InferredWorkloadTypesPreferenceType
-```
-
-Values:
-
-- `Active`
-- `Inactive`
 
 ## InstanceRecommendationFindingReasonCodeType
 
@@ -569,19 +533,6 @@ Values:
 - `Average`
 - `Maximum`
 
-## MigrationEffortType
-
-```python
-from mypy_boto3_compute_optimizer.literals import MigrationEffortType
-```
-
-Values:
-
-- `High`
-- `Low`
-- `Medium`
-- `VeryLow`
-
 ## PlatformDifferenceType
 
 ```python
@@ -606,7 +557,6 @@ from mypy_boto3_compute_optimizer.literals import RecommendationPreferenceNameTy
 Values:
 
 - `EnhancedInfrastructureMetrics`
-- `InferredWorkloadTypes`
 
 ## RecommendationSourceTypeType
 
@@ -633,7 +583,6 @@ Values:
 - `EbsVolume`
 - `Ec2Instance`
 - `LambdaFunction`
-- `NotApplicable`
 
 ## ScopeNameType
 

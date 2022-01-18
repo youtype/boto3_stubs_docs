@@ -117,7 +117,6 @@ type annotations stubs module
   - [ProtocolType](#protocoltype)
   - [ReportTypeType](#reporttypetype)
   - [ResourceTypeType](#resourcetypetype)
-  - [RetryableFailureTypeType](#retryablefailuretypetype)
   - [ServerCertificateStatusType](#servercertificatestatustype)
   - [ServiceTypeType](#servicetypetype)
   - [StatusType](#statustype)
@@ -1384,18 +1383,6 @@ Values:
 - `IAM_ROLE`
 - `IOT_POLICY`
 - `ROLE_ALIAS`
-
-## RetryableFailureTypeType
-
-```python
-from mypy_boto3_iot.literals import RetryableFailureTypeType
-```
-
-Values:
-
-- `ALL`
-- `FAILED`
-- `TIMED_OUT`
 
 ## ServerCertificateStatusType
 

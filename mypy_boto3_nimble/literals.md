@@ -14,9 +14,6 @@ type annotations stubs module
   - [LaunchProfileReadyWaiterName](#launchprofilereadywaitername)
   - [LaunchProfileStateType](#launchprofilestatetype)
   - [LaunchProfileStatusCodeType](#launchprofilestatuscodetype)
-  - [LaunchProfileValidationStateType](#launchprofilevalidationstatetype)
-  - [LaunchProfileValidationStatusCodeType](#launchprofilevalidationstatuscodetype)
-  - [LaunchProfileValidationTypeType](#launchprofilevalidationtypetype)
   - [ListEulaAcceptancesPaginatorName](#listeulaacceptancespaginatorname)
   - [ListEulasPaginatorName](#listeulaspaginatorname)
   - [ListLaunchProfileMembersPaginatorName](#listlaunchprofilememberspaginatorname)
@@ -138,51 +135,6 @@ Values:
 - `LAUNCH_PROFILE_WITH_STREAM_SESSIONS_NOT_DELETED`
 - `STREAMING_IMAGE_NOT_FOUND`
 - `STREAMING_IMAGE_NOT_READY`
-
-## LaunchProfileValidationStateType
-
-```python
-from mypy_boto3_nimble.literals import LaunchProfileValidationStateType
-```
-
-Values:
-
-- `VALIDATION_FAILED`
-- `VALIDATION_FAILED_INTERNAL_SERVER_ERROR`
-- `VALIDATION_IN_PROGRESS`
-- `VALIDATION_NOT_STARTED`
-- `VALIDATION_SUCCESS`
-
-## LaunchProfileValidationStatusCodeType
-
-```python
-from mypy_boto3_nimble.literals import LaunchProfileValidationStatusCodeType
-```
-
-Values:
-
-- `VALIDATION_FAILED_INTERNAL_SERVER_ERROR`
-- `VALIDATION_FAILED_INVALID_ACTIVE_DIRECTORY`
-- `VALIDATION_FAILED_INVALID_SECURITY_GROUP_ASSOCIATION`
-- `VALIDATION_FAILED_INVALID_SUBNET_ROUTE_TABLE_ASSOCIATION`
-- `VALIDATION_FAILED_SUBNET_NOT_FOUND`
-- `VALIDATION_FAILED_UNAUTHORIZED`
-- `VALIDATION_IN_PROGRESS`
-- `VALIDATION_NOT_STARTED`
-- `VALIDATION_SUCCESS`
-
-## LaunchProfileValidationTypeType
-
-```python
-from mypy_boto3_nimble.literals import LaunchProfileValidationTypeType
-```
-
-Values:
-
-- `VALIDATE_ACTIVE_DIRECTORY_STUDIO_COMPONENT`
-- `VALIDATE_NETWORK_ACL_ASSOCIATION`
-- `VALIDATE_SECURITY_GROUP_ASSOCIATION`
-- `VALIDATE_SUBNET_ASSOCIATION`
 
 ## ListEulaAcceptancesPaginatorName
 
@@ -412,7 +364,6 @@ from mypy_boto3_nimble.literals import StreamingSessionStatusCodeType
 Values:
 
 - `ACTIVE_DIRECTORY_DOMAIN_JOIN_ERROR`
-- `AMI_VALIDATION_ERROR`
 - `DECRYPT_STREAMING_IMAGE_ERROR`
 - `INITIALIZATION_SCRIPT_ERROR`
 - `INSUFFICIENT_CAPACITY`

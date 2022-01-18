@@ -6621,8 +6621,6 @@ Optional fields:
 - `State`: [StateType](./literals.md#statetype)
 - `WaitForQuietTime`: `bool`
 - `RefreshOnSegmentUpdate`: `bool`
-- `JourneyChannelSettings`:
-  [JourneyChannelSettingsTypeDef](./type_defs.md#journeychannelsettingstypedef)
 
 ## WriteSegmentRequestTypeDef
 
