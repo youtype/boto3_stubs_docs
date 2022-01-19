@@ -665,6 +665,11 @@ Required fields:
 from mypy_boto3_macie2.type_defs import CreateCustomDataIdentifierRequestRequestTypeDef
 ```
 
+Required fields:
+
+- `name`: `str`
+- `regex`: `str`
+
 Optional fields:
 
 - `clientToken`: `str`
@@ -672,8 +677,6 @@ Optional fields:
 - `ignoreWords`: `Sequence`\[`str`\]
 - `keywords`: `Sequence`\[`str`\]
 - `maximumMatchDistance`: `int`
-- `name`: `str`
-- `regex`: `str`
 - `severityLevels`:
   `Sequence`\[[SeverityLevelTypeDef](./type_defs.md#severityleveltypedef)\]
 - `tags`: `Mapping`\[`str`, `str`\]
