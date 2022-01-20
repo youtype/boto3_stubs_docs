@@ -508,7 +508,8 @@ Returns
 
 ### create_integration_association
 
-Creates an AWS resource association with an Amazon Connect instance.
+Creates an Amazon Web Services resource association with an Amazon Connect
+instance.
 
 Type annotations for `boto3.client("connect").create_integration_association`
 method.
@@ -705,6 +706,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
 - `ParentGroupId`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateUserHierarchyGroupResponseTypeDef](./type_defs.md#createuserhierarchygroupresponsetypedef).
@@ -782,7 +784,8 @@ Keyword-only arguments:
 
 ### delete_integration_association
 
-Deletes an AWS resource association from an Amazon Connect instance.
+Deletes an Amazon Web Services resource association from an Amazon Connect
+instance.
 
 Type annotations for `boto3.client("connect").delete_integration_association`
 method.
@@ -1685,8 +1688,8 @@ Returns
 
 ### list_integration_associations
 
-Provides summary information about the AWS resource associations for the
-specified Amazon Connect instance.
+Provides summary information about the Amazon Web Services resource
+associations for the specified Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").list_integration_associations`
 method.

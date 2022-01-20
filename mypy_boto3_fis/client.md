@@ -162,7 +162,7 @@ Returns `str`.
 
 ### get_action
 
-Gets information about the specified AWS FIS action.
+Gets information about the specified FIS action.
 
 Type annotations for `boto3.client("fis").get_action` method.
 
@@ -218,7 +218,7 @@ Returns
 
 ### list_actions
 
-Lists the available AWS FIS actions.
+Lists the available FIS actions.
 
 Type annotations for `boto3.client("fis").list_actions` method.
 

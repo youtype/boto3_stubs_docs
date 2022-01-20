@@ -137,6 +137,7 @@ type annotations stubs module
   - [PrivateIpAddressDetailsTypeDef](#privateipaddressdetailstypedef)
   - [ProductCodeTypeDef](#productcodetypedef)
   - [PublicAccessTypeDef](#publicaccesstypedef)
+  - [RemoteAccountDetailsTypeDef](#remoteaccountdetailstypedef)
   - [RemoteIpDetailsTypeDef](#remoteipdetailstypedef)
   - [RemotePortDetailsTypeDef](#remoteportdetailstypedef)
   - [ResourceTypeDef](#resourcetypedef)
@@ -287,6 +288,8 @@ Optional fields:
 - `RemoteIpDetails`:
   [RemoteIpDetailsTypeDef](./type_defs.md#remoteipdetailstypedef)
 - `ServiceName`: `str`
+- `RemoteAccountDetails`:
+  [RemoteAccountDetailsTypeDef](./type_defs.md#remoteaccountdetailstypedef)
 
 ## BlockPublicAccessTypeDef
 
@@ -1869,6 +1872,17 @@ Optional fields:
 - `PermissionConfiguration`:
   [PermissionConfigurationTypeDef](./type_defs.md#permissionconfigurationtypedef)
 - `EffectivePermission`: `str`
+
+## RemoteAccountDetailsTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import RemoteAccountDetailsTypeDef
+```
+
+Optional fields:
+
+- `AccountId`: `str`
+- `Affiliated`: `bool`
 
 ## RemoteIpDetailsTypeDef
 

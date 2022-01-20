@@ -246,6 +246,8 @@ Optional fields:
 - `startAfter`: `List`\[`str`\]
 - `state`:
   [ExperimentActionStateTypeDef](./type_defs.md#experimentactionstatetypedef)
+- `startTime`: `datetime`
+- `endTime`: `datetime`
 
 ## ExperimentStateTypeDef
 

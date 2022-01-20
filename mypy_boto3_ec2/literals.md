@@ -3353,6 +3353,7 @@ Values:
 - `c6i.4xlarge`
 - `c6i.8xlarge`
 - `c6i.large`
+- `c6i.metal`
 - `c6i.xlarge`
 - `cc1.4xlarge`
 - `cc2.8xlarge`
@@ -3562,6 +3563,7 @@ Values:
 - `m6i.4xlarge`
 - `m6i.8xlarge`
 - `m6i.large`
+- `m6i.metal`
 - `m6i.xlarge`
 - `mac1.metal`
 - `p2.16xlarge`
@@ -3662,6 +3664,16 @@ Values:
 - `r6gd.medium`
 - `r6gd.metal`
 - `r6gd.xlarge`
+- `r6i.12xlarge`
+- `r6i.16xlarge`
+- `r6i.24xlarge`
+- `r6i.2xlarge`
+- `r6i.32xlarge`
+- `r6i.4xlarge`
+- `r6i.8xlarge`
+- `r6i.large`
+- `r6i.metal`
+- `r6i.xlarge`
 - `t1.micro`
 - `t2.2xlarge`
 - `t2.large`

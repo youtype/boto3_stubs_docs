@@ -92,6 +92,7 @@ type annotations stubs module
   - [ScheduleConfigurationTypeDef](#scheduleconfigurationtypedef)
   - [ScheduleEntryTypeDef](#scheduleentrytypedef)
   - [SecretsManagerAccessTokenConfigurationTypeDef](#secretsmanageraccesstokenconfigurationtypedef)
+  - [SegmentDeliveryConfigurationTypeDef](#segmentdeliveryconfigurationtypedef)
   - [SlateSourceTypeDef](#slatesourcetypedef)
   - [SourceLocationTypeDef](#sourcelocationtypedef)
   - [SpliceInsertMessageTypeDef](#spliceinsertmessagetypedef)
@@ -383,6 +384,8 @@ Optional fields:
   [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
 - `DefaultSegmentDeliveryConfiguration`:
   [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
+- `SegmentDeliveryConfigurations`:
+  `Sequence`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateSourceLocationResponseTypeDef
@@ -402,6 +405,8 @@ Required fields:
 - `HttpConfiguration`:
   [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
 - `LastModifiedTime`: `datetime`
+- `SegmentDeliveryConfigurations`:
+  `List`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
 - `SourceLocationName`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
@@ -652,6 +657,8 @@ Required fields:
 - `HttpConfiguration`:
   [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
 - `LastModifiedTime`: `datetime`
+- `SegmentDeliveryConfigurations`:
+  `List`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
 - `SourceLocationName`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
@@ -1355,6 +1362,17 @@ Optional fields:
 - `SecretArn`: `str`
 - `SecretStringKey`: `str`
 
+## SegmentDeliveryConfigurationTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import SegmentDeliveryConfigurationTypeDef
+```
+
+Optional fields:
+
+- `BaseUrl`: `str`
+- `Name`: `str`
+
 ## SlateSourceTypeDef
 
 ```python
@@ -1387,6 +1405,8 @@ Optional fields:
 - `DefaultSegmentDeliveryConfiguration`:
   [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
 - `LastModifiedTime`: `datetime`
+- `SegmentDeliveryConfigurations`:
+  `List`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## SpliceInsertMessageTypeDef
@@ -1516,6 +1536,8 @@ Optional fields:
   [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
 - `DefaultSegmentDeliveryConfiguration`:
   [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
+- `SegmentDeliveryConfigurations`:
+  `Sequence`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
 
 ## UpdateSourceLocationResponseTypeDef
 
@@ -1534,6 +1556,8 @@ Required fields:
 - `HttpConfiguration`:
   [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
 - `LastModifiedTime`: `datetime`
+- `SegmentDeliveryConfigurations`:
+  `List`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
 - `SourceLocationName`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:

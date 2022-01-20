@@ -300,6 +300,7 @@ from mypy_boto3_guardduty.type_defs import AcceptInvitationRequestRequestTypeDef
 - [PrivateIpAddressDetailsTypeDef](./type_defs.md#privateipaddressdetailstypedef)
 - [ProductCodeTypeDef](./type_defs.md#productcodetypedef)
 - [PublicAccessTypeDef](./type_defs.md#publicaccesstypedef)
+- [RemoteAccountDetailsTypeDef](./type_defs.md#remoteaccountdetailstypedef)
 - [RemoteIpDetailsTypeDef](./type_defs.md#remoteipdetailstypedef)
 - [RemotePortDetailsTypeDef](./type_defs.md#remoteportdetailstypedef)
 - [ResourceTypeDef](./type_defs.md#resourcetypedef)

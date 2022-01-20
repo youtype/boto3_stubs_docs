@@ -952,6 +952,7 @@ Required fields:
 Optional fields:
 
 - `ParentGroupId`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateUserHierarchyGroupResponseTypeDef
 
@@ -1784,6 +1785,7 @@ Optional fields:
 - `Name`: `str`
 - `LevelId`: `str`
 - `HierarchyPath`: [HierarchyPathTypeDef](./type_defs.md#hierarchypathtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## HierarchyLevelTypeDef
 
