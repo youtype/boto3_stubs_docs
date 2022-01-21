@@ -17,6 +17,7 @@ type annotations stubs module
   - [ModelStatusType](#modelstatustype)
   - [OutputLocationTypeType](#outputlocationtypetype)
   - [ParticipantRoleType](#participantroletype)
+  - [PiiEntityTypeType](#piientitytypetype)
   - [RedactionOutputType](#redactionoutputtype)
   - [RedactionTypeType](#redactiontypetype)
   - [SentimentValueType](#sentimentvaluetype)
@@ -175,6 +176,27 @@ Values:
 
 - `AGENT`
 - `CUSTOMER`
+
+## PiiEntityTypeType
+
+```python
+from mypy_boto3_transcribe.literals import PiiEntityTypeType
+```
+
+Values:
+
+- `ADDRESS`
+- `ALL`
+- `BANK_ACCOUNT_NUMBER`
+- `BANK_ROUTING`
+- `CREDIT_DEBIT_CVV`
+- `CREDIT_DEBIT_EXPIRY`
+- `CREDIT_DEBIT_NUMBER`
+- `EMAIL`
+- `NAME`
+- `PHONE`
+- `PIN`
+- `SSN`
 
 ## RedactionOutputType
 

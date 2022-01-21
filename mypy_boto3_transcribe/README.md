@@ -104,6 +104,7 @@ from mypy_boto3_transcribe.literals import BaseModelNameType, ...
 - [ModelStatusType](./literals.md#modelstatustype)
 - [OutputLocationTypeType](./literals.md#outputlocationtypetype)
 - [ParticipantRoleType](./literals.md#participantroletype)
+- [PiiEntityTypeType](./literals.md#piientitytypetype)
 - [RedactionOutputType](./literals.md#redactionoutputtype)
 - [RedactionTypeType](./literals.md#redactiontypetype)
 - [SentimentValueType](./literals.md#sentimentvaluetype)

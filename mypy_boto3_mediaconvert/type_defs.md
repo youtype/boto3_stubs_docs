@@ -462,6 +462,7 @@ Optional fields:
 
 - `AdaptiveQuantization`:
   [Av1AdaptiveQuantizationType](./literals.md#av1adaptivequantizationtype)
+- `BitDepth`: [Av1BitDepthType](./literals.md#av1bitdepthtype)
 - `FramerateControl`:
   [Av1FramerateControlType](./literals.md#av1frameratecontroltype)
 - `FramerateConversionAlgorithm`:
@@ -804,6 +805,7 @@ Optional fields:
   [CmfcIFrameOnlyManifestType](./literals.md#cmfciframeonlymanifesttype)
 - `Scte35Esam`: [CmfcScte35EsamType](./literals.md#cmfcscte35esamtype)
 - `Scte35Source`: [CmfcScte35SourceType](./literals.md#cmfcscte35sourcetype)
+- `TimedMetadata`: [CmfcTimedMetadataType](./literals.md#cmfctimedmetadatatype)
 
 ## ColorCorrectorTypeDef
 
@@ -1946,6 +1948,8 @@ from mypy_boto3_mediaconvert.type_defs import ImscDestinationSettingsTypeDef
 
 Optional fields:
 
+- `Accessibility`:
+  [ImscAccessibilitySubsType](./literals.md#imscaccessibilitysubstype)
 - `StylePassthrough`:
   [ImscStylePassthroughType](./literals.md#imscstylepassthroughtype)
 
@@ -1992,6 +1996,7 @@ Optional fields:
   [InputDeblockFilterType](./literals.md#inputdeblockfiltertype)
 - `DenoiseFilter`:
   [InputDenoiseFilterType](./literals.md#inputdenoisefiltertype)
+- `DolbyVisionMetadataXml`: `str`
 - `FilterEnable`: [InputFilterEnableType](./literals.md#inputfilterenabletype)
 - `FilterStrength`: `int`
 - `ImageInserter`: [ImageInserterTypeDef](./type_defs.md#imageinsertertypedef)
@@ -2027,6 +2032,7 @@ Optional fields:
   [InputDecryptionSettingsTypeDef](./type_defs.md#inputdecryptionsettingstypedef)
 - `DenoiseFilter`:
   [InputDenoiseFilterType](./literals.md#inputdenoisefiltertype)
+- `DolbyVisionMetadataXml`: `str`
 - `FileInput`: `str`
 - `FilterEnable`: [InputFilterEnableType](./literals.md#inputfilterenabletype)
 - `FilterStrength`: `int`
@@ -2567,6 +2573,7 @@ Optional fields:
   [MpdCaptionContainerTypeType](./literals.md#mpdcaptioncontainertypetype)
 - `Scte35Esam`: [MpdScte35EsamType](./literals.md#mpdscte35esamtype)
 - `Scte35Source`: [MpdScte35SourceType](./literals.md#mpdscte35sourcetype)
+- `TimedMetadata`: [MpdTimedMetadataType](./literals.md#mpdtimedmetadatatype)
 
 ## Mpeg2SettingsTypeDef
 
@@ -3660,6 +3667,8 @@ from mypy_boto3_mediaconvert.type_defs import WebvttDestinationSettingsTypeDef
 
 Optional fields:
 
+- `Accessibility`:
+  [WebvttAccessibilitySubsType](./literals.md#webvttaccessibilitysubstype)
 - `StylePassthrough`:
   [WebvttStylePassthroughType](./literals.md#webvttstylepassthroughtype)
 
