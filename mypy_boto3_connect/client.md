@@ -14,6 +14,7 @@ type annotations stubs module
     - [exceptions](#exceptions)
     - [associate_approved_origin](#associate_approved_origin)
     - [associate_bot](#associate_bot)
+    - [associate_default_vocabulary](#associate_default_vocabulary)
     - [associate_instance_storage_config](#associate_instance_storage_config)
     - [associate_lambda_function](#associate_lambda_function)
     - [associate_lex_bot](#associate_lex_bot)
@@ -34,6 +35,7 @@ type annotations stubs module
     - [create_use_case](#create_use_case)
     - [create_user](#create_user)
     - [create_user_hierarchy_group](#create_user_hierarchy_group)
+    - [create_vocabulary](#create_vocabulary)
     - [delete_contact_flow](#delete_contact_flow)
     - [delete_contact_flow_module](#delete_contact_flow_module)
     - [delete_hours_of_operation](#delete_hours_of_operation)
@@ -44,6 +46,7 @@ type annotations stubs module
     - [delete_use_case](#delete_use_case)
     - [delete_user](#delete_user)
     - [delete_user_hierarchy_group](#delete_user_hierarchy_group)
+    - [delete_vocabulary](#delete_vocabulary)
     - [describe_agent_status](#describe_agent_status)
     - [describe_contact](#describe_contact)
     - [describe_contact_flow](#describe_contact_flow)
@@ -59,6 +62,7 @@ type annotations stubs module
     - [describe_user](#describe_user)
     - [describe_user_hierarchy_group](#describe_user_hierarchy_group)
     - [describe_user_hierarchy_structure](#describe_user_hierarchy_structure)
+    - [describe_vocabulary](#describe_vocabulary)
     - [disassociate_approved_origin](#disassociate_approved_origin)
     - [disassociate_bot](#disassociate_bot)
     - [disassociate_instance_storage_config](#disassociate_instance_storage_config)
@@ -78,6 +82,7 @@ type annotations stubs module
     - [list_contact_flow_modules](#list_contact_flow_modules)
     - [list_contact_flows](#list_contact_flows)
     - [list_contact_references](#list_contact_references)
+    - [list_default_vocabularies](#list_default_vocabularies)
     - [list_hours_of_operations](#list_hours_of_operations)
     - [list_instance_attributes](#list_instance_attributes)
     - [list_instance_storage_configs](#list_instance_storage_configs)
@@ -100,6 +105,7 @@ type annotations stubs module
     - [list_user_hierarchy_groups](#list_user_hierarchy_groups)
     - [list_users](#list_users)
     - [resume_contact_recording](#resume_contact_recording)
+    - [search_vocabularies](#search_vocabularies)
     - [start_chat_contact](#start_chat_contact)
     - [start_contact_recording](#start_contact_recording)
     - [start_contact_streaming](#start_contact_streaming)
@@ -243,6 +249,29 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
 - `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
+
+### associate_default_vocabulary
+
+Associates an existing vocabulary as the default.
+
+Type annotations for `boto3.client("connect").associate_default_vocabulary`
+method.
+
+Boto3 documentation:
+[Connect.Client.associate_default_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_default_vocabulary)
+
+Arguments mapping described in
+[AssociateDefaultVocabularyRequestRequestTypeDef](./type_defs.md#associatedefaultvocabularyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+  *(required)*
+- `VocabularyId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### associate_instance_storage_config
 
@@ -711,6 +740,32 @@ Keyword-only arguments:
 Returns
 [CreateUserHierarchyGroupResponseTypeDef](./type_defs.md#createuserhierarchygroupresponsetypedef).
 
+### create_vocabulary
+
+Creates a custom vocabulary associated with your Amazon Connect instance.
+
+Type annotations for `boto3.client("connect").create_vocabulary` method.
+
+Boto3 documentation:
+[Connect.Client.create_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_vocabulary)
+
+Arguments mapping described in
+[CreateVocabularyRequestRequestTypeDef](./type_defs.md#createvocabularyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `VocabularyName`: `str` *(required)*
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+  *(required)*
+- `Content`: `str` *(required)*
+- `ClientToken`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+Returns
+[CreateVocabularyResponseTypeDef](./type_defs.md#createvocabularyresponsetypedef).
+
 ### delete_contact_flow
 
 Deletes a contact flow for the specified Amazon Connect instance.
@@ -887,6 +942,26 @@ Keyword-only arguments:
 
 - `HierarchyGroupId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
+
+### delete_vocabulary
+
+Deletes the vocabulary that has the given identifier.
+
+Type annotations for `boto3.client("connect").delete_vocabulary` method.
+
+Boto3 documentation:
+[Connect.Client.delete_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_vocabulary)
+
+Arguments mapping described in
+[DeleteVocabularyRequestRequestTypeDef](./type_defs.md#deletevocabularyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `VocabularyId`: `str` *(required)*
+
+Returns
+[DeleteVocabularyResponseTypeDef](./type_defs.md#deletevocabularyresponsetypedef).
 
 ### describe_agent_status
 
@@ -1197,6 +1272,26 @@ Keyword-only arguments:
 
 Returns
 [DescribeUserHierarchyStructureResponseTypeDef](./type_defs.md#describeuserhierarchystructureresponsetypedef).
+
+### describe_vocabulary
+
+Describes the specified vocabulary.
+
+Type annotations for `boto3.client("connect").describe_vocabulary` method.
+
+Boto3 documentation:
+[Connect.Client.describe_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_vocabulary)
+
+Arguments mapping described in
+[DescribeVocabularyRequestRequestTypeDef](./type_defs.md#describevocabularyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `VocabularyId`: `str` *(required)*
+
+Returns
+[DescribeVocabularyResponseTypeDef](./type_defs.md#describevocabularyresponsetypedef).
 
 ### disassociate_approved_origin
 
@@ -1597,6 +1692,30 @@ Keyword-only arguments:
 
 Returns
 [ListContactReferencesResponseTypeDef](./type_defs.md#listcontactreferencesresponsetypedef).
+
+### list_default_vocabularies
+
+Lists the default vocabularies for the specified Amazon Connect instance.
+
+Type annotations for `boto3.client("connect").list_default_vocabularies`
+method.
+
+Boto3 documentation:
+[Connect.Client.list_default_vocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_default_vocabularies)
+
+Arguments mapping described in
+[ListDefaultVocabulariesRequestRequestTypeDef](./type_defs.md#listdefaultvocabulariesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListDefaultVocabulariesResponseTypeDef](./type_defs.md#listdefaultvocabulariesresponsetypedef).
 
 ### list_hours_of_operations
 
@@ -2085,6 +2204,32 @@ Keyword-only arguments:
 - `InitialContactId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### search_vocabularies
+
+Searches for vocabularies within a specific Amazon Connect instance using
+`State` , `NameStartsWith` , and `LanguageCode` .
+
+Type annotations for `boto3.client("connect").search_vocabularies` method.
+
+Boto3 documentation:
+[Connect.Client.search_vocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.search_vocabularies)
+
+Arguments mapping described in
+[SearchVocabulariesRequestRequestTypeDef](./type_defs.md#searchvocabulariesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
+- `NameStartsWith`: `str`
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+
+Returns
+[SearchVocabulariesResponseTypeDef](./type_defs.md#searchvocabulariesresponsetypedef).
 
 ### start_chat_contact
 
@@ -2985,6 +3130,8 @@ overloads.
   [ListContactFlowsPaginator](./paginators.md#listcontactflowspaginator)
 - `client.get_paginator("list_contact_references")` ->
   [ListContactReferencesPaginator](./paginators.md#listcontactreferencespaginator)
+- `client.get_paginator("list_default_vocabularies")` ->
+  [ListDefaultVocabulariesPaginator](./paginators.md#listdefaultvocabulariespaginator)
 - `client.get_paginator("list_hours_of_operations")` ->
   [ListHoursOfOperationsPaginator](./paginators.md#listhoursofoperationspaginator)
 - `client.get_paginator("list_instance_attributes")` ->
@@ -3025,3 +3172,5 @@ overloads.
   [ListUserHierarchyGroupsPaginator](./paginators.md#listuserhierarchygroupspaginator)
 - `client.get_paginator("list_users")` ->
   [ListUsersPaginator](./paginators.md#listuserspaginator)
+- `client.get_paginator("search_vocabularies")` ->
+  [SearchVocabulariesPaginator](./paginators.md#searchvocabulariespaginator)

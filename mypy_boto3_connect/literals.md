@@ -35,6 +35,7 @@ type annotations stubs module
   - [ListContactFlowModulesPaginatorName](#listcontactflowmodulespaginatorname)
   - [ListContactFlowsPaginatorName](#listcontactflowspaginatorname)
   - [ListContactReferencesPaginatorName](#listcontactreferencespaginatorname)
+  - [ListDefaultVocabulariesPaginatorName](#listdefaultvocabulariespaginatorname)
   - [ListHoursOfOperationsPaginatorName](#listhoursofoperationspaginatorname)
   - [ListInstanceAttributesPaginatorName](#listinstanceattributespaginatorname)
   - [ListInstanceStorageConfigsPaginatorName](#listinstancestorageconfigspaginatorname)
@@ -63,12 +64,15 @@ type annotations stubs module
   - [QuickConnectTypeType](#quickconnecttypetype)
   - [ReferenceStatusType](#referencestatustype)
   - [ReferenceTypeType](#referencetypetype)
+  - [SearchVocabulariesPaginatorName](#searchvocabulariespaginatorname)
   - [SourceTypeType](#sourcetypetype)
   - [StatisticType](#statistictype)
   - [StorageTypeType](#storagetypetype)
   - [TrafficTypeType](#traffictypetype)
   - [UnitType](#unittype)
   - [UseCaseTypeType](#usecasetypetype)
+  - [VocabularyLanguageCodeType](#vocabularylanguagecodetype)
+  - [VocabularyStateType](#vocabularystatetype)
   - [VoiceRecordingTrackType](#voicerecordingtracktype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
@@ -426,6 +430,16 @@ from mypy_boto3_connect.literals import ListContactReferencesPaginatorName
 Values:
 
 - `list_contact_references`
+
+## ListDefaultVocabulariesPaginatorName
+
+```python
+from mypy_boto3_connect.literals import ListDefaultVocabulariesPaginatorName
+```
+
+Values:
+
+- `list_default_vocabularies`
 
 ## ListHoursOfOperationsPaginatorName
 
@@ -951,6 +965,16 @@ Values:
 - `ATTACHMENT`
 - `URL`
 
+## SearchVocabulariesPaginatorName
+
+```python
+from mypy_boto3_connect.literals import SearchVocabulariesPaginatorName
+```
+
+Values:
+
+- `search_vocabularies`
+
 ## SourceTypeType
 
 ```python
@@ -1020,6 +1044,49 @@ Values:
 
 - `CONNECT_CAMPAIGNS`
 - `RULES_EVALUATION`
+
+## VocabularyLanguageCodeType
+
+```python
+from mypy_boto3_connect.literals import VocabularyLanguageCodeType
+```
+
+Values:
+
+- `ar-AE`
+- `de-CH`
+- `de-DE`
+- `en-AB`
+- `en-AU`
+- `en-GB`
+- `en-IE`
+- `en-IN`
+- `en-US`
+- `en-WL`
+- `es-ES`
+- `es-US`
+- `fr-CA`
+- `fr-FR`
+- `hi-IN`
+- `it-IT`
+- `ja-JP`
+- `ko-KR`
+- `pt-BR`
+- `pt-PT`
+- `zh-CN`
+
+## VocabularyStateType
+
+```python
+from mypy_boto3_connect.literals import VocabularyStateType
+```
+
+Values:
+
+- `ACTIVE`
+- `CREATION_FAILED`
+- `CREATION_IN_PROGRESS`
+- `DELETE_IN_PROGRESS`
 
 ## VoiceRecordingTrackType
 
@@ -1356,6 +1423,7 @@ Values:
 - `list_contact_flow_modules`
 - `list_contact_flows`
 - `list_contact_references`
+- `list_default_vocabularies`
 - `list_hours_of_operations`
 - `list_instance_attributes`
 - `list_instance_storage_configs`
@@ -1376,3 +1444,4 @@ Values:
 - `list_use_cases`
 - `list_user_hierarchy_groups`
 - `list_users`
+- `search_vocabularies`

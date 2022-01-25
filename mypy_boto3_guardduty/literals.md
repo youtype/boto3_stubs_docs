@@ -68,6 +68,7 @@ Values:
 - `CLOUD_TRAIL`
 - `DNS_LOGS`
 - `FLOW_LOGS`
+- `KUBERNETES_AUDIT_LOGS`
 - `S3_LOGS`
 
 ## DestinationTypeType

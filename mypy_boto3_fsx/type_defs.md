@@ -2160,6 +2160,8 @@ Optional fields:
 - `DailyAutomaticBackupStartTime`: `str`
 - `FsxAdminPassword`: `str`
 - `WeeklyMaintenanceStartTime`: `str`
+- `DiskIopsConfiguration`:
+  [DiskIopsConfigurationTypeDef](./type_defs.md#diskiopsconfigurationtypedef)
 
 ## UpdateFileSystemOpenZFSConfigurationTypeDef
 

@@ -14,6 +14,7 @@ type annotations stubs module
   - [AnswerMachineDetectionConfigTypeDef](#answermachinedetectionconfigtypedef)
   - [AssociateApprovedOriginRequestRequestTypeDef](#associateapprovedoriginrequestrequesttypedef)
   - [AssociateBotRequestRequestTypeDef](#associatebotrequestrequesttypedef)
+  - [AssociateDefaultVocabularyRequestRequestTypeDef](#associatedefaultvocabularyrequestrequesttypedef)
   - [AssociateInstanceStorageConfigRequestRequestTypeDef](#associateinstancestorageconfigrequestrequesttypedef)
   - [AssociateInstanceStorageConfigResponseTypeDef](#associateinstancestorageconfigresponsetypedef)
   - [AssociateLambdaFunctionRequestRequestTypeDef](#associatelambdafunctionrequestrequesttypedef)
@@ -57,10 +58,13 @@ type annotations stubs module
   - [CreateUserHierarchyGroupResponseTypeDef](#createuserhierarchygroupresponsetypedef)
   - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
   - [CreateUserResponseTypeDef](#createuserresponsetypedef)
+  - [CreateVocabularyRequestRequestTypeDef](#createvocabularyrequestrequesttypedef)
+  - [CreateVocabularyResponseTypeDef](#createvocabularyresponsetypedef)
   - [CredentialsTypeDef](#credentialstypedef)
   - [CurrentMetricDataTypeDef](#currentmetricdatatypedef)
   - [CurrentMetricResultTypeDef](#currentmetricresulttypedef)
   - [CurrentMetricTypeDef](#currentmetrictypedef)
+  - [DefaultVocabularyTypeDef](#defaultvocabularytypedef)
   - [DeleteContactFlowModuleRequestRequestTypeDef](#deletecontactflowmodulerequestrequesttypedef)
   - [DeleteContactFlowRequestRequestTypeDef](#deletecontactflowrequestrequesttypedef)
   - [DeleteHoursOfOperationRequestRequestTypeDef](#deletehoursofoperationrequestrequesttypedef)
@@ -71,6 +75,8 @@ type annotations stubs module
   - [DeleteUseCaseRequestRequestTypeDef](#deleteusecaserequestrequesttypedef)
   - [DeleteUserHierarchyGroupRequestRequestTypeDef](#deleteuserhierarchygrouprequestrequesttypedef)
   - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
+  - [DeleteVocabularyRequestRequestTypeDef](#deletevocabularyrequestrequesttypedef)
+  - [DeleteVocabularyResponseTypeDef](#deletevocabularyresponsetypedef)
   - [DescribeAgentStatusRequestRequestTypeDef](#describeagentstatusrequestrequesttypedef)
   - [DescribeAgentStatusResponseTypeDef](#describeagentstatusresponsetypedef)
   - [DescribeContactFlowModuleRequestRequestTypeDef](#describecontactflowmodulerequestrequesttypedef)
@@ -101,6 +107,8 @@ type annotations stubs module
   - [DescribeUserHierarchyStructureResponseTypeDef](#describeuserhierarchystructureresponsetypedef)
   - [DescribeUserRequestRequestTypeDef](#describeuserrequestrequesttypedef)
   - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
+  - [DescribeVocabularyRequestRequestTypeDef](#describevocabularyrequestrequesttypedef)
+  - [DescribeVocabularyResponseTypeDef](#describevocabularyresponsetypedef)
   - [DimensionsTypeDef](#dimensionstypedef)
   - [DisassociateApprovedOriginRequestRequestTypeDef](#disassociateapprovedoriginrequestrequesttypedef)
   - [DisassociateBotRequestRequestTypeDef](#disassociatebotrequestrequesttypedef)
@@ -157,6 +165,8 @@ type annotations stubs module
   - [ListContactFlowsResponseTypeDef](#listcontactflowsresponsetypedef)
   - [ListContactReferencesRequestRequestTypeDef](#listcontactreferencesrequestrequesttypedef)
   - [ListContactReferencesResponseTypeDef](#listcontactreferencesresponsetypedef)
+  - [ListDefaultVocabulariesRequestRequestTypeDef](#listdefaultvocabulariesrequestrequesttypedef)
+  - [ListDefaultVocabulariesResponseTypeDef](#listdefaultvocabulariesresponsetypedef)
   - [ListHoursOfOperationsRequestRequestTypeDef](#listhoursofoperationsrequestrequesttypedef)
   - [ListHoursOfOperationsResponseTypeDef](#listhoursofoperationsresponsetypedef)
   - [ListInstanceAttributesRequestRequestTypeDef](#listinstanceattributesrequestrequesttypedef)
@@ -224,6 +234,8 @@ type annotations stubs module
   - [RoutingProfileSummaryTypeDef](#routingprofilesummarytypedef)
   - [RoutingProfileTypeDef](#routingprofiletypedef)
   - [S3ConfigTypeDef](#s3configtypedef)
+  - [SearchVocabulariesRequestRequestTypeDef](#searchvocabulariesrequestrequesttypedef)
+  - [SearchVocabulariesResponseTypeDef](#searchvocabulariesresponsetypedef)
   - [SecurityKeyTypeDef](#securitykeytypedef)
   - [SecurityProfileSummaryTypeDef](#securityprofilesummarytypedef)
   - [SecurityProfileTypeDef](#securityprofiletypedef)
@@ -281,6 +293,8 @@ type annotations stubs module
   - [UserQuickConnectConfigTypeDef](#userquickconnectconfigtypedef)
   - [UserSummaryTypeDef](#usersummarytypedef)
   - [UserTypeDef](#usertypedef)
+  - [VocabularySummaryTypeDef](#vocabularysummarytypedef)
+  - [VocabularyTypeDef](#vocabularytypedef)
   - [VoiceRecordingConfigurationTypeDef](#voicerecordingconfigurationtypedef)
 
 ## AgentInfoTypeDef
@@ -360,6 +374,22 @@ Optional fields:
 
 - `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
 - `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
+
+## AssociateDefaultVocabularyRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import AssociateDefaultVocabularyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+
+Optional fields:
+
+- `VocabularyId`: `str`
 
 ## AssociateInstanceStorageConfigRequestRequestTypeDef
 
@@ -1004,6 +1034,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateVocabularyRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateVocabularyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `VocabularyName`: `str`
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+- `Content`: `str`
+
+Optional fields:
+
+- `ClientToken`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+
+## CreateVocabularyResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateVocabularyResponseTypeDef
+```
+
+Required fields:
+
+- `VocabularyArn`: `str`
+- `VocabularyId`: `str`
+- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CredentialsTypeDef
 
 ```python
@@ -1050,6 +1113,20 @@ Optional fields:
 
 - `Name`: [CurrentMetricNameType](./literals.md#currentmetricnametype)
 - `Unit`: [UnitType](./literals.md#unittype)
+
+## DefaultVocabularyTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DefaultVocabularyTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+- `VocabularyId`: `str`
+- `VocabularyName`: `str`
 
 ## DeleteContactFlowModuleRequestRequestTypeDef
 
@@ -1160,6 +1237,31 @@ Required fields:
 
 - `InstanceId`: `str`
 - `UserId`: `str`
+
+## DeleteVocabularyRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DeleteVocabularyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `VocabularyId`: `str`
+
+## DeleteVocabularyResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DeleteVocabularyResponseTypeDef
+```
+
+Required fields:
+
+- `VocabularyArn`: `str`
+- `VocabularyId`: `str`
+- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeAgentStatusRequestRequestTypeDef
 
@@ -1511,6 +1613,29 @@ from mypy_boto3_connect.type_defs import DescribeUserResponseTypeDef
 Required fields:
 
 - `User`: [UserTypeDef](./type_defs.md#usertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeVocabularyRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DescribeVocabularyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `VocabularyId`: `str`
+
+## DescribeVocabularyResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DescribeVocabularyResponseTypeDef
+```
+
+Required fields:
+
+- `Vocabulary`: [VocabularyTypeDef](./type_defs.md#vocabularytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2282,6 +2407,37 @@ Required fields:
 
 - `ReferenceSummaryList`:
   `List`\[[ReferenceSummaryTypeDef](./type_defs.md#referencesummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListDefaultVocabulariesRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListDefaultVocabulariesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListDefaultVocabulariesResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListDefaultVocabulariesResponseTypeDef
+```
+
+Required fields:
+
+- `DefaultVocabularyList`:
+  `List`\[[DefaultVocabularyTypeDef](./type_defs.md#defaultvocabularytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -3225,6 +3381,39 @@ Optional fields:
 - `EncryptionConfig`:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
 
+## SearchVocabulariesRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import SearchVocabulariesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
+- `NameStartsWith`: `str`
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+
+## SearchVocabulariesResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import SearchVocabulariesResponseTypeDef
+```
+
+Required fields:
+
+- `VocabularySummaryList`:
+  `List`\[[VocabularySummaryTypeDef](./type_defs.md#vocabularysummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## SecurityKeyTypeDef
 
 ```python
@@ -4020,6 +4209,48 @@ Optional fields:
 - `SecurityProfileIds`: `List`\[`str`\]
 - `RoutingProfileId`: `str`
 - `HierarchyGroupId`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## VocabularySummaryTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import VocabularySummaryTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Id`: `str`
+- `Arn`: `str`
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
+- `LastModifiedTime`: `datetime`
+
+Optional fields:
+
+- `FailureReason`: `str`
+
+## VocabularyTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import VocabularyTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Id`: `str`
+- `Arn`: `str`
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
+- `LastModifiedTime`: `datetime`
+
+Optional fields:
+
+- `FailureReason`: `str`
+- `Content`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## VoiceRecordingConfigurationTypeDef
