@@ -50,6 +50,7 @@ type annotations stubs module
     - [get_entity_types](#get_entity_types)
     - [get_event](#get_event)
     - [get_event_prediction](#get_event_prediction)
+    - [get_event_prediction_metadata](#get_event_prediction_metadata)
     - [get_event_types](#get_event_types)
     - [get_external_models](#get_external_models)
     - [get_kms_encryption_key](#get_kms_encryption_key)
@@ -59,6 +60,7 @@ type annotations stubs module
     - [get_outcomes](#get_outcomes)
     - [get_rules](#get_rules)
     - [get_variables](#get_variables)
+    - [list_event_predictions](#list_event_predictions)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [put_detector](#put_detector)
     - [put_entity_type](#put_entity_type)
@@ -935,6 +937,32 @@ Keyword-only arguments:
 Returns
 [GetEventPredictionResultTypeDef](./type_defs.md#geteventpredictionresulttypedef).
 
+### get_event_prediction_metadata
+
+Gets details of the past fraud predictions for the specified event ID, event
+type, detector ID, and detector version ID that was generated in the specified
+time period.
+
+Type annotations for
+`boto3.client("frauddetector").get_event_prediction_metadata` method.
+
+Boto3 documentation:
+[FraudDetector.Client.get_event_prediction_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_event_prediction_metadata)
+
+Arguments mapping described in
+[GetEventPredictionMetadataRequestRequestTypeDef](./type_defs.md#geteventpredictionmetadatarequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `eventId`: `str` *(required)*
+- `eventTypeName`: `str` *(required)*
+- `detectorId`: `str` *(required)*
+- `detectorVersionId`: `str` *(required)*
+- `predictionTimestamp`: `str` *(required)*
+
+Returns
+[GetEventPredictionMetadataResultTypeDef](./type_defs.md#geteventpredictionmetadataresulttypedef).
+
 ### get_event_types
 
 Gets all event types or a specific event type if name is provided.
@@ -1118,6 +1146,34 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns [GetVariablesResultTypeDef](./type_defs.md#getvariablesresulttypedef).
+
+### list_event_predictions
+
+Gets a list of past predictions.
+
+Type annotations for `boto3.client("frauddetector").list_event_predictions`
+method.
+
+Boto3 documentation:
+[FraudDetector.Client.list_event_predictions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.list_event_predictions)
+
+Arguments mapping described in
+[ListEventPredictionsRequestRequestTypeDef](./type_defs.md#listeventpredictionsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `eventId`: [FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)
+- `eventType`: [FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)
+- `detectorId`: [FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)
+- `detectorVersionId`:
+  [FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)
+- `predictionTimeRange`:
+  [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListEventPredictionsResultTypeDef](./type_defs.md#listeventpredictionsresulttypedef).
 
 ### list_tags_for_resource
 

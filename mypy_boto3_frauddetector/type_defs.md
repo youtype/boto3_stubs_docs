@@ -53,14 +53,20 @@ type annotations stubs module
   - [DetectorVersionSummaryTypeDef](#detectorversionsummarytypedef)
   - [EntityTypeDef](#entitytypedef)
   - [EntityTypeTypeDef](#entitytypetypedef)
+  - [EvaluatedExternalModelTypeDef](#evaluatedexternalmodeltypedef)
+  - [EvaluatedModelVersionTypeDef](#evaluatedmodelversiontypedef)
+  - [EvaluatedRuleTypeDef](#evaluatedruletypedef)
+  - [EventPredictionSummaryTypeDef](#eventpredictionsummarytypedef)
   - [EventTypeDef](#eventtypedef)
   - [EventTypeTypeDef](#eventtypetypedef)
+  - [EventVariableSummaryTypeDef](#eventvariablesummarytypedef)
   - [ExternalEventsDetailTypeDef](#externaleventsdetailtypedef)
   - [ExternalModelOutputsTypeDef](#externalmodeloutputstypedef)
   - [ExternalModelSummaryTypeDef](#externalmodelsummarytypedef)
   - [ExternalModelTypeDef](#externalmodeltypedef)
   - [FieldValidationMessageTypeDef](#fieldvalidationmessagetypedef)
   - [FileValidationMessageTypeDef](#filevalidationmessagetypedef)
+  - [FilterConditionTypeDef](#filterconditiontypedef)
   - [GetBatchImportJobsRequestRequestTypeDef](#getbatchimportjobsrequestrequesttypedef)
   - [GetBatchImportJobsResultTypeDef](#getbatchimportjobsresulttypedef)
   - [GetBatchPredictionJobsRequestRequestTypeDef](#getbatchpredictionjobsrequestrequesttypedef)
@@ -73,6 +79,8 @@ type annotations stubs module
   - [GetDetectorsResultTypeDef](#getdetectorsresulttypedef)
   - [GetEntityTypesRequestRequestTypeDef](#getentitytypesrequestrequesttypedef)
   - [GetEntityTypesResultTypeDef](#getentitytypesresulttypedef)
+  - [GetEventPredictionMetadataRequestRequestTypeDef](#geteventpredictionmetadatarequestrequesttypedef)
+  - [GetEventPredictionMetadataResultTypeDef](#geteventpredictionmetadataresulttypedef)
   - [GetEventPredictionRequestRequestTypeDef](#geteventpredictionrequestrequesttypedef)
   - [GetEventPredictionResultTypeDef](#geteventpredictionresulttypedef)
   - [GetEventRequestRequestTypeDef](#geteventrequestrequesttypedef)
@@ -100,6 +108,8 @@ type annotations stubs module
   - [KMSKeyTypeDef](#kmskeytypedef)
   - [LabelSchemaTypeDef](#labelschematypedef)
   - [LabelTypeDef](#labeltypedef)
+  - [ListEventPredictionsRequestRequestTypeDef](#listeventpredictionsrequestrequesttypedef)
+  - [ListEventPredictionsResultTypeDef](#listeventpredictionsresulttypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
   - [LogOddsMetricTypeDef](#logoddsmetrictypedef)
@@ -110,8 +120,11 @@ type annotations stubs module
   - [ModelScoresTypeDef](#modelscorestypedef)
   - [ModelTypeDef](#modeltypedef)
   - [ModelVersionDetailTypeDef](#modelversiondetailtypedef)
+  - [ModelVersionEvaluationTypeDef](#modelversionevaluationtypedef)
   - [ModelVersionTypeDef](#modelversiontypedef)
   - [OutcomeTypeDef](#outcometypedef)
+  - [PredictionExplanationsTypeDef](#predictionexplanationstypedef)
+  - [PredictionTimeRangeTypeDef](#predictiontimerangetypedef)
   - [PutDetectorRequestRequestTypeDef](#putdetectorrequestrequesttypedef)
   - [PutEntityTypeRequestRequestTypeDef](#putentitytyperequestrequesttypedef)
   - [PutEventTypeRequestRequestTypeDef](#puteventtyperequestrequesttypedef)
@@ -143,6 +156,7 @@ type annotations stubs module
   - [UpdateRuleVersionResultTypeDef](#updateruleversionresulttypedef)
   - [UpdateVariableRequestRequestTypeDef](#updatevariablerequestrequesttypedef)
   - [VariableEntryTypeDef](#variableentrytypedef)
+  - [VariableImpactExplanationTypeDef](#variableimpactexplanationtypedef)
   - [VariableImportanceMetricsTypeDef](#variableimportancemetricstypedef)
   - [VariableTypeDef](#variabletypedef)
 
@@ -766,6 +780,64 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
+## EvaluatedExternalModelTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import EvaluatedExternalModelTypeDef
+```
+
+Optional fields:
+
+- `modelEndpoint`: `str`
+- `useEventVariables`: `bool`
+- `inputVariables`: `Dict`\[`str`, `str`\]
+- `outputVariables`: `Dict`\[`str`, `str`\]
+
+## EvaluatedModelVersionTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import EvaluatedModelVersionTypeDef
+```
+
+Optional fields:
+
+- `modelId`: `str`
+- `modelVersion`: `str`
+- `modelType`: `str`
+- `evaluations`:
+  `List`\[[ModelVersionEvaluationTypeDef](./type_defs.md#modelversionevaluationtypedef)\]
+
+## EvaluatedRuleTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import EvaluatedRuleTypeDef
+```
+
+Optional fields:
+
+- `ruleId`: `str`
+- `ruleVersion`: `str`
+- `expression`: `str`
+- `expressionWithValues`: `str`
+- `outcomes`: `List`\[`str`\]
+- `evaluated`: `bool`
+- `matched`: `bool`
+
+## EventPredictionSummaryTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import EventPredictionSummaryTypeDef
+```
+
+Optional fields:
+
+- `eventId`: `str`
+- `eventTypeName`: `str`
+- `eventTimestamp`: `str`
+- `predictionTimestamp`: `str`
+- `detectorId`: `str`
+- `detectorVersionId`: `str`
+
 ## EventTypeDef
 
 ```python
@@ -801,6 +873,18 @@ Optional fields:
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
+
+## EventVariableSummaryTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import EventVariableSummaryTypeDef
+```
+
+Optional fields:
+
+- `name`: `str`
+- `value`: `str`
+- `source`: `str`
 
 ## ExternalEventsDetailTypeDef
 
@@ -884,6 +968,16 @@ Optional fields:
 - `title`: `str`
 - `content`: `str`
 - `type`: `str`
+
+## FilterConditionTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import FilterConditionTypeDef
+```
+
+Optional fields:
+
+- `value`: `str`
 
 ## GetBatchImportJobsRequestRequestTypeDef
 
@@ -1045,6 +1139,51 @@ Required fields:
 - `entityTypes`:
   `List`\[[EntityTypeTypeDef](./type_defs.md#entitytypetypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetEventPredictionMetadataRequestRequestTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import GetEventPredictionMetadataRequestRequestTypeDef
+```
+
+Required fields:
+
+- `eventId`: `str`
+- `eventTypeName`: `str`
+- `detectorId`: `str`
+- `detectorVersionId`: `str`
+- `predictionTimestamp`: `str`
+
+## GetEventPredictionMetadataResultTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import GetEventPredictionMetadataResultTypeDef
+```
+
+Required fields:
+
+- `eventId`: `str`
+- `eventTypeName`: `str`
+- `entityId`: `str`
+- `entityType`: `str`
+- `eventTimestamp`: `str`
+- `detectorId`: `str`
+- `detectorVersionId`: `str`
+- `detectorVersionStatus`: `str`
+- `eventVariables`:
+  `List`\[[EventVariableSummaryTypeDef](./type_defs.md#eventvariablesummarytypedef)\]
+- `rules`:
+  `List`\[[EvaluatedRuleTypeDef](./type_defs.md#evaluatedruletypedef)\]
+- `ruleExecutionMode`:
+  [RuleExecutionModeType](./literals.md#ruleexecutionmodetype)
+- `outcomes`: `List`\[`str`\]
+- `evaluatedModelVersions`:
+  `List`\[[EvaluatedModelVersionTypeDef](./type_defs.md#evaluatedmodelversiontypedef)\]
+- `evaluatedExternalModels`:
+  `List`\[[EvaluatedExternalModelTypeDef](./type_defs.md#evaluatedexternalmodeltypedef)\]
+- `predictionTimestamp`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1415,6 +1554,38 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
+## ListEventPredictionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import ListEventPredictionsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `eventId`: [FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)
+- `eventType`: [FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)
+- `detectorId`: [FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)
+- `detectorVersionId`:
+  [FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)
+- `predictionTimeRange`:
+  [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListEventPredictionsResultTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import ListEventPredictionsResultTypeDef
+```
+
+Required fields:
+
+- `eventPredictionSummaries`:
+  `List`\[[EventPredictionSummaryTypeDef](./type_defs.md#eventpredictionsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1565,6 +1736,19 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
+## ModelVersionEvaluationTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import ModelVersionEvaluationTypeDef
+```
+
+Optional fields:
+
+- `outputVariableName`: `str`
+- `evaluationScore`: `str`
+- `predictionExplanations`:
+  [PredictionExplanationsTypeDef](./type_defs.md#predictionexplanationstypedef)
+
 ## ModelVersionTypeDef
 
 ```python
@@ -1594,6 +1778,28 @@ Optional fields:
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
+
+## PredictionExplanationsTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import PredictionExplanationsTypeDef
+```
+
+Optional fields:
+
+- `variableImpactExplanations`:
+  `List`\[[VariableImpactExplanationTypeDef](./type_defs.md#variableimpactexplanationtypedef)\]
+
+## PredictionTimeRangeTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import PredictionTimeRangeTypeDef
+```
+
+Required fields:
+
+- `startTime`: `str`
+- `endTime`: `str`
 
 ## PutDetectorRequestRequestTypeDef
 
@@ -2049,6 +2255,18 @@ Optional fields:
 - `defaultValue`: `str`
 - `description`: `str`
 - `variableType`: `str`
+
+## VariableImpactExplanationTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import VariableImpactExplanationTypeDef
+```
+
+Optional fields:
+
+- `eventVariableName`: `str`
+- `relativeImpact`: `str`
+- `logOddsImpact`: `float`
 
 ## VariableImportanceMetricsTypeDef
 
