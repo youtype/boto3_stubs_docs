@@ -21,6 +21,7 @@ type annotations stubs module
   - [OpenSearchWarmPartitionInstanceTypeType](#opensearchwarmpartitioninstancetypetype)
   - [OptionStateType](#optionstatetype)
   - [OutboundConnectionStatusCodeType](#outboundconnectionstatuscodetype)
+  - [OverallChangeStatusType](#overallchangestatustype)
   - [PackageStatusType](#packagestatustype)
   - [PackageTypeType](#packagetypetype)
   - [ReservedInstancePaymentOptionType](#reservedinstancepaymentoptiontype)
@@ -300,6 +301,19 @@ Values:
 - `REJECTING`
 - `VALIDATING`
 - `VALIDATION_FAILED`
+
+## OverallChangeStatusType
+
+```python
+from mypy_boto3_opensearch.literals import OverallChangeStatusType
+```
+
+Values:
+
+- `COMPLETED`
+- `FAILED`
+- `PENDING`
+- `PROCESSING`
 
 ## PackageStatusType
 

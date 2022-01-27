@@ -30,6 +30,9 @@ type annotations stubs module
   - [AutoTuneTypeDef](#autotunetypedef)
   - [CancelServiceSoftwareUpdateRequestRequestTypeDef](#cancelservicesoftwareupdaterequestrequesttypedef)
   - [CancelServiceSoftwareUpdateResponseTypeDef](#cancelservicesoftwareupdateresponsetypedef)
+  - [ChangeProgressDetailsTypeDef](#changeprogressdetailstypedef)
+  - [ChangeProgressStageTypeDef](#changeprogressstagetypedef)
+  - [ChangeProgressStatusDetailsTypeDef](#changeprogressstatusdetailstypedef)
   - [ClusterConfigStatusTypeDef](#clusterconfigstatustypedef)
   - [ClusterConfigTypeDef](#clusterconfigtypedef)
   - [CognitoOptionsStatusTypeDef](#cognitooptionsstatustypedef)
@@ -52,6 +55,8 @@ type annotations stubs module
   - [DeletePackageResponseTypeDef](#deletepackageresponsetypedef)
   - [DescribeDomainAutoTunesRequestRequestTypeDef](#describedomainautotunesrequestrequesttypedef)
   - [DescribeDomainAutoTunesResponseTypeDef](#describedomainautotunesresponsetypedef)
+  - [DescribeDomainChangeProgressRequestRequestTypeDef](#describedomainchangeprogressrequestrequesttypedef)
+  - [DescribeDomainChangeProgressResponseTypeDef](#describedomainchangeprogressresponsetypedef)
   - [DescribeDomainConfigRequestRequestTypeDef](#describedomainconfigrequestrequesttypedef)
   - [DescribeDomainConfigResponseTypeDef](#describedomainconfigresponsetypedef)
   - [DescribeDomainRequestRequestTypeDef](#describedomainrequestrequesttypedef)
@@ -436,6 +441,47 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ChangeProgressDetailsTypeDef
+
+```python
+from mypy_boto3_opensearch.type_defs import ChangeProgressDetailsTypeDef
+```
+
+Optional fields:
+
+- `ChangeId`: `str`
+- `Message`: `str`
+
+## ChangeProgressStageTypeDef
+
+```python
+from mypy_boto3_opensearch.type_defs import ChangeProgressStageTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Status`: `str`
+- `Description`: `str`
+- `LastUpdated`: `datetime`
+
+## ChangeProgressStatusDetailsTypeDef
+
+```python
+from mypy_boto3_opensearch.type_defs import ChangeProgressStatusDetailsTypeDef
+```
+
+Optional fields:
+
+- `ChangeId`: `str`
+- `StartTime`: `datetime`
+- `Status`: [OverallChangeStatusType](./literals.md#overallchangestatustype)
+- `PendingProperties`: `List`\[`str`\]
+- `CompletedProperties`: `List`\[`str`\]
+- `TotalNumberOfStages`: `int`
+- `ChangeProgressStages`:
+  `List`\[[ChangeProgressStageTypeDef](./type_defs.md#changeprogressstagetypedef)\]
+
 ## ClusterConfigStatusTypeDef
 
 ```python
@@ -747,6 +793,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeDomainChangeProgressRequestRequestTypeDef
+
+```python
+from mypy_boto3_opensearch.type_defs import DescribeDomainChangeProgressRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+Optional fields:
+
+- `ChangeId`: `str`
+
+## DescribeDomainChangeProgressResponseTypeDef
+
+```python
+from mypy_boto3_opensearch.type_defs import DescribeDomainChangeProgressResponseTypeDef
+```
+
+Required fields:
+
+- `ChangeProgressStatus`:
+  [ChangeProgressStatusDetailsTypeDef](./type_defs.md#changeprogressstatusdetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeDomainConfigRequestRequestTypeDef
 
 ```python
@@ -1045,6 +1118,8 @@ Optional fields:
   [AdvancedSecurityOptionsStatusTypeDef](./type_defs.md#advancedsecurityoptionsstatustypedef)
 - `AutoTuneOptions`:
   [AutoTuneOptionsStatusTypeDef](./type_defs.md#autotuneoptionsstatustypedef)
+- `ChangeProgressDetails`:
+  [ChangeProgressDetailsTypeDef](./type_defs.md#changeprogressdetailstypedef)
 
 ## DomainEndpointOptionsStatusTypeDef
 
@@ -1159,6 +1234,8 @@ Optional fields:
   [AdvancedSecurityOptionsTypeDef](./type_defs.md#advancedsecurityoptionstypedef)
 - `AutoTuneOptions`:
   [AutoTuneOptionsOutputTypeDef](./type_defs.md#autotuneoptionsoutputtypedef)
+- `ChangeProgressDetails`:
+  [ChangeProgressDetailsTypeDef](./type_defs.md#changeprogressdetailstypedef)
 
 ## DryRunResultsTypeDef
 
@@ -2132,6 +2209,8 @@ Required fields:
 - `TargetVersion`: `str`
 - `PerformCheckOnly`: `bool`
 - `AdvancedOptions`: `Dict`\[`str`, `str`\]
+- `ChangeProgressDetails`:
+  [ChangeProgressDetailsTypeDef](./type_defs.md#changeprogressdetailstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

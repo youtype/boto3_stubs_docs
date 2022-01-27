@@ -2253,6 +2253,7 @@ Keyword-only arguments:
 - `Attributes`: `Mapping`\[`str`, `str`\]
 - `InitialMessage`: [ChatMessageTypeDef](./type_defs.md#chatmessagetypedef)
 - `ClientToken`: `str`
+- `ChatDurationInMinutes`: `int`
 
 Returns
 [StartChatContactResponseTypeDef](./type_defs.md#startchatcontactresponsetypedef).

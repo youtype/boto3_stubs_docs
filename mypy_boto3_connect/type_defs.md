@@ -3471,6 +3471,7 @@ Optional fields:
 - `Attributes`: `Mapping`\[`str`, `str`\]
 - `InitialMessage`: [ChatMessageTypeDef](./type_defs.md#chatmessagetypedef)
 - `ClientToken`: `str`
+- `ChatDurationInMinutes`: `int`
 
 ## StartChatContactResponseTypeDef
 

@@ -3732,6 +3732,12 @@ Values:
 - `x2gd.medium`
 - `x2gd.metal`
 - `x2gd.xlarge`
+- `x2iezn.12xlarge`
+- `x2iezn.2xlarge`
+- `x2iezn.4xlarge`
+- `x2iezn.6xlarge`
+- `x2iezn.8xlarge`
+- `x2iezn.metal`
 - `z1d.12xlarge`
 - `z1d.2xlarge`
 - `z1d.3xlarge`

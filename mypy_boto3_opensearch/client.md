@@ -26,6 +26,7 @@ type annotations stubs module
     - [delete_package](#delete_package)
     - [describe_domain](#describe_domain)
     - [describe_domain_auto_tunes](#describe_domain_auto_tunes)
+    - [describe_domain_change_progress](#describe_domain_change_progress)
     - [describe_domain_config](#describe_domain_config)
     - [describe_domains](#describe_domains)
     - [describe_inbound_connections](#describe_inbound_connections)
@@ -419,6 +420,28 @@ Keyword-only arguments:
 
 Returns
 [DescribeDomainAutoTunesResponseTypeDef](./type_defs.md#describedomainautotunesresponsetypedef).
+
+### describe_domain_change_progress
+
+Returns information about the current blue/green deployment happening on a
+domain, including a change ID, status, and progress stages.
+
+Type annotations for
+`boto3.client("opensearch").describe_domain_change_progress` method.
+
+Boto3 documentation:
+[OpenSearchService.Client.describe_domain_change_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain_change_progress)
+
+Arguments mapping described in
+[DescribeDomainChangeProgressRequestRequestTypeDef](./type_defs.md#describedomainchangeprogressrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DomainName`: `str` *(required)*
+- `ChangeId`: `str`
+
+Returns
+[DescribeDomainChangeProgressResponseTypeDef](./type_defs.md#describedomainchangeprogressresponsetypedef).
 
 ### describe_domain_config
 

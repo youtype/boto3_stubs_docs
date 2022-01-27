@@ -92,6 +92,7 @@ type annotations stubs module
   - [PrometheusInfoTypeDef](#prometheusinfotypedef)
   - [PrometheusTypeDef](#prometheustypedef)
   - [ProvisionedRequestTypeDef](#provisionedrequesttypedef)
+  - [ProvisionedThroughputTypeDef](#provisionedthroughputtypedef)
   - [ProvisionedTypeDef](#provisionedtypedef)
   - [PublicAccessTypeDef](#publicaccesstypedef)
   - [RebootBrokerRequestRequestTypeDef](#rebootbrokerrequestrequesttypedef)
@@ -191,6 +192,11 @@ from mypy_boto3_kafka.type_defs import BrokerEBSVolumeInfoTypeDef
 Required fields:
 
 - `KafkaBrokerNodeId`: `str`
+
+Optional fields:
+
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `VolumeSizeGB`: `int`
 
 ## BrokerLogsTypeDef
@@ -733,6 +739,8 @@ from mypy_boto3_kafka.type_defs import EBSStorageInfoTypeDef
 
 Optional fields:
 
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `VolumeSize`: `int`
 
 ## EncryptionAtRestTypeDef
@@ -1281,6 +1289,17 @@ Optional fields:
 - `OpenMonitoring`:
   [OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef)
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
+
+## ProvisionedThroughputTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import ProvisionedThroughputTypeDef
+```
+
+Optional fields:
+
+- `Enabled`: `bool`
+- `VolumeThroughput`: `int`
 
 ## ProvisionedTypeDef
 
