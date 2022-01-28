@@ -553,8 +553,8 @@ Returns
 
 ### admin_list_user_auth_events
 
-Lists a history of user activity and any risks detected as part of Amazon
-Cognito advanced security.
+A history of user activity and any risks detected as part of Amazon Cognito
+advanced security.
 
 Type annotations for `boto3.client("cognito-idp").admin_list_user_auth_events`
 method.
@@ -647,8 +647,8 @@ Returns
 
 ### admin_set_user_mfa_preference
 
-Sets the user's multi-factor authentication (MFA) preference, including which
-MFA options are enabled and if any are preferred.
+The user's multi-factor authentication (MFA) preference, including which MFA
+options are activated, and if any are preferred.
 
 Type annotations for
 `boto3.client("cognito-idp").admin_set_user_mfa_preference` method.
@@ -717,7 +717,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### admin_update_auth_event_feedback
 
-Provides feedback for an authentication event as to whether it was from a valid
+Provides feedback for an authentication event indicating if it was from a valid
 user.
 
 Type annotations for
@@ -994,7 +994,7 @@ Returns
 
 ### create_resource_server
 
-Creates a new OAuth2.0 resource server and defines custom scopes in it.
+Creates a new OAuth2.0 resource server and defines custom scopes within it.
 
 Type annotations for `boto3.client("cognito-idp").create_resource_server`
 method.
@@ -1512,8 +1512,8 @@ Returns `str`.
 
 ### get_csv_header
 
-Gets the header information for the .csv file to be used as input for the user
-import job.
+Gets the header information for the comma-separated value (CSV) file to be used
+as input for the user import job.
 
 Type annotations for `boto3.client("cognito-idp").get_csv_header` method.
 
@@ -1611,8 +1611,8 @@ Returns
 
 ### get_ui_customization
 
-Gets the UI Customization information for a particular app client's app UI, if
-there is something set.
+Gets the user interface (UI) Customization information for a particular app
+client's app UI, if any such information exists for the client.
 
 Type annotations for `boto3.client("cognito-idp").get_ui_customization` method.
 
@@ -1885,7 +1885,7 @@ Returns
 
 ### list_user_pools
 
-Lists the user pools associated with an account.
+Lists the user pools associated with an Amazon Web Services account.
 
 Type annotations for `boto3.client("cognito-idp").list_user_pools` method.
 
@@ -2053,7 +2053,8 @@ Returns
 
 ### set_ui_customization
 
-Sets the UI customization information for a user pool's built-in app UI.
+Sets the user interface (UI) customization information for a user pool's built-
+in app UI.
 
 Type annotations for `boto3.client("cognito-idp").set_ui_customization` method.
 
@@ -2076,7 +2077,7 @@ Returns
 ### set_user_mfa_preference
 
 Set the user's multi-factor authentication (MFA) method preference, including
-which MFA factors are enabled and if any are preferred.
+which MFA factors are activated and if any are preferred.
 
 Type annotations for `boto3.client("cognito-idp").set_user_mfa_preference`
 method.
@@ -2099,7 +2100,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### set_user_pool_mfa_config
 
-Set the user pool multi-factor authentication (MFA) configuration.
+Sets the user pool multi-factor authentication (MFA) configuration.
 
 Type annotations for `boto3.client("cognito-idp").set_user_pool_mfa_config`
 method.
@@ -2255,7 +2256,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_auth_event_feedback
 
-Provides the feedback for an authentication event whether it was from a valid
+Provides the feedback for an authentication event, whether it was from a valid
 user or not.
 
 Type annotations for `boto3.client("cognito-idp").update_auth_event_feedback`
@@ -2509,8 +2510,8 @@ Returns
 
 ### verify_software_token
 
-Use this API to register a user's entered TOTP code and mark the user's
-software token MFA status as "verified" if successful.
+Use this API to register a user's entered time-based one-time password (TOTP)
+code and mark the user's software token MFA status as "verified" if successful.
 
 Type annotations for `boto3.client("cognito-idp").verify_software_token`
 method.

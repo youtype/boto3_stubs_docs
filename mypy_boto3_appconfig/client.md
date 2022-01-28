@@ -367,7 +367,7 @@ Returns
 
 ### get_configuration
 
-Retrieves information about a configuration.
+Retrieves the latest deployed configuration.
 
 Type annotations for `boto3.client("appconfig").get_configuration` method.
 
@@ -555,7 +555,7 @@ Returns
 
 ### list_deployments
 
-Lists the deployments for an environment.
+Lists the deployments for an environment in descending deployment number order.
 
 Type annotations for `boto3.client("appconfig").list_deployments` method.
 

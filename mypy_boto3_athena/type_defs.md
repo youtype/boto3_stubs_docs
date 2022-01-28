@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
 
 - [Typed dictionaries for boto3 Athena module](#typed-dictionaries-for-boto3-athena-module)
+  - [AthenaErrorTypeDef](#athenaerrortypedef)
   - [BatchGetNamedQueryInputRequestTypeDef](#batchgetnamedqueryinputrequesttypedef)
   - [BatchGetNamedQueryOutputTypeDef](#batchgetnamedqueryoutputtypedef)
   - [BatchGetQueryExecutionInputRequestTypeDef](#batchgetqueryexecutioninputrequesttypedef)
@@ -93,6 +94,16 @@ type annotations stubs module
   - [WorkGroupConfigurationUpdatesTypeDef](#workgroupconfigurationupdatestypedef)
   - [WorkGroupSummaryTypeDef](#workgroupsummarytypedef)
   - [WorkGroupTypeDef](#workgrouptypedef)
+
+## AthenaErrorTypeDef
+
+```python
+from mypy_boto3_athena.type_defs import AthenaErrorTypeDef
+```
+
+Optional fields:
+
+- `ErrorCategory`: `int`
 
 ## BatchGetNamedQueryInputRequestTypeDef
 
@@ -908,6 +919,7 @@ Optional fields:
 - `StateChangeReason`: `str`
 - `SubmissionDateTime`: `datetime`
 - `CompletionDateTime`: `datetime`
+- `AthenaError`: [AthenaErrorTypeDef](./type_defs.md#athenaerrortypedef)
 
 ## QueryExecutionTypeDef
 

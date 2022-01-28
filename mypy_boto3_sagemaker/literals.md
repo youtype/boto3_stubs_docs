@@ -3222,6 +3222,7 @@ Values:
 
 - `INTEL_GRAPHICS`
 - `MALI`
+- `NNA`
 - `NVIDIA`
 
 ## TargetPlatformArchType

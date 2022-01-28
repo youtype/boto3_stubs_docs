@@ -333,8 +333,7 @@ Returns
 
 ### list_secrets
 
-Lists the secrets that are stored by Secrets Manager in the Amazon Web Services
-account.
+.
 
 Type annotations for `boto3.client("secretsmanager").list_secrets` method.
 
@@ -485,6 +484,7 @@ Keyword-only arguments:
 - `RotationLambdaARN`: `str`
 - `RotationRules`:
   [RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef)
+- `RotateImmediately`: `bool`
 
 Returns
 [RotateSecretResponseTypeDef](./type_defs.md#rotatesecretresponsetypedef).

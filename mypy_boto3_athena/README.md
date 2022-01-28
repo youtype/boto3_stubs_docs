@@ -134,9 +134,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_athena.type_defs import BatchGetNamedQueryInputRequestTypeDef, ...
+from mypy_boto3_athena.type_defs import AthenaErrorTypeDef, ...
 ```
 
+- [AthenaErrorTypeDef](./type_defs.md#athenaerrortypedef)
 - [BatchGetNamedQueryInputRequestTypeDef](./type_defs.md#batchgetnamedqueryinputrequesttypedef)
 - [BatchGetNamedQueryOutputTypeDef](./type_defs.md#batchgetnamedqueryoutputtypedef)
 - [BatchGetQueryExecutionInputRequestTypeDef](./type_defs.md#batchgetqueryexecutioninputrequesttypedef)
