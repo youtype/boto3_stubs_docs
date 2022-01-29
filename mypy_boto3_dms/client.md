@@ -793,9 +793,7 @@ Returns
 ### describe_pending_maintenance_actions
 
 For internal use only See also:
-`AWS API Documentation <https://docs.aws.amazon. com/goto/WebAPI/dms-2016-01-01/DescribePendingMaintenanceActions>`\_
-**Request Syntax** response = client.describe_pending_maintenance_actions(
-ReplicationInstanceArn='string', Filters=\[ ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/dms-2016-01-01/DescribePendingMaintenanceActions).
 
 Type annotations for `boto3.client("dms").describe_pending_maintenance_actions`
 method.

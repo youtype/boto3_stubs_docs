@@ -786,9 +786,7 @@ Returns
 ### list_instance_type_details
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/opense arch-2021-01-01/ListInstanceTypeDetails>`\_
-**Request Syntax** response = client.list_instance_type_details(
-EngineVersion='string', DomainName='string', MaxResults=123, NextToken='stri...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/opensearch-2021-01-01/ListInstanceTypeDetails).
 
 Type annotations for `boto3.client("opensearch").list_instance_type_details`
 method.

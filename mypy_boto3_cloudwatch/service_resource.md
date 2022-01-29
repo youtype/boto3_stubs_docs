@@ -163,27 +163,29 @@ Boto3 documentation:
 - `alarm_description`: `str`
 - `alarm_configuration_updated_timestamp`: `datetime`
 - `actions_enabled`: `bool`
-- `ok_actions`: `List`\[`Any`\]
-- `alarm_actions`: `List`\[`Any`\]
-- `insufficient_data_actions`: `List`\[`Any`\]
-- `state_value`: `str`
+- `ok_actions`: `List`\[`str`\]
+- `alarm_actions`: `List`\[`str`\]
+- `insufficient_data_actions`: `List`\[`str`\]
+- `state_value`: [StateValueType](./literals.md#statevaluetype)
 - `state_reason`: `str`
 - `state_reason_data`: `str`
 - `state_updated_timestamp`: `datetime`
 - `metric_name`: `str`
 - `namespace`: `str`
-- `statistic`: `str`
+- `statistic`: [StatisticType](./literals.md#statistictype)
 - `extended_statistic`: `str`
-- `dimensions`: `List`\[`Any`\]
+- `dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `period`: `int`
-- `unit`: `str`
+- `unit`: [StandardUnitType](./literals.md#standardunittype)
 - `evaluation_periods`: `int`
 - `datapoints_to_alarm`: `int`
 - `threshold`: `float`
-- `comparison_operator`: `str`
+- `comparison_operator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `treat_missing_data`: `str`
 - `evaluate_low_sample_count_percentile`: `str`
-- `metrics`: `List`\[`Any`\]
+- `metrics`:
+  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
 - `threshold_metric_id`: `str`
 - `name`: `str`
 - `metric`: [Metric](#metric)
@@ -311,7 +313,7 @@ Boto3 documentation:
 ### Metric attributes
 
 - `metric_name`: `str`
-- `dimensions`: `List`\[`Any`\]
+- `dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `namespace`: `str`
 - `name`: `str`
 - `alarms`: [MetricAlarmsCollection](#metricalarmscollection)

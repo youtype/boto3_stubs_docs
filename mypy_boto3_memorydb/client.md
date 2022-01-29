@@ -467,9 +467,7 @@ Returns [DeleteUserResponseTypeDef](./type_defs.md#deleteuserresponsetypedef).
 ### describe_acls
 
 Returns a list of ACLs See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/DescribeACLs>`\_
-**Request Syntax** response = client.describe_acls( ACLName='string',
-MaxResults=123, NextToken='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/DescribeACLs).
 
 Type annotations for `boto3.client("memorydb").describe_acls` method.
 
@@ -606,9 +604,7 @@ Returns
 ### describe_service_updates
 
 Returns details of the service updates See also:
-`AWS API Documentation <https:/ /docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/DescribeServiceUpdates>`\_
-**Request Syntax** response = client.describe_service_updates(
-ServiceUpdateName='string', ClusterNames=\[ ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/DescribeServiceUpdates).
 
 Type annotations for `boto3.client("memorydb").describe_service_updates`
 method.
@@ -701,9 +697,7 @@ Returns
 ### failover_shard
 
 Used to failover a shard See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/FailoverShard>`\_
-**Request Syntax** response = client.failover_shard( ClusterName='string',
-ShardName='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/FailoverShard).
 
 Type annotations for `boto3.client("memorydb").failover_shard` method.
 
@@ -823,9 +817,7 @@ Returns
 ### untag_resource
 
 Use this operation to remove tags on a resource See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/UntagResource>`\_
-**Request Syntax** response = client.untag_resource( ResourceArn='string',
-TagKeys=\[ 'string', \] ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/UntagResource).
 
 Type annotations for `boto3.client("memorydb").untag_resource` method.
 

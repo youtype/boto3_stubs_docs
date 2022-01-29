@@ -321,7 +321,7 @@ Returns
 
 Creates an event tracker that you use when adding event data to a specified
 dataset group using the
-`PutEvents <https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_PutEvents.html>`\_\_
+[PutEvents](https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_PutEvents.html)\_
 API.
 
 Type annotations for `boto3.client("personalize").create_event_tracker` method.

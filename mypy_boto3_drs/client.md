@@ -191,9 +191,7 @@ Keyword-only arguments:
 ### delete_replication_configuration_template
 
 Deletes a single Replication Configuration Template by ID See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/drs-2020-02- 26/DeleteReplicationConfigurationTemplate>`\_
-**Request Syntax** response = client.delete_replication_configuration_template(
-replicatio...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/drs-2020-02-26/DeleteReplicationConfigurationTemplate).
 
 Type annotations for
 `boto3.client("drs").delete_replication_configuration_template` method.

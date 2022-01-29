@@ -257,8 +257,7 @@ Returns
 
 Creates a new job to transform input data, using steps defined in an existing
 Glue DataBrew recipe See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/databrew-2017-07-25/CreateRecipeJob>`\_
-**Request Syntax** response = client.create_recipe_job( DatasetName...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/databrew-2017-07-25/CreateRecipeJob).
 
 Type annotations for `boto3.client("databrew").create_recipe_job` method.
 

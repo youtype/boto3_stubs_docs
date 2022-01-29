@@ -778,8 +778,7 @@ Returns
 
 List all Elasticsearch instance types that are supported for given
 ElasticsearchVersion See also:
-`AWS API Documentation <https://docs.aws.amazon.c om/goto/WebAPI/es-2015-01-01/ListElasticsearchInstanceTypes>`\_
-**Request Syntax** response = client.list_elasticsearch_instance_types( ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/es-2015-01-01/ListElasticsearchInstanceTypes).
 
 Type annotations for `boto3.client("es").list_elasticsearch_instance_types`
 method.
@@ -803,9 +802,7 @@ Returns
 ### list_elasticsearch_versions
 
 List all supported Elasticsearch versions See also:
-`AWS API Documentation <http s://docs.aws.amazon.com/goto/WebAPI/es-2015-01-01/ListElasticsearchVersions>`\_
-**Request Syntax** response = client.list_elasticsearch_versions(
-MaxResults=123, NextToken='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/es-2015-01-01/ListElasticsearchVersions).
 
 Type annotations for `boto3.client("es").list_elasticsearch_versions` method.
 

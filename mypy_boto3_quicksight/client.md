@@ -2385,9 +2385,7 @@ Returns
 ### update_analysis
 
 Updates an analysis in Amazon QuickSight See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/quicksight-2018-04-01/UpdateAnalysis>`\_
-**Request Syntax** response = client.update_analysis( AwsAccountId='string',
-AnalysisId='string', Name='string',...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/quicksight-2018-04-01/UpdateAnalysis).
 
 Type annotations for `boto3.client("quicksight").update_analysis` method.
 

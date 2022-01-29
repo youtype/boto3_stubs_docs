@@ -255,9 +255,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_dynamodb.type_defs import ArchivalSummaryTypeDef, ...
+from mypy_boto3_dynamodb.type_defs import ArchivalSummaryResponseMetadataTypeDef, ...
 ```
 
+- [ArchivalSummaryResponseMetadataTypeDef](./type_defs.md#archivalsummaryresponsemetadatatypedef)
 - [ArchivalSummaryTypeDef](./type_defs.md#archivalsummarytypedef)
 - [AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)
 - [AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef)
@@ -281,6 +282,7 @@ from mypy_boto3_dynamodb.type_defs import ArchivalSummaryTypeDef, ...
 - [BatchWriteItemInputRequestTypeDef](./type_defs.md#batchwriteiteminputrequesttypedef)
 - [BatchWriteItemInputServiceResourceTypeDef](./type_defs.md#batchwriteiteminputserviceresourcetypedef)
 - [BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef)
+- [BillingModeSummaryResponseMetadataTypeDef](./type_defs.md#billingmodesummaryresponsemetadatatypedef)
 - [BillingModeSummaryTypeDef](./type_defs.md#billingmodesummarytypedef)
 - [CapacityTypeDef](./type_defs.md#capacitytypedef)
 - [ConditionCheckTypeDef](./type_defs.md#conditionchecktypedef)
@@ -382,6 +384,7 @@ from mypy_boto3_dynamodb.type_defs import ArchivalSummaryTypeDef, ...
 - [PointInTimeRecoveryDescriptionTypeDef](./type_defs.md#pointintimerecoverydescriptiontypedef)
 - [PointInTimeRecoverySpecificationTypeDef](./type_defs.md#pointintimerecoveryspecificationtypedef)
 - [ProjectionTypeDef](./type_defs.md#projectiontypedef)
+- [ProvisionedThroughputDescriptionResponseMetadataTypeDef](./type_defs.md#provisionedthroughputdescriptionresponsemetadatatypedef)
 - [ProvisionedThroughputDescriptionTypeDef](./type_defs.md#provisionedthroughputdescriptiontypedef)
 - [ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef)
 - [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
@@ -408,11 +411,13 @@ from mypy_boto3_dynamodb.type_defs import ArchivalSummaryTypeDef, ...
 - [ReplicaUpdateTypeDef](./type_defs.md#replicaupdatetypedef)
 - [ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [RestoreSummaryResponseMetadataTypeDef](./type_defs.md#restoresummaryresponsemetadatatypedef)
 - [RestoreSummaryTypeDef](./type_defs.md#restoresummarytypedef)
 - [RestoreTableFromBackupInputRequestTypeDef](./type_defs.md#restoretablefrombackupinputrequesttypedef)
 - [RestoreTableFromBackupOutputTypeDef](./type_defs.md#restoretablefrombackupoutputtypedef)
 - [RestoreTableToPointInTimeInputRequestTypeDef](./type_defs.md#restoretabletopointintimeinputrequesttypedef)
 - [RestoreTableToPointInTimeOutputTypeDef](./type_defs.md#restoretabletopointintimeoutputtypedef)
+- [SSEDescriptionResponseMetadataTypeDef](./type_defs.md#ssedescriptionresponsemetadatatypedef)
 - [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
 - [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - [ScanInputRequestTypeDef](./type_defs.md#scaninputrequesttypedef)
@@ -421,9 +426,11 @@ from mypy_boto3_dynamodb.type_defs import ArchivalSummaryTypeDef, ...
 - [ServiceResourceTableRequestTypeDef](./type_defs.md#serviceresourcetablerequesttypedef)
 - [SourceTableDetailsTypeDef](./type_defs.md#sourcetabledetailstypedef)
 - [SourceTableFeatureDetailsTypeDef](./type_defs.md#sourcetablefeaturedetailstypedef)
+- [StreamSpecificationResponseMetadataTypeDef](./type_defs.md#streamspecificationresponsemetadatatypedef)
 - [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
 - [TableAutoScalingDescriptionTypeDef](./type_defs.md#tableautoscalingdescriptiontypedef)
 - [TableBatchWriterRequestTypeDef](./type_defs.md#tablebatchwriterrequesttypedef)
+- [TableClassSummaryResponseMetadataTypeDef](./type_defs.md#tableclasssummaryresponsemetadatatypedef)
 - [TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef)
 - [TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef)
 - [TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef)

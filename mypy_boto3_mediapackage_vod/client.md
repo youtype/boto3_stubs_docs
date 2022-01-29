@@ -102,10 +102,9 @@ Returns `bool`.
 ### configure_logs
 
 Changes the packaging group's properities to configure log subscription See
-also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediapackage- vod-2018-11-07/ConfigureLogs>`\_
-**Request Syntax** response = client.configure_logs( EgressAccessLogs={
-'LogGrou...
+also: \[AWS API
+Documentation\](https://docs.aws.amazon.com/goto/WebAPI/mediapackage-
+vod-2018-11-07/ConfigureLogs).
 
 Type annotations for `boto3.client("mediapackage-vod").configure_logs` method.
 

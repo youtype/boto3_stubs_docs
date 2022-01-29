@@ -603,9 +603,7 @@ Returns
 ### decrease_node_groups_in_global_replication_group
 
 Decreases the number of node groups in a Global datastore See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/elasticache-2015-02- 02/DecreaseNodeGroupsInGlobalReplicationGroup>`\_
-**Request Syntax** response =
-client.decrease_node_groups_in_global_replication_grou...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/elasticache-2015-02-02/DecreaseNodeGroupsInGlobalReplicationGroup).
 
 Type annotations for
 `boto3.client("elasticache").decrease_node_groups_in_global_replication_group`
@@ -1118,9 +1116,7 @@ Returns
 ### describe_service_updates
 
 Returns details of the service updates See also:
-`AWS API Documentation <https:/ /docs.aws.amazon.com/goto/WebAPI/elasticache-2015-02- 02/DescribeServiceUpdates>`\_
-**Request Syntax** response = client.describe_service_updates(
-ServiceUpdateName='string', ServiceUpdateStatus=...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/elasticache-2015-02-02/DescribeServiceUpdates).
 
 Type annotations for `boto3.client("elasticache").describe_service_updates`
 method.
@@ -1170,9 +1166,7 @@ Returns
 ### describe_update_actions
 
 Returns details of the update actions See also:
-`AWS API Documentation <https:// docs.aws.amazon.com/goto/WebAPI/elasticache-2015-02-02/DescribeUpdateActions>`\_
-**Request Syntax** response = client.describe_update_actions(
-ServiceUpdateName='string', ReplicationGroupIds=\[ ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/elasticache-2015-02-02/DescribeUpdateActions).
 
 Type annotations for `boto3.client("elasticache").describe_update_actions`
 method.
@@ -1313,9 +1307,7 @@ Returns `str`.
 ### increase_node_groups_in_global_replication_group
 
 Increase the number of node groups in the Global datastore See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/elasticache-2015-02- 02/IncreaseNodeGroupsInGlobalReplicationGroup>`\_
-**Request Syntax** response =
-client.increase_node_groups_in_global_replication_gro...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/elasticache-2015-02-02/IncreaseNodeGroupsInGlobalReplicationGroup).
 
 Type annotations for
 `boto3.client("elasticache").increase_node_groups_in_global_replication_group`

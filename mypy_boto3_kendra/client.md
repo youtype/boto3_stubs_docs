@@ -201,7 +201,7 @@ Returns
 ### batch_get_document_status
 
 Returns the indexing status for one or more documents submitted with the
-`BatchPutDocument <https://docs.aws.amazon.com/kendra/latest/dg/API_BatchPutDocument.html>`\_\_
+[BatchPutDocument](https://docs.aws.amazon.com/kendra/latest/dg/API_BatchPutDocument.html)\_
 operation.
 
 Type annotations for `boto3.client("kendra").batch_get_document_status` method.
@@ -630,8 +630,7 @@ Returns
 ### describe_index
 
 Describes an existing Amazon Kendra index See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/kendra-2019-02-03/DescribeIndex>`\_
-**Request Syntax** response = client.describe_index( Id='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/kendra-2019-02-03/DescribeIndex).
 
 Type annotations for `boto3.client("kendra").describe_index` method.
 

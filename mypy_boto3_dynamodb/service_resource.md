@@ -201,28 +201,40 @@ Boto3 documentation:
 
 ### Table attributes
 
-- `attribute_definitions`: `List`\[`Any`\]
+- `attribute_definitions`:
+  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
 - `table_name`: `str`
-- `key_schema`: `List`\[`Any`\]
-- `table_status`: `str`
+- `key_schema`:
+  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
+- `table_status`: [TableStatusType](./literals.md#tablestatustype)
 - `creation_date_time`: `datetime`
-- `provisioned_throughput`: `Dict`\[`str`, `Any`\]
+- `provisioned_throughput`:
+  [ProvisionedThroughputDescriptionResponseMetadataTypeDef](./type_defs.md#provisionedthroughputdescriptionresponsemetadatatypedef)
 - `table_size_bytes`: `int`
 - `item_count`: `int`
 - `table_arn`: `str`
 - `table_id`: `str`
-- `billing_mode_summary`: `Dict`\[`str`, `Any`\]
-- `local_secondary_indexes`: `List`\[`Any`\]
-- `global_secondary_indexes`: `List`\[`Any`\]
-- `stream_specification`: `Dict`\[`str`, `Any`\]
+- `billing_mode_summary`:
+  [BillingModeSummaryResponseMetadataTypeDef](./type_defs.md#billingmodesummaryresponsemetadatatypedef)
+- `local_secondary_indexes`:
+  `List`\[[LocalSecondaryIndexDescriptionTypeDef](./type_defs.md#localsecondaryindexdescriptiontypedef)\]
+- `global_secondary_indexes`:
+  `List`\[[GlobalSecondaryIndexDescriptionTypeDef](./type_defs.md#globalsecondaryindexdescriptiontypedef)\]
+- `stream_specification`:
+  [StreamSpecificationResponseMetadataTypeDef](./type_defs.md#streamspecificationresponsemetadatatypedef)
 - `latest_stream_label`: `str`
 - `latest_stream_arn`: `str`
 - `global_table_version`: `str`
-- `replicas`: `List`\[`Any`\]
-- `restore_summary`: `Dict`\[`str`, `Any`\]
-- `sse_description`: `Dict`\[`str`, `Any`\]
-- `archival_summary`: `Dict`\[`str`, `Any`\]
-- `table_class_summary`: `Dict`\[`str`, `Any`\]
+- `replicas`:
+  `List`\[[ReplicaDescriptionTypeDef](./type_defs.md#replicadescriptiontypedef)\]
+- `restore_summary`:
+  [RestoreSummaryResponseMetadataTypeDef](./type_defs.md#restoresummaryresponsemetadatatypedef)
+- `sse_description`:
+  [SSEDescriptionResponseMetadataTypeDef](./type_defs.md#ssedescriptionresponsemetadatatypedef)
+- `archival_summary`:
+  [ArchivalSummaryResponseMetadataTypeDef](./type_defs.md#archivalsummaryresponsemetadatatypedef)
+- `table_class_summary`:
+  [TableClassSummaryResponseMetadataTypeDef](./type_defs.md#tableclasssummaryresponsemetadatatypedef)
 - `name`: `str`
 
 ### Table methods

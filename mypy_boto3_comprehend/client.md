@@ -348,8 +348,7 @@ Returns
 
 Creates a model-specific endpoint for synchronous inference for a previously
 trained custom model See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/comprehend-2017-11-27/CreateEndpoint>`\_
-**Request Syntax** response = client.create_endpoint( EndpointName...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/comprehend-2017-11-27/CreateEndpoint).
 
 Type annotations for `boto3.client("comprehend").create_endpoint` method.
 
@@ -853,8 +852,7 @@ Returns
 
 Gets a list of summaries of the document classifiers that you have created See
 also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/comprehend -2017-11-27/ListDocumentClassifierSummaries>`\_
-**Request Syntax** response = client.list_document_classifier_summaries( ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/comprehend-2017-11-27/ListDocumentClassifierSummaries).
 
 Type annotations for
 `boto3.client("comprehend").list_document_classifier_summaries` method.

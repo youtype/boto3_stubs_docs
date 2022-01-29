@@ -959,7 +959,7 @@ Boto3 documentation:
 ### AccessKey attributes
 
 - `access_key_id`: `str`
-- `status`: `str`
+- `status`: [statusTypeType](./literals.md#statustypetype)
 - `create_date`: `datetime`
 - `user_name`: `str`
 - `id`: `str`
@@ -1050,7 +1050,7 @@ Boto3 documentation:
 ### AccessKeyPair attributes
 
 - `access_key_id`: `str`
-- `status`: `str`
+- `status`: [statusTypeType](./literals.md#statustypetype)
 - `secret_access_key`: `str`
 - `create_date`: `datetime`
 - `user_name`: `str`
@@ -1226,7 +1226,8 @@ Boto3 documentation:
 
 ### AccountSummary attributes
 
-- `summary_map`: `Dict`\[`str`, `Any`\]
+- `summary_map`:
+  `Dict`\[[summaryKeyTypeType](./literals.md#summarykeytypetype), `int`\]
 
 ### AccountSummary methods
 
@@ -1345,8 +1346,9 @@ Boto3 documentation:
 - `arn`: `str`
 - `create_date`: `datetime`
 - `password_last_used`: `datetime`
-- `permissions_boundary`: `Dict`\[`str`, `Any`\]
-- `tags`: `List`\[`Any`\]
+- `permissions_boundary`:
+  [AttachedPermissionsBoundaryResponseMetadataTypeDef](./type_defs.md#attachedpermissionsboundaryresponsemetadatatypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `user`: [User](#user)
 - `access_keys`:
   [CurrentUserAccessKeysCollection](#currentuseraccesskeyscollection)
@@ -1837,10 +1839,10 @@ Boto3 documentation:
 - `instance_profile_id`: `str`
 - `arn`: `str`
 - `create_date`: `datetime`
-- `roles_attribute`: `List`\[`Any`\]
-- `tags`: `List`\[`Any`\]
+- `roles_attribute`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `name`: `str`
-- `roles`: [Role](#role)
+- `roles`: `List`\[[Role](#role)\]
 
 ### InstanceProfile methods
 
@@ -2148,7 +2150,7 @@ Boto3 documentation:
 - `description`: `str`
 - `create_date`: `datetime`
 - `update_date`: `datetime`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `arn`: `str`
 - `default_version`: [PolicyVersion](#policyversion)
 - `attached_groups`:
@@ -2499,9 +2501,11 @@ Boto3 documentation:
 - `assume_role_policy_document`: `str`
 - `description`: `str`
 - `max_session_duration`: `int`
-- `permissions_boundary`: `Dict`\[`str`, `Any`\]
-- `tags`: `List`\[`Any`\]
-- `role_last_used`: `Dict`\[`str`, `Any`\]
+- `permissions_boundary`:
+  [AttachedPermissionsBoundaryResponseMetadataTypeDef](./type_defs.md#attachedpermissionsboundaryresponsemetadatatypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `role_last_used`:
+  [RoleLastUsedResponseMetadataTypeDef](./type_defs.md#rolelastusedresponsemetadatatypedef)
 - `name`: `str`
 - `attached_policies`:
   [RoleAttachedPoliciesCollection](#roleattachedpoliciescollection)
@@ -2787,7 +2791,7 @@ Boto3 documentation:
 - `saml_metadata_document`: `str`
 - `create_date`: `datetime`
 - `valid_until`: `datetime`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `arn`: `str`
 
 ### SamlProvider methods
@@ -2869,10 +2873,11 @@ Boto3 documentation:
 
 ### ServerCertificate attributes
 
-- `server_certificate_metadata`: `Dict`\[`str`, `Any`\]
+- `server_certificate_metadata`:
+  [ServerCertificateMetadataResponseMetadataTypeDef](./type_defs.md#servercertificatemetadataresponsemetadatatypedef)
 - `certificate_body`: `str`
 - `certificate_chain`: `str`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `name`: `str`
 
 ### ServerCertificate methods
@@ -2957,7 +2962,7 @@ Boto3 documentation:
 
 - `certificate_id`: `str`
 - `certificate_body`: `str`
-- `status`: `str`
+- `status`: [statusTypeType](./literals.md#statustypetype)
 - `upload_date`: `datetime`
 - `user_name`: `str`
 - `id`: `str`
@@ -3053,8 +3058,9 @@ Boto3 documentation:
 - `arn`: `str`
 - `create_date`: `datetime`
 - `password_last_used`: `datetime`
-- `permissions_boundary`: `Dict`\[`str`, `Any`\]
-- `tags`: `List`\[`Any`\]
+- `permissions_boundary`:
+  [AttachedPermissionsBoundaryResponseMetadataTypeDef](./type_defs.md#attachedpermissionsboundaryresponsemetadatatypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `name`: `str`
 - `access_keys`: [UserAccessKeysCollection](#useraccesskeyscollection)
 - `attached_policies`:
@@ -3595,9 +3601,10 @@ Boto3 documentation:
 
 - `base32_string_seed`: `bytes`
 - `qr_code_png`: `bytes`
-- `user_attribute`: `Dict`\[`str`, `Any`\]
+- `user_attribute`:
+  [UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef)
 - `enable_date`: `datetime`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `serial_number`: `str`
 - `user`: [User](#user)
 

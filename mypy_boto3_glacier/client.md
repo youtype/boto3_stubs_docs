@@ -417,8 +417,9 @@ Returns [GetJobOutputOutputTypeDef](./type_defs.md#getjoboutputoutputtypedef).
 ### get_vault_access_policy
 
 This operation retrieves the `access-policy` subresource set on the vault; for
-more information on setting this subresource, see
-`Set Vault Access Policy (PUT access-policy) <https://docs.aws.amazon.com/amazonglacier/latest/dev/api- SetVaultAccessPolicy.html>`\_\_.
+more information on setting this subresource, see \[Set Vault Access Policy
+(PUT access-policy)\](https://docs.aws.amazon.com/amazonglacier/latest/dev/api-
+SetVaultAccessPolicy.html)\_.
 
 Type annotations for `boto3.client("glacier").get_vault_access_policy` method.
 

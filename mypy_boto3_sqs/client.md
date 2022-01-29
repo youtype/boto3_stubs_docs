@@ -100,7 +100,7 @@ Returns [Exceptions](#exceptions).
 ### add_permission
 
 Adds a permission to a queue for a specific
-`principal <https://docs.aws.amazon.com/general/latest/gr/glos-chap.html#P>`\_\_.
+[principal](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html#P)\_.
 
 Type annotations for `boto3.client("sqs").add_permission` method.
 

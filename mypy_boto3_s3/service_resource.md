@@ -1015,8 +1015,9 @@ Boto3 documentation:
 
 ### BucketAcl attributes
 
-- `owner`: `Dict`\[`str`, `Any`\]
-- `grants`: `List`\[`Any`\]
+- `owner`:
+  [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
+- `grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `bucket_name`: `str`
 
 ### BucketAcl methods
@@ -1105,7 +1106,7 @@ Boto3 documentation:
 
 ### BucketCors attributes
 
-- `cors_rules`: `List`\[`Any`\]
+- `cors_rules`: `List`\[[CORSRuleTypeDef](./type_defs.md#corsruletypedef)\]
 - `bucket_name`: `str`
 
 ### BucketCors methods
@@ -1205,7 +1206,7 @@ Boto3 documentation:
 
 ### BucketLifecycle attributes
 
-- `rules`: `List`\[`Any`\]
+- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `bucket_name`: `str`
 
 ### BucketLifecycle methods
@@ -1304,7 +1305,8 @@ Boto3 documentation:
 
 ### BucketLifecycleConfiguration attributes
 
-- `rules`: `List`\[`Any`\]
+- `rules`:
+  `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
 - `bucket_name`: `str`
 
 ### BucketLifecycleConfiguration methods
@@ -1404,7 +1406,8 @@ Boto3 documentation:
 
 ### BucketLogging attributes
 
-- `logging_enabled`: `Dict`\[`str`, `Any`\]
+- `logging_enabled`:
+  [LoggingEnabledResponseMetadataTypeDef](./type_defs.md#loggingenabledresponsemetadatatypedef)
 - `bucket_name`: `str`
 
 ### BucketLogging methods
@@ -1489,9 +1492,12 @@ Boto3 documentation:
 
 ### BucketNotification attributes
 
-- `topic_configurations`: `List`\[`Any`\]
-- `queue_configurations`: `List`\[`Any`\]
-- `lambda_function_configurations`: `List`\[`Any`\]
+- `topic_configurations`:
+  `List`\[[TopicConfigurationTypeDef](./type_defs.md#topicconfigurationtypedef)\]
+- `queue_configurations`:
+  `List`\[[QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef)\]
+- `lambda_function_configurations`:
+  `List`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
 - `event_bridge_configuration`: `Dict`\[`str`, `Any`\]
 - `bucket_name`: `str`
 
@@ -1677,7 +1683,7 @@ Boto3 documentation:
 
 ### BucketRequestPayment attributes
 
-- `payer`: `str`
+- `payer`: [PayerType](./literals.md#payertype)
 - `bucket_name`: `str`
 
 ### BucketRequestPayment methods
@@ -1761,7 +1767,7 @@ Boto3 documentation:
 
 ### BucketTagging attributes
 
-- `tag_set`: `List`\[`Any`\]
+- `tag_set`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `bucket_name`: `str`
 
 ### BucketTagging methods
@@ -1859,8 +1865,9 @@ Boto3 documentation:
 
 ### BucketVersioning attributes
 
-- `status`: `str`
-- `mfa_delete`: `str`
+- `status`:
+  [BucketVersioningStatusType](./literals.md#bucketversioningstatustype)
+- `mfa_delete`: [MFADeleteStatusType](./literals.md#mfadeletestatustype)
 - `bucket_name`: `str`
 
 ### BucketVersioning methods
@@ -1985,10 +1992,14 @@ Boto3 documentation:
 
 ### BucketWebsite attributes
 
-- `redirect_all_requests_to`: `Dict`\[`str`, `Any`\]
-- `index_document`: `Dict`\[`str`, `Any`\]
-- `error_document`: `Dict`\[`str`, `Any`\]
-- `routing_rules`: `List`\[`Any`\]
+- `redirect_all_requests_to`:
+  [RedirectAllRequestsToResponseMetadataTypeDef](./type_defs.md#redirectallrequeststoresponsemetadatatypedef)
+- `index_document`:
+  [IndexDocumentResponseMetadataTypeDef](./type_defs.md#indexdocumentresponsemetadatatypedef)
+- `error_document`:
+  [ErrorDocumentResponseMetadataTypeDef](./type_defs.md#errordocumentresponsemetadatatypedef)
+- `routing_rules`:
+  `List`\[[RoutingRuleTypeDef](./type_defs.md#routingruletypedef)\]
 - `bucket_name`: `str`
 
 ### BucketWebsite methods
@@ -2092,9 +2103,11 @@ Boto3 documentation:
 - `upload_id`: `str`
 - `key`: `str`
 - `initiated`: `datetime`
-- `storage_class`: `str`
-- `owner`: `Dict`\[`str`, `Any`\]
-- `initiator`: `Dict`\[`str`, `Any`\]
+- `storage_class`: [StorageClassType](./literals.md#storageclasstype)
+- `owner`:
+  [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
+- `initiator`:
+  [InitiatorResponseMetadataTypeDef](./type_defs.md#initiatorresponsemetadatatypedef)
 - `bucket_name`: `str`
 - `object_key`: `str`
 - `id`: `str`
@@ -2339,7 +2352,7 @@ Boto3 documentation:
 - `accept_ranges`: `str`
 - `expiration`: `str`
 - `restore`: `str`
-- `archive_status`: `str`
+- `archive_status`: [ArchiveStatusType](./literals.md#archivestatustype)
 - `last_modified`: `datetime`
 - `content_length`: `int`
 - `e_tag`: `str`
@@ -2352,19 +2365,23 @@ Boto3 documentation:
 - `content_type`: `str`
 - `expires`: `datetime`
 - `website_redirect_location`: `str`
-- `server_side_encryption`: `str`
-- `metadata`: `Dict`\[`str`, `Any`\]
+- `server_side_encryption`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `metadata`: `Dict`\[`str`, `str`\]
 - `sse_customer_algorithm`: `str`
 - `sse_customer_key_md5`: `str`
 - `ssekms_key_id`: `str`
 - `bucket_key_enabled`: `bool`
-- `storage_class`: `str`
-- `request_charged`: `str`
-- `replication_status`: `str`
+- `storage_class`: [StorageClassType](./literals.md#storageclasstype)
+- `request_charged`: `Literal['requester']` (see
+  [RequestChargedType](./literals.md#requestchargedtype))
+- `replication_status`:
+  [ReplicationStatusType](./literals.md#replicationstatustype)
 - `parts_count`: `int`
-- `object_lock_mode`: `str`
+- `object_lock_mode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
 - `object_lock_retain_until_date`: `datetime`
-- `object_lock_legal_hold_status`: `str`
+- `object_lock_legal_hold_status`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `bucket_name`: `str`
 - `key`: `str`
 
@@ -2834,9 +2851,11 @@ Boto3 documentation:
 
 ### ObjectAcl attributes
 
-- `owner`: `Dict`\[`str`, `Any`\]
-- `grants`: `List`\[`Any`\]
-- `request_charged`: `str`
+- `owner`:
+  [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
+- `grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
+- `request_charged`: `Literal['requester']` (see
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `bucket_name`: `str`
 - `object_key`: `str`
 
@@ -2935,8 +2954,10 @@ Boto3 documentation:
 - `last_modified`: `datetime`
 - `e_tag`: `str`
 - `size`: `int`
-- `storage_class`: `str`
-- `owner`: `Dict`\[`str`, `Any`\]
+- `storage_class`:
+  [ObjectStorageClassType](./literals.md#objectstorageclasstype)
+- `owner`:
+  [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
 - `bucket_name`: `str`
 - `key`: `str`
 
@@ -3312,12 +3333,14 @@ Boto3 documentation:
 
 - `e_tag`: `str`
 - `size`: `int`
-- `storage_class`: `str`
+- `storage_class`: `Literal['STANDARD']` (see
+  [ObjectVersionStorageClassType](./literals.md#objectversionstorageclasstype))
 - `key`: `str`
 - `version_id`: `str`
 - `is_latest`: `bool`
 - `last_modified`: `datetime`
-- `owner`: `Dict`\[`str`, `Any`\]
+- `owner`:
+  [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
 - `bucket_name`: `str`
 - `object_key`: `str`
 - `id`: `str`

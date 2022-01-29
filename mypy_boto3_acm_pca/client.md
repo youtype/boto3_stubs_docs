@@ -272,7 +272,8 @@ Returns
 ### describe_certificate_authority_audit_report
 
 Lists information about a specific audit report created by calling the
-`CreateCertificateAuthorityAuditReport <https://docs.aws.amazon.com/acm- pca/latest/APIReference/API_CreateCertificateAuthorityAuditReport.html>`\_\_
+\[CreateCertificateAuthorityAuditReport\](https://docs.aws.amazon.com/acm-
+pca/latest/APIReference/API_CreateCertificateAuthorityAuditReport.html)\_
 action.
 
 Type annotations for
@@ -443,8 +444,8 @@ Returns
 ### list_certificate_authorities
 
 Lists the private certificate authorities that you created by using the
-`CreateCertificateAuthority <https://docs.aws.amazon.com/acm- pca/latest/APIReference/API_CreateCertificateAuthority.html>`\_\_
-action.
+\[CreateCertificateAuthority\](https://docs.aws.amazon.com/acm-
+pca/latest/APIReference/API_CreateCertificateAuthority.html)\_ action.
 
 Type annotations for `boto3.client("acm-pca").list_certificate_authorities`
 method.

@@ -178,9 +178,9 @@ Returns
 
 ### connect_custom_key_store
 
-Connects or reconnects a
-`custom key store <https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store- overview.html>`\_\_
-to its associated CloudHSM cluster.
+Connects or reconnects a \[custom key
+store\](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-
+overview.html)\_ to its associated CloudHSM cluster.
 
 Type annotations for `boto3.client("kms").connect_custom_key_store` method.
 
@@ -215,10 +215,10 @@ Keyword-only arguments:
 
 ### create_custom_key_store
 
-Creates a
-`custom key store <https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store- overview.html>`\_\_
-that is associated with an
-`CloudHSM cluster <https://docs.aws.amazon.com/cloudhsm/latest/userguide/clusters.html>`\_\_
+Creates a \[custom key
+store\](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-
+overview.html)\_ that is associated with an
+[CloudHSM cluster](https://docs.aws.amazon.com/cloudhsm/latest/userguide/clusters.html)\_
 that you own and manage.
 
 Type annotations for `boto3.client("kms").create_custom_key_store` method.
@@ -269,9 +269,9 @@ Returns
 
 ### create_key
 
-Creates a unique customer managed
-`KMS key <https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms- keys>`\_\_
-in your Amazon Web Services account and Region.
+Creates a unique customer managed \[KMS
+key\](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms-
+keys)\_ in your Amazon Web Services account and Region.
 
 Type annotations for `boto3.client("kms").create_key` method.
 
@@ -342,8 +342,9 @@ Keyword-only arguments:
 
 ### delete_custom_key_store
 
-Deletes a
-`custom key store <https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store- overview.html>`\_\_.
+Deletes a \[custom key
+store\](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-
+overview.html)\_.
 
 Type annotations for `boto3.client("kms").delete_custom_key_store` method.
 
@@ -377,9 +378,9 @@ Keyword-only arguments:
 
 ### describe_custom_key_stores
 
-Gets information about
-`custom key stores <https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store- overview.html>`\_\_
-in the account and Region.
+Gets information about \[custom key
+stores\](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-
+overview.html)\_ in the account and Region.
 
 Type annotations for `boto3.client("kms").describe_custom_key_stores` method.
 
@@ -437,9 +438,9 @@ Keyword-only arguments:
 
 ### disable_key_rotation
 
-Disables
-`automatic rotation of the key material <https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html>`\_\_
-for the specified symmetric KMS key.
+Disables \[automatic rotation of the key
+material\](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-
+keys.html)\_ for the specified symmetric KMS key.
 
 Type annotations for `boto3.client("kms").disable_key_rotation` method.
 
@@ -455,9 +456,9 @@ Keyword-only arguments:
 
 ### disconnect_custom_key_store
 
-Disconnects the
-`custom key store <https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store- overview.html>`\_\_
-from its associated CloudHSM cluster.
+Disconnects the \[custom key
+store\](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-
+overview.html)\_ from its associated CloudHSM cluster.
 
 Type annotations for `boto3.client("kms").disconnect_custom_key_store` method.
 
@@ -491,9 +492,9 @@ Keyword-only arguments:
 
 ### enable_key_rotation
 
-Enables
-`automatic rotation of the key material <https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html>`\_\_
-for the specified symmetric KMS key.
+Enables \[automatic rotation of the key
+material\](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-
+keys.html)\_ for the specified symmetric KMS key.
 
 Type annotations for `boto3.client("kms").enable_key_rotation` method.
 
@@ -685,9 +686,9 @@ Returns
 
 ### get_key_rotation_status
 
-Gets a Boolean value that indicates whether
-`automatic rotation of the key material <https://docs.aws.amazon.com/kms/latest/developerguide/rotate- keys.html>`\_\_
-is enabled for the specified KMS key.
+Gets a Boolean value that indicates whether \[automatic rotation of the key
+material\](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-
+keys.html)\_ is enabled for the specified KMS key.
 
 Type annotations for `boto3.client("kms").get_key_rotation_status` method.
 
@@ -1029,7 +1030,7 @@ Returns
 ### sign
 
 Creates a
-`digital signature <https://en.wikipedia.org/wiki/Digital_signature>`\_\_ for a
+[digital signature](https://en.wikipedia.org/wiki/Digital_signature)\_ for a
 message or message digest by using the private key in an asymmetric KMS key.
 
 Type annotations for `boto3.client("kms").sign` method.
@@ -1054,9 +1055,9 @@ Returns [SignResponseTypeDef](./type_defs.md#signresponsetypedef).
 
 ### tag_resource
 
-Adds or edits tags on a
-`customer managed key <https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer- cmk>`\_\_
-.
+Adds or edits tags on a \[customer managed
+key\](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-
+cmk)\_ .
 
 Type annotations for `boto3.client("kms").tag_resource` method.
 
@@ -1073,8 +1074,9 @@ Keyword-only arguments:
 
 ### untag_resource
 
-Deletes tags from a
-`customer managed key <https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer- cmk>`\_\_.
+Deletes tags from a \[customer managed
+key\](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-
+cmk)\_.
 
 Type annotations for `boto3.client("kms").untag_resource` method.
 

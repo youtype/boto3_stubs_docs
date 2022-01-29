@@ -226,7 +226,7 @@ Boto3 documentation:
 - `physical_resource_id`: `str`
 - `resource_type`: `str`
 - `timestamp`: `datetime`
-- `resource_status`: `str`
+- `resource_status`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `resource_status_reason`: `str`
 - `resource_properties`: `str`
 - `client_request_token`: `str`
@@ -268,24 +268,26 @@ Boto3 documentation:
 - `stack_name`: `str`
 - `change_set_id`: `str`
 - `description`: `str`
-- `parameters`: `List`\[`Any`\]
+- `parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `creation_time`: `datetime`
 - `deletion_time`: `datetime`
 - `last_updated_time`: `datetime`
-- `rollback_configuration`: `Dict`\[`str`, `Any`\]
-- `stack_status`: `str`
+- `rollback_configuration`:
+  [RollbackConfigurationResponseMetadataTypeDef](./type_defs.md#rollbackconfigurationresponsemetadatatypedef)
+- `stack_status`: [StackStatusType](./literals.md#stackstatustype)
 - `stack_status_reason`: `str`
 - `disable_rollback`: `bool`
-- `notification_arns`: `List`\[`Any`\]
+- `notification_arns`: `List`\[`str`\]
 - `timeout_in_minutes`: `int`
-- `capabilities`: `List`\[`Any`\]
-- `outputs`: `List`\[`Any`\]
+- `capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `role_arn`: `str`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `enable_termination_protection`: `bool`
 - `parent_id`: `str`
 - `root_id`: `str`
-- `drift_information`: `Dict`\[`str`, `Any`\]
+- `drift_information`:
+  [StackDriftInformationResponseMetadataTypeDef](./type_defs.md#stackdriftinformationresponsemetadatatypedef)
 - `name`: `str`
 - `events`: [StackEventsCollection](#stackeventscollection)
 - `resource_summaries`:
@@ -477,12 +479,14 @@ Boto3 documentation:
 - `physical_resource_id`: `str`
 - `resource_type`: `str`
 - `last_updated_timestamp`: `datetime`
-- `resource_status`: `str`
+- `resource_status`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `resource_status_reason`: `str`
 - `description`: `str`
 - `metadata`: `str`
-- `drift_information`: `Dict`\[`str`, `Any`\]
-- `module_info`: `Dict`\[`str`, `Any`\]
+- `drift_information`:
+  [StackResourceDriftInformationResponseMetadataTypeDef](./type_defs.md#stackresourcedriftinformationresponsemetadatatypedef)
+- `module_info`:
+  [ModuleInfoResponseMetadataTypeDef](./type_defs.md#moduleinforesponsemetadatatypedef)
 - `stack_name`: `str`
 - `logical_id`: `str`
 
@@ -554,10 +558,12 @@ Boto3 documentation:
 - `physical_resource_id`: `str`
 - `resource_type`: `str`
 - `last_updated_timestamp`: `datetime`
-- `resource_status`: `str`
+- `resource_status`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `resource_status_reason`: `str`
-- `drift_information`: `Dict`\[`str`, `Any`\]
-- `module_info`: `Dict`\[`str`, `Any`\]
+- `drift_information`:
+  [StackResourceDriftInformationSummaryResponseMetadataTypeDef](./type_defs.md#stackresourcedriftinformationsummaryresponsemetadatatypedef)
+- `module_info`:
+  [ModuleInfoResponseMetadataTypeDef](./type_defs.md#moduleinforesponsemetadatatypedef)
 - `stack_name`: `str`
 - `logical_id`: `str`
 

@@ -157,7 +157,7 @@ Returns [Exceptions](#exceptions).
 ### add_layer_version_permission
 
 Adds permissions to the resource-based policy of a version of an
-`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
+[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_.
 
 Type annotations for `boto3.client("lambda").add_layer_version_permission`
 method.
@@ -226,9 +226,8 @@ Returns `bool`.
 
 ### create_alias
 
-Creates an
-`alias <https://docs.aws.amazon.com/lambda/latest/dg/versioning- aliases.html>`\_\_
-for a Lambda function version.
+Creates an \[alias\](https://docs.aws.amazon.com/lambda/latest/dg/versioning-
+aliases.html)\_ for a Lambda function version.
 
 Type annotations for `boto3.client("lambda").create_alias` method.
 
@@ -365,7 +364,7 @@ Returns
 ### delete_alias
 
 Deletes a Lambda function
-`alias <https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html>`\_\_
+[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)\_
 .
 
 Type annotations for `boto3.client("lambda").delete_alias` method.
@@ -402,8 +401,9 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_event_source_mapping
 
-Deletes an
-`event source mapping <https://docs.aws.amazon.com/lambda/latest/dg/intro-invocation-modes.html>`\_\_.
+Deletes an \[event source
+mapping\](https://docs.aws.amazon.com/lambda/latest/dg/intro-invocation-
+modes.html)\_.
 
 Type annotations for `boto3.client("lambda").delete_event_source_mapping`
 method.
@@ -494,7 +494,7 @@ Keyword-only arguments:
 ### delete_layer_version
 
 Deletes a version of an
-`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
+[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_.
 
 Type annotations for `boto3.client("lambda").delete_layer_version` method.
 
@@ -548,8 +548,8 @@ Returns `str`.
 ### get_account_settings
 
 Retrieves details about your account's
-`limits <https://docs.aws.amazon.com/lambda/latest/dg/limits.html>`\_\_ and
-usage in an Amazon Web Services Region.
+[limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)\_ and usage
+in an Amazon Web Services Region.
 
 Type annotations for `boto3.client("lambda").get_account_settings` method.
 
@@ -562,7 +562,7 @@ Returns
 ### get_alias
 
 Returns details about a Lambda function
-`alias <https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html>`\_\_
+[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)\_
 .
 
 Type annotations for `boto3.client("lambda").get_alias` method.
@@ -725,7 +725,7 @@ Returns
 ### get_layer_version
 
 Returns information about a version of an
-`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_
 , with a link to download the layer archive that's valid for 10 minutes.
 
 Type annotations for `boto3.client("lambda").get_layer_version` method.
@@ -747,7 +747,7 @@ Returns
 ### get_layer_version_by_arn
 
 Returns information about a version of an
-`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_
 , with a link to download the layer archive that's valid for 10 minutes.
 
 Type annotations for `boto3.client("lambda").get_layer_version_by_arn` method.
@@ -768,7 +768,7 @@ Returns
 ### get_layer_version_policy
 
 Returns the permission policy for a version of an
-`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
+[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_.
 
 Type annotations for `boto3.client("lambda").get_layer_version_policy` method.
 
@@ -788,9 +788,9 @@ Returns
 
 ### get_policy
 
-Returns the
-`resource-based IAM policy <https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource- based.html>`\_\_
-for a function, version, or alias.
+Returns the \[resource-based IAM
+policy\](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-
+based.html)\_ for a function, version, or alias.
 
 Type annotations for `boto3.client("lambda").get_policy` method.
 
@@ -876,7 +876,7 @@ Returns
 ### list_aliases
 
 Returns a list of
-`aliases <https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html>`\_\_
+[aliases](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)\_
 for a Lambda function.
 
 Type annotations for `boto3.client("lambda").list_aliases` method.
@@ -899,8 +899,9 @@ Returns
 
 ### list_code_signing_configs
 
-Returns a list of
-`code signing configurations <https://docs.aws.amazon.com/lambda/latest/dg/configuring-codesigning.html>`\_\_.
+Returns a list of \[code signing
+configurations\](https://docs.aws.amazon.com/lambda/latest/dg/configuring-
+codesigning.html)\_.
 
 Type annotations for `boto3.client("lambda").list_code_signing_configs` method.
 
@@ -1012,7 +1013,7 @@ Returns
 ### list_layer_versions
 
 Lists the versions of an
-`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
+[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_.
 
 Type annotations for `boto3.client("lambda").list_layer_versions` method.
 
@@ -1035,9 +1036,9 @@ Returns
 
 ### list_layers
 
-Lists
-`Lambda layers <https://docs.aws.amazon.com/lambda/latest/dg/invocation- layers.html>`\_\_
-and shows information about the latest version of each.
+Lists \[Lambda
+layers\](https://docs.aws.amazon.com/lambda/latest/dg/invocation-
+layers.html)\_ and shows information about the latest version of each.
 
 Type annotations for `boto3.client("lambda").list_layers` method.
 
@@ -1081,7 +1082,7 @@ Returns
 ### list_tags
 
 Returns a function's
-`tags <https://docs.aws.amazon.com/lambda/latest/dg/tagging.html>`\_\_.
+[tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html)\_.
 
 Type annotations for `boto3.client("lambda").list_tags` method.
 
@@ -1100,8 +1101,8 @@ Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 ### list_versions_by_function
 
 Returns a list of
-`versions <https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html>`\_\_
-, with the version-specific configuration of each.
+\[versions\](https://docs.aws.amazon.com/lambda/latest/dg/versioning-
+aliases.html)\_ , with the version-specific configuration of each.
 
 Type annotations for `boto3.client("lambda").list_versions_by_function` method.
 
@@ -1123,7 +1124,7 @@ Returns
 ### publish_layer_version
 
 Creates an
-`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_
 from a ZIP archive.
 
 Type annotations for `boto3.client("lambda").publish_layer_version` method.
@@ -1151,9 +1152,8 @@ Returns
 
 ### publish_version
 
-Creates a
-`version <https://docs.aws.amazon.com/lambda/latest/dg/versioning- aliases.html>`\_\_
-from the current code and configuration of a function.
+Creates a \[version\](https://docs.aws.amazon.com/lambda/latest/dg/versioning-
+aliases.html)\_ from the current code and configuration of a function.
 
 Type annotations for `boto3.client("lambda").publish_version` method.
 
@@ -1218,7 +1218,7 @@ Returns
 ### put_function_event_invoke_config
 
 Configures options for
-`asynchronous invocation <https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html>`\_\_
+[asynchronous invocation](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html)\_
 on a function, version, or alias.
 
 Type annotations for `boto3.client("lambda").put_function_event_invoke_config`
@@ -1267,7 +1267,7 @@ Returns
 ### remove_layer_version_permission
 
 Removes a statement from the permissions policy for a version of an
-`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration- layers.html>`\_\_.
+[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_.
 
 Type annotations for `boto3.client("lambda").remove_layer_version_permission`
 method.
@@ -1307,8 +1307,8 @@ Keyword-only arguments:
 
 ### tag_resource
 
-Adds `tags <https://docs.aws.amazon.com/lambda/latest/dg/tagging.html>`\_\_ to
-a function.
+Adds [tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html)\_ to a
+function.
 
 Type annotations for `boto3.client("lambda").tag_resource` method.
 
@@ -1325,7 +1325,7 @@ Keyword-only arguments:
 
 ### untag_resource
 
-Removes `tags <https://docs.aws.amazon.com/lambda/latest/dg/tagging.html>`\_\_
+Removes [tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html)\_
 from a function.
 
 Type annotations for `boto3.client("lambda").untag_resource` method.
@@ -1344,7 +1344,7 @@ Keyword-only arguments:
 ### update_alias
 
 Updates the configuration of a Lambda function
-`alias <https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html>`\_\_
+[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)\_
 .
 
 Type annotations for `boto3.client("lambda").update_alias` method.

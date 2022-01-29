@@ -1263,9 +1263,7 @@ Keyword-only arguments:
 ### describe_account_attributes
 
 Returns a list of attributes attached to an account See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/redshift-2012-12- 01/DescribeAccountAttributes>`\_
-**Request Syntax** response = client.describe_account_attributes(
-AttributeNames=\[ 'string', ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/redshift-2012-12-01/DescribeAccountAttributes).
 
 Type annotations for `boto3.client("redshift").describe_account_attributes`
 method.

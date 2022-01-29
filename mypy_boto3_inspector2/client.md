@@ -267,8 +267,7 @@ Returns
 
 Describe Amazon Inspector configuration settings for an Amazon Web Services
 organization See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/ WebAPI/inspector2-2020-06-08/DescribeOrganizationConfiguration>`\_
-**Request Syntax** response = client.describe_organization_conf...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/inspector2-2020-06-08/DescribeOrganizationConfiguration).
 
 Type annotations for
 `boto3.client("inspector2").describe_organization_configuration` method.

@@ -181,9 +181,12 @@ Boto3 documentation:
 - `message_id`: `str`
 - `md5_of_body`: `str`
 - `body`: `str`
-- `attributes`: `Dict`\[`str`, `Any`\]
+- `attributes`:
+  `Dict`\[[MessageSystemAttributeNameType](./literals.md#messagesystemattributenametype),
+  `str`\]
 - `md5_of_message_attributes`: `str`
-- `message_attributes`: `Dict`\[`str`, `Any`\]
+- `message_attributes`: `Dict`\[`str`,
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 - `queue_url`: `str`
 - `receipt_handle`: `str`
 
@@ -255,7 +258,9 @@ Boto3 documentation:
 
 ### Queue attributes
 
-- `attributes`: `Dict`\[`str`, `Any`\]
+- `attributes`:
+  `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
+  `str`\]
 - `url`: `str`
 - `dead_letter_source_queues`:
   [QueueDeadLetterSourceQueuesCollection](#queuedeadlettersourcequeuescollection)
@@ -305,7 +310,7 @@ Returns [Message](#message).
 #### Queue.add_permission method
 
 Adds a permission to a queue for a specific
-`principal <https://docs.aws.amazon.com/general/latest/gr/glos-chap.html#P>`\_\_.
+[principal](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html#P)\_.
 
 Type annotations for `boto3.resource("sqs").add_permission` method.
 

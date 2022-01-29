@@ -1712,7 +1712,8 @@ Returns `Dict`\[`str`, `Any`\].
 ### delete_role_alias
 
 Deletes a role alias Requires permission to access the
-`DeleteRoleAlias <https://docs.aws.amazon.com/service- authorization/latest/reference/list_awsiot.html#awsiot-actions-as- permissions>`\_\_
+\[DeleteRoleAlias\](https://docs.aws.amazon.com/service-
+authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions)\_
 action.
 
 Type annotations for `boto3.client("iot").delete_role_alias` method.

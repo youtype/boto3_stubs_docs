@@ -291,8 +291,7 @@ Returns
 
 Specifies information about the inference scheduler being used, including name,
 model, status, and associated metadata See also:
-`AWS API Documentation <https:/ /docs.aws.amazon.com/goto/WebAPI/lookoutequipment-2020-12- 15/DescribeInferenceScheduler>`\_
-**Request Syntax** response = cli...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/lookoutequipment-2020-12-15/DescribeInferenceScheduler).
 
 Type annotations for
 `boto3.client("lookoutequipment").describe_inference_scheduler` method.

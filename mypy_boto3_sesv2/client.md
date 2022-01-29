@@ -1453,9 +1453,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### put_dedicated_ip_warmup_attributes
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/sesv2- 2019-09-27/PutDedicatedIpWarmupAttributes>`\_
-**Request Syntax** response = client.put_dedicated_ip_warmup_attributes(
-Ip='string', WarmupPercentage=123 ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/sesv2-2019-09-27/PutDedicatedIpWarmupAttributes).
 
 Type annotations for `boto3.client("sesv2").put_dedicated_ip_warmup_attributes`
 method.

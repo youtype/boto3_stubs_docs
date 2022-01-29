@@ -439,9 +439,9 @@ Returns
 ### get_matches
 
 Before calling this API, use
-`CreateDomain <https://docs.aws.amazon.com/customer profiles/latest/APIReference/API_CreateDomain.html>`\_\_
+[CreateDomain](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateDomain.html)\_
 or
-`UpdateDomain <https:/ /docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UpdateDomain.html> `\_\_
+[UpdateDomain](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UpdateDomain.html)\_
 to enable identity resolution: set `Matching` to tr...
 
 Type annotations for `boto3.client("customer-profiles").get_matches` method.

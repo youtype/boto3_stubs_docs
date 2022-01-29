@@ -737,9 +737,9 @@ Returns
 
 ### describe_elastic_ips
 
-Describes
-`Elastic IP addresses <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses- eip.html>`\_\_
-.
+Describes \[Elastic IP
+addresses\](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-
+addresses-eip.html)\_ .
 
 Type annotations for `boto3.client("opsworks").describe_elastic_ips` method.
 

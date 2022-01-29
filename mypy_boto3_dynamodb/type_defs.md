@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 - [Typed dictionaries for boto3 DynamoDB module](#typed-dictionaries-for-boto3-dynamodb-module)
+  - [ArchivalSummaryResponseMetadataTypeDef](#archivalsummaryresponsemetadatatypedef)
   - [ArchivalSummaryTypeDef](#archivalsummarytypedef)
   - [AttributeDefinitionTypeDef](#attributedefinitiontypedef)
   - [AttributeValueUpdateTypeDef](#attributevalueupdatetypedef)
@@ -31,6 +32,7 @@ type annotations stubs module
   - [BatchWriteItemInputRequestTypeDef](#batchwriteiteminputrequesttypedef)
   - [BatchWriteItemInputServiceResourceTypeDef](#batchwriteiteminputserviceresourcetypedef)
   - [BatchWriteItemOutputTypeDef](#batchwriteitemoutputtypedef)
+  - [BillingModeSummaryResponseMetadataTypeDef](#billingmodesummaryresponsemetadatatypedef)
   - [BillingModeSummaryTypeDef](#billingmodesummarytypedef)
   - [CapacityTypeDef](#capacitytypedef)
   - [ConditionCheckTypeDef](#conditionchecktypedef)
@@ -132,6 +134,7 @@ type annotations stubs module
   - [PointInTimeRecoveryDescriptionTypeDef](#pointintimerecoverydescriptiontypedef)
   - [PointInTimeRecoverySpecificationTypeDef](#pointintimerecoveryspecificationtypedef)
   - [ProjectionTypeDef](#projectiontypedef)
+  - [ProvisionedThroughputDescriptionResponseMetadataTypeDef](#provisionedthroughputdescriptionresponsemetadatatypedef)
   - [ProvisionedThroughputDescriptionTypeDef](#provisionedthroughputdescriptiontypedef)
   - [ProvisionedThroughputOverrideTypeDef](#provisionedthroughputoverridetypedef)
   - [ProvisionedThroughputTypeDef](#provisionedthroughputtypedef)
@@ -158,11 +161,13 @@ type annotations stubs module
   - [ReplicaUpdateTypeDef](#replicaupdatetypedef)
   - [ReplicationGroupUpdateTypeDef](#replicationgroupupdatetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RestoreSummaryResponseMetadataTypeDef](#restoresummaryresponsemetadatatypedef)
   - [RestoreSummaryTypeDef](#restoresummarytypedef)
   - [RestoreTableFromBackupInputRequestTypeDef](#restoretablefrombackupinputrequesttypedef)
   - [RestoreTableFromBackupOutputTypeDef](#restoretablefrombackupoutputtypedef)
   - [RestoreTableToPointInTimeInputRequestTypeDef](#restoretabletopointintimeinputrequesttypedef)
   - [RestoreTableToPointInTimeOutputTypeDef](#restoretabletopointintimeoutputtypedef)
+  - [SSEDescriptionResponseMetadataTypeDef](#ssedescriptionresponsemetadatatypedef)
   - [SSEDescriptionTypeDef](#ssedescriptiontypedef)
   - [SSESpecificationTypeDef](#ssespecificationtypedef)
   - [ScanInputRequestTypeDef](#scaninputrequesttypedef)
@@ -171,9 +176,11 @@ type annotations stubs module
   - [ServiceResourceTableRequestTypeDef](#serviceresourcetablerequesttypedef)
   - [SourceTableDetailsTypeDef](#sourcetabledetailstypedef)
   - [SourceTableFeatureDetailsTypeDef](#sourcetablefeaturedetailstypedef)
+  - [StreamSpecificationResponseMetadataTypeDef](#streamspecificationresponsemetadatatypedef)
   - [StreamSpecificationTypeDef](#streamspecificationtypedef)
   - [TableAutoScalingDescriptionTypeDef](#tableautoscalingdescriptiontypedef)
   - [TableBatchWriterRequestTypeDef](#tablebatchwriterrequesttypedef)
+  - [TableClassSummaryResponseMetadataTypeDef](#tableclasssummaryresponsemetadatatypedef)
   - [TableClassSummaryTypeDef](#tableclasssummarytypedef)
   - [TableDescriptionTypeDef](#tabledescriptiontypedef)
   - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
@@ -210,6 +217,20 @@ type annotations stubs module
   - [UpdateTypeDef](#updatetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WriteRequestTypeDef](#writerequesttypedef)
+
+## ArchivalSummaryResponseMetadataTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ArchivalSummaryResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `ArchivalDateTime`: `datetime`
+- `ArchivalReason`: `str`
+- `ArchivalBackupArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ArchivalSummaryTypeDef
 
@@ -568,6 +589,19 @@ Required fields:
   `List`\[[ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef)\]\]
 - `ConsumedCapacity`:
   `List`\[[ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## BillingModeSummaryResponseMetadataTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import BillingModeSummaryResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
+- `LastUpdateToPayPerRequestDateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2066,6 +2100,22 @@ Optional fields:
 - `ProjectionType`: [ProjectionTypeType](./literals.md#projectiontypetype)
 - `NonKeyAttributes`: `Sequence`\[`str`\]
 
+## ProvisionedThroughputDescriptionResponseMetadataTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputDescriptionResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `LastIncreaseDateTime`: `datetime`
+- `LastDecreaseDateTime`: `datetime`
+- `NumberOfDecreasesToday`: `int`
+- `ReadCapacityUnits`: `int`
+- `WriteCapacityUnits`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ProvisionedThroughputDescriptionTypeDef
 
 ```python
@@ -2560,6 +2610,21 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+## RestoreSummaryResponseMetadataTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import RestoreSummaryResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `SourceBackupArn`: `str`
+- `SourceTableArn`: `str`
+- `RestoreDateTime`: `datetime`
+- `RestoreInProgress`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## RestoreSummaryTypeDef
 
 ```python
@@ -2648,6 +2713,21 @@ Required fields:
 
 - `TableDescription`:
   [TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## SSEDescriptionResponseMetadataTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import SSEDescriptionResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Status`: [SSEStatusType](./literals.md#ssestatustype)
+- `SSEType`: [SSETypeType](./literals.md#ssetypetype)
+- `KMSMasterKeyArn`: `str`
+- `InaccessibleEncryptionDateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2821,6 +2901,19 @@ Optional fields:
 - `SSEDescription`:
   [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
 
+## StreamSpecificationResponseMetadataTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import StreamSpecificationResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `StreamEnabled`: `bool`
+- `StreamViewType`: [StreamViewTypeType](./literals.md#streamviewtypetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## StreamSpecificationTypeDef
 
 ```python
@@ -2857,6 +2950,19 @@ from mypy_boto3_dynamodb.type_defs import TableBatchWriterRequestTypeDef
 Optional fields:
 
 - `overwrite_by_pkeys`: `List`\[`str`\]
+
+## TableClassSummaryResponseMetadataTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import TableClassSummaryResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `TableClass`: [TableClassType](./literals.md#tableclasstype)
+- `LastUpdateDateTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TableClassSummaryTypeDef
 

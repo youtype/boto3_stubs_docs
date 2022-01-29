@@ -27,6 +27,7 @@ type annotations stubs module
   - [AttachUserPolicyRequestPolicyTypeDef](#attachuserpolicyrequestpolicytypedef)
   - [AttachUserPolicyRequestRequestTypeDef](#attachuserpolicyrequestrequesttypedef)
   - [AttachUserPolicyRequestUserTypeDef](#attachuserpolicyrequestusertypedef)
+  - [AttachedPermissionsBoundaryResponseMetadataTypeDef](#attachedpermissionsboundaryresponsemetadatatypedef)
   - [AttachedPermissionsBoundaryTypeDef](#attachedpermissionsboundarytypedef)
   - [AttachedPolicyTypeDef](#attachedpolicytypedef)
   - [ChangePasswordRequestRequestTypeDef](#changepasswordrequestrequesttypedef)
@@ -274,6 +275,7 @@ type annotations stubs module
   - [ResyncMFADeviceRequestMfaDeviceTypeDef](#resyncmfadevicerequestmfadevicetypedef)
   - [ResyncMFADeviceRequestRequestTypeDef](#resyncmfadevicerequestrequesttypedef)
   - [RoleDetailTypeDef](#roledetailtypedef)
+  - [RoleLastUsedResponseMetadataTypeDef](#rolelastusedresponsemetadatatypedef)
   - [RoleLastUsedTypeDef](#rolelastusedtypedef)
   - [RolePolicyRequestTypeDef](#rolepolicyrequesttypedef)
   - [RoleTypeDef](#roletypedef)
@@ -281,6 +283,7 @@ type annotations stubs module
   - [SAMLProviderListEntryTypeDef](#samlproviderlistentrytypedef)
   - [SSHPublicKeyMetadataTypeDef](#sshpublickeymetadatatypedef)
   - [SSHPublicKeyTypeDef](#sshpublickeytypedef)
+  - [ServerCertificateMetadataResponseMetadataTypeDef](#servercertificatemetadataresponsemetadatatypedef)
   - [ServerCertificateMetadataTypeDef](#servercertificatemetadatatypedef)
   - [ServerCertificateTypeDef](#servercertificatetypedef)
   - [ServiceLastAccessedTypeDef](#servicelastaccessedtypedef)
@@ -368,6 +371,7 @@ type annotations stubs module
   - [UserDetailTypeDef](#userdetailtypedef)
   - [UserMfaDeviceRequestTypeDef](#usermfadevicerequesttypedef)
   - [UserPolicyRequestTypeDef](#userpolicyrequesttypedef)
+  - [UserResponseMetadataTypeDef](#userresponsemetadatatypedef)
   - [UserSigningCertificateRequestTypeDef](#usersigningcertificaterequesttypedef)
   - [UserTypeDef](#usertypedef)
   - [VirtualMFADeviceTypeDef](#virtualmfadevicetypedef)
@@ -588,6 +592,20 @@ from mypy_boto3_iam.type_defs import AttachUserPolicyRequestUserTypeDef
 Required fields:
 
 - `PolicyArn`: `str`
+
+## AttachedPermissionsBoundaryResponseMetadataTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import AttachedPermissionsBoundaryResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `PermissionsBoundaryType`: `Literal['PermissionsBoundaryPolicy']` (see
+  [PermissionsBoundaryAttachmentTypeType](./literals.md#permissionsboundaryattachmenttypetype))
+- `PermissionsBoundaryArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AttachedPermissionsBoundaryTypeDef
 
@@ -3850,6 +3868,19 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `RoleLastUsed`: [RoleLastUsedTypeDef](./type_defs.md#rolelastusedtypedef)
 
+## RoleLastUsedResponseMetadataTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import RoleLastUsedResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `LastUsedDate`: `datetime`
+- `Region`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## RoleLastUsedTypeDef
 
 ```python
@@ -3948,6 +3979,23 @@ Required fields:
 Optional fields:
 
 - `UploadDate`: `datetime`
+
+## ServerCertificateMetadataResponseMetadataTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import ServerCertificateMetadataResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Path`: `str`
+- `ServerCertificateName`: `str`
+- `ServerCertificateId`: `str`
+- `Arn`: `str`
+- `UploadDate`: `datetime`
+- `Expiration`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ServerCertificateMetadataTypeDef
 
@@ -5054,6 +5102,26 @@ from mypy_boto3_iam.type_defs import UserPolicyRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+## UserResponseMetadataTypeDef
+
+```python
+from mypy_boto3_iam.type_defs import UserResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Path`: `str`
+- `UserName`: `str`
+- `UserId`: `str`
+- `Arn`: `str`
+- `CreateDate`: `datetime`
+- `PasswordLastUsed`: `datetime`
+- `PermissionsBoundary`:
+  [AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UserSigningCertificateRequestTypeDef
 

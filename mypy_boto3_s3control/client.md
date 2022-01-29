@@ -623,7 +623,7 @@ Returns
 
 Returns configuration information about the specified Object Lambda Access
 Point The following actions are related to `GetAccessPointForObjectLambda` \*
-`CreateAccessPointForObjectLambda <https://docs.aws.amazon.com/AmazonS3/latest/A PI/API_control_CreateAccessPointForObjectLambda.htm...`.
+`CreateAccessPointForObjectLambda <https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAccessPointForObjectLambda.htm...`.
 
 Type annotations for
 `boto3.client("s3control").get_access_point_for_object_lambda` method.

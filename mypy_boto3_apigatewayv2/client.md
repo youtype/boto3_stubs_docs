@@ -765,10 +765,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### export_api
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigatewayv2-2018-11-29/ExportApi>`\_
-**Request Syntax** response = client.export_api( ApiId='string',
-ExportVersion='string', IncludeExtensions=True|False, OutputType='YAML'|'JSON',
-Sp...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigatewayv2-2018-11-29/ExportApi).
 
 Type annotations for `boto3.client("apigatewayv2").export_api` method.
 

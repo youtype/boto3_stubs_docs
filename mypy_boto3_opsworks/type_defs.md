@@ -16,9 +16,11 @@ type annotations stubs module
   - [AttachElasticLoadBalancerRequestRequestTypeDef](#attachelasticloadbalancerrequestrequesttypedef)
   - [AutoScalingThresholdsTypeDef](#autoscalingthresholdstypedef)
   - [BlockDeviceMappingTypeDef](#blockdevicemappingtypedef)
+  - [ChefConfigurationResponseMetadataTypeDef](#chefconfigurationresponsemetadatatypedef)
   - [ChefConfigurationTypeDef](#chefconfigurationtypedef)
   - [CloneStackRequestRequestTypeDef](#clonestackrequestrequesttypedef)
   - [CloneStackResultTypeDef](#clonestackresulttypedef)
+  - [CloudWatchLogsConfigurationResponseMetadataTypeDef](#cloudwatchlogsconfigurationresponsemetadatatypedef)
   - [CloudWatchLogsConfigurationTypeDef](#cloudwatchlogsconfigurationtypedef)
   - [CloudWatchLogsLogStreamTypeDef](#cloudwatchlogslogstreamtypedef)
   - [CommandTypeDef](#commandtypedef)
@@ -104,8 +106,10 @@ type annotations stubs module
   - [GrantAccessResultTypeDef](#grantaccessresulttypedef)
   - [InstanceIdentityTypeDef](#instanceidentitytypedef)
   - [InstanceTypeDef](#instancetypedef)
+  - [InstancesCountResponseMetadataTypeDef](#instancescountresponsemetadatatypedef)
   - [InstancesCountTypeDef](#instancescounttypedef)
   - [LayerTypeDef](#layertypedef)
+  - [LifecycleEventConfigurationResponseMetadataTypeDef](#lifecycleeventconfigurationresponsemetadatatypedef)
   - [LifecycleEventConfigurationTypeDef](#lifecycleeventconfigurationtypedef)
   - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
   - [ListTagsResultTypeDef](#listtagsresulttypedef)
@@ -117,6 +121,7 @@ type annotations stubs module
   - [RaidArrayTypeDef](#raidarraytypedef)
   - [RdsDbInstanceTypeDef](#rdsdbinstancetypedef)
   - [RebootInstanceRequestRequestTypeDef](#rebootinstancerequestrequesttypedef)
+  - [RecipesResponseMetadataTypeDef](#recipesresponsemetadatatypedef)
   - [RecipesTypeDef](#recipestypedef)
   - [RegisterEcsClusterRequestRequestTypeDef](#registerecsclusterrequestrequesttypedef)
   - [RegisterEcsClusterResultTypeDef](#registerecsclusterresulttypedef)
@@ -138,8 +143,10 @@ type annotations stubs module
   - [SetPermissionRequestRequestTypeDef](#setpermissionrequestrequesttypedef)
   - [SetTimeBasedAutoScalingRequestRequestTypeDef](#settimebasedautoscalingrequestrequesttypedef)
   - [ShutdownEventConfigurationTypeDef](#shutdowneventconfigurationtypedef)
+  - [SourceResponseMetadataTypeDef](#sourceresponsemetadatatypedef)
   - [SourceTypeDef](#sourcetypedef)
   - [SslConfigurationTypeDef](#sslconfigurationtypedef)
+  - [StackConfigurationManagerResponseMetadataTypeDef](#stackconfigurationmanagerresponsemetadatatypedef)
   - [StackConfigurationManagerTypeDef](#stackconfigurationmanagertypedef)
   - [StackSummaryTypeDef](#stacksummarytypedef)
   - [StackTypeDef](#stacktypedef)
@@ -286,6 +293,19 @@ Optional fields:
 - `VirtualName`: `str`
 - `Ebs`: [EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef)
 
+## ChefConfigurationResponseMetadataTypeDef
+
+```python
+from mypy_boto3_opsworks.type_defs import ChefConfigurationResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `ManageBerkshelf`: `bool`
+- `BerkshelfVersion`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ChefConfigurationTypeDef
 
 ```python
@@ -344,6 +364,20 @@ from mypy_boto3_opsworks.type_defs import CloneStackResultTypeDef
 Required fields:
 
 - `StackId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CloudWatchLogsConfigurationResponseMetadataTypeDef
+
+```python
+from mypy_boto3_opsworks.type_defs import CloudWatchLogsConfigurationResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Enabled`: `bool`
+- `LogStreams`:
+  `List`\[[CloudWatchLogsLogStreamTypeDef](./type_defs.md#cloudwatchlogslogstreamtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1575,6 +1609,37 @@ Optional fields:
 - `VirtualizationType`:
   [VirtualizationTypeType](./literals.md#virtualizationtypetype)
 
+## InstancesCountResponseMetadataTypeDef
+
+```python
+from mypy_boto3_opsworks.type_defs import InstancesCountResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Assigning`: `int`
+- `Booting`: `int`
+- `ConnectionLost`: `int`
+- `Deregistering`: `int`
+- `Online`: `int`
+- `Pending`: `int`
+- `Rebooting`: `int`
+- `Registered`: `int`
+- `Registering`: `int`
+- `Requested`: `int`
+- `RunningSetup`: `int`
+- `SetupFailed`: `int`
+- `ShuttingDown`: `int`
+- `StartFailed`: `int`
+- `StopFailed`: `int`
+- `Stopped`: `int`
+- `Stopping`: `int`
+- `Terminated`: `int`
+- `Terminating`: `int`
+- `Unassigning`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## InstancesCountTypeDef
 
 ```python
@@ -1640,6 +1705,19 @@ Optional fields:
 - `UseEbsOptimizedInstances`: `bool`
 - `LifecycleEventConfiguration`:
   [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
+
+## LifecycleEventConfigurationResponseMetadataTypeDef
+
+```python
+from mypy_boto3_opsworks.type_defs import LifecycleEventConfigurationResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Shutdown`:
+  [ShutdownEventConfigurationTypeDef](./type_defs.md#shutdowneventconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LifecycleEventConfigurationTypeDef
 
@@ -1798,6 +1876,22 @@ from mypy_boto3_opsworks.type_defs import RebootInstanceRequestRequestTypeDef
 Required fields:
 
 - `InstanceId`: `str`
+
+## RecipesResponseMetadataTypeDef
+
+```python
+from mypy_boto3_opsworks.type_defs import RecipesResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Setup`: `List`\[`str`\]
+- `Configure`: `List`\[`str`\]
+- `Deploy`: `List`\[`str`\]
+- `Undeploy`: `List`\[`str`\]
+- `Shutdown`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RecipesTypeDef
 
@@ -2075,6 +2169,23 @@ Optional fields:
 - `ExecutionTimeout`: `int`
 - `DelayUntilElbConnectionsDrained`: `bool`
 
+## SourceResponseMetadataTypeDef
+
+```python
+from mypy_boto3_opsworks.type_defs import SourceResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Type`: [SourceTypeType](./literals.md#sourcetypetype)
+- `Url`: `str`
+- `Username`: `str`
+- `Password`: `str`
+- `SshKey`: `str`
+- `Revision`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## SourceTypeDef
 
 ```python
@@ -2104,6 +2215,19 @@ Required fields:
 Optional fields:
 
 - `Chain`: `str`
+
+## StackConfigurationManagerResponseMetadataTypeDef
+
+```python
+from mypy_boto3_opsworks.type_defs import StackConfigurationManagerResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StackConfigurationManagerTypeDef
 

@@ -156,6 +156,7 @@ type annotations stubs module
   - [CapacityReservationGroupTypeDef](#capacityreservationgrouptypedef)
   - [CapacityReservationOptionsRequestTypeDef](#capacityreservationoptionsrequesttypedef)
   - [CapacityReservationOptionsTypeDef](#capacityreservationoptionstypedef)
+  - [CapacityReservationSpecificationResponseResponseMetadataTypeDef](#capacityreservationspecificationresponseresponsemetadatatypedef)
   - [CapacityReservationSpecificationResponseTypeDef](#capacityreservationspecificationresponsetypedef)
   - [CapacityReservationSpecificationTypeDef](#capacityreservationspecificationtypedef)
   - [CapacityReservationTargetResponseTypeDef](#capacityreservationtargetresponsetypedef)
@@ -202,6 +203,7 @@ type annotations stubs module
   - [CopySnapshotRequestSnapshotTypeDef](#copysnapshotrequestsnapshottypedef)
   - [CopySnapshotResultTypeDef](#copysnapshotresulttypedef)
   - [CpuOptionsRequestTypeDef](#cpuoptionsrequesttypedef)
+  - [CpuOptionsResponseMetadataTypeDef](#cpuoptionsresponsemetadatatypedef)
   - [CpuOptionsTypeDef](#cpuoptionstypedef)
   - [CreateCapacityReservationFleetRequestRequestTypeDef](#createcapacityreservationfleetrequestrequesttypedef)
   - [CreateCapacityReservationFleetResultTypeDef](#createcapacityreservationfleetresulttypedef)
@@ -915,6 +917,7 @@ type annotations stubs module
   - [EnableVpcClassicLinkRequestVpcTypeDef](#enablevpcclassiclinkrequestvpctypedef)
   - [EnableVpcClassicLinkResultTypeDef](#enablevpcclassiclinkresulttypedef)
   - [EnclaveOptionsRequestTypeDef](#enclaveoptionsrequesttypedef)
+  - [EnclaveOptionsResponseMetadataTypeDef](#enclaveoptionsresponsemetadatatypedef)
   - [EnclaveOptionsTypeDef](#enclaveoptionstypedef)
   - [EventInformationTypeDef](#eventinformationtypedef)
   - [ExplanationTypeDef](#explanationtypedef)
@@ -1035,6 +1038,7 @@ type annotations stubs module
   - [GpuInfoTypeDef](#gpuinfotypedef)
   - [GroupIdentifierTypeDef](#groupidentifiertypedef)
   - [HibernationOptionsRequestTypeDef](#hibernationoptionsrequesttypedef)
+  - [HibernationOptionsResponseMetadataTypeDef](#hibernationoptionsresponsemetadatatypedef)
   - [HibernationOptionsTypeDef](#hibernationoptionstypedef)
   - [HistoryRecordEntryTypeDef](#historyrecordentrytypedef)
   - [HistoryRecordTypeDef](#historyrecordtypedef)
@@ -1046,6 +1050,7 @@ type annotations stubs module
   - [IKEVersionsListValueTypeDef](#ikeversionslistvaluetypedef)
   - [IKEVersionsRequestListValueTypeDef](#ikeversionsrequestlistvaluetypedef)
   - [IamInstanceProfileAssociationTypeDef](#iaminstanceprofileassociationtypedef)
+  - [IamInstanceProfileResponseMetadataTypeDef](#iaminstanceprofileresponsemetadatatypedef)
   - [IamInstanceProfileSpecificationTypeDef](#iaminstanceprofilespecificationtypedef)
   - [IamInstanceProfileTypeDef](#iaminstanceprofiletypedef)
   - [IcmpTypeCodeTypeDef](#icmptypecodetypedef)
@@ -1099,6 +1104,7 @@ type annotations stubs module
   - [InstanceIpv6PrefixTypeDef](#instanceipv6prefixtypedef)
   - [InstanceMarketOptionsRequestTypeDef](#instancemarketoptionsrequesttypedef)
   - [InstanceMetadataOptionsRequestTypeDef](#instancemetadataoptionsrequesttypedef)
+  - [InstanceMetadataOptionsResponseResponseMetadataTypeDef](#instancemetadataoptionsresponseresponsemetadatatypedef)
   - [InstanceMetadataOptionsResponseTypeDef](#instancemetadataoptionsresponsetypedef)
   - [InstanceMonitoringTypeDef](#instancemonitoringtypedef)
   - [InstanceNetworkInterfaceAssociationTypeDef](#instancenetworkinterfaceassociationtypedef)
@@ -1111,6 +1117,7 @@ type annotations stubs module
   - [InstanceRequirementsWithMetadataRequestTypeDef](#instancerequirementswithmetadatarequesttypedef)
   - [InstanceSpecificationTypeDef](#instancespecificationtypedef)
   - [InstanceStateChangeTypeDef](#instancestatechangetypedef)
+  - [InstanceStateResponseMetadataTypeDef](#instancestateresponsemetadatatypedef)
   - [InstanceStateTypeDef](#instancestatetypedef)
   - [InstanceStatusDetailsTypeDef](#instancestatusdetailstypedef)
   - [InstanceStatusEventTypeDef](#instancestatuseventtypedef)
@@ -1327,6 +1334,7 @@ type annotations stubs module
   - [MonitorInstancesRequestInstanceTypeDef](#monitorinstancesrequestinstancetypedef)
   - [MonitorInstancesRequestRequestTypeDef](#monitorinstancesrequestrequesttypedef)
   - [MonitorInstancesResultTypeDef](#monitorinstancesresulttypedef)
+  - [MonitoringResponseMetadataTypeDef](#monitoringresponsemetadatatypedef)
   - [MonitoringTypeDef](#monitoringtypedef)
   - [MoveAddressToVpcRequestRequestTypeDef](#moveaddresstovpcrequestrequesttypedef)
   - [MoveAddressToVpcResultTypeDef](#moveaddresstovpcresulttypedef)
@@ -1345,8 +1353,10 @@ type annotations stubs module
   - [NetworkInsightsAccessScopeTypeDef](#networkinsightsaccessscopetypedef)
   - [NetworkInsightsAnalysisTypeDef](#networkinsightsanalysistypedef)
   - [NetworkInsightsPathTypeDef](#networkinsightspathtypedef)
+  - [NetworkInterfaceAssociationResponseMetadataTypeDef](#networkinterfaceassociationresponsemetadatatypedef)
   - [NetworkInterfaceAssociationTypeDef](#networkinterfaceassociationtypedef)
   - [NetworkInterfaceAttachmentChangesTypeDef](#networkinterfaceattachmentchangestypedef)
+  - [NetworkInterfaceAttachmentResponseMetadataTypeDef](#networkinterfaceattachmentresponsemetadatatypedef)
   - [NetworkInterfaceAttachmentTypeDef](#networkinterfaceattachmenttypedef)
   - [NetworkInterfaceCountRequestTypeDef](#networkinterfacecountrequesttypedef)
   - [NetworkInterfaceCountTypeDef](#networkinterfacecounttypedef)
@@ -1383,6 +1393,7 @@ type annotations stubs module
   - [Phase2IntegrityAlgorithmsRequestListValueTypeDef](#phase2integrityalgorithmsrequestlistvaluetypedef)
   - [PlacementGroupInfoTypeDef](#placementgroupinfotypedef)
   - [PlacementGroupTypeDef](#placementgrouptypedef)
+  - [PlacementResponseMetadataTypeDef](#placementresponsemetadatatypedef)
   - [PlacementResponseTypeDef](#placementresponsetypedef)
   - [PlacementTypeDef](#placementtypedef)
   - [PoolCidrBlockTypeDef](#poolcidrblocktypedef)
@@ -1397,8 +1408,10 @@ type annotations stubs module
   - [PrincipalIdFormatTypeDef](#principalidformattypedef)
   - [PrivateDnsDetailsTypeDef](#privatednsdetailstypedef)
   - [PrivateDnsNameConfigurationTypeDef](#privatednsnameconfigurationtypedef)
+  - [PrivateDnsNameOptionsOnLaunchResponseMetadataTypeDef](#privatednsnameoptionsonlaunchresponsemetadatatypedef)
   - [PrivateDnsNameOptionsOnLaunchTypeDef](#privatednsnameoptionsonlaunchtypedef)
   - [PrivateDnsNameOptionsRequestTypeDef](#privatednsnameoptionsrequesttypedef)
+  - [PrivateDnsNameOptionsResponseResponseMetadataTypeDef](#privatednsnameoptionsresponseresponsemetadatatypedef)
   - [PrivateDnsNameOptionsResponseTypeDef](#privatednsnameoptionsresponsetypedef)
   - [PrivateIpAddressSpecificationTypeDef](#privateipaddressspecificationtypedef)
   - [ProcessorInfoTypeDef](#processorinfotypedef)
@@ -1529,6 +1542,7 @@ type annotations stubs module
   - [RevokeSecurityGroupIngressRequestRequestTypeDef](#revokesecuritygroupingressrequestrequesttypedef)
   - [RevokeSecurityGroupIngressRequestSecurityGroupTypeDef](#revokesecuritygroupingressrequestsecuritygrouptypedef)
   - [RevokeSecurityGroupIngressResultTypeDef](#revokesecuritygroupingressresulttypedef)
+  - [RouteTableAssociationStateResponseMetadataTypeDef](#routetableassociationstateresponsemetadatatypedef)
   - [RouteTableAssociationStateTypeDef](#routetableassociationstatetypedef)
   - [RouteTableAssociationTypeDef](#routetableassociationtypedef)
   - [RouteTableTypeDef](#routetabletypedef)
@@ -1630,6 +1644,7 @@ type annotations stubs module
   - [StartNetworkInsightsAnalysisResultTypeDef](#startnetworkinsightsanalysisresulttypedef)
   - [StartVpcEndpointServicePrivateDnsVerificationRequestRequestTypeDef](#startvpcendpointserviceprivatednsverificationrequestrequesttypedef)
   - [StartVpcEndpointServicePrivateDnsVerificationResultTypeDef](#startvpcendpointserviceprivatednsverificationresulttypedef)
+  - [StateReasonResponseMetadataTypeDef](#statereasonresponsemetadatatypedef)
   - [StateReasonTypeDef](#statereasontypedef)
   - [StopInstancesRequestInstanceTypeDef](#stopinstancesrequestinstancetypedef)
   - [StopInstancesRequestRequestTypeDef](#stopinstancesrequestrequesttypedef)
@@ -1751,8 +1766,10 @@ type annotations stubs module
   - [VpcEndpointTypeDef](#vpcendpointtypedef)
   - [VpcIpv6CidrBlockAssociationTypeDef](#vpcipv6cidrblockassociationtypedef)
   - [VpcPeeringConnectionOptionsDescriptionTypeDef](#vpcpeeringconnectionoptionsdescriptiontypedef)
+  - [VpcPeeringConnectionStateReasonResponseMetadataTypeDef](#vpcpeeringconnectionstatereasonresponsemetadatatypedef)
   - [VpcPeeringConnectionStateReasonTypeDef](#vpcpeeringconnectionstatereasontypedef)
   - [VpcPeeringConnectionTypeDef](#vpcpeeringconnectiontypedef)
+  - [VpcPeeringConnectionVpcInfoResponseMetadataTypeDef](#vpcpeeringconnectionvpcinforesponsemetadatatypedef)
   - [VpcPeeringConnectionVpcInfoTypeDef](#vpcpeeringconnectionvpcinfotypedef)
   - [VpcTypeDef](#vpctypedef)
   - [VpnConnectionDeviceTypeTypeDef](#vpnconnectiondevicetypetypedef)
@@ -3847,6 +3864,21 @@ Optional fields:
 - `UsageStrategy`: `Literal['use-capacity-reservations-first']` (see
   [FleetCapacityReservationUsageStrategyType](./literals.md#fleetcapacityreservationusagestrategytype))
 
+## CapacityReservationSpecificationResponseResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CapacityReservationSpecificationResponseResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `CapacityReservationPreference`:
+  [CapacityReservationPreferenceType](./literals.md#capacityreservationpreferencetype)
+- `CapacityReservationTarget`:
+  [CapacityReservationTargetResponseTypeDef](./type_defs.md#capacityreservationtargetresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CapacityReservationSpecificationResponseTypeDef
 
 ```python
@@ -4523,6 +4555,19 @@ Optional fields:
 
 - `CoreCount`: `int`
 - `ThreadsPerCore`: `int`
+
+## CpuOptionsResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CpuOptionsResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `CoreCount`: `int`
+- `ThreadsPerCore`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CpuOptionsTypeDef
 
@@ -14746,6 +14791,18 @@ Optional fields:
 
 - `Enabled`: `bool`
 
+## EnclaveOptionsResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnclaveOptionsResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Enabled`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## EnclaveOptionsTypeDef
 
 ```python
@@ -16568,6 +16625,18 @@ Optional fields:
 
 - `Configured`: `bool`
 
+## HibernationOptionsResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import HibernationOptionsResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Configured`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## HibernationOptionsTypeDef
 
 ```python
@@ -16736,6 +16805,19 @@ Optional fields:
 - `State`:
   [IamInstanceProfileAssociationStateType](./literals.md#iaminstanceprofileassociationstatetype)
 - `Timestamp`: `datetime`
+
+## IamInstanceProfileResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import IamInstanceProfileResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IamInstanceProfileSpecificationTypeDef
 
@@ -17558,6 +17640,27 @@ Optional fields:
 - `InstanceMetadataTags`:
   [InstanceMetadataTagsStateType](./literals.md#instancemetadatatagsstatetype)
 
+## InstanceMetadataOptionsResponseResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceMetadataOptionsResponseResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `State`:
+  [InstanceMetadataOptionsStateType](./literals.md#instancemetadataoptionsstatetype)
+- `HttpTokens`: [HttpTokensStateType](./literals.md#httptokensstatetype)
+- `HttpPutResponseHopLimit`: `int`
+- `HttpEndpoint`:
+  [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
+- `HttpProtocolIpv6`:
+  [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
+- `InstanceMetadataTags`:
+  [InstanceMetadataTagsStateType](./literals.md#instancemetadatatagsstatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## InstanceMetadataOptionsResponseTypeDef
 
 ```python
@@ -17826,6 +17929,19 @@ Optional fields:
 - `CurrentState`: [InstanceStateTypeDef](./type_defs.md#instancestatetypedef)
 - `InstanceId`: `str`
 - `PreviousState`: [InstanceStateTypeDef](./type_defs.md#instancestatetypedef)
+
+## InstanceStateResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceStateResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Code`: `int`
+- `Name`: [InstanceStateNameType](./literals.md#instancestatenametype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InstanceStateTypeDef
 
@@ -21193,6 +21309,18 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## MonitoringResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import MonitoringResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `State`: [MonitoringStateType](./literals.md#monitoringstatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## MonitoringTypeDef
 
 ```python
@@ -21481,6 +21609,24 @@ Optional fields:
 - `DestinationPort`: `int`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+## NetworkInterfaceAssociationResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import NetworkInterfaceAssociationResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `AllocationId`: `str`
+- `AssociationId`: `str`
+- `IpOwnerId`: `str`
+- `PublicDnsName`: `str`
+- `PublicIp`: `str`
+- `CustomerOwnedIp`: `str`
+- `CarrierIp`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## NetworkInterfaceAssociationTypeDef
 
 ```python
@@ -21507,6 +21653,25 @@ Optional fields:
 
 - `AttachmentId`: `str`
 - `DeleteOnTermination`: `bool`
+
+## NetworkInterfaceAttachmentResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import NetworkInterfaceAttachmentResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `AttachTime`: `datetime`
+- `AttachmentId`: `str`
+- `DeleteOnTermination`: `bool`
+- `DeviceIndex`: `int`
+- `NetworkCardIndex`: `int`
+- `InstanceId`: `str`
+- `InstanceOwnerId`: `str`
+- `Status`: [AttachmentStatusType](./literals.md#attachmentstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NetworkInterfaceAttachmentTypeDef
 
@@ -21995,6 +22160,25 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `GroupArn`: `str`
 
+## PlacementResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PlacementResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `AvailabilityZone`: `str`
+- `Affinity`: `str`
+- `GroupName`: `str`
+- `PartitionNumber`: `int`
+- `HostId`: `str`
+- `Tenancy`: [TenancyType](./literals.md#tenancytype)
+- `SpreadDomain`: `str`
+- `HostResourceGroupArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## PlacementResponseTypeDef
 
 ```python
@@ -22160,6 +22344,20 @@ Optional fields:
 - `Value`: `str`
 - `Name`: `str`
 
+## PrivateDnsNameOptionsOnLaunchResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PrivateDnsNameOptionsOnLaunchResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `HostnameType`: [HostnameTypeType](./literals.md#hostnametypetype)
+- `EnableResourceNameDnsARecord`: `bool`
+- `EnableResourceNameDnsAAAARecord`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## PrivateDnsNameOptionsOnLaunchTypeDef
 
 ```python
@@ -22183,6 +22381,20 @@ Optional fields:
 - `HostnameType`: [HostnameTypeType](./literals.md#hostnametypetype)
 - `EnableResourceNameDnsARecord`: `bool`
 - `EnableResourceNameDnsAAAARecord`: `bool`
+
+## PrivateDnsNameOptionsResponseResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PrivateDnsNameOptionsResponseResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `HostnameType`: [HostnameTypeType](./literals.md#hostnametypetype)
+- `EnableResourceNameDnsARecord`: `bool`
+- `EnableResourceNameDnsAAAARecord`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PrivateDnsNameOptionsResponseTypeDef
 
@@ -24226,6 +24438,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## RouteTableAssociationStateResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RouteTableAssociationStateResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `State`:
+  [RouteTableAssociationStateCodeType](./literals.md#routetableassociationstatecodetype)
+- `StatusMessage`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## RouteTableAssociationStateTypeDef
 
 ```python
@@ -25916,6 +26142,19 @@ from mypy_boto3_ec2.type_defs import StartVpcEndpointServicePrivateDnsVerificati
 Required fields:
 
 - `ReturnValue`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StateReasonResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import StateReasonResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Code`: `str`
+- `Message`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -27704,6 +27943,20 @@ Optional fields:
 - `AllowEgressFromLocalClassicLinkToRemoteVpc`: `bool`
 - `AllowEgressFromLocalVpcToRemoteClassicLink`: `bool`
 
+## VpcPeeringConnectionStateReasonResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import VpcPeeringConnectionStateReasonResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Code`:
+  [VpcPeeringConnectionStateReasonCodeType](./literals.md#vpcpeeringconnectionstatereasoncodetype)
+- `Message`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## VpcPeeringConnectionStateReasonTypeDef
 
 ```python
@@ -27733,6 +27986,26 @@ Optional fields:
   [VpcPeeringConnectionStateReasonTypeDef](./type_defs.md#vpcpeeringconnectionstatereasontypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcPeeringConnectionId`: `str`
+
+## VpcPeeringConnectionVpcInfoResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import VpcPeeringConnectionVpcInfoResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `CidrBlock`: `str`
+- `Ipv6CidrBlockSet`:
+  `List`\[[Ipv6CidrBlockTypeDef](./type_defs.md#ipv6cidrblocktypedef)\]
+- `CidrBlockSet`: `List`\[[CidrBlockTypeDef](./type_defs.md#cidrblocktypedef)\]
+- `OwnerId`: `str`
+- `PeeringOptions`:
+  [VpcPeeringConnectionOptionsDescriptionTypeDef](./type_defs.md#vpcpeeringconnectionoptionsdescriptiontypedef)
+- `VpcId`: `str`
+- `Region`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VpcPeeringConnectionVpcInfoTypeDef
 

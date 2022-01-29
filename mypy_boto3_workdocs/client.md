@@ -282,9 +282,7 @@ Returns
 
 Adds the specified list of labels to the given resource (a document or folder)
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/workdocs-2016-05-01/CreateLabels>`\_
-**Request Syntax** response = client.create_labels( ResourceId='string',
-Labels=\[ ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/workdocs-2016-05-01/CreateLabels).
 
 Type annotations for `boto3.client("workdocs").create_labels` method.
 

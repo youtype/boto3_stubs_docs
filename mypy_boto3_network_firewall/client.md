@@ -796,10 +796,9 @@ Returns
 
 ### update_subnet_change_protection
 
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/network- firewall-2020-11-12/UpdateSubnetChangeProtection>`\_
-**Request Syntax** response = client.update_subnet_change_protection(
-UpdateToken='string', FirewallArn='string', FirewallName='string',...
+See also: \[AWS API
+Documentation\](https://docs.aws.amazon.com/goto/WebAPI/network-
+firewall-2020-11-12/UpdateSubnetChangeProtection).
 
 Type annotations for
 `boto3.client("network-firewall").update_subnet_change_protection` method.

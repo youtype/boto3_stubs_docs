@@ -784,8 +784,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 Returns all the domain-related billing records for the current Amazon Web
 Services account for a specified period See also:
-`AWS API Documentation <https: //docs.aws.amazon.com/goto/WebAPI/route53domains-2014-05-15/ViewBilling>`\_
-**Request Syntax** response = client.view_billing( ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/route53domains-2014-05-15/ViewBilling).
 
 Type annotations for `boto3.client("route53domains").view_billing` method.
 

@@ -492,7 +492,7 @@ Returns
 ### create_key_group
 
 Creates a key group that you can use with
-`CloudFront signed URLs and signed cookies <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Priv ateContent.html>`\_\_
+[CloudFront signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html)\_
 .
 
 Type annotations for `boto3.client("cloudfront").create_key_group` method.
@@ -560,7 +560,7 @@ Returns
 ### create_public_key
 
 Uploads a public key to CloudFront that you can use with
-`signed URLs and signed cookies <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Priv ateContent.html>`\_\_
+[signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html)\_
 , or with
 `field-level encryption <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level- en...`.
 

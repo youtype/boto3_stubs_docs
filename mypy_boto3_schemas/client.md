@@ -253,9 +253,7 @@ Keyword-only arguments:
 ### delete_schema_version
 
 Delete the schema version definition See also:
-`AWS API Documentation <https://d ocs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/DeleteSchemaVersion>`\_
-**Request Syntax** response = client.delete_schema_version(
-RegistryName='string', SchemaName='string', SchemaVers...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/DeleteSchemaVersion).
 
 Type annotations for `boto3.client("schemas").delete_schema_version` method.
 
@@ -355,9 +353,7 @@ Returns
 ### export_schema
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/ExportSchema>`\_
-**Request Syntax** response = client.export_schema( RegistryName='string',
-SchemaName='string', SchemaVersion='string', Type='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/ExportSchema).
 
 Type annotations for `boto3.client("schemas").export_schema` method.
 
@@ -566,9 +562,7 @@ Returns
 ### put_code_binding
 
 Put code binding URI See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/PutCodeBinding>`\_
-**Request Syntax** response = client.put_code_binding( Language='string',
-RegistryName='string', SchemaName='string', SchemaVersi...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/PutCodeBinding).
 
 Type annotations for `boto3.client("schemas").put_code_binding` method.
 
@@ -612,9 +606,7 @@ Returns
 ### search_schemas
 
 Search the schemas See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/SearchSchemas>`\_
-**Request Syntax** response = client.search_schemas( Keywords='string',
-Limit=123, NextToken='string', RegistryName='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/SearchSchemas).
 
 Type annotations for `boto3.client("schemas").search_schemas` method.
 
@@ -637,8 +629,7 @@ Returns
 ### start_discoverer
 
 Starts the discoverer See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/StartDiscoverer>`\_
-**Request Syntax** response = client.start_discoverer( DiscovererId='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/StartDiscoverer).
 
 Type annotations for `boto3.client("schemas").start_discoverer` method.
 
@@ -658,8 +649,7 @@ Returns
 ### stop_discoverer
 
 Stops the discoverer See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/StopDiscoverer>`\_
-**Request Syntax** response = client.stop_discoverer( DiscovererId='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/StopDiscoverer).
 
 Type annotations for `boto3.client("schemas").stop_discoverer` method.
 
@@ -713,9 +703,7 @@ Keyword-only arguments:
 ### update_discoverer
 
 Updates the discoverer See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/UpdateDiscoverer>`\_
-**Request Syntax** response = client.update_discoverer( Description='string',
-DiscovererId='string', CrossAccount=True|False ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/UpdateDiscoverer).
 
 Type annotations for `boto3.client("schemas").update_discoverer` method.
 

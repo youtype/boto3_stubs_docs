@@ -587,9 +587,9 @@ Returns [ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef).
 
 ### lookup_events
 
-Looks up
-`management events <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail- concepts.html#cloudtrail-concepts-management-events>`\_\_
-or
+Looks up \[management
+events\](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-
+concepts.html#cloudtrail-concepts-management-events)\_ or
 `CloudTrail Insights events <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail- concepts.html#cloudtrail-concepts-insigh...`.
 
 Type annotations for `boto3.client("cloudtrail").lookup_events` method.

@@ -383,9 +383,7 @@ Returns
 ### batch_describe_model_package
 
 This action batch describes a list of versioned model packages See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07- 24/BatchDescribeModelPackage>`\_
-**Request Syntax** response = client.batch_describe_model_package(
-ModelPackageArnList=\[ ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/BatchDescribeModelPackage).
 
 Type annotations for `boto3.client("sagemaker").batch_describe_model_package`
 method.
@@ -3382,7 +3380,7 @@ Returns
 
 Lists private workforce information, including workforce name, Amazon Resource
 Name (ARN), and, if applicable, allowed IP address ranges
-(`CIDRs <https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html>`\_\_
+([CIDRs](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html)\_
 ).
 
 Type annotations for `boto3.client("sagemaker").describe_workforce` method.

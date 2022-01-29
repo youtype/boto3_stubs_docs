@@ -1066,7 +1066,7 @@ Returns
 ### get_bucket_notification
 
 No longer used, see
-`GetBucketNotificationConfiguration <https://docs.aws.amazon .com/AmazonS3/latest/API/API_GetBucketNotificationConfiguration.html>`\_\_
+[GetBucketNotificationConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketNotificationConfiguration.html)\_
 .
 
 Type annotations for `boto3.client("s3").get_bucket_notification` method.
@@ -1990,7 +1990,7 @@ Keyword-only arguments:
 ### put_bucket_notification
 
 No longer used, see the
-`PutBucketNotificationConfiguration <https://docs.aws.am azon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html>`\_\_
+[PutBucketNotificationConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html)\_
 operation.
 
 Type annotations for `boto3.client("s3").put_bucket_notification` method.

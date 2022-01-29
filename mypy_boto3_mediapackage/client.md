@@ -104,9 +104,7 @@ Returns `bool`.
 ### configure_logs
 
 Changes the Channel's properities to configure log subscription See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediapackage-2017-10- 12/ConfigureLogs>`\_
-**Request Syntax** response = client.configure_logs( EgressAccessLogs={
-'LogGroupName': 'str...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediapackage-2017-10-12/ConfigureLogs).
 
 Type annotations for `boto3.client("mediapackage").configure_logs` method.
 
@@ -388,9 +386,7 @@ Returns
 ### list_tags_for_resource
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediap ackage-2017-10-12/ListTagsForResource>`\_
-**Request Syntax** response = client.list_tags_for_resource(
-ResourceArn='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediapackage-2017-10-12/ListTagsForResource).
 
 Type annotations for `boto3.client("mediapackage").list_tags_for_resource`
 method.
@@ -453,9 +449,7 @@ Returns
 ### tag_resource
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediapackage-2017-10-12/TagResource>`\_
-**Request Syntax** response = client.tag_resource( ResourceArn='string', Tags={
-'string': 'string' } ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediapackage-2017-10-12/TagResource).
 
 Type annotations for `boto3.client("mediapackage").tag_resource` method.
 
@@ -473,9 +467,7 @@ Keyword-only arguments:
 ### untag_resource
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediap ackage-2017-10-12/UntagResource>`\_
-**Request Syntax** response = client.untag_resource( ResourceArn='string',
-TagKeys=\[ 'string', \] ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediapackage-2017-10-12/UntagResource).
 
 Type annotations for `boto3.client("mediapackage").untag_resource` method.
 

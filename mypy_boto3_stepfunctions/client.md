@@ -436,8 +436,9 @@ Returns
 ### send_task_failure
 
 Used by activity workers and task states using the
-`callback <https://docs.aws.amazon.com/step-functions/latest/dg/connect-to- resource.html#connect-wait-token>`\_\_
-pattern to report that the task identified by the `taskToken` failed.
+\[callback\](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-
+resource.html#connect-wait-token)\_ pattern to report that the task identified
+by the `taskToken` failed.
 
 Type annotations for `boto3.client("stepfunctions").send_task_failure` method.
 
@@ -458,9 +459,9 @@ Returns `Dict`\[`str`, `Any`\].
 ### send_task_heartbeat
 
 Used by activity workers and task states using the
-`callback <https://docs.aws.amazon.com/step-functions/latest/dg/connect-to- resource.html#connect-wait-token>`\_\_
-pattern to report to Step Functions that the task represented by the specified
-`taskToken` is still making progress.
+\[callback\](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-
+resource.html#connect-wait-token)\_ pattern to report to Step Functions that
+the task represented by the specified `taskToken` is still making progress.
 
 Type annotations for `boto3.client("stepfunctions").send_task_heartbeat`
 method.
@@ -480,9 +481,9 @@ Returns `Dict`\[`str`, `Any`\].
 ### send_task_success
 
 Used by activity workers and task states using the
-`callback <https://docs.aws.amazon.com/step-functions/latest/dg/connect-to- resource.html#connect-wait-token>`\_\_
-pattern to report that the task identified by the `taskToken` completed
-successfully.
+\[callback\](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-
+resource.html#connect-wait-token)\_ pattern to report that the task identified
+by the `taskToken` completed successfully.
 
 Type annotations for `boto3.client("stepfunctions").send_task_success` method.
 
@@ -587,9 +588,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### untag_resource
 
 Remove a tag from a Step Functions resource See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/states-2016-11-23/UntagResource>`\_
-**Request Syntax** response = client.untag_resource( resourceArn='string',
-tagKeys=\[ 'string', \] ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/states-2016-11-23/UntagResource).
 
 Type annotations for `boto3.client("stepfunctions").untag_resource` method.
 

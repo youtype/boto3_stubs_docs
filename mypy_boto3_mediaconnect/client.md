@@ -149,9 +149,7 @@ Returns
 ### add_flow_sources
 
 Adds Sources to flow See also:
-`AWS API Documentation <https://docs.aws.amazon.c om/goto/WebAPI/mediaconnect-2018-11-14/AddFlowSources>`\_
-**Request Syntax** response = client.add_flow_sources( FlowArn='string',
-Sources=\[ { 'Decryption': { ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/AddFlowSources).
 
 Type annotations for `boto3.client("mediaconnect").add_flow_sources` method.
 
@@ -174,9 +172,7 @@ Returns
 ### add_flow_vpc_interfaces
 
 Adds VPC interfaces to flow See also:
-`AWS API Documentation <https://docs.aws.a mazon.com/goto/WebAPI/mediaconnect-2018-11-14/AddFlowVpcInterfaces>`\_
-**Request Syntax** response = client.add_flow_vpc_interfaces( FlowArn='string',
-VpcInterfaces=\[ { 'Na...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/AddFlowVpcInterfaces).
 
 Type annotations for `boto3.client("mediaconnect").add_flow_vpc_interfaces`
 method.
@@ -446,9 +442,7 @@ Returns
 ### list_tags_for_resource
 
 List all tags on an AWS Elemental MediaConnect resource See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11- 14/ListTagsForResource>`\_
-**Request Syntax** response = client.list_tags_for_resource(
-ResourceArn='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/ListTagsForResource).
 
 Type annotations for `boto3.client("mediaconnect").list_tags_for_resource`
 method.
@@ -663,9 +657,7 @@ Keyword-only arguments:
 ### update_flow
 
 Updates flow See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/UpdateFlow>`\_
-**Request Syntax** response = client.update_flow( FlowArn='string',
-SourceFailoverConfig={ 'FailoverMode': 'MERGE'|'FAILOVER', 'Re...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/UpdateFlow).
 
 Type annotations for `boto3.client("mediaconnect").update_flow` method.
 

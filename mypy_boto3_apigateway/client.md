@@ -313,10 +313,7 @@ Returns
 ### create_documentation_part
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/CreateDocumentationPart>`\_
-**Request Syntax** response = client.create_documentation_part(
-restApiId='string', location={ 'type':
-'API'|'AUTHORIZER'|'MODEL'|'RESOURCE'|'M...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/CreateDocumentationPart).
 
 Type annotations for `boto3.client("apigateway").create_documentation_part`
 method.
@@ -341,9 +338,7 @@ Returns
 ### create_documentation_version
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/CreateDocumentationVersion>`\_
-**Request Syntax** response = client.create_documentation_version(
-restApiId='string', documentationVersion='string', stageName='string', ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/CreateDocumentationVersion).
 
 Type annotations for `boto3.client("apigateway").create_documentation_version`
 method.
@@ -684,9 +679,7 @@ Keyword-only arguments:
 ### delete_documentation_part
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/DeleteDocumentationPart>`\_
-**Request Syntax** response = client.delete_documentation_part(
-restApiId='string', documentationPartId='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/DeleteDocumentationPart).
 
 Type annotations for `boto3.client("apigateway").delete_documentation_part`
 method.
@@ -705,9 +698,7 @@ Keyword-only arguments:
 ### delete_documentation_version
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/DeleteDocumentationVersion>`\_
-**Request Syntax** response = client.delete_documentation_version(
-restApiId='string', documentationVersion='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/DeleteDocumentationVersion).
 
 Type annotations for `boto3.client("apigateway").delete_documentation_version`
 method.
@@ -1263,9 +1254,7 @@ Returns [DeploymentsTypeDef](./type_defs.md#deploymentstypedef).
 ### get_documentation_part
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/GetDocumentationPart>`\_
-**Request Syntax** response = client.get_documentation_part(
-restApiId='string', documentationPartId='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationPart).
 
 Type annotations for `boto3.client("apigateway").get_documentation_part`
 method.
@@ -1287,10 +1276,7 @@ Returns
 ### get_documentation_parts
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/GetDocumentationParts>`\_
-**Request Syntax** response = client.get_documentation_parts(
-restApiId='string',
-type='API'|'AUTHORIZER'|'MODEL'|'RESOURCE'|'METHOD'|'PATH_PARAMETER'|'QUE...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationParts).
 
 Type annotations for `boto3.client("apigateway").get_documentation_parts`
 method.
@@ -1317,9 +1303,7 @@ Returns [DocumentationPartsTypeDef](./type_defs.md#documentationpartstypedef).
 ### get_documentation_version
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/GetDocumentationVersion>`\_
-**Request Syntax** response = client.get_documentation_version(
-restApiId='string', documentationVersion='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationVersion).
 
 Type annotations for `boto3.client("apigateway").get_documentation_version`
 method.
@@ -1341,9 +1325,7 @@ Returns
 ### get_documentation_versions
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/GetDocumentationVersions>`\_
-**Request Syntax** response = client.get_documentation_versions(
-restApiId='string', position='string', limit=123 ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationVersions).
 
 Type annotations for `boto3.client("apigateway").get_documentation_versions`
 method.
@@ -1758,8 +1740,7 @@ Returns [SdkResponseTypeDef](./type_defs.md#sdkresponsetypedef).
 ### get_sdk_type
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetSdkType>`\_
-**Request Syntax** response = client.get_sdk_type( id='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetSdkType).
 
 Type annotations for `boto3.client("apigateway").get_sdk_type` method.
 
@@ -1779,9 +1760,7 @@ Returns
 ### get_sdk_types
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetSdkTypes>`\_
-**Request Syntax** response = client.get_sdk_types( position='string',
-limit=123 ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetSdkTypes).
 
 Type annotations for `boto3.client("apigateway").get_sdk_types` method.
 
@@ -2023,9 +2002,7 @@ Returns [ApiKeyIdsTypeDef](./type_defs.md#apikeyidstypedef).
 ### import_documentation_parts
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/ImportDocumentationParts>`\_
-**Request Syntax** response = client.import_documentation_parts(
-restApiId='string', mode='merge'|'overwrite', failOnWarnings=True|False, bo...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/ImportDocumentationParts).
 
 Type annotations for `boto3.client("apigateway").import_documentation_parts`
 method.
@@ -2456,9 +2433,7 @@ Returns
 ### update_documentation_part
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/UpdateDocumentationPart>`\_
-**Request Syntax** response = client.update_documentation_part(
-restApiId='string', documentationPartId='string', patchOperations=\[ { ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/UpdateDocumentationPart).
 
 Type annotations for `boto3.client("apigateway").update_documentation_part`
 method.
@@ -2482,9 +2457,7 @@ Returns
 ### update_documentation_version
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/UpdateDocumentationVersion>`\_
-**Request Syntax** response = client.update_documentation_version(
-restApiId='string', documentationVersion='string', patchOperations=\[ ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/UpdateDocumentationVersion).
 
 Type annotations for `boto3.client("apigateway").update_documentation_version`
 method.

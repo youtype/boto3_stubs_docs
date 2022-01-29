@@ -372,9 +372,7 @@ Returns
 ### describe_app_version_template
 
 Describes details about an AWS Resilience Hub See also:
-`AWS API Documentation < https://docs.aws.amazon.com/goto/WebAPI/resiliencehub-2020-04- 30/DescribeAppVersionTemplate>`\_
-**Request Syntax** response = client.describe_app_version_template(
-appArn='string', appVersion='...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/resiliencehub-2020-04-30/DescribeAppVersionTemplate).
 
 Type annotations for
 `boto3.client("resiliencehub").describe_app_version_template` method.

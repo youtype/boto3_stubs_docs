@@ -268,7 +268,7 @@ Boto3 documentation:
 
 ### PlatformApplication attributes
 
-- `attributes`: `Dict`\[`str`, `Any`\]
+- `attributes`: `Dict`\[`str`, `str`\]
 - `arn`: `str`
 - `endpoints`:
   [PlatformApplicationEndpointsCollection](#platformapplicationendpointscollection)
@@ -394,7 +394,7 @@ Boto3 documentation:
 
 ### PlatformEndpoint attributes
 
-- `attributes`: `Dict`\[`str`, `Any`\]
+- `attributes`: `Dict`\[`str`, `str`\]
 - `arn`: `str`
 
 ### PlatformEndpoint methods
@@ -502,7 +502,7 @@ Boto3 documentation:
 
 ### Subscription attributes
 
-- `attributes`: `Dict`\[`str`, `Any`\]
+- `attributes`: `Dict`\[`str`, `str`\]
 - `arn`: `str`
 
 ### Subscription methods
@@ -583,7 +583,7 @@ Boto3 documentation:
 
 ### Topic attributes
 
-- `attributes`: `Dict`\[`str`, `Any`\]
+- `attributes`: `Dict`\[`str`, `str`\]
 - `arn`: `str`
 - `subscriptions`:
   [TopicSubscriptionsCollection](#topicsubscriptionscollection)

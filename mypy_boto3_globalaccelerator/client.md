@@ -724,8 +724,9 @@ Returns
 ### list_byoip_cidrs
 
 Lists the IP address ranges that were specified in calls to
-`ProvisionByoipCidr <https://docs.aws.amazon.com/global- accelerator/latest/api/ProvisionByoipCidr.html>`\_\_
-, including the current state and a history of state changes.
+\[ProvisionByoipCidr\](https://docs.aws.amazon.com/global-
+accelerator/latest/api/ProvisionByoipCidr.html)\_ , including the current state
+and a history of state changes.
 
 Type annotations for `boto3.client("globalaccelerator").list_byoip_cidrs`
 method.

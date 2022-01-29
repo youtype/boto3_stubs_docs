@@ -337,7 +337,7 @@ Returns
 InferSNOMEDCT detects possible medical concepts as entities and links them to
 codes from the Systematized Nomenclature of Medicine, Clinical Terms
 (SNOMED-CT) ontology See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebA PI/comprehendmedical-2018-10-30/InferSNOMEDCT>`\_
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/comprehendmedical-2018-10-30/InferSNOMEDCT)
 \*\*Re...
 
 Type annotations for `boto3.client("comprehendmedical").infer_snomedct` method.

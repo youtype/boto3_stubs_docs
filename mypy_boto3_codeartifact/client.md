@@ -332,7 +332,7 @@ Returns
 ### describe_domain
 
 Returns a
-`DomainDescription <https://docs.aws.amazon.com/codeartifact/latest/AP IReference/API_DomainDescription.html>`\_\_
+[DomainDescription](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DomainDescription.html)\_
 object that contains information about the requested domain.
 
 Type annotations for `boto3.client("codeartifact").describe_domain` method.
@@ -354,7 +354,7 @@ Returns
 ### describe_package_version
 
 Returns a
-`PackageVersionDescription <https://docs.aws.amazon.com/codeartifact/l atest/APIReference/API_PackageVersionDescription.html>`\_\_
+[PackageVersionDescription](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionDescription.html)\_
 object that contains information about the requested package version.
 
 Type annotations for `boto3.client("codeartifact").describe_package_version`
@@ -619,7 +619,7 @@ Returns
 ### list_domains
 
 Returns a list of
-`DomainSummary <https://docs.aws.amazon.com/codeartifact/lates t/APIReference/API_PackageVersionDescription.html>`\_\_
+[DomainSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionDescription.html)\_
 objects for all domains owned by the AWS account that makes this call.
 
 Type annotations for `boto3.client("codeartifact").list_domains` method.
@@ -640,7 +640,7 @@ Returns [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef).
 ### list_package_version_assets
 
 Returns a list of
-`AssetSummary <https://docs.aws.amazon.com/codeartifact/latest /APIReference/API_AssetSummary.html>`\_\_
+[AssetSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_AssetSummary.html)\_
 objects for assets in a package version.
 
 Type annotations for `boto3.client("codeartifact").list_package_version_assets`
@@ -697,7 +697,7 @@ Returns
 ### list_package_versions
 
 Returns a list of
-`PackageVersionSummary <https://docs.aws.amazon.com/codeartifa ct/latest/APIReference/API_PackageVersionSummary.html>`\_\_
+[PackageVersionSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionSummary.html)\_
 objects for package versions in a repository that match the request parameters.
 
 Type annotations for `boto3.client("codeartifact").list_package_versions`
@@ -729,7 +729,7 @@ Returns
 ### list_packages
 
 Returns a list of
-`PackageSummary <https://docs.aws.amazon.com/codeartifact/late st/APIReference/API_PackageSummary.html>`\_\_
+[PackageSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageSummary.html)\_
 objects for packages in a repository that match the request parameters.
 
 Type annotations for `boto3.client("codeartifact").list_packages` method.
@@ -756,7 +756,7 @@ Returns [ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef).
 ### list_repositories
 
 Returns a list of
-`RepositorySummary <https://docs.aws.amazon.com/codeartifact/l atest/APIReference/API_RepositorySummary.html>`\_\_
+[RepositorySummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_RepositorySummary.html)\_
 objects.
 
 Type annotations for `boto3.client("codeartifact").list_repositories` method.
@@ -779,7 +779,7 @@ Returns
 ### list_repositories_in_domain
 
 Returns a list of
-`RepositorySummary <https://docs.aws.amazon.com/codeartifact/l atest/APIReference/API_RepositorySummary.html>`\_\_
+[RepositorySummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_RepositorySummary.html)\_
 objects.
 
 Type annotations for `boto3.client("codeartifact").list_repositories_in_domain`

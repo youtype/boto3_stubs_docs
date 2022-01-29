@@ -275,10 +275,6 @@ Returns
 
 ### calculate_route
 
-`Calculates a route <https://docs.aws.amazon.com/location/latest/developerguide/calculate- route.html>`\_\_
-given the following required parameters: `DeparturePosition` and
-`DestinationPosition`.
-
 Type annotations for `boto3.client("location").calculate_route` method.
 
 Boto3 documentation:
@@ -307,10 +303,6 @@ Returns
 [CalculateRouteResponseTypeDef](./type_defs.md#calculaterouteresponsetypedef).
 
 ### calculate_route_matrix
-
-`Calculates a route matrix <https://docs.aws.amazon.com/location/latest/developerguide/calculate-route- matrix.html>`\_\_
-given the following required parameters: `DeparturePositions` and
-`DestinationPositions`.
 
 Type annotations for `boto3.client("location").calculate_route_matrix` method.
 

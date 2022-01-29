@@ -172,9 +172,7 @@ Returns
 ### batch_start
 
 Starts existing resources See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/BatchStart>`\_
-**Request Syntax** response = client.batch_start( ChannelIds=\[ 'string', \],
-MultiplexIds=\[ 'string', \] ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/BatchStart).
 
 Type annotations for `boto3.client("medialive").batch_start` method.
 
@@ -194,9 +192,7 @@ Returns [BatchStartResponseTypeDef](./type_defs.md#batchstartresponsetypedef).
 ### batch_stop
 
 Stops running resources See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/BatchStop>`\_
-**Request Syntax** response = client.batch_stop( ChannelIds=\[ 'string', \],
-MultiplexIds=\[ 'string', \] ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/BatchStop).
 
 Type annotations for `boto3.client("medialive").batch_stop` method.
 
@@ -216,9 +212,7 @@ Returns [BatchStopResponseTypeDef](./type_defs.md#batchstopresponsetypedef).
 ### batch_update_schedule
 
 Update a channel schedule See also:
-`AWS API Documentation <https://docs.aws.ama zon.com/goto/WebAPI/medialive-2017-10-14/BatchUpdateSchedule>`\_
-**Request Syntax** response = client.batch_update_schedule( ChannelId='string',
-Creates={ 'ScheduleActions': \[ ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/BatchUpdateSchedule).
 
 Type annotations for `boto3.client("medialive").batch_update_schedule` method.
 
@@ -295,9 +289,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### create_channel
 
 Creates a new channel See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateChannel>`\_
-**Request Syntax** response = client.create_channel( CdiInputSpecification={
-'Resolution': 'SD'|'HD'|'FHD'|'UHD' }, ChannelCl...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateChannel).
 
 Type annotations for `boto3.client("medialive").create_channel` method.
 
@@ -334,9 +326,7 @@ Returns
 ### create_input
 
 Create an input See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateInput>`\_
-**Request Syntax** response = client.create_input( Destinations=\[ {
-'StreamName': 'string' }, \], InputDevices...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateInput).
 
 Type annotations for `boto3.client("medialive").create_input` method.
 
@@ -370,9 +360,7 @@ Returns
 ### create_input_security_group
 
 Creates a Input Security Group See also:
-`AWS API Documentation <https://docs.aw s.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateInputSecurityGroup>`\_
-**Request Syntax** response = client.create_input_security_group( Tags={
-'string': 'string' }, WhitelistR...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateInputSecurityGroup).
 
 Type annotations for `boto3.client("medialive").create_input_security_group`
 method.
@@ -445,9 +433,7 @@ Returns
 ### create_partner_input
 
 Create a partner input See also:
-`AWS API Documentation <https://docs.aws.amazon .com/goto/WebAPI/medialive-2017-10-14/CreatePartnerInput>`\_
-**Request Syntax** response = client.create_partner_input( InputId='string',
-RequestId='string', Tags={ 'string': 'stri...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreatePartnerInput).
 
 Type annotations for `boto3.client("medialive").create_partner_input` method.
 
@@ -469,9 +455,7 @@ Returns
 ### create_tags
 
 Create tags for a resource See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateTags>`\_
-**Request Syntax** response = client.create_tags( ResourceArn='string', Tags={
-'string': 'string' } ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateTags).
 
 Type annotations for `boto3.client("medialive").create_tags` method.
 
@@ -508,8 +492,7 @@ Returns
 ### delete_input
 
 Deletes the input end point See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DeleteInput>`\_
-**Request Syntax** response = client.delete_input( InputId='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DeleteInput).
 
 Type annotations for `boto3.client("medialive").delete_input` method.
 
@@ -528,9 +511,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### delete_input_security_group
 
 Deletes an Input Security Group See also:
-`AWS API Documentation <https://docs.a ws.amazon.com/goto/WebAPI/medialive-2017-10-14/DeleteInputSecurityGroup>`\_
-**Request Syntax** response = client.delete_input_security_group(
-InputSecurityGroupId='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DeleteInputSecurityGroup).
 
 Type annotations for `boto3.client("medialive").delete_input_security_group`
 method.
@@ -627,9 +608,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### delete_tags
 
 Removes tags for a resource See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DeleteTags>`\_
-**Request Syntax** response = client.delete_tags( ResourceArn='string',
-TagKeys=\[ 'string', \] ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DeleteTags).
 
 Type annotations for `boto3.client("medialive").delete_tags` method.
 
@@ -647,8 +626,7 @@ Keyword-only arguments:
 ### describe_channel
 
 Gets details about a channel See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeChannel>`\_
-**Request Syntax** response = client.describe_channel( ChannelId='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeChannel).
 
 Type annotations for `boto3.client("medialive").describe_channel` method.
 
@@ -668,8 +646,7 @@ Returns
 ### describe_input
 
 Produces details about an input See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeInput>`\_
-**Request Syntax** response = client.describe_input( InputId='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeInput).
 
 Type annotations for `boto3.client("medialive").describe_input` method.
 
@@ -689,9 +666,7 @@ Returns
 ### describe_input_device
 
 Gets the details for the input device See also:
-`AWS API Documentation <https:// docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeInputDevice>`\_
-**Request Syntax** response = client.describe_input_device(
-InputDeviceId='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeInputDevice).
 
 Type annotations for `boto3.client("medialive").describe_input_device` method.
 
@@ -733,9 +708,7 @@ Returns
 ### describe_input_security_group
 
 Produces a summary of an Input Security Group See also:
-`AWS API Documentation < https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10- 14/DescribeInputSecurityGroup>`\_
-**Request Syntax** response = client.describe_input_security_group(
-InputSecurityGroupId='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeInputSecurityGroup).
 
 Type annotations for `boto3.client("medialive").describe_input_security_group`
 method.
@@ -834,9 +807,7 @@ Returns
 ### describe_schedule
 
 Get a channel schedule See also:
-`AWS API Documentation <https://docs.aws.amazon .com/goto/WebAPI/medialive-2017-10-14/DescribeSchedule>`\_
-**Request Syntax** response = client.describe_schedule( ChannelId='string',
-MaxResults=123, NextToken='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeSchedule).
 
 Type annotations for `boto3.client("medialive").describe_schedule` method.
 
@@ -876,9 +847,7 @@ Returns `str`.
 ### list_channels
 
 Produces list of channels that have been created See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListChannels>`\_
-**Request Syntax** response = client.list_channels( MaxResults=123,
-NextToken='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListChannels).
 
 Type annotations for `boto3.client("medialive").list_channels` method.
 
@@ -921,9 +890,7 @@ Returns
 ### list_input_devices
 
 List input devices See also:
-`AWS API Documentation <https://docs.aws.amazon.com /goto/WebAPI/medialive-2017-10-14/ListInputDevices>`\_
-**Request Syntax** response = client.list_input_devices( MaxResults=123,
-NextToken='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListInputDevices).
 
 Type annotations for `boto3.client("medialive").list_input_devices` method.
 
@@ -944,9 +911,7 @@ Returns
 ### list_input_security_groups
 
 Produces a list of Input Security Groups for an account See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10- 14/ListInputSecurityGroups>`\_
-**Request Syntax** response = client.list_input_security_groups(
-MaxResults=123, NextToken='strin...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListInputSecurityGroups).
 
 Type annotations for `boto3.client("medialive").list_input_security_groups`
 method.
@@ -968,9 +933,7 @@ Returns
 ### list_inputs
 
 Produces list of inputs that have been created See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListInputs>`\_
-**Request Syntax** response = client.list_inputs( MaxResults=123,
-NextToken='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListInputs).
 
 Type annotations for `boto3.client("medialive").list_inputs` method.
 
@@ -1090,9 +1053,7 @@ Returns
 ### list_tags_for_resource
 
 Produces list of tags that have been created for a resource See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10- 14/ListTagsForResource>`\_
-**Request Syntax** response = client.list_tags_for_resource(
-ResourceArn='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListTagsForResource).
 
 Type annotations for `boto3.client("medialive").list_tags_for_resource` method.
 
@@ -1155,8 +1116,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### start_channel
 
 Starts an existing channel See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/StartChannel>`\_
-**Request Syntax** response = client.start_channel( ChannelId='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/StartChannel).
 
 Type annotations for `boto3.client("medialive").start_channel` method.
 
@@ -1195,8 +1155,7 @@ Returns
 ### stop_channel
 
 Stops a running channel See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/StopChannel>`\_
-**Request Syntax** response = client.stop_channel( ChannelId='string' ).
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/StopChannel).
 
 Type annotations for `boto3.client("medialive").stop_channel` method.
 

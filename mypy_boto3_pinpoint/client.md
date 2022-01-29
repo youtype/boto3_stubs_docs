@@ -2139,9 +2139,7 @@ Returns
 ### send_otp_message
 
 Send an OTP message See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/pinpoint-2016-12-01/SendOTPMessage>`\_
-**Request Syntax** response = client.send_otp_message( ApplicationId='string',
-SendOTPMessageRequestParameters={ 'AllowedAttempts':...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/pinpoint-2016-12-01/SendOTPMessage).
 
 Type annotations for `boto3.client("pinpoint").send_otp_message` method.
 
@@ -2790,10 +2788,7 @@ Returns
 ### verify_otp_message
 
 Verify an OTP See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/pinpoint-2016-12-01/VerifyOTPMessage>`\_
-**Request Syntax** response = client.verify_otp_message(
-ApplicationId='string', VerifyOTPMessageRequestParameters={
-'DestinationIdenti...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/pinpoint-2016-12-01/VerifyOTPMessage).
 
 Type annotations for `boto3.client("pinpoint").verify_otp_message` method.
 

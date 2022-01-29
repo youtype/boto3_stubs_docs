@@ -2573,9 +2573,7 @@ Returns
 ### get_unfiltered_partition_metadata
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/glue- 2017-03-31/GetUnfilteredPartitionMetadata>`\_
-**Request Syntax** response = client.get_unfiltered_partition_metadata(
-CatalogId='string', DatabaseName='string', TableName='string', Parti...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredPartitionMetadata).
 
 Type annotations for `boto3.client("glue").get_unfiltered_partition_metadata`
 method.
@@ -2603,9 +2601,7 @@ Returns
 ### get_unfiltered_partitions_metadata
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/glue- 2017-03-31/GetUnfilteredPartitionsMetadata>`\_
-**Request Syntax** response = client.get_unfiltered_partitions_metadata(
-CatalogId='string', DatabaseName='string', TableName='string', Exp...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredPartitionsMetadata).
 
 Type annotations for `boto3.client("glue").get_unfiltered_partitions_metadata`
 method.
@@ -2636,9 +2632,7 @@ Returns
 ### get_unfiltered_table_metadata
 
 See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/glue- 2017-03-31/GetUnfilteredTableMetadata>`\_
-**Request Syntax** response = client.get_unfiltered_table_metadata(
-CatalogId='string', DatabaseName='string', Name='string', AuditContext={ ...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredTableMetadata).
 
 Type annotations for `boto3.client("glue").get_unfiltered_table_metadata`
 method.

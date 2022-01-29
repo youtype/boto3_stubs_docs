@@ -1375,8 +1375,7 @@ Keyword-only arguments:
 
 Removes a set of key-value pairs from a recovery point, backup plan, or backup
 vault identified by an Amazon Resource Name (ARN) See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/backup-2018-11-15/UntagResource>`\_
-**Request Syntax** response = client.untag_reso...
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/backup-2018-11-15/UntagResource).
 
 Type annotations for `boto3.client("backup").untag_resource` method.
 

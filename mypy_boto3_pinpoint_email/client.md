@@ -841,10 +841,9 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_dedicated_ip_warmup_attributes
 
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/pinpoint- email-2018-07-26/PutDedicatedIpWarmupAttributes>`\_
-**Request Syntax** response = client.put_dedicated_ip_warmup_attributes(
-Ip='string', WarmupPercentage=123 ).
+See also: \[AWS API
+Documentation\](https://docs.aws.amazon.com/goto/WebAPI/pinpoint-
+email-2018-07-26/PutDedicatedIpWarmupAttributes).
 
 Type annotations for
 `boto3.client("pinpoint-email").put_dedicated_ip_warmup_attributes` method.

@@ -1431,11 +1431,11 @@ Boto3 documentation:
 - `instance_id`: `str`
 - `allocation_id`: `str`
 - `association_id`: `str`
-- `domain`: `str`
+- `domain`: [DomainTypeType](./literals.md#domaintypetype)
 - `network_interface_id`: `str`
 - `network_interface_owner_id`: `str`
 - `private_ip_address`: `str`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `public_ipv4_pool`: `str`
 - `network_border_group`: `str`
 - `customer_owned_ip`: `str`
@@ -1557,10 +1557,11 @@ Boto3 documentation:
 
 ### DhcpOptions attributes
 
-- `dhcp_configurations`: `List`\[`Any`\]
+- `dhcp_configurations`:
+  `List`\[[DhcpConfigurationTypeDef](./type_defs.md#dhcpconfigurationtypedef)\]
 - `dhcp_options_id`: `str`
 - `owner_id`: `str`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `id`: `str`
 
 ### DhcpOptions methods
@@ -1669,33 +1670,39 @@ Boto3 documentation:
 
 ### Image attributes
 
-- `architecture`: `str`
+- `architecture`:
+  [ArchitectureValuesType](./literals.md#architecturevaluestype)
 - `creation_date`: `str`
 - `image_id`: `str`
 - `image_location`: `str`
-- `image_type`: `str`
+- `image_type`: [ImageTypeValuesType](./literals.md#imagetypevaluestype)
 - `public`: `bool`
 - `kernel_id`: `str`
 - `owner_id`: `str`
-- `platform`: `str`
+- `platform`: `Literal['Windows']` (see
+  [PlatformValuesType](./literals.md#platformvaluestype))
 - `platform_details`: `str`
 - `usage_operation`: `str`
-- `product_codes`: `List`\[`Any`\]
+- `product_codes`:
+  `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
 - `ramdisk_id`: `str`
-- `state`: `str`
-- `block_device_mappings`: `List`\[`Any`\]
+- `state`: [ImageStateType](./literals.md#imagestatetype)
+- `block_device_mappings`:
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `description`: `str`
 - `ena_support`: `bool`
-- `hypervisor`: `str`
+- `hypervisor`: [HypervisorTypeType](./literals.md#hypervisortypetype)
 - `image_owner_alias`: `str`
 - `name`: `str`
 - `root_device_name`: `str`
-- `root_device_type`: `str`
+- `root_device_type`: [DeviceTypeType](./literals.md#devicetypetype)
 - `sriov_net_support`: `str`
-- `state_reason`: `Dict`\[`str`, `Any`\]
-- `tags`: `List`\[`Any`\]
-- `virtualization_type`: `str`
-- `boot_mode`: `str`
+- `state_reason`:
+  [StateReasonResponseMetadataTypeDef](./type_defs.md#statereasonresponsemetadatatypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `virtualization_type`:
+  [VirtualizationTypeType](./literals.md#virtualizationtypetype)
+- `boot_mode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
 - `deprecation_time`: `str`
 - `id`: `str`
 
@@ -1865,62 +1872,84 @@ Boto3 documentation:
 - `ami_launch_index`: `int`
 - `image_id`: `str`
 - `instance_id`: `str`
-- `instance_type`: `str`
+- `instance_type`: [InstanceTypeType](./literals.md#instancetypetype)
 - `kernel_id`: `str`
 - `key_name`: `str`
 - `launch_time`: `datetime`
-- `monitoring`: `Dict`\[`str`, `Any`\]
-- `placement`: `Dict`\[`str`, `Any`\]
-- `platform`: `str`
+- `monitoring`:
+  [MonitoringResponseMetadataTypeDef](./type_defs.md#monitoringresponsemetadatatypedef)
+- `placement`:
+  [PlacementResponseMetadataTypeDef](./type_defs.md#placementresponsemetadatatypedef)
+- `platform`: `Literal['Windows']` (see
+  [PlatformValuesType](./literals.md#platformvaluestype))
 - `private_dns_name`: `str`
 - `private_ip_address`: `str`
-- `product_codes`: `List`\[`Any`\]
+- `product_codes`:
+  `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
 - `public_dns_name`: `str`
 - `public_ip_address`: `str`
 - `ramdisk_id`: `str`
-- `state`: `Dict`\[`str`, `Any`\]
+- `state`:
+  [InstanceStateResponseMetadataTypeDef](./type_defs.md#instancestateresponsemetadatatypedef)
 - `state_transition_reason`: `str`
 - `subnet_id`: `str`
 - `vpc_id`: `str`
-- `architecture`: `str`
-- `block_device_mappings`: `List`\[`Any`\]
+- `architecture`:
+  [ArchitectureValuesType](./literals.md#architecturevaluestype)
+- `block_device_mappings`:
+  `List`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
 - `client_token`: `str`
 - `ebs_optimized`: `bool`
 - `ena_support`: `bool`
-- `hypervisor`: `str`
-- `iam_instance_profile`: `Dict`\[`str`, `Any`\]
-- `instance_lifecycle`: `str`
-- `elastic_gpu_associations`: `List`\[`Any`\]
-- `elastic_inference_accelerator_associations`: `List`\[`Any`\]
-- `network_interfaces_attribute`: `List`\[`Any`\]
+- `hypervisor`: [HypervisorTypeType](./literals.md#hypervisortypetype)
+- `iam_instance_profile`:
+  [IamInstanceProfileResponseMetadataTypeDef](./type_defs.md#iaminstanceprofileresponsemetadatatypedef)
+- `instance_lifecycle`:
+  [InstanceLifecycleTypeType](./literals.md#instancelifecycletypetype)
+- `elastic_gpu_associations`:
+  `List`\[[ElasticGpuAssociationTypeDef](./type_defs.md#elasticgpuassociationtypedef)\]
+- `elastic_inference_accelerator_associations`:
+  `List`\[[ElasticInferenceAcceleratorAssociationTypeDef](./type_defs.md#elasticinferenceacceleratorassociationtypedef)\]
+- `network_interfaces_attribute`:
+  `List`\[[InstanceNetworkInterfaceTypeDef](./type_defs.md#instancenetworkinterfacetypedef)\]
 - `outpost_arn`: `str`
 - `root_device_name`: `str`
-- `root_device_type`: `str`
-- `security_groups`: `List`\[`Any`\]
+- `root_device_type`: [DeviceTypeType](./literals.md#devicetypetype)
+- `security_groups`:
+  `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
 - `source_dest_check`: `bool`
 - `spot_instance_request_id`: `str`
 - `sriov_net_support`: `str`
-- `state_reason`: `Dict`\[`str`, `Any`\]
-- `tags`: `List`\[`Any`\]
-- `virtualization_type`: `str`
-- `cpu_options`: `Dict`\[`str`, `Any`\]
+- `state_reason`:
+  [StateReasonResponseMetadataTypeDef](./type_defs.md#statereasonresponsemetadatatypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `virtualization_type`:
+  [VirtualizationTypeType](./literals.md#virtualizationtypetype)
+- `cpu_options`:
+  [CpuOptionsResponseMetadataTypeDef](./type_defs.md#cpuoptionsresponsemetadatatypedef)
 - `capacity_reservation_id`: `str`
-- `capacity_reservation_specification`: `Dict`\[`str`, `Any`\]
-- `hibernation_options`: `Dict`\[`str`, `Any`\]
-- `licenses`: `List`\[`Any`\]
-- `metadata_options`: `Dict`\[`str`, `Any`\]
-- `enclave_options`: `Dict`\[`str`, `Any`\]
-- `boot_mode`: `str`
+- `capacity_reservation_specification`:
+  [CapacityReservationSpecificationResponseResponseMetadataTypeDef](./type_defs.md#capacityreservationspecificationresponseresponsemetadatatypedef)
+- `hibernation_options`:
+  [HibernationOptionsResponseMetadataTypeDef](./type_defs.md#hibernationoptionsresponsemetadatatypedef)
+- `licenses`:
+  `List`\[[LicenseConfigurationTypeDef](./type_defs.md#licenseconfigurationtypedef)\]
+- `metadata_options`:
+  [InstanceMetadataOptionsResponseResponseMetadataTypeDef](./type_defs.md#instancemetadataoptionsresponseresponsemetadatatypedef)
+- `enclave_options`:
+  [EnclaveOptionsResponseMetadataTypeDef](./type_defs.md#enclaveoptionsresponsemetadatatypedef)
+- `boot_mode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
 - `platform_details`: `str`
 - `usage_operation`: `str`
 - `usage_operation_update_time`: `datetime`
-- `private_dns_name_options`: `Dict`\[`str`, `Any`\]
+- `private_dns_name_options`:
+  [PrivateDnsNameOptionsResponseResponseMetadataTypeDef](./type_defs.md#privatednsnameoptionsresponseresponsemetadatatypedef)
 - `ipv6_address`: `str`
 - `id`: `str`
 - `classic_address`: [ClassicAddress](#classicaddress)
 - `image`: [Image](#image)
 - `key_pair`: [KeyPairInfo](#keypairinfo)
-- `network_interfaces`: [NetworkInterface](#networkinterface)
+- `network_interfaces`: `List`\[[NetworkInterface](#networkinterface)\]
 - `placement_group`: [PlacementGroup](#placementgroup)
 - `subnet`: [Subnet](#subnet)
 - `vpc`: [Vpc](#vpc)
@@ -2519,10 +2548,11 @@ Boto3 documentation:
 
 ### InternetGateway attributes
 
-- `attachments`: `List`\[`Any`\]
+- `attachments`:
+  `List`\[[InternetGatewayAttachmentTypeDef](./type_defs.md#internetgatewayattachmenttypedef)\]
 - `internet_gateway_id`: `str`
 - `owner_id`: `str`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `id`: `str`
 
 ### InternetGateway methods
@@ -2653,7 +2683,7 @@ Boto3 documentation:
 - `key_material`: `str`
 - `key_name`: `str`
 - `key_pair_id`: `str`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `name`: `str`
 
 ### KeyPair methods
@@ -2707,8 +2737,8 @@ Boto3 documentation:
 - `key_pair_id`: `str`
 - `key_fingerprint`: `str`
 - `key_name`: `str`
-- `key_type`: `str`
-- `tags`: `List`\[`Any`\]
+- `key_type`: [KeyTypeType](./literals.md#keytypetype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `name`: `str`
 
 ### KeyPairInfo methods
@@ -2779,11 +2809,13 @@ Boto3 documentation:
 
 ### NetworkAcl attributes
 
-- `associations`: `List`\[`Any`\]
-- `entries`: `List`\[`Any`\]
+- `associations`:
+  `List`\[[NetworkAclAssociationTypeDef](./type_defs.md#networkaclassociationtypedef)\]
+- `entries`:
+  `List`\[[NetworkAclEntryTypeDef](./type_defs.md#networkaclentrytypedef)\]
 - `is_default`: `bool`
 - `network_acl_id`: `str`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `vpc_id`: `str`
 - `owner_id`: `str`
 - `id`: `str`
@@ -2964,28 +2996,37 @@ Boto3 documentation:
 
 ### NetworkInterface attributes
 
-- `association_attribute`: `Dict`\[`str`, `Any`\]
-- `attachment`: `Dict`\[`str`, `Any`\]
+- `association_attribute`:
+  [NetworkInterfaceAssociationResponseMetadataTypeDef](./type_defs.md#networkinterfaceassociationresponsemetadatatypedef)
+- `attachment`:
+  [NetworkInterfaceAttachmentResponseMetadataTypeDef](./type_defs.md#networkinterfaceattachmentresponsemetadatatypedef)
 - `availability_zone`: `str`
 - `description`: `str`
-- `groups`: `List`\[`Any`\]
-- `interface_type`: `str`
-- `ipv6_addresses`: `List`\[`Any`\]
+- `groups`:
+  `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
+- `interface_type`:
+  [NetworkInterfaceTypeType](./literals.md#networkinterfacetypetype)
+- `ipv6_addresses`:
+  `List`\[[NetworkInterfaceIpv6AddressTypeDef](./type_defs.md#networkinterfaceipv6addresstypedef)\]
 - `mac_address`: `str`
 - `network_interface_id`: `str`
 - `outpost_arn`: `str`
 - `owner_id`: `str`
 - `private_dns_name`: `str`
 - `private_ip_address`: `str`
-- `private_ip_addresses`: `List`\[`Any`\]
-- `ipv4_prefixes`: `List`\[`Any`\]
-- `ipv6_prefixes`: `List`\[`Any`\]
+- `private_ip_addresses`:
+  `List`\[[NetworkInterfacePrivateIpAddressTypeDef](./type_defs.md#networkinterfaceprivateipaddresstypedef)\]
+- `ipv4_prefixes`:
+  `List`\[[Ipv4PrefixSpecificationTypeDef](./type_defs.md#ipv4prefixspecificationtypedef)\]
+- `ipv6_prefixes`:
+  `List`\[[Ipv6PrefixSpecificationTypeDef](./type_defs.md#ipv6prefixspecificationtypedef)\]
 - `requester_id`: `str`
 - `requester_managed`: `bool`
 - `source_dest_check`: `bool`
-- `status`: `str`
+- `status`:
+  [NetworkInterfaceStatusType](./literals.md#networkinterfacestatustype)
 - `subnet_id`: `str`
-- `tag_set`: `List`\[`Any`\]
+- `tag_set`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `vpc_id`: `str`
 - `deny_all_igw_traffic`: `bool`
 - `ipv6_native`: `bool`
@@ -3305,11 +3346,11 @@ Boto3 documentation:
 ### PlacementGroup attributes
 
 - `group_name`: `str`
-- `state`: `str`
-- `strategy`: `str`
+- `state`: [PlacementGroupStateType](./literals.md#placementgroupstatetype)
+- `strategy`: [PlacementStrategyType](./literals.md#placementstrategytype)
 - `partition_count`: `int`
 - `group_id`: `str`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `group_arn`: `str`
 - `name`: `str`
 - `instances`:
@@ -3415,8 +3456,8 @@ Boto3 documentation:
 - `local_gateway_id`: `str`
 - `carrier_gateway_id`: `str`
 - `network_interface_id`: `str`
-- `origin`: `str`
-- `state`: `str`
+- `origin`: [RouteOriginType](./literals.md#routeorigintype)
+- `state`: [RouteStateType](./literals.md#routestatetype)
 - `vpc_peering_connection_id`: `str`
 - `core_network_arn`: `str`
 - `route_table_id`: `str`
@@ -3512,16 +3553,18 @@ Boto3 documentation:
 
 ### RouteTable attributes
 
-- `associations_attribute`: `List`\[`Any`\]
-- `propagating_vgws`: `List`\[`Any`\]
+- `associations_attribute`:
+  `List`\[[RouteTableAssociationTypeDef](./type_defs.md#routetableassociationtypedef)\]
+- `propagating_vgws`:
+  `List`\[[PropagatingVgwTypeDef](./type_defs.md#propagatingvgwtypedef)\]
 - `route_table_id`: `str`
-- `routes_attribute`: `List`\[`Any`\]
-- `tags`: `List`\[`Any`\]
+- `routes_attribute`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `vpc_id`: `str`
 - `owner_id`: `str`
 - `id`: `str`
-- `associations`: [RouteTableAssociation](#routetableassociation)
-- `routes`: [Route](#route)
+- `associations`: `List`\[[RouteTableAssociation](#routetableassociation)\]
+- `routes`: `List`\[[Route](#route)\]
 - `vpc`: [Vpc](#vpc)
 
 ### RouteTable methods
@@ -3670,7 +3713,8 @@ Boto3 documentation:
 - `route_table_id`: `str`
 - `subnet_id`: `str`
 - `gateway_id`: `str`
-- `association_state`: `Dict`\[`str`, `Any`\]
+- `association_state`:
+  [RouteTableAssociationStateResponseMetadataTypeDef](./type_defs.md#routetableassociationstateresponsemetadatatypedef)
 - `id`: `str`
 - `route_table`: [RouteTable](#routetable)
 - `subnet`: [Subnet](#subnet)
@@ -3744,11 +3788,13 @@ Boto3 documentation:
 
 - `description`: `str`
 - `group_name`: `str`
-- `ip_permissions`: `List`\[`Any`\]
+- `ip_permissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `owner_id`: `str`
 - `group_id`: `str`
-- `ip_permissions_egress`: `List`\[`Any`\]
-- `tags`: `List`\[`Any`\]
+- `ip_permissions_egress`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `vpc_id`: `str`
 - `id`: `str`
 
@@ -3961,14 +4007,14 @@ Boto3 documentation:
 - `progress`: `str`
 - `snapshot_id`: `str`
 - `start_time`: `datetime`
-- `state`: `str`
+- `state`: [SnapshotStateType](./literals.md#snapshotstatetype)
 - `state_message`: `str`
 - `volume_id`: `str`
 - `volume_size`: `int`
 - `owner_alias`: `str`
 - `outpost_arn`: `str`
-- `tags`: `List`\[`Any`\]
-- `storage_tier`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `storage_tier`: [StorageTierType](./literals.md#storagetiertype)
 - `restore_expiry_time`: `datetime`
 - `id`: `str`
 - `volume`: [Volume](#volume)
@@ -4170,18 +4216,20 @@ Boto3 documentation:
 - `map_public_ip_on_launch`: `bool`
 - `map_customer_owned_ip_on_launch`: `bool`
 - `customer_owned_ipv4_pool`: `str`
-- `state`: `str`
+- `state`: [SubnetStateType](./literals.md#subnetstatetype)
 - `subnet_id`: `str`
 - `vpc_id`: `str`
 - `owner_id`: `str`
 - `assign_ipv6_address_on_creation`: `bool`
-- `ipv6_cidr_block_association_set`: `List`\[`Any`\]
-- `tags`: `List`\[`Any`\]
+- `ipv6_cidr_block_association_set`:
+  `List`\[[SubnetIpv6CidrBlockAssociationTypeDef](./type_defs.md#subnetipv6cidrblockassociationtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `subnet_arn`: `str`
 - `outpost_arn`: `str`
 - `enable_dns64`: `bool`
 - `ipv6_native`: `bool`
-- `private_dns_name_options_on_launch`: `Dict`\[`str`, `Any`\]
+- `private_dns_name_options_on_launch`:
+  [PrivateDnsNameOptionsOnLaunchResponseMetadataTypeDef](./type_defs.md#privatednsnameoptionsonlaunchresponsemetadatatypedef)
 - `id`: `str`
 - `vpc`: [Vpc](#vpc)
 - `instances`: [SubnetInstancesCollection](#subnetinstancescollection)
@@ -4429,7 +4477,7 @@ Boto3 documentation:
 
 ### Tag attributes
 
-- `resource_type`: `str`
+- `resource_type`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `resource_id`: `str`
 - `key`: `str`
 - `value`: `str`
@@ -4501,7 +4549,8 @@ Boto3 documentation:
 
 ### Volume attributes
 
-- `attachments`: `List`\[`Any`\]
+- `attachments`:
+  `List`\[[VolumeAttachmentTypeDef](./type_defs.md#volumeattachmenttypedef)\]
 - `availability_zone`: `str`
 - `create_time`: `datetime`
 - `encrypted`: `bool`
@@ -4509,11 +4558,11 @@ Boto3 documentation:
 - `outpost_arn`: `str`
 - `size`: `int`
 - `snapshot_id`: `str`
-- `state`: `str`
+- `state`: [VolumeStateType](./literals.md#volumestatetype)
 - `volume_id`: `str`
 - `iops`: `int`
-- `tags`: `List`\[`Any`\]
-- `volume_type`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `volume_type`: [VolumeTypeType](./literals.md#volumetypetype)
 - `fast_restored`: `bool`
 - `multi_attach_enabled`: `bool`
 - `throughput`: `int`
@@ -4775,14 +4824,16 @@ Boto3 documentation:
 
 - `cidr_block`: `str`
 - `dhcp_options_id`: `str`
-- `state`: `str`
+- `state`: [VpcStateType](./literals.md#vpcstatetype)
 - `vpc_id`: `str`
 - `owner_id`: `str`
-- `instance_tenancy`: `str`
-- `ipv6_cidr_block_association_set`: `List`\[`Any`\]
-- `cidr_block_association_set`: `List`\[`Any`\]
+- `instance_tenancy`: [TenancyType](./literals.md#tenancytype)
+- `ipv6_cidr_block_association_set`:
+  `List`\[[VpcIpv6CidrBlockAssociationTypeDef](./type_defs.md#vpcipv6cidrblockassociationtypedef)\]
+- `cidr_block_association_set`:
+  `List`\[[VpcCidrBlockAssociationTypeDef](./type_defs.md#vpccidrblockassociationtypedef)\]
 - `is_default`: `bool`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `id`: `str`
 - `dhcp_options`: [DhcpOptions](#dhcpoptions)
 - `accepted_vpc_peering_connections`:
@@ -5373,11 +5424,14 @@ Boto3 documentation:
 
 ### VpcPeeringConnection attributes
 
-- `accepter_vpc_info`: `Dict`\[`str`, `Any`\]
+- `accepter_vpc_info`:
+  [VpcPeeringConnectionVpcInfoResponseMetadataTypeDef](./type_defs.md#vpcpeeringconnectionvpcinforesponsemetadatatypedef)
 - `expiration_time`: `datetime`
-- `requester_vpc_info`: `Dict`\[`str`, `Any`\]
-- `status`: `Dict`\[`str`, `Any`\]
-- `tags`: `List`\[`Any`\]
+- `requester_vpc_info`:
+  [VpcPeeringConnectionVpcInfoResponseMetadataTypeDef](./type_defs.md#vpcpeeringconnectionvpcinforesponsemetadatatypedef)
+- `status`:
+  [VpcPeeringConnectionStateReasonResponseMetadataTypeDef](./type_defs.md#vpcpeeringconnectionstatereasonresponsemetadatatypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `vpc_peering_connection_id`: `str`
 - `id`: `str`
 - `accepter_vpc`: [Vpc](#vpc)
@@ -5503,11 +5557,11 @@ Boto3 documentation:
 - `instance_id`: `str`
 - `public_ip`: `str`
 - `association_id`: `str`
-- `domain`: `str`
+- `domain`: [DomainTypeType](./literals.md#domaintypetype)
 - `network_interface_id`: `str`
 - `network_interface_owner_id`: `str`
 - `private_ip_address`: `str`
-- `tags`: `List`\[`Any`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `public_ipv4_pool`: `str`
 - `network_border_group`: `str`
 - `customer_owned_ip`: `str`

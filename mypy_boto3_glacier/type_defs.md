@@ -58,6 +58,7 @@ type annotations stubs module
   - [InitiateVaultLockInputRequestTypeDef](#initiatevaultlockinputrequesttypedef)
   - [InitiateVaultLockOutputTypeDef](#initiatevaultlockoutputtypedef)
   - [InputSerializationTypeDef](#inputserializationtypedef)
+  - [InventoryRetrievalJobDescriptionResponseMetadataTypeDef](#inventoryretrievaljobdescriptionresponsemetadatatypedef)
   - [InventoryRetrievalJobDescriptionTypeDef](#inventoryretrievaljobdescriptiontypedef)
   - [InventoryRetrievalJobInputTypeDef](#inventoryretrievaljobinputtypedef)
   - [JobParametersTypeDef](#jobparameterstypedef)
@@ -74,6 +75,7 @@ type annotations stubs module
   - [ListTagsForVaultOutputTypeDef](#listtagsforvaultoutputtypedef)
   - [ListVaultsInputRequestTypeDef](#listvaultsinputrequesttypedef)
   - [ListVaultsOutputTypeDef](#listvaultsoutputtypedef)
+  - [OutputLocationResponseMetadataTypeDef](#outputlocationresponsemetadatatypedef)
   - [OutputLocationTypeDef](#outputlocationtypedef)
   - [OutputSerializationTypeDef](#outputserializationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
@@ -84,6 +86,7 @@ type annotations stubs module
   - [RemoveTagsFromVaultInputRequestTypeDef](#removetagsfromvaultinputrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3LocationTypeDef](#s3locationtypedef)
+  - [SelectParametersResponseMetadataTypeDef](#selectparametersresponsemetadatatypedef)
   - [SelectParametersTypeDef](#selectparameterstypedef)
   - [ServiceResourceAccountRequestTypeDef](#serviceresourceaccountrequesttypedef)
   - [ServiceResourceArchiveRequestTypeDef](#serviceresourcearchiverequesttypedef)
@@ -780,6 +783,22 @@ Optional fields:
 
 - `csv`: [CSVInputTypeDef](./type_defs.md#csvinputtypedef)
 
+## InventoryRetrievalJobDescriptionResponseMetadataTypeDef
+
+```python
+from mypy_boto3_glacier.type_defs import InventoryRetrievalJobDescriptionResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Format`: `str`
+- `StartDate`: `str`
+- `EndDate`: `str`
+- `Limit`: `str`
+- `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## InventoryRetrievalJobDescriptionTypeDef
 
 ```python
@@ -1013,6 +1032,18 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## OutputLocationResponseMetadataTypeDef
+
+```python
+from mypy_boto3_glacier.type_defs import OutputLocationResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `S3`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## OutputLocationTypeDef
 
 ```python
@@ -1135,6 +1166,24 @@ Optional fields:
 - `Tagging`: `Dict`\[`str`, `str`\]
 - `UserMetadata`: `Dict`\[`str`, `str`\]
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+
+## SelectParametersResponseMetadataTypeDef
+
+```python
+from mypy_boto3_glacier.type_defs import SelectParametersResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `InputSerialization`:
+  [InputSerializationTypeDef](./type_defs.md#inputserializationtypedef)
+- `ExpressionType`: `Literal['SQL']` (see
+  [ExpressionTypeType](./literals.md#expressiontypetype))
+- `Expression`: `str`
+- `OutputSerialization`:
+  [OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SelectParametersTypeDef
 

@@ -201,26 +201,33 @@ Boto3 documentation:
 - `arn`: `str`
 - `stack_id`: `str`
 - `layer_id`: `str`
-- `type`: `str`
+- `type`: [LayerTypeType](./literals.md#layertypetype)
 - `name`: `str`
 - `shortname`: `str`
-- `attributes`: `Dict`\[`str`, `Any`\]
-- `cloud_watch_logs_configuration`: `Dict`\[`str`, `Any`\]
+- `attributes`:
+  `Dict`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
+  `str`\]
+- `cloud_watch_logs_configuration`:
+  [CloudWatchLogsConfigurationResponseMetadataTypeDef](./type_defs.md#cloudwatchlogsconfigurationresponsemetadatatypedef)
 - `custom_instance_profile_arn`: `str`
 - `custom_json`: `str`
-- `custom_security_group_ids`: `List`\[`Any`\]
-- `default_security_group_names`: `List`\[`Any`\]
-- `packages`: `List`\[`Any`\]
-- `volume_configurations`: `List`\[`Any`\]
+- `custom_security_group_ids`: `List`\[`str`\]
+- `default_security_group_names`: `List`\[`str`\]
+- `packages`: `List`\[`str`\]
+- `volume_configurations`:
+  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
 - `enable_auto_healing`: `bool`
 - `auto_assign_elastic_ips`: `bool`
 - `auto_assign_public_ips`: `bool`
-- `default_recipes`: `Dict`\[`str`, `Any`\]
-- `custom_recipes`: `Dict`\[`str`, `Any`\]
+- `default_recipes`:
+  [RecipesResponseMetadataTypeDef](./type_defs.md#recipesresponsemetadatatypedef)
+- `custom_recipes`:
+  [RecipesResponseMetadataTypeDef](./type_defs.md#recipesresponsemetadatatypedef)
 - `created_at`: `str`
 - `install_updates_on_boot`: `bool`
 - `use_ebs_optimized_instances`: `bool`
-- `lifecycle_event_configuration`: `Dict`\[`str`, `Any`\]
+- `lifecycle_event_configuration`:
+  [LifecycleEventConfigurationResponseMetadataTypeDef](./type_defs.md#lifecycleeventconfigurationresponsemetadatatypedef)
 - `id`: `str`
 - `stack`: [Stack](#stack)
 
@@ -290,7 +297,8 @@ Boto3 documentation:
 - `arn`: `str`
 - `region`: `str`
 - `vpc_id`: `str`
-- `attributes`: `Dict`\[`str`, `Any`\]
+- `attributes`: `Dict`\[`Literal['Color']` (see
+  [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
 - `service_role_arn`: `str`
 - `default_instance_profile_arn`: `str`
 - `default_os`: `str`
@@ -298,14 +306,18 @@ Boto3 documentation:
 - `default_availability_zone`: `str`
 - `default_subnet_id`: `str`
 - `custom_json`: `str`
-- `configuration_manager`: `Dict`\[`str`, `Any`\]
-- `chef_configuration`: `Dict`\[`str`, `Any`\]
+- `configuration_manager`:
+  [StackConfigurationManagerResponseMetadataTypeDef](./type_defs.md#stackconfigurationmanagerresponsemetadatatypedef)
+- `chef_configuration`:
+  [ChefConfigurationResponseMetadataTypeDef](./type_defs.md#chefconfigurationresponsemetadatatypedef)
 - `use_custom_cookbooks`: `bool`
 - `use_opsworks_security_groups`: `bool`
-- `custom_cookbooks_source`: `Dict`\[`str`, `Any`\]
+- `custom_cookbooks_source`:
+  [SourceResponseMetadataTypeDef](./type_defs.md#sourceresponsemetadatatypedef)
 - `default_ssh_key_name`: `str`
 - `created_at`: `str`
-- `default_root_device_type`: `str`
+- `default_root_device_type`:
+  [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `agent_version`: `str`
 - `id`: `str`
 - `layers`: [StackLayersCollection](#stacklayerscollection)
@@ -446,7 +458,8 @@ Boto3 documentation:
 - `arn`: `str`
 - `layers_count`: `int`
 - `apps_count`: `int`
-- `instances_count`: `Dict`\[`str`, `Any`\]
+- `instances_count`:
+  [InstancesCountResponseMetadataTypeDef](./type_defs.md#instancescountresponsemetadatatypedef)
 - `stack_id`: `str`
 
 ### StackSummary methods

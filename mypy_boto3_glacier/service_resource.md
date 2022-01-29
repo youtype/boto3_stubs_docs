@@ -423,12 +423,12 @@ Boto3 documentation:
 
 - `job_id`: `str`
 - `job_description`: `str`
-- `action`: `str`
+- `action`: [ActionCodeType](./literals.md#actioncodetype)
 - `archive_id`: `str`
 - `vault_arn`: `str`
 - `creation_date`: `str`
 - `completed`: `bool`
-- `status_code`: `str`
+- `status_code`: [StatusCodeType](./literals.md#statuscodetype)
 - `status_message`: `str`
 - `archive_size_in_bytes`: `int`
 - `inventory_size_in_bytes`: `int`
@@ -438,10 +438,13 @@ Boto3 documentation:
 - `archive_sha256_tree_hash`: `str`
 - `retrieval_byte_range`: `str`
 - `tier`: `str`
-- `inventory_retrieval_parameters`: `Dict`\[`str`, `Any`\]
+- `inventory_retrieval_parameters`:
+  [InventoryRetrievalJobDescriptionResponseMetadataTypeDef](./type_defs.md#inventoryretrievaljobdescriptionresponsemetadatatypedef)
 - `job_output_path`: `str`
-- `select_parameters`: `Dict`\[`str`, `Any`\]
-- `output_location`: `Dict`\[`str`, `Any`\]
+- `select_parameters`:
+  [SelectParametersResponseMetadataTypeDef](./type_defs.md#selectparametersresponsemetadatatypedef)
+- `output_location`:
+  [OutputLocationResponseMetadataTypeDef](./type_defs.md#outputlocationresponsemetadatatypedef)
 - `account_id`: `str`
 - `vault_name`: `str`
 - `id`: `str`
@@ -652,7 +655,7 @@ Boto3 documentation:
 ### Notification attributes
 
 - `sns_topic`: `str`
-- `events`: `List`\[`Any`\]
+- `events`: `List`\[`str`\]
 - `account_id`: `str`
 - `vault_name`: `str`
 

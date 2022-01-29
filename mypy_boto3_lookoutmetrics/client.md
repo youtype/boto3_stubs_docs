@@ -588,8 +588,8 @@ Returns
 ### list_tags_for_resource
 
 Gets a list of
-`tags <https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors-tags.html>`\_\_
-for a detector, dataset, or alert.
+\[tags\](https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors-
+tags.html)\_ for a detector, dataset, or alert.
 
 Type annotations for `boto3.client("lookoutmetrics").list_tags_for_resource`
 method.
@@ -630,9 +630,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
-Adds
-`tags <https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors- tags.html>`\_\_
-to a detector, dataset, or alert.
+Adds \[tags\](https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors-
+tags.html)\_ to a detector, dataset, or alert.
 
 Type annotations for `boto3.client("lookoutmetrics").tag_resource` method.
 
@@ -652,8 +651,8 @@ Returns `Dict`\[`str`, `Any`\].
 ### untag_resource
 
 Removes
-`tags <https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors- tags.html>`\_\_
-from a detector, dataset, or alert.
+\[tags\](https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors-
+tags.html)\_ from a detector, dataset, or alert.
 
 Type annotations for `boto3.client("lookoutmetrics").untag_resource` method.
 

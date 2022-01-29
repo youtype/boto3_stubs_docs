@@ -2692,7 +2692,7 @@ Returns
 
 Starts a task that restores an AMI from an Amazon S3 object that was previously
 created by using
-`CreateStoreImageTask <https://docs.aws.amazon.com/AWSEC2/lates t/APIReference/API_CreateStoreImageTask.html>`\_\_
+[CreateStoreImageTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateStoreImageTask.html)\_
 .
 
 Type annotations for `boto3.client("ec2").create_restore_image_task` method.
@@ -11136,8 +11136,9 @@ Returns
 
 ### modify_vpc_endpoint_service_permissions
 
-Modifies the permissions for your
-`VPC endpoint service <https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-service.html>`\_\_.
+Modifies the permissions for your \[VPC endpoint
+service\](https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-
+service.html)\_.
 
 Type annotations for
 `boto3.client("ec2").modify_vpc_endpoint_service_permissions` method.

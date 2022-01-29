@@ -102,6 +102,7 @@ type annotations stubs module
   - [DestinationTypeDef](#destinationtypedef)
   - [EncryptionConfigurationTypeDef](#encryptionconfigurationtypedef)
   - [EncryptionTypeDef](#encryptiontypedef)
+  - [ErrorDocumentResponseMetadataTypeDef](#errordocumentresponsemetadatatypedef)
   - [ErrorDocumentTypeDef](#errordocumenttypedef)
   - [ErrorTypeDef](#errortypedef)
   - [ExistingObjectReplicationTypeDef](#existingobjectreplicationtypedef)
@@ -173,7 +174,9 @@ type annotations stubs module
   - [HeadObjectOutputTypeDef](#headobjectoutputtypedef)
   - [HeadObjectRequestObjectVersionTypeDef](#headobjectrequestobjectversiontypedef)
   - [HeadObjectRequestRequestTypeDef](#headobjectrequestrequesttypedef)
+  - [IndexDocumentResponseMetadataTypeDef](#indexdocumentresponsemetadatatypedef)
   - [IndexDocumentTypeDef](#indexdocumenttypedef)
+  - [InitiatorResponseMetadataTypeDef](#initiatorresponsemetadatatypedef)
   - [InitiatorTypeDef](#initiatortypedef)
   - [InputSerializationTypeDef](#inputserializationtypedef)
   - [IntelligentTieringAndOperatorTypeDef](#intelligenttieringandoperatortypedef)
@@ -212,6 +215,7 @@ type annotations stubs module
   - [ListObjectsV2RequestRequestTypeDef](#listobjectsv2requestrequesttypedef)
   - [ListPartsOutputTypeDef](#listpartsoutputtypedef)
   - [ListPartsRequestRequestTypeDef](#listpartsrequestrequesttypedef)
+  - [LoggingEnabledResponseMetadataTypeDef](#loggingenabledresponsemetadatatypedef)
   - [LoggingEnabledTypeDef](#loggingenabledtypedef)
   - [MetadataEntryTypeDef](#metadataentrytypedef)
   - [MetricsAndOperatorTypeDef](#metricsandoperatortypedef)
@@ -245,6 +249,7 @@ type annotations stubs module
   - [ObjectVersionTypeDef](#objectversiontypedef)
   - [OutputLocationTypeDef](#outputlocationtypedef)
   - [OutputSerializationTypeDef](#outputserializationtypedef)
+  - [OwnerResponseMetadataTypeDef](#ownerresponsemetadatatypedef)
   - [OwnerTypeDef](#ownertypedef)
   - [OwnershipControlsRuleTypeDef](#ownershipcontrolsruletypedef)
   - [OwnershipControlsTypeDef](#ownershipcontrolstypedef)
@@ -305,6 +310,7 @@ type annotations stubs module
   - [QueueConfigurationDeprecatedTypeDef](#queueconfigurationdeprecatedtypedef)
   - [QueueConfigurationTypeDef](#queueconfigurationtypedef)
   - [RecordsEventTypeDef](#recordseventtypedef)
+  - [RedirectAllRequestsToResponseMetadataTypeDef](#redirectallrequeststoresponsemetadatatypedef)
   - [RedirectAllRequestsToTypeDef](#redirectallrequeststotypedef)
   - [RedirectTypeDef](#redirecttypedef)
   - [ReplicaModificationsTypeDef](#replicamodificationstypedef)
@@ -1945,6 +1951,18 @@ Optional fields:
 - `KMSKeyId`: `str`
 - `KMSContext`: `str`
 
+## ErrorDocumentResponseMetadataTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ErrorDocumentResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Key`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ErrorDocumentTypeDef
 
 ```python
@@ -3062,6 +3080,18 @@ Optional fields:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
+## IndexDocumentResponseMetadataTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import IndexDocumentResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `Suffix`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## IndexDocumentTypeDef
 
 ```python
@@ -3071,6 +3101,19 @@ from mypy_boto3_s3.type_defs import IndexDocumentTypeDef
 Required fields:
 
 - `Suffix`: `str`
+
+## InitiatorResponseMetadataTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import InitiatorResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `ID`: `str`
+- `DisplayName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InitiatorTypeDef
 
@@ -3707,6 +3750,21 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
+## LoggingEnabledResponseMetadataTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import LoggingEnabledResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `TargetBucket`: `str`
+- `TargetGrants`:
+  `List`\[[TargetGrantTypeDef](./type_defs.md#targetgranttypedef)\]
+- `TargetPrefix`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## LoggingEnabledTypeDef
 
 ```python
@@ -4148,6 +4206,19 @@ Optional fields:
 
 - `CSV`: [CSVOutputTypeDef](./type_defs.md#csvoutputtypedef)
 - `JSON`: [JSONOutputTypeDef](./type_defs.md#jsonoutputtypedef)
+
+## OwnerResponseMetadataTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import OwnerResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `DisplayName`: `str`
+- `ID`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## OwnerTypeDef
 
@@ -5194,6 +5265,19 @@ from mypy_boto3_s3.type_defs import RecordsEventTypeDef
 Optional fields:
 
 - `Payload`: `bytes`
+
+## RedirectAllRequestsToResponseMetadataTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import RedirectAllRequestsToResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `HostName`: `str`
+- `Protocol`: [ProtocolType](./literals.md#protocoltype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RedirectAllRequestsToTypeDef
 

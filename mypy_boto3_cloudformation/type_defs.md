@@ -111,6 +111,7 @@ type annotations stubs module
   - [ListTypesOutputTypeDef](#listtypesoutputtypedef)
   - [LoggingConfigTypeDef](#loggingconfigtypedef)
   - [ManagedExecutionTypeDef](#managedexecutiontypedef)
+  - [ModuleInfoResponseMetadataTypeDef](#moduleinforesponsemetadatatypedef)
   - [ModuleInfoTypeDef](#moduleinfotypedef)
   - [OutputTypeDef](#outputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
@@ -133,6 +134,7 @@ type annotations stubs module
   - [ResourceTargetDefinitionTypeDef](#resourcetargetdefinitiontypedef)
   - [ResourceToImportTypeDef](#resourcetoimporttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RollbackConfigurationResponseMetadataTypeDef](#rollbackconfigurationresponsemetadatatypedef)
   - [RollbackConfigurationTypeDef](#rollbackconfigurationtypedef)
   - [RollbackStackInputRequestTypeDef](#rollbackstackinputrequesttypedef)
   - [RollbackStackOutputTypeDef](#rollbackstackoutputtypedef)
@@ -146,6 +148,7 @@ type annotations stubs module
   - [SetTypeConfigurationOutputTypeDef](#settypeconfigurationoutputtypedef)
   - [SetTypeDefaultVersionInputRequestTypeDef](#settypedefaultversioninputrequesttypedef)
   - [SignalResourceInputRequestTypeDef](#signalresourceinputrequesttypedef)
+  - [StackDriftInformationResponseMetadataTypeDef](#stackdriftinformationresponsemetadatatypedef)
   - [StackDriftInformationSummaryTypeDef](#stackdriftinformationsummarytypedef)
   - [StackDriftInformationTypeDef](#stackdriftinformationtypedef)
   - [StackEventTypeDef](#stackeventtypedef)
@@ -154,6 +157,8 @@ type annotations stubs module
   - [StackInstanceSummaryTypeDef](#stackinstancesummarytypedef)
   - [StackInstanceTypeDef](#stackinstancetypedef)
   - [StackResourceDetailTypeDef](#stackresourcedetailtypedef)
+  - [StackResourceDriftInformationResponseMetadataTypeDef](#stackresourcedriftinformationresponsemetadatatypedef)
+  - [StackResourceDriftInformationSummaryResponseMetadataTypeDef](#stackresourcedriftinformationsummaryresponsemetadatatypedef)
   - [StackResourceDriftInformationSummaryTypeDef](#stackresourcedriftinformationsummarytypedef)
   - [StackResourceDriftInformationTypeDef](#stackresourcedriftinformationtypedef)
   - [StackResourceDriftTypeDef](#stackresourcedrifttypedef)
@@ -1728,6 +1733,19 @@ Optional fields:
 
 - `Active`: `bool`
 
+## ModuleInfoResponseMetadataTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ModuleInfoResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `TypeHierarchy`: `str`
+- `LogicalIdHierarchy`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ModuleInfoTypeDef
 
 ```python
@@ -2023,6 +2041,20 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+## RollbackConfigurationResponseMetadataTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import RollbackConfigurationResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RollbackTriggers`:
+  `List`\[[RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)\]
+- `MonitoringTimeInMinutes`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## RollbackConfigurationTypeDef
 
 ```python
@@ -2185,6 +2217,20 @@ Required fields:
 - `UniqueId`: `str`
 - `Status`: [ResourceSignalStatusType](./literals.md#resourcesignalstatustype)
 
+## StackDriftInformationResponseMetadataTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import StackDriftInformationResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `StackDriftStatus`:
+  [StackDriftStatusType](./literals.md#stackdriftstatustype)
+- `LastCheckTimestamp`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## StackDriftInformationSummaryTypeDef
 
 ```python
@@ -2327,6 +2373,34 @@ Optional fields:
 - `DriftInformation`:
   [StackResourceDriftInformationTypeDef](./type_defs.md#stackresourcedriftinformationtypedef)
 - `ModuleInfo`: [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
+
+## StackResourceDriftInformationResponseMetadataTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import StackResourceDriftInformationResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `StackResourceDriftStatus`:
+  [StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)
+- `LastCheckTimestamp`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StackResourceDriftInformationSummaryResponseMetadataTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import StackResourceDriftInformationSummaryResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `StackResourceDriftStatus`:
+  [StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)
+- `LastCheckTimestamp`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StackResourceDriftInformationSummaryTypeDef
 
