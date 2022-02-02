@@ -2084,6 +2084,7 @@ from mypy_boto3_personalize.type_defs import RecommenderConfigTypeDef
 Optional fields:
 
 - `itemExplorationConfig`: `Mapping`\[`str`, `str`\]
+- `minRecommendationRequestsPerSecond`: `int`
 
 ## RecommenderSummaryTypeDef
 

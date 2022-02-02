@@ -305,6 +305,7 @@ Values:
 
 - `AVRO`
 - `JSON`
+- `PROTOBUF`
 
 ## DeleteBehaviorType
 

@@ -40,6 +40,8 @@ type annotations stubs module
   - [GetExperimentResponseTypeDef](#getexperimentresponsetypedef)
   - [GetExperimentTemplateRequestRequestTypeDef](#getexperimenttemplaterequestrequesttypedef)
   - [GetExperimentTemplateResponseTypeDef](#getexperimenttemplateresponsetypedef)
+  - [GetTargetResourceTypeRequestRequestTypeDef](#gettargetresourcetyperequestrequesttypedef)
+  - [GetTargetResourceTypeResponseTypeDef](#gettargetresourcetyperesponsetypedef)
   - [ListActionsRequestRequestTypeDef](#listactionsrequestrequesttypedef)
   - [ListActionsResponseTypeDef](#listactionsresponsetypedef)
   - [ListExperimentTemplatesRequestRequestTypeDef](#listexperimenttemplatesrequestrequesttypedef)
@@ -48,12 +50,17 @@ type annotations stubs module
   - [ListExperimentsResponseTypeDef](#listexperimentsresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTargetResourceTypesRequestRequestTypeDef](#listtargetresourcetypesrequestrequesttypedef)
+  - [ListTargetResourceTypesResponseTypeDef](#listtargetresourcetypesresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [StartExperimentRequestRequestTypeDef](#startexperimentrequestrequesttypedef)
   - [StartExperimentResponseTypeDef](#startexperimentresponsetypedef)
   - [StopExperimentRequestRequestTypeDef](#stopexperimentrequestrequesttypedef)
   - [StopExperimentResponseTypeDef](#stopexperimentresponsetypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [TargetResourceTypeParameterTypeDef](#targetresourcetypeparametertypedef)
+  - [TargetResourceTypeSummaryTypeDef](#targetresourcetypesummarytypedef)
+  - [TargetResourceTypeTypeDef](#targetresourcetypetypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateExperimentTemplateActionInputItemTypeDef](#updateexperimenttemplateactioninputitemtypedef)
   - [UpdateExperimentTemplateRequestRequestTypeDef](#updateexperimenttemplaterequestrequesttypedef)
@@ -195,6 +202,7 @@ Optional fields:
 - `resourceTags`: `Mapping`\[`str`, `str`\]
 - `filters`:
   `Sequence`\[[ExperimentTemplateTargetInputFilterTypeDef](./type_defs.md#experimenttemplatetargetinputfiltertypedef)\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 
 ## DeleteExperimentTemplateRequestRequestTypeDef
 
@@ -310,6 +318,7 @@ Optional fields:
 - `filters`:
   `List`\[[ExperimentTargetFilterTypeDef](./type_defs.md#experimenttargetfiltertypedef)\]
 - `selectionMode`: `str`
+- `parameters`: `Dict`\[`str`, `str`\]
 
 ## ExperimentTemplateActionTypeDef
 
@@ -386,6 +395,7 @@ Optional fields:
 - `filters`:
   `List`\[[ExperimentTemplateTargetFilterTypeDef](./type_defs.md#experimenttemplatetargetfiltertypedef)\]
 - `selectionMode`: `str`
+- `parameters`: `Dict`\[`str`, `str`\]
 
 ## ExperimentTemplateTypeDef
 
@@ -498,6 +508,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetTargetResourceTypeRequestRequestTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import GetTargetResourceTypeRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceType`: `str`
+
+## GetTargetResourceTypeResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import GetTargetResourceTypeResponseTypeDef
+```
+
+Required fields:
+
+- `targetResourceType`:
+  [TargetResourceTypeTypeDef](./type_defs.md#targetresourcetypetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListActionsRequestRequestTypeDef
 
 ```python
@@ -595,6 +628,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListTargetResourceTypesRequestRequestTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ListTargetResourceTypesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListTargetResourceTypesResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ListTargetResourceTypesResponseTypeDef
+```
+
+Required fields:
+
+- `targetResourceTypes`:
+  `List`\[[TargetResourceTypeSummaryTypeDef](./type_defs.md#targetresourcetypesummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -668,6 +726,41 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+## TargetResourceTypeParameterTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import TargetResourceTypeParameterTypeDef
+```
+
+Optional fields:
+
+- `description`: `str`
+- `required`: `bool`
+
+## TargetResourceTypeSummaryTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import TargetResourceTypeSummaryTypeDef
+```
+
+Optional fields:
+
+- `resourceType`: `str`
+- `description`: `str`
+
+## TargetResourceTypeTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import TargetResourceTypeTypeDef
+```
+
+Optional fields:
+
+- `resourceType`: `str`
+- `description`: `str`
+- `parameters`: `Dict`\[`str`,
+  [TargetResourceTypeParameterTypeDef](./type_defs.md#targetresourcetypeparametertypedef)\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -762,3 +855,4 @@ Optional fields:
 - `resourceTags`: `Mapping`\[`str`, `str`\]
 - `filters`:
   `Sequence`\[[ExperimentTemplateTargetInputFilterTypeDef](./type_defs.md#experimenttemplatetargetinputfiltertypedef)\]
+- `parameters`: `Mapping`\[`str`, `str`\]

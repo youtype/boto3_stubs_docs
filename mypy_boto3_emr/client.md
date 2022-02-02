@@ -935,7 +935,7 @@ Returns
 
 ### put_auto_termination_policy
 
-Creates or updates an auto-termination policy for an Amazon EMR cluster.
+.
 
 Type annotations for `boto3.client("emr").put_auto_termination_policy` method.
 
@@ -1152,7 +1152,7 @@ Keyword-only arguments:
 
 ### set_visible_to_all_users
 
-Sets the Cluster$VisibleToAllUsers value for an EMR cluster.
+.
 
 Type annotations for `boto3.client("emr").set_visible_to_all_users` method.
 

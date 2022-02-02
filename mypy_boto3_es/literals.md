@@ -26,6 +26,7 @@ type annotations stubs module
   - [LogTypeType](#logtypetype)
   - [OptionStateType](#optionstatetype)
   - [OutboundCrossClusterSearchConnectionStatusCodeType](#outboundcrossclustersearchconnectionstatuscodetype)
+  - [OverallChangeStatusType](#overallchangestatustype)
   - [PackageStatusType](#packagestatustype)
   - [PackageTypeType](#packagetypetype)
   - [ReservedElasticsearchInstancePaymentOptionType](#reservedelasticsearchinstancepaymentoptiontype)
@@ -314,6 +315,19 @@ Values:
 - `REJECTED`
 - `VALIDATING`
 - `VALIDATION_FAILED`
+
+## OverallChangeStatusType
+
+```python
+from mypy_boto3_es.literals import OverallChangeStatusType
+```
+
+Values:
+
+- `COMPLETED`
+- `FAILED`
+- `PENDING`
+- `PROCESSING`
 
 ## PackageStatusType
 

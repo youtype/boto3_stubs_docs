@@ -19,10 +19,12 @@ type annotations stubs module
     - [get_action](#get_action)
     - [get_experiment](#get_experiment)
     - [get_experiment_template](#get_experiment_template)
+    - [get_target_resource_type](#get_target_resource_type)
     - [list_actions](#list_actions)
     - [list_experiment_templates](#list_experiment_templates)
     - [list_experiments](#list_experiments)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [list_target_resource_types](#list_target_resource_types)
     - [start_experiment](#start_experiment)
     - [stop_experiment](#stop_experiment)
     - [tag_resource](#tag_resource)
@@ -216,6 +218,25 @@ Keyword-only arguments:
 Returns
 [GetExperimentTemplateResponseTypeDef](./type_defs.md#getexperimenttemplateresponsetypedef).
 
+### get_target_resource_type
+
+Gets information about the specified resource type.
+
+Type annotations for `boto3.client("fis").get_target_resource_type` method.
+
+Boto3 documentation:
+[FIS.Client.get_target_resource_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_target_resource_type)
+
+Arguments mapping described in
+[GetTargetResourceTypeRequestRequestTypeDef](./type_defs.md#gettargetresourcetyperequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `resourceType`: `str` *(required)*
+
+Returns
+[GetTargetResourceTypeResponseTypeDef](./type_defs.md#gettargetresourcetyperesponsetypedef).
+
 ### list_actions
 
 Lists the available FIS actions.
@@ -294,6 +315,26 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+### list_target_resource_types
+
+Lists the target resource types.
+
+Type annotations for `boto3.client("fis").list_target_resource_types` method.
+
+Boto3 documentation:
+[FIS.Client.list_target_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_target_resource_types)
+
+Arguments mapping described in
+[ListTargetResourceTypesRequestRequestTypeDef](./type_defs.md#listtargetresourcetypesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListTargetResourceTypesResponseTypeDef](./type_defs.md#listtargetresourcetypesresponsetypedef).
 
 ### start_experiment
 

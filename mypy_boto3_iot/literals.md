@@ -1271,7 +1271,10 @@ from mypy_boto3_iot.literals import LogTargetTypeType
 
 Values:
 
+- `CLIENT_ID`
 - `DEFAULT`
+- `PRINCIPAL_ID`
+- `SOURCE_IP`
 - `THING_GROUP`
 
 ## MessageFormatType

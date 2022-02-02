@@ -26,6 +26,7 @@ type annotations stubs module
     - [delete_document_classifier](#delete_document_classifier)
     - [delete_endpoint](#delete_endpoint)
     - [delete_entity_recognizer](#delete_entity_recognizer)
+    - [delete_resource_policy](#delete_resource_policy)
     - [describe_document_classification_job](#describe_document_classification_job)
     - [describe_document_classifier](#describe_document_classifier)
     - [describe_dominant_language_detection_job](#describe_dominant_language_detection_job)
@@ -35,6 +36,7 @@ type annotations stubs module
     - [describe_events_detection_job](#describe_events_detection_job)
     - [describe_key_phrases_detection_job](#describe_key_phrases_detection_job)
     - [describe_pii_entities_detection_job](#describe_pii_entities_detection_job)
+    - [describe_resource_policy](#describe_resource_policy)
     - [describe_sentiment_detection_job](#describe_sentiment_detection_job)
     - [describe_topics_detection_job](#describe_topics_detection_job)
     - [detect_dominant_language](#detect_dominant_language)
@@ -44,6 +46,7 @@ type annotations stubs module
     - [detect_sentiment](#detect_sentiment)
     - [detect_syntax](#detect_syntax)
     - [generate_presigned_url](#generate_presigned_url)
+    - [import_model](#import_model)
     - [list_document_classification_jobs](#list_document_classification_jobs)
     - [list_document_classifier_summaries](#list_document_classifier_summaries)
     - [list_document_classifiers](#list_document_classifiers)
@@ -58,6 +61,7 @@ type annotations stubs module
     - [list_sentiment_detection_jobs](#list_sentiment_detection_jobs)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_topics_detection_jobs](#list_topics_detection_jobs)
+    - [put_resource_policy](#put_resource_policy)
     - [start_document_classification_job](#start_document_classification_job)
     - [start_dominant_language_detection_job](#start_dominant_language_detection_job)
     - [start_entities_detection_job](#start_entities_detection_job)
@@ -340,6 +344,7 @@ Keyword-only arguments:
 - `Mode`:
   [DocumentClassifierModeType](./literals.md#documentclassifiermodetype)
 - `ModelKmsKeyId`: `str`
+- `ModelPolicy`: `str`
 
 Returns
 [CreateDocumentClassifierResponseTypeDef](./type_defs.md#createdocumentclassifierresponsetypedef).
@@ -398,6 +403,7 @@ Keyword-only arguments:
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `ModelKmsKeyId`: `str`
+- `ModelPolicy`: `str`
 
 Returns
 [CreateEntityRecognizerResponseTypeDef](./type_defs.md#createentityrecognizerresponsetypedef).
@@ -456,6 +462,26 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EntityRecognizerArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### delete_resource_policy
+
+Deletes a resource-based policy that is attached to a custom model.
+
+Type annotations for `boto3.client("comprehend").delete_resource_policy`
+method.
+
+Boto3 documentation:
+[Comprehend.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_resource_policy)
+
+Arguments mapping described in
+[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `PolicyRevisionId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -638,6 +664,27 @@ Keyword-only arguments:
 
 Returns
 [DescribePiiEntitiesDetectionJobResponseTypeDef](./type_defs.md#describepiientitiesdetectionjobresponsetypedef).
+
+### describe_resource_policy
+
+Gets the details of a resource-based policy that is attached to a custom model,
+including the JSON body of the policy.
+
+Type annotations for `boto3.client("comprehend").describe_resource_policy`
+method.
+
+Boto3 documentation:
+[Comprehend.Client.describe_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_resource_policy)
+
+Arguments mapping described in
+[DescribeResourcePolicyRequestRequestTypeDef](./type_defs.md#describeresourcepolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef).
 
 ### describe_sentiment_detection_job
 
@@ -824,6 +871,31 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+### import_model
+
+Creates a new custom model that replicates a source custom model that you
+import.
+
+Type annotations for `boto3.client("comprehend").import_model` method.
+
+Boto3 documentation:
+[Comprehend.Client.import_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.import_model)
+
+Arguments mapping described in
+[ImportModelRequestRequestTypeDef](./type_defs.md#importmodelrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SourceModelArn`: `str` *(required)*
+- `ModelName`: `str`
+- `VersionName`: `str`
+- `ModelKmsKeyId`: `str`
+- `DataAccessRoleArn`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[ImportModelResponseTypeDef](./type_defs.md#importmodelresponsetypedef).
 
 ### list_document_classification_jobs
 
@@ -1140,6 +1212,27 @@ Keyword-only arguments:
 
 Returns
 [ListTopicsDetectionJobsResponseTypeDef](./type_defs.md#listtopicsdetectionjobsresponsetypedef).
+
+### put_resource_policy
+
+Attaches a resource-based policy to a custom model.
+
+Type annotations for `boto3.client("comprehend").put_resource_policy` method.
+
+Boto3 documentation:
+[Comprehend.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.put_resource_policy)
+
+Arguments mapping described in
+[PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `ResourcePolicy`: `str` *(required)*
+- `PolicyRevisionId`: `str`
+
+Returns
+[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
 ### start_document_classification_job
 

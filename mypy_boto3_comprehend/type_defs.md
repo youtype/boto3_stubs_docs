@@ -40,6 +40,7 @@ type annotations stubs module
   - [DeleteDocumentClassifierRequestRequestTypeDef](#deletedocumentclassifierrequestrequesttypedef)
   - [DeleteEndpointRequestRequestTypeDef](#deleteendpointrequestrequesttypedef)
   - [DeleteEntityRecognizerRequestRequestTypeDef](#deleteentityrecognizerrequestrequesttypedef)
+  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
   - [DescribeDocumentClassificationJobRequestRequestTypeDef](#describedocumentclassificationjobrequestrequesttypedef)
   - [DescribeDocumentClassificationJobResponseTypeDef](#describedocumentclassificationjobresponsetypedef)
   - [DescribeDocumentClassifierRequestRequestTypeDef](#describedocumentclassifierrequestrequesttypedef)
@@ -58,6 +59,8 @@ type annotations stubs module
   - [DescribeKeyPhrasesDetectionJobResponseTypeDef](#describekeyphrasesdetectionjobresponsetypedef)
   - [DescribePiiEntitiesDetectionJobRequestRequestTypeDef](#describepiientitiesdetectionjobrequestrequesttypedef)
   - [DescribePiiEntitiesDetectionJobResponseTypeDef](#describepiientitiesdetectionjobresponsetypedef)
+  - [DescribeResourcePolicyRequestRequestTypeDef](#describeresourcepolicyrequestrequesttypedef)
+  - [DescribeResourcePolicyResponseTypeDef](#describeresourcepolicyresponsetypedef)
   - [DescribeSentimentDetectionJobRequestRequestTypeDef](#describesentimentdetectionjobrequestrequesttypedef)
   - [DescribeSentimentDetectionJobResponseTypeDef](#describesentimentdetectionjobresponsetypedef)
   - [DescribeTopicsDetectionJobRequestRequestTypeDef](#describetopicsdetectionjobrequestrequesttypedef)
@@ -107,6 +110,8 @@ type annotations stubs module
   - [EntityTypesListItemTypeDef](#entitytypeslistitemtypedef)
   - [EventsDetectionJobFilterTypeDef](#eventsdetectionjobfiltertypedef)
   - [EventsDetectionJobPropertiesTypeDef](#eventsdetectionjobpropertiestypedef)
+  - [ImportModelRequestRequestTypeDef](#importmodelrequestrequesttypedef)
+  - [ImportModelResponseTypeDef](#importmodelresponsetypedef)
   - [InputDataConfigTypeDef](#inputdataconfigtypedef)
   - [KeyPhraseTypeDef](#keyphrasetypedef)
   - [KeyPhrasesDetectionJobFilterTypeDef](#keyphrasesdetectionjobfiltertypedef)
@@ -146,6 +151,8 @@ type annotations stubs module
   - [PiiEntitiesDetectionJobPropertiesTypeDef](#piientitiesdetectionjobpropertiestypedef)
   - [PiiEntityTypeDef](#piientitytypedef)
   - [PiiOutputDataConfigTypeDef](#piioutputdataconfigtypedef)
+  - [PutResourcePolicyRequestRequestTypeDef](#putresourcepolicyrequestrequesttypedef)
+  - [PutResourcePolicyResponseTypeDef](#putresourcepolicyresponsetypedef)
   - [RedactionConfigTypeDef](#redactionconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SentimentDetectionJobFilterTypeDef](#sentimentdetectionjobfiltertypedef)
@@ -516,6 +523,7 @@ Optional fields:
 - `Mode`:
   [DocumentClassifierModeType](./literals.md#documentclassifiermodetype)
 - `ModelKmsKeyId`: `str`
+- `ModelPolicy`: `str`
 
 ## CreateDocumentClassifierResponseTypeDef
 
@@ -581,6 +589,7 @@ Optional fields:
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `ModelKmsKeyId`: `str`
+- `ModelPolicy`: `str`
 
 ## CreateEntityRecognizerResponseTypeDef
 
@@ -623,6 +632,20 @@ from mypy_boto3_comprehend.type_defs import DeleteEntityRecognizerRequestRequest
 Required fields:
 
 - `EntityRecognizerArn`: `str`
+
+## DeleteResourcePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DeleteResourcePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+Optional fields:
+
+- `PolicyRevisionId`: `str`
 
 ## DescribeDocumentClassificationJobRequestRequestTypeDef
 
@@ -828,6 +851,31 @@ Required fields:
 
 - `PiiEntitiesDetectionJobProperties`:
   [PiiEntitiesDetectionJobPropertiesTypeDef](./type_defs.md#piientitiesdetectionjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeResourcePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeResourcePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+## DescribeResourcePolicyResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeResourcePolicyResponseTypeDef
+```
+
+Required fields:
+
+- `ResourcePolicy`: `str`
+- `CreationTime`: `datetime`
+- `LastModifiedTime`: `datetime`
+- `PolicyRevisionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1140,6 +1188,7 @@ Optional fields:
   [DocumentClassifierModeType](./literals.md#documentclassifiermodetype)
 - `ModelKmsKeyId`: `str`
 - `VersionName`: `str`
+- `SourceModelArn`: `str`
 
 ## DocumentClassifierSummaryTypeDef
 
@@ -1454,6 +1503,7 @@ Optional fields:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `ModelKmsKeyId`: `str`
 - `VersionName`: `str`
+- `SourceModelArn`: `str`
 
 ## EntityRecognizerSummaryTypeDef
 
@@ -1540,6 +1590,36 @@ Optional fields:
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `DataAccessRoleArn`: `str`
 - `TargetEventTypes`: `List`\[`str`\]
+
+## ImportModelRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ImportModelRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SourceModelArn`: `str`
+
+Optional fields:
+
+- `ModelName`: `str`
+- `VersionName`: `str`
+- `ModelKmsKeyId`: `str`
+- `DataAccessRoleArn`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## ImportModelResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ImportModelResponseTypeDef
+```
+
+Required fields:
+
+- `ModelArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InputDataConfigTypeDef
 
@@ -2078,6 +2158,33 @@ Required fields:
 Optional fields:
 
 - `KmsKeyId`: `str`
+
+## PutResourcePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import PutResourcePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `ResourcePolicy`: `str`
+
+Optional fields:
+
+- `PolicyRevisionId`: `str`
+
+## PutResourcePolicyResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import PutResourcePolicyResponseTypeDef
+```
+
+Required fields:
+
+- `PolicyRevisionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RedactionConfigTypeDef
 

@@ -10,7 +10,9 @@ type annotations stubs module
 - [Literals for boto3 Appflow module](#literals-for-boto3-appflow-module)
   - [AggregationTypeType](#aggregationtypetype)
   - [AmplitudeConnectorOperatorType](#amplitudeconnectoroperatortype)
+  - [AuthenticationTypeType](#authenticationtypetype)
   - [ConnectionModeType](#connectionmodetype)
+  - [ConnectorProvisioningTypeType](#connectorprovisioningtypetype)
   - [ConnectorTypeType](#connectortypetype)
   - [DataPullModeType](#datapullmodetype)
   - [DatadogConnectorOperatorType](#datadogconnectoroperatortype)
@@ -21,8 +23,10 @@ type annotations stubs module
   - [GoogleAnalyticsConnectorOperatorType](#googleanalyticsconnectoroperatortype)
   - [InforNexusConnectorOperatorType](#infornexusconnectoroperatortype)
   - [MarketoConnectorOperatorType](#marketoconnectoroperatortype)
+  - [OAuth2GrantTypeType](#oauth2granttypetype)
   - [OperatorPropertiesKeysType](#operatorpropertieskeystype)
   - [OperatorType](#operatortype)
+  - [OperatorsType](#operatorstype)
   - [PrefixFormatType](#prefixformattype)
   - [PrefixTypeType](#prefixtypetype)
   - [PrivateConnectionProvisioningFailureCauseType](#privateconnectionprovisioningfailurecausetype)
@@ -64,6 +68,19 @@ Values:
 
 - `BETWEEN`
 
+## AuthenticationTypeType
+
+```python
+from mypy_boto3_appflow.literals import AuthenticationTypeType
+```
+
+Values:
+
+- `APIKEY`
+- `BASIC`
+- `CUSTOM`
+- `OAUTH2`
+
 ## ConnectionModeType
 
 ```python
@@ -75,6 +92,16 @@ Values:
 - `Private`
 - `Public`
 
+## ConnectorProvisioningTypeType
+
+```python
+from mypy_boto3_appflow.literals import ConnectorProvisioningTypeType
+```
+
+Values:
+
+- `LAMBDA`
+
 ## ConnectorTypeType
 
 ```python
@@ -84,6 +111,7 @@ from mypy_boto3_appflow.literals import ConnectorTypeType
 Values:
 
 - `Amplitude`
+- `CustomConnector`
 - `CustomerProfiles`
 - `Datadog`
 - `Dynatrace`
@@ -264,6 +292,17 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+## OAuth2GrantTypeType
+
+```python
+from mypy_boto3_appflow.literals import OAuth2GrantTypeType
+```
+
+Values:
+
+- `AUTHORIZATION_CODE`
+- `CLIENT_CREDENTIALS`
+
 ## OperatorPropertiesKeysType
 
 ```python
@@ -292,6 +331,36 @@ Values:
 
 ```python
 from mypy_boto3_appflow.literals import OperatorType
+```
+
+Values:
+
+- `ADDITION`
+- `BETWEEN`
+- `CONTAINS`
+- `DIVISION`
+- `EQUAL_TO`
+- `GREATER_THAN`
+- `GREATER_THAN_OR_EQUAL_TO`
+- `LESS_THAN`
+- `LESS_THAN_OR_EQUAL_TO`
+- `MASK_ALL`
+- `MASK_FIRST_N`
+- `MASK_LAST_N`
+- `MULTIPLICATION`
+- `NO_OP`
+- `NOT_EQUAL_TO`
+- `PROJECTION`
+- `SUBTRACTION`
+- `VALIDATE_NON_NEGATIVE`
+- `VALIDATE_NON_NULL`
+- `VALIDATE_NON_ZERO`
+- `VALIDATE_NUMERIC`
+
+## OperatorsType
+
+```python
+from mypy_boto3_appflow.literals import OperatorsType
 ```
 
 Values:
@@ -656,6 +725,7 @@ from mypy_boto3_appflow.literals import WriteOperationTypeType
 
 Values:
 
+- `DELETE`
 - `INSERT`
 - `UPDATE`
 - `UPSERT`
