@@ -414,6 +414,7 @@ type annotations stubs module
     - [import_key_pair](#import_key_pair)
     - [import_snapshot](#import_snapshot)
     - [import_volume](#import_volume)
+    - [list_images_in_recycle_bin](#list_images_in_recycle_bin)
     - [list_snapshots_in_recycle_bin](#list_snapshots_in_recycle_bin)
     - [modify_address_attribute](#modify_address_attribute)
     - [modify_availability_zone_group](#modify_availability_zone_group)
@@ -508,6 +509,7 @@ type annotations stubs module
     - [reset_network_interface_attribute](#reset_network_interface_attribute)
     - [reset_snapshot_attribute](#reset_snapshot_attribute)
     - [restore_address_to_classic](#restore_address_to_classic)
+    - [restore_image_from_recycle_bin](#restore_image_from_recycle_bin)
     - [restore_managed_prefix_list_version](#restore_managed_prefix_list_version)
     - [restore_snapshot_from_recycle_bin](#restore_snapshot_from_recycle_bin)
     - [restore_snapshot_tier](#restore_snapshot_tier)
@@ -9916,6 +9918,28 @@ Keyword-only arguments:
 
 Returns [ImportVolumeResultTypeDef](./type_defs.md#importvolumeresulttypedef).
 
+### list_images_in_recycle_bin
+
+Lists one or more AMIs that are currently in the Recycle Bin.
+
+Type annotations for `boto3.client("ec2").list_images_in_recycle_bin` method.
+
+Boto3 documentation:
+[EC2.Client.list_images_in_recycle_bin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.list_images_in_recycle_bin)
+
+Arguments mapping described in
+[ListImagesInRecycleBinRequestRequestTypeDef](./type_defs.md#listimagesinrecyclebinrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ImageIds`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+
+Returns
+[ListImagesInRecycleBinResultTypeDef](./type_defs.md#listimagesinrecyclebinresulttypedef).
+
 ### list_snapshots_in_recycle_bin
 
 Lists one or more snapshots that are currently in the Recycle Bin.
@@ -12204,6 +12228,27 @@ Keyword-only arguments:
 Returns
 [RestoreAddressToClassicResultTypeDef](./type_defs.md#restoreaddresstoclassicresulttypedef).
 
+### restore_image_from_recycle_bin
+
+Restores an AMI from the Recycle Bin.
+
+Type annotations for `boto3.client("ec2").restore_image_from_recycle_bin`
+method.
+
+Boto3 documentation:
+[EC2.Client.restore_image_from_recycle_bin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.restore_image_from_recycle_bin)
+
+Arguments mapping described in
+[RestoreImageFromRecycleBinRequestRequestTypeDef](./type_defs.md#restoreimagefromrecyclebinrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ImageId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[RestoreImageFromRecycleBinResultTypeDef](./type_defs.md#restoreimagefromrecyclebinresulttypedef).
+
 ### restore_managed_prefix_list_version
 
 Restores the entries from a previous version of a managed prefix list to a new
@@ -13075,6 +13120,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [GetTransitGatewayRouteTablePropagationsPaginator](./paginators.md#gettransitgatewayroutetablepropagationspaginator)
 - `client.get_paginator("get_vpn_connection_device_types")` ->
   [GetVpnConnectionDeviceTypesPaginator](./paginators.md#getvpnconnectiondevicetypespaginator)
+- `client.get_paginator("list_images_in_recycle_bin")` ->
+  [ListImagesInRecycleBinPaginator](./paginators.md#listimagesinrecyclebinpaginator)
 - `client.get_paginator("list_snapshots_in_recycle_bin")` ->
   [ListSnapshotsInRecycleBinPaginator](./paginators.md#listsnapshotsinrecyclebinpaginator)
 - `client.get_paginator("search_local_gateway_routes")` ->

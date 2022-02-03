@@ -1057,6 +1057,7 @@ type annotations stubs module
   - [IdFormatTypeDef](#idformattypedef)
   - [ImageAttributeTypeDef](#imageattributetypedef)
   - [ImageDiskContainerTypeDef](#imagediskcontainertypedef)
+  - [ImageRecycleBinInfoTypeDef](#imagerecyclebininfotypedef)
   - [ImageTypeDef](#imagetypedef)
   - [ImportClientVpnClientCertificateRevocationListRequestRequestTypeDef](#importclientvpnclientcertificaterevocationlistrequestrequesttypedef)
   - [ImportClientVpnClientCertificateRevocationListResultTypeDef](#importclientvpnclientcertificaterevocationlistresulttypedef)
@@ -1204,6 +1205,8 @@ type annotations stubs module
   - [LaunchTemplatesMonitoringTypeDef](#launchtemplatesmonitoringtypedef)
   - [LicenseConfigurationRequestTypeDef](#licenseconfigurationrequesttypedef)
   - [LicenseConfigurationTypeDef](#licenseconfigurationtypedef)
+  - [ListImagesInRecycleBinRequestRequestTypeDef](#listimagesinrecyclebinrequestrequesttypedef)
+  - [ListImagesInRecycleBinResultTypeDef](#listimagesinrecyclebinresulttypedef)
   - [ListSnapshotsInRecycleBinRequestRequestTypeDef](#listsnapshotsinrecyclebinrequestrequesttypedef)
   - [ListSnapshotsInRecycleBinResultTypeDef](#listsnapshotsinrecyclebinresulttypedef)
   - [LoadBalancersConfigTypeDef](#loadbalancersconfigtypedef)
@@ -1528,6 +1531,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RestoreAddressToClassicRequestRequestTypeDef](#restoreaddresstoclassicrequestrequesttypedef)
   - [RestoreAddressToClassicResultTypeDef](#restoreaddresstoclassicresulttypedef)
+  - [RestoreImageFromRecycleBinRequestRequestTypeDef](#restoreimagefromrecyclebinrequestrequesttypedef)
+  - [RestoreImageFromRecycleBinResultTypeDef](#restoreimagefromrecyclebinresulttypedef)
   - [RestoreManagedPrefixListVersionRequestRequestTypeDef](#restoremanagedprefixlistversionrequestrequesttypedef)
   - [RestoreManagedPrefixListVersionResultTypeDef](#restoremanagedprefixlistversionresulttypedef)
   - [RestoreSnapshotFromRecycleBinRequestRequestTypeDef](#restoresnapshotfromrecyclebinrequestrequesttypedef)
@@ -16903,6 +16908,20 @@ Optional fields:
 - `Url`: `str`
 - `UserBucket`: [UserBucketTypeDef](./type_defs.md#userbuckettypedef)
 
+## ImageRecycleBinInfoTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ImageRecycleBinInfoTypeDef
+```
+
+Optional fields:
+
+- `ImageId`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `RecycleBinEnterTime`: `datetime`
+- `RecycleBinExitTime`: `datetime`
+
 ## ImageTypeDef
 
 ```python
@@ -19245,6 +19264,33 @@ from mypy_boto3_ec2.type_defs import LicenseConfigurationTypeDef
 Optional fields:
 
 - `LicenseConfigurationArn`: `str`
+
+## ListImagesInRecycleBinRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ListImagesInRecycleBinRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `ImageIds`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+
+## ListImagesInRecycleBinResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ListImagesInRecycleBinResultTypeDef
+```
+
+Required fields:
+
+- `Images`:
+  `List`\[[ImageRecycleBinInfoTypeDef](./type_defs.md#imagerecyclebininfotypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListSnapshotsInRecycleBinRequestRequestTypeDef
 
@@ -24199,6 +24245,32 @@ Required fields:
 
 - `PublicIp`: `str`
 - `Status`: [StatusType](./literals.md#statustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RestoreImageFromRecycleBinRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RestoreImageFromRecycleBinRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ImageId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## RestoreImageFromRecycleBinResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RestoreImageFromRecycleBinResultTypeDef
+```
+
+Required fields:
+
+- `Return`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

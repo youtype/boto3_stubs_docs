@@ -34,6 +34,7 @@ from mypy_boto3_rbin.literals import ResourceTypeType
 Values:
 
 - `EBS_SNAPSHOT`
+- `EC2_IMAGE`
 
 ## RetentionPeriodUnitType
 

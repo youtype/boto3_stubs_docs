@@ -288,6 +288,7 @@ type annotations stubs module
   - [LaunchTemplateInstanceMetadataOptionsStateType](#launchtemplateinstancemetadataoptionsstatetype)
   - [LaunchTemplateInstanceMetadataProtocolIpv6Type](#launchtemplateinstancemetadataprotocolipv6type)
   - [LaunchTemplateInstanceMetadataTagsStateType](#launchtemplateinstancemetadatatagsstatetype)
+  - [ListImagesInRecycleBinPaginatorName](#listimagesinrecyclebinpaginatorname)
   - [ListSnapshotsInRecycleBinPaginatorName](#listsnapshotsinrecyclebinpaginatorname)
   - [ListingStateType](#listingstatetype)
   - [ListingStatusType](#listingstatustype)
@@ -4060,6 +4061,16 @@ Values:
 - `disabled`
 - `enabled`
 
+## ListImagesInRecycleBinPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import ListImagesInRecycleBinPaginatorName
+```
+
+Values:
+
+- `list_images_in_recycle_bin`
+
 ## ListSnapshotsInRecycleBinPaginatorName
 
 ```python
@@ -6275,6 +6286,7 @@ Values:
 - `get_transit_gateway_route_table_associations`
 - `get_transit_gateway_route_table_propagations`
 - `get_vpn_connection_device_types`
+- `list_images_in_recycle_bin`
 - `list_snapshots_in_recycle_bin`
 - `search_local_gateway_routes`
 - `search_transit_gateway_multicast_groups`

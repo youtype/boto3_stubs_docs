@@ -38,8 +38,7 @@ Required fields:
 
 - `RetentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `ResourceType`: `Literal['EBS_SNAPSHOT']` (see
-  [ResourceTypeType](./literals.md#resourcetypetype))
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 
 Optional fields:
 
@@ -61,8 +60,7 @@ Required fields:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResourceType`: `Literal['EBS_SNAPSHOT']` (see
-  [ResourceTypeType](./literals.md#resourcetypetype))
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `ResourceTags`:
   `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 - `Status`: [RuleStatusType](./literals.md#rulestatustype)
@@ -99,8 +97,7 @@ Required fields:
 
 - `Identifier`: `str`
 - `Description`: `str`
-- `ResourceType`: `Literal['EBS_SNAPSHOT']` (see
-  [ResourceTypeType](./literals.md#resourcetypetype))
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `RetentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `ResourceTags`:
@@ -117,8 +114,7 @@ from mypy_boto3_rbin.type_defs import ListRulesRequestRequestTypeDef
 
 Required fields:
 
-- `ResourceType`: `Literal['EBS_SNAPSHOT']` (see
-  [ResourceTypeType](./literals.md#resourcetypetype))
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 
 Optional fields:
 
@@ -275,8 +271,7 @@ Optional fields:
 - `RetentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `Description`: `str`
-- `ResourceType`: `Literal['EBS_SNAPSHOT']` (see
-  [ResourceTypeType](./literals.md#resourcetypetype))
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `ResourceTags`:
   `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
@@ -292,8 +287,7 @@ Required fields:
 - `RetentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `Description`: `str`
-- `ResourceType`: `Literal['EBS_SNAPSHOT']` (see
-  [ResourceTypeType](./literals.md#resourcetypetype))
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `ResourceTags`:
   `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 - `Status`: [RuleStatusType](./literals.md#rulestatustype)

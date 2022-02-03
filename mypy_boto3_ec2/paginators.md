@@ -124,6 +124,7 @@ type annotations stubs module
   - [GetTransitGatewayRouteTableAssociationsPaginator](#gettransitgatewayroutetableassociationspaginator)
   - [GetTransitGatewayRouteTablePropagationsPaginator](#gettransitgatewayroutetablepropagationspaginator)
   - [GetVpnConnectionDeviceTypesPaginator](#getvpnconnectiondevicetypespaginator)
+  - [ListImagesInRecycleBinPaginator](#listimagesinrecyclebinpaginator)
   - [ListSnapshotsInRecycleBinPaginator](#listsnapshotsinrecyclebinpaginator)
   - [SearchLocalGatewayRoutesPaginator](#searchlocalgatewayroutespaginator)
   - [SearchTransitGatewayMulticastGroupsPaginator](#searchtransitgatewaymulticastgroupspaginator)
@@ -3429,6 +3430,33 @@ Arguments for `GetVpnConnectionDeviceTypesPaginator.paginate` method:
 
 `GetVpnConnectionDeviceTypesPaginator.paginate` returns
 `_PageIterator`\[[GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef)\].
+
+## ListImagesInRecycleBinPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("list_images_in_recycle_bin")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import ListImagesInRecycleBinPaginator
+
+def get_list_images_in_recycle_bin_paginator() -> ListImagesInRecycleBinPaginator:
+    return boto3.client("ec2").get_paginator("list_images_in_recycle_bin")
+```
+
+Boto3 documentation:
+[EC2.Paginator.ListImagesInRecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.ListImagesInRecycleBin)
+
+Arguments for `ListImagesInRecycleBinPaginator.paginate` method:
+
+- `ImageIds`: `Sequence`\[`str`\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListImagesInRecycleBinPaginator.paginate` returns
+`_PageIterator`\[[ListImagesInRecycleBinResultTypeDef](./type_defs.md#listimagesinrecyclebinresulttypedef)\].
 
 ## ListSnapshotsInRecycleBinPaginator
 
