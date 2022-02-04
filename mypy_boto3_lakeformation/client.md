@@ -1114,11 +1114,11 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `TransactionId`: `str` *(required)*
 - `WriteOperations`:
   `Sequence`\[[WriteOperationTypeDef](./type_defs.md#writeoperationtypedef)\]
   *(required)*
 - `CatalogId`: `str`
+- `TransactionId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 

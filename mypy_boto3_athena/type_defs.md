@@ -968,6 +968,7 @@ Optional fields:
 - `OutputLocation`: `str`
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
+- `ExpectedBucketOwner`: `str`
 
 ## ResultConfigurationUpdatesTypeDef
 
@@ -982,6 +983,8 @@ Optional fields:
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - `RemoveEncryptionConfiguration`: `bool`
+- `ExpectedBucketOwner`: `str`
+- `RemoveExpectedBucketOwner`: `bool`
 
 ## ResultSetMetadataTypeDef
 

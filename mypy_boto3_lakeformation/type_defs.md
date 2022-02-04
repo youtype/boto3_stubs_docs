@@ -1651,13 +1651,13 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
-- `TransactionId`: `str`
 - `WriteOperations`:
   `Sequence`\[[WriteOperationTypeDef](./type_defs.md#writeoperationtypedef)\]
 
 Optional fields:
 
 - `CatalogId`: `str`
+- `TransactionId`: `str`
 
 ## UpdateTableStorageOptimizerRequestRequestTypeDef
 
